@@ -1,18 +1,20 @@
 # Передача задачі — зображення вправ
 
-## Поточний етап: резервна копія локально перевірена, Release заблокований
+## Поточний етап: 25 прийнятих PNG збережено й перевірено на GitHub
 
-Користувач явно прийняв усі 10 simple-002 у відповіді на уточнення. Тепер approved: пілот 5, simple-001 10, simple-002 10 — разом 25. Рішення, точні accepted_path/SHA256 та відомі approved timestamps записані в progress і файлах пакетів. Сумнівних або відсутніх прийнятих файлів немає. Зображення не змінювали і не генерували повторно.
+За прямим запитом користувача точні прийняті версії з готового backup manifest скопійовано без змін до assets/exercises/<exercise_id>.png у гілку work. Пілот 5, simple-001 10, simple-002 10; user_review/status залишаються approved. Bench Press — прийнята attempt-1; Shoulder Press Machine — attempt-3. Сумнівних або відсутніх файлів немає.
 
-ZIP: /workspace/exercise-image-backups/approved-images-backup-001/approved-images-backup-001.zip
-SHA256: 138ed33e8d0e429bc4a33522dd0abdfd96f3a4636a26c5dbcc04301d019d7eeb
-Розмір: 20112833 bytes. Поруч checksum-файл .zip.sha256. ZIP містить 25 PNG, catalog.json (451 ID, 4448 мовних блоків) і approved-images-manifest.json. Усі ZIP entries, PNG hashes і незмінність каталогу перевірені. PNG paths у manifest відносні; batch_id пілоту null, бо джерело його не задає; collection=pilot визначена з workflow.pilot_ids.
+Розміри: усі 25 PNG 1254×1254. Загальний обсяг 19276454 bytes; найбільший PNG 1291157 bytes. Нічого не генерували або не редагували. Цільова специфікація style v1 лишається незмінною.
 
-Manifest у репозиторії: data/approved-images-manifest.json. Release/asset URL наразі null — публікація не відбулась. Запропонований тег approved-images-backup-001 відсутній серед доступних Git tags, але перевірка Release API заблокована. gh повідомляє invalid GH_TOKEN; gh release create повернув Forbidden під час перевірки існуючого release. Не створено і не перезаписано releases/assets/tags. Метадані резервної копії запушено в гілку work; віддалений SHA звірено: 8054bffb24727d2484b78d9676f562256cee7364. Snapshot: https://github.com/romanthoruk2008-pixel/lightweight-exercises-photo/commit/8054bffb24727d2484b78d9676f562256cee7364 . GitHub Release API лишається окремим блокером.
+Перевірений PNG snapshot: https://github.com/romanthoruk2008-pixel/lightweight-exercises-photo/commit/15298e0294678a2ea9878797111ddc6378d4b22a
+Папка: https://github.com/romanthoruk2008-pixel/lightweight-exercises-photo/tree/15298e0294678a2ea9878797111ddc6378d4b22a/assets/exercises
+Перевірка: git fetch + ls-remote + ls-tree + SHA256 of every fetched PNG blob. Звірено всі 25 PNG у віддаленій work, SHA256, MIME/dimensions та повний незмінний каталог 451 ID / 4448 мовних блоків.
 
-Backup позначено окремими backup_status/backup_records/backup_history, зі status=local_verified і publication_status=blocked. User review лишається approved; Supabase не підключений і не позначений завантаженим. Локальні файли лишаються в хмарному середовищі.
+Manifest: data/approved-images-manifest.json — exercise_id, relative repository_path, SHA256, style_version, user_review=approved і commit-qualified repository_url. Root repository_backup.status=github_verified. Progress backup_status/backup_records/backup_history та файли пакетів оновлено лише після remote verification; user_review і Supabase state не змінені. Supabase досі not_configured; жодного uploaded_to_supabase не додавали.
 
-Точна наступна дія: відновити GitHub Release API доступ; перед публікацією повторно перевірити вільний тег (якщо 001 зайнято — вибрати наступний номер), опублікувати готовий ZIP і checksum без заміни assets, завантажити asset назад та звірити SHA256. Потім заповнити реальні Release/asset URL у repository manifest і backup records та закомітити зміни. Нічну генерацію, API генерацію та Supabase uploads зараз не запускати. У новій хмарній задачі не припускати доступність цих /workspace файлів.
+.gitignore має вузький виняток !/assets/exercises/*.png. Інші PNG, ZIP, вихідні архіви й секрети не додавали в Git. ZIP та вихідні хмарні файли збережено без видалення; старий archive publication blocker стосується лише попередньої спроби Release, який тепер не потрібний.
+
+Точна наступна дія: чекати окремої інструкції щодо подальшої генерації. У новій задачі відновлювати прийняті PNG із checkout GitHub або repository_url перевіреного commit і звіряти SHA256, не покладатися на попередні /workspace шляхи. Approved/uploaded вправи автоматично пропускати, не замінювати прийняті PNG.
 
 ## Історичні записи попередніх етапів
 

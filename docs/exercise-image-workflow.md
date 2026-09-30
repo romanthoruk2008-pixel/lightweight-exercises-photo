@@ -1,6 +1,6 @@
 # Workflow зображень вправ — v1
 
-Поточний етап: 25 конкретних PNG прийняті користувачем (пілот 5, simple-001 10, simple-002 10). Нічну генерацію не запускали. Резервна копія локально перевірена; GitHub Release API заблокований. Наступна дія — відновити доступ, опублікувати готовий ZIP із SHA256 і заповнити реальний URL asset у data/approved-images-manifest.json.
+Поточний етап: усі 25 прийнятих PNG (пілот 5, simple-001 10, simple-002 10) збережені у GitHub-гілці work, assets/exercises/<exercise_id>.png. Fetch віддаленої гілки підтвердив усі 25 файлів, їхні SHA256 і розміри; каталог 451/4448 незмінний. Manifest має relative repository_path, SHA256, style v1, approved review та посилання на перевірений commit 15298e0294678a2ea9878797111ddc6378d4b22a. Backup позначений github_verified окремо від user_review та Supabase. Release для поточного способу зберігання не потрібен.
 
 Наведені нижче обмеження перевірок та кількості спроб стосуються історичного пілоту. Вони не є автоматичним дозволом на повторну генерацію чи новий пакет.
 
@@ -87,6 +87,11 @@ python3 scripts/build_exercise_catalog.py /workspace/exercise-source-v1/extracte
 2026-10-01: користувач прийняв Shoulder Press attempt-3. Усі п’ять результатів пілоту `approved`, exact accepted path/SHA256 записані у progress і handoff. Пілот завершено; чекати окремого запиту щодо наступного етапу, не запускати генерацію/завантаження/push автоматично.
 
 
+
 ## Backup і відновлення
 
-Відбирати тільки user_review=approved, використовувати accepted_path та accepted_sha256. У ZIP зберігати незмінні PNG, повний каталог 451/4448 і manifest з відносними PNG paths, exercise_id, SHA256, MIME, dimensions, style та відомим часом схвалення. Локальну перевірку, публікацію Release та Supabase зберігати окремо. Створювати лише новий вільний тег/asset, без перезапису; після завантаження звірити фактичний asset SHA256. Якщо API недоступний — зберегти ZIP і явний блокер; URL лишити null. Для відновлення брати asset URL із manifest, перевірити ZIP та кожен PNG; локальні шляхи старої задачі не є постійними посиланнями.
+Відбирати тільки user_review=approved та точний accepted SHA256. За прямим запитом користувача 25 PNG з backup manifest збережено в Git за assets/exercises/<exercise_id>.png; це вузький дозволений виняток. ZIP, вихідні архіви, інші медіа й секрети у Git не додавати. Catalog лишається повним і незмінним.
+
+GitHub backup позначати перевіреним лише після fetch віддаленої work та звірки кожного PNG blob за SHA256, MIME, dimensions і exercise_id. Manifest зберігає відносні repository_path та commit-qualified repository_url; попередній png_path є шляхом усередині локального ZIP. Archive publication status не є статусом GitHub repository backup. Supabase і user_review не змінювати через резервне збереження.
+
+У новій задачі брати PNG з Git checkout або repository_url перевіреного commit, звіряти SHA256 з manifest. Не вважати локальні /workspace файли попередньої задачі доступними. Прийняті PNG автоматично не перегенеровувати.
