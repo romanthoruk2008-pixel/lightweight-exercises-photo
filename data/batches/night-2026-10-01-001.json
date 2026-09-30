@@ -1,0 +1,530 @@
+{
+  "schema_version": 2,
+  "prepared_at": "2026-10-01T02:15:57.244145+03:00",
+  "planned_night": "2026-10-01",
+  "timezone": "Europe/Kyiv",
+  "intended_executor": "Luna after user model switch and separate generation instruction",
+  "status": "prepared_not_generated",
+  "generation_authorized_now": false,
+  "catalog_path": "data/exercises/catalog.json",
+  "catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+  "progress_path": "data/exercise-image-progress.json",
+  "progress_sha256_at_preparation": "75150761210ac1ec25a45935a4cb73c18695eb584ca106bd64e38ada023447d3",
+  "style_version": "v1",
+  "style_path": "docs/exercise-image-style.md",
+  "style_sha256_at_preparation": "8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578",
+  "human_reference": {
+    "repository_path": "assets/exercises/biceps-curl-dumbbell.png",
+    "sha256": "52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f",
+    "repository_url": "https://github.com/romanthoruk2008-pixel/lightweight-exercises-photo/blob/15298e0294678a2ea9878797111ddc6378d4b22a/assets/exercises/biceps-curl-dumbbell.png",
+    "source_exercise_id": "biceps-curl-dumbbell",
+    "source_attempt": 1,
+    "source": "user-approved new pilot result; not one of the 48 historical source PNGs",
+    "role": "human_appearance_and_material_style_only",
+    "do_not_copy": [
+      "pose",
+      "equipment",
+      "muscle_highlights",
+      "composition"
+    ]
+  },
+  "selection_semantics": "Untouched records already have user_review=pending by default. These are eligible only when status=not_started, attempts=0 and no new result/accepted path/attempt history exists. Generated results awaiting user review are excluded. No progress fields changed by preparation.",
+  "constraints": {
+    "built_in_imagegen_only": true,
+    "paid_api_allowed": false,
+    "subagents_allowed": false,
+    "supabase_upload_allowed": false,
+    "archived_allowed": false,
+    "machines_cables_pulleys_complex_frames_allowed": false,
+    "historical_48_pngs_allowed_as_reference": false,
+    "one_image_per_id": true,
+    "one_person_one_phase": true,
+    "revalidate_live_progress_before_every_generation": true,
+    "skip_approved_uploaded_or_existing_result": true,
+    "automatic_retries_allowed": false,
+    "save_result_and_progress_immediately": true,
+    "user_review_until_explicit_acceptance": "pending",
+    "checkpoint_every": 10,
+    "technical_checks": [
+      "PNG exists and decodes",
+      "square; record actual dimensions; unchanged 1024x1024 target",
+      "alpha channel AND actual transparent background pixels",
+      "exercise ID, result path and SHA256 match"
+    ],
+    "agent_visual_review_policy": "Pilot-only first-two review does not automatically apply here. No new automatic visual reviews or retries are authorized by preparation.",
+    "no_automatic_resize_or_retry_due_to_size": true,
+    "output_root_outside_git": "/workspace/exercise-image-results/night-2026-10-01-001"
+  },
+  "batch_id": "night-2026-10-01-001",
+  "exercise_ids": [
+    "bird-dog",
+    "dead-bug",
+    "fire-hydrants",
+    "glute-kickback-on-floor",
+    "kneeling-pushup",
+    "pushup-close-grip",
+    "reverse-plank",
+    "side-bend",
+    "heel-taps",
+    "russian-twist-body-weight"
+  ],
+  "exercise_count": 10,
+  "exercises": [
+    {
+      "order": 1,
+      "exercise_id": "bird-dog",
+      "name": "Bird Dog",
+      "equipment": "none",
+      "depicted_equipment": [
+        "thin plain padded mat"
+      ],
+      "priority": 1,
+      "selection_status": "not_started",
+      "archived": false,
+      "attempts_at_preparation": 0,
+      "primary_muscle": "glutes",
+      "secondary_muscles": [
+        "hamstrings",
+        "shoulders"
+      ],
+      "source_english": {
+        "description": "Bird Dog extends opposite arm and leg from all fours while the pelvis stays level.",
+        "instructions": [
+          "Start on hands and knees with hands under shoulders and knees under hips.",
+          "Extend the right arm and left leg until both are in line with the torso.",
+          "Pause without rotating the pelvis, then return to all fours.",
+          "Alternate sides slowly."
+        ],
+        "form_cues": [
+          "Keep hips square.",
+          "Reach long.",
+          "Brace the abdomen."
+        ],
+        "common_mistakes": [
+          "Rotating the pelvis.",
+          "Arching the back.",
+          "Rushing the return."
+        ],
+        "safety_note": "Use a padded surface and shorten the reach before balance breaks.",
+        "provenance": "authored"
+      },
+      "source_english_sha256": "7ae20323bde5b403e3869c60cdbaa3ccf9f3b93040726d7bf84794e76db0badd",
+      "source_interpretation_note": "A single static phase interpreted from this exact English record; appearance reference provides no technique or equipment.",
+      "style_version": "v1",
+      "scene_description": "All fours on a thin padded mat, left palm under the left shoulder and right knee/shin under the right hip support the body. Right arm reaches straight forward and left leg straight back in line with the torso. Hips square, back neutral, head aligned. Side three-quarter view shows both opposite extended limbs and supporting contacts.",
+      "essential_details": [
+        "Right arm plus left leg",
+        "Left palm and right knee support",
+        "Level pelvis and neutral back"
+      ],
+      "generation_prompt": "STYLE v1. Use the supplied approved human reference ONLY for the person's identity, anatomical 3D style, body proportions, materials and detail. Do not copy its pose, dumbbells, muscle highlighting or composition. Match the same bald athletic adult male, opaque silver-gray sculpted anatomical muscle surfaces, simple fitted black shorts, barefoot, neutral face and consistent natural proportions. One person, one exercise, one characteristic phase: no second figure, collage or motion ghosts. Equipment must be only the simple items named in this scene, neutral gray/black materials, complete and mechanically ordinary. Primary muscles: localized coral #F26445. Named secondary muscles: the same hue at roughly 45% intensity blended with gray, clearly lighter. Do not highlight muscles absent from the catalog list, make the body or shorts transparent, or apply a global orange cast/glow. Preserve clothing; highlight visible anatomical surfaces without inventing see-through tissue. Square PNG, unchanged target 1024x1024, true transparent alpha background outside the person and required equipment/mat and through any openings; no white or checkerboard backdrop, drawn floor plane, UI, text, labels, frames, decorations or halo. Entire person and every required piece of equipment must fit with transparent margins; adapt scale/camera without distortion or cropping. Accent pigment must use base sRGB #F26445 = RGB(242,100,69); retain this hue through ordinary 3D shading. Secondary highlights use this hue at 40-50% intensity blended with the gray body, not transparent tissue.\n\nEXERCISE ID: bird-dog\nNAME: Bird Dog\nCatalog equipment: none\nDepict only: thin plain padded mat\nPrimary muscle: glutes\nSecondary muscles: [\"hamstrings\", \"shoulders\"]\n\nONE SPECIFIC SCENE: All fours on a thin padded mat, left palm under the left shoulder and right knee/shin under the right hip support the body. Right arm reaches straight forward and left leg straight back in line with the torso. Hips square, back neutral, head aligned. Side three-quarter view shows both opposite extended limbs and supporting contacts.\n\nENGLISH SOURCE (this ID only; do not substitute a familiar variant):\n{\"description\": \"Bird Dog extends opposite arm and leg from all fours while the pelvis stays level.\", \"instructions\": [\"Start on hands and knees with hands under shoulders and knees under hips.\", \"Extend the right arm and left leg until both are in line with the torso.\", \"Pause without rotating the pelvis, then return to all fours.\", \"Alternate sides slowly.\"], \"form_cues\": [\"Keep hips square.\", \"Reach long.\", \"Brace the abdomen.\"], \"common_mistakes\": [\"Rotating the pelvis.\", \"Arching the back.\", \"Rushing the return.\"], \"safety_note\": \"Use a padded surface and shorten the reach before balance breaks.\", \"provenance\": \"authored\"}\nMaintain source contact points and safe control. Render only this characteristic phase, not the entire instruction sequence. Reference anatomy is opaque; localize the specified muscle pigment without copying reference highlights."
+    },
+    {
+      "order": 2,
+      "exercise_id": "dead-bug",
+      "name": "Dead Bug",
+      "equipment": "none",
+      "depicted_equipment": [],
+      "priority": 1,
+      "selection_status": "not_started",
+      "archived": false,
+      "attempts_at_preparation": 0,
+      "primary_muscle": "abdominals",
+      "secondary_muscles": [],
+      "source_english": {
+        "description": "Dead Bug keeps the pelvis quiet while opposite arms and legs extend away from the trunk and return.",
+        "instructions": [
+          "Lie on your back with hips and knees bent and arms reaching up.",
+          "Brace your abdominals so the lower back stays gently supported.",
+          "Lower the opposite arm and leg without letting the ribs flare.",
+          "Return to center and alternate sides slowly."
+        ],
+        "form_cues": [
+          "Keep the pelvis still.",
+          "Exhale during the reach.",
+          "Use a small range if needed."
+        ],
+        "common_mistakes": [
+          "Arching the lower back.",
+          "Moving same-side limbs.",
+          "Holding the breath."
+        ],
+        "safety_note": "Reduce the arm or leg range before the lower back arches.",
+        "provenance": "adapted"
+      },
+      "source_english_sha256": "a83bef4bcd6caf98458f366fbc67affb5515b9ec9ba7fbb798fadbf9f4189a12",
+      "source_interpretation_note": "A single static phase interpreted from this exact English record; appearance reference provides no technique or equipment.",
+      "style_version": "v1",
+      "scene_description": "Supine with the pelvis and lower back supported, right arm reaches overhead while the opposite left leg extends long and lowers close to the support level without touching. Left arm stays pointing upward and right hip/knee remain bent. Rib cage stays down. Elevated side three-quarter view clearly separates the opposite moving limbs.",
+      "essential_details": [
+        "Opposite arm and leg",
+        "Lower back supported",
+        "Quiet pelvis and ribs"
+      ],
+      "generation_prompt": "STYLE v1. Use the supplied approved human reference ONLY for the person's identity, anatomical 3D style, body proportions, materials and detail. Do not copy its pose, dumbbells, muscle highlighting or composition. Match the same bald athletic adult male, opaque silver-gray sculpted anatomical muscle surfaces, simple fitted black shorts, barefoot, neutral face and consistent natural proportions. One person, one exercise, one characteristic phase: no second figure, collage or motion ghosts. Equipment must be only the simple items named in this scene, neutral gray/black materials, complete and mechanically ordinary. Primary muscles: localized coral #F26445. Named secondary muscles: the same hue at roughly 45% intensity blended with gray, clearly lighter. Do not highlight muscles absent from the catalog list, make the body or shorts transparent, or apply a global orange cast/glow. Preserve clothing; highlight visible anatomical surfaces without inventing see-through tissue. Square PNG, unchanged target 1024x1024, true transparent alpha background outside the person and required equipment/mat and through any openings; no white or checkerboard backdrop, drawn floor plane, UI, text, labels, frames, decorations or halo. Entire person and every required piece of equipment must fit with transparent margins; adapt scale/camera without distortion or cropping. Accent pigment must use base sRGB #F26445 = RGB(242,100,69); retain this hue through ordinary 3D shading. Secondary highlights use this hue at 40-50% intensity blended with the gray body, not transparent tissue.\n\nEXERCISE ID: dead-bug\nNAME: Dead Bug\nCatalog equipment: none\nDepict only: bodyweight, no equipment\nPrimary muscle: abdominals\nSecondary muscles: []\n\nONE SPECIFIC SCENE: Supine with the pelvis and lower back supported, right arm reaches overhead while the opposite left leg extends long and lowers close to the support level without touching. Left arm stays pointing upward and right hip/knee remain bent. Rib cage stays down. Elevated side three-quarter view clearly separates the opposite moving limbs.\n\nENGLISH SOURCE (this ID only; do not substitute a familiar variant):\n{\"description\": \"Dead Bug keeps the pelvis quiet while opposite arms and legs extend away from the trunk and return.\", \"instructions\": [\"Lie on your back with hips and knees bent and arms reaching up.\", \"Brace your abdominals so the lower back stays gently supported.\", \"Lower the opposite arm and leg without letting the ribs flare.\", \"Return to center and alternate sides slowly.\"], \"form_cues\": [\"Keep the pelvis still.\", \"Exhale during the reach.\", \"Use a small range if needed.\"], \"common_mistakes\": [\"Arching the lower back.\", \"Moving same-side limbs.\", \"Holding the breath.\"], \"safety_note\": \"Reduce the arm or leg range before the lower back arches.\", \"provenance\": \"adapted\"}\nMaintain source contact points and safe control. Render only this characteristic phase, not the entire instruction sequence. Reference anatomy is opaque; localize the specified muscle pigment without copying reference highlights."
+    },
+    {
+      "order": 3,
+      "exercise_id": "fire-hydrants",
+      "name": "Fire Hydrants",
+      "equipment": "none",
+      "depicted_equipment": [],
+      "priority": 1,
+      "selection_status": "not_started",
+      "archived": false,
+      "attempts_at_preparation": 0,
+      "primary_muscle": "glutes",
+      "secondary_muscles": [],
+      "source_english": {
+        "description": "Fire Hydrants lift one bent knee out to the side from an all-fours position while the pelvis stays level.",
+        "instructions": [
+          "Start on hands and knees with the spine neutral.",
+          "Brace the abdominals and lift one bent knee out to the side.",
+          "Raise only as far as the pelvis stays level.",
+          "Lower slowly and repeat on the other side."
+        ],
+        "form_cues": [
+          "Keep hips square.",
+          "Move from the hip.",
+          "Use a slow tempo."
+        ],
+        "common_mistakes": [
+          "Rotating the trunk.",
+          "Arching the lower back.",
+          "Swinging the knee."
+        ],
+        "safety_note": "Use a padded surface and a small hip range if the pelvis starts to rotate.",
+        "provenance": "authored"
+      },
+      "source_english_sha256": "44f170abcefda9da55d86edefa60e57de27415c0ffb513ad38a8c0fc24482016",
+      "source_interpretation_note": "A single static phase interpreted from this exact English record; appearance reference provides no technique or equipment.",
+      "style_version": "v1",
+      "scene_description": "Quadruped, palms under shoulders and knees under hips. Left knee remains bent and lifts out to the left side from the hip; both hands and right knee support the body. Pelvis remains square and level without lumbar arch. Rear-side three-quarter camera shows the bent lifted knee and all support points.",
+      "essential_details": [
+        "Bent knee lifted laterally",
+        "Two palms and opposite knee grounded",
+        "No pelvic rotation"
+      ],
+      "generation_prompt": "STYLE v1. Use the supplied approved human reference ONLY for the person's identity, anatomical 3D style, body proportions, materials and detail. Do not copy its pose, dumbbells, muscle highlighting or composition. Match the same bald athletic adult male, opaque silver-gray sculpted anatomical muscle surfaces, simple fitted black shorts, barefoot, neutral face and consistent natural proportions. One person, one exercise, one characteristic phase: no second figure, collage or motion ghosts. Equipment must be only the simple items named in this scene, neutral gray/black materials, complete and mechanically ordinary. Primary muscles: localized coral #F26445. Named secondary muscles: the same hue at roughly 45% intensity blended with gray, clearly lighter. Do not highlight muscles absent from the catalog list, make the body or shorts transparent, or apply a global orange cast/glow. Preserve clothing; highlight visible anatomical surfaces without inventing see-through tissue. Square PNG, unchanged target 1024x1024, true transparent alpha background outside the person and required equipment/mat and through any openings; no white or checkerboard backdrop, drawn floor plane, UI, text, labels, frames, decorations or halo. Entire person and every required piece of equipment must fit with transparent margins; adapt scale/camera without distortion or cropping. Accent pigment must use base sRGB #F26445 = RGB(242,100,69); retain this hue through ordinary 3D shading. Secondary highlights use this hue at 40-50% intensity blended with the gray body, not transparent tissue.\n\nEXERCISE ID: fire-hydrants\nNAME: Fire Hydrants\nCatalog equipment: none\nDepict only: bodyweight, no equipment\nPrimary muscle: glutes\nSecondary muscles: []\n\nONE SPECIFIC SCENE: Quadruped, palms under shoulders and knees under hips. Left knee remains bent and lifts out to the left side from the hip; both hands and right knee support the body. Pelvis remains square and level without lumbar arch. Rear-side three-quarter camera shows the bent lifted knee and all support points.\n\nENGLISH SOURCE (this ID only; do not substitute a familiar variant):\n{\"description\": \"Fire Hydrants lift one bent knee out to the side from an all-fours position while the pelvis stays level.\", \"instructions\": [\"Start on hands and knees with the spine neutral.\", \"Brace the abdominals and lift one bent knee out to the side.\", \"Raise only as far as the pelvis stays level.\", \"Lower slowly and repeat on the other side.\"], \"form_cues\": [\"Keep hips square.\", \"Move from the hip.\", \"Use a slow tempo.\"], \"common_mistakes\": [\"Rotating the trunk.\", \"Arching the lower back.\", \"Swinging the knee.\"], \"safety_note\": \"Use a padded surface and a small hip range if the pelvis starts to rotate.\", \"provenance\": \"authored\"}\nMaintain source contact points and safe control. Render only this characteristic phase, not the entire instruction sequence. Reference anatomy is opaque; localize the specified muscle pigment without copying reference highlights."
+    },
+    {
+      "order": 4,
+      "exercise_id": "glute-kickback-on-floor",
+      "name": "Glute Kickback on Floor",
+      "equipment": "none",
+      "depicted_equipment": [],
+      "priority": 1,
+      "selection_status": "not_started",
+      "archived": false,
+      "attempts_at_preparation": 0,
+      "primary_muscle": "glutes",
+      "secondary_muscles": [
+        "hamstrings"
+      ],
+      "source_english": {
+        "description": "Glute Kickback on Floor extends one leg backward from the hip while the trunk stays supported and the pelvis remains square.",
+        "instructions": [
+          "Lie on your stomach with legs extended and brace the abdomen.",
+          "Drive one leg backward from the hip without arching the lower back.",
+          "Pause at the end of the glute contraction.",
+          "Return the leg slowly and complete both sides."
+        ],
+        "form_cues": [
+          "Keep hips square.",
+          "Move from the glute.",
+          "Keep the spine neutral."
+        ],
+        "common_mistakes": [
+          "Swinging the leg.",
+          "Opening the pelvis.",
+          "Arching the back."
+        ],
+        "safety_note": "Use light resistance and stop before the low back takes over the leg extension.",
+        "provenance": "authored"
+      },
+      "source_english_sha256": "4570df5baec25aef81de56661e647b37dcfa10610a14d03cfb7a8e3d55d93d70",
+      "source_interpretation_note": "A single static phase interpreted from this exact English record; appearance reference provides no technique or equipment.",
+      "style_version": "v1",
+      "scene_description": "PRONE lying on the stomach with the trunk supported and both legs extended. Left leg extends slightly upward/backward from the hip with a straight knee; right leg stays supported. Arms rest beside the body without pushing the torso up. Pelvis stays square, spine neutral, neck aligned. Low side three-quarter view shows the small hip extension. Do not change this record into a quadruped kickback.",
+      "essential_details": [
+        "Prone on stomach, not all fours",
+        "One straight leg lifted slightly",
+        "Pelvis square and trunk supported"
+      ],
+      "generation_prompt": "STYLE v1. Use the supplied approved human reference ONLY for the person's identity, anatomical 3D style, body proportions, materials and detail. Do not copy its pose, dumbbells, muscle highlighting or composition. Match the same bald athletic adult male, opaque silver-gray sculpted anatomical muscle surfaces, simple fitted black shorts, barefoot, neutral face and consistent natural proportions. One person, one exercise, one characteristic phase: no second figure, collage or motion ghosts. Equipment must be only the simple items named in this scene, neutral gray/black materials, complete and mechanically ordinary. Primary muscles: localized coral #F26445. Named secondary muscles: the same hue at roughly 45% intensity blended with gray, clearly lighter. Do not highlight muscles absent from the catalog list, make the body or shorts transparent, or apply a global orange cast/glow. Preserve clothing; highlight visible anatomical surfaces without inventing see-through tissue. Square PNG, unchanged target 1024x1024, true transparent alpha background outside the person and required equipment/mat and through any openings; no white or checkerboard backdrop, drawn floor plane, UI, text, labels, frames, decorations or halo. Entire person and every required piece of equipment must fit with transparent margins; adapt scale/camera without distortion or cropping. Accent pigment must use base sRGB #F26445 = RGB(242,100,69); retain this hue through ordinary 3D shading. Secondary highlights use this hue at 40-50% intensity blended with the gray body, not transparent tissue.\n\nEXERCISE ID: glute-kickback-on-floor\nNAME: Glute Kickback on Floor\nCatalog equipment: none\nDepict only: bodyweight, no equipment\nPrimary muscle: glutes\nSecondary muscles: [\"hamstrings\"]\n\nONE SPECIFIC SCENE: PRONE lying on the stomach with the trunk supported and both legs extended. Left leg extends slightly upward/backward from the hip with a straight knee; right leg stays supported. Arms rest beside the body without pushing the torso up. Pelvis stays square, spine neutral, neck aligned. Low side three-quarter view shows the small hip extension. Do not change this record into a quadruped kickback.\n\nENGLISH SOURCE (this ID only; do not substitute a familiar variant):\n{\"description\": \"Glute Kickback on Floor extends one leg backward from the hip while the trunk stays supported and the pelvis remains square.\", \"instructions\": [\"Lie on your stomach with legs extended and brace the abdomen.\", \"Drive one leg backward from the hip without arching the lower back.\", \"Pause at the end of the glute contraction.\", \"Return the leg slowly and complete both sides.\"], \"form_cues\": [\"Keep hips square.\", \"Move from the glute.\", \"Keep the spine neutral.\"], \"common_mistakes\": [\"Swinging the leg.\", \"Opening the pelvis.\", \"Arching the back.\"], \"safety_note\": \"Use light resistance and stop before the low back takes over the leg extension.\", \"provenance\": \"authored\"}\nMaintain source contact points and safe control. Render only this characteristic phase, not the entire instruction sequence. Reference anatomy is opaque; localize the specified muscle pigment without copying reference highlights."
+    },
+    {
+      "order": 5,
+      "exercise_id": "kneeling-pushup",
+      "name": "Kneeling Push Up",
+      "equipment": "none",
+      "depicted_equipment": [],
+      "priority": 1,
+      "selection_status": "not_started",
+      "archived": false,
+      "attempts_at_preparation": 0,
+      "primary_muscle": "chest",
+      "secondary_muscles": [
+        "triceps",
+        "shoulders"
+      ],
+      "source_english": {
+        "description": "From the knees with the body aligned from head to knees, lower the chest and press back up.",
+        "instructions": [
+          "Kneel with knees on the floor, hands slightly wider than the shoulders, and the body aligned from knees to head.",
+          "Brace the core and bend the elbows to lower the chest toward the floor.",
+          "Pause just above the floor, then press through the palms to return to the kneeling plank.",
+          "Repeat without letting the hips sag or pike."
+        ],
+        "form_cues": [
+          "Keep wrists stacked over the elbows.",
+          "Brace the trunk and keep the shoulder blades controlled.",
+          "Use a smooth lower and press."
+        ],
+        "common_mistakes": [
+          "Flaring the elbows.",
+          "Arching or sagging the trunk.",
+          "Bouncing at the bottom."
+        ],
+        "safety_note": "Use a stable setup and stop before the shoulders or wrists lose controlled alignment.",
+        "provenance": "adapted"
+      },
+      "source_english_sha256": "73021127ef758c6223aff7fa38c3eaa996980d9ee328a263ebd23f433d471199",
+      "source_interpretation_note": "A single static phase interpreted from this exact English record; appearance reference provides no technique or equipment.",
+      "style_version": "v1",
+      "scene_description": "Lowered phase of a knee-supported pushup: both palms slightly wider than shoulders, knees supported, head-to-knees forms one rigid line, elbows bent under control and chest just above the support level. Show the feet resting naturally behind the knees, not bearing the load. Side three-quarter view shows palms, knees, elbow bend and neutral trunk.",
+      "essential_details": [
+        "Knees are the lower-body support",
+        "Rigid head-to-knee line",
+        "Controlled chest lowering"
+      ],
+      "generation_prompt": "STYLE v1. Use the supplied approved human reference ONLY for the person's identity, anatomical 3D style, body proportions, materials and detail. Do not copy its pose, dumbbells, muscle highlighting or composition. Match the same bald athletic adult male, opaque silver-gray sculpted anatomical muscle surfaces, simple fitted black shorts, barefoot, neutral face and consistent natural proportions. One person, one exercise, one characteristic phase: no second figure, collage or motion ghosts. Equipment must be only the simple items named in this scene, neutral gray/black materials, complete and mechanically ordinary. Primary muscles: localized coral #F26445. Named secondary muscles: the same hue at roughly 45% intensity blended with gray, clearly lighter. Do not highlight muscles absent from the catalog list, make the body or shorts transparent, or apply a global orange cast/glow. Preserve clothing; highlight visible anatomical surfaces without inventing see-through tissue. Square PNG, unchanged target 1024x1024, true transparent alpha background outside the person and required equipment/mat and through any openings; no white or checkerboard backdrop, drawn floor plane, UI, text, labels, frames, decorations or halo. Entire person and every required piece of equipment must fit with transparent margins; adapt scale/camera without distortion or cropping. Accent pigment must use base sRGB #F26445 = RGB(242,100,69); retain this hue through ordinary 3D shading. Secondary highlights use this hue at 40-50% intensity blended with the gray body, not transparent tissue.\n\nEXERCISE ID: kneeling-pushup\nNAME: Kneeling Push Up\nCatalog equipment: none\nDepict only: bodyweight, no equipment\nPrimary muscle: chest\nSecondary muscles: [\"triceps\", \"shoulders\"]\n\nONE SPECIFIC SCENE: Lowered phase of a knee-supported pushup: both palms slightly wider than shoulders, knees supported, head-to-knees forms one rigid line, elbows bent under control and chest just above the support level. Show the feet resting naturally behind the knees, not bearing the load. Side three-quarter view shows palms, knees, elbow bend and neutral trunk.\n\nENGLISH SOURCE (this ID only; do not substitute a familiar variant):\n{\"description\": \"From the knees with the body aligned from head to knees, lower the chest and press back up.\", \"instructions\": [\"Kneel with knees on the floor, hands slightly wider than the shoulders, and the body aligned from knees to head.\", \"Brace the core and bend the elbows to lower the chest toward the floor.\", \"Pause just above the floor, then press through the palms to return to the kneeling plank.\", \"Repeat without letting the hips sag or pike.\"], \"form_cues\": [\"Keep wrists stacked over the elbows.\", \"Brace the trunk and keep the shoulder blades controlled.\", \"Use a smooth lower and press.\"], \"common_mistakes\": [\"Flaring the elbows.\", \"Arching or sagging the trunk.\", \"Bouncing at the bottom.\"], \"safety_note\": \"Use a stable setup and stop before the shoulders or wrists lose controlled alignment.\", \"provenance\": \"adapted\"}\nMaintain source contact points and safe control. Render only this characteristic phase, not the entire instruction sequence. Reference anatomy is opaque; localize the specified muscle pigment without copying reference highlights."
+    },
+    {
+      "order": 6,
+      "exercise_id": "pushup-close-grip",
+      "name": "Push Up - Close Grip",
+      "equipment": "none",
+      "depicted_equipment": [],
+      "priority": 1,
+      "selection_status": "not_started",
+      "archived": false,
+      "attempts_at_preparation": 0,
+      "primary_muscle": "chest",
+      "secondary_muscles": [
+        "triceps",
+        "shoulders"
+      ],
+      "source_english": {
+        "description": "A close-grip push-up keeps the hands beneath the chest and the elbows tucked as the body lowers and presses from the floor.",
+        "instructions": [
+          "Start in a high plank position with your hands placed close together, directly under your shoulders.",
+          "Engage your core and lower your body towards the ground, keeping your elbows close to your sides.",
+          "Push through your palms to extend your arms and return to the starting position.",
+          "Repeat for the desired number of repetitions."
+        ],
+        "form_cues": [
+          "Keep wrists stacked over the elbows.",
+          "Brace the trunk and keep the shoulder blades controlled.",
+          "Use a smooth lower and press."
+        ],
+        "common_mistakes": [
+          "Flaring the elbows.",
+          "Arching or sagging the trunk.",
+          "Bouncing at the bottom."
+        ],
+        "safety_note": "Use a stable setup and stop before the shoulders or wrists lose controlled alignment.",
+        "provenance": "adapted"
+      },
+      "source_english_sha256": "197b39008ef9e9032aec776d0fd198c34f7a05f078ce2baca29124737d176be4",
+      "source_interpretation_note": "A single static phase interpreted from this exact English record; appearance reference provides no technique or equipment.",
+      "style_version": "v1",
+      "scene_description": "Lowered close-grip pushup, two palms close together beneath the chest directly under the shoulders, fingers forward with a closed stable palm contact rather than an invented diamond. Both toes support straight legs; chest just above the contact level, elbows tucked near torso, body straight head to heels. Side-front three-quarter view shows hand spacing and elbows. No clap or airborne phase.",
+      "essential_details": [
+        "Close palms under shoulders",
+        "Elbows tucked",
+        "Palms and toes support a straight plank"
+      ],
+      "generation_prompt": "STYLE v1. Use the supplied approved human reference ONLY for the person's identity, anatomical 3D style, body proportions, materials and detail. Do not copy its pose, dumbbells, muscle highlighting or composition. Match the same bald athletic adult male, opaque silver-gray sculpted anatomical muscle surfaces, simple fitted black shorts, barefoot, neutral face and consistent natural proportions. One person, one exercise, one characteristic phase: no second figure, collage or motion ghosts. Equipment must be only the simple items named in this scene, neutral gray/black materials, complete and mechanically ordinary. Primary muscles: localized coral #F26445. Named secondary muscles: the same hue at roughly 45% intensity blended with gray, clearly lighter. Do not highlight muscles absent from the catalog list, make the body or shorts transparent, or apply a global orange cast/glow. Preserve clothing; highlight visible anatomical surfaces without inventing see-through tissue. Square PNG, unchanged target 1024x1024, true transparent alpha background outside the person and required equipment/mat and through any openings; no white or checkerboard backdrop, drawn floor plane, UI, text, labels, frames, decorations or halo. Entire person and every required piece of equipment must fit with transparent margins; adapt scale/camera without distortion or cropping. Accent pigment must use base sRGB #F26445 = RGB(242,100,69); retain this hue through ordinary 3D shading. Secondary highlights use this hue at 40-50% intensity blended with the gray body, not transparent tissue.\n\nEXERCISE ID: pushup-close-grip\nNAME: Push Up - Close Grip\nCatalog equipment: none\nDepict only: bodyweight, no equipment\nPrimary muscle: chest\nSecondary muscles: [\"triceps\", \"shoulders\"]\n\nONE SPECIFIC SCENE: Lowered close-grip pushup, two palms close together beneath the chest directly under the shoulders, fingers forward with a closed stable palm contact rather than an invented diamond. Both toes support straight legs; chest just above the contact level, elbows tucked near torso, body straight head to heels. Side-front three-quarter view shows hand spacing and elbows. No clap or airborne phase.\n\nENGLISH SOURCE (this ID only; do not substitute a familiar variant):\n{\"description\": \"A close-grip push-up keeps the hands beneath the chest and the elbows tucked as the body lowers and presses from the floor.\", \"instructions\": [\"Start in a high plank position with your hands placed close together, directly under your shoulders.\", \"Engage your core and lower your body towards the ground, keeping your elbows close to your sides.\", \"Push through your palms to extend your arms and return to the starting position.\", \"Repeat for the desired number of repetitions.\"], \"form_cues\": [\"Keep wrists stacked over the elbows.\", \"Brace the trunk and keep the shoulder blades controlled.\", \"Use a smooth lower and press.\"], \"common_mistakes\": [\"Flaring the elbows.\", \"Arching or sagging the trunk.\", \"Bouncing at the bottom.\"], \"safety_note\": \"Use a stable setup and stop before the shoulders or wrists lose controlled alignment.\", \"provenance\": \"adapted\"}\nMaintain source contact points and safe control. Render only this characteristic phase, not the entire instruction sequence. Reference anatomy is opaque; localize the specified muscle pigment without copying reference highlights."
+    },
+    {
+      "order": 7,
+      "exercise_id": "reverse-plank",
+      "name": "Reverse Plank",
+      "equipment": "none",
+      "depicted_equipment": [],
+      "priority": 1,
+      "selection_status": "not_started",
+      "archived": false,
+      "attempts_at_preparation": 0,
+      "primary_muscle": "abdominals",
+      "secondary_muscles": [
+        "triceps"
+      ],
+      "source_english": {
+        "description": "A reverse plank holds the body face-up with the hips lifted and the hands or forearms behind the torso.",
+        "instructions": [
+          "Sit with legs extended and place the hands behind the hips with fingers pointing toward the feet.",
+          "Press through the hands and heels to lift the hips into a straight line from shoulders to ankles.",
+          "Keep the chest open and hold while breathing steadily.",
+          "Lower the hips with control to end the hold."
+        ],
+        "form_cues": [
+          "Press the floor away.",
+          "Keep hips level.",
+          "Point the toes or keep feet flexed consistently."
+        ],
+        "common_mistakes": [
+          "Dropping the hips.",
+          "Shrugging the shoulders.",
+          "Bending the knees to compensate."
+        ],
+        "safety_note": "Use forearms or a shorter hold if the wrists cannot stay comfortable.",
+        "provenance": "authored"
+      },
+      "source_english_sha256": "b1dccaf50c6658c9ec428d01b8091ee5a5628e045f4fc5a0b3bedd3c18fc40a4",
+      "source_interpretation_note": "A single static phase interpreted from this exact English record; appearance reference provides no technique or equipment.",
+      "style_version": "v1",
+      "scene_description": "Top hold of a face-up reverse plank: legs straight, hips lifted so shoulders through heels align. Palms planted behind the hips, fingers pointing TOWARD THE FEET; both heels contact the support level. Elbows straight, shoulders not shrugged, knees not bent. Side three-quarter camera makes backward palm support and heel contacts visible.",
+      "essential_details": [
+        "Fingers toward feet",
+        "Straight legs with heels supported",
+        "Hips lifted, shoulders to ankles aligned"
+      ],
+      "generation_prompt": "STYLE v1. Use the supplied approved human reference ONLY for the person's identity, anatomical 3D style, body proportions, materials and detail. Do not copy its pose, dumbbells, muscle highlighting or composition. Match the same bald athletic adult male, opaque silver-gray sculpted anatomical muscle surfaces, simple fitted black shorts, barefoot, neutral face and consistent natural proportions. One person, one exercise, one characteristic phase: no second figure, collage or motion ghosts. Equipment must be only the simple items named in this scene, neutral gray/black materials, complete and mechanically ordinary. Primary muscles: localized coral #F26445. Named secondary muscles: the same hue at roughly 45% intensity blended with gray, clearly lighter. Do not highlight muscles absent from the catalog list, make the body or shorts transparent, or apply a global orange cast/glow. Preserve clothing; highlight visible anatomical surfaces without inventing see-through tissue. Square PNG, unchanged target 1024x1024, true transparent alpha background outside the person and required equipment/mat and through any openings; no white or checkerboard backdrop, drawn floor plane, UI, text, labels, frames, decorations or halo. Entire person and every required piece of equipment must fit with transparent margins; adapt scale/camera without distortion or cropping. Accent pigment must use base sRGB #F26445 = RGB(242,100,69); retain this hue through ordinary 3D shading. Secondary highlights use this hue at 40-50% intensity blended with the gray body, not transparent tissue.\n\nEXERCISE ID: reverse-plank\nNAME: Reverse Plank\nCatalog equipment: none\nDepict only: bodyweight, no equipment\nPrimary muscle: abdominals\nSecondary muscles: [\"triceps\"]\n\nONE SPECIFIC SCENE: Top hold of a face-up reverse plank: legs straight, hips lifted so shoulders through heels align. Palms planted behind the hips, fingers pointing TOWARD THE FEET; both heels contact the support level. Elbows straight, shoulders not shrugged, knees not bent. Side three-quarter camera makes backward palm support and heel contacts visible.\n\nENGLISH SOURCE (this ID only; do not substitute a familiar variant):\n{\"description\": \"A reverse plank holds the body face-up with the hips lifted and the hands or forearms behind the torso.\", \"instructions\": [\"Sit with legs extended and place the hands behind the hips with fingers pointing toward the feet.\", \"Press through the hands and heels to lift the hips into a straight line from shoulders to ankles.\", \"Keep the chest open and hold while breathing steadily.\", \"Lower the hips with control to end the hold.\"], \"form_cues\": [\"Press the floor away.\", \"Keep hips level.\", \"Point the toes or keep feet flexed consistently.\"], \"common_mistakes\": [\"Dropping the hips.\", \"Shrugging the shoulders.\", \"Bending the knees to compensate.\"], \"safety_note\": \"Use forearms or a shorter hold if the wrists cannot stay comfortable.\", \"provenance\": \"authored\"}\nMaintain source contact points and safe control. Render only this characteristic phase, not the entire instruction sequence. Reference anatomy is opaque; localize the specified muscle pigment without copying reference highlights."
+    },
+    {
+      "order": 8,
+      "exercise_id": "side-bend",
+      "name": "Side Bend",
+      "equipment": "none",
+      "depicted_equipment": [],
+      "priority": 1,
+      "selection_status": "not_started",
+      "archived": false,
+      "attempts_at_preparation": 0,
+      "primary_muscle": "abdominals",
+      "secondary_muscles": [],
+      "source_english": {
+        "description": "Stand tall and bend the trunk laterally toward one knee, return upright, then change sides.",
+        "instructions": [
+          "Stand with your feet shoulder-width apart and your arms extended straight down by your sides.",
+          "Keeping your back straight and your core engaged, slowly bend your torso to one side, lowering your hand towards your knee.",
+          "Pause for a moment at the bottom, then slowly return to the starting position.",
+          "Repeat on the other side.",
+          "Continue alternating sides for the desired number of repetitions."
+        ],
+        "form_cues": [
+          "Keep the support points fixed.",
+          "Use a quiet controlled path.",
+          "Reset fully between repetitions."
+        ],
+        "common_mistakes": [
+          "Shifting the support point.",
+          "Using momentum instead of the target joint path.",
+          "Cutting the return short."
+        ],
+        "safety_note": "Use a secure setup and stop if alignment or control is lost.",
+        "provenance": "adapted"
+      },
+      "source_english_sha256": "05cffba049cdcc35c3a109d1b30ac13cd272086645fcf0948187a82138ab498a",
+      "source_interpretation_note": "A single static phase interpreted from this exact English record; appearance reference provides no technique or equipment.",
+      "style_version": "v1",
+      "scene_description": "Standing feet shoulder-width apart, no external load, both arms hanging long beside the torso. Bend the trunk gently to the right so the right hand reaches along the outside of the thigh toward the knee; legs remain long, both feet planted, pelvis stable and chest facing forward. Front three-quarter view shows lateral bend without twisting.",
+      "essential_details": [
+        "No weight",
+        "Both feet planted",
+        "Hand slides toward same-side knee"
+      ],
+      "generation_prompt": "STYLE v1. Use the supplied approved human reference ONLY for the person's identity, anatomical 3D style, body proportions, materials and detail. Do not copy its pose, dumbbells, muscle highlighting or composition. Match the same bald athletic adult male, opaque silver-gray sculpted anatomical muscle surfaces, simple fitted black shorts, barefoot, neutral face and consistent natural proportions. One person, one exercise, one characteristic phase: no second figure, collage or motion ghosts. Equipment must be only the simple items named in this scene, neutral gray/black materials, complete and mechanically ordinary. Primary muscles: localized coral #F26445. Named secondary muscles: the same hue at roughly 45% intensity blended with gray, clearly lighter. Do not highlight muscles absent from the catalog list, make the body or shorts transparent, or apply a global orange cast/glow. Preserve clothing; highlight visible anatomical surfaces without inventing see-through tissue. Square PNG, unchanged target 1024x1024, true transparent alpha background outside the person and required equipment/mat and through any openings; no white or checkerboard backdrop, drawn floor plane, UI, text, labels, frames, decorations or halo. Entire person and every required piece of equipment must fit with transparent margins; adapt scale/camera without distortion or cropping. Accent pigment must use base sRGB #F26445 = RGB(242,100,69); retain this hue through ordinary 3D shading. Secondary highlights use this hue at 40-50% intensity blended with the gray body, not transparent tissue.\n\nEXERCISE ID: side-bend\nNAME: Side Bend\nCatalog equipment: none\nDepict only: bodyweight, no equipment\nPrimary muscle: abdominals\nSecondary muscles: []\n\nONE SPECIFIC SCENE: Standing feet shoulder-width apart, no external load, both arms hanging long beside the torso. Bend the trunk gently to the right so the right hand reaches along the outside of the thigh toward the knee; legs remain long, both feet planted, pelvis stable and chest facing forward. Front three-quarter view shows lateral bend without twisting.\n\nENGLISH SOURCE (this ID only; do not substitute a familiar variant):\n{\"description\": \"Stand tall and bend the trunk laterally toward one knee, return upright, then change sides.\", \"instructions\": [\"Stand with your feet shoulder-width apart and your arms extended straight down by your sides.\", \"Keeping your back straight and your core engaged, slowly bend your torso to one side, lowering your hand towards your knee.\", \"Pause for a moment at the bottom, then slowly return to the starting position.\", \"Repeat on the other side.\", \"Continue alternating sides for the desired number of repetitions.\"], \"form_cues\": [\"Keep the support points fixed.\", \"Use a quiet controlled path.\", \"Reset fully between repetitions.\"], \"common_mistakes\": [\"Shifting the support point.\", \"Using momentum instead of the target joint path.\", \"Cutting the return short.\"], \"safety_note\": \"Use a secure setup and stop if alignment or control is lost.\", \"provenance\": \"adapted\"}\nMaintain source contact points and safe control. Render only this characteristic phase, not the entire instruction sequence. Reference anatomy is opaque; localize the specified muscle pigment without copying reference highlights."
+    },
+    {
+      "order": 9,
+      "exercise_id": "heel-taps",
+      "name": "Heel Taps",
+      "equipment": "none",
+      "depicted_equipment": [],
+      "priority": 1,
+      "selection_status": "not_started",
+      "archived": false,
+      "attempts_at_preparation": 0,
+      "primary_muscle": "abdominals",
+      "secondary_muscles": [],
+      "source_english": {
+        "description": "Heel Taps alternate short reaches from a supine crunch position toward each planted heel.",
+        "instructions": [
+          "Lie on your back with knees bent and feet planted.",
+          "Lift the shoulders slightly and brace the abdominals.",
+          "Reach one hand toward the same-side heel, then switch sides.",
+          "Alternate slowly while keeping the hips stable."
+        ],
+        "form_cues": [
+          "Keep the chin relaxed.",
+          "Reach from the ribs.",
+          "Exhale on each tap."
+        ],
+        "common_mistakes": [
+          "Pulling the neck.",
+          "Twisting the hips.",
+          "Rushing the taps."
+        ],
+        "safety_note": "Keep the range small if the neck starts pulling forward.",
+        "provenance": "adapted"
+      },
+      "source_english_sha256": "d5591c105af3e1f5fb582c70821017ebc311b5de9e2fcc901b2cffd6cec6ef0e",
+      "source_interpretation_note": "A single static phase interpreted from this exact English record; appearance reference provides no technique or equipment.",
+      "style_version": "v1",
+      "scene_description": "Supine knees bent, feet flat, shoulders lifted only slightly. Right arm reaches along the right side toward the RIGHT heel while the left arm stays near the left side. Pelvis stays stable; no head pulling or large hip twist. Elevated front-side view shows both feet, bent knees and same-side hand-to-heel approach.",
+      "essential_details": [
+        "Feet flat and knees bent",
+        "Small shoulder lift",
+        "Same-side heel reach"
+      ],
+      "generation_prompt": "STYLE v1. Use the supplied approved human reference ONLY for the person's identity, anatomical 3D style, body proportions, materials and detail. Do not copy its pose, dumbbells, muscle highlighting or composition. Match the same bald athletic adult male, opaque silver-gray sculpted anatomical muscle surfaces, simple fitted black shorts, barefoot, neutral face and consistent natural proportions. One person, one exercise, one characteristic phase: no second figure, collage or motion ghosts. Equipment must be only the simple items named in this scene, neutral gray/black materials, complete and mechanically ordinary. Primary muscles: localized coral #F26445. Named secondary muscles: the same hue at roughly 45% intensity blended with gray, clearly lighter. Do not highlight muscles absent from the catalog list, make the body or shorts transparent, or apply a global orange cast/glow. Preserve clothing; highlight visible anatomical surfaces without inventing see-through tissue. Square PNG, unchanged target 1024x1024, true transparent alpha background outside the person and required equipment/mat and through any openings; no white or checkerboard backdrop, drawn floor plane, UI, text, labels, frames, decorations or halo. Entire person and every required piece of equipment must fit with transparent margins; adapt scale/camera without distortion or cropping. Accent pigment must use base sRGB #F26445 = RGB(242,100,69); retain this hue through ordinary 3D shading. Secondary highlights use this hue at 40-50% intensity blended with the gray body, not transparent tissue.\n\nEXERCISE ID: heel-taps\nNAME: Heel Taps\nCatalog equipment: none\nDepict only: bodyweight, no equipment\nPrimary muscle: abdominals\nSecondary muscles: []\n\nONE SPECIFIC SCENE: Supine knees bent, feet flat, shoulders lifted only slightly. Right arm reaches along the right side toward the RIGHT heel while the left arm stays near the left side. Pelvis stays stable; no head pulling or large hip twist. Elevated front-side view shows both feet, bent knees and same-side hand-to-heel approach.\n\nENGLISH SOURCE (this ID only; do not substitute a familiar variant):\n{\"description\": \"Heel Taps alternate short reaches from a supine crunch position toward each planted heel.\", \"instructions\": [\"Lie on your back with knees bent and feet planted.\", \"Lift the shoulders slightly and brace the abdominals.\", \"Reach one hand toward the same-side heel, then switch sides.\", \"Alternate slowly while keeping the hips stable.\"], \"form_cues\": [\"Keep the chin relaxed.\", \"Reach from the ribs.\", \"Exhale on each tap.\"], \"common_mistakes\": [\"Pulling the neck.\", \"Twisting the hips.\", \"Rushing the taps.\"], \"safety_note\": \"Keep the range small if the neck starts pulling forward.\", \"provenance\": \"adapted\"}\nMaintain source contact points and safe control. Render only this characteristic phase, not the entire instruction sequence. Reference anatomy is opaque; localize the specified muscle pigment without copying reference highlights."
+    },
+    {
+      "order": 10,
+      "exercise_id": "russian-twist-body-weight",
+      "name": "Russian Twist (Bodyweight)",
+      "equipment": "none",
+      "depicted_equipment": [],
+      "priority": 1,
+      "selection_status": "not_started",
+      "archived": false,
+      "attempts_at_preparation": 0,
+      "primary_muscle": "abdominals",
+      "secondary_muscles": [],
+      "source_english": {
+        "description": "Russian Twist (Bodyweight) rotates the trunk from side to side while the seated torso stays braced and balanced.",
+        "instructions": [
+          "Sit with knees bent, lean back slightly, and keep both feet on the floor for the bodyweight version.",
+          "Brace the core and hold the hands together in front of the chest.",
+          "Rotate the torso to one side without collapsing the spine.",
+          "Return through center and rotate to the other side for alternating repetitions."
+        ],
+        "form_cues": [
+          "Keep the trunk braced.",
+          "Rotate the ribcage side to side while the pelvis stays balanced.",
+          "Finish each repetition under control."
+        ],
+        "common_mistakes": [
+          "Using momentum.",
+          "Losing the starting posture.",
+          "Rushing the return."
+        ],
+        "safety_note": "Use a comfortable range and stop if control or alignment deteriorates.",
+        "provenance": "adapted"
+      },
+      "source_english_sha256": "2559736821bc97130179f7f415c975e0d1e4a9b7499c1f338d31c6c697c22e99",
+      "source_interpretation_note": "A single static phase interpreted from this exact English record; appearance reference provides no technique or equipment.",
+      "style_version": "v1",
+      "scene_description": "Seated with knees bent and BOTH FEET STAYING PLANTED. Lean the torso back slightly while maintaining a long controlled spine. Hands clasped together in front of the chest, turn rib cage and hands to the right with pelvis stable. Front three-quarter view shows feet grounded. No weight or elevated feet.",
+      "essential_details": [
+        "Feet stay on support",
+        "Hands clasped at chest",
+        "Rib-cage rotation with stable pelvis"
+      ],
+      "generation_prompt": "STYLE v1. Use the supplied approved human reference ONLY for the person's identity, anatomical 3D style, body proportions, materials and detail. Do not copy its pose, dumbbells, muscle highlighting or composition. Match the same bald athletic adult male, opaque silver-gray sculpted anatomical muscle surfaces, simple fitted black shorts, barefoot, neutral face and consistent natural proportions. One person, one exercise, one characteristic phase: no second figure, collage or motion ghosts. Equipment must be only the simple items named in this scene, neutral gray/black materials, complete and mechanically ordinary. Primary muscles: localized coral #F26445. Named secondary muscles: the same hue at roughly 45% intensity blended with gray, clearly lighter. Do not highlight muscles absent from the catalog list, make the body or shorts transparent, or apply a global orange cast/glow. Preserve clothing; highlight visible anatomical surfaces without inventing see-through tissue. Square PNG, unchanged target 1024x1024, true transparent alpha background outside the person and required equipment/mat and through any openings; no white or checkerboard backdrop, drawn floor plane, UI, text, labels, frames, decorations or halo. Entire person and every required piece of equipment must fit with transparent margins; adapt scale/camera without distortion or cropping. Accent pigment must use base sRGB #F26445 = RGB(242,100,69); retain this hue through ordinary 3D shading. Secondary highlights use this hue at 40-50% intensity blended with the gray body, not transparent tissue.\n\nEXERCISE ID: russian-twist-body-weight\nNAME: Russian Twist (Bodyweight)\nCatalog equipment: none\nDepict only: bodyweight, no equipment\nPrimary muscle: abdominals\nSecondary muscles: []\n\nONE SPECIFIC SCENE: Seated with knees bent and BOTH FEET STAYING PLANTED. Lean the torso back slightly while maintaining a long controlled spine. Hands clasped together in front of the chest, turn rib cage and hands to the right with pelvis stable. Front three-quarter view shows feet grounded. No weight or elevated feet.\n\nENGLISH SOURCE (this ID only; do not substitute a familiar variant):\n{\"description\": \"Russian Twist (Bodyweight) rotates the trunk from side to side while the seated torso stays braced and balanced.\", \"instructions\": [\"Sit with knees bent, lean back slightly, and keep both feet on the floor for the bodyweight version.\", \"Brace the core and hold the hands together in front of the chest.\", \"Rotate the torso to one side without collapsing the spine.\", \"Return through center and rotate to the other side for alternating repetitions.\"], \"form_cues\": [\"Keep the trunk braced.\", \"Rotate the ribcage side to side while the pelvis stays balanced.\", \"Finish each repetition under control.\"], \"common_mistakes\": [\"Using momentum.\", \"Losing the starting posture.\", \"Rushing the return.\"], \"safety_note\": \"Use a comfortable range and stop if control or alignment deteriorates.\", \"provenance\": \"adapted\"}\nMaintain source contact points and safe control. Render only this characteristic phase, not the entire instruction sequence. Reference anatomy is opaque; localize the specified muscle pigment without copying reference highlights."
+    }
+  ]
+}

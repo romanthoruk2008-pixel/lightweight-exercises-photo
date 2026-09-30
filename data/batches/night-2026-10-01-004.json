@@ -1,0 +1,558 @@
+{
+  "schema_version": 2,
+  "prepared_at": "2026-10-01T02:15:57.244145+03:00",
+  "planned_night": "2026-10-01",
+  "timezone": "Europe/Kyiv",
+  "intended_executor": "Luna after user model switch and separate generation instruction",
+  "status": "prepared_not_generated",
+  "generation_authorized_now": false,
+  "catalog_path": "data/exercises/catalog.json",
+  "catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+  "progress_path": "data/exercise-image-progress.json",
+  "progress_sha256_at_preparation": "75150761210ac1ec25a45935a4cb73c18695eb584ca106bd64e38ada023447d3",
+  "style_version": "v1",
+  "style_path": "docs/exercise-image-style.md",
+  "style_sha256_at_preparation": "8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578",
+  "human_reference": {
+    "repository_path": "assets/exercises/biceps-curl-dumbbell.png",
+    "sha256": "52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f",
+    "repository_url": "https://github.com/romanthoruk2008-pixel/lightweight-exercises-photo/blob/15298e0294678a2ea9878797111ddc6378d4b22a/assets/exercises/biceps-curl-dumbbell.png",
+    "source_exercise_id": "biceps-curl-dumbbell",
+    "source_attempt": 1,
+    "source": "user-approved new pilot result; not one of the 48 historical source PNGs",
+    "role": "human_appearance_and_material_style_only",
+    "do_not_copy": [
+      "pose",
+      "equipment",
+      "muscle_highlights",
+      "composition"
+    ]
+  },
+  "selection_semantics": "Untouched records already have user_review=pending by default. These are eligible only when status=not_started, attempts=0 and no new result/accepted path/attempt history exists. Generated results awaiting user review are excluded. No progress fields changed by preparation.",
+  "constraints": {
+    "built_in_imagegen_only": true,
+    "paid_api_allowed": false,
+    "subagents_allowed": false,
+    "supabase_upload_allowed": false,
+    "archived_allowed": false,
+    "machines_cables_pulleys_complex_frames_allowed": false,
+    "historical_48_pngs_allowed_as_reference": false,
+    "one_image_per_id": true,
+    "one_person_one_phase": true,
+    "revalidate_live_progress_before_every_generation": true,
+    "skip_approved_uploaded_or_existing_result": true,
+    "automatic_retries_allowed": false,
+    "save_result_and_progress_immediately": true,
+    "user_review_until_explicit_acceptance": "pending",
+    "checkpoint_every": 10,
+    "technical_checks": [
+      "PNG exists and decodes",
+      "square; record actual dimensions; unchanged 1024x1024 target",
+      "alpha channel AND actual transparent background pixels",
+      "exercise ID, result path and SHA256 match"
+    ],
+    "agent_visual_review_policy": "Pilot-only first-two review does not automatically apply here. No new automatic visual reviews or retries are authorized by preparation.",
+    "no_automatic_resize_or_retry_due_to_size": true,
+    "output_root_outside_git": "/workspace/exercise-image-results/night-2026-10-01-004"
+  },
+  "batch_id": "night-2026-10-01-004",
+  "exercise_ids": [
+    "lying-neck-curls",
+    "hip-thrust",
+    "incline-push-ups",
+    "single-leg-hip-thrust",
+    "bench-press-dumbbell",
+    "reverse-curl-dumbbell",
+    "seated-lateral-raise-dumbbell",
+    "seated-palms-up-wrist-curl-dumbbell",
+    "triceps-extension-dumbbell",
+    "squat-dumbbell"
+  ],
+  "exercise_count": 10,
+  "exercises": [
+    {
+      "order": 1,
+      "exercise_id": "lying-neck-curls",
+      "name": "Lying Neck Curls",
+      "equipment": "none",
+      "depicted_equipment": [],
+      "priority": 1,
+      "selection_status": "not_started",
+      "archived": false,
+      "attempts_at_preparation": 0,
+      "primary_muscle": "neck",
+      "secondary_muscles": [],
+      "source_english": {
+        "description": "Lying neck curls gently nod the head toward the chest through a small supported range.",
+        "instructions": [
+          "Lie on your back with the head supported and the shoulders relaxed.",
+          "Tuck the chin slightly to lengthen the back of the neck.",
+          "Lift the head a small distance by nodding the chin toward the chest.",
+          "Lower the head slowly back to the support without forcing the range."
+        ],
+        "form_cues": [
+          "Keep the movement small.",
+          "Move from the neck rather than the shoulders.",
+          "Breathe normally."
+        ],
+        "common_mistakes": [
+          "Jerking the head.",
+          "Lifting the shoulders off the floor.",
+          "Forcing the chin tightly to the chest."
+        ],
+        "safety_note": "Use no external load and stop immediately for neck pain, dizziness, or unusual symptoms.",
+        "provenance": "authored"
+      },
+      "source_english_sha256": "94f8fc147b9eca09ecbb71f73ca4c7791bd7070bf9fc61b2beb029ea892accad",
+      "source_interpretation_note": "A single static phase interpreted from this exact English record; appearance reference provides no technique or equipment.",
+      "style_version": "v1",
+      "scene_description": "Supine, torso and legs resting comfortably, shoulders fully supported and relaxed. Small active neck-flexion phase: chin gently nods toward chest and HEAD ONLY lifts a small distance above its supported starting level. Neck not forcefully curled, shoulders do not rise, no external load. Side three-quarter view clearly shows the small head lift.",
+      "essential_details": [
+        "Only head lifts slightly",
+        "Shoulders supported and relaxed",
+        "No weight or forced neck flexion"
+      ],
+      "generation_prompt": "STYLE v1. Use the supplied approved human reference ONLY for the person's identity, anatomical 3D style, body proportions, materials and detail. Do not copy its pose, dumbbells, muscle highlighting or composition. Match the same bald athletic adult male, opaque silver-gray sculpted anatomical muscle surfaces, simple fitted black shorts, barefoot, neutral face and consistent natural proportions. One person, one exercise, one characteristic phase: no second figure, collage or motion ghosts. Equipment must be only the simple items named in this scene, neutral gray/black materials, complete and mechanically ordinary. Primary muscles: localized coral #F26445. Named secondary muscles: the same hue at roughly 45% intensity blended with gray, clearly lighter. Do not highlight muscles absent from the catalog list, make the body or shorts transparent, or apply a global orange cast/glow. Preserve clothing; highlight visible anatomical surfaces without inventing see-through tissue. Square PNG, unchanged target 1024x1024, true transparent alpha background outside the person and required equipment/mat and through any openings; no white or checkerboard backdrop, drawn floor plane, UI, text, labels, frames, decorations or halo. Entire person and every required piece of equipment must fit with transparent margins; adapt scale/camera without distortion or cropping. Accent pigment must use base sRGB #F26445 = RGB(242,100,69); retain this hue through ordinary 3D shading. Secondary highlights use this hue at 40-50% intensity blended with the gray body, not transparent tissue.\n\nEXERCISE ID: lying-neck-curls\nNAME: Lying Neck Curls\nCatalog equipment: none\nDepict only: bodyweight, no equipment\nPrimary muscle: neck\nSecondary muscles: []\n\nONE SPECIFIC SCENE: Supine, torso and legs resting comfortably, shoulders fully supported and relaxed. Small active neck-flexion phase: chin gently nods toward chest and HEAD ONLY lifts a small distance above its supported starting level. Neck not forcefully curled, shoulders do not rise, no external load. Side three-quarter view clearly shows the small head lift.\n\nENGLISH SOURCE (this ID only; do not substitute a familiar variant):\n{\"description\": \"Lying neck curls gently nod the head toward the chest through a small supported range.\", \"instructions\": [\"Lie on your back with the head supported and the shoulders relaxed.\", \"Tuck the chin slightly to lengthen the back of the neck.\", \"Lift the head a small distance by nodding the chin toward the chest.\", \"Lower the head slowly back to the support without forcing the range.\"], \"form_cues\": [\"Keep the movement small.\", \"Move from the neck rather than the shoulders.\", \"Breathe normally.\"], \"common_mistakes\": [\"Jerking the head.\", \"Lifting the shoulders off the floor.\", \"Forcing the chin tightly to the chest.\"], \"safety_note\": \"Use no external load and stop immediately for neck pain, dizziness, or unusual symptoms.\", \"provenance\": \"authored\"}\nMaintain source contact points and safe control. Render only this characteristic phase, not the entire instruction sequence. Reference anatomy is opaque; localize the specified muscle pigment without copying reference highlights."
+    },
+    {
+      "order": 2,
+      "exercise_id": "hip-thrust",
+      "name": "Hip Thrust",
+      "equipment": "none",
+      "depicted_equipment": [
+        "ordinary flat bench"
+      ],
+      "priority": 2,
+      "selection_status": "not_started",
+      "archived": false,
+      "attempts_at_preparation": 0,
+      "primary_muscle": "glutes",
+      "secondary_muscles": [
+        "hamstrings",
+        "quadriceps"
+      ],
+      "source_english": {
+        "description": "A bodyweight hip thrust uses the upper back and shoulders against a stable bench while the glutes drive the hips upward from the floor.",
+        "instructions": [
+          "Sit on the floor with your upper back and shoulders against a stable bench, knees bent, and feet flat.",
+          "Brace your core and press through both feet to lift the hips until the torso and thighs align.",
+          "Pause and squeeze the glutes without arching the lower back.",
+          "Lower the hips under control until they lightly reach the floor, then repeat."
+        ],
+        "form_cues": [
+          "Keep the ribs down as the hips rise.",
+          "Drive evenly through both feet.",
+          "Finish with glute tension, not a back arch."
+        ],
+        "common_mistakes": [
+          "Pushing mostly through the toes.",
+          "Overarching the lower back at the top.",
+          "Dropping the hips instead of controlling the descent."
+        ],
+        "safety_note": "Stop the set if you cannot keep your pelvis level and your lower back neutral.",
+        "provenance": "authored"
+      },
+      "source_english_sha256": "5439ebc8a7d596a58c7d7dd1681cf9ca0b89aac6fab064d9f956472d05bc6a00",
+      "source_interpretation_note": "A single static phase interpreted from this exact English record; appearance reference provides no technique or equipment.",
+      "style_version": "v1",
+      "scene_description": "Top bodyweight hip thrust with UPPER BACK AND SHOULDERS braced on the edge/top of a stable ordinary flat bench. Both soles flat, knees bent, hips raised until torso and thighs align; ribs down, no back arch. Arms rest without holding a load. Side three-quarter view shows full bench, upper-back contact and both feet.",
+      "essential_details": [
+        "Upper back against ordinary bench",
+        "Both feet flat",
+        "Level hip extension without load"
+      ],
+      "generation_prompt": "STYLE v1. Use the supplied approved human reference ONLY for the person's identity, anatomical 3D style, body proportions, materials and detail. Do not copy its pose, dumbbells, muscle highlighting or composition. Match the same bald athletic adult male, opaque silver-gray sculpted anatomical muscle surfaces, simple fitted black shorts, barefoot, neutral face and consistent natural proportions. One person, one exercise, one characteristic phase: no second figure, collage or motion ghosts. Equipment must be only the simple items named in this scene, neutral gray/black materials, complete and mechanically ordinary. Primary muscles: localized coral #F26445. Named secondary muscles: the same hue at roughly 45% intensity blended with gray, clearly lighter. Do not highlight muscles absent from the catalog list, make the body or shorts transparent, or apply a global orange cast/glow. Preserve clothing; highlight visible anatomical surfaces without inventing see-through tissue. Square PNG, unchanged target 1024x1024, true transparent alpha background outside the person and required equipment/mat and through any openings; no white or checkerboard backdrop, drawn floor plane, UI, text, labels, frames, decorations or halo. Entire person and every required piece of equipment must fit with transparent margins; adapt scale/camera without distortion or cropping. Accent pigment must use base sRGB #F26445 = RGB(242,100,69); retain this hue through ordinary 3D shading. Secondary highlights use this hue at 40-50% intensity blended with the gray body, not transparent tissue.\n\nEXERCISE ID: hip-thrust\nNAME: Hip Thrust\nCatalog equipment: none\nDepict only: ordinary flat bench\nPrimary muscle: glutes\nSecondary muscles: [\"hamstrings\", \"quadriceps\"]\n\nONE SPECIFIC SCENE: Top bodyweight hip thrust with UPPER BACK AND SHOULDERS braced on the edge/top of a stable ordinary flat bench. Both soles flat, knees bent, hips raised until torso and thighs align; ribs down, no back arch. Arms rest without holding a load. Side three-quarter view shows full bench, upper-back contact and both feet.\n\nENGLISH SOURCE (this ID only; do not substitute a familiar variant):\n{\"description\": \"A bodyweight hip thrust uses the upper back and shoulders against a stable bench while the glutes drive the hips upward from the floor.\", \"instructions\": [\"Sit on the floor with your upper back and shoulders against a stable bench, knees bent, and feet flat.\", \"Brace your core and press through both feet to lift the hips until the torso and thighs align.\", \"Pause and squeeze the glutes without arching the lower back.\", \"Lower the hips under control until they lightly reach the floor, then repeat.\"], \"form_cues\": [\"Keep the ribs down as the hips rise.\", \"Drive evenly through both feet.\", \"Finish with glute tension, not a back arch.\"], \"common_mistakes\": [\"Pushing mostly through the toes.\", \"Overarching the lower back at the top.\", \"Dropping the hips instead of controlling the descent.\"], \"safety_note\": \"Stop the set if you cannot keep your pelvis level and your lower back neutral.\", \"provenance\": \"authored\"}\nMaintain source contact points and safe control. Render only this characteristic phase, not the entire instruction sequence. Reference anatomy is opaque; localize the specified muscle pigment without copying reference highlights."
+    },
+    {
+      "order": 3,
+      "exercise_id": "incline-push-ups",
+      "name": "Incline Push Ups",
+      "equipment": "none",
+      "depicted_equipment": [
+        "ordinary flat bench"
+      ],
+      "priority": 2,
+      "selection_status": "not_started",
+      "archived": false,
+      "attempts_at_preparation": 0,
+      "primary_muscle": "chest",
+      "secondary_muscles": [
+        "shoulders",
+        "triceps"
+      ],
+      "source_english": {
+        "description": "With the hands on a raised surface, lower the chest toward the support and press back to a straight-body plank.",
+        "instructions": [
+          "Place your hands on an elevated surface, such as a bench or step, slightly wider than shoulder-width apart.",
+          "Extend your legs behind you, resting on the balls of your feet, creating a straight line from your head to your heels.",
+          "Lower your chest towards the elevated surface by bending your elbows, keeping your body in a straight line.",
+          "Pause for a moment at the bottom, then push yourself back up to the starting position by straightening your arms.",
+          "Repeat for the desired number of repetitions."
+        ],
+        "form_cues": [
+          "Keep wrists stacked over the elbows.",
+          "Brace the trunk and keep the shoulder blades controlled.",
+          "Use a smooth lower and press."
+        ],
+        "common_mistakes": [
+          "Flaring the elbows.",
+          "Arching or sagging the trunk.",
+          "Bouncing at the bottom."
+        ],
+        "safety_note": "Use a stable setup and stop before the shoulders or wrists lose controlled alignment.",
+        "provenance": "adapted"
+      },
+      "source_english_sha256": "ee59455e50a2333ed67596d180a629afc5f46b4dd25a5368371e35fb6f74e6ab",
+      "source_interpretation_note": "A single static phase interpreted from this exact English record; appearance reference provides no technique or equipment.",
+      "style_version": "v1",
+      "scene_description": "Lowered incline pushup with two palms on the stable top of an ordinary flat bench, slightly wider than shoulders. Legs extend behind, balls of both feet grounded, body straight from head to heels; elbows bend as chest approaches elevated support. Side three-quarter view shows full bench and hand/foot contacts. No adjustable machine or foot elevation.",
+      "essential_details": [
+        "Hands on bench, feet on ground",
+        "Straight head-to-heel line",
+        "Controlled elbows and chest lowering"
+      ],
+      "generation_prompt": "STYLE v1. Use the supplied approved human reference ONLY for the person's identity, anatomical 3D style, body proportions, materials and detail. Do not copy its pose, dumbbells, muscle highlighting or composition. Match the same bald athletic adult male, opaque silver-gray sculpted anatomical muscle surfaces, simple fitted black shorts, barefoot, neutral face and consistent natural proportions. One person, one exercise, one characteristic phase: no second figure, collage or motion ghosts. Equipment must be only the simple items named in this scene, neutral gray/black materials, complete and mechanically ordinary. Primary muscles: localized coral #F26445. Named secondary muscles: the same hue at roughly 45% intensity blended with gray, clearly lighter. Do not highlight muscles absent from the catalog list, make the body or shorts transparent, or apply a global orange cast/glow. Preserve clothing; highlight visible anatomical surfaces without inventing see-through tissue. Square PNG, unchanged target 1024x1024, true transparent alpha background outside the person and required equipment/mat and through any openings; no white or checkerboard backdrop, drawn floor plane, UI, text, labels, frames, decorations or halo. Entire person and every required piece of equipment must fit with transparent margins; adapt scale/camera without distortion or cropping. Accent pigment must use base sRGB #F26445 = RGB(242,100,69); retain this hue through ordinary 3D shading. Secondary highlights use this hue at 40-50% intensity blended with the gray body, not transparent tissue.\n\nEXERCISE ID: incline-push-ups\nNAME: Incline Push Ups\nCatalog equipment: none\nDepict only: ordinary flat bench\nPrimary muscle: chest\nSecondary muscles: [\"shoulders\", \"triceps\"]\n\nONE SPECIFIC SCENE: Lowered incline pushup with two palms on the stable top of an ordinary flat bench, slightly wider than shoulders. Legs extend behind, balls of both feet grounded, body straight from head to heels; elbows bend as chest approaches elevated support. Side three-quarter view shows full bench and hand/foot contacts. No adjustable machine or foot elevation.\n\nENGLISH SOURCE (this ID only; do not substitute a familiar variant):\n{\"description\": \"With the hands on a raised surface, lower the chest toward the support and press back to a straight-body plank.\", \"instructions\": [\"Place your hands on an elevated surface, such as a bench or step, slightly wider than shoulder-width apart.\", \"Extend your legs behind you, resting on the balls of your feet, creating a straight line from your head to your heels.\", \"Lower your chest towards the elevated surface by bending your elbows, keeping your body in a straight line.\", \"Pause for a moment at the bottom, then push yourself back up to the starting position by straightening your arms.\", \"Repeat for the desired number of repetitions.\"], \"form_cues\": [\"Keep wrists stacked over the elbows.\", \"Brace the trunk and keep the shoulder blades controlled.\", \"Use a smooth lower and press.\"], \"common_mistakes\": [\"Flaring the elbows.\", \"Arching or sagging the trunk.\", \"Bouncing at the bottom.\"], \"safety_note\": \"Use a stable setup and stop before the shoulders or wrists lose controlled alignment.\", \"provenance\": \"adapted\"}\nMaintain source contact points and safe control. Render only this characteristic phase, not the entire instruction sequence. Reference anatomy is opaque; localize the specified muscle pigment without copying reference highlights."
+    },
+    {
+      "order": 4,
+      "exercise_id": "single-leg-hip-thrust",
+      "name": "Single Leg Hip Thrust",
+      "equipment": "none",
+      "depicted_equipment": [
+        "ordinary flat bench"
+      ],
+      "priority": 2,
+      "selection_status": "not_started",
+      "archived": false,
+      "attempts_at_preparation": 0,
+      "primary_muscle": "glutes",
+      "secondary_muscles": [
+        "hamstrings",
+        "quadriceps"
+      ],
+      "source_english": {
+        "description": "Brace the upper back on a bench, drive through one foot to lift the hips with the other leg raised, then switch.",
+        "instructions": [
+          "Set the upper back against a flat bench with one foot planted and the other leg lifted.",
+          "Brace the abdomen and keep the lifted knee over the hip.",
+          "Drive through the planted heel until the hip is fully extended.",
+          "Lower the pelvis slowly, then switch sides."
+        ],
+        "form_cues": [
+          "Keep the support points fixed.",
+          "Use a quiet controlled path.",
+          "Reset fully between repetitions."
+        ],
+        "common_mistakes": [
+          "Shifting the support point.",
+          "Using momentum instead of the target joint path.",
+          "Cutting the return short."
+        ],
+        "safety_note": "Keep the bench stable and stop if the pelvis cannot stay level.",
+        "provenance": "authored"
+      },
+      "source_english_sha256": "dcb61f5c85b29f140817e50def25954cca472645e7f4c912fe5673e5d33c83d0",
+      "source_interpretation_note": "A single static phase interpreted from this exact English record; appearance reference provides no technique or equipment.",
+      "style_version": "v1",
+      "scene_description": "Top single-leg hip thrust, upper back braced against an ordinary flat bench, RIGHT FOOT planted and right hip extended. LEFT LEG lifted with its BENT KNEE OVER THE LEFT HIP. Pelvis level, ribs down, no lumbar arch; show full bench and support contacts from side three-quarter camera. No load.",
+      "essential_details": [
+        "One planted foot",
+        "Free bent knee over hip",
+        "Upper-back bench contact with level pelvis"
+      ],
+      "generation_prompt": "STYLE v1. Use the supplied approved human reference ONLY for the person's identity, anatomical 3D style, body proportions, materials and detail. Do not copy its pose, dumbbells, muscle highlighting or composition. Match the same bald athletic adult male, opaque silver-gray sculpted anatomical muscle surfaces, simple fitted black shorts, barefoot, neutral face and consistent natural proportions. One person, one exercise, one characteristic phase: no second figure, collage or motion ghosts. Equipment must be only the simple items named in this scene, neutral gray/black materials, complete and mechanically ordinary. Primary muscles: localized coral #F26445. Named secondary muscles: the same hue at roughly 45% intensity blended with gray, clearly lighter. Do not highlight muscles absent from the catalog list, make the body or shorts transparent, or apply a global orange cast/glow. Preserve clothing; highlight visible anatomical surfaces without inventing see-through tissue. Square PNG, unchanged target 1024x1024, true transparent alpha background outside the person and required equipment/mat and through any openings; no white or checkerboard backdrop, drawn floor plane, UI, text, labels, frames, decorations or halo. Entire person and every required piece of equipment must fit with transparent margins; adapt scale/camera without distortion or cropping. Accent pigment must use base sRGB #F26445 = RGB(242,100,69); retain this hue through ordinary 3D shading. Secondary highlights use this hue at 40-50% intensity blended with the gray body, not transparent tissue.\n\nEXERCISE ID: single-leg-hip-thrust\nNAME: Single Leg Hip Thrust\nCatalog equipment: none\nDepict only: ordinary flat bench\nPrimary muscle: glutes\nSecondary muscles: [\"hamstrings\", \"quadriceps\"]\n\nONE SPECIFIC SCENE: Top single-leg hip thrust, upper back braced against an ordinary flat bench, RIGHT FOOT planted and right hip extended. LEFT LEG lifted with its BENT KNEE OVER THE LEFT HIP. Pelvis level, ribs down, no lumbar arch; show full bench and support contacts from side three-quarter camera. No load.\n\nENGLISH SOURCE (this ID only; do not substitute a familiar variant):\n{\"description\": \"Brace the upper back on a bench, drive through one foot to lift the hips with the other leg raised, then switch.\", \"instructions\": [\"Set the upper back against a flat bench with one foot planted and the other leg lifted.\", \"Brace the abdomen and keep the lifted knee over the hip.\", \"Drive through the planted heel until the hip is fully extended.\", \"Lower the pelvis slowly, then switch sides.\"], \"form_cues\": [\"Keep the support points fixed.\", \"Use a quiet controlled path.\", \"Reset fully between repetitions.\"], \"common_mistakes\": [\"Shifting the support point.\", \"Using momentum instead of the target joint path.\", \"Cutting the return short.\"], \"safety_note\": \"Keep the bench stable and stop if the pelvis cannot stay level.\", \"provenance\": \"authored\"}\nMaintain source contact points and safe control. Render only this characteristic phase, not the entire instruction sequence. Reference anatomy is opaque; localize the specified muscle pigment without copying reference highlights."
+    },
+    {
+      "order": 5,
+      "exercise_id": "bench-press-dumbbell",
+      "name": "Bench Press (Dumbbell)",
+      "equipment": "dumbbell",
+      "depicted_equipment": [
+        "two dumbbells",
+        "ordinary flat bench"
+      ],
+      "priority": 2,
+      "selection_status": "not_started",
+      "archived": false,
+      "attempts_at_preparation": 0,
+      "primary_muscle": "chest",
+      "secondary_muscles": [
+        "triceps",
+        "shoulders"
+      ],
+      "source_english": {
+        "description": "Bench Press (Dumbbell) is a supported chest press using one dumbbell in each hand.",
+        "instructions": [
+          "Lie on a flat bench with feet planted. Grip one dumbbell in each hand and hold it over the chest.",
+          "Lower the resistance toward the chest with elbows controlled.",
+          "Pause without bouncing or losing shoulder position.",
+          "Press back to straight arms, then rerack or set the weights down safely."
+        ],
+        "form_cues": [
+          "Keep wrists stacked.",
+          "Keep shoulder blades supported.",
+          "Press evenly."
+        ],
+        "common_mistakes": [
+          "Bouncing at the bottom.",
+          "Flaring the elbows.",
+          "Arching to shorten the range."
+        ],
+        "safety_note": "Use a spotter or safeties for the loaded press and stop before shoulder control is lost.",
+        "provenance": "adapted"
+      },
+      "source_english_sha256": "3dc7fd2495fc42d5e5087d9ccfd4e5e913d229e0848c528b8ce2e5121f5a15bc",
+      "source_interpretation_note": "A single static phase interpreted from this exact English record; appearance reference provides no technique or equipment.",
+      "style_version": "v1",
+      "scene_description": "Supine on an ordinary flat bench, head/upper back/pelvis supported and both feet planted. One dumbbell in each hand, lowered chest-press phase: elbows bent under control, dumbbells beside the chest, wrists aligned above forearms with fingers wrapped securely around handles. Shoulder blades controlled, no bounce or exaggerated arch. Side-front elevated view shows both separate weights and full bench; no rack.",
+      "essential_details": [
+        "One dumbbell in each hand",
+        "Flat bench and planted feet",
+        "Wrists aligned and controlled bent elbows"
+      ],
+      "generation_prompt": "STYLE v1. Use the supplied approved human reference ONLY for the person's identity, anatomical 3D style, body proportions, materials and detail. Do not copy its pose, dumbbells, muscle highlighting or composition. Match the same bald athletic adult male, opaque silver-gray sculpted anatomical muscle surfaces, simple fitted black shorts, barefoot, neutral face and consistent natural proportions. One person, one exercise, one characteristic phase: no second figure, collage or motion ghosts. Equipment must be only the simple items named in this scene, neutral gray/black materials, complete and mechanically ordinary. Primary muscles: localized coral #F26445. Named secondary muscles: the same hue at roughly 45% intensity blended with gray, clearly lighter. Do not highlight muscles absent from the catalog list, make the body or shorts transparent, or apply a global orange cast/glow. Preserve clothing; highlight visible anatomical surfaces without inventing see-through tissue. Square PNG, unchanged target 1024x1024, true transparent alpha background outside the person and required equipment/mat and through any openings; no white or checkerboard backdrop, drawn floor plane, UI, text, labels, frames, decorations or halo. Entire person and every required piece of equipment must fit with transparent margins; adapt scale/camera without distortion or cropping. Accent pigment must use base sRGB #F26445 = RGB(242,100,69); retain this hue through ordinary 3D shading. Secondary highlights use this hue at 40-50% intensity blended with the gray body, not transparent tissue.\n\nEXERCISE ID: bench-press-dumbbell\nNAME: Bench Press (Dumbbell)\nCatalog equipment: dumbbell\nDepict only: two dumbbells, ordinary flat bench\nPrimary muscle: chest\nSecondary muscles: [\"triceps\", \"shoulders\"]\n\nONE SPECIFIC SCENE: Supine on an ordinary flat bench, head/upper back/pelvis supported and both feet planted. One dumbbell in each hand, lowered chest-press phase: elbows bent under control, dumbbells beside the chest, wrists aligned above forearms with fingers wrapped securely around handles. Shoulder blades controlled, no bounce or exaggerated arch. Side-front elevated view shows both separate weights and full bench; no rack.\n\nENGLISH SOURCE (this ID only; do not substitute a familiar variant):\n{\"description\": \"Bench Press (Dumbbell) is a supported chest press using one dumbbell in each hand.\", \"instructions\": [\"Lie on a flat bench with feet planted. Grip one dumbbell in each hand and hold it over the chest.\", \"Lower the resistance toward the chest with elbows controlled.\", \"Pause without bouncing or losing shoulder position.\", \"Press back to straight arms, then rerack or set the weights down safely.\"], \"form_cues\": [\"Keep wrists stacked.\", \"Keep shoulder blades supported.\", \"Press evenly.\"], \"common_mistakes\": [\"Bouncing at the bottom.\", \"Flaring the elbows.\", \"Arching to shorten the range.\"], \"safety_note\": \"Use a spotter or safeties for the loaded press and stop before shoulder control is lost.\", \"provenance\": \"adapted\"}\nMaintain source contact points and safe control. Render only this characteristic phase, not the entire instruction sequence. Reference anatomy is opaque; localize the specified muscle pigment without copying reference highlights."
+    },
+    {
+      "order": 6,
+      "exercise_id": "reverse-curl-dumbbell",
+      "name": "Reverse Curl (Dumbbell)",
+      "equipment": "dumbbell",
+      "depicted_equipment": [
+        "two dumbbells"
+      ],
+      "priority": 2,
+      "selection_status": "not_started",
+      "archived": false,
+      "attempts_at_preparation": 0,
+      "primary_muscle": "biceps",
+      "secondary_muscles": [
+        "forearms"
+      ],
+      "source_english": {
+        "description": "Reverse Curl (Dumbbell) curls the palms-down weight toward the shoulders while keeping the upper arms still.",
+        "instructions": [
+          "Stand up straight with a dumbbell in each hand, palms facing down and arms fully extended.",
+          "Keeping your upper arms stationary, exhale and curl the weights while contracting your biceps.",
+          "Continue to raise the dumbbells until your biceps are fully contracted and the dumbbells are at shoulder level.",
+          "Hold the contracted position for a brief pause as you squeeze your biceps.",
+          "Inhale and slowly begin to lower the dumbbells back to the starting position.",
+          "Repeat for the desired number of repetitions."
+        ],
+        "form_cues": [
+          "Keep the upper arms still.",
+          "Use a steady squeeze at the top.",
+          "Lower through the full range."
+        ],
+        "common_mistakes": [
+          "Swinging the body.",
+          "Driving the elbows forward.",
+          "Dropping the weight."
+        ],
+        "safety_note": "Choose a load that keeps the wrists and elbows aligned without momentum.",
+        "provenance": "adapted"
+      },
+      "source_english_sha256": "28936dcb2a304cccb0eb5c604622825dc58084c0896efc6840fef8f8563afffb",
+      "source_interpretation_note": "A single static phase interpreted from this exact English record; appearance reference provides no technique or equipment.",
+      "style_version": "v1",
+      "scene_description": "Standing tall, feet shoulder-width, one dumbbell in each hand with PRONATED PALMS DOWN. Top controlled curl phase, elbows near sides and upper arms still; weights approach shoulders with neutral aligned wrists. Front three-quarter view shows palms-down grip and two separate dumbbells. No torso swing or palms-up supination.",
+      "essential_details": [
+        "Palms down",
+        "Stationary upper arms",
+        "Two dumbbells, no momentum"
+      ],
+      "generation_prompt": "STYLE v1. Use the supplied approved human reference ONLY for the person's identity, anatomical 3D style, body proportions, materials and detail. Do not copy its pose, dumbbells, muscle highlighting or composition. Match the same bald athletic adult male, opaque silver-gray sculpted anatomical muscle surfaces, simple fitted black shorts, barefoot, neutral face and consistent natural proportions. One person, one exercise, one characteristic phase: no second figure, collage or motion ghosts. Equipment must be only the simple items named in this scene, neutral gray/black materials, complete and mechanically ordinary. Primary muscles: localized coral #F26445. Named secondary muscles: the same hue at roughly 45% intensity blended with gray, clearly lighter. Do not highlight muscles absent from the catalog list, make the body or shorts transparent, or apply a global orange cast/glow. Preserve clothing; highlight visible anatomical surfaces without inventing see-through tissue. Square PNG, unchanged target 1024x1024, true transparent alpha background outside the person and required equipment/mat and through any openings; no white or checkerboard backdrop, drawn floor plane, UI, text, labels, frames, decorations or halo. Entire person and every required piece of equipment must fit with transparent margins; adapt scale/camera without distortion or cropping. Accent pigment must use base sRGB #F26445 = RGB(242,100,69); retain this hue through ordinary 3D shading. Secondary highlights use this hue at 40-50% intensity blended with the gray body, not transparent tissue.\n\nEXERCISE ID: reverse-curl-dumbbell\nNAME: Reverse Curl (Dumbbell)\nCatalog equipment: dumbbell\nDepict only: two dumbbells\nPrimary muscle: biceps\nSecondary muscles: [\"forearms\"]\n\nONE SPECIFIC SCENE: Standing tall, feet shoulder-width, one dumbbell in each hand with PRONATED PALMS DOWN. Top controlled curl phase, elbows near sides and upper arms still; weights approach shoulders with neutral aligned wrists. Front three-quarter view shows palms-down grip and two separate dumbbells. No torso swing or palms-up supination.\n\nENGLISH SOURCE (this ID only; do not substitute a familiar variant):\n{\"description\": \"Reverse Curl (Dumbbell) curls the palms-down weight toward the shoulders while keeping the upper arms still.\", \"instructions\": [\"Stand up straight with a dumbbell in each hand, palms facing down and arms fully extended.\", \"Keeping your upper arms stationary, exhale and curl the weights while contracting your biceps.\", \"Continue to raise the dumbbells until your biceps are fully contracted and the dumbbells are at shoulder level.\", \"Hold the contracted position for a brief pause as you squeeze your biceps.\", \"Inhale and slowly begin to lower the dumbbells back to the starting position.\", \"Repeat for the desired number of repetitions.\"], \"form_cues\": [\"Keep the upper arms still.\", \"Use a steady squeeze at the top.\", \"Lower through the full range.\"], \"common_mistakes\": [\"Swinging the body.\", \"Driving the elbows forward.\", \"Dropping the weight.\"], \"safety_note\": \"Choose a load that keeps the wrists and elbows aligned without momentum.\", \"provenance\": \"adapted\"}\nMaintain source contact points and safe control. Render only this characteristic phase, not the entire instruction sequence. Reference anatomy is opaque; localize the specified muscle pigment without copying reference highlights."
+    },
+    {
+      "order": 7,
+      "exercise_id": "seated-lateral-raise-dumbbell",
+      "name": "Seated Lateral Raise (Dumbbell)",
+      "equipment": "dumbbell",
+      "depicted_equipment": [
+        "two dumbbells",
+        "ordinary flat bench"
+      ],
+      "priority": 2,
+      "selection_status": "not_started",
+      "archived": false,
+      "attempts_at_preparation": 0,
+      "primary_muscle": "shoulders",
+      "secondary_muscles": [],
+      "source_english": {
+        "description": "Sit with dumbbells beside the thighs, raise both arms sideways to shoulder height, then lower them.",
+        "instructions": [
+          "Sit on a bench with your feet flat on the ground and a dumbbell in each hand, resting on your thighs.",
+          "Keep your back straight and core engaged.",
+          "Raise the dumbbells to your sides with a slight bend in your elbows, until your arms are parallel to the ground.",
+          "Pause for a moment at the top, then slowly lower the dumbbells back down to the starting position.",
+          "Repeat for the desired number of repetitions."
+        ],
+        "form_cues": [
+          "Keep the torso still.",
+          "Lift in the exercise plane.",
+          "Lower quietly."
+        ],
+        "common_mistakes": [
+          "Shifting the support point.",
+          "Using momentum instead of the target joint path.",
+          "Cutting the return short."
+        ],
+        "safety_note": "Use a secure setup and stop if alignment or control is lost.",
+        "provenance": "adapted"
+      },
+      "source_english_sha256": "1098655e5e7395cb5340064b440ba4ca73adb91d54c52bb6a72064f740ad736c",
+      "source_interpretation_note": "A single static phase interpreted from this exact English record; appearance reference provides no technique or equipment.",
+      "style_version": "v1",
+      "scene_description": "Seated upright on an ordinary flat bench, both feet flat. One dumbbell securely held in each hand; BOTH ARMS extend OUT TO THE SIDES at about shoulder height with a soft elbow bend. Shoulders down, torso vertical and wrists aligned, no backward lean. Front three-quarter view shows lateral arm path, grip contacts and full bench.",
+      "essential_details": [
+        "Seated with feet flat",
+        "Arms out laterally, not forward",
+        "Soft elbows and shoulders down"
+      ],
+      "generation_prompt": "STYLE v1. Use the supplied approved human reference ONLY for the person's identity, anatomical 3D style, body proportions, materials and detail. Do not copy its pose, dumbbells, muscle highlighting or composition. Match the same bald athletic adult male, opaque silver-gray sculpted anatomical muscle surfaces, simple fitted black shorts, barefoot, neutral face and consistent natural proportions. One person, one exercise, one characteristic phase: no second figure, collage or motion ghosts. Equipment must be only the simple items named in this scene, neutral gray/black materials, complete and mechanically ordinary. Primary muscles: localized coral #F26445. Named secondary muscles: the same hue at roughly 45% intensity blended with gray, clearly lighter. Do not highlight muscles absent from the catalog list, make the body or shorts transparent, or apply a global orange cast/glow. Preserve clothing; highlight visible anatomical surfaces without inventing see-through tissue. Square PNG, unchanged target 1024x1024, true transparent alpha background outside the person and required equipment/mat and through any openings; no white or checkerboard backdrop, drawn floor plane, UI, text, labels, frames, decorations or halo. Entire person and every required piece of equipment must fit with transparent margins; adapt scale/camera without distortion or cropping. Accent pigment must use base sRGB #F26445 = RGB(242,100,69); retain this hue through ordinary 3D shading. Secondary highlights use this hue at 40-50% intensity blended with the gray body, not transparent tissue.\n\nEXERCISE ID: seated-lateral-raise-dumbbell\nNAME: Seated Lateral Raise (Dumbbell)\nCatalog equipment: dumbbell\nDepict only: two dumbbells, ordinary flat bench\nPrimary muscle: shoulders\nSecondary muscles: []\n\nONE SPECIFIC SCENE: Seated upright on an ordinary flat bench, both feet flat. One dumbbell securely held in each hand; BOTH ARMS extend OUT TO THE SIDES at about shoulder height with a soft elbow bend. Shoulders down, torso vertical and wrists aligned, no backward lean. Front three-quarter view shows lateral arm path, grip contacts and full bench.\n\nENGLISH SOURCE (this ID only; do not substitute a familiar variant):\n{\"description\": \"Sit with dumbbells beside the thighs, raise both arms sideways to shoulder height, then lower them.\", \"instructions\": [\"Sit on a bench with your feet flat on the ground and a dumbbell in each hand, resting on your thighs.\", \"Keep your back straight and core engaged.\", \"Raise the dumbbells to your sides with a slight bend in your elbows, until your arms are parallel to the ground.\", \"Pause for a moment at the top, then slowly lower the dumbbells back down to the starting position.\", \"Repeat for the desired number of repetitions.\"], \"form_cues\": [\"Keep the torso still.\", \"Lift in the exercise plane.\", \"Lower quietly.\"], \"common_mistakes\": [\"Shifting the support point.\", \"Using momentum instead of the target joint path.\", \"Cutting the return short.\"], \"safety_note\": \"Use a secure setup and stop if alignment or control is lost.\", \"provenance\": \"adapted\"}\nMaintain source contact points and safe control. Render only this characteristic phase, not the entire instruction sequence. Reference anatomy is opaque; localize the specified muscle pigment without copying reference highlights."
+    },
+    {
+      "order": 8,
+      "exercise_id": "seated-palms-up-wrist-curl-dumbbell",
+      "name": "Seated Palms Up Wrist Curl",
+      "equipment": "dumbbell",
+      "depicted_equipment": [
+        "two dumbbells",
+        "ordinary flat bench"
+      ],
+      "priority": 2,
+      "selection_status": "not_started",
+      "archived": false,
+      "attempts_at_preparation": 0,
+      "primary_muscle": "forearms",
+      "secondary_muscles": [],
+      "source_english": {
+        "description": "Rest palms-up forearms on the thighs and curl the dumbbells upward with the wrists before lowering them.",
+        "instructions": [
+          "Sit on a bench with your feet flat on the ground and hold a dumbbell in each hand, palms facing up.",
+          "Rest your forearms on your thighs, allowing your wrists to hang off the edge.",
+          "Slowly curl your wrists upward, squeezing your forearms at the top of the movement.",
+          "Pause for a moment, then lower your wrists back down to the starting position.",
+          "Repeat for the desired number of repetitions."
+        ],
+        "form_cues": [
+          "Keep the upper arms or thighs still.",
+          "Keep wrists aligned.",
+          "Lower the weight slowly."
+        ],
+        "common_mistakes": [
+          "Swinging the torso.",
+          "Letting the elbow drift.",
+          "Dropping the weight."
+        ],
+        "safety_note": "Choose resistance that keeps the elbow and wrist path controlled.",
+        "provenance": "adapted"
+      },
+      "source_english_sha256": "a2d7159d503dfb21a91ca5dfe43205eb834ca42963de24edef6d817199192715",
+      "source_interpretation_note": "A single static phase interpreted from this exact English record; appearance reference provides no technique or equipment.",
+      "style_version": "v1",
+      "scene_description": "Seated on an ordinary flat bench with feet flat, BOTH FOREARMS RESTING ON THE THIGHS and wrists projecting just beyond knees. One dumbbell in each closed grip, PALMS UP. Small wrist-flexion top phase raises weights using wrists only, elbows and shoulders still. Elevated front-side camera shows wrist-to-knee clearance and grip; no biceps curl.",
+      "essential_details": [
+        "Palms up",
+        "Forearms supported on thighs",
+        "Only wrists flex beyond knees"
+      ],
+      "generation_prompt": "STYLE v1. Use the supplied approved human reference ONLY for the person's identity, anatomical 3D style, body proportions, materials and detail. Do not copy its pose, dumbbells, muscle highlighting or composition. Match the same bald athletic adult male, opaque silver-gray sculpted anatomical muscle surfaces, simple fitted black shorts, barefoot, neutral face and consistent natural proportions. One person, one exercise, one characteristic phase: no second figure, collage or motion ghosts. Equipment must be only the simple items named in this scene, neutral gray/black materials, complete and mechanically ordinary. Primary muscles: localized coral #F26445. Named secondary muscles: the same hue at roughly 45% intensity blended with gray, clearly lighter. Do not highlight muscles absent from the catalog list, make the body or shorts transparent, or apply a global orange cast/glow. Preserve clothing; highlight visible anatomical surfaces without inventing see-through tissue. Square PNG, unchanged target 1024x1024, true transparent alpha background outside the person and required equipment/mat and through any openings; no white or checkerboard backdrop, drawn floor plane, UI, text, labels, frames, decorations or halo. Entire person and every required piece of equipment must fit with transparent margins; adapt scale/camera without distortion or cropping. Accent pigment must use base sRGB #F26445 = RGB(242,100,69); retain this hue through ordinary 3D shading. Secondary highlights use this hue at 40-50% intensity blended with the gray body, not transparent tissue.\n\nEXERCISE ID: seated-palms-up-wrist-curl-dumbbell\nNAME: Seated Palms Up Wrist Curl\nCatalog equipment: dumbbell\nDepict only: two dumbbells, ordinary flat bench\nPrimary muscle: forearms\nSecondary muscles: []\n\nONE SPECIFIC SCENE: Seated on an ordinary flat bench with feet flat, BOTH FOREARMS RESTING ON THE THIGHS and wrists projecting just beyond knees. One dumbbell in each closed grip, PALMS UP. Small wrist-flexion top phase raises weights using wrists only, elbows and shoulders still. Elevated front-side camera shows wrist-to-knee clearance and grip; no biceps curl.\n\nENGLISH SOURCE (this ID only; do not substitute a familiar variant):\n{\"description\": \"Rest palms-up forearms on the thighs and curl the dumbbells upward with the wrists before lowering them.\", \"instructions\": [\"Sit on a bench with your feet flat on the ground and hold a dumbbell in each hand, palms facing up.\", \"Rest your forearms on your thighs, allowing your wrists to hang off the edge.\", \"Slowly curl your wrists upward, squeezing your forearms at the top of the movement.\", \"Pause for a moment, then lower your wrists back down to the starting position.\", \"Repeat for the desired number of repetitions.\"], \"form_cues\": [\"Keep the upper arms or thighs still.\", \"Keep wrists aligned.\", \"Lower the weight slowly.\"], \"common_mistakes\": [\"Swinging the torso.\", \"Letting the elbow drift.\", \"Dropping the weight.\"], \"safety_note\": \"Choose resistance that keeps the elbow and wrist path controlled.\", \"provenance\": \"adapted\"}\nMaintain source contact points and safe control. Render only this characteristic phase, not the entire instruction sequence. Reference anatomy is opaque; localize the specified muscle pigment without copying reference highlights."
+    },
+    {
+      "order": 9,
+      "exercise_id": "triceps-extension-dumbbell",
+      "name": "Triceps Extension (Dumbbell)",
+      "equipment": "dumbbell",
+      "depicted_equipment": [
+        "two dumbbells",
+        "ordinary flat bench"
+      ],
+      "priority": 2,
+      "selection_status": "not_started",
+      "archived": false,
+      "attempts_at_preparation": 0,
+      "primary_muscle": "triceps",
+      "secondary_muscles": [],
+      "source_english": {
+        "description": "Triceps Extension (Dumbbell) lies on a flat bench and lowers one dumbbell in each hand beside the forehead.",
+        "instructions": [
+          "Lie on a flat bench with feet planted and dumbbells above the chest.",
+          "Grip a neutral grip on one dumbbell in each hand and keep the upper arms fixed beside or above the torso.",
+          "Bend the elbows to lower the resistance to the forehead or behind the head.",
+          "Pause at the endpoint, then extend the elbows to return to straight arms."
+        ],
+        "form_cues": [
+          "Keep upper arms still.",
+          "Keep wrists neutral.",
+          "Move only at the elbows."
+        ],
+        "common_mistakes": [
+          "Flaring the elbows.",
+          "Moving the shoulders.",
+          "Dropping the resistance."
+        ],
+        "safety_note": "Use a load you can lower slowly and keep clear space around the head.",
+        "provenance": "adapted"
+      },
+      "source_english_sha256": "de0acc6c372ea746a1135c9343282012c8957cf787d5c68f1e4e6f5816566416",
+      "source_interpretation_note": "A single static phase interpreted from this exact English record; appearance reference provides no technique or equipment.",
+      "style_version": "v1",
+      "scene_description": "Supine flat-bench elbow-extension lowered phase: head/back/pelvis supported, feet planted, ONE DUMBBELL IN EACH HAND with NEUTRAL facing palms. Upper arms fixed above chest while elbows bend so weights sit BESIDE THE FOREHEAD with clear noncontact space. Wrists neutral, elbows controlled. Elevated side three-quarter camera clearly separates both dumbbells and head; no seated overhead variant.",
+      "essential_details": [
+        "Two dumbbells in neutral grips",
+        "Supine flat bench with feet planted",
+        "Upper arms fixed, weights beside forehead"
+      ],
+      "generation_prompt": "STYLE v1. Use the supplied approved human reference ONLY for the person's identity, anatomical 3D style, body proportions, materials and detail. Do not copy its pose, dumbbells, muscle highlighting or composition. Match the same bald athletic adult male, opaque silver-gray sculpted anatomical muscle surfaces, simple fitted black shorts, barefoot, neutral face and consistent natural proportions. One person, one exercise, one characteristic phase: no second figure, collage or motion ghosts. Equipment must be only the simple items named in this scene, neutral gray/black materials, complete and mechanically ordinary. Primary muscles: localized coral #F26445. Named secondary muscles: the same hue at roughly 45% intensity blended with gray, clearly lighter. Do not highlight muscles absent from the catalog list, make the body or shorts transparent, or apply a global orange cast/glow. Preserve clothing; highlight visible anatomical surfaces without inventing see-through tissue. Square PNG, unchanged target 1024x1024, true transparent alpha background outside the person and required equipment/mat and through any openings; no white or checkerboard backdrop, drawn floor plane, UI, text, labels, frames, decorations or halo. Entire person and every required piece of equipment must fit with transparent margins; adapt scale/camera without distortion or cropping. Accent pigment must use base sRGB #F26445 = RGB(242,100,69); retain this hue through ordinary 3D shading. Secondary highlights use this hue at 40-50% intensity blended with the gray body, not transparent tissue.\n\nEXERCISE ID: triceps-extension-dumbbell\nNAME: Triceps Extension (Dumbbell)\nCatalog equipment: dumbbell\nDepict only: two dumbbells, ordinary flat bench\nPrimary muscle: triceps\nSecondary muscles: []\n\nONE SPECIFIC SCENE: Supine flat-bench elbow-extension lowered phase: head/back/pelvis supported, feet planted, ONE DUMBBELL IN EACH HAND with NEUTRAL facing palms. Upper arms fixed above chest while elbows bend so weights sit BESIDE THE FOREHEAD with clear noncontact space. Wrists neutral, elbows controlled. Elevated side three-quarter camera clearly separates both dumbbells and head; no seated overhead variant.\n\nENGLISH SOURCE (this ID only; do not substitute a familiar variant):\n{\"description\": \"Triceps Extension (Dumbbell) lies on a flat bench and lowers one dumbbell in each hand beside the forehead.\", \"instructions\": [\"Lie on a flat bench with feet planted and dumbbells above the chest.\", \"Grip a neutral grip on one dumbbell in each hand and keep the upper arms fixed beside or above the torso.\", \"Bend the elbows to lower the resistance to the forehead or behind the head.\", \"Pause at the endpoint, then extend the elbows to return to straight arms.\"], \"form_cues\": [\"Keep upper arms still.\", \"Keep wrists neutral.\", \"Move only at the elbows.\"], \"common_mistakes\": [\"Flaring the elbows.\", \"Moving the shoulders.\", \"Dropping the resistance.\"], \"safety_note\": \"Use a load you can lower slowly and keep clear space around the head.\", \"provenance\": \"adapted\"}\nMaintain source contact points and safe control. Render only this characteristic phase, not the entire instruction sequence. Reference anatomy is opaque; localize the specified muscle pigment without copying reference highlights."
+    },
+    {
+      "order": 10,
+      "exercise_id": "squat-dumbbell",
+      "name": "Squat (Dumbbell)",
+      "equipment": "dumbbell",
+      "depicted_equipment": [
+        "two dumbbells"
+      ],
+      "priority": 2,
+      "selection_status": "not_started",
+      "archived": false,
+      "attempts_at_preparation": 0,
+      "primary_muscle": "quadriceps",
+      "secondary_muscles": [
+        "hamstrings",
+        "glutes"
+      ],
+      "source_english": {
+        "description": "Squat (Dumbbell) lowers the hips by bending the hips and knees and returns to standing by driving through the feet.",
+        "instructions": [
+          "Stand with your feet shoulder-width apart, holding a dumbbell in each hand at your sides.",
+          "Keeping your chest up and core engaged, lower your body down by bending at the knees and hips, as if sitting back into a chair.",
+          "Continue lowering until your thighs are parallel to the ground, or as low as you can comfortably go.",
+          "Pause for a moment at the bottom, then push through your heels to return to the starting position."
+        ],
+        "form_cues": [
+          "Keep the knees tracking the toes.",
+          "Keep the heels grounded.",
+          "Brace the trunk through the depth."
+        ],
+        "common_mistakes": [
+          "Letting the knees cave inward.",
+          "Rounding the lower back.",
+          "Bouncing or cutting the depth short."
+        ],
+        "safety_note": "Use a rack or machine stops and choose a depth you can control with both feet planted.",
+        "provenance": "adapted"
+      },
+      "source_english_sha256": "e3d830577cf87b4868cffc819c25b1ef545ea7012e024fe44aff6063f657cfe2",
+      "source_interpretation_note": "A single static phase interpreted from this exact English record; appearance reference provides no technique or equipment.",
+      "style_version": "v1",
+      "scene_description": "Bottom of a controlled dumbbell squat: feet shoulder-width, hips back and knees bend toward a comfortable near-parallel thigh position, both heels flat, chest lifted. ONE dumbbell in each hand hanging at the SIDES on straight relaxed arms, handles wrapped securely. Front three-quarter view shows separate weights and knees tracking toes. No goblet or front-rack grip.",
+      "essential_details": [
+        "Two weights hanging at sides",
+        "Both heels down",
+        "Chest lifted and knees track toes"
+      ],
+      "generation_prompt": "STYLE v1. Use the supplied approved human reference ONLY for the person's identity, anatomical 3D style, body proportions, materials and detail. Do not copy its pose, dumbbells, muscle highlighting or composition. Match the same bald athletic adult male, opaque silver-gray sculpted anatomical muscle surfaces, simple fitted black shorts, barefoot, neutral face and consistent natural proportions. One person, one exercise, one characteristic phase: no second figure, collage or motion ghosts. Equipment must be only the simple items named in this scene, neutral gray/black materials, complete and mechanically ordinary. Primary muscles: localized coral #F26445. Named secondary muscles: the same hue at roughly 45% intensity blended with gray, clearly lighter. Do not highlight muscles absent from the catalog list, make the body or shorts transparent, or apply a global orange cast/glow. Preserve clothing; highlight visible anatomical surfaces without inventing see-through tissue. Square PNG, unchanged target 1024x1024, true transparent alpha background outside the person and required equipment/mat and through any openings; no white or checkerboard backdrop, drawn floor plane, UI, text, labels, frames, decorations or halo. Entire person and every required piece of equipment must fit with transparent margins; adapt scale/camera without distortion or cropping. Accent pigment must use base sRGB #F26445 = RGB(242,100,69); retain this hue through ordinary 3D shading. Secondary highlights use this hue at 40-50% intensity blended with the gray body, not transparent tissue.\n\nEXERCISE ID: squat-dumbbell\nNAME: Squat (Dumbbell)\nCatalog equipment: dumbbell\nDepict only: two dumbbells\nPrimary muscle: quadriceps\nSecondary muscles: [\"hamstrings\", \"glutes\"]\n\nONE SPECIFIC SCENE: Bottom of a controlled dumbbell squat: feet shoulder-width, hips back and knees bend toward a comfortable near-parallel thigh position, both heels flat, chest lifted. ONE dumbbell in each hand hanging at the SIDES on straight relaxed arms, handles wrapped securely. Front three-quarter view shows separate weights and knees tracking toes. No goblet or front-rack grip.\n\nENGLISH SOURCE (this ID only; do not substitute a familiar variant):\n{\"description\": \"Squat (Dumbbell) lowers the hips by bending the hips and knees and returns to standing by driving through the feet.\", \"instructions\": [\"Stand with your feet shoulder-width apart, holding a dumbbell in each hand at your sides.\", \"Keeping your chest up and core engaged, lower your body down by bending at the knees and hips, as if sitting back into a chair.\", \"Continue lowering until your thighs are parallel to the ground, or as low as you can comfortably go.\", \"Pause for a moment at the bottom, then push through your heels to return to the starting position.\"], \"form_cues\": [\"Keep the knees tracking the toes.\", \"Keep the heels grounded.\", \"Brace the trunk through the depth.\"], \"common_mistakes\": [\"Letting the knees cave inward.\", \"Rounding the lower back.\", \"Bouncing or cutting the depth short.\"], \"safety_note\": \"Use a rack or machine stops and choose a depth you can control with both feet planted.\", \"provenance\": \"adapted\"}\nMaintain source contact points and safe control. Render only this characteristic phase, not the entire instruction sequence. Reference anatomy is opaque; localize the specified muscle pigment without copying reference highlights."
+    }
+  ]
+}
