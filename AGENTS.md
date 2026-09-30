@@ -59,3 +59,7 @@
 - Backup status зберігати окремо від user_review та Supabase. Локальна ZIP-копія або GitHub asset не означає uploaded_to_supabase.
 - Manifest зв’язує exercise_id із незмінним повним catalog.json; PNG paths у ZIP відносні. URL asset записувати лише після фактичної публікації та перевірки SHA256. Невідомі batch_id або час схвалення залишати null.
 - Перед продовженням у новій задачі завантажити доступну резервну копію за реальним asset URL та звірити SHA256; не покладатися на шляхи /workspace попередньої задачі.
+
+## Прямий запит на PNG у Git
+
+Користувач окремо дозволив зберегти 25 прийнятих PNG із data/approved-images-manifest.json у assets/exercises/<exercise_id>.png гілки work. Це вузький виняток із заборони медіа в Git; SHA256 та байти прийнятих файлів зберігати без змін. Інші медіа, ZIP і вихідні архіви лишаються поза Git. Позначати GitHub backup перевіреним лише після fetch віддаленої work та звірки кожного PNG за manifest; ця дія не змінює Supabase status чи user_review.
