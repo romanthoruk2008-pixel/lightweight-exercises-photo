@@ -1,0 +1,1052 @@
+{
+  "schema_version": 1,
+  "batch_id": "simple-001",
+  "prepared_date": "2026-10-01",
+  "timezone": "Europe/Kiev",
+  "status": "all_user_approved",
+  "generation_authorized_now": false,
+  "intended_executor": "Luna after the user switches model",
+  "execution_note": "All 10 exact results accepted by user. Skip regeneration unless explicitly requested.",
+  "catalog_path": "data/exercises/catalog.json",
+  "catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+  "progress_path": "data/exercise-image-progress.json",
+  "progress_sha256_at_selection": "4d1b9c13726b1820db9a22c0fb323c13dea516c3e6e246f74df1e41cab4e6c3f",
+  "style_version": "v1",
+  "style_path": "docs/exercise-image-style.md",
+  "human_reference": {
+    "path": "/workspace/exercise-image-pilot-v1/biceps-curl-dumbbell/attempt-1.png",
+    "sha256": "52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f",
+    "source_exercise_id": "biceps-curl-dumbbell",
+    "source_attempt": 1,
+    "source": "user-approved new pilot PNG, not the archived source PNGs",
+    "role": "human_appearance_only",
+    "do_not_copy": [
+      "pose",
+      "equipment",
+      "muscle_highlights",
+      "composition"
+    ]
+  },
+  "constraints": {
+    "one_image_per_id": true,
+    "one_person_one_phase": true,
+    "built_in_imagegen_only": true,
+    "paid_api_allowed": false,
+    "subagents_allowed": false,
+    "supabase_upload_allowed": false,
+    "git_push_allowed": false,
+    "skip_if_not_not_started_or_has_new_result": true,
+    "archived_allowed": false,
+    "machines_cables_pulleys_complex_frames_allowed": false,
+    "output_root_outside_git": "/workspace/exercise-image-results/simple-001",
+    "save_png_prompt_attempt_style_id_and_sha_immediately": true,
+    "user_review_until_explicit_acceptance": "pending",
+    "automatic_regeneration_of_approved_or_uploaded": false,
+    "technical_checks": [
+      "PNG decodes",
+      "square",
+      "record actual dimensions",
+      "alpha channel and actual zero-alpha background pixels",
+      "ID/path/SHA256 match"
+    ],
+    "no_automatic_resize_or_retry_due_to_size": true,
+    "agent_visual_review_policy": "The pilot-only first-two visual review rule is not a policy for this batch. No new batch visual-review policy was requested; do not invent mandatory automatic reviews or retries."
+  },
+  "exercise_ids": [
+    "squat-body-weight",
+    "pushup",
+    "plank",
+    "side-plank",
+    "crunch",
+    "glute-bridge",
+    "hammer-curl-dumbbell",
+    "lateral-raise-dumbbell",
+    "shrug-dumbbell",
+    "floor-press-dumbbell"
+  ],
+  "exercises": [
+    {
+      "order": 1,
+      "id": "squat-body-weight",
+      "name": "Squat (Bodyweight)",
+      "catalog_equipment": "none",
+      "depicted_equipment": [
+        "bodyweight"
+      ],
+      "pose_description_uk": "Нижня фаза присідання: стегна паралельні підлозі, п’яти на опорі, спина рівна.",
+      "selection_status": "not_started",
+      "archived": false,
+      "primary_muscle": "quadriceps",
+      "secondary_muscles": [
+        "hamstrings",
+        "glutes"
+      ],
+      "source_english": {
+        "description": "Squat (Bodyweight) lowers the hips by bending the hips and knees and returns to standing by driving through the feet.",
+        "instructions": [
+          "Stand with your feet shoulder-width apart, toes pointing slightly outward.",
+          "Lower your body down by bending your knees and pushing your hips back as if you were sitting on a chair.",
+          "Keep your chest up and your back straight throughout the movement.",
+          "Lower yourself until your thighs are parallel to the ground or as low as you can comfortably go.",
+          "Pause for a moment at the bottom, then push through your heels to return to the starting position."
+        ],
+        "form_cues": [
+          "Keep the knees tracking the toes.",
+          "Keep the heels grounded.",
+          "Brace the trunk through the depth."
+        ],
+        "common_mistakes": [
+          "Letting the knees cave inward.",
+          "Rounding the lower back.",
+          "Bouncing or cutting the depth short."
+        ],
+        "safety_note": "Use a rack or machine stops and choose a depth you can control with both feet planted.",
+        "provenance": "adapted"
+      },
+      "source_english_sha256": "441866898ade61eb308d74337e96008c2e6478683401b3ba4e361fb4d12baf50",
+      "source_interpretation_note": "The generic safety_note mentions a rack or machine stops, but this ID is equipment=none and its movement instructions explicitly define a bodyweight squat; no rack or machine is included.",
+      "style_version": "v1",
+      "generation_prompt": "STYLE v1. Use the supplied approved human reference ONLY for the person's identity, anatomical 3D style, body proportions, materials and detail. Do not copy its pose, dumbbells, muscle highlighting or composition. Match the same bald athletic adult male, opaque silver-gray sculpted anatomical muscle surfaces, simple fitted black shorts, barefoot, neutral face and consistent natural proportions. One person, one exercise, one characteristic phase: no second figure, collage or motion ghosts. Equipment must be only the simple items named in this scene, neutral gray/black materials, complete and mechanically ordinary. Primary muscles: localized coral #F26445. Named secondary muscles: the same hue at roughly 45% intensity blended with gray, clearly lighter. Do not highlight muscles absent from the catalog list, make the body or shorts transparent, or apply a global orange cast/glow. Preserve clothing; highlight visible anatomical surfaces without inventing see-through tissue. Square PNG, unchanged target 1024x1024, true transparent alpha background outside the person and required equipment/mat and through any openings; no white or checkerboard backdrop, drawn floor plane, UI, text, labels, frames, decorations or halo. Entire person and every required piece of equipment must fit with transparent margins; adapt scale/camera without distortion or cropping.\n\nEXERCISE squat-body-weight — Squat (Bodyweight). Catalog equipment: none. Primary muscle: quadriceps. Secondary muscles: hamstrings, glutes.\n\nShow the controlled bottom of a bodyweight squat, not a sequence. Both feet shoulder-width apart, toes slightly outward, both heels and soles planted on the implied ground; hips back, both knees bent and tracking the toes without collapsing inward. Thighs approximately parallel to the ground, chest up, trunk braced and lower back neutral, no bouncing. Arms free of equipment and held clear of the legs. Front-side three-quarter view makes both knee directions, hip depth and both heel contacts readable. No chair, barbell, weights, rack, safety stops or machine: the chair comparison in the source explains the hip motion, not a prop.\n\nSOURCE ENGLISH TECHNIQUE (use this ID only, not the reference pose):\n{\"description\": \"Squat (Bodyweight) lowers the hips by bending the hips and knees and returns to standing by driving through the feet.\", \"instructions\": [\"Stand with your feet shoulder-width apart, toes pointing slightly outward.\", \"Lower your body down by bending your knees and pushing your hips back as if you were sitting on a chair.\", \"Keep your chest up and your back straight throughout the movement.\", \"Lower yourself until your thighs are parallel to the ground or as low as you can comfortably go.\", \"Pause for a moment at the bottom, then push through your heels to return to the starting position.\"], \"form_cues\": [\"Keep the knees tracking the toes.\", \"Keep the heels grounded.\", \"Brace the trunk through the depth.\"], \"common_mistakes\": [\"Letting the knees cave inward.\", \"Rounding the lower back.\", \"Bouncing or cutting the depth short.\"]}",
+      "run_status": "approved",
+      "attempts": 1,
+      "result_path": "/workspace/exercise-image-results/simple-001/squat-body-weight/attempt-1.png",
+      "result_sha256": "4f1b3665d8b1fc6219d42527bb69cef7c8c976dcddbeb283418d8de123dcd268",
+      "technical_check": "passed",
+      "user_review": "approved",
+      "actual_dimensions": [
+        1254,
+        1254
+      ],
+      "accepted_path": "/workspace/exercise-image-results/simple-001/squat-body-weight/attempt-1.png",
+      "accepted_sha256": "4f1b3665d8b1fc6219d42527bb69cef7c8c976dcddbeb283418d8de123dcd268",
+      "accent_hue_median_audit_degrees": 14.1
+    },
+    {
+      "order": 2,
+      "id": "pushup",
+      "name": "Push Up",
+      "catalog_equipment": "none",
+      "depicted_equipment": [
+        "bodyweight",
+        "mat"
+      ],
+      "pose_description_uk": "Нижня фаза віджимання: груди над килимком, опора на долоні й носки, корпус прямий.",
+      "selection_status": "not_started",
+      "archived": false,
+      "primary_muscle": "chest",
+      "secondary_muscles": [
+        "triceps",
+        "shoulders"
+      ],
+      "source_english": {
+        "description": "From a high plank, lower the chest toward the floor and press back up while keeping the body straight.",
+        "instructions": [
+          "Start in a high plank position with your hands slightly wider than shoulder-width apart and your feet together.",
+          "Engage your core and lower your body towards the ground by bending your elbows, keeping your body in a straight line.",
+          "Pause for a moment when your chest is just above the ground, then push yourself back up to the starting position by straightening your arms.",
+          "Repeat for the desired number of repetitions."
+        ],
+        "form_cues": [
+          "Keep wrists stacked over the elbows.",
+          "Brace the trunk and keep the shoulder blades controlled.",
+          "Use a smooth lower and press."
+        ],
+        "common_mistakes": [
+          "Flaring the elbows.",
+          "Arching or sagging the trunk.",
+          "Bouncing at the bottom."
+        ],
+        "safety_note": "Use a stable setup and stop before the shoulders or wrists lose controlled alignment.",
+        "provenance": "adapted"
+      },
+      "source_english_sha256": "071ed62b0b790a2ed30b6b4fc67a8d82e65fec33149248f204c6b007ecd173f3",
+      "source_interpretation_note": null,
+      "style_version": "v1",
+      "generation_prompt": "STYLE v1. Use the supplied approved human reference ONLY for the person's identity, anatomical 3D style, body proportions, materials and detail. Do not copy its pose, dumbbells, muscle highlighting or composition. Match the same bald athletic adult male, opaque silver-gray sculpted anatomical muscle surfaces, simple fitted black shorts, barefoot, neutral face and consistent natural proportions. One person, one exercise, one characteristic phase: no second figure, collage or motion ghosts. Equipment must be only the simple items named in this scene, neutral gray/black materials, complete and mechanically ordinary. Primary muscles: localized coral #F26445. Named secondary muscles: the same hue at roughly 45% intensity blended with gray, clearly lighter. Do not highlight muscles absent from the catalog list, make the body or shorts transparent, or apply a global orange cast/glow. Preserve clothing; highlight visible anatomical surfaces without inventing see-through tissue. Square PNG, unchanged target 1024x1024, true transparent alpha background outside the person and required equipment/mat and through any openings; no white or checkerboard backdrop, drawn floor plane, UI, text, labels, frames, decorations or halo. Entire person and every required piece of equipment must fit with transparent margins; adapt scale/camera without distortion or cropping.\n\nEXERCISE pushup — Push Up. Catalog equipment: none. Primary muscle: chest. Secondary muscles: triceps, shoulders.\n\nShow the controlled low phase of a standard push-up, chest just above a simple thin neutral-gray exercise mat. Palms flat slightly wider than shoulders, all fingers naturally spread and contacting the mat; feet together, toes supporting the body. Elbows bent and controlled rather than flared abruptly, wrists below elbows, head-to-heels straight with braced abdomen and supported shoulder alignment. Chest is close to the mat without resting on it; knees and pelvis remain off the mat, no hip sag or excessive arch. Side-front three-quarter view shows both hands, wrist/elbow alignment, both feet and the complete straight body. No weights, bench, handles or other equipment.\n\nSOURCE ENGLISH TECHNIQUE (use this ID only, not the reference pose):\n{\"description\": \"From a high plank, lower the chest toward the floor and press back up while keeping the body straight.\", \"instructions\": [\"Start in a high plank position with your hands slightly wider than shoulder-width apart and your feet together.\", \"Engage your core and lower your body towards the ground by bending your elbows, keeping your body in a straight line.\", \"Pause for a moment when your chest is just above the ground, then push yourself back up to the starting position by straightening your arms.\", \"Repeat for the desired number of repetitions.\"], \"form_cues\": [\"Keep wrists stacked over the elbows.\", \"Brace the trunk and keep the shoulder blades controlled.\", \"Use a smooth lower and press.\"], \"common_mistakes\": [\"Flaring the elbows.\", \"Arching or sagging the trunk.\", \"Bouncing at the bottom.\"]}\n\nCOLOR EMPHASIS (checked before continuing): render the primary muscles with base accent exactly #F26445 / RGB(242,100,69). The first output uses the correct coral hue; dimensional 3D lighting naturally changes pixel brightness. Keep future shading variations tied to this same coral base hue; do not shift it toward yellow/orange. Secondary muscles, if any, stay the same hue at about 45% intensity.",
+      "run_status": "approved",
+      "attempts": 1,
+      "result_path": "/workspace/exercise-image-results/simple-001/pushup/attempt-1.png",
+      "result_sha256": "cfcac2e12a8f02c53b4b6eaed0c34428453a8b4030d2c65a8489fefbee730061",
+      "technical_check": "passed",
+      "user_review": "approved",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "errors": [],
+      "accent_hue_median_audit_degrees": 13.9,
+      "accepted_path": "/workspace/exercise-image-results/simple-001/pushup/attempt-1.png",
+      "accepted_sha256": "cfcac2e12a8f02c53b4b6eaed0c34428453a8b4030d2c65a8489fefbee730061"
+    },
+    {
+      "order": 3,
+      "id": "plank",
+      "name": "Plank",
+      "catalog_equipment": "none",
+      "depicted_equipment": [
+        "bodyweight",
+        "mat"
+      ],
+      "pose_description_uk": "Планка на передпліччях: лікті під плечима, ноги прямі, таз на лінії корпусу.",
+      "selection_status": "not_started",
+      "archived": false,
+      "primary_muscle": "abdominals",
+      "secondary_muscles": [],
+      "source_english": {
+        "description": "A plank holds the body in a straight line while the trunk resists sagging, rotation, and unwanted hip movement.",
+        "instructions": [
+          "Set the hands or forearms under the shoulders and extend the legs behind you.",
+          "Brace the abdomen and squeeze the glutes to form a straight line from head to heels.",
+          "Breathe steadily while holding the position without shifting the hips.",
+          "Lower the knees to the floor to end the hold with control."
+        ],
+        "form_cues": [
+          "Keep the ribs down.",
+          "Push the floor away.",
+          "Keep hips level."
+        ],
+        "common_mistakes": [
+          "Sagging the lower back.",
+          "Piking the hips.",
+          "Holding the breath."
+        ],
+        "safety_note": "Stop the hold when you can no longer keep the spine and hips aligned.",
+        "provenance": "authored"
+      },
+      "source_english_sha256": "144b7fee058b800b671578d345b40d316066227b114192e0a8ff45581fb4b552",
+      "source_interpretation_note": "The source explicitly permits hands or forearms; this package consistently chooses the forearm hold.",
+      "style_version": "v1",
+      "generation_prompt": "STYLE v1. Use the supplied approved human reference ONLY for the person's identity, anatomical 3D style, body proportions, materials and detail. Do not copy its pose, dumbbells, muscle highlighting or composition. Match the same bald athletic adult male, opaque silver-gray sculpted anatomical muscle surfaces, simple fitted black shorts, barefoot, neutral face and consistent natural proportions. One person, one exercise, one characteristic phase: no second figure, collage or motion ghosts. Equipment must be only the simple items named in this scene, neutral gray/black materials, complete and mechanically ordinary. Primary muscles: localized coral #F26445. Named secondary muscles: the same hue at roughly 45% intensity blended with gray, clearly lighter. Do not highlight muscles absent from the catalog list, make the body or shorts transparent, or apply a global orange cast/glow. Preserve clothing; highlight visible anatomical surfaces without inventing see-through tissue. Square PNG, unchanged target 1024x1024, true transparent alpha background outside the person and required equipment/mat and through any openings; no white or checkerboard backdrop, drawn floor plane, UI, text, labels, frames, decorations or halo. Entire person and every required piece of equipment must fit with transparent margins; adapt scale/camera without distortion or cropping.\n\nEXERCISE plank — Plank. Catalog equipment: none. Primary muscle: abdominals. Secondary muscles: none: leave all other muscles neutral gray.\n\nUse the forearm variation explicitly allowed by the English instructions. One static plank on a thin neutral-gray mat: forearms flat and parallel, elbows directly under shoulders, legs extended behind, toes planted, knees raised. Form one straight controlled line from head to heels; abdomen braced, ribs down, hips level, glutes engaged, neutral head and spine. No sagging lumbar spine, raised hips or twisting. Hands relaxed, not holding weights or accessories. Side three-quarter camera reveals elbow support, forearms, spinal profile and toes. No second phase showing entry or exit.\n\nSOURCE ENGLISH TECHNIQUE (use this ID only, not the reference pose):\n{\"description\": \"A plank holds the body in a straight line while the trunk resists sagging, rotation, and unwanted hip movement.\", \"instructions\": [\"Set the hands or forearms under the shoulders and extend the legs behind you.\", \"Brace the abdomen and squeeze the glutes to form a straight line from head to heels.\", \"Breathe steadily while holding the position without shifting the hips.\", \"Lower the knees to the floor to end the hold with control.\"], \"form_cues\": [\"Keep the ribs down.\", \"Push the floor away.\", \"Keep hips level.\"], \"common_mistakes\": [\"Sagging the lower back.\", \"Piking the hips.\", \"Holding the breath.\"]}\n\nCOLOR EMPHASIS (checked before continuing): render the primary muscles with base accent exactly #F26445 / RGB(242,100,69). The first output uses the correct coral hue; dimensional 3D lighting naturally changes pixel brightness. Keep future shading variations tied to this same coral base hue; do not shift it toward yellow/orange. Secondary muscles, if any, stay the same hue at about 45% intensity.",
+      "run_status": "approved",
+      "attempts": 1,
+      "result_path": "/workspace/exercise-image-results/simple-001/plank/attempt-1.png",
+      "result_sha256": "1c381881453052a82a73091d05ea249275660a05fb93b542a5d0054cda558187",
+      "technical_check": "passed",
+      "user_review": "approved",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "errors": [],
+      "accent_hue_median_audit_degrees": 13.3,
+      "accepted_path": "/workspace/exercise-image-results/simple-001/plank/attempt-1.png",
+      "accepted_sha256": "1c381881453052a82a73091d05ea249275660a05fb93b542a5d0054cda558187"
+    },
+    {
+      "order": 4,
+      "id": "side-plank",
+      "name": "Side Plank",
+      "catalog_equipment": "none",
+      "depicted_equipment": [
+        "bodyweight",
+        "mat"
+      ],
+      "pose_description_uk": "Бічна планка: опора на одне передпліччя та складені стопи, таз піднятий.",
+      "selection_status": "not_started",
+      "archived": false,
+      "primary_muscle": "abdominals",
+      "secondary_muscles": [],
+      "source_english": {
+        "description": "Support the body on one forearm and stacked feet, lift the hips into a straight line, then lower and switch sides.",
+        "instructions": [
+          "Start by lying on your side with your legs extended and stacked on top of each other.",
+          "Place your forearm on the ground directly below your shoulder, with your elbow bent at a 90-degree angle.",
+          "Engage your core and lift your hips off the ground, creating a straight line from your head to your feet.",
+          "Hold this position for the desired amount of time.",
+          "Lower your hips back down to the ground and repeat on the other side."
+        ],
+        "form_cues": [
+          "Keep the support points fixed.",
+          "Use a quiet controlled path.",
+          "Reset fully between repetitions."
+        ],
+        "common_mistakes": [
+          "Shifting the support point.",
+          "Using momentum instead of the target joint path.",
+          "Cutting the return short."
+        ],
+        "safety_note": "Use a secure setup and stop if alignment or control is lost.",
+        "provenance": "adapted"
+      },
+      "source_english_sha256": "6d32e52241d612fc64cb25bdc5443c3b24cf964cb4ad760542ab4a8dbe9bd9b2",
+      "source_interpretation_note": null,
+      "style_version": "v1",
+      "generation_prompt": "STYLE v1. Use the supplied approved human reference ONLY for the person's identity, anatomical 3D style, body proportions, materials and detail. Do not copy its pose, dumbbells, muscle highlighting or composition. Match the same bald athletic adult male, opaque silver-gray sculpted anatomical muscle surfaces, simple fitted black shorts, barefoot, neutral face and consistent natural proportions. One person, one exercise, one characteristic phase: no second figure, collage or motion ghosts. Equipment must be only the simple items named in this scene, neutral gray/black materials, complete and mechanically ordinary. Primary muscles: localized coral #F26445. Named secondary muscles: the same hue at roughly 45% intensity blended with gray, clearly lighter. Do not highlight muscles absent from the catalog list, make the body or shorts transparent, or apply a global orange cast/glow. Preserve clothing; highlight visible anatomical surfaces without inventing see-through tissue. Square PNG, unchanged target 1024x1024, true transparent alpha background outside the person and required equipment/mat and through any openings; no white or checkerboard backdrop, drawn floor plane, UI, text, labels, frames, decorations or halo. Entire person and every required piece of equipment must fit with transparent margins; adapt scale/camera without distortion or cropping.\n\nEXERCISE side-plank — Side Plank. Catalog equipment: none. Primary muscle: abdominals. Secondary muscles: none: leave all other muscles neutral gray.\n\nShow one side only, holding a forearm side plank on a thin neutral-gray mat. Supporting elbow bent 90 degrees directly below its shoulder, supporting forearm flat; both legs fully extended with feet stacked, lower outside foot in contact with the mat. Hips lifted so head, torso, pelvis and feet form a straight line; chest and pelvis face sideways without twisting or sagging. Free hand rests lightly on the upper hip, without taking additional support. View from the front-side of the torso at a slight three-quarter angle so the supporting elbow, stacked feet and lifted hips are visible. Do not show switching sides, extra figures, knee-supported or palm-supported variants.\n\nSOURCE ENGLISH TECHNIQUE (use this ID only, not the reference pose):\n{\"description\": \"Support the body on one forearm and stacked feet, lift the hips into a straight line, then lower and switch sides.\", \"instructions\": [\"Start by lying on your side with your legs extended and stacked on top of each other.\", \"Place your forearm on the ground directly below your shoulder, with your elbow bent at a 90-degree angle.\", \"Engage your core and lift your hips off the ground, creating a straight line from your head to your feet.\", \"Hold this position for the desired amount of time.\", \"Lower your hips back down to the ground and repeat on the other side.\"], \"form_cues\": [\"Keep the support points fixed.\", \"Use a quiet controlled path.\", \"Reset fully between repetitions.\"], \"common_mistakes\": [\"Shifting the support point.\", \"Using momentum instead of the target joint path.\", \"Cutting the return short.\"]}\n\nCOLOR EMPHASIS (checked before continuing): render the primary muscles with base accent exactly #F26445 / RGB(242,100,69). The first output uses the correct coral hue; dimensional 3D lighting naturally changes pixel brightness. Keep future shading variations tied to this same coral base hue; do not shift it toward yellow/orange. Secondary muscles, if any, stay the same hue at about 45% intensity.",
+      "run_status": "approved",
+      "attempts": 1,
+      "result_path": "/workspace/exercise-image-results/simple-001/side-plank/attempt-1.png",
+      "result_sha256": "ee1eba364a156d8e13ce662e04c9598ea4150db5a0a073dbdccfba8d451306e8",
+      "technical_check": "passed",
+      "user_review": "approved",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "errors": [],
+      "accent_hue_median_audit_degrees": 14.5,
+      "accepted_path": "/workspace/exercise-image-results/simple-001/side-plank/attempt-1.png",
+      "accepted_sha256": "ee1eba364a156d8e13ce662e04c9598ea4150db5a0a073dbdccfba8d451306e8"
+    },
+    {
+      "order": 5,
+      "id": "crunch",
+      "name": "Crunch",
+      "catalog_equipment": "none",
+      "depicted_equipment": [
+        "bodyweight",
+        "mat"
+      ],
+      "pose_description_uk": "Верхня фаза скручування: ребра наближені до таза, коліна зігнуті, стопи на килимку.",
+      "selection_status": "not_started",
+      "archived": false,
+      "primary_muscle": "abdominals",
+      "secondary_muscles": [],
+      "source_english": {
+        "description": "Crunch curls the ribs toward the pelvis from a supine bent-knee position.",
+        "instructions": [
+          "Lie on your back with knees bent and feet flat.",
+          "Brace and curl the ribs toward the pelvis.",
+          "Pause without pulling the neck.",
+          "Lower the torso slowly to the support."
+        ],
+        "form_cues": [
+          "Keep the chin relaxed.",
+          "Move ribs, not hips.",
+          "Exhale as you curl."
+        ],
+        "common_mistakes": [
+          "Pulling the head.",
+          "Using the legs to swing.",
+          "Dropping the torso."
+        ],
+        "safety_note": "Use a comfortable curl range and reduce the decline or load before the neck or back loses control.",
+        "provenance": "adapted"
+      },
+      "source_english_sha256": "58d71e68d8ca72fd235ac49ddc55ba0b1a76c3a9902f8b44bb2db23cfbae94f1",
+      "source_interpretation_note": null,
+      "style_version": "v1",
+      "generation_prompt": "STYLE v1. Use the supplied approved human reference ONLY for the person's identity, anatomical 3D style, body proportions, materials and detail. Do not copy its pose, dumbbells, muscle highlighting or composition. Match the same bald athletic adult male, opaque silver-gray sculpted anatomical muscle surfaces, simple fitted black shorts, barefoot, neutral face and consistent natural proportions. One person, one exercise, one characteristic phase: no second figure, collage or motion ghosts. Equipment must be only the simple items named in this scene, neutral gray/black materials, complete and mechanically ordinary. Primary muscles: localized coral #F26445. Named secondary muscles: the same hue at roughly 45% intensity blended with gray, clearly lighter. Do not highlight muscles absent from the catalog list, make the body or shorts transparent, or apply a global orange cast/glow. Preserve clothing; highlight visible anatomical surfaces without inventing see-through tissue. Square PNG, unchanged target 1024x1024, true transparent alpha background outside the person and required equipment/mat and through any openings; no white or checkerboard backdrop, drawn floor plane, UI, text, labels, frames, decorations or halo. Entire person and every required piece of equipment must fit with transparent margins; adapt scale/camera without distortion or cropping.\n\nEXERCISE crunch — Crunch. Catalog equipment: none. Primary muscle: abdominals. Secondary muscles: none: leave all other muscles neutral gray.\n\nShow a small controlled supine crunch on a thin neutral-gray mat. Both knees bent, both feet flat and unanchored, pelvis and lower back remain supported. Curl ribs toward pelvis, lifting head and shoulder blades modestly; this is not a full sit-up. Chin relaxed, head follows the upper torso, abdomen contracted; hands stay clear of the head and neck without pulling or pushing them. Legs remain still, no hip swing, load, foot anchor, bench or decline support. Side-front three-quarter camera reveals the modest rib curl, bent knees, planted feet and lower-back contact. One held top phase only.\n\nSOURCE ENGLISH TECHNIQUE (use this ID only, not the reference pose):\n{\"description\": \"Crunch curls the ribs toward the pelvis from a supine bent-knee position.\", \"instructions\": [\"Lie on your back with knees bent and feet flat.\", \"Brace and curl the ribs toward the pelvis.\", \"Pause without pulling the neck.\", \"Lower the torso slowly to the support.\"], \"form_cues\": [\"Keep the chin relaxed.\", \"Move ribs, not hips.\", \"Exhale as you curl.\"], \"common_mistakes\": [\"Pulling the head.\", \"Using the legs to swing.\", \"Dropping the torso.\"]}\n\nCOLOR EMPHASIS (checked before continuing): render the primary muscles with base accent exactly #F26445 / RGB(242,100,69). The first output uses the correct coral hue; dimensional 3D lighting naturally changes pixel brightness. Keep future shading variations tied to this same coral base hue; do not shift it toward yellow/orange. Secondary muscles, if any, stay the same hue at about 45% intensity.",
+      "run_status": "approved",
+      "attempts": 1,
+      "result_path": "/workspace/exercise-image-results/simple-001/crunch/attempt-1.png",
+      "result_sha256": "642d186f710d1d9d1f6c69160a7725241d3dcdbdbc69785cc0919ee5de190faf",
+      "technical_check": "passed",
+      "user_review": "approved",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "errors": [],
+      "accent_hue_median_audit_degrees": 16.3,
+      "accepted_path": "/workspace/exercise-image-results/simple-001/crunch/attempt-1.png",
+      "accepted_sha256": "642d186f710d1d9d1f6c69160a7725241d3dcdbdbc69785cc0919ee5de190faf"
+    },
+    {
+      "order": 6,
+      "id": "glute-bridge",
+      "name": "Glute Bridge",
+      "catalog_equipment": "none",
+      "depicted_equipment": [
+        "bodyweight",
+        "mat"
+      ],
+      "pose_description_uk": "Верхня фаза сідничного містка: плечі й стопи на килимку, таз піднятий без прогину.",
+      "selection_status": "not_started",
+      "archived": false,
+      "primary_muscle": "glutes",
+      "secondary_muscles": [
+        "hamstrings",
+        "quadriceps"
+      ],
+      "source_english": {
+        "description": "Glute Bridge lifts the hips from the floor by driving through the feet and squeezing the glutes, then lowers slowly.",
+        "instructions": [
+          "Lie on your back with knees bent and your bodyweight positioned securely if used.",
+          "Brace the abdomen and drive through the feet to lift the hips.",
+          "Pause when the torso and thighs form a straight line without arching.",
+          "Lower the hips slowly to the floor."
+        ],
+        "form_cues": [
+          "Keep knees tracking forward.",
+          "Squeeze the glutes.",
+          "Keep ribs down."
+        ],
+        "common_mistakes": [
+          "Overarching the back.",
+          "Pushing through the toes only.",
+          "Letting knees fall inward."
+        ],
+        "safety_note": "Use a stable surface and stop if the back arches sharply at the top.",
+        "provenance": "adapted"
+      },
+      "source_english_sha256": "e9021a627748fc8167faa6b3162d0c5f20ac917a56c9e637fbfac660e122a8f5",
+      "source_interpretation_note": null,
+      "style_version": "v1",
+      "generation_prompt": "STYLE v1. Use the supplied approved human reference ONLY for the person's identity, anatomical 3D style, body proportions, materials and detail. Do not copy its pose, dumbbells, muscle highlighting or composition. Match the same bald athletic adult male, opaque silver-gray sculpted anatomical muscle surfaces, simple fitted black shorts, barefoot, neutral face and consistent natural proportions. One person, one exercise, one characteristic phase: no second figure, collage or motion ghosts. Equipment must be only the simple items named in this scene, neutral gray/black materials, complete and mechanically ordinary. Primary muscles: localized coral #F26445. Named secondary muscles: the same hue at roughly 45% intensity blended with gray, clearly lighter. Do not highlight muscles absent from the catalog list, make the body or shorts transparent, or apply a global orange cast/glow. Preserve clothing; highlight visible anatomical surfaces without inventing see-through tissue. Square PNG, unchanged target 1024x1024, true transparent alpha background outside the person and required equipment/mat and through any openings; no white or checkerboard backdrop, drawn floor plane, UI, text, labels, frames, decorations or halo. Entire person and every required piece of equipment must fit with transparent margins; adapt scale/camera without distortion or cropping.\n\nEXERCISE glute-bridge — Glute Bridge. Catalog equipment: none. Primary muscle: glutes. Secondary muscles: hamstrings, quadriceps.\n\nShow the top pause of an unloaded two-leg glute bridge on a thin neutral-gray mat. Head and shoulders/upper back supported on the mat, both knees bent, both feet flat. Drive through the whole feet with heels planted to raise the hips until torso and thighs form a straight line; keep ribs down, abdomen braced, glutes squeezed and lumbar spine neutral. Both knees track forward rather than inward. Arms lie relaxed beside the torso on the mat without lifting the body. Side-rear three-quarter view reveals the hip lift, shoulder support, bent knees and both foot contacts. No bench, barbell, dumbbell, band, elevated feet, single-leg pose or exaggerated arch.\n\nSOURCE ENGLISH TECHNIQUE (use this ID only, not the reference pose):\n{\"description\": \"Glute Bridge lifts the hips from the floor by driving through the feet and squeezing the glutes, then lowers slowly.\", \"instructions\": [\"Lie on your back with knees bent and your bodyweight positioned securely if used.\", \"Brace the abdomen and drive through the feet to lift the hips.\", \"Pause when the torso and thighs form a straight line without arching.\", \"Lower the hips slowly to the floor.\"], \"form_cues\": [\"Keep knees tracking forward.\", \"Squeeze the glutes.\", \"Keep ribs down.\"], \"common_mistakes\": [\"Overarching the back.\", \"Pushing through the toes only.\", \"Letting knees fall inward.\"]}\n\nCOLOR EMPHASIS (checked before continuing): render the primary muscles with base accent exactly #F26445 / RGB(242,100,69). The first output uses the correct coral hue; dimensional 3D lighting naturally changes pixel brightness. Keep future shading variations tied to this same coral base hue; do not shift it toward yellow/orange. Secondary muscles, if any, stay the same hue at about 45% intensity.",
+      "run_status": "approved",
+      "attempts": 1,
+      "result_path": "/workspace/exercise-image-results/simple-001/glute-bridge/attempt-1.png",
+      "result_sha256": "161f193d8a994eded8b3b36d67b16f6344c96cf95eeeed4283418e2a130275e8",
+      "technical_check": "passed",
+      "user_review": "approved",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "errors": [],
+      "accent_hue_median_audit_degrees": 14.7,
+      "accepted_path": "/workspace/exercise-image-results/simple-001/glute-bridge/attempt-1.png",
+      "accepted_sha256": "161f193d8a994eded8b3b36d67b16f6344c96cf95eeeed4283418e2a130275e8"
+    },
+    {
+      "order": 7,
+      "id": "hammer-curl-dumbbell",
+      "name": "Hammer Curl (Dumbbell)",
+      "catalog_equipment": "dumbbell",
+      "depicted_equipment": [
+        "dumbbells"
+      ],
+      "pose_description_uk": "Стоячи, гантелі біля плечей; нейтральний хват, лікті притиснуті до корпуса.",
+      "selection_status": "not_started",
+      "archived": false,
+      "primary_muscle": "biceps",
+      "secondary_muscles": [
+        "forearms"
+      ],
+      "source_english": {
+        "description": "Hammer Curl (Dumbbell) curls one dumbbell in each hand toward the shoulders with the neutral grip, keeping the upper arms controlled.",
+        "instructions": [
+          "Stand or sit tall with one dumbbell in each hand and use a neutral grip.",
+          "Keep the upper arms still and curl the resistance toward the shoulders.",
+          "Pause at the top without lifting the elbows.",
+          "Lower slowly until the elbows are nearly straight."
+        ],
+        "form_cues": [
+          "Keep elbows close.",
+          "Keep wrists neutral.",
+          "Use a smooth tempo."
+        ],
+        "common_mistakes": [
+          "Swinging the torso.",
+          "Letting elbows travel forward.",
+          "Dropping the resistance."
+        ],
+        "safety_note": "Use a load or band tension that allows a controlled elbow path and return.",
+        "provenance": "adapted"
+      },
+      "source_english_sha256": "cb338f4d1d5f2f9258d54d5ffa8330d992e89ce78755c61692b6d139ea773a92",
+      "source_interpretation_note": "The source allows standing or sitting; this package chooses standing and includes no bench.",
+      "style_version": "v1",
+      "generation_prompt": "STYLE v1. Use the supplied approved human reference ONLY for the person's identity, anatomical 3D style, body proportions, materials and detail. Do not copy its pose, dumbbells, muscle highlighting or composition. Match the same bald athletic adult male, opaque silver-gray sculpted anatomical muscle surfaces, simple fitted black shorts, barefoot, neutral face and consistent natural proportions. One person, one exercise, one characteristic phase: no second figure, collage or motion ghosts. Equipment must be only the simple items named in this scene, neutral gray/black materials, complete and mechanically ordinary. Primary muscles: localized coral #F26445. Named secondary muscles: the same hue at roughly 45% intensity blended with gray, clearly lighter. Do not highlight muscles absent from the catalog list, make the body or shorts transparent, or apply a global orange cast/glow. Preserve clothing; highlight visible anatomical surfaces without inventing see-through tissue. Square PNG, unchanged target 1024x1024, true transparent alpha background outside the person and required equipment/mat and through any openings; no white or checkerboard backdrop, drawn floor plane, UI, text, labels, frames, decorations or halo. Entire person and every required piece of equipment must fit with transparent margins; adapt scale/camera without distortion or cropping.\n\nEXERCISE hammer-curl-dumbbell — Hammer Curl (Dumbbell). Catalog equipment: dumbbell. Primary muscle: biceps. Secondary muscles: forearms.\n\nChoose the standing variation allowed by the English instructions. Show the top controlled hammer curl with one ordinary dumbbell in each hand. Stand tall with both feet securely planted, torso still. Upper arms stay alongside the ribs and elbows remain close, without moving forward or lifting. Forearms rise toward the shoulders while both palms face inward toward each other in a neutral grip, thumbs upward, wrists straight; closed natural finger/thumb contact on each dumbbell handle. Use two complete matching simple dumbbells, not barbells or cable attachments. Front three-quarter camera keeps both neutral grips, elbows, full dumbbells and feet visible. No swing, lean-back, bench or alternating sequence.\n\nSOURCE ENGLISH TECHNIQUE (use this ID only, not the reference pose):\n{\"description\": \"Hammer Curl (Dumbbell) curls one dumbbell in each hand toward the shoulders with the neutral grip, keeping the upper arms controlled.\", \"instructions\": [\"Stand or sit tall with one dumbbell in each hand and use a neutral grip.\", \"Keep the upper arms still and curl the resistance toward the shoulders.\", \"Pause at the top without lifting the elbows.\", \"Lower slowly until the elbows are nearly straight.\"], \"form_cues\": [\"Keep elbows close.\", \"Keep wrists neutral.\", \"Use a smooth tempo.\"], \"common_mistakes\": [\"Swinging the torso.\", \"Letting elbows travel forward.\", \"Dropping the resistance.\"]}\n\nCOLOR EMPHASIS (checked before continuing): render the primary muscles with base accent exactly #F26445 / RGB(242,100,69). The first output uses the correct coral hue; dimensional 3D lighting naturally changes pixel brightness. Keep future shading variations tied to this same coral base hue; do not shift it toward yellow/orange. Secondary muscles, if any, stay the same hue at about 45% intensity.",
+      "run_status": "approved",
+      "attempts": 1,
+      "result_path": "/workspace/exercise-image-results/simple-001/hammer-curl-dumbbell/attempt-1.png",
+      "result_sha256": "5eb38cabe435999077b3d382294933986585a898183ada98356de2a80a163a2a",
+      "technical_check": "passed",
+      "user_review": "approved",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "errors": [],
+      "accent_hue_median_audit_degrees": 15.4,
+      "accepted_path": "/workspace/exercise-image-results/simple-001/hammer-curl-dumbbell/attempt-1.png",
+      "accepted_sha256": "5eb38cabe435999077b3d382294933986585a898183ada98356de2a80a163a2a"
+    },
+    {
+      "order": 8,
+      "id": "lateral-raise-dumbbell",
+      "name": "Lateral Raise (Dumbbell)",
+      "catalog_equipment": "dumbbell",
+      "depicted_equipment": [
+        "dumbbells"
+      ],
+      "pose_description_uk": "Стоячи, руки з гантелями розведені до рівня плечей, лікті трохи зігнуті.",
+      "selection_status": "not_started",
+      "archived": false,
+      "primary_muscle": "shoulders",
+      "secondary_muscles": [],
+      "source_english": {
+        "description": "Lateral Raise (Dumbbell) raises the hands or machine pads out to shoulder height in the frontal plane without swinging.",
+        "instructions": [
+          "Stand with your feet shoulder-width apart and hold a dumbbell in each hand, palms facing your body.",
+          "Keep your back straight and engage your core.",
+          "Raise your arms out to the sides until they are parallel to the floor, keeping a slight bend in your elbows.",
+          "Pause for a moment at the top, then slowly lower your arms back down to the starting position.",
+          "Repeat for the desired number of repetitions."
+        ],
+        "form_cues": [
+          "Keep the shoulders down.",
+          "Move through a controlled arc.",
+          "Stop at a comfortable range."
+        ],
+        "common_mistakes": [
+          "Swinging for momentum.",
+          "Shrugging into the movement.",
+          "Forcing end range."
+        ],
+        "safety_note": "Use light resistance and stop if the shoulder cannot move smoothly.",
+        "provenance": "adapted"
+      },
+      "source_english_sha256": "fbff8727c0d301482dc2bcf940f40acfc41968c06638312dc60ebd4f905c21fa",
+      "source_interpretation_note": "The description mentions machine pads generically; this ID and its instructions explicitly use dumbbells, so only dumbbells are depicted.",
+      "style_version": "v1",
+      "generation_prompt": "STYLE v1. Use the supplied approved human reference ONLY for the person's identity, anatomical 3D style, body proportions, materials and detail. Do not copy its pose, dumbbells, muscle highlighting or composition. Match the same bald athletic adult male, opaque silver-gray sculpted anatomical muscle surfaces, simple fitted black shorts, barefoot, neutral face and consistent natural proportions. One person, one exercise, one characteristic phase: no second figure, collage or motion ghosts. Equipment must be only the simple items named in this scene, neutral gray/black materials, complete and mechanically ordinary. Primary muscles: localized coral #F26445. Named secondary muscles: the same hue at roughly 45% intensity blended with gray, clearly lighter. Do not highlight muscles absent from the catalog list, make the body or shorts transparent, or apply a global orange cast/glow. Preserve clothing; highlight visible anatomical surfaces without inventing see-through tissue. Square PNG, unchanged target 1024x1024, true transparent alpha background outside the person and required equipment/mat and through any openings; no white or checkerboard backdrop, drawn floor plane, UI, text, labels, frames, decorations or halo. Entire person and every required piece of equipment must fit with transparent margins; adapt scale/camera without distortion or cropping.\n\nEXERCISE lateral-raise-dumbbell — Lateral Raise (Dumbbell). Catalog equipment: dumbbell. Primary muscle: shoulders. Secondary muscles: none: leave all other muscles neutral gray.\n\nShow the top controlled standing dumbbell lateral raise. Feet shoulder-width apart and flat, straight neutral back and braced torso, shoulders down. Hold one complete ordinary dumbbell in each hand with a secure closed grip and neutral wrists. Both arms raise out to the sides in the frontal plane, upper arms approximately horizontal at shoulder height, elbows slightly bent rather than locked. Maintain natural hand orientation through the raise without an exaggerated thumbs-down tilt; dumbbells remain attached to the hands. No shrugging, swinging, leaning or above-shoulder lift. Front three-quarter view shows both full arms, dumbbells, torso and feet with sufficient transparent margins for the wide pose. No machine pads, cables, bench or additional equipment.\n\nSOURCE ENGLISH TECHNIQUE (use this ID only, not the reference pose):\n{\"description\": \"Lateral Raise (Dumbbell) raises the hands or machine pads out to shoulder height in the frontal plane without swinging.\", \"instructions\": [\"Stand with your feet shoulder-width apart and hold a dumbbell in each hand, palms facing your body.\", \"Keep your back straight and engage your core.\", \"Raise your arms out to the sides until they are parallel to the floor, keeping a slight bend in your elbows.\", \"Pause for a moment at the top, then slowly lower your arms back down to the starting position.\", \"Repeat for the desired number of repetitions.\"], \"form_cues\": [\"Keep the shoulders down.\", \"Move through a controlled arc.\", \"Stop at a comfortable range.\"], \"common_mistakes\": [\"Swinging for momentum.\", \"Shrugging into the movement.\", \"Forcing end range.\"]}\n\nCOLOR EMPHASIS (checked before continuing): render the primary muscles with base accent exactly #F26445 / RGB(242,100,69). The first output uses the correct coral hue; dimensional 3D lighting naturally changes pixel brightness. Keep future shading variations tied to this same coral base hue; do not shift it toward yellow/orange. Secondary muscles, if any, stay the same hue at about 45% intensity.",
+      "run_status": "approved",
+      "attempts": 1,
+      "result_path": "/workspace/exercise-image-results/simple-001/lateral-raise-dumbbell/attempt-1.png",
+      "result_sha256": "4d153f6cbee379205a23f8403ee8e93dc184db319953a98f598d3e5c5e19acfd",
+      "technical_check": "passed",
+      "user_review": "approved",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "errors": [],
+      "accent_hue_median_audit_degrees": 15.8,
+      "accepted_path": "/workspace/exercise-image-results/simple-001/lateral-raise-dumbbell/attempt-1.png",
+      "accepted_sha256": "4d153f6cbee379205a23f8403ee8e93dc184db319953a98f598d3e5c5e19acfd"
+    },
+    {
+      "order": 9,
+      "id": "shrug-dumbbell",
+      "name": "Shrug (Dumbbell)",
+      "catalog_equipment": "dumbbell",
+      "depicted_equipment": [
+        "dumbbells"
+      ],
+      "pose_description_uk": "Стоячи, плечі підняті вертикально; руки прямі, гантелі звисають збоку.",
+      "selection_status": "not_started",
+      "archived": false,
+      "primary_muscle": "traps",
+      "secondary_muscles": [
+        "neck"
+      ],
+      "source_english": {
+        "description": "Hold dumbbells at the sides, elevate both shoulders vertically, then lower them without rolling.",
+        "instructions": [
+          "Stand with your feet shoulder-width apart and hold a dumbbell in each hand with your palms facing your body.",
+          "Keep your arms straight and let the dumbbells hang by your sides.",
+          "Raise your shoulders as high as possible, as if you are trying to touch your ears with your shoulders.",
+          "Hold the contraction for a second, then slowly lower your shoulders back down to the starting position.",
+          "Repeat for the desired number of repetitions."
+        ],
+        "form_cues": [
+          "Keep the torso still.",
+          "Lift in the exercise plane.",
+          "Lower quietly."
+        ],
+        "common_mistakes": [
+          "Shifting the support point.",
+          "Using momentum instead of the target joint path.",
+          "Cutting the return short."
+        ],
+        "safety_note": "Use a secure setup and stop if alignment or control is lost.",
+        "provenance": "adapted"
+      },
+      "source_english_sha256": "94e905378177823af67ac119696435493f2232a090076188e26da9ff256f5814",
+      "source_interpretation_note": null,
+      "style_version": "v1",
+      "generation_prompt": "STYLE v1. Use the supplied approved human reference ONLY for the person's identity, anatomical 3D style, body proportions, materials and detail. Do not copy its pose, dumbbells, muscle highlighting or composition. Match the same bald athletic adult male, opaque silver-gray sculpted anatomical muscle surfaces, simple fitted black shorts, barefoot, neutral face and consistent natural proportions. One person, one exercise, one characteristic phase: no second figure, collage or motion ghosts. Equipment must be only the simple items named in this scene, neutral gray/black materials, complete and mechanically ordinary. Primary muscles: localized coral #F26445. Named secondary muscles: the same hue at roughly 45% intensity blended with gray, clearly lighter. Do not highlight muscles absent from the catalog list, make the body or shorts transparent, or apply a global orange cast/glow. Preserve clothing; highlight visible anatomical surfaces without inventing see-through tissue. Square PNG, unchanged target 1024x1024, true transparent alpha background outside the person and required equipment/mat and through any openings; no white or checkerboard backdrop, drawn floor plane, UI, text, labels, frames, decorations or halo. Entire person and every required piece of equipment must fit with transparent margins; adapt scale/camera without distortion or cropping.\n\nEXERCISE shrug-dumbbell — Shrug (Dumbbell). Catalog equipment: dumbbell. Primary muscle: traps. Secondary muscles: neck.\n\nShow the brief top contraction of a standing dumbbell shrug. Feet shoulder-width apart, both flat; torso upright and quiet, head neutral. One complete ordinary dumbbell in each hand hangs alongside the thigh, palms facing inward toward the body, arms straight with neutral wrists and a closed grip. Elevate both shoulders vertically toward the ears using the upper trapezius, without rolling shoulders, bending elbows, curling the weights, jutting the head or leaning. Three-quarter front-side view gives a readable shoulder elevation and exposes the upper trapezius/neck muscle surfaces while both dumbbells and feet stay fully visible. No bench, barbell, straps, machine or cables.\n\nSOURCE ENGLISH TECHNIQUE (use this ID only, not the reference pose):\n{\"description\": \"Hold dumbbells at the sides, elevate both shoulders vertically, then lower them without rolling.\", \"instructions\": [\"Stand with your feet shoulder-width apart and hold a dumbbell in each hand with your palms facing your body.\", \"Keep your arms straight and let the dumbbells hang by your sides.\", \"Raise your shoulders as high as possible, as if you are trying to touch your ears with your shoulders.\", \"Hold the contraction for a second, then slowly lower your shoulders back down to the starting position.\", \"Repeat for the desired number of repetitions.\"], \"form_cues\": [\"Keep the torso still.\", \"Lift in the exercise plane.\", \"Lower quietly.\"], \"common_mistakes\": [\"Shifting the support point.\", \"Using momentum instead of the target joint path.\", \"Cutting the return short.\"]}\n\nCOLOR EMPHASIS (checked before continuing): render the primary muscles with base accent exactly #F26445 / RGB(242,100,69). The first output uses the correct coral hue; dimensional 3D lighting naturally changes pixel brightness. Keep future shading variations tied to this same coral base hue; do not shift it toward yellow/orange. Secondary muscles, if any, stay the same hue at about 45% intensity.",
+      "run_status": "approved",
+      "attempts": 1,
+      "result_path": "/workspace/exercise-image-results/simple-001/shrug-dumbbell/attempt-1.png",
+      "result_sha256": "e9bf1fe9232e0bab3f154b0c000cc876f40a76c0e483891cfa342b425be27629",
+      "technical_check": "passed",
+      "user_review": "approved",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "errors": [],
+      "accent_hue_median_audit_degrees": 14.4,
+      "accepted_path": "/workspace/exercise-image-results/simple-001/shrug-dumbbell/attempt-1.png",
+      "accepted_sha256": "e9bf1fe9232e0bab3f154b0c000cc876f40a76c0e483891cfa342b425be27629"
+    },
+    {
+      "order": 10,
+      "id": "floor-press-dumbbell",
+      "name": "Floor Press (Dumbbell)",
+      "catalog_equipment": "dumbbell",
+      "depicted_equipment": [
+        "dumbbells",
+        "mat"
+      ],
+      "pose_description_uk": "Лежачи на килимку, гантелі над грудьми; коліна зігнуті, лопатки мають опору.",
+      "selection_status": "not_started",
+      "archived": false,
+      "primary_muscle": "chest",
+      "secondary_muscles": [
+        "shoulders",
+        "triceps"
+      ],
+      "source_english": {
+        "description": "Floor Press (Dumbbell) is a supported chest press using one dumbbell in each hand.",
+        "instructions": [
+          "Lie on the floor with knees bent. Grip one dumbbell in each hand and hold it over the chest.",
+          "Lower the resistance toward the chest with elbows controlled.",
+          "Pause without bouncing or losing shoulder position.",
+          "Press back to straight arms, then rerack or set the weights down safely."
+        ],
+        "form_cues": [
+          "Keep wrists stacked.",
+          "Keep shoulder blades supported.",
+          "Press evenly."
+        ],
+        "common_mistakes": [
+          "Bouncing at the bottom.",
+          "Flaring the elbows.",
+          "Arching to shorten the range."
+        ],
+        "safety_note": "Use a spotter or safeties for the loaded press and stop before shoulder control is lost.",
+        "provenance": "authored"
+      },
+      "source_english_sha256": "adb2b3a21ab423fe2497d074e4c428899578db35de32f713bf9ebb1af33b7273",
+      "source_interpretation_note": null,
+      "style_version": "v1",
+      "generation_prompt": "STYLE v1. Use the supplied approved human reference ONLY for the person's identity, anatomical 3D style, body proportions, materials and detail. Do not copy its pose, dumbbells, muscle highlighting or composition. Match the same bald athletic adult male, opaque silver-gray sculpted anatomical muscle surfaces, simple fitted black shorts, barefoot, neutral face and consistent natural proportions. One person, one exercise, one characteristic phase: no second figure, collage or motion ghosts. Equipment must be only the simple items named in this scene, neutral gray/black materials, complete and mechanically ordinary. Primary muscles: localized coral #F26445. Named secondary muscles: the same hue at roughly 45% intensity blended with gray, clearly lighter. Do not highlight muscles absent from the catalog list, make the body or shorts transparent, or apply a global orange cast/glow. Preserve clothing; highlight visible anatomical surfaces without inventing see-through tissue. Square PNG, unchanged target 1024x1024, true transparent alpha background outside the person and required equipment/mat and through any openings; no white or checkerboard backdrop, drawn floor plane, UI, text, labels, frames, decorations or halo. Entire person and every required piece of equipment must fit with transparent margins; adapt scale/camera without distortion or cropping.\n\nEXERCISE floor-press-dumbbell — Floor Press (Dumbbell). Catalog equipment: dumbbell. Primary muscle: chest. Secondary muscles: shoulders, triceps.\n\nShow the controlled top of a dumbbell floor press, not a bench press. Lie supine on a simple thin neutral-gray mat with head, upper back, shoulder blades and pelvis supported, knees bent, both feet flat. One complete matching dumbbell in each hand, both held above the chest with straight aligned arms and neutral stacked wrists; closed natural grips, no loss of shoulder support or exaggerated back arch. Both weights are clearly supported by the two hands, with complete visible handles/ends, no floating parts. Oblique side-front three-quarter camera shows both grips, overhead weights, torso support, knees and feet. No bench, rack, safeties, second person, cables or machines. One top press phase, no lowering sequence.\n\nSOURCE ENGLISH TECHNIQUE (use this ID only, not the reference pose):\n{\"description\": \"Floor Press (Dumbbell) is a supported chest press using one dumbbell in each hand.\", \"instructions\": [\"Lie on the floor with knees bent. Grip one dumbbell in each hand and hold it over the chest.\", \"Lower the resistance toward the chest with elbows controlled.\", \"Pause without bouncing or losing shoulder position.\", \"Press back to straight arms, then rerack or set the weights down safely.\"], \"form_cues\": [\"Keep wrists stacked.\", \"Keep shoulder blades supported.\", \"Press evenly.\"], \"common_mistakes\": [\"Bouncing at the bottom.\", \"Flaring the elbows.\", \"Arching to shorten the range.\"]}\n\nCOLOR EMPHASIS (checked before continuing): render the primary muscles with base accent exactly #F26445 / RGB(242,100,69). The first output uses the correct coral hue; dimensional 3D lighting naturally changes pixel brightness. Keep future shading variations tied to this same coral base hue; do not shift it toward yellow/orange. Secondary muscles, if any, stay the same hue at about 45% intensity.",
+      "run_status": "approved",
+      "attempts": 1,
+      "result_path": "/workspace/exercise-image-results/simple-001/floor-press-dumbbell/attempt-1.png",
+      "result_sha256": "e8b9e46cfd550c1de76609f6186f1c96f8bebc891a6d332e03f0408e11f58aee",
+      "technical_check": "passed",
+      "user_review": "approved",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "errors": [],
+      "accent_hue_median_audit_degrees": 13.1,
+      "accepted_path": "/workspace/exercise-image-results/simple-001/floor-press-dumbbell/attempt-1.png",
+      "accepted_sha256": "e8b9e46cfd550c1de76609f6186f1c96f8bebc891a6d332e03f0408e11f58aee"
+    }
+  ],
+  "execution_authorization_this_request": {
+    "id": "squat-body-weight",
+    "attempt": 1,
+    "scope": "one generation only"
+  },
+  "execution_status": "all_ten_user_approved",
+  "completed_items": [
+    {
+      "id": "squat-body-weight",
+      "attempt": 1,
+      "path": "/workspace/exercise-image-results/simple-001/squat-body-weight/attempt-1.png",
+      "sha256": "4f1b3665d8b1fc6219d42527bb69cef7c8c976dcddbeb283418d8de123dcd268",
+      "technical_check": "passed",
+      "user_review": "approved",
+      "accepted_path": "/workspace/exercise-image-results/simple-001/squat-body-weight/attempt-1.png",
+      "accepted_sha256": "4f1b3665d8b1fc6219d42527bb69cef7c8c976dcddbeb283418d8de123dcd268"
+    },
+    {
+      "id": "pushup",
+      "attempt": 1,
+      "path": "/workspace/exercise-image-results/simple-001/pushup/attempt-1.png",
+      "sha256": "cfcac2e12a8f02c53b4b6eaed0c34428453a8b4030d2c65a8489fefbee730061",
+      "technical_check": "passed",
+      "user_review": "approved",
+      "accepted_path": "/workspace/exercise-image-results/simple-001/pushup/attempt-1.png",
+      "accepted_sha256": "cfcac2e12a8f02c53b4b6eaed0c34428453a8b4030d2c65a8489fefbee730061"
+    },
+    {
+      "id": "plank",
+      "attempt": 1,
+      "path": "/workspace/exercise-image-results/simple-001/plank/attempt-1.png",
+      "sha256": "1c381881453052a82a73091d05ea249275660a05fb93b542a5d0054cda558187",
+      "technical_check": "passed",
+      "user_review": "approved",
+      "accepted_path": "/workspace/exercise-image-results/simple-001/plank/attempt-1.png",
+      "accepted_sha256": "1c381881453052a82a73091d05ea249275660a05fb93b542a5d0054cda558187"
+    },
+    {
+      "id": "side-plank",
+      "attempt": 1,
+      "path": "/workspace/exercise-image-results/simple-001/side-plank/attempt-1.png",
+      "sha256": "ee1eba364a156d8e13ce662e04c9598ea4150db5a0a073dbdccfba8d451306e8",
+      "technical_check": "passed",
+      "user_review": "approved",
+      "accepted_path": "/workspace/exercise-image-results/simple-001/side-plank/attempt-1.png",
+      "accepted_sha256": "ee1eba364a156d8e13ce662e04c9598ea4150db5a0a073dbdccfba8d451306e8"
+    },
+    {
+      "id": "crunch",
+      "attempt": 1,
+      "path": "/workspace/exercise-image-results/simple-001/crunch/attempt-1.png",
+      "sha256": "642d186f710d1d9d1f6c69160a7725241d3dcdbdbc69785cc0919ee5de190faf",
+      "technical_check": "passed",
+      "user_review": "approved",
+      "accepted_path": "/workspace/exercise-image-results/simple-001/crunch/attempt-1.png",
+      "accepted_sha256": "642d186f710d1d9d1f6c69160a7725241d3dcdbdbc69785cc0919ee5de190faf"
+    },
+    {
+      "id": "glute-bridge",
+      "attempt": 1,
+      "path": "/workspace/exercise-image-results/simple-001/glute-bridge/attempt-1.png",
+      "sha256": "161f193d8a994eded8b3b36d67b16f6344c96cf95eeeed4283418e2a130275e8",
+      "technical_check": "passed",
+      "user_review": "approved",
+      "accepted_path": "/workspace/exercise-image-results/simple-001/glute-bridge/attempt-1.png",
+      "accepted_sha256": "161f193d8a994eded8b3b36d67b16f6344c96cf95eeeed4283418e2a130275e8"
+    },
+    {
+      "id": "hammer-curl-dumbbell",
+      "attempt": 1,
+      "path": "/workspace/exercise-image-results/simple-001/hammer-curl-dumbbell/attempt-1.png",
+      "sha256": "5eb38cabe435999077b3d382294933986585a898183ada98356de2a80a163a2a",
+      "technical_check": "passed",
+      "user_review": "approved",
+      "accepted_path": "/workspace/exercise-image-results/simple-001/hammer-curl-dumbbell/attempt-1.png",
+      "accepted_sha256": "5eb38cabe435999077b3d382294933986585a898183ada98356de2a80a163a2a"
+    },
+    {
+      "id": "lateral-raise-dumbbell",
+      "attempt": 1,
+      "path": "/workspace/exercise-image-results/simple-001/lateral-raise-dumbbell/attempt-1.png",
+      "sha256": "4d153f6cbee379205a23f8403ee8e93dc184db319953a98f598d3e5c5e19acfd",
+      "technical_check": "passed",
+      "user_review": "approved",
+      "accepted_path": "/workspace/exercise-image-results/simple-001/lateral-raise-dumbbell/attempt-1.png",
+      "accepted_sha256": "4d153f6cbee379205a23f8403ee8e93dc184db319953a98f598d3e5c5e19acfd"
+    },
+    {
+      "id": "shrug-dumbbell",
+      "attempt": 1,
+      "path": "/workspace/exercise-image-results/simple-001/shrug-dumbbell/attempt-1.png",
+      "sha256": "e9bf1fe9232e0bab3f154b0c000cc876f40a76c0e483891cfa342b425be27629",
+      "technical_check": "passed",
+      "user_review": "approved",
+      "accepted_path": "/workspace/exercise-image-results/simple-001/shrug-dumbbell/attempt-1.png",
+      "accepted_sha256": "e9bf1fe9232e0bab3f154b0c000cc876f40a76c0e483891cfa342b425be27629"
+    },
+    {
+      "id": "floor-press-dumbbell",
+      "attempt": 1,
+      "path": "/workspace/exercise-image-results/simple-001/floor-press-dumbbell/attempt-1.png",
+      "sha256": "e8b9e46cfd550c1de76609f6186f1c96f8bebc891a6d332e03f0408e11f58aee",
+      "technical_check": "passed",
+      "user_review": "approved",
+      "accepted_path": "/workspace/exercise-image-results/simple-001/floor-press-dumbbell/attempt-1.png",
+      "accepted_sha256": "e8b9e46cfd550c1de76609f6186f1c96f8bebc891a6d332e03f0408e11f58aee"
+    }
+  ],
+  "remaining_ids": [],
+  "approved_items": [
+    {
+      "id": "squat-body-weight",
+      "path": "/workspace/exercise-image-results/simple-001/squat-body-weight/attempt-1.png",
+      "sha256": "4f1b3665d8b1fc6219d42527bb69cef7c8c976dcddbeb283418d8de123dcd268"
+    },
+    {
+      "id": "pushup",
+      "path": "/workspace/exercise-image-results/simple-001/pushup/attempt-1.png",
+      "sha256": "cfcac2e12a8f02c53b4b6eaed0c34428453a8b4030d2c65a8489fefbee730061"
+    },
+    {
+      "id": "plank",
+      "path": "/workspace/exercise-image-results/simple-001/plank/attempt-1.png",
+      "sha256": "1c381881453052a82a73091d05ea249275660a05fb93b542a5d0054cda558187"
+    },
+    {
+      "id": "side-plank",
+      "path": "/workspace/exercise-image-results/simple-001/side-plank/attempt-1.png",
+      "sha256": "ee1eba364a156d8e13ce662e04c9598ea4150db5a0a073dbdccfba8d451306e8"
+    },
+    {
+      "id": "crunch",
+      "path": "/workspace/exercise-image-results/simple-001/crunch/attempt-1.png",
+      "sha256": "642d186f710d1d9d1f6c69160a7725241d3dcdbdbc69785cc0919ee5de190faf"
+    },
+    {
+      "id": "glute-bridge",
+      "path": "/workspace/exercise-image-results/simple-001/glute-bridge/attempt-1.png",
+      "sha256": "161f193d8a994eded8b3b36d67b16f6344c96cf95eeeed4283418e2a130275e8"
+    },
+    {
+      "id": "hammer-curl-dumbbell",
+      "path": "/workspace/exercise-image-results/simple-001/hammer-curl-dumbbell/attempt-1.png",
+      "sha256": "5eb38cabe435999077b3d382294933986585a898183ada98356de2a80a163a2a"
+    },
+    {
+      "id": "lateral-raise-dumbbell",
+      "path": "/workspace/exercise-image-results/simple-001/lateral-raise-dumbbell/attempt-1.png",
+      "sha256": "4d153f6cbee379205a23f8403ee8e93dc184db319953a98f598d3e5c5e19acfd"
+    },
+    {
+      "id": "shrug-dumbbell",
+      "path": "/workspace/exercise-image-results/simple-001/shrug-dumbbell/attempt-1.png",
+      "sha256": "e9bf1fe9232e0bab3f154b0c000cc876f40a76c0e483891cfa342b425be27629"
+    },
+    {
+      "id": "floor-press-dumbbell",
+      "path": "/workspace/exercise-image-results/simple-001/floor-press-dumbbell/attempt-1.png",
+      "sha256": "e8b9e46cfd550c1de76609f6186f1c96f8bebc891a6d332e03f0408e11f58aee"
+    }
+  ],
+  "authorized_remaining_ids_by_latest_user_request": [],
+  "accent_color_check": {
+    "target_hex": "#F26445",
+    "target_rgb": [
+      242,
+      100,
+      69
+    ],
+    "checked_instruction": "All batch prompts specify #F26445 as the primary-muscle accent.",
+    "sampled_squat_output": {
+      "median_high_chroma_rgb": [
+        220,
+        104,
+        70
+      ],
+      "target_rgb": [
+        242,
+        100,
+        69
+      ],
+      "pixels_within_12_levels_per_channel": 1472,
+      "warm_anatomical_pixels_sampled": 47157
+    },
+    "interpretation": "The raster retains the coral hue; 3D lighting/shading varies pixel values, so not every muscle pixel is literally equal to the hex triplet. Reinforce the exact base swatch/hue in remaining prompts.",
+    "raster_audit_across_ten_images": {
+      "target_hex": "#F26445",
+      "target_hue_degrees": 10.8,
+      "median_warm_pixel_hues_degrees": [
+        14.1,
+        13.9,
+        13.3,
+        14.5,
+        16.3,
+        14.7,
+        15.4,
+        15.8,
+        14.4,
+        13.1
+      ],
+      "rgb_exact_pixel_count": "0 exact triplet pixels in audit mask; rendered 3D shading produces per-pixel variation",
+      "interpretation": "Prompt base swatch is explicitly #F26445. Rendered muscle accents are in a nearby coral range, but the full raster is not a flat exact RGB overlay. Do not claim every highlight pixel is RGB(242,100,69)."
+    }
+  },
+  "user_review_status": "one_approved_nine_pending",
+  "output_summary": [
+    {
+      "id": "squat-body-weight",
+      "name": "Squat (Bodyweight)",
+      "status": "approved",
+      "path": "/workspace/exercise-image-results/simple-001/squat-body-weight/attempt-1.png",
+      "sha256": "4f1b3665d8b1fc6219d42527bb69cef7c8c976dcddbeb283418d8de123dcd268",
+      "technical_check": "passed",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "transparent_pixels": 1207168,
+      "user_review": "approved",
+      "accepted_path": "/workspace/exercise-image-results/simple-001/squat-body-weight/attempt-1.png",
+      "accepted_sha256": "4f1b3665d8b1fc6219d42527bb69cef7c8c976dcddbeb283418d8de123dcd268"
+    },
+    {
+      "id": "pushup",
+      "name": "Push Up",
+      "status": "approved",
+      "path": "/workspace/exercise-image-results/simple-001/pushup/attempt-1.png",
+      "sha256": "cfcac2e12a8f02c53b4b6eaed0c34428453a8b4030d2c65a8489fefbee730061",
+      "technical_check": "passed",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "transparent_pixels": 1219384,
+      "user_review": "approved",
+      "accepted_path": "/workspace/exercise-image-results/simple-001/pushup/attempt-1.png",
+      "accepted_sha256": "cfcac2e12a8f02c53b4b6eaed0c34428453a8b4030d2c65a8489fefbee730061"
+    },
+    {
+      "id": "plank",
+      "name": "Plank",
+      "status": "approved",
+      "path": "/workspace/exercise-image-results/simple-001/plank/attempt-1.png",
+      "sha256": "1c381881453052a82a73091d05ea249275660a05fb93b542a5d0054cda558187",
+      "technical_check": "passed",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "transparent_pixels": 1273414,
+      "user_review": "approved",
+      "accepted_path": "/workspace/exercise-image-results/simple-001/plank/attempt-1.png",
+      "accepted_sha256": "1c381881453052a82a73091d05ea249275660a05fb93b542a5d0054cda558187"
+    },
+    {
+      "id": "side-plank",
+      "name": "Side Plank",
+      "status": "approved",
+      "path": "/workspace/exercise-image-results/simple-001/side-plank/attempt-1.png",
+      "sha256": "ee1eba364a156d8e13ce662e04c9598ea4150db5a0a073dbdccfba8d451306e8",
+      "technical_check": "passed",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "transparent_pixels": 1229907,
+      "user_review": "approved",
+      "accepted_path": "/workspace/exercise-image-results/simple-001/side-plank/attempt-1.png",
+      "accepted_sha256": "ee1eba364a156d8e13ce662e04c9598ea4150db5a0a073dbdccfba8d451306e8"
+    },
+    {
+      "id": "crunch",
+      "name": "Crunch",
+      "status": "approved",
+      "path": "/workspace/exercise-image-results/simple-001/crunch/attempt-1.png",
+      "sha256": "642d186f710d1d9d1f6c69160a7725241d3dcdbdbc69785cc0919ee5de190faf",
+      "technical_check": "passed",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "transparent_pixels": 1088623,
+      "user_review": "approved",
+      "accepted_path": "/workspace/exercise-image-results/simple-001/crunch/attempt-1.png",
+      "accepted_sha256": "642d186f710d1d9d1f6c69160a7725241d3dcdbdbc69785cc0919ee5de190faf"
+    },
+    {
+      "id": "glute-bridge",
+      "name": "Glute Bridge",
+      "status": "approved",
+      "path": "/workspace/exercise-image-results/simple-001/glute-bridge/attempt-1.png",
+      "sha256": "161f193d8a994eded8b3b36d67b16f6344c96cf95eeeed4283418e2a130275e8",
+      "technical_check": "passed",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "transparent_pixels": 1205704,
+      "user_review": "approved",
+      "accepted_path": "/workspace/exercise-image-results/simple-001/glute-bridge/attempt-1.png",
+      "accepted_sha256": "161f193d8a994eded8b3b36d67b16f6344c96cf95eeeed4283418e2a130275e8"
+    },
+    {
+      "id": "hammer-curl-dumbbell",
+      "name": "Hammer Curl (Dumbbell)",
+      "status": "approved",
+      "path": "/workspace/exercise-image-results/simple-001/hammer-curl-dumbbell/attempt-1.png",
+      "sha256": "5eb38cabe435999077b3d382294933986585a898183ada98356de2a80a163a2a",
+      "technical_check": "passed",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "transparent_pixels": 1280924,
+      "user_review": "approved",
+      "accepted_path": "/workspace/exercise-image-results/simple-001/hammer-curl-dumbbell/attempt-1.png",
+      "accepted_sha256": "5eb38cabe435999077b3d382294933986585a898183ada98356de2a80a163a2a"
+    },
+    {
+      "id": "lateral-raise-dumbbell",
+      "name": "Lateral Raise (Dumbbell)",
+      "status": "approved",
+      "path": "/workspace/exercise-image-results/simple-001/lateral-raise-dumbbell/attempt-1.png",
+      "sha256": "4d153f6cbee379205a23f8403ee8e93dc184db319953a98f598d3e5c5e19acfd",
+      "technical_check": "passed",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "transparent_pixels": 1240560,
+      "user_review": "approved",
+      "accepted_path": "/workspace/exercise-image-results/simple-001/lateral-raise-dumbbell/attempt-1.png",
+      "accepted_sha256": "4d153f6cbee379205a23f8403ee8e93dc184db319953a98f598d3e5c5e19acfd"
+    },
+    {
+      "id": "shrug-dumbbell",
+      "name": "Shrug (Dumbbell)",
+      "status": "approved",
+      "path": "/workspace/exercise-image-results/simple-001/shrug-dumbbell/attempt-1.png",
+      "sha256": "e9bf1fe9232e0bab3f154b0c000cc876f40a76c0e483891cfa342b425be27629",
+      "technical_check": "passed",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "transparent_pixels": 1239851,
+      "user_review": "approved",
+      "accepted_path": "/workspace/exercise-image-results/simple-001/shrug-dumbbell/attempt-1.png",
+      "accepted_sha256": "e9bf1fe9232e0bab3f154b0c000cc876f40a76c0e483891cfa342b425be27629"
+    },
+    {
+      "id": "floor-press-dumbbell",
+      "name": "Floor Press (Dumbbell)",
+      "status": "approved",
+      "path": "/workspace/exercise-image-results/simple-001/floor-press-dumbbell/attempt-1.png",
+      "sha256": "e8b9e46cfd550c1de76609f6186f1c96f8bebc891a6d332e03f0408e11f58aee",
+      "technical_check": "passed",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "transparent_pixels": 1054853,
+      "user_review": "approved",
+      "accepted_path": "/workspace/exercise-image-results/simple-001/floor-press-dumbbell/attempt-1.png",
+      "accepted_sha256": "e8b9e46cfd550c1de76609f6186f1c96f8bebc891a6d332e03f0408e11f58aee"
+    }
+  ],
+  "user_approval": {
+    "reviewed_at": "2026-09-30T22:15:14.684335+00:00",
+    "scope": "all 10 exact files in simple-001",
+    "items": [
+      {
+        "id": "squat-body-weight",
+        "path": "/workspace/exercise-image-results/simple-001/squat-body-weight/attempt-1.png",
+        "sha256": "4f1b3665d8b1fc6219d42527bb69cef7c8c976dcddbeb283418d8de123dcd268"
+      },
+      {
+        "id": "pushup",
+        "path": "/workspace/exercise-image-results/simple-001/pushup/attempt-1.png",
+        "sha256": "cfcac2e12a8f02c53b4b6eaed0c34428453a8b4030d2c65a8489fefbee730061"
+      },
+      {
+        "id": "plank",
+        "path": "/workspace/exercise-image-results/simple-001/plank/attempt-1.png",
+        "sha256": "1c381881453052a82a73091d05ea249275660a05fb93b542a5d0054cda558187"
+      },
+      {
+        "id": "side-plank",
+        "path": "/workspace/exercise-image-results/simple-001/side-plank/attempt-1.png",
+        "sha256": "ee1eba364a156d8e13ce662e04c9598ea4150db5a0a073dbdccfba8d451306e8"
+      },
+      {
+        "id": "crunch",
+        "path": "/workspace/exercise-image-results/simple-001/crunch/attempt-1.png",
+        "sha256": "642d186f710d1d9d1f6c69160a7725241d3dcdbdbc69785cc0919ee5de190faf"
+      },
+      {
+        "id": "glute-bridge",
+        "path": "/workspace/exercise-image-results/simple-001/glute-bridge/attempt-1.png",
+        "sha256": "161f193d8a994eded8b3b36d67b16f6344c96cf95eeeed4283418e2a130275e8"
+      },
+      {
+        "id": "hammer-curl-dumbbell",
+        "path": "/workspace/exercise-image-results/simple-001/hammer-curl-dumbbell/attempt-1.png",
+        "sha256": "5eb38cabe435999077b3d382294933986585a898183ada98356de2a80a163a2a"
+      },
+      {
+        "id": "lateral-raise-dumbbell",
+        "path": "/workspace/exercise-image-results/simple-001/lateral-raise-dumbbell/attempt-1.png",
+        "sha256": "4d153f6cbee379205a23f8403ee8e93dc184db319953a98f598d3e5c5e19acfd"
+      },
+      {
+        "id": "shrug-dumbbell",
+        "path": "/workspace/exercise-image-results/simple-001/shrug-dumbbell/attempt-1.png",
+        "sha256": "e9bf1fe9232e0bab3f154b0c000cc876f40a76c0e483891cfa342b425be27629"
+      },
+      {
+        "id": "floor-press-dumbbell",
+        "path": "/workspace/exercise-image-results/simple-001/floor-press-dumbbell/attempt-1.png",
+        "sha256": "e8b9e46cfd550c1de76609f6186f1c96f8bebc891a6d332e03f0408e11f58aee"
+      }
+    ]
+  },
+  "backup_ids": [
+    "approved-images-backup-001"
+  ],
+  "backup_status": "local_verified",
+  "backup_publication_status": "blocked"
+}

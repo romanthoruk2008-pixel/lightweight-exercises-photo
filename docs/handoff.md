@@ -1,0 +1,218 @@
+# Передача задачі — зображення вправ
+
+## Поточний етап: резервна копія локально перевірена, Release заблокований
+
+Користувач явно прийняв усі 10 simple-002 у відповіді на уточнення. Тепер approved: пілот 5, simple-001 10, simple-002 10 — разом 25. Рішення, точні accepted_path/SHA256 та відомі approved timestamps записані в progress і файлах пакетів. Сумнівних або відсутніх прийнятих файлів немає. Зображення не змінювали і не генерували повторно.
+
+ZIP: /workspace/exercise-image-backups/approved-images-backup-001/approved-images-backup-001.zip
+SHA256: 138ed33e8d0e429bc4a33522dd0abdfd96f3a4636a26c5dbcc04301d019d7eeb
+Розмір: 20112833 bytes. Поруч checksum-файл .zip.sha256. ZIP містить 25 PNG, catalog.json (451 ID, 4448 мовних блоків) і approved-images-manifest.json. Усі ZIP entries, PNG hashes і незмінність каталогу перевірені. PNG paths у manifest відносні; batch_id пілоту null, бо джерело його не задає; collection=pilot визначена з workflow.pilot_ids.
+
+Manifest у репозиторії: data/approved-images-manifest.json. Release/asset URL наразі null — публікація не відбулась. Запропонований тег approved-images-backup-001 відсутній серед доступних Git tags, але перевірка Release API заблокована. gh повідомляє invalid GH_TOKEN; gh release create повернув Forbidden під час перевірки існуючого release. Не створено і не перезаписано releases/assets/tags. Git push доступний за dry-run; поточна гілка work.
+
+Backup позначено окремими backup_status/backup_records/backup_history, зі status=local_verified і publication_status=blocked. User review лишається approved; Supabase не підключений і не позначений завантаженим. Локальні файли лишаються в хмарному середовищі.
+
+Точна наступна дія: відновити GitHub Release API доступ; перед публікацією повторно перевірити вільний тег (якщо 001 зайнято — вибрати наступний номер), опублікувати готовий ZIP і checksum без заміни assets, завантажити asset назад та звірити SHA256. Потім заповнити реальні Release/asset URL у repository manifest і backup records та закомітити зміни. Нічну генерацію, API генерацію та Supabase uploads зараз не запускати. У новій хмарній задачі не припускати доступність цих /workspace файлів.
+
+## Історичні записи попередніх етапів
+
+Актуальні рішення наведено вище; нижче збережені попередні статуси до прийняття simple-002 та backup.
+
+# Передача задачі — пілот v1
+
+## АКТУАЛЬНИЙ СТАН — simple-002 завершено
+
+Користувач дозволив почати підготовлений пакет simple-002. Усі 10 вправ згенеровано по одній спробі через вбудований image_gen.imagegen. PNG збережені поза Git у /workspace/exercise-image-results/simple-002/; prompts, ID, style v1, attempts, SHA256 та файлові перевірки записані в progress і batch JSON. Усі 10 мають status generated_needs_review, technical_check=passed, agent_visual_review=not_performed, user_review=pending. Візуальну перевірку агентом не проводили. Фактичний розмір усіх зображень — 1254×1254, вони квадратні PNG із перевіреними alpha=0 фоновими пікселями; цільовий розмір 1024×1024 у специфікації style v1 лишається незмінним.
+
+simple-001 прийнятий користувачем цілком: усі 10 результатів позначені approved, точні accepted paths/SHA256 збережені. Не перегенеровувати.
+
+Наступна дія: перегляд користувачем simple-002. До його рішення залишити user_review=pending; прийняті файли надалі не замінювати автоматично. Масову генерацію за межами цього пакета, Supabase і Git push не запускати без окремого запиту.
+
+### simple-002 — результати та перевірки
+
+- Front Raise (Dumbbell) (front-raise-dumbbell): /workspace/exercise-image-results/simple-002/front-raise-dumbbell/attempt-1.png; SHA256 a6a4b784827b1a3dd47477ce9391abdf7c9cc44cb4b25f56c832ad2196377071; 1254×1254, transparent pixels 1277857; user_review=pending.
+- Goblet Squat (goblet-squat-dumbbell): /workspace/exercise-image-results/simple-002/goblet-squat-dumbbell/attempt-1.png; SHA256 0db153a9b8bcfb93cd922e518bc11576e1c04f231f94a7ecb9f83129a116453f; 1254×1254, transparent pixels 1161614; user_review=pending.
+- Lateral Leg Raises (lateral-leg-raises): /workspace/exercise-image-results/simple-002/lateral-leg-raises/attempt-1.png; SHA256 6032865af0a54710a45c183bef4f4be4af94034e637339668a5513a28caa78a7; 1254×1254, transparent pixels 1272318; user_review=pending.
+- Lunge (lunge): /workspace/exercise-image-results/simple-002/lunge/attempt-1.png; SHA256 dcc4573e7d7623b6f862397961392d87368aac595df78e2b626ddc4a080a9479; 1254×1254, transparent pixels 1162476; user_review=pending.
+- Lying Leg Raise (lying-leg-raise): /workspace/exercise-image-results/simple-002/lying-leg-raise/attempt-1.png; SHA256 56e3c751cbf02b9a186a730627ba31695a3396650fe6bf0b13c792f2ed5840d6; 1254×1254, transparent pixels 1178667; user_review=pending.
+- Reverse Curl (Barbell) (reverse-curl-barbell): /workspace/exercise-image-results/simple-002/reverse-curl-barbell/attempt-1.png; SHA256 bd0dd389fdb12ece43ef97341091ec778eddf059e4e44ab67004163af53ec951; 1254×1254, transparent pixels 1246283; user_review=pending.
+- Sit Up (situp): /workspace/exercise-image-results/simple-002/situp/attempt-1.png; SHA256 e00f8c9dfdaa1d6f6a9a6c8ce718d17a1a2a6f14191de07901d659388e773ce2; 1254×1254, transparent pixels 1072228; user_review=pending.
+- Triceps Kickback (Dumbbell) (triceps-kickback-dumbbell): /workspace/exercise-image-results/simple-002/triceps-kickback-dumbbell/attempt-1.png; SHA256 66dda0f08efe096ae49928de6b7d14612b946ff25d0dcda1deeb839e853ac841; 1254×1254, transparent pixels 1254797; user_review=pending.
+- Romanian Deadlift (Dumbbell) (romanian-deadlift-dumbbell): /workspace/exercise-image-results/simple-002/romanian-deadlift-dumbbell/attempt-1.png; SHA256 bb6237e19187bdf459618c15e29c73dbff7acf6069f3ecf96e91297f76aca334; 1254×1254, transparent pixels 1242534; user_review=pending.
+- Shoulder Press (Dumbbell) (shoulder-press-dumbbell): /workspace/exercise-image-results/simple-002/shoulder-press-dumbbell/attempt-1.png; SHA256 d280365996677c8ebc799f3913ad64a0f6c944025a68d386fe0e0858d82a0236; 1254×1254, transparent pixels 1207146; user_review=pending.
+
+Пакет: data/batches/simple-002.json. Progress: data/exercise-image-progress.json. Людський еталон стилю v1 — /workspace/exercise-image-pilot-v1/biceps-curl-dumbbell/attempt-1.png, роль лише зовнішність людини.
+
+## Історія підготовки та пілоту
+
+Наведені нижче статуси описують попередні етапи й рішення. Актуальні статуси, черга та наступна дія — у верхньому розділі й data/exercise-image-progress.json.
+
+Поточний етап: пакет simple-001 завершено; 10 PNG збережено. Squat схвалений користувачем, ще 9 вправ pending review. Пілот завершено; усі п’ять його точних файлів прийняті користувачем. Працюємо лише в поточному хмарному середовищі.
+Каталог незмінний: 451 запис / 4448 мовних блоків; SHA256 `a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989`.
+Джерело: `/workspace/exercise-source-v1/extracted/exercise-catalog-v1/`.
+Пілот: `/workspace/exercise-image-pilot-v1/`; prompts, журнали спроб та PNG — поза Git.
+Progress: `data/exercise-image-progress.json`; стиль v1: `docs/exercise-image-style.md`.
+
+| ID | status | attempts | technical_check | agent_visual_review | user_review |
+| --- | --- | ---: | --- | --- | --- |
+| `bench-press-barbell` | approved | 2 | failed | needs_fix | approved |
+| `biceps-curl-dumbbell` | approved | 1 | failed | passed | approved |
+| `seated-shoulder-press-machine` | approved | 3 | failed | not_performed | approved |
+| `cable-fly-crossovers-machine` | approved | 1 | failed | not_performed | approved |
+| `ab-wheel` | approved | 1 | failed | not_performed | approved |
+
+Шість вкладень доступні в історії чату; використовуються лише для моделі/матеріалів/деталізації. Поза/обладнання/м’язи — з англійського каталогу. Старі 48 PNG не використовуються як референси або результати. Cable Fly: дозволена стандартна сумісна конструкція; стоячий chest-level fly, D-руків’я, без додаткової грудної опори. 3 архівні лишаються blocked_archived.
+
+Тільки вбудований image_gen.imagegen; API, Supabase, масова генерація та push заборонені. Перевірка агентом лише перших двох; максимум 2 спроби на них (одна корекція явної помилки), для Cable Fly та Ab Wheel одна спроба; для Shoulder Press поточний ліміт 3 спроби через прямі запити користувача, без агентського візуального перегляду. Технічні перевірки всіх п’яти скриптом. До явного рішення користувача user_review = pending.
+
+Наступна дія: перегляд 9 результатів simple-001, user_review=pending. Не перегенеровувати та не запускати наступний пакет до окремого рішення користувача. Усі 5 прийнятих результатів пілоту й схвалений Squat не змінювати. Supabase uploads і Git push не запускати.
+У новій задачі файли не вважати автоматично доступними; не звертатися до локального комп’ютера користувача.
+
+## Рішення користувача та точні прийняті файли
+
+2026-10-01 (Europe/Kiev): користувач прийняв Shoulder Press attempt-3. Пілот повністю прийнятий; окремого дозволу на наступний етап ще немає.
+
+- `bench-press-barbell`: `/workspace/exercise-image-pilot-v1/bench-press-barbell/attempt-1.png`; SHA256 `86ef0b3726ec8a5bc73db29324cb52dc589e13843cd99412b7913e30a216a1a8`.
+- `biceps-curl-dumbbell`: `/workspace/exercise-image-pilot-v1/biceps-curl-dumbbell/attempt-1.png`; SHA256 `52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f`.
+- `cable-fly-crossovers-machine`: `/workspace/exercise-image-pilot-v1/cable-fly-crossovers-machine/attempt-1.png`; SHA256 `b5f2d1372ce0e49b991c14db3507e64def50c69d9b95d5aab0827b2c53e5cb2c`.
+- `ab-wheel`: `/workspace/exercise-image-pilot-v1/ab-wheel/attempt-1.png`; SHA256 `746bb6988238e4621e4ce460c0ef7851853b4d6a3ff33a646473195b4c09f061`.
+
+- `seated-shoulder-press-machine`: `/workspace/exercise-image-pilot-v1/seated-shoulder-press-machine/attempt-3.png`; SHA256 `b148610b4d8986ffad9c94beedf990554cc08d04f9efd0625c012a2af8eb2629`.
+
+Bench Press: прийнята перша спроба; друга збережена лише в історії. Попередня агентська оцінка першої спроби не скасовує рішення користувача. Bicep Curl, Cable Fly та Ab Wheel прийняті без змін. Початковий Shoulder Press відхилено користувачем через артефакти тренажера; attempt-3 прийнято користувачем.
+
+Два нові скриншоти Shoulder Press доступні в повідомленні з правками: нижня та верхня фази, вузький еталон конструкції тренажера саме для цієї корекції. Попередні шість вкладень залишаються еталонами зовнішності.
+
+Користувач відхилив attempt-2: бракує другої ручки/її повного з’єднання з важелем. Дозволив одну точкову правку attempt-3, надав ще один скриншот конструкції. Вимогу 1024×1024 залишити без змін; розмір самовільно не виправляти.
+
+Прийняті оригінали мають 1254×1254 замість цілі 1024×1024; Cable Fly також має alpha=1 в одному куті. Технічні результати failed збережені чесно, прийняття користувачем не підміняє перевірки. Ресайз не виконувати без запиту.
+
+Поточний Shoulder Press: `/workspace/exercise-image-pilot-v1/seated-shoulder-press-machine/attempt-3.png`; SHA256 `b148610b4d8986ffad9c94beedf990554cc08d04f9efd0625c012a2af8eb2629`; technical_check=failed; agent_visual_review=not_performed; user_review=approved. Файл прийнято як є; технічні оцінки збережено.
+
+Фактична прозорість attempt-3: 846161 alpha=0 пікселів, 4989 повністю прозорих пікселів периметра; corner alpha=[1, 0, 0, 0]. Строга перевірка кутів failed через alpha=1 в одному куті, а не через відсутність прозорих пікселів.
+
+
+## Пакет simple-001 для Luna
+
+Пакет: `/workspace/lightweight-exercises-photo/data/batches/simple-001.json`.
+10 точних ID, англійські вихідні блоки, конкретні generation_prompt, обладнання й українські описи обраних одиночних поз. Відібрано тільки неархівні not_started без result_path/accepted_path; каталогу й progress не змінювали.
+
+Еталон людини: `/workspace/exercise-image-pilot-v1/biceps-curl-dumbbell/attempt-1.png`.
+SHA256: `52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f`.
+Це прийнятий новий PNG пілоту. Використовувати лише зовнішність, пропорції, непрозорі матеріали й деталізацію; не позу, гантелі чи підсвічені м’язи. Позу/обладнання/м’язи кожного ID брати з англійського запису й готового prompt пакета. Перед використанням у новій задачі перевірити наявність, hash і доступність пікселів; файли автоматично доступними не вважати.
+
+Для цього запиту дозволено одну генерацію: `squat-body-weight` attempt-1. Користувач прийняв результат і прямо дозволив продовжити ще дев’ять вправ пакета. Призначений виконавець пакета — Luna після перемикання користувачем, не окремий агент. Використовувати вбудований image_gen; зберігати кожен PNG одразу поза Git у `/workspace/exercise-image-results/simple-001/<id>/` разом із prompt/ID/style v1/спробою/хешем та одразу оновлювати progress. Approved/uploaded або будь-який уже готовий результат не перегенеровувати; needs_clarification і статуси, відмінні від not_started, пропускати. Прийняття — тільки користувачем; до рішення user_review=pending.
+
+Службові pilot_runtime.py та check_exercise_image.py наразі обмежені ID/каталогом виходів старого пілоту. Перед виконанням нового пакета налаштувати запис прогресу й файлову перевірку під дозволений пакет/новий output root, не розширюючи вибірку на весь каталог й не використовуючи старі ліміти корекцій як дозвіл на повтори. Вимога 1024×1024 не змінена; фактичні dimensions/квадратність/PNG/ID/hash/реальну alpha-прозорість перевіряти й записувати, без автоматичного ресайзу або повтору через розмір. Правила агентського візуального перегляду перших двох застосовувалися лише до пілоту; для цього нового пакета користувач ще не задав режиму перегляду.
+
+
+Пакетний результат 1/10: `squat-body-weight` attempt-1 прийнято користувачем і збережено у `/workspace/exercise-image-results/simple-001/squat-body-weight/attempt-1.png`; SHA256 `4f1b3665d8b1fc6219d42527bb69cef7c8c976dcddbeb283418d8de123dcd268`. Prompt: `/workspace/exercise-image-results/simple-001/squat-body-weight/attempt-1-prompt.txt`. Технічний стан: `passed`; user_review=approved; agent_visual_review=not_performed. PNG square 1254×1254, справжніх alpha=0 пікселів: 1207168. Решта дев’ять згенерована по одному результату, перед кожним викликом status/result звірено й progress оновлено.
+
+Акцентний колір перевірено перед продовженням: усі prompts містять цільовий базовий #F26445 / RGB(242,100,69). У першій ілюстрації медіана кольорових пікселів м’язової підсвітки RGB(220,104,70), тобто той самий coral hue із яскравішими та темнішими 3D відтінками; не кожен піксель фізично дорівнює hex через освітлення. Для решти дев’яти prompt уточнено базовий hex і збереження hue при shading.
+
+simple-001: started `pushup` attempt-1. Prompt: `/workspace/exercise-image-results/simple-001/pushup/attempt-1-prompt.txt`. Status was verified `not_started`; next result must be saved before proceeding.
+
+simple-001: saved `pushup` attempt-1 at `/workspace/exercise-image-results/simple-001/pushup/attempt-1.png`; SHA256 `cfcac2e12a8f02c53b4b6eaed0c34428453a8b4030d2c65a8489fefbee730061`; technical_check=passed; user_review=pending. Actual dimensions 1254×1254, alpha=0 pixels 1219384; errors: []. The next generation may begin only after verifying that ID's live progress.
+
+simple-001: started `plank` attempt-1. Prompt: `/workspace/exercise-image-results/simple-001/plank/attempt-1-prompt.txt`. Status was verified `not_started`; next result must be saved before proceeding.
+
+simple-001: saved `plank` attempt-1 at `/workspace/exercise-image-results/simple-001/plank/attempt-1.png`; SHA256 `1c381881453052a82a73091d05ea249275660a05fb93b542a5d0054cda558187`; technical_check=passed; user_review=pending. Actual dimensions 1254×1254, alpha=0 pixels 1273414; errors: []. The next generation may begin only after verifying that ID's live progress.
+
+simple-001: started `side-plank` attempt-1. Prompt: `/workspace/exercise-image-results/simple-001/side-plank/attempt-1-prompt.txt`. Status was verified `not_started`; next result must be saved before proceeding.
+
+simple-001: saved `side-plank` attempt-1 at `/workspace/exercise-image-results/simple-001/side-plank/attempt-1.png`; SHA256 `ee1eba364a156d8e13ce662e04c9598ea4150db5a0a073dbdccfba8d451306e8`; technical_check=passed; user_review=pending. Actual dimensions 1254×1254, alpha=0 pixels 1229907; errors: []. The next generation may begin only after verifying that ID's live progress.
+
+simple-001: started `crunch` attempt-1. Prompt: `/workspace/exercise-image-results/simple-001/crunch/attempt-1-prompt.txt`. Status was verified `not_started`; next result must be saved before proceeding.
+
+simple-001: saved `crunch` attempt-1 at `/workspace/exercise-image-results/simple-001/crunch/attempt-1.png`; SHA256 `642d186f710d1d9d1f6c69160a7725241d3dcdbdbc69785cc0919ee5de190faf`; technical_check=passed; user_review=pending. Actual dimensions 1254×1254, alpha=0 pixels 1088623; errors: []. The next generation may begin only after verifying that ID's live progress.
+
+simple-001: started `glute-bridge` attempt-1. Prompt: `/workspace/exercise-image-results/simple-001/glute-bridge/attempt-1-prompt.txt`. Status was verified `not_started`; next result must be saved before proceeding.
+
+simple-001: saved `glute-bridge` attempt-1 at `/workspace/exercise-image-results/simple-001/glute-bridge/attempt-1.png`; SHA256 `161f193d8a994eded8b3b36d67b16f6344c96cf95eeeed4283418e2a130275e8`; technical_check=passed; user_review=pending. Actual dimensions 1254×1254, alpha=0 pixels 1205704; errors: []. The next generation may begin only after verifying that ID's live progress.
+
+simple-001: started `hammer-curl-dumbbell` attempt-1. Prompt: `/workspace/exercise-image-results/simple-001/hammer-curl-dumbbell/attempt-1-prompt.txt`. Status was verified `not_started`; next result must be saved before proceeding.
+
+simple-001: saved `hammer-curl-dumbbell` attempt-1 at `/workspace/exercise-image-results/simple-001/hammer-curl-dumbbell/attempt-1.png`; SHA256 `5eb38cabe435999077b3d382294933986585a898183ada98356de2a80a163a2a`; technical_check=passed; user_review=pending. Actual dimensions 1254×1254, alpha=0 pixels 1280924; errors: []. The next generation may begin only after verifying that ID's live progress.
+
+simple-001: started `lateral-raise-dumbbell` attempt-1. Prompt: `/workspace/exercise-image-results/simple-001/lateral-raise-dumbbell/attempt-1-prompt.txt`. Status was verified `not_started`; next result must be saved before proceeding.
+
+simple-001: saved `lateral-raise-dumbbell` attempt-1 at `/workspace/exercise-image-results/simple-001/lateral-raise-dumbbell/attempt-1.png`; SHA256 `4d153f6cbee379205a23f8403ee8e93dc184db319953a98f598d3e5c5e19acfd`; technical_check=passed; user_review=pending. Actual dimensions 1254×1254, alpha=0 pixels 1240560; errors: []. The next generation may begin only after verifying that ID's live progress.
+
+simple-001: started `shrug-dumbbell` attempt-1. Prompt: `/workspace/exercise-image-results/simple-001/shrug-dumbbell/attempt-1-prompt.txt`. Status was verified `not_started`; next result must be saved before proceeding.
+
+simple-001: saved `shrug-dumbbell` attempt-1 at `/workspace/exercise-image-results/simple-001/shrug-dumbbell/attempt-1.png`; SHA256 `e9bf1fe9232e0bab3f154b0c000cc876f40a76c0e483891cfa342b425be27629`; technical_check=passed; user_review=pending. Actual dimensions 1254×1254, alpha=0 pixels 1239851; errors: []. The next generation may begin only after verifying that ID's live progress.
+
+simple-001: started `floor-press-dumbbell` attempt-1. Prompt: `/workspace/exercise-image-results/simple-001/floor-press-dumbbell/attempt-1-prompt.txt`. Status was verified `not_started`; next result must be saved before proceeding.
+
+simple-001: saved `floor-press-dumbbell` attempt-1 at `/workspace/exercise-image-results/simple-001/floor-press-dumbbell/attempt-1.png`; SHA256 `e8b9e46cfd550c1de76609f6186f1c96f8bebc891a6d332e03f0408e11f58aee`; technical_check=passed; user_review=pending. Actual dimensions 1254×1254, alpha=0 pixels 1054853; errors: []. The next generation may begin only after verifying that ID's live progress.
+
+## Підсумок simple-001 після генерації
+
+Усі результати лежать поза Git у `/workspace/exercise-image-results/simple-001/`; зведення path/SHA256/technical_check/user_review є у `data/batches/simple-001.json` та `data/exercise-image-progress.json`. Усі 10 файлів — квадратні PNG 1254×1254, усі пройшли відкриття, alpha=0 background/perimeter та path/ID/SHA256 checks. Усі 10 отримали по одній спробі; Squat approved, решта дев’ять user_review=pending. Інші вправи каталогу не змінювали.
+
+- `squat-body-weight`: прийнято користувачем; `/workspace/exercise-image-results/simple-001/squat-body-weight/attempt-1.png`; SHA256 `4f1b3665d8b1fc6219d42527bb69cef7c8c976dcddbeb283418d8de123dcd268`.
+- `pushup` (Push Up): `/workspace/exercise-image-results/simple-001/pushup/attempt-1.png`; SHA256 `cfcac2e12a8f02c53b4b6eaed0c34428453a8b4030d2c65a8489fefbee730061`; `user_review=pending`.
+- `plank` (Plank): `/workspace/exercise-image-results/simple-001/plank/attempt-1.png`; SHA256 `1c381881453052a82a73091d05ea249275660a05fb93b542a5d0054cda558187`; `user_review=pending`.
+- `side-plank` (Side Plank): `/workspace/exercise-image-results/simple-001/side-plank/attempt-1.png`; SHA256 `ee1eba364a156d8e13ce662e04c9598ea4150db5a0a073dbdccfba8d451306e8`; `user_review=pending`.
+- `crunch` (Crunch): `/workspace/exercise-image-results/simple-001/crunch/attempt-1.png`; SHA256 `642d186f710d1d9d1f6c69160a7725241d3dcdbdbc69785cc0919ee5de190faf`; `user_review=pending`.
+- `glute-bridge` (Glute Bridge): `/workspace/exercise-image-results/simple-001/glute-bridge/attempt-1.png`; SHA256 `161f193d8a994eded8b3b36d67b16f6344c96cf95eeeed4283418e2a130275e8`; `user_review=pending`.
+- `hammer-curl-dumbbell` (Hammer Curl (Dumbbell)): `/workspace/exercise-image-results/simple-001/hammer-curl-dumbbell/attempt-1.png`; SHA256 `5eb38cabe435999077b3d382294933986585a898183ada98356de2a80a163a2a`; `user_review=pending`.
+- `lateral-raise-dumbbell` (Lateral Raise (Dumbbell)): `/workspace/exercise-image-results/simple-001/lateral-raise-dumbbell/attempt-1.png`; SHA256 `4d153f6cbee379205a23f8403ee8e93dc184db319953a98f598d3e5c5e19acfd`; `user_review=pending`.
+- `shrug-dumbbell` (Shrug (Dumbbell)): `/workspace/exercise-image-results/simple-001/shrug-dumbbell/attempt-1.png`; SHA256 `e9bf1fe9232e0bab3f154b0c000cc876f40a76c0e483891cfa342b425be27629`; `user_review=pending`.
+- `floor-press-dumbbell` (Floor Press (Dumbbell)): `/workspace/exercise-image-results/simple-001/floor-press-dumbbell/attempt-1.png`; SHA256 `e8b9e46cfd550c1de76609f6186f1c96f8bebc891a6d332e03f0408e11f58aee`; `user_review=pending`.
+
+Акцент: batch prompts contain exact base `#F26445` / RGB(242,100,69). Pixel audit found nearby coral hues under 3D shading; RGB values vary, and the audit did not find pixels exactly equal to the hex triplet.
+
+## Аудит збереження simple-001 (2026-09-30)
+
+Повторна файлова звірка підтвердила наявність усіх 10 PNG у хмарному середовищі та відповідність кожного шляху й SHA256 записам правильного ID у progress і batch-файлі; помилок звірки немає. Візуальний перегляд цього разу не проводився. Залишено попередні рішення користувача: `squat-body-weight` має `user_review=approved`; решта дев’ять — `user_review=pending`. Результати не змінювалися і не генерувалися повторно.
+
+## Прийняття всіх файлів simple-001
+
+Рішення користувача: «Приймаю всі 10 зображень пакета simple-001». Зафіксовані незмінні файли:
+
+- `squat-body-weight`: `/workspace/exercise-image-results/simple-001/squat-body-weight/attempt-1.png`; SHA256 `4f1b3665d8b1fc6219d42527bb69cef7c8c976dcddbeb283418d8de123dcd268`; approved.
+- `pushup`: `/workspace/exercise-image-results/simple-001/pushup/attempt-1.png`; SHA256 `cfcac2e12a8f02c53b4b6eaed0c34428453a8b4030d2c65a8489fefbee730061`; approved.
+- `plank`: `/workspace/exercise-image-results/simple-001/plank/attempt-1.png`; SHA256 `1c381881453052a82a73091d05ea249275660a05fb93b542a5d0054cda558187`; approved.
+- `side-plank`: `/workspace/exercise-image-results/simple-001/side-plank/attempt-1.png`; SHA256 `ee1eba364a156d8e13ce662e04c9598ea4150db5a0a073dbdccfba8d451306e8`; approved.
+- `crunch`: `/workspace/exercise-image-results/simple-001/crunch/attempt-1.png`; SHA256 `642d186f710d1d9d1f6c69160a7725241d3dcdbdbc69785cc0919ee5de190faf`; approved.
+- `glute-bridge`: `/workspace/exercise-image-results/simple-001/glute-bridge/attempt-1.png`; SHA256 `161f193d8a994eded8b3b36d67b16f6344c96cf95eeeed4283418e2a130275e8`; approved.
+- `hammer-curl-dumbbell`: `/workspace/exercise-image-results/simple-001/hammer-curl-dumbbell/attempt-1.png`; SHA256 `5eb38cabe435999077b3d382294933986585a898183ada98356de2a80a163a2a`; approved.
+- `lateral-raise-dumbbell`: `/workspace/exercise-image-results/simple-001/lateral-raise-dumbbell/attempt-1.png`; SHA256 `4d153f6cbee379205a23f8403ee8e93dc184db319953a98f598d3e5c5e19acfd`; approved.
+- `shrug-dumbbell`: `/workspace/exercise-image-results/simple-001/shrug-dumbbell/attempt-1.png`; SHA256 `e9bf1fe9232e0bab3f154b0c000cc876f40a76c0e483891cfa342b425be27629`; approved.
+- `floor-press-dumbbell`: `/workspace/exercise-image-results/simple-001/floor-press-dumbbell/attempt-1.png`; SHA256 `e8b9e46cfd550c1de76609f6186f1c96f8bebc891a6d332e03f0408e11f58aee`; approved.
+
+Simple-002: `front-raise-dumbbell`, `goblet-squat-dumbbell`, `lateral-leg-raises`, `lunge`, `lying-leg-raise`, `reverse-curl-barbell`, `situp`, `triceps-kickback-dumbbell`, `romanian-deadlift-dumbbell`, `shoulder-press-dumbbell`. Статуси залишено not_started; генерацію не запускали.
+
+
+simple-002 checkpoint 2026-09-30T22:20:00.717894+00:00: `front-raise-dumbbell` attempt-1 saved at `/workspace/exercise-image-results/simple-002/front-raise-dumbbell/attempt-1.png`; SHA256 `a6a4b784827b1a3dd47477ce9391abdf7c9cc44cb4b25f56c832ad2196377071`; technical_check=passed; dimensions=1254x1254; zero-alpha background pixels=1277857; agent_visual_review=not_performed; user_review=pending. Prompt and style v1 recorded; reference role is human appearance only.
+
+
+simple-002 checkpoint 2026-09-30T22:24:00.310452+00:00: goblet-squat-dumbbell attempt-1 saved at /workspace/exercise-image-results/simple-002/goblet-squat-dumbbell/attempt-1.png; SHA256 0db153a9b8bcfb93cd922e518bc11576e1c04f231f94a7ecb9f83129a116453f; technical_check=passed; dimensions=1254x1254; transparent pixels=1161614; agent_visual_review=not_performed; user_review=pending.
+
+
+simple-002 checkpoint 2026-09-30T22:25:23.867796+00:00: lateral-leg-raises attempt-1 saved at /workspace/exercise-image-results/simple-002/lateral-leg-raises/attempt-1.png; SHA256 6032865af0a54710a45c183bef4f4be4af94034e637339668a5513a28caa78a7; technical_check=passed; dimensions=1254x1254; transparent pixels=1272318; agent_visual_review=not_performed; user_review=pending.
+
+
+simple-002 checkpoint 2026-09-30T22:26:21.733729+00:00: lunge attempt-1 saved at /workspace/exercise-image-results/simple-002/lunge/attempt-1.png; SHA256 dcc4573e7d7623b6f862397961392d87368aac595df78e2b626ddc4a080a9479; technical_check=passed; dimensions=1254x1254; transparent pixels=1162476; agent_visual_review=not_performed; user_review=pending.
+
+
+simple-002 checkpoint 2026-09-30T22:27:24.080763+00:00: lying-leg-raise attempt-1 saved at /workspace/exercise-image-results/simple-002/lying-leg-raise/attempt-1.png; SHA256 56e3c751cbf02b9a186a730627ba31695a3396650fe6bf0b13c792f2ed5840d6; technical_check=passed; dimensions=1254x1254; transparent pixels=1178667; agent_visual_review=not_performed; user_review=pending.
+
+
+simple-002 checkpoint 2026-09-30T22:28:13.786626+00:00: reverse-curl-barbell attempt-1 saved at /workspace/exercise-image-results/simple-002/reverse-curl-barbell/attempt-1.png; SHA256 bd0dd389fdb12ece43ef97341091ec778eddf059e4e44ab67004163af53ec951; technical_check=passed; dimensions=1254x1254; transparent pixels=1246283; agent_visual_review=not_performed; user_review=pending.
+
+
+simple-002 checkpoint 2026-09-30T22:29:10.927368+00:00: situp attempt-1 saved at /workspace/exercise-image-results/simple-002/situp/attempt-1.png; SHA256 e00f8c9dfdaa1d6f6a9a6c8ce718d17a1a2a6f14191de07901d659388e773ce2; technical_check=passed; dimensions=1254x1254; transparent pixels=1072228; agent_visual_review=not_performed; user_review=pending.
+
+
+simple-002 checkpoint 2026-09-30T22:30:01.811889+00:00: triceps-kickback-dumbbell attempt-1 saved at /workspace/exercise-image-results/simple-002/triceps-kickback-dumbbell/attempt-1.png; SHA256 66dda0f08efe096ae49928de6b7d14612b946ff25d0dcda1deeb839e853ac841; technical_check=passed; dimensions=1254x1254; transparent pixels=1254797; agent_visual_review=not_performed; user_review=pending.
+
+
+simple-002 checkpoint 2026-09-30T22:31:04.378162+00:00: romanian-deadlift-dumbbell attempt-1 saved at /workspace/exercise-image-results/simple-002/romanian-deadlift-dumbbell/attempt-1.png; SHA256 bb6237e19187bdf459618c15e29c73dbff7acf6069f3ecf96e91297f76aca334; technical_check=passed; dimensions=1254x1254; transparent pixels=1242534; agent_visual_review=not_performed; user_review=pending.
+
+
+simple-002 checkpoint 2026-09-30T22:31:57.873484+00:00: shoulder-press-dumbbell attempt-1 saved at /workspace/exercise-image-results/simple-002/shoulder-press-dumbbell/attempt-1.png; SHA256 d280365996677c8ebc799f3913ad64a0f6c944025a68d386fe0e0858d82a0236; technical_check=passed; dimensions=1254x1254; transparent pixels=1207146; agent_visual_review=not_performed; user_review=pending.
+
+
+Актуальний аудит simple-002 2026-09-30T22:34:23.185688+00:00: усі 10 PNG існують, SHA256 і шляхи збігаються в batch та progress. Усі файлові перевірки пройшли; статуси користувача pending.
