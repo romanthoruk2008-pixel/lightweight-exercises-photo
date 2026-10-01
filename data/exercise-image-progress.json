@@ -11431,7 +11431,7 @@
         "mapping": null
       },
       "source_reference_image": null,
-      "status": "generated",
+      "status": "approved",
       "included_in_generation": true,
       "archived_inclusion_authorized": false,
       "blocked_by": [],
@@ -11577,7 +11577,7 @@
       },
       "agent_visual_review": "not_performed",
       "agent_visual_review_notes": null,
-      "user_review": "pending",
+      "user_review": "approved",
       "generation_run_id": "agent-03-others-2026-10-01-followup",
       "batch_id": "agent-03-others-004",
       "generation_prompt": "IMAGE EDIT. The first referenced file is the exact existing Floor Press image to correct. The second file is only the human appearance and 3D style reference; do not copy its pose, equipment, or highlighted muscles.\n\nKeep this same single bald male anatomical mannequin, consistent proportions, opaque silver-gray sculpted materials, plain black shorts, and the exact floor-supported barbell press with the same barbell, plates, arm positions, bent knees, feet, and floor support. Keep the localized #F26445 primary chest and lighter same-hue secondary shoulder/triceps highlights.\n\nChange only the head and neck placement. Move the head to approximately x=40.9%, y=52% of the square canvas, naturally between the raised arms and below the bar path. Attach the head seamlessly to a correctly aligned neck and cervical spine that continues from the shoulders and supine torso. The face should look naturally upward toward the bar. Do not detach, duplicate, omit, twist, or distort the head, neck, shoulders, torso, limbs, hands, or barbell.\n\nKeep the complete figure and entire barbell with both plate stacks inside the square frame. Output one square PNG with genuine transparent background pixels, no white or checkerboard background, text, UI, borders, glow, extra equipment, or extra person.",
@@ -11597,6 +11597,15 @@
           "path": "assets/exercises/pending/agent-03-others-004/floor-press-barbell/attempt-1.png",
           "sha256": "632ceccc45238e70689d625f3758f6e9075b75a427b89908adc54248b0d11e40",
           "reason": "Move the head to the user-marked position (approximately x=40.9%, y=52% of the square), naturally attached to the neck and shoulders and located between the arms. Keep the floor-press pose and all other content."
+        },
+        {
+          "recorded_at": "2026-10-01T16:37:38+00:00",
+          "by": "user",
+          "decision": "approved",
+          "accepted_attempt": 2,
+          "accepted_repository_path": "assets/exercises/pending/agent-03-others-004/floor-press-barbell/attempt-2.png",
+          "accepted_sha256": "acfc8db1c7954a946d42c5dd4cff25234b952ca7d6d9927b5811fdace7bd9693",
+          "reason": "User approves the first corrected image of the last shown pair."
         }
       ],
       "review_feedback": "Move the head to the user-marked position (approximately x=40.9%, y=52% of the square), naturally attached to the neck and shoulders and located between the arms. Keep the floor-press pose and all other content.",
@@ -11612,7 +11621,13 @@
           "verified_at": "2026-10-01T16:29:42+00:00",
           "verified_commit": "71e98336c21a115a3e3547eb61113817b34f5816"
         }
-      ]
+      ],
+      "accepted_attempt": 2,
+      "accepted_path": "/workspace/lightweight-exercises-photo/assets/exercises/pending/agent-03-others-004/floor-press-barbell/attempt-2.png",
+      "accepted_repository_path": "assets/exercises/pending/agent-03-others-004/floor-press-barbell/attempt-2.png",
+      "accepted_sha256": "acfc8db1c7954a946d42c5dd4cff25234b952ca7d6d9927b5811fdace7bd9693",
+      "accepted_at": "2026-10-01T16:37:38+00:00",
+      "approval_timestamp_source": "conversation_direct_approval_recorded_at"
     },
     "floor-press-dumbbell": {
       "id": "floor-press-dumbbell",
@@ -14335,7 +14350,7 @@
       "included_in_generation": true,
       "archived_inclusion_authorized": false,
       "blocked_by": [],
-      "attempts": 2,
+      "attempts": 3,
       "style_version": "v1",
       "visual_review": {
         "status": "not_reviewed",
@@ -14349,7 +14364,7 @@
         },
         "notes": null
       },
-      "result_path": "assets/exercises/pending/agent-03-others-004/handstand-pushup/attempt-2.png",
+      "result_path": "assets/exercises/pending/agent-03-others-004/handstand-pushup/attempt-3.png",
       "supabase_path": null,
       "supabase_upload_status": "not_configured",
       "last_error": null,
@@ -14455,36 +14470,85 @@
             "generated_file": "exec-ea1a9631-e665-44b1-b0d9-01e9e337d9d6.png"
           },
           "backup_verified_at": "2026-10-01T16:32:38+00:00",
-          "backup_verified_commit": "9591faf4c23cafdef0b4973e151f1a4520fcab22"
+          "backup_verified_commit": "9591faf4c23cafdef0b4973e151f1a4520fcab22",
+          "user_feedback": "User rejects attempt-2: show the posterior torso and posterior legs consistently with the supplied Hevy pose references; no abdominal muscles drawn on the back or reversed lower body."
+        },
+        {
+          "attempt": 3,
+          "id": "handstand-pushup",
+          "batch_id": "agent-03-others-004",
+          "run_id": "agent-03-others-2026-10-01-corrections",
+          "style_version": "v1",
+          "tool": "image_gen.imagegen",
+          "tool_call_index": 64,
+          "status": "completed",
+          "started_at": "2026-10-01T16:37:38+00:00",
+          "prompt": "Correct the Handstand Push Up illustration using the three most recent conversation images. The two newest images are Hevy screenshots supplied by the user as specific pose and posterior-view references for THIS correction. The preceding generated Handstand Push Up PNG supplies the established human identity, materials and style. Do not reproduce screenshot UI, white backgrounds, hair, text, or their muscle colors.\n\nCreate one anatomically coherent inverted adult athletic bald male mannequin viewed from a rear three-quarter angle. We must see his BACK and the BACKS of both legs: scapulae, trapezius, latissimus contours, spinal line, posterior pelvis under plain black shorts, hamstrings and calves. All these surfaces must form a continuous correctly oriented posterior chain. His chest and abdomen face AWAY from the viewer toward the supporting wall. Do not draw a six-pack or pectoral anatomy on the back, and do not rotate the hips or legs 180 degrees relative to the shoulders. Preserve the established opaque silver-gray detailed 3D material, muscular proportions, bald human identity, black shorts and bare feet.\n\nExact source technique: set up a stable handstand against a wall; brace the trunk; bend the elbows to lower the head under control; press through the hands to return to the stacked handstand. Hands shoulder-width, shoulders controlled over wrists, move straight down and up. Avoid flared elbows, arched ribs, or kicking off the wall. Show a single controlled bent-elbow phase with both palms flat on the floor and fingers spread, head naturally between the arms just above the floor, neck connected normally to shoulders, pelvis stacked with the ribcage and both legs extended upward together. Use a standard chest-to-wall handstand orientation with both toes contacting a plain wall for support, so the posterior body remains clearly visible to the rear three-quarter camera. Show required wall support from an oblique side angle without covering the human. No spotter or extra person.\n\nStyle v1: shoulders are the primary target, localized #F26445. Triceps and chest are secondary at approximately 45% intensity of the same hue; color only their actual visible surfaces, never paint chest onto back or highlight unrelated posterior muscles. Highlighting does not make tissue transparent. No glow or global orange tint. One human, one exercise phase, full figure and required support entirely within generous square framing. Square PNG, target 1024x1024, genuinely transparent alpha background around person and support. No solid backdrop, checkerboard, labels, UI, borders, decorations or motion duplicates.",
+          "prompt_sha256": "809f53307761e1416f4bbfa129eaf4adf34e8c7b5b4b7c3efdf917b170f6409d",
+          "edit_input_path": "assets/exercises/pending/agent-03-others-004/handstand-pushup/attempt-2.png",
+          "edit_input_sha256": "b0123b6987e6146f756ef7c37c44a1cf01c6c2cdcb2bce08f123bcd8fa09bfb6",
+          "reference_method": "num_last_images_to_include=3",
+          "reference_roles": "Two latest user screenshots: posterior pose/anatomy; preceding generated handstand PNG: established human appearance/materials.",
+          "user_correction": "User rejects attempt-2: show the posterior torso and posterior legs consistently with the supplied Hevy pose references; no abdominal muscles drawn on the back or reversed lower body.",
+          "result_path": "assets/exercises/pending/agent-03-others-004/handstand-pushup/attempt-3.png",
+          "cloud_output_path": "/workspace/exercise-image-results/agent-03-others-004/handstand-pushup/attempt-3.png",
+          "backup_status": "pending",
+          "completed_at": "2026-10-01T16:39:30+00:00",
+          "result_sha256": "9a2250339261610405d356172e7291406672d8b60dcb02adb0b7b5f375697f4b",
+          "dimensions": [
+            1254,
+            1254
+          ],
+          "mime_type": "image/png",
+          "technical_check": "passed",
+          "technical_check_details": {
+            "opens": true,
+            "format": "PNG",
+            "mode": "RGBA",
+            "width": 1254,
+            "height": 1254,
+            "square": true,
+            "has_alpha_channel": true,
+            "transparent_pixels": 1179402,
+            "partially_transparent_pixels": 391963,
+            "sha256": "9a2250339261610405d356172e7291406672d8b60dcb02adb0b7b5f375697f4b",
+            "errors": []
+          },
+          "tool_response_metadata": {
+            "tool": "image_gen.imagegen",
+            "ordinal": 64,
+            "generated_file": "exec-906a4bce-a8b0-4699-8ee0-2704310c1b6a.png"
+          },
+          "human_reference": "assets/exercises/pending/agent-03-others-004/handstand-pushup/attempt-2.png",
+          "human_reference_sha256": "b0123b6987e6146f756ef7c37c44a1cf01c6c2cdcb2bce08f123bcd8fa09bfb6"
         }
       ],
-      "result_sha256": "b0123b6987e6146f756ef7c37c44a1cf01c6c2cdcb2bce08f123bcd8fa09bfb6",
+      "result_sha256": "9a2250339261610405d356172e7291406672d8b60dcb02adb0b7b5f375697f4b",
       "technical_check": "passed",
       "technical_check_details": {
         "opens": true,
         "format": "PNG",
+        "mode": "RGBA",
         "width": 1254,
         "height": 1254,
         "square": true,
-        "mode": "RGBA",
         "has_alpha_channel": true,
-        "transparent_pixels": 1215362,
-        "partially_transparent_pixels": 356684,
-        "opaque_pixels": 470,
-        "sha256": "b0123b6987e6146f756ef7c37c44a1cf01c6c2cdcb2bce08f123bcd8fa09bfb6",
+        "transparent_pixels": 1179402,
+        "partially_transparent_pixels": 391963,
+        "sha256": "9a2250339261610405d356172e7291406672d8b60dcb02adb0b7b5f375697f4b",
         "errors": []
       },
       "agent_visual_review": "not_performed",
       "agent_visual_review_notes": null,
       "user_review": "pending",
-      "generation_run_id": "agent-03-others-2026-10-01-followup",
+      "generation_run_id": "agent-03-others-2026-10-01-corrections",
       "batch_id": "agent-03-others-004",
-      "generation_prompt": "IMAGE EDIT. The first referenced file is the exact existing Handstand Push Up image to correct. The second file is only the human appearance and 3D style reference; do not copy its pose, equipment, or highlighted muscles.\n\nPreserve the wall-supported handstand push-up: both hands shoulder-width on the floor, arms supporting the inverted body, head naturally below and between the arms, and both legs supported against the plain wall. Keep the same single bald male anatomical mannequin, proportions, opaque silver-gray sculpted materials, black shorts, and 3D anatomical detail. Keep shoulders as the primary highlighted muscles in localized #F26445, with chest and triceps as lighter same-hue secondary highlights.\n\nCorrect the torso anatomy so the head and neck connect naturally to the shoulders, ribcage, abdomen, pelvis, hips, and legs along one coherent inverted body axis. The chest, abdominal surface, pelvis, and shorts must face and align consistently with the shoulders and head. Remove the 180-degree torso twist or inversion artifact; do not mirror, detach, duplicate, or distort body parts. Keep the hands planted and feet supported by the wall, with a controlled handstand-push-up position.\n\nKeep the full person and the required wall support inside the square frame. Output one square PNG with genuine transparent background pixels, no white or checkerboard background, text, UI, borders, glow, extra equipment, or extra person.",
-      "generation_prompt_sha256": "b35bf94b30e8f88bc1571587e30f57c7e907f4cd15134ae6bcb89248bcb6349b",
-      "reference_path": "/workspace/lightweight-exercises-photo/assets/exercises/biceps-curl-dumbbell.png",
-      "cloud_output_path": "/workspace/exercise-image-results/agent-03-others-004/handstand-pushup/attempt-2.png",
-      "generated_at": "2026-10-01T16:31:42+00:00",
-      "backup_status": "github_verified",
+      "generation_prompt": "Correct the Handstand Push Up illustration using the three most recent conversation images. The two newest images are Hevy screenshots supplied by the user as specific pose and posterior-view references for THIS correction. The preceding generated Handstand Push Up PNG supplies the established human identity, materials and style. Do not reproduce screenshot UI, white backgrounds, hair, text, or their muscle colors.\n\nCreate one anatomically coherent inverted adult athletic bald male mannequin viewed from a rear three-quarter angle. We must see his BACK and the BACKS of both legs: scapulae, trapezius, latissimus contours, spinal line, posterior pelvis under plain black shorts, hamstrings and calves. All these surfaces must form a continuous correctly oriented posterior chain. His chest and abdomen face AWAY from the viewer toward the supporting wall. Do not draw a six-pack or pectoral anatomy on the back, and do not rotate the hips or legs 180 degrees relative to the shoulders. Preserve the established opaque silver-gray detailed 3D material, muscular proportions, bald human identity, black shorts and bare feet.\n\nExact source technique: set up a stable handstand against a wall; brace the trunk; bend the elbows to lower the head under control; press through the hands to return to the stacked handstand. Hands shoulder-width, shoulders controlled over wrists, move straight down and up. Avoid flared elbows, arched ribs, or kicking off the wall. Show a single controlled bent-elbow phase with both palms flat on the floor and fingers spread, head naturally between the arms just above the floor, neck connected normally to shoulders, pelvis stacked with the ribcage and both legs extended upward together. Use a standard chest-to-wall handstand orientation with both toes contacting a plain wall for support, so the posterior body remains clearly visible to the rear three-quarter camera. Show required wall support from an oblique side angle without covering the human. No spotter or extra person.\n\nStyle v1: shoulders are the primary target, localized #F26445. Triceps and chest are secondary at approximately 45% intensity of the same hue; color only their actual visible surfaces, never paint chest onto back or highlight unrelated posterior muscles. Highlighting does not make tissue transparent. No glow or global orange tint. One human, one exercise phase, full figure and required support entirely within generous square framing. Square PNG, target 1024x1024, genuinely transparent alpha background around person and support. No solid backdrop, checkerboard, labels, UI, borders, decorations or motion duplicates.",
+      "generation_prompt_sha256": "809f53307761e1416f4bbfa129eaf4adf34e8c7b5b4b7c3efdf917b170f6409d",
+      "reference_path": "assets/exercises/pending/agent-03-others-004/handstand-pushup/attempt-2.png",
+      "cloud_output_path": "/workspace/exercise-image-results/agent-03-others-004/handstand-pushup/attempt-3.png",
+      "generated_at": "2026-10-01T16:39:30+00:00",
+      "backup_status": "pending",
       "backup_verified_at": "2026-10-01T16:32:38+00:00",
       "backup_verified_commit": "9591faf4c23cafdef0b4973e151f1a4520fcab22",
       "user_review_history": [
@@ -14496,6 +14560,15 @@
           "path": "assets/exercises/pending/agent-03-others-004/handstand-pushup/attempt-1.png",
           "sha256": "6c730026eed39dbe2fb0dd41a9ce7fc1cbf8936b41325feb955285906740c5ca",
           "reason": "Repair the torso anatomy: keep head, shoulders, ribcage, pelvis and legs aligned in one coherent inverted body axis, without a 180-degree torso twist. Keep the hands grounded and feet supported by the wall."
+        },
+        {
+          "recorded_at": "2026-10-01T16:37:38+00:00",
+          "by": "user",
+          "decision": "revision_requested",
+          "recorded_for_attempt": 2,
+          "path": "assets/exercises/pending/agent-03-others-004/handstand-pushup/attempt-2.png",
+          "sha256": "b0123b6987e6146f756ef7c37c44a1cf01c6c2cdcb2bce08f123bcd8fa09bfb6",
+          "reason": "User rejects attempt-2: show the posterior torso and posterior legs consistently with the supplied Hevy pose references; no abdominal muscles drawn on the back or reversed lower body."
         }
       ],
       "review_feedback": "Repair the torso anatomy: keep head, shoulders, ribcage, pelvis and legs aligned in one coherent inverted body axis, without a 180-degree torso twist. Keep the hands grounded and feet supported by the wall.",
