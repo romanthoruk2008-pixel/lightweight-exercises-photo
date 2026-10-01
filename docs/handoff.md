@@ -10,7 +10,9 @@ Floor Press (Barbell) attempt-2 згенеровано й збережено о�
 
 Handstand Push Up attempt-2 згенеровано й збережено окремо: `assets/exercises/pending/agent-03-others-004/handstand-pushup/attempt-2.png`; SHA256 `b0123b6987e6146f756ef7c37c44a1cf01c6c2cdcb2bce08f123bcd8fa09bfb6`; 1254×1254, PNG, alpha з 1,215,362 повністю прозорими пікселями; `technical_check=passed`, `user_review=pending`, `agent_visual_review=not_performed`.
 
-Наступна дія: запушити цей файл із progress/manifest і звірити віддалений SHA256. Після перевірки позначити backup як github_verified. Обидва attempt-2 залишаються на перегляд користувача; attempt-1 збережені.
+Обидва виправлені PNG та їхні SHA256 звірені у віддаленій `work`; attempt-2 мають `backup_status=github_verified`. Коміт із обома файлами: `9591faf4c23cafdef0b4973e151f1a4520fcab22`. Обидва залишаються `user_review=pending`, бо агент не проводив візуальну оцінку й рішення належить користувачу. Схвалення решти 28 PNG записане у progress/manifest та запушене комітом `8d536e28551563b4024138a344f83f39fda4d1d6`.
+
+Наступна дія: показати користувачу дві корекції для перегляду. Не перегенеровувати їх і не змінювати прийняті 28 результатів.
 
 # Передача задачі — нічна генерація 2026-10-01 зупинена на ліміті
 
