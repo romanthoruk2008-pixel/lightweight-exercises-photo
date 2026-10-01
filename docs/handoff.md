@@ -1,3 +1,15 @@
+## Agent-03 round 3 latest status after continuation
+
+2026-10-01T18:05:53+00:00: спробу продовження з `hanging-knee-raise` зупинив HTTP 429. Для цього ID зафіксовано дві заблоковані спроби, результату немає. Збережених PNG лишається 21/30: пакет 007 — 10/10, 008 — 10/10, 009 — `dead-hang` 1/10. Наступна дія після відновлення квоти: звірити progress і почати з `hanging-knee-raise` (спроба 3). Не перегенеровувати `dead-hang` або готові 007–008; інші 8 ID 009 не запускались.
+
+---
+
+## Agent-03 round 3 package checkpoint: agent-03-others-009
+
+2026-10-01T18:05:53+00:00: 1/10 вправ мають збережений PNG у віддаленій `work`; verified commit `feef71e5504005d0816e143b7d2d8dc167d7c7dd`. Усі збережені результати мають `user_review=pending`, `agent_visual_review=not_performed`; проблеми записані у progress та manifest. Генерацію зупинено через HTTP 429 на `hanging-knee-raise`. Після відновлення квоти продовжити з цього ID; згенерований `dead-hang` не перезаписувати; решту ID спершу звірити з progress.
+
+---
+
 ## Agent-03 round 3 continuation: HTTP 429 зберігся
 
 2026-10-01T18:05:29+00:00: користувач попросив продовжити з `hanging-knee-raise`. Один додатковий виклик image_gen отримав HTTP 429; повторів у цій задачі не було, нових PNG немає. Progress зберігає обидві квотні невдалі спроби (`attempts=2`), жодного result_path; `dead-hang` незмінний і вже перевірений на GitHub. `agent-03-others-007/008` не змінювалися. Вісім інших ID пакета 009 лишилися `not_started`. Наступне продовження після відновлення квоти: `hanging-knee-raise`, третя загальна спроба; перед викликом перечитати progress та перевірити remote/local paths.
