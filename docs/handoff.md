@@ -1,25 +1,20 @@
-# Передача задачі — нічна генерація 2026-10-01 призупинена
+# Передача задачі — нічна генерація 2026-10-01 зупинена на ліміті
 
-## Поточний стан
+## Підсумок
 
-Для кожного з 50 підготовлених ID виконано одну спробу. Вбудований генератор повернув 36 PNG; ще 14 ID не мають зображення. Усі 36 PNG перевірені скриптом на відкриття, фактичні розміри, квадратність, alpha=0 пікселі й SHA256. Один PNG (pushup-close-grip) неквадратний, 1536×1024, тому technical_check=failed; повтору не робили. Решта 35 PNG пройшли технічну перевірку. Візуальний QA не проводили. Усі user_review=pending.
+Зроблено одну спробу для кожного з 50 підготовлених ID. Створено 36 PNG, усі 36 запушено до work та звірено за SHA256 у віддаленому commit a0f650d0c2add34b8bab916c54169d99a00f2d00. Точна папка: assets/exercises/pending/night-2026-10-01/batch-001 … batch-005. Усі актуальні result_path у progress тепер відповідають цим batch-NNN шляхам. Байти PNG під час переміщення не змінювалися.
 
-Generation errors:
-- fire-hydrants: output safety moderation blocked the single call.
-- 13 IDs were rejected with HTTP 429 usage_limit_reached. The tool reported quota reset at 2026-10-01 09:10:39 UTC.
+З 36 файлів 35 пройшли перевірку PNG/open, квадратності та фактичних alpha=0 пікселів. pushup-close-grip має 1536×1024 і technical_check=failed; він збережений для перегляду, повтору немає. Візуальну перевірку не проводили. Усі user_review=pending, жоден не approved.
 
-Missing PNG IDs: fire-hydrants, seated-palms-up-wrist-curl-dumbbell, triceps-extension-dumbbell, squat-dumbbell, reverse-wrist-curl-dumbbell, pinwheel-curl-dumbbell, seated-incline-hammer-curl-dumbbell, bulgarian-split-squat-dumbbell, split-squat-dumbbell, biceps-curl-barbell, shrug-barbell, behind-the-back-wrist-curl-barbell, seated-wrist-curl-barbell, triceps-extension-barbell.
-Quota IDs: seated-palms-up-wrist-curl-dumbbell, triceps-extension-dumbbell, squat-dumbbell, reverse-wrist-curl-dumbbell, pinwheel-curl-dumbbell, seated-incline-hammer-curl-dumbbell, bulgarian-split-squat-dumbbell, split-squat-dumbbell, biceps-curl-barbell, shrug-barbell, behind-the-back-wrist-curl-barbell, seated-wrist-curl-barbell, triceps-extension-barbell.
+14 ID без PNG: fire-hydrants, seated-palms-up-wrist-curl-dumbbell, triceps-extension-dumbbell, squat-dumbbell, reverse-wrist-curl-dumbbell, pinwheel-curl-dumbbell, seated-incline-hammer-curl-dumbbell, bulgarian-split-squat-dumbbell, split-squat-dumbbell, biceps-curl-barbell, shrug-barbell, behind-the-back-wrist-curl-barbell, seated-wrist-curl-barbell, triceps-extension-barbell. Один виклик Fire Hydrants заблокований output safety. Інші 13 були відхилені через HTTP 429 usage_limit_reached. Інструмент показав скидання квоти **2026-10-01 09:10:39 UTC**. Після першої відповіді про квоту послідовність ще один раз викликала решту пакетних ID; усі ці виклики негайно відхилено, повторних спроб із зображенням немає.
 
-Початкові спроби не повторювати автоматично. Майбутня генерація цих 14 ID була б новою спробою й потребує окремого прямого доручення. Для Fire Hydrants також треба врахувати output safety block, не копіювати/редагувати будь-який інший файл як його результат.
+Нові виклики для цих 14 ID будуть другою спробою. Не повторювати автоматично; дочекатися прямого доручення користувача. Для Fire Hydrants врахувати safety block і не підміняти його чужим файлом.
 
-## Зберігання й перевірка
+## Метадані й перевірка
 
-Усі наявні файли переміщено без зміни байтів у точні запитані папки: assets/exercises/pending/night-2026-10-01/batch-001 … batch-005. SHA256 manifest: data/batches/night-2026-10-01-manifest.json. PNG буде повторно запушено й звірено за цими точними шляхами; попередні перевірки стосувалися невірно названих числових папок і не рахуються для фінальної папки. Backup не є approved або Supabase upload.
+Progress: data/exercise-image-progress.json. Manifest: data/batches/night-2026-10-01-manifest.json. 36 рядків manifest мають backup_status=github_verified, шлях і SHA256; 14 мають no_file. Remote verification: a0f650d0c2add34b8bab916c54169d99a00f2d00. Технічні перевірки охопили тільки відкриття, квадратні розміри, прозорі alpha=0 пікселі й SHA256; agent_visual_review=not_performed.
 
-Перед продовженням прочитати handoff/workflow/style/progress. Усі 50 вже мають одну спробу цієї генерації; перевірити live progress, не перезапускати успішні PNG. Для відсутніх файлів чекати прямої вказівки користувача щодо нового виклику після скидання ліміту.
-
-Зведення: 36/50 PNG; 14 без файла; technical_check failed для одного наявного PNG; 35 пройшли технічну перевірку.
+Каталог не змінений (451 запис, 4448 мовних блоків). Попередні 25 схвалених PNG під assets/exercises/<exercise_id>.png не змінені. Supabase, Release та ZIP не використовували.
 
 ## Попередній підтверджений backup і історія
 

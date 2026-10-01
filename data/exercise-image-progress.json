@@ -148,9 +148,9 @@
     ],
     "active_batch_id": "night-2026-10-01-005",
     "active_batch_item_id": null,
-    "active_batch_scope": "all 50 user-authorized; checkpoint and push after each batch of 10",
+    "active_batch_scope": "all 50 one-call attempts complete; 36 PNG files, 14 failed without output; no automatic retries",
     "current_batch": "night-2026-10-01-005",
-    "next_action": "No further generation call is available in this run. Fourteen IDs have no PNG: Fire Hydrants was output-safety blocked; thirteen calls hit the built-in usage limit. Quota reset reported by the tool: 2026-10-01T09:10:39Z. Do not automatically retry; a future direct user instruction must specify whether to use a new single attempt for any missing ID."
+    "next_action": "Night run stopped after all 50 one-call attempts: 36 PNGs verified at GitHub commit a0f650d0c2add34b8bab916c54169d99a00f2d00. Fourteen IDs have no output; wait until quota reset 2026-10-01T09:10:39Z and await direct user instruction before any new attempt."
   },
   "historical_mapping_metadata": {
     "schema_version": "1.0",
@@ -330,7 +330,7 @@
       "prompt": "STYLE v1. Use the supplied approved human reference ONLY for the person's identity, anatomical 3D style, body proportions, materials and detail. Do not copy its pose, dumbbells, muscle highlighting or composition. Match the same bald athletic adult male, opaque silver-gray sculpted anatomical muscle surfaces, simple fitted black shorts, barefoot, neutral face and consistent natural proportions. One person, one exercise, one characteristic phase: no second figure, collage or motion ghosts. Equipment must be only the simple items named in this scene, neutral gray/black materials, complete and mechanically ordinary. Primary muscles: localized coral #F26445. Named secondary muscles: the same hue at roughly 45% intensity blended with gray, clearly lighter. Do not highlight muscles absent from the catalog list, make the body or shorts transparent, or apply a global orange cast/glow. Preserve clothing; highlight visible anatomical surfaces without inventing see-through tissue. Square PNG, unchanged target 1024x1024, true transparent alpha background outside the person and required equipment/mat and through any openings; no white or checkerboard backdrop, drawn floor plane, UI, text, labels, frames, decorations or halo. Entire person and every required piece of equipment must fit with transparent margins; adapt scale/camera without distortion or cropping. Accent pigment must use base sRGB #F26445 = RGB(242,100,69); retain this hue through ordinary 3D shading. Secondary highlights use this hue at 40-50% intensity blended with the gray body, not transparent tissue.\n\nEXERCISE ID: ab-scissors\nNAME: Ab Scissors\nCatalog equipment: none\nDepict only: bodyweight, no equipment\nPrimary muscle: abdominals\nSecondary muscles: []\n\nONE SPECIFIC SCENE: Supine arms beside the torso, both legs straight and lifted a little above the support. Show one horizontal scissor crossing with the left straight leg passing over the right straight leg; knees remain long, pelvis steady and lower back controlled. Elevated front-side view makes the crossing clear. No vertical flutter or bent-knee bicycle.\n\nENGLISH SOURCE (this ID only; do not substitute a familiar variant):\n{\"description\": \"Ab Scissors is performed lying on the back while straight legs alternate over and under each other in a controlled crossing pattern.\", \"instructions\": [\"Lie on your back with your legs extended and your lower back gently braced.\", \"Lift your legs slightly off the floor and keep them straight.\", \"Cross one leg over the other, then switch the top leg in a smooth scissoring motion.\", \"Continue alternating while keeping your ribs down and lower back controlled.\"], \"form_cues\": [\"Move from the hips.\", \"Keep the legs long.\", \"Breathe steadily.\"], \"common_mistakes\": [\"Arching the lower back.\", \"Bending the knees to shorten the range.\", \"Moving too quickly to control the crossing.\"], \"safety_note\": \"Raise the legs higher if the lower back begins to arch.\", \"provenance\": \"authored\"}\nMaintain source contact points and safe control. Render only this characteristic phase, not the entire instruction sequence. Reference anatomy is opaque; localize the specified muscle pigment without copying reference highlights.",
       "reference_path": "assets/exercises/biceps-curl-dumbbell.png",
       "generated_at": "2026-10-01T03:13:58.894567+03:00",
-      "backup_status": "local_saved",
+      "backup_status": "github_verified",
       "backup_history": [
         {
           "backup_id": "night-2026-10-01",
@@ -350,6 +350,17 @@
           "png_sha256": "1b8c1cac8e4111da58adbabbbc57e76c72ec1f556ecd9194f507b0b0909e40c9",
           "verified_at": "2026-10-01T03:24:41.918605+03:00",
           "verified_commit": "a08a34f64108438a870ad581bb067c469447a018"
+        },
+        {
+          "backup_id": "night-2026-10-01",
+          "storage": "git_repository",
+          "status": "github_verified",
+          "repository": "romanthoruk2008-pixel/lightweight-exercises-photo",
+          "branch": "work",
+          "repository_path": "assets/exercises/pending/night-2026-10-01/batch-003/ab-scissors/attempt-1.png",
+          "png_sha256": "1b8c1cac8e4111da58adbabbbc57e76c72ec1f556ecd9194f507b0b0909e40c9",
+          "verified_at": "2026-10-01T03:45:41.209794+03:00",
+          "verified_commit": "a0f650d0c2add34b8bab916c54169d99a00f2d00"
         }
       ]
     },
@@ -2098,7 +2109,7 @@
       "prompt": "STYLE v1. Use the supplied approved human reference ONLY for the person's identity, anatomical 3D style, body proportions, materials and detail. Do not copy its pose, dumbbells, muscle highlighting or composition. Match the same bald athletic adult male, opaque silver-gray sculpted anatomical muscle surfaces, simple fitted black shorts, barefoot, neutral face and consistent natural proportions. One person, one exercise, one characteristic phase: no second figure, collage or motion ghosts. Equipment must be only the simple items named in this scene, neutral gray/black materials, complete and mechanically ordinary. Primary muscles: localized coral #F26445. Named secondary muscles: the same hue at roughly 45% intensity blended with gray, clearly lighter. Do not highlight muscles absent from the catalog list, make the body or shorts transparent, or apply a global orange cast/glow. Preserve clothing; highlight visible anatomical surfaces without inventing see-through tissue. Square PNG, unchanged target 1024x1024, true transparent alpha background outside the person and required equipment/mat and through any openings; no white or checkerboard backdrop, drawn floor plane, UI, text, labels, frames, decorations or halo. Entire person and every required piece of equipment must fit with transparent margins; adapt scale/camera without distortion or cropping. Accent pigment must use base sRGB #F26445 = RGB(242,100,69); retain this hue through ordinary 3D shading. Secondary highlights use this hue at 40-50% intensity blended with the gray body, not transparent tissue.\n\nEXERCISE ID: bench-press-dumbbell\nNAME: Bench Press (Dumbbell)\nCatalog equipment: dumbbell\nDepict only: two dumbbells, ordinary flat bench\nPrimary muscle: chest\nSecondary muscles: [\"triceps\", \"shoulders\"]\n\nONE SPECIFIC SCENE: Supine on an ordinary flat bench, head/upper back/pelvis supported and both feet planted. One dumbbell in each hand, lowered chest-press phase: elbows bent under control, dumbbells beside the chest, wrists aligned above forearms with fingers wrapped securely around handles. Shoulder blades controlled, no bounce or exaggerated arch. Side-front elevated view shows both separate weights and full bench; no rack.\n\nENGLISH SOURCE (this ID only; do not substitute a familiar variant):\n{\"description\": \"Bench Press (Dumbbell) is a supported chest press using one dumbbell in each hand.\", \"instructions\": [\"Lie on a flat bench with feet planted. Grip one dumbbell in each hand and hold it over the chest.\", \"Lower the resistance toward the chest with elbows controlled.\", \"Pause without bouncing or losing shoulder position.\", \"Press back to straight arms, then rerack or set the weights down safely.\"], \"form_cues\": [\"Keep wrists stacked.\", \"Keep shoulder blades supported.\", \"Press evenly.\"], \"common_mistakes\": [\"Bouncing at the bottom.\", \"Flaring the elbows.\", \"Arching to shorten the range.\"], \"safety_note\": \"Use a spotter or safeties for the loaded press and stop before shoulder control is lost.\", \"provenance\": \"adapted\"}\nMaintain source contact points and safe control. Render only this characteristic phase, not the entire instruction sequence. Reference anatomy is opaque; localize the specified muscle pigment without copying reference highlights.",
       "reference_path": "assets/exercises/biceps-curl-dumbbell.png",
       "generated_at": "2026-10-01T03:31:49.237375+03:00",
-      "backup_status": "local_saved",
+      "backup_status": "github_verified",
       "backup_history": [
         {
           "backup_id": "night-2026-10-01",
@@ -2118,6 +2129,17 @@
           "png_sha256": "09dec9106c86af562272688745760bfe53d6c26ea8d9b13471d1a23fac59aa94",
           "verified_at": "2026-10-01T03:34:46.717845+03:00",
           "verified_commit": "d9c00f65def3fe05dbc193d6b46ac2a5be040b4d"
+        },
+        {
+          "backup_id": "night-2026-10-01",
+          "storage": "git_repository",
+          "status": "github_verified",
+          "repository": "romanthoruk2008-pixel/lightweight-exercises-photo",
+          "branch": "work",
+          "repository_path": "assets/exercises/pending/night-2026-10-01/batch-004/bench-press-dumbbell/attempt-1.png",
+          "png_sha256": "09dec9106c86af562272688745760bfe53d6c26ea8d9b13471d1a23fac59aa94",
+          "verified_at": "2026-10-01T03:45:41.209794+03:00",
+          "verified_commit": "a0f650d0c2add34b8bab916c54169d99a00f2d00"
         }
       ]
     },
@@ -3386,7 +3408,7 @@
       "prompt": "STYLE v1. Use the supplied approved human reference ONLY for the person's identity, anatomical 3D style, body proportions, materials and detail. Do not copy its pose, dumbbells, muscle highlighting or composition. Match the same bald athletic adult male, opaque silver-gray sculpted anatomical muscle surfaces, simple fitted black shorts, barefoot, neutral face and consistent natural proportions. One person, one exercise, one characteristic phase: no second figure, collage or motion ghosts. Equipment must be only the simple items named in this scene, neutral gray/black materials, complete and mechanically ordinary. Primary muscles: localized coral #F26445. Named secondary muscles: the same hue at roughly 45% intensity blended with gray, clearly lighter. Do not highlight muscles absent from the catalog list, make the body or shorts transparent, or apply a global orange cast/glow. Preserve clothing; highlight visible anatomical surfaces without inventing see-through tissue. Square PNG, unchanged target 1024x1024, true transparent alpha background outside the person and required equipment/mat and through any openings; no white or checkerboard backdrop, drawn floor plane, UI, text, labels, frames, decorations or halo. Entire person and every required piece of equipment must fit with transparent margins; adapt scale/camera without distortion or cropping. Accent pigment must use base sRGB #F26445 = RGB(242,100,69); retain this hue through ordinary 3D shading. Secondary highlights use this hue at 40-50% intensity blended with the gray body, not transparent tissue.\n\nEXERCISE ID: bird-dog\nNAME: Bird Dog\nCatalog equipment: none\nDepict only: thin plain padded mat\nPrimary muscle: glutes\nSecondary muscles: [\"hamstrings\", \"shoulders\"]\n\nONE SPECIFIC SCENE: All fours on a thin padded mat, left palm under the left shoulder and right knee/shin under the right hip support the body. Right arm reaches straight forward and left leg straight back in line with the torso. Hips square, back neutral, head aligned. Side three-quarter view shows both opposite extended limbs and supporting contacts.\n\nENGLISH SOURCE (this ID only; do not substitute a familiar variant):\n{\"description\": \"Bird Dog extends opposite arm and leg from all fours while the pelvis stays level.\", \"instructions\": [\"Start on hands and knees with hands under shoulders and knees under hips.\", \"Extend the right arm and left leg until both are in line with the torso.\", \"Pause without rotating the pelvis, then return to all fours.\", \"Alternate sides slowly.\"], \"form_cues\": [\"Keep hips square.\", \"Reach long.\", \"Brace the abdomen.\"], \"common_mistakes\": [\"Rotating the pelvis.\", \"Arching the back.\", \"Rushing the return.\"], \"safety_note\": \"Use a padded surface and shorten the reach before balance breaks.\", \"provenance\": \"authored\"}\nMaintain source contact points and safe control. Render only this characteristic phase, not the entire instruction sequence. Reference anatomy is opaque; localize the specified muscle pigment without copying reference highlights.",
       "reference_path": "assets/exercises/biceps-curl-dumbbell.png",
       "generated_at": "2026-10-01T02:31:52.931312+03:00",
-      "backup_status": "local_saved",
+      "backup_status": "github_verified",
       "backup_history": [
         {
           "backup_id": "night-2026-10-01",
@@ -3406,6 +3428,17 @@
           "png_sha256": "8d1a326f45fc15cb85053f6e4f651c40ac7e3a8205cb08c5df08ef791e3299a7",
           "verified_at": "2026-10-01T02:56:41.328974+03:00",
           "verified_commit": "5e7165de633d74e270ec7e1bcd1ddb2debc3bc3d"
+        },
+        {
+          "backup_id": "night-2026-10-01",
+          "storage": "git_repository",
+          "status": "github_verified",
+          "repository": "romanthoruk2008-pixel/lightweight-exercises-photo",
+          "branch": "work",
+          "repository_path": "assets/exercises/pending/night-2026-10-01/batch-001/bird-dog/attempt-1.png",
+          "png_sha256": "8d1a326f45fc15cb85053f6e4f651c40ac7e3a8205cb08c5df08ef791e3299a7",
+          "verified_at": "2026-10-01T03:45:41.209794+03:00",
+          "verified_commit": "a0f650d0c2add34b8bab916c54169d99a00f2d00"
         }
       ]
     },
@@ -6913,7 +6946,7 @@
       "prompt": "STYLE v1. Use the supplied approved human reference ONLY for the person's identity, anatomical 3D style, body proportions, materials and detail. Do not copy its pose, dumbbells, muscle highlighting or composition. Match the same bald athletic adult male, opaque silver-gray sculpted anatomical muscle surfaces, simple fitted black shorts, barefoot, neutral face and consistent natural proportions. One person, one exercise, one characteristic phase: no second figure, collage or motion ghosts. Equipment must be only the simple items named in this scene, neutral gray/black materials, complete and mechanically ordinary. Primary muscles: localized coral #F26445. Named secondary muscles: the same hue at roughly 45% intensity blended with gray, clearly lighter. Do not highlight muscles absent from the catalog list, make the body or shorts transparent, or apply a global orange cast/glow. Preserve clothing; highlight visible anatomical surfaces without inventing see-through tissue. Square PNG, unchanged target 1024x1024, true transparent alpha background outside the person and required equipment/mat and through any openings; no white or checkerboard backdrop, drawn floor plane, UI, text, labels, frames, decorations or halo. Entire person and every required piece of equipment must fit with transparent margins; adapt scale/camera without distortion or cropping. Accent pigment must use base sRGB #F26445 = RGB(242,100,69); retain this hue through ordinary 3D shading. Secondary highlights use this hue at 40-50% intensity blended with the gray body, not transparent tissue.\n\nEXERCISE ID: dead-bug\nNAME: Dead Bug\nCatalog equipment: none\nDepict only: bodyweight, no equipment\nPrimary muscle: abdominals\nSecondary muscles: []\n\nONE SPECIFIC SCENE: Supine with the pelvis and lower back supported, right arm reaches overhead while the opposite left leg extends long and lowers close to the support level without touching. Left arm stays pointing upward and right hip/knee remain bent. Rib cage stays down. Elevated side three-quarter view clearly separates the opposite moving limbs.\n\nENGLISH SOURCE (this ID only; do not substitute a familiar variant):\n{\"description\": \"Dead Bug keeps the pelvis quiet while opposite arms and legs extend away from the trunk and return.\", \"instructions\": [\"Lie on your back with hips and knees bent and arms reaching up.\", \"Brace your abdominals so the lower back stays gently supported.\", \"Lower the opposite arm and leg without letting the ribs flare.\", \"Return to center and alternate sides slowly.\"], \"form_cues\": [\"Keep the pelvis still.\", \"Exhale during the reach.\", \"Use a small range if needed.\"], \"common_mistakes\": [\"Arching the lower back.\", \"Moving same-side limbs.\", \"Holding the breath.\"], \"safety_note\": \"Reduce the arm or leg range before the lower back arches.\", \"provenance\": \"adapted\"}\nMaintain source contact points and safe control. Render only this characteristic phase, not the entire instruction sequence. Reference anatomy is opaque; localize the specified muscle pigment without copying reference highlights.",
       "reference_path": "assets/exercises/biceps-curl-dumbbell.png",
       "generated_at": "2026-10-01T02:42:57.887619+03:00",
-      "backup_status": "local_saved",
+      "backup_status": "github_verified",
       "backup_history": [
         {
           "backup_id": "night-2026-10-01",
@@ -6941,6 +6974,17 @@
           "png_sha256": "6c7c60ba995ad4f87b157e833d7f9daa46c2a5497963a08c35c0bcd0b1d94317",
           "verified_at": "2026-10-01T02:56:41.328974+03:00",
           "verified_commit": "5e7165de633d74e270ec7e1bcd1ddb2debc3bc3d"
+        },
+        {
+          "backup_id": "night-2026-10-01",
+          "storage": "git_repository",
+          "status": "github_verified",
+          "repository": "romanthoruk2008-pixel/lightweight-exercises-photo",
+          "branch": "work",
+          "repository_path": "assets/exercises/pending/night-2026-10-01/batch-001/dead-bug/attempt-1.png",
+          "png_sha256": "6c7c60ba995ad4f87b157e833d7f9daa46c2a5497963a08c35c0bcd0b1d94317",
+          "verified_at": "2026-10-01T03:45:41.209794+03:00",
+          "verified_commit": "a0f650d0c2add34b8bab916c54169d99a00f2d00"
         }
       ]
     },
@@ -8341,7 +8385,7 @@
       "prompt": "STYLE v1. Use the supplied approved human reference ONLY for the person's identity, anatomical 3D style, body proportions, materials and detail. Do not copy its pose, dumbbells, muscle highlighting or composition. Match the same bald athletic adult male, opaque silver-gray sculpted anatomical muscle surfaces, simple fitted black shorts, barefoot, neutral face and consistent natural proportions. One person, one exercise, one characteristic phase: no second figure, collage or motion ghosts. Equipment must be only the simple items named in this scene, neutral gray/black materials, complete and mechanically ordinary. Primary muscles: localized coral #F26445. Named secondary muscles: the same hue at roughly 45% intensity blended with gray, clearly lighter. Do not highlight muscles absent from the catalog list, make the body or shorts transparent, or apply a global orange cast/glow. Preserve clothing; highlight visible anatomical surfaces without inventing see-through tissue. Square PNG, unchanged target 1024x1024, true transparent alpha background outside the person and required equipment/mat and through any openings; no white or checkerboard backdrop, drawn floor plane, UI, text, labels, frames, decorations or halo. Entire person and every required piece of equipment must fit with transparent margins; adapt scale/camera without distortion or cropping. Accent pigment must use base sRGB #F26445 = RGB(242,100,69); retain this hue through ordinary 3D shading. Secondary highlights use this hue at 40-50% intensity blended with the gray body, not transparent tissue.\n\nEXERCISE ID: elbow-to-knee\nNAME: Elbow to Knee\nCatalog equipment: none\nDepict only: bodyweight, no equipment\nPrimary muscle: abdominals\nSecondary muscles: []\n\nONE SPECIFIC SCENE: Supine with both knees bent and hands LIGHTLY behind the head. Small controlled shoulder lift and rib-cage rotation bring the RIGHT ELBOW toward the LEFT KNEE; keep the other knee bent, avoid forcing elbow-knee contact, and keep lower back controlled. Elevated three-quarter view shows cross-body approach. Do not turn it into a straight-leg bicycling sequence or pull the neck.\n\nENGLISH SOURCE (this ID only; do not substitute a familiar variant):\n{\"description\": \"Elbow to Knee alternates a controlled curl and rotation so each elbow approaches the opposite knee.\", \"instructions\": [\"Lie on your back with knees bent and hands lightly behind the head.\", \"Lift the shoulders and bring one elbow toward the opposite knee.\", \"Return to center, then switch sides without pulling the neck.\", \"Alternate at a controlled pace.\"], \"form_cues\": [\"Rotate through the ribs.\", \"Keep the lower back controlled.\", \"Exhale on each side.\"], \"common_mistakes\": [\"Pulling the head forward.\", \"Moving only the elbow.\", \"Using fast momentum.\"], \"safety_note\": \"Keep the rotation small if the neck or lower back becomes uncomfortable.\", \"provenance\": \"adapted\"}\nMaintain source contact points and safe control. Render only this characteristic phase, not the entire instruction sequence. Reference anatomy is opaque; localize the specified muscle pigment without copying reference highlights.",
       "reference_path": "assets/exercises/biceps-curl-dumbbell.png",
       "generated_at": "2026-10-01T03:10:13.242656+03:00",
-      "backup_status": "local_saved",
+      "backup_status": "github_verified",
       "backup_history": [
         {
           "backup_id": "night-2026-10-01",
@@ -8361,6 +8405,17 @@
           "png_sha256": "717d2c9dfcaa8c716764011bc1d316cbff91eb3190801228fd20395ea80e27c5",
           "verified_at": "2026-10-01T03:11:38.632536+03:00",
           "verified_commit": "b69854cf72d95bfa85bb8f593186c150fe3621b2"
+        },
+        {
+          "backup_id": "night-2026-10-01",
+          "storage": "git_repository",
+          "status": "github_verified",
+          "repository": "romanthoruk2008-pixel/lightweight-exercises-photo",
+          "branch": "work",
+          "repository_path": "assets/exercises/pending/night-2026-10-01/batch-002/elbow-to-knee/attempt-1.png",
+          "png_sha256": "717d2c9dfcaa8c716764011bc1d316cbff91eb3190801228fd20395ea80e27c5",
+          "verified_at": "2026-10-01T03:45:41.209794+03:00",
+          "verified_commit": "a0f650d0c2add34b8bab916c54169d99a00f2d00"
         }
       ]
     },
@@ -9189,7 +9244,7 @@
       "prompt": "STYLE v1. Use the supplied approved human reference ONLY for the person's identity, anatomical 3D style, body proportions, materials and detail. Do not copy its pose, dumbbells, muscle highlighting or composition. Match the same bald athletic adult male, opaque silver-gray sculpted anatomical muscle surfaces, simple fitted black shorts, barefoot, neutral face and consistent natural proportions. One person, one exercise, one characteristic phase: no second figure, collage or motion ghosts. Equipment must be only the simple items named in this scene, neutral gray/black materials, complete and mechanically ordinary. Primary muscles: localized coral #F26445. Named secondary muscles: the same hue at roughly 45% intensity blended with gray, clearly lighter. Do not highlight muscles absent from the catalog list, make the body or shorts transparent, or apply a global orange cast/glow. Preserve clothing; highlight visible anatomical surfaces without inventing see-through tissue. Square PNG, unchanged target 1024x1024, true transparent alpha background outside the person and required equipment/mat and through any openings; no white or checkerboard backdrop, drawn floor plane, UI, text, labels, frames, decorations or halo. Entire person and every required piece of equipment must fit with transparent margins; adapt scale/camera without distortion or cropping. Accent pigment must use base sRGB #F26445 = RGB(242,100,69); retain this hue through ordinary 3D shading. Secondary highlights use this hue at 40-50% intensity blended with the gray body, not transparent tissue.\n\nEXERCISE ID: flutter-kicks\nNAME: Flutter Kicks\nCatalog equipment: none\nDepict only: bodyweight, no equipment\nPrimary muscle: abdominals\nSecondary muscles: []\n\nONE SPECIFIC SCENE: Supine with arms resting beside the torso and lower back controlled. Both legs straight and lifted just above the support, left leg slightly higher than right to capture one small alternating flutter phase. Ribs down, head supported, no large lumbar arch or high kick. Elevated side view shows the slight difference in leg height.\n\nENGLISH SOURCE (this ID only; do not substitute a familiar variant):\n{\"description\": \"Flutter Kicks alternate small straight-leg beats from the hips while the lower back stays controlled.\", \"instructions\": [\"Lie on your back with legs extended and the lower back gently braced.\", \"Lift the heels slightly off the floor and keep the legs long.\", \"Alternate small up-and-down kicks from the hips.\", \"Stop before the back arches and rest with control.\"], \"form_cues\": [\"Keep kicks small.\", \"Point the toes softly.\", \"Keep ribs down.\"], \"common_mistakes\": [\"Using large knee swings.\", \"Arching the lower back.\", \"Holding the breath.\"], \"safety_note\": \"Raise the legs higher if the lower back cannot stay gently supported.\", \"provenance\": \"adapted\"}\nMaintain source contact points and safe control. Render only this characteristic phase, not the entire instruction sequence. Reference anatomy is opaque; localize the specified muscle pigment without copying reference highlights.",
       "reference_path": "assets/exercises/biceps-curl-dumbbell.png",
       "generated_at": "2026-10-01T03:12:50.168934+03:00",
-      "backup_status": "local_saved",
+      "backup_status": "github_verified",
       "backup_history": [
         {
           "backup_id": "night-2026-10-01",
@@ -9209,6 +9264,17 @@
           "png_sha256": "cc5fb9f20faca5978a78cb5caf7f742b3f421020de3294f9d719ab4ca4459a6b",
           "verified_at": "2026-10-01T03:24:41.918605+03:00",
           "verified_commit": "a08a34f64108438a870ad581bb067c469447a018"
+        },
+        {
+          "backup_id": "night-2026-10-01",
+          "storage": "git_repository",
+          "status": "github_verified",
+          "repository": "romanthoruk2008-pixel/lightweight-exercises-photo",
+          "branch": "work",
+          "repository_path": "assets/exercises/pending/night-2026-10-01/batch-003/flutter-kicks/attempt-1.png",
+          "png_sha256": "cc5fb9f20faca5978a78cb5caf7f742b3f421020de3294f9d719ab4ca4459a6b",
+          "verified_at": "2026-10-01T03:45:41.209794+03:00",
+          "verified_commit": "a0f650d0c2add34b8bab916c54169d99a00f2d00"
         }
       ]
     },
@@ -10396,7 +10462,7 @@
       "prompt": "STYLE v1. Use the supplied approved human reference ONLY for the person's identity, anatomical 3D style, body proportions, materials and detail. Do not copy its pose, dumbbells, muscle highlighting or composition. Match the same bald athletic adult male, opaque silver-gray sculpted anatomical muscle surfaces, simple fitted black shorts, barefoot, neutral face and consistent natural proportions. One person, one exercise, one characteristic phase: no second figure, collage or motion ghosts. Equipment must be only the simple items named in this scene, neutral gray/black materials, complete and mechanically ordinary. Primary muscles: localized coral #F26445. Named secondary muscles: the same hue at roughly 45% intensity blended with gray, clearly lighter. Do not highlight muscles absent from the catalog list, make the body or shorts transparent, or apply a global orange cast/glow. Preserve clothing; highlight visible anatomical surfaces without inventing see-through tissue. Square PNG, unchanged target 1024x1024, true transparent alpha background outside the person and required equipment/mat and through any openings; no white or checkerboard backdrop, drawn floor plane, UI, text, labels, frames, decorations or halo. Entire person and every required piece of equipment must fit with transparent margins; adapt scale/camera without distortion or cropping. Accent pigment must use base sRGB #F26445 = RGB(242,100,69); retain this hue through ordinary 3D shading. Secondary highlights use this hue at 40-50% intensity blended with the gray body, not transparent tissue.\n\nEXERCISE ID: glute-kickback-on-floor\nNAME: Glute Kickback on Floor\nCatalog equipment: none\nDepict only: bodyweight, no equipment\nPrimary muscle: glutes\nSecondary muscles: [\"hamstrings\"]\n\nONE SPECIFIC SCENE: PRONE lying on the stomach with the trunk supported and both legs extended. Left leg extends slightly upward/backward from the hip with a straight knee; right leg stays supported. Arms rest beside the body without pushing the torso up. Pelvis stays square, spine neutral, neck aligned. Low side three-quarter view shows the small hip extension. Do not change this record into a quadruped kickback.\n\nENGLISH SOURCE (this ID only; do not substitute a familiar variant):\n{\"description\": \"Glute Kickback on Floor extends one leg backward from the hip while the trunk stays supported and the pelvis remains square.\", \"instructions\": [\"Lie on your stomach with legs extended and brace the abdomen.\", \"Drive one leg backward from the hip without arching the lower back.\", \"Pause at the end of the glute contraction.\", \"Return the leg slowly and complete both sides.\"], \"form_cues\": [\"Keep hips square.\", \"Move from the glute.\", \"Keep the spine neutral.\"], \"common_mistakes\": [\"Swinging the leg.\", \"Opening the pelvis.\", \"Arching the back.\"], \"safety_note\": \"Use light resistance and stop before the low back takes over the leg extension.\", \"provenance\": \"authored\"}\nMaintain source contact points and safe control. Render only this characteristic phase, not the entire instruction sequence. Reference anatomy is opaque; localize the specified muscle pigment without copying reference highlights.",
       "reference_path": "assets/exercises/biceps-curl-dumbbell.png",
       "generated_at": "2026-10-01T02:47:52.277334+03:00",
-      "backup_status": "local_saved",
+      "backup_status": "github_verified",
       "backup_history": [
         {
           "backup_id": "night-2026-10-01",
@@ -10416,6 +10482,17 @@
           "png_sha256": "ab34df6b1b6b4659b675a22f22fa99de8fc0ee9eab32ee1308f5754f15094a1d",
           "verified_at": "2026-10-01T02:56:41.328974+03:00",
           "verified_commit": "5e7165de633d74e270ec7e1bcd1ddb2debc3bc3d"
+        },
+        {
+          "backup_id": "night-2026-10-01",
+          "storage": "git_repository",
+          "status": "github_verified",
+          "repository": "romanthoruk2008-pixel/lightweight-exercises-photo",
+          "branch": "work",
+          "repository_path": "assets/exercises/pending/night-2026-10-01/batch-001/glute-kickback-on-floor/attempt-1.png",
+          "png_sha256": "ab34df6b1b6b4659b675a22f22fa99de8fc0ee9eab32ee1308f5754f15094a1d",
+          "verified_at": "2026-10-01T03:45:41.209794+03:00",
+          "verified_commit": "a0f650d0c2add34b8bab916c54169d99a00f2d00"
         }
       ]
     },
@@ -11558,7 +11635,7 @@
       "prompt": "STYLE v1. Use the supplied approved human reference ONLY for the person's identity, anatomical 3D style, body proportions, materials and detail. Do not copy its pose, dumbbells, muscle highlighting or composition. Match the same bald athletic adult male, opaque silver-gray sculpted anatomical muscle surfaces, simple fitted black shorts, barefoot, neutral face and consistent natural proportions. One person, one exercise, one characteristic phase: no second figure, collage or motion ghosts. Equipment must be only the simple items named in this scene, neutral gray/black materials, complete and mechanically ordinary. Primary muscles: localized coral #F26445. Named secondary muscles: the same hue at roughly 45% intensity blended with gray, clearly lighter. Do not highlight muscles absent from the catalog list, make the body or shorts transparent, or apply a global orange cast/glow. Preserve clothing; highlight visible anatomical surfaces without inventing see-through tissue. Square PNG, unchanged target 1024x1024, true transparent alpha background outside the person and required equipment/mat and through any openings; no white or checkerboard backdrop, drawn floor plane, UI, text, labels, frames, decorations or halo. Entire person and every required piece of equipment must fit with transparent margins; adapt scale/camera without distortion or cropping. Accent pigment must use base sRGB #F26445 = RGB(242,100,69); retain this hue through ordinary 3D shading. Secondary highlights use this hue at 40-50% intensity blended with the gray body, not transparent tissue.\n\nEXERCISE ID: heel-taps\nNAME: Heel Taps\nCatalog equipment: none\nDepict only: bodyweight, no equipment\nPrimary muscle: abdominals\nSecondary muscles: []\n\nONE SPECIFIC SCENE: Supine knees bent, feet flat, shoulders lifted only slightly. Right arm reaches along the right side toward the RIGHT heel while the left arm stays near the left side. Pelvis stays stable; no head pulling or large hip twist. Elevated front-side view shows both feet, bent knees and same-side hand-to-heel approach.\n\nENGLISH SOURCE (this ID only; do not substitute a familiar variant):\n{\"description\": \"Heel Taps alternate short reaches from a supine crunch position toward each planted heel.\", \"instructions\": [\"Lie on your back with knees bent and feet planted.\", \"Lift the shoulders slightly and brace the abdominals.\", \"Reach one hand toward the same-side heel, then switch sides.\", \"Alternate slowly while keeping the hips stable.\"], \"form_cues\": [\"Keep the chin relaxed.\", \"Reach from the ribs.\", \"Exhale on each tap.\"], \"common_mistakes\": [\"Pulling the neck.\", \"Twisting the hips.\", \"Rushing the taps.\"], \"safety_note\": \"Keep the range small if the neck starts pulling forward.\", \"provenance\": \"adapted\"}\nMaintain source contact points and safe control. Render only this characteristic phase, not the entire instruction sequence. Reference anatomy is opaque; localize the specified muscle pigment without copying reference highlights.",
       "reference_path": "assets/exercises/biceps-curl-dumbbell.png",
       "generated_at": "2026-10-01T02:54:46.623204+03:00",
-      "backup_status": "local_saved",
+      "backup_status": "github_verified",
       "backup_history": [
         {
           "backup_id": "night-2026-10-01",
@@ -11578,6 +11655,17 @@
           "png_sha256": "bb70a32b3bc758327fb442652698b67649c04f697c54f70f820358769c4e4b22",
           "verified_at": "2026-10-01T02:56:41.328974+03:00",
           "verified_commit": "5e7165de633d74e270ec7e1bcd1ddb2debc3bc3d"
+        },
+        {
+          "backup_id": "night-2026-10-01",
+          "storage": "git_repository",
+          "status": "github_verified",
+          "repository": "romanthoruk2008-pixel/lightweight-exercises-photo",
+          "branch": "work",
+          "repository_path": "assets/exercises/pending/night-2026-10-01/batch-001/heel-taps/attempt-1.png",
+          "png_sha256": "bb70a32b3bc758327fb442652698b67649c04f697c54f70f820358769c4e4b22",
+          "verified_at": "2026-10-01T03:45:41.209794+03:00",
+          "verified_commit": "a0f650d0c2add34b8bab916c54169d99a00f2d00"
         }
       ]
     },
@@ -12163,7 +12251,7 @@
       "prompt": "STYLE v1. Use the supplied approved human reference ONLY for the person's identity, anatomical 3D style, body proportions, materials and detail. Do not copy its pose, dumbbells, muscle highlighting or composition. Match the same bald athletic adult male, opaque silver-gray sculpted anatomical muscle surfaces, simple fitted black shorts, barefoot, neutral face and consistent natural proportions. One person, one exercise, one characteristic phase: no second figure, collage or motion ghosts. Equipment must be only the simple items named in this scene, neutral gray/black materials, complete and mechanically ordinary. Primary muscles: localized coral #F26445. Named secondary muscles: the same hue at roughly 45% intensity blended with gray, clearly lighter. Do not highlight muscles absent from the catalog list, make the body or shorts transparent, or apply a global orange cast/glow. Preserve clothing; highlight visible anatomical surfaces without inventing see-through tissue. Square PNG, unchanged target 1024x1024, true transparent alpha background outside the person and required equipment/mat and through any openings; no white or checkerboard backdrop, drawn floor plane, UI, text, labels, frames, decorations or halo. Entire person and every required piece of equipment must fit with transparent margins; adapt scale/camera without distortion or cropping. Accent pigment must use base sRGB #F26445 = RGB(242,100,69); retain this hue through ordinary 3D shading. Secondary highlights use this hue at 40-50% intensity blended with the gray body, not transparent tissue.\n\nEXERCISE ID: hip-thrust\nNAME: Hip Thrust\nCatalog equipment: none\nDepict only: ordinary flat bench\nPrimary muscle: glutes\nSecondary muscles: [\"hamstrings\", \"quadriceps\"]\n\nONE SPECIFIC SCENE: Top bodyweight hip thrust with UPPER BACK AND SHOULDERS braced on the edge/top of a stable ordinary flat bench. Both soles flat, knees bent, hips raised until torso and thighs align; ribs down, no back arch. Arms rest without holding a load. Side three-quarter view shows full bench, upper-back contact and both feet.\n\nENGLISH SOURCE (this ID only; do not substitute a familiar variant):\n{\"description\": \"A bodyweight hip thrust uses the upper back and shoulders against a stable bench while the glutes drive the hips upward from the floor.\", \"instructions\": [\"Sit on the floor with your upper back and shoulders against a stable bench, knees bent, and feet flat.\", \"Brace your core and press through both feet to lift the hips until the torso and thighs align.\", \"Pause and squeeze the glutes without arching the lower back.\", \"Lower the hips under control until they lightly reach the floor, then repeat.\"], \"form_cues\": [\"Keep the ribs down as the hips rise.\", \"Drive evenly through both feet.\", \"Finish with glute tension, not a back arch.\"], \"common_mistakes\": [\"Pushing mostly through the toes.\", \"Overarching the lower back at the top.\", \"Dropping the hips instead of controlling the descent.\"], \"safety_note\": \"Stop the set if you cannot keep your pelvis level and your lower back neutral.\", \"provenance\": \"authored\"}\nMaintain source contact points and safe control. Render only this characteristic phase, not the entire instruction sequence. Reference anatomy is opaque; localize the specified muscle pigment without copying reference highlights.",
       "reference_path": "assets/exercises/biceps-curl-dumbbell.png",
       "generated_at": "2026-10-01T03:27:27.672341+03:00",
-      "backup_status": "local_saved",
+      "backup_status": "github_verified",
       "backup_history": [
         {
           "backup_id": "night-2026-10-01",
@@ -12183,6 +12271,17 @@
           "png_sha256": "daae5e05fd1ce8929c5afccf4fa3ead37d6cece576a45e0d11685b0ed2ac149a",
           "verified_at": "2026-10-01T03:34:46.717845+03:00",
           "verified_commit": "d9c00f65def3fe05dbc193d6b46ac2a5be040b4d"
+        },
+        {
+          "backup_id": "night-2026-10-01",
+          "storage": "git_repository",
+          "status": "github_verified",
+          "repository": "romanthoruk2008-pixel/lightweight-exercises-photo",
+          "branch": "work",
+          "repository_path": "assets/exercises/pending/night-2026-10-01/batch-004/hip-thrust/attempt-1.png",
+          "png_sha256": "daae5e05fd1ce8929c5afccf4fa3ead37d6cece576a45e0d11685b0ed2ac149a",
+          "verified_at": "2026-10-01T03:45:41.209794+03:00",
+          "verified_commit": "a0f650d0c2add34b8bab916c54169d99a00f2d00"
         }
       ]
     },
@@ -12513,7 +12612,7 @@
       "prompt": "STYLE v1. Use the supplied approved human reference ONLY for the person's identity, anatomical 3D style, body proportions, materials and detail. Do not copy its pose, dumbbells, muscle highlighting or composition. Match the same bald athletic adult male, opaque silver-gray sculpted anatomical muscle surfaces, simple fitted black shorts, barefoot, neutral face and consistent natural proportions. One person, one exercise, one characteristic phase: no second figure, collage or motion ghosts. Equipment must be only the simple items named in this scene, neutral gray/black materials, complete and mechanically ordinary. Primary muscles: localized coral #F26445. Named secondary muscles: the same hue at roughly 45% intensity blended with gray, clearly lighter. Do not highlight muscles absent from the catalog list, make the body or shorts transparent, or apply a global orange cast/glow. Preserve clothing; highlight visible anatomical surfaces without inventing see-through tissue. Square PNG, unchanged target 1024x1024, true transparent alpha background outside the person and required equipment/mat and through any openings; no white or checkerboard backdrop, drawn floor plane, UI, text, labels, frames, decorations or halo. Entire person and every required piece of equipment must fit with transparent margins; adapt scale/camera without distortion or cropping. Accent pigment must use base sRGB #F26445 = RGB(242,100,69); retain this hue through ordinary 3D shading. Secondary highlights use this hue at 40-50% intensity blended with the gray body, not transparent tissue.\n\nEXERCISE ID: hollow-rock\nNAME: Hollow Rock\nCatalog equipment: none\nDepict only: bodyweight, no equipment\nPrimary muscle: abdominals\nSecondary muscles: []\n\nONE SPECIFIC SCENE: One characteristic mid-rock hollow hold, not a motion sequence: supine shallow hollow curve, lower back contacting support, shoulders and straight legs/heels slightly raised, arms long overhead. Legs together, ribs down, no lumbar arch. Side view shows the controlled hollow shape with one person only.\n\nENGLISH SOURCE (this ID only; do not substitute a familiar variant):\n{\"description\": \"A hollow rock holds the lower back down in a curved hollow-body position while the body rocks gently from shoulders toward hips.\", \"instructions\": [\"Lie on your back with your legs straight and arms extended overhead.\", \"Brace your abdominals and lift your shoulders and heels slightly so your body forms a shallow curve.\", \"Press your lower back into the floor and rock gently from shoulders toward hips without changing shape.\", \"Stop the rocking and relax to the floor with control.\"], \"form_cues\": [\"Keep the lower back in contact with the floor.\", \"Use small, smooth rocks.\", \"Keep the legs and arms long only as far as position is maintained.\"], \"common_mistakes\": [\"Letting the ribs flare.\", \"Bending the knees or swinging the limbs for momentum.\", \"Rocking too aggressively.\"], \"safety_note\": \"Shorten the lever by bending the knees or bringing the arms forward if you cannot maintain back contact.\", \"provenance\": \"authored\"}\nMaintain source contact points and safe control. Render only this characteristic phase, not the entire instruction sequence. Reference anatomy is opaque; localize the specified muscle pigment without copying reference highlights.",
       "reference_path": "assets/exercises/biceps-curl-dumbbell.png",
       "generated_at": "2026-10-01T03:19:15.974133+03:00",
-      "backup_status": "local_saved",
+      "backup_status": "github_verified",
       "backup_history": [
         {
           "backup_id": "night-2026-10-01",
@@ -12533,6 +12632,17 @@
           "png_sha256": "b79dbf1e42f419e12072e952fa50c051af6f4d05bce25763c324d1cbf5a4c80b",
           "verified_at": "2026-10-01T03:24:41.918605+03:00",
           "verified_commit": "a08a34f64108438a870ad581bb067c469447a018"
+        },
+        {
+          "backup_id": "night-2026-10-01",
+          "storage": "git_repository",
+          "status": "github_verified",
+          "repository": "romanthoruk2008-pixel/lightweight-exercises-photo",
+          "branch": "work",
+          "repository_path": "assets/exercises/pending/night-2026-10-01/batch-003/hollow-rock/attempt-1.png",
+          "png_sha256": "b79dbf1e42f419e12072e952fa50c051af6f4d05bce25763c324d1cbf5a4c80b",
+          "verified_at": "2026-10-01T03:45:41.209794+03:00",
+          "verified_commit": "a0f650d0c2add34b8bab916c54169d99a00f2d00"
         }
       ]
     },
@@ -12933,7 +13043,7 @@
       "prompt": "STYLE v1. Use the supplied approved human reference ONLY for the person's identity, anatomical 3D style, body proportions, materials and detail. Do not copy its pose, dumbbells, muscle highlighting or composition. Match the same bald athletic adult male, opaque silver-gray sculpted anatomical muscle surfaces, simple fitted black shorts, barefoot, neutral face and consistent natural proportions. One person, one exercise, one characteristic phase: no second figure, collage or motion ghosts. Equipment must be only the simple items named in this scene, neutral gray/black materials, complete and mechanically ordinary. Primary muscles: localized coral #F26445. Named secondary muscles: the same hue at roughly 45% intensity blended with gray, clearly lighter. Do not highlight muscles absent from the catalog list, make the body or shorts transparent, or apply a global orange cast/glow. Preserve clothing; highlight visible anatomical surfaces without inventing see-through tissue. Square PNG, unchanged target 1024x1024, true transparent alpha background outside the person and required equipment/mat and through any openings; no white or checkerboard backdrop, drawn floor plane, UI, text, labels, frames, decorations or halo. Entire person and every required piece of equipment must fit with transparent margins; adapt scale/camera without distortion or cropping. Accent pigment must use base sRGB #F26445 = RGB(242,100,69); retain this hue through ordinary 3D shading. Secondary highlights use this hue at 40-50% intensity blended with the gray body, not transparent tissue.\n\nEXERCISE ID: incline-push-ups\nNAME: Incline Push Ups\nCatalog equipment: none\nDepict only: ordinary flat bench\nPrimary muscle: chest\nSecondary muscles: [\"shoulders\", \"triceps\"]\n\nONE SPECIFIC SCENE: Lowered incline pushup with two palms on the stable top of an ordinary flat bench, slightly wider than shoulders. Legs extend behind, balls of both feet grounded, body straight from head to heels; elbows bend as chest approaches elevated support. Side three-quarter view shows full bench and hand/foot contacts. No adjustable machine or foot elevation.\n\nENGLISH SOURCE (this ID only; do not substitute a familiar variant):\n{\"description\": \"With the hands on a raised surface, lower the chest toward the support and press back to a straight-body plank.\", \"instructions\": [\"Place your hands on an elevated surface, such as a bench or step, slightly wider than shoulder-width apart.\", \"Extend your legs behind you, resting on the balls of your feet, creating a straight line from your head to your heels.\", \"Lower your chest towards the elevated surface by bending your elbows, keeping your body in a straight line.\", \"Pause for a moment at the bottom, then push yourself back up to the starting position by straightening your arms.\", \"Repeat for the desired number of repetitions.\"], \"form_cues\": [\"Keep wrists stacked over the elbows.\", \"Brace the trunk and keep the shoulder blades controlled.\", \"Use a smooth lower and press.\"], \"common_mistakes\": [\"Flaring the elbows.\", \"Arching or sagging the trunk.\", \"Bouncing at the bottom.\"], \"safety_note\": \"Use a stable setup and stop before the shoulders or wrists lose controlled alignment.\", \"provenance\": \"adapted\"}\nMaintain source contact points and safe control. Render only this characteristic phase, not the entire instruction sequence. Reference anatomy is opaque; localize the specified muscle pigment without copying reference highlights.",
       "reference_path": "assets/exercises/biceps-curl-dumbbell.png",
       "generated_at": "2026-10-01T03:28:36.485074+03:00",
-      "backup_status": "local_saved",
+      "backup_status": "github_verified",
       "backup_history": [
         {
           "backup_id": "night-2026-10-01",
@@ -12953,6 +13063,17 @@
           "png_sha256": "5b6ded729c93d9b8b17d9a14d9003f1a9a4bd60351592899ed56b29d301bb43a",
           "verified_at": "2026-10-01T03:34:46.717845+03:00",
           "verified_commit": "d9c00f65def3fe05dbc193d6b46ac2a5be040b4d"
+        },
+        {
+          "backup_id": "night-2026-10-01",
+          "storage": "git_repository",
+          "status": "github_verified",
+          "repository": "romanthoruk2008-pixel/lightweight-exercises-photo",
+          "branch": "work",
+          "repository_path": "assets/exercises/pending/night-2026-10-01/batch-004/incline-push-ups/attempt-1.png",
+          "png_sha256": "5b6ded729c93d9b8b17d9a14d9003f1a9a4bd60351592899ed56b29d301bb43a",
+          "verified_at": "2026-10-01T03:45:41.209794+03:00",
+          "verified_commit": "a0f650d0c2add34b8bab916c54169d99a00f2d00"
         }
       ]
     },
@@ -13398,7 +13519,7 @@
       "prompt": "STYLE v1. Use the supplied approved human reference ONLY for the person's identity, anatomical 3D style, body proportions, materials and detail. Do not copy its pose, dumbbells, muscle highlighting or composition. Match the same bald athletic adult male, opaque silver-gray sculpted anatomical muscle surfaces, simple fitted black shorts, barefoot, neutral face and consistent natural proportions. One person, one exercise, one characteristic phase: no second figure, collage or motion ghosts. Equipment must be only the simple items named in this scene, neutral gray/black materials, complete and mechanically ordinary. Primary muscles: localized coral #F26445. Named secondary muscles: the same hue at roughly 45% intensity blended with gray, clearly lighter. Do not highlight muscles absent from the catalog list, make the body or shorts transparent, or apply a global orange cast/glow. Preserve clothing; highlight visible anatomical surfaces without inventing see-through tissue. Square PNG, unchanged target 1024x1024, true transparent alpha background outside the person and required equipment/mat and through any openings; no white or checkerboard backdrop, drawn floor plane, UI, text, labels, frames, decorations or halo. Entire person and every required piece of equipment must fit with transparent margins; adapt scale/camera without distortion or cropping. Accent pigment must use base sRGB #F26445 = RGB(242,100,69); retain this hue through ordinary 3D shading. Secondary highlights use this hue at 40-50% intensity blended with the gray body, not transparent tissue.\n\nEXERCISE ID: jackknife-situp\nNAME: Jackknife Sit Up\nCatalog equipment: none\nDepict only: bodyweight, no equipment\nPrimary muscle: abdominals\nSecondary muscles: []\n\nONE SPECIFIC SCENE: One top jackknife-situp phase from the record's long-leg supine setup: upper torso and both long straight legs lift toward each other, arms reach toward the toes. Pelvis remains the support, neck controlled and no swinging. Side three-quarter view shows the hand-to-toe reach with a single person. Preserve this ID separately from V Up.\n\nENGLISH SOURCE (this ID only; do not substitute a familiar variant):\n{\"description\": \"From a supine start with arms overhead and legs long, lift the torso and legs together and reach toward the toes.\", \"instructions\": [\"Lie flat on your back with your legs extended and your arms overhead.\", \"Engage your core and lift your legs and upper body simultaneously, reaching your hands towards your toes.\", \"Pause for a moment at the top, then slowly lower your legs and upper body back down to the starting position.\", \"Repeat for the desired number of repetitions.\"], \"form_cues\": [\"Keep the trunk braced.\", \"Keep the feet and lower back controlled while the torso curls toward the knees.\", \"Finish each repetition under control.\"], \"common_mistakes\": [\"Using momentum.\", \"Losing the starting posture.\", \"Rushing the return.\"], \"safety_note\": \"Use a comfortable range and stop if control or alignment deteriorates.\", \"provenance\": \"adapted\"}\nMaintain source contact points and safe control. Render only this characteristic phase, not the entire instruction sequence. Reference anatomy is opaque; localize the specified muscle pigment without copying reference highlights.",
       "reference_path": "assets/exercises/biceps-curl-dumbbell.png",
       "generated_at": "2026-10-01T03:24:35.982520+03:00",
-      "backup_status": "local_saved",
+      "backup_status": "github_verified",
       "backup_history": [
         {
           "backup_id": "night-2026-10-01",
@@ -13418,6 +13539,17 @@
           "png_sha256": "2d71b32eda9c47cd3900c9fba4a727e10f6b6f3fce4be5bddd3f782a0ca8d7b5",
           "verified_at": "2026-10-01T03:24:41.918605+03:00",
           "verified_commit": "a08a34f64108438a870ad581bb067c469447a018"
+        },
+        {
+          "backup_id": "night-2026-10-01",
+          "storage": "git_repository",
+          "status": "github_verified",
+          "repository": "romanthoruk2008-pixel/lightweight-exercises-photo",
+          "branch": "work",
+          "repository_path": "assets/exercises/pending/night-2026-10-01/batch-003/jackknife-situp/attempt-1.png",
+          "png_sha256": "2d71b32eda9c47cd3900c9fba4a727e10f6b6f3fce4be5bddd3f782a0ca8d7b5",
+          "verified_at": "2026-10-01T03:45:41.209794+03:00",
+          "verified_commit": "a0f650d0c2add34b8bab916c54169d99a00f2d00"
         }
       ]
     },
@@ -14498,7 +14630,7 @@
       "prompt": "STYLE v1. Use the supplied approved human reference ONLY for the person's identity, anatomical 3D style, body proportions, materials and detail. Do not copy its pose, dumbbells, muscle highlighting or composition. Match the same bald athletic adult male, opaque silver-gray sculpted anatomical muscle surfaces, simple fitted black shorts, barefoot, neutral face and consistent natural proportions. One person, one exercise, one characteristic phase: no second figure, collage or motion ghosts. Equipment must be only the simple items named in this scene, neutral gray/black materials, complete and mechanically ordinary. Primary muscles: localized coral #F26445. Named secondary muscles: the same hue at roughly 45% intensity blended with gray, clearly lighter. Do not highlight muscles absent from the catalog list, make the body or shorts transparent, or apply a global orange cast/glow. Preserve clothing; highlight visible anatomical surfaces without inventing see-through tissue. Square PNG, unchanged target 1024x1024, true transparent alpha background outside the person and required equipment/mat and through any openings; no white or checkerboard backdrop, drawn floor plane, UI, text, labels, frames, decorations or halo. Entire person and every required piece of equipment must fit with transparent margins; adapt scale/camera without distortion or cropping. Accent pigment must use base sRGB #F26445 = RGB(242,100,69); retain this hue through ordinary 3D shading. Secondary highlights use this hue at 40-50% intensity blended with the gray body, not transparent tissue.\n\nEXERCISE ID: kneeling-pushup\nNAME: Kneeling Push Up\nCatalog equipment: none\nDepict only: bodyweight, no equipment\nPrimary muscle: chest\nSecondary muscles: [\"triceps\", \"shoulders\"]\n\nONE SPECIFIC SCENE: Lowered phase of a knee-supported pushup: both palms slightly wider than shoulders, knees supported, head-to-knees forms one rigid line, elbows bent under control and chest just above the support level. Show the feet resting naturally behind the knees, not bearing the load. Side three-quarter view shows palms, knees, elbow bend and neutral trunk.\n\nENGLISH SOURCE (this ID only; do not substitute a familiar variant):\n{\"description\": \"From the knees with the body aligned from head to knees, lower the chest and press back up.\", \"instructions\": [\"Kneel with knees on the floor, hands slightly wider than the shoulders, and the body aligned from knees to head.\", \"Brace the core and bend the elbows to lower the chest toward the floor.\", \"Pause just above the floor, then press through the palms to return to the kneeling plank.\", \"Repeat without letting the hips sag or pike.\"], \"form_cues\": [\"Keep wrists stacked over the elbows.\", \"Brace the trunk and keep the shoulder blades controlled.\", \"Use a smooth lower and press.\"], \"common_mistakes\": [\"Flaring the elbows.\", \"Arching or sagging the trunk.\", \"Bouncing at the bottom.\"], \"safety_note\": \"Use a stable setup and stop before the shoulders or wrists lose controlled alignment.\", \"provenance\": \"adapted\"}\nMaintain source contact points and safe control. Render only this characteristic phase, not the entire instruction sequence. Reference anatomy is opaque; localize the specified muscle pigment without copying reference highlights.",
       "reference_path": "assets/exercises/biceps-curl-dumbbell.png",
       "generated_at": "2026-10-01T02:49:06.833428+03:00",
-      "backup_status": "local_saved",
+      "backup_status": "github_verified",
       "backup_history": [
         {
           "backup_id": "night-2026-10-01",
@@ -14518,6 +14650,17 @@
           "png_sha256": "d2728eb0953889aa209f2c7ce1c70373eb186b3356ced2d4a24d9bef04f70d4d",
           "verified_at": "2026-10-01T02:56:41.328974+03:00",
           "verified_commit": "5e7165de633d74e270ec7e1bcd1ddb2debc3bc3d"
+        },
+        {
+          "backup_id": "night-2026-10-01",
+          "storage": "git_repository",
+          "status": "github_verified",
+          "repository": "romanthoruk2008-pixel/lightweight-exercises-photo",
+          "branch": "work",
+          "repository_path": "assets/exercises/pending/night-2026-10-01/batch-001/kneeling-pushup/attempt-1.png",
+          "png_sha256": "d2728eb0953889aa209f2c7ce1c70373eb186b3356ced2d4a24d9bef04f70d4d",
+          "verified_at": "2026-10-01T03:45:41.209794+03:00",
+          "verified_commit": "a0f650d0c2add34b8bab916c54169d99a00f2d00"
         }
       ]
     },
@@ -15344,7 +15487,7 @@
       "prompt": "STYLE v1. Use the supplied approved human reference ONLY for the person's identity, anatomical 3D style, body proportions, materials and detail. Do not copy its pose, dumbbells, muscle highlighting or composition. Match the same bald athletic adult male, opaque silver-gray sculpted anatomical muscle surfaces, simple fitted black shorts, barefoot, neutral face and consistent natural proportions. One person, one exercise, one characteristic phase: no second figure, collage or motion ghosts. Equipment must be only the simple items named in this scene, neutral gray/black materials, complete and mechanically ordinary. Primary muscles: localized coral #F26445. Named secondary muscles: the same hue at roughly 45% intensity blended with gray, clearly lighter. Do not highlight muscles absent from the catalog list, make the body or shorts transparent, or apply a global orange cast/glow. Preserve clothing; highlight visible anatomical surfaces without inventing see-through tissue. Square PNG, unchanged target 1024x1024, true transparent alpha background outside the person and required equipment/mat and through any openings; no white or checkerboard backdrop, drawn floor plane, UI, text, labels, frames, decorations or halo. Entire person and every required piece of equipment must fit with transparent margins; adapt scale/camera without distortion or cropping. Accent pigment must use base sRGB #F26445 = RGB(242,100,69); retain this hue through ordinary 3D shading. Secondary highlights use this hue at 40-50% intensity blended with the gray body, not transparent tissue.\n\nEXERCISE ID: lateral-lunge\nNAME: Lateral Lunge\nCatalog equipment: none\nDepict only: bodyweight, no equipment\nPrimary muscle: quadriceps\nSecondary muscles: [\"hamstrings\", \"glutes\", \"abductors\"]\n\nONE SPECIFIC SCENE: Single endpoint of a side-stepping lunge to the left: left foot has stepped wide left, left knee bends with hips pushed back, right leg remains long. Both soles contact the support level, left knee tracks left toes and chest stays lifted. Front three-quarter view shows wide lateral step and asymmetrical knee positions.\n\nENGLISH SOURCE (this ID only; do not substitute a familiar variant):\n{\"description\": \"The bodyweight lateral lunge steps one foot sideways, bends that knee while the other leg stays long, then pushes back to center.\", \"instructions\": [\"Stand tall with feet together or hip-width apart and brace the trunk.\", \"Step to one side and bend that knee while pushing the hips back.\", \"Keep the opposite leg long and the planted foot flat.\", \"Push through the bent leg to return to standing, then switch sides.\"], \"form_cues\": [\"Keep the stepping knee over the toes.\", \"Sit the hips back.\", \"Keep the chest lifted.\"], \"common_mistakes\": [\"Letting the knee cave inward.\", \"Rolling onto the inside edge of the foot.\", \"Bouncing at the bottom.\"], \"safety_note\": \"Use a shorter step if balance or hip mobility limits a stable return.\", \"provenance\": \"authored\"}\nMaintain source contact points and safe control. Render only this characteristic phase, not the entire instruction sequence. Reference anatomy is opaque; localize the specified muscle pigment without copying reference highlights.",
       "reference_path": "assets/exercises/biceps-curl-dumbbell.png",
       "generated_at": "2026-10-01T02:59:19.540646+03:00",
-      "backup_status": "local_saved",
+      "backup_status": "github_verified",
       "backup_history": [
         {
           "backup_id": "night-2026-10-01",
@@ -15364,6 +15507,17 @@
           "png_sha256": "2a8683446fad806fcb3b2ac51c1fc538c3e7ddeb4c0a56cb22cf5f3f3a4e9404",
           "verified_at": "2026-10-01T03:11:38.632536+03:00",
           "verified_commit": "b69854cf72d95bfa85bb8f593186c150fe3621b2"
+        },
+        {
+          "backup_id": "night-2026-10-01",
+          "storage": "git_repository",
+          "status": "github_verified",
+          "repository": "romanthoruk2008-pixel/lightweight-exercises-photo",
+          "branch": "work",
+          "repository_path": "assets/exercises/pending/night-2026-10-01/batch-002/lateral-lunge/attempt-1.png",
+          "png_sha256": "2a8683446fad806fcb3b2ac51c1fc538c3e7ddeb4c0a56cb22cf5f3f3a4e9404",
+          "verified_at": "2026-10-01T03:45:41.209794+03:00",
+          "verified_commit": "a0f650d0c2add34b8bab916c54169d99a00f2d00"
         }
       ]
     },
@@ -15830,7 +15984,7 @@
       "prompt": "STYLE v1. Use the supplied approved human reference ONLY for the person's identity, anatomical 3D style, body proportions, materials and detail. Do not copy its pose, dumbbells, muscle highlighting or composition. Match the same bald athletic adult male, opaque silver-gray sculpted anatomical muscle surfaces, simple fitted black shorts, barefoot, neutral face and consistent natural proportions. One person, one exercise, one characteristic phase: no second figure, collage or motion ghosts. Equipment must be only the simple items named in this scene, neutral gray/black materials, complete and mechanically ordinary. Primary muscles: localized coral #F26445. Named secondary muscles: the same hue at roughly 45% intensity blended with gray, clearly lighter. Do not highlight muscles absent from the catalog list, make the body or shorts transparent, or apply a global orange cast/glow. Preserve clothing; highlight visible anatomical surfaces without inventing see-through tissue. Square PNG, unchanged target 1024x1024, true transparent alpha background outside the person and required equipment/mat and through any openings; no white or checkerboard backdrop, drawn floor plane, UI, text, labels, frames, decorations or halo. Entire person and every required piece of equipment must fit with transparent margins; adapt scale/camera without distortion or cropping. Accent pigment must use base sRGB #F26445 = RGB(242,100,69); retain this hue through ordinary 3D shading. Secondary highlights use this hue at 40-50% intensity blended with the gray body, not transparent tissue.\n\nEXERCISE ID: lateral-squat\nNAME: Lateral Squat\nCatalog equipment: none\nDepict only: bodyweight, no equipment\nPrimary muscle: quadriceps\nSecondary muscles: [\"hamstrings\", \"glutes\", \"abductors\"]\n\nONE SPECIFIC SCENE: From a FIXED WIDE STANCE with toes slightly outward, shift hips left and bend the left knee while the right leg stays long. Feet remain in the original wide stance, heels grounded, chest lifted, left knee follows toes. Front three-quarter view, no travelling step or external load.\n\nENGLISH SOURCE (this ID only; do not substitute a familiar variant):\n{\"description\": \"A lateral squat shifts the hips to one side into a squat while the opposite leg remains more extended.\", \"instructions\": [\"Stand in a wide stance with toes slightly turned out and brace your core.\", \"Shift your hips to one side and bend that knee while keeping the other leg long.\", \"Keep the bent foot flat and the chest lifted.\", \"Push through the bent leg to return to center, then repeat on the other side.\"], \"form_cues\": [\"Keep the knee tracking with the toes.\", \"Send the hips back and sideways.\", \"Move smoothly between sides.\"], \"common_mistakes\": [\"Collapsing the knee inward.\", \"Lifting the heel.\", \"Rounding the lower back.\"], \"safety_note\": \"Use a stance width that lets you keep both feet planted and the spine controlled.\", \"provenance\": \"authored\"}\nMaintain source contact points and safe control. Render only this characteristic phase, not the entire instruction sequence. Reference anatomy is opaque; localize the specified muscle pigment without copying reference highlights.",
       "reference_path": "assets/exercises/biceps-curl-dumbbell.png",
       "generated_at": "2026-10-01T03:00:38.285101+03:00",
-      "backup_status": "local_saved",
+      "backup_status": "github_verified",
       "backup_history": [
         {
           "backup_id": "night-2026-10-01",
@@ -15850,6 +16004,17 @@
           "png_sha256": "ee4ef35cd3c0e66692884bd135eccc312b823c6f2824f380baa3a085f6854cf5",
           "verified_at": "2026-10-01T03:11:38.632536+03:00",
           "verified_commit": "b69854cf72d95bfa85bb8f593186c150fe3621b2"
+        },
+        {
+          "backup_id": "night-2026-10-01",
+          "storage": "git_repository",
+          "status": "github_verified",
+          "repository": "romanthoruk2008-pixel/lightweight-exercises-photo",
+          "branch": "work",
+          "repository_path": "assets/exercises/pending/night-2026-10-01/batch-002/lateral-squat/attempt-1.png",
+          "png_sha256": "ee4ef35cd3c0e66692884bd135eccc312b823c6f2824f380baa3a085f6854cf5",
+          "verified_at": "2026-10-01T03:45:41.209794+03:00",
+          "verified_commit": "a0f650d0c2add34b8bab916c54169d99a00f2d00"
         }
       ]
     },
@@ -16591,7 +16756,7 @@
       "prompt": "STYLE v1. Use the supplied approved human reference ONLY for the person's identity, anatomical 3D style, body proportions, materials and detail. Do not copy its pose, dumbbells, muscle highlighting or composition. Match the same bald athletic adult male, opaque silver-gray sculpted anatomical muscle surfaces, simple fitted black shorts, barefoot, neutral face and consistent natural proportions. One person, one exercise, one characteristic phase: no second figure, collage or motion ghosts. Equipment must be only the simple items named in this scene, neutral gray/black materials, complete and mechanically ordinary. Primary muscles: localized coral #F26445. Named secondary muscles: the same hue at roughly 45% intensity blended with gray, clearly lighter. Do not highlight muscles absent from the catalog list, make the body or shorts transparent, or apply a global orange cast/glow. Preserve clothing; highlight visible anatomical surfaces without inventing see-through tissue. Square PNG, unchanged target 1024x1024, true transparent alpha background outside the person and required equipment/mat and through any openings; no white or checkerboard backdrop, drawn floor plane, UI, text, labels, frames, decorations or halo. Entire person and every required piece of equipment must fit with transparent margins; adapt scale/camera without distortion or cropping. Accent pigment must use base sRGB #F26445 = RGB(242,100,69); retain this hue through ordinary 3D shading. Secondary highlights use this hue at 40-50% intensity blended with the gray body, not transparent tissue.\n\nEXERCISE ID: lying-knee-raise\nNAME: Lying Knee Raise\nCatalog equipment: none\nDepict only: bodyweight, no equipment\nPrimary muscle: abdominals\nSecondary muscles: []\n\nONE SPECIFIC SCENE: Supine with arms by the sides, head and shoulders supported. Both hips and knees bend as the knees approach the chest, with a gentle controlled pelvic curl. Show a single compact raised-knee phase, not a straight-leg raise or swing. Elevated side camera shows knees bent and lower back controlled.\n\nENGLISH SOURCE (this ID only; do not substitute a familiar variant):\n{\"description\": \"A lying knee raise draws both bent knees toward the torso while the abdomen controls the pelvis against the floor.\", \"instructions\": [\"Lie on your back with legs extended and arms beside you or lightly braced.\", \"Brace your abdominals and bend both knees.\", \"Lift the knees toward the chest by curling the pelvis gently upward.\", \"Lower the feet toward the floor without arching the lower back, then repeat.\"], \"form_cues\": [\"Keep the ribs down.\", \"Move the pelvis, not just the thighs.\", \"Control the return.\"], \"common_mistakes\": [\"Swinging the legs.\", \"Flattening the movement into a hip flexor lift.\", \"Letting the lower back arch.\"], \"safety_note\": \"Use a smaller range if the back lifts from the floor.\", \"provenance\": \"authored\"}\nMaintain source contact points and safe control. Render only this characteristic phase, not the entire instruction sequence. Reference anatomy is opaque; localize the specified muscle pigment without copying reference highlights.",
       "reference_path": "assets/exercises/biceps-curl-dumbbell.png",
       "generated_at": "2026-10-01T03:06:01.777164+03:00",
-      "backup_status": "local_saved",
+      "backup_status": "github_verified",
       "backup_history": [
         {
           "backup_id": "night-2026-10-01",
@@ -16611,6 +16776,17 @@
           "png_sha256": "335782224bb4904cb7ad007b4ea9f41f30362eefd26bb69a6db9f0f2b86c3aa4",
           "verified_at": "2026-10-01T03:11:38.632536+03:00",
           "verified_commit": "b69854cf72d95bfa85bb8f593186c150fe3621b2"
+        },
+        {
+          "backup_id": "night-2026-10-01",
+          "storage": "git_repository",
+          "status": "github_verified",
+          "repository": "romanthoruk2008-pixel/lightweight-exercises-photo",
+          "branch": "work",
+          "repository_path": "assets/exercises/pending/night-2026-10-01/batch-002/lying-knee-raise/attempt-1.png",
+          "png_sha256": "335782224bb4904cb7ad007b4ea9f41f30362eefd26bb69a6db9f0f2b86c3aa4",
+          "verified_at": "2026-10-01T03:45:41.209794+03:00",
+          "verified_commit": "a0f650d0c2add34b8bab916c54169d99a00f2d00"
         }
       ]
     },
@@ -16972,7 +17148,7 @@
       "prompt": "STYLE v1. Use the supplied approved human reference ONLY for the person's identity, anatomical 3D style, body proportions, materials and detail. Do not copy its pose, dumbbells, muscle highlighting or composition. Match the same bald athletic adult male, opaque silver-gray sculpted anatomical muscle surfaces, simple fitted black shorts, barefoot, neutral face and consistent natural proportions. One person, one exercise, one characteristic phase: no second figure, collage or motion ghosts. Equipment must be only the simple items named in this scene, neutral gray/black materials, complete and mechanically ordinary. Primary muscles: localized coral #F26445. Named secondary muscles: the same hue at roughly 45% intensity blended with gray, clearly lighter. Do not highlight muscles absent from the catalog list, make the body or shorts transparent, or apply a global orange cast/glow. Preserve clothing; highlight visible anatomical surfaces without inventing see-through tissue. Square PNG, unchanged target 1024x1024, true transparent alpha background outside the person and required equipment/mat and through any openings; no white or checkerboard backdrop, drawn floor plane, UI, text, labels, frames, decorations or halo. Entire person and every required piece of equipment must fit with transparent margins; adapt scale/camera without distortion or cropping. Accent pigment must use base sRGB #F26445 = RGB(242,100,69); retain this hue through ordinary 3D shading. Secondary highlights use this hue at 40-50% intensity blended with the gray body, not transparent tissue.\n\nEXERCISE ID: lying-neck-curls\nNAME: Lying Neck Curls\nCatalog equipment: none\nDepict only: bodyweight, no equipment\nPrimary muscle: neck\nSecondary muscles: []\n\nONE SPECIFIC SCENE: Supine, torso and legs resting comfortably, shoulders fully supported and relaxed. Small active neck-flexion phase: chin gently nods toward chest and HEAD ONLY lifts a small distance above its supported starting level. Neck not forcefully curled, shoulders do not rise, no external load. Side three-quarter view clearly shows the small head lift.\n\nENGLISH SOURCE (this ID only; do not substitute a familiar variant):\n{\"description\": \"Lying neck curls gently nod the head toward the chest through a small supported range.\", \"instructions\": [\"Lie on your back with the head supported and the shoulders relaxed.\", \"Tuck the chin slightly to lengthen the back of the neck.\", \"Lift the head a small distance by nodding the chin toward the chest.\", \"Lower the head slowly back to the support without forcing the range.\"], \"form_cues\": [\"Keep the movement small.\", \"Move from the neck rather than the shoulders.\", \"Breathe normally.\"], \"common_mistakes\": [\"Jerking the head.\", \"Lifting the shoulders off the floor.\", \"Forcing the chin tightly to the chest.\"], \"safety_note\": \"Use no external load and stop immediately for neck pain, dizziness, or unusual symptoms.\", \"provenance\": \"authored\"}\nMaintain source contact points and safe control. Render only this characteristic phase, not the entire instruction sequence. Reference anatomy is opaque; localize the specified muscle pigment without copying reference highlights.",
       "reference_path": "assets/exercises/biceps-curl-dumbbell.png",
       "generated_at": "2026-10-01T03:25:59.782659+03:00",
-      "backup_status": "local_saved",
+      "backup_status": "github_verified",
       "backup_history": [
         {
           "backup_id": "night-2026-10-01",
@@ -16992,6 +17168,17 @@
           "png_sha256": "6c4619581f4b06b3ef464f31dce6d0e41ed0c7861461b9a62f4201e22125a698",
           "verified_at": "2026-10-01T03:34:46.717845+03:00",
           "verified_commit": "d9c00f65def3fe05dbc193d6b46ac2a5be040b4d"
+        },
+        {
+          "backup_id": "night-2026-10-01",
+          "storage": "git_repository",
+          "status": "github_verified",
+          "repository": "romanthoruk2008-pixel/lightweight-exercises-photo",
+          "branch": "work",
+          "repository_path": "assets/exercises/pending/night-2026-10-01/batch-004/lying-neck-curls/attempt-1.png",
+          "png_sha256": "6c4619581f4b06b3ef464f31dce6d0e41ed0c7861461b9a62f4201e22125a698",
+          "verified_at": "2026-10-01T03:45:41.209794+03:00",
+          "verified_commit": "a0f650d0c2add34b8bab916c54169d99a00f2d00"
         }
       ]
     },
@@ -17527,7 +17714,7 @@
       "prompt": "STYLE v1. Use the supplied approved human reference ONLY for the person's identity, anatomical 3D style, body proportions, materials and detail. Do not copy its pose, dumbbells, muscle highlighting or composition. Match the same bald athletic adult male, opaque silver-gray sculpted anatomical muscle surfaces, simple fitted black shorts, barefoot, neutral face and consistent natural proportions. One person, one exercise, one characteristic phase: no second figure, collage or motion ghosts. Equipment must be only the simple items named in this scene, neutral gray/black materials, complete and mechanically ordinary. Primary muscles: localized coral #F26445. Named secondary muscles: the same hue at roughly 45% intensity blended with gray, clearly lighter. Do not highlight muscles absent from the catalog list, make the body or shorts transparent, or apply a global orange cast/glow. Preserve clothing; highlight visible anatomical surfaces without inventing see-through tissue. Square PNG, unchanged target 1024x1024, true transparent alpha background outside the person and required equipment/mat and through any openings; no white or checkerboard backdrop, drawn floor plane, UI, text, labels, frames, decorations or halo. Entire person and every required piece of equipment must fit with transparent margins; adapt scale/camera without distortion or cropping. Accent pigment must use base sRGB #F26445 = RGB(242,100,69); retain this hue through ordinary 3D shading. Secondary highlights use this hue at 40-50% intensity blended with the gray body, not transparent tissue.\n\nEXERCISE ID: oblique-crunch\nNAME: Oblique Crunch\nCatalog equipment: none\nDepict only: bodyweight, no equipment\nPrimary muscle: abdominals\nSecondary muscles: []\n\nONE SPECIFIC SCENE: Supine knees bent and BOTH FEET FLAT. Arms crossed over the chest, one of the explicitly permitted hand positions. Lift shoulders gently and rotate through the ribs toward the right so the left rib cage approaches the opposite hip; pelvis stays still. Elevated front-side view shows the small oblique curl. No neck pulling or leg lift.\n\nENGLISH SOURCE (this ID only; do not substitute a familiar variant):\n{\"description\": \"From a supine position, curl the trunk toward the opposite side to bring the ribs toward the hip.\", \"instructions\": [\"Lie on your back with your knees bent and feet flat on the ground.\", \"Place your hands behind your head or cross them over your chest.\", \"Engage your abs and lift your shoulder blades off the ground, rotating your torso to one side.\", \"Pause for a moment, then lower your shoulder blades back down to the starting position.\", \"Repeat on the other side.\", \"Continue alternating sides for the desired number of repetitions.\"], \"form_cues\": [\"Keep the trunk braced.\", \"Curl the ribs toward the opposite hip without pulling the neck.\", \"Finish each repetition under control.\"], \"common_mistakes\": [\"Using momentum.\", \"Losing the starting posture.\", \"Rushing the return.\"], \"safety_note\": \"Use a comfortable range and stop if control or alignment deteriorates.\", \"provenance\": \"adapted\"}\nMaintain source contact points and safe control. Render only this characteristic phase, not the entire instruction sequence. Reference anatomy is opaque; localize the specified muscle pigment without copying reference highlights.",
       "reference_path": "assets/exercises/biceps-curl-dumbbell.png",
       "generated_at": "2026-10-01T03:08:50.194769+03:00",
-      "backup_status": "local_saved",
+      "backup_status": "github_verified",
       "backup_history": [
         {
           "backup_id": "night-2026-10-01",
@@ -17547,6 +17734,17 @@
           "png_sha256": "43b14e0456bd227eb4d12c17ca8e632a991a48355951d62693d14d937b4b085e",
           "verified_at": "2026-10-01T03:11:38.632536+03:00",
           "verified_commit": "b69854cf72d95bfa85bb8f593186c150fe3621b2"
+        },
+        {
+          "backup_id": "night-2026-10-01",
+          "storage": "git_repository",
+          "status": "github_verified",
+          "repository": "romanthoruk2008-pixel/lightweight-exercises-photo",
+          "branch": "work",
+          "repository_path": "assets/exercises/pending/night-2026-10-01/batch-002/oblique-crunch/attempt-1.png",
+          "png_sha256": "43b14e0456bd227eb4d12c17ca8e632a991a48355951d62693d14d937b4b085e",
+          "verified_at": "2026-10-01T03:45:41.209794+03:00",
+          "verified_commit": "a0f650d0c2add34b8bab916c54169d99a00f2d00"
         }
       ]
     },
@@ -17672,7 +17870,7 @@
       "prompt": "STYLE v1. Use the supplied approved human reference ONLY for the person's identity, anatomical 3D style, body proportions, materials and detail. Do not copy its pose, dumbbells, muscle highlighting or composition. Match the same bald athletic adult male, opaque silver-gray sculpted anatomical muscle surfaces, simple fitted black shorts, barefoot, neutral face and consistent natural proportions. One person, one exercise, one characteristic phase: no second figure, collage or motion ghosts. Equipment must be only the simple items named in this scene, neutral gray/black materials, complete and mechanically ordinary. Primary muscles: localized coral #F26445. Named secondary muscles: the same hue at roughly 45% intensity blended with gray, clearly lighter. Do not highlight muscles absent from the catalog list, make the body or shorts transparent, or apply a global orange cast/glow. Preserve clothing; highlight visible anatomical surfaces without inventing see-through tissue. Square PNG, unchanged target 1024x1024, true transparent alpha background outside the person and required equipment/mat and through any openings; no white or checkerboard backdrop, drawn floor plane, UI, text, labels, frames, decorations or halo. Entire person and every required piece of equipment must fit with transparent margins; adapt scale/camera without distortion or cropping. Accent pigment must use base sRGB #F26445 = RGB(242,100,69); retain this hue through ordinary 3D shading. Secondary highlights use this hue at 40-50% intensity blended with the gray body, not transparent tissue.\n\nEXERCISE ID: one-arm-pushup\nNAME: One Arm Push Up\nCatalog equipment: none\nDepict only: bodyweight, no equipment\nPrimary muscle: chest\nSecondary muscles: [\"shoulders\", \"triceps\"]\n\nONE SPECIFIC SCENE: Lowered single-support phase exactly as the English instructions: left palm supports the body, left elbow bent under control, BOTH TOES grounded, straight braced trunk without hip rotation. RIGHT ARM lifted and extended STRAIGHT OUT TO THE SIDE, not behind the back. The body has shifted over the left supporting palm. Front-side three-quarter view shows the free arm and all contacts.\n\nENGLISH SOURCE (this ID only; do not substitute a familiar variant):\n{\"description\": \"With one hand supporting the body in a plank, lower the chest and press back up without rotating the hips.\", \"instructions\": [\"Start in a push-up position with your hands shoulder-width apart and one hand placed slightly wider than the other.\", \"Engage your core and lower your body towards the ground by bending your elbows, keeping your back straight.\", \"As you lower yourself, shift your weight to one side and lift the opposite arm off the ground, extending it straight out to the side.\", \"Push through your chest and triceps to raise your body back up to the starting position, while simultaneously lowering your extended arm back to the ground.\", \"Repeat the movement, alternating the arm you extend with each repetition.\"], \"form_cues\": [\"Keep wrists stacked over the elbows.\", \"Brace the trunk and keep the shoulder blades controlled.\", \"Use a smooth lower and press.\"], \"common_mistakes\": [\"Flaring the elbows.\", \"Arching or sagging the trunk.\", \"Bouncing at the bottom.\"], \"safety_note\": \"Use a stable setup and stop before the shoulders or wrists lose controlled alignment.\", \"provenance\": \"adapted\"}\nMaintain source contact points and safe control. Render only this characteristic phase, not the entire instruction sequence. Reference anatomy is opaque; localize the specified muscle pigment without copying reference highlights.",
       "reference_path": "assets/exercises/biceps-curl-dumbbell.png",
       "generated_at": "2026-10-01T03:16:44.337702+03:00",
-      "backup_status": "local_saved",
+      "backup_status": "github_verified",
       "backup_history": [
         {
           "backup_id": "night-2026-10-01",
@@ -17692,6 +17890,17 @@
           "png_sha256": "5bc4575c62dfbba1da76a7073e6ead27767b73275171d80665a63e00e8adfa1d",
           "verified_at": "2026-10-01T03:24:41.918605+03:00",
           "verified_commit": "a08a34f64108438a870ad581bb067c469447a018"
+        },
+        {
+          "backup_id": "night-2026-10-01",
+          "storage": "git_repository",
+          "status": "github_verified",
+          "repository": "romanthoruk2008-pixel/lightweight-exercises-photo",
+          "branch": "work",
+          "repository_path": "assets/exercises/pending/night-2026-10-01/batch-003/one-arm-pushup/attempt-1.png",
+          "png_sha256": "5bc4575c62dfbba1da76a7073e6ead27767b73275171d80665a63e00e8adfa1d",
+          "verified_at": "2026-10-01T03:45:41.209794+03:00",
+          "verified_commit": "a0f650d0c2add34b8bab916c54169d99a00f2d00"
         }
       ]
     },
@@ -18442,7 +18651,7 @@
       "prompt": "STYLE v1. Use the supplied approved human reference ONLY for the person's identity, anatomical 3D style, body proportions, materials and detail. Do not copy its pose, dumbbells, muscle highlighting or composition. Match the same bald athletic adult male, opaque silver-gray sculpted anatomical muscle surfaces, simple fitted black shorts, barefoot, neutral face and consistent natural proportions. One person, one exercise, one characteristic phase: no second figure, collage or motion ghosts. Equipment must be only the simple items named in this scene, neutral gray/black materials, complete and mechanically ordinary. Primary muscles: localized coral #F26445. Named secondary muscles: the same hue at roughly 45% intensity blended with gray, clearly lighter. Do not highlight muscles absent from the catalog list, make the body or shorts transparent, or apply a global orange cast/glow. Preserve clothing; highlight visible anatomical surfaces without inventing see-through tissue. Square PNG, unchanged target 1024x1024, true transparent alpha background outside the person and required equipment/mat and through any openings; no white or checkerboard backdrop, drawn floor plane, UI, text, labels, frames, decorations or halo. Entire person and every required piece of equipment must fit with transparent margins; adapt scale/camera without distortion or cropping. Accent pigment must use base sRGB #F26445 = RGB(242,100,69); retain this hue through ordinary 3D shading. Secondary highlights use this hue at 40-50% intensity blended with the gray body, not transparent tissue.\n\nEXERCISE ID: pike-pushup\nNAME: Pike Pushup\nCatalog equipment: none\nDepict only: bodyweight, no equipment\nPrimary muscle: shoulders\nSecondary muscles: [\"triceps\", \"chest\"]\n\nONE SPECIFIC SCENE: Lowered pike pushup: hips remain HIGH in an inverted V, palms shoulder-width apart, forefeet support the legs with heels naturally raised. Bend elbows slightly back to lower the head close to the support BETWEEN the hands; keep neck aligned and hips high. Side three-quarter view makes inverted-V body and head position clear. Not a flat plank pushup.\n\nENGLISH SOURCE (this ID only; do not substitute a familiar variant):\n{\"description\": \"A pike push-up presses from an inverted-V position with the hips high and the shoulders doing most of the work.\", \"instructions\": [\"Start in a pike with hands shoulder-width apart, hips high, and heels lifted as needed.\", \"Brace the core and bend the elbows to lower the head toward the floor between the hands.\", \"Press through the palms to straighten the arms and return to the pike.\", \"Repeat without shifting into a flat push-up.\"], \"form_cues\": [\"Keep the hips high.\", \"Aim the elbows slightly back.\", \"Move the head between the hands.\"], \"common_mistakes\": [\"Dropping the hips.\", \"Flaring the elbows.\", \"Bouncing the head toward the floor.\"], \"safety_note\": \"Use a reduced range or elevated hands if the shoulders cannot control the descent.\", \"provenance\": \"authored\"}\nMaintain source contact points and safe control. Render only this characteristic phase, not the entire instruction sequence. Reference anatomy is opaque; localize the specified muscle pigment without copying reference highlights.",
       "reference_path": "assets/exercises/biceps-curl-dumbbell.png",
       "generated_at": "2026-10-01T03:15:19.506839+03:00",
-      "backup_status": "local_saved",
+      "backup_status": "github_verified",
       "backup_history": [
         {
           "backup_id": "night-2026-10-01",
@@ -18462,6 +18671,17 @@
           "png_sha256": "a5a9db4abffc13662c1107d82ad25d1541a8e0b4b67d3b7cae56ac03126367b6",
           "verified_at": "2026-10-01T03:24:41.918605+03:00",
           "verified_commit": "a08a34f64108438a870ad581bb067c469447a018"
+        },
+        {
+          "backup_id": "night-2026-10-01",
+          "storage": "git_repository",
+          "status": "github_verified",
+          "repository": "romanthoruk2008-pixel/lightweight-exercises-photo",
+          "branch": "work",
+          "repository_path": "assets/exercises/pending/night-2026-10-01/batch-003/pike-pushup/attempt-1.png",
+          "png_sha256": "a5a9db4abffc13662c1107d82ad25d1541a8e0b4b67d3b7cae56ac03126367b6",
+          "verified_at": "2026-10-01T03:45:41.209794+03:00",
+          "verified_commit": "a0f650d0c2add34b8bab916c54169d99a00f2d00"
         }
       ]
     },
@@ -18734,7 +18954,7 @@
       "prompt": "STYLE v1. Use the supplied approved human reference ONLY for the person's identity, anatomical 3D style, body proportions, materials and detail. Do not copy its pose, dumbbells, muscle highlighting or composition. Match the same bald athletic adult male, opaque silver-gray sculpted anatomical muscle surfaces, simple fitted black shorts, barefoot, neutral face and consistent natural proportions. One person, one exercise, one characteristic phase: no second figure, collage or motion ghosts. Equipment must be only the simple items named in this scene, neutral gray/black materials, complete and mechanically ordinary. Primary muscles: localized coral #F26445. Named secondary muscles: the same hue at roughly 45% intensity blended with gray, clearly lighter. Do not highlight muscles absent from the catalog list, make the body or shorts transparent, or apply a global orange cast/glow. Preserve clothing; highlight visible anatomical surfaces without inventing see-through tissue. Square PNG, unchanged target 1024x1024, true transparent alpha background outside the person and required equipment/mat and through any openings; no white or checkerboard backdrop, drawn floor plane, UI, text, labels, frames, decorations or halo. Entire person and every required piece of equipment must fit with transparent margins; adapt scale/camera without distortion or cropping. Accent pigment must use base sRGB #F26445 = RGB(242,100,69); retain this hue through ordinary 3D shading. Secondary highlights use this hue at 40-50% intensity blended with the gray body, not transparent tissue.\n\nEXERCISE ID: pistol-squat\nNAME: Pistol Squat\nCatalog equipment: none\nDepict only: bodyweight, no equipment\nPrimary muscle: quadriceps\nSecondary muscles: [\"hamstrings\", \"glutes\"]\n\nONE SPECIFIC SCENE: Controlled one-leg squat endpoint: right foot fully planted with heel down, right hip and knee bend to a stable depth, LEFT LEG EXTENDED FORWARD off the support. Both arms reach forward for balance, chest lifted and right knee follows toes. Side three-quarter view separates free leg and working foot. No bench, support handle or added weight.\n\nENGLISH SOURCE (this ID only; do not substitute a familiar variant):\n{\"description\": \"Balance on one leg while the other stays extended forward, squat down, and stand through the planted heel.\", \"instructions\": [\"Stand on one leg and extend the other leg forward with the arms reaching for balance.\", \"Bend the standing knee and hips to lower while keeping the chest lifted.\", \"Descend only as far as the planted foot and knee remain stable.\", \"Drive through the planted heel to stand, then switch legs.\"], \"form_cues\": [\"Keep the feet planted.\", \"Track the knees with the toes.\", \"Keep the chest and trunk controlled.\"], \"common_mistakes\": [\"Knees collapsing inward.\", \"Rising onto the toes.\", \"Losing the neutral trunk.\"], \"safety_note\": \"Use a depth and load that allow a stable knee and hip path.\", \"provenance\": \"adapted\"}\nMaintain source contact points and safe control. Render only this characteristic phase, not the entire instruction sequence. Reference anatomy is opaque; localize the specified muscle pigment without copying reference highlights.",
       "reference_path": "assets/exercises/biceps-curl-dumbbell.png",
       "generated_at": "2026-10-01T03:18:07.890651+03:00",
-      "backup_status": "local_saved",
+      "backup_status": "github_verified",
       "backup_history": [
         {
           "backup_id": "night-2026-10-01",
@@ -18754,6 +18974,17 @@
           "png_sha256": "51e3fbf834633553948803e1b4c8d058b2c1777c6f661278edd1145007ca5cb8",
           "verified_at": "2026-10-01T03:24:41.918605+03:00",
           "verified_commit": "a08a34f64108438a870ad581bb067c469447a018"
+        },
+        {
+          "backup_id": "night-2026-10-01",
+          "storage": "git_repository",
+          "status": "github_verified",
+          "repository": "romanthoruk2008-pixel/lightweight-exercises-photo",
+          "branch": "work",
+          "repository_path": "assets/exercises/pending/night-2026-10-01/batch-003/pistol-squat/attempt-1.png",
+          "png_sha256": "51e3fbf834633553948803e1b4c8d058b2c1777c6f661278edd1145007ca5cb8",
+          "verified_at": "2026-10-01T03:45:41.209794+03:00",
+          "verified_commit": "a0f650d0c2add34b8bab916c54169d99a00f2d00"
         }
       ]
     },
@@ -20200,7 +20431,7 @@
       "prompt": "STYLE v1. Use the supplied approved human reference ONLY for the person's identity, anatomical 3D style, body proportions, materials and detail. Do not copy its pose, dumbbells, muscle highlighting or composition. Match the same bald athletic adult male, opaque silver-gray sculpted anatomical muscle surfaces, simple fitted black shorts, barefoot, neutral face and consistent natural proportions. One person, one exercise, one characteristic phase: no second figure, collage or motion ghosts. Equipment must be only the simple items named in this scene, neutral gray/black materials, complete and mechanically ordinary. Primary muscles: localized coral #F26445. Named secondary muscles: the same hue at roughly 45% intensity blended with gray, clearly lighter. Do not highlight muscles absent from the catalog list, make the body or shorts transparent, or apply a global orange cast/glow. Preserve clothing; highlight visible anatomical surfaces without inventing see-through tissue. Square PNG, unchanged target 1024x1024, true transparent alpha background outside the person and required equipment/mat and through any openings; no white or checkerboard backdrop, drawn floor plane, UI, text, labels, frames, decorations or halo. Entire person and every required piece of equipment must fit with transparent margins; adapt scale/camera without distortion or cropping. Accent pigment must use base sRGB #F26445 = RGB(242,100,69); retain this hue through ordinary 3D shading. Secondary highlights use this hue at 40-50% intensity blended with the gray body, not transparent tissue.\n\nEXERCISE ID: pushup-close-grip\nNAME: Push Up - Close Grip\nCatalog equipment: none\nDepict only: bodyweight, no equipment\nPrimary muscle: chest\nSecondary muscles: [\"triceps\", \"shoulders\"]\n\nONE SPECIFIC SCENE: Lowered close-grip pushup, two palms close together beneath the chest directly under the shoulders, fingers forward with a closed stable palm contact rather than an invented diamond. Both toes support straight legs; chest just above the contact level, elbows tucked near torso, body straight head to heels. Side-front three-quarter view shows hand spacing and elbows. No clap or airborne phase.\n\nENGLISH SOURCE (this ID only; do not substitute a familiar variant):\n{\"description\": \"A close-grip push-up keeps the hands beneath the chest and the elbows tucked as the body lowers and presses from the floor.\", \"instructions\": [\"Start in a high plank position with your hands placed close together, directly under your shoulders.\", \"Engage your core and lower your body towards the ground, keeping your elbows close to your sides.\", \"Push through your palms to extend your arms and return to the starting position.\", \"Repeat for the desired number of repetitions.\"], \"form_cues\": [\"Keep wrists stacked over the elbows.\", \"Brace the trunk and keep the shoulder blades controlled.\", \"Use a smooth lower and press.\"], \"common_mistakes\": [\"Flaring the elbows.\", \"Arching or sagging the trunk.\", \"Bouncing at the bottom.\"], \"safety_note\": \"Use a stable setup and stop before the shoulders or wrists lose controlled alignment.\", \"provenance\": \"adapted\"}\nMaintain source contact points and safe control. Render only this characteristic phase, not the entire instruction sequence. Reference anatomy is opaque; localize the specified muscle pigment without copying reference highlights.",
       "reference_path": "assets/exercises/biceps-curl-dumbbell.png",
       "generated_at": "2026-10-01T02:50:44.233254+03:00",
-      "backup_status": "local_saved",
+      "backup_status": "github_verified",
       "backup_history": [
         {
           "backup_id": "night-2026-10-01",
@@ -20220,6 +20451,17 @@
           "png_sha256": "d956f643a1df9c371d88833c008e6ec56c9ea632f91e2b3033f96e349cca9f7b",
           "verified_at": "2026-10-01T02:56:41.328974+03:00",
           "verified_commit": "5e7165de633d74e270ec7e1bcd1ddb2debc3bc3d"
+        },
+        {
+          "backup_id": "night-2026-10-01",
+          "storage": "git_repository",
+          "status": "github_verified",
+          "repository": "romanthoruk2008-pixel/lightweight-exercises-photo",
+          "branch": "work",
+          "repository_path": "assets/exercises/pending/night-2026-10-01/batch-001/pushup-close-grip/attempt-1.png",
+          "png_sha256": "d956f643a1df9c371d88833c008e6ec56c9ea632f91e2b3033f96e349cca9f7b",
+          "verified_at": "2026-10-01T03:45:41.209794+03:00",
+          "verified_commit": "a0f650d0c2add34b8bab916c54169d99a00f2d00"
         }
       ]
     },
@@ -20715,7 +20957,7 @@
       "prompt": "STYLE v1. Use the supplied approved human reference ONLY for the person's identity, anatomical 3D style, body proportions, materials and detail. Do not copy its pose, dumbbells, muscle highlighting or composition. Match the same bald athletic adult male, opaque silver-gray sculpted anatomical muscle surfaces, simple fitted black shorts, barefoot, neutral face and consistent natural proportions. One person, one exercise, one characteristic phase: no second figure, collage or motion ghosts. Equipment must be only the simple items named in this scene, neutral gray/black materials, complete and mechanically ordinary. Primary muscles: localized coral #F26445. Named secondary muscles: the same hue at roughly 45% intensity blended with gray, clearly lighter. Do not highlight muscles absent from the catalog list, make the body or shorts transparent, or apply a global orange cast/glow. Preserve clothing; highlight visible anatomical surfaces without inventing see-through tissue. Square PNG, unchanged target 1024x1024, true transparent alpha background outside the person and required equipment/mat and through any openings; no white or checkerboard backdrop, drawn floor plane, UI, text, labels, frames, decorations or halo. Entire person and every required piece of equipment must fit with transparent margins; adapt scale/camera without distortion or cropping. Accent pigment must use base sRGB #F26445 = RGB(242,100,69); retain this hue through ordinary 3D shading. Secondary highlights use this hue at 40-50% intensity blended with the gray body, not transparent tissue.\n\nEXERCISE ID: reverse-crunch\nNAME: Reverse Crunch\nCatalog equipment: none\nDepict only: bodyweight, no equipment\nPrimary muscle: abdominals\nSecondary muscles: []\n\nONE SPECIFIC SCENE: Supine reverse-crunch top: thighs raised, knees bent, pelvis curled a small distance OFF the support so knees move toward chest. Arms extended by the sides with palms resting, shoulders and head remain supported. Elevated side three-quarter view shows a distinct small hip lift without momentum or neck curl.\n\nENGLISH SOURCE (this ID only; do not substitute a familiar variant):\n{\"description\": \"From the floor with knees bent, curl the pelvis upward so the knees move toward the chest.\", \"instructions\": [\"Lie flat on your back with your arms extended along your sides.\", \"Bend your knees and lift your feet off the ground, bringing your thighs perpendicular to the floor.\", \"Contract your abs and curl your hips off the floor, bringing your knees towards your chest.\", \"Pause for a moment at the top, then slowly lower your hips back down to the starting position.\", \"Repeat for the desired number of repetitions.\"], \"form_cues\": [\"Keep the trunk braced.\", \"Curl the pelvis off the floor rather than swinging the legs.\", \"Finish each repetition under control.\"], \"common_mistakes\": [\"Using momentum.\", \"Losing the starting posture.\", \"Rushing the return.\"], \"safety_note\": \"Use a comfortable range and stop if control or alignment deteriorates.\", \"provenance\": \"adapted\"}\nMaintain source contact points and safe control. Render only this characteristic phase, not the entire instruction sequence. Reference anatomy is opaque; localize the specified muscle pigment without copying reference highlights.",
       "reference_path": "assets/exercises/biceps-curl-dumbbell.png",
       "generated_at": "2026-10-01T03:07:23.860991+03:00",
-      "backup_status": "local_saved",
+      "backup_status": "github_verified",
       "backup_history": [
         {
           "backup_id": "night-2026-10-01",
@@ -20735,6 +20977,17 @@
           "png_sha256": "3dbe77e9876c382f47b0aa2437318511846da144555be9b660295fdcc9f0dfff",
           "verified_at": "2026-10-01T03:11:38.632536+03:00",
           "verified_commit": "b69854cf72d95bfa85bb8f593186c150fe3621b2"
+        },
+        {
+          "backup_id": "night-2026-10-01",
+          "storage": "git_repository",
+          "status": "github_verified",
+          "repository": "romanthoruk2008-pixel/lightweight-exercises-photo",
+          "branch": "work",
+          "repository_path": "assets/exercises/pending/night-2026-10-01/batch-002/reverse-crunch/attempt-1.png",
+          "png_sha256": "3dbe77e9876c382f47b0aa2437318511846da144555be9b660295fdcc9f0dfff",
+          "verified_at": "2026-10-01T03:45:41.209794+03:00",
+          "verified_commit": "a0f650d0c2add34b8bab916c54169d99a00f2d00"
         }
       ]
     },
@@ -21101,7 +21354,7 @@
       "prompt": "STYLE v1. Use the supplied approved human reference ONLY for the person's identity, anatomical 3D style, body proportions, materials and detail. Do not copy its pose, dumbbells, muscle highlighting or composition. Match the same bald athletic adult male, opaque silver-gray sculpted anatomical muscle surfaces, simple fitted black shorts, barefoot, neutral face and consistent natural proportions. One person, one exercise, one characteristic phase: no second figure, collage or motion ghosts. Equipment must be only the simple items named in this scene, neutral gray/black materials, complete and mechanically ordinary. Primary muscles: localized coral #F26445. Named secondary muscles: the same hue at roughly 45% intensity blended with gray, clearly lighter. Do not highlight muscles absent from the catalog list, make the body or shorts transparent, or apply a global orange cast/glow. Preserve clothing; highlight visible anatomical surfaces without inventing see-through tissue. Square PNG, unchanged target 1024x1024, true transparent alpha background outside the person and required equipment/mat and through any openings; no white or checkerboard backdrop, drawn floor plane, UI, text, labels, frames, decorations or halo. Entire person and every required piece of equipment must fit with transparent margins; adapt scale/camera without distortion or cropping. Accent pigment must use base sRGB #F26445 = RGB(242,100,69); retain this hue through ordinary 3D shading. Secondary highlights use this hue at 40-50% intensity blended with the gray body, not transparent tissue.\n\nEXERCISE ID: reverse-curl-dumbbell\nNAME: Reverse Curl (Dumbbell)\nCatalog equipment: dumbbell\nDepict only: two dumbbells\nPrimary muscle: biceps\nSecondary muscles: [\"forearms\"]\n\nONE SPECIFIC SCENE: Standing tall, feet shoulder-width, one dumbbell in each hand with PRONATED PALMS DOWN. Top controlled curl phase, elbows near sides and upper arms still; weights approach shoulders with neutral aligned wrists. Front three-quarter view shows palms-down grip and two separate dumbbells. No torso swing or palms-up supination.\n\nENGLISH SOURCE (this ID only; do not substitute a familiar variant):\n{\"description\": \"Reverse Curl (Dumbbell) curls the palms-down weight toward the shoulders while keeping the upper arms still.\", \"instructions\": [\"Stand up straight with a dumbbell in each hand, palms facing down and arms fully extended.\", \"Keeping your upper arms stationary, exhale and curl the weights while contracting your biceps.\", \"Continue to raise the dumbbells until your biceps are fully contracted and the dumbbells are at shoulder level.\", \"Hold the contracted position for a brief pause as you squeeze your biceps.\", \"Inhale and slowly begin to lower the dumbbells back to the starting position.\", \"Repeat for the desired number of repetitions.\"], \"form_cues\": [\"Keep the upper arms still.\", \"Use a steady squeeze at the top.\", \"Lower through the full range.\"], \"common_mistakes\": [\"Swinging the body.\", \"Driving the elbows forward.\", \"Dropping the weight.\"], \"safety_note\": \"Choose a load that keeps the wrists and elbows aligned without momentum.\", \"provenance\": \"adapted\"}\nMaintain source contact points and safe control. Render only this characteristic phase, not the entire instruction sequence. Reference anatomy is opaque; localize the specified muscle pigment without copying reference highlights.",
       "reference_path": "assets/exercises/biceps-curl-dumbbell.png",
       "generated_at": "2026-10-01T03:33:06.412975+03:00",
-      "backup_status": "local_saved",
+      "backup_status": "github_verified",
       "backup_history": [
         {
           "backup_id": "night-2026-10-01",
@@ -21121,6 +21374,17 @@
           "png_sha256": "e529541b17bbde53e6d2fdacd7fade260b1b00f223af6e07f34d4b7a12c22bf8",
           "verified_at": "2026-10-01T03:34:46.717845+03:00",
           "verified_commit": "d9c00f65def3fe05dbc193d6b46ac2a5be040b4d"
+        },
+        {
+          "backup_id": "night-2026-10-01",
+          "storage": "git_repository",
+          "status": "github_verified",
+          "repository": "romanthoruk2008-pixel/lightweight-exercises-photo",
+          "branch": "work",
+          "repository_path": "assets/exercises/pending/night-2026-10-01/batch-004/reverse-curl-dumbbell/attempt-1.png",
+          "png_sha256": "e529541b17bbde53e6d2fdacd7fade260b1b00f223af6e07f34d4b7a12c22bf8",
+          "verified_at": "2026-10-01T03:45:41.209794+03:00",
+          "verified_commit": "a0f650d0c2add34b8bab916c54169d99a00f2d00"
         }
       ]
     },
@@ -21511,7 +21775,7 @@
       "prompt": "STYLE v1. Use the supplied approved human reference ONLY for the person's identity, anatomical 3D style, body proportions, materials and detail. Do not copy its pose, dumbbells, muscle highlighting or composition. Match the same bald athletic adult male, opaque silver-gray sculpted anatomical muscle surfaces, simple fitted black shorts, barefoot, neutral face and consistent natural proportions. One person, one exercise, one characteristic phase: no second figure, collage or motion ghosts. Equipment must be only the simple items named in this scene, neutral gray/black materials, complete and mechanically ordinary. Primary muscles: localized coral #F26445. Named secondary muscles: the same hue at roughly 45% intensity blended with gray, clearly lighter. Do not highlight muscles absent from the catalog list, make the body or shorts transparent, or apply a global orange cast/glow. Preserve clothing; highlight visible anatomical surfaces without inventing see-through tissue. Square PNG, unchanged target 1024x1024, true transparent alpha background outside the person and required equipment/mat and through any openings; no white or checkerboard backdrop, drawn floor plane, UI, text, labels, frames, decorations or halo. Entire person and every required piece of equipment must fit with transparent margins; adapt scale/camera without distortion or cropping. Accent pigment must use base sRGB #F26445 = RGB(242,100,69); retain this hue through ordinary 3D shading. Secondary highlights use this hue at 40-50% intensity blended with the gray body, not transparent tissue.\n\nEXERCISE ID: reverse-lunge\nNAME: Reverse Lunge\nCatalog equipment: none\nDepict only: bodyweight, no equipment\nPrimary muscle: quadriceps\nSecondary muscles: [\"hamstrings\", \"glutes\"]\n\nONE SPECIFIC SCENE: One static lowered reverse-lunge endpoint: left foot remains forward flat, right foot has stepped behind on its forefoot with heel raised. Bend both knees under control, torso upright, front knee aligned over front foot, hip-width lateral spacing rather than a tightrope. Side three-quarter view shows both feet and knee contacts; rear knee remains above ground.\n\nENGLISH SOURCE (this ID only; do not substitute a familiar variant):\n{\"description\": \"The bodyweight reverse lunge steps one foot backward, lowers both knees, then pushes through the front foot to stand.\", \"instructions\": [\"Stand tall with feet hip-width apart and brace your core.\", \"Step one foot backward and lower both knees toward a comfortable lunge depth.\", \"Keep the front foot flat and the torso upright.\", \"Push through the front foot to return, then alternate legs.\"], \"form_cues\": [\"Step straight back.\", \"Track the front knee over the foot.\", \"Keep the hips level.\"], \"common_mistakes\": [\"Stepping onto a tight line.\", \"Letting the front knee cave inward.\", \"Pushing off the rear toes instead of the front foot.\"], \"safety_note\": \"Use a stable support nearby if balance is limited and keep the step length comfortable.\", \"provenance\": \"authored\"}\nMaintain source contact points and safe control. Render only this characteristic phase, not the entire instruction sequence. Reference anatomy is opaque; localize the specified muscle pigment without copying reference highlights.",
       "reference_path": "assets/exercises/biceps-curl-dumbbell.png",
       "generated_at": "2026-10-01T03:02:00.374343+03:00",
-      "backup_status": "local_saved",
+      "backup_status": "github_verified",
       "backup_history": [
         {
           "backup_id": "night-2026-10-01",
@@ -21531,6 +21795,17 @@
           "png_sha256": "49360521c095734697d180d6b3225e7ecafbc4ff38de649b98f9438ca29ac142",
           "verified_at": "2026-10-01T03:11:38.632536+03:00",
           "verified_commit": "b69854cf72d95bfa85bb8f593186c150fe3621b2"
+        },
+        {
+          "backup_id": "night-2026-10-01",
+          "storage": "git_repository",
+          "status": "github_verified",
+          "repository": "romanthoruk2008-pixel/lightweight-exercises-photo",
+          "branch": "work",
+          "repository_path": "assets/exercises/pending/night-2026-10-01/batch-002/reverse-lunge/attempt-1.png",
+          "png_sha256": "49360521c095734697d180d6b3225e7ecafbc4ff38de649b98f9438ca29ac142",
+          "verified_at": "2026-10-01T03:45:41.209794+03:00",
+          "verified_commit": "a0f650d0c2add34b8bab916c54169d99a00f2d00"
         }
       ]
     },
@@ -21761,7 +22036,7 @@
       "prompt": "STYLE v1. Use the supplied approved human reference ONLY for the person's identity, anatomical 3D style, body proportions, materials and detail. Do not copy its pose, dumbbells, muscle highlighting or composition. Match the same bald athletic adult male, opaque silver-gray sculpted anatomical muscle surfaces, simple fitted black shorts, barefoot, neutral face and consistent natural proportions. One person, one exercise, one characteristic phase: no second figure, collage or motion ghosts. Equipment must be only the simple items named in this scene, neutral gray/black materials, complete and mechanically ordinary. Primary muscles: localized coral #F26445. Named secondary muscles: the same hue at roughly 45% intensity blended with gray, clearly lighter. Do not highlight muscles absent from the catalog list, make the body or shorts transparent, or apply a global orange cast/glow. Preserve clothing; highlight visible anatomical surfaces without inventing see-through tissue. Square PNG, unchanged target 1024x1024, true transparent alpha background outside the person and required equipment/mat and through any openings; no white or checkerboard backdrop, drawn floor plane, UI, text, labels, frames, decorations or halo. Entire person and every required piece of equipment must fit with transparent margins; adapt scale/camera without distortion or cropping. Accent pigment must use base sRGB #F26445 = RGB(242,100,69); retain this hue through ordinary 3D shading. Secondary highlights use this hue at 40-50% intensity blended with the gray body, not transparent tissue.\n\nEXERCISE ID: reverse-plank\nNAME: Reverse Plank\nCatalog equipment: none\nDepict only: bodyweight, no equipment\nPrimary muscle: abdominals\nSecondary muscles: [\"triceps\"]\n\nONE SPECIFIC SCENE: Top hold of a face-up reverse plank: legs straight, hips lifted so shoulders through heels align. Palms planted behind the hips, fingers pointing TOWARD THE FEET; both heels contact the support level. Elbows straight, shoulders not shrugged, knees not bent. Side three-quarter camera makes backward palm support and heel contacts visible.\n\nENGLISH SOURCE (this ID only; do not substitute a familiar variant):\n{\"description\": \"A reverse plank holds the body face-up with the hips lifted and the hands or forearms behind the torso.\", \"instructions\": [\"Sit with legs extended and place the hands behind the hips with fingers pointing toward the feet.\", \"Press through the hands and heels to lift the hips into a straight line from shoulders to ankles.\", \"Keep the chest open and hold while breathing steadily.\", \"Lower the hips with control to end the hold.\"], \"form_cues\": [\"Press the floor away.\", \"Keep hips level.\", \"Point the toes or keep feet flexed consistently.\"], \"common_mistakes\": [\"Dropping the hips.\", \"Shrugging the shoulders.\", \"Bending the knees to compensate.\"], \"safety_note\": \"Use forearms or a shorter hold if the wrists cannot stay comfortable.\", \"provenance\": \"authored\"}\nMaintain source contact points and safe control. Render only this characteristic phase, not the entire instruction sequence. Reference anatomy is opaque; localize the specified muscle pigment without copying reference highlights.",
       "reference_path": "assets/exercises/biceps-curl-dumbbell.png",
       "generated_at": "2026-10-01T02:51:58.228182+03:00",
-      "backup_status": "local_saved",
+      "backup_status": "github_verified",
       "backup_history": [
         {
           "backup_id": "night-2026-10-01",
@@ -21781,6 +22056,17 @@
           "png_sha256": "4044cfe1b4de524d52c8f7d2191f54691906ec99a93e070ef3617c4c590d3c71",
           "verified_at": "2026-10-01T02:56:41.328974+03:00",
           "verified_commit": "5e7165de633d74e270ec7e1bcd1ddb2debc3bc3d"
+        },
+        {
+          "backup_id": "night-2026-10-01",
+          "storage": "git_repository",
+          "status": "github_verified",
+          "repository": "romanthoruk2008-pixel/lightweight-exercises-photo",
+          "branch": "work",
+          "repository_path": "assets/exercises/pending/night-2026-10-01/batch-001/reverse-plank/attempt-1.png",
+          "png_sha256": "4044cfe1b4de524d52c8f7d2191f54691906ec99a93e070ef3617c4c590d3c71",
+          "verified_at": "2026-10-01T03:45:41.209794+03:00",
+          "verified_commit": "a0f650d0c2add34b8bab916c54169d99a00f2d00"
         }
       ]
     },
@@ -22669,7 +22955,7 @@
       "prompt": "STYLE v1. Use the supplied approved human reference ONLY for the person's identity, anatomical 3D style, body proportions, materials and detail. Do not copy its pose, dumbbells, muscle highlighting or composition. Match the same bald athletic adult male, opaque silver-gray sculpted anatomical muscle surfaces, simple fitted black shorts, barefoot, neutral face and consistent natural proportions. One person, one exercise, one characteristic phase: no second figure, collage or motion ghosts. Equipment must be only the simple items named in this scene, neutral gray/black materials, complete and mechanically ordinary. Primary muscles: localized coral #F26445. Named secondary muscles: the same hue at roughly 45% intensity blended with gray, clearly lighter. Do not highlight muscles absent from the catalog list, make the body or shorts transparent, or apply a global orange cast/glow. Preserve clothing; highlight visible anatomical surfaces without inventing see-through tissue. Square PNG, unchanged target 1024x1024, true transparent alpha background outside the person and required equipment/mat and through any openings; no white or checkerboard backdrop, drawn floor plane, UI, text, labels, frames, decorations or halo. Entire person and every required piece of equipment must fit with transparent margins; adapt scale/camera without distortion or cropping. Accent pigment must use base sRGB #F26445 = RGB(242,100,69); retain this hue through ordinary 3D shading. Secondary highlights use this hue at 40-50% intensity blended with the gray body, not transparent tissue.\n\nEXERCISE ID: russian-twist-body-weight\nNAME: Russian Twist (Bodyweight)\nCatalog equipment: none\nDepict only: bodyweight, no equipment\nPrimary muscle: abdominals\nSecondary muscles: []\n\nONE SPECIFIC SCENE: Seated with knees bent and BOTH FEET STAYING PLANTED. Lean the torso back slightly while maintaining a long controlled spine. Hands clasped together in front of the chest, turn rib cage and hands to the right with pelvis stable. Front three-quarter view shows feet grounded. No weight or elevated feet.\n\nENGLISH SOURCE (this ID only; do not substitute a familiar variant):\n{\"description\": \"Russian Twist (Bodyweight) rotates the trunk from side to side while the seated torso stays braced and balanced.\", \"instructions\": [\"Sit with knees bent, lean back slightly, and keep both feet on the floor for the bodyweight version.\", \"Brace the core and hold the hands together in front of the chest.\", \"Rotate the torso to one side without collapsing the spine.\", \"Return through center and rotate to the other side for alternating repetitions.\"], \"form_cues\": [\"Keep the trunk braced.\", \"Rotate the ribcage side to side while the pelvis stays balanced.\", \"Finish each repetition under control.\"], \"common_mistakes\": [\"Using momentum.\", \"Losing the starting posture.\", \"Rushing the return.\"], \"safety_note\": \"Use a comfortable range and stop if control or alignment deteriorates.\", \"provenance\": \"adapted\"}\nMaintain source contact points and safe control. Render only this characteristic phase, not the entire instruction sequence. Reference anatomy is opaque; localize the specified muscle pigment without copying reference highlights.",
       "reference_path": "assets/exercises/biceps-curl-dumbbell.png",
       "generated_at": "2026-10-01T02:56:14.719866+03:00",
-      "backup_status": "local_saved",
+      "backup_status": "github_verified",
       "backup_history": [
         {
           "backup_id": "night-2026-10-01",
@@ -22689,6 +22975,17 @@
           "png_sha256": "186a220e329990ee56cf5031aceb01a020b5357309f80aebaf074ceb2b9b73e8",
           "verified_at": "2026-10-01T02:56:41.328974+03:00",
           "verified_commit": "5e7165de633d74e270ec7e1bcd1ddb2debc3bc3d"
+        },
+        {
+          "backup_id": "night-2026-10-01",
+          "storage": "git_repository",
+          "status": "github_verified",
+          "repository": "romanthoruk2008-pixel/lightweight-exercises-photo",
+          "branch": "work",
+          "repository_path": "assets/exercises/pending/night-2026-10-01/batch-001/russian-twist-body-weight/attempt-1.png",
+          "png_sha256": "186a220e329990ee56cf5031aceb01a020b5357309f80aebaf074ceb2b9b73e8",
+          "verified_at": "2026-10-01T03:45:41.209794+03:00",
+          "verified_commit": "a0f650d0c2add34b8bab916c54169d99a00f2d00"
         }
       ]
     },
@@ -23501,7 +23798,7 @@
       "prompt": "STYLE v1. Use the supplied approved human reference ONLY for the person's identity, anatomical 3D style, body proportions, materials and detail. Do not copy its pose, dumbbells, muscle highlighting or composition. Match the same bald athletic adult male, opaque silver-gray sculpted anatomical muscle surfaces, simple fitted black shorts, barefoot, neutral face and consistent natural proportions. One person, one exercise, one characteristic phase: no second figure, collage or motion ghosts. Equipment must be only the simple items named in this scene, neutral gray/black materials, complete and mechanically ordinary. Primary muscles: localized coral #F26445. Named secondary muscles: the same hue at roughly 45% intensity blended with gray, clearly lighter. Do not highlight muscles absent from the catalog list, make the body or shorts transparent, or apply a global orange cast/glow. Preserve clothing; highlight visible anatomical surfaces without inventing see-through tissue. Square PNG, unchanged target 1024x1024, true transparent alpha background outside the person and required equipment/mat and through any openings; no white or checkerboard backdrop, drawn floor plane, UI, text, labels, frames, decorations or halo. Entire person and every required piece of equipment must fit with transparent margins; adapt scale/camera without distortion or cropping. Accent pigment must use base sRGB #F26445 = RGB(242,100,69); retain this hue through ordinary 3D shading. Secondary highlights use this hue at 40-50% intensity blended with the gray body, not transparent tissue.\n\nEXERCISE ID: seated-lateral-raise-dumbbell\nNAME: Seated Lateral Raise (Dumbbell)\nCatalog equipment: dumbbell\nDepict only: two dumbbells, ordinary flat bench\nPrimary muscle: shoulders\nSecondary muscles: []\n\nONE SPECIFIC SCENE: Seated upright on an ordinary flat bench, both feet flat. One dumbbell securely held in each hand; BOTH ARMS extend OUT TO THE SIDES at about shoulder height with a soft elbow bend. Shoulders down, torso vertical and wrists aligned, no backward lean. Front three-quarter view shows lateral arm path, grip contacts and full bench.\n\nENGLISH SOURCE (this ID only; do not substitute a familiar variant):\n{\"description\": \"Sit with dumbbells beside the thighs, raise both arms sideways to shoulder height, then lower them.\", \"instructions\": [\"Sit on a bench with your feet flat on the ground and a dumbbell in each hand, resting on your thighs.\", \"Keep your back straight and core engaged.\", \"Raise the dumbbells to your sides with a slight bend in your elbows, until your arms are parallel to the ground.\", \"Pause for a moment at the top, then slowly lower the dumbbells back down to the starting position.\", \"Repeat for the desired number of repetitions.\"], \"form_cues\": [\"Keep the torso still.\", \"Lift in the exercise plane.\", \"Lower quietly.\"], \"common_mistakes\": [\"Shifting the support point.\", \"Using momentum instead of the target joint path.\", \"Cutting the return short.\"], \"safety_note\": \"Use a secure setup and stop if alignment or control is lost.\", \"provenance\": \"adapted\"}\nMaintain source contact points and safe control. Render only this characteristic phase, not the entire instruction sequence. Reference anatomy is opaque; localize the specified muscle pigment without copying reference highlights.",
       "reference_path": "assets/exercises/biceps-curl-dumbbell.png",
       "generated_at": "2026-10-01T03:34:37.182513+03:00",
-      "backup_status": "local_saved",
+      "backup_status": "github_verified",
       "backup_history": [
         {
           "backup_id": "night-2026-10-01",
@@ -23521,6 +23818,17 @@
           "png_sha256": "be26d567ad2c19034df3c5b2352c1de3cd1889b69fab8feee726643bc03fcbce",
           "verified_at": "2026-10-01T03:34:46.717845+03:00",
           "verified_commit": "d9c00f65def3fe05dbc193d6b46ac2a5be040b4d"
+        },
+        {
+          "backup_id": "night-2026-10-01",
+          "storage": "git_repository",
+          "status": "github_verified",
+          "repository": "romanthoruk2008-pixel/lightweight-exercises-photo",
+          "branch": "work",
+          "repository_path": "assets/exercises/pending/night-2026-10-01/batch-004/seated-lateral-raise-dumbbell/attempt-1.png",
+          "png_sha256": "be26d567ad2c19034df3c5b2352c1de3cd1889b69fab8feee726643bc03fcbce",
+          "verified_at": "2026-10-01T03:45:41.209794+03:00",
+          "verified_commit": "a0f650d0c2add34b8bab916c54169d99a00f2d00"
         }
       ]
     },
@@ -24660,7 +24968,7 @@
       "prompt": "STYLE v1. Use the supplied approved human reference ONLY for the person's identity, anatomical 3D style, body proportions, materials and detail. Do not copy its pose, dumbbells, muscle highlighting or composition. Match the same bald athletic adult male, opaque silver-gray sculpted anatomical muscle surfaces, simple fitted black shorts, barefoot, neutral face and consistent natural proportions. One person, one exercise, one characteristic phase: no second figure, collage or motion ghosts. Equipment must be only the simple items named in this scene, neutral gray/black materials, complete and mechanically ordinary. Primary muscles: localized coral #F26445. Named secondary muscles: the same hue at roughly 45% intensity blended with gray, clearly lighter. Do not highlight muscles absent from the catalog list, make the body or shorts transparent, or apply a global orange cast/glow. Preserve clothing; highlight visible anatomical surfaces without inventing see-through tissue. Square PNG, unchanged target 1024x1024, true transparent alpha background outside the person and required equipment/mat and through any openings; no white or checkerboard backdrop, drawn floor plane, UI, text, labels, frames, decorations or halo. Entire person and every required piece of equipment must fit with transparent margins; adapt scale/camera without distortion or cropping. Accent pigment must use base sRGB #F26445 = RGB(242,100,69); retain this hue through ordinary 3D shading. Secondary highlights use this hue at 40-50% intensity blended with the gray body, not transparent tissue.\n\nEXERCISE ID: shoulder-taps\nNAME: Shoulder Taps\nCatalog equipment: none\nDepict only: bodyweight, no equipment\nPrimary muscle: shoulders\nSecondary muscles: [\"chest\", \"triceps\"]\n\nONE SPECIFIC SCENE: High-plank single shoulder-tap phase: left palm planted beneath left shoulder, both toes grounded, right hand lightly touches the LEFT shoulder. Straight head-to-heel line with hips level and no trunk rotation. Front-side three-quarter view shows the planted hand, lifted hand and both toe contacts.\n\nENGLISH SOURCE (this ID only; do not substitute a familiar variant):\n{\"description\": \"Hold a high plank and alternate tapping each shoulder with the opposite hand while keeping the hips level.\", \"instructions\": [\"Start in a high plank position with your hands directly under your shoulders and your body in a straight line.\", \"Engage your core and lift your right hand off the ground, reaching across to tap your left shoulder.\", \"Place your right hand back on the ground and repeat with your left hand tapping your right shoulder.\", \"Continue alternating shoulder taps while keeping your hips and torso stable.\", \"Repeat for the desired number of repetitions.\"], \"form_cues\": [\"Keep the support points fixed.\", \"Use a quiet controlled path.\", \"Reset fully between repetitions.\"], \"common_mistakes\": [\"Shifting the support point.\", \"Using momentum instead of the target joint path.\", \"Cutting the return short.\"], \"safety_note\": \"Use a secure setup and stop if alignment or control is lost.\", \"provenance\": \"adapted\"}\nMaintain source contact points and safe control. Render only this characteristic phase, not the entire instruction sequence. Reference anatomy is opaque; localize the specified muscle pigment without copying reference highlights.",
       "reference_path": "assets/exercises/biceps-curl-dumbbell.png",
       "generated_at": "2026-10-01T03:11:32.116893+03:00",
-      "backup_status": "local_saved",
+      "backup_status": "github_verified",
       "backup_history": [
         {
           "backup_id": "night-2026-10-01",
@@ -24680,6 +24988,17 @@
           "png_sha256": "8aa25fe87328ebdc23fa17328573c0fafea763d9f80c2ecfa15e68796faef48f",
           "verified_at": "2026-10-01T03:11:38.632536+03:00",
           "verified_commit": "b69854cf72d95bfa85bb8f593186c150fe3621b2"
+        },
+        {
+          "backup_id": "night-2026-10-01",
+          "storage": "git_repository",
+          "status": "github_verified",
+          "repository": "romanthoruk2008-pixel/lightweight-exercises-photo",
+          "branch": "work",
+          "repository_path": "assets/exercises/pending/night-2026-10-01/batch-002/shoulder-taps/attempt-1.png",
+          "png_sha256": "8aa25fe87328ebdc23fa17328573c0fafea763d9f80c2ecfa15e68796faef48f",
+          "verified_at": "2026-10-01T03:45:41.209794+03:00",
+          "verified_commit": "a0f650d0c2add34b8bab916c54169d99a00f2d00"
         }
       ]
     },
@@ -25258,7 +25577,7 @@
       "prompt": "STYLE v1. Use the supplied approved human reference ONLY for the person's identity, anatomical 3D style, body proportions, materials and detail. Do not copy its pose, dumbbells, muscle highlighting or composition. Match the same bald athletic adult male, opaque silver-gray sculpted anatomical muscle surfaces, simple fitted black shorts, barefoot, neutral face and consistent natural proportions. One person, one exercise, one characteristic phase: no second figure, collage or motion ghosts. Equipment must be only the simple items named in this scene, neutral gray/black materials, complete and mechanically ordinary. Primary muscles: localized coral #F26445. Named secondary muscles: the same hue at roughly 45% intensity blended with gray, clearly lighter. Do not highlight muscles absent from the catalog list, make the body or shorts transparent, or apply a global orange cast/glow. Preserve clothing; highlight visible anatomical surfaces without inventing see-through tissue. Square PNG, unchanged target 1024x1024, true transparent alpha background outside the person and required equipment/mat and through any openings; no white or checkerboard backdrop, drawn floor plane, UI, text, labels, frames, decorations or halo. Entire person and every required piece of equipment must fit with transparent margins; adapt scale/camera without distortion or cropping. Accent pigment must use base sRGB #F26445 = RGB(242,100,69); retain this hue through ordinary 3D shading. Secondary highlights use this hue at 40-50% intensity blended with the gray body, not transparent tissue.\n\nEXERCISE ID: side-bend\nNAME: Side Bend\nCatalog equipment: none\nDepict only: bodyweight, no equipment\nPrimary muscle: abdominals\nSecondary muscles: []\n\nONE SPECIFIC SCENE: Standing feet shoulder-width apart, no external load, both arms hanging long beside the torso. Bend the trunk gently to the right so the right hand reaches along the outside of the thigh toward the knee; legs remain long, both feet planted, pelvis stable and chest facing forward. Front three-quarter view shows lateral bend without twisting.\n\nENGLISH SOURCE (this ID only; do not substitute a familiar variant):\n{\"description\": \"Stand tall and bend the trunk laterally toward one knee, return upright, then change sides.\", \"instructions\": [\"Stand with your feet shoulder-width apart and your arms extended straight down by your sides.\", \"Keeping your back straight and your core engaged, slowly bend your torso to one side, lowering your hand towards your knee.\", \"Pause for a moment at the bottom, then slowly return to the starting position.\", \"Repeat on the other side.\", \"Continue alternating sides for the desired number of repetitions.\"], \"form_cues\": [\"Keep the support points fixed.\", \"Use a quiet controlled path.\", \"Reset fully between repetitions.\"], \"common_mistakes\": [\"Shifting the support point.\", \"Using momentum instead of the target joint path.\", \"Cutting the return short.\"], \"safety_note\": \"Use a secure setup and stop if alignment or control is lost.\", \"provenance\": \"adapted\"}\nMaintain source contact points and safe control. Render only this characteristic phase, not the entire instruction sequence. Reference anatomy is opaque; localize the specified muscle pigment without copying reference highlights.",
       "reference_path": "assets/exercises/biceps-curl-dumbbell.png",
       "generated_at": "2026-10-01T02:53:17.132260+03:00",
-      "backup_status": "local_saved",
+      "backup_status": "github_verified",
       "backup_history": [
         {
           "backup_id": "night-2026-10-01",
@@ -25278,6 +25597,17 @@
           "png_sha256": "01ef6c64e9bc34d39c543d189f45131b98c6f980358444a51b00a28c9e998eb4",
           "verified_at": "2026-10-01T02:56:41.328974+03:00",
           "verified_commit": "5e7165de633d74e270ec7e1bcd1ddb2debc3bc3d"
+        },
+        {
+          "backup_id": "night-2026-10-01",
+          "storage": "git_repository",
+          "status": "github_verified",
+          "repository": "romanthoruk2008-pixel/lightweight-exercises-photo",
+          "branch": "work",
+          "repository_path": "assets/exercises/pending/night-2026-10-01/batch-001/side-bend/attempt-1.png",
+          "png_sha256": "01ef6c64e9bc34d39c543d189f45131b98c6f980358444a51b00a28c9e998eb4",
+          "verified_at": "2026-10-01T03:45:41.209794+03:00",
+          "verified_commit": "a0f650d0c2add34b8bab916c54169d99a00f2d00"
         }
       ]
     },
@@ -26124,7 +26454,7 @@
       "prompt": "STYLE v1. Use the supplied approved human reference ONLY for the person's identity, anatomical 3D style, body proportions, materials and detail. Do not copy its pose, dumbbells, muscle highlighting or composition. Match the same bald athletic adult male, opaque silver-gray sculpted anatomical muscle surfaces, simple fitted black shorts, barefoot, neutral face and consistent natural proportions. One person, one exercise, one characteristic phase: no second figure, collage or motion ghosts. Equipment must be only the simple items named in this scene, neutral gray/black materials, complete and mechanically ordinary. Primary muscles: localized coral #F26445. Named secondary muscles: the same hue at roughly 45% intensity blended with gray, clearly lighter. Do not highlight muscles absent from the catalog list, make the body or shorts transparent, or apply a global orange cast/glow. Preserve clothing; highlight visible anatomical surfaces without inventing see-through tissue. Square PNG, unchanged target 1024x1024, true transparent alpha background outside the person and required equipment/mat and through any openings; no white or checkerboard backdrop, drawn floor plane, UI, text, labels, frames, decorations or halo. Entire person and every required piece of equipment must fit with transparent margins; adapt scale/camera without distortion or cropping. Accent pigment must use base sRGB #F26445 = RGB(242,100,69); retain this hue through ordinary 3D shading. Secondary highlights use this hue at 40-50% intensity blended with the gray body, not transparent tissue.\n\nEXERCISE ID: single-leg-glute-bridge\nNAME: Single Leg Glute Bridge\nCatalog equipment: none\nDepict only: bodyweight, no equipment\nPrimary muscle: glutes\nSecondary muscles: [\"hamstrings\", \"quadriceps\"]\n\nONE SPECIFIC SCENE: Supine top of a one-leg glute bridge: right sole planted with right knee bent, LEFT LEG EXTENDED STRAIGHT FORWARD, not a bent-knee march. Lift pelvis evenly, align shoulders/hips/right knee without lumbar overextension. Shoulders, arms beside torso and right foot supported. Side three-quarter camera shows the free straight leg and contact points.\n\nENGLISH SOURCE (this ID only; do not substitute a familiar variant):\n{\"description\": \"Lie on the back with one foot planted and the other leg straight, lift the hips, lower them, then switch legs.\", \"instructions\": [\"Lie on your back with your knees bent and feet flat on the ground.\", \"Extend one leg straight out in front of you.\", \"Engage your glutes and lift your hips off the ground, forming a straight line from your knees to your shoulders.\", \"Hold for a moment at the top, then slowly lower your hips back down to the starting position.\", \"Repeat for the desired number of repetitions, then switch legs.\"], \"form_cues\": [\"Keep the support points fixed.\", \"Use a quiet controlled path.\", \"Reset fully between repetitions.\"], \"common_mistakes\": [\"Shifting the support point.\", \"Using momentum instead of the target joint path.\", \"Cutting the return short.\"], \"safety_note\": \"Keep the bench stable and stop if the pelvis cannot stay level.\", \"provenance\": \"adapted\"}\nMaintain source contact points and safe control. Render only this characteristic phase, not the entire instruction sequence. Reference anatomy is opaque; localize the specified muscle pigment without copying reference highlights.",
       "reference_path": "assets/exercises/biceps-curl-dumbbell.png",
       "generated_at": "2026-10-01T03:04:36.560324+03:00",
-      "backup_status": "local_saved",
+      "backup_status": "github_verified",
       "backup_history": [
         {
           "backup_id": "night-2026-10-01",
@@ -26144,6 +26474,17 @@
           "png_sha256": "1b21fbcfbeda31047d03cfe071d317667395f8f62c14bc4bf7f14d912fcce32b",
           "verified_at": "2026-10-01T03:11:38.632536+03:00",
           "verified_commit": "b69854cf72d95bfa85bb8f593186c150fe3621b2"
+        },
+        {
+          "backup_id": "night-2026-10-01",
+          "storage": "git_repository",
+          "status": "github_verified",
+          "repository": "romanthoruk2008-pixel/lightweight-exercises-photo",
+          "branch": "work",
+          "repository_path": "assets/exercises/pending/night-2026-10-01/batch-002/single-leg-glute-bridge/attempt-1.png",
+          "png_sha256": "1b21fbcfbeda31047d03cfe071d317667395f8f62c14bc4bf7f14d912fcce32b",
+          "verified_at": "2026-10-01T03:45:41.209794+03:00",
+          "verified_commit": "a0f650d0c2add34b8bab916c54169d99a00f2d00"
         }
       ]
     },
@@ -26264,7 +26605,7 @@
       "prompt": "STYLE v1. Use the supplied approved human reference ONLY for the person's identity, anatomical 3D style, body proportions, materials and detail. Do not copy its pose, dumbbells, muscle highlighting or composition. Match the same bald athletic adult male, opaque silver-gray sculpted anatomical muscle surfaces, simple fitted black shorts, barefoot, neutral face and consistent natural proportions. One person, one exercise, one characteristic phase: no second figure, collage or motion ghosts. Equipment must be only the simple items named in this scene, neutral gray/black materials, complete and mechanically ordinary. Primary muscles: localized coral #F26445. Named secondary muscles: the same hue at roughly 45% intensity blended with gray, clearly lighter. Do not highlight muscles absent from the catalog list, make the body or shorts transparent, or apply a global orange cast/glow. Preserve clothing; highlight visible anatomical surfaces without inventing see-through tissue. Square PNG, unchanged target 1024x1024, true transparent alpha background outside the person and required equipment/mat and through any openings; no white or checkerboard backdrop, drawn floor plane, UI, text, labels, frames, decorations or halo. Entire person and every required piece of equipment must fit with transparent margins; adapt scale/camera without distortion or cropping. Accent pigment must use base sRGB #F26445 = RGB(242,100,69); retain this hue through ordinary 3D shading. Secondary highlights use this hue at 40-50% intensity blended with the gray body, not transparent tissue.\n\nEXERCISE ID: single-leg-hip-thrust\nNAME: Single Leg Hip Thrust\nCatalog equipment: none\nDepict only: ordinary flat bench\nPrimary muscle: glutes\nSecondary muscles: [\"hamstrings\", \"quadriceps\"]\n\nONE SPECIFIC SCENE: Top single-leg hip thrust, upper back braced against an ordinary flat bench, RIGHT FOOT planted and right hip extended. LEFT LEG lifted with its BENT KNEE OVER THE LEFT HIP. Pelvis level, ribs down, no lumbar arch; show full bench and support contacts from side three-quarter camera. No load.\n\nENGLISH SOURCE (this ID only; do not substitute a familiar variant):\n{\"description\": \"Brace the upper back on a bench, drive through one foot to lift the hips with the other leg raised, then switch.\", \"instructions\": [\"Set the upper back against a flat bench with one foot planted and the other leg lifted.\", \"Brace the abdomen and keep the lifted knee over the hip.\", \"Drive through the planted heel until the hip is fully extended.\", \"Lower the pelvis slowly, then switch sides.\"], \"form_cues\": [\"Keep the support points fixed.\", \"Use a quiet controlled path.\", \"Reset fully between repetitions.\"], \"common_mistakes\": [\"Shifting the support point.\", \"Using momentum instead of the target joint path.\", \"Cutting the return short.\"], \"safety_note\": \"Keep the bench stable and stop if the pelvis cannot stay level.\", \"provenance\": \"authored\"}\nMaintain source contact points and safe control. Render only this characteristic phase, not the entire instruction sequence. Reference anatomy is opaque; localize the specified muscle pigment without copying reference highlights.",
       "reference_path": "assets/exercises/biceps-curl-dumbbell.png",
       "generated_at": "2026-10-01T03:30:06.952353+03:00",
-      "backup_status": "local_saved",
+      "backup_status": "github_verified",
       "backup_history": [
         {
           "backup_id": "night-2026-10-01",
@@ -26284,6 +26625,17 @@
           "png_sha256": "c2128c367b1b326566cd2c72815e833b33125dbbc8504e762e9f2ca4af54f671",
           "verified_at": "2026-10-01T03:34:46.717845+03:00",
           "verified_commit": "d9c00f65def3fe05dbc193d6b46ac2a5be040b4d"
+        },
+        {
+          "backup_id": "night-2026-10-01",
+          "storage": "git_repository",
+          "status": "github_verified",
+          "repository": "romanthoruk2008-pixel/lightweight-exercises-photo",
+          "branch": "work",
+          "repository_path": "assets/exercises/pending/night-2026-10-01/batch-004/single-leg-hip-thrust/attempt-1.png",
+          "png_sha256": "c2128c367b1b326566cd2c72815e833b33125dbbc8504e762e9f2ca4af54f671",
+          "verified_at": "2026-10-01T03:45:41.209794+03:00",
+          "verified_commit": "a0f650d0c2add34b8bab916c54169d99a00f2d00"
         }
       ]
     },
@@ -29618,7 +29970,7 @@
       "prompt": "STYLE v1. Use the supplied approved human reference ONLY for the person's identity, anatomical 3D style, body proportions, materials and detail. Do not copy its pose, dumbbells, muscle highlighting or composition. Match the same bald athletic adult male, opaque silver-gray sculpted anatomical muscle surfaces, simple fitted black shorts, barefoot, neutral face and consistent natural proportions. One person, one exercise, one characteristic phase: no second figure, collage or motion ghosts. Equipment must be only the simple items named in this scene, neutral gray/black materials, complete and mechanically ordinary. Primary muscles: localized coral #F26445. Named secondary muscles: the same hue at roughly 45% intensity blended with gray, clearly lighter. Do not highlight muscles absent from the catalog list, make the body or shorts transparent, or apply a global orange cast/glow. Preserve clothing; highlight visible anatomical surfaces without inventing see-through tissue. Square PNG, unchanged target 1024x1024, true transparent alpha background outside the person and required equipment/mat and through any openings; no white or checkerboard backdrop, drawn floor plane, UI, text, labels, frames, decorations or halo. Entire person and every required piece of equipment must fit with transparent margins; adapt scale/camera without distortion or cropping. Accent pigment must use base sRGB #F26445 = RGB(242,100,69); retain this hue through ordinary 3D shading. Secondary highlights use this hue at 40-50% intensity blended with the gray body, not transparent tissue.\n\nEXERCISE ID: sumo-squat\nNAME: Sumo Squat\nCatalog equipment: none\nDepict only: bodyweight, no equipment\nPrimary muscle: quadriceps\nSecondary muscles: [\"glutes\", \"adductors\", \"hamstrings\"]\n\nONE SPECIFIC SCENE: Bodyweight squat in a wide stance with toes turned outward. Lower hips to a controlled comfortable depth, knees moving outward in the direction of the toes, both heels planted and chest tall. Arms remain relaxed in front for balance without a load. Front three-quarter view shows both knees and soles. No dumbbell or bar.\n\nENGLISH SOURCE (this ID only; do not substitute a familiar variant):\n{\"description\": \"A bodyweight sumo squat uses a wide stance and toes turned out as the hips lower between the knees.\", \"instructions\": [\"Stand with feet wider than shoulder width and turn the toes outward.\", \"Brace the abdomen and bend the hips and knees while keeping the chest lifted.\", \"Descend until the thighs reach a comfortable depth with the knees tracking the toes.\", \"Drive through both feet to stand tall without bringing the feet together.\"], \"form_cues\": [\"Keep heels grounded.\", \"Push knees in line with toes.\", \"Keep the torso tall.\"], \"common_mistakes\": [\"Knees collapsing inward.\", \"Rounding the lower back.\", \"Rising onto the toes.\"], \"safety_note\": \"Use a depth that lets the feet stay flat and the knees track smoothly.\", \"provenance\": \"authored\"}\nMaintain source contact points and safe control. Render only this characteristic phase, not the entire instruction sequence. Reference anatomy is opaque; localize the specified muscle pigment without copying reference highlights.",
       "reference_path": "assets/exercises/biceps-curl-dumbbell.png",
       "generated_at": "2026-10-01T03:03:25.915794+03:00",
-      "backup_status": "local_saved",
+      "backup_status": "github_verified",
       "backup_history": [
         {
           "backup_id": "night-2026-10-01",
@@ -29638,6 +29990,17 @@
           "png_sha256": "0569d6d23add0e8832089cc96bf6587dda3382c50586637c8605692816201b33",
           "verified_at": "2026-10-01T03:11:38.632536+03:00",
           "verified_commit": "b69854cf72d95bfa85bb8f593186c150fe3621b2"
+        },
+        {
+          "backup_id": "night-2026-10-01",
+          "storage": "git_repository",
+          "status": "github_verified",
+          "repository": "romanthoruk2008-pixel/lightweight-exercises-photo",
+          "branch": "work",
+          "repository_path": "assets/exercises/pending/night-2026-10-01/batch-002/sumo-squat/attempt-1.png",
+          "png_sha256": "0569d6d23add0e8832089cc96bf6587dda3382c50586637c8605692816201b33",
+          "verified_at": "2026-10-01T03:45:41.209794+03:00",
+          "verified_commit": "a0f650d0c2add34b8bab916c54169d99a00f2d00"
         }
       ]
     },
@@ -29913,7 +30276,7 @@
       "prompt": "STYLE v1. Use the supplied approved human reference ONLY for the person's identity, anatomical 3D style, body proportions, materials and detail. Do not copy its pose, dumbbells, muscle highlighting or composition. Match the same bald athletic adult male, opaque silver-gray sculpted anatomical muscle surfaces, simple fitted black shorts, barefoot, neutral face and consistent natural proportions. One person, one exercise, one characteristic phase: no second figure, collage or motion ghosts. Equipment must be only the simple items named in this scene, neutral gray/black materials, complete and mechanically ordinary. Primary muscles: localized coral #F26445. Named secondary muscles: the same hue at roughly 45% intensity blended with gray, clearly lighter. Do not highlight muscles absent from the catalog list, make the body or shorts transparent, or apply a global orange cast/glow. Preserve clothing; highlight visible anatomical surfaces without inventing see-through tissue. Square PNG, unchanged target 1024x1024, true transparent alpha background outside the person and required equipment/mat and through any openings; no white or checkerboard backdrop, drawn floor plane, UI, text, labels, frames, decorations or halo. Entire person and every required piece of equipment must fit with transparent margins; adapt scale/camera without distortion or cropping. Accent pigment must use base sRGB #F26445 = RGB(242,100,69); retain this hue through ordinary 3D shading. Secondary highlights use this hue at 40-50% intensity blended with the gray body, not transparent tissue.\n\nEXERCISE ID: superman\nNAME: Superman\nCatalog equipment: none\nDepict only: bodyweight, no equipment\nPrimary muscle: lower_back\nSecondary muscles: [\"glutes\", \"hamstrings\"]\n\nONE SPECIFIC SCENE: PRONE opposite-limb raise: arms extended overhead and legs straight. RIGHT ARM and LEFT LEG lift a few inches while LEFT ARM and RIGHT LEG stay supported. Pelvis remains square, trunk supported and neck long. Side three-quarter view clearly identifies the opposite raised limbs. Do not lift all four limbs or twist the pelvis.\n\nENGLISH SOURCE (this ID only; do not substitute a familiar variant):\n{\"description\": \"Superman lies face down and raises the opposite arm and leg together, emphasizing controlled back and hip extension.\", \"instructions\": [\"Lie face down with legs straight and arms extended overhead.\", \"Brace the abdomen and lift the right arm and left leg a few inches.\", \"Pause without twisting the pelvis, then lower both limbs.\", \"Repeat on the opposite arm and leg.\"], \"form_cues\": [\"Keep the neck long.\", \"Lift from the hips and shoulders.\", \"Use a small range.\"], \"common_mistakes\": [\"Jerking upward.\", \"Arching the neck.\", \"Rotating the hips.\"], \"safety_note\": \"Lift only as high as the lower back stays comfortable and controlled.\", \"provenance\": \"authored\"}\nMaintain source contact points and safe control. Render only this characteristic phase, not the entire instruction sequence. Reference anatomy is opaque; localize the specified muscle pigment without copying reference highlights.",
       "reference_path": "assets/exercises/biceps-curl-dumbbell.png",
       "generated_at": "2026-10-01T03:20:23.597217+03:00",
-      "backup_status": "local_saved",
+      "backup_status": "github_verified",
       "backup_history": [
         {
           "backup_id": "night-2026-10-01",
@@ -29933,6 +30296,17 @@
           "png_sha256": "705c666f3afc38b3fc8973b582bb774bda7ca65e3f1dc6adddf1ef520e182b8e",
           "verified_at": "2026-10-01T03:24:41.918605+03:00",
           "verified_commit": "a08a34f64108438a870ad581bb067c469447a018"
+        },
+        {
+          "backup_id": "night-2026-10-01",
+          "storage": "git_repository",
+          "status": "github_verified",
+          "repository": "romanthoruk2008-pixel/lightweight-exercises-photo",
+          "branch": "work",
+          "repository_path": "assets/exercises/pending/night-2026-10-01/batch-003/superman/attempt-1.png",
+          "png_sha256": "705c666f3afc38b3fc8973b582bb774bda7ca65e3f1dc6adddf1ef520e182b8e",
+          "verified_at": "2026-10-01T03:45:41.209794+03:00",
+          "verified_commit": "a0f650d0c2add34b8bab916c54169d99a00f2d00"
         }
       ]
     },
@@ -30273,7 +30647,7 @@
       "prompt": "STYLE v1. Use the supplied approved human reference ONLY for the person's identity, anatomical 3D style, body proportions, materials and detail. Do not copy its pose, dumbbells, muscle highlighting or composition. Match the same bald athletic adult male, opaque silver-gray sculpted anatomical muscle surfaces, simple fitted black shorts, barefoot, neutral face and consistent natural proportions. One person, one exercise, one characteristic phase: no second figure, collage or motion ghosts. Equipment must be only the simple items named in this scene, neutral gray/black materials, complete and mechanically ordinary. Primary muscles: localized coral #F26445. Named secondary muscles: the same hue at roughly 45% intensity blended with gray, clearly lighter. Do not highlight muscles absent from the catalog list, make the body or shorts transparent, or apply a global orange cast/glow. Preserve clothing; highlight visible anatomical surfaces without inventing see-through tissue. Square PNG, unchanged target 1024x1024, true transparent alpha background outside the person and required equipment/mat and through any openings; no white or checkerboard backdrop, drawn floor plane, UI, text, labels, frames, decorations or halo. Entire person and every required piece of equipment must fit with transparent margins; adapt scale/camera without distortion or cropping. Accent pigment must use base sRGB #F26445 = RGB(242,100,69); retain this hue through ordinary 3D shading. Secondary highlights use this hue at 40-50% intensity blended with the gray body, not transparent tissue.\n\nEXERCISE ID: toe-touch\nNAME: Toe Touch\nCatalog equipment: none\nDepict only: bodyweight, no equipment\nPrimary muscle: abdominals\nSecondary muscles: []\n\nONE SPECIFIC SCENE: STANDING hip-hinge endpoint, not a supine abdominal toe crunch: feet hip-width, knees softly bent, hips move back and spine stays long as both hands reach toward the toes to a comfortable height. Both soles remain planted, neck follows spine and torso does not round sharply. Side view emphasizes hinge and soft knees.\n\nENGLISH SOURCE (this ID only; do not substitute a familiar variant):\n{\"description\": \"Toe Touch stands tall, hinges forward with softly bent knees, and reaches toward the toes before returning upright.\", \"instructions\": [\"Stand with feet hip-width apart and arms at the sides.\", \"Hinge forward from the hips with knees softly bent and spine long.\", \"Reach toward the toes until the hamstrings stretch without rounding sharply.\", \"Pause, then press through the feet and raise the torso to standing.\"], \"form_cues\": [\"Send hips back.\", \"Keep neck aligned.\", \"Keep knees soft.\"], \"common_mistakes\": [\"Rounding deeply.\", \"Locking the knees.\", \"Bouncing at the bottom.\"], \"safety_note\": \"Use a reach height that keeps the spine long and knees comfortable.\", \"provenance\": \"adapted\"}\nMaintain source contact points and safe control. Render only this characteristic phase, not the entire instruction sequence. Reference anatomy is opaque; localize the specified muscle pigment without copying reference highlights.",
       "reference_path": "assets/exercises/biceps-curl-dumbbell.png",
       "generated_at": "2026-10-01T03:21:40.080059+03:00",
-      "backup_status": "local_saved",
+      "backup_status": "github_verified",
       "backup_history": [
         {
           "backup_id": "night-2026-10-01",
@@ -30293,6 +30667,17 @@
           "png_sha256": "3b4ef416235bdf9ff65273e9a9ca9095d25baea2ad211c88041669b127b37308",
           "verified_at": "2026-10-01T03:24:41.918605+03:00",
           "verified_commit": "a08a34f64108438a870ad581bb067c469447a018"
+        },
+        {
+          "backup_id": "night-2026-10-01",
+          "storage": "git_repository",
+          "status": "github_verified",
+          "repository": "romanthoruk2008-pixel/lightweight-exercises-photo",
+          "branch": "work",
+          "repository_path": "assets/exercises/pending/night-2026-10-01/batch-003/toe-touch/attempt-1.png",
+          "png_sha256": "3b4ef416235bdf9ff65273e9a9ca9095d25baea2ad211c88041669b127b37308",
+          "verified_at": "2026-10-01T03:45:41.209794+03:00",
+          "verified_commit": "a0f650d0c2add34b8bab916c54169d99a00f2d00"
         }
       ]
     },
@@ -31663,7 +32048,7 @@
       "prompt": "STYLE v1. Use the supplied approved human reference ONLY for the person's identity, anatomical 3D style, body proportions, materials and detail. Do not copy its pose, dumbbells, muscle highlighting or composition. Match the same bald athletic adult male, opaque silver-gray sculpted anatomical muscle surfaces, simple fitted black shorts, barefoot, neutral face and consistent natural proportions. One person, one exercise, one characteristic phase: no second figure, collage or motion ghosts. Equipment must be only the simple items named in this scene, neutral gray/black materials, complete and mechanically ordinary. Primary muscles: localized coral #F26445. Named secondary muscles: the same hue at roughly 45% intensity blended with gray, clearly lighter. Do not highlight muscles absent from the catalog list, make the body or shorts transparent, or apply a global orange cast/glow. Preserve clothing; highlight visible anatomical surfaces without inventing see-through tissue. Square PNG, unchanged target 1024x1024, true transparent alpha background outside the person and required equipment/mat and through any openings; no white or checkerboard backdrop, drawn floor plane, UI, text, labels, frames, decorations or halo. Entire person and every required piece of equipment must fit with transparent margins; adapt scale/camera without distortion or cropping. Accent pigment must use base sRGB #F26445 = RGB(242,100,69); retain this hue through ordinary 3D shading. Secondary highlights use this hue at 40-50% intensity blended with the gray body, not transparent tissue.\n\nEXERCISE ID: v-up\nNAME: V Up\nCatalog equipment: none\nDepict only: bodyweight, no equipment\nPrimary muscle: abdominals\nSecondary muscles: []\n\nONE SPECIFIC SCENE: One top V-up phase: from supine raise upper back and both STRAIGHT legs together, arms reaching toward feet. Pelvis/buttocks is the ground contact, torso and legs form a controlled V with neutral neck. Side three-quarter view separates hands/feet and shows support under pelvis. No bent-knee tuck or second phase.\n\nENGLISH SOURCE (this ID only; do not substitute a familiar variant):\n{\"description\": \"V Up curls the trunk and legs together from a supine position until the hands approach the feet.\", \"instructions\": [\"Lie on your back with legs straight and arms overhead.\", \"Brace the abdomen and raise the straight legs and upper back together.\", \"Reach the hands toward the feet at the top without pulling the neck.\", \"Lower the legs and shoulders together until they nearly touch the floor.\"], \"form_cues\": [\"Keep legs together.\", \"Move from the ribs and hips.\", \"Use a controlled lower.\"], \"common_mistakes\": [\"Bending the knees.\", \"Swinging the arms.\", \"Arching the lower back.\"], \"safety_note\": \"Shorten the range or bend the knees before the lower back lifts off the floor.\", \"provenance\": \"authored\"}\nMaintain source contact points and safe control. Render only this characteristic phase, not the entire instruction sequence. Reference anatomy is opaque; localize the specified muscle pigment without copying reference highlights.",
       "reference_path": "assets/exercises/biceps-curl-dumbbell.png",
       "generated_at": "2026-10-01T03:23:08.395048+03:00",
-      "backup_status": "local_saved",
+      "backup_status": "github_verified",
       "backup_history": [
         {
           "backup_id": "night-2026-10-01",
@@ -31683,6 +32068,17 @@
           "png_sha256": "09257f919b0c7a23e760fa53cbb46d92d42dafe46d9580cc54b68fc8c19afda3",
           "verified_at": "2026-10-01T03:24:41.918605+03:00",
           "verified_commit": "a08a34f64108438a870ad581bb067c469447a018"
+        },
+        {
+          "backup_id": "night-2026-10-01",
+          "storage": "git_repository",
+          "status": "github_verified",
+          "repository": "romanthoruk2008-pixel/lightweight-exercises-photo",
+          "branch": "work",
+          "repository_path": "assets/exercises/pending/night-2026-10-01/batch-003/v-up/attempt-1.png",
+          "png_sha256": "09257f919b0c7a23e760fa53cbb46d92d42dafe46d9580cc54b68fc8c19afda3",
+          "verified_at": "2026-10-01T03:45:41.209794+03:00",
+          "verified_commit": "a0f650d0c2add34b8bab916c54169d99a00f2d00"
         }
       ]
     },
