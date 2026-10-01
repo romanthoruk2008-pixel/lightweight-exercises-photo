@@ -389,7 +389,7 @@
       "source_branch": "agent-03-inventory-2026-10-01",
       "source_commit": "5141c41608b0c10c647d49c38157cd9081807968",
       "catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
-      "total_planned": 30,
+      "total_planned": 60,
       "packages": {
         "agent-03-others-001": {
           "state": "github_verified",
@@ -486,16 +486,74 @@
           "backup_status": "github_verified",
           "verified_commit": "86614b960117ca18f1fba1027ee8808ffcfabc5c",
           "verified_at": "2026-10-01T14:26:05+00:00"
+        },
+        "agent-03-others-004": {
+          "state": "pending",
+          "completed_ids": [],
+          "failed_ids": [],
+          "skipped_ids": [],
+          "expected_ids": [
+            "21s-biceps-curl-barbell",
+            "arnold-press-dumbbell",
+            "bent-over-row-barbell",
+            "bent-over-row-dumbbell",
+            "bulgarian-split-squat-barbell",
+            "decline-bench-press-barbell",
+            "decline-bench-press-dumbbell",
+            "floor-press-barbell",
+            "front-raise-barbell",
+            "handstand-pushup"
+          ],
+          "backup_status": "pending"
+        },
+        "agent-03-others-005": {
+          "state": "pending",
+          "completed_ids": [],
+          "failed_ids": [],
+          "skipped_ids": [],
+          "expected_ids": [
+            "incline-bench-press-barbell",
+            "incline-bench-press-dumbbell",
+            "incline-chest-fly-dumbbell",
+            "jm-press-barbell",
+            "lunge-barbell",
+            "overhead-dumbbell-lunge",
+            "overhead-press-barbell",
+            "partial-glute-bridge-barbell",
+            "pause-squat-barbell",
+            "pendlay-row-barbell"
+          ],
+          "backup_status": "pending"
+        },
+        "agent-03-others-006": {
+          "state": "pending",
+          "completed_ids": [],
+          "failed_ids": [],
+          "skipped_ids": [],
+          "expected_ids": [
+            "pullover-dumbbell",
+            "push-press-barbell",
+            "renegade-row-dumbbell",
+            "reverse-grip-concentration-curl-dumbbell",
+            "reverse-lunge-barbell",
+            "seal-row-barbell",
+            "seal-row-dumbbell",
+            "seated-overhead-press-barbell",
+            "seated-overhead-press-dumbbell",
+            "seated-wrist-extension-barbell"
+          ],
+          "backup_status": "pending"
         }
       },
       "last_event": {
-        "event": "user_approval_recorded",
-        "exercise_id": "chest-supported-y-raise-dumbbell",
-        "batch_id": "agent-03-others-003",
-        "attempt": 2,
-        "at": "2026-10-01T14:47:52+00:00",
-        "accepted_path": "assets/exercises/pending/agent-03-others-003/chest-supported-y-raise-dumbbell/attempt-2.png",
-        "accepted_sha256": "3df6f8a986fb784006dbe98a29573d6e520ec6fe3d500a79498281ac403fca67"
+        "event": "followup_packages_imported_and_validated",
+        "packages": [
+          "agent-03-others-004",
+          "agent-03-others-005",
+          "agent-03-others-006"
+        ],
+        "source_commit": "47f772a7824e2377f4454efe2e7365bcb2fec0b1",
+        "at": "2026-10-01T14:58:06+00:00"
       },
       "last_completed_exercise_id": "romanian-deadlift-barbell",
       "user_approval_checkpoint": {
@@ -535,6 +593,29 @@
         "last_approved_id": "chest-supported-y-raise-dumbbell",
         "reviewed_at": "2026-10-01T14:47:52+00:00",
         "by": "user"
+      },
+      "followup_source": {
+        "branch": "agent-03-inventory-2026-10-01",
+        "commit": "47f772a7824e2377f4454efe2e7365bcb2fec0b1",
+        "files": {
+          "agent-03-others-004": {
+            "path": "data/batches/agent-03-others-004.json",
+            "sha256": "2c3a20dbf0f269a13ee5dafaf68c5e26338dc14d24cc22dd98ec092b9154d992"
+          },
+          "agent-03-others-005": {
+            "path": "data/batches/agent-03-others-005.json",
+            "sha256": "6867f271a92a7b09a91bd739dd51b60c87968e37d4912db2f000ea6825de1f9d"
+          },
+          "agent-03-others-006": {
+            "path": "data/batches/agent-03-others-006.json",
+            "sha256": "48e7677d0ec5092ebc106691a99a89e83a232677fe7d801c5400e187168e3499"
+          },
+          "docs/agent-03-other-next-handoff.md": {
+            "path": "docs/agent-03-other-next-handoff.md",
+            "sha256": "eaf8c7c622a55846db6814a71d2442448b34793a76b74948c361a2a79a7be9da"
+          }
+        },
+        "user_generation_authorization_at": "2026-10-01T14:58:06+00:00"
       }
     }
   },

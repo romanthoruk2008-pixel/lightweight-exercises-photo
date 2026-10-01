@@ -386,3 +386,8 @@ Attempt-2 chest-supported-y-raise-dumbbell збережено: assets/exercises/
 GitHub verification 2026-10-01T14:43:08+00:00: attempt-2 for chest-supported-y-raise-dumbbell is present in remote work at commit 8bc4b141b57b968893efad3261b8d38c30f47af1; remote SHA256 3df6f8a986fb784006dbe98a29573d6e520ec6fe3d500a79498281ac403fca67 matches local. backup_status=github_verified, user_review remains pending.
 
 User approval 2026-10-01T14:47:52+00:00: chest-supported-y-raise-dumbbell attempt-2 прийнято. Accepted path: assets/exercises/pending/agent-03-others-003/chest-supported-y-raise-dumbbell/attempt-2.png; SHA256 3df6f8a986fb784006dbe98a29573d6e520ec6fe3d500a79498281ac403fca67. Попередній attempt-1 лишається needs_fix і не змінений. Attempt-2 already github_verified; тепер усі 30 результатів Agent-03 схвалені. Supabase не використовувався.
+
+
+## Agent-03 follow-up packages 004–006
+
+Imported exact preparation files from agent-03-inventory-2026-10-01 at 47f772a7824e2377f4454efe2e7365bcb2fec0b1: packages 004–006 and docs/agent-03-other-next-handoff.md. Catalog SHA256 and style v1 SHA256 verified; all 30 IDs/prompts match the catalog, and no existing local or remote outputs were found across origin/main, work, agent-02, and inventory branches. The user authorized generation in the current request. Generate one attempt per ID using built-in image_gen only; preserve exact prepared prompt hashes, technical-check PNGs, user_review=pending, and agent_visual_review=not_performed. Save outputs at the prepared cloud path and in the pending work tree for the requested GitHub push. Recheck live branch results before every call.
