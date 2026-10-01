@@ -1,0 +1,1939 @@
+{
+  "schema_version": 1,
+  "batch_id": "agent-03-others-010",
+  "owner_agent": "agent-03",
+  "branch": "agent-03-inventory-2026-10-01",
+  "status": "ready",
+  "prepared_at": "2026-10-02T01:21:10.062167+03:00",
+  "preparation_stage": "remaining_queue",
+  "generation_authorized_now": false,
+  "catalog_path": "data/exercises/catalog.json",
+  "catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+  "catalog_source_commit": "a6f296cbc6737991dd367e929b3e2df25874d4d8",
+  "style_version": "v1",
+  "style_path": "docs/exercise-image-style.md",
+  "style_sha256": "8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578",
+  "human_reference": {
+    "repository_path": "assets/exercises/biceps-curl-dumbbell.png",
+    "absolute_path": "/workspace/lightweight-exercises-photo/assets/exercises/biceps-curl-dumbbell.png",
+    "sha256": "52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f",
+    "branch": "work",
+    "source_commit": "a6f296cbc6737991dd367e929b3e2df25874d4d8",
+    "role": "Human appearance/proportions/materials/anatomical style ONLY. Exercise pose, grip, equipment and muscles come from the exact-ID catalogue, never the reference.",
+    "pixels_reviewed_during_preparation": false
+  },
+  "queue_path": "data/queues/agent-03-other-queue.json",
+  "constraints": {
+    "generation_performed": false,
+    "shared_progress_changes_allowed": false,
+    "catalog_changes_allowed": false,
+    "only_builtin_imagegen": true,
+    "automatic_retries_allowed": false,
+    "paid_api_allowed": false,
+    "supabase_allowed": false,
+    "no_agent_visual_QA": true,
+    "outputs_outside_git": true,
+    "revalidate_assignments_and_existing_results_before_call": true
+  },
+  "exercise_count": 10,
+  "exercise_ids": [
+    "low-row-suspension",
+    "pullup-band-resistance-band",
+    "pullup-machine",
+    "ring-pushup",
+    "scapular-pull-ups",
+    "squat-suspension",
+    "sternum-pullup-gironda-machine",
+    "toes-to-bar",
+    "triceps-dip-machine",
+    "triceps-dip-weighted-machine"
+  ],
+  "exercises": [
+    {
+      "exercise_id": "low-row-suspension",
+      "name": "Low Row (Suspension)",
+      "source_english": {
+        "description": "With the feet grounded and the body straight under the suspension handles, pull the chest toward the handles.",
+        "instructions": [
+          "Set the suspension handles so you can lean back with feet grounded and body straight.",
+          "Grip the handles and brace the trunk with shoulders away from the ears.",
+          "Pull the chest toward the handles by driving the elbows back.",
+          "Lower the body until the arms are straight without letting the hips sag."
+        ],
+        "form_cues": [
+          "Brace the trunk before each pull.",
+          "Drive the elbows back.",
+          "Control the reach at the front."
+        ],
+        "common_mistakes": [
+          "Rounding the spine.",
+          "Shrugging instead of rowing.",
+          "Jerking with the torso."
+        ],
+        "safety_note": "Keep both feet planted and the body in one straight line while pulling the suspension handles toward the chest.",
+        "provenance": "adapted"
+      },
+      "equipment": "suspension",
+      "primary_muscle": "upper_back",
+      "secondary_muscles": [
+        "lats",
+        "biceps",
+        "forearms"
+      ],
+      "source_catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+      "source_catalog_record_sha256": "427485cb3ed61848ad89b54a66b11a903ce8fa8e1331842f8fdde7051b6714ce",
+      "source_english_sha256": "c68d68e2edd4754c513cb021a3de80f367ca03bbeecc7e785cc5aa13422feeed",
+      "status": "ready",
+      "preparation_status": "prompt_prepared_not_generated",
+      "style_version": "v1",
+      "style_sha256": "8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578",
+      "human_reference": {
+        "repository_path": "assets/exercises/biceps-curl-dumbbell.png",
+        "absolute_path": "/workspace/lightweight-exercises-photo/assets/exercises/biceps-curl-dumbbell.png",
+        "sha256": "52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f",
+        "branch": "work",
+        "source_commit": "a6f296cbc6737991dd367e929b3e2df25874d4d8",
+        "role": "Human appearance/proportions/materials/anatomical style ONLY. Exercise pose, grip, equipment and muscles come from the exact-ID catalogue, never the reference.",
+        "pixels_reviewed_during_preparation": false
+      },
+      "scene": {
+        "single_phase": "Chest drawn toward handles",
+        "pose": "Lean back with body in one straight line, trunk braced; elbows travel back as chest approaches handles, hips do not sag.",
+        "grip": "Both hands firmly grip the suspension handles; no grip rotation or spacing is prescribed.",
+        "supports_and_equipment": "Both feet grounded; secured suspension straps carry the hand load, shoulders away from ears.",
+        "camera": "Side three-quarter view showing the straight body, feet, handles and complete secure suspension setup.",
+        "source_instruction_quotes": [
+          {
+            "index": 0,
+            "text": "Set the suspension handles so you can lean back with feet grounded and body straight."
+          },
+          {
+            "index": 1,
+            "text": "Grip the handles and brace the trunk with shoulders away from the ears."
+          },
+          {
+            "index": 2,
+            "text": "Pull the chest toward the handles by driving the elbows back."
+          },
+          {
+            "index": 3,
+            "text": "Lower the body until the arms are straight without letting the hips sag."
+          }
+        ]
+      },
+      "prompt_payload": {
+        "identity_do_not_render_as_text": {
+          "exercise_id": "low-row-suspension",
+          "name": "Low Row (Suspension)",
+          "source_catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+          "source_catalog_record_sha256": "427485cb3ed61848ad89b54a66b11a903ce8fa8e1331842f8fdde7051b6714ce"
+        },
+        "exact_catalogue_source": {
+          "source_english": {
+            "description": "With the feet grounded and the body straight under the suspension handles, pull the chest toward the handles.",
+            "instructions": [
+              "Set the suspension handles so you can lean back with feet grounded and body straight.",
+              "Grip the handles and brace the trunk with shoulders away from the ears.",
+              "Pull the chest toward the handles by driving the elbows back.",
+              "Lower the body until the arms are straight without letting the hips sag."
+            ],
+            "form_cues": [
+              "Brace the trunk before each pull.",
+              "Drive the elbows back.",
+              "Control the reach at the front."
+            ],
+            "common_mistakes": [
+              "Rounding the spine.",
+              "Shrugging instead of rowing.",
+              "Jerking with the torso."
+            ],
+            "safety_note": "Keep both feet planted and the body in one straight line while pulling the suspension handles toward the chest.",
+            "provenance": "adapted"
+          },
+          "equipment": "suspension",
+          "primary_muscle": "upper_back",
+          "secondary_muscles": [
+            "lats",
+            "biceps",
+            "forearms"
+          ]
+        },
+        "human_reference": {
+          "repository_path": "assets/exercises/biceps-curl-dumbbell.png",
+          "absolute_path": "/workspace/lightweight-exercises-photo/assets/exercises/biceps-curl-dumbbell.png",
+          "sha256": "52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f",
+          "branch": "work",
+          "source_commit": "a6f296cbc6737991dd367e929b3e2df25874d4d8",
+          "role": "Human appearance/proportions/materials/anatomical style ONLY. Exercise pose, grip, equipment and muscles come from the exact-ID catalogue, never the reference.",
+          "pixels_reviewed_during_preparation": false
+        },
+        "style": {
+          "version": "v1",
+          "human_model": "One athletic bald male anatomical mannequin, opaque silver-gray muscular surfaces, consistent proportions and detailed 3D materials, plain black shorts, barefoot.",
+          "primary_highlight": {
+            "hex": "#F26445",
+            "rule": "Highlight only the exact primary muscle group provided for this exercise."
+          },
+          "secondary_highlight": {
+            "hex": "#F26445",
+            "intensity_fraction": [
+              0.4,
+              0.5
+            ],
+            "rule": "Only the exact secondary muscles, lighter same-hue highlight; if the list is empty add no secondary target."
+          },
+          "background": "Genuinely transparent PNG background, no white/checkerboard layer, no environment scene.",
+          "output": {
+            "format": "PNG",
+            "width": 1024,
+            "height": 1024,
+            "one_person": true,
+            "one_phase": true
+          },
+          "material_rules": "Highlights never make tissue transparent; no glow, whole-body orange tint, hair, text, labels, arrows, UI, borders, collage or extra person.",
+          "framing": "Full figure and all required equipment/supports visible within a square. Scale and use a three-quarter view to expose the specified contacts without changing anatomy, equipment, grip or technique.",
+          "no_invention": "Technique, equipment and muscles come only from the attached exact catalogue record. No extra attachments, numerical weights, brands or exact angles absent from the source."
+        },
+        "style_document_sha256": "8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578",
+        "scene": {
+          "single_phase": "Chest drawn toward handles",
+          "pose": "Lean back with body in one straight line, trunk braced; elbows travel back as chest approaches handles, hips do not sag.",
+          "grip": "Both hands firmly grip the suspension handles; no grip rotation or spacing is prescribed.",
+          "supports_and_equipment": "Both feet grounded; secured suspension straps carry the hand load, shoulders away from ears.",
+          "camera": "Side three-quarter view showing the straight body, feet, handles and complete secure suspension setup.",
+          "source_instruction_quotes": [
+            {
+              "index": 0,
+              "text": "Set the suspension handles so you can lean back with feet grounded and body straight."
+            },
+            {
+              "index": 1,
+              "text": "Grip the handles and brace the trunk with shoulders away from the ears."
+            },
+            {
+              "index": 2,
+              "text": "Pull the chest toward the handles by driving the elbows back."
+            },
+            {
+              "index": 3,
+              "text": "Lower the body until the arms are straight without letting the hips sag."
+            }
+          ]
+        },
+        "supplementary_same_ID_sources": []
+      },
+      "generation_prompt": "Create exactly ONE square transparent PNG of the exact exercise below, using the referenced human for APPEARANCE ONLY. Render only the selected phase and camera. Identity/path/hash fields are metadata, never visible text.\n{\n  \"exact_catalogue_source\": {\n    \"equipment\": \"suspension\",\n    \"primary_muscle\": \"upper_back\",\n    \"secondary_muscles\": [\n      \"lats\",\n      \"biceps\",\n      \"forearms\"\n    ],\n    \"source_english\": {\n      \"common_mistakes\": [\n        \"Rounding the spine.\",\n        \"Shrugging instead of rowing.\",\n        \"Jerking with the torso.\"\n      ],\n      \"description\": \"With the feet grounded and the body straight under the suspension handles, pull the chest toward the handles.\",\n      \"form_cues\": [\n        \"Brace the trunk before each pull.\",\n        \"Drive the elbows back.\",\n        \"Control the reach at the front.\"\n      ],\n      \"instructions\": [\n        \"Set the suspension handles so you can lean back with feet grounded and body straight.\",\n        \"Grip the handles and brace the trunk with shoulders away from the ears.\",\n        \"Pull the chest toward the handles by driving the elbows back.\",\n        \"Lower the body until the arms are straight without letting the hips sag.\"\n      ],\n      \"provenance\": \"adapted\",\n      \"safety_note\": \"Keep both feet planted and the body in one straight line while pulling the suspension handles toward the chest.\"\n    }\n  },\n  \"human_reference\": {\n    \"absolute_path\": \"/workspace/lightweight-exercises-photo/assets/exercises/biceps-curl-dumbbell.png\",\n    \"branch\": \"work\",\n    \"pixels_reviewed_during_preparation\": false,\n    \"repository_path\": \"assets/exercises/biceps-curl-dumbbell.png\",\n    \"role\": \"Human appearance/proportions/materials/anatomical style ONLY. Exercise pose, grip, equipment and muscles come from the exact-ID catalogue, never the reference.\",\n    \"sha256\": \"52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f\",\n    \"source_commit\": \"a6f296cbc6737991dd367e929b3e2df25874d4d8\"\n  },\n  \"identity_do_not_render_as_text\": {\n    \"exercise_id\": \"low-row-suspension\",\n    \"name\": \"Low Row (Suspension)\",\n    \"source_catalog_record_sha256\": \"427485cb3ed61848ad89b54a66b11a903ce8fa8e1331842f8fdde7051b6714ce\",\n    \"source_catalog_sha256\": \"a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989\"\n  },\n  \"scene\": {\n    \"camera\": \"Side three-quarter view showing the straight body, feet, handles and complete secure suspension setup.\",\n    \"grip\": \"Both hands firmly grip the suspension handles; no grip rotation or spacing is prescribed.\",\n    \"pose\": \"Lean back with body in one straight line, trunk braced; elbows travel back as chest approaches handles, hips do not sag.\",\n    \"single_phase\": \"Chest drawn toward handles\",\n    \"source_instruction_quotes\": [\n      {\n        \"index\": 0,\n        \"text\": \"Set the suspension handles so you can lean back with feet grounded and body straight.\"\n      },\n      {\n        \"index\": 1,\n        \"text\": \"Grip the handles and brace the trunk with shoulders away from the ears.\"\n      },\n      {\n        \"index\": 2,\n        \"text\": \"Pull the chest toward the handles by driving the elbows back.\"\n      },\n      {\n        \"index\": 3,\n        \"text\": \"Lower the body until the arms are straight without letting the hips sag.\"\n      }\n    ],\n    \"supports_and_equipment\": \"Both feet grounded; secured suspension straps carry the hand load, shoulders away from ears.\"\n  },\n  \"style\": {\n    \"background\": \"Genuinely transparent PNG background, no white/checkerboard layer, no environment scene.\",\n    \"framing\": \"Full figure and all required equipment/supports visible within a square. Scale and use a three-quarter view to expose the specified contacts without changing anatomy, equipment, grip or technique.\",\n    \"human_model\": \"One athletic bald male anatomical mannequin, opaque silver-gray muscular surfaces, consistent proportions and detailed 3D materials, plain black shorts, barefoot.\",\n    \"material_rules\": \"Highlights never make tissue transparent; no glow, whole-body orange tint, hair, text, labels, arrows, UI, borders, collage or extra person.\",\n    \"no_invention\": \"Technique, equipment and muscles come only from the attached exact catalogue record. No extra attachments, numerical weights, brands or exact angles absent from the source.\",\n    \"output\": {\n      \"format\": \"PNG\",\n      \"height\": 1024,\n      \"one_person\": true,\n      \"one_phase\": true,\n      \"width\": 1024\n    },\n    \"primary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"rule\": \"Highlight only the exact primary muscle group provided for this exercise.\"\n    },\n    \"secondary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"intensity_fraction\": [\n        0.4,\n        0.5\n      ],\n      \"rule\": \"Only the exact secondary muscles, lighter same-hue highlight; if the list is empty add no secondary target.\"\n    },\n    \"version\": \"v1\"\n  },\n  \"style_document_sha256\": \"8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578\",\n  \"supplementary_same_ID_sources\": []\n}",
+      "generation_prompt_sha256": "bf5ce025aa811805ce4b0f00259ca82e8abbb3652675203535e6df6b9c393a1e",
+      "planned_png_path": "/workspace/exercise-image-results/agent-03-others-010/low-row-suspension/attempt-1.png",
+      "output_root": "/workspace/exercise-image-results",
+      "planned_output_relative_path": "agent-03-others-010/low-row-suspension/attempt-1.png",
+      "result_path": null,
+      "result_sha256": null,
+      "attempts": 0,
+      "user_review": null,
+      "technical_check": null,
+      "agent_visual_review": "not_performed",
+      "generation_authorized_now": false,
+      "clarification_resolution": null
+    },
+    {
+      "exercise_id": "pullup-band-resistance-band",
+      "name": "Pull Up (Band)",
+      "source_english": {
+        "description": "Pull Up (Band) pulls from a controlled hang until the chin reaches or clears the bar, then lowers under control.",
+        "instructions": [
+          "Attach the band to a pull-up bar or sturdy anchor point.",
+          "Step onto the band and grip the bar with your palms facing away from you, hands slightly wider than shoulder-width apart.",
+          "Hang with your arms fully extended, keeping your core engaged and your shoulders down and back.",
+          "Pull your body up towards the bar by squeezing your shoulder blades together and driving your elbows down towards your hips.",
+          "Continue pulling until your chin is above the bar, then slowly lower yourself back down to the starting position.",
+          "Repeat for the desired number of repetitions."
+        ],
+        "form_cues": [
+          "Keep the ribs stacked and shoulders down.",
+          "Drive the elbows toward the torso.",
+          "Control the return to the start."
+        ],
+        "common_mistakes": [
+          "Leaning or swinging to move the load.",
+          "Shrugging into the top position.",
+          "Releasing the resistance quickly."
+        ],
+        "safety_note": "Use a secure station and a load or assistance level you can control through the full range.",
+        "provenance": "adapted"
+      },
+      "equipment": "resistance_band",
+      "primary_muscle": "lats",
+      "secondary_muscles": [
+        "upper_back",
+        "biceps",
+        "forearms"
+      ],
+      "source_catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+      "source_catalog_record_sha256": "4b834a27b713295684f05c1f83fdf8cfa333cff221c27e77276e619b0237b652",
+      "source_english_sha256": "08a8958787d697bbd2ada59aaaf97c6c47338cedb946f63298351d002e548c03",
+      "status": "ready",
+      "preparation_status": "prompt_prepared_not_generated",
+      "style_version": "v1",
+      "style_sha256": "8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578",
+      "human_reference": {
+        "repository_path": "assets/exercises/biceps-curl-dumbbell.png",
+        "absolute_path": "/workspace/lightweight-exercises-photo/assets/exercises/biceps-curl-dumbbell.png",
+        "sha256": "52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f",
+        "branch": "work",
+        "source_commit": "a6f296cbc6737991dd367e929b3e2df25874d4d8",
+        "role": "Human appearance/proportions/materials/anatomical style ONLY. Exercise pose, grip, equipment and muscles come from the exact-ID catalogue, never the reference.",
+        "pixels_reviewed_during_preparation": false
+      },
+      "scene": {
+        "single_phase": "Chin above bar with band assistance",
+        "pose": "Arms bend to pull chest upward, chin clears bar, core engaged and shoulders down; no swing.",
+        "grip": "Palms face away, hands slightly wider than shoulders.",
+        "supports_and_equipment": "Hands on fixed pull-up bar; feet stand on the assisting band attached to that same bar, clear of floor. No knee-in-band substitution.",
+        "camera": "Rear three-quarter view showing back, hand-bar contacts and the complete band-to-feet path.",
+        "source_instruction_quotes": [
+          {
+            "index": 0,
+            "text": "Attach the band to a pull-up bar or sturdy anchor point."
+          },
+          {
+            "index": 1,
+            "text": "Step onto the band and grip the bar with your palms facing away from you, hands slightly wider than shoulder-width apart."
+          },
+          {
+            "index": 2,
+            "text": "Hang with your arms fully extended, keeping your core engaged and your shoulders down and back."
+          },
+          {
+            "index": 3,
+            "text": "Pull your body up towards the bar by squeezing your shoulder blades together and driving your elbows down towards your hips."
+          },
+          {
+            "index": 4,
+            "text": "Continue pulling until your chin is above the bar, then slowly lower yourself back down to the starting position."
+          },
+          {
+            "index": 5,
+            "text": "Repeat for the desired number of repetitions."
+          }
+        ]
+      },
+      "prompt_payload": {
+        "identity_do_not_render_as_text": {
+          "exercise_id": "pullup-band-resistance-band",
+          "name": "Pull Up (Band)",
+          "source_catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+          "source_catalog_record_sha256": "4b834a27b713295684f05c1f83fdf8cfa333cff221c27e77276e619b0237b652"
+        },
+        "exact_catalogue_source": {
+          "source_english": {
+            "description": "Pull Up (Band) pulls from a controlled hang until the chin reaches or clears the bar, then lowers under control.",
+            "instructions": [
+              "Attach the band to a pull-up bar or sturdy anchor point.",
+              "Step onto the band and grip the bar with your palms facing away from you, hands slightly wider than shoulder-width apart.",
+              "Hang with your arms fully extended, keeping your core engaged and your shoulders down and back.",
+              "Pull your body up towards the bar by squeezing your shoulder blades together and driving your elbows down towards your hips.",
+              "Continue pulling until your chin is above the bar, then slowly lower yourself back down to the starting position.",
+              "Repeat for the desired number of repetitions."
+            ],
+            "form_cues": [
+              "Keep the ribs stacked and shoulders down.",
+              "Drive the elbows toward the torso.",
+              "Control the return to the start."
+            ],
+            "common_mistakes": [
+              "Leaning or swinging to move the load.",
+              "Shrugging into the top position.",
+              "Releasing the resistance quickly."
+            ],
+            "safety_note": "Use a secure station and a load or assistance level you can control through the full range.",
+            "provenance": "adapted"
+          },
+          "equipment": "resistance_band",
+          "primary_muscle": "lats",
+          "secondary_muscles": [
+            "upper_back",
+            "biceps",
+            "forearms"
+          ]
+        },
+        "human_reference": {
+          "repository_path": "assets/exercises/biceps-curl-dumbbell.png",
+          "absolute_path": "/workspace/lightweight-exercises-photo/assets/exercises/biceps-curl-dumbbell.png",
+          "sha256": "52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f",
+          "branch": "work",
+          "source_commit": "a6f296cbc6737991dd367e929b3e2df25874d4d8",
+          "role": "Human appearance/proportions/materials/anatomical style ONLY. Exercise pose, grip, equipment and muscles come from the exact-ID catalogue, never the reference.",
+          "pixels_reviewed_during_preparation": false
+        },
+        "style": {
+          "version": "v1",
+          "human_model": "One athletic bald male anatomical mannequin, opaque silver-gray muscular surfaces, consistent proportions and detailed 3D materials, plain black shorts, barefoot.",
+          "primary_highlight": {
+            "hex": "#F26445",
+            "rule": "Highlight only the exact primary muscle group provided for this exercise."
+          },
+          "secondary_highlight": {
+            "hex": "#F26445",
+            "intensity_fraction": [
+              0.4,
+              0.5
+            ],
+            "rule": "Only the exact secondary muscles, lighter same-hue highlight; if the list is empty add no secondary target."
+          },
+          "background": "Genuinely transparent PNG background, no white/checkerboard layer, no environment scene.",
+          "output": {
+            "format": "PNG",
+            "width": 1024,
+            "height": 1024,
+            "one_person": true,
+            "one_phase": true
+          },
+          "material_rules": "Highlights never make tissue transparent; no glow, whole-body orange tint, hair, text, labels, arrows, UI, borders, collage or extra person.",
+          "framing": "Full figure and all required equipment/supports visible within a square. Scale and use a three-quarter view to expose the specified contacts without changing anatomy, equipment, grip or technique.",
+          "no_invention": "Technique, equipment and muscles come only from the attached exact catalogue record. No extra attachments, numerical weights, brands or exact angles absent from the source."
+        },
+        "style_document_sha256": "8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578",
+        "scene": {
+          "single_phase": "Chin above bar with band assistance",
+          "pose": "Arms bend to pull chest upward, chin clears bar, core engaged and shoulders down; no swing.",
+          "grip": "Palms face away, hands slightly wider than shoulders.",
+          "supports_and_equipment": "Hands on fixed pull-up bar; feet stand on the assisting band attached to that same bar, clear of floor. No knee-in-band substitution.",
+          "camera": "Rear three-quarter view showing back, hand-bar contacts and the complete band-to-feet path.",
+          "source_instruction_quotes": [
+            {
+              "index": 0,
+              "text": "Attach the band to a pull-up bar or sturdy anchor point."
+            },
+            {
+              "index": 1,
+              "text": "Step onto the band and grip the bar with your palms facing away from you, hands slightly wider than shoulder-width apart."
+            },
+            {
+              "index": 2,
+              "text": "Hang with your arms fully extended, keeping your core engaged and your shoulders down and back."
+            },
+            {
+              "index": 3,
+              "text": "Pull your body up towards the bar by squeezing your shoulder blades together and driving your elbows down towards your hips."
+            },
+            {
+              "index": 4,
+              "text": "Continue pulling until your chin is above the bar, then slowly lower yourself back down to the starting position."
+            },
+            {
+              "index": 5,
+              "text": "Repeat for the desired number of repetitions."
+            }
+          ]
+        },
+        "supplementary_same_ID_sources": []
+      },
+      "generation_prompt": "Create exactly ONE square transparent PNG of the exact exercise below, using the referenced human for APPEARANCE ONLY. Render only the selected phase and camera. Identity/path/hash fields are metadata, never visible text.\n{\n  \"exact_catalogue_source\": {\n    \"equipment\": \"resistance_band\",\n    \"primary_muscle\": \"lats\",\n    \"secondary_muscles\": [\n      \"upper_back\",\n      \"biceps\",\n      \"forearms\"\n    ],\n    \"source_english\": {\n      \"common_mistakes\": [\n        \"Leaning or swinging to move the load.\",\n        \"Shrugging into the top position.\",\n        \"Releasing the resistance quickly.\"\n      ],\n      \"description\": \"Pull Up (Band) pulls from a controlled hang until the chin reaches or clears the bar, then lowers under control.\",\n      \"form_cues\": [\n        \"Keep the ribs stacked and shoulders down.\",\n        \"Drive the elbows toward the torso.\",\n        \"Control the return to the start.\"\n      ],\n      \"instructions\": [\n        \"Attach the band to a pull-up bar or sturdy anchor point.\",\n        \"Step onto the band and grip the bar with your palms facing away from you, hands slightly wider than shoulder-width apart.\",\n        \"Hang with your arms fully extended, keeping your core engaged and your shoulders down and back.\",\n        \"Pull your body up towards the bar by squeezing your shoulder blades together and driving your elbows down towards your hips.\",\n        \"Continue pulling until your chin is above the bar, then slowly lower yourself back down to the starting position.\",\n        \"Repeat for the desired number of repetitions.\"\n      ],\n      \"provenance\": \"adapted\",\n      \"safety_note\": \"Use a secure station and a load or assistance level you can control through the full range.\"\n    }\n  },\n  \"human_reference\": {\n    \"absolute_path\": \"/workspace/lightweight-exercises-photo/assets/exercises/biceps-curl-dumbbell.png\",\n    \"branch\": \"work\",\n    \"pixels_reviewed_during_preparation\": false,\n    \"repository_path\": \"assets/exercises/biceps-curl-dumbbell.png\",\n    \"role\": \"Human appearance/proportions/materials/anatomical style ONLY. Exercise pose, grip, equipment and muscles come from the exact-ID catalogue, never the reference.\",\n    \"sha256\": \"52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f\",\n    \"source_commit\": \"a6f296cbc6737991dd367e929b3e2df25874d4d8\"\n  },\n  \"identity_do_not_render_as_text\": {\n    \"exercise_id\": \"pullup-band-resistance-band\",\n    \"name\": \"Pull Up (Band)\",\n    \"source_catalog_record_sha256\": \"4b834a27b713295684f05c1f83fdf8cfa333cff221c27e77276e619b0237b652\",\n    \"source_catalog_sha256\": \"a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989\"\n  },\n  \"scene\": {\n    \"camera\": \"Rear three-quarter view showing back, hand-bar contacts and the complete band-to-feet path.\",\n    \"grip\": \"Palms face away, hands slightly wider than shoulders.\",\n    \"pose\": \"Arms bend to pull chest upward, chin clears bar, core engaged and shoulders down; no swing.\",\n    \"single_phase\": \"Chin above bar with band assistance\",\n    \"source_instruction_quotes\": [\n      {\n        \"index\": 0,\n        \"text\": \"Attach the band to a pull-up bar or sturdy anchor point.\"\n      },\n      {\n        \"index\": 1,\n        \"text\": \"Step onto the band and grip the bar with your palms facing away from you, hands slightly wider than shoulder-width apart.\"\n      },\n      {\n        \"index\": 2,\n        \"text\": \"Hang with your arms fully extended, keeping your core engaged and your shoulders down and back.\"\n      },\n      {\n        \"index\": 3,\n        \"text\": \"Pull your body up towards the bar by squeezing your shoulder blades together and driving your elbows down towards your hips.\"\n      },\n      {\n        \"index\": 4,\n        \"text\": \"Continue pulling until your chin is above the bar, then slowly lower yourself back down to the starting position.\"\n      },\n      {\n        \"index\": 5,\n        \"text\": \"Repeat for the desired number of repetitions.\"\n      }\n    ],\n    \"supports_and_equipment\": \"Hands on fixed pull-up bar; feet stand on the assisting band attached to that same bar, clear of floor. No knee-in-band substitution.\"\n  },\n  \"style\": {\n    \"background\": \"Genuinely transparent PNG background, no white/checkerboard layer, no environment scene.\",\n    \"framing\": \"Full figure and all required equipment/supports visible within a square. Scale and use a three-quarter view to expose the specified contacts without changing anatomy, equipment, grip or technique.\",\n    \"human_model\": \"One athletic bald male anatomical mannequin, opaque silver-gray muscular surfaces, consistent proportions and detailed 3D materials, plain black shorts, barefoot.\",\n    \"material_rules\": \"Highlights never make tissue transparent; no glow, whole-body orange tint, hair, text, labels, arrows, UI, borders, collage or extra person.\",\n    \"no_invention\": \"Technique, equipment and muscles come only from the attached exact catalogue record. No extra attachments, numerical weights, brands or exact angles absent from the source.\",\n    \"output\": {\n      \"format\": \"PNG\",\n      \"height\": 1024,\n      \"one_person\": true,\n      \"one_phase\": true,\n      \"width\": 1024\n    },\n    \"primary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"rule\": \"Highlight only the exact primary muscle group provided for this exercise.\"\n    },\n    \"secondary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"intensity_fraction\": [\n        0.4,\n        0.5\n      ],\n      \"rule\": \"Only the exact secondary muscles, lighter same-hue highlight; if the list is empty add no secondary target.\"\n    },\n    \"version\": \"v1\"\n  },\n  \"style_document_sha256\": \"8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578\",\n  \"supplementary_same_ID_sources\": []\n}",
+      "generation_prompt_sha256": "e582508c7805c27221873dbcb7b2e4008eb69720f0c47cd7dc6a387458632f95",
+      "planned_png_path": "/workspace/exercise-image-results/agent-03-others-010/pullup-band-resistance-band/attempt-1.png",
+      "output_root": "/workspace/exercise-image-results",
+      "planned_output_relative_path": "agent-03-others-010/pullup-band-resistance-band/attempt-1.png",
+      "result_path": null,
+      "result_sha256": null,
+      "attempts": 0,
+      "user_review": null,
+      "technical_check": null,
+      "agent_visual_review": "not_performed",
+      "generation_authorized_now": false,
+      "clarification_resolution": null
+    },
+    {
+      "exercise_id": "pullup-machine",
+      "name": "Pull Up",
+      "source_english": {
+        "description": "From a dead hang on the bar, pull the chest upward until the chin clears, then lower fully.",
+        "instructions": [
+          "Hang from a pull-up bar with your palms facing away from you and your arms fully extended.",
+          "Engage your core and squeeze your shoulder blades together.",
+          "Pull your body up towards the bar by bending your elbows and bringing your chest towards the bar.",
+          "Pause at the top of the movement, then slowly lower your body back down to the starting position.",
+          "Repeat for the desired number of repetitions."
+        ],
+        "form_cues": [
+          "Keep the ribs stacked and shoulders down.",
+          "Drive the elbows toward the torso.",
+          "Control the return to the start."
+        ],
+        "common_mistakes": [
+          "Leaning or swinging to move the load.",
+          "Shrugging into the top position.",
+          "Releasing the resistance quickly."
+        ],
+        "safety_note": "Use a secure station and a load or assistance level you can control through the full range.",
+        "provenance": "adapted"
+      },
+      "equipment": "machine",
+      "primary_muscle": "lats",
+      "secondary_muscles": [
+        "upper_back",
+        "biceps",
+        "forearms"
+      ],
+      "source_catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+      "source_catalog_record_sha256": "2f78644dd0ea637313da834a8fbcf5e90d198edec705e6f78f4d7a1bafa00c12",
+      "source_english_sha256": "4618b17a98b7c4926690ac1a9a1b8ac474b9c54fd8eab9d56c2e644d804899f8",
+      "status": "ready",
+      "preparation_status": "prompt_prepared_not_generated",
+      "style_version": "v1",
+      "style_sha256": "8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578",
+      "human_reference": {
+        "repository_path": "assets/exercises/biceps-curl-dumbbell.png",
+        "absolute_path": "/workspace/lightweight-exercises-photo/assets/exercises/biceps-curl-dumbbell.png",
+        "sha256": "52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f",
+        "branch": "work",
+        "source_commit": "a6f296cbc6737991dd367e929b3e2df25874d4d8",
+        "role": "Human appearance/proportions/materials/anatomical style ONLY. Exercise pose, grip, equipment and muscles come from the exact-ID catalogue, never the reference.",
+        "pixels_reviewed_during_preparation": false
+      },
+      "scene": {
+        "single_phase": "Controlled chin-clearing top",
+        "pose": "Chest approaches fixed bar, elbows bend, chin clears bar as specified in description; trunk braced and still.",
+        "grip": "Both hands grip bar with palms facing away; no numeric width is prescribed.",
+        "supports_and_equipment": "Hands on secure fixed bar, full body hanging clear of floor; no cable, stack or seated machine.",
+        "camera": "Rear three-quarter view showing lat targets, fixed bar and complete figure.",
+        "source_instruction_quotes": [
+          {
+            "index": 0,
+            "text": "Hang from a pull-up bar with your palms facing away from you and your arms fully extended."
+          },
+          {
+            "index": 1,
+            "text": "Engage your core and squeeze your shoulder blades together."
+          },
+          {
+            "index": 2,
+            "text": "Pull your body up towards the bar by bending your elbows and bringing your chest towards the bar."
+          },
+          {
+            "index": 3,
+            "text": "Pause at the top of the movement, then slowly lower your body back down to the starting position."
+          },
+          {
+            "index": 4,
+            "text": "Repeat for the desired number of repetitions."
+          }
+        ]
+      },
+      "prompt_payload": {
+        "identity_do_not_render_as_text": {
+          "exercise_id": "pullup-machine",
+          "name": "Pull Up",
+          "source_catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+          "source_catalog_record_sha256": "2f78644dd0ea637313da834a8fbcf5e90d198edec705e6f78f4d7a1bafa00c12"
+        },
+        "exact_catalogue_source": {
+          "source_english": {
+            "description": "From a dead hang on the bar, pull the chest upward until the chin clears, then lower fully.",
+            "instructions": [
+              "Hang from a pull-up bar with your palms facing away from you and your arms fully extended.",
+              "Engage your core and squeeze your shoulder blades together.",
+              "Pull your body up towards the bar by bending your elbows and bringing your chest towards the bar.",
+              "Pause at the top of the movement, then slowly lower your body back down to the starting position.",
+              "Repeat for the desired number of repetitions."
+            ],
+            "form_cues": [
+              "Keep the ribs stacked and shoulders down.",
+              "Drive the elbows toward the torso.",
+              "Control the return to the start."
+            ],
+            "common_mistakes": [
+              "Leaning or swinging to move the load.",
+              "Shrugging into the top position.",
+              "Releasing the resistance quickly."
+            ],
+            "safety_note": "Use a secure station and a load or assistance level you can control through the full range.",
+            "provenance": "adapted"
+          },
+          "equipment": "machine",
+          "primary_muscle": "lats",
+          "secondary_muscles": [
+            "upper_back",
+            "biceps",
+            "forearms"
+          ]
+        },
+        "human_reference": {
+          "repository_path": "assets/exercises/biceps-curl-dumbbell.png",
+          "absolute_path": "/workspace/lightweight-exercises-photo/assets/exercises/biceps-curl-dumbbell.png",
+          "sha256": "52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f",
+          "branch": "work",
+          "source_commit": "a6f296cbc6737991dd367e929b3e2df25874d4d8",
+          "role": "Human appearance/proportions/materials/anatomical style ONLY. Exercise pose, grip, equipment and muscles come from the exact-ID catalogue, never the reference.",
+          "pixels_reviewed_during_preparation": false
+        },
+        "style": {
+          "version": "v1",
+          "human_model": "One athletic bald male anatomical mannequin, opaque silver-gray muscular surfaces, consistent proportions and detailed 3D materials, plain black shorts, barefoot.",
+          "primary_highlight": {
+            "hex": "#F26445",
+            "rule": "Highlight only the exact primary muscle group provided for this exercise."
+          },
+          "secondary_highlight": {
+            "hex": "#F26445",
+            "intensity_fraction": [
+              0.4,
+              0.5
+            ],
+            "rule": "Only the exact secondary muscles, lighter same-hue highlight; if the list is empty add no secondary target."
+          },
+          "background": "Genuinely transparent PNG background, no white/checkerboard layer, no environment scene.",
+          "output": {
+            "format": "PNG",
+            "width": 1024,
+            "height": 1024,
+            "one_person": true,
+            "one_phase": true
+          },
+          "material_rules": "Highlights never make tissue transparent; no glow, whole-body orange tint, hair, text, labels, arrows, UI, borders, collage or extra person.",
+          "framing": "Full figure and all required equipment/supports visible within a square. Scale and use a three-quarter view to expose the specified contacts without changing anatomy, equipment, grip or technique.",
+          "no_invention": "Technique, equipment and muscles come only from the attached exact catalogue record. No extra attachments, numerical weights, brands or exact angles absent from the source."
+        },
+        "style_document_sha256": "8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578",
+        "scene": {
+          "single_phase": "Controlled chin-clearing top",
+          "pose": "Chest approaches fixed bar, elbows bend, chin clears bar as specified in description; trunk braced and still.",
+          "grip": "Both hands grip bar with palms facing away; no numeric width is prescribed.",
+          "supports_and_equipment": "Hands on secure fixed bar, full body hanging clear of floor; no cable, stack or seated machine.",
+          "camera": "Rear three-quarter view showing lat targets, fixed bar and complete figure.",
+          "source_instruction_quotes": [
+            {
+              "index": 0,
+              "text": "Hang from a pull-up bar with your palms facing away from you and your arms fully extended."
+            },
+            {
+              "index": 1,
+              "text": "Engage your core and squeeze your shoulder blades together."
+            },
+            {
+              "index": 2,
+              "text": "Pull your body up towards the bar by bending your elbows and bringing your chest towards the bar."
+            },
+            {
+              "index": 3,
+              "text": "Pause at the top of the movement, then slowly lower your body back down to the starting position."
+            },
+            {
+              "index": 4,
+              "text": "Repeat for the desired number of repetitions."
+            }
+          ]
+        },
+        "supplementary_same_ID_sources": []
+      },
+      "generation_prompt": "Create exactly ONE square transparent PNG of the exact exercise below, using the referenced human for APPEARANCE ONLY. Render only the selected phase and camera. Identity/path/hash fields are metadata, never visible text.\n{\n  \"exact_catalogue_source\": {\n    \"equipment\": \"machine\",\n    \"primary_muscle\": \"lats\",\n    \"secondary_muscles\": [\n      \"upper_back\",\n      \"biceps\",\n      \"forearms\"\n    ],\n    \"source_english\": {\n      \"common_mistakes\": [\n        \"Leaning or swinging to move the load.\",\n        \"Shrugging into the top position.\",\n        \"Releasing the resistance quickly.\"\n      ],\n      \"description\": \"From a dead hang on the bar, pull the chest upward until the chin clears, then lower fully.\",\n      \"form_cues\": [\n        \"Keep the ribs stacked and shoulders down.\",\n        \"Drive the elbows toward the torso.\",\n        \"Control the return to the start.\"\n      ],\n      \"instructions\": [\n        \"Hang from a pull-up bar with your palms facing away from you and your arms fully extended.\",\n        \"Engage your core and squeeze your shoulder blades together.\",\n        \"Pull your body up towards the bar by bending your elbows and bringing your chest towards the bar.\",\n        \"Pause at the top of the movement, then slowly lower your body back down to the starting position.\",\n        \"Repeat for the desired number of repetitions.\"\n      ],\n      \"provenance\": \"adapted\",\n      \"safety_note\": \"Use a secure station and a load or assistance level you can control through the full range.\"\n    }\n  },\n  \"human_reference\": {\n    \"absolute_path\": \"/workspace/lightweight-exercises-photo/assets/exercises/biceps-curl-dumbbell.png\",\n    \"branch\": \"work\",\n    \"pixels_reviewed_during_preparation\": false,\n    \"repository_path\": \"assets/exercises/biceps-curl-dumbbell.png\",\n    \"role\": \"Human appearance/proportions/materials/anatomical style ONLY. Exercise pose, grip, equipment and muscles come from the exact-ID catalogue, never the reference.\",\n    \"sha256\": \"52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f\",\n    \"source_commit\": \"a6f296cbc6737991dd367e929b3e2df25874d4d8\"\n  },\n  \"identity_do_not_render_as_text\": {\n    \"exercise_id\": \"pullup-machine\",\n    \"name\": \"Pull Up\",\n    \"source_catalog_record_sha256\": \"2f78644dd0ea637313da834a8fbcf5e90d198edec705e6f78f4d7a1bafa00c12\",\n    \"source_catalog_sha256\": \"a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989\"\n  },\n  \"scene\": {\n    \"camera\": \"Rear three-quarter view showing lat targets, fixed bar and complete figure.\",\n    \"grip\": \"Both hands grip bar with palms facing away; no numeric width is prescribed.\",\n    \"pose\": \"Chest approaches fixed bar, elbows bend, chin clears bar as specified in description; trunk braced and still.\",\n    \"single_phase\": \"Controlled chin-clearing top\",\n    \"source_instruction_quotes\": [\n      {\n        \"index\": 0,\n        \"text\": \"Hang from a pull-up bar with your palms facing away from you and your arms fully extended.\"\n      },\n      {\n        \"index\": 1,\n        \"text\": \"Engage your core and squeeze your shoulder blades together.\"\n      },\n      {\n        \"index\": 2,\n        \"text\": \"Pull your body up towards the bar by bending your elbows and bringing your chest towards the bar.\"\n      },\n      {\n        \"index\": 3,\n        \"text\": \"Pause at the top of the movement, then slowly lower your body back down to the starting position.\"\n      },\n      {\n        \"index\": 4,\n        \"text\": \"Repeat for the desired number of repetitions.\"\n      }\n    ],\n    \"supports_and_equipment\": \"Hands on secure fixed bar, full body hanging clear of floor; no cable, stack or seated machine.\"\n  },\n  \"style\": {\n    \"background\": \"Genuinely transparent PNG background, no white/checkerboard layer, no environment scene.\",\n    \"framing\": \"Full figure and all required equipment/supports visible within a square. Scale and use a three-quarter view to expose the specified contacts without changing anatomy, equipment, grip or technique.\",\n    \"human_model\": \"One athletic bald male anatomical mannequin, opaque silver-gray muscular surfaces, consistent proportions and detailed 3D materials, plain black shorts, barefoot.\",\n    \"material_rules\": \"Highlights never make tissue transparent; no glow, whole-body orange tint, hair, text, labels, arrows, UI, borders, collage or extra person.\",\n    \"no_invention\": \"Technique, equipment and muscles come only from the attached exact catalogue record. No extra attachments, numerical weights, brands or exact angles absent from the source.\",\n    \"output\": {\n      \"format\": \"PNG\",\n      \"height\": 1024,\n      \"one_person\": true,\n      \"one_phase\": true,\n      \"width\": 1024\n    },\n    \"primary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"rule\": \"Highlight only the exact primary muscle group provided for this exercise.\"\n    },\n    \"secondary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"intensity_fraction\": [\n        0.4,\n        0.5\n      ],\n      \"rule\": \"Only the exact secondary muscles, lighter same-hue highlight; if the list is empty add no secondary target.\"\n    },\n    \"version\": \"v1\"\n  },\n  \"style_document_sha256\": \"8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578\",\n  \"supplementary_same_ID_sources\": []\n}",
+      "generation_prompt_sha256": "f491895a85a0ccb088b045662a0742add84b70fbcecd36193e4211eb80e79d4f",
+      "planned_png_path": "/workspace/exercise-image-results/agent-03-others-010/pullup-machine/attempt-1.png",
+      "output_root": "/workspace/exercise-image-results",
+      "planned_output_relative_path": "agent-03-others-010/pullup-machine/attempt-1.png",
+      "result_path": null,
+      "result_sha256": null,
+      "attempts": 0,
+      "user_review": null,
+      "technical_check": null,
+      "agent_visual_review": "not_performed",
+      "generation_authorized_now": false,
+      "clarification_resolution": null
+    },
+    {
+      "exercise_id": "ring-pushup",
+      "name": "Ring Push Up",
+      "source_english": {
+        "description": "A ring push-up lowers the chest between freely moving rings and presses back to a stabilized high plank.",
+        "instructions": [
+          "Set the rings just above the floor and grip them in a stable neutral position.",
+          "Step back into a high plank with the body straight and feet set wide.",
+          "Lower the chest between the rings while keeping the elbows angled back.",
+          "Press through the rings to return to the plank and stabilize before repeating."
+        ],
+        "form_cues": [
+          "Keep the rings close to the body.",
+          "Brace the trunk.",
+          "Control the ring angle."
+        ],
+        "common_mistakes": [
+          "Letting the rings flare outward.",
+          "Dropping the hips.",
+          "Bouncing at the bottom."
+        ],
+        "safety_note": "Set the rings low and use a range you can control without the shoulders losing stability.",
+        "provenance": "authored"
+      },
+      "equipment": "other",
+      "primary_muscle": "chest",
+      "secondary_muscles": [
+        "shoulders",
+        "triceps"
+      ],
+      "source_catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+      "source_catalog_record_sha256": "f5681ad4b406d64f2e37ec1e5ae48b2532744ec76f98819a9382f1982a32cd0b",
+      "source_english_sha256": "e6a0be7c922e931b8fba3d6cd7eb341bb44d43509c25ce9502171bbe985f7d88",
+      "status": "ready",
+      "preparation_status": "prompt_prepared_not_generated",
+      "style_version": "v1",
+      "style_sha256": "8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578",
+      "human_reference": {
+        "repository_path": "assets/exercises/biceps-curl-dumbbell.png",
+        "absolute_path": "/workspace/lightweight-exercises-photo/assets/exercises/biceps-curl-dumbbell.png",
+        "sha256": "52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f",
+        "branch": "work",
+        "source_commit": "a6f296cbc6737991dd367e929b3e2df25874d4d8",
+        "role": "Human appearance/proportions/materials/anatomical style ONLY. Exercise pose, grip, equipment and muscles come from the exact-ID catalogue, never the reference.",
+        "pixels_reviewed_during_preparation": false
+      },
+      "scene": {
+        "single_phase": "Chest lowered between low rings",
+        "pose": "Straight high-plank body with feet wide; chest lowers between rings and elbows angle back, no hip sag.",
+        "grip": "Each hand grips one ring in the source neutral position.",
+        "supports_and_equipment": "Low rings just above floor on secured straps, feet on floor; hands stay inside rings, not on ground.",
+        "camera": "Front-side three-quarter view showing ring grips, low ring height and both foot contacts.",
+        "source_instruction_quotes": [
+          {
+            "index": 0,
+            "text": "Set the rings just above the floor and grip them in a stable neutral position."
+          },
+          {
+            "index": 1,
+            "text": "Step back into a high plank with the body straight and feet set wide."
+          },
+          {
+            "index": 2,
+            "text": "Lower the chest between the rings while keeping the elbows angled back."
+          },
+          {
+            "index": 3,
+            "text": "Press through the rings to return to the plank and stabilize before repeating."
+          }
+        ]
+      },
+      "prompt_payload": {
+        "identity_do_not_render_as_text": {
+          "exercise_id": "ring-pushup",
+          "name": "Ring Push Up",
+          "source_catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+          "source_catalog_record_sha256": "f5681ad4b406d64f2e37ec1e5ae48b2532744ec76f98819a9382f1982a32cd0b"
+        },
+        "exact_catalogue_source": {
+          "source_english": {
+            "description": "A ring push-up lowers the chest between freely moving rings and presses back to a stabilized high plank.",
+            "instructions": [
+              "Set the rings just above the floor and grip them in a stable neutral position.",
+              "Step back into a high plank with the body straight and feet set wide.",
+              "Lower the chest between the rings while keeping the elbows angled back.",
+              "Press through the rings to return to the plank and stabilize before repeating."
+            ],
+            "form_cues": [
+              "Keep the rings close to the body.",
+              "Brace the trunk.",
+              "Control the ring angle."
+            ],
+            "common_mistakes": [
+              "Letting the rings flare outward.",
+              "Dropping the hips.",
+              "Bouncing at the bottom."
+            ],
+            "safety_note": "Set the rings low and use a range you can control without the shoulders losing stability.",
+            "provenance": "authored"
+          },
+          "equipment": "other",
+          "primary_muscle": "chest",
+          "secondary_muscles": [
+            "shoulders",
+            "triceps"
+          ]
+        },
+        "human_reference": {
+          "repository_path": "assets/exercises/biceps-curl-dumbbell.png",
+          "absolute_path": "/workspace/lightweight-exercises-photo/assets/exercises/biceps-curl-dumbbell.png",
+          "sha256": "52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f",
+          "branch": "work",
+          "source_commit": "a6f296cbc6737991dd367e929b3e2df25874d4d8",
+          "role": "Human appearance/proportions/materials/anatomical style ONLY. Exercise pose, grip, equipment and muscles come from the exact-ID catalogue, never the reference.",
+          "pixels_reviewed_during_preparation": false
+        },
+        "style": {
+          "version": "v1",
+          "human_model": "One athletic bald male anatomical mannequin, opaque silver-gray muscular surfaces, consistent proportions and detailed 3D materials, plain black shorts, barefoot.",
+          "primary_highlight": {
+            "hex": "#F26445",
+            "rule": "Highlight only the exact primary muscle group provided for this exercise."
+          },
+          "secondary_highlight": {
+            "hex": "#F26445",
+            "intensity_fraction": [
+              0.4,
+              0.5
+            ],
+            "rule": "Only the exact secondary muscles, lighter same-hue highlight; if the list is empty add no secondary target."
+          },
+          "background": "Genuinely transparent PNG background, no white/checkerboard layer, no environment scene.",
+          "output": {
+            "format": "PNG",
+            "width": 1024,
+            "height": 1024,
+            "one_person": true,
+            "one_phase": true
+          },
+          "material_rules": "Highlights never make tissue transparent; no glow, whole-body orange tint, hair, text, labels, arrows, UI, borders, collage or extra person.",
+          "framing": "Full figure and all required equipment/supports visible within a square. Scale and use a three-quarter view to expose the specified contacts without changing anatomy, equipment, grip or technique.",
+          "no_invention": "Technique, equipment and muscles come only from the attached exact catalogue record. No extra attachments, numerical weights, brands or exact angles absent from the source."
+        },
+        "style_document_sha256": "8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578",
+        "scene": {
+          "single_phase": "Chest lowered between low rings",
+          "pose": "Straight high-plank body with feet wide; chest lowers between rings and elbows angle back, no hip sag.",
+          "grip": "Each hand grips one ring in the source neutral position.",
+          "supports_and_equipment": "Low rings just above floor on secured straps, feet on floor; hands stay inside rings, not on ground.",
+          "camera": "Front-side three-quarter view showing ring grips, low ring height and both foot contacts.",
+          "source_instruction_quotes": [
+            {
+              "index": 0,
+              "text": "Set the rings just above the floor and grip them in a stable neutral position."
+            },
+            {
+              "index": 1,
+              "text": "Step back into a high plank with the body straight and feet set wide."
+            },
+            {
+              "index": 2,
+              "text": "Lower the chest between the rings while keeping the elbows angled back."
+            },
+            {
+              "index": 3,
+              "text": "Press through the rings to return to the plank and stabilize before repeating."
+            }
+          ]
+        },
+        "supplementary_same_ID_sources": []
+      },
+      "generation_prompt": "Create exactly ONE square transparent PNG of the exact exercise below, using the referenced human for APPEARANCE ONLY. Render only the selected phase and camera. Identity/path/hash fields are metadata, never visible text.\n{\n  \"exact_catalogue_source\": {\n    \"equipment\": \"other\",\n    \"primary_muscle\": \"chest\",\n    \"secondary_muscles\": [\n      \"shoulders\",\n      \"triceps\"\n    ],\n    \"source_english\": {\n      \"common_mistakes\": [\n        \"Letting the rings flare outward.\",\n        \"Dropping the hips.\",\n        \"Bouncing at the bottom.\"\n      ],\n      \"description\": \"A ring push-up lowers the chest between freely moving rings and presses back to a stabilized high plank.\",\n      \"form_cues\": [\n        \"Keep the rings close to the body.\",\n        \"Brace the trunk.\",\n        \"Control the ring angle.\"\n      ],\n      \"instructions\": [\n        \"Set the rings just above the floor and grip them in a stable neutral position.\",\n        \"Step back into a high plank with the body straight and feet set wide.\",\n        \"Lower the chest between the rings while keeping the elbows angled back.\",\n        \"Press through the rings to return to the plank and stabilize before repeating.\"\n      ],\n      \"provenance\": \"authored\",\n      \"safety_note\": \"Set the rings low and use a range you can control without the shoulders losing stability.\"\n    }\n  },\n  \"human_reference\": {\n    \"absolute_path\": \"/workspace/lightweight-exercises-photo/assets/exercises/biceps-curl-dumbbell.png\",\n    \"branch\": \"work\",\n    \"pixels_reviewed_during_preparation\": false,\n    \"repository_path\": \"assets/exercises/biceps-curl-dumbbell.png\",\n    \"role\": \"Human appearance/proportions/materials/anatomical style ONLY. Exercise pose, grip, equipment and muscles come from the exact-ID catalogue, never the reference.\",\n    \"sha256\": \"52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f\",\n    \"source_commit\": \"a6f296cbc6737991dd367e929b3e2df25874d4d8\"\n  },\n  \"identity_do_not_render_as_text\": {\n    \"exercise_id\": \"ring-pushup\",\n    \"name\": \"Ring Push Up\",\n    \"source_catalog_record_sha256\": \"f5681ad4b406d64f2e37ec1e5ae48b2532744ec76f98819a9382f1982a32cd0b\",\n    \"source_catalog_sha256\": \"a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989\"\n  },\n  \"scene\": {\n    \"camera\": \"Front-side three-quarter view showing ring grips, low ring height and both foot contacts.\",\n    \"grip\": \"Each hand grips one ring in the source neutral position.\",\n    \"pose\": \"Straight high-plank body with feet wide; chest lowers between rings and elbows angle back, no hip sag.\",\n    \"single_phase\": \"Chest lowered between low rings\",\n    \"source_instruction_quotes\": [\n      {\n        \"index\": 0,\n        \"text\": \"Set the rings just above the floor and grip them in a stable neutral position.\"\n      },\n      {\n        \"index\": 1,\n        \"text\": \"Step back into a high plank with the body straight and feet set wide.\"\n      },\n      {\n        \"index\": 2,\n        \"text\": \"Lower the chest between the rings while keeping the elbows angled back.\"\n      },\n      {\n        \"index\": 3,\n        \"text\": \"Press through the rings to return to the plank and stabilize before repeating.\"\n      }\n    ],\n    \"supports_and_equipment\": \"Low rings just above floor on secured straps, feet on floor; hands stay inside rings, not on ground.\"\n  },\n  \"style\": {\n    \"background\": \"Genuinely transparent PNG background, no white/checkerboard layer, no environment scene.\",\n    \"framing\": \"Full figure and all required equipment/supports visible within a square. Scale and use a three-quarter view to expose the specified contacts without changing anatomy, equipment, grip or technique.\",\n    \"human_model\": \"One athletic bald male anatomical mannequin, opaque silver-gray muscular surfaces, consistent proportions and detailed 3D materials, plain black shorts, barefoot.\",\n    \"material_rules\": \"Highlights never make tissue transparent; no glow, whole-body orange tint, hair, text, labels, arrows, UI, borders, collage or extra person.\",\n    \"no_invention\": \"Technique, equipment and muscles come only from the attached exact catalogue record. No extra attachments, numerical weights, brands or exact angles absent from the source.\",\n    \"output\": {\n      \"format\": \"PNG\",\n      \"height\": 1024,\n      \"one_person\": true,\n      \"one_phase\": true,\n      \"width\": 1024\n    },\n    \"primary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"rule\": \"Highlight only the exact primary muscle group provided for this exercise.\"\n    },\n    \"secondary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"intensity_fraction\": [\n        0.4,\n        0.5\n      ],\n      \"rule\": \"Only the exact secondary muscles, lighter same-hue highlight; if the list is empty add no secondary target.\"\n    },\n    \"version\": \"v1\"\n  },\n  \"style_document_sha256\": \"8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578\",\n  \"supplementary_same_ID_sources\": []\n}",
+      "generation_prompt_sha256": "339448129a5ea2c5f2b55dbce9e7e8493f580948ff3b5d8cb55449939271ee75",
+      "planned_png_path": "/workspace/exercise-image-results/agent-03-others-010/ring-pushup/attempt-1.png",
+      "output_root": "/workspace/exercise-image-results",
+      "planned_output_relative_path": "agent-03-others-010/ring-pushup/attempt-1.png",
+      "result_path": null,
+      "result_sha256": null,
+      "attempts": 0,
+      "user_review": null,
+      "technical_check": null,
+      "agent_visual_review": "not_performed",
+      "generation_authorized_now": false,
+      "clarification_resolution": null
+    },
+    {
+      "exercise_id": "scapular-pull-ups",
+      "name": "Scapular Pull Ups",
+      "source_english": {
+        "description": "Hang from a pull-up bar and depress the shoulder blades with straight elbows before relaxing back to the hang.",
+        "instructions": [
+          "Hang from a pull-up bar with palms facing away and elbows straight.",
+          "Without bending the elbows, pull the shoulder blades down and slightly together.",
+          "Pause with the body lifted only by the scapular movement.",
+          "Release the shoulder blades slowly to return to the relaxed hang."
+        ],
+        "form_cues": [
+          "Keep the support points fixed.",
+          "Use a quiet controlled path.",
+          "Reset fully between repetitions."
+        ],
+        "common_mistakes": [
+          "Shifting the support point.",
+          "Using momentum instead of the target joint path.",
+          "Cutting the return short."
+        ],
+        "safety_note": "Use a secure setup and stop if alignment or control is lost.",
+        "provenance": "adapted"
+      },
+      "equipment": "none",
+      "primary_muscle": "upper_back",
+      "secondary_muscles": [
+        "lats",
+        "forearms"
+      ],
+      "source_catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+      "source_catalog_record_sha256": "2aa257c895b361ae68e7ff021f01ef6d214e8f40ee1a3b5d58eea9b5fcb84c8d",
+      "source_english_sha256": "de24df2a96e128c232542e1d9e8d2782f5ee14c2ae194f34db34c55414fbc6c1",
+      "status": "ready",
+      "preparation_status": "prompt_prepared_not_generated",
+      "style_version": "v1",
+      "style_sha256": "8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578",
+      "human_reference": {
+        "repository_path": "assets/exercises/biceps-curl-dumbbell.png",
+        "absolute_path": "/workspace/lightweight-exercises-photo/assets/exercises/biceps-curl-dumbbell.png",
+        "sha256": "52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f",
+        "branch": "work",
+        "source_commit": "a6f296cbc6737991dd367e929b3e2df25874d4d8",
+        "role": "Human appearance/proportions/materials/anatomical style ONLY. Exercise pose, grip, equipment and muscles come from the exact-ID catalogue, never the reference.",
+        "pixels_reviewed_during_preparation": false
+      },
+      "scene": {
+        "single_phase": "Scapular depression endpoint",
+        "pose": "Elbows stay STRAIGHT while shoulder blades move down and slightly together, lifting body only by scapular movement.",
+        "grip": "Both hands on pull-up bar, palms facing away.",
+        "supports_and_equipment": "Secure overhead bar supports hands; body hangs without foot contact or kip.",
+        "camera": "Rear three-quarter view exposing shoulder blades, straight elbows and whole bar support.",
+        "source_instruction_quotes": [
+          {
+            "index": 0,
+            "text": "Hang from a pull-up bar with palms facing away and elbows straight."
+          },
+          {
+            "index": 1,
+            "text": "Without bending the elbows, pull the shoulder blades down and slightly together."
+          },
+          {
+            "index": 2,
+            "text": "Pause with the body lifted only by the scapular movement."
+          },
+          {
+            "index": 3,
+            "text": "Release the shoulder blades slowly to return to the relaxed hang."
+          }
+        ]
+      },
+      "prompt_payload": {
+        "identity_do_not_render_as_text": {
+          "exercise_id": "scapular-pull-ups",
+          "name": "Scapular Pull Ups",
+          "source_catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+          "source_catalog_record_sha256": "2aa257c895b361ae68e7ff021f01ef6d214e8f40ee1a3b5d58eea9b5fcb84c8d"
+        },
+        "exact_catalogue_source": {
+          "source_english": {
+            "description": "Hang from a pull-up bar and depress the shoulder blades with straight elbows before relaxing back to the hang.",
+            "instructions": [
+              "Hang from a pull-up bar with palms facing away and elbows straight.",
+              "Without bending the elbows, pull the shoulder blades down and slightly together.",
+              "Pause with the body lifted only by the scapular movement.",
+              "Release the shoulder blades slowly to return to the relaxed hang."
+            ],
+            "form_cues": [
+              "Keep the support points fixed.",
+              "Use a quiet controlled path.",
+              "Reset fully between repetitions."
+            ],
+            "common_mistakes": [
+              "Shifting the support point.",
+              "Using momentum instead of the target joint path.",
+              "Cutting the return short."
+            ],
+            "safety_note": "Use a secure setup and stop if alignment or control is lost.",
+            "provenance": "adapted"
+          },
+          "equipment": "none",
+          "primary_muscle": "upper_back",
+          "secondary_muscles": [
+            "lats",
+            "forearms"
+          ]
+        },
+        "human_reference": {
+          "repository_path": "assets/exercises/biceps-curl-dumbbell.png",
+          "absolute_path": "/workspace/lightweight-exercises-photo/assets/exercises/biceps-curl-dumbbell.png",
+          "sha256": "52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f",
+          "branch": "work",
+          "source_commit": "a6f296cbc6737991dd367e929b3e2df25874d4d8",
+          "role": "Human appearance/proportions/materials/anatomical style ONLY. Exercise pose, grip, equipment and muscles come from the exact-ID catalogue, never the reference.",
+          "pixels_reviewed_during_preparation": false
+        },
+        "style": {
+          "version": "v1",
+          "human_model": "One athletic bald male anatomical mannequin, opaque silver-gray muscular surfaces, consistent proportions and detailed 3D materials, plain black shorts, barefoot.",
+          "primary_highlight": {
+            "hex": "#F26445",
+            "rule": "Highlight only the exact primary muscle group provided for this exercise."
+          },
+          "secondary_highlight": {
+            "hex": "#F26445",
+            "intensity_fraction": [
+              0.4,
+              0.5
+            ],
+            "rule": "Only the exact secondary muscles, lighter same-hue highlight; if the list is empty add no secondary target."
+          },
+          "background": "Genuinely transparent PNG background, no white/checkerboard layer, no environment scene.",
+          "output": {
+            "format": "PNG",
+            "width": 1024,
+            "height": 1024,
+            "one_person": true,
+            "one_phase": true
+          },
+          "material_rules": "Highlights never make tissue transparent; no glow, whole-body orange tint, hair, text, labels, arrows, UI, borders, collage or extra person.",
+          "framing": "Full figure and all required equipment/supports visible within a square. Scale and use a three-quarter view to expose the specified contacts without changing anatomy, equipment, grip or technique.",
+          "no_invention": "Technique, equipment and muscles come only from the attached exact catalogue record. No extra attachments, numerical weights, brands or exact angles absent from the source."
+        },
+        "style_document_sha256": "8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578",
+        "scene": {
+          "single_phase": "Scapular depression endpoint",
+          "pose": "Elbows stay STRAIGHT while shoulder blades move down and slightly together, lifting body only by scapular movement.",
+          "grip": "Both hands on pull-up bar, palms facing away.",
+          "supports_and_equipment": "Secure overhead bar supports hands; body hangs without foot contact or kip.",
+          "camera": "Rear three-quarter view exposing shoulder blades, straight elbows and whole bar support.",
+          "source_instruction_quotes": [
+            {
+              "index": 0,
+              "text": "Hang from a pull-up bar with palms facing away and elbows straight."
+            },
+            {
+              "index": 1,
+              "text": "Without bending the elbows, pull the shoulder blades down and slightly together."
+            },
+            {
+              "index": 2,
+              "text": "Pause with the body lifted only by the scapular movement."
+            },
+            {
+              "index": 3,
+              "text": "Release the shoulder blades slowly to return to the relaxed hang."
+            }
+          ]
+        },
+        "supplementary_same_ID_sources": []
+      },
+      "generation_prompt": "Create exactly ONE square transparent PNG of the exact exercise below, using the referenced human for APPEARANCE ONLY. Render only the selected phase and camera. Identity/path/hash fields are metadata, never visible text.\n{\n  \"exact_catalogue_source\": {\n    \"equipment\": \"none\",\n    \"primary_muscle\": \"upper_back\",\n    \"secondary_muscles\": [\n      \"lats\",\n      \"forearms\"\n    ],\n    \"source_english\": {\n      \"common_mistakes\": [\n        \"Shifting the support point.\",\n        \"Using momentum instead of the target joint path.\",\n        \"Cutting the return short.\"\n      ],\n      \"description\": \"Hang from a pull-up bar and depress the shoulder blades with straight elbows before relaxing back to the hang.\",\n      \"form_cues\": [\n        \"Keep the support points fixed.\",\n        \"Use a quiet controlled path.\",\n        \"Reset fully between repetitions.\"\n      ],\n      \"instructions\": [\n        \"Hang from a pull-up bar with palms facing away and elbows straight.\",\n        \"Without bending the elbows, pull the shoulder blades down and slightly together.\",\n        \"Pause with the body lifted only by the scapular movement.\",\n        \"Release the shoulder blades slowly to return to the relaxed hang.\"\n      ],\n      \"provenance\": \"adapted\",\n      \"safety_note\": \"Use a secure setup and stop if alignment or control is lost.\"\n    }\n  },\n  \"human_reference\": {\n    \"absolute_path\": \"/workspace/lightweight-exercises-photo/assets/exercises/biceps-curl-dumbbell.png\",\n    \"branch\": \"work\",\n    \"pixels_reviewed_during_preparation\": false,\n    \"repository_path\": \"assets/exercises/biceps-curl-dumbbell.png\",\n    \"role\": \"Human appearance/proportions/materials/anatomical style ONLY. Exercise pose, grip, equipment and muscles come from the exact-ID catalogue, never the reference.\",\n    \"sha256\": \"52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f\",\n    \"source_commit\": \"a6f296cbc6737991dd367e929b3e2df25874d4d8\"\n  },\n  \"identity_do_not_render_as_text\": {\n    \"exercise_id\": \"scapular-pull-ups\",\n    \"name\": \"Scapular Pull Ups\",\n    \"source_catalog_record_sha256\": \"2aa257c895b361ae68e7ff021f01ef6d214e8f40ee1a3b5d58eea9b5fcb84c8d\",\n    \"source_catalog_sha256\": \"a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989\"\n  },\n  \"scene\": {\n    \"camera\": \"Rear three-quarter view exposing shoulder blades, straight elbows and whole bar support.\",\n    \"grip\": \"Both hands on pull-up bar, palms facing away.\",\n    \"pose\": \"Elbows stay STRAIGHT while shoulder blades move down and slightly together, lifting body only by scapular movement.\",\n    \"single_phase\": \"Scapular depression endpoint\",\n    \"source_instruction_quotes\": [\n      {\n        \"index\": 0,\n        \"text\": \"Hang from a pull-up bar with palms facing away and elbows straight.\"\n      },\n      {\n        \"index\": 1,\n        \"text\": \"Without bending the elbows, pull the shoulder blades down and slightly together.\"\n      },\n      {\n        \"index\": 2,\n        \"text\": \"Pause with the body lifted only by the scapular movement.\"\n      },\n      {\n        \"index\": 3,\n        \"text\": \"Release the shoulder blades slowly to return to the relaxed hang.\"\n      }\n    ],\n    \"supports_and_equipment\": \"Secure overhead bar supports hands; body hangs without foot contact or kip.\"\n  },\n  \"style\": {\n    \"background\": \"Genuinely transparent PNG background, no white/checkerboard layer, no environment scene.\",\n    \"framing\": \"Full figure and all required equipment/supports visible within a square. Scale and use a three-quarter view to expose the specified contacts without changing anatomy, equipment, grip or technique.\",\n    \"human_model\": \"One athletic bald male anatomical mannequin, opaque silver-gray muscular surfaces, consistent proportions and detailed 3D materials, plain black shorts, barefoot.\",\n    \"material_rules\": \"Highlights never make tissue transparent; no glow, whole-body orange tint, hair, text, labels, arrows, UI, borders, collage or extra person.\",\n    \"no_invention\": \"Technique, equipment and muscles come only from the attached exact catalogue record. No extra attachments, numerical weights, brands or exact angles absent from the source.\",\n    \"output\": {\n      \"format\": \"PNG\",\n      \"height\": 1024,\n      \"one_person\": true,\n      \"one_phase\": true,\n      \"width\": 1024\n    },\n    \"primary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"rule\": \"Highlight only the exact primary muscle group provided for this exercise.\"\n    },\n    \"secondary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"intensity_fraction\": [\n        0.4,\n        0.5\n      ],\n      \"rule\": \"Only the exact secondary muscles, lighter same-hue highlight; if the list is empty add no secondary target.\"\n    },\n    \"version\": \"v1\"\n  },\n  \"style_document_sha256\": \"8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578\",\n  \"supplementary_same_ID_sources\": []\n}",
+      "generation_prompt_sha256": "2683e1f9cf19fd8497577e85d37592c9c378416ad28475ebceae2be149cc9d84",
+      "planned_png_path": "/workspace/exercise-image-results/agent-03-others-010/scapular-pull-ups/attempt-1.png",
+      "output_root": "/workspace/exercise-image-results",
+      "planned_output_relative_path": "agent-03-others-010/scapular-pull-ups/attempt-1.png",
+      "result_path": null,
+      "result_sha256": null,
+      "attempts": 0,
+      "user_review": null,
+      "technical_check": null,
+      "agent_visual_review": "not_performed",
+      "generation_authorized_now": false,
+      "clarification_resolution": null
+    },
+    {
+      "exercise_id": "squat-suspension",
+      "name": "Squat (Suspension)",
+      "source_english": {
+        "description": "A suspension squat uses the straps for balance while the hips and knees lower and extend under bodyweight.",
+        "instructions": [
+          "Hold the suspension handles and stand with feet shoulder-width apart.",
+          "Brace the trunk and sit the hips back while bending both knees.",
+          "Lower to a comfortable depth with the heels grounded and straps lightly tensioned.",
+          "Press through the feet to stand without pulling yourself forward."
+        ],
+        "form_cues": [
+          "Use the straps for balance, not a row.",
+          "Keep knees over toes.",
+          "Keep the chest lifted."
+        ],
+        "common_mistakes": [
+          "Pulling hard on the handles.",
+          "Letting the knees collapse.",
+          "Dropping the hips too quickly."
+        ],
+        "safety_note": "Anchor the suspension trainer securely and keep the handles at a height you can control.",
+        "provenance": "authored"
+      },
+      "equipment": "suspension",
+      "primary_muscle": "quadriceps",
+      "secondary_muscles": [
+        "glutes",
+        "hamstrings"
+      ],
+      "source_catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+      "source_catalog_record_sha256": "d54f931468cd328a8ff1921f6a72c2e6a06a50232d5cd8110542b5d458647392",
+      "source_english_sha256": "437430cf9566f8bf026286da3403971aa1d838508654318663dd4459895ee793",
+      "status": "ready",
+      "preparation_status": "prompt_prepared_not_generated",
+      "style_version": "v1",
+      "style_sha256": "8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578",
+      "human_reference": {
+        "repository_path": "assets/exercises/biceps-curl-dumbbell.png",
+        "absolute_path": "/workspace/lightweight-exercises-photo/assets/exercises/biceps-curl-dumbbell.png",
+        "sha256": "52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f",
+        "branch": "work",
+        "source_commit": "a6f296cbc6737991dd367e929b3e2df25874d4d8",
+        "role": "Human appearance/proportions/materials/anatomical style ONLY. Exercise pose, grip, equipment and muscles come from the exact-ID catalogue, never the reference.",
+        "pixels_reviewed_during_preparation": false
+      },
+      "scene": {
+        "single_phase": "Controlled balance-assisted squat depth",
+        "pose": "Hips sit back and both knees bend, chest lifted and trunk braced; comfortable depth, no hard pull or rowing.",
+        "grip": "Both hands hold suspension handles with light strap tension; no special hand rotation is specified.",
+        "supports_and_equipment": "Feet shoulder-width, heels grounded, suspension securely anchored and used for balance only.",
+        "camera": "Front-side three-quarter view showing heels, knees, handles and complete strap/anchor setup.",
+        "source_instruction_quotes": [
+          {
+            "index": 0,
+            "text": "Hold the suspension handles and stand with feet shoulder-width apart."
+          },
+          {
+            "index": 1,
+            "text": "Brace the trunk and sit the hips back while bending both knees."
+          },
+          {
+            "index": 2,
+            "text": "Lower to a comfortable depth with the heels grounded and straps lightly tensioned."
+          },
+          {
+            "index": 3,
+            "text": "Press through the feet to stand without pulling yourself forward."
+          }
+        ]
+      },
+      "prompt_payload": {
+        "identity_do_not_render_as_text": {
+          "exercise_id": "squat-suspension",
+          "name": "Squat (Suspension)",
+          "source_catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+          "source_catalog_record_sha256": "d54f931468cd328a8ff1921f6a72c2e6a06a50232d5cd8110542b5d458647392"
+        },
+        "exact_catalogue_source": {
+          "source_english": {
+            "description": "A suspension squat uses the straps for balance while the hips and knees lower and extend under bodyweight.",
+            "instructions": [
+              "Hold the suspension handles and stand with feet shoulder-width apart.",
+              "Brace the trunk and sit the hips back while bending both knees.",
+              "Lower to a comfortable depth with the heels grounded and straps lightly tensioned.",
+              "Press through the feet to stand without pulling yourself forward."
+            ],
+            "form_cues": [
+              "Use the straps for balance, not a row.",
+              "Keep knees over toes.",
+              "Keep the chest lifted."
+            ],
+            "common_mistakes": [
+              "Pulling hard on the handles.",
+              "Letting the knees collapse.",
+              "Dropping the hips too quickly."
+            ],
+            "safety_note": "Anchor the suspension trainer securely and keep the handles at a height you can control.",
+            "provenance": "authored"
+          },
+          "equipment": "suspension",
+          "primary_muscle": "quadriceps",
+          "secondary_muscles": [
+            "glutes",
+            "hamstrings"
+          ]
+        },
+        "human_reference": {
+          "repository_path": "assets/exercises/biceps-curl-dumbbell.png",
+          "absolute_path": "/workspace/lightweight-exercises-photo/assets/exercises/biceps-curl-dumbbell.png",
+          "sha256": "52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f",
+          "branch": "work",
+          "source_commit": "a6f296cbc6737991dd367e929b3e2df25874d4d8",
+          "role": "Human appearance/proportions/materials/anatomical style ONLY. Exercise pose, grip, equipment and muscles come from the exact-ID catalogue, never the reference.",
+          "pixels_reviewed_during_preparation": false
+        },
+        "style": {
+          "version": "v1",
+          "human_model": "One athletic bald male anatomical mannequin, opaque silver-gray muscular surfaces, consistent proportions and detailed 3D materials, plain black shorts, barefoot.",
+          "primary_highlight": {
+            "hex": "#F26445",
+            "rule": "Highlight only the exact primary muscle group provided for this exercise."
+          },
+          "secondary_highlight": {
+            "hex": "#F26445",
+            "intensity_fraction": [
+              0.4,
+              0.5
+            ],
+            "rule": "Only the exact secondary muscles, lighter same-hue highlight; if the list is empty add no secondary target."
+          },
+          "background": "Genuinely transparent PNG background, no white/checkerboard layer, no environment scene.",
+          "output": {
+            "format": "PNG",
+            "width": 1024,
+            "height": 1024,
+            "one_person": true,
+            "one_phase": true
+          },
+          "material_rules": "Highlights never make tissue transparent; no glow, whole-body orange tint, hair, text, labels, arrows, UI, borders, collage or extra person.",
+          "framing": "Full figure and all required equipment/supports visible within a square. Scale and use a three-quarter view to expose the specified contacts without changing anatomy, equipment, grip or technique.",
+          "no_invention": "Technique, equipment and muscles come only from the attached exact catalogue record. No extra attachments, numerical weights, brands or exact angles absent from the source."
+        },
+        "style_document_sha256": "8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578",
+        "scene": {
+          "single_phase": "Controlled balance-assisted squat depth",
+          "pose": "Hips sit back and both knees bend, chest lifted and trunk braced; comfortable depth, no hard pull or rowing.",
+          "grip": "Both hands hold suspension handles with light strap tension; no special hand rotation is specified.",
+          "supports_and_equipment": "Feet shoulder-width, heels grounded, suspension securely anchored and used for balance only.",
+          "camera": "Front-side three-quarter view showing heels, knees, handles and complete strap/anchor setup.",
+          "source_instruction_quotes": [
+            {
+              "index": 0,
+              "text": "Hold the suspension handles and stand with feet shoulder-width apart."
+            },
+            {
+              "index": 1,
+              "text": "Brace the trunk and sit the hips back while bending both knees."
+            },
+            {
+              "index": 2,
+              "text": "Lower to a comfortable depth with the heels grounded and straps lightly tensioned."
+            },
+            {
+              "index": 3,
+              "text": "Press through the feet to stand without pulling yourself forward."
+            }
+          ]
+        },
+        "supplementary_same_ID_sources": []
+      },
+      "generation_prompt": "Create exactly ONE square transparent PNG of the exact exercise below, using the referenced human for APPEARANCE ONLY. Render only the selected phase and camera. Identity/path/hash fields are metadata, never visible text.\n{\n  \"exact_catalogue_source\": {\n    \"equipment\": \"suspension\",\n    \"primary_muscle\": \"quadriceps\",\n    \"secondary_muscles\": [\n      \"glutes\",\n      \"hamstrings\"\n    ],\n    \"source_english\": {\n      \"common_mistakes\": [\n        \"Pulling hard on the handles.\",\n        \"Letting the knees collapse.\",\n        \"Dropping the hips too quickly.\"\n      ],\n      \"description\": \"A suspension squat uses the straps for balance while the hips and knees lower and extend under bodyweight.\",\n      \"form_cues\": [\n        \"Use the straps for balance, not a row.\",\n        \"Keep knees over toes.\",\n        \"Keep the chest lifted.\"\n      ],\n      \"instructions\": [\n        \"Hold the suspension handles and stand with feet shoulder-width apart.\",\n        \"Brace the trunk and sit the hips back while bending both knees.\",\n        \"Lower to a comfortable depth with the heels grounded and straps lightly tensioned.\",\n        \"Press through the feet to stand without pulling yourself forward.\"\n      ],\n      \"provenance\": \"authored\",\n      \"safety_note\": \"Anchor the suspension trainer securely and keep the handles at a height you can control.\"\n    }\n  },\n  \"human_reference\": {\n    \"absolute_path\": \"/workspace/lightweight-exercises-photo/assets/exercises/biceps-curl-dumbbell.png\",\n    \"branch\": \"work\",\n    \"pixels_reviewed_during_preparation\": false,\n    \"repository_path\": \"assets/exercises/biceps-curl-dumbbell.png\",\n    \"role\": \"Human appearance/proportions/materials/anatomical style ONLY. Exercise pose, grip, equipment and muscles come from the exact-ID catalogue, never the reference.\",\n    \"sha256\": \"52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f\",\n    \"source_commit\": \"a6f296cbc6737991dd367e929b3e2df25874d4d8\"\n  },\n  \"identity_do_not_render_as_text\": {\n    \"exercise_id\": \"squat-suspension\",\n    \"name\": \"Squat (Suspension)\",\n    \"source_catalog_record_sha256\": \"d54f931468cd328a8ff1921f6a72c2e6a06a50232d5cd8110542b5d458647392\",\n    \"source_catalog_sha256\": \"a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989\"\n  },\n  \"scene\": {\n    \"camera\": \"Front-side three-quarter view showing heels, knees, handles and complete strap/anchor setup.\",\n    \"grip\": \"Both hands hold suspension handles with light strap tension; no special hand rotation is specified.\",\n    \"pose\": \"Hips sit back and both knees bend, chest lifted and trunk braced; comfortable depth, no hard pull or rowing.\",\n    \"single_phase\": \"Controlled balance-assisted squat depth\",\n    \"source_instruction_quotes\": [\n      {\n        \"index\": 0,\n        \"text\": \"Hold the suspension handles and stand with feet shoulder-width apart.\"\n      },\n      {\n        \"index\": 1,\n        \"text\": \"Brace the trunk and sit the hips back while bending both knees.\"\n      },\n      {\n        \"index\": 2,\n        \"text\": \"Lower to a comfortable depth with the heels grounded and straps lightly tensioned.\"\n      },\n      {\n        \"index\": 3,\n        \"text\": \"Press through the feet to stand without pulling yourself forward.\"\n      }\n    ],\n    \"supports_and_equipment\": \"Feet shoulder-width, heels grounded, suspension securely anchored and used for balance only.\"\n  },\n  \"style\": {\n    \"background\": \"Genuinely transparent PNG background, no white/checkerboard layer, no environment scene.\",\n    \"framing\": \"Full figure and all required equipment/supports visible within a square. Scale and use a three-quarter view to expose the specified contacts without changing anatomy, equipment, grip or technique.\",\n    \"human_model\": \"One athletic bald male anatomical mannequin, opaque silver-gray muscular surfaces, consistent proportions and detailed 3D materials, plain black shorts, barefoot.\",\n    \"material_rules\": \"Highlights never make tissue transparent; no glow, whole-body orange tint, hair, text, labels, arrows, UI, borders, collage or extra person.\",\n    \"no_invention\": \"Technique, equipment and muscles come only from the attached exact catalogue record. No extra attachments, numerical weights, brands or exact angles absent from the source.\",\n    \"output\": {\n      \"format\": \"PNG\",\n      \"height\": 1024,\n      \"one_person\": true,\n      \"one_phase\": true,\n      \"width\": 1024\n    },\n    \"primary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"rule\": \"Highlight only the exact primary muscle group provided for this exercise.\"\n    },\n    \"secondary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"intensity_fraction\": [\n        0.4,\n        0.5\n      ],\n      \"rule\": \"Only the exact secondary muscles, lighter same-hue highlight; if the list is empty add no secondary target.\"\n    },\n    \"version\": \"v1\"\n  },\n  \"style_document_sha256\": \"8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578\",\n  \"supplementary_same_ID_sources\": []\n}",
+      "generation_prompt_sha256": "8e5c541649d2cdb7bd9fd139c5bdff40f82cd53195de28f120e6284b8f0c4991",
+      "planned_png_path": "/workspace/exercise-image-results/agent-03-others-010/squat-suspension/attempt-1.png",
+      "output_root": "/workspace/exercise-image-results",
+      "planned_output_relative_path": "agent-03-others-010/squat-suspension/attempt-1.png",
+      "result_path": null,
+      "result_sha256": null,
+      "attempts": 0,
+      "user_review": null,
+      "technical_check": null,
+      "agent_visual_review": "not_performed",
+      "generation_authorized_now": false,
+      "clarification_resolution": null
+    },
+    {
+      "exercise_id": "sternum-pullup-gironda-machine",
+      "name": "Sternum Pull up (Gironda)",
+      "source_english": {
+        "description": "A Gironda sternum pull-up draws the upper chest toward a high bar while the torso leans back.",
+        "instructions": [
+          "Grip the high bar overhand with hands slightly wider than the shoulders and begin from a full hang.",
+          "Brace the core and lean the torso back as you pull the sternum toward the bar.",
+          "Drive the elbows toward the ribs until the upper chest approaches the bar.",
+          "Lower slowly to the full hang without swinging."
+        ],
+        "form_cues": [
+          "Keep the chest leading toward the bar.",
+          "Drive elbows down and back.",
+          "Lower from the top without swinging."
+        ],
+        "common_mistakes": [
+          "Pulling only the chin upward.",
+          "Kipping the torso.",
+          "Dropping from the top."
+        ],
+        "safety_note": "Use assistance or a smaller range if the shoulders cannot control the sternum-led pull.",
+        "provenance": "adapted"
+      },
+      "equipment": "machine",
+      "primary_muscle": "lats",
+      "secondary_muscles": [
+        "upper_back",
+        "biceps",
+        "forearms"
+      ],
+      "source_catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+      "source_catalog_record_sha256": "e3f1f169414307bed4144a686385baa85fa9cb6bf62c5cffc491ecb182dd8770",
+      "source_english_sha256": "69342593b09ac68ff3f5863f3ff154a4bf0a33e471fda73464e984822c032c57",
+      "status": "ready",
+      "preparation_status": "prompt_prepared_not_generated",
+      "style_version": "v1",
+      "style_sha256": "8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578",
+      "human_reference": {
+        "repository_path": "assets/exercises/biceps-curl-dumbbell.png",
+        "absolute_path": "/workspace/lightweight-exercises-photo/assets/exercises/biceps-curl-dumbbell.png",
+        "sha256": "52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f",
+        "branch": "work",
+        "source_commit": "a6f296cbc6737991dd367e929b3e2df25874d4d8",
+        "role": "Human appearance/proportions/materials/anatomical style ONLY. Exercise pose, grip, equipment and muscles come from the exact-ID catalogue, never the reference.",
+        "pixels_reviewed_during_preparation": false
+      },
+      "scene": {
+        "single_phase": "Upper chest approaching high bar",
+        "pose": "Torso leans back while sternum leads toward bar, elbows travel down and back toward ribs; no chin-only pull or kip.",
+        "grip": "Overhand grip, hands slightly wider than shoulders.",
+        "supports_and_equipment": "Hands on secure high fixed bar, body hanging clear of floor; no weighted machine attachments.",
+        "camera": "Side-rear three-quarter view showing sternum-bar relation, backward torso lean and full body.",
+        "source_instruction_quotes": [
+          {
+            "index": 0,
+            "text": "Grip the high bar overhand with hands slightly wider than the shoulders and begin from a full hang."
+          },
+          {
+            "index": 1,
+            "text": "Brace the core and lean the torso back as you pull the sternum toward the bar."
+          },
+          {
+            "index": 2,
+            "text": "Drive the elbows toward the ribs until the upper chest approaches the bar."
+          },
+          {
+            "index": 3,
+            "text": "Lower slowly to the full hang without swinging."
+          }
+        ]
+      },
+      "prompt_payload": {
+        "identity_do_not_render_as_text": {
+          "exercise_id": "sternum-pullup-gironda-machine",
+          "name": "Sternum Pull up (Gironda)",
+          "source_catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+          "source_catalog_record_sha256": "e3f1f169414307bed4144a686385baa85fa9cb6bf62c5cffc491ecb182dd8770"
+        },
+        "exact_catalogue_source": {
+          "source_english": {
+            "description": "A Gironda sternum pull-up draws the upper chest toward a high bar while the torso leans back.",
+            "instructions": [
+              "Grip the high bar overhand with hands slightly wider than the shoulders and begin from a full hang.",
+              "Brace the core and lean the torso back as you pull the sternum toward the bar.",
+              "Drive the elbows toward the ribs until the upper chest approaches the bar.",
+              "Lower slowly to the full hang without swinging."
+            ],
+            "form_cues": [
+              "Keep the chest leading toward the bar.",
+              "Drive elbows down and back.",
+              "Lower from the top without swinging."
+            ],
+            "common_mistakes": [
+              "Pulling only the chin upward.",
+              "Kipping the torso.",
+              "Dropping from the top."
+            ],
+            "safety_note": "Use assistance or a smaller range if the shoulders cannot control the sternum-led pull.",
+            "provenance": "adapted"
+          },
+          "equipment": "machine",
+          "primary_muscle": "lats",
+          "secondary_muscles": [
+            "upper_back",
+            "biceps",
+            "forearms"
+          ]
+        },
+        "human_reference": {
+          "repository_path": "assets/exercises/biceps-curl-dumbbell.png",
+          "absolute_path": "/workspace/lightweight-exercises-photo/assets/exercises/biceps-curl-dumbbell.png",
+          "sha256": "52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f",
+          "branch": "work",
+          "source_commit": "a6f296cbc6737991dd367e929b3e2df25874d4d8",
+          "role": "Human appearance/proportions/materials/anatomical style ONLY. Exercise pose, grip, equipment and muscles come from the exact-ID catalogue, never the reference.",
+          "pixels_reviewed_during_preparation": false
+        },
+        "style": {
+          "version": "v1",
+          "human_model": "One athletic bald male anatomical mannequin, opaque silver-gray muscular surfaces, consistent proportions and detailed 3D materials, plain black shorts, barefoot.",
+          "primary_highlight": {
+            "hex": "#F26445",
+            "rule": "Highlight only the exact primary muscle group provided for this exercise."
+          },
+          "secondary_highlight": {
+            "hex": "#F26445",
+            "intensity_fraction": [
+              0.4,
+              0.5
+            ],
+            "rule": "Only the exact secondary muscles, lighter same-hue highlight; if the list is empty add no secondary target."
+          },
+          "background": "Genuinely transparent PNG background, no white/checkerboard layer, no environment scene.",
+          "output": {
+            "format": "PNG",
+            "width": 1024,
+            "height": 1024,
+            "one_person": true,
+            "one_phase": true
+          },
+          "material_rules": "Highlights never make tissue transparent; no glow, whole-body orange tint, hair, text, labels, arrows, UI, borders, collage or extra person.",
+          "framing": "Full figure and all required equipment/supports visible within a square. Scale and use a three-quarter view to expose the specified contacts without changing anatomy, equipment, grip or technique.",
+          "no_invention": "Technique, equipment and muscles come only from the attached exact catalogue record. No extra attachments, numerical weights, brands or exact angles absent from the source."
+        },
+        "style_document_sha256": "8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578",
+        "scene": {
+          "single_phase": "Upper chest approaching high bar",
+          "pose": "Torso leans back while sternum leads toward bar, elbows travel down and back toward ribs; no chin-only pull or kip.",
+          "grip": "Overhand grip, hands slightly wider than shoulders.",
+          "supports_and_equipment": "Hands on secure high fixed bar, body hanging clear of floor; no weighted machine attachments.",
+          "camera": "Side-rear three-quarter view showing sternum-bar relation, backward torso lean and full body.",
+          "source_instruction_quotes": [
+            {
+              "index": 0,
+              "text": "Grip the high bar overhand with hands slightly wider than the shoulders and begin from a full hang."
+            },
+            {
+              "index": 1,
+              "text": "Brace the core and lean the torso back as you pull the sternum toward the bar."
+            },
+            {
+              "index": 2,
+              "text": "Drive the elbows toward the ribs until the upper chest approaches the bar."
+            },
+            {
+              "index": 3,
+              "text": "Lower slowly to the full hang without swinging."
+            }
+          ]
+        },
+        "supplementary_same_ID_sources": []
+      },
+      "generation_prompt": "Create exactly ONE square transparent PNG of the exact exercise below, using the referenced human for APPEARANCE ONLY. Render only the selected phase and camera. Identity/path/hash fields are metadata, never visible text.\n{\n  \"exact_catalogue_source\": {\n    \"equipment\": \"machine\",\n    \"primary_muscle\": \"lats\",\n    \"secondary_muscles\": [\n      \"upper_back\",\n      \"biceps\",\n      \"forearms\"\n    ],\n    \"source_english\": {\n      \"common_mistakes\": [\n        \"Pulling only the chin upward.\",\n        \"Kipping the torso.\",\n        \"Dropping from the top.\"\n      ],\n      \"description\": \"A Gironda sternum pull-up draws the upper chest toward a high bar while the torso leans back.\",\n      \"form_cues\": [\n        \"Keep the chest leading toward the bar.\",\n        \"Drive elbows down and back.\",\n        \"Lower from the top without swinging.\"\n      ],\n      \"instructions\": [\n        \"Grip the high bar overhand with hands slightly wider than the shoulders and begin from a full hang.\",\n        \"Brace the core and lean the torso back as you pull the sternum toward the bar.\",\n        \"Drive the elbows toward the ribs until the upper chest approaches the bar.\",\n        \"Lower slowly to the full hang without swinging.\"\n      ],\n      \"provenance\": \"adapted\",\n      \"safety_note\": \"Use assistance or a smaller range if the shoulders cannot control the sternum-led pull.\"\n    }\n  },\n  \"human_reference\": {\n    \"absolute_path\": \"/workspace/lightweight-exercises-photo/assets/exercises/biceps-curl-dumbbell.png\",\n    \"branch\": \"work\",\n    \"pixels_reviewed_during_preparation\": false,\n    \"repository_path\": \"assets/exercises/biceps-curl-dumbbell.png\",\n    \"role\": \"Human appearance/proportions/materials/anatomical style ONLY. Exercise pose, grip, equipment and muscles come from the exact-ID catalogue, never the reference.\",\n    \"sha256\": \"52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f\",\n    \"source_commit\": \"a6f296cbc6737991dd367e929b3e2df25874d4d8\"\n  },\n  \"identity_do_not_render_as_text\": {\n    \"exercise_id\": \"sternum-pullup-gironda-machine\",\n    \"name\": \"Sternum Pull up (Gironda)\",\n    \"source_catalog_record_sha256\": \"e3f1f169414307bed4144a686385baa85fa9cb6bf62c5cffc491ecb182dd8770\",\n    \"source_catalog_sha256\": \"a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989\"\n  },\n  \"scene\": {\n    \"camera\": \"Side-rear three-quarter view showing sternum-bar relation, backward torso lean and full body.\",\n    \"grip\": \"Overhand grip, hands slightly wider than shoulders.\",\n    \"pose\": \"Torso leans back while sternum leads toward bar, elbows travel down and back toward ribs; no chin-only pull or kip.\",\n    \"single_phase\": \"Upper chest approaching high bar\",\n    \"source_instruction_quotes\": [\n      {\n        \"index\": 0,\n        \"text\": \"Grip the high bar overhand with hands slightly wider than the shoulders and begin from a full hang.\"\n      },\n      {\n        \"index\": 1,\n        \"text\": \"Brace the core and lean the torso back as you pull the sternum toward the bar.\"\n      },\n      {\n        \"index\": 2,\n        \"text\": \"Drive the elbows toward the ribs until the upper chest approaches the bar.\"\n      },\n      {\n        \"index\": 3,\n        \"text\": \"Lower slowly to the full hang without swinging.\"\n      }\n    ],\n    \"supports_and_equipment\": \"Hands on secure high fixed bar, body hanging clear of floor; no weighted machine attachments.\"\n  },\n  \"style\": {\n    \"background\": \"Genuinely transparent PNG background, no white/checkerboard layer, no environment scene.\",\n    \"framing\": \"Full figure and all required equipment/supports visible within a square. Scale and use a three-quarter view to expose the specified contacts without changing anatomy, equipment, grip or technique.\",\n    \"human_model\": \"One athletic bald male anatomical mannequin, opaque silver-gray muscular surfaces, consistent proportions and detailed 3D materials, plain black shorts, barefoot.\",\n    \"material_rules\": \"Highlights never make tissue transparent; no glow, whole-body orange tint, hair, text, labels, arrows, UI, borders, collage or extra person.\",\n    \"no_invention\": \"Technique, equipment and muscles come only from the attached exact catalogue record. No extra attachments, numerical weights, brands or exact angles absent from the source.\",\n    \"output\": {\n      \"format\": \"PNG\",\n      \"height\": 1024,\n      \"one_person\": true,\n      \"one_phase\": true,\n      \"width\": 1024\n    },\n    \"primary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"rule\": \"Highlight only the exact primary muscle group provided for this exercise.\"\n    },\n    \"secondary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"intensity_fraction\": [\n        0.4,\n        0.5\n      ],\n      \"rule\": \"Only the exact secondary muscles, lighter same-hue highlight; if the list is empty add no secondary target.\"\n    },\n    \"version\": \"v1\"\n  },\n  \"style_document_sha256\": \"8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578\",\n  \"supplementary_same_ID_sources\": []\n}",
+      "generation_prompt_sha256": "40e4ee421b062cfa6a9e5055c3ad140f50ccd09c2e6c6ab099b38541827f52a3",
+      "planned_png_path": "/workspace/exercise-image-results/agent-03-others-010/sternum-pullup-gironda-machine/attempt-1.png",
+      "output_root": "/workspace/exercise-image-results",
+      "planned_output_relative_path": "agent-03-others-010/sternum-pullup-gironda-machine/attempt-1.png",
+      "result_path": null,
+      "result_sha256": null,
+      "attempts": 0,
+      "user_review": null,
+      "technical_check": null,
+      "agent_visual_review": "not_performed",
+      "generation_authorized_now": false,
+      "clarification_resolution": null
+    },
+    {
+      "exercise_id": "toes-to-bar",
+      "name": "Toes to Bar",
+      "source_english": {
+        "description": "Toes to Bar hangs from an overhead bar and lifts straight legs until the toes contact the bar.",
+        "instructions": [
+          "Grip a secure pull-up bar overhand with arms straight and legs hanging together.",
+          "Brace the abdomen and raise the straight legs toward the bar without swinging.",
+          "Continue until the toes touch the bar between the hands.",
+          "Lower the legs slowly to the dead hang and reset."
+        ],
+        "form_cues": [
+          "Keep shoulders active.",
+          "Keep legs together.",
+          "Control the swing."
+        ],
+        "common_mistakes": [
+          "Kipping uncontrollably.",
+          "Bending the knees early.",
+          "Dropping from the top."
+        ],
+        "safety_note": "Use a secure bar and a bent-knee raise until the toes-to-bar path is controlled.",
+        "provenance": "authored"
+      },
+      "equipment": "none",
+      "primary_muscle": "abdominals",
+      "secondary_muscles": [
+        "forearms"
+      ],
+      "source_catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+      "source_catalog_record_sha256": "f83289c04ac92fbd8c7f774b7a57a73c95d71c13fd88c61ec2e364b64c3a9f3d",
+      "source_english_sha256": "3513632cf40635ae866984d1fc3634144523b6f4c4dc1cecfcd7055cc8af49ff",
+      "status": "ready",
+      "preparation_status": "prompt_prepared_not_generated",
+      "style_version": "v1",
+      "style_sha256": "8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578",
+      "human_reference": {
+        "repository_path": "assets/exercises/biceps-curl-dumbbell.png",
+        "absolute_path": "/workspace/lightweight-exercises-photo/assets/exercises/biceps-curl-dumbbell.png",
+        "sha256": "52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f",
+        "branch": "work",
+        "source_commit": "a6f296cbc6737991dd367e929b3e2df25874d4d8",
+        "role": "Human appearance/proportions/materials/anatomical style ONLY. Exercise pose, grip, equipment and muscles come from the exact-ID catalogue, never the reference.",
+        "pixels_reviewed_during_preparation": false
+      },
+      "scene": {
+        "single_phase": "Toes contacting bar between hands",
+        "pose": "Arms stay straight, legs together and straight; abdomen raises legs until toes contact bar, with controlled pelvis and no swing.",
+        "grip": "Overhand grip on secure pull-up bar.",
+        "supports_and_equipment": "Hands and toes contact the same fixed overhead bar at this endpoint; no floor support.",
+        "camera": "Side three-quarter view exposing straight elbows, straight legs and toe contact between the hands.",
+        "source_instruction_quotes": [
+          {
+            "index": 0,
+            "text": "Grip a secure pull-up bar overhand with arms straight and legs hanging together."
+          },
+          {
+            "index": 1,
+            "text": "Brace the abdomen and raise the straight legs toward the bar without swinging."
+          },
+          {
+            "index": 2,
+            "text": "Continue until the toes touch the bar between the hands."
+          },
+          {
+            "index": 3,
+            "text": "Lower the legs slowly to the dead hang and reset."
+          }
+        ]
+      },
+      "prompt_payload": {
+        "identity_do_not_render_as_text": {
+          "exercise_id": "toes-to-bar",
+          "name": "Toes to Bar",
+          "source_catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+          "source_catalog_record_sha256": "f83289c04ac92fbd8c7f774b7a57a73c95d71c13fd88c61ec2e364b64c3a9f3d"
+        },
+        "exact_catalogue_source": {
+          "source_english": {
+            "description": "Toes to Bar hangs from an overhead bar and lifts straight legs until the toes contact the bar.",
+            "instructions": [
+              "Grip a secure pull-up bar overhand with arms straight and legs hanging together.",
+              "Brace the abdomen and raise the straight legs toward the bar without swinging.",
+              "Continue until the toes touch the bar between the hands.",
+              "Lower the legs slowly to the dead hang and reset."
+            ],
+            "form_cues": [
+              "Keep shoulders active.",
+              "Keep legs together.",
+              "Control the swing."
+            ],
+            "common_mistakes": [
+              "Kipping uncontrollably.",
+              "Bending the knees early.",
+              "Dropping from the top."
+            ],
+            "safety_note": "Use a secure bar and a bent-knee raise until the toes-to-bar path is controlled.",
+            "provenance": "authored"
+          },
+          "equipment": "none",
+          "primary_muscle": "abdominals",
+          "secondary_muscles": [
+            "forearms"
+          ]
+        },
+        "human_reference": {
+          "repository_path": "assets/exercises/biceps-curl-dumbbell.png",
+          "absolute_path": "/workspace/lightweight-exercises-photo/assets/exercises/biceps-curl-dumbbell.png",
+          "sha256": "52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f",
+          "branch": "work",
+          "source_commit": "a6f296cbc6737991dd367e929b3e2df25874d4d8",
+          "role": "Human appearance/proportions/materials/anatomical style ONLY. Exercise pose, grip, equipment and muscles come from the exact-ID catalogue, never the reference.",
+          "pixels_reviewed_during_preparation": false
+        },
+        "style": {
+          "version": "v1",
+          "human_model": "One athletic bald male anatomical mannequin, opaque silver-gray muscular surfaces, consistent proportions and detailed 3D materials, plain black shorts, barefoot.",
+          "primary_highlight": {
+            "hex": "#F26445",
+            "rule": "Highlight only the exact primary muscle group provided for this exercise."
+          },
+          "secondary_highlight": {
+            "hex": "#F26445",
+            "intensity_fraction": [
+              0.4,
+              0.5
+            ],
+            "rule": "Only the exact secondary muscles, lighter same-hue highlight; if the list is empty add no secondary target."
+          },
+          "background": "Genuinely transparent PNG background, no white/checkerboard layer, no environment scene.",
+          "output": {
+            "format": "PNG",
+            "width": 1024,
+            "height": 1024,
+            "one_person": true,
+            "one_phase": true
+          },
+          "material_rules": "Highlights never make tissue transparent; no glow, whole-body orange tint, hair, text, labels, arrows, UI, borders, collage or extra person.",
+          "framing": "Full figure and all required equipment/supports visible within a square. Scale and use a three-quarter view to expose the specified contacts without changing anatomy, equipment, grip or technique.",
+          "no_invention": "Technique, equipment and muscles come only from the attached exact catalogue record. No extra attachments, numerical weights, brands or exact angles absent from the source."
+        },
+        "style_document_sha256": "8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578",
+        "scene": {
+          "single_phase": "Toes contacting bar between hands",
+          "pose": "Arms stay straight, legs together and straight; abdomen raises legs until toes contact bar, with controlled pelvis and no swing.",
+          "grip": "Overhand grip on secure pull-up bar.",
+          "supports_and_equipment": "Hands and toes contact the same fixed overhead bar at this endpoint; no floor support.",
+          "camera": "Side three-quarter view exposing straight elbows, straight legs and toe contact between the hands.",
+          "source_instruction_quotes": [
+            {
+              "index": 0,
+              "text": "Grip a secure pull-up bar overhand with arms straight and legs hanging together."
+            },
+            {
+              "index": 1,
+              "text": "Brace the abdomen and raise the straight legs toward the bar without swinging."
+            },
+            {
+              "index": 2,
+              "text": "Continue until the toes touch the bar between the hands."
+            },
+            {
+              "index": 3,
+              "text": "Lower the legs slowly to the dead hang and reset."
+            }
+          ]
+        },
+        "supplementary_same_ID_sources": []
+      },
+      "generation_prompt": "Create exactly ONE square transparent PNG of the exact exercise below, using the referenced human for APPEARANCE ONLY. Render only the selected phase and camera. Identity/path/hash fields are metadata, never visible text.\n{\n  \"exact_catalogue_source\": {\n    \"equipment\": \"none\",\n    \"primary_muscle\": \"abdominals\",\n    \"secondary_muscles\": [\n      \"forearms\"\n    ],\n    \"source_english\": {\n      \"common_mistakes\": [\n        \"Kipping uncontrollably.\",\n        \"Bending the knees early.\",\n        \"Dropping from the top.\"\n      ],\n      \"description\": \"Toes to Bar hangs from an overhead bar and lifts straight legs until the toes contact the bar.\",\n      \"form_cues\": [\n        \"Keep shoulders active.\",\n        \"Keep legs together.\",\n        \"Control the swing.\"\n      ],\n      \"instructions\": [\n        \"Grip a secure pull-up bar overhand with arms straight and legs hanging together.\",\n        \"Brace the abdomen and raise the straight legs toward the bar without swinging.\",\n        \"Continue until the toes touch the bar between the hands.\",\n        \"Lower the legs slowly to the dead hang and reset.\"\n      ],\n      \"provenance\": \"authored\",\n      \"safety_note\": \"Use a secure bar and a bent-knee raise until the toes-to-bar path is controlled.\"\n    }\n  },\n  \"human_reference\": {\n    \"absolute_path\": \"/workspace/lightweight-exercises-photo/assets/exercises/biceps-curl-dumbbell.png\",\n    \"branch\": \"work\",\n    \"pixels_reviewed_during_preparation\": false,\n    \"repository_path\": \"assets/exercises/biceps-curl-dumbbell.png\",\n    \"role\": \"Human appearance/proportions/materials/anatomical style ONLY. Exercise pose, grip, equipment and muscles come from the exact-ID catalogue, never the reference.\",\n    \"sha256\": \"52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f\",\n    \"source_commit\": \"a6f296cbc6737991dd367e929b3e2df25874d4d8\"\n  },\n  \"identity_do_not_render_as_text\": {\n    \"exercise_id\": \"toes-to-bar\",\n    \"name\": \"Toes to Bar\",\n    \"source_catalog_record_sha256\": \"f83289c04ac92fbd8c7f774b7a57a73c95d71c13fd88c61ec2e364b64c3a9f3d\",\n    \"source_catalog_sha256\": \"a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989\"\n  },\n  \"scene\": {\n    \"camera\": \"Side three-quarter view exposing straight elbows, straight legs and toe contact between the hands.\",\n    \"grip\": \"Overhand grip on secure pull-up bar.\",\n    \"pose\": \"Arms stay straight, legs together and straight; abdomen raises legs until toes contact bar, with controlled pelvis and no swing.\",\n    \"single_phase\": \"Toes contacting bar between hands\",\n    \"source_instruction_quotes\": [\n      {\n        \"index\": 0,\n        \"text\": \"Grip a secure pull-up bar overhand with arms straight and legs hanging together.\"\n      },\n      {\n        \"index\": 1,\n        \"text\": \"Brace the abdomen and raise the straight legs toward the bar without swinging.\"\n      },\n      {\n        \"index\": 2,\n        \"text\": \"Continue until the toes touch the bar between the hands.\"\n      },\n      {\n        \"index\": 3,\n        \"text\": \"Lower the legs slowly to the dead hang and reset.\"\n      }\n    ],\n    \"supports_and_equipment\": \"Hands and toes contact the same fixed overhead bar at this endpoint; no floor support.\"\n  },\n  \"style\": {\n    \"background\": \"Genuinely transparent PNG background, no white/checkerboard layer, no environment scene.\",\n    \"framing\": \"Full figure and all required equipment/supports visible within a square. Scale and use a three-quarter view to expose the specified contacts without changing anatomy, equipment, grip or technique.\",\n    \"human_model\": \"One athletic bald male anatomical mannequin, opaque silver-gray muscular surfaces, consistent proportions and detailed 3D materials, plain black shorts, barefoot.\",\n    \"material_rules\": \"Highlights never make tissue transparent; no glow, whole-body orange tint, hair, text, labels, arrows, UI, borders, collage or extra person.\",\n    \"no_invention\": \"Technique, equipment and muscles come only from the attached exact catalogue record. No extra attachments, numerical weights, brands or exact angles absent from the source.\",\n    \"output\": {\n      \"format\": \"PNG\",\n      \"height\": 1024,\n      \"one_person\": true,\n      \"one_phase\": true,\n      \"width\": 1024\n    },\n    \"primary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"rule\": \"Highlight only the exact primary muscle group provided for this exercise.\"\n    },\n    \"secondary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"intensity_fraction\": [\n        0.4,\n        0.5\n      ],\n      \"rule\": \"Only the exact secondary muscles, lighter same-hue highlight; if the list is empty add no secondary target.\"\n    },\n    \"version\": \"v1\"\n  },\n  \"style_document_sha256\": \"8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578\",\n  \"supplementary_same_ID_sources\": []\n}",
+      "generation_prompt_sha256": "34e0d67a041ea32fd4ba7e780683acdd132e2d764a2098ebf1fc524b02d521a0",
+      "planned_png_path": "/workspace/exercise-image-results/agent-03-others-010/toes-to-bar/attempt-1.png",
+      "output_root": "/workspace/exercise-image-results",
+      "planned_output_relative_path": "agent-03-others-010/toes-to-bar/attempt-1.png",
+      "result_path": null,
+      "result_sha256": null,
+      "attempts": 0,
+      "user_review": null,
+      "technical_check": null,
+      "agent_visual_review": "not_performed",
+      "generation_authorized_now": false,
+      "clarification_resolution": null
+    },
+    {
+      "exercise_id": "triceps-dip-machine",
+      "name": "Triceps Dip",
+      "source_english": {
+        "description": "Triceps Dip is a bodyweight parallel-bar dip: support on straight arms, lower by bending the elbows, and press back up.",
+        "instructions": [
+          "Grip parallel bars and support the body with elbows straight and shoulders down.",
+          "Keep the torso slightly forward and bend the elbows to lower the body.",
+          "Stop when the upper arms approach parallel to the floor without the shoulders collapsing.",
+          "Press through the bars to straighten the elbows and return to support."
+        ],
+        "form_cues": [
+          "Keep wrists straight.",
+          "Point elbows back.",
+          "Keep legs quiet."
+        ],
+        "common_mistakes": [
+          "Using a seated machine.",
+          "Dropping below shoulder control.",
+          "Swinging to start."
+        ],
+        "safety_note": "Use parallel bars or an assisted band, and stop before the shoulders lose stable support.",
+        "provenance": "adapted"
+      },
+      "equipment": "machine",
+      "primary_muscle": "triceps",
+      "secondary_muscles": [
+        "chest",
+        "shoulders"
+      ],
+      "source_catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+      "source_catalog_record_sha256": "2bbb4e9532143e2a757053cc4f39915ead6ffb428199e2e3e899306ae3d67e29",
+      "source_english_sha256": "7d98888013dc7929a586d6490f65274fd7f62d934df1e5de1dcd1b893968e896",
+      "status": "ready",
+      "preparation_status": "prompt_prepared_not_generated",
+      "style_version": "v1",
+      "style_sha256": "8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578",
+      "human_reference": {
+        "repository_path": "assets/exercises/biceps-curl-dumbbell.png",
+        "absolute_path": "/workspace/lightweight-exercises-photo/assets/exercises/biceps-curl-dumbbell.png",
+        "sha256": "52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f",
+        "branch": "work",
+        "source_commit": "a6f296cbc6737991dd367e929b3e2df25874d4d8",
+        "role": "Human appearance/proportions/materials/anatomical style ONLY. Exercise pose, grip, equipment and muscles come from the exact-ID catalogue, never the reference.",
+        "pixels_reviewed_during_preparation": false
+      },
+      "scene": {
+        "single_phase": "Controlled parallel-bar dip lower phase",
+        "pose": "Torso slightly forward, shoulders down, elbows bent until upper arms approach parallel; legs quiet and clear of floor.",
+        "grip": "One hand firmly grips each parallel bar, wrists straight, elbows point back.",
+        "supports_and_equipment": "Static parallel bars support hands. No seat, stack, assisted platform or bench-edge substitution.",
+        "camera": "Front-side three-quarter view showing both hand contacts, elbows and full stable bars.",
+        "source_instruction_quotes": [
+          {
+            "index": 0,
+            "text": "Grip parallel bars and support the body with elbows straight and shoulders down."
+          },
+          {
+            "index": 1,
+            "text": "Keep the torso slightly forward and bend the elbows to lower the body."
+          },
+          {
+            "index": 2,
+            "text": "Stop when the upper arms approach parallel to the floor without the shoulders collapsing."
+          },
+          {
+            "index": 3,
+            "text": "Press through the bars to straighten the elbows and return to support."
+          }
+        ]
+      },
+      "prompt_payload": {
+        "identity_do_not_render_as_text": {
+          "exercise_id": "triceps-dip-machine",
+          "name": "Triceps Dip",
+          "source_catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+          "source_catalog_record_sha256": "2bbb4e9532143e2a757053cc4f39915ead6ffb428199e2e3e899306ae3d67e29"
+        },
+        "exact_catalogue_source": {
+          "source_english": {
+            "description": "Triceps Dip is a bodyweight parallel-bar dip: support on straight arms, lower by bending the elbows, and press back up.",
+            "instructions": [
+              "Grip parallel bars and support the body with elbows straight and shoulders down.",
+              "Keep the torso slightly forward and bend the elbows to lower the body.",
+              "Stop when the upper arms approach parallel to the floor without the shoulders collapsing.",
+              "Press through the bars to straighten the elbows and return to support."
+            ],
+            "form_cues": [
+              "Keep wrists straight.",
+              "Point elbows back.",
+              "Keep legs quiet."
+            ],
+            "common_mistakes": [
+              "Using a seated machine.",
+              "Dropping below shoulder control.",
+              "Swinging to start."
+            ],
+            "safety_note": "Use parallel bars or an assisted band, and stop before the shoulders lose stable support.",
+            "provenance": "adapted"
+          },
+          "equipment": "machine",
+          "primary_muscle": "triceps",
+          "secondary_muscles": [
+            "chest",
+            "shoulders"
+          ]
+        },
+        "human_reference": {
+          "repository_path": "assets/exercises/biceps-curl-dumbbell.png",
+          "absolute_path": "/workspace/lightweight-exercises-photo/assets/exercises/biceps-curl-dumbbell.png",
+          "sha256": "52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f",
+          "branch": "work",
+          "source_commit": "a6f296cbc6737991dd367e929b3e2df25874d4d8",
+          "role": "Human appearance/proportions/materials/anatomical style ONLY. Exercise pose, grip, equipment and muscles come from the exact-ID catalogue, never the reference.",
+          "pixels_reviewed_during_preparation": false
+        },
+        "style": {
+          "version": "v1",
+          "human_model": "One athletic bald male anatomical mannequin, opaque silver-gray muscular surfaces, consistent proportions and detailed 3D materials, plain black shorts, barefoot.",
+          "primary_highlight": {
+            "hex": "#F26445",
+            "rule": "Highlight only the exact primary muscle group provided for this exercise."
+          },
+          "secondary_highlight": {
+            "hex": "#F26445",
+            "intensity_fraction": [
+              0.4,
+              0.5
+            ],
+            "rule": "Only the exact secondary muscles, lighter same-hue highlight; if the list is empty add no secondary target."
+          },
+          "background": "Genuinely transparent PNG background, no white/checkerboard layer, no environment scene.",
+          "output": {
+            "format": "PNG",
+            "width": 1024,
+            "height": 1024,
+            "one_person": true,
+            "one_phase": true
+          },
+          "material_rules": "Highlights never make tissue transparent; no glow, whole-body orange tint, hair, text, labels, arrows, UI, borders, collage or extra person.",
+          "framing": "Full figure and all required equipment/supports visible within a square. Scale and use a three-quarter view to expose the specified contacts without changing anatomy, equipment, grip or technique.",
+          "no_invention": "Technique, equipment and muscles come only from the attached exact catalogue record. No extra attachments, numerical weights, brands or exact angles absent from the source."
+        },
+        "style_document_sha256": "8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578",
+        "scene": {
+          "single_phase": "Controlled parallel-bar dip lower phase",
+          "pose": "Torso slightly forward, shoulders down, elbows bent until upper arms approach parallel; legs quiet and clear of floor.",
+          "grip": "One hand firmly grips each parallel bar, wrists straight, elbows point back.",
+          "supports_and_equipment": "Static parallel bars support hands. No seat, stack, assisted platform or bench-edge substitution.",
+          "camera": "Front-side three-quarter view showing both hand contacts, elbows and full stable bars.",
+          "source_instruction_quotes": [
+            {
+              "index": 0,
+              "text": "Grip parallel bars and support the body with elbows straight and shoulders down."
+            },
+            {
+              "index": 1,
+              "text": "Keep the torso slightly forward and bend the elbows to lower the body."
+            },
+            {
+              "index": 2,
+              "text": "Stop when the upper arms approach parallel to the floor without the shoulders collapsing."
+            },
+            {
+              "index": 3,
+              "text": "Press through the bars to straighten the elbows and return to support."
+            }
+          ]
+        },
+        "supplementary_same_ID_sources": []
+      },
+      "generation_prompt": "Create exactly ONE square transparent PNG of the exact exercise below, using the referenced human for APPEARANCE ONLY. Render only the selected phase and camera. Identity/path/hash fields are metadata, never visible text.\n{\n  \"exact_catalogue_source\": {\n    \"equipment\": \"machine\",\n    \"primary_muscle\": \"triceps\",\n    \"secondary_muscles\": [\n      \"chest\",\n      \"shoulders\"\n    ],\n    \"source_english\": {\n      \"common_mistakes\": [\n        \"Using a seated machine.\",\n        \"Dropping below shoulder control.\",\n        \"Swinging to start.\"\n      ],\n      \"description\": \"Triceps Dip is a bodyweight parallel-bar dip: support on straight arms, lower by bending the elbows, and press back up.\",\n      \"form_cues\": [\n        \"Keep wrists straight.\",\n        \"Point elbows back.\",\n        \"Keep legs quiet.\"\n      ],\n      \"instructions\": [\n        \"Grip parallel bars and support the body with elbows straight and shoulders down.\",\n        \"Keep the torso slightly forward and bend the elbows to lower the body.\",\n        \"Stop when the upper arms approach parallel to the floor without the shoulders collapsing.\",\n        \"Press through the bars to straighten the elbows and return to support.\"\n      ],\n      \"provenance\": \"adapted\",\n      \"safety_note\": \"Use parallel bars or an assisted band, and stop before the shoulders lose stable support.\"\n    }\n  },\n  \"human_reference\": {\n    \"absolute_path\": \"/workspace/lightweight-exercises-photo/assets/exercises/biceps-curl-dumbbell.png\",\n    \"branch\": \"work\",\n    \"pixels_reviewed_during_preparation\": false,\n    \"repository_path\": \"assets/exercises/biceps-curl-dumbbell.png\",\n    \"role\": \"Human appearance/proportions/materials/anatomical style ONLY. Exercise pose, grip, equipment and muscles come from the exact-ID catalogue, never the reference.\",\n    \"sha256\": \"52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f\",\n    \"source_commit\": \"a6f296cbc6737991dd367e929b3e2df25874d4d8\"\n  },\n  \"identity_do_not_render_as_text\": {\n    \"exercise_id\": \"triceps-dip-machine\",\n    \"name\": \"Triceps Dip\",\n    \"source_catalog_record_sha256\": \"2bbb4e9532143e2a757053cc4f39915ead6ffb428199e2e3e899306ae3d67e29\",\n    \"source_catalog_sha256\": \"a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989\"\n  },\n  \"scene\": {\n    \"camera\": \"Front-side three-quarter view showing both hand contacts, elbows and full stable bars.\",\n    \"grip\": \"One hand firmly grips each parallel bar, wrists straight, elbows point back.\",\n    \"pose\": \"Torso slightly forward, shoulders down, elbows bent until upper arms approach parallel; legs quiet and clear of floor.\",\n    \"single_phase\": \"Controlled parallel-bar dip lower phase\",\n    \"source_instruction_quotes\": [\n      {\n        \"index\": 0,\n        \"text\": \"Grip parallel bars and support the body with elbows straight and shoulders down.\"\n      },\n      {\n        \"index\": 1,\n        \"text\": \"Keep the torso slightly forward and bend the elbows to lower the body.\"\n      },\n      {\n        \"index\": 2,\n        \"text\": \"Stop when the upper arms approach parallel to the floor without the shoulders collapsing.\"\n      },\n      {\n        \"index\": 3,\n        \"text\": \"Press through the bars to straighten the elbows and return to support.\"\n      }\n    ],\n    \"supports_and_equipment\": \"Static parallel bars support hands. No seat, stack, assisted platform or bench-edge substitution.\"\n  },\n  \"style\": {\n    \"background\": \"Genuinely transparent PNG background, no white/checkerboard layer, no environment scene.\",\n    \"framing\": \"Full figure and all required equipment/supports visible within a square. Scale and use a three-quarter view to expose the specified contacts without changing anatomy, equipment, grip or technique.\",\n    \"human_model\": \"One athletic bald male anatomical mannequin, opaque silver-gray muscular surfaces, consistent proportions and detailed 3D materials, plain black shorts, barefoot.\",\n    \"material_rules\": \"Highlights never make tissue transparent; no glow, whole-body orange tint, hair, text, labels, arrows, UI, borders, collage or extra person.\",\n    \"no_invention\": \"Technique, equipment and muscles come only from the attached exact catalogue record. No extra attachments, numerical weights, brands or exact angles absent from the source.\",\n    \"output\": {\n      \"format\": \"PNG\",\n      \"height\": 1024,\n      \"one_person\": true,\n      \"one_phase\": true,\n      \"width\": 1024\n    },\n    \"primary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"rule\": \"Highlight only the exact primary muscle group provided for this exercise.\"\n    },\n    \"secondary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"intensity_fraction\": [\n        0.4,\n        0.5\n      ],\n      \"rule\": \"Only the exact secondary muscles, lighter same-hue highlight; if the list is empty add no secondary target.\"\n    },\n    \"version\": \"v1\"\n  },\n  \"style_document_sha256\": \"8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578\",\n  \"supplementary_same_ID_sources\": []\n}",
+      "generation_prompt_sha256": "b120db0d043ac2114de9cd8a7f6d9de4584bf3523d5d4872bbfe4c0449d73331",
+      "planned_png_path": "/workspace/exercise-image-results/agent-03-others-010/triceps-dip-machine/attempt-1.png",
+      "output_root": "/workspace/exercise-image-results",
+      "planned_output_relative_path": "agent-03-others-010/triceps-dip-machine/attempt-1.png",
+      "result_path": null,
+      "result_sha256": null,
+      "attempts": 0,
+      "user_review": null,
+      "technical_check": null,
+      "agent_visual_review": "not_performed",
+      "generation_authorized_now": false,
+      "clarification_resolution": null
+    },
+    {
+      "exercise_id": "triceps-dip-weighted-machine",
+      "name": "Triceps Dip (Weighted)",
+      "source_english": {
+        "description": "Triceps Dip (Weighted) adds a belt or vest load to a strict parallel-bar dip.",
+        "instructions": [
+          "Secure the added load and grip parallel bars with elbows straight.",
+          "Lower the body by bending the elbows while keeping the torso slightly forward.",
+          "Pause when the upper arms approach parallel without shoulder collapse.",
+          "Press to straight arms and step down only after the swing has stopped."
+        ],
+        "form_cues": [
+          "Center the load.",
+          "Keep shoulders down.",
+          "Keep legs still."
+        ],
+        "common_mistakes": [
+          "Using a bench edge.",
+          "Swinging the weight.",
+          "Going too deep."
+        ],
+        "safety_note": "Use a conservative belt or vest load and stop before the shoulders lose control.",
+        "provenance": "adapted"
+      },
+      "equipment": "machine",
+      "primary_muscle": "triceps",
+      "secondary_muscles": [
+        "chest",
+        "shoulders"
+      ],
+      "source_catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+      "source_catalog_record_sha256": "d5d7c2fb515e3f3b9d292948aed4546ae1f4bd235b6d94ce42c9bcf762c87155",
+      "source_english_sha256": "b1d3a9853fe5c3ae701601ccb8c8d88126ee5d828a7e38092bf085341a03bb4e",
+      "status": "ready",
+      "preparation_status": "prompt_prepared_not_generated",
+      "style_version": "v1",
+      "style_sha256": "8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578",
+      "human_reference": {
+        "repository_path": "assets/exercises/biceps-curl-dumbbell.png",
+        "absolute_path": "/workspace/lightweight-exercises-photo/assets/exercises/biceps-curl-dumbbell.png",
+        "sha256": "52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f",
+        "branch": "work",
+        "source_commit": "a6f296cbc6737991dd367e929b3e2df25874d4d8",
+        "role": "Human appearance/proportions/materials/anatomical style ONLY. Exercise pose, grip, equipment and muscles come from the exact-ID catalogue, never the reference.",
+        "pixels_reviewed_during_preparation": false
+      },
+      "scene": {
+        "single_phase": "Weighted dip lower phase",
+        "pose": "Torso slightly forward and shoulders stable; elbows bend to controlled upper-arm near-parallel depth, legs still.",
+        "grip": "One hand on each parallel bar, secure grip.",
+        "supports_and_equipment": "Stable parallel bars and a conservative centered WEIGHTED VEST, an explicit belt-or-vest source option. No invented load number or dangling plate.",
+        "camera": "Front-side three-quarter view showing vest, both hands and complete parallel supports.",
+        "source_instruction_quotes": [
+          {
+            "index": 0,
+            "text": "Secure the added load and grip parallel bars with elbows straight."
+          },
+          {
+            "index": 1,
+            "text": "Lower the body by bending the elbows while keeping the torso slightly forward."
+          },
+          {
+            "index": 2,
+            "text": "Pause when the upper arms approach parallel without shoulder collapse."
+          },
+          {
+            "index": 3,
+            "text": "Press to straight arms and step down only after the swing has stopped."
+          }
+        ]
+      },
+      "prompt_payload": {
+        "identity_do_not_render_as_text": {
+          "exercise_id": "triceps-dip-weighted-machine",
+          "name": "Triceps Dip (Weighted)",
+          "source_catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+          "source_catalog_record_sha256": "d5d7c2fb515e3f3b9d292948aed4546ae1f4bd235b6d94ce42c9bcf762c87155"
+        },
+        "exact_catalogue_source": {
+          "source_english": {
+            "description": "Triceps Dip (Weighted) adds a belt or vest load to a strict parallel-bar dip.",
+            "instructions": [
+              "Secure the added load and grip parallel bars with elbows straight.",
+              "Lower the body by bending the elbows while keeping the torso slightly forward.",
+              "Pause when the upper arms approach parallel without shoulder collapse.",
+              "Press to straight arms and step down only after the swing has stopped."
+            ],
+            "form_cues": [
+              "Center the load.",
+              "Keep shoulders down.",
+              "Keep legs still."
+            ],
+            "common_mistakes": [
+              "Using a bench edge.",
+              "Swinging the weight.",
+              "Going too deep."
+            ],
+            "safety_note": "Use a conservative belt or vest load and stop before the shoulders lose control.",
+            "provenance": "adapted"
+          },
+          "equipment": "machine",
+          "primary_muscle": "triceps",
+          "secondary_muscles": [
+            "chest",
+            "shoulders"
+          ]
+        },
+        "human_reference": {
+          "repository_path": "assets/exercises/biceps-curl-dumbbell.png",
+          "absolute_path": "/workspace/lightweight-exercises-photo/assets/exercises/biceps-curl-dumbbell.png",
+          "sha256": "52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f",
+          "branch": "work",
+          "source_commit": "a6f296cbc6737991dd367e929b3e2df25874d4d8",
+          "role": "Human appearance/proportions/materials/anatomical style ONLY. Exercise pose, grip, equipment and muscles come from the exact-ID catalogue, never the reference.",
+          "pixels_reviewed_during_preparation": false
+        },
+        "style": {
+          "version": "v1",
+          "human_model": "One athletic bald male anatomical mannequin, opaque silver-gray muscular surfaces, consistent proportions and detailed 3D materials, plain black shorts, barefoot.",
+          "primary_highlight": {
+            "hex": "#F26445",
+            "rule": "Highlight only the exact primary muscle group provided for this exercise."
+          },
+          "secondary_highlight": {
+            "hex": "#F26445",
+            "intensity_fraction": [
+              0.4,
+              0.5
+            ],
+            "rule": "Only the exact secondary muscles, lighter same-hue highlight; if the list is empty add no secondary target."
+          },
+          "background": "Genuinely transparent PNG background, no white/checkerboard layer, no environment scene.",
+          "output": {
+            "format": "PNG",
+            "width": 1024,
+            "height": 1024,
+            "one_person": true,
+            "one_phase": true
+          },
+          "material_rules": "Highlights never make tissue transparent; no glow, whole-body orange tint, hair, text, labels, arrows, UI, borders, collage or extra person.",
+          "framing": "Full figure and all required equipment/supports visible within a square. Scale and use a three-quarter view to expose the specified contacts without changing anatomy, equipment, grip or technique.",
+          "no_invention": "Technique, equipment and muscles come only from the attached exact catalogue record. No extra attachments, numerical weights, brands or exact angles absent from the source."
+        },
+        "style_document_sha256": "8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578",
+        "scene": {
+          "single_phase": "Weighted dip lower phase",
+          "pose": "Torso slightly forward and shoulders stable; elbows bend to controlled upper-arm near-parallel depth, legs still.",
+          "grip": "One hand on each parallel bar, secure grip.",
+          "supports_and_equipment": "Stable parallel bars and a conservative centered WEIGHTED VEST, an explicit belt-or-vest source option. No invented load number or dangling plate.",
+          "camera": "Front-side three-quarter view showing vest, both hands and complete parallel supports.",
+          "source_instruction_quotes": [
+            {
+              "index": 0,
+              "text": "Secure the added load and grip parallel bars with elbows straight."
+            },
+            {
+              "index": 1,
+              "text": "Lower the body by bending the elbows while keeping the torso slightly forward."
+            },
+            {
+              "index": 2,
+              "text": "Pause when the upper arms approach parallel without shoulder collapse."
+            },
+            {
+              "index": 3,
+              "text": "Press to straight arms and step down only after the swing has stopped."
+            }
+          ]
+        },
+        "supplementary_same_ID_sources": []
+      },
+      "generation_prompt": "Create exactly ONE square transparent PNG of the exact exercise below, using the referenced human for APPEARANCE ONLY. Render only the selected phase and camera. Identity/path/hash fields are metadata, never visible text.\n{\n  \"exact_catalogue_source\": {\n    \"equipment\": \"machine\",\n    \"primary_muscle\": \"triceps\",\n    \"secondary_muscles\": [\n      \"chest\",\n      \"shoulders\"\n    ],\n    \"source_english\": {\n      \"common_mistakes\": [\n        \"Using a bench edge.\",\n        \"Swinging the weight.\",\n        \"Going too deep.\"\n      ],\n      \"description\": \"Triceps Dip (Weighted) adds a belt or vest load to a strict parallel-bar dip.\",\n      \"form_cues\": [\n        \"Center the load.\",\n        \"Keep shoulders down.\",\n        \"Keep legs still.\"\n      ],\n      \"instructions\": [\n        \"Secure the added load and grip parallel bars with elbows straight.\",\n        \"Lower the body by bending the elbows while keeping the torso slightly forward.\",\n        \"Pause when the upper arms approach parallel without shoulder collapse.\",\n        \"Press to straight arms and step down only after the swing has stopped.\"\n      ],\n      \"provenance\": \"adapted\",\n      \"safety_note\": \"Use a conservative belt or vest load and stop before the shoulders lose control.\"\n    }\n  },\n  \"human_reference\": {\n    \"absolute_path\": \"/workspace/lightweight-exercises-photo/assets/exercises/biceps-curl-dumbbell.png\",\n    \"branch\": \"work\",\n    \"pixels_reviewed_during_preparation\": false,\n    \"repository_path\": \"assets/exercises/biceps-curl-dumbbell.png\",\n    \"role\": \"Human appearance/proportions/materials/anatomical style ONLY. Exercise pose, grip, equipment and muscles come from the exact-ID catalogue, never the reference.\",\n    \"sha256\": \"52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f\",\n    \"source_commit\": \"a6f296cbc6737991dd367e929b3e2df25874d4d8\"\n  },\n  \"identity_do_not_render_as_text\": {\n    \"exercise_id\": \"triceps-dip-weighted-machine\",\n    \"name\": \"Triceps Dip (Weighted)\",\n    \"source_catalog_record_sha256\": \"d5d7c2fb515e3f3b9d292948aed4546ae1f4bd235b6d94ce42c9bcf762c87155\",\n    \"source_catalog_sha256\": \"a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989\"\n  },\n  \"scene\": {\n    \"camera\": \"Front-side three-quarter view showing vest, both hands and complete parallel supports.\",\n    \"grip\": \"One hand on each parallel bar, secure grip.\",\n    \"pose\": \"Torso slightly forward and shoulders stable; elbows bend to controlled upper-arm near-parallel depth, legs still.\",\n    \"single_phase\": \"Weighted dip lower phase\",\n    \"source_instruction_quotes\": [\n      {\n        \"index\": 0,\n        \"text\": \"Secure the added load and grip parallel bars with elbows straight.\"\n      },\n      {\n        \"index\": 1,\n        \"text\": \"Lower the body by bending the elbows while keeping the torso slightly forward.\"\n      },\n      {\n        \"index\": 2,\n        \"text\": \"Pause when the upper arms approach parallel without shoulder collapse.\"\n      },\n      {\n        \"index\": 3,\n        \"text\": \"Press to straight arms and step down only after the swing has stopped.\"\n      }\n    ],\n    \"supports_and_equipment\": \"Stable parallel bars and a conservative centered WEIGHTED VEST, an explicit belt-or-vest source option. No invented load number or dangling plate.\"\n  },\n  \"style\": {\n    \"background\": \"Genuinely transparent PNG background, no white/checkerboard layer, no environment scene.\",\n    \"framing\": \"Full figure and all required equipment/supports visible within a square. Scale and use a three-quarter view to expose the specified contacts without changing anatomy, equipment, grip or technique.\",\n    \"human_model\": \"One athletic bald male anatomical mannequin, opaque silver-gray muscular surfaces, consistent proportions and detailed 3D materials, plain black shorts, barefoot.\",\n    \"material_rules\": \"Highlights never make tissue transparent; no glow, whole-body orange tint, hair, text, labels, arrows, UI, borders, collage or extra person.\",\n    \"no_invention\": \"Technique, equipment and muscles come only from the attached exact catalogue record. No extra attachments, numerical weights, brands or exact angles absent from the source.\",\n    \"output\": {\n      \"format\": \"PNG\",\n      \"height\": 1024,\n      \"one_person\": true,\n      \"one_phase\": true,\n      \"width\": 1024\n    },\n    \"primary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"rule\": \"Highlight only the exact primary muscle group provided for this exercise.\"\n    },\n    \"secondary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"intensity_fraction\": [\n        0.4,\n        0.5\n      ],\n      \"rule\": \"Only the exact secondary muscles, lighter same-hue highlight; if the list is empty add no secondary target.\"\n    },\n    \"version\": \"v1\"\n  },\n  \"style_document_sha256\": \"8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578\",\n  \"supplementary_same_ID_sources\": []\n}",
+      "generation_prompt_sha256": "bdcfaf446d7f91aeaa9bd4527aeff02d785c7843ae51261756d90aa68830fc14",
+      "planned_png_path": "/workspace/exercise-image-results/agent-03-others-010/triceps-dip-weighted-machine/attempt-1.png",
+      "output_root": "/workspace/exercise-image-results",
+      "planned_output_relative_path": "agent-03-others-010/triceps-dip-weighted-machine/attempt-1.png",
+      "result_path": null,
+      "result_sha256": null,
+      "attempts": 0,
+      "user_review": null,
+      "technical_check": null,
+      "agent_visual_review": "not_performed",
+      "generation_authorized_now": false,
+      "clarification_resolution": null
+    }
+  ]
+}

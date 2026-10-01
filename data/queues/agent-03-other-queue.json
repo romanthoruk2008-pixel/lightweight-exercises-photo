@@ -239,9 +239,9 @@
   ],
   "default_pending_note": "Untouched not_started records carry raw user_review=pending by default. They have no submitted result and were unknown in inventory; they are not awaiting review. Existing submitted pending results are excluded by PNG/result/attempt checks.",
   "ordering": "First 30 concrete simple compositions; then simple bodyweight/dumbbell/barbell/bench, then bars/rings/bands/suspension, then other explicitly specified apparatus. No exact angles/loads/attachments invented.",
-  "eligible_count": 127,
-  "prepared_count": 90,
-  "remaining_unprepared_count": 37,
+  "eligible_count": 143,
+  "prepared_count": 143,
+  "remaining_unprepared_count": 0,
   "eligible_exercise_ids": [
     "standing-calf-raise",
     "single-leg-standing-calf-raise",
@@ -369,7 +369,23 @@
     "step-up",
     "sumo-squat-kettlebell",
     "walking-lunge-sandbag",
-    "wrist-roller-machine"
+    "wrist-roller-machine",
+    "around-the-world-dumbbell",
+    "bench-press-close-grip-barbell",
+    "bench-press-wide-grip-barbell",
+    "box-jump",
+    "chest-fly-band-resistance-band",
+    "chest-fly-suspension",
+    "crunch-weighted",
+    "decline-chest-fly-dumbbell",
+    "decline-crunch-weighted",
+    "dumbbell-squeeze-press",
+    "dumbbell-step-up",
+    "ez-bar-biceps-curl-barbell",
+    "frog-jumps",
+    "full-squat-barbell",
+    "glute-bridge-barbell",
+    "hex-press-dumbbell"
   ],
   "first_launch_ids": [
     "standing-calf-raise",
@@ -403,45 +419,7 @@
     "deadlift-barbell",
     "romanian-deadlift-barbell"
   ],
-  "remaining_unprepared_ids": [
-    "low-row-suspension",
-    "pullup-band-resistance-band",
-    "pullup-machine",
-    "ring-pushup",
-    "scapular-pull-ups",
-    "squat-suspension",
-    "sternum-pullup-gironda-machine",
-    "toes-to-bar",
-    "triceps-dip-machine",
-    "triceps-dip-weighted-machine",
-    "triceps-extension-suspension",
-    "wide-pullup-machine",
-    "box-squat-barbell-hevy-3338464331414239",
-    "gorilla-row-kettlebell",
-    "kettlebell-around-the-world",
-    "kettlebell-curl",
-    "kettlebell-goblet-squat",
-    "kettlebell-shoulder-press",
-    "landmine-row-barbell",
-    "lateral-box-jump",
-    "lying-neck-curls-weighted-plate",
-    "meadows-rows-barbell",
-    "overhead-plate-raise",
-    "plate-curl",
-    "plate-front-raise",
-    "plate-press",
-    "preacher-curl-barbell",
-    "preacher-curl-dumbbell",
-    "rack-pull-barbell",
-    "russian-twist-weighted-plate",
-    "single-leg-standing-calf-raise-dumbbell",
-    "sissy-squat-weighted",
-    "situp-weighted",
-    "step-up",
-    "sumo-squat-kettlebell",
-    "walking-lunge-sandbag",
-    "wrist-roller-machine"
-  ],
+  "remaining_unprepared_ids": [],
   "batch_paths": [
     "data/batches/agent-03-others-001.json",
     "data/batches/agent-03-others-002.json",
@@ -451,11 +429,17 @@
     "data/batches/agent-03-others-006.json",
     "data/batches/agent-03-others-007.json",
     "data/batches/agent-03-others-008.json",
-    "data/batches/agent-03-others-009.json"
+    "data/batches/agent-03-others-009.json",
+    "data/batches/agent-03-others-010.json",
+    "data/batches/agent-03-others-011.json",
+    "data/batches/agent-03-others-012.json",
+    "data/batches/agent-03-others-013.json",
+    "data/batches/agent-03-others-014.json",
+    "data/batches/agent-03-others-015.json"
   ],
   "exclusion_counts_disjoint": {
     "png_already_saved": 73,
-    "needs_clarification": 105,
+    "needs_clarification": 89,
     "deferred_machine_cable_smith": 123,
     "existing_batch_or_clarification": 15,
     "archived": 2,
@@ -697,16 +681,6 @@
       "name": "Air Bike",
       "reason_code": "deferred_machine_cable_smith",
       "inventory_group": "specialized_machine",
-      "archived": false,
-      "png_sources": [],
-      "reservation_sources": [],
-      "progress_sources": []
-    },
-    {
-      "exercise_id": "around-the-world-dumbbell",
-      "name": "Around The World",
-      "reason_code": "needs_clarification",
-      "inventory_group": "other",
       "archived": false,
       "png_sources": [],
       "reservation_sources": [],
@@ -1247,26 +1221,6 @@
       "progress_sources": []
     },
     {
-      "exercise_id": "bench-press-close-grip-barbell",
-      "name": "Bench Press - Close Grip (Barbell)",
-      "reason_code": "needs_clarification",
-      "inventory_group": "other",
-      "archived": false,
-      "png_sources": [],
-      "reservation_sources": [],
-      "progress_sources": []
-    },
-    {
-      "exercise_id": "bench-press-wide-grip-barbell",
-      "name": "Bench Press - Wide Grip (Barbell)",
-      "reason_code": "needs_clarification",
-      "inventory_group": "other",
-      "archived": false,
-      "png_sources": [],
-      "reservation_sources": [],
-      "progress_sources": []
-    },
-    {
       "exercise_id": "bent-over-row-band-resistance-band",
       "name": "Bent Over Row (Band)",
       "reason_code": "needs_clarification",
@@ -1773,16 +1727,6 @@
       ]
     },
     {
-      "exercise_id": "box-jump",
-      "name": "Box Jump",
-      "reason_code": "needs_clarification",
-      "inventory_group": "other",
-      "archived": false,
-      "png_sources": [],
-      "reservation_sources": [],
-      "progress_sources": []
-    },
-    {
       "exercise_id": "box-squat-barbell-hevy-4632464345373244",
       "name": "Box Squat",
       "reason_code": "archived",
@@ -2201,16 +2145,6 @@
       "progress_sources": []
     },
     {
-      "exercise_id": "chest-fly-band-resistance-band",
-      "name": "Chest Fly (Band)",
-      "reason_code": "needs_clarification",
-      "inventory_group": "other",
-      "archived": false,
-      "png_sources": [],
-      "reservation_sources": [],
-      "progress_sources": []
-    },
-    {
       "exercise_id": "chest-fly-dumbbell",
       "name": "Chest Fly (Dumbbell)",
       "reason_code": "existing_batch_or_clarification",
@@ -2247,16 +2181,6 @@
       "name": "Chest Fly (Machine)",
       "reason_code": "deferred_machine_cable_smith",
       "inventory_group": "specialized_machine",
-      "archived": false,
-      "png_sources": [],
-      "reservation_sources": [],
-      "progress_sources": []
-    },
-    {
-      "exercise_id": "chest-fly-suspension",
-      "name": "Chest Fly (Suspension)",
-      "reason_code": "needs_clarification",
-      "inventory_group": "other",
       "archived": false,
       "png_sources": [],
       "reservation_sources": [],
@@ -2629,16 +2553,6 @@
       "progress_sources": []
     },
     {
-      "exercise_id": "crunch-weighted",
-      "name": "Crunch (Weighted)",
-      "reason_code": "needs_clarification",
-      "inventory_group": "other",
-      "archived": false,
-      "png_sources": [],
-      "reservation_sources": [],
-      "progress_sources": []
-    },
-    {
       "exercise_id": "cycling-machine",
       "name": "Cycling",
       "reason_code": "deferred_machine_cable_smith",
@@ -2872,26 +2786,6 @@
       "progress_sources": []
     },
     {
-      "exercise_id": "decline-chest-fly-dumbbell",
-      "name": "Decline Chest Fly (Dumbbell)",
-      "reason_code": "needs_clarification",
-      "inventory_group": "other",
-      "archived": false,
-      "png_sources": [],
-      "reservation_sources": [],
-      "progress_sources": []
-    },
-    {
-      "exercise_id": "decline-crunch-weighted",
-      "name": "Decline Crunch (Weighted)",
-      "reason_code": "needs_clarification",
-      "inventory_group": "other",
-      "archived": false,
-      "png_sources": [],
-      "reservation_sources": [],
-      "progress_sources": []
-    },
-    {
       "exercise_id": "diamond-pushup",
       "name": "Diamond Push Up",
       "reason_code": "existing_batch_or_clarification",
@@ -2988,26 +2882,6 @@
     {
       "exercise_id": "dumbbell-snatch",
       "name": "Dumbbell Snatch",
-      "reason_code": "needs_clarification",
-      "inventory_group": "other",
-      "archived": false,
-      "png_sources": [],
-      "reservation_sources": [],
-      "progress_sources": []
-    },
-    {
-      "exercise_id": "dumbbell-squeeze-press",
-      "name": "Dumbbell Squeeze Press",
-      "reason_code": "needs_clarification",
-      "inventory_group": "other",
-      "archived": false,
-      "png_sources": [],
-      "reservation_sources": [],
-      "progress_sources": []
-    },
-    {
-      "exercise_id": "dumbbell-step-up",
-      "name": "Dumbbell Step Up",
       "reason_code": "needs_clarification",
       "inventory_group": "other",
       "archived": false,
@@ -3183,16 +3057,6 @@
       "name": "Elliptical Trainer",
       "reason_code": "deferred_machine_cable_smith",
       "inventory_group": "specialized_machine",
-      "archived": false,
-      "png_sources": [],
-      "reservation_sources": [],
-      "progress_sources": []
-    },
-    {
-      "exercise_id": "ez-bar-biceps-curl-barbell",
-      "name": "EZ Bar Biceps Curl",
-      "reason_code": "needs_clarification",
-      "inventory_group": "other",
       "archived": false,
       "png_sources": [],
       "reservation_sources": [],
@@ -3802,16 +3666,6 @@
       ]
     },
     {
-      "exercise_id": "frog-jumps",
-      "name": "Frog Jumps",
-      "reason_code": "needs_clarification",
-      "inventory_group": "other",
-      "archived": false,
-      "png_sources": [],
-      "reservation_sources": [],
-      "progress_sources": []
-    },
-    {
       "exercise_id": "front-lever-hold",
       "name": "Front Lever Hold",
       "reason_code": "needs_clarification",
@@ -4056,16 +3910,6 @@
       "progress_sources": []
     },
     {
-      "exercise_id": "full-squat-barbell",
-      "name": "Full Squat",
-      "reason_code": "needs_clarification",
-      "inventory_group": "other",
-      "archived": false,
-      "png_sources": [],
-      "reservation_sources": [],
-      "progress_sources": []
-    },
-    {
       "exercise_id": "glute-bridge",
       "name": "Glute Bridge",
       "reason_code": "png_already_saved",
@@ -4248,16 +4092,6 @@
           "attempts": 1
         }
       ]
-    },
-    {
-      "exercise_id": "glute-bridge-barbell",
-      "name": "Glute Bridge (Barbell)",
-      "reason_code": "needs_clarification",
-      "inventory_group": "other",
-      "archived": false,
-      "png_sources": [],
-      "reservation_sources": [],
-      "progress_sources": []
     },
     {
       "exercise_id": "glute-ham-raise-machine",
@@ -5042,16 +4876,6 @@
           "attempts": 1
         }
       ]
-    },
-    {
-      "exercise_id": "hex-press-dumbbell",
-      "name": "Hex Press (Dumbbell)",
-      "reason_code": "needs_clarification",
-      "inventory_group": "other",
-      "archived": false,
-      "png_sources": [],
-      "reservation_sources": [],
-      "progress_sources": []
     },
     {
       "exercise_id": "high-knee-skips",
@@ -17629,9 +17453,10 @@
       "source_catalog_record_sha256": "427485cb3ed61848ad89b54a66b11a903ce8fa8e1331842f8fdde7051b6714ce",
       "source_english_sha256": "c68d68e2edd4754c513cb021a3de80f367ca03bbeecc7e785cc5aa13422feeed",
       "priority_tier": 2,
-      "batch_id": null,
-      "prompt_prepared": false,
-      "status": "queued_unprepared"
+      "batch_id": "agent-03-others-010",
+      "prompt_prepared": true,
+      "status": "ready",
+      "preparation_status": "prompt_prepared_not_generated"
     },
     {
       "queue_order": 92,
@@ -17648,9 +17473,10 @@
       "source_catalog_record_sha256": "4b834a27b713295684f05c1f83fdf8cfa333cff221c27e77276e619b0237b652",
       "source_english_sha256": "08a8958787d697bbd2ada59aaaf97c6c47338cedb946f63298351d002e548c03",
       "priority_tier": 2,
-      "batch_id": null,
-      "prompt_prepared": false,
-      "status": "queued_unprepared"
+      "batch_id": "agent-03-others-010",
+      "prompt_prepared": true,
+      "status": "ready",
+      "preparation_status": "prompt_prepared_not_generated"
     },
     {
       "queue_order": 93,
@@ -17667,9 +17493,10 @@
       "source_catalog_record_sha256": "2f78644dd0ea637313da834a8fbcf5e90d198edec705e6f78f4d7a1bafa00c12",
       "source_english_sha256": "4618b17a98b7c4926690ac1a9a1b8ac474b9c54fd8eab9d56c2e644d804899f8",
       "priority_tier": 2,
-      "batch_id": null,
-      "prompt_prepared": false,
-      "status": "queued_unprepared"
+      "batch_id": "agent-03-others-010",
+      "prompt_prepared": true,
+      "status": "ready",
+      "preparation_status": "prompt_prepared_not_generated"
     },
     {
       "queue_order": 94,
@@ -17685,9 +17512,10 @@
       "source_catalog_record_sha256": "f5681ad4b406d64f2e37ec1e5ae48b2532744ec76f98819a9382f1982a32cd0b",
       "source_english_sha256": "e6a0be7c922e931b8fba3d6cd7eb341bb44d43509c25ce9502171bbe985f7d88",
       "priority_tier": 2,
-      "batch_id": null,
-      "prompt_prepared": false,
-      "status": "queued_unprepared"
+      "batch_id": "agent-03-others-010",
+      "prompt_prepared": true,
+      "status": "ready",
+      "preparation_status": "prompt_prepared_not_generated"
     },
     {
       "queue_order": 95,
@@ -17703,9 +17531,10 @@
       "source_catalog_record_sha256": "2aa257c895b361ae68e7ff021f01ef6d214e8f40ee1a3b5d58eea9b5fcb84c8d",
       "source_english_sha256": "de24df2a96e128c232542e1d9e8d2782f5ee14c2ae194f34db34c55414fbc6c1",
       "priority_tier": 2,
-      "batch_id": null,
-      "prompt_prepared": false,
-      "status": "queued_unprepared"
+      "batch_id": "agent-03-others-010",
+      "prompt_prepared": true,
+      "status": "ready",
+      "preparation_status": "prompt_prepared_not_generated"
     },
     {
       "queue_order": 96,
@@ -17721,9 +17550,10 @@
       "source_catalog_record_sha256": "d54f931468cd328a8ff1921f6a72c2e6a06a50232d5cd8110542b5d458647392",
       "source_english_sha256": "437430cf9566f8bf026286da3403971aa1d838508654318663dd4459895ee793",
       "priority_tier": 2,
-      "batch_id": null,
-      "prompt_prepared": false,
-      "status": "queued_unprepared"
+      "batch_id": "agent-03-others-010",
+      "prompt_prepared": true,
+      "status": "ready",
+      "preparation_status": "prompt_prepared_not_generated"
     },
     {
       "queue_order": 97,
@@ -17740,9 +17570,10 @@
       "source_catalog_record_sha256": "e3f1f169414307bed4144a686385baa85fa9cb6bf62c5cffc491ecb182dd8770",
       "source_english_sha256": "69342593b09ac68ff3f5863f3ff154a4bf0a33e471fda73464e984822c032c57",
       "priority_tier": 2,
-      "batch_id": null,
-      "prompt_prepared": false,
-      "status": "queued_unprepared"
+      "batch_id": "agent-03-others-010",
+      "prompt_prepared": true,
+      "status": "ready",
+      "preparation_status": "prompt_prepared_not_generated"
     },
     {
       "queue_order": 98,
@@ -17757,9 +17588,10 @@
       "source_catalog_record_sha256": "f83289c04ac92fbd8c7f774b7a57a73c95d71c13fd88c61ec2e364b64c3a9f3d",
       "source_english_sha256": "3513632cf40635ae866984d1fc3634144523b6f4c4dc1cecfcd7055cc8af49ff",
       "priority_tier": 2,
-      "batch_id": null,
-      "prompt_prepared": false,
-      "status": "queued_unprepared"
+      "batch_id": "agent-03-others-010",
+      "prompt_prepared": true,
+      "status": "ready",
+      "preparation_status": "prompt_prepared_not_generated"
     },
     {
       "queue_order": 99,
@@ -17775,9 +17607,10 @@
       "source_catalog_record_sha256": "2bbb4e9532143e2a757053cc4f39915ead6ffb428199e2e3e899306ae3d67e29",
       "source_english_sha256": "7d98888013dc7929a586d6490f65274fd7f62d934df1e5de1dcd1b893968e896",
       "priority_tier": 2,
-      "batch_id": null,
-      "prompt_prepared": false,
-      "status": "queued_unprepared"
+      "batch_id": "agent-03-others-010",
+      "prompt_prepared": true,
+      "status": "ready",
+      "preparation_status": "prompt_prepared_not_generated"
     },
     {
       "queue_order": 100,
@@ -17793,9 +17626,10 @@
       "source_catalog_record_sha256": "d5d7c2fb515e3f3b9d292948aed4546ae1f4bd235b6d94ce42c9bcf762c87155",
       "source_english_sha256": "b1d3a9853fe5c3ae701601ccb8c8d88126ee5d828a7e38092bf085341a03bb4e",
       "priority_tier": 2,
-      "batch_id": null,
-      "prompt_prepared": false,
-      "status": "queued_unprepared"
+      "batch_id": "agent-03-others-010",
+      "prompt_prepared": true,
+      "status": "ready",
+      "preparation_status": "prompt_prepared_not_generated"
     },
     {
       "queue_order": 101,
@@ -17808,9 +17642,10 @@
       "source_catalog_record_sha256": "8a6ae6dfb9f7cd3a9c0821c9db17cdd8a8e909c102fc7447982af3a2dd885083",
       "source_english_sha256": "9e8f31be0bf0dca13f51d8ca963d34a9312fd6c31329a98329a8d0b8090677c5",
       "priority_tier": 2,
-      "batch_id": null,
-      "prompt_prepared": false,
-      "status": "queued_unprepared"
+      "batch_id": "agent-03-others-011",
+      "prompt_prepared": true,
+      "status": "ready",
+      "preparation_status": "prompt_prepared_not_generated"
     },
     {
       "queue_order": 102,
@@ -17827,9 +17662,10 @@
       "source_catalog_record_sha256": "ce0335daf154598624dc42a06bad689965ddf48a3fd81a66ba8c7782c17f155e",
       "source_english_sha256": "6bed411b6bd8d64c55cf58bc6784316d97712381cc266ab64bc66e725d56bbca",
       "priority_tier": 2,
-      "batch_id": null,
-      "prompt_prepared": false,
-      "status": "queued_unprepared"
+      "batch_id": "agent-03-others-011",
+      "prompt_prepared": true,
+      "status": "ready",
+      "preparation_status": "prompt_prepared_not_generated"
     },
     {
       "queue_order": 103,
@@ -17845,9 +17681,10 @@
       "source_catalog_record_sha256": "b3785806d37b0fab80c9a8fa1796f4d1b51ec804b8e94cee649a56e0a899a630",
       "source_english_sha256": "aca987ea8396c8d8e7fbee092af09ba169759084134b402787018f4db7eee856",
       "priority_tier": 3,
-      "batch_id": null,
-      "prompt_prepared": false,
-      "status": "queued_unprepared"
+      "batch_id": "agent-03-others-011",
+      "prompt_prepared": true,
+      "status": "ready",
+      "preparation_status": "prompt_prepared_not_generated"
     },
     {
       "queue_order": 104,
@@ -17864,9 +17701,10 @@
       "source_catalog_record_sha256": "edee513f631eaaa5de518940af5741cde7018e04620a948c7970bf32517510fa",
       "source_english_sha256": "c4f326cd3c0d0ddcac9f8fd939e72e0105fc9393f41b6fe7c7e68cf797833c68",
       "priority_tier": 3,
-      "batch_id": null,
-      "prompt_prepared": false,
-      "status": "queued_unprepared"
+      "batch_id": "agent-03-others-011",
+      "prompt_prepared": true,
+      "status": "ready",
+      "preparation_status": "prompt_prepared_not_generated"
     },
     {
       "queue_order": 105,
@@ -17883,9 +17721,10 @@
       "source_catalog_record_sha256": "a1d8a576d8e884894af669e067563e43cff6f364e5c3f0f49402af2ba2fcb890",
       "source_english_sha256": "a10d929ff1bbaf5b3374a9082d84231d917eefaa55831ad221404f9ceaf24c25",
       "priority_tier": 3,
-      "batch_id": null,
-      "prompt_prepared": false,
-      "status": "queued_unprepared"
+      "batch_id": "agent-03-others-011",
+      "prompt_prepared": true,
+      "status": "ready",
+      "preparation_status": "prompt_prepared_not_generated"
     },
     {
       "queue_order": 106,
@@ -17898,9 +17737,10 @@
       "source_catalog_record_sha256": "3a53c83514f5b160cc3a5e09ee245adef3f1124703853b1535ab426a30a221c9",
       "source_english_sha256": "dbdf568ab7f8aa57df8fbca745d5b4cf1a0258033b8f8356be304f47ce1b0b80",
       "priority_tier": 3,
-      "batch_id": null,
-      "prompt_prepared": false,
-      "status": "queued_unprepared"
+      "batch_id": "agent-03-others-011",
+      "prompt_prepared": true,
+      "status": "ready",
+      "preparation_status": "prompt_prepared_not_generated"
     },
     {
       "queue_order": 107,
@@ -17916,9 +17756,10 @@
       "source_catalog_record_sha256": "bdcc30139d0131a2d8755d47e0022fbf0480794c11af9cd5d4ba3ac9ea420a1e",
       "source_english_sha256": "a38530d5c5f17bc1778b023ce3c52481875571f7880a957517a7aec2c6155b46",
       "priority_tier": 3,
-      "batch_id": null,
-      "prompt_prepared": false,
-      "status": "queued_unprepared"
+      "batch_id": "agent-03-others-011",
+      "prompt_prepared": true,
+      "status": "ready",
+      "preparation_status": "prompt_prepared_not_generated"
     },
     {
       "queue_order": 108,
@@ -17933,9 +17774,10 @@
       "source_catalog_record_sha256": "87081cc7ca39ff1cab9feb1ff744a84935a2f79bc3d47ba7ebc44c0ebeaacfff",
       "source_english_sha256": "e8e7bddb92b2061a50f76d5b54e2803cf417e52e0d43f9aef2294403d270deee",
       "priority_tier": 3,
-      "batch_id": null,
-      "prompt_prepared": false,
-      "status": "queued_unprepared"
+      "batch_id": "agent-03-others-011",
+      "prompt_prepared": true,
+      "status": "ready",
+      "preparation_status": "prompt_prepared_not_generated"
     },
     {
       "queue_order": 109,
@@ -17952,9 +17794,10 @@
       "source_catalog_record_sha256": "56be634a7353cd8a26bf2a4139c7a42f8812517a8186f20579bcd5f90ae64cba",
       "source_english_sha256": "15f70486b4707e905c7e4dcad83a74476745375510cd753808b4e079bbf55329",
       "priority_tier": 3,
-      "batch_id": null,
-      "prompt_prepared": false,
-      "status": "queued_unprepared"
+      "batch_id": "agent-03-others-011",
+      "prompt_prepared": true,
+      "status": "ready",
+      "preparation_status": "prompt_prepared_not_generated"
     },
     {
       "queue_order": 110,
@@ -17971,9 +17814,10 @@
       "source_catalog_record_sha256": "9a402f742bde980f56d347a77f4ddd50f12568b17bfd4527e83a7c5f26584a36",
       "source_english_sha256": "94e44c432ab0c3826ca8b887b467bd50a3b95c534343e8c171d507d50afb069b",
       "priority_tier": 3,
-      "batch_id": null,
-      "prompt_prepared": false,
-      "status": "queued_unprepared"
+      "batch_id": "agent-03-others-011",
+      "prompt_prepared": true,
+      "status": "ready",
+      "preparation_status": "prompt_prepared_not_generated"
     },
     {
       "queue_order": 111,
@@ -17986,9 +17830,10 @@
       "source_catalog_record_sha256": "f1641ad42c5ff9a9f0f9c6861730da7cd46c666428dba9036a6585951fb662b2",
       "source_english_sha256": "9b31ddc3c5e9aa767ee1c7c6ea3bf8493511c2fcacbf85bd1a7ce007735deeab",
       "priority_tier": 3,
-      "batch_id": null,
-      "prompt_prepared": false,
-      "status": "queued_unprepared"
+      "batch_id": "agent-03-others-012",
+      "prompt_prepared": true,
+      "status": "ready",
+      "preparation_status": "prompt_prepared_not_generated"
     },
     {
       "queue_order": 112,
@@ -18005,9 +17850,10 @@
       "source_catalog_record_sha256": "5d43ececfbbe0469a480e6d9a238a8dcc7e5a5ea9843b02f79c35faa587f855e",
       "source_english_sha256": "f9fc3c36f2898ab4240b982548764aeea299aacd23d54aa59c8e7cec50deb291",
       "priority_tier": 3,
-      "batch_id": null,
-      "prompt_prepared": false,
-      "status": "queued_unprepared"
+      "batch_id": "agent-03-others-012",
+      "prompt_prepared": true,
+      "status": "ready",
+      "preparation_status": "prompt_prepared_not_generated"
     },
     {
       "queue_order": 113,
@@ -18022,9 +17868,10 @@
       "source_catalog_record_sha256": "354f3c2f572421dbb47a5504f8a1733426e11a1818966e821f6af20bf4d6c89a",
       "source_english_sha256": "d1742961db22f458c91796d7c17535e3ac6558a6ce717baf494ceebf6040398a",
       "priority_tier": 3,
-      "batch_id": null,
-      "prompt_prepared": false,
-      "status": "queued_unprepared"
+      "batch_id": "agent-03-others-012",
+      "prompt_prepared": true,
+      "status": "ready",
+      "preparation_status": "prompt_prepared_not_generated"
     },
     {
       "queue_order": 114,
@@ -18039,9 +17886,10 @@
       "source_catalog_record_sha256": "100fea53605fd868a990ea5dbf830f3140f4064080fa04477ea47ed6325b2cf5",
       "source_english_sha256": "2e2adedd9cd7eca837ebe8a72e7a340c0117138ca60c1b79bbc3d6b80ae09f3f",
       "priority_tier": 3,
-      "batch_id": null,
-      "prompt_prepared": false,
-      "status": "queued_unprepared"
+      "batch_id": "agent-03-others-012",
+      "prompt_prepared": true,
+      "status": "ready",
+      "preparation_status": "prompt_prepared_not_generated"
     },
     {
       "queue_order": 115,
@@ -18054,9 +17902,10 @@
       "source_catalog_record_sha256": "62d3e6a87987c2f84bd29c49d902fbe7830ea5e8315c498695b81e34cd1b2fde",
       "source_english_sha256": "bc5e91e96a151c55c7e53883fda00a233e628b26c44b2275a18579a54afadea0",
       "priority_tier": 3,
-      "batch_id": null,
-      "prompt_prepared": false,
-      "status": "queued_unprepared"
+      "batch_id": "agent-03-others-012",
+      "prompt_prepared": true,
+      "status": "ready",
+      "preparation_status": "prompt_prepared_not_generated"
     },
     {
       "queue_order": 116,
@@ -18072,9 +17921,10 @@
       "source_catalog_record_sha256": "fc0bbd7f069a5fc82b80a6a17e3f2524253a48fbc5c4417a78b3b7626d7f71cd",
       "source_english_sha256": "d982d6a2e0c3822bfc1f88d8957485eab7b12dd485a7686b5148bc08b65e5048",
       "priority_tier": 3,
-      "batch_id": null,
-      "prompt_prepared": false,
-      "status": "queued_unprepared"
+      "batch_id": "agent-03-others-012",
+      "prompt_prepared": true,
+      "status": "ready",
+      "preparation_status": "prompt_prepared_not_generated"
     },
     {
       "queue_order": 117,
@@ -18087,9 +17937,10 @@
       "source_catalog_record_sha256": "e304489138f9d578481732de905cc88a18754a98b1eb263c7416c8a52d141d99",
       "source_english_sha256": "d32dd5beb60b0cf14c4f6cba630c5ee2e5bc38b1cff23adb38a50df953b6aac9",
       "priority_tier": 3,
-      "batch_id": null,
-      "prompt_prepared": false,
-      "status": "queued_unprepared"
+      "batch_id": "agent-03-others-012",
+      "prompt_prepared": true,
+      "status": "ready",
+      "preparation_status": "prompt_prepared_not_generated"
     },
     {
       "queue_order": 118,
@@ -18102,9 +17953,10 @@
       "source_catalog_record_sha256": "a0a12d494cd747b16f5ef8071d4f783576b6bd886a24209d3da0078f30d523bd",
       "source_english_sha256": "e279b76911edd71bed1ffee9a2df6e3a2856da52cf62a470001a7214008872b3",
       "priority_tier": 3,
-      "batch_id": null,
-      "prompt_prepared": false,
-      "status": "queued_unprepared"
+      "batch_id": "agent-03-others-012",
+      "prompt_prepared": true,
+      "status": "ready",
+      "preparation_status": "prompt_prepared_not_generated"
     },
     {
       "queue_order": 119,
@@ -18123,9 +17975,10 @@
       "source_catalog_record_sha256": "401cf95dd1909f4106c9729570af848b4f1dafe55780b389fba5155ff53b4850",
       "source_english_sha256": "421741538c5bdf742aa27259a58302f9c353684661d59b332923e993d17416a3",
       "priority_tier": 3,
-      "batch_id": null,
-      "prompt_prepared": false,
-      "status": "queued_unprepared"
+      "batch_id": "agent-03-others-012",
+      "prompt_prepared": true,
+      "status": "ready",
+      "preparation_status": "prompt_prepared_not_generated"
     },
     {
       "queue_order": 120,
@@ -18138,9 +17991,10 @@
       "source_catalog_record_sha256": "0bf5caced22510fe1abfd5950ab1a64a474c24e22af7734740a543bafd87ba22",
       "source_english_sha256": "e7cd43e22b54d0704823bde123ef796e5bbe61e5a7cfa0477c7abbcb2dacfed8",
       "priority_tier": 3,
-      "batch_id": null,
-      "prompt_prepared": false,
-      "status": "queued_unprepared"
+      "batch_id": "agent-03-others-012",
+      "prompt_prepared": true,
+      "status": "ready",
+      "preparation_status": "prompt_prepared_not_generated"
     },
     {
       "queue_order": 121,
@@ -18153,9 +18007,10 @@
       "source_catalog_record_sha256": "ae0287848e26efa3cc263403e8ae8389a9f16db91ca33ca5659e215c738a7304",
       "source_english_sha256": "beec6156cbe1910243464e41e3f0d5f8b334c32c3c2d2e98ccc97a0a75119503",
       "priority_tier": 3,
-      "batch_id": null,
-      "prompt_prepared": false,
-      "status": "queued_unprepared"
+      "batch_id": "agent-03-others-013",
+      "prompt_prepared": true,
+      "status": "ready",
+      "preparation_status": "prompt_prepared_not_generated"
     },
     {
       "queue_order": 122,
@@ -18168,9 +18023,10 @@
       "source_catalog_record_sha256": "d3b8de3e7f12ef8a93ba365638dde9a65d96f41e4908fc9ec445ae255b3121b4",
       "source_english_sha256": "15f27a23b9f139319251aa82dc76440641d553a568da0767d6c67bcb8eb1f05b",
       "priority_tier": 3,
-      "batch_id": null,
-      "prompt_prepared": false,
-      "status": "queued_unprepared"
+      "batch_id": "agent-03-others-013",
+      "prompt_prepared": true,
+      "status": "ready",
+      "preparation_status": "prompt_prepared_not_generated"
     },
     {
       "queue_order": 123,
@@ -18183,9 +18039,10 @@
       "source_catalog_record_sha256": "d7fc3a5b76335c1ab83ee4ecb7a3b2fc92fa28e723d671e9eea97df3fe70f3ca",
       "source_english_sha256": "4b0db3680b5995fc2c62f1cb1d93523935f9d61b4b2c8e54ae4d95f36e71d6dc",
       "priority_tier": 3,
-      "batch_id": null,
-      "prompt_prepared": false,
-      "status": "queued_unprepared"
+      "batch_id": "agent-03-others-013",
+      "prompt_prepared": true,
+      "status": "ready",
+      "preparation_status": "prompt_prepared_not_generated"
     },
     {
       "queue_order": 124,
@@ -18201,9 +18058,10 @@
       "source_catalog_record_sha256": "50e95062f3b85724634eecc322ff964eae9fb2605aa93beb97fb9527eb2e0aeb",
       "source_english_sha256": "7be5ba98001d5b7835cd74d434cf570154103df62411beb2606b4173f0ce8f89",
       "priority_tier": 3,
-      "batch_id": null,
-      "prompt_prepared": false,
-      "status": "queued_unprepared"
+      "batch_id": "agent-03-others-013",
+      "prompt_prepared": true,
+      "status": "ready",
+      "preparation_status": "prompt_prepared_not_generated"
     },
     {
       "queue_order": 125,
@@ -18220,9 +18078,10 @@
       "source_catalog_record_sha256": "c635d2a93f0e9364ca2ace7eb841a3bc02c1064ca82a7ca448fd18f94887e926",
       "source_english_sha256": "bdee61b77cb5ae7d099c7c059f2e9f459d7cbb413314d5847ae858bc44feb51e",
       "priority_tier": 3,
-      "batch_id": null,
-      "prompt_prepared": false,
-      "status": "queued_unprepared"
+      "batch_id": "agent-03-others-013",
+      "prompt_prepared": true,
+      "status": "ready",
+      "preparation_status": "prompt_prepared_not_generated"
     },
     {
       "queue_order": 126,
@@ -18238,9 +18097,10 @@
       "source_catalog_record_sha256": "bb534d6010b19eedbe760a60f9df2cf973e13fd69d5ed99201f56fc24ab2f7c9",
       "source_english_sha256": "07892316258650ce0703a4685f279e4fbd0fe4ad62bbe19e42123991a4711132",
       "priority_tier": 3,
-      "batch_id": null,
-      "prompt_prepared": false,
-      "status": "queued_unprepared"
+      "batch_id": "agent-03-others-013",
+      "prompt_prepared": true,
+      "status": "ready",
+      "preparation_status": "prompt_prepared_not_generated"
     },
     {
       "queue_order": 127,
@@ -18255,21 +18115,329 @@
       "source_catalog_record_sha256": "2d4f1431e92f5080c3de6b240fa5c0d715c8525e30cf35088cdcc220539bedbb",
       "source_english_sha256": "e1fe48c9b46e50ed928087eff498fe3df4d64f85dba76511ef84901d5a26000e",
       "priority_tier": 3,
-      "batch_id": null,
-      "prompt_prepared": false,
-      "status": "queued_unprepared"
+      "batch_id": "agent-03-others-013",
+      "prompt_prepared": true,
+      "status": "ready",
+      "preparation_status": "prompt_prepared_not_generated"
+    },
+    {
+      "exercise_id": "around-the-world-dumbbell",
+      "name": "Around The World",
+      "equipment": "dumbbell",
+      "primary_muscle": "chest",
+      "secondary_muscles": [
+        "upper_back",
+        "shoulders",
+        "lats"
+      ],
+      "source_catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+      "source_catalog_record_sha256": "a9a0eb52b0332ab807a6f169c98c560d5f361b84e1ed44ef4580fa24fa457a61",
+      "source_english_sha256": "9951f946f229aeea1684c008c52b761da9dee2238f0c8185ca890378e2642536",
+      "priority_tier": 4,
+      "source_clarification_resolution_path": "data/queues/agent-03-other-clarifications-review.json",
+      "queue_order": 128,
+      "batch_id": "agent-03-others-014",
+      "prompt_prepared": true,
+      "status": "ready",
+      "preparation_status": "prompt_prepared_not_generated"
+    },
+    {
+      "exercise_id": "bench-press-close-grip-barbell",
+      "name": "Bench Press - Close Grip (Barbell)",
+      "equipment": "barbell",
+      "primary_muscle": "triceps",
+      "secondary_muscles": [
+        "chest",
+        "shoulders"
+      ],
+      "source_catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+      "source_catalog_record_sha256": "f9e476b9927f6aade2ca2ae35e25d7d39672eec1bc22b26b6d4cd92bbaaadd75",
+      "source_english_sha256": "7f665981d4c56c90047c3963e47ace43a8668db86db54236384cf82da33ca6ee",
+      "priority_tier": 4,
+      "source_clarification_resolution_path": "data/queues/agent-03-other-clarifications-review.json",
+      "queue_order": 129,
+      "batch_id": "agent-03-others-014",
+      "prompt_prepared": true,
+      "status": "ready",
+      "preparation_status": "prompt_prepared_not_generated"
+    },
+    {
+      "exercise_id": "bench-press-wide-grip-barbell",
+      "name": "Bench Press - Wide Grip (Barbell)",
+      "equipment": "barbell",
+      "primary_muscle": "chest",
+      "secondary_muscles": [
+        "shoulders",
+        "triceps"
+      ],
+      "source_catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+      "source_catalog_record_sha256": "1cdfba6a27d35752e0e938eb33b06951cf8e70b8988a8cf1321d8b2e8806de9b",
+      "source_english_sha256": "3d96cb1cdb88b65cf9efe41640d1f94a95e4bda062b48168d9fe65710a3b036b",
+      "priority_tier": 4,
+      "source_clarification_resolution_path": "data/queues/agent-03-other-clarifications-review.json",
+      "queue_order": 130,
+      "batch_id": "agent-03-others-014",
+      "prompt_prepared": true,
+      "status": "ready",
+      "preparation_status": "prompt_prepared_not_generated"
+    },
+    {
+      "exercise_id": "box-jump",
+      "name": "Box Jump",
+      "equipment": "other",
+      "primary_muscle": "quadriceps",
+      "secondary_muscles": [
+        "hamstrings",
+        "glutes",
+        "calves"
+      ],
+      "source_catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+      "source_catalog_record_sha256": "d1b7ae6e396aecf883a432e46f4737b9ab0acaccf29174c7a3577a425603b421",
+      "source_english_sha256": "f7b7111ae494ecdc9a6730d0ddbabd9e2169fb012f52aa332246b6b036b2068a",
+      "priority_tier": 4,
+      "source_clarification_resolution_path": "data/queues/agent-03-other-clarifications-review.json",
+      "queue_order": 131,
+      "batch_id": "agent-03-others-014",
+      "prompt_prepared": true,
+      "status": "ready",
+      "preparation_status": "prompt_prepared_not_generated"
+    },
+    {
+      "exercise_id": "chest-fly-band-resistance-band",
+      "name": "Chest Fly (Band)",
+      "equipment": "resistance_band",
+      "primary_muscle": "chest",
+      "secondary_muscles": [],
+      "source_catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+      "source_catalog_record_sha256": "ed4893ab23d658973e2bb9f2cc323260a0dfaba330f4921a831a6e11af2d86af",
+      "source_english_sha256": "a098f7fb238f079ebe10961d606dbf9d461a2dd952cb0d94f0a346cca5e309dc",
+      "priority_tier": 4,
+      "source_clarification_resolution_path": "data/queues/agent-03-other-clarifications-review.json",
+      "queue_order": 132,
+      "batch_id": "agent-03-others-014",
+      "prompt_prepared": true,
+      "status": "ready",
+      "preparation_status": "prompt_prepared_not_generated"
+    },
+    {
+      "exercise_id": "chest-fly-suspension",
+      "name": "Chest Fly (Suspension)",
+      "equipment": "suspension",
+      "primary_muscle": "chest",
+      "secondary_muscles": [],
+      "source_catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+      "source_catalog_record_sha256": "6e7a1c1668dbda3967615b90bde53f0dbaaadec32e4c4450a4ec1430563e27c8",
+      "source_english_sha256": "84946a3bddcbe736796db0df248b7806660b36bd93d3a50c24669b99036b42e9",
+      "priority_tier": 4,
+      "source_clarification_resolution_path": "data/queues/agent-03-other-clarifications-review.json",
+      "queue_order": 133,
+      "batch_id": "agent-03-others-014",
+      "prompt_prepared": true,
+      "status": "ready",
+      "preparation_status": "prompt_prepared_not_generated"
+    },
+    {
+      "exercise_id": "crunch-weighted",
+      "name": "Crunch (Weighted)",
+      "equipment": "none",
+      "primary_muscle": "abdominals",
+      "secondary_muscles": [],
+      "source_catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+      "source_catalog_record_sha256": "f88eded54fa113168d7827f95113aef4ab3182066d98e106d7ef6406ac92d37c",
+      "source_english_sha256": "571b1d4c461db604c39fdad8e1ed5fd9dd03e845215ec78d35104929014355d4",
+      "priority_tier": 4,
+      "source_clarification_resolution_path": "data/queues/agent-03-other-clarifications-review.json",
+      "queue_order": 134,
+      "batch_id": "agent-03-others-014",
+      "prompt_prepared": true,
+      "status": "ready",
+      "preparation_status": "prompt_prepared_not_generated"
+    },
+    {
+      "exercise_id": "decline-chest-fly-dumbbell",
+      "name": "Decline Chest Fly (Dumbbell)",
+      "equipment": "dumbbell",
+      "primary_muscle": "chest",
+      "secondary_muscles": [],
+      "source_catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+      "source_catalog_record_sha256": "abf450374f5854573ad0982ebabee6dbd6ef6d9463bf75af76bc65906afb66f8",
+      "source_english_sha256": "2bb1efe036d6eb66fdb3f03b7c79015ccb1db46135fe2cd1a18141d9c595aacf",
+      "priority_tier": 4,
+      "source_clarification_resolution_path": "data/queues/agent-03-other-clarifications-review.json",
+      "queue_order": 135,
+      "batch_id": "agent-03-others-014",
+      "prompt_prepared": true,
+      "status": "ready",
+      "preparation_status": "prompt_prepared_not_generated"
+    },
+    {
+      "exercise_id": "decline-crunch-weighted",
+      "name": "Decline Crunch (Weighted)",
+      "equipment": "none",
+      "primary_muscle": "abdominals",
+      "secondary_muscles": [],
+      "source_catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+      "source_catalog_record_sha256": "2f428c5fd0ad898f6594e3cce163e7bd4b470c3ba3046a7553aa9e68e6db2180",
+      "source_english_sha256": "22c455ab617fe001762f4eafc5d6c06e052af950f42cb64a07405254b42a20b7",
+      "priority_tier": 4,
+      "source_clarification_resolution_path": "data/queues/agent-03-other-clarifications-review.json",
+      "queue_order": 136,
+      "batch_id": "agent-03-others-014",
+      "prompt_prepared": true,
+      "status": "ready",
+      "preparation_status": "prompt_prepared_not_generated"
+    },
+    {
+      "exercise_id": "dumbbell-squeeze-press",
+      "name": "Dumbbell Squeeze Press",
+      "equipment": "dumbbell",
+      "primary_muscle": "chest",
+      "secondary_muscles": [
+        "shoulders",
+        "triceps"
+      ],
+      "source_catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+      "source_catalog_record_sha256": "c402c02448345aaaabeb30ac033e8d0ffa311a072324c57a93496b6758b1db5e",
+      "source_english_sha256": "2d506299ddee86ccf4233a5a532988393a7563bcf85f29fa24ca364249999eb3",
+      "priority_tier": 4,
+      "source_clarification_resolution_path": "data/queues/agent-03-other-clarifications-review.json",
+      "queue_order": 137,
+      "batch_id": "agent-03-others-014",
+      "prompt_prepared": true,
+      "status": "ready",
+      "preparation_status": "prompt_prepared_not_generated"
+    },
+    {
+      "exercise_id": "dumbbell-step-up",
+      "name": "Dumbbell Step Up",
+      "equipment": "dumbbell",
+      "primary_muscle": "quadriceps",
+      "secondary_muscles": [
+        "glutes",
+        "hamstrings"
+      ],
+      "source_catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+      "source_catalog_record_sha256": "af3d258b8e3894a004dcaef6a8fba2e0522140f969691707b6f3459ed6181998",
+      "source_english_sha256": "01f404c830ba782fbf48701093511c57d6c22c6aa29f8278a1772952f9c40d8e",
+      "priority_tier": 4,
+      "source_clarification_resolution_path": "data/queues/agent-03-other-clarifications-review.json",
+      "queue_order": 138,
+      "batch_id": "agent-03-others-015",
+      "prompt_prepared": true,
+      "status": "ready",
+      "preparation_status": "prompt_prepared_not_generated"
+    },
+    {
+      "exercise_id": "ez-bar-biceps-curl-barbell",
+      "name": "EZ Bar Biceps Curl",
+      "equipment": "barbell",
+      "primary_muscle": "biceps",
+      "secondary_muscles": [],
+      "source_catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+      "source_catalog_record_sha256": "9cb4c1eaf5829a1812882f4a8ba7d6ab5f397d908721471619fa0c4451c92beb",
+      "source_english_sha256": "fc7a64ee6499107a6dbda6965a4cb75ef16a55bb536f331f34c840c35f77aaac",
+      "priority_tier": 4,
+      "source_clarification_resolution_path": "data/queues/agent-03-other-clarifications-review.json",
+      "queue_order": 139,
+      "batch_id": "agent-03-others-015",
+      "prompt_prepared": true,
+      "status": "ready",
+      "preparation_status": "prompt_prepared_not_generated"
+    },
+    {
+      "exercise_id": "frog-jumps",
+      "name": "Frog Jumps",
+      "equipment": "none",
+      "primary_muscle": "quadriceps",
+      "secondary_muscles": [
+        "glutes",
+        "hamstrings",
+        "calves"
+      ],
+      "source_catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+      "source_catalog_record_sha256": "5f5e541c4089572b04d19c0a69eb2a5d5b2cae324cac30fa60055399c4111405",
+      "source_english_sha256": "c894415c4d64c6d11ea6a48addb3218be354ce0354a3592d883ec3b4809942a4",
+      "priority_tier": 4,
+      "source_clarification_resolution_path": "data/queues/agent-03-other-clarifications-review.json",
+      "queue_order": 140,
+      "batch_id": "agent-03-others-015",
+      "prompt_prepared": true,
+      "status": "ready",
+      "preparation_status": "prompt_prepared_not_generated"
+    },
+    {
+      "exercise_id": "full-squat-barbell",
+      "name": "Full Squat",
+      "equipment": "barbell",
+      "primary_muscle": "quadriceps",
+      "secondary_muscles": [
+        "hamstrings",
+        "glutes"
+      ],
+      "source_catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+      "source_catalog_record_sha256": "d7ca542132794c5101f0eb19e2dd5864e64eee919c23937cccc09213d08989cc",
+      "source_english_sha256": "b34d1ac236b570f7d2711194f1ba20c72f54ff6cc94cbb3a61672156a4fba920",
+      "priority_tier": 4,
+      "source_clarification_resolution_path": "data/queues/agent-03-other-clarifications-review.json",
+      "queue_order": 141,
+      "batch_id": "agent-03-others-015",
+      "prompt_prepared": true,
+      "status": "ready",
+      "preparation_status": "prompt_prepared_not_generated"
+    },
+    {
+      "exercise_id": "glute-bridge-barbell",
+      "name": "Glute Bridge (Barbell)",
+      "equipment": "barbell",
+      "primary_muscle": "glutes",
+      "secondary_muscles": [
+        "hamstrings",
+        "adductors",
+        "quadriceps"
+      ],
+      "source_catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+      "source_catalog_record_sha256": "1cb281208ac6a37161bab96d711f013c91dd1a32df0a22a97530f4961518b043",
+      "source_english_sha256": "a034533a428ebac012e0f676cfefd17c1c87ba42260f6b1c45d11de02e502c27",
+      "priority_tier": 4,
+      "source_clarification_resolution_path": "data/queues/agent-03-other-clarifications-review.json",
+      "queue_order": 142,
+      "batch_id": "agent-03-others-015",
+      "prompt_prepared": true,
+      "status": "ready",
+      "preparation_status": "prompt_prepared_not_generated"
+    },
+    {
+      "exercise_id": "hex-press-dumbbell",
+      "name": "Hex Press (Dumbbell)",
+      "equipment": "dumbbell",
+      "primary_muscle": "chest",
+      "secondary_muscles": [
+        "shoulders",
+        "triceps"
+      ],
+      "source_catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+      "source_catalog_record_sha256": "2b6cc1a950016995905c5df4d4d03cbd4da3296e5fda852be55897f5d3f199b6",
+      "source_english_sha256": "eb43f00f8b589bdade50828d4c4094de00632b621007e2fc63c337df4cfcf066",
+      "priority_tier": 4,
+      "source_clarification_resolution_path": "data/queues/agent-03-other-clarifications-review.json",
+      "queue_order": 143,
+      "batch_id": "agent-03-others-015",
+      "prompt_prepared": true,
+      "status": "ready",
+      "preparation_status": "prompt_prepared_not_generated"
     }
   ],
   "last_live_check": {
     "status": "passed",
-    "checked_at_utc": "2026-10-01T15:53:17.524201+00:00",
+    "checked_at": "2026-10-02T01:28:33.626857+03:00",
     "audited_commits": {
-      "origin/work": "11eea90c1b4201c50539f5b944f21db963a41db4",
+      "origin/work": "a6f296cbc6737991dd367e929b3e2df25874d4d8",
       "origin/agent-02-machines-001": "2c27f90d8e2be0c1f349b81231897fd204d543b5",
-      "HEAD": "47f772a7824e2377f4454efe2e7365bcb2fec0b1"
+      "origin/agent-04-supabase-integration": "68e9f7a30666d4fa6f83aa48717311f8876f2021",
+      "HEAD": "3313536c00e0e83d844c9ae0cd6846f5d3bd61e2"
     }
   },
-  "updated_at": "2026-10-01T15:51:27.416202+00:00",
+  "updated_at": "2026-10-02T01:21:10.062167+03:00",
   "next_launch_ids": [
     "21s-biceps-curl-barbell",
     "arnold-press-dumbbell",
@@ -18614,39 +18782,176 @@
       ],
       "status": "prepared_only",
       "shortfall_to_30": 0
+    },
+    {
+      "round": 4,
+      "prepared_at": "2026-10-02T01:21:10.062167+03:00",
+      "audited_commits": {
+        "origin/work": "a6f296cbc6737991dd367e929b3e2df25874d4d8",
+        "origin/agent-02-machines-001": "2c27f90d8e2be0c1f349b81231897fd204d543b5",
+        "origin/agent-04-supabase-integration": "68e9f7a30666d4fa6f83aa48717311f8876f2021",
+        "HEAD": "3313536c00e0e83d844c9ae0cd6846f5d3bd61e2"
+      },
+      "input_remaining_ids": [
+        "low-row-suspension",
+        "pullup-band-resistance-band",
+        "pullup-machine",
+        "ring-pushup",
+        "scapular-pull-ups",
+        "squat-suspension",
+        "sternum-pullup-gironda-machine",
+        "toes-to-bar",
+        "triceps-dip-machine",
+        "triceps-dip-weighted-machine",
+        "triceps-extension-suspension",
+        "wide-pullup-machine",
+        "box-squat-barbell-hevy-3338464331414239",
+        "gorilla-row-kettlebell",
+        "kettlebell-around-the-world",
+        "kettlebell-curl",
+        "kettlebell-goblet-squat",
+        "kettlebell-shoulder-press",
+        "landmine-row-barbell",
+        "lateral-box-jump",
+        "lying-neck-curls-weighted-plate",
+        "meadows-rows-barbell",
+        "overhead-plate-raise",
+        "plate-curl",
+        "plate-front-raise",
+        "plate-press",
+        "preacher-curl-barbell",
+        "preacher-curl-dumbbell",
+        "rack-pull-barbell",
+        "russian-twist-weighted-plate",
+        "single-leg-standing-calf-raise-dumbbell",
+        "sissy-squat-weighted",
+        "situp-weighted",
+        "step-up",
+        "sumo-squat-kettlebell",
+        "walking-lunge-sandbag",
+        "wrist-roller-machine"
+      ],
+      "excluded_since_previous_round": [],
+      "exercise_ids": [
+        "low-row-suspension",
+        "pullup-band-resistance-band",
+        "pullup-machine",
+        "ring-pushup",
+        "scapular-pull-ups",
+        "squat-suspension",
+        "sternum-pullup-gironda-machine",
+        "toes-to-bar",
+        "triceps-dip-machine",
+        "triceps-dip-weighted-machine",
+        "triceps-extension-suspension",
+        "wide-pullup-machine",
+        "box-squat-barbell-hevy-3338464331414239",
+        "gorilla-row-kettlebell",
+        "kettlebell-around-the-world",
+        "kettlebell-curl",
+        "kettlebell-goblet-squat",
+        "kettlebell-shoulder-press",
+        "landmine-row-barbell",
+        "lateral-box-jump",
+        "lying-neck-curls-weighted-plate",
+        "meadows-rows-barbell",
+        "overhead-plate-raise",
+        "plate-curl",
+        "plate-front-raise",
+        "plate-press",
+        "preacher-curl-barbell",
+        "preacher-curl-dumbbell",
+        "rack-pull-barbell",
+        "russian-twist-weighted-plate",
+        "single-leg-standing-calf-raise-dumbbell",
+        "sissy-squat-weighted",
+        "situp-weighted",
+        "step-up",
+        "sumo-squat-kettlebell",
+        "walking-lunge-sandbag",
+        "wrist-roller-machine",
+        "around-the-world-dumbbell",
+        "bench-press-close-grip-barbell",
+        "bench-press-wide-grip-barbell",
+        "box-jump",
+        "chest-fly-band-resistance-band",
+        "chest-fly-suspension",
+        "crunch-weighted",
+        "decline-chest-fly-dumbbell",
+        "decline-crunch-weighted",
+        "dumbbell-squeeze-press",
+        "dumbbell-step-up",
+        "ez-bar-biceps-curl-barbell",
+        "frog-jumps",
+        "full-squat-barbell",
+        "glute-bridge-barbell",
+        "hex-press-dumbbell"
+      ],
+      "batch_paths": [
+        "data/batches/agent-03-others-010.json",
+        "data/batches/agent-03-others-011.json",
+        "data/batches/agent-03-others-012.json",
+        "data/batches/agent-03-others-013.json",
+        "data/batches/agent-03-others-014.json",
+        "data/batches/agent-03-others-015.json"
+      ],
+      "status": "ready_preparation_only"
     }
   ],
   "latest_launch_ids": [
-    "single-arm-triceps-extension-dumbbell",
-    "single-leg-hip-thrust-dumbbell",
-    "single-leg-romanian-deadlift-barbell",
-    "skullcrusher-barbell",
-    "skullcrusher-dumbbell",
-    "spider-curl-barbell",
-    "squat-barbell",
-    "standing-calf-raise-barbell",
-    "standing-military-press-barbell",
-    "straight-leg-deadlift-barbell",
-    "sumo-deadlift-barbell",
-    "sumo-squat-barbell",
-    "upright-row-barbell",
-    "wide-elbow-triceps-press-dumbbell",
-    "zercher-squat-barbell",
-    "band-pullaparts-resistance-band",
-    "chest-dip-machine",
-    "chinup-machine",
-    "chinup-weighted-machine",
-    "clamshell-resistance-band",
-    "dead-hang",
-    "hanging-knee-raise",
-    "hanging-leg-raise",
-    "jack-knife-suspension",
-    "kipping-pullup-machine",
-    "knee-raise-parallel-bars-machine",
-    "kneeling-pulldown-band-machine",
-    "lat-pulldown-band-resistance-band",
-    "lateral-band-walks-resistance-band",
-    "lateral-raise-band-resistance-band"
+    "low-row-suspension",
+    "pullup-band-resistance-band",
+    "pullup-machine",
+    "ring-pushup",
+    "scapular-pull-ups",
+    "squat-suspension",
+    "sternum-pullup-gironda-machine",
+    "toes-to-bar",
+    "triceps-dip-machine",
+    "triceps-dip-weighted-machine",
+    "triceps-extension-suspension",
+    "wide-pullup-machine",
+    "box-squat-barbell-hevy-3338464331414239",
+    "gorilla-row-kettlebell",
+    "kettlebell-around-the-world",
+    "kettlebell-curl",
+    "kettlebell-goblet-squat",
+    "kettlebell-shoulder-press",
+    "landmine-row-barbell",
+    "lateral-box-jump",
+    "lying-neck-curls-weighted-plate",
+    "meadows-rows-barbell",
+    "overhead-plate-raise",
+    "plate-curl",
+    "plate-front-raise",
+    "plate-press",
+    "preacher-curl-barbell",
+    "preacher-curl-dumbbell",
+    "rack-pull-barbell",
+    "russian-twist-weighted-plate",
+    "single-leg-standing-calf-raise-dumbbell",
+    "sissy-squat-weighted",
+    "situp-weighted",
+    "step-up",
+    "sumo-squat-kettlebell",
+    "walking-lunge-sandbag",
+    "wrist-roller-machine",
+    "around-the-world-dumbbell",
+    "bench-press-close-grip-barbell",
+    "bench-press-wide-grip-barbell",
+    "box-jump",
+    "chest-fly-band-resistance-band",
+    "chest-fly-suspension",
+    "crunch-weighted",
+    "decline-chest-fly-dumbbell",
+    "decline-crunch-weighted",
+    "dumbbell-squeeze-press",
+    "dumbbell-step-up",
+    "ez-bar-biceps-curl-barbell",
+    "frog-jumps",
+    "full-squat-barbell",
+    "glute-bridge-barbell",
+    "hex-press-dumbbell"
   ],
   "previous_batches_live_git_state": {
     "audited_commits": {
@@ -22990,5 +23295,450 @@
       ]
     },
     "note": "Live Git observations only; own prior batch files unchanged. PNG presence is not user approval."
+  },
+  "blocked_clarification_count": 89,
+  "blocked_clarification_path": "data/queues/agent-03-other-blocked.json",
+  "clarification_review_path": "data/queues/agent-03-other-clarifications-review.json",
+  "completion": {
+    "status": "eligible_preparation_finished_blocked_clarifications_remain",
+    "prepared_at": "2026-10-02T01:21:10.062167+03:00",
+    "audited_commits": {
+      "origin/work": "a6f296cbc6737991dd367e929b3e2df25874d4d8",
+      "origin/agent-02-machines-001": "2c27f90d8e2be0c1f349b81231897fd204d543b5",
+      "origin/agent-04-supabase-integration": "68e9f7a30666d4fa6f83aa48717311f8876f2021",
+      "HEAD": "3313536c00e0e83d844c9ae0cd6846f5d3bd61e2"
+    },
+    "input_remaining_ids": [
+      "low-row-suspension",
+      "pullup-band-resistance-band",
+      "pullup-machine",
+      "ring-pushup",
+      "scapular-pull-ups",
+      "squat-suspension",
+      "sternum-pullup-gironda-machine",
+      "toes-to-bar",
+      "triceps-dip-machine",
+      "triceps-dip-weighted-machine",
+      "triceps-extension-suspension",
+      "wide-pullup-machine",
+      "box-squat-barbell-hevy-3338464331414239",
+      "gorilla-row-kettlebell",
+      "kettlebell-around-the-world",
+      "kettlebell-curl",
+      "kettlebell-goblet-squat",
+      "kettlebell-shoulder-press",
+      "landmine-row-barbell",
+      "lateral-box-jump",
+      "lying-neck-curls-weighted-plate",
+      "meadows-rows-barbell",
+      "overhead-plate-raise",
+      "plate-curl",
+      "plate-front-raise",
+      "plate-press",
+      "preacher-curl-barbell",
+      "preacher-curl-dumbbell",
+      "rack-pull-barbell",
+      "russian-twist-weighted-plate",
+      "single-leg-standing-calf-raise-dumbbell",
+      "sissy-squat-weighted",
+      "situp-weighted",
+      "step-up",
+      "sumo-squat-kettlebell",
+      "walking-lunge-sandbag",
+      "wrist-roller-machine"
+    ],
+    "excluded_since_previous_round": [],
+    "prepared_from_remaining": 37,
+    "prepared_from_clarifications": 16,
+    "new_prepared_count": 53,
+    "new_exercise_ids": [
+      "low-row-suspension",
+      "pullup-band-resistance-band",
+      "pullup-machine",
+      "ring-pushup",
+      "scapular-pull-ups",
+      "squat-suspension",
+      "sternum-pullup-gironda-machine",
+      "toes-to-bar",
+      "triceps-dip-machine",
+      "triceps-dip-weighted-machine",
+      "triceps-extension-suspension",
+      "wide-pullup-machine",
+      "box-squat-barbell-hevy-3338464331414239",
+      "gorilla-row-kettlebell",
+      "kettlebell-around-the-world",
+      "kettlebell-curl",
+      "kettlebell-goblet-squat",
+      "kettlebell-shoulder-press",
+      "landmine-row-barbell",
+      "lateral-box-jump",
+      "lying-neck-curls-weighted-plate",
+      "meadows-rows-barbell",
+      "overhead-plate-raise",
+      "plate-curl",
+      "plate-front-raise",
+      "plate-press",
+      "preacher-curl-barbell",
+      "preacher-curl-dumbbell",
+      "rack-pull-barbell",
+      "russian-twist-weighted-plate",
+      "single-leg-standing-calf-raise-dumbbell",
+      "sissy-squat-weighted",
+      "situp-weighted",
+      "step-up",
+      "sumo-squat-kettlebell",
+      "walking-lunge-sandbag",
+      "wrist-roller-machine",
+      "around-the-world-dumbbell",
+      "bench-press-close-grip-barbell",
+      "bench-press-wide-grip-barbell",
+      "box-jump",
+      "chest-fly-band-resistance-band",
+      "chest-fly-suspension",
+      "crunch-weighted",
+      "decline-chest-fly-dumbbell",
+      "decline-crunch-weighted",
+      "dumbbell-squeeze-press",
+      "dumbbell-step-up",
+      "ez-bar-biceps-curl-barbell",
+      "frog-jumps",
+      "full-squat-barbell",
+      "glute-bridge-barbell",
+      "hex-press-dumbbell"
+    ],
+    "new_batch_paths": [
+      "data/batches/agent-03-others-010.json",
+      "data/batches/agent-03-others-011.json",
+      "data/batches/agent-03-others-012.json",
+      "data/batches/agent-03-others-013.json",
+      "data/batches/agent-03-others-014.json",
+      "data/batches/agent-03-others-015.json"
+    ],
+    "eligible_unprepared_remaining": 0,
+    "package_registry": [
+      {
+        "batch_id": "agent-03-others-001",
+        "status": "ready",
+        "exercise_count": 10,
+        "path": "data/batches/agent-03-others-001.json",
+        "newly_prepared": false,
+        "IDs_with_existing_PNG": [
+          "standing-calf-raise",
+          "single-leg-standing-calf-raise",
+          "spiderman",
+          "plank-pushup",
+          "wall-sit",
+          "l-sit-hold",
+          "decline-pushup",
+          "decline-crunch",
+          "frog-pumps-dumbbell",
+          "standing-calf-raise-dumbbell"
+        ],
+        "continuation_ids_retained_here": [],
+        "failed_without_PNG_ids": [],
+        "action": "do_not_regenerate_existing_results",
+        "progress_observations": {},
+        "note": "PNG presence is not user approval. Old batch bytes unchanged; no result PNG audit performed."
+      },
+      {
+        "batch_id": "agent-03-others-002",
+        "status": "ready",
+        "exercise_count": 10,
+        "path": "data/batches/agent-03-others-002.json",
+        "newly_prepared": false,
+        "IDs_with_existing_PNG": [
+          "sumo-squat-dumbbell",
+          "curtsy-lunge-dumbbell",
+          "lunge-dumbbell",
+          "reverse-lunge-dumbbell",
+          "walking-lunge-dumbbell",
+          "deadlift-dumbbell",
+          "single-leg-romanian-deadlift-dumbbell",
+          "upright-row-dumbbell",
+          "zottman-curl-dumbbell",
+          "overhead-press-dumbbell"
+        ],
+        "continuation_ids_retained_here": [],
+        "failed_without_PNG_ids": [],
+        "action": "do_not_regenerate_existing_results",
+        "progress_observations": {},
+        "note": "PNG presence is not user approval. Old batch bytes unchanged; no result PNG audit performed."
+      },
+      {
+        "batch_id": "agent-03-others-003",
+        "status": "ready",
+        "exercise_count": 10,
+        "path": "data/batches/agent-03-others-003.json",
+        "newly_prepared": false,
+        "IDs_with_existing_PNG": [
+          "dumbbell-row",
+          "hip-thrust-dumbbell",
+          "rear-delt-reverse-fly-dumbbell",
+          "chest-supported-incline-row-dumbbell",
+          "chest-supported-reverse-fly-dumbbell",
+          "chest-supported-y-raise-dumbbell",
+          "spider-curl-dumbbell",
+          "good-morning-barbell",
+          "deadlift-barbell",
+          "romanian-deadlift-barbell"
+        ],
+        "continuation_ids_retained_here": [],
+        "failed_without_PNG_ids": [],
+        "action": "do_not_regenerate_existing_results",
+        "progress_observations": {},
+        "note": "PNG presence is not user approval. Old batch bytes unchanged; no result PNG audit performed."
+      },
+      {
+        "batch_id": "agent-03-others-004",
+        "status": "ready",
+        "exercise_count": 10,
+        "path": "data/batches/agent-03-others-004.json",
+        "newly_prepared": false,
+        "IDs_with_existing_PNG": [
+          "21s-biceps-curl-barbell",
+          "arnold-press-dumbbell",
+          "bent-over-row-barbell",
+          "bent-over-row-dumbbell",
+          "bulgarian-split-squat-barbell",
+          "decline-bench-press-barbell",
+          "decline-bench-press-dumbbell",
+          "floor-press-barbell",
+          "front-raise-barbell",
+          "handstand-pushup"
+        ],
+        "continuation_ids_retained_here": [],
+        "failed_without_PNG_ids": [],
+        "action": "do_not_regenerate_existing_results",
+        "progress_observations": {},
+        "note": "PNG presence is not user approval. Old batch bytes unchanged; no result PNG audit performed."
+      },
+      {
+        "batch_id": "agent-03-others-005",
+        "status": "ready",
+        "exercise_count": 10,
+        "path": "data/batches/agent-03-others-005.json",
+        "newly_prepared": false,
+        "IDs_with_existing_PNG": [
+          "incline-bench-press-barbell",
+          "incline-bench-press-dumbbell",
+          "incline-chest-fly-dumbbell",
+          "jm-press-barbell",
+          "lunge-barbell",
+          "overhead-dumbbell-lunge",
+          "overhead-press-barbell",
+          "partial-glute-bridge-barbell",
+          "pause-squat-barbell",
+          "pendlay-row-barbell"
+        ],
+        "continuation_ids_retained_here": [],
+        "failed_without_PNG_ids": [],
+        "action": "do_not_regenerate_existing_results",
+        "progress_observations": {},
+        "note": "PNG presence is not user approval. Old batch bytes unchanged; no result PNG audit performed."
+      },
+      {
+        "batch_id": "agent-03-others-006",
+        "status": "ready",
+        "exercise_count": 10,
+        "path": "data/batches/agent-03-others-006.json",
+        "newly_prepared": false,
+        "IDs_with_existing_PNG": [
+          "pullover-dumbbell",
+          "push-press-barbell",
+          "renegade-row-dumbbell",
+          "reverse-grip-concentration-curl-dumbbell",
+          "reverse-lunge-barbell",
+          "seal-row-barbell",
+          "seal-row-dumbbell",
+          "seated-overhead-press-barbell",
+          "seated-overhead-press-dumbbell",
+          "seated-wrist-extension-barbell"
+        ],
+        "continuation_ids_retained_here": [],
+        "failed_without_PNG_ids": [],
+        "action": "do_not_regenerate_existing_results",
+        "progress_observations": {},
+        "note": "PNG presence is not user approval. Old batch bytes unchanged; no result PNG audit performed."
+      },
+      {
+        "batch_id": "agent-03-others-007",
+        "status": "ready",
+        "exercise_count": 10,
+        "path": "data/batches/agent-03-others-007.json",
+        "newly_prepared": false,
+        "IDs_with_existing_PNG": [
+          "single-arm-triceps-extension-dumbbell",
+          "single-leg-hip-thrust-dumbbell",
+          "single-leg-romanian-deadlift-barbell",
+          "skullcrusher-barbell",
+          "skullcrusher-dumbbell",
+          "spider-curl-barbell",
+          "squat-barbell",
+          "standing-calf-raise-barbell",
+          "standing-military-press-barbell",
+          "straight-leg-deadlift-barbell"
+        ],
+        "continuation_ids_retained_here": [],
+        "failed_without_PNG_ids": [],
+        "action": "do_not_regenerate_existing_results",
+        "progress_observations": {},
+        "note": "PNG presence is not user approval. Old batch bytes unchanged; no result PNG audit performed."
+      },
+      {
+        "batch_id": "agent-03-others-008",
+        "status": "ready",
+        "exercise_count": 10,
+        "path": "data/batches/agent-03-others-008.json",
+        "newly_prepared": false,
+        "IDs_with_existing_PNG": [
+          "sumo-deadlift-barbell",
+          "sumo-squat-barbell",
+          "upright-row-barbell",
+          "wide-elbow-triceps-press-dumbbell",
+          "zercher-squat-barbell",
+          "band-pullaparts-resistance-band",
+          "chest-dip-machine",
+          "chinup-machine",
+          "chinup-weighted-machine",
+          "clamshell-resistance-band"
+        ],
+        "continuation_ids_retained_here": [],
+        "failed_without_PNG_ids": [],
+        "action": "do_not_regenerate_existing_results",
+        "progress_observations": {},
+        "note": "PNG presence is not user approval. Old batch bytes unchanged; no result PNG audit performed."
+      },
+      {
+        "batch_id": "agent-03-others-009",
+        "status": "blocked",
+        "exercise_count": 10,
+        "path": "data/batches/agent-03-others-009.json",
+        "newly_prepared": false,
+        "IDs_with_existing_PNG": [
+          "dead-hang"
+        ],
+        "continuation_ids_retained_here": [
+          "hanging-knee-raise",
+          "hanging-leg-raise",
+          "jack-knife-suspension",
+          "kipping-pullup-machine",
+          "knee-raise-parallel-bars-machine",
+          "kneeling-pulldown-band-machine",
+          "lat-pulldown-band-resistance-band",
+          "lateral-band-walks-resistance-band",
+          "lateral-raise-band-resistance-band"
+        ],
+        "failed_without_PNG_ids": [
+          "hanging-knee-raise"
+        ],
+        "action": "continue_original_batch_after_blocker_clears",
+        "progress_observations": {
+          "hanging-knee-raise": {
+            "status": "blocked_quota",
+            "attempts": 2,
+            "result_path": null
+          },
+          "hanging-leg-raise": {
+            "status": "not_started",
+            "attempts": 0,
+            "result_path": null
+          },
+          "jack-knife-suspension": {
+            "status": "not_started",
+            "attempts": 0,
+            "result_path": null
+          },
+          "kipping-pullup-machine": {
+            "status": "not_started",
+            "attempts": 0,
+            "result_path": null
+          },
+          "knee-raise-parallel-bars-machine": {
+            "status": "not_started",
+            "attempts": 0,
+            "result_path": null
+          },
+          "kneeling-pulldown-band-machine": {
+            "status": "not_started",
+            "attempts": 0,
+            "result_path": null
+          },
+          "lat-pulldown-band-resistance-band": {
+            "status": "not_started",
+            "attempts": 0,
+            "result_path": null
+          },
+          "lateral-band-walks-resistance-band": {
+            "status": "not_started",
+            "attempts": 0,
+            "result_path": null
+          },
+          "lateral-raise-band-resistance-band": {
+            "status": "not_started",
+            "attempts": 0,
+            "result_path": null
+          }
+        },
+        "note": "PNG presence is not user approval. Old batch bytes unchanged; no result PNG audit performed."
+      },
+      {
+        "batch_id": "agent-03-others-010",
+        "status": "ready",
+        "exercise_count": 10,
+        "path": "data/batches/agent-03-others-010.json",
+        "newly_prepared": true,
+        "action": "await_separate_generation_instruction"
+      },
+      {
+        "batch_id": "agent-03-others-011",
+        "status": "ready",
+        "exercise_count": 10,
+        "path": "data/batches/agent-03-others-011.json",
+        "newly_prepared": true,
+        "action": "await_separate_generation_instruction"
+      },
+      {
+        "batch_id": "agent-03-others-012",
+        "status": "ready",
+        "exercise_count": 10,
+        "path": "data/batches/agent-03-others-012.json",
+        "newly_prepared": true,
+        "action": "await_separate_generation_instruction"
+      },
+      {
+        "batch_id": "agent-03-others-013",
+        "status": "ready",
+        "exercise_count": 7,
+        "path": "data/batches/agent-03-others-013.json",
+        "newly_prepared": true,
+        "action": "await_separate_generation_instruction"
+      },
+      {
+        "batch_id": "agent-03-others-014",
+        "status": "ready",
+        "exercise_count": 10,
+        "path": "data/batches/agent-03-others-014.json",
+        "newly_prepared": true,
+        "action": "await_separate_generation_instruction"
+      },
+      {
+        "batch_id": "agent-03-others-015",
+        "status": "ready",
+        "exercise_count": 6,
+        "path": "data/batches/agent-03-others-015.json",
+        "newly_prepared": true,
+        "action": "await_separate_generation_instruction"
+      },
+      {
+        "queue_id": "agent-03-other-blocked",
+        "kind": "clarification_queue_not_generation_batch",
+        "status": "blocked",
+        "exercise_count": 89,
+        "path": "data/queues/agent-03-other-blocked.json",
+        "newly_prepared": false,
+        "action": "answer_grouped_questions_then_recheck_each_ID"
+      }
+    ],
+    "scope_note": "Old batch IDs/results stay reserved; failed generator calls with no PNG remain in their original batches. No PNG technical audit or Supabase audit."
   }
 }

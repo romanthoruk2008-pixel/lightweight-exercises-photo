@@ -1,0 +1,1696 @@
+{
+  "schema_version": 1,
+  "batch_id": "agent-03-others-015",
+  "owner_agent": "agent-03",
+  "branch": "agent-03-inventory-2026-10-01",
+  "status": "ready",
+  "prepared_at": "2026-10-02T01:21:10.062167+03:00",
+  "preparation_stage": "resolved_clarifications",
+  "generation_authorized_now": false,
+  "catalog_path": "data/exercises/catalog.json",
+  "catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+  "catalog_source_commit": "a6f296cbc6737991dd367e929b3e2df25874d4d8",
+  "style_version": "v1",
+  "style_path": "docs/exercise-image-style.md",
+  "style_sha256": "8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578",
+  "human_reference": {
+    "repository_path": "assets/exercises/biceps-curl-dumbbell.png",
+    "absolute_path": "/workspace/lightweight-exercises-photo/assets/exercises/biceps-curl-dumbbell.png",
+    "sha256": "52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f",
+    "branch": "work",
+    "source_commit": "a6f296cbc6737991dd367e929b3e2df25874d4d8",
+    "role": "Human appearance/proportions/materials/anatomical style ONLY. Exercise pose, grip, equipment and muscles come from the exact-ID catalogue, never the reference.",
+    "pixels_reviewed_during_preparation": false
+  },
+  "queue_path": "data/queues/agent-03-other-queue.json",
+  "constraints": {
+    "generation_performed": false,
+    "shared_progress_changes_allowed": false,
+    "catalog_changes_allowed": false,
+    "only_builtin_imagegen": true,
+    "automatic_retries_allowed": false,
+    "paid_api_allowed": false,
+    "supabase_allowed": false,
+    "no_agent_visual_QA": true,
+    "outputs_outside_git": true,
+    "revalidate_assignments_and_existing_results_before_call": true
+  },
+  "exercise_count": 6,
+  "exercise_ids": [
+    "dumbbell-step-up",
+    "ez-bar-biceps-curl-barbell",
+    "frog-jumps",
+    "full-squat-barbell",
+    "glute-bridge-barbell",
+    "hex-press-dumbbell"
+  ],
+  "exercises": [
+    {
+      "exercise_id": "dumbbell-step-up",
+      "name": "Dumbbell Step Up",
+      "source_english": {
+        "description": "Dumbbell Step Up drives through one foot on a stable step to stand tall, then controls the return to the floor.",
+        "instructions": [
+          "Place the dumbbells beside a stable step and put one full foot on top.",
+          "Drive through that foot to stand tall without pushing off the trailing leg.",
+          "Control the step down and return the foot to the floor.",
+          "Complete the planned repetitions, then switch sides."
+        ],
+        "form_cues": [
+          "Keep the whole foot supported.",
+          "Track the knee over the toes.",
+          "Control the descent."
+        ],
+        "common_mistakes": [
+          "Jumping off the back leg.",
+          "Letting the knee cave inward.",
+          "Dropping from the step."
+        ],
+        "safety_note": "Use a stable step height that permits a controlled single-leg descent.",
+        "provenance": "adapted"
+      },
+      "equipment": "dumbbell",
+      "primary_muscle": "quadriceps",
+      "secondary_muscles": [
+        "glutes",
+        "hamstrings"
+      ],
+      "source_catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+      "source_catalog_record_sha256": "af3d258b8e3894a004dcaef6a8fba2e0522140f969691707b6f3459ed6181998",
+      "source_english_sha256": "01f404c830ba782fbf48701093511c57d6c22c6aa29f8278a1772952f9c40d8e",
+      "status": "ready",
+      "preparation_status": "prompt_prepared_not_generated",
+      "style_version": "v1",
+      "style_sha256": "8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578",
+      "human_reference": {
+        "repository_path": "assets/exercises/biceps-curl-dumbbell.png",
+        "absolute_path": "/workspace/lightweight-exercises-photo/assets/exercises/biceps-curl-dumbbell.png",
+        "sha256": "52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f",
+        "branch": "work",
+        "source_commit": "a6f296cbc6737991dd367e929b3e2df25874d4d8",
+        "role": "Human appearance/proportions/materials/anatomical style ONLY. Exercise pose, grip, equipment and muscles come from the exact-ID catalogue, never the reference.",
+        "pixels_reviewed_during_preparation": false
+      },
+      "scene": {
+        "single_phase": "Right-foot box ascent carrying both dumbbells",
+        "pose": "Whole RIGHT foot on stable step, body rising by right-leg drive without trailing-leg push; shoulders quiet.",
+        "grip": "One dumbbell in EACH hand with palms toward body as cited same-ID es source states.",
+        "supports_and_equipment": "Full right sole on step, left foot follows from floor; no invented height or floor-resting weights during this phase.",
+        "camera": "Front-side three-quarter view showing right sole, both hanging weights and full step.",
+        "source_instruction_quotes": [
+          {
+            "index": 0,
+            "text": "Place the dumbbells beside a stable step and put one full foot on top."
+          },
+          {
+            "index": 1,
+            "text": "Drive through that foot to stand tall without pushing off the trailing leg."
+          },
+          {
+            "index": 2,
+            "text": "Control the step down and return the foot to the floor."
+          },
+          {
+            "index": 3,
+            "text": "Complete the planned repetitions, then switch sides."
+          }
+        ]
+      },
+      "prompt_payload": {
+        "identity_do_not_render_as_text": {
+          "exercise_id": "dumbbell-step-up",
+          "name": "Dumbbell Step Up",
+          "source_catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+          "source_catalog_record_sha256": "af3d258b8e3894a004dcaef6a8fba2e0522140f969691707b6f3459ed6181998"
+        },
+        "exact_catalogue_source": {
+          "source_english": {
+            "description": "Dumbbell Step Up drives through one foot on a stable step to stand tall, then controls the return to the floor.",
+            "instructions": [
+              "Place the dumbbells beside a stable step and put one full foot on top.",
+              "Drive through that foot to stand tall without pushing off the trailing leg.",
+              "Control the step down and return the foot to the floor.",
+              "Complete the planned repetitions, then switch sides."
+            ],
+            "form_cues": [
+              "Keep the whole foot supported.",
+              "Track the knee over the toes.",
+              "Control the descent."
+            ],
+            "common_mistakes": [
+              "Jumping off the back leg.",
+              "Letting the knee cave inward.",
+              "Dropping from the step."
+            ],
+            "safety_note": "Use a stable step height that permits a controlled single-leg descent.",
+            "provenance": "adapted"
+          },
+          "equipment": "dumbbell",
+          "primary_muscle": "quadriceps",
+          "secondary_muscles": [
+            "glutes",
+            "hamstrings"
+          ]
+        },
+        "human_reference": {
+          "repository_path": "assets/exercises/biceps-curl-dumbbell.png",
+          "absolute_path": "/workspace/lightweight-exercises-photo/assets/exercises/biceps-curl-dumbbell.png",
+          "sha256": "52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f",
+          "branch": "work",
+          "source_commit": "a6f296cbc6737991dd367e929b3e2df25874d4d8",
+          "role": "Human appearance/proportions/materials/anatomical style ONLY. Exercise pose, grip, equipment and muscles come from the exact-ID catalogue, never the reference.",
+          "pixels_reviewed_during_preparation": false
+        },
+        "style": {
+          "version": "v1",
+          "human_model": "One athletic bald male anatomical mannequin, opaque silver-gray muscular surfaces, consistent proportions and detailed 3D materials, plain black shorts, barefoot.",
+          "primary_highlight": {
+            "hex": "#F26445",
+            "rule": "Highlight only the exact primary muscle group provided for this exercise."
+          },
+          "secondary_highlight": {
+            "hex": "#F26445",
+            "intensity_fraction": [
+              0.4,
+              0.5
+            ],
+            "rule": "Only the exact secondary muscles, lighter same-hue highlight; if the list is empty add no secondary target."
+          },
+          "background": "Genuinely transparent PNG background, no white/checkerboard layer, no environment scene.",
+          "output": {
+            "format": "PNG",
+            "width": 1024,
+            "height": 1024,
+            "one_person": true,
+            "one_phase": true
+          },
+          "material_rules": "Highlights never make tissue transparent; no glow, whole-body orange tint, hair, text, labels, arrows, UI, borders, collage or extra person.",
+          "framing": "Full figure and all required equipment/supports visible within a square. Scale and use a three-quarter view to expose the specified contacts without changing anatomy, equipment, grip or technique.",
+          "no_invention": "Technique, equipment and muscles come only from the attached exact catalogue record. No extra attachments, numerical weights, brands or exact angles absent from the source."
+        },
+        "style_document_sha256": "8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578",
+        "scene": {
+          "single_phase": "Right-foot box ascent carrying both dumbbells",
+          "pose": "Whole RIGHT foot on stable step, body rising by right-leg drive without trailing-leg push; shoulders quiet.",
+          "grip": "One dumbbell in EACH hand with palms toward body as cited same-ID es source states.",
+          "supports_and_equipment": "Full right sole on step, left foot follows from floor; no invented height or floor-resting weights during this phase.",
+          "camera": "Front-side three-quarter view showing right sole, both hanging weights and full step.",
+          "source_instruction_quotes": [
+            {
+              "index": 0,
+              "text": "Place the dumbbells beside a stable step and put one full foot on top."
+            },
+            {
+              "index": 1,
+              "text": "Drive through that foot to stand tall without pushing off the trailing leg."
+            },
+            {
+              "index": 2,
+              "text": "Control the step down and return the foot to the floor."
+            },
+            {
+              "index": 3,
+              "text": "Complete the planned repetitions, then switch sides."
+            }
+          ]
+        },
+        "supplementary_same_ID_sources": [
+          {
+            "exercise_id": "dumbbell-step-up",
+            "catalog_path": "data/exercises/catalog.json",
+            "catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+            "source_commit": "a6f296cbc6737991dd367e929b3e2df25874d4d8",
+            "field": "content.es.instructions[0]",
+            "value": "Ponte de pie frente a un banco o escalón con una mancuerna en cada mano, con las palmas hacia tu cuerpo.",
+            "catalog_record_sha256": "af3d258b8e3894a004dcaef6a8fba2e0522140f969691707b6f3459ed6181998"
+          },
+          {
+            "exercise_id": "dumbbell-step-up",
+            "catalog_path": "data/exercises/catalog.json",
+            "catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+            "source_commit": "a6f296cbc6737991dd367e929b3e2df25874d4d8",
+            "field": "content.es.instructions[1]",
+            "value": "Coloca el pie derecho sobre el banco o escalón, asegurándote de que todo el pie esté en contacto con la superficie.",
+            "catalog_record_sha256": "af3d258b8e3894a004dcaef6a8fba2e0522140f969691707b6f3459ed6181998"
+          },
+          {
+            "exercise_id": "dumbbell-step-up",
+            "catalog_path": "data/exercises/catalog.json",
+            "catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+            "source_commit": "a6f296cbc6737991dd367e929b3e2df25874d4d8",
+            "field": "content.ru.instructions[0]",
+            "value": "Встаньте перед скамьей или сделайте шаг вперед, взяв в каждую руку по гантели ладонями к телу.",
+            "catalog_record_sha256": "af3d258b8e3894a004dcaef6a8fba2e0522140f969691707b6f3459ed6181998"
+          }
+        ],
+        "source_resolution": "Es/ru прямо задають по гантелі в кожній руці долонями до тулуба та праву стопу на сходинці. English placement beside step — неповна підготовка, не заборона тримати вагу.",
+        "source_use_rule": "Preserve original English. The cited additional fields of THIS SAME exercise ID fill missing detail only; do not substitute another exercise or silently rewrite the source."
+      },
+      "generation_prompt": "Create exactly ONE square transparent PNG of the exact exercise below, using the referenced human for APPEARANCE ONLY. Render only the selected phase and camera. Identity/path/hash fields are metadata, never visible text.\n{\n  \"exact_catalogue_source\": {\n    \"equipment\": \"dumbbell\",\n    \"primary_muscle\": \"quadriceps\",\n    \"secondary_muscles\": [\n      \"glutes\",\n      \"hamstrings\"\n    ],\n    \"source_english\": {\n      \"common_mistakes\": [\n        \"Jumping off the back leg.\",\n        \"Letting the knee cave inward.\",\n        \"Dropping from the step.\"\n      ],\n      \"description\": \"Dumbbell Step Up drives through one foot on a stable step to stand tall, then controls the return to the floor.\",\n      \"form_cues\": [\n        \"Keep the whole foot supported.\",\n        \"Track the knee over the toes.\",\n        \"Control the descent.\"\n      ],\n      \"instructions\": [\n        \"Place the dumbbells beside a stable step and put one full foot on top.\",\n        \"Drive through that foot to stand tall without pushing off the trailing leg.\",\n        \"Control the step down and return the foot to the floor.\",\n        \"Complete the planned repetitions, then switch sides.\"\n      ],\n      \"provenance\": \"adapted\",\n      \"safety_note\": \"Use a stable step height that permits a controlled single-leg descent.\"\n    }\n  },\n  \"human_reference\": {\n    \"absolute_path\": \"/workspace/lightweight-exercises-photo/assets/exercises/biceps-curl-dumbbell.png\",\n    \"branch\": \"work\",\n    \"pixels_reviewed_during_preparation\": false,\n    \"repository_path\": \"assets/exercises/biceps-curl-dumbbell.png\",\n    \"role\": \"Human appearance/proportions/materials/anatomical style ONLY. Exercise pose, grip, equipment and muscles come from the exact-ID catalogue, never the reference.\",\n    \"sha256\": \"52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f\",\n    \"source_commit\": \"a6f296cbc6737991dd367e929b3e2df25874d4d8\"\n  },\n  \"identity_do_not_render_as_text\": {\n    \"exercise_id\": \"dumbbell-step-up\",\n    \"name\": \"Dumbbell Step Up\",\n    \"source_catalog_record_sha256\": \"af3d258b8e3894a004dcaef6a8fba2e0522140f969691707b6f3459ed6181998\",\n    \"source_catalog_sha256\": \"a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989\"\n  },\n  \"scene\": {\n    \"camera\": \"Front-side three-quarter view showing right sole, both hanging weights and full step.\",\n    \"grip\": \"One dumbbell in EACH hand with palms toward body as cited same-ID es source states.\",\n    \"pose\": \"Whole RIGHT foot on stable step, body rising by right-leg drive without trailing-leg push; shoulders quiet.\",\n    \"single_phase\": \"Right-foot box ascent carrying both dumbbells\",\n    \"source_instruction_quotes\": [\n      {\n        \"index\": 0,\n        \"text\": \"Place the dumbbells beside a stable step and put one full foot on top.\"\n      },\n      {\n        \"index\": 1,\n        \"text\": \"Drive through that foot to stand tall without pushing off the trailing leg.\"\n      },\n      {\n        \"index\": 2,\n        \"text\": \"Control the step down and return the foot to the floor.\"\n      },\n      {\n        \"index\": 3,\n        \"text\": \"Complete the planned repetitions, then switch sides.\"\n      }\n    ],\n    \"supports_and_equipment\": \"Full right sole on step, left foot follows from floor; no invented height or floor-resting weights during this phase.\"\n  },\n  \"source_resolution\": \"Es/ru прямо задають по гантелі в кожній руці долонями до тулуба та праву стопу на сходинці. English placement beside step — неповна підготовка, не заборона тримати вагу.\",\n  \"source_use_rule\": \"Preserve original English. The cited additional fields of THIS SAME exercise ID fill missing detail only; do not substitute another exercise or silently rewrite the source.\",\n  \"style\": {\n    \"background\": \"Genuinely transparent PNG background, no white/checkerboard layer, no environment scene.\",\n    \"framing\": \"Full figure and all required equipment/supports visible within a square. Scale and use a three-quarter view to expose the specified contacts without changing anatomy, equipment, grip or technique.\",\n    \"human_model\": \"One athletic bald male anatomical mannequin, opaque silver-gray muscular surfaces, consistent proportions and detailed 3D materials, plain black shorts, barefoot.\",\n    \"material_rules\": \"Highlights never make tissue transparent; no glow, whole-body orange tint, hair, text, labels, arrows, UI, borders, collage or extra person.\",\n    \"no_invention\": \"Technique, equipment and muscles come only from the attached exact catalogue record. No extra attachments, numerical weights, brands or exact angles absent from the source.\",\n    \"output\": {\n      \"format\": \"PNG\",\n      \"height\": 1024,\n      \"one_person\": true,\n      \"one_phase\": true,\n      \"width\": 1024\n    },\n    \"primary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"rule\": \"Highlight only the exact primary muscle group provided for this exercise.\"\n    },\n    \"secondary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"intensity_fraction\": [\n        0.4,\n        0.5\n      ],\n      \"rule\": \"Only the exact secondary muscles, lighter same-hue highlight; if the list is empty add no secondary target.\"\n    },\n    \"version\": \"v1\"\n  },\n  \"style_document_sha256\": \"8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578\",\n  \"supplementary_same_ID_sources\": [\n    {\n      \"catalog_path\": \"data/exercises/catalog.json\",\n      \"catalog_record_sha256\": \"af3d258b8e3894a004dcaef6a8fba2e0522140f969691707b6f3459ed6181998\",\n      \"catalog_sha256\": \"a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989\",\n      \"exercise_id\": \"dumbbell-step-up\",\n      \"field\": \"content.es.instructions[0]\",\n      \"source_commit\": \"a6f296cbc6737991dd367e929b3e2df25874d4d8\",\n      \"value\": \"Ponte de pie frente a un banco o escalón con una mancuerna en cada mano, con las palmas hacia tu cuerpo.\"\n    },\n    {\n      \"catalog_path\": \"data/exercises/catalog.json\",\n      \"catalog_record_sha256\": \"af3d258b8e3894a004dcaef6a8fba2e0522140f969691707b6f3459ed6181998\",\n      \"catalog_sha256\": \"a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989\",\n      \"exercise_id\": \"dumbbell-step-up\",\n      \"field\": \"content.es.instructions[1]\",\n      \"source_commit\": \"a6f296cbc6737991dd367e929b3e2df25874d4d8\",\n      \"value\": \"Coloca el pie derecho sobre el banco o escalón, asegurándote de que todo el pie esté en contacto con la superficie.\"\n    },\n    {\n      \"catalog_path\": \"data/exercises/catalog.json\",\n      \"catalog_record_sha256\": \"af3d258b8e3894a004dcaef6a8fba2e0522140f969691707b6f3459ed6181998\",\n      \"catalog_sha256\": \"a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989\",\n      \"exercise_id\": \"dumbbell-step-up\",\n      \"field\": \"content.ru.instructions[0]\",\n      \"source_commit\": \"a6f296cbc6737991dd367e929b3e2df25874d4d8\",\n      \"value\": \"Встаньте перед скамьей или сделайте шаг вперед, взяв в каждую руку по гантели ладонями к телу.\"\n    }\n  ]\n}",
+      "generation_prompt_sha256": "df748f5d58c0977e05b0b47c6c9d98a6419e9b78cb39a8fdb6b4f178c8ad913e",
+      "planned_png_path": "/workspace/exercise-image-results/agent-03-others-015/dumbbell-step-up/attempt-1.png",
+      "output_root": "/workspace/exercise-image-results",
+      "planned_output_relative_path": "agent-03-others-015/dumbbell-step-up/attempt-1.png",
+      "result_path": null,
+      "result_sha256": null,
+      "attempts": 0,
+      "user_review": null,
+      "technical_check": null,
+      "agent_visual_review": "not_performed",
+      "generation_authorized_now": false,
+      "clarification_resolution": {
+        "exercise_id": "dumbbell-step-up",
+        "name": "Dumbbell Step Up",
+        "source_english": {
+          "description": "Dumbbell Step Up drives through one foot on a stable step to stand tall, then controls the return to the floor.",
+          "instructions": [
+            "Place the dumbbells beside a stable step and put one full foot on top.",
+            "Drive through that foot to stand tall without pushing off the trailing leg.",
+            "Control the step down and return the foot to the floor.",
+            "Complete the planned repetitions, then switch sides."
+          ],
+          "form_cues": [
+            "Keep the whole foot supported.",
+            "Track the knee over the toes.",
+            "Control the descent."
+          ],
+          "common_mistakes": [
+            "Jumping off the back leg.",
+            "Letting the knee cave inward.",
+            "Dropping from the step."
+          ],
+          "safety_note": "Use a stable step height that permits a controlled single-leg descent.",
+          "provenance": "adapted"
+        },
+        "equipment": "dumbbell",
+        "primary_muscle": "quadriceps",
+        "secondary_muscles": [
+          "glutes",
+          "hamstrings"
+        ],
+        "source_catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+        "source_catalog_record_sha256": "af3d258b8e3894a004dcaef6a8fba2e0522140f969691707b6f3459ed6181998",
+        "source_english_sha256": "01f404c830ba782fbf48701093511c57d6c22c6aa29f8278a1772952f9c40d8e",
+        "original_reason_kind": "load_unspecified",
+        "original_question": "Instructions кажуть place the dumbbells beside a stable step, але не кажуть взяти чи тримати їх під час руху. Уточніть кількість/позицію ваг.",
+        "status": "ready",
+        "decision": "Es/ru прямо задають по гантелі в кожній руці долонями до тулуба та праву стопу на сходинці. English placement beside step — неповна підготовка, не заборона тримати вагу.",
+        "evidence": [
+          {
+            "exercise_id": "dumbbell-step-up",
+            "catalog_path": "data/exercises/catalog.json",
+            "catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+            "source_commit": "a6f296cbc6737991dd367e929b3e2df25874d4d8",
+            "field": "content.es.instructions[0]",
+            "value": "Ponte de pie frente a un banco o escalón con una mancuerna en cada mano, con las palmas hacia tu cuerpo.",
+            "catalog_record_sha256": "af3d258b8e3894a004dcaef6a8fba2e0522140f969691707b6f3459ed6181998"
+          },
+          {
+            "exercise_id": "dumbbell-step-up",
+            "catalog_path": "data/exercises/catalog.json",
+            "catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+            "source_commit": "a6f296cbc6737991dd367e929b3e2df25874d4d8",
+            "field": "content.es.instructions[1]",
+            "value": "Coloca el pie derecho sobre el banco o escalón, asegurándote de que todo el pie esté en contacto con la superficie.",
+            "catalog_record_sha256": "af3d258b8e3894a004dcaef6a8fba2e0522140f969691707b6f3459ed6181998"
+          },
+          {
+            "exercise_id": "dumbbell-step-up",
+            "catalog_path": "data/exercises/catalog.json",
+            "catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+            "source_commit": "a6f296cbc6737991dd367e929b3e2df25874d4d8",
+            "field": "content.ru.instructions[0]",
+            "value": "Встаньте перед скамьей или сделайте шаг вперед, взяв в каждую руку по гантели ладонями к телу.",
+            "catalog_record_sha256": "af3d258b8e3894a004dcaef6a8fba2e0522140f969691707b6f3459ed6181998"
+          }
+        ]
+      }
+    },
+    {
+      "exercise_id": "ez-bar-biceps-curl-barbell",
+      "name": "EZ Bar Biceps Curl",
+      "source_english": {
+        "description": "EZ Bar Biceps Curl curls the barbell toward the shoulders with the underhand grip, keeping the upper arms controlled.",
+        "instructions": [
+          "Stand or sit tall with the barbell and use a underhand grip.",
+          "Keep the upper arms still and curl the resistance toward the shoulders.",
+          "Pause at the top without lifting the elbows.",
+          "Lower slowly until the elbows are nearly straight."
+        ],
+        "form_cues": [
+          "Keep elbows close.",
+          "Keep wrists neutral.",
+          "Use a smooth tempo."
+        ],
+        "common_mistakes": [
+          "Swinging the torso.",
+          "Letting elbows travel forward.",
+          "Dropping the resistance."
+        ],
+        "safety_note": "Use a load or band tension that allows a controlled elbow path and return.",
+        "provenance": "adapted"
+      },
+      "equipment": "barbell",
+      "primary_muscle": "biceps",
+      "secondary_muscles": [],
+      "source_catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+      "source_catalog_record_sha256": "9cb4c1eaf5829a1812882f4a8ba7d6ab5f397d908721471619fa0c4451c92beb",
+      "source_english_sha256": "fc7a64ee6499107a6dbda6965a4cb75ef16a55bb536f331f34c840c35f77aaac",
+      "status": "ready",
+      "preparation_status": "prompt_prepared_not_generated",
+      "style_version": "v1",
+      "style_sha256": "8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578",
+      "human_reference": {
+        "repository_path": "assets/exercises/biceps-curl-dumbbell.png",
+        "absolute_path": "/workspace/lightweight-exercises-photo/assets/exercises/biceps-curl-dumbbell.png",
+        "sha256": "52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f",
+        "branch": "work",
+        "source_commit": "a6f296cbc6737991dd367e929b3e2df25874d4d8",
+        "role": "Human appearance/proportions/materials/anatomical style ONLY. Exercise pose, grip, equipment and muscles come from the exact-ID catalogue, never the reference.",
+        "pixels_reviewed_during_preparation": false
+      },
+      "scene": {
+        "single_phase": "Controlled supinated EZ curl top",
+        "pose": "Choose source standing option, upper arms still beside torso and elbows close; curl EZ bar toward shoulders without swing.",
+        "grip": "Both hands use source UNDERHAND grip on standard compatible bent EZ bar; no invented exact bends or numerical width.",
+        "supports_and_equipment": "Both feet grounded, no preacher pad or straight-bar substitution.",
+        "camera": "Front three-quarter view exposing bent EZ bar, underhand grip and fixed upper arms.",
+        "source_instruction_quotes": [
+          {
+            "index": 0,
+            "text": "Stand or sit tall with the barbell and use a underhand grip."
+          },
+          {
+            "index": 1,
+            "text": "Keep the upper arms still and curl the resistance toward the shoulders."
+          },
+          {
+            "index": 2,
+            "text": "Pause at the top without lifting the elbows."
+          },
+          {
+            "index": 3,
+            "text": "Lower slowly until the elbows are nearly straight."
+          }
+        ]
+      },
+      "prompt_payload": {
+        "identity_do_not_render_as_text": {
+          "exercise_id": "ez-bar-biceps-curl-barbell",
+          "name": "EZ Bar Biceps Curl",
+          "source_catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+          "source_catalog_record_sha256": "9cb4c1eaf5829a1812882f4a8ba7d6ab5f397d908721471619fa0c4451c92beb"
+        },
+        "exact_catalogue_source": {
+          "source_english": {
+            "description": "EZ Bar Biceps Curl curls the barbell toward the shoulders with the underhand grip, keeping the upper arms controlled.",
+            "instructions": [
+              "Stand or sit tall with the barbell and use a underhand grip.",
+              "Keep the upper arms still and curl the resistance toward the shoulders.",
+              "Pause at the top without lifting the elbows.",
+              "Lower slowly until the elbows are nearly straight."
+            ],
+            "form_cues": [
+              "Keep elbows close.",
+              "Keep wrists neutral.",
+              "Use a smooth tempo."
+            ],
+            "common_mistakes": [
+              "Swinging the torso.",
+              "Letting elbows travel forward.",
+              "Dropping the resistance."
+            ],
+            "safety_note": "Use a load or band tension that allows a controlled elbow path and return.",
+            "provenance": "adapted"
+          },
+          "equipment": "barbell",
+          "primary_muscle": "biceps",
+          "secondary_muscles": []
+        },
+        "human_reference": {
+          "repository_path": "assets/exercises/biceps-curl-dumbbell.png",
+          "absolute_path": "/workspace/lightweight-exercises-photo/assets/exercises/biceps-curl-dumbbell.png",
+          "sha256": "52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f",
+          "branch": "work",
+          "source_commit": "a6f296cbc6737991dd367e929b3e2df25874d4d8",
+          "role": "Human appearance/proportions/materials/anatomical style ONLY. Exercise pose, grip, equipment and muscles come from the exact-ID catalogue, never the reference.",
+          "pixels_reviewed_during_preparation": false
+        },
+        "style": {
+          "version": "v1",
+          "human_model": "One athletic bald male anatomical mannequin, opaque silver-gray muscular surfaces, consistent proportions and detailed 3D materials, plain black shorts, barefoot.",
+          "primary_highlight": {
+            "hex": "#F26445",
+            "rule": "Highlight only the exact primary muscle group provided for this exercise."
+          },
+          "secondary_highlight": {
+            "hex": "#F26445",
+            "intensity_fraction": [
+              0.4,
+              0.5
+            ],
+            "rule": "Only the exact secondary muscles, lighter same-hue highlight; if the list is empty add no secondary target."
+          },
+          "background": "Genuinely transparent PNG background, no white/checkerboard layer, no environment scene.",
+          "output": {
+            "format": "PNG",
+            "width": 1024,
+            "height": 1024,
+            "one_person": true,
+            "one_phase": true
+          },
+          "material_rules": "Highlights never make tissue transparent; no glow, whole-body orange tint, hair, text, labels, arrows, UI, borders, collage or extra person.",
+          "framing": "Full figure and all required equipment/supports visible within a square. Scale and use a three-quarter view to expose the specified contacts without changing anatomy, equipment, grip or technique.",
+          "no_invention": "Technique, equipment and muscles come only from the attached exact catalogue record. No extra attachments, numerical weights, brands or exact angles absent from the source."
+        },
+        "style_document_sha256": "8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578",
+        "scene": {
+          "single_phase": "Controlled supinated EZ curl top",
+          "pose": "Choose source standing option, upper arms still beside torso and elbows close; curl EZ bar toward shoulders without swing.",
+          "grip": "Both hands use source UNDERHAND grip on standard compatible bent EZ bar; no invented exact bends or numerical width.",
+          "supports_and_equipment": "Both feet grounded, no preacher pad or straight-bar substitution.",
+          "camera": "Front three-quarter view exposing bent EZ bar, underhand grip and fixed upper arms.",
+          "source_instruction_quotes": [
+            {
+              "index": 0,
+              "text": "Stand or sit tall with the barbell and use a underhand grip."
+            },
+            {
+              "index": 1,
+              "text": "Keep the upper arms still and curl the resistance toward the shoulders."
+            },
+            {
+              "index": 2,
+              "text": "Pause at the top without lifting the elbows."
+            },
+            {
+              "index": 3,
+              "text": "Lower slowly until the elbows are nearly straight."
+            }
+          ]
+        },
+        "supplementary_same_ID_sources": [
+          {
+            "exercise_id": "ez-bar-biceps-curl-barbell",
+            "catalog_path": "data/exercises/catalog.json",
+            "catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+            "source_commit": "a6f296cbc6737991dd367e929b3e2df25874d4d8",
+            "field": "content.uk.instructions[0]",
+            "value": "Станьте або сядьте рівно, тримаючи EZ-штангу зворотним хватом.",
+            "catalog_record_sha256": "9cb4c1eaf5829a1812882f4a8ba7d6ab5f397d908721471619fa0c4451c92beb"
+          },
+          {
+            "exercise_id": "ez-bar-biceps-curl-barbell",
+            "catalog_path": "data/exercises/catalog.json",
+            "catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+            "source_commit": "a6f296cbc6737991dd367e929b3e2df25874d4d8",
+            "field": "content.en.instructions[0]",
+            "value": "Stand or sit tall with the barbell and use a underhand grip.",
+            "catalog_record_sha256": "9cb4c1eaf5829a1812882f4a8ba7d6ab5f397d908721471619fa0c4451c92beb"
+          },
+          {
+            "exercise_id": "ez-bar-biceps-curl-barbell",
+            "catalog_path": "data/exercises/catalog.json",
+            "catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+            "source_commit": "a6f296cbc6737991dd367e929b3e2df25874d4d8",
+            "field": "match.rationale",
+            "value": "The EZ-bar curl matches EZ-bar equipment, standing supinated curl position, elbow-flexion path, range and biceps target.",
+            "catalog_record_sha256": "9cb4c1eaf5829a1812882f4a8ba7d6ab5f397d908721471619fa0c4451c92beb"
+          }
+        ],
+        "source_resolution": "Uk прямо задає EZ-штангу зворотним хватом; English barbell є ширшим типом, не вимогою прямого грифа.",
+        "source_use_rule": "Preserve original English. The cited additional fields of THIS SAME exercise ID fill missing detail only; do not substitute another exercise or silently rewrite the source."
+      },
+      "generation_prompt": "Create exactly ONE square transparent PNG of the exact exercise below, using the referenced human for APPEARANCE ONLY. Render only the selected phase and camera. Identity/path/hash fields are metadata, never visible text.\n{\n  \"exact_catalogue_source\": {\n    \"equipment\": \"barbell\",\n    \"primary_muscle\": \"biceps\",\n    \"secondary_muscles\": [],\n    \"source_english\": {\n      \"common_mistakes\": [\n        \"Swinging the torso.\",\n        \"Letting elbows travel forward.\",\n        \"Dropping the resistance.\"\n      ],\n      \"description\": \"EZ Bar Biceps Curl curls the barbell toward the shoulders with the underhand grip, keeping the upper arms controlled.\",\n      \"form_cues\": [\n        \"Keep elbows close.\",\n        \"Keep wrists neutral.\",\n        \"Use a smooth tempo.\"\n      ],\n      \"instructions\": [\n        \"Stand or sit tall with the barbell and use a underhand grip.\",\n        \"Keep the upper arms still and curl the resistance toward the shoulders.\",\n        \"Pause at the top without lifting the elbows.\",\n        \"Lower slowly until the elbows are nearly straight.\"\n      ],\n      \"provenance\": \"adapted\",\n      \"safety_note\": \"Use a load or band tension that allows a controlled elbow path and return.\"\n    }\n  },\n  \"human_reference\": {\n    \"absolute_path\": \"/workspace/lightweight-exercises-photo/assets/exercises/biceps-curl-dumbbell.png\",\n    \"branch\": \"work\",\n    \"pixels_reviewed_during_preparation\": false,\n    \"repository_path\": \"assets/exercises/biceps-curl-dumbbell.png\",\n    \"role\": \"Human appearance/proportions/materials/anatomical style ONLY. Exercise pose, grip, equipment and muscles come from the exact-ID catalogue, never the reference.\",\n    \"sha256\": \"52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f\",\n    \"source_commit\": \"a6f296cbc6737991dd367e929b3e2df25874d4d8\"\n  },\n  \"identity_do_not_render_as_text\": {\n    \"exercise_id\": \"ez-bar-biceps-curl-barbell\",\n    \"name\": \"EZ Bar Biceps Curl\",\n    \"source_catalog_record_sha256\": \"9cb4c1eaf5829a1812882f4a8ba7d6ab5f397d908721471619fa0c4451c92beb\",\n    \"source_catalog_sha256\": \"a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989\"\n  },\n  \"scene\": {\n    \"camera\": \"Front three-quarter view exposing bent EZ bar, underhand grip and fixed upper arms.\",\n    \"grip\": \"Both hands use source UNDERHAND grip on standard compatible bent EZ bar; no invented exact bends or numerical width.\",\n    \"pose\": \"Choose source standing option, upper arms still beside torso and elbows close; curl EZ bar toward shoulders without swing.\",\n    \"single_phase\": \"Controlled supinated EZ curl top\",\n    \"source_instruction_quotes\": [\n      {\n        \"index\": 0,\n        \"text\": \"Stand or sit tall with the barbell and use a underhand grip.\"\n      },\n      {\n        \"index\": 1,\n        \"text\": \"Keep the upper arms still and curl the resistance toward the shoulders.\"\n      },\n      {\n        \"index\": 2,\n        \"text\": \"Pause at the top without lifting the elbows.\"\n      },\n      {\n        \"index\": 3,\n        \"text\": \"Lower slowly until the elbows are nearly straight.\"\n      }\n    ],\n    \"supports_and_equipment\": \"Both feet grounded, no preacher pad or straight-bar substitution.\"\n  },\n  \"source_resolution\": \"Uk прямо задає EZ-штангу зворотним хватом; English barbell є ширшим типом, не вимогою прямого грифа.\",\n  \"source_use_rule\": \"Preserve original English. The cited additional fields of THIS SAME exercise ID fill missing detail only; do not substitute another exercise or silently rewrite the source.\",\n  \"style\": {\n    \"background\": \"Genuinely transparent PNG background, no white/checkerboard layer, no environment scene.\",\n    \"framing\": \"Full figure and all required equipment/supports visible within a square. Scale and use a three-quarter view to expose the specified contacts without changing anatomy, equipment, grip or technique.\",\n    \"human_model\": \"One athletic bald male anatomical mannequin, opaque silver-gray muscular surfaces, consistent proportions and detailed 3D materials, plain black shorts, barefoot.\",\n    \"material_rules\": \"Highlights never make tissue transparent; no glow, whole-body orange tint, hair, text, labels, arrows, UI, borders, collage or extra person.\",\n    \"no_invention\": \"Technique, equipment and muscles come only from the attached exact catalogue record. No extra attachments, numerical weights, brands or exact angles absent from the source.\",\n    \"output\": {\n      \"format\": \"PNG\",\n      \"height\": 1024,\n      \"one_person\": true,\n      \"one_phase\": true,\n      \"width\": 1024\n    },\n    \"primary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"rule\": \"Highlight only the exact primary muscle group provided for this exercise.\"\n    },\n    \"secondary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"intensity_fraction\": [\n        0.4,\n        0.5\n      ],\n      \"rule\": \"Only the exact secondary muscles, lighter same-hue highlight; if the list is empty add no secondary target.\"\n    },\n    \"version\": \"v1\"\n  },\n  \"style_document_sha256\": \"8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578\",\n  \"supplementary_same_ID_sources\": [\n    {\n      \"catalog_path\": \"data/exercises/catalog.json\",\n      \"catalog_record_sha256\": \"9cb4c1eaf5829a1812882f4a8ba7d6ab5f397d908721471619fa0c4451c92beb\",\n      \"catalog_sha256\": \"a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989\",\n      \"exercise_id\": \"ez-bar-biceps-curl-barbell\",\n      \"field\": \"content.uk.instructions[0]\",\n      \"source_commit\": \"a6f296cbc6737991dd367e929b3e2df25874d4d8\",\n      \"value\": \"Станьте або сядьте рівно, тримаючи EZ-штангу зворотним хватом.\"\n    },\n    {\n      \"catalog_path\": \"data/exercises/catalog.json\",\n      \"catalog_record_sha256\": \"9cb4c1eaf5829a1812882f4a8ba7d6ab5f397d908721471619fa0c4451c92beb\",\n      \"catalog_sha256\": \"a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989\",\n      \"exercise_id\": \"ez-bar-biceps-curl-barbell\",\n      \"field\": \"content.en.instructions[0]\",\n      \"source_commit\": \"a6f296cbc6737991dd367e929b3e2df25874d4d8\",\n      \"value\": \"Stand or sit tall with the barbell and use a underhand grip.\"\n    },\n    {\n      \"catalog_path\": \"data/exercises/catalog.json\",\n      \"catalog_record_sha256\": \"9cb4c1eaf5829a1812882f4a8ba7d6ab5f397d908721471619fa0c4451c92beb\",\n      \"catalog_sha256\": \"a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989\",\n      \"exercise_id\": \"ez-bar-biceps-curl-barbell\",\n      \"field\": \"match.rationale\",\n      \"source_commit\": \"a6f296cbc6737991dd367e929b3e2df25874d4d8\",\n      \"value\": \"The EZ-bar curl matches EZ-bar equipment, standing supinated curl position, elbow-flexion path, range and biceps target.\"\n    }\n  ]\n}",
+      "generation_prompt_sha256": "805c2495b764d8b6301b5be00cfb89a4af28fac0c12337cd0e95519409819f68",
+      "planned_png_path": "/workspace/exercise-image-results/agent-03-others-015/ez-bar-biceps-curl-barbell/attempt-1.png",
+      "output_root": "/workspace/exercise-image-results",
+      "planned_output_relative_path": "agent-03-others-015/ez-bar-biceps-curl-barbell/attempt-1.png",
+      "result_path": null,
+      "result_sha256": null,
+      "attempts": 0,
+      "user_review": null,
+      "technical_check": null,
+      "agent_visual_review": "not_performed",
+      "generation_authorized_now": false,
+      "clarification_resolution": {
+        "exercise_id": "ez-bar-biceps-curl-barbell",
+        "name": "EZ Bar Biceps Curl",
+        "source_english": {
+          "description": "EZ Bar Biceps Curl curls the barbell toward the shoulders with the underhand grip, keeping the upper arms controlled.",
+          "instructions": [
+            "Stand or sit tall with the barbell and use a underhand grip.",
+            "Keep the upper arms still and curl the resistance toward the shoulders.",
+            "Pause at the top without lifting the elbows.",
+            "Lower slowly until the elbows are nearly straight."
+          ],
+          "form_cues": [
+            "Keep elbows close.",
+            "Keep wrists neutral.",
+            "Use a smooth tempo."
+          ],
+          "common_mistakes": [
+            "Swinging the torso.",
+            "Letting elbows travel forward.",
+            "Dropping the resistance."
+          ],
+          "safety_note": "Use a load or band tension that allows a controlled elbow path and return.",
+          "provenance": "adapted"
+        },
+        "equipment": "barbell",
+        "primary_muscle": "biceps",
+        "secondary_muscles": [],
+        "source_catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+        "source_catalog_record_sha256": "9cb4c1eaf5829a1812882f4a8ba7d6ab5f397d908721471619fa0c4451c92beb",
+        "source_english_sha256": "fc7a64ee6499107a6dbda6965a4cb75ef16a55bb536f331f34c840c35f77aaac",
+        "original_reason_kind": "equipment_unspecified",
+        "original_question": "Назва EZ Bar, але техніка задає лише barbell та underhand grip, без відповідної конструкції/контактів хвата. Підтвердьте гриф і хват.",
+        "status": "ready",
+        "decision": "Uk прямо задає EZ-штангу зворотним хватом; English barbell є ширшим типом, не вимогою прямого грифа.",
+        "evidence": [
+          {
+            "exercise_id": "ez-bar-biceps-curl-barbell",
+            "catalog_path": "data/exercises/catalog.json",
+            "catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+            "source_commit": "a6f296cbc6737991dd367e929b3e2df25874d4d8",
+            "field": "content.uk.instructions[0]",
+            "value": "Станьте або сядьте рівно, тримаючи EZ-штангу зворотним хватом.",
+            "catalog_record_sha256": "9cb4c1eaf5829a1812882f4a8ba7d6ab5f397d908721471619fa0c4451c92beb"
+          },
+          {
+            "exercise_id": "ez-bar-biceps-curl-barbell",
+            "catalog_path": "data/exercises/catalog.json",
+            "catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+            "source_commit": "a6f296cbc6737991dd367e929b3e2df25874d4d8",
+            "field": "content.en.instructions[0]",
+            "value": "Stand or sit tall with the barbell and use a underhand grip.",
+            "catalog_record_sha256": "9cb4c1eaf5829a1812882f4a8ba7d6ab5f397d908721471619fa0c4451c92beb"
+          },
+          {
+            "exercise_id": "ez-bar-biceps-curl-barbell",
+            "catalog_path": "data/exercises/catalog.json",
+            "catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+            "source_commit": "a6f296cbc6737991dd367e929b3e2df25874d4d8",
+            "field": "match.rationale",
+            "value": "The EZ-bar curl matches EZ-bar equipment, standing supinated curl position, elbow-flexion path, range and biceps target.",
+            "catalog_record_sha256": "9cb4c1eaf5829a1812882f4a8ba7d6ab5f397d908721471619fa0c4451c92beb"
+          }
+        ]
+      }
+    },
+    {
+      "exercise_id": "frog-jumps",
+      "name": "Frog Jumps",
+      "source_english": {
+        "description": "Frog Jumps produces a coordinated takeoff and a quiet, flexed-knee landing before the next repetition.",
+        "instructions": [
+          "Set up with your bodyweight and land in a balanced athletic stance.",
+          "Dip through the hips and knees, then drive upward or forward as the exercise requires.",
+          "Land softly with knees and hips flexed and the feet stable.",
+          "Reset fully before the next repetition."
+        ],
+        "form_cues": [
+          "Use the arms naturally.",
+          "Land quietly.",
+          "Keep knees tracking over toes."
+        ],
+        "common_mistakes": [
+          "Landing stiff-legged.",
+          "Letting knees cave inward.",
+          "Chasing height over control."
+        ],
+        "safety_note": "Use a clear, non-slip landing surface and stop when landings become noisy.",
+        "provenance": "authored"
+      },
+      "equipment": "none",
+      "primary_muscle": "quadriceps",
+      "secondary_muscles": [
+        "glutes",
+        "hamstrings",
+        "calves"
+      ],
+      "source_catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+      "source_catalog_record_sha256": "5f5e541c4089572b04d19c0a69eb2a5d5b2cae324cac30fa60055399c4111405",
+      "source_english_sha256": "c894415c4d64c6d11ea6a48addb3218be354ce0354a3592d883ec3b4809942a4",
+      "status": "ready",
+      "preparation_status": "prompt_prepared_not_generated",
+      "style_version": "v1",
+      "style_sha256": "8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578",
+      "human_reference": {
+        "repository_path": "assets/exercises/biceps-curl-dumbbell.png",
+        "absolute_path": "/workspace/lightweight-exercises-photo/assets/exercises/biceps-curl-dumbbell.png",
+        "sha256": "52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f",
+        "branch": "work",
+        "source_commit": "a6f296cbc6737991dd367e929b3e2df25874d4d8",
+        "role": "Human appearance/proportions/materials/anatomical style ONLY. Exercise pose, grip, equipment and muscles come from the exact-ID catalogue, never the reference.",
+        "pixels_reviewed_during_preparation": false
+      },
+      "scene": {
+        "single_phase": "Deep controlled crouch before forward/upward jump",
+        "pose": "Begin in DEEP bodyweight squat as cited Russian source states, hips/knees flexed and feet stable, ready for the upward-and-forward option cited in Spanish.",
+        "grip": "Hands free, use arms naturally for balance; no external load.",
+        "supports_and_equipment": "Both feet on clear non-slip floor in this pre-takeoff phase; no box or weighted variant.",
+        "camera": "Side-front three-quarter view showing deep crouch, controlled knees and complete grounded figure.",
+        "source_instruction_quotes": [
+          {
+            "index": 0,
+            "text": "Set up with your bodyweight and land in a balanced athletic stance."
+          },
+          {
+            "index": 1,
+            "text": "Dip through the hips and knees, then drive upward or forward as the exercise requires."
+          },
+          {
+            "index": 2,
+            "text": "Land softly with knees and hips flexed and the feet stable."
+          },
+          {
+            "index": 3,
+            "text": "Reset fully before the next repetition."
+          }
+        ]
+      },
+      "prompt_payload": {
+        "identity_do_not_render_as_text": {
+          "exercise_id": "frog-jumps",
+          "name": "Frog Jumps",
+          "source_catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+          "source_catalog_record_sha256": "5f5e541c4089572b04d19c0a69eb2a5d5b2cae324cac30fa60055399c4111405"
+        },
+        "exact_catalogue_source": {
+          "source_english": {
+            "description": "Frog Jumps produces a coordinated takeoff and a quiet, flexed-knee landing before the next repetition.",
+            "instructions": [
+              "Set up with your bodyweight and land in a balanced athletic stance.",
+              "Dip through the hips and knees, then drive upward or forward as the exercise requires.",
+              "Land softly with knees and hips flexed and the feet stable.",
+              "Reset fully before the next repetition."
+            ],
+            "form_cues": [
+              "Use the arms naturally.",
+              "Land quietly.",
+              "Keep knees tracking over toes."
+            ],
+            "common_mistakes": [
+              "Landing stiff-legged.",
+              "Letting knees cave inward.",
+              "Chasing height over control."
+            ],
+            "safety_note": "Use a clear, non-slip landing surface and stop when landings become noisy.",
+            "provenance": "authored"
+          },
+          "equipment": "none",
+          "primary_muscle": "quadriceps",
+          "secondary_muscles": [
+            "glutes",
+            "hamstrings",
+            "calves"
+          ]
+        },
+        "human_reference": {
+          "repository_path": "assets/exercises/biceps-curl-dumbbell.png",
+          "absolute_path": "/workspace/lightweight-exercises-photo/assets/exercises/biceps-curl-dumbbell.png",
+          "sha256": "52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f",
+          "branch": "work",
+          "source_commit": "a6f296cbc6737991dd367e929b3e2df25874d4d8",
+          "role": "Human appearance/proportions/materials/anatomical style ONLY. Exercise pose, grip, equipment and muscles come from the exact-ID catalogue, never the reference.",
+          "pixels_reviewed_during_preparation": false
+        },
+        "style": {
+          "version": "v1",
+          "human_model": "One athletic bald male anatomical mannequin, opaque silver-gray muscular surfaces, consistent proportions and detailed 3D materials, plain black shorts, barefoot.",
+          "primary_highlight": {
+            "hex": "#F26445",
+            "rule": "Highlight only the exact primary muscle group provided for this exercise."
+          },
+          "secondary_highlight": {
+            "hex": "#F26445",
+            "intensity_fraction": [
+              0.4,
+              0.5
+            ],
+            "rule": "Only the exact secondary muscles, lighter same-hue highlight; if the list is empty add no secondary target."
+          },
+          "background": "Genuinely transparent PNG background, no white/checkerboard layer, no environment scene.",
+          "output": {
+            "format": "PNG",
+            "width": 1024,
+            "height": 1024,
+            "one_person": true,
+            "one_phase": true
+          },
+          "material_rules": "Highlights never make tissue transparent; no glow, whole-body orange tint, hair, text, labels, arrows, UI, borders, collage or extra person.",
+          "framing": "Full figure and all required equipment/supports visible within a square. Scale and use a three-quarter view to expose the specified contacts without changing anatomy, equipment, grip or technique.",
+          "no_invention": "Technique, equipment and muscles come only from the attached exact catalogue record. No extra attachments, numerical weights, brands or exact angles absent from the source."
+        },
+        "style_document_sha256": "8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578",
+        "scene": {
+          "single_phase": "Deep controlled crouch before forward/upward jump",
+          "pose": "Begin in DEEP bodyweight squat as cited Russian source states, hips/knees flexed and feet stable, ready for the upward-and-forward option cited in Spanish.",
+          "grip": "Hands free, use arms naturally for balance; no external load.",
+          "supports_and_equipment": "Both feet on clear non-slip floor in this pre-takeoff phase; no box or weighted variant.",
+          "camera": "Side-front three-quarter view showing deep crouch, controlled knees and complete grounded figure.",
+          "source_instruction_quotes": [
+            {
+              "index": 0,
+              "text": "Set up with your bodyweight and land in a balanced athletic stance."
+            },
+            {
+              "index": 1,
+              "text": "Dip through the hips and knees, then drive upward or forward as the exercise requires."
+            },
+            {
+              "index": 2,
+              "text": "Land softly with knees and hips flexed and the feet stable."
+            },
+            {
+              "index": 3,
+              "text": "Reset fully before the next repetition."
+            }
+          ]
+        },
+        "supplementary_same_ID_sources": [
+          {
+            "exercise_id": "frog-jumps",
+            "catalog_path": "data/exercises/catalog.json",
+            "catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+            "source_commit": "a6f296cbc6737991dd367e929b3e2df25874d4d8",
+            "field": "content.ru.instructions[0]",
+            "value": "Начните с веса собственного тела из глубокого приседа и приготовьтесь приземлиться в устойчивую спортивную стойку.",
+            "catalog_record_sha256": "5f5e541c4089572b04d19c0a69eb2a5d5b2cae324cac30fa60055399c4111405"
+          },
+          {
+            "exercise_id": "frog-jumps",
+            "catalog_path": "data/exercises/catalog.json",
+            "catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+            "source_commit": "a6f296cbc6737991dd367e929b3e2df25874d4d8",
+            "field": "content.es.instructions[1]",
+            "value": "Flexiona las caderas y las rodillas y luego impúlsate hacia arriba y hacia delante.",
+            "catalog_record_sha256": "5f5e541c4089572b04d19c0a69eb2a5d5b2cae324cac30fa60055399c4111405"
+          },
+          {
+            "exercise_id": "frog-jumps",
+            "catalog_path": "data/exercises/catalog.json",
+            "catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+            "source_commit": "a6f296cbc6737991dd367e929b3e2df25874d4d8",
+            "field": "content.en.instructions[1]",
+            "value": "Dip through the hips and knees, then drive upward or forward as the exercise requires.",
+            "catalog_record_sha256": "5f5e541c4089572b04d19c0a69eb2a5d5b2cae324cac30fa60055399c4111405"
+          }
+        ],
+        "source_resolution": "Ru задає глибокий початковий присід, es — напрямок угору й уперед; обрано передній варіант, дозволений English upward or forward.",
+        "source_use_rule": "Preserve original English. The cited additional fields of THIS SAME exercise ID fill missing detail only; do not substitute another exercise or silently rewrite the source."
+      },
+      "generation_prompt": "Create exactly ONE square transparent PNG of the exact exercise below, using the referenced human for APPEARANCE ONLY. Render only the selected phase and camera. Identity/path/hash fields are metadata, never visible text.\n{\n  \"exact_catalogue_source\": {\n    \"equipment\": \"none\",\n    \"primary_muscle\": \"quadriceps\",\n    \"secondary_muscles\": [\n      \"glutes\",\n      \"hamstrings\",\n      \"calves\"\n    ],\n    \"source_english\": {\n      \"common_mistakes\": [\n        \"Landing stiff-legged.\",\n        \"Letting knees cave inward.\",\n        \"Chasing height over control.\"\n      ],\n      \"description\": \"Frog Jumps produces a coordinated takeoff and a quiet, flexed-knee landing before the next repetition.\",\n      \"form_cues\": [\n        \"Use the arms naturally.\",\n        \"Land quietly.\",\n        \"Keep knees tracking over toes.\"\n      ],\n      \"instructions\": [\n        \"Set up with your bodyweight and land in a balanced athletic stance.\",\n        \"Dip through the hips and knees, then drive upward or forward as the exercise requires.\",\n        \"Land softly with knees and hips flexed and the feet stable.\",\n        \"Reset fully before the next repetition.\"\n      ],\n      \"provenance\": \"authored\",\n      \"safety_note\": \"Use a clear, non-slip landing surface and stop when landings become noisy.\"\n    }\n  },\n  \"human_reference\": {\n    \"absolute_path\": \"/workspace/lightweight-exercises-photo/assets/exercises/biceps-curl-dumbbell.png\",\n    \"branch\": \"work\",\n    \"pixels_reviewed_during_preparation\": false,\n    \"repository_path\": \"assets/exercises/biceps-curl-dumbbell.png\",\n    \"role\": \"Human appearance/proportions/materials/anatomical style ONLY. Exercise pose, grip, equipment and muscles come from the exact-ID catalogue, never the reference.\",\n    \"sha256\": \"52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f\",\n    \"source_commit\": \"a6f296cbc6737991dd367e929b3e2df25874d4d8\"\n  },\n  \"identity_do_not_render_as_text\": {\n    \"exercise_id\": \"frog-jumps\",\n    \"name\": \"Frog Jumps\",\n    \"source_catalog_record_sha256\": \"5f5e541c4089572b04d19c0a69eb2a5d5b2cae324cac30fa60055399c4111405\",\n    \"source_catalog_sha256\": \"a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989\"\n  },\n  \"scene\": {\n    \"camera\": \"Side-front three-quarter view showing deep crouch, controlled knees and complete grounded figure.\",\n    \"grip\": \"Hands free, use arms naturally for balance; no external load.\",\n    \"pose\": \"Begin in DEEP bodyweight squat as cited Russian source states, hips/knees flexed and feet stable, ready for the upward-and-forward option cited in Spanish.\",\n    \"single_phase\": \"Deep controlled crouch before forward/upward jump\",\n    \"source_instruction_quotes\": [\n      {\n        \"index\": 0,\n        \"text\": \"Set up with your bodyweight and land in a balanced athletic stance.\"\n      },\n      {\n        \"index\": 1,\n        \"text\": \"Dip through the hips and knees, then drive upward or forward as the exercise requires.\"\n      },\n      {\n        \"index\": 2,\n        \"text\": \"Land softly with knees and hips flexed and the feet stable.\"\n      },\n      {\n        \"index\": 3,\n        \"text\": \"Reset fully before the next repetition.\"\n      }\n    ],\n    \"supports_and_equipment\": \"Both feet on clear non-slip floor in this pre-takeoff phase; no box or weighted variant.\"\n  },\n  \"source_resolution\": \"Ru задає глибокий початковий присід, es — напрямок угору й уперед; обрано передній варіант, дозволений English upward or forward.\",\n  \"source_use_rule\": \"Preserve original English. The cited additional fields of THIS SAME exercise ID fill missing detail only; do not substitute another exercise or silently rewrite the source.\",\n  \"style\": {\n    \"background\": \"Genuinely transparent PNG background, no white/checkerboard layer, no environment scene.\",\n    \"framing\": \"Full figure and all required equipment/supports visible within a square. Scale and use a three-quarter view to expose the specified contacts without changing anatomy, equipment, grip or technique.\",\n    \"human_model\": \"One athletic bald male anatomical mannequin, opaque silver-gray muscular surfaces, consistent proportions and detailed 3D materials, plain black shorts, barefoot.\",\n    \"material_rules\": \"Highlights never make tissue transparent; no glow, whole-body orange tint, hair, text, labels, arrows, UI, borders, collage or extra person.\",\n    \"no_invention\": \"Technique, equipment and muscles come only from the attached exact catalogue record. No extra attachments, numerical weights, brands or exact angles absent from the source.\",\n    \"output\": {\n      \"format\": \"PNG\",\n      \"height\": 1024,\n      \"one_person\": true,\n      \"one_phase\": true,\n      \"width\": 1024\n    },\n    \"primary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"rule\": \"Highlight only the exact primary muscle group provided for this exercise.\"\n    },\n    \"secondary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"intensity_fraction\": [\n        0.4,\n        0.5\n      ],\n      \"rule\": \"Only the exact secondary muscles, lighter same-hue highlight; if the list is empty add no secondary target.\"\n    },\n    \"version\": \"v1\"\n  },\n  \"style_document_sha256\": \"8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578\",\n  \"supplementary_same_ID_sources\": [\n    {\n      \"catalog_path\": \"data/exercises/catalog.json\",\n      \"catalog_record_sha256\": \"5f5e541c4089572b04d19c0a69eb2a5d5b2cae324cac30fa60055399c4111405\",\n      \"catalog_sha256\": \"a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989\",\n      \"exercise_id\": \"frog-jumps\",\n      \"field\": \"content.ru.instructions[0]\",\n      \"source_commit\": \"a6f296cbc6737991dd367e929b3e2df25874d4d8\",\n      \"value\": \"Начните с веса собственного тела из глубокого приседа и приготовьтесь приземлиться в устойчивую спортивную стойку.\"\n    },\n    {\n      \"catalog_path\": \"data/exercises/catalog.json\",\n      \"catalog_record_sha256\": \"5f5e541c4089572b04d19c0a69eb2a5d5b2cae324cac30fa60055399c4111405\",\n      \"catalog_sha256\": \"a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989\",\n      \"exercise_id\": \"frog-jumps\",\n      \"field\": \"content.es.instructions[1]\",\n      \"source_commit\": \"a6f296cbc6737991dd367e929b3e2df25874d4d8\",\n      \"value\": \"Flexiona las caderas y las rodillas y luego impúlsate hacia arriba y hacia delante.\"\n    },\n    {\n      \"catalog_path\": \"data/exercises/catalog.json\",\n      \"catalog_record_sha256\": \"5f5e541c4089572b04d19c0a69eb2a5d5b2cae324cac30fa60055399c4111405\",\n      \"catalog_sha256\": \"a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989\",\n      \"exercise_id\": \"frog-jumps\",\n      \"field\": \"content.en.instructions[1]\",\n      \"source_commit\": \"a6f296cbc6737991dd367e929b3e2df25874d4d8\",\n      \"value\": \"Dip through the hips and knees, then drive upward or forward as the exercise requires.\"\n    }\n  ]\n}",
+      "generation_prompt_sha256": "aea3b23bf5acd4d6d24389e63490cba83b1d4f753306949cf556ee55fd0fcd49",
+      "planned_png_path": "/workspace/exercise-image-results/agent-03-others-015/frog-jumps/attempt-1.png",
+      "output_root": "/workspace/exercise-image-results",
+      "planned_output_relative_path": "agent-03-others-015/frog-jumps/attempt-1.png",
+      "result_path": null,
+      "result_sha256": null,
+      "attempts": 0,
+      "user_review": null,
+      "technical_check": null,
+      "agent_visual_review": "not_performed",
+      "generation_authorized_now": false,
+      "clarification_resolution": {
+        "exercise_id": "frog-jumps",
+        "name": "Frog Jumps",
+        "source_english": {
+          "description": "Frog Jumps produces a coordinated takeoff and a quiet, flexed-knee landing before the next repetition.",
+          "instructions": [
+            "Set up with your bodyweight and land in a balanced athletic stance.",
+            "Dip through the hips and knees, then drive upward or forward as the exercise requires.",
+            "Land softly with knees and hips flexed and the feet stable.",
+            "Reset fully before the next repetition."
+          ],
+          "form_cues": [
+            "Use the arms naturally.",
+            "Land quietly.",
+            "Keep knees tracking over toes."
+          ],
+          "common_mistakes": [
+            "Landing stiff-legged.",
+            "Letting knees cave inward.",
+            "Chasing height over control."
+          ],
+          "safety_note": "Use a clear, non-slip landing surface and stop when landings become noisy.",
+          "provenance": "authored"
+        },
+        "equipment": "none",
+        "primary_muscle": "quadriceps",
+        "secondary_muscles": [
+          "glutes",
+          "hamstrings",
+          "calves"
+        ],
+        "source_catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+        "source_catalog_record_sha256": "5f5e541c4089572b04d19c0a69eb2a5d5b2cae324cac30fa60055399c4111405",
+        "source_english_sha256": "c894415c4d64c6d11ea6a48addb3218be354ce0354a3592d883ec3b4809942a4",
+        "original_reason_kind": "movement_unspecified",
+        "original_question": "Типовий jump текст upward or forward as the exercise requires не визначає frog-позицію та напрямок. Уточніть варіант.",
+        "status": "ready",
+        "decision": "Ru задає глибокий початковий присід, es — напрямок угору й уперед; обрано передній варіант, дозволений English upward or forward.",
+        "evidence": [
+          {
+            "exercise_id": "frog-jumps",
+            "catalog_path": "data/exercises/catalog.json",
+            "catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+            "source_commit": "a6f296cbc6737991dd367e929b3e2df25874d4d8",
+            "field": "content.ru.instructions[0]",
+            "value": "Начните с веса собственного тела из глубокого приседа и приготовьтесь приземлиться в устойчивую спортивную стойку.",
+            "catalog_record_sha256": "5f5e541c4089572b04d19c0a69eb2a5d5b2cae324cac30fa60055399c4111405"
+          },
+          {
+            "exercise_id": "frog-jumps",
+            "catalog_path": "data/exercises/catalog.json",
+            "catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+            "source_commit": "a6f296cbc6737991dd367e929b3e2df25874d4d8",
+            "field": "content.es.instructions[1]",
+            "value": "Flexiona las caderas y las rodillas y luego impúlsate hacia arriba y hacia delante.",
+            "catalog_record_sha256": "5f5e541c4089572b04d19c0a69eb2a5d5b2cae324cac30fa60055399c4111405"
+          },
+          {
+            "exercise_id": "frog-jumps",
+            "catalog_path": "data/exercises/catalog.json",
+            "catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+            "source_commit": "a6f296cbc6737991dd367e929b3e2df25874d4d8",
+            "field": "content.en.instructions[1]",
+            "value": "Dip through the hips and knees, then drive upward or forward as the exercise requires.",
+            "catalog_record_sha256": "5f5e541c4089572b04d19c0a69eb2a5d5b2cae324cac30fa60055399c4111405"
+          }
+        ]
+      }
+    },
+    {
+      "exercise_id": "full-squat-barbell",
+      "name": "Full Squat",
+      "source_english": {
+        "description": "Full Squat bends the hips and knees through a bilateral squat path before returning to standing.",
+        "instructions": [
+          "Stand with the barbell and feet about shoulder-width apart.",
+          "Bend the hips and knees to the controlled depth while keeping both feet planted.",
+          "Keep knees tracking over the toes and pause at the endpoint.",
+          "Drive through the whole foot to stand and reset."
+        ],
+        "form_cues": [
+          "Keep heels planted.",
+          "Track knees over toes.",
+          "Brace the trunk."
+        ],
+        "common_mistakes": [
+          "Knees collapsing inward.",
+          "Lifting the heels.",
+          "Bouncing at depth."
+        ],
+        "safety_note": "Choose a depth and load that keep the feet, knees, and spine stable.",
+        "provenance": "adapted"
+      },
+      "equipment": "barbell",
+      "primary_muscle": "quadriceps",
+      "secondary_muscles": [
+        "hamstrings",
+        "glutes"
+      ],
+      "source_catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+      "source_catalog_record_sha256": "d7ca542132794c5101f0eb19e2dd5864e64eee919c23937cccc09213d08989cc",
+      "source_english_sha256": "b34d1ac236b570f7d2711194f1ba20c72f54ff6cc94cbb3a61672156a4fba920",
+      "status": "ready",
+      "preparation_status": "prompt_prepared_not_generated",
+      "style_version": "v1",
+      "style_sha256": "8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578",
+      "human_reference": {
+        "repository_path": "assets/exercises/biceps-curl-dumbbell.png",
+        "absolute_path": "/workspace/lightweight-exercises-photo/assets/exercises/biceps-curl-dumbbell.png",
+        "sha256": "52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f",
+        "branch": "work",
+        "source_commit": "a6f296cbc6737991dd367e929b3e2df25874d4d8",
+        "role": "Human appearance/proportions/materials/anatomical style ONLY. Exercise pose, grip, equipment and muscles come from the exact-ID catalogue, never the reference.",
+        "pixels_reviewed_during_preparation": false
+      },
+      "scene": {
+        "single_phase": "Controlled squat just below parallel",
+        "pose": "Stand approximately shoulder-width with toes slightly out; hips/knees flexed to source parallel-or-slightly-below option, heels planted and trunk braced.",
+        "grip": "Both hands securely hold bar across upper back; choose source TRAPEZIUS support option, no numerical grip width.",
+        "supports_and_equipment": "Free bar rests on upper back and feet stay grounded; no Smith, front-rack substitution or forced excess depth.",
+        "camera": "Side-front three-quarter view showing upper-back bar support, thigh depth and both heels.",
+        "source_instruction_quotes": [
+          {
+            "index": 0,
+            "text": "Stand with the barbell and feet about shoulder-width apart."
+          },
+          {
+            "index": 1,
+            "text": "Bend the hips and knees to the controlled depth while keeping both feet planted."
+          },
+          {
+            "index": 2,
+            "text": "Keep knees tracking over the toes and pause at the endpoint."
+          },
+          {
+            "index": 3,
+            "text": "Drive through the whole foot to stand and reset."
+          }
+        ]
+      },
+      "prompt_payload": {
+        "identity_do_not_render_as_text": {
+          "exercise_id": "full-squat-barbell",
+          "name": "Full Squat",
+          "source_catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+          "source_catalog_record_sha256": "d7ca542132794c5101f0eb19e2dd5864e64eee919c23937cccc09213d08989cc"
+        },
+        "exact_catalogue_source": {
+          "source_english": {
+            "description": "Full Squat bends the hips and knees through a bilateral squat path before returning to standing.",
+            "instructions": [
+              "Stand with the barbell and feet about shoulder-width apart.",
+              "Bend the hips and knees to the controlled depth while keeping both feet planted.",
+              "Keep knees tracking over the toes and pause at the endpoint.",
+              "Drive through the whole foot to stand and reset."
+            ],
+            "form_cues": [
+              "Keep heels planted.",
+              "Track knees over toes.",
+              "Brace the trunk."
+            ],
+            "common_mistakes": [
+              "Knees collapsing inward.",
+              "Lifting the heels.",
+              "Bouncing at depth."
+            ],
+            "safety_note": "Choose a depth and load that keep the feet, knees, and spine stable.",
+            "provenance": "adapted"
+          },
+          "equipment": "barbell",
+          "primary_muscle": "quadriceps",
+          "secondary_muscles": [
+            "hamstrings",
+            "glutes"
+          ]
+        },
+        "human_reference": {
+          "repository_path": "assets/exercises/biceps-curl-dumbbell.png",
+          "absolute_path": "/workspace/lightweight-exercises-photo/assets/exercises/biceps-curl-dumbbell.png",
+          "sha256": "52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f",
+          "branch": "work",
+          "source_commit": "a6f296cbc6737991dd367e929b3e2df25874d4d8",
+          "role": "Human appearance/proportions/materials/anatomical style ONLY. Exercise pose, grip, equipment and muscles come from the exact-ID catalogue, never the reference.",
+          "pixels_reviewed_during_preparation": false
+        },
+        "style": {
+          "version": "v1",
+          "human_model": "One athletic bald male anatomical mannequin, opaque silver-gray muscular surfaces, consistent proportions and detailed 3D materials, plain black shorts, barefoot.",
+          "primary_highlight": {
+            "hex": "#F26445",
+            "rule": "Highlight only the exact primary muscle group provided for this exercise."
+          },
+          "secondary_highlight": {
+            "hex": "#F26445",
+            "intensity_fraction": [
+              0.4,
+              0.5
+            ],
+            "rule": "Only the exact secondary muscles, lighter same-hue highlight; if the list is empty add no secondary target."
+          },
+          "background": "Genuinely transparent PNG background, no white/checkerboard layer, no environment scene.",
+          "output": {
+            "format": "PNG",
+            "width": 1024,
+            "height": 1024,
+            "one_person": true,
+            "one_phase": true
+          },
+          "material_rules": "Highlights never make tissue transparent; no glow, whole-body orange tint, hair, text, labels, arrows, UI, borders, collage or extra person.",
+          "framing": "Full figure and all required equipment/supports visible within a square. Scale and use a three-quarter view to expose the specified contacts without changing anatomy, equipment, grip or technique.",
+          "no_invention": "Technique, equipment and muscles come only from the attached exact catalogue record. No extra attachments, numerical weights, brands or exact angles absent from the source."
+        },
+        "style_document_sha256": "8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578",
+        "scene": {
+          "single_phase": "Controlled squat just below parallel",
+          "pose": "Stand approximately shoulder-width with toes slightly out; hips/knees flexed to source parallel-or-slightly-below option, heels planted and trunk braced.",
+          "grip": "Both hands securely hold bar across upper back; choose source TRAPEZIUS support option, no numerical grip width.",
+          "supports_and_equipment": "Free bar rests on upper back and feet stay grounded; no Smith, front-rack substitution or forced excess depth.",
+          "camera": "Side-front three-quarter view showing upper-back bar support, thigh depth and both heels.",
+          "source_instruction_quotes": [
+            {
+              "index": 0,
+              "text": "Stand with the barbell and feet about shoulder-width apart."
+            },
+            {
+              "index": 1,
+              "text": "Bend the hips and knees to the controlled depth while keeping both feet planted."
+            },
+            {
+              "index": 2,
+              "text": "Keep knees tracking over the toes and pause at the endpoint."
+            },
+            {
+              "index": 3,
+              "text": "Drive through the whole foot to stand and reset."
+            }
+          ]
+        },
+        "supplementary_same_ID_sources": [
+          {
+            "exercise_id": "full-squat-barbell",
+            "catalog_path": "data/exercises/catalog.json",
+            "catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+            "source_commit": "a6f296cbc6737991dd367e929b3e2df25874d4d8",
+            "field": "content.es.instructions[1]",
+            "value": "Sujeta la barra sobre la parte superior de la espalda, apoyándola en los trapecios o los deltoides posteriores.",
+            "catalog_record_sha256": "d7ca542132794c5101f0eb19e2dd5864e64eee919c23937cccc09213d08989cc"
+          },
+          {
+            "exercise_id": "full-squat-barbell",
+            "catalog_path": "data/exercises/catalog.json",
+            "catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+            "source_commit": "a6f296cbc6737991dd367e929b3e2df25874d4d8",
+            "field": "content.es.instructions[4]",
+            "value": "Baja hasta que los muslos queden paralelos al suelo o un poco por debajo.",
+            "catalog_record_sha256": "d7ca542132794c5101f0eb19e2dd5864e64eee919c23937cccc09213d08989cc"
+          }
+        ],
+        "source_resolution": "Es/ru прямо задають гриф на верхній спині й глибину до паралелі або трохи нижче; обрано дозволену опору на трапеції та контрольовану нижню фазу.",
+        "source_use_rule": "Preserve original English. The cited additional fields of THIS SAME exercise ID fill missing detail only; do not substitute another exercise or silently rewrite the source."
+      },
+      "generation_prompt": "Create exactly ONE square transparent PNG of the exact exercise below, using the referenced human for APPEARANCE ONLY. Render only the selected phase and camera. Identity/path/hash fields are metadata, never visible text.\n{\n  \"exact_catalogue_source\": {\n    \"equipment\": \"barbell\",\n    \"primary_muscle\": \"quadriceps\",\n    \"secondary_muscles\": [\n      \"hamstrings\",\n      \"glutes\"\n    ],\n    \"source_english\": {\n      \"common_mistakes\": [\n        \"Knees collapsing inward.\",\n        \"Lifting the heels.\",\n        \"Bouncing at depth.\"\n      ],\n      \"description\": \"Full Squat bends the hips and knees through a bilateral squat path before returning to standing.\",\n      \"form_cues\": [\n        \"Keep heels planted.\",\n        \"Track knees over toes.\",\n        \"Brace the trunk.\"\n      ],\n      \"instructions\": [\n        \"Stand with the barbell and feet about shoulder-width apart.\",\n        \"Bend the hips and knees to the controlled depth while keeping both feet planted.\",\n        \"Keep knees tracking over the toes and pause at the endpoint.\",\n        \"Drive through the whole foot to stand and reset.\"\n      ],\n      \"provenance\": \"adapted\",\n      \"safety_note\": \"Choose a depth and load that keep the feet, knees, and spine stable.\"\n    }\n  },\n  \"human_reference\": {\n    \"absolute_path\": \"/workspace/lightweight-exercises-photo/assets/exercises/biceps-curl-dumbbell.png\",\n    \"branch\": \"work\",\n    \"pixels_reviewed_during_preparation\": false,\n    \"repository_path\": \"assets/exercises/biceps-curl-dumbbell.png\",\n    \"role\": \"Human appearance/proportions/materials/anatomical style ONLY. Exercise pose, grip, equipment and muscles come from the exact-ID catalogue, never the reference.\",\n    \"sha256\": \"52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f\",\n    \"source_commit\": \"a6f296cbc6737991dd367e929b3e2df25874d4d8\"\n  },\n  \"identity_do_not_render_as_text\": {\n    \"exercise_id\": \"full-squat-barbell\",\n    \"name\": \"Full Squat\",\n    \"source_catalog_record_sha256\": \"d7ca542132794c5101f0eb19e2dd5864e64eee919c23937cccc09213d08989cc\",\n    \"source_catalog_sha256\": \"a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989\"\n  },\n  \"scene\": {\n    \"camera\": \"Side-front three-quarter view showing upper-back bar support, thigh depth and both heels.\",\n    \"grip\": \"Both hands securely hold bar across upper back; choose source TRAPEZIUS support option, no numerical grip width.\",\n    \"pose\": \"Stand approximately shoulder-width with toes slightly out; hips/knees flexed to source parallel-or-slightly-below option, heels planted and trunk braced.\",\n    \"single_phase\": \"Controlled squat just below parallel\",\n    \"source_instruction_quotes\": [\n      {\n        \"index\": 0,\n        \"text\": \"Stand with the barbell and feet about shoulder-width apart.\"\n      },\n      {\n        \"index\": 1,\n        \"text\": \"Bend the hips and knees to the controlled depth while keeping both feet planted.\"\n      },\n      {\n        \"index\": 2,\n        \"text\": \"Keep knees tracking over the toes and pause at the endpoint.\"\n      },\n      {\n        \"index\": 3,\n        \"text\": \"Drive through the whole foot to stand and reset.\"\n      }\n    ],\n    \"supports_and_equipment\": \"Free bar rests on upper back and feet stay grounded; no Smith, front-rack substitution or forced excess depth.\"\n  },\n  \"source_resolution\": \"Es/ru прямо задають гриф на верхній спині й глибину до паралелі або трохи нижче; обрано дозволену опору на трапеції та контрольовану нижню фазу.\",\n  \"source_use_rule\": \"Preserve original English. The cited additional fields of THIS SAME exercise ID fill missing detail only; do not substitute another exercise or silently rewrite the source.\",\n  \"style\": {\n    \"background\": \"Genuinely transparent PNG background, no white/checkerboard layer, no environment scene.\",\n    \"framing\": \"Full figure and all required equipment/supports visible within a square. Scale and use a three-quarter view to expose the specified contacts without changing anatomy, equipment, grip or technique.\",\n    \"human_model\": \"One athletic bald male anatomical mannequin, opaque silver-gray muscular surfaces, consistent proportions and detailed 3D materials, plain black shorts, barefoot.\",\n    \"material_rules\": \"Highlights never make tissue transparent; no glow, whole-body orange tint, hair, text, labels, arrows, UI, borders, collage or extra person.\",\n    \"no_invention\": \"Technique, equipment and muscles come only from the attached exact catalogue record. No extra attachments, numerical weights, brands or exact angles absent from the source.\",\n    \"output\": {\n      \"format\": \"PNG\",\n      \"height\": 1024,\n      \"one_person\": true,\n      \"one_phase\": true,\n      \"width\": 1024\n    },\n    \"primary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"rule\": \"Highlight only the exact primary muscle group provided for this exercise.\"\n    },\n    \"secondary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"intensity_fraction\": [\n        0.4,\n        0.5\n      ],\n      \"rule\": \"Only the exact secondary muscles, lighter same-hue highlight; if the list is empty add no secondary target.\"\n    },\n    \"version\": \"v1\"\n  },\n  \"style_document_sha256\": \"8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578\",\n  \"supplementary_same_ID_sources\": [\n    {\n      \"catalog_path\": \"data/exercises/catalog.json\",\n      \"catalog_record_sha256\": \"d7ca542132794c5101f0eb19e2dd5864e64eee919c23937cccc09213d08989cc\",\n      \"catalog_sha256\": \"a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989\",\n      \"exercise_id\": \"full-squat-barbell\",\n      \"field\": \"content.es.instructions[1]\",\n      \"source_commit\": \"a6f296cbc6737991dd367e929b3e2df25874d4d8\",\n      \"value\": \"Sujeta la barra sobre la parte superior de la espalda, apoyándola en los trapecios o los deltoides posteriores.\"\n    },\n    {\n      \"catalog_path\": \"data/exercises/catalog.json\",\n      \"catalog_record_sha256\": \"d7ca542132794c5101f0eb19e2dd5864e64eee919c23937cccc09213d08989cc\",\n      \"catalog_sha256\": \"a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989\",\n      \"exercise_id\": \"full-squat-barbell\",\n      \"field\": \"content.es.instructions[4]\",\n      \"source_commit\": \"a6f296cbc6737991dd367e929b3e2df25874d4d8\",\n      \"value\": \"Baja hasta que los muslos queden paralelos al suelo o un poco por debajo.\"\n    }\n  ]\n}",
+      "generation_prompt_sha256": "0e34723bd625cf249261eafc127df1b7daa9d514886de2cffa68ba1277d60474",
+      "planned_png_path": "/workspace/exercise-image-results/agent-03-others-015/full-squat-barbell/attempt-1.png",
+      "output_root": "/workspace/exercise-image-results",
+      "planned_output_relative_path": "agent-03-others-015/full-squat-barbell/attempt-1.png",
+      "result_path": null,
+      "result_sha256": null,
+      "attempts": 0,
+      "user_review": null,
+      "technical_check": null,
+      "agent_visual_review": "not_performed",
+      "generation_authorized_now": false,
+      "clarification_resolution": {
+        "exercise_id": "full-squat-barbell",
+        "name": "Full Squat",
+        "source_english": {
+          "description": "Full Squat bends the hips and knees through a bilateral squat path before returning to standing.",
+          "instructions": [
+            "Stand with the barbell and feet about shoulder-width apart.",
+            "Bend the hips and knees to the controlled depth while keeping both feet planted.",
+            "Keep knees tracking over the toes and pause at the endpoint.",
+            "Drive through the whole foot to stand and reset."
+          ],
+          "form_cues": [
+            "Keep heels planted.",
+            "Track knees over toes.",
+            "Brace the trunk."
+          ],
+          "common_mistakes": [
+            "Knees collapsing inward.",
+            "Lifting the heels.",
+            "Bouncing at depth."
+          ],
+          "safety_note": "Choose a depth and load that keep the feet, knees, and spine stable.",
+          "provenance": "adapted"
+        },
+        "equipment": "barbell",
+        "primary_muscle": "quadriceps",
+        "secondary_muscles": [
+          "hamstrings",
+          "glutes"
+        ],
+        "source_catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+        "source_catalog_record_sha256": "d7ca542132794c5101f0eb19e2dd5864e64eee919c23937cccc09213d08989cc",
+        "source_english_sha256": "b34d1ac236b570f7d2711194f1ba20c72f54ff6cc94cbb3a61672156a4fba920",
+        "original_reason_kind": "variant_missing",
+        "original_question": "Не визначено положення грифа та full-глибину; controlled depth не задає конкретного варіанта. Уточніть їх.",
+        "status": "ready",
+        "decision": "Es/ru прямо задають гриф на верхній спині й глибину до паралелі або трохи нижче; обрано дозволену опору на трапеції та контрольовану нижню фазу.",
+        "evidence": [
+          {
+            "exercise_id": "full-squat-barbell",
+            "catalog_path": "data/exercises/catalog.json",
+            "catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+            "source_commit": "a6f296cbc6737991dd367e929b3e2df25874d4d8",
+            "field": "content.es.instructions[1]",
+            "value": "Sujeta la barra sobre la parte superior de la espalda, apoyándola en los trapecios o los deltoides posteriores.",
+            "catalog_record_sha256": "d7ca542132794c5101f0eb19e2dd5864e64eee919c23937cccc09213d08989cc"
+          },
+          {
+            "exercise_id": "full-squat-barbell",
+            "catalog_path": "data/exercises/catalog.json",
+            "catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+            "source_commit": "a6f296cbc6737991dd367e929b3e2df25874d4d8",
+            "field": "content.es.instructions[4]",
+            "value": "Baja hasta que los muslos queden paralelos al suelo o un poco por debajo.",
+            "catalog_record_sha256": "d7ca542132794c5101f0eb19e2dd5864e64eee919c23937cccc09213d08989cc"
+          }
+        ]
+      }
+    },
+    {
+      "exercise_id": "glute-bridge-barbell",
+      "name": "Glute Bridge (Barbell)",
+      "source_english": {
+        "description": "Glute Bridge (Barbell) lifts the hips from the floor by driving through the feet and squeezing the glutes, then lowers slowly.",
+        "instructions": [
+          "Lie on your back with knees bent and the barbell positioned securely if used.",
+          "Brace the abdomen and drive through the feet to lift the hips.",
+          "Pause when the torso and thighs form a straight line without arching.",
+          "Lower the hips slowly to the floor."
+        ],
+        "form_cues": [
+          "Keep knees tracking forward.",
+          "Squeeze the glutes.",
+          "Keep ribs down."
+        ],
+        "common_mistakes": [
+          "Overarching the back.",
+          "Pushing through the toes only.",
+          "Letting knees fall inward."
+        ],
+        "safety_note": "Use a stable surface and stop if the back arches sharply at the top.",
+        "provenance": "adapted"
+      },
+      "equipment": "barbell",
+      "primary_muscle": "glutes",
+      "secondary_muscles": [
+        "hamstrings",
+        "adductors",
+        "quadriceps"
+      ],
+      "source_catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+      "source_catalog_record_sha256": "1cb281208ac6a37161bab96d711f013c91dd1a32df0a22a97530f4961518b043",
+      "source_english_sha256": "a034533a428ebac012e0f676cfefd17c1c87ba42260f6b1c45d11de02e502c27",
+      "status": "ready",
+      "preparation_status": "prompt_prepared_not_generated",
+      "style_version": "v1",
+      "style_sha256": "8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578",
+      "human_reference": {
+        "repository_path": "assets/exercises/biceps-curl-dumbbell.png",
+        "absolute_path": "/workspace/lightweight-exercises-photo/assets/exercises/biceps-curl-dumbbell.png",
+        "sha256": "52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f",
+        "branch": "work",
+        "source_commit": "a6f296cbc6737991dd367e929b3e2df25874d4d8",
+        "role": "Human appearance/proportions/materials/anatomical style ONLY. Exercise pose, grip, equipment and muscles come from the exact-ID catalogue, never the reference.",
+        "pixels_reviewed_during_preparation": false
+      },
+      "scene": {
+        "single_phase": "Hip-extension top with hands steadying bar",
+        "pose": "Lie on back, knees bent and feet flat; hips lift until torso and thighs align, ribs down and no back arch.",
+        "grip": "Both hands HOLD BAR FIRMLY at hip crease as cited Spanish instructions specify.",
+        "supports_and_equipment": "Shoulder/upper back on floor, feet grounded; bar across HIPS per same-ID es/uk. No bench hip thrust or invented pad.",
+        "camera": "Side three-quarter view showing floor supports, bar-hip contact and both holding hands.",
+        "source_instruction_quotes": [
+          {
+            "index": 0,
+            "text": "Lie on your back with knees bent and the barbell positioned securely if used."
+          },
+          {
+            "index": 1,
+            "text": "Brace the abdomen and drive through the feet to lift the hips."
+          },
+          {
+            "index": 2,
+            "text": "Pause when the torso and thighs form a straight line without arching."
+          },
+          {
+            "index": 3,
+            "text": "Lower the hips slowly to the floor."
+          }
+        ]
+      },
+      "prompt_payload": {
+        "identity_do_not_render_as_text": {
+          "exercise_id": "glute-bridge-barbell",
+          "name": "Glute Bridge (Barbell)",
+          "source_catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+          "source_catalog_record_sha256": "1cb281208ac6a37161bab96d711f013c91dd1a32df0a22a97530f4961518b043"
+        },
+        "exact_catalogue_source": {
+          "source_english": {
+            "description": "Glute Bridge (Barbell) lifts the hips from the floor by driving through the feet and squeezing the glutes, then lowers slowly.",
+            "instructions": [
+              "Lie on your back with knees bent and the barbell positioned securely if used.",
+              "Brace the abdomen and drive through the feet to lift the hips.",
+              "Pause when the torso and thighs form a straight line without arching.",
+              "Lower the hips slowly to the floor."
+            ],
+            "form_cues": [
+              "Keep knees tracking forward.",
+              "Squeeze the glutes.",
+              "Keep ribs down."
+            ],
+            "common_mistakes": [
+              "Overarching the back.",
+              "Pushing through the toes only.",
+              "Letting knees fall inward."
+            ],
+            "safety_note": "Use a stable surface and stop if the back arches sharply at the top.",
+            "provenance": "adapted"
+          },
+          "equipment": "barbell",
+          "primary_muscle": "glutes",
+          "secondary_muscles": [
+            "hamstrings",
+            "adductors",
+            "quadriceps"
+          ]
+        },
+        "human_reference": {
+          "repository_path": "assets/exercises/biceps-curl-dumbbell.png",
+          "absolute_path": "/workspace/lightweight-exercises-photo/assets/exercises/biceps-curl-dumbbell.png",
+          "sha256": "52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f",
+          "branch": "work",
+          "source_commit": "a6f296cbc6737991dd367e929b3e2df25874d4d8",
+          "role": "Human appearance/proportions/materials/anatomical style ONLY. Exercise pose, grip, equipment and muscles come from the exact-ID catalogue, never the reference.",
+          "pixels_reviewed_during_preparation": false
+        },
+        "style": {
+          "version": "v1",
+          "human_model": "One athletic bald male anatomical mannequin, opaque silver-gray muscular surfaces, consistent proportions and detailed 3D materials, plain black shorts, barefoot.",
+          "primary_highlight": {
+            "hex": "#F26445",
+            "rule": "Highlight only the exact primary muscle group provided for this exercise."
+          },
+          "secondary_highlight": {
+            "hex": "#F26445",
+            "intensity_fraction": [
+              0.4,
+              0.5
+            ],
+            "rule": "Only the exact secondary muscles, lighter same-hue highlight; if the list is empty add no secondary target."
+          },
+          "background": "Genuinely transparent PNG background, no white/checkerboard layer, no environment scene.",
+          "output": {
+            "format": "PNG",
+            "width": 1024,
+            "height": 1024,
+            "one_person": true,
+            "one_phase": true
+          },
+          "material_rules": "Highlights never make tissue transparent; no glow, whole-body orange tint, hair, text, labels, arrows, UI, borders, collage or extra person.",
+          "framing": "Full figure and all required equipment/supports visible within a square. Scale and use a three-quarter view to expose the specified contacts without changing anatomy, equipment, grip or technique.",
+          "no_invention": "Technique, equipment and muscles come only from the attached exact catalogue record. No extra attachments, numerical weights, brands or exact angles absent from the source."
+        },
+        "style_document_sha256": "8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578",
+        "scene": {
+          "single_phase": "Hip-extension top with hands steadying bar",
+          "pose": "Lie on back, knees bent and feet flat; hips lift until torso and thighs align, ribs down and no back arch.",
+          "grip": "Both hands HOLD BAR FIRMLY at hip crease as cited Spanish instructions specify.",
+          "supports_and_equipment": "Shoulder/upper back on floor, feet grounded; bar across HIPS per same-ID es/uk. No bench hip thrust or invented pad.",
+          "camera": "Side three-quarter view showing floor supports, bar-hip contact and both holding hands.",
+          "source_instruction_quotes": [
+            {
+              "index": 0,
+              "text": "Lie on your back with knees bent and the barbell positioned securely if used."
+            },
+            {
+              "index": 1,
+              "text": "Brace the abdomen and drive through the feet to lift the hips."
+            },
+            {
+              "index": 2,
+              "text": "Pause when the torso and thighs form a straight line without arching."
+            },
+            {
+              "index": 3,
+              "text": "Lower the hips slowly to the floor."
+            }
+          ]
+        },
+        "supplementary_same_ID_sources": [
+          {
+            "exercise_id": "glute-bridge-barbell",
+            "catalog_path": "data/exercises/catalog.json",
+            "catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+            "source_commit": "a6f296cbc6737991dd367e929b3e2df25874d4d8",
+            "field": "content.es.instructions[0]",
+            "value": "Empieza tumbado boca arriba en el suelo con las rodillas flexionadas y los pies planos sobre el suelo.",
+            "catalog_record_sha256": "1cb281208ac6a37161bab96d711f013c91dd1a32df0a22a97530f4961518b043"
+          },
+          {
+            "exercise_id": "glute-bridge-barbell",
+            "catalog_path": "data/exercises/catalog.json",
+            "catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+            "source_commit": "a6f296cbc6737991dd367e929b3e2df25874d4d8",
+            "field": "content.es.instructions[1]",
+            "value": "Coloca una barra sobre las caderas, sujetándola con firmeza con ambas manos.",
+            "catalog_record_sha256": "1cb281208ac6a37161bab96d711f013c91dd1a32df0a22a97530f4961518b043"
+          },
+          {
+            "exercise_id": "glute-bridge-barbell",
+            "catalog_path": "data/exercises/catalog.json",
+            "catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+            "source_commit": "a6f296cbc6737991dd367e929b3e2df25874d4d8",
+            "field": "content.uk.instructions[0]",
+            "value": "Ляжте на спину, зігніть коліна та надійно розмістіть штангу в складці стегон.",
+            "catalog_record_sha256": "1cb281208ac6a37161bab96d711f013c91dd1a32df0a22a97530f4961518b043"
+          }
+        ],
+        "source_resolution": "Es/ru прямо задають гриф на стегнах і утримання обома руками; uk уточнює складку стегон. Це відповідає English securely positioned.",
+        "source_use_rule": "Preserve original English. The cited additional fields of THIS SAME exercise ID fill missing detail only; do not substitute another exercise or silently rewrite the source."
+      },
+      "generation_prompt": "Create exactly ONE square transparent PNG of the exact exercise below, using the referenced human for APPEARANCE ONLY. Render only the selected phase and camera. Identity/path/hash fields are metadata, never visible text.\n{\n  \"exact_catalogue_source\": {\n    \"equipment\": \"barbell\",\n    \"primary_muscle\": \"glutes\",\n    \"secondary_muscles\": [\n      \"hamstrings\",\n      \"adductors\",\n      \"quadriceps\"\n    ],\n    \"source_english\": {\n      \"common_mistakes\": [\n        \"Overarching the back.\",\n        \"Pushing through the toes only.\",\n        \"Letting knees fall inward.\"\n      ],\n      \"description\": \"Glute Bridge (Barbell) lifts the hips from the floor by driving through the feet and squeezing the glutes, then lowers slowly.\",\n      \"form_cues\": [\n        \"Keep knees tracking forward.\",\n        \"Squeeze the glutes.\",\n        \"Keep ribs down.\"\n      ],\n      \"instructions\": [\n        \"Lie on your back with knees bent and the barbell positioned securely if used.\",\n        \"Brace the abdomen and drive through the feet to lift the hips.\",\n        \"Pause when the torso and thighs form a straight line without arching.\",\n        \"Lower the hips slowly to the floor.\"\n      ],\n      \"provenance\": \"adapted\",\n      \"safety_note\": \"Use a stable surface and stop if the back arches sharply at the top.\"\n    }\n  },\n  \"human_reference\": {\n    \"absolute_path\": \"/workspace/lightweight-exercises-photo/assets/exercises/biceps-curl-dumbbell.png\",\n    \"branch\": \"work\",\n    \"pixels_reviewed_during_preparation\": false,\n    \"repository_path\": \"assets/exercises/biceps-curl-dumbbell.png\",\n    \"role\": \"Human appearance/proportions/materials/anatomical style ONLY. Exercise pose, grip, equipment and muscles come from the exact-ID catalogue, never the reference.\",\n    \"sha256\": \"52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f\",\n    \"source_commit\": \"a6f296cbc6737991dd367e929b3e2df25874d4d8\"\n  },\n  \"identity_do_not_render_as_text\": {\n    \"exercise_id\": \"glute-bridge-barbell\",\n    \"name\": \"Glute Bridge (Barbell)\",\n    \"source_catalog_record_sha256\": \"1cb281208ac6a37161bab96d711f013c91dd1a32df0a22a97530f4961518b043\",\n    \"source_catalog_sha256\": \"a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989\"\n  },\n  \"scene\": {\n    \"camera\": \"Side three-quarter view showing floor supports, bar-hip contact and both holding hands.\",\n    \"grip\": \"Both hands HOLD BAR FIRMLY at hip crease as cited Spanish instructions specify.\",\n    \"pose\": \"Lie on back, knees bent and feet flat; hips lift until torso and thighs align, ribs down and no back arch.\",\n    \"single_phase\": \"Hip-extension top with hands steadying bar\",\n    \"source_instruction_quotes\": [\n      {\n        \"index\": 0,\n        \"text\": \"Lie on your back with knees bent and the barbell positioned securely if used.\"\n      },\n      {\n        \"index\": 1,\n        \"text\": \"Brace the abdomen and drive through the feet to lift the hips.\"\n      },\n      {\n        \"index\": 2,\n        \"text\": \"Pause when the torso and thighs form a straight line without arching.\"\n      },\n      {\n        \"index\": 3,\n        \"text\": \"Lower the hips slowly to the floor.\"\n      }\n    ],\n    \"supports_and_equipment\": \"Shoulder/upper back on floor, feet grounded; bar across HIPS per same-ID es/uk. No bench hip thrust or invented pad.\"\n  },\n  \"source_resolution\": \"Es/ru прямо задають гриф на стегнах і утримання обома руками; uk уточнює складку стегон. Це відповідає English securely positioned.\",\n  \"source_use_rule\": \"Preserve original English. The cited additional fields of THIS SAME exercise ID fill missing detail only; do not substitute another exercise or silently rewrite the source.\",\n  \"style\": {\n    \"background\": \"Genuinely transparent PNG background, no white/checkerboard layer, no environment scene.\",\n    \"framing\": \"Full figure and all required equipment/supports visible within a square. Scale and use a three-quarter view to expose the specified contacts without changing anatomy, equipment, grip or technique.\",\n    \"human_model\": \"One athletic bald male anatomical mannequin, opaque silver-gray muscular surfaces, consistent proportions and detailed 3D materials, plain black shorts, barefoot.\",\n    \"material_rules\": \"Highlights never make tissue transparent; no glow, whole-body orange tint, hair, text, labels, arrows, UI, borders, collage or extra person.\",\n    \"no_invention\": \"Technique, equipment and muscles come only from the attached exact catalogue record. No extra attachments, numerical weights, brands or exact angles absent from the source.\",\n    \"output\": {\n      \"format\": \"PNG\",\n      \"height\": 1024,\n      \"one_person\": true,\n      \"one_phase\": true,\n      \"width\": 1024\n    },\n    \"primary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"rule\": \"Highlight only the exact primary muscle group provided for this exercise.\"\n    },\n    \"secondary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"intensity_fraction\": [\n        0.4,\n        0.5\n      ],\n      \"rule\": \"Only the exact secondary muscles, lighter same-hue highlight; if the list is empty add no secondary target.\"\n    },\n    \"version\": \"v1\"\n  },\n  \"style_document_sha256\": \"8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578\",\n  \"supplementary_same_ID_sources\": [\n    {\n      \"catalog_path\": \"data/exercises/catalog.json\",\n      \"catalog_record_sha256\": \"1cb281208ac6a37161bab96d711f013c91dd1a32df0a22a97530f4961518b043\",\n      \"catalog_sha256\": \"a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989\",\n      \"exercise_id\": \"glute-bridge-barbell\",\n      \"field\": \"content.es.instructions[0]\",\n      \"source_commit\": \"a6f296cbc6737991dd367e929b3e2df25874d4d8\",\n      \"value\": \"Empieza tumbado boca arriba en el suelo con las rodillas flexionadas y los pies planos sobre el suelo.\"\n    },\n    {\n      \"catalog_path\": \"data/exercises/catalog.json\",\n      \"catalog_record_sha256\": \"1cb281208ac6a37161bab96d711f013c91dd1a32df0a22a97530f4961518b043\",\n      \"catalog_sha256\": \"a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989\",\n      \"exercise_id\": \"glute-bridge-barbell\",\n      \"field\": \"content.es.instructions[1]\",\n      \"source_commit\": \"a6f296cbc6737991dd367e929b3e2df25874d4d8\",\n      \"value\": \"Coloca una barra sobre las caderas, sujetándola con firmeza con ambas manos.\"\n    },\n    {\n      \"catalog_path\": \"data/exercises/catalog.json\",\n      \"catalog_record_sha256\": \"1cb281208ac6a37161bab96d711f013c91dd1a32df0a22a97530f4961518b043\",\n      \"catalog_sha256\": \"a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989\",\n      \"exercise_id\": \"glute-bridge-barbell\",\n      \"field\": \"content.uk.instructions[0]\",\n      \"source_commit\": \"a6f296cbc6737991dd367e929b3e2df25874d4d8\",\n      \"value\": \"Ляжте на спину, зігніть коліна та надійно розмістіть штангу в складці стегон.\"\n    }\n  ]\n}",
+      "generation_prompt_sha256": "8deefced9362e6cf108dc9da74ec29d4bc556430aea17c39a33cfc3dd195d5b8",
+      "planned_png_path": "/workspace/exercise-image-results/agent-03-others-015/glute-bridge-barbell/attempt-1.png",
+      "output_root": "/workspace/exercise-image-results",
+      "planned_output_relative_path": "agent-03-others-015/glute-bridge-barbell/attempt-1.png",
+      "result_path": null,
+      "result_sha256": null,
+      "attempts": 0,
+      "user_review": null,
+      "technical_check": null,
+      "agent_visual_review": "not_performed",
+      "generation_authorized_now": false,
+      "clarification_resolution": {
+        "exercise_id": "glute-bridge-barbell",
+        "name": "Glute Bridge (Barbell)",
+        "source_english": {
+          "description": "Glute Bridge (Barbell) lifts the hips from the floor by driving through the feet and squeezing the glutes, then lowers slowly.",
+          "instructions": [
+            "Lie on your back with knees bent and the barbell positioned securely if used.",
+            "Brace the abdomen and drive through the feet to lift the hips.",
+            "Pause when the torso and thighs form a straight line without arching.",
+            "Lower the hips slowly to the floor."
+          ],
+          "form_cues": [
+            "Keep knees tracking forward.",
+            "Squeeze the glutes.",
+            "Keep ribs down."
+          ],
+          "common_mistakes": [
+            "Overarching the back.",
+            "Pushing through the toes only.",
+            "Letting knees fall inward."
+          ],
+          "safety_note": "Use a stable surface and stop if the back arches sharply at the top.",
+          "provenance": "adapted"
+        },
+        "equipment": "barbell",
+        "primary_muscle": "glutes",
+        "secondary_muscles": [
+          "hamstrings",
+          "adductors",
+          "quadriceps"
+        ],
+        "source_catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+        "source_catalog_record_sha256": "1cb281208ac6a37161bab96d711f013c91dd1a32df0a22a97530f4961518b043",
+        "source_english_sha256": "a034533a428ebac012e0f676cfefd17c1c87ba42260f6b1c45d11de02e502c27",
+        "original_reason_kind": "load_unspecified",
+        "original_question": "barbell positioned securely if used не визначає місце грифа та контакти рук/подушки. Уточніть навантаження на таз.",
+        "status": "ready",
+        "decision": "Es/ru прямо задають гриф на стегнах і утримання обома руками; uk уточнює складку стегон. Це відповідає English securely positioned.",
+        "evidence": [
+          {
+            "exercise_id": "glute-bridge-barbell",
+            "catalog_path": "data/exercises/catalog.json",
+            "catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+            "source_commit": "a6f296cbc6737991dd367e929b3e2df25874d4d8",
+            "field": "content.es.instructions[0]",
+            "value": "Empieza tumbado boca arriba en el suelo con las rodillas flexionadas y los pies planos sobre el suelo.",
+            "catalog_record_sha256": "1cb281208ac6a37161bab96d711f013c91dd1a32df0a22a97530f4961518b043"
+          },
+          {
+            "exercise_id": "glute-bridge-barbell",
+            "catalog_path": "data/exercises/catalog.json",
+            "catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+            "source_commit": "a6f296cbc6737991dd367e929b3e2df25874d4d8",
+            "field": "content.es.instructions[1]",
+            "value": "Coloca una barra sobre las caderas, sujetándola con firmeza con ambas manos.",
+            "catalog_record_sha256": "1cb281208ac6a37161bab96d711f013c91dd1a32df0a22a97530f4961518b043"
+          },
+          {
+            "exercise_id": "glute-bridge-barbell",
+            "catalog_path": "data/exercises/catalog.json",
+            "catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+            "source_commit": "a6f296cbc6737991dd367e929b3e2df25874d4d8",
+            "field": "content.uk.instructions[0]",
+            "value": "Ляжте на спину, зігніть коліна та надійно розмістіть штангу в складці стегон.",
+            "catalog_record_sha256": "1cb281208ac6a37161bab96d711f013c91dd1a32df0a22a97530f4961518b043"
+          }
+        ]
+      }
+    },
+    {
+      "exercise_id": "hex-press-dumbbell",
+      "name": "Hex Press (Dumbbell)",
+      "source_english": {
+        "description": "Hex Press (Dumbbell) is a supported chest press using one dumbbell in each hand.",
+        "instructions": [
+          "Lie on a flat bench with feet planted. Grip one dumbbell in each hand and hold it over the chest.",
+          "Lower the resistance toward the chest with elbows controlled.",
+          "Pause without bouncing or losing shoulder position.",
+          "Press back to straight arms, then rerack or set the weights down safely."
+        ],
+        "form_cues": [
+          "Keep wrists stacked.",
+          "Keep shoulder blades supported.",
+          "Press evenly."
+        ],
+        "common_mistakes": [
+          "Bouncing at the bottom.",
+          "Flaring the elbows.",
+          "Arching to shorten the range."
+        ],
+        "safety_note": "Use a spotter or safeties for the loaded press and stop before shoulder control is lost.",
+        "provenance": "authored"
+      },
+      "equipment": "dumbbell",
+      "primary_muscle": "chest",
+      "secondary_muscles": [
+        "shoulders",
+        "triceps"
+      ],
+      "source_catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+      "source_catalog_record_sha256": "2b6cc1a950016995905c5df4d4d03cbd4da3296e5fda852be55897f5d3f199b6",
+      "source_english_sha256": "eb43f00f8b589bdade50828d4c4094de00632b621007e2fc63c337df4cfcf066",
+      "status": "ready",
+      "preparation_status": "prompt_prepared_not_generated",
+      "style_version": "v1",
+      "style_sha256": "8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578",
+      "human_reference": {
+        "repository_path": "assets/exercises/biceps-curl-dumbbell.png",
+        "absolute_path": "/workspace/lightweight-exercises-photo/assets/exercises/biceps-curl-dumbbell.png",
+        "sha256": "52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f",
+        "branch": "work",
+        "source_commit": "a6f296cbc6737991dd367e929b3e2df25874d4d8",
+        "role": "Human appearance/proportions/materials/anatomical style ONLY. Exercise pose, grip, equipment and muscles come from the exact-ID catalogue, never the reference.",
+        "pixels_reviewed_during_preparation": false
+      },
+      "scene": {
+        "single_phase": "Continuous inward-squeeze press above chest",
+        "pose": "Lie on flat bench, feet planted and shoulder blades supported, arms press weights above chest with controlled elbows.",
+        "grip": "One dumbbell per hand; continuously squeeze the two weights INWARD TOGETHER as exact-ID match.rationale explicitly defines.",
+        "supports_and_equipment": "Flat bench and grounded feet, compatible safety supports per English source; no invented hexagonal shape, machine or second person.",
+        "camera": "Front-side three-quarter view making inward dumbbell contact and both wrists visible.",
+        "source_instruction_quotes": [
+          {
+            "index": 0,
+            "text": "Lie on a flat bench with feet planted. Grip one dumbbell in each hand and hold it over the chest."
+          },
+          {
+            "index": 1,
+            "text": "Lower the resistance toward the chest with elbows controlled."
+          },
+          {
+            "index": 2,
+            "text": "Pause without bouncing or losing shoulder position."
+          },
+          {
+            "index": 3,
+            "text": "Press back to straight arms, then rerack or set the weights down safely."
+          }
+        ]
+      },
+      "prompt_payload": {
+        "identity_do_not_render_as_text": {
+          "exercise_id": "hex-press-dumbbell",
+          "name": "Hex Press (Dumbbell)",
+          "source_catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+          "source_catalog_record_sha256": "2b6cc1a950016995905c5df4d4d03cbd4da3296e5fda852be55897f5d3f199b6"
+        },
+        "exact_catalogue_source": {
+          "source_english": {
+            "description": "Hex Press (Dumbbell) is a supported chest press using one dumbbell in each hand.",
+            "instructions": [
+              "Lie on a flat bench with feet planted. Grip one dumbbell in each hand and hold it over the chest.",
+              "Lower the resistance toward the chest with elbows controlled.",
+              "Pause without bouncing or losing shoulder position.",
+              "Press back to straight arms, then rerack or set the weights down safely."
+            ],
+            "form_cues": [
+              "Keep wrists stacked.",
+              "Keep shoulder blades supported.",
+              "Press evenly."
+            ],
+            "common_mistakes": [
+              "Bouncing at the bottom.",
+              "Flaring the elbows.",
+              "Arching to shorten the range."
+            ],
+            "safety_note": "Use a spotter or safeties for the loaded press and stop before shoulder control is lost.",
+            "provenance": "authored"
+          },
+          "equipment": "dumbbell",
+          "primary_muscle": "chest",
+          "secondary_muscles": [
+            "shoulders",
+            "triceps"
+          ]
+        },
+        "human_reference": {
+          "repository_path": "assets/exercises/biceps-curl-dumbbell.png",
+          "absolute_path": "/workspace/lightweight-exercises-photo/assets/exercises/biceps-curl-dumbbell.png",
+          "sha256": "52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f",
+          "branch": "work",
+          "source_commit": "a6f296cbc6737991dd367e929b3e2df25874d4d8",
+          "role": "Human appearance/proportions/materials/anatomical style ONLY. Exercise pose, grip, equipment and muscles come from the exact-ID catalogue, never the reference.",
+          "pixels_reviewed_during_preparation": false
+        },
+        "style": {
+          "version": "v1",
+          "human_model": "One athletic bald male anatomical mannequin, opaque silver-gray muscular surfaces, consistent proportions and detailed 3D materials, plain black shorts, barefoot.",
+          "primary_highlight": {
+            "hex": "#F26445",
+            "rule": "Highlight only the exact primary muscle group provided for this exercise."
+          },
+          "secondary_highlight": {
+            "hex": "#F26445",
+            "intensity_fraction": [
+              0.4,
+              0.5
+            ],
+            "rule": "Only the exact secondary muscles, lighter same-hue highlight; if the list is empty add no secondary target."
+          },
+          "background": "Genuinely transparent PNG background, no white/checkerboard layer, no environment scene.",
+          "output": {
+            "format": "PNG",
+            "width": 1024,
+            "height": 1024,
+            "one_person": true,
+            "one_phase": true
+          },
+          "material_rules": "Highlights never make tissue transparent; no glow, whole-body orange tint, hair, text, labels, arrows, UI, borders, collage or extra person.",
+          "framing": "Full figure and all required equipment/supports visible within a square. Scale and use a three-quarter view to expose the specified contacts without changing anatomy, equipment, grip or technique.",
+          "no_invention": "Technique, equipment and muscles come only from the attached exact catalogue record. No extra attachments, numerical weights, brands or exact angles absent from the source."
+        },
+        "style_document_sha256": "8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578",
+        "scene": {
+          "single_phase": "Continuous inward-squeeze press above chest",
+          "pose": "Lie on flat bench, feet planted and shoulder blades supported, arms press weights above chest with controlled elbows.",
+          "grip": "One dumbbell per hand; continuously squeeze the two weights INWARD TOGETHER as exact-ID match.rationale explicitly defines.",
+          "supports_and_equipment": "Flat bench and grounded feet, compatible safety supports per English source; no invented hexagonal shape, machine or second person.",
+          "camera": "Front-side three-quarter view making inward dumbbell contact and both wrists visible.",
+          "source_instruction_quotes": [
+            {
+              "index": 0,
+              "text": "Lie on a flat bench with feet planted. Grip one dumbbell in each hand and hold it over the chest."
+            },
+            {
+              "index": 1,
+              "text": "Lower the resistance toward the chest with elbows controlled."
+            },
+            {
+              "index": 2,
+              "text": "Pause without bouncing or losing shoulder position."
+            },
+            {
+              "index": 3,
+              "text": "Press back to straight arms, then rerack or set the weights down safely."
+            }
+          ]
+        },
+        "supplementary_same_ID_sources": [
+          {
+            "exercise_id": "hex-press-dumbbell",
+            "catalog_path": "data/exercises/catalog.json",
+            "catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+            "source_commit": "a6f296cbc6737991dd367e929b3e2df25874d4d8",
+            "field": "match.rationale",
+            "value": "No candidate includes the hex press's defining continuous inward dumbbell squeeze during the chest press.",
+            "catalog_record_sha256": "2b6cc1a950016995905c5df4d4d03cbd4da3296e5fda852be55897f5d3f199b6"
+          },
+          {
+            "exercise_id": "hex-press-dumbbell",
+            "catalog_path": "data/exercises/catalog.json",
+            "catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+            "source_commit": "a6f296cbc6737991dd367e929b3e2df25874d4d8",
+            "field": "content.uk.description",
+            "value": "Жим гантелей із притисканням: це жим для грудей із опорою, під час якого в кожній руці утримується по гантелі.",
+            "catalog_record_sha256": "2b6cc1a950016995905c5df4d4d03cbd4da3296e5fda852be55897f5d3f199b6"
+          }
+        ],
+        "source_resolution": "Власний match.rationale прямо визначає continuous inward dumbbell squeeze, uk description називає притискання. Це доповнення того самого ID, не запозичення Squeeze Press.",
+        "source_use_rule": "Preserve original English. The cited additional fields of THIS SAME exercise ID fill missing detail only; do not substitute another exercise or silently rewrite the source."
+      },
+      "generation_prompt": "Create exactly ONE square transparent PNG of the exact exercise below, using the referenced human for APPEARANCE ONLY. Render only the selected phase and camera. Identity/path/hash fields are metadata, never visible text.\n{\n  \"exact_catalogue_source\": {\n    \"equipment\": \"dumbbell\",\n    \"primary_muscle\": \"chest\",\n    \"secondary_muscles\": [\n      \"shoulders\",\n      \"triceps\"\n    ],\n    \"source_english\": {\n      \"common_mistakes\": [\n        \"Bouncing at the bottom.\",\n        \"Flaring the elbows.\",\n        \"Arching to shorten the range.\"\n      ],\n      \"description\": \"Hex Press (Dumbbell) is a supported chest press using one dumbbell in each hand.\",\n      \"form_cues\": [\n        \"Keep wrists stacked.\",\n        \"Keep shoulder blades supported.\",\n        \"Press evenly.\"\n      ],\n      \"instructions\": [\n        \"Lie on a flat bench with feet planted. Grip one dumbbell in each hand and hold it over the chest.\",\n        \"Lower the resistance toward the chest with elbows controlled.\",\n        \"Pause without bouncing or losing shoulder position.\",\n        \"Press back to straight arms, then rerack or set the weights down safely.\"\n      ],\n      \"provenance\": \"authored\",\n      \"safety_note\": \"Use a spotter or safeties for the loaded press and stop before shoulder control is lost.\"\n    }\n  },\n  \"human_reference\": {\n    \"absolute_path\": \"/workspace/lightweight-exercises-photo/assets/exercises/biceps-curl-dumbbell.png\",\n    \"branch\": \"work\",\n    \"pixels_reviewed_during_preparation\": false,\n    \"repository_path\": \"assets/exercises/biceps-curl-dumbbell.png\",\n    \"role\": \"Human appearance/proportions/materials/anatomical style ONLY. Exercise pose, grip, equipment and muscles come from the exact-ID catalogue, never the reference.\",\n    \"sha256\": \"52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f\",\n    \"source_commit\": \"a6f296cbc6737991dd367e929b3e2df25874d4d8\"\n  },\n  \"identity_do_not_render_as_text\": {\n    \"exercise_id\": \"hex-press-dumbbell\",\n    \"name\": \"Hex Press (Dumbbell)\",\n    \"source_catalog_record_sha256\": \"2b6cc1a950016995905c5df4d4d03cbd4da3296e5fda852be55897f5d3f199b6\",\n    \"source_catalog_sha256\": \"a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989\"\n  },\n  \"scene\": {\n    \"camera\": \"Front-side three-quarter view making inward dumbbell contact and both wrists visible.\",\n    \"grip\": \"One dumbbell per hand; continuously squeeze the two weights INWARD TOGETHER as exact-ID match.rationale explicitly defines.\",\n    \"pose\": \"Lie on flat bench, feet planted and shoulder blades supported, arms press weights above chest with controlled elbows.\",\n    \"single_phase\": \"Continuous inward-squeeze press above chest\",\n    \"source_instruction_quotes\": [\n      {\n        \"index\": 0,\n        \"text\": \"Lie on a flat bench with feet planted. Grip one dumbbell in each hand and hold it over the chest.\"\n      },\n      {\n        \"index\": 1,\n        \"text\": \"Lower the resistance toward the chest with elbows controlled.\"\n      },\n      {\n        \"index\": 2,\n        \"text\": \"Pause without bouncing or losing shoulder position.\"\n      },\n      {\n        \"index\": 3,\n        \"text\": \"Press back to straight arms, then rerack or set the weights down safely.\"\n      }\n    ],\n    \"supports_and_equipment\": \"Flat bench and grounded feet, compatible safety supports per English source; no invented hexagonal shape, machine or second person.\"\n  },\n  \"source_resolution\": \"Власний match.rationale прямо визначає continuous inward dumbbell squeeze, uk description називає притискання. Це доповнення того самого ID, не запозичення Squeeze Press.\",\n  \"source_use_rule\": \"Preserve original English. The cited additional fields of THIS SAME exercise ID fill missing detail only; do not substitute another exercise or silently rewrite the source.\",\n  \"style\": {\n    \"background\": \"Genuinely transparent PNG background, no white/checkerboard layer, no environment scene.\",\n    \"framing\": \"Full figure and all required equipment/supports visible within a square. Scale and use a three-quarter view to expose the specified contacts without changing anatomy, equipment, grip or technique.\",\n    \"human_model\": \"One athletic bald male anatomical mannequin, opaque silver-gray muscular surfaces, consistent proportions and detailed 3D materials, plain black shorts, barefoot.\",\n    \"material_rules\": \"Highlights never make tissue transparent; no glow, whole-body orange tint, hair, text, labels, arrows, UI, borders, collage or extra person.\",\n    \"no_invention\": \"Technique, equipment and muscles come only from the attached exact catalogue record. No extra attachments, numerical weights, brands or exact angles absent from the source.\",\n    \"output\": {\n      \"format\": \"PNG\",\n      \"height\": 1024,\n      \"one_person\": true,\n      \"one_phase\": true,\n      \"width\": 1024\n    },\n    \"primary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"rule\": \"Highlight only the exact primary muscle group provided for this exercise.\"\n    },\n    \"secondary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"intensity_fraction\": [\n        0.4,\n        0.5\n      ],\n      \"rule\": \"Only the exact secondary muscles, lighter same-hue highlight; if the list is empty add no secondary target.\"\n    },\n    \"version\": \"v1\"\n  },\n  \"style_document_sha256\": \"8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578\",\n  \"supplementary_same_ID_sources\": [\n    {\n      \"catalog_path\": \"data/exercises/catalog.json\",\n      \"catalog_record_sha256\": \"2b6cc1a950016995905c5df4d4d03cbd4da3296e5fda852be55897f5d3f199b6\",\n      \"catalog_sha256\": \"a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989\",\n      \"exercise_id\": \"hex-press-dumbbell\",\n      \"field\": \"match.rationale\",\n      \"source_commit\": \"a6f296cbc6737991dd367e929b3e2df25874d4d8\",\n      \"value\": \"No candidate includes the hex press's defining continuous inward dumbbell squeeze during the chest press.\"\n    },\n    {\n      \"catalog_path\": \"data/exercises/catalog.json\",\n      \"catalog_record_sha256\": \"2b6cc1a950016995905c5df4d4d03cbd4da3296e5fda852be55897f5d3f199b6\",\n      \"catalog_sha256\": \"a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989\",\n      \"exercise_id\": \"hex-press-dumbbell\",\n      \"field\": \"content.uk.description\",\n      \"source_commit\": \"a6f296cbc6737991dd367e929b3e2df25874d4d8\",\n      \"value\": \"Жим гантелей із притисканням: це жим для грудей із опорою, під час якого в кожній руці утримується по гантелі.\"\n    }\n  ]\n}",
+      "generation_prompt_sha256": "85d638c588484a6cc944c9f13c83ef457bd3f90ecf61ca6d833058a6fe7d3278",
+      "planned_png_path": "/workspace/exercise-image-results/agent-03-others-015/hex-press-dumbbell/attempt-1.png",
+      "output_root": "/workspace/exercise-image-results",
+      "planned_output_relative_path": "agent-03-others-015/hex-press-dumbbell/attempt-1.png",
+      "result_path": null,
+      "result_sha256": null,
+      "attempts": 0,
+      "user_review": null,
+      "technical_check": null,
+      "agent_visual_review": "not_performed",
+      "generation_authorized_now": false,
+      "clarification_resolution": {
+        "exercise_id": "hex-press-dumbbell",
+        "name": "Hex Press (Dumbbell)",
+        "source_english": {
+          "description": "Hex Press (Dumbbell) is a supported chest press using one dumbbell in each hand.",
+          "instructions": [
+            "Lie on a flat bench with feet planted. Grip one dumbbell in each hand and hold it over the chest.",
+            "Lower the resistance toward the chest with elbows controlled.",
+            "Pause without bouncing or losing shoulder position.",
+            "Press back to straight arms, then rerack or set the weights down safely."
+          ],
+          "form_cues": [
+            "Keep wrists stacked.",
+            "Keep shoulder blades supported.",
+            "Press evenly."
+          ],
+          "common_mistakes": [
+            "Bouncing at the bottom.",
+            "Flaring the elbows.",
+            "Arching to shorten the range."
+          ],
+          "safety_note": "Use a spotter or safeties for the loaded press and stop before shoulder control is lost.",
+          "provenance": "authored"
+        },
+        "equipment": "dumbbell",
+        "primary_muscle": "chest",
+        "secondary_muscles": [
+          "shoulders",
+          "triceps"
+        ],
+        "source_catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+        "source_catalog_record_sha256": "2b6cc1a950016995905c5df4d4d03cbd4da3296e5fda852be55897f5d3f199b6",
+        "source_english_sha256": "eb43f00f8b589bdade50828d4c4094de00632b621007e2fc63c337df4cfcf066",
+        "original_reason_kind": "variant_missing",
+        "original_question": "Hex Press не визначає взаємний контакт гантелей чи напрямок стискання; текст звичайного chest press. Уточніть відмінний хват/контакти.",
+        "status": "ready",
+        "decision": "Власний match.rationale прямо визначає continuous inward dumbbell squeeze, uk description називає притискання. Це доповнення того самого ID, не запозичення Squeeze Press.",
+        "evidence": [
+          {
+            "exercise_id": "hex-press-dumbbell",
+            "catalog_path": "data/exercises/catalog.json",
+            "catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+            "source_commit": "a6f296cbc6737991dd367e929b3e2df25874d4d8",
+            "field": "match.rationale",
+            "value": "No candidate includes the hex press's defining continuous inward dumbbell squeeze during the chest press.",
+            "catalog_record_sha256": "2b6cc1a950016995905c5df4d4d03cbd4da3296e5fda852be55897f5d3f199b6"
+          },
+          {
+            "exercise_id": "hex-press-dumbbell",
+            "catalog_path": "data/exercises/catalog.json",
+            "catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+            "source_commit": "a6f296cbc6737991dd367e929b3e2df25874d4d8",
+            "field": "content.uk.description",
+            "value": "Жим гантелей із притисканням: це жим для грудей із опорою, під час якого в кожній руці утримується по гантелі.",
+            "catalog_record_sha256": "2b6cc1a950016995905c5df4d4d03cbd4da3296e5fda852be55897f5d3f199b6"
+          }
+        ]
+      }
+    }
+  ]
+}
