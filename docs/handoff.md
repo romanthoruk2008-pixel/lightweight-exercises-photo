@@ -1,3 +1,9 @@
+## Agent-03 round 3 package checkpoint: agent-03-others-008 — remote verification pending
+
+10/10 вправ збережено локально; у progress/manifest є prompt, SHA256 і технічні перевірки. PNG ще не позначати `github_verified`: після коміту перевірити файли/SHA у віддаленій гілці. Після перевірки перейти до пакета 009.
+
+---
+
 ## Agent-03 round 3 package checkpoint: agent-03-others-007
 
 2026-10-01T17:26:00+00:00: 10/10 IDs мають результат і пакет перевірено у віддаленій `work`; verified commit `ffba061d8a4a5474475b28dd3cfce159ecacfdea`. Усі нові файли мають `user_review=pending`, `agent_visual_review=not_performed`; проблеми технічної перевірки зафіксовані у progress та manifest. Наступна дія — перейти до наступного пакета 008/009 і генерувати лише ID без результату.
