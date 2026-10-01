@@ -150,8 +150,8 @@
       "verified_commit": "b061ed560aa4fdcc795b4b72574fbbbafa2adfd5"
     },
     "agent-03-others-005": {
-      "state": "pending",
-      "generated_count": 0,
+      "state": "awaiting_github_verification",
+      "generated_count": 10,
       "skipped_count": 0,
       "failed_count": 0,
       "backup_status": "pending",
@@ -168,9 +168,22 @@
         "pause-squat-barbell",
         "pendlay-row-barbell"
       ],
-      "completed_ids": [],
+      "completed_ids": [
+        "incline-bench-press-barbell",
+        "incline-bench-press-dumbbell",
+        "incline-chest-fly-dumbbell",
+        "jm-press-barbell",
+        "lunge-barbell",
+        "overhead-dumbbell-lunge",
+        "overhead-press-barbell",
+        "partial-glute-bridge-barbell",
+        "pause-squat-barbell",
+        "pendlay-row-barbell"
+      ],
       "skipped_ids": [],
-      "failed_ids": []
+      "failed_ids": [],
+      "verified_at": null,
+      "verified_commit": null
     },
     "agent-03-others-006": {
       "state": "pending",
@@ -2318,6 +2331,496 @@
       },
       "verified_commit": "b061ed560aa4fdcc795b4b72574fbbbafa2adfd5",
       "verified_at": "2026-10-01T15:21:13+00:00"
+    },
+    {
+      "exercise_id": "incline-bench-press-barbell",
+      "name": "Incline Bench Press (Barbell)",
+      "batch_id": "agent-03-others-005",
+      "status": "generated",
+      "attempt": 1,
+      "style_version": "v1",
+      "prompt": "Create exactly one image for the following exact exercise record. Identity fields are metadata, never visible text. Preserve the source technique and depict only the chosen single phase.\n{\n  \"exact_catalogue_source\": {\n    \"equipment\": \"barbell\",\n    \"primary_muscle\": \"chest\",\n    \"secondary_muscles\": [\n      \"triceps\",\n      \"shoulders\"\n    ],\n    \"source_english\": {\n      \"common_mistakes\": [\n        \"Flaring the elbows.\",\n        \"Arching or sagging the trunk.\",\n        \"Bouncing at the bottom.\"\n      ],\n      \"description\": \"Incline Bench Press (Barbell) lowers the bar to the upper chest on an inclined bench, then presses it back to lockout.\",\n      \"form_cues\": [\n        \"Keep wrists stacked over the elbows.\",\n        \"Brace the trunk and keep the shoulder blades controlled.\",\n        \"Use a smooth lower and press.\"\n      ],\n      \"instructions\": [\n        \"Set up an incline bench at a 45-degree angle.\",\n        \"Lie down on the bench with your feet flat on the ground.\",\n        \"Grasp the barbell with an overhand grip, slightly wider than shoulder-width apart.\",\n        \"Unrack the barbell and lower it slowly towards your chest, keeping your elbows at a 45-degree angle.\",\n        \"Pause for a moment at the bottom, then push the barbell back up to the starting position.\",\n        \"Repeat for the desired number of repetitions.\"\n      ],\n      \"provenance\": \"adapted\",\n      \"safety_note\": \"Use a stable setup and stop before the shoulders or wrists lose controlled alignment.\"\n    }\n  },\n  \"identity_do_not_render_as_text\": {\n    \"exercise_id\": \"incline-bench-press-barbell\",\n    \"name\": \"Incline Bench Press (Barbell)\",\n    \"source_catalog_sha256\": \"a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989\"\n  },\n  \"reference_role\": \"Human appearance/proportions/materials only. Never copy pose, equipment or muscle targets from a reference.\",\n  \"scene\": {\n    \"composition\": \"Lie on a bench inclined at the source's 45 degrees, feet flat on ground. Both hands grip a free barbell overhand slightly wider than shoulder width. Bar approaches upper chest with elbows at the source's 45-degree alignment; wrists over elbows, shoulder blades controlled. Show a stationary unracking support, the whole bench and bar, no Smith rails, bounced chest contact or exaggerated arch.\",\n    \"single_phase\": \"Lower press pause on a 45-degree incline\",\n    \"source_instruction_quotes\": [\n      {\n        \"index\": 0,\n        \"text\": \"Set up an incline bench at a 45-degree angle.\"\n      },\n      {\n        \"index\": 1,\n        \"text\": \"Lie down on the bench with your feet flat on the ground.\"\n      },\n      {\n        \"index\": 2,\n        \"text\": \"Grasp the barbell with an overhand grip, slightly wider than shoulder-width apart.\"\n      },\n      {\n        \"index\": 3,\n        \"text\": \"Unrack the barbell and lower it slowly towards your chest, keeping your elbows at a 45-degree angle.\"\n      },\n      {\n        \"index\": 4,\n        \"text\": \"Pause for a moment at the bottom, then push the barbell back up to the starting position.\"\n      }\n    ]\n  },\n  \"style\": {\n    \"background\": \"Genuinely transparent PNG background, no white/checkerboard layer, no environment scene.\",\n    \"framing\": \"Full figure and all required equipment/supports visible within a square. Scale and use a three-quarter view to expose the specified contacts without changing anatomy, equipment, grip or technique.\",\n    \"human_model\": \"One athletic bald male anatomical mannequin, opaque silver-gray muscular surfaces, consistent proportions and detailed 3D materials, plain black shorts, barefoot.\",\n    \"material_rules\": \"Highlights never make tissue transparent; no glow, whole-body orange tint, hair, text, labels, arrows, UI, borders, collage or extra person.\",\n    \"no_invention\": \"Technique, equipment and muscles come only from the attached exact catalogue record. No extra attachments, numerical weights, brands or exact angles absent from the source.\",\n    \"output\": {\n      \"format\": \"PNG\",\n      \"height\": 1024,\n      \"one_person\": true,\n      \"one_phase\": true,\n      \"width\": 1024\n    },\n    \"primary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"rule\": \"Highlight only the exact primary muscle group provided for this exercise.\"\n    },\n    \"secondary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"intensity_fraction\": [\n        0.4,\n        0.5\n      ],\n      \"rule\": \"Only the exact secondary muscles, lighter same-hue highlight; if the list is empty add no secondary target.\"\n    },\n    \"version\": \"v1\"\n  }\n}",
+      "prompt_sha256": "c84b9f11b5afe92914f9cdf8107c9b5a54d2cae964f3368f7284f01936c24aae",
+      "result_path": "assets/exercises/pending/agent-03-others-005/incline-bench-press-barbell/attempt-1.png",
+      "cloud_output_path": "/workspace/exercise-image-results/agent-03-others-005/incline-bench-press-barbell/attempt-1.png",
+      "result_sha256": "b2f36f1807b69296a68fde5be0fc63538a67bd83d6340557cd64931a3db7e0c7",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "mime_type": "image/png",
+      "generated_at": "2026-10-01T15:22:38+00:00",
+      "technical_check": "passed",
+      "user_review": "pending",
+      "agent_visual_review": "not_performed",
+      "backup_status": "pending",
+      "source_catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+      "source_catalog_record_sha256": "1b9000ec9a781f46cc03cd2307d5514cf217deac2f725012607fcf819ac3d7e8",
+      "source_english_sha256": "c344778c4b9b76fd320507c0096c2d79a73df98d93f855ea8ab2c2306255436b",
+      "tool_call_index": 42,
+      "branches_checked": [
+        "origin/agent-02-machines-001",
+        "origin/agent-03-inventory-2026-10-01",
+        "origin/main",
+        "origin/work"
+      ],
+      "technical_check_details": {
+        "opens": true,
+        "format": "PNG",
+        "width": 1254,
+        "height": 1254,
+        "square": true,
+        "has_alpha_channel": true,
+        "transparent_pixels": 958854,
+        "sha256": "b2f36f1807b69296a68fde5be0fc63538a67bd83d6340557cd64931a3db7e0c7",
+        "errors": []
+      },
+      "tool_response_metadata": {
+        "tool": "image_gen.imagegen",
+        "ordinal": 42,
+        "generated_file": "exec-b90fe21b-7bcb-46f5-bead-29ad43e82135.png"
+      }
+    },
+    {
+      "exercise_id": "incline-bench-press-dumbbell",
+      "name": "Incline Bench Press (Dumbbell)",
+      "batch_id": "agent-03-others-005",
+      "status": "generated",
+      "attempt": 1,
+      "style_version": "v1",
+      "prompt": "Create exactly one image for the following exact exercise record. Identity fields are metadata, never visible text. Preserve the source technique and depict only the chosen single phase.\n{\n  \"exact_catalogue_source\": {\n    \"equipment\": \"dumbbell\",\n    \"primary_muscle\": \"chest\",\n    \"secondary_muscles\": [\n      \"triceps\",\n      \"shoulders\"\n    ],\n    \"source_english\": {\n      \"common_mistakes\": [\n        \"Flaring the elbows.\",\n        \"Arching or sagging the trunk.\",\n        \"Bouncing at the bottom.\"\n      ],\n      \"description\": \"Incline Bench Press (Dumbbell) lowers the dumbbells to the upper chest on an inclined bench, then presses it back to lockout.\",\n      \"form_cues\": [\n        \"Keep wrists stacked over the elbows.\",\n        \"Brace the trunk and keep the shoulder blades controlled.\",\n        \"Use a smooth lower and press.\"\n      ],\n      \"instructions\": [\n        \"Set up an incline bench at a 45-degree angle.\",\n        \"Sit on the bench with your feet flat on the ground and your back pressed firmly against the bench.\",\n        \"Hold a dumbbell in each hand, palms facing forward, and lift them to shoulder height.\",\n        \"Slowly lower the dumbbells to the sides of your chest, keeping your elbows at a 90-degree angle.\",\n        \"Push the dumbbells back up to the starting position, fully extending your arms.\",\n        \"Repeat for the desired number of repetitions.\"\n      ],\n      \"provenance\": \"adapted\",\n      \"safety_note\": \"Use a stable setup and stop before the shoulders or wrists lose controlled alignment.\"\n    }\n  },\n  \"identity_do_not_render_as_text\": {\n    \"exercise_id\": \"incline-bench-press-dumbbell\",\n    \"name\": \"Incline Bench Press (Dumbbell)\",\n    \"source_catalog_sha256\": \"a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989\"\n  },\n  \"reference_role\": \"Human appearance/proportions/materials only. Never copy pose, equipment or muscle targets from a reference.\",\n  \"scene\": {\n    \"composition\": \"Back is firmly supported by the source's 45-degree incline bench, feet flat on floor. Hold one dumbbell in each hand with palms facing forward, lowered to the sides of chest; elbows bent to the stated 90-degree angle, wrists stacked over elbows. Keep trunk braced and shoulders controlled. Show both weights and full bench; no fly-wide nearly straight arms, barbell or unsupported seated torso.\",\n    \"single_phase\": \"Dumbbells lowered beside upper chest on 45-degree bench\",\n    \"source_instruction_quotes\": [\n      {\n        \"index\": 0,\n        \"text\": \"Set up an incline bench at a 45-degree angle.\"\n      },\n      {\n        \"index\": 1,\n        \"text\": \"Sit on the bench with your feet flat on the ground and your back pressed firmly against the bench.\"\n      },\n      {\n        \"index\": 2,\n        \"text\": \"Hold a dumbbell in each hand, palms facing forward, and lift them to shoulder height.\"\n      },\n      {\n        \"index\": 3,\n        \"text\": \"Slowly lower the dumbbells to the sides of your chest, keeping your elbows at a 90-degree angle.\"\n      },\n      {\n        \"index\": 4,\n        \"text\": \"Push the dumbbells back up to the starting position, fully extending your arms.\"\n      }\n    ]\n  },\n  \"style\": {\n    \"background\": \"Genuinely transparent PNG background, no white/checkerboard layer, no environment scene.\",\n    \"framing\": \"Full figure and all required equipment/supports visible within a square. Scale and use a three-quarter view to expose the specified contacts without changing anatomy, equipment, grip or technique.\",\n    \"human_model\": \"One athletic bald male anatomical mannequin, opaque silver-gray muscular surfaces, consistent proportions and detailed 3D materials, plain black shorts, barefoot.\",\n    \"material_rules\": \"Highlights never make tissue transparent; no glow, whole-body orange tint, hair, text, labels, arrows, UI, borders, collage or extra person.\",\n    \"no_invention\": \"Technique, equipment and muscles come only from the attached exact catalogue record. No extra attachments, numerical weights, brands or exact angles absent from the source.\",\n    \"output\": {\n      \"format\": \"PNG\",\n      \"height\": 1024,\n      \"one_person\": true,\n      \"one_phase\": true,\n      \"width\": 1024\n    },\n    \"primary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"rule\": \"Highlight only the exact primary muscle group provided for this exercise.\"\n    },\n    \"secondary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"intensity_fraction\": [\n        0.4,\n        0.5\n      ],\n      \"rule\": \"Only the exact secondary muscles, lighter same-hue highlight; if the list is empty add no secondary target.\"\n    },\n    \"version\": \"v1\"\n  }\n}",
+      "prompt_sha256": "dda92b43142dffb532a3f966e033b633762c3c78775677eafa0b29f69d96eca2",
+      "result_path": "assets/exercises/pending/agent-03-others-005/incline-bench-press-dumbbell/attempt-1.png",
+      "cloud_output_path": "/workspace/exercise-image-results/agent-03-others-005/incline-bench-press-dumbbell/attempt-1.png",
+      "result_sha256": "ef40230b63f56f555f6e5bdb84796f7720331cce59ccb68ce493e74a75212c3f",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "mime_type": "image/png",
+      "generated_at": "2026-10-01T15:23:54+00:00",
+      "technical_check": "passed",
+      "user_review": "pending",
+      "agent_visual_review": "not_performed",
+      "backup_status": "pending",
+      "source_catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+      "source_catalog_record_sha256": "d14fb2087487e473d0eb7dd1bb6ca66f5fa9a4cca422bfd42a30be20d5363006",
+      "source_english_sha256": "789d00458712fbc31ca7930002fc02e5af555f4b920763fc814ae5b24369043b",
+      "tool_call_index": 43,
+      "branches_checked": [
+        "origin/agent-02-machines-001",
+        "origin/agent-03-inventory-2026-10-01",
+        "origin/main",
+        "origin/work"
+      ],
+      "technical_check_details": {
+        "opens": true,
+        "format": "PNG",
+        "width": 1254,
+        "height": 1254,
+        "square": true,
+        "has_alpha_channel": true,
+        "transparent_pixels": 1054878,
+        "sha256": "ef40230b63f56f555f6e5bdb84796f7720331cce59ccb68ce493e74a75212c3f",
+        "errors": []
+      },
+      "tool_response_metadata": {
+        "tool": "image_gen.imagegen",
+        "ordinal": 43,
+        "generated_file": "exec-e16292ef-9880-4c1b-a3ab-fbac1b9927ae.png"
+      }
+    },
+    {
+      "exercise_id": "incline-chest-fly-dumbbell",
+      "name": "Incline Chest Fly (Dumbbell)",
+      "batch_id": "agent-03-others-005",
+      "status": "generated",
+      "attempt": 1,
+      "style_version": "v1",
+      "prompt": "Create exactly one image for the following exact exercise record. Identity fields are metadata, never visible text. Preserve the source technique and depict only the chosen single phase.\n{\n  \"exact_catalogue_source\": {\n    \"equipment\": \"dumbbell\",\n    \"primary_muscle\": \"chest\",\n    \"secondary_muscles\": [],\n    \"source_english\": {\n      \"common_mistakes\": [\n        \"Swinging for momentum.\",\n        \"Shrugging into the movement.\",\n        \"Forcing end range.\"\n      ],\n      \"description\": \"On an incline bench, open the dumbbells in a wide arc to stretch the chest, then bring them together without turning the movement into a press.\",\n      \"form_cues\": [\n        \"Keep the shoulders down.\",\n        \"Move through a controlled arc.\",\n        \"Stop at a comfortable range.\"\n      ],\n      \"instructions\": [\n        \"Set an incline bench to a 45-degree angle.\",\n        \"Sit on the bench with a dumbbell in each hand, palms facing each other.\",\n        \"Lie back on the bench and press the dumbbells up to the starting position, directly above your chest.\",\n        \"Lower the dumbbells out to the sides in a wide arc until you feel a stretch in your chest.\",\n        \"Pause for a moment, then squeeze your chest muscles to bring the dumbbells back up to the starting position.\",\n        \"Repeat for the desired number of repetitions.\"\n      ],\n      \"provenance\": \"adapted\",\n      \"safety_note\": \"Use light resistance and stop if the shoulder cannot move smoothly.\"\n    }\n  },\n  \"identity_do_not_render_as_text\": {\n    \"exercise_id\": \"incline-chest-fly-dumbbell\",\n    \"name\": \"Incline Chest Fly (Dumbbell)\",\n    \"source_catalog_sha256\": \"a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989\"\n  },\n  \"reference_role\": \"Human appearance/proportions/materials only. Never copy pose, equipment or muscle targets from a reference.\",\n  \"scene\": {\n    \"composition\": \"Lie back on a bench inclined at the exact source 45 degrees. One dumbbell in each hand with palms facing each other opens to either side in a wide arc until a comfortable chest stretch. Elbow bend stays soft and constant, shoulders down, ribs controlled. Show supported torso, full bench and both arms; no bent-elbow press, forced end range or extra weight.\",\n    \"single_phase\": \"Controlled wide-arc stretch on 45-degree incline\",\n    \"source_instruction_quotes\": [\n      {\n        \"index\": 0,\n        \"text\": \"Set an incline bench to a 45-degree angle.\"\n      },\n      {\n        \"index\": 1,\n        \"text\": \"Sit on the bench with a dumbbell in each hand, palms facing each other.\"\n      },\n      {\n        \"index\": 2,\n        \"text\": \"Lie back on the bench and press the dumbbells up to the starting position, directly above your chest.\"\n      },\n      {\n        \"index\": 3,\n        \"text\": \"Lower the dumbbells out to the sides in a wide arc until you feel a stretch in your chest.\"\n      },\n      {\n        \"index\": 4,\n        \"text\": \"Pause for a moment, then squeeze your chest muscles to bring the dumbbells back up to the starting position.\"\n      }\n    ]\n  },\n  \"style\": {\n    \"background\": \"Genuinely transparent PNG background, no white/checkerboard layer, no environment scene.\",\n    \"framing\": \"Full figure and all required equipment/supports visible within a square. Scale and use a three-quarter view to expose the specified contacts without changing anatomy, equipment, grip or technique.\",\n    \"human_model\": \"One athletic bald male anatomical mannequin, opaque silver-gray muscular surfaces, consistent proportions and detailed 3D materials, plain black shorts, barefoot.\",\n    \"material_rules\": \"Highlights never make tissue transparent; no glow, whole-body orange tint, hair, text, labels, arrows, UI, borders, collage or extra person.\",\n    \"no_invention\": \"Technique, equipment and muscles come only from the attached exact catalogue record. No extra attachments, numerical weights, brands or exact angles absent from the source.\",\n    \"output\": {\n      \"format\": \"PNG\",\n      \"height\": 1024,\n      \"one_person\": true,\n      \"one_phase\": true,\n      \"width\": 1024\n    },\n    \"primary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"rule\": \"Highlight only the exact primary muscle group provided for this exercise.\"\n    },\n    \"secondary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"intensity_fraction\": [\n        0.4,\n        0.5\n      ],\n      \"rule\": \"Only the exact secondary muscles, lighter same-hue highlight; if the list is empty add no secondary target.\"\n    },\n    \"version\": \"v1\"\n  }\n}",
+      "prompt_sha256": "17344eb73c610fc7642855976738380fcbc42f25598ac1b8477c09d768a61b02",
+      "result_path": "assets/exercises/pending/agent-03-others-005/incline-chest-fly-dumbbell/attempt-1.png",
+      "cloud_output_path": "/workspace/exercise-image-results/agent-03-others-005/incline-chest-fly-dumbbell/attempt-1.png",
+      "result_sha256": "b9ea5ee3d88e3002829ea418ab6461716cd784e1bad619170178e7dae3c72fdc",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "mime_type": "image/png",
+      "generated_at": "2026-10-01T15:25:00+00:00",
+      "technical_check": "passed",
+      "user_review": "pending",
+      "agent_visual_review": "not_performed",
+      "backup_status": "pending",
+      "source_catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+      "source_catalog_record_sha256": "eb24322133e55f3a00e92817f1b3d94c6290a25a5d1efb8e96387c0e95ba9969",
+      "source_english_sha256": "174a52b550e137164736b1bb28d30fb30009d364383609fe03fb94ad91f94db2",
+      "tool_call_index": 44,
+      "branches_checked": [
+        "origin/agent-02-machines-001",
+        "origin/agent-03-inventory-2026-10-01",
+        "origin/main",
+        "origin/work"
+      ],
+      "technical_check_details": {
+        "opens": true,
+        "format": "PNG",
+        "width": 1254,
+        "height": 1254,
+        "square": true,
+        "has_alpha_channel": true,
+        "transparent_pixels": 1016951,
+        "sha256": "b9ea5ee3d88e3002829ea418ab6461716cd784e1bad619170178e7dae3c72fdc",
+        "errors": []
+      },
+      "tool_response_metadata": {
+        "tool": "image_gen.imagegen",
+        "ordinal": 44,
+        "generated_file": "exec-b106bc61-92ce-44b5-b174-8da7ab4fa70c.png"
+      }
+    },
+    {
+      "exercise_id": "jm-press-barbell",
+      "name": "JM Press (Barbell)",
+      "batch_id": "agent-03-others-005",
+      "status": "generated",
+      "attempt": 1,
+      "style_version": "v1",
+      "prompt": "Create exactly one image for the following exact exercise record. Identity fields are metadata, never visible text. Preserve the source technique and depict only the chosen single phase.\n{\n  \"exact_catalogue_source\": {\n    \"equipment\": \"barbell\",\n    \"primary_muscle\": \"triceps\",\n    \"secondary_muscles\": [\n      \"chest\",\n      \"shoulders\"\n    ],\n    \"source_english\": {\n      \"common_mistakes\": [\n        \"Flaring the elbows.\",\n        \"Arching or sagging the trunk.\",\n        \"Bouncing at the bottom.\"\n      ],\n      \"description\": \"A JM press lowers a barbell toward the upper chest with tucked elbows, then extends the elbows to press it away.\",\n      \"form_cues\": [\n        \"Keep wrists stacked over the elbows.\",\n        \"Brace the trunk and keep the shoulder blades controlled.\",\n        \"Use a smooth lower and press.\"\n      ],\n      \"instructions\": [\n        \"Lie on a flat bench with feet planted and hold the barbell slightly wider than shoulder width.\",\n        \"Lower the bar toward the upper chest with the elbows tucked and forearms angled back.\",\n        \"Press the bar away by extending the elbows while keeping the upper arms controlled.\",\n        \"Return the bar to the start without bouncing it off the chest.\"\n      ],\n      \"provenance\": \"adapted\",\n      \"safety_note\": \"Use a stable setup and stop before the shoulders or wrists lose controlled alignment.\"\n    }\n  },\n  \"identity_do_not_render_as_text\": {\n    \"exercise_id\": \"jm-press-barbell\",\n    \"name\": \"JM Press (Barbell)\",\n    \"source_catalog_sha256\": \"a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989\"\n  },\n  \"reference_role\": \"Human appearance/proportions/materials only. Never copy pose, equipment or muscle targets from a reference.\",\n  \"scene\": {\n    \"composition\": \"Lie on a FLAT bench with feet planted. Both hands hold a free barbell slightly wider than shoulder width. Lowered bar approaches upper chest, elbows tucked and forearms angled back, upper arms controlled. Preserve this exact JM position rather than lowering to the forehead or flaring for an ordinary chest press. Shoulder blades supported, wrists aligned; whole bar and bench visible.\",\n    \"single_phase\": \"Tucked-elbow JM lower position near upper chest\",\n    \"source_instruction_quotes\": [\n      {\n        \"index\": 0,\n        \"text\": \"Lie on a flat bench with feet planted and hold the barbell slightly wider than shoulder width.\"\n      },\n      {\n        \"index\": 1,\n        \"text\": \"Lower the bar toward the upper chest with the elbows tucked and forearms angled back.\"\n      },\n      {\n        \"index\": 2,\n        \"text\": \"Press the bar away by extending the elbows while keeping the upper arms controlled.\"\n      }\n    ]\n  },\n  \"style\": {\n    \"background\": \"Genuinely transparent PNG background, no white/checkerboard layer, no environment scene.\",\n    \"framing\": \"Full figure and all required equipment/supports visible within a square. Scale and use a three-quarter view to expose the specified contacts without changing anatomy, equipment, grip or technique.\",\n    \"human_model\": \"One athletic bald male anatomical mannequin, opaque silver-gray muscular surfaces, consistent proportions and detailed 3D materials, plain black shorts, barefoot.\",\n    \"material_rules\": \"Highlights never make tissue transparent; no glow, whole-body orange tint, hair, text, labels, arrows, UI, borders, collage or extra person.\",\n    \"no_invention\": \"Technique, equipment and muscles come only from the attached exact catalogue record. No extra attachments, numerical weights, brands or exact angles absent from the source.\",\n    \"output\": {\n      \"format\": \"PNG\",\n      \"height\": 1024,\n      \"one_person\": true,\n      \"one_phase\": true,\n      \"width\": 1024\n    },\n    \"primary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"rule\": \"Highlight only the exact primary muscle group provided for this exercise.\"\n    },\n    \"secondary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"intensity_fraction\": [\n        0.4,\n        0.5\n      ],\n      \"rule\": \"Only the exact secondary muscles, lighter same-hue highlight; if the list is empty add no secondary target.\"\n    },\n    \"version\": \"v1\"\n  }\n}",
+      "prompt_sha256": "fbc3cff94925723a392d151bd423612e3913eb19f445ee19f5c5118efd044c77",
+      "result_path": "assets/exercises/pending/agent-03-others-005/jm-press-barbell/attempt-1.png",
+      "cloud_output_path": "/workspace/exercise-image-results/agent-03-others-005/jm-press-barbell/attempt-1.png",
+      "result_sha256": "323cea48f907c4e871eeec9dc5573e064b531bd25ee81f5d97b31fbfaa21e078",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "mime_type": "image/png",
+      "generated_at": "2026-10-01T15:26:14+00:00",
+      "technical_check": "passed",
+      "user_review": "pending",
+      "agent_visual_review": "not_performed",
+      "backup_status": "pending",
+      "source_catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+      "source_catalog_record_sha256": "37efb815314a98b823b710cfd676e97c65bd342a14933c32632fbebe6e5fb7b5",
+      "source_english_sha256": "e09f03ddef90ce04d3ad9af88311eca80490655eac919aa71fe856306942623e",
+      "tool_call_index": 45,
+      "branches_checked": [
+        "origin/agent-02-machines-001",
+        "origin/agent-03-inventory-2026-10-01",
+        "origin/main",
+        "origin/work"
+      ],
+      "technical_check_details": {
+        "opens": true,
+        "format": "PNG",
+        "width": 1254,
+        "height": 1254,
+        "square": true,
+        "has_alpha_channel": true,
+        "transparent_pixels": 1006030,
+        "sha256": "323cea48f907c4e871eeec9dc5573e064b531bd25ee81f5d97b31fbfaa21e078",
+        "errors": []
+      },
+      "tool_response_metadata": {
+        "tool": "image_gen.imagegen",
+        "ordinal": 45,
+        "generated_file": "exec-fa07c01b-624e-4f7f-90db-584e5ea06527.png"
+      }
+    },
+    {
+      "exercise_id": "lunge-barbell",
+      "name": "Lunge (Barbell)",
+      "batch_id": "agent-03-others-005",
+      "status": "generated",
+      "attempt": 1,
+      "style_version": "v1",
+      "prompt": "Create exactly one image for the following exact exercise record. Identity fields are metadata, never visible text. Preserve the source technique and depict only the chosen single phase.\n{\n  \"exact_catalogue_source\": {\n    \"equipment\": \"barbell\",\n    \"primary_muscle\": \"quadriceps\",\n    \"secondary_muscles\": [\n      \"hamstrings\",\n      \"glutes\"\n    ],\n    \"source_english\": {\n      \"common_mistakes\": [\n        \"Knees collapsing inward.\",\n        \"Rising onto the toes.\",\n        \"Losing the neutral trunk.\"\n      ],\n      \"description\": \"The barbell forward lunge steps one foot ahead, lowers both knees, then drives through the front foot to return.\",\n      \"form_cues\": [\n        \"Keep the feet planted.\",\n        \"Track the knees with the toes.\",\n        \"Keep the chest and trunk controlled.\"\n      ],\n      \"instructions\": [\n        \"Start by standing with your feet shoulder-width apart and a barbell resting on your upper back.\",\n        \"Take a step forward with your right foot, keeping your torso upright.\",\n        \"Lower your body by bending your right knee until your thigh is parallel to the ground.\",\n        \"Push through your right heel to return to the starting position.\",\n        \"Repeat with your left leg, alternating legs for the desired number of repetitions.\"\n      ],\n      \"provenance\": \"adapted\",\n      \"safety_note\": \"Use a depth and load that allow a stable knee and hip path.\"\n    }\n  },\n  \"identity_do_not_render_as_text\": {\n    \"exercise_id\": \"lunge-barbell\",\n    \"name\": \"Lunge (Barbell)\",\n    \"source_catalog_sha256\": \"a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989\"\n  },\n  \"reference_role\": \"Human appearance/proportions/materials only. Never copy pose, equipment or muscle targets from a reference.\",\n  \"scene\": {\n    \"composition\": \"One barbell rests across upper back, held stable with both hands. RIGHT foot has stepped forward and right thigh reaches parallel to ground as both knees bend, torso upright. Right heel remains grounded and right knee tracks toes in this loaded phase. Show the rear foot and full bar; no feet permanently glued together, reverse step, Smith machine or unsupported trunk lean.\",\n    \"single_phase\": \"Right forward lunge lower position\",\n    \"source_instruction_quotes\": [\n      {\n        \"index\": 0,\n        \"text\": \"Start by standing with your feet shoulder-width apart and a barbell resting on your upper back.\"\n      },\n      {\n        \"index\": 1,\n        \"text\": \"Take a step forward with your right foot, keeping your torso upright.\"\n      },\n      {\n        \"index\": 2,\n        \"text\": \"Lower your body by bending your right knee until your thigh is parallel to the ground.\"\n      },\n      {\n        \"index\": 3,\n        \"text\": \"Push through your right heel to return to the starting position.\"\n      }\n    ]\n  },\n  \"style\": {\n    \"background\": \"Genuinely transparent PNG background, no white/checkerboard layer, no environment scene.\",\n    \"framing\": \"Full figure and all required equipment/supports visible within a square. Scale and use a three-quarter view to expose the specified contacts without changing anatomy, equipment, grip or technique.\",\n    \"human_model\": \"One athletic bald male anatomical mannequin, opaque silver-gray muscular surfaces, consistent proportions and detailed 3D materials, plain black shorts, barefoot.\",\n    \"material_rules\": \"Highlights never make tissue transparent; no glow, whole-body orange tint, hair, text, labels, arrows, UI, borders, collage or extra person.\",\n    \"no_invention\": \"Technique, equipment and muscles come only from the attached exact catalogue record. No extra attachments, numerical weights, brands or exact angles absent from the source.\",\n    \"output\": {\n      \"format\": \"PNG\",\n      \"height\": 1024,\n      \"one_person\": true,\n      \"one_phase\": true,\n      \"width\": 1024\n    },\n    \"primary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"rule\": \"Highlight only the exact primary muscle group provided for this exercise.\"\n    },\n    \"secondary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"intensity_fraction\": [\n        0.4,\n        0.5\n      ],\n      \"rule\": \"Only the exact secondary muscles, lighter same-hue highlight; if the list is empty add no secondary target.\"\n    },\n    \"version\": \"v1\"\n  }\n}",
+      "prompt_sha256": "cd0dc85d004fb383906414b77cddf97c7a0bc219d2057c265b510eb521dda510",
+      "result_path": "assets/exercises/pending/agent-03-others-005/lunge-barbell/attempt-1.png",
+      "cloud_output_path": "/workspace/exercise-image-results/agent-03-others-005/lunge-barbell/attempt-1.png",
+      "result_sha256": "c35dd258e7fd5294625af3fe08582cd9defb5f71f3ca69f9abc6f74f32908eb0",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "mime_type": "image/png",
+      "generated_at": "2026-10-01T15:27:29+00:00",
+      "technical_check": "passed",
+      "user_review": "pending",
+      "agent_visual_review": "not_performed",
+      "backup_status": "pending",
+      "source_catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+      "source_catalog_record_sha256": "6db03d527b5cac58c07b94c6087524a431f0551d8bbd8d13503d4191d75537c7",
+      "source_english_sha256": "97da35f6bf6b88048fce82f5bebb7fb534e254124a5caccf3319049743bbf671",
+      "tool_call_index": 46,
+      "branches_checked": [
+        "origin/agent-02-machines-001",
+        "origin/agent-03-inventory-2026-10-01",
+        "origin/main",
+        "origin/work"
+      ],
+      "technical_check_details": {
+        "opens": true,
+        "format": "PNG",
+        "width": 1254,
+        "height": 1254,
+        "square": true,
+        "has_alpha_channel": true,
+        "transparent_pixels": 1077281,
+        "sha256": "c35dd258e7fd5294625af3fe08582cd9defb5f71f3ca69f9abc6f74f32908eb0",
+        "errors": []
+      },
+      "tool_response_metadata": {
+        "tool": "image_gen.imagegen",
+        "ordinal": 46,
+        "generated_file": "exec-43566782-7269-47c5-8f79-ce32832ab140.png"
+      }
+    },
+    {
+      "exercise_id": "overhead-dumbbell-lunge",
+      "name": "Overhead Dumbbell Lunge",
+      "batch_id": "agent-03-others-005",
+      "status": "generated",
+      "attempt": 1,
+      "style_version": "v1",
+      "prompt": "Create exactly one image for the following exact exercise record. Identity fields are metadata, never visible text. Preserve the source technique and depict only the chosen single phase.\n{\n  \"exact_catalogue_source\": {\n    \"equipment\": \"dumbbell\",\n    \"primary_muscle\": \"quadriceps\",\n    \"secondary_muscles\": [\n      \"hamstrings\",\n      \"glutes\",\n      \"shoulders\",\n      \"triceps\",\n      \"upper_back\"\n    ],\n    \"source_english\": {\n      \"common_mistakes\": [\n        \"Letting the dumbbells drift forward.\",\n        \"Collapsing the front knee inward.\",\n        \"Arching the lower back.\"\n      ],\n      \"description\": \"The overhead dumbbell lunge steps one foot forward with dumbbells held overhead, lowers both knees, then drives through the front foot.\",\n      \"form_cues\": [\n        \"Keep the ribs down.\",\n        \"Track the front knee over the toes.\",\n        \"Keep the elbows extended without shrugging.\"\n      ],\n      \"instructions\": [\n        \"Stand tall with a dumbbell in each hand and press both weights overhead.\",\n        \"Brace the core and step forward with one foot.\",\n        \"Lower until both knees bend comfortably while keeping the weights stacked over the shoulders.\",\n        \"Push through the front foot to return and repeat on the other side.\"\n      ],\n      \"provenance\": \"authored\",\n      \"safety_note\": \"Use light dumbbells and clear the path before walking or alternating lunges.\"\n    }\n  },\n  \"identity_do_not_render_as_text\": {\n    \"exercise_id\": \"overhead-dumbbell-lunge\",\n    \"name\": \"Overhead Dumbbell Lunge\",\n    \"source_catalog_sha256\": \"a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989\"\n  },\n  \"reference_role\": \"Human appearance/proportions/materials only. Never copy pose, equipment or muscle targets from a reference.\",\n  \"scene\": {\n    \"composition\": \"One dumbbell in EACH hand is held overhead with both elbows extended and weights stacked over shoulders. One foot has stepped forward, both knees bend comfortably, front knee tracks toes; ribs down and trunk braced without lower-back arch. Show both weights, full arms and all foot contacts. Keep light controllable weights; no forward drift, barbell or shoulder-height weights.\",\n    \"single_phase\": \"Front-foot lunge with both dumbbells stacked overhead\",\n    \"source_instruction_quotes\": [\n      {\n        \"index\": 0,\n        \"text\": \"Stand tall with a dumbbell in each hand and press both weights overhead.\"\n      },\n      {\n        \"index\": 1,\n        \"text\": \"Brace the core and step forward with one foot.\"\n      },\n      {\n        \"index\": 2,\n        \"text\": \"Lower until both knees bend comfortably while keeping the weights stacked over the shoulders.\"\n      },\n      {\n        \"index\": 3,\n        \"text\": \"Push through the front foot to return and repeat on the other side.\"\n      }\n    ]\n  },\n  \"style\": {\n    \"background\": \"Genuinely transparent PNG background, no white/checkerboard layer, no environment scene.\",\n    \"framing\": \"Full figure and all required equipment/supports visible within a square. Scale and use a three-quarter view to expose the specified contacts without changing anatomy, equipment, grip or technique.\",\n    \"human_model\": \"One athletic bald male anatomical mannequin, opaque silver-gray muscular surfaces, consistent proportions and detailed 3D materials, plain black shorts, barefoot.\",\n    \"material_rules\": \"Highlights never make tissue transparent; no glow, whole-body orange tint, hair, text, labels, arrows, UI, borders, collage or extra person.\",\n    \"no_invention\": \"Technique, equipment and muscles come only from the attached exact catalogue record. No extra attachments, numerical weights, brands or exact angles absent from the source.\",\n    \"output\": {\n      \"format\": \"PNG\",\n      \"height\": 1024,\n      \"one_person\": true,\n      \"one_phase\": true,\n      \"width\": 1024\n    },\n    \"primary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"rule\": \"Highlight only the exact primary muscle group provided for this exercise.\"\n    },\n    \"secondary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"intensity_fraction\": [\n        0.4,\n        0.5\n      ],\n      \"rule\": \"Only the exact secondary muscles, lighter same-hue highlight; if the list is empty add no secondary target.\"\n    },\n    \"version\": \"v1\"\n  }\n}",
+      "prompt_sha256": "62b043823f8a2e23164b3dc24d20d282a2194806db63a2190e7a67ee3dc21195",
+      "result_path": "assets/exercises/pending/agent-03-others-005/overhead-dumbbell-lunge/attempt-1.png",
+      "cloud_output_path": "/workspace/exercise-image-results/agent-03-others-005/overhead-dumbbell-lunge/attempt-1.png",
+      "result_sha256": "df2ce070a3d5969655ac384483d09a287c97016c5aae41a1eb891b4ac4ec763e",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "mime_type": "image/png",
+      "generated_at": "2026-10-01T15:28:34+00:00",
+      "technical_check": "passed",
+      "user_review": "pending",
+      "agent_visual_review": "not_performed",
+      "backup_status": "pending",
+      "source_catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+      "source_catalog_record_sha256": "d66dbc9c07c9dd92e2b0e5453b881e3c458f63d564c587008daa424613b44be7",
+      "source_english_sha256": "6096dcceebb30f29fcdbeb245db2f10ae9572b5febbbf1fec69aca7f4d11a916",
+      "tool_call_index": 47,
+      "branches_checked": [
+        "origin/agent-02-machines-001",
+        "origin/agent-03-inventory-2026-10-01",
+        "origin/main",
+        "origin/work"
+      ],
+      "technical_check_details": {
+        "opens": true,
+        "format": "PNG",
+        "width": 1254,
+        "height": 1254,
+        "square": true,
+        "has_alpha_channel": true,
+        "transparent_pixels": 1250813,
+        "sha256": "df2ce070a3d5969655ac384483d09a287c97016c5aae41a1eb891b4ac4ec763e",
+        "errors": []
+      },
+      "tool_response_metadata": {
+        "tool": "image_gen.imagegen",
+        "ordinal": 47,
+        "generated_file": "exec-c0cade3a-6c4a-402e-856a-9c54cb369962.png"
+      }
+    },
+    {
+      "exercise_id": "overhead-press-barbell",
+      "name": "Overhead Press (Barbell)",
+      "batch_id": "agent-03-others-005",
+      "status": "generated",
+      "attempt": 1,
+      "style_version": "v1",
+      "prompt": "Create exactly one image for the following exact exercise record. Identity fields are metadata, never visible text. Preserve the source technique and depict only the chosen single phase.\n{\n  \"exact_catalogue_source\": {\n    \"equipment\": \"barbell\",\n    \"primary_muscle\": \"shoulders\",\n    \"secondary_muscles\": [\n      \"triceps\",\n      \"abdominals\"\n    ],\n    \"source_english\": {\n      \"common_mistakes\": [\n        \"Using leg drive.\",\n        \"Leaning back under the bar.\",\n        \"Lowering too quickly.\"\n      ],\n      \"description\": \"Overhead Press (Barbell) presses the weight from shoulder height to overhead while the standing trunk stays braced.\",\n      \"form_cues\": [\n        \"Keep wrists stacked.\",\n        \"Press in a straight bar path.\",\n        \"Keep the ribs down.\"\n      ],\n      \"instructions\": [\n        \"Stand with the bar at the upper chest and grip it just outside shoulder width.\",\n        \"Brace the abdomen and squeeze the glutes.\",\n        \"Press the bar overhead while moving the head slightly back and then under the bar.\",\n        \"Lower the bar to the upper chest under control.\"\n      ],\n      \"provenance\": \"authored\",\n      \"safety_note\": \"Use a rack and a load you can return safely to the supports.\"\n    }\n  },\n  \"identity_do_not_render_as_text\": {\n    \"exercise_id\": \"overhead-press-barbell\",\n    \"name\": \"Overhead Press (Barbell)\",\n    \"source_catalog_sha256\": \"a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989\"\n  },\n  \"reference_role\": \"Human appearance/proportions/materials only. Never copy pose, equipment or muscle targets from a reference.\",\n  \"scene\": {\n    \"composition\": \"Stand with both feet planted and hold one free barbell overhead above the shoulders, both hands just outside shoulder width. Head is now under the bar following the source head-clearance path, abdomen and glutes braced, ribs down, no backward lean or leg drive. Show a stationary rack for the stated safe return, no guided rails. Whole body and bar visible.\",\n    \"single_phase\": \"Standing strict overhead position\",\n    \"source_instruction_quotes\": [\n      {\n        \"index\": 0,\n        \"text\": \"Stand with the bar at the upper chest and grip it just outside shoulder width.\"\n      },\n      {\n        \"index\": 1,\n        \"text\": \"Brace the abdomen and squeeze the glutes.\"\n      },\n      {\n        \"index\": 2,\n        \"text\": \"Press the bar overhead while moving the head slightly back and then under the bar.\"\n      },\n      {\n        \"index\": 3,\n        \"text\": \"Lower the bar to the upper chest under control.\"\n      }\n    ]\n  },\n  \"style\": {\n    \"background\": \"Genuinely transparent PNG background, no white/checkerboard layer, no environment scene.\",\n    \"framing\": \"Full figure and all required equipment/supports visible within a square. Scale and use a three-quarter view to expose the specified contacts without changing anatomy, equipment, grip or technique.\",\n    \"human_model\": \"One athletic bald male anatomical mannequin, opaque silver-gray muscular surfaces, consistent proportions and detailed 3D materials, plain black shorts, barefoot.\",\n    \"material_rules\": \"Highlights never make tissue transparent; no glow, whole-body orange tint, hair, text, labels, arrows, UI, borders, collage or extra person.\",\n    \"no_invention\": \"Technique, equipment and muscles come only from the attached exact catalogue record. No extra attachments, numerical weights, brands or exact angles absent from the source.\",\n    \"output\": {\n      \"format\": \"PNG\",\n      \"height\": 1024,\n      \"one_person\": true,\n      \"one_phase\": true,\n      \"width\": 1024\n    },\n    \"primary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"rule\": \"Highlight only the exact primary muscle group provided for this exercise.\"\n    },\n    \"secondary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"intensity_fraction\": [\n        0.4,\n        0.5\n      ],\n      \"rule\": \"Only the exact secondary muscles, lighter same-hue highlight; if the list is empty add no secondary target.\"\n    },\n    \"version\": \"v1\"\n  }\n}",
+      "prompt_sha256": "eefd208895d0a560ad2daeb350f9198e13e7eb19e6402ef4b58d8e0b679a9a41",
+      "result_path": "assets/exercises/pending/agent-03-others-005/overhead-press-barbell/attempt-1.png",
+      "cloud_output_path": "/workspace/exercise-image-results/agent-03-others-005/overhead-press-barbell/attempt-1.png",
+      "result_sha256": "ae6160b6cbb0e565c098aa4277c9686a64079bd265fabc440fcade453b18ea8b",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "mime_type": "image/png",
+      "generated_at": "2026-10-01T15:30:05+00:00",
+      "technical_check": "passed",
+      "user_review": "pending",
+      "agent_visual_review": "not_performed",
+      "backup_status": "pending",
+      "source_catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+      "source_catalog_record_sha256": "7e8e1516b02ff67bc656cca8256ee8aa4f10caa6de5ed68751b43e1d11bc9e24",
+      "source_english_sha256": "c576573b6961d5a224bcb5e60ede13dccc63afde6531d72513157109c4c79bd4",
+      "tool_call_index": 48,
+      "branches_checked": [
+        "origin/agent-02-machines-001",
+        "origin/agent-03-inventory-2026-10-01",
+        "origin/main",
+        "origin/work"
+      ],
+      "technical_check_details": {
+        "opens": true,
+        "format": "PNG",
+        "width": 1254,
+        "height": 1254,
+        "square": true,
+        "has_alpha_channel": true,
+        "transparent_pixels": 1143353,
+        "sha256": "ae6160b6cbb0e565c098aa4277c9686a64079bd265fabc440fcade453b18ea8b",
+        "errors": []
+      },
+      "tool_response_metadata": {
+        "tool": "image_gen.imagegen",
+        "ordinal": 48,
+        "generated_file": "exec-f8e9e0fa-5d8c-47a8-a142-75941ad227c6.png"
+      }
+    },
+    {
+      "exercise_id": "partial-glute-bridge-barbell",
+      "name": "Partial Glute Bridge (Barbell)",
+      "batch_id": "agent-03-others-005",
+      "status": "generated",
+      "attempt": 1,
+      "style_version": "v1",
+      "prompt": "Create exactly one image for the following exact exercise record. Identity fields are metadata, never visible text. Preserve the source technique and depict only the chosen single phase.\n{\n  \"exact_catalogue_source\": {\n    \"equipment\": \"barbell\",\n    \"primary_muscle\": \"glutes\",\n    \"secondary_muscles\": [\n      \"hamstrings\",\n      \"adductors\"\n    ],\n    \"source_english\": {\n      \"common_mistakes\": [\n        \"Turning the movement into a full bridge.\",\n        \"Arching the lower back.\",\n        \"Letting the bar roll.\"\n      ],\n      \"description\": \"A partial barbell glute bridge uses a bar across the hips and a deliberately shortened hip-extension range.\",\n      \"form_cues\": [\n        \"Keep the bar centered and padded.\",\n        \"Use even foot pressure.\",\n        \"Respect the partial range.\"\n      ],\n      \"instructions\": [\n        \"Lie on your back with knees bent, feet flat, and a padded barbell across the hips.\",\n        \"Brace the core and press through both feet to lift the hips only partway.\",\n        \"Squeeze the glutes at the top of the prescribed partial range without arching.\",\n        \"Lower the hips under control and repeat.\"\n      ],\n      \"provenance\": \"authored\",\n      \"safety_note\": \"Use a secure pad and a light enough load to control the bar throughout.\"\n    }\n  },\n  \"identity_do_not_render_as_text\": {\n    \"exercise_id\": \"partial-glute-bridge-barbell\",\n    \"name\": \"Partial Glute Bridge (Barbell)\",\n    \"source_catalog_sha256\": \"a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989\"\n  },\n  \"reference_role\": \"Human appearance/proportions/materials only. Never copy pose, equipment or muscle targets from a reference.\",\n  \"scene\": {\n    \"composition\": \"Lie on the back with knees bent and both feet flat. One padded barbell is centered across the hips and held steady so it cannot roll. Hips rise ONLY PARTWAY, trunk braced and lumbar spine not arched; retain a clearly shortened extension rather than the full shoulders-to-knees bridge line. No numerical percentage invented. Shoulder support remains on the floor, no bench or hip-thrust substitution.\",\n    \"single_phase\": \"Deliberately partial hip-extension endpoint\",\n    \"source_instruction_quotes\": [\n      {\n        \"index\": 0,\n        \"text\": \"Lie on your back with knees bent, feet flat, and a padded barbell across the hips.\"\n      },\n      {\n        \"index\": 1,\n        \"text\": \"Brace the core and press through both feet to lift the hips only partway.\"\n      },\n      {\n        \"index\": 2,\n        \"text\": \"Squeeze the glutes at the top of the prescribed partial range without arching.\"\n      }\n    ]\n  },\n  \"style\": {\n    \"background\": \"Genuinely transparent PNG background, no white/checkerboard layer, no environment scene.\",\n    \"framing\": \"Full figure and all required equipment/supports visible within a square. Scale and use a three-quarter view to expose the specified contacts without changing anatomy, equipment, grip or technique.\",\n    \"human_model\": \"One athletic bald male anatomical mannequin, opaque silver-gray muscular surfaces, consistent proportions and detailed 3D materials, plain black shorts, barefoot.\",\n    \"material_rules\": \"Highlights never make tissue transparent; no glow, whole-body orange tint, hair, text, labels, arrows, UI, borders, collage or extra person.\",\n    \"no_invention\": \"Technique, equipment and muscles come only from the attached exact catalogue record. No extra attachments, numerical weights, brands or exact angles absent from the source.\",\n    \"output\": {\n      \"format\": \"PNG\",\n      \"height\": 1024,\n      \"one_person\": true,\n      \"one_phase\": true,\n      \"width\": 1024\n    },\n    \"primary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"rule\": \"Highlight only the exact primary muscle group provided for this exercise.\"\n    },\n    \"secondary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"intensity_fraction\": [\n        0.4,\n        0.5\n      ],\n      \"rule\": \"Only the exact secondary muscles, lighter same-hue highlight; if the list is empty add no secondary target.\"\n    },\n    \"version\": \"v1\"\n  }\n}",
+      "prompt_sha256": "5d05abf5be653ff52467b09c11f702966c76f6ee235ef2c6ea547d65f4bd8cc5",
+      "result_path": "assets/exercises/pending/agent-03-others-005/partial-glute-bridge-barbell/attempt-1.png",
+      "cloud_output_path": "/workspace/exercise-image-results/agent-03-others-005/partial-glute-bridge-barbell/attempt-1.png",
+      "result_sha256": "b89a5dce69d8ea8a2fb3416958c6f5f0d77089c115da787747497f67e0136eba",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "mime_type": "image/png",
+      "generated_at": "2026-10-01T15:31:39+00:00",
+      "technical_check": "passed",
+      "user_review": "pending",
+      "agent_visual_review": "not_performed",
+      "backup_status": "pending",
+      "source_catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+      "source_catalog_record_sha256": "8962b924bb2db3faf41c048b809bab12db2b72a17492ebf69706e6379c4acd63",
+      "source_english_sha256": "17212ff1cf4b7f2da5a5221b6353b3a3cb7213821fbea144c5c803e36707209f",
+      "tool_call_index": 49,
+      "branches_checked": [
+        "origin/agent-02-machines-001",
+        "origin/agent-03-inventory-2026-10-01",
+        "origin/main",
+        "origin/work"
+      ],
+      "technical_check_details": {
+        "opens": true,
+        "format": "PNG",
+        "width": 1254,
+        "height": 1254,
+        "square": true,
+        "has_alpha_channel": true,
+        "transparent_pixels": 1212704,
+        "sha256": "b89a5dce69d8ea8a2fb3416958c6f5f0d77089c115da787747497f67e0136eba",
+        "errors": []
+      },
+      "tool_response_metadata": {
+        "tool": "image_gen.imagegen",
+        "ordinal": 49,
+        "generated_file": "exec-3f4060b3-7efa-4e1c-a129-bc478bcad879.png"
+      }
+    },
+    {
+      "exercise_id": "pause-squat-barbell",
+      "name": "Pause Squat (Barbell)",
+      "batch_id": "agent-03-others-005",
+      "status": "generated",
+      "attempt": 1,
+      "style_version": "v1",
+      "prompt": "Create exactly one image for the following exact exercise record. Identity fields are metadata, never visible text. Preserve the source technique and depict only the chosen single phase.\n{\n  \"exact_catalogue_source\": {\n    \"equipment\": \"barbell\",\n    \"primary_muscle\": \"quadriceps\",\n    \"secondary_muscles\": [\n      \"glutes\",\n      \"hamstrings\"\n    ],\n    \"source_english\": {\n      \"common_mistakes\": [\n        \"Bouncing out of the bottom.\",\n        \"Relaxing the core.\",\n        \"Folding the chest forward.\"\n      ],\n      \"description\": \"A barbell pause squat descends into a stable squat, holds briefly at the bottom, and drives back to standing.\",\n      \"form_cues\": [\n        \"Keep the feet planted.\",\n        \"Track knees over toes.\",\n        \"Maintain tension during the pause.\"\n      ],\n      \"instructions\": [\n        \"Place the barbell securely on your upper back and stand with feet about shoulder-width apart.\",\n        \"Brace, bend the hips and knees, and descend with the chest lifted.\",\n        \"Pause motionless at the lowest stable depth without relaxing the trunk.\",\n        \"Drive through the feet to stand tall and repeat.\"\n      ],\n      \"provenance\": \"authored\",\n      \"safety_note\": \"Use safety pins or a rack and choose a load that allows a stable pause.\"\n    }\n  },\n  \"identity_do_not_render_as_text\": {\n    \"exercise_id\": \"pause-squat-barbell\",\n    \"name\": \"Pause Squat (Barbell)\",\n    \"source_catalog_sha256\": \"a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989\"\n  },\n  \"reference_role\": \"Human appearance/proportions/materials only. Never copy pose, equipment or muscle targets from a reference.\",\n  \"scene\": {\n    \"composition\": \"One free barbell sits securely across upper back, both hands steadying it. Feet approximately shoulder-width planted, hips and knees bent at the lowest STABLE depth described by the source, chest lifted and trunk tense. Show a motionless pause without bouncing or relaxed core; knees follow toes. Include a stationary rack with safety pins per source, no Smith guides, extra person or invented numeric depth.\",\n    \"single_phase\": \"Motionless stable bottom pause\",\n    \"source_instruction_quotes\": [\n      {\n        \"index\": 0,\n        \"text\": \"Place the barbell securely on your upper back and stand with feet about shoulder-width apart.\"\n      },\n      {\n        \"index\": 1,\n        \"text\": \"Brace, bend the hips and knees, and descend with the chest lifted.\"\n      },\n      {\n        \"index\": 2,\n        \"text\": \"Pause motionless at the lowest stable depth without relaxing the trunk.\"\n      },\n      {\n        \"index\": 3,\n        \"text\": \"Drive through the feet to stand tall and repeat.\"\n      }\n    ]\n  },\n  \"style\": {\n    \"background\": \"Genuinely transparent PNG background, no white/checkerboard layer, no environment scene.\",\n    \"framing\": \"Full figure and all required equipment/supports visible within a square. Scale and use a three-quarter view to expose the specified contacts without changing anatomy, equipment, grip or technique.\",\n    \"human_model\": \"One athletic bald male anatomical mannequin, opaque silver-gray muscular surfaces, consistent proportions and detailed 3D materials, plain black shorts, barefoot.\",\n    \"material_rules\": \"Highlights never make tissue transparent; no glow, whole-body orange tint, hair, text, labels, arrows, UI, borders, collage or extra person.\",\n    \"no_invention\": \"Technique, equipment and muscles come only from the attached exact catalogue record. No extra attachments, numerical weights, brands or exact angles absent from the source.\",\n    \"output\": {\n      \"format\": \"PNG\",\n      \"height\": 1024,\n      \"one_person\": true,\n      \"one_phase\": true,\n      \"width\": 1024\n    },\n    \"primary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"rule\": \"Highlight only the exact primary muscle group provided for this exercise.\"\n    },\n    \"secondary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"intensity_fraction\": [\n        0.4,\n        0.5\n      ],\n      \"rule\": \"Only the exact secondary muscles, lighter same-hue highlight; if the list is empty add no secondary target.\"\n    },\n    \"version\": \"v1\"\n  }\n}",
+      "prompt_sha256": "9ac81df8a8ee3d2324503f6404f23b64f233a179cc1cd8b0edc09ac0f5f1f2bf",
+      "result_path": "assets/exercises/pending/agent-03-others-005/pause-squat-barbell/attempt-1.png",
+      "cloud_output_path": "/workspace/exercise-image-results/agent-03-others-005/pause-squat-barbell/attempt-1.png",
+      "result_sha256": "ebefa9c9c4cbdbd71615d3990e7b1faf16c879bc7ed0cc303432b4bbd6bb63d2",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "mime_type": "image/png",
+      "generated_at": "2026-10-01T15:33:07+00:00",
+      "technical_check": "passed",
+      "user_review": "pending",
+      "agent_visual_review": "not_performed",
+      "backup_status": "pending",
+      "source_catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+      "source_catalog_record_sha256": "40f91900ae47ebc0ac1ec53ef3f7d193655c1a852c191da58dcd811d349b979d",
+      "source_english_sha256": "a719913c99f5154995dc7adaab0aa90c7033441b4b33be1134d25a1b8befc982",
+      "tool_call_index": 50,
+      "branches_checked": [
+        "origin/agent-02-machines-001",
+        "origin/agent-03-inventory-2026-10-01",
+        "origin/main",
+        "origin/work"
+      ],
+      "technical_check_details": {
+        "opens": true,
+        "format": "PNG",
+        "width": 1254,
+        "height": 1254,
+        "square": true,
+        "has_alpha_channel": true,
+        "transparent_pixels": 937506,
+        "sha256": "ebefa9c9c4cbdbd71615d3990e7b1faf16c879bc7ed0cc303432b4bbd6bb63d2",
+        "errors": []
+      },
+      "tool_response_metadata": {
+        "tool": "image_gen.imagegen",
+        "ordinal": 50,
+        "generated_file": "exec-4f7a4deb-e408-4a1b-96e4-390eb89e0991.png"
+      }
+    },
+    {
+      "exercise_id": "pendlay-row-barbell",
+      "name": "Pendlay Row (Barbell)",
+      "batch_id": "agent-03-others-005",
+      "status": "generated",
+      "attempt": 1,
+      "style_version": "v1",
+      "prompt": "Create exactly one image for the following exact exercise record. Identity fields are metadata, never visible text. Preserve the source technique and depict only the chosen single phase.\n{\n  \"exact_catalogue_source\": {\n    \"equipment\": \"barbell\",\n    \"primary_muscle\": \"upper_back\",\n    \"secondary_muscles\": [\n      \"lats\",\n      \"biceps\",\n      \"forearms\"\n    ],\n    \"source_english\": {\n      \"common_mistakes\": [\n        \"Rounding the spine.\",\n        \"Shrugging instead of rowing.\",\n        \"Jerking with the torso.\"\n      ],\n      \"description\": \"From a near-horizontal hinge, pull the barbell from the floor to the upper abdomen and return it to the floor each repetition.\",\n      \"form_cues\": [\n        \"Brace the trunk before each pull.\",\n        \"Drive the elbows back.\",\n        \"Control the reach at the front.\"\n      ],\n      \"instructions\": [\n        \"Stand with your feet shoulder-width apart and your knees slightly bent.\",\n        \"Bend forward at the hips, keeping your back straight and your chest up.\",\n        \"Grasp the barbell with an overhand grip, slightly wider than shoulder-width apart.\",\n        \"Pull the barbell towards your upper abdomen, squeezing your shoulder blades together.\",\n        \"Lower the barbell back down to the starting position.\",\n        \"Repeat for the desired number of repetitions.\"\n      ],\n      \"provenance\": \"adapted\",\n      \"safety_note\": \"Keep the back flat and the bar close as it travels from the floor to the upper abdomen.\"\n    }\n  },\n  \"identity_do_not_render_as_text\": {\n    \"exercise_id\": \"pendlay-row-barbell\",\n    \"name\": \"Pendlay Row (Barbell)\",\n    \"source_catalog_sha256\": \"a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989\"\n  },\n  \"reference_role\": \"Human appearance/proportions/materials only. Never copy pose, equipment or muscle targets from a reference.\",\n  \"scene\": {\n    \"composition\": \"Stand shoulder-width with knees slightly bent; hip hinge leaves the straight back and torso near horizontal. Both hands grip one free barbell overhand slightly wider than shoulder width. Bar is drawn from the floor to UPPER ABDOMEN, elbows back, shoulder blades together, torso steady. Show this one top row phase, not a standing deadlift; the full source records the floor reset each repetition. Full bar and feet in frame.\",\n    \"single_phase\": \"Upper-abdomen row endpoint from near-horizontal hinge\",\n    \"source_instruction_quotes\": [\n      {\n        \"index\": 0,\n        \"text\": \"Stand with your feet shoulder-width apart and your knees slightly bent.\"\n      },\n      {\n        \"index\": 1,\n        \"text\": \"Bend forward at the hips, keeping your back straight and your chest up.\"\n      },\n      {\n        \"index\": 2,\n        \"text\": \"Grasp the barbell with an overhand grip, slightly wider than shoulder-width apart.\"\n      },\n      {\n        \"index\": 3,\n        \"text\": \"Pull the barbell towards your upper abdomen, squeezing your shoulder blades together.\"\n      },\n      {\n        \"index\": 4,\n        \"text\": \"Lower the barbell back down to the starting position.\"\n      }\n    ]\n  },\n  \"style\": {\n    \"background\": \"Genuinely transparent PNG background, no white/checkerboard layer, no environment scene.\",\n    \"framing\": \"Full figure and all required equipment/supports visible within a square. Scale and use a three-quarter view to expose the specified contacts without changing anatomy, equipment, grip or technique.\",\n    \"human_model\": \"One athletic bald male anatomical mannequin, opaque silver-gray muscular surfaces, consistent proportions and detailed 3D materials, plain black shorts, barefoot.\",\n    \"material_rules\": \"Highlights never make tissue transparent; no glow, whole-body orange tint, hair, text, labels, arrows, UI, borders, collage or extra person.\",\n    \"no_invention\": \"Technique, equipment and muscles come only from the attached exact catalogue record. No extra attachments, numerical weights, brands or exact angles absent from the source.\",\n    \"output\": {\n      \"format\": \"PNG\",\n      \"height\": 1024,\n      \"one_person\": true,\n      \"one_phase\": true,\n      \"width\": 1024\n    },\n    \"primary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"rule\": \"Highlight only the exact primary muscle group provided for this exercise.\"\n    },\n    \"secondary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"intensity_fraction\": [\n        0.4,\n        0.5\n      ],\n      \"rule\": \"Only the exact secondary muscles, lighter same-hue highlight; if the list is empty add no secondary target.\"\n    },\n    \"version\": \"v1\"\n  }\n}",
+      "prompt_sha256": "9e7d765a7dae100616a3aba01907de0417e8c0365534b528af85f45ba6ada86b",
+      "result_path": "assets/exercises/pending/agent-03-others-005/pendlay-row-barbell/attempt-1.png",
+      "cloud_output_path": "/workspace/exercise-image-results/agent-03-others-005/pendlay-row-barbell/attempt-1.png",
+      "result_sha256": "f42c63a0614dfcf704ca28c1efb9bb52f820712037ad2f07c13590c6a7405fea",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "mime_type": "image/png",
+      "generated_at": "2026-10-01T15:34:16+00:00",
+      "technical_check": "passed",
+      "user_review": "pending",
+      "agent_visual_review": "not_performed",
+      "backup_status": "pending",
+      "source_catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+      "source_catalog_record_sha256": "922f395635831941a35e87f40eb873db5834e91e88ce0d7020bf1d924b637432",
+      "source_english_sha256": "b5e2f12a114896597e2f22964b368e1de95e729a8e4f940bf0bbc9c50ef4cf81",
+      "tool_call_index": 51,
+      "branches_checked": [
+        "origin/agent-02-machines-001",
+        "origin/agent-03-inventory-2026-10-01",
+        "origin/main",
+        "origin/work"
+      ],
+      "technical_check_details": {
+        "opens": true,
+        "format": "PNG",
+        "width": 1254,
+        "height": 1254,
+        "square": true,
+        "has_alpha_channel": true,
+        "transparent_pixels": 1064845,
+        "sha256": "f42c63a0614dfcf704ca28c1efb9bb52f820712037ad2f07c13590c6a7405fea",
+        "errors": []
+      },
+      "tool_response_metadata": {
+        "tool": "image_gen.imagegen",
+        "ordinal": 51,
+        "generated_file": "exec-745979b9-7070-44a7-b2d4-fc56a97437c6.png"
+      }
     }
   ],
   "last_updated_at": "2026-10-01T14:26:05+00:00",
