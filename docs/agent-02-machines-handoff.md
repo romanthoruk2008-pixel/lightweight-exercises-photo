@@ -95,3 +95,20 @@
 - `preacher-curl-machine`: `assets/exercises/pending/agent-02-machines-001/preacher-curl-machine/attempt-1.png`; SHA256 `e8013dd2ce9f7b9cbbfeb0843a0cd9451bea1401dee9e3d3ce9505efdfe301a2`, 1254×1254; alpha=0 pixels 828981; user_review=pending.
 
 Чекпоінт комітується та пушиться тільки у `agent-02-machines-001`. Залишилося чотири не запущені ID; перед кожним — одна нова спроба з точним batch prompt. На HTTP 429 припинити пакет за вказівкою користувача.
+
+
+## Завершення пакета — 2026-10-01T11:53:15.926969+00:00
+
+Для кожного з 10 ID виконано рівно один виклик. Отримано 9 окремих PNG; усі 9 відкриваються, є квадратними RGBA **1254×1254**, мають фактичні пікселі alpha=0. SHA256 кожного збережено в `data/batches/agent-02-machines-001-manifest.json`. Prompt v1 мав розмірну ціль 1024×1024, а сервіс повернув 1254×1254; файли не змінювалися ресайзом. Усі 9 статусів `technical_check=passed` за запитаними перевірками відкриття/квадратності/прозорості/hash; розмір зазначено для рішення користувача. Усі `user_review=pending`, `agent_visual_review=not_performed`; зображення не переглядалися на візуальні помилки агентом.
+
+| `leg-extension-machine` | `assets/exercises/pending/agent-02-machines-001/leg-extension-machine/attempt-1.png` | 1254×1254 | 94b36902a0b60941d43539ecd7881775d012dd6bfea1bac20fb21d3e0fb8a21b |
+| `hip-adduction-machine` | `assets/exercises/pending/agent-02-machines-001/hip-adduction-machine/attempt-1.png` | 1254×1254 | 4866fb8ca5915cda96655a81e97810261a46319ad6bb7647bdfa4ff84811f7d6 |
+| `rear-delt-reverse-fly-machine` | `assets/exercises/pending/agent-02-machines-001/rear-delt-reverse-fly-machine/attempt-1.png` | 1254×1254 | 20d51b32e22ad1fb07b3926a2cfb430e873edc807c389a13d7f42e546b081829 |
+| `lateral-raise-machine` | `assets/exercises/pending/agent-02-machines-001/lateral-raise-machine/attempt-1.png` | 1254×1254 | c6c8eae89da673edf55930eb50f30245ca994e35d1f7c7c74025d834e52647d9 |
+| `preacher-curl-machine` | `assets/exercises/pending/agent-02-machines-001/preacher-curl-machine/attempt-1.png` | 1254×1254 | e8013dd2ce9f7b9cbbfeb0843a0cd9451bea1401dee9e3d3ce9505efdfe301a2 |
+| `pullover-machine` | `assets/exercises/pending/agent-02-machines-001/pullover-machine/attempt-1.png` | 1254×1254 | 27c3a2a9c7f2982efb6374f78d5561e953d5bb469705a2345848f5c6420db3d4 |
+| `lat-pulldown-cable-machine` | `assets/exercises/pending/agent-02-machines-001/lat-pulldown-cable-machine/attempt-1.png` | 1254×1254 | 4db0c91185cc3a331746d4ca5e7d6a0f5646a8abf809e6ff91fdcc52f55bd5a3 |
+| `seated-cable-row-v-grip-cable-machine` | `assets/exercises/pending/agent-02-machines-001/seated-cable-row-v-grip-cable-machine/attempt-1.png` | 1254×1254 | d72f498c6aa424f6f7b74cda2d8707fa6f004ba9d173ca1b1ae441c55000bc98 |
+| `triceps-rope-pushdown-machine` | `assets/exercises/pending/agent-02-machines-001/triceps-rope-pushdown-machine/attempt-1.png` | 1254×1254 | c60b0605e7b9c9731643da057baeb3af628853a346565465247ed310c299c37d |
+
+Єдиний пропуск: `leg-press-horizontal-machine` — HTTP 400 `empty_string` через порожній prompt, PNG відсутній, спроба 1 зафіксована, повтору немає. HTTP 429 не було. Генерація завершена; подальші виклики після пакета не робити. Paid API та Supabase не використовувалися.
