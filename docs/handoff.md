@@ -238,3 +238,18 @@ simple-002 checkpoint 2026-09-30T22:31:57.873484+00:00: shoulder-press-dumbbell 
 
 
 Актуальний аудит simple-002 2026-09-30T22:34:23.185688+00:00: усі 10 PNG існують, SHA256 і шляхи збігаються в batch та progress. Усі файлові перевірки пройшли; статуси користувача pending.
+
+## Нічна генерація — дозвіл на відсутні 14 результатів (2026-10-01)
+
+Початковий запуск усіх 50 підготовлених вправ зробив по одній спробі: є 36 PNG-файлів (35 пройшли файлові перевірки, один має технічну невідповідність), а ці 14 не мають PNG через блокування/ліміт. Користувач тепер прямо дозволив спробу 2 лише для цієї відсутньої групи. Не перезаписувати наявні файли; усі збережені нові PNG лишаються `user_review=pending`. Повторного візуального QA не проводити.
+
+Зберігати prompt та попередню помилку першої спроби в історії. Нові файли: `assets/exercises/pending/night-2026-10-01/batch-<NNN>/<exercise_id>/attempt-2.png`. Кожній вправі дозволено рівно один додатковий виклик вбудованого `image_gen.imagegen`; референс — лише зовнішність людини: `/workspace/exercise-image-pilot-v1/biceps-curl-dumbbell/attempt-1.png` (SHA256 `52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f`). Стиль і prompts беруться з v1 та відповідного batch JSON.
+
+Поточний image_gen quota error має `resets_at=2026-10-01T09:10:39Z`. Станом на 07:16 UTC квота ще не скинулася; повторних викликів після початкового запуску в цій задачі не робили. Не викликати генератор до часу скидання. Після нього перечитувати progress перед кожним ID, зберігати PNG/progress/manifest одразу. Якщо окрема вправа заблокована модерацією — зафіксувати і перейти далі; якщо повернувся загальний usage-limit/429 — одразу зупинити решту, зберегти та push-нути прогрес, не робити серію безрезультатних викликів.
+
+Відсутні ID за джерельними пакетами:
+- batch-001: `fire-hydrants`
+- batch-004: `seated-palms-up-wrist-curl-dumbbell`, `triceps-extension-dumbbell`, `squat-dumbbell`
+- batch-005: `reverse-wrist-curl-dumbbell`, `pinwheel-curl-dumbbell`, `seated-incline-hammer-curl-dumbbell`, `bulgarian-split-squat-dumbbell`, `split-squat-dumbbell`, `biceps-curl-barbell`, `shrug-barbell`, `behind-the-back-wrist-curl-barbell`, `seated-wrist-curl-barbell`, `triceps-extension-barbell`
+
+Після кожної завершеної групи за batch зберегти та push-нути PNG і метадані, перевірити SHA256 у віддаленій гілці `work`, потім позначити лише реально перевірені backup як `github_verified`. Не змінювати каталог, попередні прийняті файли чи Supabase статус. Наступна дія — дочекатися quota reset, потім почати з `fire-hydrants`.
