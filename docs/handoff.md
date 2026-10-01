@@ -356,7 +356,8 @@ Run `agent-03-others-2026-10-01` from `agent-03-inventory-2026-10-01` at `5141c4
 
 ### agent-03-others-001
 
-State: `ready_for_push`; generated 10/10; skipped 0; failed 0.
-Content commit: `pending`; GitHub verification: `pending`.
+State: `github_verified`; generated 10/10; skipped 0; failed 0.
+Content commit: `c08695a`; GitHub verification: `github_verified`.
+Verified at commit `c08695a` on `work` at 2026-10-01T14:01:00+00:00.
 
 Next action: Continue with the next eligible exercise in `agent-03-others-002` after rechecking progress and its output path.
