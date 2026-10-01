@@ -1,3 +1,9 @@
+## Agent-03 round 3 current summary
+
+2026-10-01T17:39:45+00:00: із 30 вправ у пакетах 007–009 згенеровано й SHA-перевірено на `work` 21 PNG: 007 — 10/10, 008 — 10/10, 009 — 1/10 (`dead-hang`). Усі 21 мають `user_review=pending`, `agent_visual_review=not_performed`, технічну перевірку `passed`. Пакет 009 зупинив HTTP 429 на `hanging-knee-raise`; його спроба записана як `blocked_quota`, інші 8 ID не запускались. Останній коміт: `74c5947e8a219022dea4fdf658a39899e8b650b1`. Наступне місце продовження: після відновлення квоти звірити progress та почати з `hanging-knee-raise`; не перегенеровувати вже наявні PNG.
+
+---
+
 ## Agent-03 round 3 package checkpoint: agent-03-others-009
 
 2026-10-01T17:38:33+00:00: 1/10 вправ мають збережений PNG у віддаленій `work`; verified commit `e0d54ccf9d918436701fe78714852e967b04f7c4`. Усі збережені результати мають `user_review=pending`, `agent_visual_review=not_performed`; проблеми записані у progress та manifest. Генерацію зупинено через HTTP 429 на `hanging-knee-raise`. Після відновлення квоти продовжити з цього ID; згенерований `dead-hang` не перезаписувати; решту ID спершу звірити з progress.
@@ -28,13 +34,13 @@
 
 ---
 
-## Agent-03 round 3: generation in progress (007–009)
+## Agent-03 round 3 kickoff record (007–009)
 
 2026-10-01T17:10:24+00:00: користувач доручив згенерувати 30 підготовлених вправ. Перенесено лише три пакети та їхній handoff із підготовчого коміту `3313536c00e0e83d844c9ae0cd6846f5d3bd61e2`; transfer commit у `work`: `bc649b2bbf53fecf23845e44700d99a37276878b`. Каталог (SHA256 `a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989`) і стиль v1 (SHA256 `8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578`) збігаються з усіма пакетами. Перевірено 30 унікальних ID, тексти англійською, обладнання, м’язи, record/prompt hashes; усі були `not_started`, без наявних результатів. Еталон зовнішності `assets/exercises/biceps-curl-dumbbell.png` доступний і має очікуваний SHA256.
 
 Генерація: вбудований `image_gen.imagegen`, один виклик на вправу, точний prompt пакета, стиль v1, прозорий квадратний PNG. Reference зображує лише модель/стиль. Шість ID із суфіксом `machine` використовують пристрої, визначені технікою (підтримки/турнік/бруси/стрічка); зайві блоки чи тренажери не додавати. На кожній вправі повторно перевіряти progress, пропускати наявні результати, одразу записувати progress і manifest. Після кожного пакета пушити у `work`, перевіряти віддалені SHA256, лише потім ставити `github_verified`. `user_review=pending`, `agent_visual_review=not_performed`. Supabase не використовується.
 
-Поточний стан: підготовчі файли запушено; очікують генерації всі 30 ID із `data/batches/agent-03-others-007.json` … `009.json`.
+Стан на початку: підготовчі файли запушено; очікували генерації всі 30 ID із `data/batches/agent-03-others-007.json` … `009.json`.
 
 ---
 
