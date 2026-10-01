@@ -284,3 +284,7 @@ Batch-004 retry завершено локально: три attempt-2 PNG збе
 - `squat-dumbbell`: `assets/exercises/pending/night-2026-10-01/batch-004/squat-dumbbell/attempt-2.png`, SHA256 `7470c2067198392ab7110a285e998146d8cee1a21c8c69de5801f4ede97005b2`.
 
 На момент запису цього пункту потрібно push-нути ці 3 PNG разом із progress і manifest у `work`, перевірити віддалені SHA256 і лише тоді позначити backup як `github_verified`. Після цього перейти до десяти ID batch-005 у підготовленому порядку. Якщо image_gen знов поверне HTTP 429 — записати результат виклику, push-нути вже готові файли/метадані й зупинитися без додаткових викликів. Не проводити візуальний QA; після кожної наступної вправи зберігати файл і progress, після batch-005 зробити окремий GitHub checkpoint.
+
+### Batch-004 retry: GitHub verification passed
+
+Усі три PNG присутні в `work` commit `79c1774406db73069dff0a5270bc9b8cba815209`. Віддалені байти відкрилися, SHA256 збіглися з progress/manifest, розмір кожного 1254×1254 із прозорими пікселями. Їхній backup status оновлено на `github_verified`; усі три лишаються `user_review=pending`, без агентського візуального QA. Нічних PNG тепер 39/50; без результату лишилися `fire-hydrants` (пропущено за прямою вказівкою) та 10 ID batch-005 (квота). Продовжити з `reverse-wrist-curl-dumbbell` після перевірки його live progress і відсутності готового attempt-2 файла.
