@@ -1,0 +1,374 @@
+{
+  "checked_at_utc": "2026-10-01T20:53:05.135586+00:00",
+  "project_ref": "yywyrbhqfavjdgonlzma",
+  "secret_binding_name": "exerciseuploader",
+  "auth_admin_read_http": 200,
+  "server_admin_read_confirmed": true,
+  "postgrest_role_and_bypassrls_independently_verified": false,
+  "catalog_actual_emptiness_independently_confirmed": false,
+  "catalog_visible_rows": 0,
+  "bucket": {
+    "id": "exercise-images",
+    "public": true,
+    "file_size_limit": 5242880,
+    "allowed_mime_types": [
+      "image/png"
+    ],
+    "type": "STANDARD"
+  },
+  "table_visible_rows": {
+    "catalog_exercise": 0,
+    "exercise": 0,
+    "workout": 0,
+    "logged_exercise": 0,
+    "set_entry": 0
+  },
+  "table_content_ranges": {
+    "catalog_exercise": [
+      "*/0"
+    ],
+    "exercise": [
+      "*/0"
+    ],
+    "workout": [
+      "*/0"
+    ],
+    "logged_exercise": [
+      "*/0"
+    ],
+    "set_entry": [
+      "*/0"
+    ]
+  },
+  "duplicate_ids": {
+    "catalog_exercise": 0,
+    "exercise": 0,
+    "workout": 0,
+    "logged_exercise": 0,
+    "set_entry": 0
+  },
+  "relationship_checks_visible_rows_only": {
+    "custom_catalog_id_collisions": 0,
+    "logged_unknown_exercise": 0,
+    "logged_unknown_workout": 0,
+    "logged_workout_owner_mismatch": 0,
+    "logged_custom_owner_mismatch": 0,
+    "set_unknown_logged_exercise": 0,
+    "set_logged_owner_mismatch": 0
+  },
+  "pg_catalog_http": 406,
+  "storage_list_http": 200,
+  "storage_root_entries_visible": 0,
+  "replaces_ids_rest_schema": {
+    "format": "jsonb"
+  },
+  "replaces_ids_required_in_openapi": true,
+  "replaces_ids_sql_default": "not_exposed_in_available_metadata",
+  "schema_definitions": {
+    "exercise": {
+      "required": [
+        "id",
+        "owner_id",
+        "name",
+        "equipment",
+        "primary_muscles",
+        "secondary_muscles",
+        "youtube_query",
+        "is_custom",
+        "updated_at"
+      ],
+      "properties": {
+        "id": {
+          "description": "Note:\nThis is a Primary Key.<pk/>",
+          "format": "text",
+          "type": "string"
+        },
+        "owner_id": {
+          "format": "uuid",
+          "type": "string"
+        },
+        "name": {
+          "format": "text",
+          "type": "string"
+        },
+        "equipment": {
+          "format": "text",
+          "type": "string"
+        },
+        "primary_muscles": {
+          "format": "jsonb"
+        },
+        "secondary_muscles": {
+          "format": "jsonb"
+        },
+        "youtube_query": {
+          "default": "",
+          "format": "text",
+          "type": "string"
+        },
+        "is_custom": {
+          "default": true,
+          "format": "boolean",
+          "type": "boolean"
+        },
+        "updated_at": {
+          "default": "now()",
+          "format": "timestamp with time zone",
+          "type": "string"
+        },
+        "deleted_at": {
+          "format": "timestamp with time zone",
+          "type": "string"
+        }
+      },
+      "type": "object"
+    },
+    "catalog_exercise": {
+      "required": [
+        "id",
+        "name",
+        "equipment",
+        "primary_muscle",
+        "secondary_muscles",
+        "tracking_type",
+        "archived",
+        "replaces_ids",
+        "content",
+        "updated_at"
+      ],
+      "properties": {
+        "id": {
+          "description": "Note:\nThis is a Primary Key.<pk/>",
+          "format": "text",
+          "type": "string"
+        },
+        "name": {
+          "format": "text",
+          "type": "string"
+        },
+        "equipment": {
+          "format": "text",
+          "type": "string"
+        },
+        "primary_muscle": {
+          "format": "text",
+          "type": "string"
+        },
+        "secondary_muscles": {
+          "format": "jsonb"
+        },
+        "tracking_type": {
+          "format": "text",
+          "type": "string"
+        },
+        "archived": {
+          "default": false,
+          "format": "boolean",
+          "type": "boolean"
+        },
+        "replaces_ids": {
+          "format": "jsonb"
+        },
+        "image_path": {
+          "format": "text",
+          "type": "string"
+        },
+        "image_sha256": {
+          "format": "text",
+          "type": "string"
+        },
+        "image_width": {
+          "format": "integer",
+          "type": "integer"
+        },
+        "image_height": {
+          "format": "integer",
+          "type": "integer"
+        },
+        "image_origin": {
+          "format": "text",
+          "type": "string"
+        },
+        "attribution": {
+          "format": "text",
+          "type": "string"
+        },
+        "content": {
+          "format": "jsonb"
+        },
+        "updated_at": {
+          "default": "now()",
+          "format": "timestamp with time zone",
+          "type": "string"
+        }
+      },
+      "type": "object"
+    },
+    "set_entry": {
+      "required": [
+        "id",
+        "owner_id",
+        "logged_exercise_id",
+        "position",
+        "weight_kg",
+        "reps",
+        "is_warmup",
+        "is_completed",
+        "updated_at"
+      ],
+      "properties": {
+        "id": {
+          "description": "Note:\nThis is a Primary Key.<pk/>",
+          "format": "uuid",
+          "type": "string"
+        },
+        "owner_id": {
+          "format": "uuid",
+          "type": "string"
+        },
+        "logged_exercise_id": {
+          "description": "Note:\nThis is a Foreign Key to `logged_exercise.id`.<fk table='logged_exercise' column='id'/>",
+          "format": "uuid",
+          "type": "string"
+        },
+        "position": {
+          "format": "integer",
+          "type": "integer"
+        },
+        "weight_kg": {
+          "format": "double precision",
+          "type": "number"
+        },
+        "reps": {
+          "format": "integer",
+          "type": "integer"
+        },
+        "is_warmup": {
+          "default": false,
+          "format": "boolean",
+          "type": "boolean"
+        },
+        "is_completed": {
+          "default": false,
+          "format": "boolean",
+          "type": "boolean"
+        },
+        "rpe": {
+          "format": "double precision",
+          "type": "number"
+        },
+        "performed_at": {
+          "format": "timestamp with time zone",
+          "type": "string"
+        },
+        "updated_at": {
+          "default": "now()",
+          "format": "timestamp with time zone",
+          "type": "string"
+        },
+        "deleted_at": {
+          "format": "timestamp with time zone",
+          "type": "string"
+        }
+      },
+      "type": "object"
+    },
+    "logged_exercise": {
+      "required": [
+        "id",
+        "owner_id",
+        "workout_id",
+        "exercise_id",
+        "position",
+        "updated_at"
+      ],
+      "properties": {
+        "id": {
+          "description": "Note:\nThis is a Primary Key.<pk/>",
+          "format": "uuid",
+          "type": "string"
+        },
+        "owner_id": {
+          "format": "uuid",
+          "type": "string"
+        },
+        "workout_id": {
+          "description": "Note:\nThis is a Foreign Key to `workout.id`.<fk table='workout' column='id'/>",
+          "format": "uuid",
+          "type": "string"
+        },
+        "exercise_id": {
+          "format": "text",
+          "type": "string"
+        },
+        "position": {
+          "format": "integer",
+          "type": "integer"
+        },
+        "note": {
+          "format": "text",
+          "type": "string"
+        },
+        "updated_at": {
+          "default": "now()",
+          "format": "timestamp with time zone",
+          "type": "string"
+        },
+        "deleted_at": {
+          "format": "timestamp with time zone",
+          "type": "string"
+        }
+      },
+      "type": "object"
+    },
+    "workout": {
+      "required": [
+        "id",
+        "owner_id",
+        "title",
+        "started_at",
+        "updated_at"
+      ],
+      "properties": {
+        "id": {
+          "description": "Note:\nThis is a Primary Key.<pk/>",
+          "format": "uuid",
+          "type": "string"
+        },
+        "owner_id": {
+          "format": "uuid",
+          "type": "string"
+        },
+        "title": {
+          "format": "text",
+          "type": "string"
+        },
+        "started_at": {
+          "format": "timestamp with time zone",
+          "type": "string"
+        },
+        "finished_at": {
+          "format": "timestamp with time zone",
+          "type": "string"
+        },
+        "note": {
+          "format": "text",
+          "type": "string"
+        },
+        "updated_at": {
+          "default": "now()",
+          "format": "timestamp with time zone",
+          "type": "string"
+        },
+        "deleted_at": {
+          "format": "timestamp with time zone",
+          "type": "string"
+        }
+      },
+      "type": "object"
+    }
+  },
+  "application_code_available": false,
+  "ordinary_client_access_verified": false,
+  "supabase_writes": 0
+}
