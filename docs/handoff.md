@@ -327,3 +327,13 @@ User approval recorded 2026-10-01T15:20:09.655843+03:00: `triceps-extension-dumb
 
 
 Repository verification 2026-10-01T15:20:49.696014+03:00: all 26 PNGs in the current approved-image manifest have unique exercise IDs and remote SHA256 values matching the manifest. The newly accepted `triceps-extension-dumbbell` file at `assets/exercises/triceps-extension-dumbbell.png` matches SHA256 `f81b4e2454fb662b37756acc603326b5b061695aef295f8d492f8882443ae92f`, opens as a 1254×1254 PNG with transparent pixels, and is available at commit `68fb3d7504302b90915ca06a4f64875e06310294`. Repository backup status is `github_verified`; the older backup ZIP remains its original 25-image snapshot.
+
+
+## Останні дві нічні вправи (2026-10-01)
+
+Після наданих користувачем Hevy-знімків згенеровано відсутні `fire-hydrants` (attempt-2) та `reverse-wrist-curl-dumbbell` (attempt-3) через вбудований image_gen; стиль v1 та еталон людини залишено. Hevy UI у PNG не переносився. Для обох перевірено PNG-декодування, квадратність, фактичні розміри й прозорі пікселі; agent visual review не проводився, `user_review=pending`. Каталог не змінено, Supabase не використовувався.
+
+- `fire-hydrants`: `assets/exercises/pending/night-2026-10-01/batch-001/fire-hydrants/attempt-2.png`; SHA256 `2b95282f694a50e1193c574dd7ec1dfb621b812c53d1abf4a887daaacf87a197`; 1254×1254, 1,173,284 повністю прозорих пікселів.
+- `reverse-wrist-curl-dumbbell`: `assets/exercises/pending/night-2026-10-01/batch-005/reverse-wrist-curl-dumbbell/attempt-3.png`; SHA256 `119b0777227cbcb271f25229777361a79a7107049a9f3ba0c364587704933c44`; 1254×1254, 1,106,321 повністю прозорих пікселів.
+
+Усі 50 нічних ID тепер мають PNG; 48 схвалених раніше лишаються схваленими, ці два очікують користувацького перегляду. `pushup-close-grip` як і раніше має технічну невідповідність розмірів 1536×1024. Два нові PNG і метадані чекають push та віддаленої SHA256-перевірки; тоді оновити backup-статуси й цей handoff. Наступна дія: завершити GitHub-збереження двох PNG у `work`, потім показати їх користувачу.

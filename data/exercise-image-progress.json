@@ -9358,13 +9358,11 @@
         "mapping": null
       },
       "source_reference_image": null,
-      "status": "generation_failed",
+      "status": "generated",
       "included_in_generation": true,
       "archived_inclusion_authorized": false,
-      "blocked_by": [
-        "pilot_not_approved"
-      ],
-      "attempts": 1,
+      "blocked_by": [],
+      "attempts": 2,
       "style_version": "v1",
       "visual_review": {
         "status": "not_reviewed",
@@ -9378,10 +9376,10 @@
         },
         "notes": null
       },
-      "result_path": "/workspace/lightweight-exercises-photo/assets/exercises/pending/night-2026-10-01/batch-001/fire-hydrants/attempt-1.png",
+      "result_path": "/workspace/lightweight-exercises-photo/assets/exercises/pending/night-2026-10-01/batch-001/fire-hydrants/attempt-2.png",
       "supabase_path": null,
       "supabase_upload_status": "not_configured",
-      "last_error": "image generation failed: http 400 Bad Request: Some(\"{\\n  \\\"error\\\": {\\n    \\\"message\\\": \\\"Your request was rejected by the safety system. If you believe this is an error, contact us at help.openai.com and include the request ID 9c83652e-7e4b-471b-952e-6e3afa927487. safety_violations=[sexual].\\\",\\n    \\\"type\\\": \\\"image_generation_user_error\\\",\\n    \\\"param\\\": null,\\n    \\\"code\\\": \\\"moderation_blocked\\\",\\n    \\\"moderation_details\\\": {\\n      \\\"moderation_stage\\\": \\\"output\\\",\\n      \\\"categories\\\": [\\n        \\\"sexual\\\"\\n      ]\\n    }\\n  }\\n}\")",
+      "last_error": null,
       "attempt_history": [
         {
           "attempt": 1,
@@ -9412,20 +9410,72 @@
             "actual_dimensions": null,
             "fully_transparent_pixels": null
           }
+        },
+        {
+          "attempt": 2,
+          "id": "fire-hydrants",
+          "batch_id": "night-2026-10-01-001",
+          "generation_run_id": "night-2026-10-01",
+          "generated_overnight": true,
+          "style_version": "v1",
+          "tool": "image_gen.imagegen",
+          "started_at": "2026-10-01T12:33:40.235181+00:00",
+          "prompt": "STYLE v1. Use the supplied approved human reference ONLY for the person's identity, anatomical 3D style, body proportions, materials and detail. Do not copy its pose, dumbbells, muscle highlighting or composition. Match the same bald athletic adult male, opaque silver-gray sculpted anatomical muscle surfaces, simple fitted black shorts, barefoot, neutral face and consistent natural proportions. One person, one exercise, one characteristic phase: no second figure, collage or motion ghosts. Equipment must be only the simple items named in this scene, neutral gray/black materials, complete and mechanically ordinary. Primary muscles: localized coral #F26445. Named secondary muscles: the same hue at roughly 45% intensity blended with gray, clearly lighter. Do not highlight muscles absent from the catalog list, make the body or shorts transparent, or apply a global orange cast/glow. Preserve clothing; highlight visible anatomical surfaces without inventing see-through tissue. Square PNG, unchanged target 1024x1024, true transparent alpha background outside the person and required equipment/mat and through any openings; no white or checkerboard backdrop, drawn floor plane, UI, text, labels, frames, decorations or halo. Entire person and every required piece of equipment must fit with transparent margins; adapt scale/camera without distortion or cropping. Accent pigment must use base sRGB #F26445 = RGB(242,100,69); retain this hue through ordinary 3D shading. Secondary highlights use this hue at 40-50% intensity blended with the gray body, not transparent tissue.\n\nEXERCISE ID: fire-hydrants\nNAME: Fire Hydrants\nCatalog equipment: none\nDepict only: bodyweight, no equipment\nPrimary muscle: glutes\nSecondary muscles: []\n\nONE SPECIFIC SCENE: Quadruped, palms under shoulders and knees under hips. Left knee remains bent and lifts out to the left side from the hip; both hands and right knee support the body. Pelvis remains square and level without lumbar arch. Rear-side three-quarter camera shows the bent lifted knee and all support points.\n\nENGLISH SOURCE (this ID only; do not substitute a familiar variant):\n{\"description\": \"Fire Hydrants lift one bent knee out to the side from an all-fours position while the pelvis stays level.\", \"instructions\": [\"Start on hands and knees with the spine neutral.\", \"Brace the abdominals and lift one bent knee out to the side.\", \"Raise only as far as the pelvis stays level.\", \"Lower slowly and repeat on the other side.\"], \"form_cues\": [\"Keep hips square.\", \"Move from the hip.\", \"Use a slow tempo.\"], \"common_mistakes\": [\"Rotating the trunk.\", \"Arching the lower back.\", \"Swinging the knee.\"], \"safety_note\": \"Use a padded surface and a small hip range if the pelvis starts to rotate.\", \"provenance\": \"authored\"}\nMaintain source contact points and safe control. Render only this characteristic phase, not the entire instruction sequence. Reference anatomy is opaque; localize the specified muscle pigment without copying reference highlights.",
+          "reference": "assets/exercises/biceps-curl-dumbbell.png",
+          "status": "generated",
+          "result_path": "/workspace/lightweight-exercises-photo/assets/exercises/pending/night-2026-10-01/batch-001/fire-hydrants/attempt-2.png",
+          "completed_at": "2026-10-01T12:35:06.935856+00:00",
+          "sha256": "2b95282f694a50e1193c574dd7ec1dfb621b812c53d1abf4a887daaacf87a197",
+          "actual_dimensions": [
+            1254,
+            1254
+          ],
+          "technical_check": "passed",
+          "technical_check_details": {
+            "id": "fire-hydrants",
+            "path": "assets/exercises/pending/night-2026-10-01/batch-001/fire-hydrants/attempt-2.png",
+            "errors": [],
+            "exists": true,
+            "sha256": "2b95282f694a50e1193c574dd7ec1dfb621b812c53d1abf4a887daaacf87a197",
+            "matches_recorded_sha256": true,
+            "format": "PNG",
+            "opens": true,
+            "width": 1254,
+            "height": 1254,
+            "actual_dimensions": [
+              1254,
+              1254
+            ],
+            "square": true,
+            "mode": "RGBA",
+            "has_alpha_channel": true,
+            "fully_transparent_pixels": 1173284,
+            "scope": "PNG decode, square dimensions, true alpha transparency, SHA256; no visual QA"
+          }
         }
       ],
-      "result_sha256": null,
-      "technical_check": "failed",
+      "result_sha256": "2b95282f694a50e1193c574dd7ec1dfb621b812c53d1abf4a887daaacf87a197",
+      "technical_check": "passed",
       "technical_check_details": {
         "id": "fire-hydrants",
-        "path": "assets/exercises/pending/night-2026-10-01/001/fire-hydrants/attempt-1.png",
-        "errors": [
-          "image generation failed: http 400 Bad Request: Some(\"{\\n  \\\"error\\\": {\\n    \\\"message\\\": \\\"Your request was rejected by the safety system. If you believe this is an error, contact us at help.openai.com and include the request ID 9c83652e-7e4b-471b-952e-6e3afa927487. safety_violations=[sexual].\\\",\\n    \\\"type\\\": \\\"image_generation_user_error\\\",\\n    \\\"param\\\": null,\\n    \\\"code\\\": \\\"moderation_blocked\\\",\\n    \\\"moderation_details\\\": {\\n      \\\"moderation_stage\\\": \\\"output\\\",\\n      \\\"categories\\\": [\\n        \\\"sexual\\\"\\n      ]\\n    }\\n  }\\n}\")"
+        "path": "assets/exercises/pending/night-2026-10-01/batch-001/fire-hydrants/attempt-2.png",
+        "errors": [],
+        "exists": true,
+        "sha256": "2b95282f694a50e1193c574dd7ec1dfb621b812c53d1abf4a887daaacf87a197",
+        "matches_recorded_sha256": true,
+        "format": "PNG",
+        "opens": true,
+        "width": 1254,
+        "height": 1254,
+        "actual_dimensions": [
+          1254,
+          1254
         ],
-        "exists": false,
-        "sha256": null,
-        "actual_dimensions": null,
-        "fully_transparent_pixels": null
+        "square": true,
+        "mode": "RGBA",
+        "has_alpha_channel": true,
+        "fully_transparent_pixels": 1173284,
+        "scope": "PNG decode, square dimensions, true alpha transparency, SHA256; no visual QA"
       },
       "agent_visual_review": "not_performed",
       "agent_visual_review_notes": [],
@@ -9435,7 +9485,8 @@
       "batch_id": "night-2026-10-01-001",
       "prompt": "STYLE v1. Use the supplied approved human reference ONLY for the person's identity, anatomical 3D style, body proportions, materials and detail. Do not copy its pose, dumbbells, muscle highlighting or composition. Match the same bald athletic adult male, opaque silver-gray sculpted anatomical muscle surfaces, simple fitted black shorts, barefoot, neutral face and consistent natural proportions. One person, one exercise, one characteristic phase: no second figure, collage or motion ghosts. Equipment must be only the simple items named in this scene, neutral gray/black materials, complete and mechanically ordinary. Primary muscles: localized coral #F26445. Named secondary muscles: the same hue at roughly 45% intensity blended with gray, clearly lighter. Do not highlight muscles absent from the catalog list, make the body or shorts transparent, or apply a global orange cast/glow. Preserve clothing; highlight visible anatomical surfaces without inventing see-through tissue. Square PNG, unchanged target 1024x1024, true transparent alpha background outside the person and required equipment/mat and through any openings; no white or checkerboard backdrop, drawn floor plane, UI, text, labels, frames, decorations or halo. Entire person and every required piece of equipment must fit with transparent margins; adapt scale/camera without distortion or cropping. Accent pigment must use base sRGB #F26445 = RGB(242,100,69); retain this hue through ordinary 3D shading. Secondary highlights use this hue at 40-50% intensity blended with the gray body, not transparent tissue.\n\nEXERCISE ID: fire-hydrants\nNAME: Fire Hydrants\nCatalog equipment: none\nDepict only: bodyweight, no equipment\nPrimary muscle: glutes\nSecondary muscles: []\n\nONE SPECIFIC SCENE: Quadruped, palms under shoulders and knees under hips. Left knee remains bent and lifts out to the left side from the hip; both hands and right knee support the body. Pelvis remains square and level without lumbar arch. Rear-side three-quarter camera shows the bent lifted knee and all support points.\n\nENGLISH SOURCE (this ID only; do not substitute a familiar variant):\n{\"description\": \"Fire Hydrants lift one bent knee out to the side from an all-fours position while the pelvis stays level.\", \"instructions\": [\"Start on hands and knees with the spine neutral.\", \"Brace the abdominals and lift one bent knee out to the side.\", \"Raise only as far as the pelvis stays level.\", \"Lower slowly and repeat on the other side.\"], \"form_cues\": [\"Keep hips square.\", \"Move from the hip.\", \"Use a slow tempo.\"], \"common_mistakes\": [\"Rotating the trunk.\", \"Arching the lower back.\", \"Swinging the knee.\"], \"safety_note\": \"Use a padded surface and a small hip range if the pelvis starts to rotate.\", \"provenance\": \"authored\"}\nMaintain source contact points and safe control. Render only this characteristic phase, not the entire instruction sequence. Reference anatomy is opaque; localize the specified muscle pigment without copying reference highlights.",
       "reference_path": "assets/exercises/biceps-curl-dumbbell.png",
-      "backup_status": "no_file"
+      "backup_status": "pending_github_verification",
+      "generated_at": "2026-10-01T12:35:06.935856+00:00"
     },
     "floor-press-barbell": {
       "id": "floor-press-barbell",
@@ -23187,13 +23238,11 @@
         "exists_at_preparation": true,
         "sha256": "965a3fdade72908e08177b593d8b331bea42694ca736e140d75c03e48d74d2d6"
       },
-      "status": "generation_failed",
+      "status": "generated",
       "included_in_generation": true,
       "archived_inclusion_authorized": false,
-      "blocked_by": [
-        "pilot_not_approved"
-      ],
-      "attempts": 2,
+      "blocked_by": [],
+      "attempts": 3,
       "style_version": "v1",
       "visual_review": {
         "status": "not_reviewed",
@@ -23207,10 +23256,10 @@
         },
         "notes": null
       },
-      "result_path": "/workspace/lightweight-exercises-photo/assets/exercises/pending/night-2026-10-01/batch-005/reverse-wrist-curl-dumbbell/attempt-2.png",
+      "result_path": "/workspace/lightweight-exercises-photo/assets/exercises/pending/night-2026-10-01/batch-005/reverse-wrist-curl-dumbbell/attempt-3.png",
       "supabase_path": null,
       "supabase_upload_status": "not_configured",
-      "last_error": "image_gen call was interrupted before a result was returned; no PNG was found in the target directory or generated-image autosave directory; not retried to avoid a duplicate generation.",
+      "last_error": null,
       "attempt_history": [
         {
           "attempt": 1,
@@ -23272,20 +23321,72 @@
             "actual_dimensions": null,
             "fully_transparent_pixels": null
           }
+        },
+        {
+          "attempt": 3,
+          "id": "reverse-wrist-curl-dumbbell",
+          "batch_id": "night-2026-10-01-005",
+          "generation_run_id": "night-2026-10-01",
+          "generated_overnight": true,
+          "style_version": "v1",
+          "tool": "image_gen.imagegen",
+          "started_at": "2026-10-01T12:36:50.789684+00:00",
+          "prompt": "STYLE v1. Use the supplied approved human reference ONLY for the person's identity, anatomical 3D style, body proportions, materials and detail. Do not copy its pose, dumbbells, muscle highlighting or composition. Match the same bald athletic adult male, opaque silver-gray sculpted anatomical muscle surfaces, simple fitted black shorts, barefoot, neutral face and consistent natural proportions. One person, one exercise, one characteristic phase: no second figure, collage or motion ghosts. Equipment must be only the simple items named in this scene, neutral gray/black materials, complete and mechanically ordinary. Primary muscles: localized coral #F26445. Named secondary muscles: the same hue at roughly 45% intensity blended with gray, clearly lighter. Do not highlight muscles absent from the catalog list, make the body or shorts transparent, or apply a global orange cast/glow. Preserve clothing; highlight visible anatomical surfaces without inventing see-through tissue. Square PNG, unchanged target 1024x1024, true transparent alpha background outside the person and required equipment/mat and through any openings; no white or checkerboard backdrop, drawn floor plane, UI, text, labels, frames, decorations or halo. Entire person and every required piece of equipment must fit with transparent margins; adapt scale/camera without distortion or cropping. Accent pigment must use base sRGB #F26445 = RGB(242,100,69); retain this hue through ordinary 3D shading. Secondary highlights use this hue at 40-50% intensity blended with the gray body, not transparent tissue.\n\nEXERCISE ID: reverse-wrist-curl-dumbbell\nNAME: Reverse Wrist Curl (Dumbbell)\nCatalog equipment: dumbbell\nDepict only: two dumbbells, ordinary flat bench\nPrimary muscle: forearms\nSecondary muscles: []\n\nONE SPECIFIC SCENE: Seated on an ordinary flat bench, feet flat, forearms resting on thighs and wrists projecting beyond knees. One dumbbell held in each hand with PALMS DOWN. Small wrist-extension top phase lifts backs of hands/weights while upper arms and elbows remain still; secure closed grips. Elevated front-side view shows forearm contacts and wrist motion. No elbow curl.\n\nENGLISH SOURCE (this ID only; do not substitute a familiar variant):\n{\"description\": \"With the forearms supported and palms down, extend the wrists to lift the dumbbells and lower them slowly.\", \"instructions\": [\"Sit on a bench or chair with your feet flat on the ground.\", \"Hold a dumbbell in each hand with an overhand grip, palms facing down.\", \"Rest your forearms on your thighs, allowing your wrists to hang off the edge.\", \"Slowly curl your wrists upward, bringing the dumbbells towards your body.\", \"Pause for a moment at the top, then slowly lower the dumbbells back down to the starting position.\", \"Repeat for the desired number of repetitions.\"], \"form_cues\": [\"Keep the upper arms still.\", \"Use a steady squeeze at the top.\", \"Lower through the full range.\"], \"common_mistakes\": [\"Swinging the body.\", \"Driving the elbows forward.\", \"Dropping the weight.\"], \"safety_note\": \"Choose a load that keeps the wrists and elbows aligned without momentum.\", \"provenance\": \"adapted\"}\nMaintain source contact points and safe control. Render only this characteristic phase, not the entire instruction sequence. Reference anatomy is opaque; localize the specified muscle pigment without copying reference highlights.",
+          "reference": "assets/exercises/biceps-curl-dumbbell.png",
+          "status": "generated",
+          "result_path": "/workspace/lightweight-exercises-photo/assets/exercises/pending/night-2026-10-01/batch-005/reverse-wrist-curl-dumbbell/attempt-3.png",
+          "completed_at": "2026-10-01T12:38:20.759851+00:00",
+          "sha256": "119b0777227cbcb271f25229777361a79a7107049a9f3ba0c364587704933c44",
+          "actual_dimensions": [
+            1254,
+            1254
+          ],
+          "technical_check": "passed",
+          "technical_check_details": {
+            "id": "reverse-wrist-curl-dumbbell",
+            "path": "assets/exercises/pending/night-2026-10-01/batch-005/reverse-wrist-curl-dumbbell/attempt-3.png",
+            "errors": [],
+            "exists": true,
+            "sha256": "119b0777227cbcb271f25229777361a79a7107049a9f3ba0c364587704933c44",
+            "matches_recorded_sha256": true,
+            "format": "PNG",
+            "opens": true,
+            "width": 1254,
+            "height": 1254,
+            "actual_dimensions": [
+              1254,
+              1254
+            ],
+            "square": true,
+            "mode": "RGBA",
+            "has_alpha_channel": true,
+            "fully_transparent_pixels": 1106321,
+            "scope": "PNG decode, square dimensions, true alpha transparency, SHA256; no visual QA"
+          }
         }
       ],
-      "result_sha256": null,
-      "technical_check": "failed",
+      "result_sha256": "119b0777227cbcb271f25229777361a79a7107049a9f3ba0c364587704933c44",
+      "technical_check": "passed",
       "technical_check_details": {
         "id": "reverse-wrist-curl-dumbbell",
-        "path": "/workspace/lightweight-exercises-photo/assets/exercises/pending/night-2026-10-01/batch-005/reverse-wrist-curl-dumbbell/attempt-2.png",
-        "errors": [
-          "image_gen call was interrupted before a result was returned; no PNG was found in the target directory or generated-image autosave directory; not retried to avoid a duplicate generation."
+        "path": "assets/exercises/pending/night-2026-10-01/batch-005/reverse-wrist-curl-dumbbell/attempt-3.png",
+        "errors": [],
+        "exists": true,
+        "sha256": "119b0777227cbcb271f25229777361a79a7107049a9f3ba0c364587704933c44",
+        "matches_recorded_sha256": true,
+        "format": "PNG",
+        "opens": true,
+        "width": 1254,
+        "height": 1254,
+        "actual_dimensions": [
+          1254,
+          1254
         ],
-        "exists": false,
-        "sha256": null,
-        "actual_dimensions": null,
-        "fully_transparent_pixels": null
+        "square": true,
+        "mode": "RGBA",
+        "has_alpha_channel": true,
+        "fully_transparent_pixels": 1106321,
+        "scope": "PNG decode, square dimensions, true alpha transparency, SHA256; no visual QA"
       },
       "agent_visual_review": "not_performed",
       "agent_visual_review_notes": [],
@@ -23295,7 +23396,8 @@
       "batch_id": "night-2026-10-01-005",
       "prompt": "STYLE v1. Use the supplied approved human reference ONLY for the person's identity, anatomical 3D style, body proportions, materials and detail. Do not copy its pose, dumbbells, muscle highlighting or composition. Match the same bald athletic adult male, opaque silver-gray sculpted anatomical muscle surfaces, simple fitted black shorts, barefoot, neutral face and consistent natural proportions. One person, one exercise, one characteristic phase: no second figure, collage or motion ghosts. Equipment must be only the simple items named in this scene, neutral gray/black materials, complete and mechanically ordinary. Primary muscles: localized coral #F26445. Named secondary muscles: the same hue at roughly 45% intensity blended with gray, clearly lighter. Do not highlight muscles absent from the catalog list, make the body or shorts transparent, or apply a global orange cast/glow. Preserve clothing; highlight visible anatomical surfaces without inventing see-through tissue. Square PNG, unchanged target 1024x1024, true transparent alpha background outside the person and required equipment/mat and through any openings; no white or checkerboard backdrop, drawn floor plane, UI, text, labels, frames, decorations or halo. Entire person and every required piece of equipment must fit with transparent margins; adapt scale/camera without distortion or cropping. Accent pigment must use base sRGB #F26445 = RGB(242,100,69); retain this hue through ordinary 3D shading. Secondary highlights use this hue at 40-50% intensity blended with the gray body, not transparent tissue.\n\nEXERCISE ID: reverse-wrist-curl-dumbbell\nNAME: Reverse Wrist Curl (Dumbbell)\nCatalog equipment: dumbbell\nDepict only: two dumbbells, ordinary flat bench\nPrimary muscle: forearms\nSecondary muscles: []\n\nONE SPECIFIC SCENE: Seated on an ordinary flat bench, feet flat, forearms resting on thighs and wrists projecting beyond knees. One dumbbell held in each hand with PALMS DOWN. Small wrist-extension top phase lifts backs of hands/weights while upper arms and elbows remain still; secure closed grips. Elevated front-side view shows forearm contacts and wrist motion. No elbow curl.\n\nENGLISH SOURCE (this ID only; do not substitute a familiar variant):\n{\"description\": \"With the forearms supported and palms down, extend the wrists to lift the dumbbells and lower them slowly.\", \"instructions\": [\"Sit on a bench or chair with your feet flat on the ground.\", \"Hold a dumbbell in each hand with an overhand grip, palms facing down.\", \"Rest your forearms on your thighs, allowing your wrists to hang off the edge.\", \"Slowly curl your wrists upward, bringing the dumbbells towards your body.\", \"Pause for a moment at the top, then slowly lower the dumbbells back down to the starting position.\", \"Repeat for the desired number of repetitions.\"], \"form_cues\": [\"Keep the upper arms still.\", \"Use a steady squeeze at the top.\", \"Lower through the full range.\"], \"common_mistakes\": [\"Swinging the body.\", \"Driving the elbows forward.\", \"Dropping the weight.\"], \"safety_note\": \"Choose a load that keeps the wrists and elbows aligned without momentum.\", \"provenance\": \"adapted\"}\nMaintain source contact points and safe control. Render only this characteristic phase, not the entire instruction sequence. Reference anatomy is opaque; localize the specified muscle pigment without copying reference highlights.",
       "reference_path": "assets/exercises/biceps-curl-dumbbell.png",
-      "backup_status": "no_file"
+      "backup_status": "pending_github_verification",
+      "generated_at": "2026-10-01T12:38:20.759851+00:00"
     },
     "ring-dips": {
       "id": "ring-dips",
