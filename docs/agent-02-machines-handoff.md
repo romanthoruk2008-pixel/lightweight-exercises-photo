@@ -71,3 +71,27 @@
 8. Якщо загальний ліміт/недоступність генератора — зупинити виклики; не переходити на платний API. Supabase не використовувати без окремого дозволу. Нові outputs не push-ити за дозволом, що стосується лише підготовчих файлів.
 
 **Генерація ще не запускалася. Суттєвих невирішених питань у вибраній десятці під час підготовки не виявлено.**
+
+
+## Виконання пакета за прямою командою користувача
+
+- Дозволено один вбудований `image_gen.imagegen` виклик для кожного з 10 підготовлених ID. Початок виконання; жодної генерації ще не завершено на момент цього запису.
+- Кожен результат записати в `assets/exercises/pending/agent-02-machines-001/<exercise_id>/attempt-1.png`; після кожної спроби оновлювати `data/batches/agent-02-machines-001-manifest.json` із prompt, style v1, шляхом, SHA256, dimensions, PNG/alpha/фактично нульовими alpha перевірками, числом викликів, `user_review=pending` та `agent_visual_review=not_performed`.
+- Рівно одна спроба на ID. Не відкривати результати для візуального контролю й не повторювати генерації. На загальний HTTP 429 зберегти стан, закомітити й запушити тільки готове у власну гілку, перевірити remote blobs та зупинитися.
+- Після п’ятого та десятого результатів commit+push лише `agent-02-machines-001`; `work`, merge, shared progress, перший handoff, платний API й Supabase не використовувати.
+
+
+Перша спроба `leg-press-horizontal-machine` повернула HTTP 400 `empty_string`: у виклик було передано порожній prompt, тож PNG відсутній. Спробу зафіксовано як використану та невдалу; повтор не робити. Інші вправи продовжувати лише з точним збереженим `generation_prompt`.
+
+
+## Checkpoint 1 — п’ять перевірених PNG
+
+Шість ID уже отримали рівно по одному виклику. П’ять PNG успішно збережені й пройшли файлові перевірки: кожен декодується, квадратний RGBA 1254×1254, має фактичні повністю прозорі пікселі; SHA256 та точні розміри записані в manifest. Агентську візуальну перевірку не проводив; усі п’ять залишаються `user_review=pending`. `leg-press-horizontal-machine` має одну невдалу спробу HTTP 400 порожній prompt і відсутній PNG; повтор заборонений.
+
+- `leg-extension-machine`: `assets/exercises/pending/agent-02-machines-001/leg-extension-machine/attempt-1.png`; SHA256 `94b36902a0b60941d43539ecd7881775d012dd6bfea1bac20fb21d3e0fb8a21b`, 1254×1254; alpha=0 pixels 831435; user_review=pending.
+- `hip-adduction-machine`: `assets/exercises/pending/agent-02-machines-001/hip-adduction-machine/attempt-1.png`; SHA256 `4866fb8ca5915cda96655a81e97810261a46319ad6bb7647bdfa4ff84811f7d6`, 1254×1254; alpha=0 pixels 892297; user_review=pending.
+- `rear-delt-reverse-fly-machine`: `assets/exercises/pending/agent-02-machines-001/rear-delt-reverse-fly-machine/attempt-1.png`; SHA256 `20d51b32e22ad1fb07b3926a2cfb430e873edc807c389a13d7f42e546b081829`, 1254×1254; alpha=0 pixels 993619; user_review=pending.
+- `lateral-raise-machine`: `assets/exercises/pending/agent-02-machines-001/lateral-raise-machine/attempt-1.png`; SHA256 `c6c8eae89da673edf55930eb50f30245ca994e35d1f7c7c74025d834e52647d9`, 1254×1254; alpha=0 pixels 909390; user_review=pending.
+- `preacher-curl-machine`: `assets/exercises/pending/agent-02-machines-001/preacher-curl-machine/attempt-1.png`; SHA256 `e8013dd2ce9f7b9cbbfeb0843a0cd9451bea1401dee9e3d3ce9505efdfe301a2`, 1254×1254; alpha=0 pixels 828981; user_review=pending.
+
+Чекпоінт комітується та пушиться тільки у `agent-02-machines-001`. Залишилося чотири не запущені ID; перед кожним — одна нова спроба з точним batch prompt. На HTTP 429 припинити пакет за вказівкою користувача.
