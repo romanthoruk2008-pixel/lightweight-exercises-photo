@@ -324,3 +324,6 @@ Final correction checkpoint 2026-10-01T15:14:51.373842+03:00: attempt-4 у `asse
 
 
 User approval recorded 2026-10-01T15:20:09.655843+03:00: `triceps-extension-dumbbell` attempt-4 accepted, SHA256 `f81b4e2454fb662b37756acc603326b5b061695aef295f8d492f8882443ae92f`. The exact same bytes were copied to `assets/exercises/triceps-extension-dumbbell.png`. Progress and both manifests record accepted path/hash; original `approved-images-backup-001.zip` remains its historical 25-image archive, while the repository manifest now has 26 canonical approved PNGs and identifies this later addition as repository-only. Push the canonical PNG and metadata, verify its remote SHA256, then mark its repository backup status verified.
+
+
+Repository verification 2026-10-01T15:20:49.696014+03:00: all 26 PNGs in the current approved-image manifest have unique exercise IDs and remote SHA256 values matching the manifest. The newly accepted `triceps-extension-dumbbell` file at `assets/exercises/triceps-extension-dumbbell.png` matches SHA256 `f81b4e2454fb662b37756acc603326b5b061695aef295f8d492f8882443ae92f`, opens as a 1254×1254 PNG with transparent pixels, and is available at commit `68fb3d7504302b90915ca06a4f64875e06310294`. Repository backup status is `github_verified`; the older backup ZIP remains its original 25-image snapshot.
