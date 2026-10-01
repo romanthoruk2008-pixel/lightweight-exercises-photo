@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "status": "passed",
+  "catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+  "work_commit": "fe78b35c7f67a987c0a816cfc97f05f2bc6691bd",
+  "unique_catalog_IDs": 451,
+  "batch_count": 3,
+  "new_batch_ID_count": 30,
+  "eligible_queue_count": 127,
+  "checks": {
+    "all_IDs_exist_once": true,
+    "all_catalogue_fields_exact": true,
+    "new_batch_IDs_disjoint": true,
+    "no_executed_or_assigned_overlap": true,
+    "prompt_payload_text_and_hash_bound_to_exact_ID": true,
+    "planned_PNG_path_bound_to_exact_ID": true,
+    "remaining_queue_has_no_prepared_prompts": true
+  },
+  "errors": [],
+  "checked_exercise_ids": [
+    "standing-calf-raise",
+    "single-leg-standing-calf-raise",
+    "spiderman",
+    "plank-pushup",
+    "wall-sit",
+    "l-sit-hold",
+    "decline-pushup",
+    "decline-crunch",
+    "frog-pumps-dumbbell",
+    "standing-calf-raise-dumbbell",
+    "sumo-squat-dumbbell",
+    "curtsy-lunge-dumbbell",
+    "lunge-dumbbell",
+    "reverse-lunge-dumbbell",
+    "walking-lunge-dumbbell",
+    "deadlift-dumbbell",
+    "single-leg-romanian-deadlift-dumbbell",
+    "upright-row-dumbbell",
+    "zottman-curl-dumbbell",
+    "overhead-press-dumbbell",
+    "dumbbell-row",
+    "hip-thrust-dumbbell",
+    "rear-delt-reverse-fly-dumbbell",
+    "chest-supported-incline-row-dumbbell",
+    "chest-supported-reverse-fly-dumbbell",
+    "chest-supported-y-raise-dumbbell",
+    "spider-curl-dumbbell",
+    "good-morning-barbell",
+    "deadlift-barbell",
+    "romanian-deadlift-barbell"
+  ],
+  "independent_catalogue_comparison": "passed",
+  "negative_guard_checks": [
+    {
+      "case": "name copied from neighbour",
+      "outcome": "expected_rejection",
+      "detected_error": "catalogue_field_mismatch:standing-calf-raise:name"
+    },
+    {
+      "case": "English block swapped",
+      "outcome": "expected_rejection",
+      "detected_error": "catalogue_field_mismatch:standing-calf-raise:source_english"
+    },
+    {
+      "case": "equipment changed",
+      "outcome": "expected_rejection",
+      "detected_error": "catalogue_field_mismatch:standing-calf-raise:equipment"
+    },
+    {
+      "case": "primary muscles changed",
+      "outcome": "expected_rejection",
+      "detected_error": "catalogue_field_mismatch:standing-calf-raise:primary_muscle"
+    },
+    {
+      "case": "ID repeated between batches",
+      "outcome": "expected_rejection",
+      "detected_error": "duplicate_new_ID:standing-calf-raise"
+    },
+    {
+      "case": "new foreign assignment appears",
+      "outcome": "expected_rejection",
+      "detected_error": "not_eligible_or_reserved:standing-calf-raise:existing_batch_or_clarification"
+    },
+    {
+      "case": "new PNG appears",
+      "outcome": "expected_rejection",
+      "detected_error": "not_eligible_or_reserved:standing-calf-raise:png_already_saved"
+    },
+    {
+      "case": "prompt text replaced",
+      "outcome": "expected_rejection",
+      "detected_error": "prompt_mismatch_or_empty:standing-calf-raise"
+    },
+    {
+      "case": "future PNG path uses another ID",
+      "outcome": "expected_rejection",
+      "detected_error": "output_ID_path_mismatch:standing-calf-raise"
+    }
+  ],
+  "last_live_check": {
+    "status": "passed",
+    "checked_at": "2026-10-01T16:19:43.372467+03:00",
+    "work_commit": "fcc2cf3227cbe8e52932c0c56b7ca89018cd0a10",
+    "agent02_commit": "2c27f90d8e2be0c1f349b81231897fd204d543b5",
+    "scope": "Read-only recheck after latest remote approval update; all 127 eligible IDs unchanged, no PNG or assignment overlaps."
+  }
+}
