@@ -1,6 +1,6 @@
 ## Handstand attempt-3 збережено для перегляду
 
-2026-10-01T16:39:30+00:00: assets/exercises/pending/agent-03-others-004/handstand-pushup/attempt-3.png; SHA256 9a2250339261610405d356172e7291406672d8b60dcb02adb0b7b5f375697f4b; 1254×1254; technical_check=passed; прозорих пікселів 1179402. user_review=pending, agent_visual_review=not_performed. Наступна дія: push і перевірка віддаленого SHA256, після цього — перегляд користувачем. Floor Press attempt-2 прийнятий.
+2026-10-01T16:39:30+00:00: assets/exercises/pending/agent-03-others-004/handstand-pushup/attempt-3.png; SHA256 9a2250339261610405d356172e7291406672d8b60dcb02adb0b7b5f375697f4b; 1254×1254; technical_check=passed; прозорих пікселів 1179402. user_review=pending, agent_visual_review=not_performed. PNG і SHA256 перевірено у віддаленій work, commit 3f7dfd34e447b77f5f450e9d7a558e98bfb0ee13; backup_status=github_verified. У пакетах 004–006 прийнято 29 із 30 вправ, включно з Floor Press attempt-2. Handstand attempt-3 має user_review=pending. Наступна дія: перегляд цієї версії користувачем; нових генерацій не запускати.
 
 ## Актуальне рішення: Floor Press прийнято; Handstand — новий референс
 
