@@ -6,7 +6,7 @@
 - `floor-press-barbell` — перемістити голову до позначеної позиції та природно з’єднати з шиєю/плечима;
 - `handstand-pushup` — виправити анатомічне вирівнювання тулуба без повороту на 180°.
 
-Floor Press (Barbell) attempt-2 згенеровано й збережено окремо: `assets/exercises/pending/agent-03-others-004/floor-press-barbell/attempt-2.png`; SHA256 `acfc8db1c7954a946d42c5dd4cff25234b952ca7d6d9927b5811fdace7bd9693`; 1254×1254, PNG, alpha з 1,121,621 повністю прозорими пікселями; `technical_check=passed`, `user_review=pending`, `agent_visual_review=not_performed`.
+Floor Press (Barbell) attempt-2 згенеровано й збережено окремо: `assets/exercises/pending/agent-03-others-004/floor-press-barbell/attempt-2.png`; SHA256 `acfc8db1c7954a946d42c5dd4cff25234b952ca7d6d9927b5811fdace7bd9693`; 1254×1254, PNG, alpha з 1,121,621 повністю прозорими пікселями; `technical_check=passed`, `user_review=pending`, `agent_visual_review=not_performed`. Віддалену копію SHA256 звірено; commit `71e98336c21a115a3e3547eb61113817b34f5816`.
 
 Наступна дія: одна корекція Handstand Push Up attempt-2; спершу звірити актуальний progress і не змінювати жоден attempt-1.
 
