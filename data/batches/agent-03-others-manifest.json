@@ -306,12 +306,18 @@
       "content_commit": "1f1c7f944715f70e51cb327967b693b0bce54fac"
     },
     "agent-03-others-009": {
-      "state": "generation_in_progress",
-      "generated_count": 0,
+      "state": "stopped_on_generation_error",
+      "generated_count": 1,
       "skipped_count": 0,
-      "failed_count": 0,
+      "failed_count": 1,
       "backup_status": "pending",
-      "issues": [],
+      "issues": [
+        {
+          "exercise_id": "hanging-knee-raise",
+          "kind": "blocked_quota",
+          "details": "image generation failed: http 429 Too Many Requests: Some(\"{\\\"error\\\":{\\\"type\\\":\\\"usage_limit_reached\\\",\\\"message\\\":\\\"The usage limit has been reached\\\",\\\"plan_type\\\":\\\"plus\\\",\\\"resets_at\\\":1790940095,\\\"eligible_promo\\\":null,\\\"limit_window_minutes\\\":null,\\\"resets_in_seconds\\\":63858}}\")"
+        }
+      ],
       "expected_ids": [
         "dead-hang",
         "hanging-knee-raise",
@@ -324,9 +330,13 @@
         "lateral-band-walks-resistance-band",
         "lateral-raise-band-resistance-band"
       ],
-      "completed_ids": [],
+      "completed_ids": [
+        "dead-hang"
+      ],
       "skipped_ids": [],
-      "failed_ids": [],
+      "failed_ids": [
+        "hanging-knee-raise"
+      ],
       "verified_at": null,
       "verified_commit": null
     }
@@ -4699,9 +4709,55 @@
       },
       "verified_commit": "1f1c7f944715f70e51cb327967b693b0bce54fac",
       "verified_at": "2026-10-01T17:35:46+00:00"
+    },
+    {
+      "exercise_id": "dead-hang",
+      "name": "Dead Hang",
+      "batch_id": "agent-03-others-009",
+      "status": "generated",
+      "attempt": 1,
+      "style_version": "v1",
+      "prompt": "Create exactly one image for the following exact exercise record. Identity fields are metadata, never visible text. Preserve the source technique and depict only the chosen single phase.\n{\n  \"exact_catalogue_source\": {\n    \"equipment\": \"none\",\n    \"primary_muscle\": \"upper_back\",\n    \"secondary_muscles\": [\n      \"lats\",\n      \"forearms\"\n    ],\n    \"source_english\": {\n      \"common_mistakes\": [\n        \"Shrugging continuously.\",\n        \"Swinging to extend time.\",\n        \"Dropping from the bar.\"\n      ],\n      \"description\": \"Dead Hang is a static bodyweight hold from a secure bar with active shoulders and a still trunk.\",\n      \"form_cues\": [\n        \"Use a firm but not crushing grip.\",\n        \"Keep the neck relaxed.\",\n        \"Breathe normally.\"\n      ],\n      \"instructions\": [\n        \"Grip a secure overhead bar with arms straight and feet clear of the floor.\",\n        \"Set the shoulders gently down away from the ears.\",\n        \"Keep the ribs and pelvis controlled while hanging.\",\n        \"Hold for the planned duration, then step down safely.\"\n      ],\n      \"provenance\": \"authored\",\n      \"safety_note\": \"Verify the bar and grip before hanging and step down rather than dropping.\"\n    }\n  },\n  \"identity_do_not_render_as_text\": {\n    \"exercise_id\": \"dead-hang\",\n    \"name\": \"Dead Hang\",\n    \"source_catalog_sha256\": \"a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989\"\n  },\n  \"reference_role\": \"Human appearance/proportions/materials only. Never copy pose, equipment or muscle targets from a reference.\",\n  \"scene\": {\n    \"composition\": \"Both hands grip a secure OVERHEAD BAR; arms straight and feet completely clear of floor. Shoulders gently down away from ears, neck relaxed, ribs and pelvis controlled, body still. Show full figure, actual hand-bar contacts and stationary bar support within frame. No bend-elbow pull-up, swing, shrug, invented hand-spacing or grip orientation. Depict hold, not release or landing.\",\n    \"single_phase\": \"Static active-shoulder hold on secure overhead bar\",\n    \"source_instruction_quotes\": [\n      {\n        \"index\": 0,\n        \"text\": \"Grip a secure overhead bar with arms straight and feet clear of the floor.\"\n      },\n      {\n        \"index\": 1,\n        \"text\": \"Set the shoulders gently down away from the ears.\"\n      },\n      {\n        \"index\": 2,\n        \"text\": \"Keep the ribs and pelvis controlled while hanging.\"\n      },\n      {\n        \"index\": 3,\n        \"text\": \"Hold for the planned duration, then step down safely.\"\n      }\n    ]\n  },\n  \"style\": {\n    \"background\": \"Genuinely transparent PNG background, no white/checkerboard layer, no environment scene.\",\n    \"framing\": \"Full figure and all required equipment/supports visible within a square. Scale and use a three-quarter view to expose the specified contacts without changing anatomy, equipment, grip or technique.\",\n    \"human_model\": \"One athletic bald male anatomical mannequin, opaque silver-gray muscular surfaces, consistent proportions and detailed 3D materials, plain black shorts, barefoot.\",\n    \"material_rules\": \"Highlights never make tissue transparent; no glow, whole-body orange tint, hair, text, labels, arrows, UI, borders, collage or extra person.\",\n    \"no_invention\": \"Technique, equipment and muscles come only from the attached exact catalogue record. No extra attachments, numerical weights, brands or exact angles absent from the source.\",\n    \"output\": {\n      \"format\": \"PNG\",\n      \"height\": 1024,\n      \"one_person\": true,\n      \"one_phase\": true,\n      \"width\": 1024\n    },\n    \"primary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"rule\": \"Highlight only the exact primary muscle group provided for this exercise.\"\n    },\n    \"secondary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"intensity_fraction\": [\n        0.4,\n        0.5\n      ],\n      \"rule\": \"Only the exact secondary muscles, lighter same-hue highlight; if the list is empty add no secondary target.\"\n    },\n    \"version\": \"v1\"\n  }\n}",
+      "prompt_sha256": "cdd11ea4699a59b71ad8489b37c3fe296cac9acdc0a44a14bec433a64a99aafb",
+      "result_path": "assets/exercises/pending/agent-03-others-009/dead-hang/attempt-1.png",
+      "cloud_output_path": "/workspace/lightweight-exercises-photo/assets/exercises/pending/agent-03-others-009/dead-hang/attempt-1.png",
+      "result_sha256": "6d3fb567854537f12ed25159c2bba59c79d5bddb5090939ad29ee1d30f586a9f",
+      "dimensions": {
+        "width": 1254,
+        "height": 1254
+      },
+      "mime_type": "image/png",
+      "generated_at": "2026-10-01T17:37:16+00:00",
+      "technical_check": "passed",
+      "user_review": "pending",
+      "agent_visual_review": "not_performed",
+      "backup_status": "pending",
+      "source_catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+      "source_catalog_record_sha256": "3209f111253d48d8d7c71e25caed4b34e74fbd41a2a3890d17acd91bc218fdab",
+      "source_english_sha256": "e9cda542ab969a16b4e8293e6bc6514d5f20f3a2502c05ca3b0347756125db58",
+      "tool_call_index": 91,
+      "branches_checked": [
+        "work"
+      ],
+      "technical_check_details": {
+        "opens": true,
+        "format": "PNG",
+        "width": 1254,
+        "height": 1254,
+        "square": true,
+        "has_alpha_channel": true,
+        "transparent_pixels": 1179395,
+        "sha256": "6d3fb567854537f12ed25159c2bba59c79d5bddb5090939ad29ee1d30f586a9f",
+        "errors": []
+      },
+      "tool_response_metadata": {
+        "output_hint": "/workspace/generated_images/exec-32c7581e-9b9a-463c-bab4-7f8beb524d9e.png"
+      },
+      "verified_commit": null,
+      "verified_at": null
     }
   ],
-  "last_updated_at": "2026-10-01T17:35:46+00:00",
+  "last_updated_at": "2026-10-01T17:37:17+00:00",
   "followup_preparation": {
     "source_branch": "agent-03-inventory-2026-10-01",
     "source_commit": "47f772a7824e2377f4454efe2e7365bcb2fec0b1",

@@ -9055,14 +9055,12 @@
         "mapping": null
       },
       "source_reference_image": null,
-      "status": "not_started",
-      "included_in_generation": false,
+      "status": "generated",
+      "included_in_generation": true,
       "archived_inclusion_authorized": false,
-      "blocked_by": [
-        "pilot_not_approved"
-      ],
-      "attempts": 0,
-      "style_version": null,
+      "blocked_by": [],
+      "attempts": 1,
+      "style_version": "v1",
       "visual_review": {
         "status": "not_reviewed",
         "reviewer": null,
@@ -9075,17 +9073,70 @@
         },
         "notes": null
       },
-      "result_path": null,
+      "result_path": "assets/exercises/pending/agent-03-others-009/dead-hang/attempt-1.png",
       "supabase_path": null,
       "supabase_upload_status": "not_configured",
       "last_error": null,
-      "attempt_history": [],
-      "result_sha256": null,
-      "technical_check": null,
-      "technical_check_details": null,
+      "attempt_history": [
+        {
+          "attempt": 1,
+          "id": "dead-hang",
+          "batch_id": "agent-03-others-009",
+          "run_id": "agent-03-others-round3-2026-10-01",
+          "style_version": "v1",
+          "tool": "image_gen.imagegen",
+          "tool_call_index": 91,
+          "status": "completed",
+          "started_at": "2026-10-01T17:37:16+00:00",
+          "prompt": "Create exactly one image for the following exact exercise record. Identity fields are metadata, never visible text. Preserve the source technique and depict only the chosen single phase.\n{\n  \"exact_catalogue_source\": {\n    \"equipment\": \"none\",\n    \"primary_muscle\": \"upper_back\",\n    \"secondary_muscles\": [\n      \"lats\",\n      \"forearms\"\n    ],\n    \"source_english\": {\n      \"common_mistakes\": [\n        \"Shrugging continuously.\",\n        \"Swinging to extend time.\",\n        \"Dropping from the bar.\"\n      ],\n      \"description\": \"Dead Hang is a static bodyweight hold from a secure bar with active shoulders and a still trunk.\",\n      \"form_cues\": [\n        \"Use a firm but not crushing grip.\",\n        \"Keep the neck relaxed.\",\n        \"Breathe normally.\"\n      ],\n      \"instructions\": [\n        \"Grip a secure overhead bar with arms straight and feet clear of the floor.\",\n        \"Set the shoulders gently down away from the ears.\",\n        \"Keep the ribs and pelvis controlled while hanging.\",\n        \"Hold for the planned duration, then step down safely.\"\n      ],\n      \"provenance\": \"authored\",\n      \"safety_note\": \"Verify the bar and grip before hanging and step down rather than dropping.\"\n    }\n  },\n  \"identity_do_not_render_as_text\": {\n    \"exercise_id\": \"dead-hang\",\n    \"name\": \"Dead Hang\",\n    \"source_catalog_sha256\": \"a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989\"\n  },\n  \"reference_role\": \"Human appearance/proportions/materials only. Never copy pose, equipment or muscle targets from a reference.\",\n  \"scene\": {\n    \"composition\": \"Both hands grip a secure OVERHEAD BAR; arms straight and feet completely clear of floor. Shoulders gently down away from ears, neck relaxed, ribs and pelvis controlled, body still. Show full figure, actual hand-bar contacts and stationary bar support within frame. No bend-elbow pull-up, swing, shrug, invented hand-spacing or grip orientation. Depict hold, not release or landing.\",\n    \"single_phase\": \"Static active-shoulder hold on secure overhead bar\",\n    \"source_instruction_quotes\": [\n      {\n        \"index\": 0,\n        \"text\": \"Grip a secure overhead bar with arms straight and feet clear of the floor.\"\n      },\n      {\n        \"index\": 1,\n        \"text\": \"Set the shoulders gently down away from the ears.\"\n      },\n      {\n        \"index\": 2,\n        \"text\": \"Keep the ribs and pelvis controlled while hanging.\"\n      },\n      {\n        \"index\": 3,\n        \"text\": \"Hold for the planned duration, then step down safely.\"\n      }\n    ]\n  },\n  \"style\": {\n    \"background\": \"Genuinely transparent PNG background, no white/checkerboard layer, no environment scene.\",\n    \"framing\": \"Full figure and all required equipment/supports visible within a square. Scale and use a three-quarter view to expose the specified contacts without changing anatomy, equipment, grip or technique.\",\n    \"human_model\": \"One athletic bald male anatomical mannequin, opaque silver-gray muscular surfaces, consistent proportions and detailed 3D materials, plain black shorts, barefoot.\",\n    \"material_rules\": \"Highlights never make tissue transparent; no glow, whole-body orange tint, hair, text, labels, arrows, UI, borders, collage or extra person.\",\n    \"no_invention\": \"Technique, equipment and muscles come only from the attached exact catalogue record. No extra attachments, numerical weights, brands or exact angles absent from the source.\",\n    \"output\": {\n      \"format\": \"PNG\",\n      \"height\": 1024,\n      \"one_person\": true,\n      \"one_phase\": true,\n      \"width\": 1024\n    },\n    \"primary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"rule\": \"Highlight only the exact primary muscle group provided for this exercise.\"\n    },\n    \"secondary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"intensity_fraction\": [\n        0.4,\n        0.5\n      ],\n      \"rule\": \"Only the exact secondary muscles, lighter same-hue highlight; if the list is empty add no secondary target.\"\n    },\n    \"version\": \"v1\"\n  }\n}",
+          "prompt_sha256": "cdd11ea4699a59b71ad8489b37c3fe296cac9acdc0a44a14bec433a64a99aafb",
+          "result_path": "assets/exercises/pending/agent-03-others-009/dead-hang/attempt-1.png",
+          "cloud_output_path": "/workspace/lightweight-exercises-photo/assets/exercises/pending/agent-03-others-009/dead-hang/attempt-1.png",
+          "result_sha256": "6d3fb567854537f12ed25159c2bba59c79d5bddb5090939ad29ee1d30f586a9f",
+          "dimensions": {
+            "width": 1254,
+            "height": 1254
+          },
+          "mime_type": "image/png",
+          "technical_check": "passed",
+          "technical_check_details": {
+            "opens": true,
+            "format": "PNG",
+            "width": 1254,
+            "height": 1254,
+            "square": true,
+            "has_alpha_channel": true,
+            "transparent_pixels": 1179395,
+            "sha256": "6d3fb567854537f12ed25159c2bba59c79d5bddb5090939ad29ee1d30f586a9f",
+            "errors": []
+          },
+          "user_review": "pending",
+          "agent_visual_review": "not_performed",
+          "backup_status": "pending",
+          "tool_output_hint": "/workspace/generated_images/exec-32c7581e-9b9a-463c-bab4-7f8beb524d9e.png"
+        }
+      ],
+      "result_sha256": "6d3fb567854537f12ed25159c2bba59c79d5bddb5090939ad29ee1d30f586a9f",
+      "technical_check": "passed",
+      "technical_check_details": {
+        "opens": true,
+        "format": "PNG",
+        "width": 1254,
+        "height": 1254,
+        "square": true,
+        "has_alpha_channel": true,
+        "transparent_pixels": 1179395,
+        "sha256": "6d3fb567854537f12ed25159c2bba59c79d5bddb5090939ad29ee1d30f586a9f",
+        "errors": []
+      },
       "agent_visual_review": "not_performed",
       "agent_visual_review_notes": [],
-      "user_review": "pending"
+      "user_review": "pending",
+      "generation_run_id": "agent-03-others-round3-2026-10-01",
+      "batch_id": "agent-03-others-009",
+      "generation_prompt": "Create exactly one image for the following exact exercise record. Identity fields are metadata, never visible text. Preserve the source technique and depict only the chosen single phase.\n{\n  \"exact_catalogue_source\": {\n    \"equipment\": \"none\",\n    \"primary_muscle\": \"upper_back\",\n    \"secondary_muscles\": [\n      \"lats\",\n      \"forearms\"\n    ],\n    \"source_english\": {\n      \"common_mistakes\": [\n        \"Shrugging continuously.\",\n        \"Swinging to extend time.\",\n        \"Dropping from the bar.\"\n      ],\n      \"description\": \"Dead Hang is a static bodyweight hold from a secure bar with active shoulders and a still trunk.\",\n      \"form_cues\": [\n        \"Use a firm but not crushing grip.\",\n        \"Keep the neck relaxed.\",\n        \"Breathe normally.\"\n      ],\n      \"instructions\": [\n        \"Grip a secure overhead bar with arms straight and feet clear of the floor.\",\n        \"Set the shoulders gently down away from the ears.\",\n        \"Keep the ribs and pelvis controlled while hanging.\",\n        \"Hold for the planned duration, then step down safely.\"\n      ],\n      \"provenance\": \"authored\",\n      \"safety_note\": \"Verify the bar and grip before hanging and step down rather than dropping.\"\n    }\n  },\n  \"identity_do_not_render_as_text\": {\n    \"exercise_id\": \"dead-hang\",\n    \"name\": \"Dead Hang\",\n    \"source_catalog_sha256\": \"a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989\"\n  },\n  \"reference_role\": \"Human appearance/proportions/materials only. Never copy pose, equipment or muscle targets from a reference.\",\n  \"scene\": {\n    \"composition\": \"Both hands grip a secure OVERHEAD BAR; arms straight and feet completely clear of floor. Shoulders gently down away from ears, neck relaxed, ribs and pelvis controlled, body still. Show full figure, actual hand-bar contacts and stationary bar support within frame. No bend-elbow pull-up, swing, shrug, invented hand-spacing or grip orientation. Depict hold, not release or landing.\",\n    \"single_phase\": \"Static active-shoulder hold on secure overhead bar\",\n    \"source_instruction_quotes\": [\n      {\n        \"index\": 0,\n        \"text\": \"Grip a secure overhead bar with arms straight and feet clear of the floor.\"\n      },\n      {\n        \"index\": 1,\n        \"text\": \"Set the shoulders gently down away from the ears.\"\n      },\n      {\n        \"index\": 2,\n        \"text\": \"Keep the ribs and pelvis controlled while hanging.\"\n      },\n      {\n        \"index\": 3,\n        \"text\": \"Hold for the planned duration, then step down safely.\"\n      }\n    ]\n  },\n  \"style\": {\n    \"background\": \"Genuinely transparent PNG background, no white/checkerboard layer, no environment scene.\",\n    \"framing\": \"Full figure and all required equipment/supports visible within a square. Scale and use a three-quarter view to expose the specified contacts without changing anatomy, equipment, grip or technique.\",\n    \"human_model\": \"One athletic bald male anatomical mannequin, opaque silver-gray muscular surfaces, consistent proportions and detailed 3D materials, plain black shorts, barefoot.\",\n    \"material_rules\": \"Highlights never make tissue transparent; no glow, whole-body orange tint, hair, text, labels, arrows, UI, borders, collage or extra person.\",\n    \"no_invention\": \"Technique, equipment and muscles come only from the attached exact catalogue record. No extra attachments, numerical weights, brands or exact angles absent from the source.\",\n    \"output\": {\n      \"format\": \"PNG\",\n      \"height\": 1024,\n      \"one_person\": true,\n      \"one_phase\": true,\n      \"width\": 1024\n    },\n    \"primary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"rule\": \"Highlight only the exact primary muscle group provided for this exercise.\"\n    },\n    \"secondary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"intensity_fraction\": [\n        0.4,\n        0.5\n      ],\n      \"rule\": \"Only the exact secondary muscles, lighter same-hue highlight; if the list is empty add no secondary target.\"\n    },\n    \"version\": \"v1\"\n  }\n}",
+      "generation_prompt_sha256": "cdd11ea4699a59b71ad8489b37c3fe296cac9acdc0a44a14bec433a64a99aafb",
+      "backup_status": "pending"
     },
     "deadlift-band-resistance-band": {
       "id": "deadlift-band-resistance-band",
@@ -15077,14 +15128,14 @@
         "exists_at_preparation": true,
         "sha256": "8456f3f6b3a1a1686273cdad6d70fa9b211f4706373f1f28d59b1ed8354d0625"
       },
-      "status": "not_started",
-      "included_in_generation": false,
+      "status": "blocked_quota",
+      "included_in_generation": true,
       "archived_inclusion_authorized": false,
       "blocked_by": [
         "pilot_not_approved"
       ],
-      "attempts": 0,
-      "style_version": null,
+      "attempts": 1,
+      "style_version": "v1",
       "visual_review": {
         "status": "not_reviewed",
         "reviewer": null,
@@ -15100,14 +15151,36 @@
       "result_path": null,
       "supabase_path": null,
       "supabase_upload_status": "not_configured",
-      "last_error": null,
-      "attempt_history": [],
+      "last_error": "image generation failed: http 429 Too Many Requests: Some(\"{\\\"error\\\":{\\\"type\\\":\\\"usage_limit_reached\\\",\\\"message\\\":\\\"The usage limit has been reached\\\",\\\"plan_type\\\":\\\"plus\\\",\\\"resets_at\\\":1790940095,\\\"eligible_promo\\\":null,\\\"limit_window_minutes\\\":null,\\\"resets_in_seconds\\\":63858}}\")",
+      "attempt_history": [
+        {
+          "attempt": 1,
+          "id": "hanging-knee-raise",
+          "batch_id": "agent-03-others-009",
+          "run_id": "agent-03-others-round3-2026-10-01",
+          "style_version": "v1",
+          "tool": "image_gen.imagegen",
+          "tool_call_index": 92,
+          "status": "blocked_quota",
+          "started_at": "2026-10-01T17:37:17+00:00",
+          "prompt": "Create exactly one image for the following exact exercise record. Identity fields are metadata, never visible text. Preserve the source technique and depict only the chosen single phase.\n{\n  \"exact_catalogue_source\": {\n    \"equipment\": \"none\",\n    \"primary_muscle\": \"abdominals\",\n    \"secondary_muscles\": [\n      \"forearms\"\n    ],\n    \"source_english\": {\n      \"common_mistakes\": [\n        \"Kipping the legs.\",\n        \"Shrugging into the bar.\",\n        \"Dropping the knees.\"\n      ],\n      \"description\": \"Hanging Knee Raise lifts bent knees toward the torso from a still hang, then lowers without swinging.\",\n      \"form_cues\": [\n        \"Initiate with the abs.\",\n        \"Keep the shoulders active.\",\n        \"Avoid momentum.\"\n      ],\n      \"instructions\": [\n        \"Hang from a secure bar with arms straight and the body still.\",\n        \"Brace the abdominals and raise the knees toward the torso without swinging.\",\n        \"Pause briefly at the top of the controlled range.\",\n        \"Lower the knees slowly to the start.\"\n      ],\n      \"provenance\": \"adapted\",\n      \"safety_note\": \"Use a secure bar and stop before grip or shoulder control fails.\"\n    }\n  },\n  \"identity_do_not_render_as_text\": {\n    \"exercise_id\": \"hanging-knee-raise\",\n    \"name\": \"Hanging Knee Raise\",\n    \"source_catalog_sha256\": \"a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989\"\n  },\n  \"reference_role\": \"Human appearance/proportions/materials only. Never copy pose, equipment or muscle targets from a reference.\",\n  \"scene\": {\n    \"composition\": \"Both hands contact a secure overhead bar, arms straight and shoulders active. From still hang, both BENT knees rise toward torso at controlled top range, abdomen braced and trunk not swinging. Show hand-bar contacts, bent knees, feet clear of floor and full bar support. No straight-leg variation, kipping, elbow-supported captain's chair, invented grip direction or target height.\",\n    \"single_phase\": \"Bent knees raised toward torso without swing\",\n    \"source_instruction_quotes\": [\n      {\n        \"index\": 0,\n        \"text\": \"Hang from a secure bar with arms straight and the body still.\"\n      },\n      {\n        \"index\": 1,\n        \"text\": \"Brace the abdominals and raise the knees toward the torso without swinging.\"\n      },\n      {\n        \"index\": 2,\n        \"text\": \"Pause briefly at the top of the controlled range.\"\n      },\n      {\n        \"index\": 3,\n        \"text\": \"Lower the knees slowly to the start.\"\n      }\n    ]\n  },\n  \"style\": {\n    \"background\": \"Genuinely transparent PNG background, no white/checkerboard layer, no environment scene.\",\n    \"framing\": \"Full figure and all required equipment/supports visible within a square. Scale and use a three-quarter view to expose the specified contacts without changing anatomy, equipment, grip or technique.\",\n    \"human_model\": \"One athletic bald male anatomical mannequin, opaque silver-gray muscular surfaces, consistent proportions and detailed 3D materials, plain black shorts, barefoot.\",\n    \"material_rules\": \"Highlights never make tissue transparent; no glow, whole-body orange tint, hair, text, labels, arrows, UI, borders, collage or extra person.\",\n    \"no_invention\": \"Technique, equipment and muscles come only from the attached exact catalogue record. No extra attachments, numerical weights, brands or exact angles absent from the source.\",\n    \"output\": {\n      \"format\": \"PNG\",\n      \"height\": 1024,\n      \"one_person\": true,\n      \"one_phase\": true,\n      \"width\": 1024\n    },\n    \"primary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"rule\": \"Highlight only the exact primary muscle group provided for this exercise.\"\n    },\n    \"secondary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"intensity_fraction\": [\n        0.4,\n        0.5\n      ],\n      \"rule\": \"Only the exact secondary muscles, lighter same-hue highlight; if the list is empty add no secondary target.\"\n    },\n    \"version\": \"v1\"\n  }\n}",
+          "prompt_sha256": "f89857bdc61630ae0937de8f72a4f207749686d1c2380286b6d61e3f7b6a81cd",
+          "error": "image generation failed: http 429 Too Many Requests: Some(\"{\\\"error\\\":{\\\"type\\\":\\\"usage_limit_reached\\\",\\\"message\\\":\\\"The usage limit has been reached\\\",\\\"plan_type\\\":\\\"plus\\\",\\\"resets_at\\\":1790940095,\\\"eligible_promo\\\":null,\\\"limit_window_minutes\\\":null,\\\"resets_in_seconds\\\":63858}}\")",
+          "user_review": "pending",
+          "agent_visual_review": "not_performed"
+        }
+      ],
       "result_sha256": null,
       "technical_check": null,
       "technical_check_details": null,
       "agent_visual_review": "not_performed",
       "agent_visual_review_notes": [],
-      "user_review": "pending"
+      "user_review": "pending",
+      "generation_run_id": "agent-03-others-round3-2026-10-01",
+      "batch_id": "agent-03-others-009",
+      "generation_prompt": "Create exactly one image for the following exact exercise record. Identity fields are metadata, never visible text. Preserve the source technique and depict only the chosen single phase.\n{\n  \"exact_catalogue_source\": {\n    \"equipment\": \"none\",\n    \"primary_muscle\": \"abdominals\",\n    \"secondary_muscles\": [\n      \"forearms\"\n    ],\n    \"source_english\": {\n      \"common_mistakes\": [\n        \"Kipping the legs.\",\n        \"Shrugging into the bar.\",\n        \"Dropping the knees.\"\n      ],\n      \"description\": \"Hanging Knee Raise lifts bent knees toward the torso from a still hang, then lowers without swinging.\",\n      \"form_cues\": [\n        \"Initiate with the abs.\",\n        \"Keep the shoulders active.\",\n        \"Avoid momentum.\"\n      ],\n      \"instructions\": [\n        \"Hang from a secure bar with arms straight and the body still.\",\n        \"Brace the abdominals and raise the knees toward the torso without swinging.\",\n        \"Pause briefly at the top of the controlled range.\",\n        \"Lower the knees slowly to the start.\"\n      ],\n      \"provenance\": \"adapted\",\n      \"safety_note\": \"Use a secure bar and stop before grip or shoulder control fails.\"\n    }\n  },\n  \"identity_do_not_render_as_text\": {\n    \"exercise_id\": \"hanging-knee-raise\",\n    \"name\": \"Hanging Knee Raise\",\n    \"source_catalog_sha256\": \"a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989\"\n  },\n  \"reference_role\": \"Human appearance/proportions/materials only. Never copy pose, equipment or muscle targets from a reference.\",\n  \"scene\": {\n    \"composition\": \"Both hands contact a secure overhead bar, arms straight and shoulders active. From still hang, both BENT knees rise toward torso at controlled top range, abdomen braced and trunk not swinging. Show hand-bar contacts, bent knees, feet clear of floor and full bar support. No straight-leg variation, kipping, elbow-supported captain's chair, invented grip direction or target height.\",\n    \"single_phase\": \"Bent knees raised toward torso without swing\",\n    \"source_instruction_quotes\": [\n      {\n        \"index\": 0,\n        \"text\": \"Hang from a secure bar with arms straight and the body still.\"\n      },\n      {\n        \"index\": 1,\n        \"text\": \"Brace the abdominals and raise the knees toward the torso without swinging.\"\n      },\n      {\n        \"index\": 2,\n        \"text\": \"Pause briefly at the top of the controlled range.\"\n      },\n      {\n        \"index\": 3,\n        \"text\": \"Lower the knees slowly to the start.\"\n      }\n    ]\n  },\n  \"style\": {\n    \"background\": \"Genuinely transparent PNG background, no white/checkerboard layer, no environment scene.\",\n    \"framing\": \"Full figure and all required equipment/supports visible within a square. Scale and use a three-quarter view to expose the specified contacts without changing anatomy, equipment, grip or technique.\",\n    \"human_model\": \"One athletic bald male anatomical mannequin, opaque silver-gray muscular surfaces, consistent proportions and detailed 3D materials, plain black shorts, barefoot.\",\n    \"material_rules\": \"Highlights never make tissue transparent; no glow, whole-body orange tint, hair, text, labels, arrows, UI, borders, collage or extra person.\",\n    \"no_invention\": \"Technique, equipment and muscles come only from the attached exact catalogue record. No extra attachments, numerical weights, brands or exact angles absent from the source.\",\n    \"output\": {\n      \"format\": \"PNG\",\n      \"height\": 1024,\n      \"one_person\": true,\n      \"one_phase\": true,\n      \"width\": 1024\n    },\n    \"primary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"rule\": \"Highlight only the exact primary muscle group provided for this exercise.\"\n    },\n    \"secondary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"intensity_fraction\": [\n        0.4,\n        0.5\n      ],\n      \"rule\": \"Only the exact secondary muscles, lighter same-hue highlight; if the list is empty add no secondary target.\"\n    },\n    \"version\": \"v1\"\n  }\n}",
+      "generation_prompt_sha256": "f89857bdc61630ae0937de8f72a4f207749686d1c2380286b6d61e3f7b6a81cd",
+      "backup_status": null
     },
     "hanging-leg-raise": {
       "id": "hanging-leg-raise",
