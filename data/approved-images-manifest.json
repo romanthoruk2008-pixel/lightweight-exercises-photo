@@ -10,11 +10,12 @@
     "language_block_count": 4448,
     "image_join_key": "exercise_id -> exercises[].id"
   },
-  "image_count": 25,
+  "image_count": 26,
   "counts_by_collection": {
     "pilot": 5,
     "simple-001": 10,
-    "simple-002": 10
+    "simple-002": 10,
+    "night-2026-10-01": 1
   },
   "archive": {
     "filename": "approved-images-backup-001.zip",
@@ -32,7 +33,9 @@
     "release_availability_check": "API blocked",
     "asset_verification": null,
     "publication_requested": false,
-    "superseded_by": "repository_backup"
+    "superseded_by": "repository_backup",
+    "image_count_at_creation": 25,
+    "note": "This ZIP remains the original 25-image archive. The later triceps-extension-dumbbell approved PNG is stored in the Git repository only and is not inside this archive."
   },
   "images": [
     {
@@ -409,28 +412,67 @@
       "approved_at": "2026-09-30T22:38:26.227721+00:00",
       "repository_path": "assets/exercises/triceps-kickback-dumbbell.png",
       "repository_url": "https://github.com/romanthoruk2008-pixel/lightweight-exercises-photo/blob/15298e0294678a2ea9878797111ddc6378d4b22a/assets/exercises/triceps-kickback-dumbbell.png"
+    },
+    {
+      "exercise_id": "triceps-extension-dumbbell",
+      "batch_id": "night-2026-10-01-004",
+      "collection": "night-2026-10-01",
+      "png_path": null,
+      "repository_only": true,
+      "sha256": "f81b4e2454fb662b37756acc603326b5b061695aef295f8d492f8882443ae92f",
+      "width": 1254,
+      "height": 1254,
+      "mime_type": "image/png",
+      "style_version": "v1",
+      "user_review": "approved",
+      "approved_at": "2026-10-01T15:20:09.655843+03:00",
+      "approval_timestamp_source": "decision_recorded_at",
+      "repository_path": "assets/exercises/triceps-extension-dumbbell.png",
+      "repository_url": null,
+      "source_result_path": "assets/exercises/pending/night-2026-10-01/batch-004/triceps-extension-dumbbell/attempt-4.png",
+      "attempt": 4
     }
   ],
   "excluded_ambiguous_or_missing": [],
   "notes": [
     "Pilot records have no source batch_id; preserve null and identify their collection as pilot from workflow.pilot_ids.",
     "All PNG paths are relative to the ZIP root.",
-    "Only exact accepted PNG versions are included; image bytes are unchanged."
+    "Only exact accepted PNG versions are included; image bytes are unchanged.",
+    "The repository manifest now includes a later repository-only addition: triceps-extension-dumbbell, with png_path=null because it was not part of approved-images-backup-001.zip."
   ],
   "repository_backup": {
     "storage": "git_repository",
     "repository": "romanthoruk2008-pixel/lightweight-exercises-photo",
     "branch": "work",
     "directory": "assets/exercises",
-    "image_count": 25,
-    "total_png_bytes": 19276454,
-    "status": "github_verified",
-    "prepared_at": "2026-09-30T22:52:39.452297+00:00",
-    "verified_at": "2026-09-30T22:53:49.227547+00:00",
-    "verified_commit": "15298e0294678a2ea9878797111ddc6378d4b22a",
-    "backup_id": "approved-images-backup-001",
-    "commit_url": "https://github.com/romanthoruk2008-pixel/lightweight-exercises-photo/commit/15298e0294678a2ea9878797111ddc6378d4b22a",
-    "folder_url": "https://github.com/romanthoruk2008-pixel/lightweight-exercises-photo/tree/15298e0294678a2ea9878797111ddc6378d4b22a/assets/exercises",
-    "verification_method": "git fetch + ls-remote + ls-tree + SHA256 of every fetched PNG blob"
-  }
+    "image_count": 26,
+    "total_png_bytes": 20141220,
+    "status": "local_saved_pending_verification",
+    "prepared_at": "2026-10-01T15:20:09.655843+03:00",
+    "verified_at": null,
+    "verified_commit": null,
+    "backup_id": "approved-images-github-snapshot-002",
+    "commit_url": null,
+    "folder_url": null,
+    "verification_method": "After push, fetch work and compare remote bytes and SHA256 for each of the 26 repository_path files."
+  },
+  "updated_at": "2026-10-01T15:20:09.655843+03:00",
+  "repository_backup_history": [
+    {
+      "storage": "git_repository",
+      "repository": "romanthoruk2008-pixel/lightweight-exercises-photo",
+      "branch": "work",
+      "directory": "assets/exercises",
+      "image_count": 25,
+      "total_png_bytes": 19276454,
+      "status": "github_verified",
+      "prepared_at": "2026-09-30T22:52:39.452297+00:00",
+      "verified_at": "2026-09-30T22:53:49.227547+00:00",
+      "verified_commit": "15298e0294678a2ea9878797111ddc6378d4b22a",
+      "backup_id": "approved-images-backup-001",
+      "commit_url": "https://github.com/romanthoruk2008-pixel/lightweight-exercises-photo/commit/15298e0294678a2ea9878797111ddc6378d4b22a",
+      "folder_url": "https://github.com/romanthoruk2008-pixel/lightweight-exercises-photo/tree/15298e0294678a2ea9878797111ddc6378d4b22a/assets/exercises",
+      "verification_method": "git fetch + ls-remote + ls-tree + SHA256 of every fetched PNG blob"
+    }
+  ]
 }

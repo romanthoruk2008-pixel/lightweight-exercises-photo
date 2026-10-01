@@ -150,7 +150,7 @@
     "active_batch_item_id": null,
     "active_batch_scope": "All authorized retry generation work is complete. 48/50 IDs have PNGs; 9 batch-005 PNGs were verified on GitHub. Await user review; do not generate further images without a new request.",
     "current_batch": "night-2026-10-01-004",
-    "next_action": "Await user review of triceps-extension-dumbbell attempt-4; 47 other night PNGs approved. Do not regenerate or group equipment without a new request.",
+    "next_action": "Verify the approved triceps-extension-dumbbell canonical copy on origin/work by SHA256 against accepted_sha256; then record github_verified metadata and await further user review requests.",
     "night_generation_remote_audit": {
       "audited_at_utc": "2026-10-01T08:16:06Z",
       "remote_branch": "work",
@@ -372,6 +372,15 @@
       "verified_commit": "f9513d40cfd2ae9a17c273c795111d5e8e27306b",
       "verified_at": "2026-10-01T15:14:51.373842+03:00",
       "approved_other_night_results": 47
+    },
+    "approved_image_repository_checkpoint": {
+      "exercise_id": "triceps-extension-dumbbell",
+      "attempt": 4,
+      "accepted_path": "/workspace/lightweight-exercises-photo/assets/exercises/pending/night-2026-10-01/batch-004/triceps-extension-dumbbell/attempt-4.png",
+      "accepted_repository_path": "assets/exercises/triceps-extension-dumbbell.png",
+      "sha256": "f81b4e2454fb662b37756acc603326b5b061695aef295f8d492f8882443ae92f",
+      "approved_at": "2026-10-01T15:20:09.655843+03:00",
+      "repository_backup_status": "local_saved_pending_verification"
     }
   },
   "historical_mapping_metadata": {
@@ -33086,7 +33095,7 @@
         "exists_at_preparation": true,
         "sha256": "124b6ba591c30e7e1af6ba0169561d450c5ad7b86bad97e9aa178f2c7611256f"
       },
-      "status": "generated_needs_review",
+      "status": "approved",
       "included_in_generation": true,
       "archived_inclusion_authorized": false,
       "blocked_by": [
@@ -33251,7 +33260,7 @@
           "reference_sha256": "81f3bd29e2a18dfcc9027eee6f4ee4c7315eb311a08f23d60068d62b1159fa01",
           "status": "succeeded",
           "result_path": "/workspace/lightweight-exercises-photo/assets/exercises/pending/night-2026-10-01/batch-004/triceps-extension-dumbbell/attempt-4.png",
-          "user_review": "pending",
+          "user_review": "approved",
           "agent_visual_review": "not_performed",
           "authorization": "New explicit user repair request with coordinate x=11.9%, y=29.1%; one edit invocation.",
           "finished_at": "2026-10-01T15:12:53.984640+03:00",
@@ -33282,7 +33291,11 @@
           "github_verified_at": "2026-10-01T15:14:51.373842+03:00",
           "github_verified_commit": "f9513d40cfd2ae9a17c273c795111d5e8e27306b",
           "github_verified_sha256": "f81b4e2454fb662b37756acc603326b5b061695aef295f8d492f8882443ae92f",
-          "verified_commit": "f9513d40cfd2ae9a17c273c795111d5e8e27306b"
+          "verified_commit": "f9513d40cfd2ae9a17c273c795111d5e8e27306b",
+          "accepted_path": "/workspace/lightweight-exercises-photo/assets/exercises/pending/night-2026-10-01/batch-004/triceps-extension-dumbbell/attempt-4.png",
+          "accepted_sha256": "f81b4e2454fb662b37756acc603326b5b061695aef295f8d492f8882443ae92f",
+          "accepted_repository_path": "assets/exercises/triceps-extension-dumbbell.png",
+          "approval_recorded_at": "2026-10-01T15:20:09.655843+03:00"
         }
       ],
       "result_sha256": "f81b4e2454fb662b37756acc603326b5b061695aef295f8d492f8882443ae92f",
@@ -33309,7 +33322,7 @@
       },
       "agent_visual_review": "not_performed",
       "agent_visual_review_notes": [],
-      "user_review": "pending",
+      "user_review": "approved",
       "generation_run_id": "night-2026-10-01",
       "generated_overnight": true,
       "batch_id": "night-2026-10-01-004",
@@ -33349,12 +33362,30 @@
             "y_fraction": 0.291
           },
           "reason": "Fix the leftmost dumbbell at the user-marked position."
+        },
+        {
+          "recorded_at": "2026-10-01T15:20:09.655843+03:00",
+          "by": "user",
+          "decision": "approved",
+          "accepted_attempt": 4,
+          "accepted_path": "/workspace/lightweight-exercises-photo/assets/exercises/pending/night-2026-10-01/batch-004/triceps-extension-dumbbell/attempt-4.png",
+          "accepted_sha256": "f81b4e2454fb662b37756acc603326b5b061695aef295f8d492f8882443ae92f",
+          "accepted_repository_path": "assets/exercises/triceps-extension-dumbbell.png",
+          "accepted_repository_sha256": "f81b4e2454fb662b37756acc603326b5b061695aef295f8d492f8882443ae92f",
+          "reason": "User explicitly approved the corrected image and requested that it be saved on GitHub."
         }
       ],
       "github_verified_at": "2026-10-01T15:14:51.373842+03:00",
       "github_verified_commit": "f9513d40cfd2ae9a17c273c795111d5e8e27306b",
       "github_verified_sha256": "f81b4e2454fb662b37756acc603326b5b061695aef295f8d492f8882443ae92f",
-      "verified_commit": "f9513d40cfd2ae9a17c273c795111d5e8e27306b"
+      "verified_commit": "f9513d40cfd2ae9a17c273c795111d5e8e27306b",
+      "accepted_path": "/workspace/lightweight-exercises-photo/assets/exercises/pending/night-2026-10-01/batch-004/triceps-extension-dumbbell/attempt-4.png",
+      "accepted_sha256": "f81b4e2454fb662b37756acc603326b5b061695aef295f8d492f8882443ae92f",
+      "accepted_at": "2026-10-01T15:20:09.655843+03:00",
+      "approval_timestamp_source": "decision_recorded_at",
+      "accepted_repository_path": "assets/exercises/triceps-extension-dumbbell.png",
+      "accepted_repository_sha256": "f81b4e2454fb662b37756acc603326b5b061695aef295f8d492f8882443ae92f",
+      "accepted_repository_backup_status": "local_saved"
     },
     "triceps-extension-machine": {
       "id": "triceps-extension-machine",
