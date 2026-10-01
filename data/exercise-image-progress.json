@@ -424,7 +424,7 @@
           "verified_at": "2026-10-01T14:01:00+00:00"
         },
         "agent-03-others-002": {
-          "state": "ready_for_push",
+          "state": "github_verified",
           "completed_ids": [
             "sumo-squat-dumbbell",
             "curtsy-lunge-dumbbell",
@@ -450,16 +450,17 @@
             "upright-row-dumbbell",
             "zottman-curl-dumbbell",
             "overhead-press-dumbbell"
-          ]
+          ],
+          "backup_status": "github_verified",
+          "verified_commit": "a9fbaef63a4e4d5b631e49e470fd4b3e66aa11fd",
+          "verified_at": "2026-10-01T14:12:31+00:00"
         }
       },
       "last_event": {
-        "event": "result_saved",
-        "exercise_id": "overhead-press-dumbbell",
+        "event": "remote_files_sha256_verified",
         "batch_id": "agent-03-others-002",
-        "at": "2026-10-01T14:12:04+00:00",
-        "technical_check": "passed",
-        "sha256": "814802f000fcffefa3a167115f7129ec17257feaff8c49d22ca26eba6a989b1c"
+        "commit": "a9fbaef63a4e4d5b631e49e470fd4b3e66aa11fd",
+        "at": "2026-10-01T14:12:31+00:00"
       },
       "last_completed_exercise_id": "overhead-press-dumbbell"
     }
@@ -7446,7 +7447,8 @@
             "ordinal": 12,
             "elapsed_ms": 49588,
             "output_hint": "Generated images are saved to /workspace/generated_images as /workspace/generated_images/exec-ecada385-479f-4ab0-bce4-5cd38e0bdc6c.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
-          }
+          },
+          "backup_status": "github_verified"
         }
       ],
       "result_sha256": "a2c079def1d8787e50217a539ab879dc5ef860e8833f812019ced0d063efafb8",
@@ -7472,7 +7474,21 @@
       "generation_prompt": "Create exactly one image for the following exact exercise record. Identity fields are metadata, never visible text. Preserve the source technique and depict only the chosen single phase.\n{\n  \"exact_catalogue_source\": {\n    \"equipment\": \"dumbbell\",\n    \"primary_muscle\": \"quadriceps\",\n    \"secondary_muscles\": [\n      \"glutes\",\n      \"hamstrings\",\n      \"adductors\"\n    ],\n    \"source_english\": {\n      \"common_mistakes\": [\n        \"Twisting the pelvis.\",\n        \"Letting the knee cave inward.\",\n        \"Crossing so far that balance is lost.\"\n      ],\n      \"description\": \"Curtsy Lunge (Dumbbell) steps one leg diagonally behind and across the other while dumbbells hang at the sides.\",\n      \"form_cues\": [\n        \"Keep the front knee aligned.\",\n        \"Keep hips facing forward.\",\n        \"Use a quiet diagonal step.\"\n      ],\n      \"instructions\": [\n        \"Stand with one dumbbell in each hand and feet hip-width apart.\",\n        \"Step the right foot diagonally behind and left of the standing foot.\",\n        \"Bend both knees while keeping the left foot planted and torso upright.\",\n        \"Drive through the left foot to stand, then repeat to the other side.\"\n      ],\n      \"provenance\": \"authored\",\n      \"safety_note\": \"Use a short diagonal step and lighter dumbbells until balance remains steady.\"\n    }\n  },\n  \"identity_do_not_render_as_text\": {\n    \"exercise_id\": \"curtsy-lunge-dumbbell\",\n    \"name\": \"Curtsy Lunge (Dumbbell)\",\n    \"source_catalog_sha256\": \"a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989\"\n  },\n  \"reference_role\": \"Human appearance/proportions/materials only. Never copy pose, equipment or muscle targets from a reference.\",\n  \"scene\": {\n    \"composition\": \"One dumbbell in each hand hangs still at the sides. Left foot stays planted; right foot steps diagonally behind and left of it. Both knees bend while torso remains upright and hips face forward. Use the short controlled diagonal step specified by the safety note, not an extreme twist.\",\n    \"single_phase\": \"Right foot crossed behind left in lowered phase\",\n    \"source_instruction_quotes\": [\n      {\n        \"index\": 0,\n        \"text\": \"Stand with one dumbbell in each hand and feet hip-width apart.\"\n      },\n      {\n        \"index\": 1,\n        \"text\": \"Step the right foot diagonally behind and left of the standing foot.\"\n      },\n      {\n        \"index\": 2,\n        \"text\": \"Bend both knees while keeping the left foot planted and torso upright.\"\n      }\n    ]\n  },\n  \"style\": {\n    \"background\": \"Genuinely transparent PNG background, no white/checkerboard layer, no environment scene.\",\n    \"framing\": \"Full figure and all required equipment/supports visible within a square. Scale and use a three-quarter view to expose the specified contacts without changing anatomy, equipment, grip or technique.\",\n    \"human_model\": \"One athletic bald male anatomical mannequin, opaque silver-gray muscular surfaces, consistent proportions and detailed 3D materials, plain black shorts, barefoot.\",\n    \"material_rules\": \"Highlights never make tissue transparent; no glow, whole-body orange tint, hair, text, labels, arrows, UI, borders, collage or extra person.\",\n    \"no_invention\": \"Technique, equipment and muscles come only from the attached exact catalogue record. No extra attachments, numerical weights, brands or exact angles absent from the source.\",\n    \"output\": {\n      \"format\": \"PNG\",\n      \"height\": 1024,\n      \"one_person\": true,\n      \"one_phase\": true,\n      \"width\": 1024\n    },\n    \"primary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"rule\": \"Highlight only the exact primary muscle group provided for this exercise.\"\n    },\n    \"secondary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"intensity_fraction\": [\n        0.4,\n        0.5\n      ],\n      \"rule\": \"Only the exact secondary muscles, lighter same-hue highlight; if the list is empty add no secondary target.\"\n    },\n    \"version\": \"v1\"\n  }\n}",
       "generation_prompt_sha256": "e9b8c90e8493b362e9b4a012fb82107de161a9a5ca9cabc82ecf9ce2c537efb3",
       "reference_path": "assets/exercises/biceps-curl-dumbbell.png",
-      "generated_at": "2026-10-01T14:03:34+00:00"
+      "generated_at": "2026-10-01T14:03:34+00:00",
+      "backup_status": "github_verified",
+      "backup_records": [
+        {
+          "storage": "git_repository",
+          "status": "github_verified",
+          "repository": "romanthoruk2008-pixel/lightweight-exercises-photo",
+          "branch": "work",
+          "repository_path": "assets/exercises/pending/agent-03-others-002/curtsy-lunge-dumbbell/attempt-1.png",
+          "png_sha256": "a2c079def1d8787e50217a539ab879dc5ef860e8833f812019ced0d063efafb8",
+          "style_version": "v1",
+          "verified_at": "2026-10-01T14:12:31+00:00",
+          "verified_commit": "a9fbaef63a4e4d5b631e49e470fd4b3e66aa11fd"
+        }
+      ]
     },
     "cycling-machine": {
       "id": "cycling-machine",
@@ -7957,7 +7973,8 @@
             "ordinal": 16,
             "elapsed_ms": 63467,
             "output_hint": "Generated images are saved to /workspace/generated_images as /workspace/generated_images/exec-3f173ec9-ec62-4ca1-bc2d-3f86127da560.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
-          }
+          },
+          "backup_status": "github_verified"
         }
       ],
       "result_sha256": "8e78ca63fac77560eebb55f155caa6a2da0fd17a9223d9c5d9a6b59aaf2d76a9",
@@ -7983,7 +8000,21 @@
       "generation_prompt": "Create exactly one image for the following exact exercise record. Identity fields are metadata, never visible text. Preserve the source technique and depict only the chosen single phase.\n{\n  \"exact_catalogue_source\": {\n    \"equipment\": \"dumbbell\",\n    \"primary_muscle\": \"glutes\",\n    \"secondary_muscles\": [\n      \"hamstrings\",\n      \"quadriceps\",\n      \"lower_back\",\n      \"upper_back\",\n      \"lats\",\n      \"traps\"\n    ],\n    \"source_english\": {\n      \"common_mistakes\": [\n        \"Rounding the back.\",\n        \"Jerking from the floor.\",\n        \"Locking out by leaning backward.\"\n      ],\n      \"description\": \"Deadlift (Dumbbell) hinges to the dumbbells, drives the floor away, and finishes with the hips tall before reversing the hinge.\",\n      \"form_cues\": [\n        \"Keep the load close.\",\n        \"Keep the shoulders over the bar or weights.\",\n        \"Finish with glutes, not lumbar extension.\"\n      ],\n      \"instructions\": [\n        \"Stand with the dumbbells over the mid-foot and hinge to grip it.\",\n        \"Brace the trunk, keep the back neutral, and push the floor away.\",\n        \"Extend the hips and knees until standing tall without leaning back.\",\n        \"Hinge first to lower the load and reset each repetition.\"\n      ],\n      \"provenance\": \"adapted\",\n      \"safety_note\": \"Use a load that allows a neutral spine from setup through lockout.\"\n    }\n  },\n  \"identity_do_not_render_as_text\": {\n    \"exercise_id\": \"deadlift-dumbbell\",\n    \"name\": \"Deadlift (Dumbbell)\",\n    \"source_catalog_sha256\": \"a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989\"\n  },\n  \"reference_role\": \"Human appearance/proportions/materials only. Never copy pose, equipment or muscle targets from a reference.\",\n  \"scene\": {\n    \"composition\": \"Stand with dumbbells over the mid-foot, bend hips and knees to grip the weights close to the legs. Keep back neutral, trunk braced, head aligned and shoulders over the weights. Show the controlled setup before extending hips and knees; no squat-only posture, machine or barbell.\",\n    \"single_phase\": \"Braced hinged setup over mid-foot\",\n    \"source_instruction_quotes\": [\n      {\n        \"index\": 0,\n        \"text\": \"Stand with the dumbbells over the mid-foot and hinge to grip it.\"\n      },\n      {\n        \"index\": 1,\n        \"text\": \"Brace the trunk, keep the back neutral, and push the floor away.\"\n      }\n    ]\n  },\n  \"style\": {\n    \"background\": \"Genuinely transparent PNG background, no white/checkerboard layer, no environment scene.\",\n    \"framing\": \"Full figure and all required equipment/supports visible within a square. Scale and use a three-quarter view to expose the specified contacts without changing anatomy, equipment, grip or technique.\",\n    \"human_model\": \"One athletic bald male anatomical mannequin, opaque silver-gray muscular surfaces, consistent proportions and detailed 3D materials, plain black shorts, barefoot.\",\n    \"material_rules\": \"Highlights never make tissue transparent; no glow, whole-body orange tint, hair, text, labels, arrows, UI, borders, collage or extra person.\",\n    \"no_invention\": \"Technique, equipment and muscles come only from the attached exact catalogue record. No extra attachments, numerical weights, brands or exact angles absent from the source.\",\n    \"output\": {\n      \"format\": \"PNG\",\n      \"height\": 1024,\n      \"one_person\": true,\n      \"one_phase\": true,\n      \"width\": 1024\n    },\n    \"primary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"rule\": \"Highlight only the exact primary muscle group provided for this exercise.\"\n    },\n    \"secondary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"intensity_fraction\": [\n        0.4,\n        0.5\n      ],\n      \"rule\": \"Only the exact secondary muscles, lighter same-hue highlight; if the list is empty add no secondary target.\"\n    },\n    \"version\": \"v1\"\n  }\n}",
       "generation_prompt_sha256": "6d35bced40790224c3ffb721a1f27286235aec1500b47c0d4477296e5350049c",
       "reference_path": "assets/exercises/biceps-curl-dumbbell.png",
-      "generated_at": "2026-10-01T14:08:16+00:00"
+      "generated_at": "2026-10-01T14:08:16+00:00",
+      "backup_status": "github_verified",
+      "backup_records": [
+        {
+          "storage": "git_repository",
+          "status": "github_verified",
+          "repository": "romanthoruk2008-pixel/lightweight-exercises-photo",
+          "branch": "work",
+          "repository_path": "assets/exercises/pending/agent-03-others-002/deadlift-dumbbell/attempt-1.png",
+          "png_sha256": "8e78ca63fac77560eebb55f155caa6a2da0fd17a9223d9c5d9a6b59aaf2d76a9",
+          "style_version": "v1",
+          "verified_at": "2026-10-01T14:12:31+00:00",
+          "verified_commit": "a9fbaef63a4e4d5b631e49e470fd4b3e66aa11fd"
+        }
+      ]
     },
     "deadlift-smith-machine": {
       "id": "deadlift-smith-machine",
@@ -18066,7 +18097,8 @@
             "ordinal": 13,
             "elapsed_ms": 41554,
             "output_hint": "Generated images are saved to /workspace/generated_images as /workspace/generated_images/exec-4acc2ffb-fc4a-4d43-9163-4fe8d57959dd.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
-          }
+          },
+          "backup_status": "github_verified"
         }
       ],
       "result_sha256": "b0c30a93be57044ab7bb1b32528b076e5df273358aa15e12151996ec7a0ee9ef",
@@ -18092,7 +18124,21 @@
       "generation_prompt": "Create exactly one image for the following exact exercise record. Identity fields are metadata, never visible text. Preserve the source technique and depict only the chosen single phase.\n{\n  \"exact_catalogue_source\": {\n    \"equipment\": \"dumbbell\",\n    \"primary_muscle\": \"quadriceps\",\n    \"secondary_muscles\": [\n      \"hamstrings\",\n      \"glutes\"\n    ],\n    \"source_english\": {\n      \"common_mistakes\": [\n        \"Knees collapsing inward.\",\n        \"Rising onto the toes.\",\n        \"Losing the neutral trunk.\"\n      ],\n      \"description\": \"The dumbbell forward lunge steps one foot ahead with dumbbells at the sides, lowers both knees, then drives back.\",\n      \"form_cues\": [\n        \"Keep the feet planted.\",\n        \"Track the knees with the toes.\",\n        \"Keep the chest and trunk controlled.\"\n      ],\n      \"instructions\": [\n        \"Stand with your feet shoulder-width apart, holding a dumbbell in each hand.\",\n        \"Take a step forward with your right foot, lowering your body into a lunge position.\",\n        \"Keep your back straight and your chest up as you lower your body.\",\n        \"Push through your right heel to return to the starting position.\",\n        \"Repeat with your left leg.\",\n        \"Alternate legs for the desired number of repetitions.\"\n      ],\n      \"provenance\": \"adapted\",\n      \"safety_note\": \"Use a depth and load that allow a stable knee and hip path.\"\n    }\n  },\n  \"identity_do_not_render_as_text\": {\n    \"exercise_id\": \"lunge-dumbbell\",\n    \"name\": \"Lunge (Dumbbell)\",\n    \"source_catalog_sha256\": \"a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989\"\n  },\n  \"reference_role\": \"Human appearance/proportions/materials only. Never copy pose, equipment or muscle targets from a reference.\",\n  \"scene\": {\n    \"composition\": \"One dumbbell in each hand at the sides. Right foot has stepped forward; both knees bend in the stationary lowered phase, torso upright and front heel down. Keep the weights still, knee tracking toes and back straight. This is the forward step-and-return ID, not walking or reverse lunge.\",\n    \"single_phase\": \"Right-foot-forward lowered lunge\",\n    \"source_instruction_quotes\": [\n      {\n        \"index\": 0,\n        \"text\": \"Stand with your feet shoulder-width apart, holding a dumbbell in each hand.\"\n      },\n      {\n        \"index\": 1,\n        \"text\": \"Take a step forward with your right foot, lowering your body into a lunge position.\"\n      },\n      {\n        \"index\": 2,\n        \"text\": \"Keep your back straight and your chest up as you lower your body.\"\n      },\n      {\n        \"index\": 3,\n        \"text\": \"Push through your right heel to return to the starting position.\"\n      }\n    ]\n  },\n  \"style\": {\n    \"background\": \"Genuinely transparent PNG background, no white/checkerboard layer, no environment scene.\",\n    \"framing\": \"Full figure and all required equipment/supports visible within a square. Scale and use a three-quarter view to expose the specified contacts without changing anatomy, equipment, grip or technique.\",\n    \"human_model\": \"One athletic bald male anatomical mannequin, opaque silver-gray muscular surfaces, consistent proportions and detailed 3D materials, plain black shorts, barefoot.\",\n    \"material_rules\": \"Highlights never make tissue transparent; no glow, whole-body orange tint, hair, text, labels, arrows, UI, borders, collage or extra person.\",\n    \"no_invention\": \"Technique, equipment and muscles come only from the attached exact catalogue record. No extra attachments, numerical weights, brands or exact angles absent from the source.\",\n    \"output\": {\n      \"format\": \"PNG\",\n      \"height\": 1024,\n      \"one_person\": true,\n      \"one_phase\": true,\n      \"width\": 1024\n    },\n    \"primary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"rule\": \"Highlight only the exact primary muscle group provided for this exercise.\"\n    },\n    \"secondary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"intensity_fraction\": [\n        0.4,\n        0.5\n      ],\n      \"rule\": \"Only the exact secondary muscles, lighter same-hue highlight; if the list is empty add no secondary target.\"\n    },\n    \"version\": \"v1\"\n  }\n}",
       "generation_prompt_sha256": "4c8f750bc505f2c1efaba702b9066652e5271bf202d7714cbb4237eeb69b90c7",
       "reference_path": "assets/exercises/biceps-curl-dumbbell.png",
-      "generated_at": "2026-10-01T14:04:36+00:00"
+      "generated_at": "2026-10-01T14:04:36+00:00",
+      "backup_status": "github_verified",
+      "backup_records": [
+        {
+          "storage": "git_repository",
+          "status": "github_verified",
+          "repository": "romanthoruk2008-pixel/lightweight-exercises-photo",
+          "branch": "work",
+          "repository_path": "assets/exercises/pending/agent-03-others-002/lunge-dumbbell/attempt-1.png",
+          "png_sha256": "b0c30a93be57044ab7bb1b32528b076e5df273358aa15e12151996ec7a0ee9ef",
+          "style_version": "v1",
+          "verified_at": "2026-10-01T14:12:31+00:00",
+          "verified_commit": "a9fbaef63a4e4d5b631e49e470fd4b3e66aa11fd"
+        }
+      ]
     },
     "lying-knee-raise": {
       "id": "lying-knee-raise",
@@ -19730,7 +19776,8 @@
             "ordinal": 20,
             "elapsed_ms": 36530,
             "output_hint": "Generated images are saved to /workspace/generated_images as /workspace/generated_images/exec-75cc7e39-0544-4a7e-ba81-007d8f7e189a.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
-          }
+          },
+          "backup_status": "github_verified"
         }
       ],
       "result_sha256": "814802f000fcffefa3a167115f7129ec17257feaff8c49d22ca26eba6a989b1c",
@@ -19756,7 +19803,21 @@
       "generation_prompt": "Create exactly one image for the following exact exercise record. Identity fields are metadata, never visible text. Preserve the source technique and depict only the chosen single phase.\n{\n  \"exact_catalogue_source\": {\n    \"equipment\": \"dumbbell\",\n    \"primary_muscle\": \"shoulders\",\n    \"secondary_muscles\": [\n      \"triceps\"\n    ],\n    \"source_english\": {\n      \"common_mistakes\": [\n        \"Flaring the elbows.\",\n        \"Arching or sagging the trunk.\",\n        \"Bouncing at the bottom.\"\n      ],\n      \"description\": \"Overhead Press (Dumbbell) presses the weight from shoulder height to overhead while the standing trunk stays braced.\",\n      \"form_cues\": [\n        \"Keep wrists stacked over the elbows.\",\n        \"Brace the trunk and keep the shoulder blades controlled.\",\n        \"Use a smooth lower and press.\"\n      ],\n      \"instructions\": [\n        \"Stand with your feet shoulder-width apart, holding a dumbbell in each hand at shoulder level with your palms facing forward.\",\n        \"Press the dumbbells upward until your arms are fully extended overhead.\",\n        \"Pause for a moment at the top, then slowly lower the dumbbells back down to shoulder level.\",\n        \"Repeat for the desired number of repetitions.\"\n      ],\n      \"provenance\": \"adapted\",\n      \"safety_note\": \"Use a stable setup and stop before the shoulders or wrists lose controlled alignment.\"\n    }\n  },\n  \"identity_do_not_render_as_text\": {\n    \"exercise_id\": \"overhead-press-dumbbell\",\n    \"name\": \"Overhead Press (Dumbbell)\",\n    \"source_catalog_sha256\": \"a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989\"\n  },\n  \"reference_role\": \"Human appearance/proportions/materials only. Never copy pose, equipment or muscle targets from a reference.\",\n  \"scene\": {\n    \"composition\": \"Standing shoulder-width, one dumbbell in each hand above its shoulder, arms extended overhead with palms facing forward. Torso braced and ribs controlled, no backward lean or leg drive. Whole arms and both weights remain in frame; no bench, Smith rails or press machine.\",\n    \"single_phase\": \"Overhead lockout\",\n    \"source_instruction_quotes\": [\n      {\n        \"index\": 0,\n        \"text\": \"Stand with your feet shoulder-width apart, holding a dumbbell in each hand at shoulder level with your palms facing forward.\"\n      },\n      {\n        \"index\": 1,\n        \"text\": \"Press the dumbbells upward until your arms are fully extended overhead.\"\n      }\n    ]\n  },\n  \"style\": {\n    \"background\": \"Genuinely transparent PNG background, no white/checkerboard layer, no environment scene.\",\n    \"framing\": \"Full figure and all required equipment/supports visible within a square. Scale and use a three-quarter view to expose the specified contacts without changing anatomy, equipment, grip or technique.\",\n    \"human_model\": \"One athletic bald male anatomical mannequin, opaque silver-gray muscular surfaces, consistent proportions and detailed 3D materials, plain black shorts, barefoot.\",\n    \"material_rules\": \"Highlights never make tissue transparent; no glow, whole-body orange tint, hair, text, labels, arrows, UI, borders, collage or extra person.\",\n    \"no_invention\": \"Technique, equipment and muscles come only from the attached exact catalogue record. No extra attachments, numerical weights, brands or exact angles absent from the source.\",\n    \"output\": {\n      \"format\": \"PNG\",\n      \"height\": 1024,\n      \"one_person\": true,\n      \"one_phase\": true,\n      \"width\": 1024\n    },\n    \"primary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"rule\": \"Highlight only the exact primary muscle group provided for this exercise.\"\n    },\n    \"secondary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"intensity_fraction\": [\n        0.4,\n        0.5\n      ],\n      \"rule\": \"Only the exact secondary muscles, lighter same-hue highlight; if the list is empty add no secondary target.\"\n    },\n    \"version\": \"v1\"\n  }\n}",
       "generation_prompt_sha256": "2afa746a6f915a7a1e78b0af209a73c881b054dc5328f9f405e0b117a61317b9",
       "reference_path": "assets/exercises/biceps-curl-dumbbell.png",
-      "generated_at": "2026-10-01T14:12:04+00:00"
+      "generated_at": "2026-10-01T14:12:04+00:00",
+      "backup_status": "github_verified",
+      "backup_records": [
+        {
+          "storage": "git_repository",
+          "status": "github_verified",
+          "repository": "romanthoruk2008-pixel/lightweight-exercises-photo",
+          "branch": "work",
+          "repository_path": "assets/exercises/pending/agent-03-others-002/overhead-press-dumbbell/attempt-1.png",
+          "png_sha256": "814802f000fcffefa3a167115f7129ec17257feaff8c49d22ca26eba6a989b1c",
+          "style_version": "v1",
+          "verified_at": "2026-10-01T14:12:31+00:00",
+          "verified_commit": "a9fbaef63a4e4d5b631e49e470fd4b3e66aa11fd"
+        }
+      ]
     },
     "overhead-press-smith-machine": {
       "id": "overhead-press-smith-machine",
@@ -23855,7 +23916,8 @@
             "ordinal": 14,
             "elapsed_ms": 52784,
             "output_hint": "Generated images are saved to /workspace/generated_images as /workspace/generated_images/exec-fa122490-9540-40b2-8d0e-ec1a5de2617c.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
-          }
+          },
+          "backup_status": "github_verified"
         }
       ],
       "result_sha256": "e61fd961a190278ce13e4ea438ee75e3f3c07ab3fff9bb3b95bdcd8c98daf8d9",
@@ -23881,7 +23943,21 @@
       "generation_prompt": "Create exactly one image for the following exact exercise record. Identity fields are metadata, never visible text. Preserve the source technique and depict only the chosen single phase.\n{\n  \"exact_catalogue_source\": {\n    \"equipment\": \"dumbbell\",\n    \"primary_muscle\": \"quadriceps\",\n    \"secondary_muscles\": [\n      \"glutes\",\n      \"hamstrings\"\n    ],\n    \"source_english\": {\n      \"common_mistakes\": [\n        \"Knees collapsing inward.\",\n        \"Rising onto the toes.\",\n        \"Losing the neutral trunk.\"\n      ],\n      \"description\": \"The dumbbell reverse lunge steps one foot backward with weights at the sides, lowers both knees, then pushes through the front foot to stand.\",\n      \"form_cues\": [\n        \"Keep the feet planted.\",\n        \"Track the knees with the toes.\",\n        \"Keep the chest and trunk controlled.\"\n      ],\n      \"instructions\": [\n        \"Stand with your feet shoulder-width apart, holding a dumbbell in each hand.\",\n        \"Take a step backward with your right foot, lowering your body into a lunge position.\",\n        \"Bend your left knee and lower your body until your left thigh is parallel to the ground.\",\n        \"Pause for a moment, then push through your left heel to return to the starting position.\",\n        \"Repeat on the other side, stepping back with your left foot.\"\n      ],\n      \"provenance\": \"adapted\",\n      \"safety_note\": \"Use a depth and load that allow a stable knee and hip path.\"\n    }\n  },\n  \"identity_do_not_render_as_text\": {\n    \"exercise_id\": \"reverse-lunge-dumbbell\",\n    \"name\": \"Reverse Lunge (Dumbbell)\",\n    \"source_catalog_sha256\": \"a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989\"\n  },\n  \"reference_role\": \"Human appearance/proportions/materials only. Never copy pose, equipment or muscle targets from a reference.\",\n  \"scene\": {\n    \"composition\": \"One dumbbell in each hand hangs at the sides. Right foot is behind; left foot is the planted front foot, with left thigh parallel at the source endpoint. Torso stays straight, both knees bent, front heel down. Depict the single lowered phase of a backward step-and-return, not a forward step.\",\n    \"single_phase\": \"Right leg stepped backward, left thigh near parallel\",\n    \"source_instruction_quotes\": [\n      {\n        \"index\": 0,\n        \"text\": \"Stand with your feet shoulder-width apart, holding a dumbbell in each hand.\"\n      },\n      {\n        \"index\": 1,\n        \"text\": \"Take a step backward with your right foot, lowering your body into a lunge position.\"\n      },\n      {\n        \"index\": 2,\n        \"text\": \"Bend your left knee and lower your body until your left thigh is parallel to the ground.\"\n      },\n      {\n        \"index\": 3,\n        \"text\": \"Pause for a moment, then push through your left heel to return to the starting position.\"\n      }\n    ]\n  },\n  \"style\": {\n    \"background\": \"Genuinely transparent PNG background, no white/checkerboard layer, no environment scene.\",\n    \"framing\": \"Full figure and all required equipment/supports visible within a square. Scale and use a three-quarter view to expose the specified contacts without changing anatomy, equipment, grip or technique.\",\n    \"human_model\": \"One athletic bald male anatomical mannequin, opaque silver-gray muscular surfaces, consistent proportions and detailed 3D materials, plain black shorts, barefoot.\",\n    \"material_rules\": \"Highlights never make tissue transparent; no glow, whole-body orange tint, hair, text, labels, arrows, UI, borders, collage or extra person.\",\n    \"no_invention\": \"Technique, equipment and muscles come only from the attached exact catalogue record. No extra attachments, numerical weights, brands or exact angles absent from the source.\",\n    \"output\": {\n      \"format\": \"PNG\",\n      \"height\": 1024,\n      \"one_person\": true,\n      \"one_phase\": true,\n      \"width\": 1024\n    },\n    \"primary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"rule\": \"Highlight only the exact primary muscle group provided for this exercise.\"\n    },\n    \"secondary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"intensity_fraction\": [\n        0.4,\n        0.5\n      ],\n      \"rule\": \"Only the exact secondary muscles, lighter same-hue highlight; if the list is empty add no secondary target.\"\n    },\n    \"version\": \"v1\"\n  }\n}",
       "generation_prompt_sha256": "0dcf178fa345e706cf1a67ff71c30606ef3dd7414b890063b13a79ad5e8812a3",
       "reference_path": "assets/exercises/biceps-curl-dumbbell.png",
-      "generated_at": "2026-10-01T14:05:44+00:00"
+      "generated_at": "2026-10-01T14:05:44+00:00",
+      "backup_status": "github_verified",
+      "backup_records": [
+        {
+          "storage": "git_repository",
+          "status": "github_verified",
+          "repository": "romanthoruk2008-pixel/lightweight-exercises-photo",
+          "branch": "work",
+          "repository_path": "assets/exercises/pending/agent-03-others-002/reverse-lunge-dumbbell/attempt-1.png",
+          "png_sha256": "e61fd961a190278ce13e4ea438ee75e3f3c07ab3fff9bb3b95bdcd8c98daf8d9",
+          "style_version": "v1",
+          "verified_at": "2026-10-01T14:12:31+00:00",
+          "verified_commit": "a9fbaef63a4e4d5b631e49e470fd4b3e66aa11fd"
+        }
+      ]
     },
     "reverse-plank": {
       "id": "reverse-plank",
@@ -29459,7 +29535,8 @@
             "ordinal": 17,
             "elapsed_ms": 34763,
             "output_hint": "Generated images are saved to /workspace/generated_images as /workspace/generated_images/exec-9c05c0e8-6ea4-47a3-bff2-d87fb81ff31a.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
-          }
+          },
+          "backup_status": "github_verified"
         }
       ],
       "result_sha256": "c349476d375e64f12ab3d9418486fcb934edb54c9bcc92cc8856498f8312afeb",
@@ -29485,7 +29562,21 @@
       "generation_prompt": "Create exactly one image for the following exact exercise record. Identity fields are metadata, never visible text. Preserve the source technique and depict only the chosen single phase.\n{\n  \"exact_catalogue_source\": {\n    \"equipment\": \"dumbbell\",\n    \"primary_muscle\": \"hamstrings\",\n    \"secondary_muscles\": [\n      \"glutes\",\n      \"lower_back\"\n    ],\n    \"source_english\": {\n      \"common_mistakes\": [\n        \"Shifting the support point.\",\n        \"Using momentum instead of the target joint path.\",\n        \"Cutting the return short.\"\n      ],\n      \"description\": \"Stand on one foot with a dumbbell near the thigh, hinge as the free leg reaches back, then stand and switch.\",\n      \"form_cues\": [\n        \"Keep the load close.\",\n        \"Hinge without rounding.\",\n        \"Finish tall.\"\n      ],\n      \"instructions\": [\n        \"Stand with your feet hip-width apart, holding a dumbbell in your right hand.\",\n        \"Shift your weight onto your left leg and lift your right foot slightly off the ground.\",\n        \"Keeping your back straight, hinge forward at the hips and lower the dumbbell towards the ground.\",\n        \"At the same time, extend your right leg straight behind you, maintaining a slight bend in your left knee.\",\n        \"Lower the dumbbell until your torso and right leg are parallel to the ground.\",\n        \"Pause for a moment, then engage your glutes and hamstrings to return to the starting position.\"\n      ],\n      \"provenance\": \"adapted\",\n      \"safety_note\": \"Keep the load close and stop if the spine cannot remain neutral.\"\n    }\n  },\n  \"identity_do_not_render_as_text\": {\n    \"exercise_id\": \"single-leg-romanian-deadlift-dumbbell\",\n    \"name\": \"Single Leg Romanian Deadlift (Dumbbell)\",\n    \"source_catalog_sha256\": \"a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989\"\n  },\n  \"reference_role\": \"Human appearance/proportions/materials only. Never copy pose, equipment or muscle targets from a reference.\",\n  \"scene\": {\n    \"composition\": \"Left foot is the only loaded floor contact, left knee slightly bent. Right hand holds the single dumbbell lowered near the body; right leg reaches straight back. Torso and right leg approach parallel to the floor, back straight. Depict these exact source sides, without swapping hand and support leg or adding a second weight.\",\n    \"single_phase\": \"Left-leg-supported near-horizontal hinge\",\n    \"source_instruction_quotes\": [\n      {\n        \"index\": 0,\n        \"text\": \"Stand with your feet hip-width apart, holding a dumbbell in your right hand.\"\n      },\n      {\n        \"index\": 1,\n        \"text\": \"Shift your weight onto your left leg and lift your right foot slightly off the ground.\"\n      },\n      {\n        \"index\": 2,\n        \"text\": \"Keeping your back straight, hinge forward at the hips and lower the dumbbell towards the ground.\"\n      },\n      {\n        \"index\": 3,\n        \"text\": \"At the same time, extend your right leg straight behind you, maintaining a slight bend in your left knee.\"\n      },\n      {\n        \"index\": 4,\n        \"text\": \"Lower the dumbbell until your torso and right leg are parallel to the ground.\"\n      }\n    ]\n  },\n  \"style\": {\n    \"background\": \"Genuinely transparent PNG background, no white/checkerboard layer, no environment scene.\",\n    \"framing\": \"Full figure and all required equipment/supports visible within a square. Scale and use a three-quarter view to expose the specified contacts without changing anatomy, equipment, grip or technique.\",\n    \"human_model\": \"One athletic bald male anatomical mannequin, opaque silver-gray muscular surfaces, consistent proportions and detailed 3D materials, plain black shorts, barefoot.\",\n    \"material_rules\": \"Highlights never make tissue transparent; no glow, whole-body orange tint, hair, text, labels, arrows, UI, borders, collage or extra person.\",\n    \"no_invention\": \"Technique, equipment and muscles come only from the attached exact catalogue record. No extra attachments, numerical weights, brands or exact angles absent from the source.\",\n    \"output\": {\n      \"format\": \"PNG\",\n      \"height\": 1024,\n      \"one_person\": true,\n      \"one_phase\": true,\n      \"width\": 1024\n    },\n    \"primary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"rule\": \"Highlight only the exact primary muscle group provided for this exercise.\"\n    },\n    \"secondary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"intensity_fraction\": [\n        0.4,\n        0.5\n      ],\n      \"rule\": \"Only the exact secondary muscles, lighter same-hue highlight; if the list is empty add no secondary target.\"\n    },\n    \"version\": \"v1\"\n  }\n}",
       "generation_prompt_sha256": "b8705636e89447a5a4f233346cfd5fb9f3d29c311432f349ea6bb81be94d5ca1",
       "reference_path": "assets/exercises/biceps-curl-dumbbell.png",
-      "generated_at": "2026-10-01T14:09:11+00:00"
+      "generated_at": "2026-10-01T14:09:11+00:00",
+      "backup_status": "github_verified",
+      "backup_records": [
+        {
+          "storage": "git_repository",
+          "status": "github_verified",
+          "repository": "romanthoruk2008-pixel/lightweight-exercises-photo",
+          "branch": "work",
+          "repository_path": "assets/exercises/pending/agent-03-others-002/single-leg-romanian-deadlift-dumbbell/attempt-1.png",
+          "png_sha256": "c349476d375e64f12ab3d9418486fcb934edb54c9bcc92cc8856498f8312afeb",
+          "style_version": "v1",
+          "verified_at": "2026-10-01T14:12:31+00:00",
+          "verified_commit": "a9fbaef63a4e4d5b631e49e470fd4b3e66aa11fd"
+        }
+      ]
     },
     "single-leg-standing-calf-raise": {
       "id": "single-leg-standing-calf-raise",
@@ -33279,7 +33370,8 @@
             "ordinal": 11,
             "elapsed_ms": 42236,
             "output_hint": "Generated images are saved to /workspace/generated_images as /workspace/generated_images/exec-a0458a0f-a213-4554-a9b9-4c7b2f7d31ee.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
-          }
+          },
+          "backup_status": "github_verified"
         }
       ],
       "result_sha256": "e8f7b595136b3c27ff8f9ae08e74e977451db51eac9bd18ce3f20fbb169c23ee",
@@ -33305,7 +33397,21 @@
       "generation_prompt": "Create exactly one image for the following exact exercise record. Identity fields are metadata, never visible text. Preserve the source technique and depict only the chosen single phase.\n{\n  \"exact_catalogue_source\": {\n    \"equipment\": \"dumbbell\",\n    \"primary_muscle\": \"quadriceps\",\n    \"secondary_muscles\": [\n      \"glutes\",\n      \"adductors\",\n      \"hamstrings\"\n    ],\n    \"source_english\": {\n      \"common_mistakes\": [\n        \"Letting the weight pull the torso forward.\",\n        \"Knees collapsing inward.\",\n        \"Rising onto the toes.\"\n      ],\n      \"description\": \"A dumbbell sumo squat holds one dumbbell between the legs while the wide stance loads the hips and thighs.\",\n      \"form_cues\": [\n        \"Keep the dumbbell close.\",\n        \"Press the knees outward.\",\n        \"Keep heels grounded.\"\n      ],\n      \"instructions\": [\n        \"Stand wide with toes turned outward and hold one dumbbell in front of the hips.\",\n        \"Brace the abdomen and lower by bending the hips and knees with the chest lifted.\",\n        \"Descend until the thighs approach parallel while the knees track the toes.\",\n        \"Drive through both feet to stand tall and keep the dumbbell centered.\"\n      ],\n      \"provenance\": \"authored\",\n      \"safety_note\": \"Use a dumbbell you can hold without rounding the back or losing balance.\"\n    }\n  },\n  \"identity_do_not_render_as_text\": {\n    \"exercise_id\": \"sumo-squat-dumbbell\",\n    \"name\": \"Sumo Squat (Dumbbell)\",\n    \"source_catalog_sha256\": \"a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989\"\n  },\n  \"reference_role\": \"Human appearance/proportions/materials only. Never copy pose, equipment or muscle targets from a reference.\",\n  \"scene\": {\n    \"composition\": \"Wide stance, toes turned outward, heels grounded. Hold one centered dumbbell in front of the hips/between the legs as the source describes; knees track toes and chest stays lifted. Hips and knees bend until thighs approach parallel. Do not convert to a chest-held goblet squat or add a second dumbbell.\",\n    \"single_phase\": \"Near-parallel squat bottom\",\n    \"source_instruction_quotes\": [\n      {\n        \"index\": 0,\n        \"text\": \"Stand wide with toes turned outward and hold one dumbbell in front of the hips.\"\n      },\n      {\n        \"index\": 1,\n        \"text\": \"Brace the abdomen and lower by bending the hips and knees with the chest lifted.\"\n      },\n      {\n        \"index\": 2,\n        \"text\": \"Descend until the thighs approach parallel while the knees track the toes.\"\n      }\n    ]\n  },\n  \"style\": {\n    \"background\": \"Genuinely transparent PNG background, no white/checkerboard layer, no environment scene.\",\n    \"framing\": \"Full figure and all required equipment/supports visible within a square. Scale and use a three-quarter view to expose the specified contacts without changing anatomy, equipment, grip or technique.\",\n    \"human_model\": \"One athletic bald male anatomical mannequin, opaque silver-gray muscular surfaces, consistent proportions and detailed 3D materials, plain black shorts, barefoot.\",\n    \"material_rules\": \"Highlights never make tissue transparent; no glow, whole-body orange tint, hair, text, labels, arrows, UI, borders, collage or extra person.\",\n    \"no_invention\": \"Technique, equipment and muscles come only from the attached exact catalogue record. No extra attachments, numerical weights, brands or exact angles absent from the source.\",\n    \"output\": {\n      \"format\": \"PNG\",\n      \"height\": 1024,\n      \"one_person\": true,\n      \"one_phase\": true,\n      \"width\": 1024\n    },\n    \"primary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"rule\": \"Highlight only the exact primary muscle group provided for this exercise.\"\n    },\n    \"secondary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"intensity_fraction\": [\n        0.4,\n        0.5\n      ],\n      \"rule\": \"Only the exact secondary muscles, lighter same-hue highlight; if the list is empty add no secondary target.\"\n    },\n    \"version\": \"v1\"\n  }\n}",
       "generation_prompt_sha256": "b83e699523d28f2e15454308692f965f4474d5ceb554396a52b5012e3f130050",
       "reference_path": "assets/exercises/biceps-curl-dumbbell.png",
-      "generated_at": "2026-10-01T14:02:29+00:00"
+      "generated_at": "2026-10-01T14:02:29+00:00",
+      "backup_status": "github_verified",
+      "backup_records": [
+        {
+          "storage": "git_repository",
+          "status": "github_verified",
+          "repository": "romanthoruk2008-pixel/lightweight-exercises-photo",
+          "branch": "work",
+          "repository_path": "assets/exercises/pending/agent-03-others-002/sumo-squat-dumbbell/attempt-1.png",
+          "png_sha256": "e8f7b595136b3c27ff8f9ae08e74e977451db51eac9bd18ce3f20fbb169c23ee",
+          "style_version": "v1",
+          "verified_at": "2026-10-01T14:12:31+00:00",
+          "verified_commit": "a9fbaef63a4e4d5b631e49e470fd4b3e66aa11fd"
+        }
+      ]
     },
     "sumo-squat-kettlebell": {
       "id": "sumo-squat-kettlebell",
@@ -35510,7 +35616,8 @@
             "ordinal": 18,
             "elapsed_ms": 54411,
             "output_hint": "Generated images are saved to /workspace/generated_images as /workspace/generated_images/exec-265dd8b6-386f-4532-bb19-b9e029c1643e.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
-          }
+          },
+          "backup_status": "github_verified"
         }
       ],
       "result_sha256": "9a89950e57bf9df6e4a5d1f50bb4674863d452d10d786fe69d78088bf5eabacb",
@@ -35536,7 +35643,21 @@
       "generation_prompt": "Create exactly one image for the following exact exercise record. Identity fields are metadata, never visible text. Preserve the source technique and depict only the chosen single phase.\n{\n  \"exact_catalogue_source\": {\n    \"equipment\": \"dumbbell\",\n    \"primary_muscle\": \"shoulders\",\n    \"secondary_muscles\": [\n      \"traps\",\n      \"upper_back\",\n      \"biceps\",\n      \"forearms\"\n    ],\n    \"source_english\": {\n      \"common_mistakes\": [\n        \"Shrugging first.\",\n        \"Pulling above a comfortable shoulder range.\",\n        \"Using a hip swing.\"\n      ],\n      \"description\": \"Upright Row (Dumbbell) pulls one dumbbell in each hand toward the upper chest with the elbows leading.\",\n      \"form_cues\": [\n        \"Lead with elbows.\",\n        \"Keep wrists below elbows.\",\n        \"Keep torso upright.\"\n      ],\n      \"instructions\": [\n        \"Stand with feet shoulder-width apart and hold one dumbbell in each hand with an overhand grip at the thighs.\",\n        \"Brace the abdomen and pull the elbows upward and outward, keeping the load close to the body.\",\n        \"Stop when the hands reach the upper chest or before the shoulders pinch.\",\n        \"Lower the resistance slowly to the thighs and reset.\"\n      ],\n      \"provenance\": \"adapted\",\n      \"safety_note\": \"Use light resistance and stop below any painful shoulder height.\"\n    }\n  },\n  \"identity_do_not_render_as_text\": {\n    \"exercise_id\": \"upright-row-dumbbell\",\n    \"name\": \"Upright Row (Dumbbell)\",\n    \"source_catalog_sha256\": \"a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989\"\n  },\n  \"reference_role\": \"Human appearance/proportions/materials only. Never copy pose, equipment or muscle targets from a reference.\",\n  \"scene\": {\n    \"composition\": \"Stand shoulder-width with one dumbbell in each hand using the source overhand grip. Raise the elbows upward and outward as the weights travel close to the torso toward upper chest; wrists and loads remain below the leading elbows. Trunk braced, no lean or shrug-to-ear substitution.\",\n    \"single_phase\": \"Controlled upper-chest endpoint\",\n    \"source_instruction_quotes\": [\n      {\n        \"index\": 0,\n        \"text\": \"Stand with feet shoulder-width apart and hold one dumbbell in each hand with an overhand grip at the thighs.\"\n      },\n      {\n        \"index\": 1,\n        \"text\": \"Brace the abdomen and pull the elbows upward and outward, keeping the load close to the body.\"\n      },\n      {\n        \"index\": 2,\n        \"text\": \"Stop when the hands reach the upper chest or before the shoulders pinch.\"\n      }\n    ]\n  },\n  \"style\": {\n    \"background\": \"Genuinely transparent PNG background, no white/checkerboard layer, no environment scene.\",\n    \"framing\": \"Full figure and all required equipment/supports visible within a square. Scale and use a three-quarter view to expose the specified contacts without changing anatomy, equipment, grip or technique.\",\n    \"human_model\": \"One athletic bald male anatomical mannequin, opaque silver-gray muscular surfaces, consistent proportions and detailed 3D materials, plain black shorts, barefoot.\",\n    \"material_rules\": \"Highlights never make tissue transparent; no glow, whole-body orange tint, hair, text, labels, arrows, UI, borders, collage or extra person.\",\n    \"no_invention\": \"Technique, equipment and muscles come only from the attached exact catalogue record. No extra attachments, numerical weights, brands or exact angles absent from the source.\",\n    \"output\": {\n      \"format\": \"PNG\",\n      \"height\": 1024,\n      \"one_person\": true,\n      \"one_phase\": true,\n      \"width\": 1024\n    },\n    \"primary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"rule\": \"Highlight only the exact primary muscle group provided for this exercise.\"\n    },\n    \"secondary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"intensity_fraction\": [\n        0.4,\n        0.5\n      ],\n      \"rule\": \"Only the exact secondary muscles, lighter same-hue highlight; if the list is empty add no secondary target.\"\n    },\n    \"version\": \"v1\"\n  }\n}",
       "generation_prompt_sha256": "79ba43515360744791dea004c010f8af8a50f53dd14462f5d04853b0abf66c28",
       "reference_path": "assets/exercises/biceps-curl-dumbbell.png",
-      "generated_at": "2026-10-01T14:10:21+00:00"
+      "generated_at": "2026-10-01T14:10:21+00:00",
+      "backup_status": "github_verified",
+      "backup_records": [
+        {
+          "storage": "git_repository",
+          "status": "github_verified",
+          "repository": "romanthoruk2008-pixel/lightweight-exercises-photo",
+          "branch": "work",
+          "repository_path": "assets/exercises/pending/agent-03-others-002/upright-row-dumbbell/attempt-1.png",
+          "png_sha256": "9a89950e57bf9df6e4a5d1f50bb4674863d452d10d786fe69d78088bf5eabacb",
+          "style_version": "v1",
+          "verified_at": "2026-10-01T14:12:31+00:00",
+          "verified_commit": "a9fbaef63a4e4d5b631e49e470fd4b3e66aa11fd"
+        }
+      ]
     },
     "v-up": {
       "id": "v-up",
@@ -35953,7 +36074,8 @@
             "ordinal": 15,
             "elapsed_ms": 54061,
             "output_hint": "Generated images are saved to /workspace/generated_images as /workspace/generated_images/exec-12e159d9-d1e8-4d8a-a621-76f708e9c684.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
-          }
+          },
+          "backup_status": "github_verified"
         }
       ],
       "result_sha256": "1218286baef78fd06fc2096f500c653fcddd83697580fe5a660e891d9039b550",
@@ -35979,7 +36101,21 @@
       "generation_prompt": "Create exactly one image for the following exact exercise record. Identity fields are metadata, never visible text. Preserve the source technique and depict only the chosen single phase.\n{\n  \"exact_catalogue_source\": {\n    \"equipment\": \"dumbbell\",\n    \"primary_muscle\": \"quadriceps\",\n    \"secondary_muscles\": [\n      \"glutes\",\n      \"hamstrings\"\n    ],\n    \"source_english\": {\n      \"common_mistakes\": [\n        \"Knee collapsing inward.\",\n        \"Pushing off the rear toes.\",\n        \"Dropping the torso.\"\n      ],\n      \"description\": \"Walking Lunge (Dumbbell) alternates forward steps while dumbbells hang at the sides.\",\n      \"form_cues\": [\n        \"Keep front knee over ankle.\",\n        \"Take quiet steps.\",\n        \"Keep dumbbells still.\"\n      ],\n      \"instructions\": [\n        \"Stand with one dumbbell in each hand and feet hip-width apart.\",\n        \"Step forward with the right foot and lower until both knees bend, keeping the right heel planted.\",\n        \"Push through the right foot to bring the left foot forward into the next lunge.\",\n        \"Continue alternating with the torso upright.\"\n      ],\n      \"provenance\": \"authored\",\n      \"safety_note\": \"Use a clear lane and lighter dumbbells if the forward steps become unstable.\"\n    }\n  },\n  \"identity_do_not_render_as_text\": {\n    \"exercise_id\": \"walking-lunge-dumbbell\",\n    \"name\": \"Walking Lunge (Dumbbell)\",\n    \"source_catalog_sha256\": \"a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989\"\n  },\n  \"reference_role\": \"Human appearance/proportions/materials only. Never copy pose, equipment or muscle targets from a reference.\",\n  \"scene\": {\n    \"composition\": \"One dumbbell in each hand hangs at the sides. Right foot is forward and flat, both knees bend, torso upright and right knee aligned over ankle. Show the quiet loaded phase before the left foot advances into the next step; no return-to-start pose, arrows or second figure.\",\n    \"single_phase\": \"Right-foot-forward loaded phase within a walking lunge\",\n    \"source_instruction_quotes\": [\n      {\n        \"index\": 0,\n        \"text\": \"Stand with one dumbbell in each hand and feet hip-width apart.\"\n      },\n      {\n        \"index\": 1,\n        \"text\": \"Step forward with the right foot and lower until both knees bend, keeping the right heel planted.\"\n      },\n      {\n        \"index\": 2,\n        \"text\": \"Push through the right foot to bring the left foot forward into the next lunge.\"\n      }\n    ]\n  },\n  \"style\": {\n    \"background\": \"Genuinely transparent PNG background, no white/checkerboard layer, no environment scene.\",\n    \"framing\": \"Full figure and all required equipment/supports visible within a square. Scale and use a three-quarter view to expose the specified contacts without changing anatomy, equipment, grip or technique.\",\n    \"human_model\": \"One athletic bald male anatomical mannequin, opaque silver-gray muscular surfaces, consistent proportions and detailed 3D materials, plain black shorts, barefoot.\",\n    \"material_rules\": \"Highlights never make tissue transparent; no glow, whole-body orange tint, hair, text, labels, arrows, UI, borders, collage or extra person.\",\n    \"no_invention\": \"Technique, equipment and muscles come only from the attached exact catalogue record. No extra attachments, numerical weights, brands or exact angles absent from the source.\",\n    \"output\": {\n      \"format\": \"PNG\",\n      \"height\": 1024,\n      \"one_person\": true,\n      \"one_phase\": true,\n      \"width\": 1024\n    },\n    \"primary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"rule\": \"Highlight only the exact primary muscle group provided for this exercise.\"\n    },\n    \"secondary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"intensity_fraction\": [\n        0.4,\n        0.5\n      ],\n      \"rule\": \"Only the exact secondary muscles, lighter same-hue highlight; if the list is empty add no secondary target.\"\n    },\n    \"version\": \"v1\"\n  }\n}",
       "generation_prompt_sha256": "fe0e03ada086dd4243d5a4ec7a766beb505cdf16bb4011f4b0b45fe56cd1f947",
       "reference_path": "assets/exercises/biceps-curl-dumbbell.png",
-      "generated_at": "2026-10-01T14:06:53+00:00"
+      "generated_at": "2026-10-01T14:06:53+00:00",
+      "backup_status": "github_verified",
+      "backup_records": [
+        {
+          "storage": "git_repository",
+          "status": "github_verified",
+          "repository": "romanthoruk2008-pixel/lightweight-exercises-photo",
+          "branch": "work",
+          "repository_path": "assets/exercises/pending/agent-03-others-002/walking-lunge-dumbbell/attempt-1.png",
+          "png_sha256": "1218286baef78fd06fc2096f500c653fcddd83697580fe5a660e891d9039b550",
+          "style_version": "v1",
+          "verified_at": "2026-10-01T14:12:31+00:00",
+          "verified_commit": "a9fbaef63a4e4d5b631e49e470fd4b3e66aa11fd"
+        }
+      ]
     },
     "walking-lunge-sandbag": {
       "id": "walking-lunge-sandbag",
@@ -36619,7 +36755,8 @@
             "ordinal": 19,
             "elapsed_ms": 36158,
             "output_hint": "Generated images are saved to /workspace/generated_images as /workspace/generated_images/exec-a1575899-fc91-4edb-9ce8-bb9414b0ca00.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
-          }
+          },
+          "backup_status": "github_verified"
         }
       ],
       "result_sha256": "df9faead73b8e8127da15332c2dd7391d43b8abb0d44c9ad695cfb65c1bc8d77",
@@ -36645,7 +36782,21 @@
       "generation_prompt": "Create exactly one image for the following exact exercise record. Identity fields are metadata, never visible text. Preserve the source technique and depict only the chosen single phase.\n{\n  \"exact_catalogue_source\": {\n    \"equipment\": \"dumbbell\",\n    \"primary_muscle\": \"biceps\",\n    \"secondary_muscles\": [\n      \"forearms\"\n    ],\n    \"source_english\": {\n      \"common_mistakes\": [\n        \"Swinging the torso.\",\n        \"Rotating before the top.\",\n        \"Dropping the weights.\"\n      ],\n      \"description\": \"Zottman Curl (Dumbbell) curls with palms up, rotates palms down at the top, and lowers with the reverse grip.\",\n      \"form_cues\": [\n        \"Keep elbows close.\",\n        \"Rotate only at the wrists.\",\n        \"Lower slowly.\"\n      ],\n      \"instructions\": [\n        \"Stand with feet hip-width apart holding one dumbbell in each hand, palms facing forward.\",\n        \"Curl both dumbbells to shoulder height while keeping the upper arms still.\",\n        \"Rotate the wrists so the palms face down at the top.\",\n        \"Lower the dumbbells under control, then rotate palms forward at the bottom.\"\n      ],\n      \"provenance\": \"adapted\",\n      \"safety_note\": \"Use dumbbells light enough to control the pronated lowering phase.\"\n    }\n  },\n  \"identity_do_not_render_as_text\": {\n    \"exercise_id\": \"zottman-curl-dumbbell\",\n    \"name\": \"Zottman Curl (Dumbbell)\",\n    \"source_catalog_sha256\": \"a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989\"\n  },\n  \"reference_role\": \"Human appearance/proportions/materials only. Never copy pose, equipment or muscle targets from a reference.\",\n  \"scene\": {\n    \"composition\": \"Stand hip-width, upper arms still alongside torso. Both dumbbells are at shoulder height after the palms-up curl; wrists have rotated so palms now face down, ready for the controlled reverse-grip descent. Show exactly one phase and two weights; no mixed opposite grips or extra arms.\",\n    \"single_phase\": \"Top curl after rotation to palms down\",\n    \"source_instruction_quotes\": [\n      {\n        \"index\": 0,\n        \"text\": \"Stand with feet hip-width apart holding one dumbbell in each hand, palms facing forward.\"\n      },\n      {\n        \"index\": 1,\n        \"text\": \"Curl both dumbbells to shoulder height while keeping the upper arms still.\"\n      },\n      {\n        \"index\": 2,\n        \"text\": \"Rotate the wrists so the palms face down at the top.\"\n      }\n    ]\n  },\n  \"style\": {\n    \"background\": \"Genuinely transparent PNG background, no white/checkerboard layer, no environment scene.\",\n    \"framing\": \"Full figure and all required equipment/supports visible within a square. Scale and use a three-quarter view to expose the specified contacts without changing anatomy, equipment, grip or technique.\",\n    \"human_model\": \"One athletic bald male anatomical mannequin, opaque silver-gray muscular surfaces, consistent proportions and detailed 3D materials, plain black shorts, barefoot.\",\n    \"material_rules\": \"Highlights never make tissue transparent; no glow, whole-body orange tint, hair, text, labels, arrows, UI, borders, collage or extra person.\",\n    \"no_invention\": \"Technique, equipment and muscles come only from the attached exact catalogue record. No extra attachments, numerical weights, brands or exact angles absent from the source.\",\n    \"output\": {\n      \"format\": \"PNG\",\n      \"height\": 1024,\n      \"one_person\": true,\n      \"one_phase\": true,\n      \"width\": 1024\n    },\n    \"primary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"rule\": \"Highlight only the exact primary muscle group provided for this exercise.\"\n    },\n    \"secondary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"intensity_fraction\": [\n        0.4,\n        0.5\n      ],\n      \"rule\": \"Only the exact secondary muscles, lighter same-hue highlight; if the list is empty add no secondary target.\"\n    },\n    \"version\": \"v1\"\n  }\n}",
       "generation_prompt_sha256": "62f8a7b59b2d1b9c6118410ed1da9ea2de4a32d5351f5fbcf1d53daa46808ce4",
       "reference_path": "assets/exercises/biceps-curl-dumbbell.png",
-      "generated_at": "2026-10-01T14:11:13+00:00"
+      "generated_at": "2026-10-01T14:11:13+00:00",
+      "backup_status": "github_verified",
+      "backup_records": [
+        {
+          "storage": "git_repository",
+          "status": "github_verified",
+          "repository": "romanthoruk2008-pixel/lightweight-exercises-photo",
+          "branch": "work",
+          "repository_path": "assets/exercises/pending/agent-03-others-002/zottman-curl-dumbbell/attempt-1.png",
+          "png_sha256": "df9faead73b8e8127da15332c2dd7391d43b8abb0d44c9ad695cfb65c1bc8d77",
+          "style_version": "v1",
+          "verified_at": "2026-10-01T14:12:31+00:00",
+          "verified_commit": "a9fbaef63a4e4d5b631e49e470fd4b3e66aa11fd"
+        }
+      ]
     }
   },
   "backup_history": [
