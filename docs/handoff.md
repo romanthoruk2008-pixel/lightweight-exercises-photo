@@ -340,3 +340,9 @@ Repository verification 2026-10-01T15:20:49.696014+03:00: all 26 PNGs in the cur
 
 
 Repository verification 2026-10-01T12:42:34.661768+00:00: обидва нові PNG присутні у віддаленій `work`; їхні віддалені SHA256 байт-у-байт збігаються з локальними та manifest. Перевірений commit: `e7329e24fdd560453c9ed77212c56da060c34e52`. Загалом усі 50 нічних ID тепер мають PNG і позначені як збережені на GitHub; 48 прийнятих до цього залишаються approved, `fire-hydrants` і `reverse-wrist-curl-dumbbell` — pending. Наступна дія: користувач переглядає саме ці два файли; не генерувати повторно автоматично.
+
+
+User approval 2026-10-01T12:46:09+00:00: користувач схвалив `fire-hydrants` attempt-2 та `reverse-wrist-curl-dumbbell` attempt-3. Точні accepted_path/SHA256, спроби й рішення записані у progress та нічному manifest; обидва PNG вже `github_verified` і не змінені. Тепер усі 50 нічних результатів схвалені користувачем. `pushup-close-grip` показаний користувачу, але це окреме рішення ще очікується; його вже затверджений статус і технічна примітка 1536×1024 не змінювалися.
+
+
+User review update 2026-10-01T12:48:46+00:00: підтверджено схвалення `fire-hydrants` attempt-2 та `reverse-wrist-curl-dumbbell` attempt-3. `pushup-close-grip` показаний для перегляду. Хоча попереднє загальне схвалення збережено в історії, за новою вказівкою поточний `user_review` знову `pending` до окремого рішення після перегляду; accepted fields очищені, файл/SHA/технічна помилка не змінені. Файл: `assets/exercises/pending/night-2026-10-01/batch-001/pushup-close-grip/attempt-1.png`, SHA256 `d956f643a1df9c371d88833c008e6ec56c9ea632f91e2b3033f96e349cca9f7b`, 1536×1024. Не перегенеровувати й не масштабувати без запиту.
