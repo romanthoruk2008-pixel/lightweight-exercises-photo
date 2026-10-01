@@ -1,3 +1,7 @@
+## Handstand attempt-4: корекція стоп
+
+2026-10-01T16:49:25+00:00: assets/exercises/pending/agent-03-others-004/handstand-pushup/attempt-4.png; SHA256 f7289f233773aaef1140374ef954788369813137bb05b2d795e883b98ce49057; 1254×1254; technical_check=passed; повністю прозорих пікселів 1172545. user_review=pending, agent_visual_review=not_performed. Запит: п'яти до камери, носки до стіни. Підсвітка за каталогом: плечі, груди/трицепси; найширші залишені сірими. Наступна дія: push та remote SHA256 verification, після цього перегляд користувачем.
+
 ## Handstand attempt-3 збережено для перегляду
 
 2026-10-01T16:39:30+00:00: assets/exercises/pending/agent-03-others-004/handstand-pushup/attempt-3.png; SHA256 9a2250339261610405d356172e7291406672d8b60dcb02adb0b7b5f375697f4b; 1254×1254; technical_check=passed; прозорих пікселів 1179402. user_review=pending, agent_visual_review=not_performed. PNG і SHA256 перевірено у віддаленій work, commit 3f7dfd34e447b77f5f450e9d7a558e98bfb0ee13; backup_status=github_verified. У пакетах 004–006 прийнято 29 із 30 вправ, включно з Floor Press attempt-2. Handstand attempt-3 має user_review=pending. Наступна дія: перегляд цієї версії користувачем; нових генерацій не запускати.
