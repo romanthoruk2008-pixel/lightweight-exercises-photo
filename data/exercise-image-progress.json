@@ -146,11 +146,11 @@
         }
       }
     ],
-    "active_batch_id": "night-2026-10-01-004",
+    "active_batch_id": "night-2026-10-01-005",
     "active_batch_item_id": null,
     "active_batch_scope": "all 50 user-authorized; checkpoint and push after each batch of 10",
-    "current_batch": "night-2026-10-01-004",
-    "next_action": "Push and remotely verify checkpoint night-2026-10-01-004; then continue."
+    "current_batch": "night-2026-10-01-005",
+    "next_action": "Push and remotely verify checkpoint night-2026-10-01-005; then continue."
   },
   "historical_mapping_metadata": {
     "schema_version": "1.0",
@@ -1448,14 +1448,14 @@
         "exists_at_preparation": true,
         "sha256": "2c2600abcbebd35d26c3e5ed85fc0ead35eb004dd541951a83bb012ed6c9e7a7"
       },
-      "status": "not_started",
-      "included_in_generation": false,
+      "status": "generation_failed",
+      "included_in_generation": true,
       "archived_inclusion_authorized": false,
       "blocked_by": [
         "pilot_not_approved"
       ],
-      "attempts": 0,
-      "style_version": null,
+      "attempts": 1,
+      "style_version": "v1",
       "visual_review": {
         "status": "not_reviewed",
         "reviewer": null,
@@ -1468,17 +1468,63 @@
         },
         "notes": null
       },
-      "result_path": null,
+      "result_path": "assets/exercises/pending/night-2026-10-01/005/behind-the-back-wrist-curl-barbell/attempt-1.png",
       "supabase_path": null,
       "supabase_upload_status": "not_configured",
-      "last_error": null,
-      "attempt_history": [],
+      "last_error": "image generation failed: http 429 Too Many Requests: Some(\"{\\\"error\\\":{\\\"type\\\":\\\"usage_limit_reached\\\",\\\"message\\\":\\\"The usage limit has been reached\\\",\\\"plan_type\\\":\\\"plus\\\",\\\"resets_at\\\":1790845839,\\\"eligible_promo\\\":null,\\\"limit_window_minutes\\\":null,\\\"resets_in_seconds\\\":30940}}\")",
+      "attempt_history": [
+        {
+          "attempt": 1,
+          "id": "behind-the-back-wrist-curl-barbell",
+          "batch_id": "night-2026-10-01-005",
+          "generation_run_id": "night-2026-10-01",
+          "generated_overnight": true,
+          "style_version": "v1",
+          "tool": "image_gen.imagegen",
+          "started_at": "2026-10-01T03:34:58.380351+03:00",
+          "prompt": "STYLE v1. Use the supplied approved human reference ONLY for the person's identity, anatomical 3D style, body proportions, materials and detail. Do not copy its pose, dumbbells, muscle highlighting or composition. Match the same bald athletic adult male, opaque silver-gray sculpted anatomical muscle surfaces, simple fitted black shorts, barefoot, neutral face and consistent natural proportions. One person, one exercise, one characteristic phase: no second figure, collage or motion ghosts. Equipment must be only the simple items named in this scene, neutral gray/black materials, complete and mechanically ordinary. Primary muscles: localized coral #F26445. Named secondary muscles: the same hue at roughly 45% intensity blended with gray, clearly lighter. Do not highlight muscles absent from the catalog list, make the body or shorts transparent, or apply a global orange cast/glow. Preserve clothing; highlight visible anatomical surfaces without inventing see-through tissue. Square PNG, unchanged target 1024x1024, true transparent alpha background outside the person and required equipment/mat and through any openings; no white or checkerboard backdrop, drawn floor plane, UI, text, labels, frames, decorations or halo. Entire person and every required piece of equipment must fit with transparent margins; adapt scale/camera without distortion or cropping. Accent pigment must use base sRGB #F26445 = RGB(242,100,69); retain this hue through ordinary 3D shading. Secondary highlights use this hue at 40-50% intensity blended with the gray body, not transparent tissue.\n\nEXERCISE ID: behind-the-back-wrist-curl-barbell\nNAME: Behind the Back Wrist Curl (Barbell)\nCatalog equipment: barbell\nDepict only: ordinary straight barbell\nPrimary muscle: forearms\nSecondary muscles: []\n\nONE SPECIFIC SCENE: Standing feet hip-width with ordinary straight barbell held BEHIND THE THIGHS, PALMS FACING BACKWARD and arms straight. Small wrist-flexion raised endpoint with a secure closed grip; elbows and shoulders stationary, no swing. Rear three-quarter view shows both hands, wrist angles and complete bar behind legs. No elbow curl or front-of-body bar.\n\nENGLISH SOURCE (this ID only; do not substitute a familiar variant):\n{\"description\": \"Standing with a barbell behind the hips, flex the wrists to raise the bar while the elbows remain straight and still.\", \"instructions\": [\"Stand tall with feet hip-width apart and hold the barbell behind the thighs with palms facing backward.\", \"Keep both arms straight and allow the wrists to extend so the bar lowers toward the fingers.\", \"Flex the wrists to curl the bar upward without moving the elbows or shoulders.\", \"Pause briefly, then lower the bar through the same wrist-only path.\"], \"form_cues\": [\"Move only at the wrists.\", \"Use a light load.\", \"Keep the grip even.\"], \"common_mistakes\": [\"Bending the elbows.\", \"Using body swing.\", \"Dropping into extension.\"], \"safety_note\": \"Use a light barbell and stop the descent before the grip or wrist position becomes unstable.\", \"provenance\": \"adapted\"}\nMaintain source contact points and safe control. Render only this characteristic phase, not the entire instruction sequence. Reference anatomy is opaque; localize the specified muscle pigment without copying reference highlights.",
+          "reference": "assets/exercises/biceps-curl-dumbbell.png",
+          "status": "failed",
+          "result_path": "assets/exercises/pending/night-2026-10-01/005/behind-the-back-wrist-curl-barbell/attempt-1.png",
+          "agent_visual_review": "not_performed",
+          "user_review": "pending",
+          "finished_at": "2026-10-01T03:34:59.161513+03:00",
+          "error": "image generation failed: http 429 Too Many Requests: Some(\"{\\\"error\\\":{\\\"type\\\":\\\"usage_limit_reached\\\",\\\"message\\\":\\\"The usage limit has been reached\\\",\\\"plan_type\\\":\\\"plus\\\",\\\"resets_at\\\":1790845839,\\\"eligible_promo\\\":null,\\\"limit_window_minutes\\\":null,\\\"resets_in_seconds\\\":30940}}\")",
+          "technical_check": "failed",
+          "technical_check_details": {
+            "id": "behind-the-back-wrist-curl-barbell",
+            "path": "assets/exercises/pending/night-2026-10-01/005/behind-the-back-wrist-curl-barbell/attempt-1.png",
+            "errors": [
+              "image generation failed: http 429 Too Many Requests: Some(\"{\\\"error\\\":{\\\"type\\\":\\\"usage_limit_reached\\\",\\\"message\\\":\\\"The usage limit has been reached\\\",\\\"plan_type\\\":\\\"plus\\\",\\\"resets_at\\\":1790845839,\\\"eligible_promo\\\":null,\\\"limit_window_minutes\\\":null,\\\"resets_in_seconds\\\":30940}}\")"
+            ],
+            "exists": false,
+            "sha256": null,
+            "actual_dimensions": null,
+            "fully_transparent_pixels": null
+          }
+        }
+      ],
       "result_sha256": null,
-      "technical_check": null,
-      "technical_check_details": null,
+      "technical_check": "failed",
+      "technical_check_details": {
+        "id": "behind-the-back-wrist-curl-barbell",
+        "path": "assets/exercises/pending/night-2026-10-01/005/behind-the-back-wrist-curl-barbell/attempt-1.png",
+        "errors": [
+          "image generation failed: http 429 Too Many Requests: Some(\"{\\\"error\\\":{\\\"type\\\":\\\"usage_limit_reached\\\",\\\"message\\\":\\\"The usage limit has been reached\\\",\\\"plan_type\\\":\\\"plus\\\",\\\"resets_at\\\":1790845839,\\\"eligible_promo\\\":null,\\\"limit_window_minutes\\\":null,\\\"resets_in_seconds\\\":30940}}\")"
+        ],
+        "exists": false,
+        "sha256": null,
+        "actual_dimensions": null,
+        "fully_transparent_pixels": null
+      },
       "agent_visual_review": "not_performed",
       "agent_visual_review_notes": [],
-      "user_review": "pending"
+      "user_review": "pending",
+      "generation_run_id": "night-2026-10-01",
+      "generated_overnight": true,
+      "batch_id": "night-2026-10-01-005",
+      "prompt": "STYLE v1. Use the supplied approved human reference ONLY for the person's identity, anatomical 3D style, body proportions, materials and detail. Do not copy its pose, dumbbells, muscle highlighting or composition. Match the same bald athletic adult male, opaque silver-gray sculpted anatomical muscle surfaces, simple fitted black shorts, barefoot, neutral face and consistent natural proportions. One person, one exercise, one characteristic phase: no second figure, collage or motion ghosts. Equipment must be only the simple items named in this scene, neutral gray/black materials, complete and mechanically ordinary. Primary muscles: localized coral #F26445. Named secondary muscles: the same hue at roughly 45% intensity blended with gray, clearly lighter. Do not highlight muscles absent from the catalog list, make the body or shorts transparent, or apply a global orange cast/glow. Preserve clothing; highlight visible anatomical surfaces without inventing see-through tissue. Square PNG, unchanged target 1024x1024, true transparent alpha background outside the person and required equipment/mat and through any openings; no white or checkerboard backdrop, drawn floor plane, UI, text, labels, frames, decorations or halo. Entire person and every required piece of equipment must fit with transparent margins; adapt scale/camera without distortion or cropping. Accent pigment must use base sRGB #F26445 = RGB(242,100,69); retain this hue through ordinary 3D shading. Secondary highlights use this hue at 40-50% intensity blended with the gray body, not transparent tissue.\n\nEXERCISE ID: behind-the-back-wrist-curl-barbell\nNAME: Behind the Back Wrist Curl (Barbell)\nCatalog equipment: barbell\nDepict only: ordinary straight barbell\nPrimary muscle: forearms\nSecondary muscles: []\n\nONE SPECIFIC SCENE: Standing feet hip-width with ordinary straight barbell held BEHIND THE THIGHS, PALMS FACING BACKWARD and arms straight. Small wrist-flexion raised endpoint with a secure closed grip; elbows and shoulders stationary, no swing. Rear three-quarter view shows both hands, wrist angles and complete bar behind legs. No elbow curl or front-of-body bar.\n\nENGLISH SOURCE (this ID only; do not substitute a familiar variant):\n{\"description\": \"Standing with a barbell behind the hips, flex the wrists to raise the bar while the elbows remain straight and still.\", \"instructions\": [\"Stand tall with feet hip-width apart and hold the barbell behind the thighs with palms facing backward.\", \"Keep both arms straight and allow the wrists to extend so the bar lowers toward the fingers.\", \"Flex the wrists to curl the bar upward without moving the elbows or shoulders.\", \"Pause briefly, then lower the bar through the same wrist-only path.\"], \"form_cues\": [\"Move only at the wrists.\", \"Use a light load.\", \"Keep the grip even.\"], \"common_mistakes\": [\"Bending the elbows.\", \"Using body swing.\", \"Dropping into extension.\"], \"safety_note\": \"Use a light barbell and stop the descent before the grip or wrist position becomes unstable.\", \"provenance\": \"adapted\"}\nMaintain source contact points and safe control. Render only this characteristic phase, not the entire instruction sequence. Reference anatomy is opaque; localize the specified muscle pigment without copying reference highlights.",
+      "reference_path": "assets/exercises/biceps-curl-dumbbell.png"
     },
     "belt-squat-machine": {
       "id": "belt-squat-machine",
@@ -2652,14 +2698,14 @@
         "exists_at_preparation": true,
         "sha256": "6bc7f4e746e85969863fcabbf86eb714a8d4cbf0d0e71b055308ff47672922cb"
       },
-      "status": "not_started",
-      "included_in_generation": false,
+      "status": "generation_failed",
+      "included_in_generation": true,
       "archived_inclusion_authorized": false,
       "blocked_by": [
         "pilot_not_approved"
       ],
-      "attempts": 0,
-      "style_version": null,
+      "attempts": 1,
+      "style_version": "v1",
       "visual_review": {
         "status": "not_reviewed",
         "reviewer": null,
@@ -2672,17 +2718,63 @@
         },
         "notes": null
       },
-      "result_path": null,
+      "result_path": "assets/exercises/pending/night-2026-10-01/005/biceps-curl-barbell/attempt-1.png",
       "supabase_path": null,
       "supabase_upload_status": "not_configured",
-      "last_error": null,
-      "attempt_history": [],
+      "last_error": "image generation failed: http 429 Too Many Requests: Some(\"{\\\"error\\\":{\\\"type\\\":\\\"usage_limit_reached\\\",\\\"message\\\":\\\"The usage limit has been reached\\\",\\\"plan_type\\\":\\\"plus\\\",\\\"resets_at\\\":1790845839,\\\"eligible_promo\\\":null,\\\"limit_window_minutes\\\":null,\\\"resets_in_seconds\\\":30943}}\")",
+      "attempt_history": [
+        {
+          "attempt": 1,
+          "id": "biceps-curl-barbell",
+          "batch_id": "night-2026-10-01-005",
+          "generation_run_id": "night-2026-10-01",
+          "generated_overnight": true,
+          "style_version": "v1",
+          "tool": "image_gen.imagegen",
+          "started_at": "2026-10-01T03:34:55.633326+03:00",
+          "prompt": "STYLE v1. Use the supplied approved human reference ONLY for the person's identity, anatomical 3D style, body proportions, materials and detail. Do not copy its pose, dumbbells, muscle highlighting or composition. Match the same bald athletic adult male, opaque silver-gray sculpted anatomical muscle surfaces, simple fitted black shorts, barefoot, neutral face and consistent natural proportions. One person, one exercise, one characteristic phase: no second figure, collage or motion ghosts. Equipment must be only the simple items named in this scene, neutral gray/black materials, complete and mechanically ordinary. Primary muscles: localized coral #F26445. Named secondary muscles: the same hue at roughly 45% intensity blended with gray, clearly lighter. Do not highlight muscles absent from the catalog list, make the body or shorts transparent, or apply a global orange cast/glow. Preserve clothing; highlight visible anatomical surfaces without inventing see-through tissue. Square PNG, unchanged target 1024x1024, true transparent alpha background outside the person and required equipment/mat and through any openings; no white or checkerboard backdrop, drawn floor plane, UI, text, labels, frames, decorations or halo. Entire person and every required piece of equipment must fit with transparent margins; adapt scale/camera without distortion or cropping. Accent pigment must use base sRGB #F26445 = RGB(242,100,69); retain this hue through ordinary 3D shading. Secondary highlights use this hue at 40-50% intensity blended with the gray body, not transparent tissue.\n\nEXERCISE ID: biceps-curl-barbell\nNAME: Bicep Curl (Barbell)\nCatalog equipment: barbell\nDepict only: ordinary straight barbell\nPrimary muscle: biceps\nSecondary muscles: []\n\nONE SPECIFIC SCENE: Standing tall with both feet shoulder-width, hold an ordinary STRAIGHT barbell in an UNDERHAND palms-up grip. Top curl phase: elbows near sides and upper arms stationary, bar rises toward shoulders, wrists aligned and torso quiet. Front three-quarter view shows both hands gripping the same full straight bar and simple balanced plates. No EZ bar or machine.\n\nENGLISH SOURCE (this ID only; do not substitute a familiar variant):\n{\"description\": \"Bicep Curl (Barbell) curls the barbell toward the shoulders with the underhand grip, keeping the upper arms controlled.\", \"instructions\": [\"Stand or sit tall with the barbell and use a underhand grip.\", \"Keep the upper arms still and curl the resistance toward the shoulders.\", \"Pause at the top without lifting the elbows.\", \"Lower slowly until the elbows are nearly straight.\"], \"form_cues\": [\"Keep elbows close.\", \"Keep wrists neutral.\", \"Use a smooth tempo.\"], \"common_mistakes\": [\"Swinging the torso.\", \"Letting elbows travel forward.\", \"Dropping the resistance.\"], \"safety_note\": \"Use a load or band tension that allows a controlled elbow path and return.\", \"provenance\": \"adapted\"}\nMaintain source contact points and safe control. Render only this characteristic phase, not the entire instruction sequence. Reference anatomy is opaque; localize the specified muscle pigment without copying reference highlights.",
+          "reference": "assets/exercises/biceps-curl-dumbbell.png",
+          "status": "failed",
+          "result_path": "assets/exercises/pending/night-2026-10-01/005/biceps-curl-barbell/attempt-1.png",
+          "agent_visual_review": "not_performed",
+          "user_review": "pending",
+          "finished_at": "2026-10-01T03:34:56.642424+03:00",
+          "error": "image generation failed: http 429 Too Many Requests: Some(\"{\\\"error\\\":{\\\"type\\\":\\\"usage_limit_reached\\\",\\\"message\\\":\\\"The usage limit has been reached\\\",\\\"plan_type\\\":\\\"plus\\\",\\\"resets_at\\\":1790845839,\\\"eligible_promo\\\":null,\\\"limit_window_minutes\\\":null,\\\"resets_in_seconds\\\":30943}}\")",
+          "technical_check": "failed",
+          "technical_check_details": {
+            "id": "biceps-curl-barbell",
+            "path": "assets/exercises/pending/night-2026-10-01/005/biceps-curl-barbell/attempt-1.png",
+            "errors": [
+              "image generation failed: http 429 Too Many Requests: Some(\"{\\\"error\\\":{\\\"type\\\":\\\"usage_limit_reached\\\",\\\"message\\\":\\\"The usage limit has been reached\\\",\\\"plan_type\\\":\\\"plus\\\",\\\"resets_at\\\":1790845839,\\\"eligible_promo\\\":null,\\\"limit_window_minutes\\\":null,\\\"resets_in_seconds\\\":30943}}\")"
+            ],
+            "exists": false,
+            "sha256": null,
+            "actual_dimensions": null,
+            "fully_transparent_pixels": null
+          }
+        }
+      ],
       "result_sha256": null,
-      "technical_check": null,
-      "technical_check_details": null,
+      "technical_check": "failed",
+      "technical_check_details": {
+        "id": "biceps-curl-barbell",
+        "path": "assets/exercises/pending/night-2026-10-01/005/biceps-curl-barbell/attempt-1.png",
+        "errors": [
+          "image generation failed: http 429 Too Many Requests: Some(\"{\\\"error\\\":{\\\"type\\\":\\\"usage_limit_reached\\\",\\\"message\\\":\\\"The usage limit has been reached\\\",\\\"plan_type\\\":\\\"plus\\\",\\\"resets_at\\\":1790845839,\\\"eligible_promo\\\":null,\\\"limit_window_minutes\\\":null,\\\"resets_in_seconds\\\":30943}}\")"
+        ],
+        "exists": false,
+        "sha256": null,
+        "actual_dimensions": null,
+        "fully_transparent_pixels": null
+      },
       "agent_visual_review": "not_performed",
       "agent_visual_review_notes": [],
-      "user_review": "pending"
+      "user_review": "pending",
+      "generation_run_id": "night-2026-10-01",
+      "generated_overnight": true,
+      "batch_id": "night-2026-10-01-005",
+      "prompt": "STYLE v1. Use the supplied approved human reference ONLY for the person's identity, anatomical 3D style, body proportions, materials and detail. Do not copy its pose, dumbbells, muscle highlighting or composition. Match the same bald athletic adult male, opaque silver-gray sculpted anatomical muscle surfaces, simple fitted black shorts, barefoot, neutral face and consistent natural proportions. One person, one exercise, one characteristic phase: no second figure, collage or motion ghosts. Equipment must be only the simple items named in this scene, neutral gray/black materials, complete and mechanically ordinary. Primary muscles: localized coral #F26445. Named secondary muscles: the same hue at roughly 45% intensity blended with gray, clearly lighter. Do not highlight muscles absent from the catalog list, make the body or shorts transparent, or apply a global orange cast/glow. Preserve clothing; highlight visible anatomical surfaces without inventing see-through tissue. Square PNG, unchanged target 1024x1024, true transparent alpha background outside the person and required equipment/mat and through any openings; no white or checkerboard backdrop, drawn floor plane, UI, text, labels, frames, decorations or halo. Entire person and every required piece of equipment must fit with transparent margins; adapt scale/camera without distortion or cropping. Accent pigment must use base sRGB #F26445 = RGB(242,100,69); retain this hue through ordinary 3D shading. Secondary highlights use this hue at 40-50% intensity blended with the gray body, not transparent tissue.\n\nEXERCISE ID: biceps-curl-barbell\nNAME: Bicep Curl (Barbell)\nCatalog equipment: barbell\nDepict only: ordinary straight barbell\nPrimary muscle: biceps\nSecondary muscles: []\n\nONE SPECIFIC SCENE: Standing tall with both feet shoulder-width, hold an ordinary STRAIGHT barbell in an UNDERHAND palms-up grip. Top curl phase: elbows near sides and upper arms stationary, bar rises toward shoulders, wrists aligned and torso quiet. Front three-quarter view shows both hands gripping the same full straight bar and simple balanced plates. No EZ bar or machine.\n\nENGLISH SOURCE (this ID only; do not substitute a familiar variant):\n{\"description\": \"Bicep Curl (Barbell) curls the barbell toward the shoulders with the underhand grip, keeping the upper arms controlled.\", \"instructions\": [\"Stand or sit tall with the barbell and use a underhand grip.\", \"Keep the upper arms still and curl the resistance toward the shoulders.\", \"Pause at the top without lifting the elbows.\", \"Lower slowly until the elbows are nearly straight.\"], \"form_cues\": [\"Keep elbows close.\", \"Keep wrists neutral.\", \"Use a smooth tempo.\"], \"common_mistakes\": [\"Swinging the torso.\", \"Letting elbows travel forward.\", \"Dropping the resistance.\"], \"safety_note\": \"Use a load or band tension that allows a controlled elbow path and return.\", \"provenance\": \"adapted\"}\nMaintain source contact points and safe control. Render only this characteristic phase, not the entire instruction sequence. Reference anatomy is opaque; localize the specified muscle pigment without copying reference highlights.",
+      "reference_path": "assets/exercises/biceps-curl-dumbbell.png"
     },
     "biceps-curl-cable-machine": {
       "id": "biceps-curl-cable-machine",
@@ -3643,14 +3735,14 @@
         "exists_at_preparation": true,
         "sha256": "88f318f9a121578e356f2c6129644fd287af0a6ef028a297b64a3f08a4ea26fb"
       },
-      "status": "not_started",
-      "included_in_generation": false,
+      "status": "generation_failed",
+      "included_in_generation": true,
       "archived_inclusion_authorized": false,
       "blocked_by": [
         "pilot_not_approved"
       ],
-      "attempts": 0,
-      "style_version": null,
+      "attempts": 1,
+      "style_version": "v1",
       "visual_review": {
         "status": "not_reviewed",
         "reviewer": null,
@@ -3663,17 +3755,63 @@
         },
         "notes": null
       },
-      "result_path": null,
+      "result_path": "assets/exercises/pending/night-2026-10-01/005/bulgarian-split-squat-dumbbell/attempt-1.png",
       "supabase_path": null,
       "supabase_upload_status": "not_configured",
-      "last_error": null,
-      "attempt_history": [],
+      "last_error": "image generation failed: http 429 Too Many Requests: Some(\"{\\\"error\\\":{\\\"type\\\":\\\"usage_limit_reached\\\",\\\"message\\\":\\\"The usage limit has been reached\\\",\\\"plan_type\\\":\\\"plus\\\",\\\"resets_at\\\":1790845839,\\\"eligible_promo\\\":null,\\\"limit_window_minutes\\\":null,\\\"resets_in_seconds\\\":30946}}\")",
+      "attempt_history": [
+        {
+          "attempt": 1,
+          "id": "bulgarian-split-squat-dumbbell",
+          "batch_id": "night-2026-10-01-005",
+          "generation_run_id": "night-2026-10-01",
+          "generated_overnight": true,
+          "style_version": "v1",
+          "tool": "image_gen.imagegen",
+          "started_at": "2026-10-01T03:34:53.154536+03:00",
+          "prompt": "STYLE v1. Use the supplied approved human reference ONLY for the person's identity, anatomical 3D style, body proportions, materials and detail. Do not copy its pose, dumbbells, muscle highlighting or composition. Match the same bald athletic adult male, opaque silver-gray sculpted anatomical muscle surfaces, simple fitted black shorts, barefoot, neutral face and consistent natural proportions. One person, one exercise, one characteristic phase: no second figure, collage or motion ghosts. Equipment must be only the simple items named in this scene, neutral gray/black materials, complete and mechanically ordinary. Primary muscles: localized coral #F26445. Named secondary muscles: the same hue at roughly 45% intensity blended with gray, clearly lighter. Do not highlight muscles absent from the catalog list, make the body or shorts transparent, or apply a global orange cast/glow. Preserve clothing; highlight visible anatomical surfaces without inventing see-through tissue. Square PNG, unchanged target 1024x1024, true transparent alpha background outside the person and required equipment/mat and through any openings; no white or checkerboard backdrop, drawn floor plane, UI, text, labels, frames, decorations or halo. Entire person and every required piece of equipment must fit with transparent margins; adapt scale/camera without distortion or cropping. Accent pigment must use base sRGB #F26445 = RGB(242,100,69); retain this hue through ordinary 3D shading. Secondary highlights use this hue at 40-50% intensity blended with the gray body, not transparent tissue.\n\nEXERCISE ID: bulgarian-split-squat-dumbbell\nNAME: Bulgarian Split Squat (Dumbbell)\nCatalog equipment: dumbbell\nDepict only: two dumbbells, ordinary flat bench\nPrimary muscle: quadriceps\nSecondary muscles: [\"glutes\", \"hamstrings\"]\n\nONE SPECIFIC SCENE: Lowered rear-foot-elevated split squat: TOP OF RIGHT FOOT rests on an ordinary flat bench behind, LEFT foot well forward flat with heel planted. Left knee bends and tracks toes, rear knee bends toward support level, torso upright. One dumbbell in each hand hangs at sides. Side three-quarter view shows bench/rear-foot contact and front sole. No rack or external balance support.\n\nENGLISH SOURCE (this ID only; do not substitute a familiar variant):\n{\"description\": \"Bulgarian Split Squat (Dumbbell) bends the hips and knees through a rear-foot-elevated squat path before returning to standing.\", \"instructions\": [\"Place the top of one foot on a bench behind you and hold one dumbbell in each hand.\", \"Bend both knees until the front thigh approaches parallel while the front heel stays planted.\", \"Pause without collapsing the front knee inward.\", \"Drive through the front foot to stand, then switch sides.\"], \"form_cues\": [\"Keep heels planted.\", \"Track knees over toes.\", \"Brace the trunk.\"], \"common_mistakes\": [\"Knees collapsing inward.\", \"Lifting the heels.\", \"Bouncing at depth.\"], \"safety_note\": \"Choose a depth and load that keep the feet, knees, and spine stable.\", \"provenance\": \"adapted\"}\nMaintain source contact points and safe control. Render only this characteristic phase, not the entire instruction sequence. Reference anatomy is opaque; localize the specified muscle pigment without copying reference highlights.",
+          "reference": "assets/exercises/biceps-curl-dumbbell.png",
+          "status": "failed",
+          "result_path": "assets/exercises/pending/night-2026-10-01/005/bulgarian-split-squat-dumbbell/attempt-1.png",
+          "agent_visual_review": "not_performed",
+          "user_review": "pending",
+          "finished_at": "2026-10-01T03:34:53.904998+03:00",
+          "error": "image generation failed: http 429 Too Many Requests: Some(\"{\\\"error\\\":{\\\"type\\\":\\\"usage_limit_reached\\\",\\\"message\\\":\\\"The usage limit has been reached\\\",\\\"plan_type\\\":\\\"plus\\\",\\\"resets_at\\\":1790845839,\\\"eligible_promo\\\":null,\\\"limit_window_minutes\\\":null,\\\"resets_in_seconds\\\":30946}}\")",
+          "technical_check": "failed",
+          "technical_check_details": {
+            "id": "bulgarian-split-squat-dumbbell",
+            "path": "assets/exercises/pending/night-2026-10-01/005/bulgarian-split-squat-dumbbell/attempt-1.png",
+            "errors": [
+              "image generation failed: http 429 Too Many Requests: Some(\"{\\\"error\\\":{\\\"type\\\":\\\"usage_limit_reached\\\",\\\"message\\\":\\\"The usage limit has been reached\\\",\\\"plan_type\\\":\\\"plus\\\",\\\"resets_at\\\":1790845839,\\\"eligible_promo\\\":null,\\\"limit_window_minutes\\\":null,\\\"resets_in_seconds\\\":30946}}\")"
+            ],
+            "exists": false,
+            "sha256": null,
+            "actual_dimensions": null,
+            "fully_transparent_pixels": null
+          }
+        }
+      ],
       "result_sha256": null,
-      "technical_check": null,
-      "technical_check_details": null,
+      "technical_check": "failed",
+      "technical_check_details": {
+        "id": "bulgarian-split-squat-dumbbell",
+        "path": "assets/exercises/pending/night-2026-10-01/005/bulgarian-split-squat-dumbbell/attempt-1.png",
+        "errors": [
+          "image generation failed: http 429 Too Many Requests: Some(\"{\\\"error\\\":{\\\"type\\\":\\\"usage_limit_reached\\\",\\\"message\\\":\\\"The usage limit has been reached\\\",\\\"plan_type\\\":\\\"plus\\\",\\\"resets_at\\\":1790845839,\\\"eligible_promo\\\":null,\\\"limit_window_minutes\\\":null,\\\"resets_in_seconds\\\":30946}}\")"
+        ],
+        "exists": false,
+        "sha256": null,
+        "actual_dimensions": null,
+        "fully_transparent_pixels": null
+      },
       "agent_visual_review": "not_performed",
       "agent_visual_review_notes": [],
-      "user_review": "pending"
+      "user_review": "pending",
+      "generation_run_id": "night-2026-10-01",
+      "generated_overnight": true,
+      "batch_id": "night-2026-10-01-005",
+      "prompt": "STYLE v1. Use the supplied approved human reference ONLY for the person's identity, anatomical 3D style, body proportions, materials and detail. Do not copy its pose, dumbbells, muscle highlighting or composition. Match the same bald athletic adult male, opaque silver-gray sculpted anatomical muscle surfaces, simple fitted black shorts, barefoot, neutral face and consistent natural proportions. One person, one exercise, one characteristic phase: no second figure, collage or motion ghosts. Equipment must be only the simple items named in this scene, neutral gray/black materials, complete and mechanically ordinary. Primary muscles: localized coral #F26445. Named secondary muscles: the same hue at roughly 45% intensity blended with gray, clearly lighter. Do not highlight muscles absent from the catalog list, make the body or shorts transparent, or apply a global orange cast/glow. Preserve clothing; highlight visible anatomical surfaces without inventing see-through tissue. Square PNG, unchanged target 1024x1024, true transparent alpha background outside the person and required equipment/mat and through any openings; no white or checkerboard backdrop, drawn floor plane, UI, text, labels, frames, decorations or halo. Entire person and every required piece of equipment must fit with transparent margins; adapt scale/camera without distortion or cropping. Accent pigment must use base sRGB #F26445 = RGB(242,100,69); retain this hue through ordinary 3D shading. Secondary highlights use this hue at 40-50% intensity blended with the gray body, not transparent tissue.\n\nEXERCISE ID: bulgarian-split-squat-dumbbell\nNAME: Bulgarian Split Squat (Dumbbell)\nCatalog equipment: dumbbell\nDepict only: two dumbbells, ordinary flat bench\nPrimary muscle: quadriceps\nSecondary muscles: [\"glutes\", \"hamstrings\"]\n\nONE SPECIFIC SCENE: Lowered rear-foot-elevated split squat: TOP OF RIGHT FOOT rests on an ordinary flat bench behind, LEFT foot well forward flat with heel planted. Left knee bends and tracks toes, rear knee bends toward support level, torso upright. One dumbbell in each hand hangs at sides. Side three-quarter view shows bench/rear-foot contact and front sole. No rack or external balance support.\n\nENGLISH SOURCE (this ID only; do not substitute a familiar variant):\n{\"description\": \"Bulgarian Split Squat (Dumbbell) bends the hips and knees through a rear-foot-elevated squat path before returning to standing.\", \"instructions\": [\"Place the top of one foot on a bench behind you and hold one dumbbell in each hand.\", \"Bend both knees until the front thigh approaches parallel while the front heel stays planted.\", \"Pause without collapsing the front knee inward.\", \"Drive through the front foot to stand, then switch sides.\"], \"form_cues\": [\"Keep heels planted.\", \"Track knees over toes.\", \"Brace the trunk.\"], \"common_mistakes\": [\"Knees collapsing inward.\", \"Lifting the heels.\", \"Bouncing at depth.\"], \"safety_note\": \"Choose a depth and load that keep the feet, knees, and spine stable.\", \"provenance\": \"adapted\"}\nMaintain source contact points and safe control. Render only this characteristic phase, not the entire instruction sequence. Reference anatomy is opaque; localize the specified muscle pigment without copying reference highlights.",
+      "reference_path": "assets/exercises/biceps-curl-dumbbell.png"
     },
     "burpee": {
       "id": "burpee",
@@ -18391,14 +18529,14 @@
         "mapping": null
       },
       "source_reference_image": null,
-      "status": "not_started",
-      "included_in_generation": false,
+      "status": "generation_failed",
+      "included_in_generation": true,
       "archived_inclusion_authorized": false,
       "blocked_by": [
         "pilot_not_approved"
       ],
-      "attempts": 0,
-      "style_version": null,
+      "attempts": 1,
+      "style_version": "v1",
       "visual_review": {
         "status": "not_reviewed",
         "reviewer": null,
@@ -18411,17 +18549,63 @@
         },
         "notes": null
       },
-      "result_path": null,
+      "result_path": "assets/exercises/pending/night-2026-10-01/005/pinwheel-curl-dumbbell/attempt-1.png",
       "supabase_path": null,
       "supabase_upload_status": "not_configured",
-      "last_error": null,
-      "attempt_history": [],
+      "last_error": "image generation failed: http 429 Too Many Requests: Some(\"{\\\"error\\\":{\\\"type\\\":\\\"usage_limit_reached\\\",\\\"message\\\":\\\"The usage limit has been reached\\\",\\\"plan_type\\\":\\\"plus\\\",\\\"resets_at\\\":1790845839,\\\"eligible_promo\\\":null,\\\"limit_window_minutes\\\":null,\\\"resets_in_seconds\\\":30948}}\")",
+      "attempt_history": [
+        {
+          "attempt": 1,
+          "id": "pinwheel-curl-dumbbell",
+          "batch_id": "night-2026-10-01-005",
+          "generation_run_id": "night-2026-10-01",
+          "generated_overnight": true,
+          "style_version": "v1",
+          "tool": "image_gen.imagegen",
+          "started_at": "2026-10-01T03:34:50.396262+03:00",
+          "prompt": "STYLE v1. Use the supplied approved human reference ONLY for the person's identity, anatomical 3D style, body proportions, materials and detail. Do not copy its pose, dumbbells, muscle highlighting or composition. Match the same bald athletic adult male, opaque silver-gray sculpted anatomical muscle surfaces, simple fitted black shorts, barefoot, neutral face and consistent natural proportions. One person, one exercise, one characteristic phase: no second figure, collage or motion ghosts. Equipment must be only the simple items named in this scene, neutral gray/black materials, complete and mechanically ordinary. Primary muscles: localized coral #F26445. Named secondary muscles: the same hue at roughly 45% intensity blended with gray, clearly lighter. Do not highlight muscles absent from the catalog list, make the body or shorts transparent, or apply a global orange cast/glow. Preserve clothing; highlight visible anatomical surfaces without inventing see-through tissue. Square PNG, unchanged target 1024x1024, true transparent alpha background outside the person and required equipment/mat and through any openings; no white or checkerboard backdrop, drawn floor plane, UI, text, labels, frames, decorations or halo. Entire person and every required piece of equipment must fit with transparent margins; adapt scale/camera without distortion or cropping. Accent pigment must use base sRGB #F26445 = RGB(242,100,69); retain this hue through ordinary 3D shading. Secondary highlights use this hue at 40-50% intensity blended with the gray body, not transparent tissue.\n\nEXERCISE ID: pinwheel-curl-dumbbell\nNAME: Pinwheel Curl (Dumbbell)\nCatalog equipment: dumbbell\nDepict only: two dumbbells\nPrimary muscle: biceps\nSecondary muscles: [\"forearms\"]\n\nONE SPECIFIC SCENE: Standing with one dumbbell in each hand, neutral palms inward/thumbs up. RIGHT arm curls its dumbbell diagonally toward the LEFT shoulder while right upper arm/elbow stays close to its original side; left arm and weight hang at the side. Torso stays upright without twisting. Front three-quarter view shows cross-body path, thumb-up grip and both weights. No supination.\n\nENGLISH SOURCE (this ID only; do not substitute a familiar variant):\n{\"description\": \"A pinwheel curl uses a neutral-grip dumbbell path across the body toward the opposite shoulder.\", \"instructions\": [\"Stand tall holding a dumbbell at each side with the palms facing inward.\", \"Keep the upper arm still and curl one dumbbell diagonally toward the opposite shoulder.\", \"Pause briefly without rotating the torso.\", \"Lower the dumbbell slowly and alternate sides.\"], \"form_cues\": [\"Keep the thumb-up grip.\", \"Keep the elbow near the side.\", \"Avoid turning the torso.\"], \"common_mistakes\": [\"Swinging the shoulder.\", \"Rotating into a regular supinated curl.\", \"Dropping the weight.\"], \"safety_note\": \"Use a light load if the cross-body path strains the wrist or elbow.\", \"provenance\": \"authored\"}\nMaintain source contact points and safe control. Render only this characteristic phase, not the entire instruction sequence. Reference anatomy is opaque; localize the specified muscle pigment without copying reference highlights.",
+          "reference": "assets/exercises/biceps-curl-dumbbell.png",
+          "status": "failed",
+          "result_path": "assets/exercises/pending/night-2026-10-01/005/pinwheel-curl-dumbbell/attempt-1.png",
+          "agent_visual_review": "not_performed",
+          "user_review": "pending",
+          "finished_at": "2026-10-01T03:34:51.401016+03:00",
+          "error": "image generation failed: http 429 Too Many Requests: Some(\"{\\\"error\\\":{\\\"type\\\":\\\"usage_limit_reached\\\",\\\"message\\\":\\\"The usage limit has been reached\\\",\\\"plan_type\\\":\\\"plus\\\",\\\"resets_at\\\":1790845839,\\\"eligible_promo\\\":null,\\\"limit_window_minutes\\\":null,\\\"resets_in_seconds\\\":30948}}\")",
+          "technical_check": "failed",
+          "technical_check_details": {
+            "id": "pinwheel-curl-dumbbell",
+            "path": "assets/exercises/pending/night-2026-10-01/005/pinwheel-curl-dumbbell/attempt-1.png",
+            "errors": [
+              "image generation failed: http 429 Too Many Requests: Some(\"{\\\"error\\\":{\\\"type\\\":\\\"usage_limit_reached\\\",\\\"message\\\":\\\"The usage limit has been reached\\\",\\\"plan_type\\\":\\\"plus\\\",\\\"resets_at\\\":1790845839,\\\"eligible_promo\\\":null,\\\"limit_window_minutes\\\":null,\\\"resets_in_seconds\\\":30948}}\")"
+            ],
+            "exists": false,
+            "sha256": null,
+            "actual_dimensions": null,
+            "fully_transparent_pixels": null
+          }
+        }
+      ],
       "result_sha256": null,
-      "technical_check": null,
-      "technical_check_details": null,
+      "technical_check": "failed",
+      "technical_check_details": {
+        "id": "pinwheel-curl-dumbbell",
+        "path": "assets/exercises/pending/night-2026-10-01/005/pinwheel-curl-dumbbell/attempt-1.png",
+        "errors": [
+          "image generation failed: http 429 Too Many Requests: Some(\"{\\\"error\\\":{\\\"type\\\":\\\"usage_limit_reached\\\",\\\"message\\\":\\\"The usage limit has been reached\\\",\\\"plan_type\\\":\\\"plus\\\",\\\"resets_at\\\":1790845839,\\\"eligible_promo\\\":null,\\\"limit_window_minutes\\\":null,\\\"resets_in_seconds\\\":30948}}\")"
+        ],
+        "exists": false,
+        "sha256": null,
+        "actual_dimensions": null,
+        "fully_transparent_pixels": null
+      },
       "agent_visual_review": "not_performed",
       "agent_visual_review_notes": [],
-      "user_review": "pending"
+      "user_review": "pending",
+      "generation_run_id": "night-2026-10-01",
+      "generated_overnight": true,
+      "batch_id": "night-2026-10-01-005",
+      "prompt": "STYLE v1. Use the supplied approved human reference ONLY for the person's identity, anatomical 3D style, body proportions, materials and detail. Do not copy its pose, dumbbells, muscle highlighting or composition. Match the same bald athletic adult male, opaque silver-gray sculpted anatomical muscle surfaces, simple fitted black shorts, barefoot, neutral face and consistent natural proportions. One person, one exercise, one characteristic phase: no second figure, collage or motion ghosts. Equipment must be only the simple items named in this scene, neutral gray/black materials, complete and mechanically ordinary. Primary muscles: localized coral #F26445. Named secondary muscles: the same hue at roughly 45% intensity blended with gray, clearly lighter. Do not highlight muscles absent from the catalog list, make the body or shorts transparent, or apply a global orange cast/glow. Preserve clothing; highlight visible anatomical surfaces without inventing see-through tissue. Square PNG, unchanged target 1024x1024, true transparent alpha background outside the person and required equipment/mat and through any openings; no white or checkerboard backdrop, drawn floor plane, UI, text, labels, frames, decorations or halo. Entire person and every required piece of equipment must fit with transparent margins; adapt scale/camera without distortion or cropping. Accent pigment must use base sRGB #F26445 = RGB(242,100,69); retain this hue through ordinary 3D shading. Secondary highlights use this hue at 40-50% intensity blended with the gray body, not transparent tissue.\n\nEXERCISE ID: pinwheel-curl-dumbbell\nNAME: Pinwheel Curl (Dumbbell)\nCatalog equipment: dumbbell\nDepict only: two dumbbells\nPrimary muscle: biceps\nSecondary muscles: [\"forearms\"]\n\nONE SPECIFIC SCENE: Standing with one dumbbell in each hand, neutral palms inward/thumbs up. RIGHT arm curls its dumbbell diagonally toward the LEFT shoulder while right upper arm/elbow stays close to its original side; left arm and weight hang at the side. Torso stays upright without twisting. Front three-quarter view shows cross-body path, thumb-up grip and both weights. No supination.\n\nENGLISH SOURCE (this ID only; do not substitute a familiar variant):\n{\"description\": \"A pinwheel curl uses a neutral-grip dumbbell path across the body toward the opposite shoulder.\", \"instructions\": [\"Stand tall holding a dumbbell at each side with the palms facing inward.\", \"Keep the upper arm still and curl one dumbbell diagonally toward the opposite shoulder.\", \"Pause briefly without rotating the torso.\", \"Lower the dumbbell slowly and alternate sides.\"], \"form_cues\": [\"Keep the thumb-up grip.\", \"Keep the elbow near the side.\", \"Avoid turning the torso.\"], \"common_mistakes\": [\"Swinging the shoulder.\", \"Rotating into a regular supinated curl.\", \"Dropping the weight.\"], \"safety_note\": \"Use a light load if the cross-body path strains the wrist or elbow.\", \"provenance\": \"authored\"}\nMaintain source contact points and safe control. Render only this characteristic phase, not the entire instruction sequence. Reference anatomy is opaque; localize the specified muscle pigment without copying reference highlights.",
+      "reference_path": "assets/exercises/biceps-curl-dumbbell.png"
     },
     "pistol-squat": {
       "id": "pistol-squat",
@@ -21618,14 +21802,14 @@
         "exists_at_preparation": true,
         "sha256": "965a3fdade72908e08177b593d8b331bea42694ca736e140d75c03e48d74d2d6"
       },
-      "status": "not_started",
-      "included_in_generation": false,
+      "status": "generation_failed",
+      "included_in_generation": true,
       "archived_inclusion_authorized": false,
       "blocked_by": [
         "pilot_not_approved"
       ],
-      "attempts": 0,
-      "style_version": null,
+      "attempts": 1,
+      "style_version": "v1",
       "visual_review": {
         "status": "not_reviewed",
         "reviewer": null,
@@ -21638,17 +21822,63 @@
         },
         "notes": null
       },
-      "result_path": null,
+      "result_path": "assets/exercises/pending/night-2026-10-01/005/reverse-wrist-curl-dumbbell/attempt-1.png",
       "supabase_path": null,
       "supabase_upload_status": "not_configured",
-      "last_error": null,
-      "attempt_history": [],
+      "last_error": "image generation failed: http 429 Too Many Requests: Some(\"{\\\"error\\\":{\\\"type\\\":\\\"usage_limit_reached\\\",\\\"message\\\":\\\"The usage limit has been reached\\\",\\\"plan_type\\\":\\\"plus\\\",\\\"resets_at\\\":1790845839,\\\"eligible_promo\\\":null,\\\"limit_window_minutes\\\":null,\\\"resets_in_seconds\\\":30950}}\")",
+      "attempt_history": [
+        {
+          "attempt": 1,
+          "id": "reverse-wrist-curl-dumbbell",
+          "batch_id": "night-2026-10-01-005",
+          "generation_run_id": "night-2026-10-01",
+          "generated_overnight": true,
+          "style_version": "v1",
+          "tool": "image_gen.imagegen",
+          "started_at": "2026-10-01T03:34:49.091293+03:00",
+          "prompt": "STYLE v1. Use the supplied approved human reference ONLY for the person's identity, anatomical 3D style, body proportions, materials and detail. Do not copy its pose, dumbbells, muscle highlighting or composition. Match the same bald athletic adult male, opaque silver-gray sculpted anatomical muscle surfaces, simple fitted black shorts, barefoot, neutral face and consistent natural proportions. One person, one exercise, one characteristic phase: no second figure, collage or motion ghosts. Equipment must be only the simple items named in this scene, neutral gray/black materials, complete and mechanically ordinary. Primary muscles: localized coral #F26445. Named secondary muscles: the same hue at roughly 45% intensity blended with gray, clearly lighter. Do not highlight muscles absent from the catalog list, make the body or shorts transparent, or apply a global orange cast/glow. Preserve clothing; highlight visible anatomical surfaces without inventing see-through tissue. Square PNG, unchanged target 1024x1024, true transparent alpha background outside the person and required equipment/mat and through any openings; no white or checkerboard backdrop, drawn floor plane, UI, text, labels, frames, decorations or halo. Entire person and every required piece of equipment must fit with transparent margins; adapt scale/camera without distortion or cropping. Accent pigment must use base sRGB #F26445 = RGB(242,100,69); retain this hue through ordinary 3D shading. Secondary highlights use this hue at 40-50% intensity blended with the gray body, not transparent tissue.\n\nEXERCISE ID: reverse-wrist-curl-dumbbell\nNAME: Reverse Wrist Curl (Dumbbell)\nCatalog equipment: dumbbell\nDepict only: two dumbbells, ordinary flat bench\nPrimary muscle: forearms\nSecondary muscles: []\n\nONE SPECIFIC SCENE: Seated on an ordinary flat bench, feet flat, forearms resting on thighs and wrists projecting beyond knees. One dumbbell held in each hand with PALMS DOWN. Small wrist-extension top phase lifts backs of hands/weights while upper arms and elbows remain still; secure closed grips. Elevated front-side view shows forearm contacts and wrist motion. No elbow curl.\n\nENGLISH SOURCE (this ID only; do not substitute a familiar variant):\n{\"description\": \"With the forearms supported and palms down, extend the wrists to lift the dumbbells and lower them slowly.\", \"instructions\": [\"Sit on a bench or chair with your feet flat on the ground.\", \"Hold a dumbbell in each hand with an overhand grip, palms facing down.\", \"Rest your forearms on your thighs, allowing your wrists to hang off the edge.\", \"Slowly curl your wrists upward, bringing the dumbbells towards your body.\", \"Pause for a moment at the top, then slowly lower the dumbbells back down to the starting position.\", \"Repeat for the desired number of repetitions.\"], \"form_cues\": [\"Keep the upper arms still.\", \"Use a steady squeeze at the top.\", \"Lower through the full range.\"], \"common_mistakes\": [\"Swinging the body.\", \"Driving the elbows forward.\", \"Dropping the weight.\"], \"safety_note\": \"Choose a load that keeps the wrists and elbows aligned without momentum.\", \"provenance\": \"adapted\"}\nMaintain source contact points and safe control. Render only this characteristic phase, not the entire instruction sequence. Reference anatomy is opaque; localize the specified muscle pigment without copying reference highlights.",
+          "reference": "assets/exercises/biceps-curl-dumbbell.png",
+          "status": "failed",
+          "result_path": "assets/exercises/pending/night-2026-10-01/005/reverse-wrist-curl-dumbbell/attempt-1.png",
+          "agent_visual_review": "not_performed",
+          "user_review": "pending",
+          "finished_at": "2026-10-01T03:34:49.905867+03:00",
+          "error": "image generation failed: http 429 Too Many Requests: Some(\"{\\\"error\\\":{\\\"type\\\":\\\"usage_limit_reached\\\",\\\"message\\\":\\\"The usage limit has been reached\\\",\\\"plan_type\\\":\\\"plus\\\",\\\"resets_at\\\":1790845839,\\\"eligible_promo\\\":null,\\\"limit_window_minutes\\\":null,\\\"resets_in_seconds\\\":30950}}\")",
+          "technical_check": "failed",
+          "technical_check_details": {
+            "id": "reverse-wrist-curl-dumbbell",
+            "path": "assets/exercises/pending/night-2026-10-01/005/reverse-wrist-curl-dumbbell/attempt-1.png",
+            "errors": [
+              "image generation failed: http 429 Too Many Requests: Some(\"{\\\"error\\\":{\\\"type\\\":\\\"usage_limit_reached\\\",\\\"message\\\":\\\"The usage limit has been reached\\\",\\\"plan_type\\\":\\\"plus\\\",\\\"resets_at\\\":1790845839,\\\"eligible_promo\\\":null,\\\"limit_window_minutes\\\":null,\\\"resets_in_seconds\\\":30950}}\")"
+            ],
+            "exists": false,
+            "sha256": null,
+            "actual_dimensions": null,
+            "fully_transparent_pixels": null
+          }
+        }
+      ],
       "result_sha256": null,
-      "technical_check": null,
-      "technical_check_details": null,
+      "technical_check": "failed",
+      "technical_check_details": {
+        "id": "reverse-wrist-curl-dumbbell",
+        "path": "assets/exercises/pending/night-2026-10-01/005/reverse-wrist-curl-dumbbell/attempt-1.png",
+        "errors": [
+          "image generation failed: http 429 Too Many Requests: Some(\"{\\\"error\\\":{\\\"type\\\":\\\"usage_limit_reached\\\",\\\"message\\\":\\\"The usage limit has been reached\\\",\\\"plan_type\\\":\\\"plus\\\",\\\"resets_at\\\":1790845839,\\\"eligible_promo\\\":null,\\\"limit_window_minutes\\\":null,\\\"resets_in_seconds\\\":30950}}\")"
+        ],
+        "exists": false,
+        "sha256": null,
+        "actual_dimensions": null,
+        "fully_transparent_pixels": null
+      },
       "agent_visual_review": "not_performed",
       "agent_visual_review_notes": [],
-      "user_review": "pending"
+      "user_review": "pending",
+      "generation_run_id": "night-2026-10-01",
+      "generated_overnight": true,
+      "batch_id": "night-2026-10-01-005",
+      "prompt": "STYLE v1. Use the supplied approved human reference ONLY for the person's identity, anatomical 3D style, body proportions, materials and detail. Do not copy its pose, dumbbells, muscle highlighting or composition. Match the same bald athletic adult male, opaque silver-gray sculpted anatomical muscle surfaces, simple fitted black shorts, barefoot, neutral face and consistent natural proportions. One person, one exercise, one characteristic phase: no second figure, collage or motion ghosts. Equipment must be only the simple items named in this scene, neutral gray/black materials, complete and mechanically ordinary. Primary muscles: localized coral #F26445. Named secondary muscles: the same hue at roughly 45% intensity blended with gray, clearly lighter. Do not highlight muscles absent from the catalog list, make the body or shorts transparent, or apply a global orange cast/glow. Preserve clothing; highlight visible anatomical surfaces without inventing see-through tissue. Square PNG, unchanged target 1024x1024, true transparent alpha background outside the person and required equipment/mat and through any openings; no white or checkerboard backdrop, drawn floor plane, UI, text, labels, frames, decorations or halo. Entire person and every required piece of equipment must fit with transparent margins; adapt scale/camera without distortion or cropping. Accent pigment must use base sRGB #F26445 = RGB(242,100,69); retain this hue through ordinary 3D shading. Secondary highlights use this hue at 40-50% intensity blended with the gray body, not transparent tissue.\n\nEXERCISE ID: reverse-wrist-curl-dumbbell\nNAME: Reverse Wrist Curl (Dumbbell)\nCatalog equipment: dumbbell\nDepict only: two dumbbells, ordinary flat bench\nPrimary muscle: forearms\nSecondary muscles: []\n\nONE SPECIFIC SCENE: Seated on an ordinary flat bench, feet flat, forearms resting on thighs and wrists projecting beyond knees. One dumbbell held in each hand with PALMS DOWN. Small wrist-extension top phase lifts backs of hands/weights while upper arms and elbows remain still; secure closed grips. Elevated front-side view shows forearm contacts and wrist motion. No elbow curl.\n\nENGLISH SOURCE (this ID only; do not substitute a familiar variant):\n{\"description\": \"With the forearms supported and palms down, extend the wrists to lift the dumbbells and lower them slowly.\", \"instructions\": [\"Sit on a bench or chair with your feet flat on the ground.\", \"Hold a dumbbell in each hand with an overhand grip, palms facing down.\", \"Rest your forearms on your thighs, allowing your wrists to hang off the edge.\", \"Slowly curl your wrists upward, bringing the dumbbells towards your body.\", \"Pause for a moment at the top, then slowly lower the dumbbells back down to the starting position.\", \"Repeat for the desired number of repetitions.\"], \"form_cues\": [\"Keep the upper arms still.\", \"Use a steady squeeze at the top.\", \"Lower through the full range.\"], \"common_mistakes\": [\"Swinging the body.\", \"Driving the elbows forward.\", \"Dropping the weight.\"], \"safety_note\": \"Choose a load that keeps the wrists and elbows aligned without momentum.\", \"provenance\": \"adapted\"}\nMaintain source contact points and safe control. Render only this characteristic phase, not the entire instruction sequence. Reference anatomy is opaque; localize the specified muscle pigment without copying reference highlights.",
+      "reference_path": "assets/exercises/biceps-curl-dumbbell.png"
     },
     "ring-dips": {
       "id": "ring-dips",
@@ -23064,14 +23294,14 @@
         "exists_at_preparation": true,
         "sha256": "c0eeb9528ea7827e8100843d22a270ed1b05a42afa62193845cd609a1078872f"
       },
-      "status": "not_started",
-      "included_in_generation": false,
+      "status": "generation_failed",
+      "included_in_generation": true,
       "archived_inclusion_authorized": false,
       "blocked_by": [
         "pilot_not_approved"
       ],
-      "attempts": 0,
-      "style_version": null,
+      "attempts": 1,
+      "style_version": "v1",
       "visual_review": {
         "status": "not_reviewed",
         "reviewer": null,
@@ -23084,17 +23314,63 @@
         },
         "notes": null
       },
-      "result_path": null,
+      "result_path": "assets/exercises/pending/night-2026-10-01/005/seated-incline-hammer-curl-dumbbell/attempt-1.png",
       "supabase_path": null,
       "supabase_upload_status": "not_configured",
-      "last_error": null,
-      "attempt_history": [],
+      "last_error": "image generation failed: http 429 Too Many Requests: Some(\"{\\\"error\\\":{\\\"type\\\":\\\"usage_limit_reached\\\",\\\"message\\\":\\\"The usage limit has been reached\\\",\\\"plan_type\\\":\\\"plus\\\",\\\"resets_at\\\":1790845839,\\\"eligible_promo\\\":null,\\\"limit_window_minutes\\\":null,\\\"resets_in_seconds\\\":30947}}\")",
+      "attempt_history": [
+        {
+          "attempt": 1,
+          "id": "seated-incline-hammer-curl-dumbbell",
+          "batch_id": "night-2026-10-01-005",
+          "generation_run_id": "night-2026-10-01",
+          "generated_overnight": true,
+          "style_version": "v1",
+          "tool": "image_gen.imagegen",
+          "started_at": "2026-10-01T03:34:51.883105+03:00",
+          "prompt": "STYLE v1. Use the supplied approved human reference ONLY for the person's identity, anatomical 3D style, body proportions, materials and detail. Do not copy its pose, dumbbells, muscle highlighting or composition. Match the same bald athletic adult male, opaque silver-gray sculpted anatomical muscle surfaces, simple fitted black shorts, barefoot, neutral face and consistent natural proportions. One person, one exercise, one characteristic phase: no second figure, collage or motion ghosts. Equipment must be only the simple items named in this scene, neutral gray/black materials, complete and mechanically ordinary. Primary muscles: localized coral #F26445. Named secondary muscles: the same hue at roughly 45% intensity blended with gray, clearly lighter. Do not highlight muscles absent from the catalog list, make the body or shorts transparent, or apply a global orange cast/glow. Preserve clothing; highlight visible anatomical surfaces without inventing see-through tissue. Square PNG, unchanged target 1024x1024, true transparent alpha background outside the person and required equipment/mat and through any openings; no white or checkerboard backdrop, drawn floor plane, UI, text, labels, frames, decorations or halo. Entire person and every required piece of equipment must fit with transparent margins; adapt scale/camera without distortion or cropping. Accent pigment must use base sRGB #F26445 = RGB(242,100,69); retain this hue through ordinary 3D shading. Secondary highlights use this hue at 40-50% intensity blended with the gray body, not transparent tissue.\n\nEXERCISE ID: seated-incline-hammer-curl-dumbbell\nNAME: Seated Incline Hammer Curl (Dumbbell)\nCatalog equipment: dumbbell\nDepict only: two dumbbells, ordinary adjustable bench at 45 degrees\nPrimary muscle: biceps\nSecondary muscles: [\"forearms\"]\n\nONE SPECIFIC SCENE: Seated with BACK supported on an ordinary adjustable bench backrest set to 45 DEGREES and both feet flat. One dumbbell in each hand, NEUTRAL PALMS FACING TORSO, upper arms stationary near sides while both elbows bend and weights rise to shoulder level. Front-side three-quarter view shows complete bench, back contact and both neutral grips. No preacher support or machine.\n\nENGLISH SOURCE (this ID only; do not substitute a familiar variant):\n{\"description\": \"Sit on a 45-degree incline with neutral wrists, curl both dumbbells toward the shoulders, then lower them.\", \"instructions\": [\"Sit on an incline bench with a dumbbell in each hand, palms facing your torso and arms fully extended.\", \"Keep your back against the bench and your feet flat on the floor.\", \"While keeping your upper arms stationary, exhale and curl the weights while contracting your biceps.\", \"Continue to raise the weights until your biceps are fully contracted and the dumbbells are at shoulder level.\", \"Hold the contracted position for a brief pause as you squeeze your biceps.\", \"Inhale and slowly begin to lower the dumbbells back to the starting position.\"], \"form_cues\": [\"Keep the upper arms or thighs still.\", \"Keep wrists aligned.\", \"Lower the weight slowly.\"], \"common_mistakes\": [\"Swinging the torso.\", \"Letting the elbow drift.\", \"Dropping the weight.\"], \"safety_note\": \"Choose resistance that keeps the elbow and wrist path controlled.\", \"provenance\": \"adapted\"}\nMaintain source contact points and safe control. Render only this characteristic phase, not the entire instruction sequence. Reference anatomy is opaque; localize the specified muscle pigment without copying reference highlights.",
+          "reference": "assets/exercises/biceps-curl-dumbbell.png",
+          "status": "failed",
+          "result_path": "assets/exercises/pending/night-2026-10-01/005/seated-incline-hammer-curl-dumbbell/attempt-1.png",
+          "agent_visual_review": "not_performed",
+          "user_review": "pending",
+          "finished_at": "2026-10-01T03:34:52.674487+03:00",
+          "error": "image generation failed: http 429 Too Many Requests: Some(\"{\\\"error\\\":{\\\"type\\\":\\\"usage_limit_reached\\\",\\\"message\\\":\\\"The usage limit has been reached\\\",\\\"plan_type\\\":\\\"plus\\\",\\\"resets_at\\\":1790845839,\\\"eligible_promo\\\":null,\\\"limit_window_minutes\\\":null,\\\"resets_in_seconds\\\":30947}}\")",
+          "technical_check": "failed",
+          "technical_check_details": {
+            "id": "seated-incline-hammer-curl-dumbbell",
+            "path": "assets/exercises/pending/night-2026-10-01/005/seated-incline-hammer-curl-dumbbell/attempt-1.png",
+            "errors": [
+              "image generation failed: http 429 Too Many Requests: Some(\"{\\\"error\\\":{\\\"type\\\":\\\"usage_limit_reached\\\",\\\"message\\\":\\\"The usage limit has been reached\\\",\\\"plan_type\\\":\\\"plus\\\",\\\"resets_at\\\":1790845839,\\\"eligible_promo\\\":null,\\\"limit_window_minutes\\\":null,\\\"resets_in_seconds\\\":30947}}\")"
+            ],
+            "exists": false,
+            "sha256": null,
+            "actual_dimensions": null,
+            "fully_transparent_pixels": null
+          }
+        }
+      ],
       "result_sha256": null,
-      "technical_check": null,
-      "technical_check_details": null,
+      "technical_check": "failed",
+      "technical_check_details": {
+        "id": "seated-incline-hammer-curl-dumbbell",
+        "path": "assets/exercises/pending/night-2026-10-01/005/seated-incline-hammer-curl-dumbbell/attempt-1.png",
+        "errors": [
+          "image generation failed: http 429 Too Many Requests: Some(\"{\\\"error\\\":{\\\"type\\\":\\\"usage_limit_reached\\\",\\\"message\\\":\\\"The usage limit has been reached\\\",\\\"plan_type\\\":\\\"plus\\\",\\\"resets_at\\\":1790845839,\\\"eligible_promo\\\":null,\\\"limit_window_minutes\\\":null,\\\"resets_in_seconds\\\":30947}}\")"
+        ],
+        "exists": false,
+        "sha256": null,
+        "actual_dimensions": null,
+        "fully_transparent_pixels": null
+      },
       "agent_visual_review": "not_performed",
       "agent_visual_review_notes": [],
-      "user_review": "pending"
+      "user_review": "pending",
+      "generation_run_id": "night-2026-10-01",
+      "generated_overnight": true,
+      "batch_id": "night-2026-10-01-005",
+      "prompt": "STYLE v1. Use the supplied approved human reference ONLY for the person's identity, anatomical 3D style, body proportions, materials and detail. Do not copy its pose, dumbbells, muscle highlighting or composition. Match the same bald athletic adult male, opaque silver-gray sculpted anatomical muscle surfaces, simple fitted black shorts, barefoot, neutral face and consistent natural proportions. One person, one exercise, one characteristic phase: no second figure, collage or motion ghosts. Equipment must be only the simple items named in this scene, neutral gray/black materials, complete and mechanically ordinary. Primary muscles: localized coral #F26445. Named secondary muscles: the same hue at roughly 45% intensity blended with gray, clearly lighter. Do not highlight muscles absent from the catalog list, make the body or shorts transparent, or apply a global orange cast/glow. Preserve clothing; highlight visible anatomical surfaces without inventing see-through tissue. Square PNG, unchanged target 1024x1024, true transparent alpha background outside the person and required equipment/mat and through any openings; no white or checkerboard backdrop, drawn floor plane, UI, text, labels, frames, decorations or halo. Entire person and every required piece of equipment must fit with transparent margins; adapt scale/camera without distortion or cropping. Accent pigment must use base sRGB #F26445 = RGB(242,100,69); retain this hue through ordinary 3D shading. Secondary highlights use this hue at 40-50% intensity blended with the gray body, not transparent tissue.\n\nEXERCISE ID: seated-incline-hammer-curl-dumbbell\nNAME: Seated Incline Hammer Curl (Dumbbell)\nCatalog equipment: dumbbell\nDepict only: two dumbbells, ordinary adjustable bench at 45 degrees\nPrimary muscle: biceps\nSecondary muscles: [\"forearms\"]\n\nONE SPECIFIC SCENE: Seated with BACK supported on an ordinary adjustable bench backrest set to 45 DEGREES and both feet flat. One dumbbell in each hand, NEUTRAL PALMS FACING TORSO, upper arms stationary near sides while both elbows bend and weights rise to shoulder level. Front-side three-quarter view shows complete bench, back contact and both neutral grips. No preacher support or machine.\n\nENGLISH SOURCE (this ID only; do not substitute a familiar variant):\n{\"description\": \"Sit on a 45-degree incline with neutral wrists, curl both dumbbells toward the shoulders, then lower them.\", \"instructions\": [\"Sit on an incline bench with a dumbbell in each hand, palms facing your torso and arms fully extended.\", \"Keep your back against the bench and your feet flat on the floor.\", \"While keeping your upper arms stationary, exhale and curl the weights while contracting your biceps.\", \"Continue to raise the weights until your biceps are fully contracted and the dumbbells are at shoulder level.\", \"Hold the contracted position for a brief pause as you squeeze your biceps.\", \"Inhale and slowly begin to lower the dumbbells back to the starting position.\"], \"form_cues\": [\"Keep the upper arms or thighs still.\", \"Keep wrists aligned.\", \"Lower the weight slowly.\"], \"common_mistakes\": [\"Swinging the torso.\", \"Letting the elbow drift.\", \"Dropping the weight.\"], \"safety_note\": \"Choose resistance that keeps the elbow and wrist path controlled.\", \"provenance\": \"adapted\"}\nMaintain source contact points and safe control. Render only this characteristic phase, not the entire instruction sequence. Reference anatomy is opaque; localize the specified muscle pigment without copying reference highlights.",
+      "reference_path": "assets/exercises/biceps-curl-dumbbell.png"
     },
     "seated-lateral-raise-dumbbell": {
       "id": "seated-lateral-raise-dumbbell",
@@ -23879,14 +24155,14 @@
         "exists_at_preparation": true,
         "sha256": "c2194b8d7b973ef840349947b514f588e718c39735b6f7a965e5c2718e6f58ed"
       },
-      "status": "not_started",
-      "included_in_generation": false,
+      "status": "generation_failed",
+      "included_in_generation": true,
       "archived_inclusion_authorized": false,
       "blocked_by": [
         "pilot_not_approved"
       ],
-      "attempts": 0,
-      "style_version": null,
+      "attempts": 1,
+      "style_version": "v1",
       "visual_review": {
         "status": "not_reviewed",
         "reviewer": null,
@@ -23899,17 +24175,63 @@
         },
         "notes": null
       },
-      "result_path": null,
+      "result_path": "assets/exercises/pending/night-2026-10-01/005/seated-wrist-curl-barbell/attempt-1.png",
       "supabase_path": null,
       "supabase_upload_status": "not_configured",
-      "last_error": null,
-      "attempt_history": [],
+      "last_error": "image generation failed: http 429 Too Many Requests: Some(\"{\\\"error\\\":{\\\"type\\\":\\\"usage_limit_reached\\\",\\\"message\\\":\\\"The usage limit has been reached\\\",\\\"plan_type\\\":\\\"plus\\\",\\\"resets_at\\\":1790845839,\\\"eligible_promo\\\":null,\\\"limit_window_minutes\\\":null,\\\"resets_in_seconds\\\":30939}}\")",
+      "attempt_history": [
+        {
+          "attempt": 1,
+          "id": "seated-wrist-curl-barbell",
+          "batch_id": "night-2026-10-01-005",
+          "generation_run_id": "night-2026-10-01",
+          "generated_overnight": true,
+          "style_version": "v1",
+          "tool": "image_gen.imagegen",
+          "started_at": "2026-10-01T03:34:59.638654+03:00",
+          "prompt": "STYLE v1. Use the supplied approved human reference ONLY for the person's identity, anatomical 3D style, body proportions, materials and detail. Do not copy its pose, dumbbells, muscle highlighting or composition. Match the same bald athletic adult male, opaque silver-gray sculpted anatomical muscle surfaces, simple fitted black shorts, barefoot, neutral face and consistent natural proportions. One person, one exercise, one characteristic phase: no second figure, collage or motion ghosts. Equipment must be only the simple items named in this scene, neutral gray/black materials, complete and mechanically ordinary. Primary muscles: localized coral #F26445. Named secondary muscles: the same hue at roughly 45% intensity blended with gray, clearly lighter. Do not highlight muscles absent from the catalog list, make the body or shorts transparent, or apply a global orange cast/glow. Preserve clothing; highlight visible anatomical surfaces without inventing see-through tissue. Square PNG, unchanged target 1024x1024, true transparent alpha background outside the person and required equipment/mat and through any openings; no white or checkerboard backdrop, drawn floor plane, UI, text, labels, frames, decorations or halo. Entire person and every required piece of equipment must fit with transparent margins; adapt scale/camera without distortion or cropping. Accent pigment must use base sRGB #F26445 = RGB(242,100,69); retain this hue through ordinary 3D shading. Secondary highlights use this hue at 40-50% intensity blended with the gray body, not transparent tissue.\n\nEXERCISE ID: seated-wrist-curl-barbell\nNAME: Seated Wrist Curl (Barbell)\nCatalog equipment: barbell\nDepict only: ordinary straight barbell, ordinary flat bench\nPrimary muscle: forearms\nSecondary muscles: []\n\nONE SPECIFIC SCENE: Seated on an ordinary flat bench with feet flat and forearms resting on the thighs, wrists extending beyond knees. Ordinary straight barbell held in UNDERHAND PALMS-UP closed grips. Small wrist-flexion top phase raises bar while elbows remain supported and motionless. Elevated front-side view clearly shows bar, hands and forearm contacts. No biceps curl.\n\nENGLISH SOURCE (this ID only; do not substitute a familiar variant):\n{\"description\": \"Rest palms-up forearms on the thighs and curl the barbell upward with the wrists before lowering it.\", \"instructions\": [\"Sit on a bench with your feet flat on the ground and your forearms resting on your thighs, holding a barbell with an underhand grip.\", \"Allow the barbell to roll down to your fingertips, keeping your wrists straight.\", \"Slowly curl the barbell up towards your forearms by flexing your wrists.\", \"Pause for a moment at the top, then slowly lower the barbell back down to the starting position.\", \"Repeat for the desired number of repetitions.\"], \"form_cues\": [\"Keep the upper arms or thighs still.\", \"Keep wrists aligned.\", \"Lower the weight slowly.\"], \"common_mistakes\": [\"Swinging the torso.\", \"Letting the elbow drift.\", \"Dropping the weight.\"], \"safety_note\": \"Choose resistance that keeps the elbow and wrist path controlled.\", \"provenance\": \"adapted\"}\nMaintain source contact points and safe control. Render only this characteristic phase, not the entire instruction sequence. Reference anatomy is opaque; localize the specified muscle pigment without copying reference highlights.",
+          "reference": "assets/exercises/biceps-curl-dumbbell.png",
+          "status": "failed",
+          "result_path": "assets/exercises/pending/night-2026-10-01/005/seated-wrist-curl-barbell/attempt-1.png",
+          "agent_visual_review": "not_performed",
+          "user_review": "pending",
+          "finished_at": "2026-10-01T03:35:00.471158+03:00",
+          "error": "image generation failed: http 429 Too Many Requests: Some(\"{\\\"error\\\":{\\\"type\\\":\\\"usage_limit_reached\\\",\\\"message\\\":\\\"The usage limit has been reached\\\",\\\"plan_type\\\":\\\"plus\\\",\\\"resets_at\\\":1790845839,\\\"eligible_promo\\\":null,\\\"limit_window_minutes\\\":null,\\\"resets_in_seconds\\\":30939}}\")",
+          "technical_check": "failed",
+          "technical_check_details": {
+            "id": "seated-wrist-curl-barbell",
+            "path": "assets/exercises/pending/night-2026-10-01/005/seated-wrist-curl-barbell/attempt-1.png",
+            "errors": [
+              "image generation failed: http 429 Too Many Requests: Some(\"{\\\"error\\\":{\\\"type\\\":\\\"usage_limit_reached\\\",\\\"message\\\":\\\"The usage limit has been reached\\\",\\\"plan_type\\\":\\\"plus\\\",\\\"resets_at\\\":1790845839,\\\"eligible_promo\\\":null,\\\"limit_window_minutes\\\":null,\\\"resets_in_seconds\\\":30939}}\")"
+            ],
+            "exists": false,
+            "sha256": null,
+            "actual_dimensions": null,
+            "fully_transparent_pixels": null
+          }
+        }
+      ],
       "result_sha256": null,
-      "technical_check": null,
-      "technical_check_details": null,
+      "technical_check": "failed",
+      "technical_check_details": {
+        "id": "seated-wrist-curl-barbell",
+        "path": "assets/exercises/pending/night-2026-10-01/005/seated-wrist-curl-barbell/attempt-1.png",
+        "errors": [
+          "image generation failed: http 429 Too Many Requests: Some(\"{\\\"error\\\":{\\\"type\\\":\\\"usage_limit_reached\\\",\\\"message\\\":\\\"The usage limit has been reached\\\",\\\"plan_type\\\":\\\"plus\\\",\\\"resets_at\\\":1790845839,\\\"eligible_promo\\\":null,\\\"limit_window_minutes\\\":null,\\\"resets_in_seconds\\\":30939}}\")"
+        ],
+        "exists": false,
+        "sha256": null,
+        "actual_dimensions": null,
+        "fully_transparent_pixels": null
+      },
       "agent_visual_review": "not_performed",
       "agent_visual_review_notes": [],
-      "user_review": "pending"
+      "user_review": "pending",
+      "generation_run_id": "night-2026-10-01",
+      "generated_overnight": true,
+      "batch_id": "night-2026-10-01-005",
+      "prompt": "STYLE v1. Use the supplied approved human reference ONLY for the person's identity, anatomical 3D style, body proportions, materials and detail. Do not copy its pose, dumbbells, muscle highlighting or composition. Match the same bald athletic adult male, opaque silver-gray sculpted anatomical muscle surfaces, simple fitted black shorts, barefoot, neutral face and consistent natural proportions. One person, one exercise, one characteristic phase: no second figure, collage or motion ghosts. Equipment must be only the simple items named in this scene, neutral gray/black materials, complete and mechanically ordinary. Primary muscles: localized coral #F26445. Named secondary muscles: the same hue at roughly 45% intensity blended with gray, clearly lighter. Do not highlight muscles absent from the catalog list, make the body or shorts transparent, or apply a global orange cast/glow. Preserve clothing; highlight visible anatomical surfaces without inventing see-through tissue. Square PNG, unchanged target 1024x1024, true transparent alpha background outside the person and required equipment/mat and through any openings; no white or checkerboard backdrop, drawn floor plane, UI, text, labels, frames, decorations or halo. Entire person and every required piece of equipment must fit with transparent margins; adapt scale/camera without distortion or cropping. Accent pigment must use base sRGB #F26445 = RGB(242,100,69); retain this hue through ordinary 3D shading. Secondary highlights use this hue at 40-50% intensity blended with the gray body, not transparent tissue.\n\nEXERCISE ID: seated-wrist-curl-barbell\nNAME: Seated Wrist Curl (Barbell)\nCatalog equipment: barbell\nDepict only: ordinary straight barbell, ordinary flat bench\nPrimary muscle: forearms\nSecondary muscles: []\n\nONE SPECIFIC SCENE: Seated on an ordinary flat bench with feet flat and forearms resting on the thighs, wrists extending beyond knees. Ordinary straight barbell held in UNDERHAND PALMS-UP closed grips. Small wrist-flexion top phase raises bar while elbows remain supported and motionless. Elevated front-side view clearly shows bar, hands and forearm contacts. No biceps curl.\n\nENGLISH SOURCE (this ID only; do not substitute a familiar variant):\n{\"description\": \"Rest palms-up forearms on the thighs and curl the barbell upward with the wrists before lowering it.\", \"instructions\": [\"Sit on a bench with your feet flat on the ground and your forearms resting on your thighs, holding a barbell with an underhand grip.\", \"Allow the barbell to roll down to your fingertips, keeping your wrists straight.\", \"Slowly curl the barbell up towards your forearms by flexing your wrists.\", \"Pause for a moment at the top, then slowly lower the barbell back down to the starting position.\", \"Repeat for the desired number of repetitions.\"], \"form_cues\": [\"Keep the upper arms or thighs still.\", \"Keep wrists aligned.\", \"Lower the weight slowly.\"], \"common_mistakes\": [\"Swinging the torso.\", \"Letting the elbow drift.\", \"Dropping the weight.\"], \"safety_note\": \"Choose resistance that keeps the elbow and wrist path controlled.\", \"provenance\": \"adapted\"}\nMaintain source contact points and safe control. Render only this characteristic phase, not the entire instruction sequence. Reference anatomy is opaque; localize the specified muscle pigment without copying reference highlights.",
+      "reference_path": "assets/exercises/biceps-curl-dumbbell.png"
     },
     "seated-wrist-extension-barbell": {
       "id": "seated-wrist-extension-barbell",
@@ -24375,14 +24697,14 @@
         "exists_at_preparation": true,
         "sha256": "83b660c5acfbec5a4af42e97343e1329af552ff65a1aa36092162b8068c8c966"
       },
-      "status": "not_started",
-      "included_in_generation": false,
+      "status": "generation_failed",
+      "included_in_generation": true,
       "archived_inclusion_authorized": false,
       "blocked_by": [
         "pilot_not_approved"
       ],
-      "attempts": 0,
-      "style_version": null,
+      "attempts": 1,
+      "style_version": "v1",
       "visual_review": {
         "status": "not_reviewed",
         "reviewer": null,
@@ -24395,17 +24717,63 @@
         },
         "notes": null
       },
-      "result_path": null,
+      "result_path": "assets/exercises/pending/night-2026-10-01/005/shrug-barbell/attempt-1.png",
       "supabase_path": null,
       "supabase_upload_status": "not_configured",
-      "last_error": null,
-      "attempt_history": [],
+      "last_error": "image generation failed: http 429 Too Many Requests: Some(\"{\\\"error\\\":{\\\"type\\\":\\\"usage_limit_reached\\\",\\\"message\\\":\\\"The usage limit has been reached\\\",\\\"plan_type\\\":\\\"plus\\\",\\\"resets_at\\\":1790845839,\\\"eligible_promo\\\":null,\\\"limit_window_minutes\\\":null,\\\"resets_in_seconds\\\":30942}}\")",
+      "attempt_history": [
+        {
+          "attempt": 1,
+          "id": "shrug-barbell",
+          "batch_id": "night-2026-10-01-005",
+          "generation_run_id": "night-2026-10-01",
+          "generated_overnight": true,
+          "style_version": "v1",
+          "tool": "image_gen.imagegen",
+          "started_at": "2026-10-01T03:34:57.131237+03:00",
+          "prompt": "STYLE v1. Use the supplied approved human reference ONLY for the person's identity, anatomical 3D style, body proportions, materials and detail. Do not copy its pose, dumbbells, muscle highlighting or composition. Match the same bald athletic adult male, opaque silver-gray sculpted anatomical muscle surfaces, simple fitted black shorts, barefoot, neutral face and consistent natural proportions. One person, one exercise, one characteristic phase: no second figure, collage or motion ghosts. Equipment must be only the simple items named in this scene, neutral gray/black materials, complete and mechanically ordinary. Primary muscles: localized coral #F26445. Named secondary muscles: the same hue at roughly 45% intensity blended with gray, clearly lighter. Do not highlight muscles absent from the catalog list, make the body or shorts transparent, or apply a global orange cast/glow. Preserve clothing; highlight visible anatomical surfaces without inventing see-through tissue. Square PNG, unchanged target 1024x1024, true transparent alpha background outside the person and required equipment/mat and through any openings; no white or checkerboard backdrop, drawn floor plane, UI, text, labels, frames, decorations or halo. Entire person and every required piece of equipment must fit with transparent margins; adapt scale/camera without distortion or cropping. Accent pigment must use base sRGB #F26445 = RGB(242,100,69); retain this hue through ordinary 3D shading. Secondary highlights use this hue at 40-50% intensity blended with the gray body, not transparent tissue.\n\nEXERCISE ID: shrug-barbell\nNAME: Shrug (Barbell)\nCatalog equipment: barbell\nDepict only: ordinary straight barbell\nPrimary muscle: traps\nSecondary muscles: [\"neck\"]\n\nONE SPECIFIC SCENE: Standing feet shoulder-width, ordinary straight barbell held IN FRONT OF THIGHS with overhand grips. Both ARMS STAY STRAIGHT while shoulders lift vertically toward the ears at shrug top, head neutral and torso upright. Front three-quarter view shows grips, straight elbows and complete bar. No shoulder rolling or elbow curl.\n\nENGLISH SOURCE (this ID only; do not substitute a familiar variant):\n{\"description\": \"Hold the barbell in front of the thighs, elevate both shoulders vertically, then lower them without rolling.\", \"instructions\": [\"Stand with your feet shoulder-width apart and hold a barbell in front of you with an overhand grip.\", \"Keep your arms straight and your back straight throughout the exercise.\", \"Lift your shoulders up towards your ears as high as possible, squeezing your traps at the top.\", \"Hold for a moment, then slowly lower your shoulders back down to the starting position.\", \"Repeat for the desired number of repetitions.\"], \"form_cues\": [\"Keep the torso still.\", \"Lift in the exercise plane.\", \"Lower quietly.\"], \"common_mistakes\": [\"Shifting the support point.\", \"Using momentum instead of the target joint path.\", \"Cutting the return short.\"], \"safety_note\": \"Use a secure setup and stop if alignment or control is lost.\", \"provenance\": \"adapted\"}\nMaintain source contact points and safe control. Render only this characteristic phase, not the entire instruction sequence. Reference anatomy is opaque; localize the specified muscle pigment without copying reference highlights.",
+          "reference": "assets/exercises/biceps-curl-dumbbell.png",
+          "status": "failed",
+          "result_path": "assets/exercises/pending/night-2026-10-01/005/shrug-barbell/attempt-1.png",
+          "agent_visual_review": "not_performed",
+          "user_review": "pending",
+          "finished_at": "2026-10-01T03:34:57.903426+03:00",
+          "error": "image generation failed: http 429 Too Many Requests: Some(\"{\\\"error\\\":{\\\"type\\\":\\\"usage_limit_reached\\\",\\\"message\\\":\\\"The usage limit has been reached\\\",\\\"plan_type\\\":\\\"plus\\\",\\\"resets_at\\\":1790845839,\\\"eligible_promo\\\":null,\\\"limit_window_minutes\\\":null,\\\"resets_in_seconds\\\":30942}}\")",
+          "technical_check": "failed",
+          "technical_check_details": {
+            "id": "shrug-barbell",
+            "path": "assets/exercises/pending/night-2026-10-01/005/shrug-barbell/attempt-1.png",
+            "errors": [
+              "image generation failed: http 429 Too Many Requests: Some(\"{\\\"error\\\":{\\\"type\\\":\\\"usage_limit_reached\\\",\\\"message\\\":\\\"The usage limit has been reached\\\",\\\"plan_type\\\":\\\"plus\\\",\\\"resets_at\\\":1790845839,\\\"eligible_promo\\\":null,\\\"limit_window_minutes\\\":null,\\\"resets_in_seconds\\\":30942}}\")"
+            ],
+            "exists": false,
+            "sha256": null,
+            "actual_dimensions": null,
+            "fully_transparent_pixels": null
+          }
+        }
+      ],
       "result_sha256": null,
-      "technical_check": null,
-      "technical_check_details": null,
+      "technical_check": "failed",
+      "technical_check_details": {
+        "id": "shrug-barbell",
+        "path": "assets/exercises/pending/night-2026-10-01/005/shrug-barbell/attempt-1.png",
+        "errors": [
+          "image generation failed: http 429 Too Many Requests: Some(\"{\\\"error\\\":{\\\"type\\\":\\\"usage_limit_reached\\\",\\\"message\\\":\\\"The usage limit has been reached\\\",\\\"plan_type\\\":\\\"plus\\\",\\\"resets_at\\\":1790845839,\\\"eligible_promo\\\":null,\\\"limit_window_minutes\\\":null,\\\"resets_in_seconds\\\":30942}}\")"
+        ],
+        "exists": false,
+        "sha256": null,
+        "actual_dimensions": null,
+        "fully_transparent_pixels": null
+      },
       "agent_visual_review": "not_performed",
       "agent_visual_review_notes": [],
-      "user_review": "pending"
+      "user_review": "pending",
+      "generation_run_id": "night-2026-10-01",
+      "generated_overnight": true,
+      "batch_id": "night-2026-10-01-005",
+      "prompt": "STYLE v1. Use the supplied approved human reference ONLY for the person's identity, anatomical 3D style, body proportions, materials and detail. Do not copy its pose, dumbbells, muscle highlighting or composition. Match the same bald athletic adult male, opaque silver-gray sculpted anatomical muscle surfaces, simple fitted black shorts, barefoot, neutral face and consistent natural proportions. One person, one exercise, one characteristic phase: no second figure, collage or motion ghosts. Equipment must be only the simple items named in this scene, neutral gray/black materials, complete and mechanically ordinary. Primary muscles: localized coral #F26445. Named secondary muscles: the same hue at roughly 45% intensity blended with gray, clearly lighter. Do not highlight muscles absent from the catalog list, make the body or shorts transparent, or apply a global orange cast/glow. Preserve clothing; highlight visible anatomical surfaces without inventing see-through tissue. Square PNG, unchanged target 1024x1024, true transparent alpha background outside the person and required equipment/mat and through any openings; no white or checkerboard backdrop, drawn floor plane, UI, text, labels, frames, decorations or halo. Entire person and every required piece of equipment must fit with transparent margins; adapt scale/camera without distortion or cropping. Accent pigment must use base sRGB #F26445 = RGB(242,100,69); retain this hue through ordinary 3D shading. Secondary highlights use this hue at 40-50% intensity blended with the gray body, not transparent tissue.\n\nEXERCISE ID: shrug-barbell\nNAME: Shrug (Barbell)\nCatalog equipment: barbell\nDepict only: ordinary straight barbell\nPrimary muscle: traps\nSecondary muscles: [\"neck\"]\n\nONE SPECIFIC SCENE: Standing feet shoulder-width, ordinary straight barbell held IN FRONT OF THIGHS with overhand grips. Both ARMS STAY STRAIGHT while shoulders lift vertically toward the ears at shrug top, head neutral and torso upright. Front three-quarter view shows grips, straight elbows and complete bar. No shoulder rolling or elbow curl.\n\nENGLISH SOURCE (this ID only; do not substitute a familiar variant):\n{\"description\": \"Hold the barbell in front of the thighs, elevate both shoulders vertically, then lower them without rolling.\", \"instructions\": [\"Stand with your feet shoulder-width apart and hold a barbell in front of you with an overhand grip.\", \"Keep your arms straight and your back straight throughout the exercise.\", \"Lift your shoulders up towards your ears as high as possible, squeezing your traps at the top.\", \"Hold for a moment, then slowly lower your shoulders back down to the starting position.\", \"Repeat for the desired number of repetitions.\"], \"form_cues\": [\"Keep the torso still.\", \"Lift in the exercise plane.\", \"Lower quietly.\"], \"common_mistakes\": [\"Shifting the support point.\", \"Using momentum instead of the target joint path.\", \"Cutting the return short.\"], \"safety_note\": \"Use a secure setup and stop if alignment or control is lost.\", \"provenance\": \"adapted\"}\nMaintain source contact points and safe control. Render only this characteristic phase, not the entire instruction sequence. Reference anatomy is opaque; localize the specified muscle pigment without copying reference highlights.",
+      "reference_path": "assets/exercises/biceps-curl-dumbbell.png"
     },
     "shrug-cable-machine": {
       "id": "shrug-cable-machine",
@@ -27373,14 +27741,14 @@
         "mapping": null
       },
       "source_reference_image": null,
-      "status": "not_started",
-      "included_in_generation": false,
+      "status": "generation_failed",
+      "included_in_generation": true,
       "archived_inclusion_authorized": false,
       "blocked_by": [
         "pilot_not_approved"
       ],
-      "attempts": 0,
-      "style_version": null,
+      "attempts": 1,
+      "style_version": "v1",
       "visual_review": {
         "status": "not_reviewed",
         "reviewer": null,
@@ -27393,17 +27761,63 @@
         },
         "notes": null
       },
-      "result_path": null,
+      "result_path": "assets/exercises/pending/night-2026-10-01/005/split-squat-dumbbell/attempt-1.png",
       "supabase_path": null,
       "supabase_upload_status": "not_configured",
-      "last_error": null,
-      "attempt_history": [],
+      "last_error": "image generation failed: http 429 Too Many Requests: Some(\"{\\\"error\\\":{\\\"type\\\":\\\"usage_limit_reached\\\",\\\"message\\\":\\\"The usage limit has been reached\\\",\\\"plan_type\\\":\\\"plus\\\",\\\"resets_at\\\":1790845839,\\\"eligible_promo\\\":null,\\\"limit_window_minutes\\\":null,\\\"resets_in_seconds\\\":30944}}\")",
+      "attempt_history": [
+        {
+          "attempt": 1,
+          "id": "split-squat-dumbbell",
+          "batch_id": "night-2026-10-01-005",
+          "generation_run_id": "night-2026-10-01",
+          "generated_overnight": true,
+          "style_version": "v1",
+          "tool": "image_gen.imagegen",
+          "started_at": "2026-10-01T03:34:54.379169+03:00",
+          "prompt": "STYLE v1. Use the supplied approved human reference ONLY for the person's identity, anatomical 3D style, body proportions, materials and detail. Do not copy its pose, dumbbells, muscle highlighting or composition. Match the same bald athletic adult male, opaque silver-gray sculpted anatomical muscle surfaces, simple fitted black shorts, barefoot, neutral face and consistent natural proportions. One person, one exercise, one characteristic phase: no second figure, collage or motion ghosts. Equipment must be only the simple items named in this scene, neutral gray/black materials, complete and mechanically ordinary. Primary muscles: localized coral #F26445. Named secondary muscles: the same hue at roughly 45% intensity blended with gray, clearly lighter. Do not highlight muscles absent from the catalog list, make the body or shorts transparent, or apply a global orange cast/glow. Preserve clothing; highlight visible anatomical surfaces without inventing see-through tissue. Square PNG, unchanged target 1024x1024, true transparent alpha background outside the person and required equipment/mat and through any openings; no white or checkerboard backdrop, drawn floor plane, UI, text, labels, frames, decorations or halo. Entire person and every required piece of equipment must fit with transparent margins; adapt scale/camera without distortion or cropping. Accent pigment must use base sRGB #F26445 = RGB(242,100,69); retain this hue through ordinary 3D shading. Secondary highlights use this hue at 40-50% intensity blended with the gray body, not transparent tissue.\n\nEXERCISE ID: split-squat-dumbbell\nNAME: Split Squat (Dumbbell)\nCatalog equipment: dumbbell\nDepict only: two dumbbells\nPrimary muscle: quadriceps\nSecondary muscles: [\"hamstrings\", \"glutes\"]\n\nONE SPECIFIC SCENE: Lowered split squat in a FIXED staggered stance: left foot forward flat, right rear heel raised with forefoot grounded. Bend both knees, rear knee approaches support level without contact and front thigh approaches parallel comfortably; torso upright. One dumbbell in each hand hanging at sides. Side three-quarter view shows both foot contacts. No bench or travelling lunge.\n\nENGLISH SOURCE (this ID only; do not substitute a familiar variant):\n{\"description\": \"A dumbbell split squat lowers and raises the body in a fixed staggered stance while both feet stay planted.\", \"instructions\": [\"Stand in a split stance with a dumbbell at each side and the front foot flat.\", \"Drop the back knee toward the floor by bending both knees while keeping the torso upright.\", \"Descend until the front thigh approaches parallel without shifting the feet.\", \"Drive through the front foot to stand and repeat before switching sides.\"], \"form_cues\": [\"Keep the front knee over the foot.\", \"Stay tall through the trunk.\", \"Keep the rear heel lifted.\"], \"common_mistakes\": [\"Turning it into a forward lunge.\", \"Letting the front knee cave inward.\", \"Pushing mostly from the rear foot.\"], \"safety_note\": \"Use a stance length that keeps both knees comfortable and balanced.\", \"provenance\": \"authored\"}\nMaintain source contact points and safe control. Render only this characteristic phase, not the entire instruction sequence. Reference anatomy is opaque; localize the specified muscle pigment without copying reference highlights.",
+          "reference": "assets/exercises/biceps-curl-dumbbell.png",
+          "status": "failed",
+          "result_path": "assets/exercises/pending/night-2026-10-01/005/split-squat-dumbbell/attempt-1.png",
+          "agent_visual_review": "not_performed",
+          "user_review": "pending",
+          "finished_at": "2026-10-01T03:34:55.157450+03:00",
+          "error": "image generation failed: http 429 Too Many Requests: Some(\"{\\\"error\\\":{\\\"type\\\":\\\"usage_limit_reached\\\",\\\"message\\\":\\\"The usage limit has been reached\\\",\\\"plan_type\\\":\\\"plus\\\",\\\"resets_at\\\":1790845839,\\\"eligible_promo\\\":null,\\\"limit_window_minutes\\\":null,\\\"resets_in_seconds\\\":30944}}\")",
+          "technical_check": "failed",
+          "technical_check_details": {
+            "id": "split-squat-dumbbell",
+            "path": "assets/exercises/pending/night-2026-10-01/005/split-squat-dumbbell/attempt-1.png",
+            "errors": [
+              "image generation failed: http 429 Too Many Requests: Some(\"{\\\"error\\\":{\\\"type\\\":\\\"usage_limit_reached\\\",\\\"message\\\":\\\"The usage limit has been reached\\\",\\\"plan_type\\\":\\\"plus\\\",\\\"resets_at\\\":1790845839,\\\"eligible_promo\\\":null,\\\"limit_window_minutes\\\":null,\\\"resets_in_seconds\\\":30944}}\")"
+            ],
+            "exists": false,
+            "sha256": null,
+            "actual_dimensions": null,
+            "fully_transparent_pixels": null
+          }
+        }
+      ],
       "result_sha256": null,
-      "technical_check": null,
-      "technical_check_details": null,
+      "technical_check": "failed",
+      "technical_check_details": {
+        "id": "split-squat-dumbbell",
+        "path": "assets/exercises/pending/night-2026-10-01/005/split-squat-dumbbell/attempt-1.png",
+        "errors": [
+          "image generation failed: http 429 Too Many Requests: Some(\"{\\\"error\\\":{\\\"type\\\":\\\"usage_limit_reached\\\",\\\"message\\\":\\\"The usage limit has been reached\\\",\\\"plan_type\\\":\\\"plus\\\",\\\"resets_at\\\":1790845839,\\\"eligible_promo\\\":null,\\\"limit_window_minutes\\\":null,\\\"resets_in_seconds\\\":30944}}\")"
+        ],
+        "exists": false,
+        "sha256": null,
+        "actual_dimensions": null,
+        "fully_transparent_pixels": null
+      },
       "agent_visual_review": "not_performed",
       "agent_visual_review_notes": [],
-      "user_review": "pending"
+      "user_review": "pending",
+      "generation_run_id": "night-2026-10-01",
+      "generated_overnight": true,
+      "batch_id": "night-2026-10-01-005",
+      "prompt": "STYLE v1. Use the supplied approved human reference ONLY for the person's identity, anatomical 3D style, body proportions, materials and detail. Do not copy its pose, dumbbells, muscle highlighting or composition. Match the same bald athletic adult male, opaque silver-gray sculpted anatomical muscle surfaces, simple fitted black shorts, barefoot, neutral face and consistent natural proportions. One person, one exercise, one characteristic phase: no second figure, collage or motion ghosts. Equipment must be only the simple items named in this scene, neutral gray/black materials, complete and mechanically ordinary. Primary muscles: localized coral #F26445. Named secondary muscles: the same hue at roughly 45% intensity blended with gray, clearly lighter. Do not highlight muscles absent from the catalog list, make the body or shorts transparent, or apply a global orange cast/glow. Preserve clothing; highlight visible anatomical surfaces without inventing see-through tissue. Square PNG, unchanged target 1024x1024, true transparent alpha background outside the person and required equipment/mat and through any openings; no white or checkerboard backdrop, drawn floor plane, UI, text, labels, frames, decorations or halo. Entire person and every required piece of equipment must fit with transparent margins; adapt scale/camera without distortion or cropping. Accent pigment must use base sRGB #F26445 = RGB(242,100,69); retain this hue through ordinary 3D shading. Secondary highlights use this hue at 40-50% intensity blended with the gray body, not transparent tissue.\n\nEXERCISE ID: split-squat-dumbbell\nNAME: Split Squat (Dumbbell)\nCatalog equipment: dumbbell\nDepict only: two dumbbells\nPrimary muscle: quadriceps\nSecondary muscles: [\"hamstrings\", \"glutes\"]\n\nONE SPECIFIC SCENE: Lowered split squat in a FIXED staggered stance: left foot forward flat, right rear heel raised with forefoot grounded. Bend both knees, rear knee approaches support level without contact and front thigh approaches parallel comfortably; torso upright. One dumbbell in each hand hanging at sides. Side three-quarter view shows both foot contacts. No bench or travelling lunge.\n\nENGLISH SOURCE (this ID only; do not substitute a familiar variant):\n{\"description\": \"A dumbbell split squat lowers and raises the body in a fixed staggered stance while both feet stay planted.\", \"instructions\": [\"Stand in a split stance with a dumbbell at each side and the front foot flat.\", \"Drop the back knee toward the floor by bending both knees while keeping the torso upright.\", \"Descend until the front thigh approaches parallel without shifting the feet.\", \"Drive through the front foot to stand and repeat before switching sides.\"], \"form_cues\": [\"Keep the front knee over the foot.\", \"Stay tall through the trunk.\", \"Keep the rear heel lifted.\"], \"common_mistakes\": [\"Turning it into a forward lunge.\", \"Letting the front knee cave inward.\", \"Pushing mostly from the rear foot.\"], \"safety_note\": \"Use a stance length that keeps both knees comfortable and balanced.\", \"provenance\": \"authored\"}\nMaintain source contact points and safe control. Render only this characteristic phase, not the entire instruction sequence. Reference anatomy is opaque; localize the specified muscle pigment without copying reference highlights.",
+      "reference_path": "assets/exercises/biceps-curl-dumbbell.png"
     },
     "sprints": {
       "id": "sprints",
@@ -30213,14 +30627,14 @@
         "exists_at_preparation": true,
         "sha256": "6a64eaeda320ea72001037f092e3e50cd53db67891182e13f5e1321d38827447"
       },
-      "status": "not_started",
-      "included_in_generation": false,
+      "status": "generation_failed",
+      "included_in_generation": true,
       "archived_inclusion_authorized": false,
       "blocked_by": [
         "pilot_not_approved"
       ],
-      "attempts": 0,
-      "style_version": null,
+      "attempts": 1,
+      "style_version": "v1",
       "visual_review": {
         "status": "not_reviewed",
         "reviewer": null,
@@ -30233,17 +30647,63 @@
         },
         "notes": null
       },
-      "result_path": null,
+      "result_path": "assets/exercises/pending/night-2026-10-01/005/triceps-extension-barbell/attempt-1.png",
       "supabase_path": null,
       "supabase_upload_status": "not_configured",
-      "last_error": null,
-      "attempt_history": [],
+      "last_error": "image generation failed: http 429 Too Many Requests: Some(\"{\\\"error\\\":{\\\"type\\\":\\\"usage_limit_reached\\\",\\\"message\\\":\\\"The usage limit has been reached\\\",\\\"plan_type\\\":\\\"plus\\\",\\\"resets_at\\\":1790845839,\\\"eligible_promo\\\":null,\\\"limit_window_minutes\\\":null,\\\"resets_in_seconds\\\":30938}}\")",
+      "attempt_history": [
+        {
+          "attempt": 1,
+          "id": "triceps-extension-barbell",
+          "batch_id": "night-2026-10-01-005",
+          "generation_run_id": "night-2026-10-01",
+          "generated_overnight": true,
+          "style_version": "v1",
+          "tool": "image_gen.imagegen",
+          "started_at": "2026-10-01T03:35:00.953574+03:00",
+          "prompt": "STYLE v1. Use the supplied approved human reference ONLY for the person's identity, anatomical 3D style, body proportions, materials and detail. Do not copy its pose, dumbbells, muscle highlighting or composition. Match the same bald athletic adult male, opaque silver-gray sculpted anatomical muscle surfaces, simple fitted black shorts, barefoot, neutral face and consistent natural proportions. One person, one exercise, one characteristic phase: no second figure, collage or motion ghosts. Equipment must be only the simple items named in this scene, neutral gray/black materials, complete and mechanically ordinary. Primary muscles: localized coral #F26445. Named secondary muscles: the same hue at roughly 45% intensity blended with gray, clearly lighter. Do not highlight muscles absent from the catalog list, make the body or shorts transparent, or apply a global orange cast/glow. Preserve clothing; highlight visible anatomical surfaces without inventing see-through tissue. Square PNG, unchanged target 1024x1024, true transparent alpha background outside the person and required equipment/mat and through any openings; no white or checkerboard backdrop, drawn floor plane, UI, text, labels, frames, decorations or halo. Entire person and every required piece of equipment must fit with transparent margins; adapt scale/camera without distortion or cropping. Accent pigment must use base sRGB #F26445 = RGB(242,100,69); retain this hue through ordinary 3D shading. Secondary highlights use this hue at 40-50% intensity blended with the gray body, not transparent tissue.\n\nEXERCISE ID: triceps-extension-barbell\nNAME: Triceps Extension (Barbell)\nCatalog equipment: barbell\nDepict only: ordinary straight barbell, ordinary flat bench\nPrimary muscle: triceps\nSecondary muscles: []\n\nONE SPECIFIC SCENE: Supine on an ordinary flat bench with feet planted, head/back/pelvis supported. Ordinary STRAIGHT barbell gripped OVERHAND JUST INSIDE SHOULDER WIDTH. Upper arms fixed above chest, elbows bent at lowered phase with bar approaching forehead but CLEAR OF HEAD without contact; wrists aligned, elbows not flared. Side-front elevated view shows both grips, full bar and bench. No EZ bar or seated overhead variant.\n\nENGLISH SOURCE (this ID only; do not substitute a familiar variant):\n{\"description\": \"Triceps Extension (Barbell) lies on a flat bench and lowers a barbell toward the forehead.\", \"instructions\": [\"Lie on a flat bench with feet planted and the barbell held above the chest.\", \"Grip an overhand grip just inside shoulder width and keep the upper arms fixed beside or above the torso.\", \"Bend the elbows to lower the resistance to the forehead or behind the head.\", \"Pause at the endpoint, then extend the elbows to return to straight arms.\"], \"form_cues\": [\"Keep upper arms still.\", \"Keep wrists neutral.\", \"Move only at the elbows.\"], \"common_mistakes\": [\"Flaring the elbows.\", \"Moving the shoulders.\", \"Dropping the resistance.\"], \"safety_note\": \"Use a load you can lower slowly and keep clear space around the head.\", \"provenance\": \"adapted\"}\nMaintain source contact points and safe control. Render only this characteristic phase, not the entire instruction sequence. Reference anatomy is opaque; localize the specified muscle pigment without copying reference highlights.",
+          "reference": "assets/exercises/biceps-curl-dumbbell.png",
+          "status": "failed",
+          "result_path": "assets/exercises/pending/night-2026-10-01/005/triceps-extension-barbell/attempt-1.png",
+          "agent_visual_review": "not_performed",
+          "user_review": "pending",
+          "finished_at": "2026-10-01T03:35:01.723946+03:00",
+          "error": "image generation failed: http 429 Too Many Requests: Some(\"{\\\"error\\\":{\\\"type\\\":\\\"usage_limit_reached\\\",\\\"message\\\":\\\"The usage limit has been reached\\\",\\\"plan_type\\\":\\\"plus\\\",\\\"resets_at\\\":1790845839,\\\"eligible_promo\\\":null,\\\"limit_window_minutes\\\":null,\\\"resets_in_seconds\\\":30938}}\")",
+          "technical_check": "failed",
+          "technical_check_details": {
+            "id": "triceps-extension-barbell",
+            "path": "assets/exercises/pending/night-2026-10-01/005/triceps-extension-barbell/attempt-1.png",
+            "errors": [
+              "image generation failed: http 429 Too Many Requests: Some(\"{\\\"error\\\":{\\\"type\\\":\\\"usage_limit_reached\\\",\\\"message\\\":\\\"The usage limit has been reached\\\",\\\"plan_type\\\":\\\"plus\\\",\\\"resets_at\\\":1790845839,\\\"eligible_promo\\\":null,\\\"limit_window_minutes\\\":null,\\\"resets_in_seconds\\\":30938}}\")"
+            ],
+            "exists": false,
+            "sha256": null,
+            "actual_dimensions": null,
+            "fully_transparent_pixels": null
+          }
+        }
+      ],
       "result_sha256": null,
-      "technical_check": null,
-      "technical_check_details": null,
+      "technical_check": "failed",
+      "technical_check_details": {
+        "id": "triceps-extension-barbell",
+        "path": "assets/exercises/pending/night-2026-10-01/005/triceps-extension-barbell/attempt-1.png",
+        "errors": [
+          "image generation failed: http 429 Too Many Requests: Some(\"{\\\"error\\\":{\\\"type\\\":\\\"usage_limit_reached\\\",\\\"message\\\":\\\"The usage limit has been reached\\\",\\\"plan_type\\\":\\\"plus\\\",\\\"resets_at\\\":1790845839,\\\"eligible_promo\\\":null,\\\"limit_window_minutes\\\":null,\\\"resets_in_seconds\\\":30938}}\")"
+        ],
+        "exists": false,
+        "sha256": null,
+        "actual_dimensions": null,
+        "fully_transparent_pixels": null
+      },
       "agent_visual_review": "not_performed",
       "agent_visual_review_notes": [],
-      "user_review": "pending"
+      "user_review": "pending",
+      "generation_run_id": "night-2026-10-01",
+      "generated_overnight": true,
+      "batch_id": "night-2026-10-01-005",
+      "prompt": "STYLE v1. Use the supplied approved human reference ONLY for the person's identity, anatomical 3D style, body proportions, materials and detail. Do not copy its pose, dumbbells, muscle highlighting or composition. Match the same bald athletic adult male, opaque silver-gray sculpted anatomical muscle surfaces, simple fitted black shorts, barefoot, neutral face and consistent natural proportions. One person, one exercise, one characteristic phase: no second figure, collage or motion ghosts. Equipment must be only the simple items named in this scene, neutral gray/black materials, complete and mechanically ordinary. Primary muscles: localized coral #F26445. Named secondary muscles: the same hue at roughly 45% intensity blended with gray, clearly lighter. Do not highlight muscles absent from the catalog list, make the body or shorts transparent, or apply a global orange cast/glow. Preserve clothing; highlight visible anatomical surfaces without inventing see-through tissue. Square PNG, unchanged target 1024x1024, true transparent alpha background outside the person and required equipment/mat and through any openings; no white or checkerboard backdrop, drawn floor plane, UI, text, labels, frames, decorations or halo. Entire person and every required piece of equipment must fit with transparent margins; adapt scale/camera without distortion or cropping. Accent pigment must use base sRGB #F26445 = RGB(242,100,69); retain this hue through ordinary 3D shading. Secondary highlights use this hue at 40-50% intensity blended with the gray body, not transparent tissue.\n\nEXERCISE ID: triceps-extension-barbell\nNAME: Triceps Extension (Barbell)\nCatalog equipment: barbell\nDepict only: ordinary straight barbell, ordinary flat bench\nPrimary muscle: triceps\nSecondary muscles: []\n\nONE SPECIFIC SCENE: Supine on an ordinary flat bench with feet planted, head/back/pelvis supported. Ordinary STRAIGHT barbell gripped OVERHAND JUST INSIDE SHOULDER WIDTH. Upper arms fixed above chest, elbows bent at lowered phase with bar approaching forehead but CLEAR OF HEAD without contact; wrists aligned, elbows not flared. Side-front elevated view shows both grips, full bar and bench. No EZ bar or seated overhead variant.\n\nENGLISH SOURCE (this ID only; do not substitute a familiar variant):\n{\"description\": \"Triceps Extension (Barbell) lies on a flat bench and lowers a barbell toward the forehead.\", \"instructions\": [\"Lie on a flat bench with feet planted and the barbell held above the chest.\", \"Grip an overhand grip just inside shoulder width and keep the upper arms fixed beside or above the torso.\", \"Bend the elbows to lower the resistance to the forehead or behind the head.\", \"Pause at the endpoint, then extend the elbows to return to straight arms.\"], \"form_cues\": [\"Keep upper arms still.\", \"Keep wrists neutral.\", \"Move only at the elbows.\"], \"common_mistakes\": [\"Flaring the elbows.\", \"Moving the shoulders.\", \"Dropping the resistance.\"], \"safety_note\": \"Use a load you can lower slowly and keep clear space around the head.\", \"provenance\": \"adapted\"}\nMaintain source contact points and safe control. Render only this characteristic phase, not the entire instruction sequence. Reference anatomy is opaque; localize the specified muscle pigment without copying reference highlights.",
+      "reference_path": "assets/exercises/biceps-curl-dumbbell.png"
     },
     "triceps-extension-cable-machine": {
       "id": "triceps-extension-cable-machine",
