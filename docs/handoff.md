@@ -346,3 +346,6 @@ User approval 2026-10-01T12:46:09+00:00: користувач схвалив `fi
 
 
 User review update 2026-10-01T12:48:46+00:00: підтверджено схвалення `fire-hydrants` attempt-2 та `reverse-wrist-curl-dumbbell` attempt-3. `pushup-close-grip` показаний для перегляду. Хоча попереднє загальне схвалення збережено в історії, за новою вказівкою поточний `user_review` знову `pending` до окремого рішення після перегляду; accepted fields очищені, файл/SHA/технічна помилка не змінені. Файл: `assets/exercises/pending/night-2026-10-01/batch-001/pushup-close-grip/attempt-1.png`, SHA256 `d956f643a1df9c371d88833c008e6ec56c9ea632f91e2b3033f96e349cca9f7b`, 1536×1024. Не перегенеровувати й не масштабувати без запиту.
+
+
+User approval 2026-10-01T12:50:46+00:00: користувач підтвердив, що pushup-close-grip attempt-1 нормальний і його треба залишити. Прийнятий файл/SHA записані: assets/exercises/pending/night-2026-10-01/batch-001/pushup-close-grip/attempt-1.png, d956f643a1df9c371d88833c008e6ec56c9ea632f91e2b3033f96e349cca9f7b. Зображення не обрізати, не масштабувати й не перегенеровувати. user_review=approved, status=approved, backup github_verified; технічний факт 1536×1024 та technical_check=failed збережено як явно прийнятий виняток. Тепер усі 50 нічних вправ мають user_review=approved.
