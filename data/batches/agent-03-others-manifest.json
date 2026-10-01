@@ -148,12 +148,10 @@
       "failed_ids": [],
       "verified_at": "2026-10-01T15:21:13+00:00",
       "verified_commit": "b061ed560aa4fdcc795b4b72574fbbbafa2adfd5",
-      "user_approved_count": 9,
+      "user_approved_count": 10,
       "needs_fix_ids": [],
-      "user_review_recorded_at": "2026-10-01T16:23:58+00:00",
-      "pending_review_ids": [
-        "handstand-pushup"
-      ]
+      "user_review_recorded_at": "2026-10-01T16:52:18+00:00",
+      "pending_review_ids": []
     },
     "agent-03-others-005": {
       "state": "github_verified",
@@ -2365,7 +2363,7 @@
       "exercise_id": "handstand-pushup",
       "name": "Handstand Push Up",
       "batch_id": "agent-03-others-004",
-      "status": "generated",
+      "status": "approved",
       "attempt": 4,
       "style_version": "v1",
       "prompt": "Edit the referenced Handstand Push Up PNG with a narrow anatomical correction to BOTH FEET and their ankle connections. Preserve the same human, all other body parts, posterior-view pose, wall support, composition, silver-gray opaque detailed 3D material, black shorts and muscle colors.\n\nThe figure performs a chest-to-wall supported handstand push-up. The camera sees his back, rear pelvis, hamstrings and posterior calves. BOTH FEET MUST MATCH THIS POSTERIOR ORIENTATION: we see the heel bulges, calcaneus contours and Achilles tendons connected naturally to the rear calves. The toes and dorsal insteps face AWAY from the viewer toward the supporting wall. The wall-facing toes make the support contact; the smooth rounded heels face the camera. Correct the existing feet that show front/top toe anatomy toward the camera. Reconstruct complete anatomically natural left and right feet connected to the existing ankles, with consistent joint orientation and plausible wall contact. Do not rotate the legs or body, detach feet, duplicate toes, or simply paste a mirrored foot.\n\nPreserve the inverted posterior body chain, controlled flexed elbows, both palms contacting the floor, head connected naturally between arms, trunk stacked, and all equipment/support. Preserve the primary SHOULDER highlight #F26445 including the visible posterior deltoids (rounded shoulder caps). Secondary muscles are CHEST and TRICEPS at approximately 45 percent same-hue intensity on their actual visible anatomical surfaces. Latissimus, trapezius and other back muscles stay gray: they are not listed targets for this exact catalog ID. Never draw anterior chest or abdominal anatomy on the back. No glow or transparent tissue.\n\nOne person, one phase, same established style v1 and full square framing. Output a square PNG, target 1024x1024, with genuine transparent background pixels around person and required wall support. No white/checkerboard layer, text, UI, labels, arrows, borders or decorations.",
@@ -2380,7 +2378,7 @@
       "mime_type": "image/png",
       "generated_at": "2026-10-01T16:49:25+00:00",
       "technical_check": "passed",
-      "user_review": "pending",
+      "user_review": "approved",
       "agent_visual_review": "not_performed",
       "backup_status": "github_verified",
       "source_catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
@@ -2415,11 +2413,11 @@
       "verified_at": "2026-10-01T16:50:33+00:00",
       "review_feedback": "Repair the torso anatomy: keep head, shoulders, ribcage, pelvis and legs aligned in one coherent inverted body axis, without a 180-degree torso twist. Keep the hands grounded and feet supported by the wall.",
       "revision_requested_at": "2026-10-01T16:23:58+00:00",
-      "accepted_attempt": null,
-      "accepted_path": null,
-      "accepted_sha256": null,
-      "approved_at": null,
-      "approval_by": null,
+      "accepted_attempt": 4,
+      "accepted_path": "assets/exercises/pending/agent-03-others-004/handstand-pushup/attempt-4.png",
+      "accepted_sha256": "f7289f233773aaef1140374ef954788369813137bb05b2d795e883b98ce49057",
+      "approved_at": "2026-10-01T16:52:18+00:00",
+      "approval_by": "user",
       "edit_input_path": "assets/exercises/pending/agent-03-others-004/handstand-pushup/attempt-3.png",
       "edit_input_sha256": "9a2250339261610405d356172e7291406672d8b60dcb02adb0b7b5f375697f4b",
       "human_reference": "assets/exercises/pending/agent-03-others-004/handstand-pushup/attempt-3.png",
@@ -3684,7 +3682,7 @@
       "approval_by": "user"
     }
   ],
-  "last_updated_at": "2026-10-01T16:50:33+00:00",
+  "last_updated_at": "2026-10-01T16:52:18+00:00",
   "followup_preparation": {
     "source_branch": "agent-03-inventory-2026-10-01",
     "source_commit": "47f772a7824e2377f4454efe2e7365bcb2fec0b1",
