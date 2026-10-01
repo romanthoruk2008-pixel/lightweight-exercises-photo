@@ -6,7 +6,7 @@
 
 Файли: assets/exercises/pending/night-2026-10-01/batch-001 … batch-005/<exercise_id>/attempt-1.png. Manifest: data/batches/night-2026-10-01-manifest.json. Перевірка: PNG відкривається, квадратний, має alpha=0 пікселі; зафіксовано фактичні розміри й SHA256. Без візуального QA та ресайзу.
 
-Контрольна точка night-2026-10-01-004: local checkpoint ready; remote SHA256 verification pending. Загалом: 36 PNG створено, 5 помилок, 29 PNG підтверджено на GitHub. Далі: night-2026-10-01-005.
+Контрольна точка night-2026-10-01-004: remote commit d9c00f65def3fe05dbc193d6b46ac2a5be040b4d: SHA256 confirmed for 7 PNGs. Загалом: 36 PNG створено, 5 помилок, 36 PNG підтверджено на GitHub. Далі: night-2026-10-01-005.
 
 Еталон: assets/exercises/biceps-curl-dumbbell.png; SHA256 52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f. Лише зовнішність, пропорції, матеріали й деталізація. Поза й обладнання — за prompt поточного ID. Не використовувати старі 48 PNG. Без Release, ZIP, Supabase чи секретів.
 
