@@ -502,3 +502,10 @@ Package agent-03-others-006 generation completed at 2026-10-01T15:49:06+00:00: 1
 
 
 Agent-03 follow-up 004–006 complete. The three packages yielded 30/30 single-call PNG outputs; each passed PNG-open, square-dimensions, alpha-channel, actual transparent-pixel and SHA256 checks. All local cloud copies match the repository outputs. User review is pending on all 30; agent_visual_review=not_performed. All three packages are github_verified in work; batch 006 content commit 70281961e7c81f43b528086b6f17d457914fdf62; remote verification recorded 2026-10-01T15:49:44+00:00. Next action: user review. Do not generate more Agent-03 packages until asked. Supabase unused.
+
+
+## Supabase import completed — agent-04 (2026-10-02)
+
+Користувач дозволив імпорт каталогу і 135 approved PNG. У проєкті yywyrbhqfavjdgonlzma вставлено та прочитано назад 451 точний ID, усі 4448 мовних блоків і 3 архівні статуси. replaces_ids не передавали: підтверджено серверний DEFAULT []. Завантажено 135 нових PNG у exercise-images/<exercise_id>/<accepted_sha256>.png без upsert; публічні байти кожного отримані без ключа і звірені за accepted SHA256 до оновлення image-полів відповідного ID. Після gate 3 успішно виконано пакети по 10; усі 135 DB links і повний каталог повторно перевірені. 21 pending не завантажено; source/progress/схвалення/технічні винятки, користувацькі таблиці і RLS/grants/schema не змінені. Помилок перенесення немає.
+
+Авторитетний handoff: integration/supabase/handoff.md. Окремі batch manifests, catalog/default/read-back та completion — у integration/supabase/uploads. Історичний not_configured у source progress не є поточним статусом Supabase. Повторний запуск import_catalog_images.py пропускає complete перенесення після звірки стану; фактично перевірено read-only resume для всіх 451 рядків і перших 3 PNG. Публічне читання PNG підтверджене; звичайне клієнтське читання каталогу ще не перевірене через відсутність publishable/anon key. Не змінювати policies для обходу; якщо ключ стане доступним, виконати --verify-only. Секрет exerciseuploader у файлах не зберігається.

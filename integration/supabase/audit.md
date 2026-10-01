@@ -1,5 +1,11 @@
 # Аудит і підготовка Supabase — agent-04
 
+Це зафіксований аудит підготовки **до дозволу на запис**. Пізніше
+користувач дозволив імпорт із server default replaces_ids; область дозволу
+збережено у `import_authorization.md`. Актуальні результати імпорту,
+Storage/public SHA256 і DB links — у `uploads` та `handoff.md`. Історичні
+відмітки про відсутність записів/дозволу нижче не є поточним станом апки.
+
 ## Виконання й межі
 
 Робота виконана у cloud workspace `/workspace/lightweight-exercises-photo`.

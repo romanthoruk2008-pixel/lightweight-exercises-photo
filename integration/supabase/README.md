@@ -1,8 +1,9 @@
 # Supabase integration preparation — agent-04
 
-Це підготовка, не імпортер із правом запису. Скрипт не має `--apply` і не
-викликає SQL, REST mutation, Storage upload чи imagegen. Він не змінює
-каталог, PNG, progress або схвалення.
+Початкова підготовка збережена в `dry_run.py`, audit і results. Після
+окремого дозволу користувача додано `import_catalog_images.py` для
+відновлюваного імпорту. Локальні source JSON, PNG, progress і схвалення
+не змінюються; imagegen, міграцій і змін користувацьких таблиць немає.
 
 Гілка: `agent-04-supabase-integration`; база: `work` на
 `a6f296cbc6737991dd367e929b3e2df25874d4d8`. Використовувати існуючий cloud
@@ -10,6 +11,14 @@ checkout; не створювати worktree та не використовув�
 
 ## Файли
 
+- `import_authorization.md` — точна область дозволеного імпорту.
+- `import_catalog_images.py` — dry-run за замовчуванням; авторизовані
+  записи з `--apply`, read-only перевірка Supabase з `--verify-only`.
+- `uploads/catalog_manifest.json` — insert batches та повне читання назад.
+- `uploads/batch-001.json` — gate перших трьох; наступні batch-файли — по
+  десять (останній може бути меншим), результати Storage/public hash/DB.
+- `uploads/completion.json` — підсумкова перевірка, межі клієнтського доступу.
+- `handoff.md` — актуальний стан імпорту і наступні дії.
 - `audit.md` — результати та межі перевірки.
 - `field_mapping.md` — відповідність полів і послідовність майбутнього імпорту.
 - `verify_schema.sql` — лише SELECT для підтвердження count/default/CHECK/RLS.
@@ -57,10 +66,34 @@ PYTHONDONTWRITEBYTECODE=1 python3 -m unittest discover -s integration/supabase -
 явно оновлює лише чотири підготовчі JSON у `integration/supabase`; це локальні
 робочі файли, а не зміни Supabase. Скрипт не друкує всі записи в чат/термінал.
 
-Код завершення: `1` — помилка виконання, `2` — підготовку сформовано, але
-імпорт блокований. Під час поточного етапу очікується `2`: невідома бізнес-
-семантика `replaces_ids` і клієнтські права; записи Supabase
-не авторизовані. Це не означає невдале декодування PNG.
+`dry_run.py` і `results` — зафіксована підготовка до дозволу на імпорт,
+включно з тодішніми блокуваннями. Для поточного стану/відновлення
+використовувати `import_catalog_images.py` і `uploads`, а не трактувати
+історичний summary як результат фактичного імпорту.
+
+## Авторизований імпорт і відновлення
+
+```sh
+cd /workspace/lightweight-exercises-photo
+PYTHONDONTWRITEBYTECODE=1 python3 integration/supabase/import_catalog_images.py
+PYTHONDONTWRITEBYTECODE=1 python3 integration/supabase/import_catalog_images.py --apply
+PYTHONDONTWRITEBYTECODE=1 python3 integration/supabase/import_catalog_images.py --verify-only
+```
+
+Без flags виконується лише preflight read і звірка локальних hashes.
+`--apply` перечитує каталог, відмовляється від конфліктів і вставляє лише
+відсутні записи з `missing=default,return=minimal`, без upsert і без
+replaces_ids. Image uploads мають `x-upsert=false`. PATCH змінює лише
+п'ять image-полів з умовами точного ID, old image fields і updated_at.
+Публічний GET без apikey/Authorization повинен пройти до PATCH.
+
+Кожний успішний PNG має checkpoint. Повторний запуск для complete entries
+перевіряє public bytes і DB, але не повторює upload/PATCH. Невизначений
+результат після мережевого переривання відновлюється читанням фактичного
+object/row, не сліпим повтором запису. Конфлікт object/hash або DB link
+зупиняє роботу. `--verify-only` не має дозволених Supabase mutations;
+локальний completion report може оновитися. Код 0 — перевірку завершено,
+1 — зупинка/помилка; dry-run повертає 2 при конфлікті.
 
 Read-only API потребує наявної прив'язки `exerciseuploader` та HTTPS proxy.
 Секрет використовується лише у `apikey` до проєкту Supabase. Не виводити
@@ -80,6 +113,8 @@ proxy і не відключати TLS/контроль цілісності.
 бізнес-семантики поля. Усі 451 seed row і 135 image patch проходять 8 правил
 із наданого SQL snapshot; реальний SQL INSERT не виконувався.
 
-135 PNG готові за байтами; імпорт у БД/Storage не виконано. Recorded
-technical failures і нестандартні dimensions збережено окремо від
-схвалення користувача та готовності за MIME/size/SHA256.
+Підсумок фактичного імпорту — у `uploads/completion.json` і handoff.
+Recorded technical failures і нестандартні dimensions залишаються
+незмінними в source і плані. Всі mutations обмежено catalog_exercise та
+перевіреним набором Storage paths. Admin secret не замінює publishable
+key для перевірки звичайного клієнта.
