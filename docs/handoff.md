@@ -312,3 +312,9 @@ Batch-005 GitHub checkpoint 2026-10-01T11:52:54+00:00: commit `3f967fd137e445aca
 
 
 Correction checkpoint 2026-10-01T15:06:51.096210+03:00: Correction attempt-3 saved at `assets/exercises/pending/night-2026-10-01/batch-004/triceps-extension-dumbbell/attempt-3.png`, SHA256 `81f3bd29e2a18dfcc9027eee6f4ee4c7315eb311a08f23d60068d62b1159fa01`, dimensions 1254×1254, transparent pixels 1103581, technical_check=passed. New result user_review=pending; original attempt-2 remains unchanged. No post-generation visual QA or retry.
+
+
+2026-10-01T15:11:23.348031+03:00: користувач указав точку 11,9% × 29,1% на attempt-3; це ліва/нижня гантель біля кисті. Дозволено одну додаткову локальну правку attempt-4, вихідний attempt-3 збережено і SHA256 перевірено в commit `28f689a6293295f511a550b4f0d9cb49e051201c`. Усі 47 прийнятих нічних PNG також звірено за accepted SHA256 у цій віддаленій гілці. Копія у хмарі доступна, попри повідомлення клієнта про недоступний локальний шлях.
+
+
+Correction checkpoint 2026-10-01T15:12:53.984640+03:00: Correction attempt-4 saved at `assets/exercises/pending/night-2026-10-01/batch-004/triceps-extension-dumbbell/attempt-4.png`, SHA256 `f81b4e2454fb662b37756acc603326b5b061695aef295f8d492f8882443ae92f`, dimensions 1254×1254, transparent pixels 1098508, technical_check=passed. New result user_review=pending; previous versions remain unchanged. No post-generation visual QA or retry.
