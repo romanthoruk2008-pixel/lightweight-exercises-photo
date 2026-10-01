@@ -1,3 +1,9 @@
+## Agent-03 round 3 package checkpoint: agent-03-others-009
+
+2026-10-01T17:38:33+00:00: 1/10 вправ мають збережений PNG у віддаленій `work`; verified commit `e0d54ccf9d918436701fe78714852e967b04f7c4`. Усі збережені результати мають `user_review=pending`, `agent_visual_review=not_performed`; проблеми записані у progress та manifest. Генерацію зупинено через HTTP 429 на `hanging-knee-raise`. Після відновлення квоти продовжити з цього ID; згенерований `dead-hang` не перезаписувати; решту ID спершу звірити з progress.
+
+---
+
 ## Agent-03 round 3: зупинка квотою в 009
 
 2026-10-01T17:38:09+00:00: `dead-hang` збережено; `hanging-knee-raise` отримав HTTP 429. За запитом генерація зупинена без повторного виклику. У пакеті 009 решта восьми вправ не запускались. Наступне місце продовження після відновлення квоти: `hanging-knee-raise`; перед ним звірити progress і віддалений PNG. `dead-hang` не перегенеровувати.
