@@ -1,0 +1,1294 @@
+{
+  "schema_version": 1,
+  "batch_id": "agent-03-others-001",
+  "owner_agent": "agent-03",
+  "branch": "agent-03-inventory-2026-10-01",
+  "prepared_at": "2026-10-01T16:16:06.451230+03:00",
+  "status": "prepared_only",
+  "generation_authorized_now": false,
+  "catalog_path": "data/exercises/catalog.json",
+  "catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+  "catalog_source_commit": "fe78b35c7f67a987c0a816cfc97f05f2bc6691bd",
+  "style_version": "v1",
+  "style_path": "docs/exercise-image-style.md",
+  "style_sha256": "8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578",
+  "queue_path": "data/queues/agent-03-other-queue.json",
+  "human_reference": {
+    "repository_path": "assets/exercises/biceps-curl-dumbbell.png",
+    "sha256": "52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f",
+    "role": "Human appearance only; verified committed blob, not visually reviewed during preparation."
+  },
+  "constraints": {
+    "only_builtin_imagegen": true,
+    "paid_api_allowed": false,
+    "supabase_allowed": false,
+    "shared_progress_changes_allowed": false,
+    "catalog_changes_allowed": false,
+    "automatic_retries_allowed": false,
+    "generation_performed": false,
+    "reuse_unchanged_ID_and_prompt_hash_for_output_manifest": true,
+    "outputs_outside_git": true,
+    "revalidate_live_branches_before_each_call": true
+  },
+  "exercise_count": 10,
+  "exercise_ids": [
+    "standing-calf-raise",
+    "single-leg-standing-calf-raise",
+    "spiderman",
+    "plank-pushup",
+    "wall-sit",
+    "l-sit-hold",
+    "decline-pushup",
+    "decline-crunch",
+    "frog-pumps-dumbbell",
+    "standing-calf-raise-dumbbell"
+  ],
+  "exercises": [
+    {
+      "exercise_id": "standing-calf-raise",
+      "name": "Standing Calf Raise",
+      "source_english": {
+        "description": "A bodyweight standing calf raise lifts both heels from the floor while the toes remain planted and the hands lightly steady against a wall.",
+        "instructions": [
+          "Stand with your feet shoulder-width apart, toes pointing forward.",
+          "Place your hands on a wall or stable surface for balance.",
+          "Slowly raise your heels off the ground, lifting your body weight onto the balls of your feet.",
+          "Pause for a moment at the top, then slowly lower your heels back down to the starting position."
+        ],
+        "form_cues": [
+          "Keep the ankle vertical over the foot.",
+          "Rise evenly through the balls of both feet.",
+          "Lower the heels slowly."
+        ],
+        "common_mistakes": [
+          "Rolling the ankles outward or inward.",
+          "Bouncing through the bottom range.",
+          "Bending the knees to create momentum."
+        ],
+        "safety_note": "Use the machine, rack, or wall only for balance and keep the load light enough to control the ankle range.",
+        "provenance": "adapted"
+      },
+      "equipment": "none",
+      "primary_muscle": "calves",
+      "secondary_muscles": [],
+      "source_catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+      "source_catalog_record_sha256": "f5e115f4377fc52e754b1cd6bd016dd320639f71ccea4b1208dcb11078ddb46b",
+      "source_english_sha256": "e787125a94843206389cad3606c221996293a2c6936e7c7cb5359ce90088f9f4",
+      "prompt_payload": {
+        "identity_do_not_render_as_text": {
+          "exercise_id": "standing-calf-raise",
+          "name": "Standing Calf Raise",
+          "source_catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989"
+        },
+        "exact_catalogue_source": {
+          "source_english": {
+            "description": "A bodyweight standing calf raise lifts both heels from the floor while the toes remain planted and the hands lightly steady against a wall.",
+            "instructions": [
+              "Stand with your feet shoulder-width apart, toes pointing forward.",
+              "Place your hands on a wall or stable surface for balance.",
+              "Slowly raise your heels off the ground, lifting your body weight onto the balls of your feet.",
+              "Pause for a moment at the top, then slowly lower your heels back down to the starting position."
+            ],
+            "form_cues": [
+              "Keep the ankle vertical over the foot.",
+              "Rise evenly through the balls of both feet.",
+              "Lower the heels slowly."
+            ],
+            "common_mistakes": [
+              "Rolling the ankles outward or inward.",
+              "Bouncing through the bottom range.",
+              "Bending the knees to create momentum."
+            ],
+            "safety_note": "Use the machine, rack, or wall only for balance and keep the load light enough to control the ankle range.",
+            "provenance": "adapted"
+          },
+          "equipment": "none",
+          "primary_muscle": "calves",
+          "secondary_muscles": []
+        },
+        "style": {
+          "version": "v1",
+          "human_model": "One athletic bald male anatomical mannequin, opaque silver-gray muscular surfaces, consistent proportions and detailed 3D materials, plain black shorts, barefoot.",
+          "primary_highlight": {
+            "hex": "#F26445",
+            "rule": "Highlight only the exact primary muscle group provided for this exercise."
+          },
+          "secondary_highlight": {
+            "hex": "#F26445",
+            "intensity_fraction": [
+              0.4,
+              0.5
+            ],
+            "rule": "Only the exact secondary muscles, lighter same-hue highlight; if the list is empty add no secondary target."
+          },
+          "background": "Genuinely transparent PNG background, no white/checkerboard layer, no environment scene.",
+          "output": {
+            "format": "PNG",
+            "width": 1024,
+            "height": 1024,
+            "one_person": true,
+            "one_phase": true
+          },
+          "material_rules": "Highlights never make tissue transparent; no glow, whole-body orange tint, hair, text, labels, arrows, UI, borders, collage or extra person.",
+          "framing": "Full figure and all required equipment/supports visible within a square. Scale and use a three-quarter view to expose the specified contacts without changing anatomy, equipment, grip or technique.",
+          "no_invention": "Technique, equipment and muscles come only from the attached exact catalogue record. No extra attachments, numerical weights, brands or exact angles absent from the source."
+        },
+        "scene": {
+          "single_phase": "Heel-raise top hold",
+          "composition": "Stand with both forefeet contacting the floor, feet shoulder-width, toes forward and both heels raised. Hands touch a stable wall for balance; ankles travel vertically, torso upright. Show the wall contact and both lifted heels; no weights.",
+          "source_instruction_quotes": [
+            {
+              "index": 0,
+              "text": "Stand with your feet shoulder-width apart, toes pointing forward."
+            },
+            {
+              "index": 1,
+              "text": "Place your hands on a wall or stable surface for balance."
+            },
+            {
+              "index": 2,
+              "text": "Slowly raise your heels off the ground, lifting your body weight onto the balls of your feet."
+            },
+            {
+              "index": 3,
+              "text": "Pause for a moment at the top, then slowly lower your heels back down to the starting position."
+            }
+          ]
+        },
+        "reference_role": "Human appearance/proportions/materials only. Never copy pose, equipment or muscle targets from a reference."
+      },
+      "generation_prompt": "Create exactly one image for the following exact exercise record. Identity fields are metadata, never visible text. Preserve the source technique and depict only the chosen single phase.\n{\n  \"exact_catalogue_source\": {\n    \"equipment\": \"none\",\n    \"primary_muscle\": \"calves\",\n    \"secondary_muscles\": [],\n    \"source_english\": {\n      \"common_mistakes\": [\n        \"Rolling the ankles outward or inward.\",\n        \"Bouncing through the bottom range.\",\n        \"Bending the knees to create momentum.\"\n      ],\n      \"description\": \"A bodyweight standing calf raise lifts both heels from the floor while the toes remain planted and the hands lightly steady against a wall.\",\n      \"form_cues\": [\n        \"Keep the ankle vertical over the foot.\",\n        \"Rise evenly through the balls of both feet.\",\n        \"Lower the heels slowly.\"\n      ],\n      \"instructions\": [\n        \"Stand with your feet shoulder-width apart, toes pointing forward.\",\n        \"Place your hands on a wall or stable surface for balance.\",\n        \"Slowly raise your heels off the ground, lifting your body weight onto the balls of your feet.\",\n        \"Pause for a moment at the top, then slowly lower your heels back down to the starting position.\"\n      ],\n      \"provenance\": \"adapted\",\n      \"safety_note\": \"Use the machine, rack, or wall only for balance and keep the load light enough to control the ankle range.\"\n    }\n  },\n  \"identity_do_not_render_as_text\": {\n    \"exercise_id\": \"standing-calf-raise\",\n    \"name\": \"Standing Calf Raise\",\n    \"source_catalog_sha256\": \"a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989\"\n  },\n  \"reference_role\": \"Human appearance/proportions/materials only. Never copy pose, equipment or muscle targets from a reference.\",\n  \"scene\": {\n    \"composition\": \"Stand with both forefeet contacting the floor, feet shoulder-width, toes forward and both heels raised. Hands touch a stable wall for balance; ankles travel vertically, torso upright. Show the wall contact and both lifted heels; no weights.\",\n    \"single_phase\": \"Heel-raise top hold\",\n    \"source_instruction_quotes\": [\n      {\n        \"index\": 0,\n        \"text\": \"Stand with your feet shoulder-width apart, toes pointing forward.\"\n      },\n      {\n        \"index\": 1,\n        \"text\": \"Place your hands on a wall or stable surface for balance.\"\n      },\n      {\n        \"index\": 2,\n        \"text\": \"Slowly raise your heels off the ground, lifting your body weight onto the balls of your feet.\"\n      },\n      {\n        \"index\": 3,\n        \"text\": \"Pause for a moment at the top, then slowly lower your heels back down to the starting position.\"\n      }\n    ]\n  },\n  \"style\": {\n    \"background\": \"Genuinely transparent PNG background, no white/checkerboard layer, no environment scene.\",\n    \"framing\": \"Full figure and all required equipment/supports visible within a square. Scale and use a three-quarter view to expose the specified contacts without changing anatomy, equipment, grip or technique.\",\n    \"human_model\": \"One athletic bald male anatomical mannequin, opaque silver-gray muscular surfaces, consistent proportions and detailed 3D materials, plain black shorts, barefoot.\",\n    \"material_rules\": \"Highlights never make tissue transparent; no glow, whole-body orange tint, hair, text, labels, arrows, UI, borders, collage or extra person.\",\n    \"no_invention\": \"Technique, equipment and muscles come only from the attached exact catalogue record. No extra attachments, numerical weights, brands or exact angles absent from the source.\",\n    \"output\": {\n      \"format\": \"PNG\",\n      \"height\": 1024,\n      \"one_person\": true,\n      \"one_phase\": true,\n      \"width\": 1024\n    },\n    \"primary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"rule\": \"Highlight only the exact primary muscle group provided for this exercise.\"\n    },\n    \"secondary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"intensity_fraction\": [\n        0.4,\n        0.5\n      ],\n      \"rule\": \"Only the exact secondary muscles, lighter same-hue highlight; if the list is empty add no secondary target.\"\n    },\n    \"version\": \"v1\"\n  }\n}",
+      "generation_prompt_sha256": "c30e1616db6d2c8b4de78ba3d997961da6937038bf2eff9e485baf18e968f3f6",
+      "style_version": "v1",
+      "planned_output_relative_path": "agent-03-others-001/standing-calf-raise/attempt-1.png",
+      "output_root": "/workspace/exercise-image-results",
+      "result_path": null,
+      "result_sha256": null,
+      "attempts": 0,
+      "technical_check": null,
+      "user_review": null,
+      "agent_visual_review": "not_performed",
+      "preparation_status": "prompt_prepared_not_generated"
+    },
+    {
+      "exercise_id": "single-leg-standing-calf-raise",
+      "name": "Single Leg Standing Calf Raise",
+      "source_english": {
+        "description": "Hold support, raise one heel straight up from the floor, lower it fully, then change legs.",
+        "instructions": [
+          "Stand with your feet hip-width apart and place your hands on a wall or sturdy object for balance.",
+          "Lift one foot off the ground and balance on the other foot.",
+          "Slowly raise your heel off the ground, lifting your body up onto the ball of your foot.",
+          "Pause for a moment at the top, then slowly lower your heel back down to the starting position.",
+          "Repeat for the desired number of repetitions, then switch legs and repeat."
+        ],
+        "form_cues": [
+          "Keep the ankle over the second toe.",
+          "Pause at the top.",
+          "Lower without bouncing."
+        ],
+        "common_mistakes": [
+          "Bouncing at the bottom.",
+          "Rolling the ankle outward.",
+          "Pushing off with the other leg."
+        ],
+        "safety_note": "Use a handhold or machine support and keep the ankle moving vertically.",
+        "provenance": "adapted"
+      },
+      "equipment": "none",
+      "primary_muscle": "calves",
+      "secondary_muscles": [],
+      "source_catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+      "source_catalog_record_sha256": "3180b66f800d55884120a6a08683a4d7ec2497cb34c20869837e07d46a3bb44e",
+      "source_english_sha256": "372c1d02ed314dc34c4dd2817d55eb98d2e0d95e244ce9fcb181b5f9c92a2b99",
+      "prompt_payload": {
+        "identity_do_not_render_as_text": {
+          "exercise_id": "single-leg-standing-calf-raise",
+          "name": "Single Leg Standing Calf Raise",
+          "source_catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989"
+        },
+        "exact_catalogue_source": {
+          "source_english": {
+            "description": "Hold support, raise one heel straight up from the floor, lower it fully, then change legs.",
+            "instructions": [
+              "Stand with your feet hip-width apart and place your hands on a wall or sturdy object for balance.",
+              "Lift one foot off the ground and balance on the other foot.",
+              "Slowly raise your heel off the ground, lifting your body up onto the ball of your foot.",
+              "Pause for a moment at the top, then slowly lower your heel back down to the starting position.",
+              "Repeat for the desired number of repetitions, then switch legs and repeat."
+            ],
+            "form_cues": [
+              "Keep the ankle over the second toe.",
+              "Pause at the top.",
+              "Lower without bouncing."
+            ],
+            "common_mistakes": [
+              "Bouncing at the bottom.",
+              "Rolling the ankle outward.",
+              "Pushing off with the other leg."
+            ],
+            "safety_note": "Use a handhold or machine support and keep the ankle moving vertically.",
+            "provenance": "adapted"
+          },
+          "equipment": "none",
+          "primary_muscle": "calves",
+          "secondary_muscles": []
+        },
+        "style": {
+          "version": "v1",
+          "human_model": "One athletic bald male anatomical mannequin, opaque silver-gray muscular surfaces, consistent proportions and detailed 3D materials, plain black shorts, barefoot.",
+          "primary_highlight": {
+            "hex": "#F26445",
+            "rule": "Highlight only the exact primary muscle group provided for this exercise."
+          },
+          "secondary_highlight": {
+            "hex": "#F26445",
+            "intensity_fraction": [
+              0.4,
+              0.5
+            ],
+            "rule": "Only the exact secondary muscles, lighter same-hue highlight; if the list is empty add no secondary target."
+          },
+          "background": "Genuinely transparent PNG background, no white/checkerboard layer, no environment scene.",
+          "output": {
+            "format": "PNG",
+            "width": 1024,
+            "height": 1024,
+            "one_person": true,
+            "one_phase": true
+          },
+          "material_rules": "Highlights never make tissue transparent; no glow, whole-body orange tint, hair, text, labels, arrows, UI, borders, collage or extra person.",
+          "framing": "Full figure and all required equipment/supports visible within a square. Scale and use a three-quarter view to expose the specified contacts without changing anatomy, equipment, grip or technique.",
+          "no_invention": "Technique, equipment and muscles come only from the attached exact catalogue record. No extra attachments, numerical weights, brands or exact angles absent from the source."
+        },
+        "scene": {
+          "single_phase": "Single working heel at the top",
+          "composition": "Use the left foot as the sole loaded floor contact: its forefoot stays down and heel rises. Right foot is off the floor. Hands touch the wall as explicitly permitted; torso upright, working ankle aligned. No machine or weights.",
+          "source_instruction_quotes": [
+            {
+              "index": 0,
+              "text": "Stand with your feet hip-width apart and place your hands on a wall or sturdy object for balance."
+            },
+            {
+              "index": 1,
+              "text": "Lift one foot off the ground and balance on the other foot."
+            },
+            {
+              "index": 2,
+              "text": "Slowly raise your heel off the ground, lifting your body up onto the ball of your foot."
+            },
+            {
+              "index": 3,
+              "text": "Pause for a moment at the top, then slowly lower your heel back down to the starting position."
+            }
+          ]
+        },
+        "reference_role": "Human appearance/proportions/materials only. Never copy pose, equipment or muscle targets from a reference."
+      },
+      "generation_prompt": "Create exactly one image for the following exact exercise record. Identity fields are metadata, never visible text. Preserve the source technique and depict only the chosen single phase.\n{\n  \"exact_catalogue_source\": {\n    \"equipment\": \"none\",\n    \"primary_muscle\": \"calves\",\n    \"secondary_muscles\": [],\n    \"source_english\": {\n      \"common_mistakes\": [\n        \"Bouncing at the bottom.\",\n        \"Rolling the ankle outward.\",\n        \"Pushing off with the other leg.\"\n      ],\n      \"description\": \"Hold support, raise one heel straight up from the floor, lower it fully, then change legs.\",\n      \"form_cues\": [\n        \"Keep the ankle over the second toe.\",\n        \"Pause at the top.\",\n        \"Lower without bouncing.\"\n      ],\n      \"instructions\": [\n        \"Stand with your feet hip-width apart and place your hands on a wall or sturdy object for balance.\",\n        \"Lift one foot off the ground and balance on the other foot.\",\n        \"Slowly raise your heel off the ground, lifting your body up onto the ball of your foot.\",\n        \"Pause for a moment at the top, then slowly lower your heel back down to the starting position.\",\n        \"Repeat for the desired number of repetitions, then switch legs and repeat.\"\n      ],\n      \"provenance\": \"adapted\",\n      \"safety_note\": \"Use a handhold or machine support and keep the ankle moving vertically.\"\n    }\n  },\n  \"identity_do_not_render_as_text\": {\n    \"exercise_id\": \"single-leg-standing-calf-raise\",\n    \"name\": \"Single Leg Standing Calf Raise\",\n    \"source_catalog_sha256\": \"a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989\"\n  },\n  \"reference_role\": \"Human appearance/proportions/materials only. Never copy pose, equipment or muscle targets from a reference.\",\n  \"scene\": {\n    \"composition\": \"Use the left foot as the sole loaded floor contact: its forefoot stays down and heel rises. Right foot is off the floor. Hands touch the wall as explicitly permitted; torso upright, working ankle aligned. No machine or weights.\",\n    \"single_phase\": \"Single working heel at the top\",\n    \"source_instruction_quotes\": [\n      {\n        \"index\": 0,\n        \"text\": \"Stand with your feet hip-width apart and place your hands on a wall or sturdy object for balance.\"\n      },\n      {\n        \"index\": 1,\n        \"text\": \"Lift one foot off the ground and balance on the other foot.\"\n      },\n      {\n        \"index\": 2,\n        \"text\": \"Slowly raise your heel off the ground, lifting your body up onto the ball of your foot.\"\n      },\n      {\n        \"index\": 3,\n        \"text\": \"Pause for a moment at the top, then slowly lower your heel back down to the starting position.\"\n      }\n    ]\n  },\n  \"style\": {\n    \"background\": \"Genuinely transparent PNG background, no white/checkerboard layer, no environment scene.\",\n    \"framing\": \"Full figure and all required equipment/supports visible within a square. Scale and use a three-quarter view to expose the specified contacts without changing anatomy, equipment, grip or technique.\",\n    \"human_model\": \"One athletic bald male anatomical mannequin, opaque silver-gray muscular surfaces, consistent proportions and detailed 3D materials, plain black shorts, barefoot.\",\n    \"material_rules\": \"Highlights never make tissue transparent; no glow, whole-body orange tint, hair, text, labels, arrows, UI, borders, collage or extra person.\",\n    \"no_invention\": \"Technique, equipment and muscles come only from the attached exact catalogue record. No extra attachments, numerical weights, brands or exact angles absent from the source.\",\n    \"output\": {\n      \"format\": \"PNG\",\n      \"height\": 1024,\n      \"one_person\": true,\n      \"one_phase\": true,\n      \"width\": 1024\n    },\n    \"primary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"rule\": \"Highlight only the exact primary muscle group provided for this exercise.\"\n    },\n    \"secondary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"intensity_fraction\": [\n        0.4,\n        0.5\n      ],\n      \"rule\": \"Only the exact secondary muscles, lighter same-hue highlight; if the list is empty add no secondary target.\"\n    },\n    \"version\": \"v1\"\n  }\n}",
+      "generation_prompt_sha256": "05417dd6461f8e233241f0431885f19742215a822aeae9d16d045e509f8ccb83",
+      "style_version": "v1",
+      "planned_output_relative_path": "agent-03-others-001/single-leg-standing-calf-raise/attempt-1.png",
+      "output_root": "/workspace/exercise-image-results",
+      "result_path": null,
+      "result_sha256": null,
+      "attempts": 0,
+      "technical_check": null,
+      "user_review": null,
+      "agent_visual_review": "not_performed",
+      "preparation_status": "prompt_prepared_not_generated"
+    },
+    {
+      "exercise_id": "spiderman",
+      "name": "Spiderman",
+      "source_english": {
+        "description": "A Spiderman is a plank variation that draws one knee toward the same-side elbow while the trunk stays low and controlled.",
+        "instructions": [
+          "Start in a high plank with hands under shoulders and legs extended.",
+          "Brace the core and bring the right knee toward the outside of the right elbow.",
+          "Return the right leg to the plank without raising the hips.",
+          "Repeat on the left side, alternating smoothly."
+        ],
+        "form_cues": [
+          "Keep shoulders over hands.",
+          "Move the knee outside the arm.",
+          "Keep hips level."
+        ],
+        "common_mistakes": [
+          "Piking the hips.",
+          "Rotating the pelvis open.",
+          "Bouncing the foot back."
+        ],
+        "safety_note": "Use a surface with enough traction for the hands and feet.",
+        "provenance": "authored"
+      },
+      "equipment": "none",
+      "primary_muscle": "abdominals",
+      "secondary_muscles": [],
+      "source_catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+      "source_catalog_record_sha256": "2f140d1d01e550a276b5d1f45ee057c949535b6ac6d5de020b99566fcd2306af",
+      "source_english_sha256": "5895c0d39754e0ed7759c299d1aac2a4ca01f2c0912569e1eae4be6832633743",
+      "prompt_payload": {
+        "identity_do_not_render_as_text": {
+          "exercise_id": "spiderman",
+          "name": "Spiderman",
+          "source_catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989"
+        },
+        "exact_catalogue_source": {
+          "source_english": {
+            "description": "A Spiderman is a plank variation that draws one knee toward the same-side elbow while the trunk stays low and controlled.",
+            "instructions": [
+              "Start in a high plank with hands under shoulders and legs extended.",
+              "Brace the core and bring the right knee toward the outside of the right elbow.",
+              "Return the right leg to the plank without raising the hips.",
+              "Repeat on the left side, alternating smoothly."
+            ],
+            "form_cues": [
+              "Keep shoulders over hands.",
+              "Move the knee outside the arm.",
+              "Keep hips level."
+            ],
+            "common_mistakes": [
+              "Piking the hips.",
+              "Rotating the pelvis open.",
+              "Bouncing the foot back."
+            ],
+            "safety_note": "Use a surface with enough traction for the hands and feet.",
+            "provenance": "authored"
+          },
+          "equipment": "none",
+          "primary_muscle": "abdominals",
+          "secondary_muscles": []
+        },
+        "style": {
+          "version": "v1",
+          "human_model": "One athletic bald male anatomical mannequin, opaque silver-gray muscular surfaces, consistent proportions and detailed 3D materials, plain black shorts, barefoot.",
+          "primary_highlight": {
+            "hex": "#F26445",
+            "rule": "Highlight only the exact primary muscle group provided for this exercise."
+          },
+          "secondary_highlight": {
+            "hex": "#F26445",
+            "intensity_fraction": [
+              0.4,
+              0.5
+            ],
+            "rule": "Only the exact secondary muscles, lighter same-hue highlight; if the list is empty add no secondary target."
+          },
+          "background": "Genuinely transparent PNG background, no white/checkerboard layer, no environment scene.",
+          "output": {
+            "format": "PNG",
+            "width": 1024,
+            "height": 1024,
+            "one_person": true,
+            "one_phase": true
+          },
+          "material_rules": "Highlights never make tissue transparent; no glow, whole-body orange tint, hair, text, labels, arrows, UI, borders, collage or extra person.",
+          "framing": "Full figure and all required equipment/supports visible within a square. Scale and use a three-quarter view to expose the specified contacts without changing anatomy, equipment, grip or technique.",
+          "no_invention": "Technique, equipment and muscles come only from the attached exact catalogue record. No extra attachments, numerical weights, brands or exact angles absent from the source."
+        },
+        "scene": {
+          "single_phase": "Right knee approaching the outside of right elbow",
+          "composition": "High plank with palms on the floor beneath shoulders, left leg long with toes contacting the floor. Right knee travels outside toward the right elbow. Shoulders remain over hands, hips level and trunk low; do not turn this into a crunch or put the knee inside the arm.",
+          "source_instruction_quotes": [
+            {
+              "index": 0,
+              "text": "Start in a high plank with hands under shoulders and legs extended."
+            },
+            {
+              "index": 1,
+              "text": "Brace the core and bring the right knee toward the outside of the right elbow."
+            },
+            {
+              "index": 2,
+              "text": "Return the right leg to the plank without raising the hips."
+            }
+          ]
+        },
+        "reference_role": "Human appearance/proportions/materials only. Never copy pose, equipment or muscle targets from a reference."
+      },
+      "generation_prompt": "Create exactly one image for the following exact exercise record. Identity fields are metadata, never visible text. Preserve the source technique and depict only the chosen single phase.\n{\n  \"exact_catalogue_source\": {\n    \"equipment\": \"none\",\n    \"primary_muscle\": \"abdominals\",\n    \"secondary_muscles\": [],\n    \"source_english\": {\n      \"common_mistakes\": [\n        \"Piking the hips.\",\n        \"Rotating the pelvis open.\",\n        \"Bouncing the foot back.\"\n      ],\n      \"description\": \"A Spiderman is a plank variation that draws one knee toward the same-side elbow while the trunk stays low and controlled.\",\n      \"form_cues\": [\n        \"Keep shoulders over hands.\",\n        \"Move the knee outside the arm.\",\n        \"Keep hips level.\"\n      ],\n      \"instructions\": [\n        \"Start in a high plank with hands under shoulders and legs extended.\",\n        \"Brace the core and bring the right knee toward the outside of the right elbow.\",\n        \"Return the right leg to the plank without raising the hips.\",\n        \"Repeat on the left side, alternating smoothly.\"\n      ],\n      \"provenance\": \"authored\",\n      \"safety_note\": \"Use a surface with enough traction for the hands and feet.\"\n    }\n  },\n  \"identity_do_not_render_as_text\": {\n    \"exercise_id\": \"spiderman\",\n    \"name\": \"Spiderman\",\n    \"source_catalog_sha256\": \"a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989\"\n  },\n  \"reference_role\": \"Human appearance/proportions/materials only. Never copy pose, equipment or muscle targets from a reference.\",\n  \"scene\": {\n    \"composition\": \"High plank with palms on the floor beneath shoulders, left leg long with toes contacting the floor. Right knee travels outside toward the right elbow. Shoulders remain over hands, hips level and trunk low; do not turn this into a crunch or put the knee inside the arm.\",\n    \"single_phase\": \"Right knee approaching the outside of right elbow\",\n    \"source_instruction_quotes\": [\n      {\n        \"index\": 0,\n        \"text\": \"Start in a high plank with hands under shoulders and legs extended.\"\n      },\n      {\n        \"index\": 1,\n        \"text\": \"Brace the core and bring the right knee toward the outside of the right elbow.\"\n      },\n      {\n        \"index\": 2,\n        \"text\": \"Return the right leg to the plank without raising the hips.\"\n      }\n    ]\n  },\n  \"style\": {\n    \"background\": \"Genuinely transparent PNG background, no white/checkerboard layer, no environment scene.\",\n    \"framing\": \"Full figure and all required equipment/supports visible within a square. Scale and use a three-quarter view to expose the specified contacts without changing anatomy, equipment, grip or technique.\",\n    \"human_model\": \"One athletic bald male anatomical mannequin, opaque silver-gray muscular surfaces, consistent proportions and detailed 3D materials, plain black shorts, barefoot.\",\n    \"material_rules\": \"Highlights never make tissue transparent; no glow, whole-body orange tint, hair, text, labels, arrows, UI, borders, collage or extra person.\",\n    \"no_invention\": \"Technique, equipment and muscles come only from the attached exact catalogue record. No extra attachments, numerical weights, brands or exact angles absent from the source.\",\n    \"output\": {\n      \"format\": \"PNG\",\n      \"height\": 1024,\n      \"one_person\": true,\n      \"one_phase\": true,\n      \"width\": 1024\n    },\n    \"primary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"rule\": \"Highlight only the exact primary muscle group provided for this exercise.\"\n    },\n    \"secondary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"intensity_fraction\": [\n        0.4,\n        0.5\n      ],\n      \"rule\": \"Only the exact secondary muscles, lighter same-hue highlight; if the list is empty add no secondary target.\"\n    },\n    \"version\": \"v1\"\n  }\n}",
+      "generation_prompt_sha256": "35e82e3818b430b8e58758dd0edaf9609d0ec8009aee36eadcc7876750b3d66a",
+      "style_version": "v1",
+      "planned_output_relative_path": "agent-03-others-001/spiderman/attempt-1.png",
+      "output_root": "/workspace/exercise-image-results",
+      "result_path": null,
+      "result_sha256": null,
+      "attempts": 0,
+      "technical_check": null,
+      "user_review": null,
+      "agent_visual_review": "not_performed",
+      "preparation_status": "prompt_prepared_not_generated"
+    },
+    {
+      "exercise_id": "plank-pushup",
+      "name": "Plank Pushup",
+      "source_english": {
+        "description": "A plank push-up alternates between the forearms and hands while the body remains rigid in a plank.",
+        "instructions": [
+          "Start in a forearm plank with the body straight and feet set wide enough for balance.",
+          "Place one hand under the shoulder, then the other, pressing up to a high plank.",
+          "Lower back to the forearms one arm at a time while keeping the hips as still as possible.",
+          "Alternate the leading arm on each repetition."
+        ],
+        "form_cues": [
+          "Keep feet wide for stability.",
+          "Move one arm at a time.",
+          "Brace the pelvis and ribs."
+        ],
+        "common_mistakes": [
+          "Rocking the hips side to side.",
+          "Piking into a push-up.",
+          "Placing the hands too far forward."
+        ],
+        "safety_note": "Use a surface that will not slip and stop if the shoulders or wrists cannot stay aligned.",
+        "provenance": "authored"
+      },
+      "equipment": "none",
+      "primary_muscle": "chest",
+      "secondary_muscles": [
+        "shoulders",
+        "triceps",
+        "abdominals"
+      ],
+      "source_catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+      "source_catalog_record_sha256": "50124a52c5eaa39a300ed946f5e1c74833d0dadaf57bdd9037aa9f422533949f",
+      "source_english_sha256": "b31d9dbdf293138dde122f668ca009853e7532f472adef1e18d381ee03fc2b68",
+      "prompt_payload": {
+        "identity_do_not_render_as_text": {
+          "exercise_id": "plank-pushup",
+          "name": "Plank Pushup",
+          "source_catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989"
+        },
+        "exact_catalogue_source": {
+          "source_english": {
+            "description": "A plank push-up alternates between the forearms and hands while the body remains rigid in a plank.",
+            "instructions": [
+              "Start in a forearm plank with the body straight and feet set wide enough for balance.",
+              "Place one hand under the shoulder, then the other, pressing up to a high plank.",
+              "Lower back to the forearms one arm at a time while keeping the hips as still as possible.",
+              "Alternate the leading arm on each repetition."
+            ],
+            "form_cues": [
+              "Keep feet wide for stability.",
+              "Move one arm at a time.",
+              "Brace the pelvis and ribs."
+            ],
+            "common_mistakes": [
+              "Rocking the hips side to side.",
+              "Piking into a push-up.",
+              "Placing the hands too far forward."
+            ],
+            "safety_note": "Use a surface that will not slip and stop if the shoulders or wrists cannot stay aligned.",
+            "provenance": "authored"
+          },
+          "equipment": "none",
+          "primary_muscle": "chest",
+          "secondary_muscles": [
+            "shoulders",
+            "triceps",
+            "abdominals"
+          ]
+        },
+        "style": {
+          "version": "v1",
+          "human_model": "One athletic bald male anatomical mannequin, opaque silver-gray muscular surfaces, consistent proportions and detailed 3D materials, plain black shorts, barefoot.",
+          "primary_highlight": {
+            "hex": "#F26445",
+            "rule": "Highlight only the exact primary muscle group provided for this exercise."
+          },
+          "secondary_highlight": {
+            "hex": "#F26445",
+            "intensity_fraction": [
+              0.4,
+              0.5
+            ],
+            "rule": "Only the exact secondary muscles, lighter same-hue highlight; if the list is empty add no secondary target."
+          },
+          "background": "Genuinely transparent PNG background, no white/checkerboard layer, no environment scene.",
+          "output": {
+            "format": "PNG",
+            "width": 1024,
+            "height": 1024,
+            "one_person": true,
+            "one_phase": true
+          },
+          "material_rules": "Highlights never make tissue transparent; no glow, whole-body orange tint, hair, text, labels, arrows, UI, borders, collage or extra person.",
+          "framing": "Full figure and all required equipment/supports visible within a square. Scale and use a three-quarter view to expose the specified contacts without changing anatomy, equipment, grip or technique.",
+          "no_invention": "Technique, equipment and muscles come only from the attached exact catalogue record. No extra attachments, numerical weights, brands or exact angles absent from the source."
+        },
+        "scene": {
+          "single_phase": "Mid-transition between forearm and high plank",
+          "composition": "Body remains one straight plank; toes set wide enough for balance. Right palm is planted beneath its shoulder, left forearm still contacts the floor. Depict exactly this one-arm-at-a-time transition without extra limbs; pelvis and ribs braced, hips still.",
+          "source_instruction_quotes": [
+            {
+              "index": 0,
+              "text": "Start in a forearm plank with the body straight and feet set wide enough for balance."
+            },
+            {
+              "index": 1,
+              "text": "Place one hand under the shoulder, then the other, pressing up to a high plank."
+            }
+          ]
+        },
+        "reference_role": "Human appearance/proportions/materials only. Never copy pose, equipment or muscle targets from a reference."
+      },
+      "generation_prompt": "Create exactly one image for the following exact exercise record. Identity fields are metadata, never visible text. Preserve the source technique and depict only the chosen single phase.\n{\n  \"exact_catalogue_source\": {\n    \"equipment\": \"none\",\n    \"primary_muscle\": \"chest\",\n    \"secondary_muscles\": [\n      \"shoulders\",\n      \"triceps\",\n      \"abdominals\"\n    ],\n    \"source_english\": {\n      \"common_mistakes\": [\n        \"Rocking the hips side to side.\",\n        \"Piking into a push-up.\",\n        \"Placing the hands too far forward.\"\n      ],\n      \"description\": \"A plank push-up alternates between the forearms and hands while the body remains rigid in a plank.\",\n      \"form_cues\": [\n        \"Keep feet wide for stability.\",\n        \"Move one arm at a time.\",\n        \"Brace the pelvis and ribs.\"\n      ],\n      \"instructions\": [\n        \"Start in a forearm plank with the body straight and feet set wide enough for balance.\",\n        \"Place one hand under the shoulder, then the other, pressing up to a high plank.\",\n        \"Lower back to the forearms one arm at a time while keeping the hips as still as possible.\",\n        \"Alternate the leading arm on each repetition.\"\n      ],\n      \"provenance\": \"authored\",\n      \"safety_note\": \"Use a surface that will not slip and stop if the shoulders or wrists cannot stay aligned.\"\n    }\n  },\n  \"identity_do_not_render_as_text\": {\n    \"exercise_id\": \"plank-pushup\",\n    \"name\": \"Plank Pushup\",\n    \"source_catalog_sha256\": \"a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989\"\n  },\n  \"reference_role\": \"Human appearance/proportions/materials only. Never copy pose, equipment or muscle targets from a reference.\",\n  \"scene\": {\n    \"composition\": \"Body remains one straight plank; toes set wide enough for balance. Right palm is planted beneath its shoulder, left forearm still contacts the floor. Depict exactly this one-arm-at-a-time transition without extra limbs; pelvis and ribs braced, hips still.\",\n    \"single_phase\": \"Mid-transition between forearm and high plank\",\n    \"source_instruction_quotes\": [\n      {\n        \"index\": 0,\n        \"text\": \"Start in a forearm plank with the body straight and feet set wide enough for balance.\"\n      },\n      {\n        \"index\": 1,\n        \"text\": \"Place one hand under the shoulder, then the other, pressing up to a high plank.\"\n      }\n    ]\n  },\n  \"style\": {\n    \"background\": \"Genuinely transparent PNG background, no white/checkerboard layer, no environment scene.\",\n    \"framing\": \"Full figure and all required equipment/supports visible within a square. Scale and use a three-quarter view to expose the specified contacts without changing anatomy, equipment, grip or technique.\",\n    \"human_model\": \"One athletic bald male anatomical mannequin, opaque silver-gray muscular surfaces, consistent proportions and detailed 3D materials, plain black shorts, barefoot.\",\n    \"material_rules\": \"Highlights never make tissue transparent; no glow, whole-body orange tint, hair, text, labels, arrows, UI, borders, collage or extra person.\",\n    \"no_invention\": \"Technique, equipment and muscles come only from the attached exact catalogue record. No extra attachments, numerical weights, brands or exact angles absent from the source.\",\n    \"output\": {\n      \"format\": \"PNG\",\n      \"height\": 1024,\n      \"one_person\": true,\n      \"one_phase\": true,\n      \"width\": 1024\n    },\n    \"primary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"rule\": \"Highlight only the exact primary muscle group provided for this exercise.\"\n    },\n    \"secondary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"intensity_fraction\": [\n        0.4,\n        0.5\n      ],\n      \"rule\": \"Only the exact secondary muscles, lighter same-hue highlight; if the list is empty add no secondary target.\"\n    },\n    \"version\": \"v1\"\n  }\n}",
+      "generation_prompt_sha256": "c294ddb3bec90120b534a8ad96c6a3179735ee103b36f786c8fa488990adbeae",
+      "style_version": "v1",
+      "planned_output_relative_path": "agent-03-others-001/plank-pushup/attempt-1.png",
+      "output_root": "/workspace/exercise-image-results",
+      "result_path": null,
+      "result_sha256": null,
+      "attempts": 0,
+      "technical_check": null,
+      "user_review": null,
+      "agent_visual_review": "not_performed",
+      "preparation_status": "prompt_prepared_not_generated"
+    },
+    {
+      "exercise_id": "wall-sit",
+      "name": "Wall Sit",
+      "source_english": {
+        "description": "Wall Sit holds the back against a wall with knees bent and thighs near parallel to the floor.",
+        "instructions": [
+          "Place the back against a clear wall and walk the feet forward.",
+          "Slide down until the knees are about 90 degrees and the thighs are near parallel.",
+          "Keep the back and head against the wall for the programmed duration.",
+          "Press through the feet to slide back up and stand."
+        ],
+        "form_cues": [
+          "Keep knees over ankles.",
+          "Keep feet flat.",
+          "Breathe steadily."
+        ],
+        "common_mistakes": [
+          "Knees drifting inward.",
+          "Feet too close to the wall.",
+          "Holding the breath."
+        ],
+        "safety_note": "Choose a shallower knee angle if the knees cannot stay aligned and supported.",
+        "provenance": "authored"
+      },
+      "equipment": "other",
+      "primary_muscle": "quadriceps",
+      "secondary_muscles": [
+        "abdominals"
+      ],
+      "source_catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+      "source_catalog_record_sha256": "ed8b83c59a51d4f4389705eba08cefc72e5c24733e2e9390460fdd0469acaa90",
+      "source_english_sha256": "c7e940ddf7f5ed33bdf77358188a86fec52ed4ad7d161fbae89e894a22273f6e",
+      "prompt_payload": {
+        "identity_do_not_render_as_text": {
+          "exercise_id": "wall-sit",
+          "name": "Wall Sit",
+          "source_catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989"
+        },
+        "exact_catalogue_source": {
+          "source_english": {
+            "description": "Wall Sit holds the back against a wall with knees bent and thighs near parallel to the floor.",
+            "instructions": [
+              "Place the back against a clear wall and walk the feet forward.",
+              "Slide down until the knees are about 90 degrees and the thighs are near parallel.",
+              "Keep the back and head against the wall for the programmed duration.",
+              "Press through the feet to slide back up and stand."
+            ],
+            "form_cues": [
+              "Keep knees over ankles.",
+              "Keep feet flat.",
+              "Breathe steadily."
+            ],
+            "common_mistakes": [
+              "Knees drifting inward.",
+              "Feet too close to the wall.",
+              "Holding the breath."
+            ],
+            "safety_note": "Choose a shallower knee angle if the knees cannot stay aligned and supported.",
+            "provenance": "authored"
+          },
+          "equipment": "other",
+          "primary_muscle": "quadriceps",
+          "secondary_muscles": [
+            "abdominals"
+          ]
+        },
+        "style": {
+          "version": "v1",
+          "human_model": "One athletic bald male anatomical mannequin, opaque silver-gray muscular surfaces, consistent proportions and detailed 3D materials, plain black shorts, barefoot.",
+          "primary_highlight": {
+            "hex": "#F26445",
+            "rule": "Highlight only the exact primary muscle group provided for this exercise."
+          },
+          "secondary_highlight": {
+            "hex": "#F26445",
+            "intensity_fraction": [
+              0.4,
+              0.5
+            ],
+            "rule": "Only the exact secondary muscles, lighter same-hue highlight; if the list is empty add no secondary target."
+          },
+          "background": "Genuinely transparent PNG background, no white/checkerboard layer, no environment scene.",
+          "output": {
+            "format": "PNG",
+            "width": 1024,
+            "height": 1024,
+            "one_person": true,
+            "one_phase": true
+          },
+          "material_rules": "Highlights never make tissue transparent; no glow, whole-body orange tint, hair, text, labels, arrows, UI, borders, collage or extra person.",
+          "framing": "Full figure and all required equipment/supports visible within a square. Scale and use a three-quarter view to expose the specified contacts without changing anatomy, equipment, grip or technique.",
+          "no_invention": "Technique, equipment and muscles come only from the attached exact catalogue record. No extra attachments, numerical weights, brands or exact angles absent from the source."
+        },
+        "scene": {
+          "single_phase": "Static near-parallel hold",
+          "composition": "Back and head contact one plain stable wall; feet are forward on the floor. Knees bent about 90 degrees, thighs near parallel to the floor. Show the wall contact, both soles and the unsupported space beneath hips; no seat, weights or machine.",
+          "source_instruction_quotes": [
+            {
+              "index": 0,
+              "text": "Place the back against a clear wall and walk the feet forward."
+            },
+            {
+              "index": 1,
+              "text": "Slide down until the knees are about 90 degrees and the thighs are near parallel."
+            },
+            {
+              "index": 2,
+              "text": "Keep the back and head against the wall for the programmed duration."
+            }
+          ]
+        },
+        "reference_role": "Human appearance/proportions/materials only. Never copy pose, equipment or muscle targets from a reference."
+      },
+      "generation_prompt": "Create exactly one image for the following exact exercise record. Identity fields are metadata, never visible text. Preserve the source technique and depict only the chosen single phase.\n{\n  \"exact_catalogue_source\": {\n    \"equipment\": \"other\",\n    \"primary_muscle\": \"quadriceps\",\n    \"secondary_muscles\": [\n      \"abdominals\"\n    ],\n    \"source_english\": {\n      \"common_mistakes\": [\n        \"Knees drifting inward.\",\n        \"Feet too close to the wall.\",\n        \"Holding the breath.\"\n      ],\n      \"description\": \"Wall Sit holds the back against a wall with knees bent and thighs near parallel to the floor.\",\n      \"form_cues\": [\n        \"Keep knees over ankles.\",\n        \"Keep feet flat.\",\n        \"Breathe steadily.\"\n      ],\n      \"instructions\": [\n        \"Place the back against a clear wall and walk the feet forward.\",\n        \"Slide down until the knees are about 90 degrees and the thighs are near parallel.\",\n        \"Keep the back and head against the wall for the programmed duration.\",\n        \"Press through the feet to slide back up and stand.\"\n      ],\n      \"provenance\": \"authored\",\n      \"safety_note\": \"Choose a shallower knee angle if the knees cannot stay aligned and supported.\"\n    }\n  },\n  \"identity_do_not_render_as_text\": {\n    \"exercise_id\": \"wall-sit\",\n    \"name\": \"Wall Sit\",\n    \"source_catalog_sha256\": \"a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989\"\n  },\n  \"reference_role\": \"Human appearance/proportions/materials only. Never copy pose, equipment or muscle targets from a reference.\",\n  \"scene\": {\n    \"composition\": \"Back and head contact one plain stable wall; feet are forward on the floor. Knees bent about 90 degrees, thighs near parallel to the floor. Show the wall contact, both soles and the unsupported space beneath hips; no seat, weights or machine.\",\n    \"single_phase\": \"Static near-parallel hold\",\n    \"source_instruction_quotes\": [\n      {\n        \"index\": 0,\n        \"text\": \"Place the back against a clear wall and walk the feet forward.\"\n      },\n      {\n        \"index\": 1,\n        \"text\": \"Slide down until the knees are about 90 degrees and the thighs are near parallel.\"\n      },\n      {\n        \"index\": 2,\n        \"text\": \"Keep the back and head against the wall for the programmed duration.\"\n      }\n    ]\n  },\n  \"style\": {\n    \"background\": \"Genuinely transparent PNG background, no white/checkerboard layer, no environment scene.\",\n    \"framing\": \"Full figure and all required equipment/supports visible within a square. Scale and use a three-quarter view to expose the specified contacts without changing anatomy, equipment, grip or technique.\",\n    \"human_model\": \"One athletic bald male anatomical mannequin, opaque silver-gray muscular surfaces, consistent proportions and detailed 3D materials, plain black shorts, barefoot.\",\n    \"material_rules\": \"Highlights never make tissue transparent; no glow, whole-body orange tint, hair, text, labels, arrows, UI, borders, collage or extra person.\",\n    \"no_invention\": \"Technique, equipment and muscles come only from the attached exact catalogue record. No extra attachments, numerical weights, brands or exact angles absent from the source.\",\n    \"output\": {\n      \"format\": \"PNG\",\n      \"height\": 1024,\n      \"one_person\": true,\n      \"one_phase\": true,\n      \"width\": 1024\n    },\n    \"primary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"rule\": \"Highlight only the exact primary muscle group provided for this exercise.\"\n    },\n    \"secondary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"intensity_fraction\": [\n        0.4,\n        0.5\n      ],\n      \"rule\": \"Only the exact secondary muscles, lighter same-hue highlight; if the list is empty add no secondary target.\"\n    },\n    \"version\": \"v1\"\n  }\n}",
+      "generation_prompt_sha256": "22e7dbdc9203ec7600b4662b6c0fb3a64d277332394fdd75a15247a4ff8190bc",
+      "style_version": "v1",
+      "planned_output_relative_path": "agent-03-others-001/wall-sit/attempt-1.png",
+      "output_root": "/workspace/exercise-image-results",
+      "result_path": null,
+      "result_sha256": null,
+      "attempts": 0,
+      "technical_check": null,
+      "user_review": null,
+      "agent_visual_review": "not_performed",
+      "preparation_status": "prompt_prepared_not_generated"
+    },
+    {
+      "exercise_id": "l-sit-hold",
+      "name": "L-Sit Hold",
+      "source_english": {
+        "description": "Support the body on the hands and hold the legs straight and lifted in front to form an L shape.",
+        "instructions": [
+          "Sit on the floor with hands beside the hips and legs extended.",
+          "Press through the hands and brace the core to lift both legs from the floor.",
+          "Hold the legs straight and as parallel to the floor as your control allows.",
+          "Lower with control to end the hold."
+        ],
+        "form_cues": [
+          "Keep the trunk braced.",
+          "Press the hands into the floor while keeping both legs straight and lifted.",
+          "Finish each repetition under control."
+        ],
+        "common_mistakes": [
+          "Using momentum.",
+          "Losing the starting posture.",
+          "Rushing the return."
+        ],
+        "safety_note": "Use a comfortable range and stop if control or alignment deteriorates.",
+        "provenance": "adapted"
+      },
+      "equipment": "none",
+      "primary_muscle": "abdominals",
+      "secondary_muscles": [
+        "triceps"
+      ],
+      "source_catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+      "source_catalog_record_sha256": "b2077d6e2e9561589342373f27c6cb904e9565cae0e3fc5565be450523ee7817",
+      "source_english_sha256": "ba90c762853617385de5413cf2fa1fab5bf89ee6c0b6e8a60002af3f73b63639",
+      "prompt_payload": {
+        "identity_do_not_render_as_text": {
+          "exercise_id": "l-sit-hold",
+          "name": "L-Sit Hold",
+          "source_catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989"
+        },
+        "exact_catalogue_source": {
+          "source_english": {
+            "description": "Support the body on the hands and hold the legs straight and lifted in front to form an L shape.",
+            "instructions": [
+              "Sit on the floor with hands beside the hips and legs extended.",
+              "Press through the hands and brace the core to lift both legs from the floor.",
+              "Hold the legs straight and as parallel to the floor as your control allows.",
+              "Lower with control to end the hold."
+            ],
+            "form_cues": [
+              "Keep the trunk braced.",
+              "Press the hands into the floor while keeping both legs straight and lifted.",
+              "Finish each repetition under control."
+            ],
+            "common_mistakes": [
+              "Using momentum.",
+              "Losing the starting posture.",
+              "Rushing the return."
+            ],
+            "safety_note": "Use a comfortable range and stop if control or alignment deteriorates.",
+            "provenance": "adapted"
+          },
+          "equipment": "none",
+          "primary_muscle": "abdominals",
+          "secondary_muscles": [
+            "triceps"
+          ]
+        },
+        "style": {
+          "version": "v1",
+          "human_model": "One athletic bald male anatomical mannequin, opaque silver-gray muscular surfaces, consistent proportions and detailed 3D materials, plain black shorts, barefoot.",
+          "primary_highlight": {
+            "hex": "#F26445",
+            "rule": "Highlight only the exact primary muscle group provided for this exercise."
+          },
+          "secondary_highlight": {
+            "hex": "#F26445",
+            "intensity_fraction": [
+              0.4,
+              0.5
+            ],
+            "rule": "Only the exact secondary muscles, lighter same-hue highlight; if the list is empty add no secondary target."
+          },
+          "background": "Genuinely transparent PNG background, no white/checkerboard layer, no environment scene.",
+          "output": {
+            "format": "PNG",
+            "width": 1024,
+            "height": 1024,
+            "one_person": true,
+            "one_phase": true
+          },
+          "material_rules": "Highlights never make tissue transparent; no glow, whole-body orange tint, hair, text, labels, arrows, UI, borders, collage or extra person.",
+          "framing": "Full figure and all required equipment/supports visible within a square. Scale and use a three-quarter view to expose the specified contacts without changing anatomy, equipment, grip or technique.",
+          "no_invention": "Technique, equipment and muscles come only from the attached exact catalogue record. No extra attachments, numerical weights, brands or exact angles absent from the source."
+        },
+        "scene": {
+          "single_phase": "Straight-leg L hold",
+          "composition": "Hands contact the floor beside hips and press down to support the body. Both legs are long, together and lifted forward near parallel to the floor, forming an L with the braced torso. Do not add bars, blocks or hanging support.",
+          "source_instruction_quotes": [
+            {
+              "index": 0,
+              "text": "Sit on the floor with hands beside the hips and legs extended."
+            },
+            {
+              "index": 1,
+              "text": "Press through the hands and brace the core to lift both legs from the floor."
+            },
+            {
+              "index": 2,
+              "text": "Hold the legs straight and as parallel to the floor as your control allows."
+            }
+          ]
+        },
+        "reference_role": "Human appearance/proportions/materials only. Never copy pose, equipment or muscle targets from a reference."
+      },
+      "generation_prompt": "Create exactly one image for the following exact exercise record. Identity fields are metadata, never visible text. Preserve the source technique and depict only the chosen single phase.\n{\n  \"exact_catalogue_source\": {\n    \"equipment\": \"none\",\n    \"primary_muscle\": \"abdominals\",\n    \"secondary_muscles\": [\n      \"triceps\"\n    ],\n    \"source_english\": {\n      \"common_mistakes\": [\n        \"Using momentum.\",\n        \"Losing the starting posture.\",\n        \"Rushing the return.\"\n      ],\n      \"description\": \"Support the body on the hands and hold the legs straight and lifted in front to form an L shape.\",\n      \"form_cues\": [\n        \"Keep the trunk braced.\",\n        \"Press the hands into the floor while keeping both legs straight and lifted.\",\n        \"Finish each repetition under control.\"\n      ],\n      \"instructions\": [\n        \"Sit on the floor with hands beside the hips and legs extended.\",\n        \"Press through the hands and brace the core to lift both legs from the floor.\",\n        \"Hold the legs straight and as parallel to the floor as your control allows.\",\n        \"Lower with control to end the hold.\"\n      ],\n      \"provenance\": \"adapted\",\n      \"safety_note\": \"Use a comfortable range and stop if control or alignment deteriorates.\"\n    }\n  },\n  \"identity_do_not_render_as_text\": {\n    \"exercise_id\": \"l-sit-hold\",\n    \"name\": \"L-Sit Hold\",\n    \"source_catalog_sha256\": \"a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989\"\n  },\n  \"reference_role\": \"Human appearance/proportions/materials only. Never copy pose, equipment or muscle targets from a reference.\",\n  \"scene\": {\n    \"composition\": \"Hands contact the floor beside hips and press down to support the body. Both legs are long, together and lifted forward near parallel to the floor, forming an L with the braced torso. Do not add bars, blocks or hanging support.\",\n    \"single_phase\": \"Straight-leg L hold\",\n    \"source_instruction_quotes\": [\n      {\n        \"index\": 0,\n        \"text\": \"Sit on the floor with hands beside the hips and legs extended.\"\n      },\n      {\n        \"index\": 1,\n        \"text\": \"Press through the hands and brace the core to lift both legs from the floor.\"\n      },\n      {\n        \"index\": 2,\n        \"text\": \"Hold the legs straight and as parallel to the floor as your control allows.\"\n      }\n    ]\n  },\n  \"style\": {\n    \"background\": \"Genuinely transparent PNG background, no white/checkerboard layer, no environment scene.\",\n    \"framing\": \"Full figure and all required equipment/supports visible within a square. Scale and use a three-quarter view to expose the specified contacts without changing anatomy, equipment, grip or technique.\",\n    \"human_model\": \"One athletic bald male anatomical mannequin, opaque silver-gray muscular surfaces, consistent proportions and detailed 3D materials, plain black shorts, barefoot.\",\n    \"material_rules\": \"Highlights never make tissue transparent; no glow, whole-body orange tint, hair, text, labels, arrows, UI, borders, collage or extra person.\",\n    \"no_invention\": \"Technique, equipment and muscles come only from the attached exact catalogue record. No extra attachments, numerical weights, brands or exact angles absent from the source.\",\n    \"output\": {\n      \"format\": \"PNG\",\n      \"height\": 1024,\n      \"one_person\": true,\n      \"one_phase\": true,\n      \"width\": 1024\n    },\n    \"primary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"rule\": \"Highlight only the exact primary muscle group provided for this exercise.\"\n    },\n    \"secondary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"intensity_fraction\": [\n        0.4,\n        0.5\n      ],\n      \"rule\": \"Only the exact secondary muscles, lighter same-hue highlight; if the list is empty add no secondary target.\"\n    },\n    \"version\": \"v1\"\n  }\n}",
+      "generation_prompt_sha256": "fef6d59ef1f322092b4413e35e30933f1ce2268148e8fe4c059ac92421758f3f",
+      "style_version": "v1",
+      "planned_output_relative_path": "agent-03-others-001/l-sit-hold/attempt-1.png",
+      "output_root": "/workspace/exercise-image-results",
+      "result_path": null,
+      "result_sha256": null,
+      "attempts": 0,
+      "technical_check": null,
+      "user_review": null,
+      "agent_visual_review": "not_performed",
+      "preparation_status": "prompt_prepared_not_generated"
+    },
+    {
+      "exercise_id": "decline-pushup",
+      "name": "Decline Push Up",
+      "source_english": {
+        "description": "Decline Push Up lowers the chest from a braced plank and presses back up with the feet elevated.",
+        "instructions": [
+          "Place your feet on a stable low step and hands on the floor.",
+          "Lower the chest toward the floor while keeping the trunk rigid.",
+          "Press through the palms; for clap push-ups, leave the floor briefly and land softly.",
+          "Reset the plank with elbows straight before the next repetition."
+        ],
+        "form_cues": [
+          "Keep the body in one line.",
+          "Keep elbows controlled.",
+          "Land softly when explosive."
+        ],
+        "common_mistakes": [
+          "Sagging the hips.",
+          "Flaring the elbows.",
+          "Landing with locked elbows."
+        ],
+        "safety_note": "Use knees or an elevated surface until the plank and landing stay controlled.",
+        "provenance": "adapted"
+      },
+      "equipment": "other",
+      "primary_muscle": "chest",
+      "secondary_muscles": [
+        "shoulders",
+        "triceps"
+      ],
+      "source_catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+      "source_catalog_record_sha256": "b40c481035d0a724e518fd3593a218679d2644129779c8bca43f3357e8c3b48c",
+      "source_english_sha256": "61235f81373d4ff86c4e6ca6cc0a221f52b60c5a6260dec8cfe9a0d3bc6fdf73",
+      "prompt_payload": {
+        "identity_do_not_render_as_text": {
+          "exercise_id": "decline-pushup",
+          "name": "Decline Push Up",
+          "source_catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989"
+        },
+        "exact_catalogue_source": {
+          "source_english": {
+            "description": "Decline Push Up lowers the chest from a braced plank and presses back up with the feet elevated.",
+            "instructions": [
+              "Place your feet on a stable low step and hands on the floor.",
+              "Lower the chest toward the floor while keeping the trunk rigid.",
+              "Press through the palms; for clap push-ups, leave the floor briefly and land softly.",
+              "Reset the plank with elbows straight before the next repetition."
+            ],
+            "form_cues": [
+              "Keep the body in one line.",
+              "Keep elbows controlled.",
+              "Land softly when explosive."
+            ],
+            "common_mistakes": [
+              "Sagging the hips.",
+              "Flaring the elbows.",
+              "Landing with locked elbows."
+            ],
+            "safety_note": "Use knees or an elevated surface until the plank and landing stay controlled.",
+            "provenance": "adapted"
+          },
+          "equipment": "other",
+          "primary_muscle": "chest",
+          "secondary_muscles": [
+            "shoulders",
+            "triceps"
+          ]
+        },
+        "style": {
+          "version": "v1",
+          "human_model": "One athletic bald male anatomical mannequin, opaque silver-gray muscular surfaces, consistent proportions and detailed 3D materials, plain black shorts, barefoot.",
+          "primary_highlight": {
+            "hex": "#F26445",
+            "rule": "Highlight only the exact primary muscle group provided for this exercise."
+          },
+          "secondary_highlight": {
+            "hex": "#F26445",
+            "intensity_fraction": [
+              0.4,
+              0.5
+            ],
+            "rule": "Only the exact secondary muscles, lighter same-hue highlight; if the list is empty add no secondary target."
+          },
+          "background": "Genuinely transparent PNG background, no white/checkerboard layer, no environment scene.",
+          "output": {
+            "format": "PNG",
+            "width": 1024,
+            "height": 1024,
+            "one_person": true,
+            "one_phase": true
+          },
+          "material_rules": "Highlights never make tissue transparent; no glow, whole-body orange tint, hair, text, labels, arrows, UI, borders, collage or extra person.",
+          "framing": "Full figure and all required equipment/supports visible within a square. Scale and use a three-quarter view to expose the specified contacts without changing anatomy, equipment, grip or technique.",
+          "no_invention": "Technique, equipment and muscles come only from the attached exact catalogue record. No extra attachments, numerical weights, brands or exact angles absent from the source."
+        },
+        "scene": {
+          "single_phase": "Controlled lowered-chest phase",
+          "composition": "Feet contact a stable low step and palms contact the floor; the entire body stays in one rigid inclined plank with hips aligned. Elbows bend as the chest approaches the floor. Keep both palms down. The conditional source clause \"for clap push-ups\" does not apply to this ID; no clap, airborne hands, knee-supported variation or added load.",
+          "source_instruction_quotes": [
+            {
+              "index": 0,
+              "text": "Place your feet on a stable low step and hands on the floor."
+            },
+            {
+              "index": 1,
+              "text": "Lower the chest toward the floor while keeping the trunk rigid."
+            }
+          ]
+        },
+        "reference_role": "Human appearance/proportions/materials only. Never copy pose, equipment or muscle targets from a reference."
+      },
+      "generation_prompt": "Create exactly one image for the following exact exercise record. Identity fields are metadata, never visible text. Preserve the source technique and depict only the chosen single phase.\n{\n  \"exact_catalogue_source\": {\n    \"equipment\": \"other\",\n    \"primary_muscle\": \"chest\",\n    \"secondary_muscles\": [\n      \"shoulders\",\n      \"triceps\"\n    ],\n    \"source_english\": {\n      \"common_mistakes\": [\n        \"Sagging the hips.\",\n        \"Flaring the elbows.\",\n        \"Landing with locked elbows.\"\n      ],\n      \"description\": \"Decline Push Up lowers the chest from a braced plank and presses back up with the feet elevated.\",\n      \"form_cues\": [\n        \"Keep the body in one line.\",\n        \"Keep elbows controlled.\",\n        \"Land softly when explosive.\"\n      ],\n      \"instructions\": [\n        \"Place your feet on a stable low step and hands on the floor.\",\n        \"Lower the chest toward the floor while keeping the trunk rigid.\",\n        \"Press through the palms; for clap push-ups, leave the floor briefly and land softly.\",\n        \"Reset the plank with elbows straight before the next repetition.\"\n      ],\n      \"provenance\": \"adapted\",\n      \"safety_note\": \"Use knees or an elevated surface until the plank and landing stay controlled.\"\n    }\n  },\n  \"identity_do_not_render_as_text\": {\n    \"exercise_id\": \"decline-pushup\",\n    \"name\": \"Decline Push Up\",\n    \"source_catalog_sha256\": \"a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989\"\n  },\n  \"reference_role\": \"Human appearance/proportions/materials only. Never copy pose, equipment or muscle targets from a reference.\",\n  \"scene\": {\n    \"composition\": \"Feet contact a stable low step and palms contact the floor; the entire body stays in one rigid inclined plank with hips aligned. Elbows bend as the chest approaches the floor. Keep both palms down. The conditional source clause \\\"for clap push-ups\\\" does not apply to this ID; no clap, airborne hands, knee-supported variation or added load.\",\n    \"single_phase\": \"Controlled lowered-chest phase\",\n    \"source_instruction_quotes\": [\n      {\n        \"index\": 0,\n        \"text\": \"Place your feet on a stable low step and hands on the floor.\"\n      },\n      {\n        \"index\": 1,\n        \"text\": \"Lower the chest toward the floor while keeping the trunk rigid.\"\n      }\n    ]\n  },\n  \"style\": {\n    \"background\": \"Genuinely transparent PNG background, no white/checkerboard layer, no environment scene.\",\n    \"framing\": \"Full figure and all required equipment/supports visible within a square. Scale and use a three-quarter view to expose the specified contacts without changing anatomy, equipment, grip or technique.\",\n    \"human_model\": \"One athletic bald male anatomical mannequin, opaque silver-gray muscular surfaces, consistent proportions and detailed 3D materials, plain black shorts, barefoot.\",\n    \"material_rules\": \"Highlights never make tissue transparent; no glow, whole-body orange tint, hair, text, labels, arrows, UI, borders, collage or extra person.\",\n    \"no_invention\": \"Technique, equipment and muscles come only from the attached exact catalogue record. No extra attachments, numerical weights, brands or exact angles absent from the source.\",\n    \"output\": {\n      \"format\": \"PNG\",\n      \"height\": 1024,\n      \"one_person\": true,\n      \"one_phase\": true,\n      \"width\": 1024\n    },\n    \"primary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"rule\": \"Highlight only the exact primary muscle group provided for this exercise.\"\n    },\n    \"secondary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"intensity_fraction\": [\n        0.4,\n        0.5\n      ],\n      \"rule\": \"Only the exact secondary muscles, lighter same-hue highlight; if the list is empty add no secondary target.\"\n    },\n    \"version\": \"v1\"\n  }\n}",
+      "generation_prompt_sha256": "84529386a0486c41a896bec803f60ba818774f1de8d6abc8dfc603b58b113b1a",
+      "style_version": "v1",
+      "planned_output_relative_path": "agent-03-others-001/decline-pushup/attempt-1.png",
+      "output_root": "/workspace/exercise-image-results",
+      "result_path": null,
+      "result_sha256": null,
+      "attempts": 0,
+      "technical_check": null,
+      "user_review": null,
+      "agent_visual_review": "not_performed",
+      "preparation_status": "prompt_prepared_not_generated"
+    },
+    {
+      "exercise_id": "decline-crunch",
+      "name": "Decline Crunch",
+      "source_english": {
+        "description": "Decline Crunch curls the ribs toward the pelvis from a declined bench position.",
+        "instructions": [
+          "Secure your feet on a decline bench and lie back.",
+          "Brace and curl the ribs toward the pelvis.",
+          "Pause without pulling the neck.",
+          "Lower the torso slowly to the support."
+        ],
+        "form_cues": [
+          "Keep the chin relaxed.",
+          "Move ribs, not hips.",
+          "Exhale as you curl."
+        ],
+        "common_mistakes": [
+          "Pulling the head.",
+          "Using the legs to swing.",
+          "Dropping the torso."
+        ],
+        "safety_note": "Use a comfortable curl range and reduce the decline or load before the neck or back loses control.",
+        "provenance": "adapted"
+      },
+      "equipment": "none",
+      "primary_muscle": "abdominals",
+      "secondary_muscles": [],
+      "source_catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+      "source_catalog_record_sha256": "a05df1e65746c004e25cb187c6bbdf5f1b4ae6c5d762a3ec823fbc450c4ec2fe",
+      "source_english_sha256": "006ad748c3fea230d0a687c52675d7f25e40a6708cc4019172fa373b53089bb6",
+      "prompt_payload": {
+        "identity_do_not_render_as_text": {
+          "exercise_id": "decline-crunch",
+          "name": "Decline Crunch",
+          "source_catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989"
+        },
+        "exact_catalogue_source": {
+          "source_english": {
+            "description": "Decline Crunch curls the ribs toward the pelvis from a declined bench position.",
+            "instructions": [
+              "Secure your feet on a decline bench and lie back.",
+              "Brace and curl the ribs toward the pelvis.",
+              "Pause without pulling the neck.",
+              "Lower the torso slowly to the support."
+            ],
+            "form_cues": [
+              "Keep the chin relaxed.",
+              "Move ribs, not hips.",
+              "Exhale as you curl."
+            ],
+            "common_mistakes": [
+              "Pulling the head.",
+              "Using the legs to swing.",
+              "Dropping the torso."
+            ],
+            "safety_note": "Use a comfortable curl range and reduce the decline or load before the neck or back loses control.",
+            "provenance": "adapted"
+          },
+          "equipment": "none",
+          "primary_muscle": "abdominals",
+          "secondary_muscles": []
+        },
+        "style": {
+          "version": "v1",
+          "human_model": "One athletic bald male anatomical mannequin, opaque silver-gray muscular surfaces, consistent proportions and detailed 3D materials, plain black shorts, barefoot.",
+          "primary_highlight": {
+            "hex": "#F26445",
+            "rule": "Highlight only the exact primary muscle group provided for this exercise."
+          },
+          "secondary_highlight": {
+            "hex": "#F26445",
+            "intensity_fraction": [
+              0.4,
+              0.5
+            ],
+            "rule": "Only the exact secondary muscles, lighter same-hue highlight; if the list is empty add no secondary target."
+          },
+          "background": "Genuinely transparent PNG background, no white/checkerboard layer, no environment scene.",
+          "output": {
+            "format": "PNG",
+            "width": 1024,
+            "height": 1024,
+            "one_person": true,
+            "one_phase": true
+          },
+          "material_rules": "Highlights never make tissue transparent; no glow, whole-body orange tint, hair, text, labels, arrows, UI, borders, collage or extra person.",
+          "framing": "Full figure and all required equipment/supports visible within a square. Scale and use a three-quarter view to expose the specified contacts without changing anatomy, equipment, grip or technique.",
+          "no_invention": "Technique, equipment and muscles come only from the attached exact catalogue record. No extra attachments, numerical weights, brands or exact angles absent from the source."
+        },
+        "scene": {
+          "single_phase": "Small trunk curl on decline bench",
+          "composition": "Feet secured on a standard declined bench; pelvis and lower trunk remain supported by its pad. Curl the ribs toward the pelvis with the chin relaxed, without pulling the neck or turning the motion into a full sit-up. Show the entire bench and its actual foot-securement contacts; no external weight.",
+          "source_instruction_quotes": [
+            {
+              "index": 0,
+              "text": "Secure your feet on a decline bench and lie back."
+            },
+            {
+              "index": 1,
+              "text": "Brace and curl the ribs toward the pelvis."
+            },
+            {
+              "index": 2,
+              "text": "Pause without pulling the neck."
+            }
+          ]
+        },
+        "reference_role": "Human appearance/proportions/materials only. Never copy pose, equipment or muscle targets from a reference."
+      },
+      "generation_prompt": "Create exactly one image for the following exact exercise record. Identity fields are metadata, never visible text. Preserve the source technique and depict only the chosen single phase.\n{\n  \"exact_catalogue_source\": {\n    \"equipment\": \"none\",\n    \"primary_muscle\": \"abdominals\",\n    \"secondary_muscles\": [],\n    \"source_english\": {\n      \"common_mistakes\": [\n        \"Pulling the head.\",\n        \"Using the legs to swing.\",\n        \"Dropping the torso.\"\n      ],\n      \"description\": \"Decline Crunch curls the ribs toward the pelvis from a declined bench position.\",\n      \"form_cues\": [\n        \"Keep the chin relaxed.\",\n        \"Move ribs, not hips.\",\n        \"Exhale as you curl.\"\n      ],\n      \"instructions\": [\n        \"Secure your feet on a decline bench and lie back.\",\n        \"Brace and curl the ribs toward the pelvis.\",\n        \"Pause without pulling the neck.\",\n        \"Lower the torso slowly to the support.\"\n      ],\n      \"provenance\": \"adapted\",\n      \"safety_note\": \"Use a comfortable curl range and reduce the decline or load before the neck or back loses control.\"\n    }\n  },\n  \"identity_do_not_render_as_text\": {\n    \"exercise_id\": \"decline-crunch\",\n    \"name\": \"Decline Crunch\",\n    \"source_catalog_sha256\": \"a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989\"\n  },\n  \"reference_role\": \"Human appearance/proportions/materials only. Never copy pose, equipment or muscle targets from a reference.\",\n  \"scene\": {\n    \"composition\": \"Feet secured on a standard declined bench; pelvis and lower trunk remain supported by its pad. Curl the ribs toward the pelvis with the chin relaxed, without pulling the neck or turning the motion into a full sit-up. Show the entire bench and its actual foot-securement contacts; no external weight.\",\n    \"single_phase\": \"Small trunk curl on decline bench\",\n    \"source_instruction_quotes\": [\n      {\n        \"index\": 0,\n        \"text\": \"Secure your feet on a decline bench and lie back.\"\n      },\n      {\n        \"index\": 1,\n        \"text\": \"Brace and curl the ribs toward the pelvis.\"\n      },\n      {\n        \"index\": 2,\n        \"text\": \"Pause without pulling the neck.\"\n      }\n    ]\n  },\n  \"style\": {\n    \"background\": \"Genuinely transparent PNG background, no white/checkerboard layer, no environment scene.\",\n    \"framing\": \"Full figure and all required equipment/supports visible within a square. Scale and use a three-quarter view to expose the specified contacts without changing anatomy, equipment, grip or technique.\",\n    \"human_model\": \"One athletic bald male anatomical mannequin, opaque silver-gray muscular surfaces, consistent proportions and detailed 3D materials, plain black shorts, barefoot.\",\n    \"material_rules\": \"Highlights never make tissue transparent; no glow, whole-body orange tint, hair, text, labels, arrows, UI, borders, collage or extra person.\",\n    \"no_invention\": \"Technique, equipment and muscles come only from the attached exact catalogue record. No extra attachments, numerical weights, brands or exact angles absent from the source.\",\n    \"output\": {\n      \"format\": \"PNG\",\n      \"height\": 1024,\n      \"one_person\": true,\n      \"one_phase\": true,\n      \"width\": 1024\n    },\n    \"primary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"rule\": \"Highlight only the exact primary muscle group provided for this exercise.\"\n    },\n    \"secondary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"intensity_fraction\": [\n        0.4,\n        0.5\n      ],\n      \"rule\": \"Only the exact secondary muscles, lighter same-hue highlight; if the list is empty add no secondary target.\"\n    },\n    \"version\": \"v1\"\n  }\n}",
+      "generation_prompt_sha256": "94ef8b7864909466c58d8f82443cba41cc99142ddf1100babeae14de3df2bb77",
+      "style_version": "v1",
+      "planned_output_relative_path": "agent-03-others-001/decline-crunch/attempt-1.png",
+      "output_root": "/workspace/exercise-image-results",
+      "result_path": null,
+      "result_sha256": null,
+      "attempts": 0,
+      "technical_check": null,
+      "user_review": null,
+      "agent_visual_review": "not_performed",
+      "preparation_status": "prompt_prepared_not_generated"
+    },
+    {
+      "exercise_id": "frog-pumps-dumbbell",
+      "name": "Frog Pumps (Dumbbell)",
+      "source_english": {
+        "description": "Frog Pumps (Dumbbell) press the hips upward with the soles of the feet together while a dumbbell rests at the hips.",
+        "instructions": [
+          "Lie on your back, bring the soles of the feet together, and place the dumbbell securely across the hip crease.",
+          "Brace the abdomen and press through the feet to lift the hips.",
+          "Pause when the glutes are contracted without arching the ribs.",
+          "Lower the hips slowly to the floor."
+        ],
+        "form_cues": [
+          "Keep knees open.",
+          "Keep ribs down.",
+          "Squeeze glutes at the top."
+        ],
+        "common_mistakes": [
+          "Pushing through the lower back.",
+          "Letting the feet separate.",
+          "Bouncing off the floor."
+        ],
+        "safety_note": "Use a light dumbbell and pad the hips so the load stays stable.",
+        "provenance": "authored"
+      },
+      "equipment": "dumbbell",
+      "primary_muscle": "glutes",
+      "secondary_muscles": [
+        "hamstrings"
+      ],
+      "source_catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+      "source_catalog_record_sha256": "6062dbec39e353651c45db9761141a64814fa5f19cbdf6f889f5a484d7709b74",
+      "source_english_sha256": "1e6db94fcdc02427c6ed76284f3a65ba9f268eeb3fa77ec4a3d20755ddd5402c",
+      "prompt_payload": {
+        "identity_do_not_render_as_text": {
+          "exercise_id": "frog-pumps-dumbbell",
+          "name": "Frog Pumps (Dumbbell)",
+          "source_catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989"
+        },
+        "exact_catalogue_source": {
+          "source_english": {
+            "description": "Frog Pumps (Dumbbell) press the hips upward with the soles of the feet together while a dumbbell rests at the hips.",
+            "instructions": [
+              "Lie on your back, bring the soles of the feet together, and place the dumbbell securely across the hip crease.",
+              "Brace the abdomen and press through the feet to lift the hips.",
+              "Pause when the glutes are contracted without arching the ribs.",
+              "Lower the hips slowly to the floor."
+            ],
+            "form_cues": [
+              "Keep knees open.",
+              "Keep ribs down.",
+              "Squeeze glutes at the top."
+            ],
+            "common_mistakes": [
+              "Pushing through the lower back.",
+              "Letting the feet separate.",
+              "Bouncing off the floor."
+            ],
+            "safety_note": "Use a light dumbbell and pad the hips so the load stays stable.",
+            "provenance": "authored"
+          },
+          "equipment": "dumbbell",
+          "primary_muscle": "glutes",
+          "secondary_muscles": [
+            "hamstrings"
+          ]
+        },
+        "style": {
+          "version": "v1",
+          "human_model": "One athletic bald male anatomical mannequin, opaque silver-gray muscular surfaces, consistent proportions and detailed 3D materials, plain black shorts, barefoot.",
+          "primary_highlight": {
+            "hex": "#F26445",
+            "rule": "Highlight only the exact primary muscle group provided for this exercise."
+          },
+          "secondary_highlight": {
+            "hex": "#F26445",
+            "intensity_fraction": [
+              0.4,
+              0.5
+            ],
+            "rule": "Only the exact secondary muscles, lighter same-hue highlight; if the list is empty add no secondary target."
+          },
+          "background": "Genuinely transparent PNG background, no white/checkerboard layer, no environment scene.",
+          "output": {
+            "format": "PNG",
+            "width": 1024,
+            "height": 1024,
+            "one_person": true,
+            "one_phase": true
+          },
+          "material_rules": "Highlights never make tissue transparent; no glow, whole-body orange tint, hair, text, labels, arrows, UI, borders, collage or extra person.",
+          "framing": "Full figure and all required equipment/supports visible within a square. Scale and use a three-quarter view to expose the specified contacts without changing anatomy, equipment, grip or technique.",
+          "no_invention": "Technique, equipment and muscles come only from the attached exact catalogue record. No extra attachments, numerical weights, brands or exact angles absent from the source."
+        },
+        "scene": {
+          "single_phase": "Controlled hip-extension top",
+          "composition": "Lie on the floor with soles pressed together and knees open. One light dumbbell is secured across the padded hip crease as stated in the source. Raise the hips through the feet, ribs down, without lumbar arching. Show the feet together, knees outward, supported upper back and centered dumbbell.",
+          "source_instruction_quotes": [
+            {
+              "index": 0,
+              "text": "Lie on your back, bring the soles of the feet together, and place the dumbbell securely across the hip crease."
+            },
+            {
+              "index": 1,
+              "text": "Brace the abdomen and press through the feet to lift the hips."
+            },
+            {
+              "index": 2,
+              "text": "Pause when the glutes are contracted without arching the ribs."
+            }
+          ]
+        },
+        "reference_role": "Human appearance/proportions/materials only. Never copy pose, equipment or muscle targets from a reference."
+      },
+      "generation_prompt": "Create exactly one image for the following exact exercise record. Identity fields are metadata, never visible text. Preserve the source technique and depict only the chosen single phase.\n{\n  \"exact_catalogue_source\": {\n    \"equipment\": \"dumbbell\",\n    \"primary_muscle\": \"glutes\",\n    \"secondary_muscles\": [\n      \"hamstrings\"\n    ],\n    \"source_english\": {\n      \"common_mistakes\": [\n        \"Pushing through the lower back.\",\n        \"Letting the feet separate.\",\n        \"Bouncing off the floor.\"\n      ],\n      \"description\": \"Frog Pumps (Dumbbell) press the hips upward with the soles of the feet together while a dumbbell rests at the hips.\",\n      \"form_cues\": [\n        \"Keep knees open.\",\n        \"Keep ribs down.\",\n        \"Squeeze glutes at the top.\"\n      ],\n      \"instructions\": [\n        \"Lie on your back, bring the soles of the feet together, and place the dumbbell securely across the hip crease.\",\n        \"Brace the abdomen and press through the feet to lift the hips.\",\n        \"Pause when the glutes are contracted without arching the ribs.\",\n        \"Lower the hips slowly to the floor.\"\n      ],\n      \"provenance\": \"authored\",\n      \"safety_note\": \"Use a light dumbbell and pad the hips so the load stays stable.\"\n    }\n  },\n  \"identity_do_not_render_as_text\": {\n    \"exercise_id\": \"frog-pumps-dumbbell\",\n    \"name\": \"Frog Pumps (Dumbbell)\",\n    \"source_catalog_sha256\": \"a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989\"\n  },\n  \"reference_role\": \"Human appearance/proportions/materials only. Never copy pose, equipment or muscle targets from a reference.\",\n  \"scene\": {\n    \"composition\": \"Lie on the floor with soles pressed together and knees open. One light dumbbell is secured across the padded hip crease as stated in the source. Raise the hips through the feet, ribs down, without lumbar arching. Show the feet together, knees outward, supported upper back and centered dumbbell.\",\n    \"single_phase\": \"Controlled hip-extension top\",\n    \"source_instruction_quotes\": [\n      {\n        \"index\": 0,\n        \"text\": \"Lie on your back, bring the soles of the feet together, and place the dumbbell securely across the hip crease.\"\n      },\n      {\n        \"index\": 1,\n        \"text\": \"Brace the abdomen and press through the feet to lift the hips.\"\n      },\n      {\n        \"index\": 2,\n        \"text\": \"Pause when the glutes are contracted without arching the ribs.\"\n      }\n    ]\n  },\n  \"style\": {\n    \"background\": \"Genuinely transparent PNG background, no white/checkerboard layer, no environment scene.\",\n    \"framing\": \"Full figure and all required equipment/supports visible within a square. Scale and use a three-quarter view to expose the specified contacts without changing anatomy, equipment, grip or technique.\",\n    \"human_model\": \"One athletic bald male anatomical mannequin, opaque silver-gray muscular surfaces, consistent proportions and detailed 3D materials, plain black shorts, barefoot.\",\n    \"material_rules\": \"Highlights never make tissue transparent; no glow, whole-body orange tint, hair, text, labels, arrows, UI, borders, collage or extra person.\",\n    \"no_invention\": \"Technique, equipment and muscles come only from the attached exact catalogue record. No extra attachments, numerical weights, brands or exact angles absent from the source.\",\n    \"output\": {\n      \"format\": \"PNG\",\n      \"height\": 1024,\n      \"one_person\": true,\n      \"one_phase\": true,\n      \"width\": 1024\n    },\n    \"primary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"rule\": \"Highlight only the exact primary muscle group provided for this exercise.\"\n    },\n    \"secondary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"intensity_fraction\": [\n        0.4,\n        0.5\n      ],\n      \"rule\": \"Only the exact secondary muscles, lighter same-hue highlight; if the list is empty add no secondary target.\"\n    },\n    \"version\": \"v1\"\n  }\n}",
+      "generation_prompt_sha256": "daa0e54c7f7ba8fc4ba95ee54e9a7cfb541b8eeb5063c65bfbc428d1ebc00713",
+      "style_version": "v1",
+      "planned_output_relative_path": "agent-03-others-001/frog-pumps-dumbbell/attempt-1.png",
+      "output_root": "/workspace/exercise-image-results",
+      "result_path": null,
+      "result_sha256": null,
+      "attempts": 0,
+      "technical_check": null,
+      "user_review": null,
+      "agent_visual_review": "not_performed",
+      "preparation_status": "prompt_prepared_not_generated"
+    },
+    {
+      "exercise_id": "standing-calf-raise-dumbbell",
+      "name": "Standing Calf Raise (Dumbbell)",
+      "source_english": {
+        "description": "A dumbbell standing calf raise lifts both heels while the dumbbells hang at the sides.",
+        "instructions": [
+          "Stand with your feet shoulder-width apart, holding a dumbbell in each hand.",
+          "Raise your heels off the ground as high as possible, using your calves.",
+          "Pause for a moment at the top, then slowly lower your heels back down to the starting position."
+        ],
+        "form_cues": [
+          "Keep the ankle vertical over the foot.",
+          "Rise evenly through the balls of both feet.",
+          "Lower the heels slowly."
+        ],
+        "common_mistakes": [
+          "Rolling the ankles outward or inward.",
+          "Bouncing through the bottom range.",
+          "Bending the knees to create momentum."
+        ],
+        "safety_note": "Use the machine, rack, or wall only for balance and keep the load light enough to control the ankle range.",
+        "provenance": "adapted"
+      },
+      "equipment": "dumbbell",
+      "primary_muscle": "calves",
+      "secondary_muscles": [],
+      "source_catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+      "source_catalog_record_sha256": "c3288851e18dce3c1669c75e1ab9b68a4ae67dfabcd4cbcd5a1458a10b2661e2",
+      "source_english_sha256": "576cf1a97e2c4a9c54de1343a126ade464d3b08a84dda7c03c1bcae5c646663e",
+      "prompt_payload": {
+        "identity_do_not_render_as_text": {
+          "exercise_id": "standing-calf-raise-dumbbell",
+          "name": "Standing Calf Raise (Dumbbell)",
+          "source_catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989"
+        },
+        "exact_catalogue_source": {
+          "source_english": {
+            "description": "A dumbbell standing calf raise lifts both heels while the dumbbells hang at the sides.",
+            "instructions": [
+              "Stand with your feet shoulder-width apart, holding a dumbbell in each hand.",
+              "Raise your heels off the ground as high as possible, using your calves.",
+              "Pause for a moment at the top, then slowly lower your heels back down to the starting position."
+            ],
+            "form_cues": [
+              "Keep the ankle vertical over the foot.",
+              "Rise evenly through the balls of both feet.",
+              "Lower the heels slowly."
+            ],
+            "common_mistakes": [
+              "Rolling the ankles outward or inward.",
+              "Bouncing through the bottom range.",
+              "Bending the knees to create momentum."
+            ],
+            "safety_note": "Use the machine, rack, or wall only for balance and keep the load light enough to control the ankle range.",
+            "provenance": "adapted"
+          },
+          "equipment": "dumbbell",
+          "primary_muscle": "calves",
+          "secondary_muscles": []
+        },
+        "style": {
+          "version": "v1",
+          "human_model": "One athletic bald male anatomical mannequin, opaque silver-gray muscular surfaces, consistent proportions and detailed 3D materials, plain black shorts, barefoot.",
+          "primary_highlight": {
+            "hex": "#F26445",
+            "rule": "Highlight only the exact primary muscle group provided for this exercise."
+          },
+          "secondary_highlight": {
+            "hex": "#F26445",
+            "intensity_fraction": [
+              0.4,
+              0.5
+            ],
+            "rule": "Only the exact secondary muscles, lighter same-hue highlight; if the list is empty add no secondary target."
+          },
+          "background": "Genuinely transparent PNG background, no white/checkerboard layer, no environment scene.",
+          "output": {
+            "format": "PNG",
+            "width": 1024,
+            "height": 1024,
+            "one_person": true,
+            "one_phase": true
+          },
+          "material_rules": "Highlights never make tissue transparent; no glow, whole-body orange tint, hair, text, labels, arrows, UI, borders, collage or extra person.",
+          "framing": "Full figure and all required equipment/supports visible within a square. Scale and use a three-quarter view to expose the specified contacts without changing anatomy, equipment, grip or technique.",
+          "no_invention": "Technique, equipment and muscles come only from the attached exact catalogue record. No extra attachments, numerical weights, brands or exact angles absent from the source."
+        },
+        "scene": {
+          "single_phase": "Both heels raised",
+          "composition": "Stand shoulder-width with one dumbbell in each hand hanging at the sides. Forefeet stay on the floor while both heels rise vertically; torso steady and knees do not create momentum. Both arms remain long with weights clear of the legs; no platform, machine or invented support.",
+          "source_instruction_quotes": [
+            {
+              "index": 0,
+              "text": "Stand with your feet shoulder-width apart, holding a dumbbell in each hand."
+            },
+            {
+              "index": 1,
+              "text": "Raise your heels off the ground as high as possible, using your calves."
+            },
+            {
+              "index": 2,
+              "text": "Pause for a moment at the top, then slowly lower your heels back down to the starting position."
+            }
+          ]
+        },
+        "reference_role": "Human appearance/proportions/materials only. Never copy pose, equipment or muscle targets from a reference."
+      },
+      "generation_prompt": "Create exactly one image for the following exact exercise record. Identity fields are metadata, never visible text. Preserve the source technique and depict only the chosen single phase.\n{\n  \"exact_catalogue_source\": {\n    \"equipment\": \"dumbbell\",\n    \"primary_muscle\": \"calves\",\n    \"secondary_muscles\": [],\n    \"source_english\": {\n      \"common_mistakes\": [\n        \"Rolling the ankles outward or inward.\",\n        \"Bouncing through the bottom range.\",\n        \"Bending the knees to create momentum.\"\n      ],\n      \"description\": \"A dumbbell standing calf raise lifts both heels while the dumbbells hang at the sides.\",\n      \"form_cues\": [\n        \"Keep the ankle vertical over the foot.\",\n        \"Rise evenly through the balls of both feet.\",\n        \"Lower the heels slowly.\"\n      ],\n      \"instructions\": [\n        \"Stand with your feet shoulder-width apart, holding a dumbbell in each hand.\",\n        \"Raise your heels off the ground as high as possible, using your calves.\",\n        \"Pause for a moment at the top, then slowly lower your heels back down to the starting position.\"\n      ],\n      \"provenance\": \"adapted\",\n      \"safety_note\": \"Use the machine, rack, or wall only for balance and keep the load light enough to control the ankle range.\"\n    }\n  },\n  \"identity_do_not_render_as_text\": {\n    \"exercise_id\": \"standing-calf-raise-dumbbell\",\n    \"name\": \"Standing Calf Raise (Dumbbell)\",\n    \"source_catalog_sha256\": \"a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989\"\n  },\n  \"reference_role\": \"Human appearance/proportions/materials only. Never copy pose, equipment or muscle targets from a reference.\",\n  \"scene\": {\n    \"composition\": \"Stand shoulder-width with one dumbbell in each hand hanging at the sides. Forefeet stay on the floor while both heels rise vertically; torso steady and knees do not create momentum. Both arms remain long with weights clear of the legs; no platform, machine or invented support.\",\n    \"single_phase\": \"Both heels raised\",\n    \"source_instruction_quotes\": [\n      {\n        \"index\": 0,\n        \"text\": \"Stand with your feet shoulder-width apart, holding a dumbbell in each hand.\"\n      },\n      {\n        \"index\": 1,\n        \"text\": \"Raise your heels off the ground as high as possible, using your calves.\"\n      },\n      {\n        \"index\": 2,\n        \"text\": \"Pause for a moment at the top, then slowly lower your heels back down to the starting position.\"\n      }\n    ]\n  },\n  \"style\": {\n    \"background\": \"Genuinely transparent PNG background, no white/checkerboard layer, no environment scene.\",\n    \"framing\": \"Full figure and all required equipment/supports visible within a square. Scale and use a three-quarter view to expose the specified contacts without changing anatomy, equipment, grip or technique.\",\n    \"human_model\": \"One athletic bald male anatomical mannequin, opaque silver-gray muscular surfaces, consistent proportions and detailed 3D materials, plain black shorts, barefoot.\",\n    \"material_rules\": \"Highlights never make tissue transparent; no glow, whole-body orange tint, hair, text, labels, arrows, UI, borders, collage or extra person.\",\n    \"no_invention\": \"Technique, equipment and muscles come only from the attached exact catalogue record. No extra attachments, numerical weights, brands or exact angles absent from the source.\",\n    \"output\": {\n      \"format\": \"PNG\",\n      \"height\": 1024,\n      \"one_person\": true,\n      \"one_phase\": true,\n      \"width\": 1024\n    },\n    \"primary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"rule\": \"Highlight only the exact primary muscle group provided for this exercise.\"\n    },\n    \"secondary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"intensity_fraction\": [\n        0.4,\n        0.5\n      ],\n      \"rule\": \"Only the exact secondary muscles, lighter same-hue highlight; if the list is empty add no secondary target.\"\n    },\n    \"version\": \"v1\"\n  }\n}",
+      "generation_prompt_sha256": "26f14d2ca79ad4808362d4c8f08117f401d5563be0c57c6dca5491b90680ff19",
+      "style_version": "v1",
+      "planned_output_relative_path": "agent-03-others-001/standing-calf-raise-dumbbell/attempt-1.png",
+      "output_root": "/workspace/exercise-image-results",
+      "result_path": null,
+      "result_sha256": null,
+      "attempts": 0,
+      "technical_check": null,
+      "user_review": null,
+      "agent_visual_review": "not_performed",
+      "preparation_status": "prompt_prepared_not_generated"
+    }
+  ]
+}

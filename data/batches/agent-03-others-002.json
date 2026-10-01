@@ -1,0 +1,1358 @@
+{
+  "schema_version": 1,
+  "batch_id": "agent-03-others-002",
+  "owner_agent": "agent-03",
+  "branch": "agent-03-inventory-2026-10-01",
+  "prepared_at": "2026-10-01T16:16:06.451230+03:00",
+  "status": "prepared_only",
+  "generation_authorized_now": false,
+  "catalog_path": "data/exercises/catalog.json",
+  "catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+  "catalog_source_commit": "fe78b35c7f67a987c0a816cfc97f05f2bc6691bd",
+  "style_version": "v1",
+  "style_path": "docs/exercise-image-style.md",
+  "style_sha256": "8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578",
+  "queue_path": "data/queues/agent-03-other-queue.json",
+  "human_reference": {
+    "repository_path": "assets/exercises/biceps-curl-dumbbell.png",
+    "sha256": "52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f",
+    "role": "Human appearance only; verified committed blob, not visually reviewed during preparation."
+  },
+  "constraints": {
+    "only_builtin_imagegen": true,
+    "paid_api_allowed": false,
+    "supabase_allowed": false,
+    "shared_progress_changes_allowed": false,
+    "catalog_changes_allowed": false,
+    "automatic_retries_allowed": false,
+    "generation_performed": false,
+    "reuse_unchanged_ID_and_prompt_hash_for_output_manifest": true,
+    "outputs_outside_git": true,
+    "revalidate_live_branches_before_each_call": true
+  },
+  "exercise_count": 10,
+  "exercise_ids": [
+    "sumo-squat-dumbbell",
+    "curtsy-lunge-dumbbell",
+    "lunge-dumbbell",
+    "reverse-lunge-dumbbell",
+    "walking-lunge-dumbbell",
+    "deadlift-dumbbell",
+    "single-leg-romanian-deadlift-dumbbell",
+    "upright-row-dumbbell",
+    "zottman-curl-dumbbell",
+    "overhead-press-dumbbell"
+  ],
+  "exercises": [
+    {
+      "exercise_id": "sumo-squat-dumbbell",
+      "name": "Sumo Squat (Dumbbell)",
+      "source_english": {
+        "description": "A dumbbell sumo squat holds one dumbbell between the legs while the wide stance loads the hips and thighs.",
+        "instructions": [
+          "Stand wide with toes turned outward and hold one dumbbell in front of the hips.",
+          "Brace the abdomen and lower by bending the hips and knees with the chest lifted.",
+          "Descend until the thighs approach parallel while the knees track the toes.",
+          "Drive through both feet to stand tall and keep the dumbbell centered."
+        ],
+        "form_cues": [
+          "Keep the dumbbell close.",
+          "Press the knees outward.",
+          "Keep heels grounded."
+        ],
+        "common_mistakes": [
+          "Letting the weight pull the torso forward.",
+          "Knees collapsing inward.",
+          "Rising onto the toes."
+        ],
+        "safety_note": "Use a dumbbell you can hold without rounding the back or losing balance.",
+        "provenance": "authored"
+      },
+      "equipment": "dumbbell",
+      "primary_muscle": "quadriceps",
+      "secondary_muscles": [
+        "glutes",
+        "adductors",
+        "hamstrings"
+      ],
+      "source_catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+      "source_catalog_record_sha256": "69bb0b6f04f505042bec1672fedc541d90084169784d96c39aef46c60d71eb63",
+      "source_english_sha256": "f0dabaf8466d6c8f0d3ef04747ffe9cae13f889d65bc1ef7b8f39ab395ca32a6",
+      "prompt_payload": {
+        "identity_do_not_render_as_text": {
+          "exercise_id": "sumo-squat-dumbbell",
+          "name": "Sumo Squat (Dumbbell)",
+          "source_catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989"
+        },
+        "exact_catalogue_source": {
+          "source_english": {
+            "description": "A dumbbell sumo squat holds one dumbbell between the legs while the wide stance loads the hips and thighs.",
+            "instructions": [
+              "Stand wide with toes turned outward and hold one dumbbell in front of the hips.",
+              "Brace the abdomen and lower by bending the hips and knees with the chest lifted.",
+              "Descend until the thighs approach parallel while the knees track the toes.",
+              "Drive through both feet to stand tall and keep the dumbbell centered."
+            ],
+            "form_cues": [
+              "Keep the dumbbell close.",
+              "Press the knees outward.",
+              "Keep heels grounded."
+            ],
+            "common_mistakes": [
+              "Letting the weight pull the torso forward.",
+              "Knees collapsing inward.",
+              "Rising onto the toes."
+            ],
+            "safety_note": "Use a dumbbell you can hold without rounding the back or losing balance.",
+            "provenance": "authored"
+          },
+          "equipment": "dumbbell",
+          "primary_muscle": "quadriceps",
+          "secondary_muscles": [
+            "glutes",
+            "adductors",
+            "hamstrings"
+          ]
+        },
+        "style": {
+          "version": "v1",
+          "human_model": "One athletic bald male anatomical mannequin, opaque silver-gray muscular surfaces, consistent proportions and detailed 3D materials, plain black shorts, barefoot.",
+          "primary_highlight": {
+            "hex": "#F26445",
+            "rule": "Highlight only the exact primary muscle group provided for this exercise."
+          },
+          "secondary_highlight": {
+            "hex": "#F26445",
+            "intensity_fraction": [
+              0.4,
+              0.5
+            ],
+            "rule": "Only the exact secondary muscles, lighter same-hue highlight; if the list is empty add no secondary target."
+          },
+          "background": "Genuinely transparent PNG background, no white/checkerboard layer, no environment scene.",
+          "output": {
+            "format": "PNG",
+            "width": 1024,
+            "height": 1024,
+            "one_person": true,
+            "one_phase": true
+          },
+          "material_rules": "Highlights never make tissue transparent; no glow, whole-body orange tint, hair, text, labels, arrows, UI, borders, collage or extra person.",
+          "framing": "Full figure and all required equipment/supports visible within a square. Scale and use a three-quarter view to expose the specified contacts without changing anatomy, equipment, grip or technique.",
+          "no_invention": "Technique, equipment and muscles come only from the attached exact catalogue record. No extra attachments, numerical weights, brands or exact angles absent from the source."
+        },
+        "scene": {
+          "single_phase": "Near-parallel squat bottom",
+          "composition": "Wide stance, toes turned outward, heels grounded. Hold one centered dumbbell in front of the hips/between the legs as the source describes; knees track toes and chest stays lifted. Hips and knees bend until thighs approach parallel. Do not convert to a chest-held goblet squat or add a second dumbbell.",
+          "source_instruction_quotes": [
+            {
+              "index": 0,
+              "text": "Stand wide with toes turned outward and hold one dumbbell in front of the hips."
+            },
+            {
+              "index": 1,
+              "text": "Brace the abdomen and lower by bending the hips and knees with the chest lifted."
+            },
+            {
+              "index": 2,
+              "text": "Descend until the thighs approach parallel while the knees track the toes."
+            }
+          ]
+        },
+        "reference_role": "Human appearance/proportions/materials only. Never copy pose, equipment or muscle targets from a reference."
+      },
+      "generation_prompt": "Create exactly one image for the following exact exercise record. Identity fields are metadata, never visible text. Preserve the source technique and depict only the chosen single phase.\n{\n  \"exact_catalogue_source\": {\n    \"equipment\": \"dumbbell\",\n    \"primary_muscle\": \"quadriceps\",\n    \"secondary_muscles\": [\n      \"glutes\",\n      \"adductors\",\n      \"hamstrings\"\n    ],\n    \"source_english\": {\n      \"common_mistakes\": [\n        \"Letting the weight pull the torso forward.\",\n        \"Knees collapsing inward.\",\n        \"Rising onto the toes.\"\n      ],\n      \"description\": \"A dumbbell sumo squat holds one dumbbell between the legs while the wide stance loads the hips and thighs.\",\n      \"form_cues\": [\n        \"Keep the dumbbell close.\",\n        \"Press the knees outward.\",\n        \"Keep heels grounded.\"\n      ],\n      \"instructions\": [\n        \"Stand wide with toes turned outward and hold one dumbbell in front of the hips.\",\n        \"Brace the abdomen and lower by bending the hips and knees with the chest lifted.\",\n        \"Descend until the thighs approach parallel while the knees track the toes.\",\n        \"Drive through both feet to stand tall and keep the dumbbell centered.\"\n      ],\n      \"provenance\": \"authored\",\n      \"safety_note\": \"Use a dumbbell you can hold without rounding the back or losing balance.\"\n    }\n  },\n  \"identity_do_not_render_as_text\": {\n    \"exercise_id\": \"sumo-squat-dumbbell\",\n    \"name\": \"Sumo Squat (Dumbbell)\",\n    \"source_catalog_sha256\": \"a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989\"\n  },\n  \"reference_role\": \"Human appearance/proportions/materials only. Never copy pose, equipment or muscle targets from a reference.\",\n  \"scene\": {\n    \"composition\": \"Wide stance, toes turned outward, heels grounded. Hold one centered dumbbell in front of the hips/between the legs as the source describes; knees track toes and chest stays lifted. Hips and knees bend until thighs approach parallel. Do not convert to a chest-held goblet squat or add a second dumbbell.\",\n    \"single_phase\": \"Near-parallel squat bottom\",\n    \"source_instruction_quotes\": [\n      {\n        \"index\": 0,\n        \"text\": \"Stand wide with toes turned outward and hold one dumbbell in front of the hips.\"\n      },\n      {\n        \"index\": 1,\n        \"text\": \"Brace the abdomen and lower by bending the hips and knees with the chest lifted.\"\n      },\n      {\n        \"index\": 2,\n        \"text\": \"Descend until the thighs approach parallel while the knees track the toes.\"\n      }\n    ]\n  },\n  \"style\": {\n    \"background\": \"Genuinely transparent PNG background, no white/checkerboard layer, no environment scene.\",\n    \"framing\": \"Full figure and all required equipment/supports visible within a square. Scale and use a three-quarter view to expose the specified contacts without changing anatomy, equipment, grip or technique.\",\n    \"human_model\": \"One athletic bald male anatomical mannequin, opaque silver-gray muscular surfaces, consistent proportions and detailed 3D materials, plain black shorts, barefoot.\",\n    \"material_rules\": \"Highlights never make tissue transparent; no glow, whole-body orange tint, hair, text, labels, arrows, UI, borders, collage or extra person.\",\n    \"no_invention\": \"Technique, equipment and muscles come only from the attached exact catalogue record. No extra attachments, numerical weights, brands or exact angles absent from the source.\",\n    \"output\": {\n      \"format\": \"PNG\",\n      \"height\": 1024,\n      \"one_person\": true,\n      \"one_phase\": true,\n      \"width\": 1024\n    },\n    \"primary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"rule\": \"Highlight only the exact primary muscle group provided for this exercise.\"\n    },\n    \"secondary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"intensity_fraction\": [\n        0.4,\n        0.5\n      ],\n      \"rule\": \"Only the exact secondary muscles, lighter same-hue highlight; if the list is empty add no secondary target.\"\n    },\n    \"version\": \"v1\"\n  }\n}",
+      "generation_prompt_sha256": "b83e699523d28f2e15454308692f965f4474d5ceb554396a52b5012e3f130050",
+      "style_version": "v1",
+      "planned_output_relative_path": "agent-03-others-002/sumo-squat-dumbbell/attempt-1.png",
+      "output_root": "/workspace/exercise-image-results",
+      "result_path": null,
+      "result_sha256": null,
+      "attempts": 0,
+      "technical_check": null,
+      "user_review": null,
+      "agent_visual_review": "not_performed",
+      "preparation_status": "prompt_prepared_not_generated"
+    },
+    {
+      "exercise_id": "curtsy-lunge-dumbbell",
+      "name": "Curtsy Lunge (Dumbbell)",
+      "source_english": {
+        "description": "Curtsy Lunge (Dumbbell) steps one leg diagonally behind and across the other while dumbbells hang at the sides.",
+        "instructions": [
+          "Stand with one dumbbell in each hand and feet hip-width apart.",
+          "Step the right foot diagonally behind and left of the standing foot.",
+          "Bend both knees while keeping the left foot planted and torso upright.",
+          "Drive through the left foot to stand, then repeat to the other side."
+        ],
+        "form_cues": [
+          "Keep the front knee aligned.",
+          "Keep hips facing forward.",
+          "Use a quiet diagonal step."
+        ],
+        "common_mistakes": [
+          "Twisting the pelvis.",
+          "Letting the knee cave inward.",
+          "Crossing so far that balance is lost."
+        ],
+        "safety_note": "Use a short diagonal step and lighter dumbbells until balance remains steady.",
+        "provenance": "authored"
+      },
+      "equipment": "dumbbell",
+      "primary_muscle": "quadriceps",
+      "secondary_muscles": [
+        "glutes",
+        "hamstrings",
+        "adductors"
+      ],
+      "source_catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+      "source_catalog_record_sha256": "6fc24e64e6b376474fc50896565233ecdacfc2536ab4bdd4eed40bd9b391d99f",
+      "source_english_sha256": "940e79f60e7d0cb5bdbe580bc7d4beaa1d09643d7456b4f91823501f77a72db8",
+      "prompt_payload": {
+        "identity_do_not_render_as_text": {
+          "exercise_id": "curtsy-lunge-dumbbell",
+          "name": "Curtsy Lunge (Dumbbell)",
+          "source_catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989"
+        },
+        "exact_catalogue_source": {
+          "source_english": {
+            "description": "Curtsy Lunge (Dumbbell) steps one leg diagonally behind and across the other while dumbbells hang at the sides.",
+            "instructions": [
+              "Stand with one dumbbell in each hand and feet hip-width apart.",
+              "Step the right foot diagonally behind and left of the standing foot.",
+              "Bend both knees while keeping the left foot planted and torso upright.",
+              "Drive through the left foot to stand, then repeat to the other side."
+            ],
+            "form_cues": [
+              "Keep the front knee aligned.",
+              "Keep hips facing forward.",
+              "Use a quiet diagonal step."
+            ],
+            "common_mistakes": [
+              "Twisting the pelvis.",
+              "Letting the knee cave inward.",
+              "Crossing so far that balance is lost."
+            ],
+            "safety_note": "Use a short diagonal step and lighter dumbbells until balance remains steady.",
+            "provenance": "authored"
+          },
+          "equipment": "dumbbell",
+          "primary_muscle": "quadriceps",
+          "secondary_muscles": [
+            "glutes",
+            "hamstrings",
+            "adductors"
+          ]
+        },
+        "style": {
+          "version": "v1",
+          "human_model": "One athletic bald male anatomical mannequin, opaque silver-gray muscular surfaces, consistent proportions and detailed 3D materials, plain black shorts, barefoot.",
+          "primary_highlight": {
+            "hex": "#F26445",
+            "rule": "Highlight only the exact primary muscle group provided for this exercise."
+          },
+          "secondary_highlight": {
+            "hex": "#F26445",
+            "intensity_fraction": [
+              0.4,
+              0.5
+            ],
+            "rule": "Only the exact secondary muscles, lighter same-hue highlight; if the list is empty add no secondary target."
+          },
+          "background": "Genuinely transparent PNG background, no white/checkerboard layer, no environment scene.",
+          "output": {
+            "format": "PNG",
+            "width": 1024,
+            "height": 1024,
+            "one_person": true,
+            "one_phase": true
+          },
+          "material_rules": "Highlights never make tissue transparent; no glow, whole-body orange tint, hair, text, labels, arrows, UI, borders, collage or extra person.",
+          "framing": "Full figure and all required equipment/supports visible within a square. Scale and use a three-quarter view to expose the specified contacts without changing anatomy, equipment, grip or technique.",
+          "no_invention": "Technique, equipment and muscles come only from the attached exact catalogue record. No extra attachments, numerical weights, brands or exact angles absent from the source."
+        },
+        "scene": {
+          "single_phase": "Right foot crossed behind left in lowered phase",
+          "composition": "One dumbbell in each hand hangs still at the sides. Left foot stays planted; right foot steps diagonally behind and left of it. Both knees bend while torso remains upright and hips face forward. Use the short controlled diagonal step specified by the safety note, not an extreme twist.",
+          "source_instruction_quotes": [
+            {
+              "index": 0,
+              "text": "Stand with one dumbbell in each hand and feet hip-width apart."
+            },
+            {
+              "index": 1,
+              "text": "Step the right foot diagonally behind and left of the standing foot."
+            },
+            {
+              "index": 2,
+              "text": "Bend both knees while keeping the left foot planted and torso upright."
+            }
+          ]
+        },
+        "reference_role": "Human appearance/proportions/materials only. Never copy pose, equipment or muscle targets from a reference."
+      },
+      "generation_prompt": "Create exactly one image for the following exact exercise record. Identity fields are metadata, never visible text. Preserve the source technique and depict only the chosen single phase.\n{\n  \"exact_catalogue_source\": {\n    \"equipment\": \"dumbbell\",\n    \"primary_muscle\": \"quadriceps\",\n    \"secondary_muscles\": [\n      \"glutes\",\n      \"hamstrings\",\n      \"adductors\"\n    ],\n    \"source_english\": {\n      \"common_mistakes\": [\n        \"Twisting the pelvis.\",\n        \"Letting the knee cave inward.\",\n        \"Crossing so far that balance is lost.\"\n      ],\n      \"description\": \"Curtsy Lunge (Dumbbell) steps one leg diagonally behind and across the other while dumbbells hang at the sides.\",\n      \"form_cues\": [\n        \"Keep the front knee aligned.\",\n        \"Keep hips facing forward.\",\n        \"Use a quiet diagonal step.\"\n      ],\n      \"instructions\": [\n        \"Stand with one dumbbell in each hand and feet hip-width apart.\",\n        \"Step the right foot diagonally behind and left of the standing foot.\",\n        \"Bend both knees while keeping the left foot planted and torso upright.\",\n        \"Drive through the left foot to stand, then repeat to the other side.\"\n      ],\n      \"provenance\": \"authored\",\n      \"safety_note\": \"Use a short diagonal step and lighter dumbbells until balance remains steady.\"\n    }\n  },\n  \"identity_do_not_render_as_text\": {\n    \"exercise_id\": \"curtsy-lunge-dumbbell\",\n    \"name\": \"Curtsy Lunge (Dumbbell)\",\n    \"source_catalog_sha256\": \"a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989\"\n  },\n  \"reference_role\": \"Human appearance/proportions/materials only. Never copy pose, equipment or muscle targets from a reference.\",\n  \"scene\": {\n    \"composition\": \"One dumbbell in each hand hangs still at the sides. Left foot stays planted; right foot steps diagonally behind and left of it. Both knees bend while torso remains upright and hips face forward. Use the short controlled diagonal step specified by the safety note, not an extreme twist.\",\n    \"single_phase\": \"Right foot crossed behind left in lowered phase\",\n    \"source_instruction_quotes\": [\n      {\n        \"index\": 0,\n        \"text\": \"Stand with one dumbbell in each hand and feet hip-width apart.\"\n      },\n      {\n        \"index\": 1,\n        \"text\": \"Step the right foot diagonally behind and left of the standing foot.\"\n      },\n      {\n        \"index\": 2,\n        \"text\": \"Bend both knees while keeping the left foot planted and torso upright.\"\n      }\n    ]\n  },\n  \"style\": {\n    \"background\": \"Genuinely transparent PNG background, no white/checkerboard layer, no environment scene.\",\n    \"framing\": \"Full figure and all required equipment/supports visible within a square. Scale and use a three-quarter view to expose the specified contacts without changing anatomy, equipment, grip or technique.\",\n    \"human_model\": \"One athletic bald male anatomical mannequin, opaque silver-gray muscular surfaces, consistent proportions and detailed 3D materials, plain black shorts, barefoot.\",\n    \"material_rules\": \"Highlights never make tissue transparent; no glow, whole-body orange tint, hair, text, labels, arrows, UI, borders, collage or extra person.\",\n    \"no_invention\": \"Technique, equipment and muscles come only from the attached exact catalogue record. No extra attachments, numerical weights, brands or exact angles absent from the source.\",\n    \"output\": {\n      \"format\": \"PNG\",\n      \"height\": 1024,\n      \"one_person\": true,\n      \"one_phase\": true,\n      \"width\": 1024\n    },\n    \"primary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"rule\": \"Highlight only the exact primary muscle group provided for this exercise.\"\n    },\n    \"secondary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"intensity_fraction\": [\n        0.4,\n        0.5\n      ],\n      \"rule\": \"Only the exact secondary muscles, lighter same-hue highlight; if the list is empty add no secondary target.\"\n    },\n    \"version\": \"v1\"\n  }\n}",
+      "generation_prompt_sha256": "e9b8c90e8493b362e9b4a012fb82107de161a9a5ca9cabc82ecf9ce2c537efb3",
+      "style_version": "v1",
+      "planned_output_relative_path": "agent-03-others-002/curtsy-lunge-dumbbell/attempt-1.png",
+      "output_root": "/workspace/exercise-image-results",
+      "result_path": null,
+      "result_sha256": null,
+      "attempts": 0,
+      "technical_check": null,
+      "user_review": null,
+      "agent_visual_review": "not_performed",
+      "preparation_status": "prompt_prepared_not_generated"
+    },
+    {
+      "exercise_id": "lunge-dumbbell",
+      "name": "Lunge (Dumbbell)",
+      "source_english": {
+        "description": "The dumbbell forward lunge steps one foot ahead with dumbbells at the sides, lowers both knees, then drives back.",
+        "instructions": [
+          "Stand with your feet shoulder-width apart, holding a dumbbell in each hand.",
+          "Take a step forward with your right foot, lowering your body into a lunge position.",
+          "Keep your back straight and your chest up as you lower your body.",
+          "Push through your right heel to return to the starting position.",
+          "Repeat with your left leg.",
+          "Alternate legs for the desired number of repetitions."
+        ],
+        "form_cues": [
+          "Keep the feet planted.",
+          "Track the knees with the toes.",
+          "Keep the chest and trunk controlled."
+        ],
+        "common_mistakes": [
+          "Knees collapsing inward.",
+          "Rising onto the toes.",
+          "Losing the neutral trunk."
+        ],
+        "safety_note": "Use a depth and load that allow a stable knee and hip path.",
+        "provenance": "adapted"
+      },
+      "equipment": "dumbbell",
+      "primary_muscle": "quadriceps",
+      "secondary_muscles": [
+        "hamstrings",
+        "glutes"
+      ],
+      "source_catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+      "source_catalog_record_sha256": "e2cd9891cdaabc368ae1109536c65ae469f075b5459396f7b9166c128d0a78b2",
+      "source_english_sha256": "57da41fa4f74a35ac87b2ec3b5077cf86e6ce9f61c40490858d01da577cb8327",
+      "prompt_payload": {
+        "identity_do_not_render_as_text": {
+          "exercise_id": "lunge-dumbbell",
+          "name": "Lunge (Dumbbell)",
+          "source_catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989"
+        },
+        "exact_catalogue_source": {
+          "source_english": {
+            "description": "The dumbbell forward lunge steps one foot ahead with dumbbells at the sides, lowers both knees, then drives back.",
+            "instructions": [
+              "Stand with your feet shoulder-width apart, holding a dumbbell in each hand.",
+              "Take a step forward with your right foot, lowering your body into a lunge position.",
+              "Keep your back straight and your chest up as you lower your body.",
+              "Push through your right heel to return to the starting position.",
+              "Repeat with your left leg.",
+              "Alternate legs for the desired number of repetitions."
+            ],
+            "form_cues": [
+              "Keep the feet planted.",
+              "Track the knees with the toes.",
+              "Keep the chest and trunk controlled."
+            ],
+            "common_mistakes": [
+              "Knees collapsing inward.",
+              "Rising onto the toes.",
+              "Losing the neutral trunk."
+            ],
+            "safety_note": "Use a depth and load that allow a stable knee and hip path.",
+            "provenance": "adapted"
+          },
+          "equipment": "dumbbell",
+          "primary_muscle": "quadriceps",
+          "secondary_muscles": [
+            "hamstrings",
+            "glutes"
+          ]
+        },
+        "style": {
+          "version": "v1",
+          "human_model": "One athletic bald male anatomical mannequin, opaque silver-gray muscular surfaces, consistent proportions and detailed 3D materials, plain black shorts, barefoot.",
+          "primary_highlight": {
+            "hex": "#F26445",
+            "rule": "Highlight only the exact primary muscle group provided for this exercise."
+          },
+          "secondary_highlight": {
+            "hex": "#F26445",
+            "intensity_fraction": [
+              0.4,
+              0.5
+            ],
+            "rule": "Only the exact secondary muscles, lighter same-hue highlight; if the list is empty add no secondary target."
+          },
+          "background": "Genuinely transparent PNG background, no white/checkerboard layer, no environment scene.",
+          "output": {
+            "format": "PNG",
+            "width": 1024,
+            "height": 1024,
+            "one_person": true,
+            "one_phase": true
+          },
+          "material_rules": "Highlights never make tissue transparent; no glow, whole-body orange tint, hair, text, labels, arrows, UI, borders, collage or extra person.",
+          "framing": "Full figure and all required equipment/supports visible within a square. Scale and use a three-quarter view to expose the specified contacts without changing anatomy, equipment, grip or technique.",
+          "no_invention": "Technique, equipment and muscles come only from the attached exact catalogue record. No extra attachments, numerical weights, brands or exact angles absent from the source."
+        },
+        "scene": {
+          "single_phase": "Right-foot-forward lowered lunge",
+          "composition": "One dumbbell in each hand at the sides. Right foot has stepped forward; both knees bend in the stationary lowered phase, torso upright and front heel down. Keep the weights still, knee tracking toes and back straight. This is the forward step-and-return ID, not walking or reverse lunge.",
+          "source_instruction_quotes": [
+            {
+              "index": 0,
+              "text": "Stand with your feet shoulder-width apart, holding a dumbbell in each hand."
+            },
+            {
+              "index": 1,
+              "text": "Take a step forward with your right foot, lowering your body into a lunge position."
+            },
+            {
+              "index": 2,
+              "text": "Keep your back straight and your chest up as you lower your body."
+            },
+            {
+              "index": 3,
+              "text": "Push through your right heel to return to the starting position."
+            }
+          ]
+        },
+        "reference_role": "Human appearance/proportions/materials only. Never copy pose, equipment or muscle targets from a reference."
+      },
+      "generation_prompt": "Create exactly one image for the following exact exercise record. Identity fields are metadata, never visible text. Preserve the source technique and depict only the chosen single phase.\n{\n  \"exact_catalogue_source\": {\n    \"equipment\": \"dumbbell\",\n    \"primary_muscle\": \"quadriceps\",\n    \"secondary_muscles\": [\n      \"hamstrings\",\n      \"glutes\"\n    ],\n    \"source_english\": {\n      \"common_mistakes\": [\n        \"Knees collapsing inward.\",\n        \"Rising onto the toes.\",\n        \"Losing the neutral trunk.\"\n      ],\n      \"description\": \"The dumbbell forward lunge steps one foot ahead with dumbbells at the sides, lowers both knees, then drives back.\",\n      \"form_cues\": [\n        \"Keep the feet planted.\",\n        \"Track the knees with the toes.\",\n        \"Keep the chest and trunk controlled.\"\n      ],\n      \"instructions\": [\n        \"Stand with your feet shoulder-width apart, holding a dumbbell in each hand.\",\n        \"Take a step forward with your right foot, lowering your body into a lunge position.\",\n        \"Keep your back straight and your chest up as you lower your body.\",\n        \"Push through your right heel to return to the starting position.\",\n        \"Repeat with your left leg.\",\n        \"Alternate legs for the desired number of repetitions.\"\n      ],\n      \"provenance\": \"adapted\",\n      \"safety_note\": \"Use a depth and load that allow a stable knee and hip path.\"\n    }\n  },\n  \"identity_do_not_render_as_text\": {\n    \"exercise_id\": \"lunge-dumbbell\",\n    \"name\": \"Lunge (Dumbbell)\",\n    \"source_catalog_sha256\": \"a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989\"\n  },\n  \"reference_role\": \"Human appearance/proportions/materials only. Never copy pose, equipment or muscle targets from a reference.\",\n  \"scene\": {\n    \"composition\": \"One dumbbell in each hand at the sides. Right foot has stepped forward; both knees bend in the stationary lowered phase, torso upright and front heel down. Keep the weights still, knee tracking toes and back straight. This is the forward step-and-return ID, not walking or reverse lunge.\",\n    \"single_phase\": \"Right-foot-forward lowered lunge\",\n    \"source_instruction_quotes\": [\n      {\n        \"index\": 0,\n        \"text\": \"Stand with your feet shoulder-width apart, holding a dumbbell in each hand.\"\n      },\n      {\n        \"index\": 1,\n        \"text\": \"Take a step forward with your right foot, lowering your body into a lunge position.\"\n      },\n      {\n        \"index\": 2,\n        \"text\": \"Keep your back straight and your chest up as you lower your body.\"\n      },\n      {\n        \"index\": 3,\n        \"text\": \"Push through your right heel to return to the starting position.\"\n      }\n    ]\n  },\n  \"style\": {\n    \"background\": \"Genuinely transparent PNG background, no white/checkerboard layer, no environment scene.\",\n    \"framing\": \"Full figure and all required equipment/supports visible within a square. Scale and use a three-quarter view to expose the specified contacts without changing anatomy, equipment, grip or technique.\",\n    \"human_model\": \"One athletic bald male anatomical mannequin, opaque silver-gray muscular surfaces, consistent proportions and detailed 3D materials, plain black shorts, barefoot.\",\n    \"material_rules\": \"Highlights never make tissue transparent; no glow, whole-body orange tint, hair, text, labels, arrows, UI, borders, collage or extra person.\",\n    \"no_invention\": \"Technique, equipment and muscles come only from the attached exact catalogue record. No extra attachments, numerical weights, brands or exact angles absent from the source.\",\n    \"output\": {\n      \"format\": \"PNG\",\n      \"height\": 1024,\n      \"one_person\": true,\n      \"one_phase\": true,\n      \"width\": 1024\n    },\n    \"primary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"rule\": \"Highlight only the exact primary muscle group provided for this exercise.\"\n    },\n    \"secondary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"intensity_fraction\": [\n        0.4,\n        0.5\n      ],\n      \"rule\": \"Only the exact secondary muscles, lighter same-hue highlight; if the list is empty add no secondary target.\"\n    },\n    \"version\": \"v1\"\n  }\n}",
+      "generation_prompt_sha256": "4c8f750bc505f2c1efaba702b9066652e5271bf202d7714cbb4237eeb69b90c7",
+      "style_version": "v1",
+      "planned_output_relative_path": "agent-03-others-002/lunge-dumbbell/attempt-1.png",
+      "output_root": "/workspace/exercise-image-results",
+      "result_path": null,
+      "result_sha256": null,
+      "attempts": 0,
+      "technical_check": null,
+      "user_review": null,
+      "agent_visual_review": "not_performed",
+      "preparation_status": "prompt_prepared_not_generated"
+    },
+    {
+      "exercise_id": "reverse-lunge-dumbbell",
+      "name": "Reverse Lunge (Dumbbell)",
+      "source_english": {
+        "description": "The dumbbell reverse lunge steps one foot backward with weights at the sides, lowers both knees, then pushes through the front foot to stand.",
+        "instructions": [
+          "Stand with your feet shoulder-width apart, holding a dumbbell in each hand.",
+          "Take a step backward with your right foot, lowering your body into a lunge position.",
+          "Bend your left knee and lower your body until your left thigh is parallel to the ground.",
+          "Pause for a moment, then push through your left heel to return to the starting position.",
+          "Repeat on the other side, stepping back with your left foot."
+        ],
+        "form_cues": [
+          "Keep the feet planted.",
+          "Track the knees with the toes.",
+          "Keep the chest and trunk controlled."
+        ],
+        "common_mistakes": [
+          "Knees collapsing inward.",
+          "Rising onto the toes.",
+          "Losing the neutral trunk."
+        ],
+        "safety_note": "Use a depth and load that allow a stable knee and hip path.",
+        "provenance": "adapted"
+      },
+      "equipment": "dumbbell",
+      "primary_muscle": "quadriceps",
+      "secondary_muscles": [
+        "glutes",
+        "hamstrings"
+      ],
+      "source_catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+      "source_catalog_record_sha256": "14ed98262185cae570ff09e008ff98e18925100625964ec488591ef6e0dee3e9",
+      "source_english_sha256": "b1808b2ca8917834b4e62553b78e3d8ca734fce2e0d97dfffee80e0601ffc718",
+      "prompt_payload": {
+        "identity_do_not_render_as_text": {
+          "exercise_id": "reverse-lunge-dumbbell",
+          "name": "Reverse Lunge (Dumbbell)",
+          "source_catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989"
+        },
+        "exact_catalogue_source": {
+          "source_english": {
+            "description": "The dumbbell reverse lunge steps one foot backward with weights at the sides, lowers both knees, then pushes through the front foot to stand.",
+            "instructions": [
+              "Stand with your feet shoulder-width apart, holding a dumbbell in each hand.",
+              "Take a step backward with your right foot, lowering your body into a lunge position.",
+              "Bend your left knee and lower your body until your left thigh is parallel to the ground.",
+              "Pause for a moment, then push through your left heel to return to the starting position.",
+              "Repeat on the other side, stepping back with your left foot."
+            ],
+            "form_cues": [
+              "Keep the feet planted.",
+              "Track the knees with the toes.",
+              "Keep the chest and trunk controlled."
+            ],
+            "common_mistakes": [
+              "Knees collapsing inward.",
+              "Rising onto the toes.",
+              "Losing the neutral trunk."
+            ],
+            "safety_note": "Use a depth and load that allow a stable knee and hip path.",
+            "provenance": "adapted"
+          },
+          "equipment": "dumbbell",
+          "primary_muscle": "quadriceps",
+          "secondary_muscles": [
+            "glutes",
+            "hamstrings"
+          ]
+        },
+        "style": {
+          "version": "v1",
+          "human_model": "One athletic bald male anatomical mannequin, opaque silver-gray muscular surfaces, consistent proportions and detailed 3D materials, plain black shorts, barefoot.",
+          "primary_highlight": {
+            "hex": "#F26445",
+            "rule": "Highlight only the exact primary muscle group provided for this exercise."
+          },
+          "secondary_highlight": {
+            "hex": "#F26445",
+            "intensity_fraction": [
+              0.4,
+              0.5
+            ],
+            "rule": "Only the exact secondary muscles, lighter same-hue highlight; if the list is empty add no secondary target."
+          },
+          "background": "Genuinely transparent PNG background, no white/checkerboard layer, no environment scene.",
+          "output": {
+            "format": "PNG",
+            "width": 1024,
+            "height": 1024,
+            "one_person": true,
+            "one_phase": true
+          },
+          "material_rules": "Highlights never make tissue transparent; no glow, whole-body orange tint, hair, text, labels, arrows, UI, borders, collage or extra person.",
+          "framing": "Full figure and all required equipment/supports visible within a square. Scale and use a three-quarter view to expose the specified contacts without changing anatomy, equipment, grip or technique.",
+          "no_invention": "Technique, equipment and muscles come only from the attached exact catalogue record. No extra attachments, numerical weights, brands or exact angles absent from the source."
+        },
+        "scene": {
+          "single_phase": "Right leg stepped backward, left thigh near parallel",
+          "composition": "One dumbbell in each hand hangs at the sides. Right foot is behind; left foot is the planted front foot, with left thigh parallel at the source endpoint. Torso stays straight, both knees bent, front heel down. Depict the single lowered phase of a backward step-and-return, not a forward step.",
+          "source_instruction_quotes": [
+            {
+              "index": 0,
+              "text": "Stand with your feet shoulder-width apart, holding a dumbbell in each hand."
+            },
+            {
+              "index": 1,
+              "text": "Take a step backward with your right foot, lowering your body into a lunge position."
+            },
+            {
+              "index": 2,
+              "text": "Bend your left knee and lower your body until your left thigh is parallel to the ground."
+            },
+            {
+              "index": 3,
+              "text": "Pause for a moment, then push through your left heel to return to the starting position."
+            }
+          ]
+        },
+        "reference_role": "Human appearance/proportions/materials only. Never copy pose, equipment or muscle targets from a reference."
+      },
+      "generation_prompt": "Create exactly one image for the following exact exercise record. Identity fields are metadata, never visible text. Preserve the source technique and depict only the chosen single phase.\n{\n  \"exact_catalogue_source\": {\n    \"equipment\": \"dumbbell\",\n    \"primary_muscle\": \"quadriceps\",\n    \"secondary_muscles\": [\n      \"glutes\",\n      \"hamstrings\"\n    ],\n    \"source_english\": {\n      \"common_mistakes\": [\n        \"Knees collapsing inward.\",\n        \"Rising onto the toes.\",\n        \"Losing the neutral trunk.\"\n      ],\n      \"description\": \"The dumbbell reverse lunge steps one foot backward with weights at the sides, lowers both knees, then pushes through the front foot to stand.\",\n      \"form_cues\": [\n        \"Keep the feet planted.\",\n        \"Track the knees with the toes.\",\n        \"Keep the chest and trunk controlled.\"\n      ],\n      \"instructions\": [\n        \"Stand with your feet shoulder-width apart, holding a dumbbell in each hand.\",\n        \"Take a step backward with your right foot, lowering your body into a lunge position.\",\n        \"Bend your left knee and lower your body until your left thigh is parallel to the ground.\",\n        \"Pause for a moment, then push through your left heel to return to the starting position.\",\n        \"Repeat on the other side, stepping back with your left foot.\"\n      ],\n      \"provenance\": \"adapted\",\n      \"safety_note\": \"Use a depth and load that allow a stable knee and hip path.\"\n    }\n  },\n  \"identity_do_not_render_as_text\": {\n    \"exercise_id\": \"reverse-lunge-dumbbell\",\n    \"name\": \"Reverse Lunge (Dumbbell)\",\n    \"source_catalog_sha256\": \"a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989\"\n  },\n  \"reference_role\": \"Human appearance/proportions/materials only. Never copy pose, equipment or muscle targets from a reference.\",\n  \"scene\": {\n    \"composition\": \"One dumbbell in each hand hangs at the sides. Right foot is behind; left foot is the planted front foot, with left thigh parallel at the source endpoint. Torso stays straight, both knees bent, front heel down. Depict the single lowered phase of a backward step-and-return, not a forward step.\",\n    \"single_phase\": \"Right leg stepped backward, left thigh near parallel\",\n    \"source_instruction_quotes\": [\n      {\n        \"index\": 0,\n        \"text\": \"Stand with your feet shoulder-width apart, holding a dumbbell in each hand.\"\n      },\n      {\n        \"index\": 1,\n        \"text\": \"Take a step backward with your right foot, lowering your body into a lunge position.\"\n      },\n      {\n        \"index\": 2,\n        \"text\": \"Bend your left knee and lower your body until your left thigh is parallel to the ground.\"\n      },\n      {\n        \"index\": 3,\n        \"text\": \"Pause for a moment, then push through your left heel to return to the starting position.\"\n      }\n    ]\n  },\n  \"style\": {\n    \"background\": \"Genuinely transparent PNG background, no white/checkerboard layer, no environment scene.\",\n    \"framing\": \"Full figure and all required equipment/supports visible within a square. Scale and use a three-quarter view to expose the specified contacts without changing anatomy, equipment, grip or technique.\",\n    \"human_model\": \"One athletic bald male anatomical mannequin, opaque silver-gray muscular surfaces, consistent proportions and detailed 3D materials, plain black shorts, barefoot.\",\n    \"material_rules\": \"Highlights never make tissue transparent; no glow, whole-body orange tint, hair, text, labels, arrows, UI, borders, collage or extra person.\",\n    \"no_invention\": \"Technique, equipment and muscles come only from the attached exact catalogue record. No extra attachments, numerical weights, brands or exact angles absent from the source.\",\n    \"output\": {\n      \"format\": \"PNG\",\n      \"height\": 1024,\n      \"one_person\": true,\n      \"one_phase\": true,\n      \"width\": 1024\n    },\n    \"primary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"rule\": \"Highlight only the exact primary muscle group provided for this exercise.\"\n    },\n    \"secondary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"intensity_fraction\": [\n        0.4,\n        0.5\n      ],\n      \"rule\": \"Only the exact secondary muscles, lighter same-hue highlight; if the list is empty add no secondary target.\"\n    },\n    \"version\": \"v1\"\n  }\n}",
+      "generation_prompt_sha256": "0dcf178fa345e706cf1a67ff71c30606ef3dd7414b890063b13a79ad5e8812a3",
+      "style_version": "v1",
+      "planned_output_relative_path": "agent-03-others-002/reverse-lunge-dumbbell/attempt-1.png",
+      "output_root": "/workspace/exercise-image-results",
+      "result_path": null,
+      "result_sha256": null,
+      "attempts": 0,
+      "technical_check": null,
+      "user_review": null,
+      "agent_visual_review": "not_performed",
+      "preparation_status": "prompt_prepared_not_generated"
+    },
+    {
+      "exercise_id": "walking-lunge-dumbbell",
+      "name": "Walking Lunge (Dumbbell)",
+      "source_english": {
+        "description": "Walking Lunge (Dumbbell) alternates forward steps while dumbbells hang at the sides.",
+        "instructions": [
+          "Stand with one dumbbell in each hand and feet hip-width apart.",
+          "Step forward with the right foot and lower until both knees bend, keeping the right heel planted.",
+          "Push through the right foot to bring the left foot forward into the next lunge.",
+          "Continue alternating with the torso upright."
+        ],
+        "form_cues": [
+          "Keep front knee over ankle.",
+          "Take quiet steps.",
+          "Keep dumbbells still."
+        ],
+        "common_mistakes": [
+          "Knee collapsing inward.",
+          "Pushing off the rear toes.",
+          "Dropping the torso."
+        ],
+        "safety_note": "Use a clear lane and lighter dumbbells if the forward steps become unstable.",
+        "provenance": "authored"
+      },
+      "equipment": "dumbbell",
+      "primary_muscle": "quadriceps",
+      "secondary_muscles": [
+        "glutes",
+        "hamstrings"
+      ],
+      "source_catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+      "source_catalog_record_sha256": "effc7bb7d5e0492d554a4cd44f60d5d03d94fa0fe8b185716efad840cae63281",
+      "source_english_sha256": "12217d8d84acb9835ba24b6d1545832c6948e5eec5cd8178d08a391558a688ba",
+      "prompt_payload": {
+        "identity_do_not_render_as_text": {
+          "exercise_id": "walking-lunge-dumbbell",
+          "name": "Walking Lunge (Dumbbell)",
+          "source_catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989"
+        },
+        "exact_catalogue_source": {
+          "source_english": {
+            "description": "Walking Lunge (Dumbbell) alternates forward steps while dumbbells hang at the sides.",
+            "instructions": [
+              "Stand with one dumbbell in each hand and feet hip-width apart.",
+              "Step forward with the right foot and lower until both knees bend, keeping the right heel planted.",
+              "Push through the right foot to bring the left foot forward into the next lunge.",
+              "Continue alternating with the torso upright."
+            ],
+            "form_cues": [
+              "Keep front knee over ankle.",
+              "Take quiet steps.",
+              "Keep dumbbells still."
+            ],
+            "common_mistakes": [
+              "Knee collapsing inward.",
+              "Pushing off the rear toes.",
+              "Dropping the torso."
+            ],
+            "safety_note": "Use a clear lane and lighter dumbbells if the forward steps become unstable.",
+            "provenance": "authored"
+          },
+          "equipment": "dumbbell",
+          "primary_muscle": "quadriceps",
+          "secondary_muscles": [
+            "glutes",
+            "hamstrings"
+          ]
+        },
+        "style": {
+          "version": "v1",
+          "human_model": "One athletic bald male anatomical mannequin, opaque silver-gray muscular surfaces, consistent proportions and detailed 3D materials, plain black shorts, barefoot.",
+          "primary_highlight": {
+            "hex": "#F26445",
+            "rule": "Highlight only the exact primary muscle group provided for this exercise."
+          },
+          "secondary_highlight": {
+            "hex": "#F26445",
+            "intensity_fraction": [
+              0.4,
+              0.5
+            ],
+            "rule": "Only the exact secondary muscles, lighter same-hue highlight; if the list is empty add no secondary target."
+          },
+          "background": "Genuinely transparent PNG background, no white/checkerboard layer, no environment scene.",
+          "output": {
+            "format": "PNG",
+            "width": 1024,
+            "height": 1024,
+            "one_person": true,
+            "one_phase": true
+          },
+          "material_rules": "Highlights never make tissue transparent; no glow, whole-body orange tint, hair, text, labels, arrows, UI, borders, collage or extra person.",
+          "framing": "Full figure and all required equipment/supports visible within a square. Scale and use a three-quarter view to expose the specified contacts without changing anatomy, equipment, grip or technique.",
+          "no_invention": "Technique, equipment and muscles come only from the attached exact catalogue record. No extra attachments, numerical weights, brands or exact angles absent from the source."
+        },
+        "scene": {
+          "single_phase": "Right-foot-forward loaded phase within a walking lunge",
+          "composition": "One dumbbell in each hand hangs at the sides. Right foot is forward and flat, both knees bend, torso upright and right knee aligned over ankle. Show the quiet loaded phase before the left foot advances into the next step; no return-to-start pose, arrows or second figure.",
+          "source_instruction_quotes": [
+            {
+              "index": 0,
+              "text": "Stand with one dumbbell in each hand and feet hip-width apart."
+            },
+            {
+              "index": 1,
+              "text": "Step forward with the right foot and lower until both knees bend, keeping the right heel planted."
+            },
+            {
+              "index": 2,
+              "text": "Push through the right foot to bring the left foot forward into the next lunge."
+            }
+          ]
+        },
+        "reference_role": "Human appearance/proportions/materials only. Never copy pose, equipment or muscle targets from a reference."
+      },
+      "generation_prompt": "Create exactly one image for the following exact exercise record. Identity fields are metadata, never visible text. Preserve the source technique and depict only the chosen single phase.\n{\n  \"exact_catalogue_source\": {\n    \"equipment\": \"dumbbell\",\n    \"primary_muscle\": \"quadriceps\",\n    \"secondary_muscles\": [\n      \"glutes\",\n      \"hamstrings\"\n    ],\n    \"source_english\": {\n      \"common_mistakes\": [\n        \"Knee collapsing inward.\",\n        \"Pushing off the rear toes.\",\n        \"Dropping the torso.\"\n      ],\n      \"description\": \"Walking Lunge (Dumbbell) alternates forward steps while dumbbells hang at the sides.\",\n      \"form_cues\": [\n        \"Keep front knee over ankle.\",\n        \"Take quiet steps.\",\n        \"Keep dumbbells still.\"\n      ],\n      \"instructions\": [\n        \"Stand with one dumbbell in each hand and feet hip-width apart.\",\n        \"Step forward with the right foot and lower until both knees bend, keeping the right heel planted.\",\n        \"Push through the right foot to bring the left foot forward into the next lunge.\",\n        \"Continue alternating with the torso upright.\"\n      ],\n      \"provenance\": \"authored\",\n      \"safety_note\": \"Use a clear lane and lighter dumbbells if the forward steps become unstable.\"\n    }\n  },\n  \"identity_do_not_render_as_text\": {\n    \"exercise_id\": \"walking-lunge-dumbbell\",\n    \"name\": \"Walking Lunge (Dumbbell)\",\n    \"source_catalog_sha256\": \"a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989\"\n  },\n  \"reference_role\": \"Human appearance/proportions/materials only. Never copy pose, equipment or muscle targets from a reference.\",\n  \"scene\": {\n    \"composition\": \"One dumbbell in each hand hangs at the sides. Right foot is forward and flat, both knees bend, torso upright and right knee aligned over ankle. Show the quiet loaded phase before the left foot advances into the next step; no return-to-start pose, arrows or second figure.\",\n    \"single_phase\": \"Right-foot-forward loaded phase within a walking lunge\",\n    \"source_instruction_quotes\": [\n      {\n        \"index\": 0,\n        \"text\": \"Stand with one dumbbell in each hand and feet hip-width apart.\"\n      },\n      {\n        \"index\": 1,\n        \"text\": \"Step forward with the right foot and lower until both knees bend, keeping the right heel planted.\"\n      },\n      {\n        \"index\": 2,\n        \"text\": \"Push through the right foot to bring the left foot forward into the next lunge.\"\n      }\n    ]\n  },\n  \"style\": {\n    \"background\": \"Genuinely transparent PNG background, no white/checkerboard layer, no environment scene.\",\n    \"framing\": \"Full figure and all required equipment/supports visible within a square. Scale and use a three-quarter view to expose the specified contacts without changing anatomy, equipment, grip or technique.\",\n    \"human_model\": \"One athletic bald male anatomical mannequin, opaque silver-gray muscular surfaces, consistent proportions and detailed 3D materials, plain black shorts, barefoot.\",\n    \"material_rules\": \"Highlights never make tissue transparent; no glow, whole-body orange tint, hair, text, labels, arrows, UI, borders, collage or extra person.\",\n    \"no_invention\": \"Technique, equipment and muscles come only from the attached exact catalogue record. No extra attachments, numerical weights, brands or exact angles absent from the source.\",\n    \"output\": {\n      \"format\": \"PNG\",\n      \"height\": 1024,\n      \"one_person\": true,\n      \"one_phase\": true,\n      \"width\": 1024\n    },\n    \"primary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"rule\": \"Highlight only the exact primary muscle group provided for this exercise.\"\n    },\n    \"secondary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"intensity_fraction\": [\n        0.4,\n        0.5\n      ],\n      \"rule\": \"Only the exact secondary muscles, lighter same-hue highlight; if the list is empty add no secondary target.\"\n    },\n    \"version\": \"v1\"\n  }\n}",
+      "generation_prompt_sha256": "fe0e03ada086dd4243d5a4ec7a766beb505cdf16bb4011f4b0b45fe56cd1f947",
+      "style_version": "v1",
+      "planned_output_relative_path": "agent-03-others-002/walking-lunge-dumbbell/attempt-1.png",
+      "output_root": "/workspace/exercise-image-results",
+      "result_path": null,
+      "result_sha256": null,
+      "attempts": 0,
+      "technical_check": null,
+      "user_review": null,
+      "agent_visual_review": "not_performed",
+      "preparation_status": "prompt_prepared_not_generated"
+    },
+    {
+      "exercise_id": "deadlift-dumbbell",
+      "name": "Deadlift (Dumbbell)",
+      "source_english": {
+        "description": "Deadlift (Dumbbell) hinges to the dumbbells, drives the floor away, and finishes with the hips tall before reversing the hinge.",
+        "instructions": [
+          "Stand with the dumbbells over the mid-foot and hinge to grip it.",
+          "Brace the trunk, keep the back neutral, and push the floor away.",
+          "Extend the hips and knees until standing tall without leaning back.",
+          "Hinge first to lower the load and reset each repetition."
+        ],
+        "form_cues": [
+          "Keep the load close.",
+          "Keep the shoulders over the bar or weights.",
+          "Finish with glutes, not lumbar extension."
+        ],
+        "common_mistakes": [
+          "Rounding the back.",
+          "Jerking from the floor.",
+          "Locking out by leaning backward."
+        ],
+        "safety_note": "Use a load that allows a neutral spine from setup through lockout.",
+        "provenance": "adapted"
+      },
+      "equipment": "dumbbell",
+      "primary_muscle": "glutes",
+      "secondary_muscles": [
+        "hamstrings",
+        "quadriceps",
+        "lower_back",
+        "upper_back",
+        "lats",
+        "traps"
+      ],
+      "source_catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+      "source_catalog_record_sha256": "dcf11fa32389df65cc2f932ead7c1a2a2b8ecf1dfadbd990d037ef18daa3b592",
+      "source_english_sha256": "55a237efc907d8e63a6dd055ff7f1b5b6287fbeb9fd4cf01df1ac7e465be9122",
+      "prompt_payload": {
+        "identity_do_not_render_as_text": {
+          "exercise_id": "deadlift-dumbbell",
+          "name": "Deadlift (Dumbbell)",
+          "source_catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989"
+        },
+        "exact_catalogue_source": {
+          "source_english": {
+            "description": "Deadlift (Dumbbell) hinges to the dumbbells, drives the floor away, and finishes with the hips tall before reversing the hinge.",
+            "instructions": [
+              "Stand with the dumbbells over the mid-foot and hinge to grip it.",
+              "Brace the trunk, keep the back neutral, and push the floor away.",
+              "Extend the hips and knees until standing tall without leaning back.",
+              "Hinge first to lower the load and reset each repetition."
+            ],
+            "form_cues": [
+              "Keep the load close.",
+              "Keep the shoulders over the bar or weights.",
+              "Finish with glutes, not lumbar extension."
+            ],
+            "common_mistakes": [
+              "Rounding the back.",
+              "Jerking from the floor.",
+              "Locking out by leaning backward."
+            ],
+            "safety_note": "Use a load that allows a neutral spine from setup through lockout.",
+            "provenance": "adapted"
+          },
+          "equipment": "dumbbell",
+          "primary_muscle": "glutes",
+          "secondary_muscles": [
+            "hamstrings",
+            "quadriceps",
+            "lower_back",
+            "upper_back",
+            "lats",
+            "traps"
+          ]
+        },
+        "style": {
+          "version": "v1",
+          "human_model": "One athletic bald male anatomical mannequin, opaque silver-gray muscular surfaces, consistent proportions and detailed 3D materials, plain black shorts, barefoot.",
+          "primary_highlight": {
+            "hex": "#F26445",
+            "rule": "Highlight only the exact primary muscle group provided for this exercise."
+          },
+          "secondary_highlight": {
+            "hex": "#F26445",
+            "intensity_fraction": [
+              0.4,
+              0.5
+            ],
+            "rule": "Only the exact secondary muscles, lighter same-hue highlight; if the list is empty add no secondary target."
+          },
+          "background": "Genuinely transparent PNG background, no white/checkerboard layer, no environment scene.",
+          "output": {
+            "format": "PNG",
+            "width": 1024,
+            "height": 1024,
+            "one_person": true,
+            "one_phase": true
+          },
+          "material_rules": "Highlights never make tissue transparent; no glow, whole-body orange tint, hair, text, labels, arrows, UI, borders, collage or extra person.",
+          "framing": "Full figure and all required equipment/supports visible within a square. Scale and use a three-quarter view to expose the specified contacts without changing anatomy, equipment, grip or technique.",
+          "no_invention": "Technique, equipment and muscles come only from the attached exact catalogue record. No extra attachments, numerical weights, brands or exact angles absent from the source."
+        },
+        "scene": {
+          "single_phase": "Braced hinged setup over mid-foot",
+          "composition": "Stand with dumbbells over the mid-foot, bend hips and knees to grip the weights close to the legs. Keep back neutral, trunk braced, head aligned and shoulders over the weights. Show the controlled setup before extending hips and knees; no squat-only posture, machine or barbell.",
+          "source_instruction_quotes": [
+            {
+              "index": 0,
+              "text": "Stand with the dumbbells over the mid-foot and hinge to grip it."
+            },
+            {
+              "index": 1,
+              "text": "Brace the trunk, keep the back neutral, and push the floor away."
+            }
+          ]
+        },
+        "reference_role": "Human appearance/proportions/materials only. Never copy pose, equipment or muscle targets from a reference."
+      },
+      "generation_prompt": "Create exactly one image for the following exact exercise record. Identity fields are metadata, never visible text. Preserve the source technique and depict only the chosen single phase.\n{\n  \"exact_catalogue_source\": {\n    \"equipment\": \"dumbbell\",\n    \"primary_muscle\": \"glutes\",\n    \"secondary_muscles\": [\n      \"hamstrings\",\n      \"quadriceps\",\n      \"lower_back\",\n      \"upper_back\",\n      \"lats\",\n      \"traps\"\n    ],\n    \"source_english\": {\n      \"common_mistakes\": [\n        \"Rounding the back.\",\n        \"Jerking from the floor.\",\n        \"Locking out by leaning backward.\"\n      ],\n      \"description\": \"Deadlift (Dumbbell) hinges to the dumbbells, drives the floor away, and finishes with the hips tall before reversing the hinge.\",\n      \"form_cues\": [\n        \"Keep the load close.\",\n        \"Keep the shoulders over the bar or weights.\",\n        \"Finish with glutes, not lumbar extension.\"\n      ],\n      \"instructions\": [\n        \"Stand with the dumbbells over the mid-foot and hinge to grip it.\",\n        \"Brace the trunk, keep the back neutral, and push the floor away.\",\n        \"Extend the hips and knees until standing tall without leaning back.\",\n        \"Hinge first to lower the load and reset each repetition.\"\n      ],\n      \"provenance\": \"adapted\",\n      \"safety_note\": \"Use a load that allows a neutral spine from setup through lockout.\"\n    }\n  },\n  \"identity_do_not_render_as_text\": {\n    \"exercise_id\": \"deadlift-dumbbell\",\n    \"name\": \"Deadlift (Dumbbell)\",\n    \"source_catalog_sha256\": \"a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989\"\n  },\n  \"reference_role\": \"Human appearance/proportions/materials only. Never copy pose, equipment or muscle targets from a reference.\",\n  \"scene\": {\n    \"composition\": \"Stand with dumbbells over the mid-foot, bend hips and knees to grip the weights close to the legs. Keep back neutral, trunk braced, head aligned and shoulders over the weights. Show the controlled setup before extending hips and knees; no squat-only posture, machine or barbell.\",\n    \"single_phase\": \"Braced hinged setup over mid-foot\",\n    \"source_instruction_quotes\": [\n      {\n        \"index\": 0,\n        \"text\": \"Stand with the dumbbells over the mid-foot and hinge to grip it.\"\n      },\n      {\n        \"index\": 1,\n        \"text\": \"Brace the trunk, keep the back neutral, and push the floor away.\"\n      }\n    ]\n  },\n  \"style\": {\n    \"background\": \"Genuinely transparent PNG background, no white/checkerboard layer, no environment scene.\",\n    \"framing\": \"Full figure and all required equipment/supports visible within a square. Scale and use a three-quarter view to expose the specified contacts without changing anatomy, equipment, grip or technique.\",\n    \"human_model\": \"One athletic bald male anatomical mannequin, opaque silver-gray muscular surfaces, consistent proportions and detailed 3D materials, plain black shorts, barefoot.\",\n    \"material_rules\": \"Highlights never make tissue transparent; no glow, whole-body orange tint, hair, text, labels, arrows, UI, borders, collage or extra person.\",\n    \"no_invention\": \"Technique, equipment and muscles come only from the attached exact catalogue record. No extra attachments, numerical weights, brands or exact angles absent from the source.\",\n    \"output\": {\n      \"format\": \"PNG\",\n      \"height\": 1024,\n      \"one_person\": true,\n      \"one_phase\": true,\n      \"width\": 1024\n    },\n    \"primary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"rule\": \"Highlight only the exact primary muscle group provided for this exercise.\"\n    },\n    \"secondary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"intensity_fraction\": [\n        0.4,\n        0.5\n      ],\n      \"rule\": \"Only the exact secondary muscles, lighter same-hue highlight; if the list is empty add no secondary target.\"\n    },\n    \"version\": \"v1\"\n  }\n}",
+      "generation_prompt_sha256": "6d35bced40790224c3ffb721a1f27286235aec1500b47c0d4477296e5350049c",
+      "style_version": "v1",
+      "planned_output_relative_path": "agent-03-others-002/deadlift-dumbbell/attempt-1.png",
+      "output_root": "/workspace/exercise-image-results",
+      "result_path": null,
+      "result_sha256": null,
+      "attempts": 0,
+      "technical_check": null,
+      "user_review": null,
+      "agent_visual_review": "not_performed",
+      "preparation_status": "prompt_prepared_not_generated"
+    },
+    {
+      "exercise_id": "single-leg-romanian-deadlift-dumbbell",
+      "name": "Single Leg Romanian Deadlift (Dumbbell)",
+      "source_english": {
+        "description": "Stand on one foot with a dumbbell near the thigh, hinge as the free leg reaches back, then stand and switch.",
+        "instructions": [
+          "Stand with your feet hip-width apart, holding a dumbbell in your right hand.",
+          "Shift your weight onto your left leg and lift your right foot slightly off the ground.",
+          "Keeping your back straight, hinge forward at the hips and lower the dumbbell towards the ground.",
+          "At the same time, extend your right leg straight behind you, maintaining a slight bend in your left knee.",
+          "Lower the dumbbell until your torso and right leg are parallel to the ground.",
+          "Pause for a moment, then engage your glutes and hamstrings to return to the starting position."
+        ],
+        "form_cues": [
+          "Keep the load close.",
+          "Hinge without rounding.",
+          "Finish tall."
+        ],
+        "common_mistakes": [
+          "Shifting the support point.",
+          "Using momentum instead of the target joint path.",
+          "Cutting the return short."
+        ],
+        "safety_note": "Keep the load close and stop if the spine cannot remain neutral.",
+        "provenance": "adapted"
+      },
+      "equipment": "dumbbell",
+      "primary_muscle": "hamstrings",
+      "secondary_muscles": [
+        "glutes",
+        "lower_back"
+      ],
+      "source_catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+      "source_catalog_record_sha256": "5a697687f6d54d3e0f20c3a5fdf3f60e6dbe8b3c2b06b279fbf694f87b22b297",
+      "source_english_sha256": "7cffec69f5b9b286f00e2cdd7a1ff53b4597d487c4b63448af1b409db19e8e92",
+      "prompt_payload": {
+        "identity_do_not_render_as_text": {
+          "exercise_id": "single-leg-romanian-deadlift-dumbbell",
+          "name": "Single Leg Romanian Deadlift (Dumbbell)",
+          "source_catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989"
+        },
+        "exact_catalogue_source": {
+          "source_english": {
+            "description": "Stand on one foot with a dumbbell near the thigh, hinge as the free leg reaches back, then stand and switch.",
+            "instructions": [
+              "Stand with your feet hip-width apart, holding a dumbbell in your right hand.",
+              "Shift your weight onto your left leg and lift your right foot slightly off the ground.",
+              "Keeping your back straight, hinge forward at the hips and lower the dumbbell towards the ground.",
+              "At the same time, extend your right leg straight behind you, maintaining a slight bend in your left knee.",
+              "Lower the dumbbell until your torso and right leg are parallel to the ground.",
+              "Pause for a moment, then engage your glutes and hamstrings to return to the starting position."
+            ],
+            "form_cues": [
+              "Keep the load close.",
+              "Hinge without rounding.",
+              "Finish tall."
+            ],
+            "common_mistakes": [
+              "Shifting the support point.",
+              "Using momentum instead of the target joint path.",
+              "Cutting the return short."
+            ],
+            "safety_note": "Keep the load close and stop if the spine cannot remain neutral.",
+            "provenance": "adapted"
+          },
+          "equipment": "dumbbell",
+          "primary_muscle": "hamstrings",
+          "secondary_muscles": [
+            "glutes",
+            "lower_back"
+          ]
+        },
+        "style": {
+          "version": "v1",
+          "human_model": "One athletic bald male anatomical mannequin, opaque silver-gray muscular surfaces, consistent proportions and detailed 3D materials, plain black shorts, barefoot.",
+          "primary_highlight": {
+            "hex": "#F26445",
+            "rule": "Highlight only the exact primary muscle group provided for this exercise."
+          },
+          "secondary_highlight": {
+            "hex": "#F26445",
+            "intensity_fraction": [
+              0.4,
+              0.5
+            ],
+            "rule": "Only the exact secondary muscles, lighter same-hue highlight; if the list is empty add no secondary target."
+          },
+          "background": "Genuinely transparent PNG background, no white/checkerboard layer, no environment scene.",
+          "output": {
+            "format": "PNG",
+            "width": 1024,
+            "height": 1024,
+            "one_person": true,
+            "one_phase": true
+          },
+          "material_rules": "Highlights never make tissue transparent; no glow, whole-body orange tint, hair, text, labels, arrows, UI, borders, collage or extra person.",
+          "framing": "Full figure and all required equipment/supports visible within a square. Scale and use a three-quarter view to expose the specified contacts without changing anatomy, equipment, grip or technique.",
+          "no_invention": "Technique, equipment and muscles come only from the attached exact catalogue record. No extra attachments, numerical weights, brands or exact angles absent from the source."
+        },
+        "scene": {
+          "single_phase": "Left-leg-supported near-horizontal hinge",
+          "composition": "Left foot is the only loaded floor contact, left knee slightly bent. Right hand holds the single dumbbell lowered near the body; right leg reaches straight back. Torso and right leg approach parallel to the floor, back straight. Depict these exact source sides, without swapping hand and support leg or adding a second weight.",
+          "source_instruction_quotes": [
+            {
+              "index": 0,
+              "text": "Stand with your feet hip-width apart, holding a dumbbell in your right hand."
+            },
+            {
+              "index": 1,
+              "text": "Shift your weight onto your left leg and lift your right foot slightly off the ground."
+            },
+            {
+              "index": 2,
+              "text": "Keeping your back straight, hinge forward at the hips and lower the dumbbell towards the ground."
+            },
+            {
+              "index": 3,
+              "text": "At the same time, extend your right leg straight behind you, maintaining a slight bend in your left knee."
+            },
+            {
+              "index": 4,
+              "text": "Lower the dumbbell until your torso and right leg are parallel to the ground."
+            }
+          ]
+        },
+        "reference_role": "Human appearance/proportions/materials only. Never copy pose, equipment or muscle targets from a reference."
+      },
+      "generation_prompt": "Create exactly one image for the following exact exercise record. Identity fields are metadata, never visible text. Preserve the source technique and depict only the chosen single phase.\n{\n  \"exact_catalogue_source\": {\n    \"equipment\": \"dumbbell\",\n    \"primary_muscle\": \"hamstrings\",\n    \"secondary_muscles\": [\n      \"glutes\",\n      \"lower_back\"\n    ],\n    \"source_english\": {\n      \"common_mistakes\": [\n        \"Shifting the support point.\",\n        \"Using momentum instead of the target joint path.\",\n        \"Cutting the return short.\"\n      ],\n      \"description\": \"Stand on one foot with a dumbbell near the thigh, hinge as the free leg reaches back, then stand and switch.\",\n      \"form_cues\": [\n        \"Keep the load close.\",\n        \"Hinge without rounding.\",\n        \"Finish tall.\"\n      ],\n      \"instructions\": [\n        \"Stand with your feet hip-width apart, holding a dumbbell in your right hand.\",\n        \"Shift your weight onto your left leg and lift your right foot slightly off the ground.\",\n        \"Keeping your back straight, hinge forward at the hips and lower the dumbbell towards the ground.\",\n        \"At the same time, extend your right leg straight behind you, maintaining a slight bend in your left knee.\",\n        \"Lower the dumbbell until your torso and right leg are parallel to the ground.\",\n        \"Pause for a moment, then engage your glutes and hamstrings to return to the starting position.\"\n      ],\n      \"provenance\": \"adapted\",\n      \"safety_note\": \"Keep the load close and stop if the spine cannot remain neutral.\"\n    }\n  },\n  \"identity_do_not_render_as_text\": {\n    \"exercise_id\": \"single-leg-romanian-deadlift-dumbbell\",\n    \"name\": \"Single Leg Romanian Deadlift (Dumbbell)\",\n    \"source_catalog_sha256\": \"a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989\"\n  },\n  \"reference_role\": \"Human appearance/proportions/materials only. Never copy pose, equipment or muscle targets from a reference.\",\n  \"scene\": {\n    \"composition\": \"Left foot is the only loaded floor contact, left knee slightly bent. Right hand holds the single dumbbell lowered near the body; right leg reaches straight back. Torso and right leg approach parallel to the floor, back straight. Depict these exact source sides, without swapping hand and support leg or adding a second weight.\",\n    \"single_phase\": \"Left-leg-supported near-horizontal hinge\",\n    \"source_instruction_quotes\": [\n      {\n        \"index\": 0,\n        \"text\": \"Stand with your feet hip-width apart, holding a dumbbell in your right hand.\"\n      },\n      {\n        \"index\": 1,\n        \"text\": \"Shift your weight onto your left leg and lift your right foot slightly off the ground.\"\n      },\n      {\n        \"index\": 2,\n        \"text\": \"Keeping your back straight, hinge forward at the hips and lower the dumbbell towards the ground.\"\n      },\n      {\n        \"index\": 3,\n        \"text\": \"At the same time, extend your right leg straight behind you, maintaining a slight bend in your left knee.\"\n      },\n      {\n        \"index\": 4,\n        \"text\": \"Lower the dumbbell until your torso and right leg are parallel to the ground.\"\n      }\n    ]\n  },\n  \"style\": {\n    \"background\": \"Genuinely transparent PNG background, no white/checkerboard layer, no environment scene.\",\n    \"framing\": \"Full figure and all required equipment/supports visible within a square. Scale and use a three-quarter view to expose the specified contacts without changing anatomy, equipment, grip or technique.\",\n    \"human_model\": \"One athletic bald male anatomical mannequin, opaque silver-gray muscular surfaces, consistent proportions and detailed 3D materials, plain black shorts, barefoot.\",\n    \"material_rules\": \"Highlights never make tissue transparent; no glow, whole-body orange tint, hair, text, labels, arrows, UI, borders, collage or extra person.\",\n    \"no_invention\": \"Technique, equipment and muscles come only from the attached exact catalogue record. No extra attachments, numerical weights, brands or exact angles absent from the source.\",\n    \"output\": {\n      \"format\": \"PNG\",\n      \"height\": 1024,\n      \"one_person\": true,\n      \"one_phase\": true,\n      \"width\": 1024\n    },\n    \"primary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"rule\": \"Highlight only the exact primary muscle group provided for this exercise.\"\n    },\n    \"secondary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"intensity_fraction\": [\n        0.4,\n        0.5\n      ],\n      \"rule\": \"Only the exact secondary muscles, lighter same-hue highlight; if the list is empty add no secondary target.\"\n    },\n    \"version\": \"v1\"\n  }\n}",
+      "generation_prompt_sha256": "b8705636e89447a5a4f233346cfd5fb9f3d29c311432f349ea6bb81be94d5ca1",
+      "style_version": "v1",
+      "planned_output_relative_path": "agent-03-others-002/single-leg-romanian-deadlift-dumbbell/attempt-1.png",
+      "output_root": "/workspace/exercise-image-results",
+      "result_path": null,
+      "result_sha256": null,
+      "attempts": 0,
+      "technical_check": null,
+      "user_review": null,
+      "agent_visual_review": "not_performed",
+      "preparation_status": "prompt_prepared_not_generated"
+    },
+    {
+      "exercise_id": "upright-row-dumbbell",
+      "name": "Upright Row (Dumbbell)",
+      "source_english": {
+        "description": "Upright Row (Dumbbell) pulls one dumbbell in each hand toward the upper chest with the elbows leading.",
+        "instructions": [
+          "Stand with feet shoulder-width apart and hold one dumbbell in each hand with an overhand grip at the thighs.",
+          "Brace the abdomen and pull the elbows upward and outward, keeping the load close to the body.",
+          "Stop when the hands reach the upper chest or before the shoulders pinch.",
+          "Lower the resistance slowly to the thighs and reset."
+        ],
+        "form_cues": [
+          "Lead with elbows.",
+          "Keep wrists below elbows.",
+          "Keep torso upright."
+        ],
+        "common_mistakes": [
+          "Shrugging first.",
+          "Pulling above a comfortable shoulder range.",
+          "Using a hip swing."
+        ],
+        "safety_note": "Use light resistance and stop below any painful shoulder height.",
+        "provenance": "adapted"
+      },
+      "equipment": "dumbbell",
+      "primary_muscle": "shoulders",
+      "secondary_muscles": [
+        "traps",
+        "upper_back",
+        "biceps",
+        "forearms"
+      ],
+      "source_catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+      "source_catalog_record_sha256": "28d43276322035e9a785fc7774979722641990b516564213a50e0d03ac4d1870",
+      "source_english_sha256": "fcaf03da2cd9ab06536c8b520b476e8a4b2b63d06b27e0b30449d42e41c4f399",
+      "prompt_payload": {
+        "identity_do_not_render_as_text": {
+          "exercise_id": "upright-row-dumbbell",
+          "name": "Upright Row (Dumbbell)",
+          "source_catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989"
+        },
+        "exact_catalogue_source": {
+          "source_english": {
+            "description": "Upright Row (Dumbbell) pulls one dumbbell in each hand toward the upper chest with the elbows leading.",
+            "instructions": [
+              "Stand with feet shoulder-width apart and hold one dumbbell in each hand with an overhand grip at the thighs.",
+              "Brace the abdomen and pull the elbows upward and outward, keeping the load close to the body.",
+              "Stop when the hands reach the upper chest or before the shoulders pinch.",
+              "Lower the resistance slowly to the thighs and reset."
+            ],
+            "form_cues": [
+              "Lead with elbows.",
+              "Keep wrists below elbows.",
+              "Keep torso upright."
+            ],
+            "common_mistakes": [
+              "Shrugging first.",
+              "Pulling above a comfortable shoulder range.",
+              "Using a hip swing."
+            ],
+            "safety_note": "Use light resistance and stop below any painful shoulder height.",
+            "provenance": "adapted"
+          },
+          "equipment": "dumbbell",
+          "primary_muscle": "shoulders",
+          "secondary_muscles": [
+            "traps",
+            "upper_back",
+            "biceps",
+            "forearms"
+          ]
+        },
+        "style": {
+          "version": "v1",
+          "human_model": "One athletic bald male anatomical mannequin, opaque silver-gray muscular surfaces, consistent proportions and detailed 3D materials, plain black shorts, barefoot.",
+          "primary_highlight": {
+            "hex": "#F26445",
+            "rule": "Highlight only the exact primary muscle group provided for this exercise."
+          },
+          "secondary_highlight": {
+            "hex": "#F26445",
+            "intensity_fraction": [
+              0.4,
+              0.5
+            ],
+            "rule": "Only the exact secondary muscles, lighter same-hue highlight; if the list is empty add no secondary target."
+          },
+          "background": "Genuinely transparent PNG background, no white/checkerboard layer, no environment scene.",
+          "output": {
+            "format": "PNG",
+            "width": 1024,
+            "height": 1024,
+            "one_person": true,
+            "one_phase": true
+          },
+          "material_rules": "Highlights never make tissue transparent; no glow, whole-body orange tint, hair, text, labels, arrows, UI, borders, collage or extra person.",
+          "framing": "Full figure and all required equipment/supports visible within a square. Scale and use a three-quarter view to expose the specified contacts without changing anatomy, equipment, grip or technique.",
+          "no_invention": "Technique, equipment and muscles come only from the attached exact catalogue record. No extra attachments, numerical weights, brands or exact angles absent from the source."
+        },
+        "scene": {
+          "single_phase": "Controlled upper-chest endpoint",
+          "composition": "Stand shoulder-width with one dumbbell in each hand using the source overhand grip. Raise the elbows upward and outward as the weights travel close to the torso toward upper chest; wrists and loads remain below the leading elbows. Trunk braced, no lean or shrug-to-ear substitution.",
+          "source_instruction_quotes": [
+            {
+              "index": 0,
+              "text": "Stand with feet shoulder-width apart and hold one dumbbell in each hand with an overhand grip at the thighs."
+            },
+            {
+              "index": 1,
+              "text": "Brace the abdomen and pull the elbows upward and outward, keeping the load close to the body."
+            },
+            {
+              "index": 2,
+              "text": "Stop when the hands reach the upper chest or before the shoulders pinch."
+            }
+          ]
+        },
+        "reference_role": "Human appearance/proportions/materials only. Never copy pose, equipment or muscle targets from a reference."
+      },
+      "generation_prompt": "Create exactly one image for the following exact exercise record. Identity fields are metadata, never visible text. Preserve the source technique and depict only the chosen single phase.\n{\n  \"exact_catalogue_source\": {\n    \"equipment\": \"dumbbell\",\n    \"primary_muscle\": \"shoulders\",\n    \"secondary_muscles\": [\n      \"traps\",\n      \"upper_back\",\n      \"biceps\",\n      \"forearms\"\n    ],\n    \"source_english\": {\n      \"common_mistakes\": [\n        \"Shrugging first.\",\n        \"Pulling above a comfortable shoulder range.\",\n        \"Using a hip swing.\"\n      ],\n      \"description\": \"Upright Row (Dumbbell) pulls one dumbbell in each hand toward the upper chest with the elbows leading.\",\n      \"form_cues\": [\n        \"Lead with elbows.\",\n        \"Keep wrists below elbows.\",\n        \"Keep torso upright.\"\n      ],\n      \"instructions\": [\n        \"Stand with feet shoulder-width apart and hold one dumbbell in each hand with an overhand grip at the thighs.\",\n        \"Brace the abdomen and pull the elbows upward and outward, keeping the load close to the body.\",\n        \"Stop when the hands reach the upper chest or before the shoulders pinch.\",\n        \"Lower the resistance slowly to the thighs and reset.\"\n      ],\n      \"provenance\": \"adapted\",\n      \"safety_note\": \"Use light resistance and stop below any painful shoulder height.\"\n    }\n  },\n  \"identity_do_not_render_as_text\": {\n    \"exercise_id\": \"upright-row-dumbbell\",\n    \"name\": \"Upright Row (Dumbbell)\",\n    \"source_catalog_sha256\": \"a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989\"\n  },\n  \"reference_role\": \"Human appearance/proportions/materials only. Never copy pose, equipment or muscle targets from a reference.\",\n  \"scene\": {\n    \"composition\": \"Stand shoulder-width with one dumbbell in each hand using the source overhand grip. Raise the elbows upward and outward as the weights travel close to the torso toward upper chest; wrists and loads remain below the leading elbows. Trunk braced, no lean or shrug-to-ear substitution.\",\n    \"single_phase\": \"Controlled upper-chest endpoint\",\n    \"source_instruction_quotes\": [\n      {\n        \"index\": 0,\n        \"text\": \"Stand with feet shoulder-width apart and hold one dumbbell in each hand with an overhand grip at the thighs.\"\n      },\n      {\n        \"index\": 1,\n        \"text\": \"Brace the abdomen and pull the elbows upward and outward, keeping the load close to the body.\"\n      },\n      {\n        \"index\": 2,\n        \"text\": \"Stop when the hands reach the upper chest or before the shoulders pinch.\"\n      }\n    ]\n  },\n  \"style\": {\n    \"background\": \"Genuinely transparent PNG background, no white/checkerboard layer, no environment scene.\",\n    \"framing\": \"Full figure and all required equipment/supports visible within a square. Scale and use a three-quarter view to expose the specified contacts without changing anatomy, equipment, grip or technique.\",\n    \"human_model\": \"One athletic bald male anatomical mannequin, opaque silver-gray muscular surfaces, consistent proportions and detailed 3D materials, plain black shorts, barefoot.\",\n    \"material_rules\": \"Highlights never make tissue transparent; no glow, whole-body orange tint, hair, text, labels, arrows, UI, borders, collage or extra person.\",\n    \"no_invention\": \"Technique, equipment and muscles come only from the attached exact catalogue record. No extra attachments, numerical weights, brands or exact angles absent from the source.\",\n    \"output\": {\n      \"format\": \"PNG\",\n      \"height\": 1024,\n      \"one_person\": true,\n      \"one_phase\": true,\n      \"width\": 1024\n    },\n    \"primary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"rule\": \"Highlight only the exact primary muscle group provided for this exercise.\"\n    },\n    \"secondary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"intensity_fraction\": [\n        0.4,\n        0.5\n      ],\n      \"rule\": \"Only the exact secondary muscles, lighter same-hue highlight; if the list is empty add no secondary target.\"\n    },\n    \"version\": \"v1\"\n  }\n}",
+      "generation_prompt_sha256": "79ba43515360744791dea004c010f8af8a50f53dd14462f5d04853b0abf66c28",
+      "style_version": "v1",
+      "planned_output_relative_path": "agent-03-others-002/upright-row-dumbbell/attempt-1.png",
+      "output_root": "/workspace/exercise-image-results",
+      "result_path": null,
+      "result_sha256": null,
+      "attempts": 0,
+      "technical_check": null,
+      "user_review": null,
+      "agent_visual_review": "not_performed",
+      "preparation_status": "prompt_prepared_not_generated"
+    },
+    {
+      "exercise_id": "zottman-curl-dumbbell",
+      "name": "Zottman Curl (Dumbbell)",
+      "source_english": {
+        "description": "Zottman Curl (Dumbbell) curls with palms up, rotates palms down at the top, and lowers with the reverse grip.",
+        "instructions": [
+          "Stand with feet hip-width apart holding one dumbbell in each hand, palms facing forward.",
+          "Curl both dumbbells to shoulder height while keeping the upper arms still.",
+          "Rotate the wrists so the palms face down at the top.",
+          "Lower the dumbbells under control, then rotate palms forward at the bottom."
+        ],
+        "form_cues": [
+          "Keep elbows close.",
+          "Rotate only at the wrists.",
+          "Lower slowly."
+        ],
+        "common_mistakes": [
+          "Swinging the torso.",
+          "Rotating before the top.",
+          "Dropping the weights."
+        ],
+        "safety_note": "Use dumbbells light enough to control the pronated lowering phase.",
+        "provenance": "adapted"
+      },
+      "equipment": "dumbbell",
+      "primary_muscle": "biceps",
+      "secondary_muscles": [
+        "forearms"
+      ],
+      "source_catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+      "source_catalog_record_sha256": "094540624c64eaeba36c22421b70a07441022afb9713d3524803f2785bff65d7",
+      "source_english_sha256": "170f131ccea5ce4dcda05410a78f64fc018857ce8d01c13da0ca84e157819a4a",
+      "prompt_payload": {
+        "identity_do_not_render_as_text": {
+          "exercise_id": "zottman-curl-dumbbell",
+          "name": "Zottman Curl (Dumbbell)",
+          "source_catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989"
+        },
+        "exact_catalogue_source": {
+          "source_english": {
+            "description": "Zottman Curl (Dumbbell) curls with palms up, rotates palms down at the top, and lowers with the reverse grip.",
+            "instructions": [
+              "Stand with feet hip-width apart holding one dumbbell in each hand, palms facing forward.",
+              "Curl both dumbbells to shoulder height while keeping the upper arms still.",
+              "Rotate the wrists so the palms face down at the top.",
+              "Lower the dumbbells under control, then rotate palms forward at the bottom."
+            ],
+            "form_cues": [
+              "Keep elbows close.",
+              "Rotate only at the wrists.",
+              "Lower slowly."
+            ],
+            "common_mistakes": [
+              "Swinging the torso.",
+              "Rotating before the top.",
+              "Dropping the weights."
+            ],
+            "safety_note": "Use dumbbells light enough to control the pronated lowering phase.",
+            "provenance": "adapted"
+          },
+          "equipment": "dumbbell",
+          "primary_muscle": "biceps",
+          "secondary_muscles": [
+            "forearms"
+          ]
+        },
+        "style": {
+          "version": "v1",
+          "human_model": "One athletic bald male anatomical mannequin, opaque silver-gray muscular surfaces, consistent proportions and detailed 3D materials, plain black shorts, barefoot.",
+          "primary_highlight": {
+            "hex": "#F26445",
+            "rule": "Highlight only the exact primary muscle group provided for this exercise."
+          },
+          "secondary_highlight": {
+            "hex": "#F26445",
+            "intensity_fraction": [
+              0.4,
+              0.5
+            ],
+            "rule": "Only the exact secondary muscles, lighter same-hue highlight; if the list is empty add no secondary target."
+          },
+          "background": "Genuinely transparent PNG background, no white/checkerboard layer, no environment scene.",
+          "output": {
+            "format": "PNG",
+            "width": 1024,
+            "height": 1024,
+            "one_person": true,
+            "one_phase": true
+          },
+          "material_rules": "Highlights never make tissue transparent; no glow, whole-body orange tint, hair, text, labels, arrows, UI, borders, collage or extra person.",
+          "framing": "Full figure and all required equipment/supports visible within a square. Scale and use a three-quarter view to expose the specified contacts without changing anatomy, equipment, grip or technique.",
+          "no_invention": "Technique, equipment and muscles come only from the attached exact catalogue record. No extra attachments, numerical weights, brands or exact angles absent from the source."
+        },
+        "scene": {
+          "single_phase": "Top curl after rotation to palms down",
+          "composition": "Stand hip-width, upper arms still alongside torso. Both dumbbells are at shoulder height after the palms-up curl; wrists have rotated so palms now face down, ready for the controlled reverse-grip descent. Show exactly one phase and two weights; no mixed opposite grips or extra arms.",
+          "source_instruction_quotes": [
+            {
+              "index": 0,
+              "text": "Stand with feet hip-width apart holding one dumbbell in each hand, palms facing forward."
+            },
+            {
+              "index": 1,
+              "text": "Curl both dumbbells to shoulder height while keeping the upper arms still."
+            },
+            {
+              "index": 2,
+              "text": "Rotate the wrists so the palms face down at the top."
+            }
+          ]
+        },
+        "reference_role": "Human appearance/proportions/materials only. Never copy pose, equipment or muscle targets from a reference."
+      },
+      "generation_prompt": "Create exactly one image for the following exact exercise record. Identity fields are metadata, never visible text. Preserve the source technique and depict only the chosen single phase.\n{\n  \"exact_catalogue_source\": {\n    \"equipment\": \"dumbbell\",\n    \"primary_muscle\": \"biceps\",\n    \"secondary_muscles\": [\n      \"forearms\"\n    ],\n    \"source_english\": {\n      \"common_mistakes\": [\n        \"Swinging the torso.\",\n        \"Rotating before the top.\",\n        \"Dropping the weights.\"\n      ],\n      \"description\": \"Zottman Curl (Dumbbell) curls with palms up, rotates palms down at the top, and lowers with the reverse grip.\",\n      \"form_cues\": [\n        \"Keep elbows close.\",\n        \"Rotate only at the wrists.\",\n        \"Lower slowly.\"\n      ],\n      \"instructions\": [\n        \"Stand with feet hip-width apart holding one dumbbell in each hand, palms facing forward.\",\n        \"Curl both dumbbells to shoulder height while keeping the upper arms still.\",\n        \"Rotate the wrists so the palms face down at the top.\",\n        \"Lower the dumbbells under control, then rotate palms forward at the bottom.\"\n      ],\n      \"provenance\": \"adapted\",\n      \"safety_note\": \"Use dumbbells light enough to control the pronated lowering phase.\"\n    }\n  },\n  \"identity_do_not_render_as_text\": {\n    \"exercise_id\": \"zottman-curl-dumbbell\",\n    \"name\": \"Zottman Curl (Dumbbell)\",\n    \"source_catalog_sha256\": \"a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989\"\n  },\n  \"reference_role\": \"Human appearance/proportions/materials only. Never copy pose, equipment or muscle targets from a reference.\",\n  \"scene\": {\n    \"composition\": \"Stand hip-width, upper arms still alongside torso. Both dumbbells are at shoulder height after the palms-up curl; wrists have rotated so palms now face down, ready for the controlled reverse-grip descent. Show exactly one phase and two weights; no mixed opposite grips or extra arms.\",\n    \"single_phase\": \"Top curl after rotation to palms down\",\n    \"source_instruction_quotes\": [\n      {\n        \"index\": 0,\n        \"text\": \"Stand with feet hip-width apart holding one dumbbell in each hand, palms facing forward.\"\n      },\n      {\n        \"index\": 1,\n        \"text\": \"Curl both dumbbells to shoulder height while keeping the upper arms still.\"\n      },\n      {\n        \"index\": 2,\n        \"text\": \"Rotate the wrists so the palms face down at the top.\"\n      }\n    ]\n  },\n  \"style\": {\n    \"background\": \"Genuinely transparent PNG background, no white/checkerboard layer, no environment scene.\",\n    \"framing\": \"Full figure and all required equipment/supports visible within a square. Scale and use a three-quarter view to expose the specified contacts without changing anatomy, equipment, grip or technique.\",\n    \"human_model\": \"One athletic bald male anatomical mannequin, opaque silver-gray muscular surfaces, consistent proportions and detailed 3D materials, plain black shorts, barefoot.\",\n    \"material_rules\": \"Highlights never make tissue transparent; no glow, whole-body orange tint, hair, text, labels, arrows, UI, borders, collage or extra person.\",\n    \"no_invention\": \"Technique, equipment and muscles come only from the attached exact catalogue record. No extra attachments, numerical weights, brands or exact angles absent from the source.\",\n    \"output\": {\n      \"format\": \"PNG\",\n      \"height\": 1024,\n      \"one_person\": true,\n      \"one_phase\": true,\n      \"width\": 1024\n    },\n    \"primary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"rule\": \"Highlight only the exact primary muscle group provided for this exercise.\"\n    },\n    \"secondary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"intensity_fraction\": [\n        0.4,\n        0.5\n      ],\n      \"rule\": \"Only the exact secondary muscles, lighter same-hue highlight; if the list is empty add no secondary target.\"\n    },\n    \"version\": \"v1\"\n  }\n}",
+      "generation_prompt_sha256": "62f8a7b59b2d1b9c6118410ed1da9ea2de4a32d5351f5fbcf1d53daa46808ce4",
+      "style_version": "v1",
+      "planned_output_relative_path": "agent-03-others-002/zottman-curl-dumbbell/attempt-1.png",
+      "output_root": "/workspace/exercise-image-results",
+      "result_path": null,
+      "result_sha256": null,
+      "attempts": 0,
+      "technical_check": null,
+      "user_review": null,
+      "agent_visual_review": "not_performed",
+      "preparation_status": "prompt_prepared_not_generated"
+    },
+    {
+      "exercise_id": "overhead-press-dumbbell",
+      "name": "Overhead Press (Dumbbell)",
+      "source_english": {
+        "description": "Overhead Press (Dumbbell) presses the weight from shoulder height to overhead while the standing trunk stays braced.",
+        "instructions": [
+          "Stand with your feet shoulder-width apart, holding a dumbbell in each hand at shoulder level with your palms facing forward.",
+          "Press the dumbbells upward until your arms are fully extended overhead.",
+          "Pause for a moment at the top, then slowly lower the dumbbells back down to shoulder level.",
+          "Repeat for the desired number of repetitions."
+        ],
+        "form_cues": [
+          "Keep wrists stacked over the elbows.",
+          "Brace the trunk and keep the shoulder blades controlled.",
+          "Use a smooth lower and press."
+        ],
+        "common_mistakes": [
+          "Flaring the elbows.",
+          "Arching or sagging the trunk.",
+          "Bouncing at the bottom."
+        ],
+        "safety_note": "Use a stable setup and stop before the shoulders or wrists lose controlled alignment.",
+        "provenance": "adapted"
+      },
+      "equipment": "dumbbell",
+      "primary_muscle": "shoulders",
+      "secondary_muscles": [
+        "triceps"
+      ],
+      "source_catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+      "source_catalog_record_sha256": "ed5871b2a80647dca8f1faaf86c6523accc36cb1e251cc41a31e56862e386ea7",
+      "source_english_sha256": "a18999a53d57db6280160018f9bac6951f69c566e1210acc43f32a6c70c9a4ad",
+      "prompt_payload": {
+        "identity_do_not_render_as_text": {
+          "exercise_id": "overhead-press-dumbbell",
+          "name": "Overhead Press (Dumbbell)",
+          "source_catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989"
+        },
+        "exact_catalogue_source": {
+          "source_english": {
+            "description": "Overhead Press (Dumbbell) presses the weight from shoulder height to overhead while the standing trunk stays braced.",
+            "instructions": [
+              "Stand with your feet shoulder-width apart, holding a dumbbell in each hand at shoulder level with your palms facing forward.",
+              "Press the dumbbells upward until your arms are fully extended overhead.",
+              "Pause for a moment at the top, then slowly lower the dumbbells back down to shoulder level.",
+              "Repeat for the desired number of repetitions."
+            ],
+            "form_cues": [
+              "Keep wrists stacked over the elbows.",
+              "Brace the trunk and keep the shoulder blades controlled.",
+              "Use a smooth lower and press."
+            ],
+            "common_mistakes": [
+              "Flaring the elbows.",
+              "Arching or sagging the trunk.",
+              "Bouncing at the bottom."
+            ],
+            "safety_note": "Use a stable setup and stop before the shoulders or wrists lose controlled alignment.",
+            "provenance": "adapted"
+          },
+          "equipment": "dumbbell",
+          "primary_muscle": "shoulders",
+          "secondary_muscles": [
+            "triceps"
+          ]
+        },
+        "style": {
+          "version": "v1",
+          "human_model": "One athletic bald male anatomical mannequin, opaque silver-gray muscular surfaces, consistent proportions and detailed 3D materials, plain black shorts, barefoot.",
+          "primary_highlight": {
+            "hex": "#F26445",
+            "rule": "Highlight only the exact primary muscle group provided for this exercise."
+          },
+          "secondary_highlight": {
+            "hex": "#F26445",
+            "intensity_fraction": [
+              0.4,
+              0.5
+            ],
+            "rule": "Only the exact secondary muscles, lighter same-hue highlight; if the list is empty add no secondary target."
+          },
+          "background": "Genuinely transparent PNG background, no white/checkerboard layer, no environment scene.",
+          "output": {
+            "format": "PNG",
+            "width": 1024,
+            "height": 1024,
+            "one_person": true,
+            "one_phase": true
+          },
+          "material_rules": "Highlights never make tissue transparent; no glow, whole-body orange tint, hair, text, labels, arrows, UI, borders, collage or extra person.",
+          "framing": "Full figure and all required equipment/supports visible within a square. Scale and use a three-quarter view to expose the specified contacts without changing anatomy, equipment, grip or technique.",
+          "no_invention": "Technique, equipment and muscles come only from the attached exact catalogue record. No extra attachments, numerical weights, brands or exact angles absent from the source."
+        },
+        "scene": {
+          "single_phase": "Overhead lockout",
+          "composition": "Standing shoulder-width, one dumbbell in each hand above its shoulder, arms extended overhead with palms facing forward. Torso braced and ribs controlled, no backward lean or leg drive. Whole arms and both weights remain in frame; no bench, Smith rails or press machine.",
+          "source_instruction_quotes": [
+            {
+              "index": 0,
+              "text": "Stand with your feet shoulder-width apart, holding a dumbbell in each hand at shoulder level with your palms facing forward."
+            },
+            {
+              "index": 1,
+              "text": "Press the dumbbells upward until your arms are fully extended overhead."
+            }
+          ]
+        },
+        "reference_role": "Human appearance/proportions/materials only. Never copy pose, equipment or muscle targets from a reference."
+      },
+      "generation_prompt": "Create exactly one image for the following exact exercise record. Identity fields are metadata, never visible text. Preserve the source technique and depict only the chosen single phase.\n{\n  \"exact_catalogue_source\": {\n    \"equipment\": \"dumbbell\",\n    \"primary_muscle\": \"shoulders\",\n    \"secondary_muscles\": [\n      \"triceps\"\n    ],\n    \"source_english\": {\n      \"common_mistakes\": [\n        \"Flaring the elbows.\",\n        \"Arching or sagging the trunk.\",\n        \"Bouncing at the bottom.\"\n      ],\n      \"description\": \"Overhead Press (Dumbbell) presses the weight from shoulder height to overhead while the standing trunk stays braced.\",\n      \"form_cues\": [\n        \"Keep wrists stacked over the elbows.\",\n        \"Brace the trunk and keep the shoulder blades controlled.\",\n        \"Use a smooth lower and press.\"\n      ],\n      \"instructions\": [\n        \"Stand with your feet shoulder-width apart, holding a dumbbell in each hand at shoulder level with your palms facing forward.\",\n        \"Press the dumbbells upward until your arms are fully extended overhead.\",\n        \"Pause for a moment at the top, then slowly lower the dumbbells back down to shoulder level.\",\n        \"Repeat for the desired number of repetitions.\"\n      ],\n      \"provenance\": \"adapted\",\n      \"safety_note\": \"Use a stable setup and stop before the shoulders or wrists lose controlled alignment.\"\n    }\n  },\n  \"identity_do_not_render_as_text\": {\n    \"exercise_id\": \"overhead-press-dumbbell\",\n    \"name\": \"Overhead Press (Dumbbell)\",\n    \"source_catalog_sha256\": \"a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989\"\n  },\n  \"reference_role\": \"Human appearance/proportions/materials only. Never copy pose, equipment or muscle targets from a reference.\",\n  \"scene\": {\n    \"composition\": \"Standing shoulder-width, one dumbbell in each hand above its shoulder, arms extended overhead with palms facing forward. Torso braced and ribs controlled, no backward lean or leg drive. Whole arms and both weights remain in frame; no bench, Smith rails or press machine.\",\n    \"single_phase\": \"Overhead lockout\",\n    \"source_instruction_quotes\": [\n      {\n        \"index\": 0,\n        \"text\": \"Stand with your feet shoulder-width apart, holding a dumbbell in each hand at shoulder level with your palms facing forward.\"\n      },\n      {\n        \"index\": 1,\n        \"text\": \"Press the dumbbells upward until your arms are fully extended overhead.\"\n      }\n    ]\n  },\n  \"style\": {\n    \"background\": \"Genuinely transparent PNG background, no white/checkerboard layer, no environment scene.\",\n    \"framing\": \"Full figure and all required equipment/supports visible within a square. Scale and use a three-quarter view to expose the specified contacts without changing anatomy, equipment, grip or technique.\",\n    \"human_model\": \"One athletic bald male anatomical mannequin, opaque silver-gray muscular surfaces, consistent proportions and detailed 3D materials, plain black shorts, barefoot.\",\n    \"material_rules\": \"Highlights never make tissue transparent; no glow, whole-body orange tint, hair, text, labels, arrows, UI, borders, collage or extra person.\",\n    \"no_invention\": \"Technique, equipment and muscles come only from the attached exact catalogue record. No extra attachments, numerical weights, brands or exact angles absent from the source.\",\n    \"output\": {\n      \"format\": \"PNG\",\n      \"height\": 1024,\n      \"one_person\": true,\n      \"one_phase\": true,\n      \"width\": 1024\n    },\n    \"primary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"rule\": \"Highlight only the exact primary muscle group provided for this exercise.\"\n    },\n    \"secondary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"intensity_fraction\": [\n        0.4,\n        0.5\n      ],\n      \"rule\": \"Only the exact secondary muscles, lighter same-hue highlight; if the list is empty add no secondary target.\"\n    },\n    \"version\": \"v1\"\n  }\n}",
+      "generation_prompt_sha256": "2afa746a6f915a7a1e78b0af209a73c881b054dc5328f9f405e0b117a61317b9",
+      "style_version": "v1",
+      "planned_output_relative_path": "agent-03-others-002/overhead-press-dumbbell/attempt-1.png",
+      "output_root": "/workspace/exercise-image-results",
+      "result_path": null,
+      "result_sha256": null,
+      "attempts": 0,
+      "technical_check": null,
+      "user_review": null,
+      "agent_visual_review": "not_performed",
+      "preparation_status": "prompt_prepared_not_generated"
+    }
+  ]
+}
