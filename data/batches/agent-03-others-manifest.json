@@ -306,7 +306,7 @@
       "content_commit": "1f1c7f944715f70e51cb327967b693b0bce54fac"
     },
     "agent-03-others-009": {
-      "state": "partial_github_verified",
+      "state": "stopped_on_generation_error",
       "generated_count": 1,
       "skipped_count": 0,
       "failed_count": 1,
@@ -316,6 +316,13 @@
           "exercise_id": "hanging-knee-raise",
           "kind": "blocked_quota",
           "details": "image generation failed: http 429 Too Many Requests: Some(\"{\\\"error\\\":{\\\"type\\\":\\\"usage_limit_reached\\\",\\\"message\\\":\\\"The usage limit has been reached\\\",\\\"plan_type\\\":\\\"plus\\\",\\\"resets_at\\\":1790940095,\\\"eligible_promo\\\":null,\\\"limit_window_minutes\\\":null,\\\"resets_in_seconds\\\":63858}}\")"
+        },
+        {
+          "exercise_id": "hanging-knee-raise",
+          "kind": "blocked_quota",
+          "details": "image generation failed: http 429 Too Many Requests: Some(\"{\\\"error\\\":{\\\"type\\\":\\\"usage_limit_reached\\\",\\\"message\\\":\\\"The usage limit has been reached\\\",\\\"plan_type\\\":\\\"plus\\\",\\\"resets_at\\\":1790940095,\\\"eligible_promo\\\":null,\\\"limit_window_minutes\\\":null,\\\"resets_in_seconds\\\":62230}}\")",
+          "attempt": 2,
+          "timestamp": "2026-10-01T18:04:25+00:00"
         }
       ],
       "expected_ids": [
@@ -4758,7 +4765,7 @@
       "verified_at": "2026-10-01T17:38:33+00:00"
     }
   ],
-  "last_updated_at": "2026-10-01T17:38:33+00:00",
+  "last_updated_at": "2026-10-01T18:04:25+00:00",
   "followup_preparation": {
     "source_branch": "agent-03-inventory-2026-10-01",
     "source_commit": "47f772a7824e2377f4454efe2e7365bcb2fec0b1",
