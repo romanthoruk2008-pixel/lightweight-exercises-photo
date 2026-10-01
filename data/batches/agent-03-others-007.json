@@ -1,0 +1,1366 @@
+{
+  "schema_version": 1,
+  "batch_id": "agent-03-others-007",
+  "owner_agent": "agent-03",
+  "branch": "agent-03-inventory-2026-10-01",
+  "prepared_at": "2026-10-01T15:51:27.416202+00:00",
+  "status": "prepared_only",
+  "generation_authorized_now": false,
+  "catalog_path": "data/exercises/catalog.json",
+  "catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+  "catalog_source_commit": "988f7d8ab38ccdc5ad16c30cf215e1d0952605ef",
+  "style_version": "v1",
+  "style_path": "docs/exercise-image-style.md",
+  "style_sha256": "8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578",
+  "queue_path": "data/queues/agent-03-other-queue.json",
+  "human_reference": {
+    "repository_path": "assets/exercises/biceps-curl-dumbbell.png",
+    "sha256": "52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f",
+    "role": "Human appearance only; verified committed blob, not visually reviewed during preparation."
+  },
+  "constraints": {
+    "only_builtin_imagegen": true,
+    "paid_api_allowed": false,
+    "supabase_allowed": false,
+    "shared_progress_changes_allowed": false,
+    "catalog_changes_allowed": false,
+    "automatic_retries_allowed": false,
+    "generation_performed": false,
+    "reuse_unchanged_ID_and_prompt_hash_for_output_manifest": true,
+    "outputs_outside_git": true,
+    "revalidate_live_branches_before_each_call": true
+  },
+  "exercise_count": 10,
+  "exercise_ids": [
+    "single-arm-triceps-extension-dumbbell",
+    "single-leg-hip-thrust-dumbbell",
+    "single-leg-romanian-deadlift-barbell",
+    "skullcrusher-barbell",
+    "skullcrusher-dumbbell",
+    "spider-curl-barbell",
+    "squat-barbell",
+    "standing-calf-raise-barbell",
+    "standing-military-press-barbell",
+    "straight-leg-deadlift-barbell"
+  ],
+  "exercises": [
+    {
+      "exercise_id": "single-arm-triceps-extension-dumbbell",
+      "name": "Single Arm Tricep Extension (Dumbbell)",
+      "source_english": {
+        "description": "Support one hand on a bench, lower the dumbbell behind the head, extend the elbow overhead, then switch arms.",
+        "instructions": [
+          "Sit on a bench with your back straight and feet flat on the ground.",
+          "Hold a dumbbell in one hand and place your other hand on the bench for support.",
+          "Raise the dumbbell overhead, keeping your upper arm close to your head and your elbow pointing forward.",
+          "Lower the dumbbell behind your head by bending your elbow, keeping your upper arm stationary.",
+          "Extend your arm back up to the starting position, fully straightening your elbow.",
+          "Repeat for the desired number of repetitions, then switch arms."
+        ],
+        "form_cues": [
+          "Keep the trunk against support.",
+          "Track the elbows on the working path.",
+          "Stop short of a forced lockout."
+        ],
+        "common_mistakes": [
+          "Losing contact with the support.",
+          "Flaring the elbows abruptly.",
+          "Using momentum to lock out."
+        ],
+        "safety_note": "Use a secure setup and stop if alignment or control is lost.",
+        "provenance": "adapted"
+      },
+      "equipment": "dumbbell",
+      "primary_muscle": "triceps",
+      "secondary_muscles": [],
+      "source_catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+      "source_catalog_record_sha256": "93cedd1efe46fc9cb1ff3ffb74711dedf453fa091598f3bd1f4766ec11a4b23d",
+      "source_english_sha256": "0ad6ff73bd6fa4d5b461e66dda4a2546e03ad1a185274734440b925933a11c5a",
+      "prompt_payload": {
+        "identity_do_not_render_as_text": {
+          "exercise_id": "single-arm-triceps-extension-dumbbell",
+          "name": "Single Arm Tricep Extension (Dumbbell)",
+          "source_catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989"
+        },
+        "exact_catalogue_source": {
+          "source_english": {
+            "description": "Support one hand on a bench, lower the dumbbell behind the head, extend the elbow overhead, then switch arms.",
+            "instructions": [
+              "Sit on a bench with your back straight and feet flat on the ground.",
+              "Hold a dumbbell in one hand and place your other hand on the bench for support.",
+              "Raise the dumbbell overhead, keeping your upper arm close to your head and your elbow pointing forward.",
+              "Lower the dumbbell behind your head by bending your elbow, keeping your upper arm stationary.",
+              "Extend your arm back up to the starting position, fully straightening your elbow.",
+              "Repeat for the desired number of repetitions, then switch arms."
+            ],
+            "form_cues": [
+              "Keep the trunk against support.",
+              "Track the elbows on the working path.",
+              "Stop short of a forced lockout."
+            ],
+            "common_mistakes": [
+              "Losing contact with the support.",
+              "Flaring the elbows abruptly.",
+              "Using momentum to lock out."
+            ],
+            "safety_note": "Use a secure setup and stop if alignment or control is lost.",
+            "provenance": "adapted"
+          },
+          "equipment": "dumbbell",
+          "primary_muscle": "triceps",
+          "secondary_muscles": []
+        },
+        "style": {
+          "version": "v1",
+          "human_model": "One athletic bald male anatomical mannequin, opaque silver-gray muscular surfaces, consistent proportions and detailed 3D materials, plain black shorts, barefoot.",
+          "primary_highlight": {
+            "hex": "#F26445",
+            "rule": "Highlight only the exact primary muscle group provided for this exercise."
+          },
+          "secondary_highlight": {
+            "hex": "#F26445",
+            "intensity_fraction": [
+              0.4,
+              0.5
+            ],
+            "rule": "Only the exact secondary muscles, lighter same-hue highlight; if the list is empty add no secondary target."
+          },
+          "background": "Genuinely transparent PNG background, no white/checkerboard layer, no environment scene.",
+          "output": {
+            "format": "PNG",
+            "width": 1024,
+            "height": 1024,
+            "one_person": true,
+            "one_phase": true
+          },
+          "material_rules": "Highlights never make tissue transparent; no glow, whole-body orange tint, hair, text, labels, arrows, UI, borders, collage or extra person.",
+          "framing": "Full figure and all required equipment/supports visible within a square. Scale and use a three-quarter view to expose the specified contacts without changing anatomy, equipment, grip or technique.",
+          "no_invention": "Technique, equipment and muscles come only from the attached exact catalogue record. No extra attachments, numerical weights, brands or exact angles absent from the source."
+        },
+        "scene": {
+          "single_phase": "Supported one-arm behind-head lower phase",
+          "composition": "Sit on a bench with back straight and feet flat. One hand holds the ONLY dumbbell overhead and lowers it behind the head through elbow flexion; that upper arm remains near the head and elbow points forward. The other hand contacts the bench for support. Keep trunk against bench support as the source cue requires; no invented backrest angle, two-handed dumbbell grip, shoulder press or forced lockout. Show the supporting hand and working elbow clearly.",
+          "source_instruction_quotes": [
+            {
+              "index": 0,
+              "text": "Sit on a bench with your back straight and feet flat on the ground."
+            },
+            {
+              "index": 1,
+              "text": "Hold a dumbbell in one hand and place your other hand on the bench for support."
+            },
+            {
+              "index": 2,
+              "text": "Raise the dumbbell overhead, keeping your upper arm close to your head and your elbow pointing forward."
+            },
+            {
+              "index": 3,
+              "text": "Lower the dumbbell behind your head by bending your elbow, keeping your upper arm stationary."
+            },
+            {
+              "index": 4,
+              "text": "Extend your arm back up to the starting position, fully straightening your elbow."
+            }
+          ]
+        },
+        "reference_role": "Human appearance/proportions/materials only. Never copy pose, equipment or muscle targets from a reference."
+      },
+      "generation_prompt": "Create exactly one image for the following exact exercise record. Identity fields are metadata, never visible text. Preserve the source technique and depict only the chosen single phase.\n{\n  \"exact_catalogue_source\": {\n    \"equipment\": \"dumbbell\",\n    \"primary_muscle\": \"triceps\",\n    \"secondary_muscles\": [],\n    \"source_english\": {\n      \"common_mistakes\": [\n        \"Losing contact with the support.\",\n        \"Flaring the elbows abruptly.\",\n        \"Using momentum to lock out.\"\n      ],\n      \"description\": \"Support one hand on a bench, lower the dumbbell behind the head, extend the elbow overhead, then switch arms.\",\n      \"form_cues\": [\n        \"Keep the trunk against support.\",\n        \"Track the elbows on the working path.\",\n        \"Stop short of a forced lockout.\"\n      ],\n      \"instructions\": [\n        \"Sit on a bench with your back straight and feet flat on the ground.\",\n        \"Hold a dumbbell in one hand and place your other hand on the bench for support.\",\n        \"Raise the dumbbell overhead, keeping your upper arm close to your head and your elbow pointing forward.\",\n        \"Lower the dumbbell behind your head by bending your elbow, keeping your upper arm stationary.\",\n        \"Extend your arm back up to the starting position, fully straightening your elbow.\",\n        \"Repeat for the desired number of repetitions, then switch arms.\"\n      ],\n      \"provenance\": \"adapted\",\n      \"safety_note\": \"Use a secure setup and stop if alignment or control is lost.\"\n    }\n  },\n  \"identity_do_not_render_as_text\": {\n    \"exercise_id\": \"single-arm-triceps-extension-dumbbell\",\n    \"name\": \"Single Arm Tricep Extension (Dumbbell)\",\n    \"source_catalog_sha256\": \"a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989\"\n  },\n  \"reference_role\": \"Human appearance/proportions/materials only. Never copy pose, equipment or muscle targets from a reference.\",\n  \"scene\": {\n    \"composition\": \"Sit on a bench with back straight and feet flat. One hand holds the ONLY dumbbell overhead and lowers it behind the head through elbow flexion; that upper arm remains near the head and elbow points forward. The other hand contacts the bench for support. Keep trunk against bench support as the source cue requires; no invented backrest angle, two-handed dumbbell grip, shoulder press or forced lockout. Show the supporting hand and working elbow clearly.\",\n    \"single_phase\": \"Supported one-arm behind-head lower phase\",\n    \"source_instruction_quotes\": [\n      {\n        \"index\": 0,\n        \"text\": \"Sit on a bench with your back straight and feet flat on the ground.\"\n      },\n      {\n        \"index\": 1,\n        \"text\": \"Hold a dumbbell in one hand and place your other hand on the bench for support.\"\n      },\n      {\n        \"index\": 2,\n        \"text\": \"Raise the dumbbell overhead, keeping your upper arm close to your head and your elbow pointing forward.\"\n      },\n      {\n        \"index\": 3,\n        \"text\": \"Lower the dumbbell behind your head by bending your elbow, keeping your upper arm stationary.\"\n      },\n      {\n        \"index\": 4,\n        \"text\": \"Extend your arm back up to the starting position, fully straightening your elbow.\"\n      }\n    ]\n  },\n  \"style\": {\n    \"background\": \"Genuinely transparent PNG background, no white/checkerboard layer, no environment scene.\",\n    \"framing\": \"Full figure and all required equipment/supports visible within a square. Scale and use a three-quarter view to expose the specified contacts without changing anatomy, equipment, grip or technique.\",\n    \"human_model\": \"One athletic bald male anatomical mannequin, opaque silver-gray muscular surfaces, consistent proportions and detailed 3D materials, plain black shorts, barefoot.\",\n    \"material_rules\": \"Highlights never make tissue transparent; no glow, whole-body orange tint, hair, text, labels, arrows, UI, borders, collage or extra person.\",\n    \"no_invention\": \"Technique, equipment and muscles come only from the attached exact catalogue record. No extra attachments, numerical weights, brands or exact angles absent from the source.\",\n    \"output\": {\n      \"format\": \"PNG\",\n      \"height\": 1024,\n      \"one_person\": true,\n      \"one_phase\": true,\n      \"width\": 1024\n    },\n    \"primary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"rule\": \"Highlight only the exact primary muscle group provided for this exercise.\"\n    },\n    \"secondary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"intensity_fraction\": [\n        0.4,\n        0.5\n      ],\n      \"rule\": \"Only the exact secondary muscles, lighter same-hue highlight; if the list is empty add no secondary target.\"\n    },\n    \"version\": \"v1\"\n  }\n}",
+      "generation_prompt_sha256": "c0b2d625ea7fad4f07a372ec9ec28417dab1f9ce2f1b88bb0587a1fdccd44594",
+      "style_version": "v1",
+      "planned_output_relative_path": "agent-03-others-007/single-arm-triceps-extension-dumbbell/attempt-1.png",
+      "output_root": "/workspace/exercise-image-results",
+      "result_path": null,
+      "result_sha256": null,
+      "attempts": 0,
+      "technical_check": null,
+      "user_review": null,
+      "agent_visual_review": "not_performed",
+      "preparation_status": "prompt_prepared_not_generated",
+      "planned_png_path": "/workspace/exercise-image-results/agent-03-others-007/single-arm-triceps-extension-dumbbell/attempt-1.png"
+    },
+    {
+      "exercise_id": "single-leg-hip-thrust-dumbbell",
+      "name": "Single Leg Hip Thrust (Dumbbell)",
+      "source_english": {
+        "description": "Brace the upper back on a bench with a dumbbell across one hip, thrust through that foot, then switch sides.",
+        "instructions": [
+          "Set the upper back against a flat bench with one foot planted and a dumbbell across that hip.",
+          "Extend the other leg forward and hold the dumbbell in place.",
+          "Drive through the planted heel until the loaded hip is fully extended.",
+          "Lower the hips slowly, then change sides."
+        ],
+        "form_cues": [
+          "Keep the support points fixed.",
+          "Use a quiet controlled path.",
+          "Reset fully between repetitions."
+        ],
+        "common_mistakes": [
+          "Shifting the support point.",
+          "Using momentum instead of the target joint path.",
+          "Cutting the return short."
+        ],
+        "safety_note": "Keep the bench stable and stop if the pelvis cannot stay level.",
+        "provenance": "authored"
+      },
+      "equipment": "dumbbell",
+      "primary_muscle": "glutes",
+      "secondary_muscles": [
+        "hamstrings",
+        "quadriceps"
+      ],
+      "source_catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+      "source_catalog_record_sha256": "4053ee95f32252560e99e4845c31b042678f20df8bda49091e1d3f186057c6fb",
+      "source_english_sha256": "86c80310829b5350936061bd8f5e207076acfc256879182ad8712d8c1d5d2982",
+      "prompt_payload": {
+        "identity_do_not_render_as_text": {
+          "exercise_id": "single-leg-hip-thrust-dumbbell",
+          "name": "Single Leg Hip Thrust (Dumbbell)",
+          "source_catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989"
+        },
+        "exact_catalogue_source": {
+          "source_english": {
+            "description": "Brace the upper back on a bench with a dumbbell across one hip, thrust through that foot, then switch sides.",
+            "instructions": [
+              "Set the upper back against a flat bench with one foot planted and a dumbbell across that hip.",
+              "Extend the other leg forward and hold the dumbbell in place.",
+              "Drive through the planted heel until the loaded hip is fully extended.",
+              "Lower the hips slowly, then change sides."
+            ],
+            "form_cues": [
+              "Keep the support points fixed.",
+              "Use a quiet controlled path.",
+              "Reset fully between repetitions."
+            ],
+            "common_mistakes": [
+              "Shifting the support point.",
+              "Using momentum instead of the target joint path.",
+              "Cutting the return short."
+            ],
+            "safety_note": "Keep the bench stable and stop if the pelvis cannot stay level.",
+            "provenance": "authored"
+          },
+          "equipment": "dumbbell",
+          "primary_muscle": "glutes",
+          "secondary_muscles": [
+            "hamstrings",
+            "quadriceps"
+          ]
+        },
+        "style": {
+          "version": "v1",
+          "human_model": "One athletic bald male anatomical mannequin, opaque silver-gray muscular surfaces, consistent proportions and detailed 3D materials, plain black shorts, barefoot.",
+          "primary_highlight": {
+            "hex": "#F26445",
+            "rule": "Highlight only the exact primary muscle group provided for this exercise."
+          },
+          "secondary_highlight": {
+            "hex": "#F26445",
+            "intensity_fraction": [
+              0.4,
+              0.5
+            ],
+            "rule": "Only the exact secondary muscles, lighter same-hue highlight; if the list is empty add no secondary target."
+          },
+          "background": "Genuinely transparent PNG background, no white/checkerboard layer, no environment scene.",
+          "output": {
+            "format": "PNG",
+            "width": 1024,
+            "height": 1024,
+            "one_person": true,
+            "one_phase": true
+          },
+          "material_rules": "Highlights never make tissue transparent; no glow, whole-body orange tint, hair, text, labels, arrows, UI, borders, collage or extra person.",
+          "framing": "Full figure and all required equipment/supports visible within a square. Scale and use a three-quarter view to expose the specified contacts without changing anatomy, equipment, grip or technique.",
+          "no_invention": "Technique, equipment and muscles come only from the attached exact catalogue record. No extra attachments, numerical weights, brands or exact angles absent from the source."
+        },
+        "scene": {
+          "single_phase": "Loaded single-leg hip-extension top",
+          "composition": "Upper back contacts the edge of a stable FLAT bench. One foot is planted, and one dumbbell lies across that SAME loaded hip, held securely by the hands. The other leg extends forward without floor contact. Drive through planted heel until loaded hip is fully extended, pelvis level and support points fixed. Show the bench edge, planted foot, extended free leg and single dumbbell; no two-foot bridge or lying lengthwise on the bench.",
+          "source_instruction_quotes": [
+            {
+              "index": 0,
+              "text": "Set the upper back against a flat bench with one foot planted and a dumbbell across that hip."
+            },
+            {
+              "index": 1,
+              "text": "Extend the other leg forward and hold the dumbbell in place."
+            },
+            {
+              "index": 2,
+              "text": "Drive through the planted heel until the loaded hip is fully extended."
+            },
+            {
+              "index": 3,
+              "text": "Lower the hips slowly, then change sides."
+            }
+          ]
+        },
+        "reference_role": "Human appearance/proportions/materials only. Never copy pose, equipment or muscle targets from a reference."
+      },
+      "generation_prompt": "Create exactly one image for the following exact exercise record. Identity fields are metadata, never visible text. Preserve the source technique and depict only the chosen single phase.\n{\n  \"exact_catalogue_source\": {\n    \"equipment\": \"dumbbell\",\n    \"primary_muscle\": \"glutes\",\n    \"secondary_muscles\": [\n      \"hamstrings\",\n      \"quadriceps\"\n    ],\n    \"source_english\": {\n      \"common_mistakes\": [\n        \"Shifting the support point.\",\n        \"Using momentum instead of the target joint path.\",\n        \"Cutting the return short.\"\n      ],\n      \"description\": \"Brace the upper back on a bench with a dumbbell across one hip, thrust through that foot, then switch sides.\",\n      \"form_cues\": [\n        \"Keep the support points fixed.\",\n        \"Use a quiet controlled path.\",\n        \"Reset fully between repetitions.\"\n      ],\n      \"instructions\": [\n        \"Set the upper back against a flat bench with one foot planted and a dumbbell across that hip.\",\n        \"Extend the other leg forward and hold the dumbbell in place.\",\n        \"Drive through the planted heel until the loaded hip is fully extended.\",\n        \"Lower the hips slowly, then change sides.\"\n      ],\n      \"provenance\": \"authored\",\n      \"safety_note\": \"Keep the bench stable and stop if the pelvis cannot stay level.\"\n    }\n  },\n  \"identity_do_not_render_as_text\": {\n    \"exercise_id\": \"single-leg-hip-thrust-dumbbell\",\n    \"name\": \"Single Leg Hip Thrust (Dumbbell)\",\n    \"source_catalog_sha256\": \"a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989\"\n  },\n  \"reference_role\": \"Human appearance/proportions/materials only. Never copy pose, equipment or muscle targets from a reference.\",\n  \"scene\": {\n    \"composition\": \"Upper back contacts the edge of a stable FLAT bench. One foot is planted, and one dumbbell lies across that SAME loaded hip, held securely by the hands. The other leg extends forward without floor contact. Drive through planted heel until loaded hip is fully extended, pelvis level and support points fixed. Show the bench edge, planted foot, extended free leg and single dumbbell; no two-foot bridge or lying lengthwise on the bench.\",\n    \"single_phase\": \"Loaded single-leg hip-extension top\",\n    \"source_instruction_quotes\": [\n      {\n        \"index\": 0,\n        \"text\": \"Set the upper back against a flat bench with one foot planted and a dumbbell across that hip.\"\n      },\n      {\n        \"index\": 1,\n        \"text\": \"Extend the other leg forward and hold the dumbbell in place.\"\n      },\n      {\n        \"index\": 2,\n        \"text\": \"Drive through the planted heel until the loaded hip is fully extended.\"\n      },\n      {\n        \"index\": 3,\n        \"text\": \"Lower the hips slowly, then change sides.\"\n      }\n    ]\n  },\n  \"style\": {\n    \"background\": \"Genuinely transparent PNG background, no white/checkerboard layer, no environment scene.\",\n    \"framing\": \"Full figure and all required equipment/supports visible within a square. Scale and use a three-quarter view to expose the specified contacts without changing anatomy, equipment, grip or technique.\",\n    \"human_model\": \"One athletic bald male anatomical mannequin, opaque silver-gray muscular surfaces, consistent proportions and detailed 3D materials, plain black shorts, barefoot.\",\n    \"material_rules\": \"Highlights never make tissue transparent; no glow, whole-body orange tint, hair, text, labels, arrows, UI, borders, collage or extra person.\",\n    \"no_invention\": \"Technique, equipment and muscles come only from the attached exact catalogue record. No extra attachments, numerical weights, brands or exact angles absent from the source.\",\n    \"output\": {\n      \"format\": \"PNG\",\n      \"height\": 1024,\n      \"one_person\": true,\n      \"one_phase\": true,\n      \"width\": 1024\n    },\n    \"primary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"rule\": \"Highlight only the exact primary muscle group provided for this exercise.\"\n    },\n    \"secondary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"intensity_fraction\": [\n        0.4,\n        0.5\n      ],\n      \"rule\": \"Only the exact secondary muscles, lighter same-hue highlight; if the list is empty add no secondary target.\"\n    },\n    \"version\": \"v1\"\n  }\n}",
+      "generation_prompt_sha256": "c8b543a64e8d63cd31453b69c3ed7a66d271d96a05f05ac7b74dff67a0671b50",
+      "style_version": "v1",
+      "planned_output_relative_path": "agent-03-others-007/single-leg-hip-thrust-dumbbell/attempt-1.png",
+      "output_root": "/workspace/exercise-image-results",
+      "result_path": null,
+      "result_sha256": null,
+      "attempts": 0,
+      "technical_check": null,
+      "user_review": null,
+      "agent_visual_review": "not_performed",
+      "preparation_status": "prompt_prepared_not_generated",
+      "planned_png_path": "/workspace/exercise-image-results/agent-03-others-007/single-leg-hip-thrust-dumbbell/attempt-1.png"
+    },
+    {
+      "exercise_id": "single-leg-romanian-deadlift-barbell",
+      "name": "Single Leg Romanian Deadlift (Barbell)",
+      "source_english": {
+        "description": "Stand on one foot with the barbell at the thighs, hinge as the free leg reaches back, then stand and switch.",
+        "instructions": [
+          "Stand with your feet hip-width apart, holding a barbell in front of your thighs with an overhand grip.",
+          "Shift your weight onto your left foot and lift your right foot slightly off the ground.",
+          "Hinge forward at the hips, keeping your back straight and your right leg extended behind you for balance.",
+          "Lower the barbell towards the ground, keeping it close to your body and your left leg slightly bent.",
+          "Pause for a moment at the bottom, then engage your glutes and hamstrings to lift your torso back up to the starting position.",
+          "Repeat for the desired number of repetitions, then switch sides."
+        ],
+        "form_cues": [
+          "Keep the load close.",
+          "Hinge without rounding.",
+          "Finish tall."
+        ],
+        "common_mistakes": [
+          "Shifting the support point.",
+          "Using momentum instead of the target joint path.",
+          "Cutting the return short."
+        ],
+        "safety_note": "Keep the load close and stop if the spine cannot remain neutral.",
+        "provenance": "adapted"
+      },
+      "equipment": "barbell",
+      "primary_muscle": "hamstrings",
+      "secondary_muscles": [
+        "glutes",
+        "lower_back",
+        "upper_back",
+        "lats"
+      ],
+      "source_catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+      "source_catalog_record_sha256": "e8c1ab80669ebac1607a8fdaa11e97ec7c6128d2760a89482cca963d63f0d425",
+      "source_english_sha256": "25e5e56b8d091e9443107f6af74d98ef67bc288261439d1e9aec1f9f80f0a7bb",
+      "prompt_payload": {
+        "identity_do_not_render_as_text": {
+          "exercise_id": "single-leg-romanian-deadlift-barbell",
+          "name": "Single Leg Romanian Deadlift (Barbell)",
+          "source_catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989"
+        },
+        "exact_catalogue_source": {
+          "source_english": {
+            "description": "Stand on one foot with the barbell at the thighs, hinge as the free leg reaches back, then stand and switch.",
+            "instructions": [
+              "Stand with your feet hip-width apart, holding a barbell in front of your thighs with an overhand grip.",
+              "Shift your weight onto your left foot and lift your right foot slightly off the ground.",
+              "Hinge forward at the hips, keeping your back straight and your right leg extended behind you for balance.",
+              "Lower the barbell towards the ground, keeping it close to your body and your left leg slightly bent.",
+              "Pause for a moment at the bottom, then engage your glutes and hamstrings to lift your torso back up to the starting position.",
+              "Repeat for the desired number of repetitions, then switch sides."
+            ],
+            "form_cues": [
+              "Keep the load close.",
+              "Hinge without rounding.",
+              "Finish tall."
+            ],
+            "common_mistakes": [
+              "Shifting the support point.",
+              "Using momentum instead of the target joint path.",
+              "Cutting the return short."
+            ],
+            "safety_note": "Keep the load close and stop if the spine cannot remain neutral.",
+            "provenance": "adapted"
+          },
+          "equipment": "barbell",
+          "primary_muscle": "hamstrings",
+          "secondary_muscles": [
+            "glutes",
+            "lower_back",
+            "upper_back",
+            "lats"
+          ]
+        },
+        "style": {
+          "version": "v1",
+          "human_model": "One athletic bald male anatomical mannequin, opaque silver-gray muscular surfaces, consistent proportions and detailed 3D materials, plain black shorts, barefoot.",
+          "primary_highlight": {
+            "hex": "#F26445",
+            "rule": "Highlight only the exact primary muscle group provided for this exercise."
+          },
+          "secondary_highlight": {
+            "hex": "#F26445",
+            "intensity_fraction": [
+              0.4,
+              0.5
+            ],
+            "rule": "Only the exact secondary muscles, lighter same-hue highlight; if the list is empty add no secondary target."
+          },
+          "background": "Genuinely transparent PNG background, no white/checkerboard layer, no environment scene.",
+          "output": {
+            "format": "PNG",
+            "width": 1024,
+            "height": 1024,
+            "one_person": true,
+            "one_phase": true
+          },
+          "material_rules": "Highlights never make tissue transparent; no glow, whole-body orange tint, hair, text, labels, arrows, UI, borders, collage or extra person.",
+          "framing": "Full figure and all required equipment/supports visible within a square. Scale and use a three-quarter view to expose the specified contacts without changing anatomy, equipment, grip or technique.",
+          "no_invention": "Technique, equipment and muscles come only from the attached exact catalogue record. No extra attachments, numerical weights, brands or exact angles absent from the source."
+        },
+        "scene": {
+          "single_phase": "Left-foot hip hinge with right leg reaching back",
+          "composition": "LEFT foot is the only floor contact, left knee slightly bent. RIGHT leg extends behind for balance as the torso hinges forward with a straight back. Both hands hold a single free barbell OVERHAND, lowered close to the body toward the ground. Preserve exact source sides, grip and single-leg balance. Stop before rounding; no floor-reset conventional deadlift, second grounded foot or bench support. No invented numeric hinge angle or grip width.",
+          "source_instruction_quotes": [
+            {
+              "index": 0,
+              "text": "Stand with your feet hip-width apart, holding a barbell in front of your thighs with an overhand grip."
+            },
+            {
+              "index": 1,
+              "text": "Shift your weight onto your left foot and lift your right foot slightly off the ground."
+            },
+            {
+              "index": 2,
+              "text": "Hinge forward at the hips, keeping your back straight and your right leg extended behind you for balance."
+            },
+            {
+              "index": 3,
+              "text": "Lower the barbell towards the ground, keeping it close to your body and your left leg slightly bent."
+            },
+            {
+              "index": 4,
+              "text": "Pause for a moment at the bottom, then engage your glutes and hamstrings to lift your torso back up to the starting position."
+            }
+          ]
+        },
+        "reference_role": "Human appearance/proportions/materials only. Never copy pose, equipment or muscle targets from a reference."
+      },
+      "generation_prompt": "Create exactly one image for the following exact exercise record. Identity fields are metadata, never visible text. Preserve the source technique and depict only the chosen single phase.\n{\n  \"exact_catalogue_source\": {\n    \"equipment\": \"barbell\",\n    \"primary_muscle\": \"hamstrings\",\n    \"secondary_muscles\": [\n      \"glutes\",\n      \"lower_back\",\n      \"upper_back\",\n      \"lats\"\n    ],\n    \"source_english\": {\n      \"common_mistakes\": [\n        \"Shifting the support point.\",\n        \"Using momentum instead of the target joint path.\",\n        \"Cutting the return short.\"\n      ],\n      \"description\": \"Stand on one foot with the barbell at the thighs, hinge as the free leg reaches back, then stand and switch.\",\n      \"form_cues\": [\n        \"Keep the load close.\",\n        \"Hinge without rounding.\",\n        \"Finish tall.\"\n      ],\n      \"instructions\": [\n        \"Stand with your feet hip-width apart, holding a barbell in front of your thighs with an overhand grip.\",\n        \"Shift your weight onto your left foot and lift your right foot slightly off the ground.\",\n        \"Hinge forward at the hips, keeping your back straight and your right leg extended behind you for balance.\",\n        \"Lower the barbell towards the ground, keeping it close to your body and your left leg slightly bent.\",\n        \"Pause for a moment at the bottom, then engage your glutes and hamstrings to lift your torso back up to the starting position.\",\n        \"Repeat for the desired number of repetitions, then switch sides.\"\n      ],\n      \"provenance\": \"adapted\",\n      \"safety_note\": \"Keep the load close and stop if the spine cannot remain neutral.\"\n    }\n  },\n  \"identity_do_not_render_as_text\": {\n    \"exercise_id\": \"single-leg-romanian-deadlift-barbell\",\n    \"name\": \"Single Leg Romanian Deadlift (Barbell)\",\n    \"source_catalog_sha256\": \"a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989\"\n  },\n  \"reference_role\": \"Human appearance/proportions/materials only. Never copy pose, equipment or muscle targets from a reference.\",\n  \"scene\": {\n    \"composition\": \"LEFT foot is the only floor contact, left knee slightly bent. RIGHT leg extends behind for balance as the torso hinges forward with a straight back. Both hands hold a single free barbell OVERHAND, lowered close to the body toward the ground. Preserve exact source sides, grip and single-leg balance. Stop before rounding; no floor-reset conventional deadlift, second grounded foot or bench support. No invented numeric hinge angle or grip width.\",\n    \"single_phase\": \"Left-foot hip hinge with right leg reaching back\",\n    \"source_instruction_quotes\": [\n      {\n        \"index\": 0,\n        \"text\": \"Stand with your feet hip-width apart, holding a barbell in front of your thighs with an overhand grip.\"\n      },\n      {\n        \"index\": 1,\n        \"text\": \"Shift your weight onto your left foot and lift your right foot slightly off the ground.\"\n      },\n      {\n        \"index\": 2,\n        \"text\": \"Hinge forward at the hips, keeping your back straight and your right leg extended behind you for balance.\"\n      },\n      {\n        \"index\": 3,\n        \"text\": \"Lower the barbell towards the ground, keeping it close to your body and your left leg slightly bent.\"\n      },\n      {\n        \"index\": 4,\n        \"text\": \"Pause for a moment at the bottom, then engage your glutes and hamstrings to lift your torso back up to the starting position.\"\n      }\n    ]\n  },\n  \"style\": {\n    \"background\": \"Genuinely transparent PNG background, no white/checkerboard layer, no environment scene.\",\n    \"framing\": \"Full figure and all required equipment/supports visible within a square. Scale and use a three-quarter view to expose the specified contacts without changing anatomy, equipment, grip or technique.\",\n    \"human_model\": \"One athletic bald male anatomical mannequin, opaque silver-gray muscular surfaces, consistent proportions and detailed 3D materials, plain black shorts, barefoot.\",\n    \"material_rules\": \"Highlights never make tissue transparent; no glow, whole-body orange tint, hair, text, labels, arrows, UI, borders, collage or extra person.\",\n    \"no_invention\": \"Technique, equipment and muscles come only from the attached exact catalogue record. No extra attachments, numerical weights, brands or exact angles absent from the source.\",\n    \"output\": {\n      \"format\": \"PNG\",\n      \"height\": 1024,\n      \"one_person\": true,\n      \"one_phase\": true,\n      \"width\": 1024\n    },\n    \"primary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"rule\": \"Highlight only the exact primary muscle group provided for this exercise.\"\n    },\n    \"secondary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"intensity_fraction\": [\n        0.4,\n        0.5\n      ],\n      \"rule\": \"Only the exact secondary muscles, lighter same-hue highlight; if the list is empty add no secondary target.\"\n    },\n    \"version\": \"v1\"\n  }\n}",
+      "generation_prompt_sha256": "75e1deb66405c293fea7919f3cef687087abcb85b7cfe82467a11cfbecb772b4",
+      "style_version": "v1",
+      "planned_output_relative_path": "agent-03-others-007/single-leg-romanian-deadlift-barbell/attempt-1.png",
+      "output_root": "/workspace/exercise-image-results",
+      "result_path": null,
+      "result_sha256": null,
+      "attempts": 0,
+      "technical_check": null,
+      "user_review": null,
+      "agent_visual_review": "not_performed",
+      "preparation_status": "prompt_prepared_not_generated",
+      "planned_png_path": "/workspace/exercise-image-results/agent-03-others-007/single-leg-romanian-deadlift-barbell/attempt-1.png"
+    },
+    {
+      "exercise_id": "skullcrusher-barbell",
+      "name": "Skullcrusher (Barbell)",
+      "source_english": {
+        "description": "A barbell skullcrusher lowers the bar toward the forehead by flexing the elbows while the upper arms stay nearly vertical.",
+        "instructions": [
+          "Lie on a flat bench with feet planted and hold the barbell over the chest with an overhand grip.",
+          "Keep the upper arms still and bend the elbows to lower the bar toward the forehead.",
+          "Stop just above the forehead, then extend the elbows to return the bar over the chest.",
+          "Repeat without letting the elbows flare or the bar drift behind the head."
+        ],
+        "form_cues": [
+          "Stack wrists over elbows.",
+          "Keep upper arms fixed.",
+          "Use a deliberate elbow range."
+        ],
+        "common_mistakes": [
+          "Moving the shoulders with the bar.",
+          "Flaring the elbows.",
+          "Lowering too fast toward the face."
+        ],
+        "safety_note": "Use a spotter or safety supports because the bar travels close to the head.",
+        "provenance": "adapted"
+      },
+      "equipment": "barbell",
+      "primary_muscle": "triceps",
+      "secondary_muscles": [],
+      "source_catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+      "source_catalog_record_sha256": "e369ca4881bb3c168babe5cb2e3de47d8c5706a0d4f2e06d96ce067d885c55f5",
+      "source_english_sha256": "c839a6d8d585a3b1284265f547daffe4eacab2798df868b343f0ed619813515a",
+      "prompt_payload": {
+        "identity_do_not_render_as_text": {
+          "exercise_id": "skullcrusher-barbell",
+          "name": "Skullcrusher (Barbell)",
+          "source_catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989"
+        },
+        "exact_catalogue_source": {
+          "source_english": {
+            "description": "A barbell skullcrusher lowers the bar toward the forehead by flexing the elbows while the upper arms stay nearly vertical.",
+            "instructions": [
+              "Lie on a flat bench with feet planted and hold the barbell over the chest with an overhand grip.",
+              "Keep the upper arms still and bend the elbows to lower the bar toward the forehead.",
+              "Stop just above the forehead, then extend the elbows to return the bar over the chest.",
+              "Repeat without letting the elbows flare or the bar drift behind the head."
+            ],
+            "form_cues": [
+              "Stack wrists over elbows.",
+              "Keep upper arms fixed.",
+              "Use a deliberate elbow range."
+            ],
+            "common_mistakes": [
+              "Moving the shoulders with the bar.",
+              "Flaring the elbows.",
+              "Lowering too fast toward the face."
+            ],
+            "safety_note": "Use a spotter or safety supports because the bar travels close to the head.",
+            "provenance": "adapted"
+          },
+          "equipment": "barbell",
+          "primary_muscle": "triceps",
+          "secondary_muscles": []
+        },
+        "style": {
+          "version": "v1",
+          "human_model": "One athletic bald male anatomical mannequin, opaque silver-gray muscular surfaces, consistent proportions and detailed 3D materials, plain black shorts, barefoot.",
+          "primary_highlight": {
+            "hex": "#F26445",
+            "rule": "Highlight only the exact primary muscle group provided for this exercise."
+          },
+          "secondary_highlight": {
+            "hex": "#F26445",
+            "intensity_fraction": [
+              0.4,
+              0.5
+            ],
+            "rule": "Only the exact secondary muscles, lighter same-hue highlight; if the list is empty add no secondary target."
+          },
+          "background": "Genuinely transparent PNG background, no white/checkerboard layer, no environment scene.",
+          "output": {
+            "format": "PNG",
+            "width": 1024,
+            "height": 1024,
+            "one_person": true,
+            "one_phase": true
+          },
+          "material_rules": "Highlights never make tissue transparent; no glow, whole-body orange tint, hair, text, labels, arrows, UI, borders, collage or extra person.",
+          "framing": "Full figure and all required equipment/supports visible within a square. Scale and use a three-quarter view to expose the specified contacts without changing anatomy, equipment, grip or technique.",
+          "no_invention": "Technique, equipment and muscles come only from the attached exact catalogue record. No extra attachments, numerical weights, brands or exact angles absent from the source."
+        },
+        "scene": {
+          "single_phase": "Bar just above forehead with upper arms fixed",
+          "composition": "Lie on a flat bench with feet planted. Hold one barbell overhand with both hands. Upper arms remain nearly vertical while elbows bend to bring the bar JUST ABOVE the forehead, not behind the head. No face contact, elbow flare, shoulder motion or ordinary chest press. Include standard stationary safety supports as the source safety alternative, with no spotter figure or guided Smith rails. Show the whole bench and bar clearance.",
+          "source_instruction_quotes": [
+            {
+              "index": 0,
+              "text": "Lie on a flat bench with feet planted and hold the barbell over the chest with an overhand grip."
+            },
+            {
+              "index": 1,
+              "text": "Keep the upper arms still and bend the elbows to lower the bar toward the forehead."
+            },
+            {
+              "index": 2,
+              "text": "Stop just above the forehead, then extend the elbows to return the bar over the chest."
+            },
+            {
+              "index": 3,
+              "text": "Repeat without letting the elbows flare or the bar drift behind the head."
+            }
+          ]
+        },
+        "reference_role": "Human appearance/proportions/materials only. Never copy pose, equipment or muscle targets from a reference."
+      },
+      "generation_prompt": "Create exactly one image for the following exact exercise record. Identity fields are metadata, never visible text. Preserve the source technique and depict only the chosen single phase.\n{\n  \"exact_catalogue_source\": {\n    \"equipment\": \"barbell\",\n    \"primary_muscle\": \"triceps\",\n    \"secondary_muscles\": [],\n    \"source_english\": {\n      \"common_mistakes\": [\n        \"Moving the shoulders with the bar.\",\n        \"Flaring the elbows.\",\n        \"Lowering too fast toward the face.\"\n      ],\n      \"description\": \"A barbell skullcrusher lowers the bar toward the forehead by flexing the elbows while the upper arms stay nearly vertical.\",\n      \"form_cues\": [\n        \"Stack wrists over elbows.\",\n        \"Keep upper arms fixed.\",\n        \"Use a deliberate elbow range.\"\n      ],\n      \"instructions\": [\n        \"Lie on a flat bench with feet planted and hold the barbell over the chest with an overhand grip.\",\n        \"Keep the upper arms still and bend the elbows to lower the bar toward the forehead.\",\n        \"Stop just above the forehead, then extend the elbows to return the bar over the chest.\",\n        \"Repeat without letting the elbows flare or the bar drift behind the head.\"\n      ],\n      \"provenance\": \"adapted\",\n      \"safety_note\": \"Use a spotter or safety supports because the bar travels close to the head.\"\n    }\n  },\n  \"identity_do_not_render_as_text\": {\n    \"exercise_id\": \"skullcrusher-barbell\",\n    \"name\": \"Skullcrusher (Barbell)\",\n    \"source_catalog_sha256\": \"a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989\"\n  },\n  \"reference_role\": \"Human appearance/proportions/materials only. Never copy pose, equipment or muscle targets from a reference.\",\n  \"scene\": {\n    \"composition\": \"Lie on a flat bench with feet planted. Hold one barbell overhand with both hands. Upper arms remain nearly vertical while elbows bend to bring the bar JUST ABOVE the forehead, not behind the head. No face contact, elbow flare, shoulder motion or ordinary chest press. Include standard stationary safety supports as the source safety alternative, with no spotter figure or guided Smith rails. Show the whole bench and bar clearance.\",\n    \"single_phase\": \"Bar just above forehead with upper arms fixed\",\n    \"source_instruction_quotes\": [\n      {\n        \"index\": 0,\n        \"text\": \"Lie on a flat bench with feet planted and hold the barbell over the chest with an overhand grip.\"\n      },\n      {\n        \"index\": 1,\n        \"text\": \"Keep the upper arms still and bend the elbows to lower the bar toward the forehead.\"\n      },\n      {\n        \"index\": 2,\n        \"text\": \"Stop just above the forehead, then extend the elbows to return the bar over the chest.\"\n      },\n      {\n        \"index\": 3,\n        \"text\": \"Repeat without letting the elbows flare or the bar drift behind the head.\"\n      }\n    ]\n  },\n  \"style\": {\n    \"background\": \"Genuinely transparent PNG background, no white/checkerboard layer, no environment scene.\",\n    \"framing\": \"Full figure and all required equipment/supports visible within a square. Scale and use a three-quarter view to expose the specified contacts without changing anatomy, equipment, grip or technique.\",\n    \"human_model\": \"One athletic bald male anatomical mannequin, opaque silver-gray muscular surfaces, consistent proportions and detailed 3D materials, plain black shorts, barefoot.\",\n    \"material_rules\": \"Highlights never make tissue transparent; no glow, whole-body orange tint, hair, text, labels, arrows, UI, borders, collage or extra person.\",\n    \"no_invention\": \"Technique, equipment and muscles come only from the attached exact catalogue record. No extra attachments, numerical weights, brands or exact angles absent from the source.\",\n    \"output\": {\n      \"format\": \"PNG\",\n      \"height\": 1024,\n      \"one_person\": true,\n      \"one_phase\": true,\n      \"width\": 1024\n    },\n    \"primary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"rule\": \"Highlight only the exact primary muscle group provided for this exercise.\"\n    },\n    \"secondary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"intensity_fraction\": [\n        0.4,\n        0.5\n      ],\n      \"rule\": \"Only the exact secondary muscles, lighter same-hue highlight; if the list is empty add no secondary target.\"\n    },\n    \"version\": \"v1\"\n  }\n}",
+      "generation_prompt_sha256": "69ac51766d84e7c41800f806dedabb7cacb13f0e0cbe3528df8863a23145b2a1",
+      "style_version": "v1",
+      "planned_output_relative_path": "agent-03-others-007/skullcrusher-barbell/attempt-1.png",
+      "output_root": "/workspace/exercise-image-results",
+      "result_path": null,
+      "result_sha256": null,
+      "attempts": 0,
+      "technical_check": null,
+      "user_review": null,
+      "agent_visual_review": "not_performed",
+      "preparation_status": "prompt_prepared_not_generated",
+      "planned_png_path": "/workspace/exercise-image-results/agent-03-others-007/skullcrusher-barbell/attempt-1.png"
+    },
+    {
+      "exercise_id": "skullcrusher-dumbbell",
+      "name": "Skullcrusher (Dumbbell)",
+      "source_english": {
+        "description": "A dumbbell skullcrusher lowers two dumbbells beside the head through elbow flexion and presses them back to straight arms.",
+        "instructions": [
+          "Lie on a flat bench with feet planted and hold one dumbbell over each shoulder.",
+          "Keep the upper arms vertical and bend the elbows to lower the dumbbells beside the forehead.",
+          "Pause just above the head, then extend the elbows to raise the dumbbells.",
+          "Finish with the weights over the shoulders without letting them drift outward."
+        ],
+        "form_cues": [
+          "Keep wrists neutral.",
+          "Point elbows toward the ceiling.",
+          "Move both arms evenly."
+        ],
+        "common_mistakes": [
+          "Letting the elbows flare.",
+          "Dropping the dumbbells.",
+          "Using a shoulder press instead of elbow extension."
+        ],
+        "safety_note": "Use a light pair and keep the dumbbells clear of the face and bench edges.",
+        "provenance": "authored"
+      },
+      "equipment": "dumbbell",
+      "primary_muscle": "triceps",
+      "secondary_muscles": [],
+      "source_catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+      "source_catalog_record_sha256": "b88090724584688443296f0ae1eb099254b8f8c7ac21372558a2d5c80ca18189",
+      "source_english_sha256": "a8e9796a1db5d7c0b2ff55cff59e6524a22f0b34148a54806b6494d4bc5acd4b",
+      "prompt_payload": {
+        "identity_do_not_render_as_text": {
+          "exercise_id": "skullcrusher-dumbbell",
+          "name": "Skullcrusher (Dumbbell)",
+          "source_catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989"
+        },
+        "exact_catalogue_source": {
+          "source_english": {
+            "description": "A dumbbell skullcrusher lowers two dumbbells beside the head through elbow flexion and presses them back to straight arms.",
+            "instructions": [
+              "Lie on a flat bench with feet planted and hold one dumbbell over each shoulder.",
+              "Keep the upper arms vertical and bend the elbows to lower the dumbbells beside the forehead.",
+              "Pause just above the head, then extend the elbows to raise the dumbbells.",
+              "Finish with the weights over the shoulders without letting them drift outward."
+            ],
+            "form_cues": [
+              "Keep wrists neutral.",
+              "Point elbows toward the ceiling.",
+              "Move both arms evenly."
+            ],
+            "common_mistakes": [
+              "Letting the elbows flare.",
+              "Dropping the dumbbells.",
+              "Using a shoulder press instead of elbow extension."
+            ],
+            "safety_note": "Use a light pair and keep the dumbbells clear of the face and bench edges.",
+            "provenance": "authored"
+          },
+          "equipment": "dumbbell",
+          "primary_muscle": "triceps",
+          "secondary_muscles": []
+        },
+        "style": {
+          "version": "v1",
+          "human_model": "One athletic bald male anatomical mannequin, opaque silver-gray muscular surfaces, consistent proportions and detailed 3D materials, plain black shorts, barefoot.",
+          "primary_highlight": {
+            "hex": "#F26445",
+            "rule": "Highlight only the exact primary muscle group provided for this exercise."
+          },
+          "secondary_highlight": {
+            "hex": "#F26445",
+            "intensity_fraction": [
+              0.4,
+              0.5
+            ],
+            "rule": "Only the exact secondary muscles, lighter same-hue highlight; if the list is empty add no secondary target."
+          },
+          "background": "Genuinely transparent PNG background, no white/checkerboard layer, no environment scene.",
+          "output": {
+            "format": "PNG",
+            "width": 1024,
+            "height": 1024,
+            "one_person": true,
+            "one_phase": true
+          },
+          "material_rules": "Highlights never make tissue transparent; no glow, whole-body orange tint, hair, text, labels, arrows, UI, borders, collage or extra person.",
+          "framing": "Full figure and all required equipment/supports visible within a square. Scale and use a three-quarter view to expose the specified contacts without changing anatomy, equipment, grip or technique.",
+          "no_invention": "Technique, equipment and muscles come only from the attached exact catalogue record. No extra attachments, numerical weights, brands or exact angles absent from the source."
+        },
+        "scene": {
+          "single_phase": "Two dumbbells lowered beside forehead",
+          "composition": "Lie on a flat bench, feet planted, one light dumbbell in each hand. Upper arms remain vertical; both elbows flex so weights approach the SIDES of forehead and pause clear of the face and bench edges. Wrists neutral, elbows toward ceiling, both arms moving evenly. Show two separate weights, fixed upper arms and full bench; no single barbell, behind-head overhead extension or shoulder-driven press.",
+          "source_instruction_quotes": [
+            {
+              "index": 0,
+              "text": "Lie on a flat bench with feet planted and hold one dumbbell over each shoulder."
+            },
+            {
+              "index": 1,
+              "text": "Keep the upper arms vertical and bend the elbows to lower the dumbbells beside the forehead."
+            },
+            {
+              "index": 2,
+              "text": "Pause just above the head, then extend the elbows to raise the dumbbells."
+            },
+            {
+              "index": 3,
+              "text": "Finish with the weights over the shoulders without letting them drift outward."
+            }
+          ]
+        },
+        "reference_role": "Human appearance/proportions/materials only. Never copy pose, equipment or muscle targets from a reference."
+      },
+      "generation_prompt": "Create exactly one image for the following exact exercise record. Identity fields are metadata, never visible text. Preserve the source technique and depict only the chosen single phase.\n{\n  \"exact_catalogue_source\": {\n    \"equipment\": \"dumbbell\",\n    \"primary_muscle\": \"triceps\",\n    \"secondary_muscles\": [],\n    \"source_english\": {\n      \"common_mistakes\": [\n        \"Letting the elbows flare.\",\n        \"Dropping the dumbbells.\",\n        \"Using a shoulder press instead of elbow extension.\"\n      ],\n      \"description\": \"A dumbbell skullcrusher lowers two dumbbells beside the head through elbow flexion and presses them back to straight arms.\",\n      \"form_cues\": [\n        \"Keep wrists neutral.\",\n        \"Point elbows toward the ceiling.\",\n        \"Move both arms evenly.\"\n      ],\n      \"instructions\": [\n        \"Lie on a flat bench with feet planted and hold one dumbbell over each shoulder.\",\n        \"Keep the upper arms vertical and bend the elbows to lower the dumbbells beside the forehead.\",\n        \"Pause just above the head, then extend the elbows to raise the dumbbells.\",\n        \"Finish with the weights over the shoulders without letting them drift outward.\"\n      ],\n      \"provenance\": \"authored\",\n      \"safety_note\": \"Use a light pair and keep the dumbbells clear of the face and bench edges.\"\n    }\n  },\n  \"identity_do_not_render_as_text\": {\n    \"exercise_id\": \"skullcrusher-dumbbell\",\n    \"name\": \"Skullcrusher (Dumbbell)\",\n    \"source_catalog_sha256\": \"a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989\"\n  },\n  \"reference_role\": \"Human appearance/proportions/materials only. Never copy pose, equipment or muscle targets from a reference.\",\n  \"scene\": {\n    \"composition\": \"Lie on a flat bench, feet planted, one light dumbbell in each hand. Upper arms remain vertical; both elbows flex so weights approach the SIDES of forehead and pause clear of the face and bench edges. Wrists neutral, elbows toward ceiling, both arms moving evenly. Show two separate weights, fixed upper arms and full bench; no single barbell, behind-head overhead extension or shoulder-driven press.\",\n    \"single_phase\": \"Two dumbbells lowered beside forehead\",\n    \"source_instruction_quotes\": [\n      {\n        \"index\": 0,\n        \"text\": \"Lie on a flat bench with feet planted and hold one dumbbell over each shoulder.\"\n      },\n      {\n        \"index\": 1,\n        \"text\": \"Keep the upper arms vertical and bend the elbows to lower the dumbbells beside the forehead.\"\n      },\n      {\n        \"index\": 2,\n        \"text\": \"Pause just above the head, then extend the elbows to raise the dumbbells.\"\n      },\n      {\n        \"index\": 3,\n        \"text\": \"Finish with the weights over the shoulders without letting them drift outward.\"\n      }\n    ]\n  },\n  \"style\": {\n    \"background\": \"Genuinely transparent PNG background, no white/checkerboard layer, no environment scene.\",\n    \"framing\": \"Full figure and all required equipment/supports visible within a square. Scale and use a three-quarter view to expose the specified contacts without changing anatomy, equipment, grip or technique.\",\n    \"human_model\": \"One athletic bald male anatomical mannequin, opaque silver-gray muscular surfaces, consistent proportions and detailed 3D materials, plain black shorts, barefoot.\",\n    \"material_rules\": \"Highlights never make tissue transparent; no glow, whole-body orange tint, hair, text, labels, arrows, UI, borders, collage or extra person.\",\n    \"no_invention\": \"Technique, equipment and muscles come only from the attached exact catalogue record. No extra attachments, numerical weights, brands or exact angles absent from the source.\",\n    \"output\": {\n      \"format\": \"PNG\",\n      \"height\": 1024,\n      \"one_person\": true,\n      \"one_phase\": true,\n      \"width\": 1024\n    },\n    \"primary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"rule\": \"Highlight only the exact primary muscle group provided for this exercise.\"\n    },\n    \"secondary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"intensity_fraction\": [\n        0.4,\n        0.5\n      ],\n      \"rule\": \"Only the exact secondary muscles, lighter same-hue highlight; if the list is empty add no secondary target.\"\n    },\n    \"version\": \"v1\"\n  }\n}",
+      "generation_prompt_sha256": "164420d9c44cb3aeb0f40f69404903f866e61a263b96db5a808fff56e2dbe93d",
+      "style_version": "v1",
+      "planned_output_relative_path": "agent-03-others-007/skullcrusher-dumbbell/attempt-1.png",
+      "output_root": "/workspace/exercise-image-results",
+      "result_path": null,
+      "result_sha256": null,
+      "attempts": 0,
+      "technical_check": null,
+      "user_review": null,
+      "agent_visual_review": "not_performed",
+      "preparation_status": "prompt_prepared_not_generated",
+      "planned_png_path": "/workspace/exercise-image-results/agent-03-others-007/skullcrusher-dumbbell/attempt-1.png"
+    },
+    {
+      "exercise_id": "spider-curl-barbell",
+      "name": "Spider Curl (Barbell)",
+      "source_english": {
+        "description": "A barbell spider curl supports the chest on an incline bench while the arms hang and curl the bar toward the shoulders.",
+        "instructions": [
+          "Set an incline bench and lie face down with the chest supported and feet on the floor.",
+          "Hold the barbell with an underhand grip and let the arms hang straight down.",
+          "Curl the bar toward the shoulders while keeping the upper arms perpendicular to the floor.",
+          "Pause, then lower the bar until the elbows are extended."
+        ],
+        "form_cues": [
+          "Keep the chest on the pad.",
+          "Keep elbows under the shoulders.",
+          "Use a full controlled elbow range."
+        ],
+        "common_mistakes": [
+          "Lifting the chest to swing.",
+          "Moving the upper arms.",
+          "Dropping the bar."
+        ],
+        "safety_note": "Use a load that does not pull the shoulders off the bench.",
+        "provenance": "authored"
+      },
+      "equipment": "barbell",
+      "primary_muscle": "biceps",
+      "secondary_muscles": [],
+      "source_catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+      "source_catalog_record_sha256": "0bacd623089b8db64a495d680073888da923897271156f1b93f6fc9d21579fb6",
+      "source_english_sha256": "423a22824ed65cd42f05a96deaabf660044176bc5a987eb70f0c69b216b5a9f4",
+      "prompt_payload": {
+        "identity_do_not_render_as_text": {
+          "exercise_id": "spider-curl-barbell",
+          "name": "Spider Curl (Barbell)",
+          "source_catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989"
+        },
+        "exact_catalogue_source": {
+          "source_english": {
+            "description": "A barbell spider curl supports the chest on an incline bench while the arms hang and curl the bar toward the shoulders.",
+            "instructions": [
+              "Set an incline bench and lie face down with the chest supported and feet on the floor.",
+              "Hold the barbell with an underhand grip and let the arms hang straight down.",
+              "Curl the bar toward the shoulders while keeping the upper arms perpendicular to the floor.",
+              "Pause, then lower the bar until the elbows are extended."
+            ],
+            "form_cues": [
+              "Keep the chest on the pad.",
+              "Keep elbows under the shoulders.",
+              "Use a full controlled elbow range."
+            ],
+            "common_mistakes": [
+              "Lifting the chest to swing.",
+              "Moving the upper arms.",
+              "Dropping the bar."
+            ],
+            "safety_note": "Use a load that does not pull the shoulders off the bench.",
+            "provenance": "authored"
+          },
+          "equipment": "barbell",
+          "primary_muscle": "biceps",
+          "secondary_muscles": []
+        },
+        "style": {
+          "version": "v1",
+          "human_model": "One athletic bald male anatomical mannequin, opaque silver-gray muscular surfaces, consistent proportions and detailed 3D materials, plain black shorts, barefoot.",
+          "primary_highlight": {
+            "hex": "#F26445",
+            "rule": "Highlight only the exact primary muscle group provided for this exercise."
+          },
+          "secondary_highlight": {
+            "hex": "#F26445",
+            "intensity_fraction": [
+              0.4,
+              0.5
+            ],
+            "rule": "Only the exact secondary muscles, lighter same-hue highlight; if the list is empty add no secondary target."
+          },
+          "background": "Genuinely transparent PNG background, no white/checkerboard layer, no environment scene.",
+          "output": {
+            "format": "PNG",
+            "width": 1024,
+            "height": 1024,
+            "one_person": true,
+            "one_phase": true
+          },
+          "material_rules": "Highlights never make tissue transparent; no glow, whole-body orange tint, hair, text, labels, arrows, UI, borders, collage or extra person.",
+          "framing": "Full figure and all required equipment/supports visible within a square. Scale and use a three-quarter view to expose the specified contacts without changing anatomy, equipment, grip or technique.",
+          "no_invention": "Technique, equipment and muscles come only from the attached exact catalogue record. No extra attachments, numerical weights, brands or exact angles absent from the source."
+        },
+        "scene": {
+          "single_phase": "Prone supported underhand curl toward shoulders",
+          "composition": "Lie face down on an incline bench, chest continuously on pad and feet on floor. Both hands grip one barbell UNDERHAND. Upper arms hang perpendicular to floor and remain fixed while elbows curl the bar toward shoulders. Show bench support, source hand orientation and whole bar without chest lift or swing. No preacher pad, standing curl or invented numerical incline angle.",
+          "source_instruction_quotes": [
+            {
+              "index": 0,
+              "text": "Set an incline bench and lie face down with the chest supported and feet on the floor."
+            },
+            {
+              "index": 1,
+              "text": "Hold the barbell with an underhand grip and let the arms hang straight down."
+            },
+            {
+              "index": 2,
+              "text": "Curl the bar toward the shoulders while keeping the upper arms perpendicular to the floor."
+            },
+            {
+              "index": 3,
+              "text": "Pause, then lower the bar until the elbows are extended."
+            }
+          ]
+        },
+        "reference_role": "Human appearance/proportions/materials only. Never copy pose, equipment or muscle targets from a reference."
+      },
+      "generation_prompt": "Create exactly one image for the following exact exercise record. Identity fields are metadata, never visible text. Preserve the source technique and depict only the chosen single phase.\n{\n  \"exact_catalogue_source\": {\n    \"equipment\": \"barbell\",\n    \"primary_muscle\": \"biceps\",\n    \"secondary_muscles\": [],\n    \"source_english\": {\n      \"common_mistakes\": [\n        \"Lifting the chest to swing.\",\n        \"Moving the upper arms.\",\n        \"Dropping the bar.\"\n      ],\n      \"description\": \"A barbell spider curl supports the chest on an incline bench while the arms hang and curl the bar toward the shoulders.\",\n      \"form_cues\": [\n        \"Keep the chest on the pad.\",\n        \"Keep elbows under the shoulders.\",\n        \"Use a full controlled elbow range.\"\n      ],\n      \"instructions\": [\n        \"Set an incline bench and lie face down with the chest supported and feet on the floor.\",\n        \"Hold the barbell with an underhand grip and let the arms hang straight down.\",\n        \"Curl the bar toward the shoulders while keeping the upper arms perpendicular to the floor.\",\n        \"Pause, then lower the bar until the elbows are extended.\"\n      ],\n      \"provenance\": \"authored\",\n      \"safety_note\": \"Use a load that does not pull the shoulders off the bench.\"\n    }\n  },\n  \"identity_do_not_render_as_text\": {\n    \"exercise_id\": \"spider-curl-barbell\",\n    \"name\": \"Spider Curl (Barbell)\",\n    \"source_catalog_sha256\": \"a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989\"\n  },\n  \"reference_role\": \"Human appearance/proportions/materials only. Never copy pose, equipment or muscle targets from a reference.\",\n  \"scene\": {\n    \"composition\": \"Lie face down on an incline bench, chest continuously on pad and feet on floor. Both hands grip one barbell UNDERHAND. Upper arms hang perpendicular to floor and remain fixed while elbows curl the bar toward shoulders. Show bench support, source hand orientation and whole bar without chest lift or swing. No preacher pad, standing curl or invented numerical incline angle.\",\n    \"single_phase\": \"Prone supported underhand curl toward shoulders\",\n    \"source_instruction_quotes\": [\n      {\n        \"index\": 0,\n        \"text\": \"Set an incline bench and lie face down with the chest supported and feet on the floor.\"\n      },\n      {\n        \"index\": 1,\n        \"text\": \"Hold the barbell with an underhand grip and let the arms hang straight down.\"\n      },\n      {\n        \"index\": 2,\n        \"text\": \"Curl the bar toward the shoulders while keeping the upper arms perpendicular to the floor.\"\n      },\n      {\n        \"index\": 3,\n        \"text\": \"Pause, then lower the bar until the elbows are extended.\"\n      }\n    ]\n  },\n  \"style\": {\n    \"background\": \"Genuinely transparent PNG background, no white/checkerboard layer, no environment scene.\",\n    \"framing\": \"Full figure and all required equipment/supports visible within a square. Scale and use a three-quarter view to expose the specified contacts without changing anatomy, equipment, grip or technique.\",\n    \"human_model\": \"One athletic bald male anatomical mannequin, opaque silver-gray muscular surfaces, consistent proportions and detailed 3D materials, plain black shorts, barefoot.\",\n    \"material_rules\": \"Highlights never make tissue transparent; no glow, whole-body orange tint, hair, text, labels, arrows, UI, borders, collage or extra person.\",\n    \"no_invention\": \"Technique, equipment and muscles come only from the attached exact catalogue record. No extra attachments, numerical weights, brands or exact angles absent from the source.\",\n    \"output\": {\n      \"format\": \"PNG\",\n      \"height\": 1024,\n      \"one_person\": true,\n      \"one_phase\": true,\n      \"width\": 1024\n    },\n    \"primary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"rule\": \"Highlight only the exact primary muscle group provided for this exercise.\"\n    },\n    \"secondary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"intensity_fraction\": [\n        0.4,\n        0.5\n      ],\n      \"rule\": \"Only the exact secondary muscles, lighter same-hue highlight; if the list is empty add no secondary target.\"\n    },\n    \"version\": \"v1\"\n  }\n}",
+      "generation_prompt_sha256": "3e7fdc847b60ac719f3b3439d5361868ea6f177722f6734d047c56c69e4191b9",
+      "style_version": "v1",
+      "planned_output_relative_path": "agent-03-others-007/spider-curl-barbell/attempt-1.png",
+      "output_root": "/workspace/exercise-image-results",
+      "result_path": null,
+      "result_sha256": null,
+      "attempts": 0,
+      "technical_check": null,
+      "user_review": null,
+      "agent_visual_review": "not_performed",
+      "preparation_status": "prompt_prepared_not_generated",
+      "planned_png_path": "/workspace/exercise-image-results/agent-03-others-007/spider-curl-barbell/attempt-1.png"
+    },
+    {
+      "exercise_id": "squat-barbell",
+      "name": "Squat (Barbell)",
+      "source_english": {
+        "description": "Squat (Barbell) lowers the hips by bending the hips and knees and returns to standing by driving through the feet.",
+        "instructions": [
+          "Set the bar across the upper back and stand with feet about shoulder-width apart.",
+          "Brace the trunk, bend the hips and knees, and descend with knees tracking the toes.",
+          "Lower until the thighs are near parallel while keeping the heels down.",
+          "Drive through the feet to extend the hips and knees and stand tall."
+        ],
+        "form_cues": [
+          "Keep the knees tracking the toes.",
+          "Keep the heels grounded.",
+          "Brace the trunk through the depth."
+        ],
+        "common_mistakes": [
+          "Letting the knees cave inward.",
+          "Rounding the lower back.",
+          "Bouncing or cutting the depth short."
+        ],
+        "safety_note": "Use a rack or machine stops and choose a depth you can control with both feet planted.",
+        "provenance": "adapted"
+      },
+      "equipment": "barbell",
+      "primary_muscle": "quadriceps",
+      "secondary_muscles": [
+        "hamstrings",
+        "glutes"
+      ],
+      "source_catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+      "source_catalog_record_sha256": "719adfd7adb22dd05c09f37b2a8f05fc8218356c29043875fbc86a54b914a602",
+      "source_english_sha256": "5af7a6bd74af099cd5faa1a260d580ccdf10895a22740ad31238cb2bce15facb",
+      "prompt_payload": {
+        "identity_do_not_render_as_text": {
+          "exercise_id": "squat-barbell",
+          "name": "Squat (Barbell)",
+          "source_catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989"
+        },
+        "exact_catalogue_source": {
+          "source_english": {
+            "description": "Squat (Barbell) lowers the hips by bending the hips and knees and returns to standing by driving through the feet.",
+            "instructions": [
+              "Set the bar across the upper back and stand with feet about shoulder-width apart.",
+              "Brace the trunk, bend the hips and knees, and descend with knees tracking the toes.",
+              "Lower until the thighs are near parallel while keeping the heels down.",
+              "Drive through the feet to extend the hips and knees and stand tall."
+            ],
+            "form_cues": [
+              "Keep the knees tracking the toes.",
+              "Keep the heels grounded.",
+              "Brace the trunk through the depth."
+            ],
+            "common_mistakes": [
+              "Letting the knees cave inward.",
+              "Rounding the lower back.",
+              "Bouncing or cutting the depth short."
+            ],
+            "safety_note": "Use a rack or machine stops and choose a depth you can control with both feet planted.",
+            "provenance": "adapted"
+          },
+          "equipment": "barbell",
+          "primary_muscle": "quadriceps",
+          "secondary_muscles": [
+            "hamstrings",
+            "glutes"
+          ]
+        },
+        "style": {
+          "version": "v1",
+          "human_model": "One athletic bald male anatomical mannequin, opaque silver-gray muscular surfaces, consistent proportions and detailed 3D materials, plain black shorts, barefoot.",
+          "primary_highlight": {
+            "hex": "#F26445",
+            "rule": "Highlight only the exact primary muscle group provided for this exercise."
+          },
+          "secondary_highlight": {
+            "hex": "#F26445",
+            "intensity_fraction": [
+              0.4,
+              0.5
+            ],
+            "rule": "Only the exact secondary muscles, lighter same-hue highlight; if the list is empty add no secondary target."
+          },
+          "background": "Genuinely transparent PNG background, no white/checkerboard layer, no environment scene.",
+          "output": {
+            "format": "PNG",
+            "width": 1024,
+            "height": 1024,
+            "one_person": true,
+            "one_phase": true
+          },
+          "material_rules": "Highlights never make tissue transparent; no glow, whole-body orange tint, hair, text, labels, arrows, UI, borders, collage or extra person.",
+          "framing": "Full figure and all required equipment/supports visible within a square. Scale and use a three-quarter view to expose the specified contacts without changing anatomy, equipment, grip or technique.",
+          "no_invention": "Technique, equipment and muscles come only from the attached exact catalogue record. No extra attachments, numerical weights, brands or exact angles absent from the source."
+        },
+        "scene": {
+          "single_phase": "Controlled near-parallel back squat",
+          "composition": "One free barbell rests across upper back, steadied by both hands. Feet approximately shoulder-width, heels grounded. Hips and knees bend until thighs near parallel; knees track toes and trunk remains braced with neutral back. Include a stationary rack as the source safety option, no Smith guides or leg-press machine. Show full bar, figure and both floor contacts; no bounce or front-held bar.",
+          "source_instruction_quotes": [
+            {
+              "index": 0,
+              "text": "Set the bar across the upper back and stand with feet about shoulder-width apart."
+            },
+            {
+              "index": 1,
+              "text": "Brace the trunk, bend the hips and knees, and descend with knees tracking the toes."
+            },
+            {
+              "index": 2,
+              "text": "Lower until the thighs are near parallel while keeping the heels down."
+            },
+            {
+              "index": 3,
+              "text": "Drive through the feet to extend the hips and knees and stand tall."
+            }
+          ]
+        },
+        "reference_role": "Human appearance/proportions/materials only. Never copy pose, equipment or muscle targets from a reference."
+      },
+      "generation_prompt": "Create exactly one image for the following exact exercise record. Identity fields are metadata, never visible text. Preserve the source technique and depict only the chosen single phase.\n{\n  \"exact_catalogue_source\": {\n    \"equipment\": \"barbell\",\n    \"primary_muscle\": \"quadriceps\",\n    \"secondary_muscles\": [\n      \"hamstrings\",\n      \"glutes\"\n    ],\n    \"source_english\": {\n      \"common_mistakes\": [\n        \"Letting the knees cave inward.\",\n        \"Rounding the lower back.\",\n        \"Bouncing or cutting the depth short.\"\n      ],\n      \"description\": \"Squat (Barbell) lowers the hips by bending the hips and knees and returns to standing by driving through the feet.\",\n      \"form_cues\": [\n        \"Keep the knees tracking the toes.\",\n        \"Keep the heels grounded.\",\n        \"Brace the trunk through the depth.\"\n      ],\n      \"instructions\": [\n        \"Set the bar across the upper back and stand with feet about shoulder-width apart.\",\n        \"Brace the trunk, bend the hips and knees, and descend with knees tracking the toes.\",\n        \"Lower until the thighs are near parallel while keeping the heels down.\",\n        \"Drive through the feet to extend the hips and knees and stand tall.\"\n      ],\n      \"provenance\": \"adapted\",\n      \"safety_note\": \"Use a rack or machine stops and choose a depth you can control with both feet planted.\"\n    }\n  },\n  \"identity_do_not_render_as_text\": {\n    \"exercise_id\": \"squat-barbell\",\n    \"name\": \"Squat (Barbell)\",\n    \"source_catalog_sha256\": \"a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989\"\n  },\n  \"reference_role\": \"Human appearance/proportions/materials only. Never copy pose, equipment or muscle targets from a reference.\",\n  \"scene\": {\n    \"composition\": \"One free barbell rests across upper back, steadied by both hands. Feet approximately shoulder-width, heels grounded. Hips and knees bend until thighs near parallel; knees track toes and trunk remains braced with neutral back. Include a stationary rack as the source safety option, no Smith guides or leg-press machine. Show full bar, figure and both floor contacts; no bounce or front-held bar.\",\n    \"single_phase\": \"Controlled near-parallel back squat\",\n    \"source_instruction_quotes\": [\n      {\n        \"index\": 0,\n        \"text\": \"Set the bar across the upper back and stand with feet about shoulder-width apart.\"\n      },\n      {\n        \"index\": 1,\n        \"text\": \"Brace the trunk, bend the hips and knees, and descend with knees tracking the toes.\"\n      },\n      {\n        \"index\": 2,\n        \"text\": \"Lower until the thighs are near parallel while keeping the heels down.\"\n      },\n      {\n        \"index\": 3,\n        \"text\": \"Drive through the feet to extend the hips and knees and stand tall.\"\n      }\n    ]\n  },\n  \"style\": {\n    \"background\": \"Genuinely transparent PNG background, no white/checkerboard layer, no environment scene.\",\n    \"framing\": \"Full figure and all required equipment/supports visible within a square. Scale and use a three-quarter view to expose the specified contacts without changing anatomy, equipment, grip or technique.\",\n    \"human_model\": \"One athletic bald male anatomical mannequin, opaque silver-gray muscular surfaces, consistent proportions and detailed 3D materials, plain black shorts, barefoot.\",\n    \"material_rules\": \"Highlights never make tissue transparent; no glow, whole-body orange tint, hair, text, labels, arrows, UI, borders, collage or extra person.\",\n    \"no_invention\": \"Technique, equipment and muscles come only from the attached exact catalogue record. No extra attachments, numerical weights, brands or exact angles absent from the source.\",\n    \"output\": {\n      \"format\": \"PNG\",\n      \"height\": 1024,\n      \"one_person\": true,\n      \"one_phase\": true,\n      \"width\": 1024\n    },\n    \"primary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"rule\": \"Highlight only the exact primary muscle group provided for this exercise.\"\n    },\n    \"secondary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"intensity_fraction\": [\n        0.4,\n        0.5\n      ],\n      \"rule\": \"Only the exact secondary muscles, lighter same-hue highlight; if the list is empty add no secondary target.\"\n    },\n    \"version\": \"v1\"\n  }\n}",
+      "generation_prompt_sha256": "c06bfe895af0d4095e41c6aa070426a3cdf1d88268d75717439a2db4f7ba2429",
+      "style_version": "v1",
+      "planned_output_relative_path": "agent-03-others-007/squat-barbell/attempt-1.png",
+      "output_root": "/workspace/exercise-image-results",
+      "result_path": null,
+      "result_sha256": null,
+      "attempts": 0,
+      "technical_check": null,
+      "user_review": null,
+      "agent_visual_review": "not_performed",
+      "preparation_status": "prompt_prepared_not_generated",
+      "planned_png_path": "/workspace/exercise-image-results/agent-03-others-007/squat-barbell/attempt-1.png"
+    },
+    {
+      "exercise_id": "standing-calf-raise-barbell",
+      "name": "Standing Calf Raise (Barbell)",
+      "source_english": {
+        "description": "A barbell standing calf raise lifts both heels while the bar rests across the upper back.",
+        "instructions": [
+          "Stand with your feet shoulder-width apart and place a barbell across your upper back.",
+          "Raise your heels off the ground as high as possible, using only your toes.",
+          "Pause for a moment at the top, then slowly lower your heels back down to the starting position."
+        ],
+        "form_cues": [
+          "Keep the ankle vertical over the foot.",
+          "Rise evenly through the balls of both feet.",
+          "Lower the heels slowly."
+        ],
+        "common_mistakes": [
+          "Rolling the ankles outward or inward.",
+          "Bouncing through the bottom range.",
+          "Bending the knees to create momentum."
+        ],
+        "safety_note": "Use the machine, rack, or wall only for balance and keep the load light enough to control the ankle range.",
+        "provenance": "adapted"
+      },
+      "equipment": "barbell",
+      "primary_muscle": "calves",
+      "secondary_muscles": [],
+      "source_catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+      "source_catalog_record_sha256": "027a01f6b839c765e3db6011224ff9f4ec2fdae9a2805bce63192edccbab5842",
+      "source_english_sha256": "29fb427661b35b2993d69ef17e70d20ebbfe57fd1c7713abee472e9aeb26b33e",
+      "prompt_payload": {
+        "identity_do_not_render_as_text": {
+          "exercise_id": "standing-calf-raise-barbell",
+          "name": "Standing Calf Raise (Barbell)",
+          "source_catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989"
+        },
+        "exact_catalogue_source": {
+          "source_english": {
+            "description": "A barbell standing calf raise lifts both heels while the bar rests across the upper back.",
+            "instructions": [
+              "Stand with your feet shoulder-width apart and place a barbell across your upper back.",
+              "Raise your heels off the ground as high as possible, using only your toes.",
+              "Pause for a moment at the top, then slowly lower your heels back down to the starting position."
+            ],
+            "form_cues": [
+              "Keep the ankle vertical over the foot.",
+              "Rise evenly through the balls of both feet.",
+              "Lower the heels slowly."
+            ],
+            "common_mistakes": [
+              "Rolling the ankles outward or inward.",
+              "Bouncing through the bottom range.",
+              "Bending the knees to create momentum."
+            ],
+            "safety_note": "Use the machine, rack, or wall only for balance and keep the load light enough to control the ankle range.",
+            "provenance": "adapted"
+          },
+          "equipment": "barbell",
+          "primary_muscle": "calves",
+          "secondary_muscles": []
+        },
+        "style": {
+          "version": "v1",
+          "human_model": "One athletic bald male anatomical mannequin, opaque silver-gray muscular surfaces, consistent proportions and detailed 3D materials, plain black shorts, barefoot.",
+          "primary_highlight": {
+            "hex": "#F26445",
+            "rule": "Highlight only the exact primary muscle group provided for this exercise."
+          },
+          "secondary_highlight": {
+            "hex": "#F26445",
+            "intensity_fraction": [
+              0.4,
+              0.5
+            ],
+            "rule": "Only the exact secondary muscles, lighter same-hue highlight; if the list is empty add no secondary target."
+          },
+          "background": "Genuinely transparent PNG background, no white/checkerboard layer, no environment scene.",
+          "output": {
+            "format": "PNG",
+            "width": 1024,
+            "height": 1024,
+            "one_person": true,
+            "one_phase": true
+          },
+          "material_rules": "Highlights never make tissue transparent; no glow, whole-body orange tint, hair, text, labels, arrows, UI, borders, collage or extra person.",
+          "framing": "Full figure and all required equipment/supports visible within a square. Scale and use a three-quarter view to expose the specified contacts without changing anatomy, equipment, grip or technique.",
+          "no_invention": "Technique, equipment and muscles come only from the attached exact catalogue record. No extra attachments, numerical weights, brands or exact angles absent from the source."
+        },
+        "scene": {
+          "single_phase": "Even bilateral heel-rise top with upper-back bar",
+          "composition": "Stand approximately shoulder-width with one free barbell across upper back held securely by both hands. Both heels rise evenly while the balls of both feet remain on the floor, ankles vertically aligned over feet and knees not bending for momentum. Show controlled heel elevation, full bar and floor contacts; no tiptoe-only balancing, step platform, calf machine or guided rails. Use a light controllable load and stationary rack available only for balance as permitted by source safety.",
+          "source_instruction_quotes": [
+            {
+              "index": 0,
+              "text": "Stand with your feet shoulder-width apart and place a barbell across your upper back."
+            },
+            {
+              "index": 1,
+              "text": "Raise your heels off the ground as high as possible, using only your toes."
+            },
+            {
+              "index": 2,
+              "text": "Pause for a moment at the top, then slowly lower your heels back down to the starting position."
+            }
+          ]
+        },
+        "reference_role": "Human appearance/proportions/materials only. Never copy pose, equipment or muscle targets from a reference."
+      },
+      "generation_prompt": "Create exactly one image for the following exact exercise record. Identity fields are metadata, never visible text. Preserve the source technique and depict only the chosen single phase.\n{\n  \"exact_catalogue_source\": {\n    \"equipment\": \"barbell\",\n    \"primary_muscle\": \"calves\",\n    \"secondary_muscles\": [],\n    \"source_english\": {\n      \"common_mistakes\": [\n        \"Rolling the ankles outward or inward.\",\n        \"Bouncing through the bottom range.\",\n        \"Bending the knees to create momentum.\"\n      ],\n      \"description\": \"A barbell standing calf raise lifts both heels while the bar rests across the upper back.\",\n      \"form_cues\": [\n        \"Keep the ankle vertical over the foot.\",\n        \"Rise evenly through the balls of both feet.\",\n        \"Lower the heels slowly.\"\n      ],\n      \"instructions\": [\n        \"Stand with your feet shoulder-width apart and place a barbell across your upper back.\",\n        \"Raise your heels off the ground as high as possible, using only your toes.\",\n        \"Pause for a moment at the top, then slowly lower your heels back down to the starting position.\"\n      ],\n      \"provenance\": \"adapted\",\n      \"safety_note\": \"Use the machine, rack, or wall only for balance and keep the load light enough to control the ankle range.\"\n    }\n  },\n  \"identity_do_not_render_as_text\": {\n    \"exercise_id\": \"standing-calf-raise-barbell\",\n    \"name\": \"Standing Calf Raise (Barbell)\",\n    \"source_catalog_sha256\": \"a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989\"\n  },\n  \"reference_role\": \"Human appearance/proportions/materials only. Never copy pose, equipment or muscle targets from a reference.\",\n  \"scene\": {\n    \"composition\": \"Stand approximately shoulder-width with one free barbell across upper back held securely by both hands. Both heels rise evenly while the balls of both feet remain on the floor, ankles vertically aligned over feet and knees not bending for momentum. Show controlled heel elevation, full bar and floor contacts; no tiptoe-only balancing, step platform, calf machine or guided rails. Use a light controllable load and stationary rack available only for balance as permitted by source safety.\",\n    \"single_phase\": \"Even bilateral heel-rise top with upper-back bar\",\n    \"source_instruction_quotes\": [\n      {\n        \"index\": 0,\n        \"text\": \"Stand with your feet shoulder-width apart and place a barbell across your upper back.\"\n      },\n      {\n        \"index\": 1,\n        \"text\": \"Raise your heels off the ground as high as possible, using only your toes.\"\n      },\n      {\n        \"index\": 2,\n        \"text\": \"Pause for a moment at the top, then slowly lower your heels back down to the starting position.\"\n      }\n    ]\n  },\n  \"style\": {\n    \"background\": \"Genuinely transparent PNG background, no white/checkerboard layer, no environment scene.\",\n    \"framing\": \"Full figure and all required equipment/supports visible within a square. Scale and use a three-quarter view to expose the specified contacts without changing anatomy, equipment, grip or technique.\",\n    \"human_model\": \"One athletic bald male anatomical mannequin, opaque silver-gray muscular surfaces, consistent proportions and detailed 3D materials, plain black shorts, barefoot.\",\n    \"material_rules\": \"Highlights never make tissue transparent; no glow, whole-body orange tint, hair, text, labels, arrows, UI, borders, collage or extra person.\",\n    \"no_invention\": \"Technique, equipment and muscles come only from the attached exact catalogue record. No extra attachments, numerical weights, brands or exact angles absent from the source.\",\n    \"output\": {\n      \"format\": \"PNG\",\n      \"height\": 1024,\n      \"one_person\": true,\n      \"one_phase\": true,\n      \"width\": 1024\n    },\n    \"primary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"rule\": \"Highlight only the exact primary muscle group provided for this exercise.\"\n    },\n    \"secondary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"intensity_fraction\": [\n        0.4,\n        0.5\n      ],\n      \"rule\": \"Only the exact secondary muscles, lighter same-hue highlight; if the list is empty add no secondary target.\"\n    },\n    \"version\": \"v1\"\n  }\n}",
+      "generation_prompt_sha256": "53dfebb80fde7332b80fed93bfa91f8f39700c49649723bd34bbd5642bac659c",
+      "style_version": "v1",
+      "planned_output_relative_path": "agent-03-others-007/standing-calf-raise-barbell/attempt-1.png",
+      "output_root": "/workspace/exercise-image-results",
+      "result_path": null,
+      "result_sha256": null,
+      "attempts": 0,
+      "technical_check": null,
+      "user_review": null,
+      "agent_visual_review": "not_performed",
+      "preparation_status": "prompt_prepared_not_generated",
+      "planned_png_path": "/workspace/exercise-image-results/agent-03-others-007/standing-calf-raise-barbell/attempt-1.png"
+    },
+    {
+      "exercise_id": "standing-military-press-barbell",
+      "name": "Standing Military Press (Barbell)",
+      "source_english": {
+        "description": "A standing barbell military press drives the bar from the upper chest to overhead without leg assistance.",
+        "instructions": [
+          "Stand with the barbell at the upper chest and grip it just outside shoulder width.",
+          "Brace the abdomen and glutes while keeping the feet planted.",
+          "Press the bar overhead in a straight path until the elbows lock out.",
+          "Lower the bar to the upper chest under control."
+        ],
+        "form_cues": [
+          "Keep ribs stacked over hips.",
+          "Keep wrists over elbows.",
+          "Move the head slightly back then under the bar."
+        ],
+        "common_mistakes": [
+          "Bending the knees to push.",
+          "Leaning back.",
+          "Lowering too quickly."
+        ],
+        "safety_note": "Use a rack and a load you can return safely to the supports.",
+        "provenance": "authored"
+      },
+      "equipment": "barbell",
+      "primary_muscle": "shoulders",
+      "secondary_muscles": [
+        "triceps"
+      ],
+      "source_catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+      "source_catalog_record_sha256": "36df4fa78ce80dcb09cc97eb228f741ac3926b204241be4255f88c78a8d295b9",
+      "source_english_sha256": "8989a6a1b5953fbf44e8751d88bc014f4e9f08f7fe0aa06b9f6600c13313dc2d",
+      "prompt_payload": {
+        "identity_do_not_render_as_text": {
+          "exercise_id": "standing-military-press-barbell",
+          "name": "Standing Military Press (Barbell)",
+          "source_catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989"
+        },
+        "exact_catalogue_source": {
+          "source_english": {
+            "description": "A standing barbell military press drives the bar from the upper chest to overhead without leg assistance.",
+            "instructions": [
+              "Stand with the barbell at the upper chest and grip it just outside shoulder width.",
+              "Brace the abdomen and glutes while keeping the feet planted.",
+              "Press the bar overhead in a straight path until the elbows lock out.",
+              "Lower the bar to the upper chest under control."
+            ],
+            "form_cues": [
+              "Keep ribs stacked over hips.",
+              "Keep wrists over elbows.",
+              "Move the head slightly back then under the bar."
+            ],
+            "common_mistakes": [
+              "Bending the knees to push.",
+              "Leaning back.",
+              "Lowering too quickly."
+            ],
+            "safety_note": "Use a rack and a load you can return safely to the supports.",
+            "provenance": "authored"
+          },
+          "equipment": "barbell",
+          "primary_muscle": "shoulders",
+          "secondary_muscles": [
+            "triceps"
+          ]
+        },
+        "style": {
+          "version": "v1",
+          "human_model": "One athletic bald male anatomical mannequin, opaque silver-gray muscular surfaces, consistent proportions and detailed 3D materials, plain black shorts, barefoot.",
+          "primary_highlight": {
+            "hex": "#F26445",
+            "rule": "Highlight only the exact primary muscle group provided for this exercise."
+          },
+          "secondary_highlight": {
+            "hex": "#F26445",
+            "intensity_fraction": [
+              0.4,
+              0.5
+            ],
+            "rule": "Only the exact secondary muscles, lighter same-hue highlight; if the list is empty add no secondary target."
+          },
+          "background": "Genuinely transparent PNG background, no white/checkerboard layer, no environment scene.",
+          "output": {
+            "format": "PNG",
+            "width": 1024,
+            "height": 1024,
+            "one_person": true,
+            "one_phase": true
+          },
+          "material_rules": "Highlights never make tissue transparent; no glow, whole-body orange tint, hair, text, labels, arrows, UI, borders, collage or extra person.",
+          "framing": "Full figure and all required equipment/supports visible within a square. Scale and use a three-quarter view to expose the specified contacts without changing anatomy, equipment, grip or technique.",
+          "no_invention": "Technique, equipment and muscles come only from the attached exact catalogue record. No extra attachments, numerical weights, brands or exact angles absent from the source."
+        },
+        "scene": {
+          "single_phase": "Strict standing overhead endpoint",
+          "composition": "Both feet planted and knees quiet, abdomen and glutes braced. Both hands hold one free barbell just outside shoulder width overhead, after head has moved slightly back then under the bar. Elbows extend as described without leg assistance or backward lean; ribs stacked over hips. Show a stationary return rack per source safety, not a guided press machine. Full arms, bar and feet remain in frame.",
+          "source_instruction_quotes": [
+            {
+              "index": 0,
+              "text": "Stand with the barbell at the upper chest and grip it just outside shoulder width."
+            },
+            {
+              "index": 1,
+              "text": "Brace the abdomen and glutes while keeping the feet planted."
+            },
+            {
+              "index": 2,
+              "text": "Press the bar overhead in a straight path until the elbows lock out."
+            },
+            {
+              "index": 3,
+              "text": "Lower the bar to the upper chest under control."
+            }
+          ]
+        },
+        "reference_role": "Human appearance/proportions/materials only. Never copy pose, equipment or muscle targets from a reference."
+      },
+      "generation_prompt": "Create exactly one image for the following exact exercise record. Identity fields are metadata, never visible text. Preserve the source technique and depict only the chosen single phase.\n{\n  \"exact_catalogue_source\": {\n    \"equipment\": \"barbell\",\n    \"primary_muscle\": \"shoulders\",\n    \"secondary_muscles\": [\n      \"triceps\"\n    ],\n    \"source_english\": {\n      \"common_mistakes\": [\n        \"Bending the knees to push.\",\n        \"Leaning back.\",\n        \"Lowering too quickly.\"\n      ],\n      \"description\": \"A standing barbell military press drives the bar from the upper chest to overhead without leg assistance.\",\n      \"form_cues\": [\n        \"Keep ribs stacked over hips.\",\n        \"Keep wrists over elbows.\",\n        \"Move the head slightly back then under the bar.\"\n      ],\n      \"instructions\": [\n        \"Stand with the barbell at the upper chest and grip it just outside shoulder width.\",\n        \"Brace the abdomen and glutes while keeping the feet planted.\",\n        \"Press the bar overhead in a straight path until the elbows lock out.\",\n        \"Lower the bar to the upper chest under control.\"\n      ],\n      \"provenance\": \"authored\",\n      \"safety_note\": \"Use a rack and a load you can return safely to the supports.\"\n    }\n  },\n  \"identity_do_not_render_as_text\": {\n    \"exercise_id\": \"standing-military-press-barbell\",\n    \"name\": \"Standing Military Press (Barbell)\",\n    \"source_catalog_sha256\": \"a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989\"\n  },\n  \"reference_role\": \"Human appearance/proportions/materials only. Never copy pose, equipment or muscle targets from a reference.\",\n  \"scene\": {\n    \"composition\": \"Both feet planted and knees quiet, abdomen and glutes braced. Both hands hold one free barbell just outside shoulder width overhead, after head has moved slightly back then under the bar. Elbows extend as described without leg assistance or backward lean; ribs stacked over hips. Show a stationary return rack per source safety, not a guided press machine. Full arms, bar and feet remain in frame.\",\n    \"single_phase\": \"Strict standing overhead endpoint\",\n    \"source_instruction_quotes\": [\n      {\n        \"index\": 0,\n        \"text\": \"Stand with the barbell at the upper chest and grip it just outside shoulder width.\"\n      },\n      {\n        \"index\": 1,\n        \"text\": \"Brace the abdomen and glutes while keeping the feet planted.\"\n      },\n      {\n        \"index\": 2,\n        \"text\": \"Press the bar overhead in a straight path until the elbows lock out.\"\n      },\n      {\n        \"index\": 3,\n        \"text\": \"Lower the bar to the upper chest under control.\"\n      }\n    ]\n  },\n  \"style\": {\n    \"background\": \"Genuinely transparent PNG background, no white/checkerboard layer, no environment scene.\",\n    \"framing\": \"Full figure and all required equipment/supports visible within a square. Scale and use a three-quarter view to expose the specified contacts without changing anatomy, equipment, grip or technique.\",\n    \"human_model\": \"One athletic bald male anatomical mannequin, opaque silver-gray muscular surfaces, consistent proportions and detailed 3D materials, plain black shorts, barefoot.\",\n    \"material_rules\": \"Highlights never make tissue transparent; no glow, whole-body orange tint, hair, text, labels, arrows, UI, borders, collage or extra person.\",\n    \"no_invention\": \"Technique, equipment and muscles come only from the attached exact catalogue record. No extra attachments, numerical weights, brands or exact angles absent from the source.\",\n    \"output\": {\n      \"format\": \"PNG\",\n      \"height\": 1024,\n      \"one_person\": true,\n      \"one_phase\": true,\n      \"width\": 1024\n    },\n    \"primary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"rule\": \"Highlight only the exact primary muscle group provided for this exercise.\"\n    },\n    \"secondary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"intensity_fraction\": [\n        0.4,\n        0.5\n      ],\n      \"rule\": \"Only the exact secondary muscles, lighter same-hue highlight; if the list is empty add no secondary target.\"\n    },\n    \"version\": \"v1\"\n  }\n}",
+      "generation_prompt_sha256": "cb91f6a8d3f225230a9d67496453319869698cf5c28a7ea537dc502a5172e77c",
+      "style_version": "v1",
+      "planned_output_relative_path": "agent-03-others-007/standing-military-press-barbell/attempt-1.png",
+      "output_root": "/workspace/exercise-image-results",
+      "result_path": null,
+      "result_sha256": null,
+      "attempts": 0,
+      "technical_check": null,
+      "user_review": null,
+      "agent_visual_review": "not_performed",
+      "preparation_status": "prompt_prepared_not_generated",
+      "planned_png_path": "/workspace/exercise-image-results/agent-03-others-007/standing-military-press-barbell/attempt-1.png"
+    },
+    {
+      "exercise_id": "straight-leg-deadlift-barbell",
+      "name": "Straight Leg Deadlift",
+      "source_english": {
+        "description": "A straight-leg deadlift hinges the hips with only a small knee bend while the barbell stays close to the legs.",
+        "instructions": [
+          "Stand with feet hip-width apart and hold the barbell overhand at the thighs.",
+          "Keep the knees softly bent and push the hips backward as the bar descends close to the legs.",
+          "Stop when the hamstrings stretch without rounding the back.",
+          "Drive the hips forward to stand tall without leaning back."
+        ],
+        "form_cues": [
+          "Keep the bar close to the legs.",
+          "Hinge from the hips with a long spine.",
+          "Drive the floor away to stand."
+        ],
+        "common_mistakes": [
+          "Rounding the lower back.",
+          "Bending the knees into a squat.",
+          "Jerking the bar from the floor."
+        ],
+        "safety_note": "Use a load and range that preserve a neutral back throughout the hinge.",
+        "provenance": "adapted"
+      },
+      "equipment": "barbell",
+      "primary_muscle": "hamstrings",
+      "secondary_muscles": [
+        "glutes",
+        "lower_back",
+        "upper_back",
+        "lats",
+        "traps"
+      ],
+      "source_catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+      "source_catalog_record_sha256": "2cbb2bd7e8af1512472770e1c263cce99e1e7d6d446f1bbeca2505c30cb88088",
+      "source_english_sha256": "8115ca8c91c1dd6517a1406ee126b2aef5d4085dbcd3fe81b459e122539a8344",
+      "prompt_payload": {
+        "identity_do_not_render_as_text": {
+          "exercise_id": "straight-leg-deadlift-barbell",
+          "name": "Straight Leg Deadlift",
+          "source_catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989"
+        },
+        "exact_catalogue_source": {
+          "source_english": {
+            "description": "A straight-leg deadlift hinges the hips with only a small knee bend while the barbell stays close to the legs.",
+            "instructions": [
+              "Stand with feet hip-width apart and hold the barbell overhand at the thighs.",
+              "Keep the knees softly bent and push the hips backward as the bar descends close to the legs.",
+              "Stop when the hamstrings stretch without rounding the back.",
+              "Drive the hips forward to stand tall without leaning back."
+            ],
+            "form_cues": [
+              "Keep the bar close to the legs.",
+              "Hinge from the hips with a long spine.",
+              "Drive the floor away to stand."
+            ],
+            "common_mistakes": [
+              "Rounding the lower back.",
+              "Bending the knees into a squat.",
+              "Jerking the bar from the floor."
+            ],
+            "safety_note": "Use a load and range that preserve a neutral back throughout the hinge.",
+            "provenance": "adapted"
+          },
+          "equipment": "barbell",
+          "primary_muscle": "hamstrings",
+          "secondary_muscles": [
+            "glutes",
+            "lower_back",
+            "upper_back",
+            "lats",
+            "traps"
+          ]
+        },
+        "style": {
+          "version": "v1",
+          "human_model": "One athletic bald male anatomical mannequin, opaque silver-gray muscular surfaces, consistent proportions and detailed 3D materials, plain black shorts, barefoot.",
+          "primary_highlight": {
+            "hex": "#F26445",
+            "rule": "Highlight only the exact primary muscle group provided for this exercise."
+          },
+          "secondary_highlight": {
+            "hex": "#F26445",
+            "intensity_fraction": [
+              0.4,
+              0.5
+            ],
+            "rule": "Only the exact secondary muscles, lighter same-hue highlight; if the list is empty add no secondary target."
+          },
+          "background": "Genuinely transparent PNG background, no white/checkerboard layer, no environment scene.",
+          "output": {
+            "format": "PNG",
+            "width": 1024,
+            "height": 1024,
+            "one_person": true,
+            "one_phase": true
+          },
+          "material_rules": "Highlights never make tissue transparent; no glow, whole-body orange tint, hair, text, labels, arrows, UI, borders, collage or extra person.",
+          "framing": "Full figure and all required equipment/supports visible within a square. Scale and use a three-quarter view to expose the specified contacts without changing anatomy, equipment, grip or technique.",
+          "no_invention": "Technique, equipment and muscles come only from the attached exact catalogue record. No extra attachments, numerical weights, brands or exact angles absent from the source."
+        },
+        "scene": {
+          "single_phase": "Small-knee-bend hip-hinge lower endpoint",
+          "composition": "Stand hip-width and hold one free barbell OVERHAND close to legs. Knees remain SOFTLY BENT as hips travel backward and long neutral spine hinges forward, stopping at controlled hamstring stretch. Show source's small knee bend despite the exercise name; no locked knees, squat-depth bend, lumbar rounding or invented numerical depth. No equipment beyond free bar and floor contacts.",
+          "source_instruction_quotes": [
+            {
+              "index": 0,
+              "text": "Stand with feet hip-width apart and hold the barbell overhand at the thighs."
+            },
+            {
+              "index": 1,
+              "text": "Keep the knees softly bent and push the hips backward as the bar descends close to the legs."
+            },
+            {
+              "index": 2,
+              "text": "Stop when the hamstrings stretch without rounding the back."
+            },
+            {
+              "index": 3,
+              "text": "Drive the hips forward to stand tall without leaning back."
+            }
+          ]
+        },
+        "reference_role": "Human appearance/proportions/materials only. Never copy pose, equipment or muscle targets from a reference."
+      },
+      "generation_prompt": "Create exactly one image for the following exact exercise record. Identity fields are metadata, never visible text. Preserve the source technique and depict only the chosen single phase.\n{\n  \"exact_catalogue_source\": {\n    \"equipment\": \"barbell\",\n    \"primary_muscle\": \"hamstrings\",\n    \"secondary_muscles\": [\n      \"glutes\",\n      \"lower_back\",\n      \"upper_back\",\n      \"lats\",\n      \"traps\"\n    ],\n    \"source_english\": {\n      \"common_mistakes\": [\n        \"Rounding the lower back.\",\n        \"Bending the knees into a squat.\",\n        \"Jerking the bar from the floor.\"\n      ],\n      \"description\": \"A straight-leg deadlift hinges the hips with only a small knee bend while the barbell stays close to the legs.\",\n      \"form_cues\": [\n        \"Keep the bar close to the legs.\",\n        \"Hinge from the hips with a long spine.\",\n        \"Drive the floor away to stand.\"\n      ],\n      \"instructions\": [\n        \"Stand with feet hip-width apart and hold the barbell overhand at the thighs.\",\n        \"Keep the knees softly bent and push the hips backward as the bar descends close to the legs.\",\n        \"Stop when the hamstrings stretch without rounding the back.\",\n        \"Drive the hips forward to stand tall without leaning back.\"\n      ],\n      \"provenance\": \"adapted\",\n      \"safety_note\": \"Use a load and range that preserve a neutral back throughout the hinge.\"\n    }\n  },\n  \"identity_do_not_render_as_text\": {\n    \"exercise_id\": \"straight-leg-deadlift-barbell\",\n    \"name\": \"Straight Leg Deadlift\",\n    \"source_catalog_sha256\": \"a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989\"\n  },\n  \"reference_role\": \"Human appearance/proportions/materials only. Never copy pose, equipment or muscle targets from a reference.\",\n  \"scene\": {\n    \"composition\": \"Stand hip-width and hold one free barbell OVERHAND close to legs. Knees remain SOFTLY BENT as hips travel backward and long neutral spine hinges forward, stopping at controlled hamstring stretch. Show source's small knee bend despite the exercise name; no locked knees, squat-depth bend, lumbar rounding or invented numerical depth. No equipment beyond free bar and floor contacts.\",\n    \"single_phase\": \"Small-knee-bend hip-hinge lower endpoint\",\n    \"source_instruction_quotes\": [\n      {\n        \"index\": 0,\n        \"text\": \"Stand with feet hip-width apart and hold the barbell overhand at the thighs.\"\n      },\n      {\n        \"index\": 1,\n        \"text\": \"Keep the knees softly bent and push the hips backward as the bar descends close to the legs.\"\n      },\n      {\n        \"index\": 2,\n        \"text\": \"Stop when the hamstrings stretch without rounding the back.\"\n      },\n      {\n        \"index\": 3,\n        \"text\": \"Drive the hips forward to stand tall without leaning back.\"\n      }\n    ]\n  },\n  \"style\": {\n    \"background\": \"Genuinely transparent PNG background, no white/checkerboard layer, no environment scene.\",\n    \"framing\": \"Full figure and all required equipment/supports visible within a square. Scale and use a three-quarter view to expose the specified contacts without changing anatomy, equipment, grip or technique.\",\n    \"human_model\": \"One athletic bald male anatomical mannequin, opaque silver-gray muscular surfaces, consistent proportions and detailed 3D materials, plain black shorts, barefoot.\",\n    \"material_rules\": \"Highlights never make tissue transparent; no glow, whole-body orange tint, hair, text, labels, arrows, UI, borders, collage or extra person.\",\n    \"no_invention\": \"Technique, equipment and muscles come only from the attached exact catalogue record. No extra attachments, numerical weights, brands or exact angles absent from the source.\",\n    \"output\": {\n      \"format\": \"PNG\",\n      \"height\": 1024,\n      \"one_person\": true,\n      \"one_phase\": true,\n      \"width\": 1024\n    },\n    \"primary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"rule\": \"Highlight only the exact primary muscle group provided for this exercise.\"\n    },\n    \"secondary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"intensity_fraction\": [\n        0.4,\n        0.5\n      ],\n      \"rule\": \"Only the exact secondary muscles, lighter same-hue highlight; if the list is empty add no secondary target.\"\n    },\n    \"version\": \"v1\"\n  }\n}",
+      "generation_prompt_sha256": "86a9a68208017f1ac195308fdbb7f64d03374fa851cd3c45a91e0b12f9370fbc",
+      "style_version": "v1",
+      "planned_output_relative_path": "agent-03-others-007/straight-leg-deadlift-barbell/attempt-1.png",
+      "output_root": "/workspace/exercise-image-results",
+      "result_path": null,
+      "result_sha256": null,
+      "attempts": 0,
+      "technical_check": null,
+      "user_review": null,
+      "agent_visual_review": "not_performed",
+      "preparation_status": "prompt_prepared_not_generated",
+      "planned_png_path": "/workspace/exercise-image-results/agent-03-others-007/straight-leg-deadlift-barbell/attempt-1.png"
+    }
+  ]
+}
