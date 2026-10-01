@@ -1,3 +1,13 @@
+## Agent-03 round 3: generation in progress (007–009)
+
+2026-10-01T17:10:24+00:00: користувач доручив згенерувати 30 підготовлених вправ. Перенесено лише три пакети та їхній handoff із підготовчого коміту `3313536c00e0e83d844c9ae0cd6846f5d3bd61e2`; transfer commit у `work`: `bc649b2bbf53fecf23845e44700d99a37276878b`. Каталог (SHA256 `a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989`) і стиль v1 (SHA256 `8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578`) збігаються з усіма пакетами. Перевірено 30 унікальних ID, тексти англійською, обладнання, м’язи, record/prompt hashes; усі були `not_started`, без наявних результатів. Еталон зовнішності `assets/exercises/biceps-curl-dumbbell.png` доступний і має очікуваний SHA256.
+
+Генерація: вбудований `image_gen.imagegen`, один виклик на вправу, точний prompt пакета, стиль v1, прозорий квадратний PNG. Reference зображує лише модель/стиль. Шість ID із суфіксом `machine` використовують пристрої, визначені технікою (підтримки/турнік/бруси/стрічка); зайві блоки чи тренажери не додавати. На кожній вправі повторно перевіряти progress, пропускати наявні результати, одразу записувати progress і manifest. Після кожного пакета пушити у `work`, перевіряти віддалені SHA256, лише потім ставити `github_verified`. `user_review=pending`, `agent_visual_review=not_performed`. Supabase не використовується.
+
+Поточний стан: підготовчі файли запушено; очікують генерації всі 30 ID із `data/batches/agent-03-others-007.json` … `009.json`.
+
+---
+
 ## Поточний стан: усі 30 вправ agent-03-others-004–006 прийняті
 
 2026-10-01T16:52:18+00:00: користувач прийняв Handstand Push Up attempt-4. Точний прийнятий файл: `assets/exercises/pending/agent-03-others-004/handstand-pushup/attempt-4.png`; SHA256 `f7289f233773aaef1140374ef954788369813137bb05b2d795e883b98ce49057`. `user_review=approved`, `status=approved`; backup залишається `github_verified`, PNG звірений із віддаленою work перед записом рішення. Пакети 004–006: усі 30 результатів схвалені, Floor Press — attempt-2, Handstand — attempt-4. Візуальний QA агентом не проводився; рішення прийняв користувач.
