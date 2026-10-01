@@ -1,6 +1,6 @@
 ## Handstand attempt-4: корекція стоп
 
-2026-10-01T16:49:25+00:00: assets/exercises/pending/agent-03-others-004/handstand-pushup/attempt-4.png; SHA256 f7289f233773aaef1140374ef954788369813137bb05b2d795e883b98ce49057; 1254×1254; technical_check=passed; повністю прозорих пікселів 1172545. user_review=pending, agent_visual_review=not_performed. Запит: п'яти до камери, носки до стіни. Підсвітка за каталогом: плечі, груди/трицепси; найширші залишені сірими. Наступна дія: push та remote SHA256 verification, після цього перегляд користувачем.
+2026-10-01T16:49:25+00:00: assets/exercises/pending/agent-03-others-004/handstand-pushup/attempt-4.png; SHA256 f7289f233773aaef1140374ef954788369813137bb05b2d795e883b98ce49057; 1254×1254; technical_check=passed; повністю прозорих пікселів 1172545. user_review=pending, agent_visual_review=not_performed. Запит: п'яти до камери, носки до стіни. Підсвітка за каталогом: плечі, груди/трицепси; найширші залишені сірими. Віддалений PNG та SHA256 звірені у work, commit afa3be0e14083a65093542bb2034babc8ca18864; backup_status=github_verified. Наступна дія: перегляд attempt-4 користувачем; без нового запиту не перегенеровувати.
 
 ## Handstand attempt-3 збережено для перегляду
 
