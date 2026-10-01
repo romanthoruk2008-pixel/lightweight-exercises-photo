@@ -288,3 +288,14 @@ Batch-004 retry завершено локально: три attempt-2 PNG збе
 ### Batch-004 retry: GitHub verification passed
 
 Усі три PNG присутні в `work` commit `79c1774406db73069dff0a5270bc9b8cba815209`. Віддалені байти відкрилися, SHA256 збіглися з progress/manifest, розмір кожного 1254×1254 із прозорими пікселями. Їхній backup status оновлено на `github_verified`; усі три лишаються `user_review=pending`, без агентського візуального QA. Нічних PNG тепер 39/50; без результату лишилися `fire-hydrants` (пропущено за прямою вказівкою) та 10 ID batch-005 (квота). Продовжити з `reverse-wrist-curl-dumbbell` після перевірки його live progress і відсутності готового attempt-2 файла.
+
+
+### Batch-005 retry checkpoint (2026-10-01T11:51:06+00:00)
+
+Batch-005 attempt 2 завершено: 9 нових PNG збережені у `assets/exercises/pending/night-2026-10-01/batch-005/`; усі відкриваються, квадратні й мають повністю прозорі пікселі. `user_review=pending`, агентський візуальний огляд не проводився. У progress і manifest збережені ID, точний prompt, стиль v1, спроба, SHA256, розміри та файлові перевірки.
+
+PNG збережені для: `pinwheel-curl-dumbbell`, `seated-incline-hammer-curl-dumbbell`, `bulgarian-split-squat-dumbbell`, `split-squat-dumbbell`, `biceps-curl-barbell`, `shrug-barbell`, `behind-the-back-wrist-curl-barbell`, `seated-wrist-curl-barbell`, `triceps-extension-barbell`.
+
+`reverse-wrist-curl-dumbbell`: другий виклик image_gen було перервано до повернення результату; цільового PNG та нового автозбереженого файлу немає. Вправу позначено `generation_failed`, повтору не робити без окремого запиту. Винятки без змін: `fire-hydrants` пропущено до референсу; `pushup-close-grip` залишається `needs_fix` через розмір 1536×1024.
+
+Зараз у нічному наборі є 48/50 PNG, з них 47 пройшли технічну перевірку. Після попередньої контрольної точки 39 PNG були перевірені на GitHub; 9 нових batch-005 результатів мають `backup_status=local_saved` і чекають push та віддаленої перевірки SHA256. Наступна дія: додати тільки ці 9 PNG і відповідні progress/manifest/handoff; перевірити байти у `origin/work`; після цього зафіксувати `github_verified` і зробити metadata commit.
