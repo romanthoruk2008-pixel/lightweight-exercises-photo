@@ -552,7 +552,7 @@
           "verified_commit": "f6af7e60d7e36261aaac42b511f4f83a97422254"
         },
         "agent-03-others-006": {
-          "state": "awaiting_github_verification",
+          "state": "github_verified",
           "completed_ids": [
             "pullover-dumbbell",
             "push-press-barbell",
@@ -579,18 +579,17 @@
             "seated-overhead-press-dumbbell",
             "seated-wrist-extension-barbell"
           ],
-          "backup_status": "pending",
-          "verified_at": null,
-          "verified_commit": null
+          "backup_status": "github_verified",
+          "verified_at": "2026-10-01T15:49:44+00:00",
+          "verified_commit": "70281961e7c81f43b528086b6f17d457914fdf62"
         }
       },
       "last_event": {
-        "event": "package_generation_complete_before_push",
+        "event": "package_remote_sha256_verified",
         "batch_id": "agent-03-others-006",
-        "generated_count": 10,
-        "skipped_count": 0,
-        "failed_count": 0,
-        "at": "2026-10-01T15:49:06+00:00"
+        "commit": "70281961e7c81f43b528086b6f17d457914fdf62",
+        "verified_count": 10,
+        "at": "2026-10-01T15:49:44+00:00"
       },
       "last_completed_exercise_id": "romanian-deadlift-barbell",
       "user_approval_checkpoint": {
@@ -653,6 +652,19 @@
           }
         },
         "user_generation_authorization_at": "2026-10-01T14:58:06+00:00"
+      },
+      "run_complete": {
+        "completed_at": "2026-10-01T15:49:44+00:00",
+        "completed_packages": [
+          "agent-03-others-004",
+          "agent-03-others-005",
+          "agent-03-others-006"
+        ],
+        "generated_count": 30,
+        "skipped_count": 0,
+        "failed_count": 0,
+        "user_review": "pending",
+        "next_action": "User reviews results; do not generate further packages until requested."
       }
     }
   },
@@ -24487,7 +24499,10 @@
             "tool": "image_gen.imagegen",
             "ordinal": 52,
             "generated_file": "exec-68178694-6abe-42bf-b490-ebb104a5bda6.png"
-          }
+          },
+          "backup_status": "github_verified",
+          "backup_verified_at": "2026-10-01T15:49:44+00:00",
+          "backup_verified_commit": "70281961e7c81f43b528086b6f17d457914fdf62"
         }
       ],
       "result_sha256": "5c5a95489c846d121e778bf8eb0b3d1d9434927a90955b90f3db21e30f91c278",
@@ -24512,7 +24527,10 @@
       "generation_prompt_sha256": "781a51b1c4ace79c364574b11da893e335f3e3a4fea42ddf0e800032640e4650",
       "reference_path": "assets/exercises/biceps-curl-dumbbell.png",
       "cloud_output_path": "/workspace/exercise-image-results/agent-03-others-006/pullover-dumbbell/attempt-1.png",
-      "generated_at": "2026-10-01T15:38:09+00:00"
+      "generated_at": "2026-10-01T15:38:09+00:00",
+      "backup_status": "github_verified",
+      "backup_verified_at": "2026-10-01T15:49:44+00:00",
+      "backup_verified_commit": "70281961e7c81f43b528086b6f17d457914fdf62"
     },
     "pullover-machine": {
       "id": "pullover-machine",
@@ -24658,7 +24676,10 @@
             "tool": "image_gen.imagegen",
             "ordinal": 53,
             "generated_file": "exec-4d84ee2c-5895-4f29-bb82-8415fbd14de9.png"
-          }
+          },
+          "backup_status": "github_verified",
+          "backup_verified_at": "2026-10-01T15:49:44+00:00",
+          "backup_verified_commit": "70281961e7c81f43b528086b6f17d457914fdf62"
         }
       ],
       "result_sha256": "239f0ed97bef90288d715eb7f1248ad7d8160591f6b64ae680088a9f29d49957",
@@ -24683,7 +24704,10 @@
       "generation_prompt_sha256": "75b955cdc4d7380801af7943c25a4fabeab211b9409492bd39b16efe97386137",
       "reference_path": "assets/exercises/biceps-curl-dumbbell.png",
       "cloud_output_path": "/workspace/exercise-image-results/agent-03-others-006/push-press-barbell/attempt-1.png",
-      "generated_at": "2026-10-01T15:39:21+00:00"
+      "generated_at": "2026-10-01T15:39:21+00:00",
+      "backup_status": "github_verified",
+      "backup_verified_at": "2026-10-01T15:49:44+00:00",
+      "backup_verified_commit": "70281961e7c81f43b528086b6f17d457914fdf62"
     },
     "pushup": {
       "id": "pushup",
@@ -25635,7 +25659,10 @@
             "tool": "image_gen.imagegen",
             "ordinal": 54,
             "generated_file": "exec-2f1c97e3-75d6-476b-a511-c0164ffcf90f.png"
-          }
+          },
+          "backup_status": "github_verified",
+          "backup_verified_at": "2026-10-01T15:49:44+00:00",
+          "backup_verified_commit": "70281961e7c81f43b528086b6f17d457914fdf62"
         }
       ],
       "result_sha256": "926da6b15725a0497dc75966a8fca5a329f92bb12f2993b812d370c07a82cff9",
@@ -25660,7 +25687,10 @@
       "generation_prompt_sha256": "9bc4aa35da5a6f63540c9d568d1bdd2146a5caadbcbe1bcd3a70b4ad26cd4bce",
       "reference_path": "assets/exercises/biceps-curl-dumbbell.png",
       "cloud_output_path": "/workspace/exercise-image-results/agent-03-others-006/renegade-row-dumbbell/attempt-1.png",
-      "generated_at": "2026-10-01T15:40:37+00:00"
+      "generated_at": "2026-10-01T15:40:37+00:00",
+      "backup_status": "github_verified",
+      "backup_verified_at": "2026-10-01T15:49:44+00:00",
+      "backup_verified_commit": "70281961e7c81f43b528086b6f17d457914fdf62"
     },
     "reverse-crunch": {
       "id": "reverse-crunch",
@@ -26397,7 +26427,10 @@
             "tool": "image_gen.imagegen",
             "ordinal": 55,
             "generated_file": "exec-dadc02d3-6e16-4eb4-9618-c39d050b780d.png"
-          }
+          },
+          "backup_status": "github_verified",
+          "backup_verified_at": "2026-10-01T15:49:44+00:00",
+          "backup_verified_commit": "70281961e7c81f43b528086b6f17d457914fdf62"
         }
       ],
       "result_sha256": "fabd0d0a9f58f93b055ac153bd2d08931f0b7b23afbae1fb134ef35d64db0f19",
@@ -26422,7 +26455,10 @@
       "generation_prompt_sha256": "5ab6b4ee1406adc8a8b2d4735b6d53377f3925f0c07ee6fed3b12e5989148ac0",
       "reference_path": "assets/exercises/biceps-curl-dumbbell.png",
       "cloud_output_path": "/workspace/exercise-image-results/agent-03-others-006/reverse-grip-concentration-curl-dumbbell/attempt-1.png",
-      "generated_at": "2026-10-01T15:41:48+00:00"
+      "generated_at": "2026-10-01T15:41:48+00:00",
+      "backup_status": "github_verified",
+      "backup_verified_at": "2026-10-01T15:49:44+00:00",
+      "backup_verified_commit": "70281961e7c81f43b528086b6f17d457914fdf62"
     },
     "reverse-grip-lat-pulldown-cable-machine": {
       "id": "reverse-grip-lat-pulldown-cable-machine",
@@ -26853,7 +26889,10 @@
             "tool": "image_gen.imagegen",
             "ordinal": 56,
             "generated_file": "exec-bb390776-6457-4658-8897-78a1b6478630.png"
-          }
+          },
+          "backup_status": "github_verified",
+          "backup_verified_at": "2026-10-01T15:49:44+00:00",
+          "backup_verified_commit": "70281961e7c81f43b528086b6f17d457914fdf62"
         }
       ],
       "result_sha256": "12de6f52945c6524fc33357662797bf1aff6b2fdda73ca7c0de3713740d16ca8",
@@ -26878,7 +26917,10 @@
       "generation_prompt_sha256": "89994fba6b7391c7c23a471d3d5342484ef857129de26a82c1c79cbe0035a27e",
       "reference_path": "assets/exercises/biceps-curl-dumbbell.png",
       "cloud_output_path": "/workspace/exercise-image-results/agent-03-others-006/reverse-lunge-barbell/attempt-1.png",
-      "generated_at": "2026-10-01T15:43:00+00:00"
+      "generated_at": "2026-10-01T15:43:00+00:00",
+      "backup_status": "github_verified",
+      "backup_verified_at": "2026-10-01T15:49:44+00:00",
+      "backup_verified_commit": "70281961e7c81f43b528086b6f17d457914fdf62"
     },
     "reverse-lunge-dumbbell": {
       "id": "reverse-lunge-dumbbell",
@@ -28561,7 +28603,10 @@
             "tool": "image_gen.imagegen",
             "ordinal": 57,
             "generated_file": "exec-981667a5-9355-4fc9-a7ff-f0eefaa41f21.png"
-          }
+          },
+          "backup_status": "github_verified",
+          "backup_verified_at": "2026-10-01T15:49:44+00:00",
+          "backup_verified_commit": "70281961e7c81f43b528086b6f17d457914fdf62"
         }
       ],
       "result_sha256": "f5b6e534c5c3d1f804faf0af1246fef2e6b82e45a94dcbb2f3f2449b2b275225",
@@ -28586,7 +28631,10 @@
       "generation_prompt_sha256": "36b705b7495988d244b7651e92c5216b6a41401985c7efb8ad6a7d110acee61e",
       "reference_path": "assets/exercises/biceps-curl-dumbbell.png",
       "cloud_output_path": "/workspace/exercise-image-results/agent-03-others-006/seal-row-barbell/attempt-1.png",
-      "generated_at": "2026-10-01T15:44:14+00:00"
+      "generated_at": "2026-10-01T15:44:14+00:00",
+      "backup_status": "github_verified",
+      "backup_verified_at": "2026-10-01T15:49:44+00:00",
+      "backup_verified_commit": "70281961e7c81f43b528086b6f17d457914fdf62"
     },
     "seal-row-dumbbell": {
       "id": "seal-row-dumbbell",
@@ -28677,7 +28725,10 @@
             "tool": "image_gen.imagegen",
             "ordinal": 58,
             "generated_file": "exec-c9d3b567-4fde-4363-8464-2746c5fff706.png"
-          }
+          },
+          "backup_status": "github_verified",
+          "backup_verified_at": "2026-10-01T15:49:44+00:00",
+          "backup_verified_commit": "70281961e7c81f43b528086b6f17d457914fdf62"
         }
       ],
       "result_sha256": "cf150f8a8378cf0309835ceb9a2db04bb9c4335c9f0a0ce279e0e4930ac79fb0",
@@ -28702,7 +28753,10 @@
       "generation_prompt_sha256": "655edd600caeb25cce58c9653eaa49fe583de276b3477be983c16bf9f2bdf393",
       "reference_path": "assets/exercises/biceps-curl-dumbbell.png",
       "cloud_output_path": "/workspace/exercise-image-results/agent-03-others-006/seal-row-dumbbell/attempt-1.png",
-      "generated_at": "2026-10-01T15:45:24+00:00"
+      "generated_at": "2026-10-01T15:45:24+00:00",
+      "backup_status": "github_verified",
+      "backup_verified_at": "2026-10-01T15:49:44+00:00",
+      "backup_verified_commit": "70281961e7c81f43b528086b6f17d457914fdf62"
     },
     "seated-cable-row-bar-grip-machine": {
       "id": "seated-cable-row-bar-grip-machine",
@@ -29596,7 +29650,10 @@
             "tool": "image_gen.imagegen",
             "ordinal": 59,
             "generated_file": "exec-b43e5b81-d3d5-4564-a504-f932da87f7fd.png"
-          }
+          },
+          "backup_status": "github_verified",
+          "backup_verified_at": "2026-10-01T15:49:44+00:00",
+          "backup_verified_commit": "70281961e7c81f43b528086b6f17d457914fdf62"
         }
       ],
       "result_sha256": "e38c5f8baa9bf78424624e2ce9e7324149c420b69392e64acc6f9dc10ae97dbd",
@@ -29621,7 +29678,10 @@
       "generation_prompt_sha256": "0eee8b70780a704e55b213ac8585fa50a7f66aca14dcc3d2e3981abc483c44dc",
       "reference_path": "assets/exercises/biceps-curl-dumbbell.png",
       "cloud_output_path": "/workspace/exercise-image-results/agent-03-others-006/seated-overhead-press-barbell/attempt-1.png",
-      "generated_at": "2026-10-01T15:46:39+00:00"
+      "generated_at": "2026-10-01T15:46:39+00:00",
+      "backup_status": "github_verified",
+      "backup_verified_at": "2026-10-01T15:49:44+00:00",
+      "backup_verified_commit": "70281961e7c81f43b528086b6f17d457914fdf62"
     },
     "seated-overhead-press-dumbbell": {
       "id": "seated-overhead-press-dumbbell",
@@ -29717,7 +29777,10 @@
             "tool": "image_gen.imagegen",
             "ordinal": 60,
             "generated_file": "exec-a9ec1c81-bcec-41e1-8410-3e702649089e.png"
-          }
+          },
+          "backup_status": "github_verified",
+          "backup_verified_at": "2026-10-01T15:49:44+00:00",
+          "backup_verified_commit": "70281961e7c81f43b528086b6f17d457914fdf62"
         }
       ],
       "result_sha256": "fdeb555fd9ffedbffe2647811f85e1016207f797e287724763db74b8063270e1",
@@ -29742,7 +29805,10 @@
       "generation_prompt_sha256": "2de19b1fb688acfbfa5336dd01f9fd1d7e68cb06a00aa4137362fb9cd37e299c",
       "reference_path": "assets/exercises/biceps-curl-dumbbell.png",
       "cloud_output_path": "/workspace/exercise-image-results/agent-03-others-006/seated-overhead-press-dumbbell/attempt-1.png",
-      "generated_at": "2026-10-01T15:47:28+00:00"
+      "generated_at": "2026-10-01T15:47:28+00:00",
+      "backup_status": "github_verified",
+      "backup_verified_at": "2026-10-01T15:49:44+00:00",
+      "backup_verified_commit": "70281961e7c81f43b528086b6f17d457914fdf62"
     },
     "seated-palms-up-wrist-curl-dumbbell": {
       "id": "seated-palms-up-wrist-curl-dumbbell",
@@ -30567,7 +30633,10 @@
             "tool": "image_gen.imagegen",
             "ordinal": 61,
             "generated_file": "exec-2ea3ef3f-f0b4-4d64-a462-c2db9f76f2da.png"
-          }
+          },
+          "backup_status": "github_verified",
+          "backup_verified_at": "2026-10-01T15:49:44+00:00",
+          "backup_verified_commit": "70281961e7c81f43b528086b6f17d457914fdf62"
         }
       ],
       "result_sha256": "f39cbb753ad3b9738b1e87e46d8e7f3aa927cbfcb736ea9b0bf3a036d54369e3",
@@ -30592,7 +30661,10 @@
       "generation_prompt_sha256": "695e1ca07fe909a1a8f4ea2902c994ec8b6da5aa3408f494d817f9a9ea185530",
       "reference_path": "assets/exercises/biceps-curl-dumbbell.png",
       "cloud_output_path": "/workspace/exercise-image-results/agent-03-others-006/seated-wrist-extension-barbell/attempt-1.png",
-      "generated_at": "2026-10-01T15:48:39+00:00"
+      "generated_at": "2026-10-01T15:48:39+00:00",
+      "backup_status": "github_verified",
+      "backup_verified_at": "2026-10-01T15:49:44+00:00",
+      "backup_verified_commit": "70281961e7c81f43b528086b6f17d457914fdf62"
     },
     "shoulder-press-dumbbell": {
       "id": "shoulder-press-dumbbell",
