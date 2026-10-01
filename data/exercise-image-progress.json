@@ -149,8 +149,8 @@
     "active_batch_id": "night-2026-10-01-004",
     "active_batch_item_id": null,
     "active_batch_scope": "All authorized retry generation work is complete. 48/50 IDs have PNGs; 9 batch-005 PNGs were verified on GitHub. Await user review; do not generate further images without a new request.",
-    "current_batch": "night-2026-10-01-005",
-    "next_action": "Save the current corrected triceps-extension-dumbbell PNG and approval metadata to GitHub, verify remote SHA256; then await user review of the corrected PNG.",
+    "current_batch": "night-2026-10-01-004",
+    "next_action": "Await user review of triceps-extension-dumbbell attempt-4; 47 other night PNGs approved. Do not regenerate or group equipment without a new request.",
     "night_generation_remote_audit": {
       "audited_at_utc": "2026-10-01T08:16:06Z",
       "remote_branch": "work",
@@ -356,6 +356,22 @@
         "reverse-wrist-curl-dumbbell"
       ],
       "note": "Latest user blanket acceptance applies to all existing night PNGs except the attached target. Preserve any factual technical failures separately."
+    },
+    "last_user_correction_checkpoint": {
+      "exercise_id": "triceps-extension-dumbbell",
+      "attempt": 4,
+      "relative_png_path": "assets/exercises/pending/night-2026-10-01/batch-004/triceps-extension-dumbbell/attempt-4.png",
+      "sha256": "f81b4e2454fb662b37756acc603326b5b061695aef295f8d492f8882443ae92f",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "technical_check": "passed",
+      "user_review": "pending",
+      "backup_status": "github_verified",
+      "verified_commit": "f9513d40cfd2ae9a17c273c795111d5e8e27306b",
+      "verified_at": "2026-10-01T15:14:51.373842+03:00",
+      "approved_other_night_results": 47
     }
   },
   "historical_mapping_metadata": {
@@ -33262,7 +33278,11 @@
             "errors": [],
             "scope": "File checks only; no post-generation visual QA"
           },
-          "backup_status": "local_saved"
+          "backup_status": "github_verified",
+          "github_verified_at": "2026-10-01T15:14:51.373842+03:00",
+          "github_verified_commit": "f9513d40cfd2ae9a17c273c795111d5e8e27306b",
+          "github_verified_sha256": "f81b4e2454fb662b37756acc603326b5b061695aef295f8d492f8882443ae92f",
+          "verified_commit": "f9513d40cfd2ae9a17c273c795111d5e8e27306b"
         }
       ],
       "result_sha256": "f81b4e2454fb662b37756acc603326b5b061695aef295f8d492f8882443ae92f",
@@ -33295,7 +33315,7 @@
       "batch_id": "night-2026-10-01-004",
       "prompt": "Precisely edit the supplied image for exercise ID triceps-extension-dumbbell, style v1. It is a two-dumbbell lying triceps extension on an ordinary flat bench. Preserve the existing human identity, opaque silver-gray anatomical 3D material, black shorts, bald head, natural body proportions, detailed muscles, camera angle, body pose, bench, planted feet, arm placement, triceps coloring, composition and lighting.\n\nTHE USER'S REPAIR MARK IS AT x=11.9% AND y=29.1% OF THE IMAGE, measured from the top-left corner (approximately pixel 149,365 in the supplied 1254x1254 PNG). This marks THE LOWER, LEFTMOST DUMBBELL, close to the left border, held by the nearer hand above the person's forehead. Focus the edit on this leftmost dumbbell and the grip that holds it. The upper/farther dumbbell toward the image center has already been repaired and must stay as shown.\n\nCorrect the malformed weight-to-grip connection at the marked point. Rebuild the leftmost dumbbell as a single coherent ordinary adjustable dumbbell with exactly two matching cylindrical stacks of circular black weight plates, one at EACH END of ONE STRAIGHT METAL SHAFT. Both end stacks must be coaxial, physically connected, correctly circular in perspective, with round centered end caps. Between these stacks there must be ONE DISTINCT SHORT CYLINDRICAL METAL GRIP. The nearer hand wraps naturally around that middle grip with four visible curled fingers and the thumb opposed, a closed neutral grip and a neutral wrist. Skin must not form the shaft, weights must not be fused with the hand or forearm, and no extra hub, duplicate shaft, disconnected weight or melted lump may appear. If necessary, adjust only the fingers at the grip to make the connection physically clear; preserve the wrist, forearm, upper-arm and elbow positions. Keep exactly two dumbbells total, one per hand. Keep the weights clear of the forehead.\n\nMaintain the current lowered phase of the supine triceps extension: head, back and pelvis on a flat bench, feet planted, upper arms steady, elbows bent, weights beside the forehead. Preserve all parts of the person, bench and second dumbbell as closely as possible. Triceps highlights remain base sRGB #F26445 (RGB 242,100,69) under ordinary 3D shading, with neutral gray chest and other muscles. No body transparency, glow, global orange tint or new muscles highlighted.\n\nSquare PNG, target 1024x1024, REAL alpha transparency throughout the empty background and openings. The black display behind the cutout in the reference is a viewer's transparency display, not a black backdrop to paint. Keep complete body and bench visible, with transparent margins. No text, labels, UI, borders, checkerboard, white/black background, floor plane, additional objects, additional person or motion sequence.",
       "reference_path": "/workspace/lightweight-exercises-photo/assets/exercises/pending/night-2026-10-01/batch-004/triceps-extension-dumbbell/attempt-3.png",
-      "backup_status": "local_saved",
+      "backup_status": "github_verified",
       "generated_at": "2026-10-01T15:12:53.984640+03:00",
       "backup_history": [
         {
@@ -33308,7 +33328,7 @@
           "verified_commit": "79c1774406db73069dff0a5270bc9b8cba815209"
         }
       ],
-      "user_feedback": "User requested a localized correction of the malformed dumbbell on the right-hand side of the image (the upper/farther dumbbell). All other elements are accepted.",
+      "user_feedback": "User marked x=11.9%, y=29.1% on attempt-3: repair the leftmost dumbbell at the grip. Attempt-4 is now pending user review.",
       "user_review_history": [
         {
           "recorded_at": "2026-10-01T15:03:09.768874+03:00",
@@ -33330,7 +33350,11 @@
           },
           "reason": "Fix the leftmost dumbbell at the user-marked position."
         }
-      ]
+      ],
+      "github_verified_at": "2026-10-01T15:14:51.373842+03:00",
+      "github_verified_commit": "f9513d40cfd2ae9a17c273c795111d5e8e27306b",
+      "github_verified_sha256": "f81b4e2454fb662b37756acc603326b5b061695aef295f8d492f8882443ae92f",
+      "verified_commit": "f9513d40cfd2ae9a17c273c795111d5e8e27306b"
     },
     "triceps-extension-machine": {
       "id": "triceps-extension-machine",
