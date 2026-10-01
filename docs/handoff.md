@@ -253,3 +253,23 @@ simple-002 checkpoint 2026-09-30T22:31:57.873484+00:00: shoulder-press-dumbbell 
 - batch-005: `reverse-wrist-curl-dumbbell`, `pinwheel-curl-dumbbell`, `seated-incline-hammer-curl-dumbbell`, `bulgarian-split-squat-dumbbell`, `split-squat-dumbbell`, `biceps-curl-barbell`, `shrug-barbell`, `behind-the-back-wrist-curl-barbell`, `seated-wrist-curl-barbell`, `triceps-extension-barbell`
 
 Після кожної завершеної групи за batch зберегти та push-нути PNG і метадані, перевірити SHA256 у віддаленій гілці `work`, потім позначити лише реально перевірені backup як `github_verified`. Не змінювати каталог, попередні прийняті файли чи Supabase статус. Наступна дія — дочекатися quota reset, потім почати з `fire-hydrants`.
+
+## Аудит повноти нічної генерації (2026-10-01 08:16 UTC)
+
+Перевірено всі 50 унікальних ID з п’яти batch JSON проти локальних файлів і віддаленої `work` на commit `b48f3c198d7d4e0cedb24f4071950ed31ba198b3`. Усі знайдені 36 PNG відкриваються; їхні локальні й віддалені SHA256 збігаються з progress та manifest. Дублікатів і зайвих PNG немає. Локально наявних, але ще не запушених зображень немає, тож push виправлення не був потрібен.
+
+| Пакет | Очікується | У хмарі | Перевірено на GitHub | Відсутні |
+|---|---:|---:|---:|---:|
+| batch-001 | 10 | 9 | 9 | 1 |
+| batch-002 | 10 | 10 | 10 | 0 |
+| batch-003 | 10 | 10 | 10 | 0 |
+| batch-004 | 10 | 7 | 7 | 3 |
+| batch-005 | 10 | 0 | 0 | 10 |
+| **Разом** | **50** | **36** | **36** | **14** |
+
+Відсутні результати й зафіксовані причини:
+- batch-001: `fire-hydrants` — Fire Hydrants; output заблокований safety-модерацією (`sexual`).
+- batch-004: `seated-palms-up-wrist-curl-dumbbell` — Seated Palms Up Wrist Curl; `triceps-extension-dumbbell` — Triceps Extension (Dumbbell); `squat-dumbbell` — Squat (Dumbbell). Усі три не згенерувалися через HTTP 429 `usage_limit_reached`.
+- batch-005: `reverse-wrist-curl-dumbbell` — Reverse Wrist Curl (Dumbbell); `pinwheel-curl-dumbbell` — Pinwheel Curl (Dumbbell); `seated-incline-hammer-curl-dumbbell` — Seated Incline Hammer Curl (Dumbbell); `bulgarian-split-squat-dumbbell` — Bulgarian Split Squat (Dumbbell); `split-squat-dumbbell` — Split Squat (Dumbbell); `biceps-curl-barbell` — Bicep Curl (Barbell); `shrug-barbell` — Shrug (Barbell); `behind-the-back-wrist-curl-barbell` — Behind the Back Wrist Curl (Barbell); `seated-wrist-curl-barbell` — Seated Wrist Curl (Barbell); `triceps-extension-barbell` — Triceps Extension (Barbell). Усі десять не згенерувалися через HTTP 429 `usage_limit_reached`.
+
+Окрема технічна невідповідність, не втрата файлу: `pushup-close-grip` PNG відкривається і SHA256 збігається, але його розмір 1536×1024, не квадратний. Інших помилок відкриття або SHA256 немає. Відповідні записи status/attempt/hash у progress і manifest збігаються з фактичними файлами; progress доповнено аудитом, кількостями по пакетах та точним місцем продовження. Нових генерацій під час аудиту не було. Попередній дозвіл на один повторний виклик для 14 відсутніх ID лишається зафіксованим, але цей аудит завершується звітом; не запускати повтори без наступної команди користувача.

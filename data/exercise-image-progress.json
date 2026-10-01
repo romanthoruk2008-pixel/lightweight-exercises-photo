@@ -13,7 +13,7 @@
     "generation_authorized": true,
     "supabase_status": "not_configured",
     "supabase_upload_authorized": false,
-    "generation_scope": "night-2026-10-01: all 50 one-call attempts recorded; generation paused after built-in tool usage limit",
+    "generation_scope": "night-2026-10-01: first attempts audited; 36 PNGs verified in cloud and GitHub; 14 missing. A missing-only retry was previously authorized but is paused until the user reviews this audit report.",
     "mass_generation_authorized": true,
     "pilot_ids": [
       "bench-press-barbell",
@@ -148,9 +148,90 @@
     ],
     "active_batch_id": "night-2026-10-01-005",
     "active_batch_item_id": null,
-    "active_batch_scope": "all 50 one-call attempts complete; 36 PNG files, 14 failed without output; no automatic retries",
+    "active_batch_scope": "No generation during the completeness audit. Previously authorized one attempt per missing ID is deferred until the user asks to resume after seeing the report.",
     "current_batch": "night-2026-10-01-005",
-    "next_action": "Night run stopped after all 50 one-call attempts: 36 PNGs verified at GitHub commit a0f650d0c2add34b8bab916c54169d99a00f2d00. Fourteen IDs have no output; wait until quota reset 2026-10-01T09:10:39Z and await direct user instruction before any new attempt."
+    "next_action": "Report the exact 14 missing IDs and findings; wait for the user to direct resumption before any new image generation.",
+    "night_generation_remote_audit": {
+      "audited_at_utc": "2026-10-01T08:16:06Z",
+      "remote_branch": "work",
+      "remote_commit": "b48f3c198d7d4e0cedb24f4071950ed31ba198b3",
+      "source_batches": [
+        "data/batches/night-2026-10-01-001.json",
+        "data/batches/night-2026-10-01-002.json",
+        "data/batches/night-2026-10-01-003.json",
+        "data/batches/night-2026-10-01-004.json",
+        "data/batches/night-2026-10-01-005.json"
+      ],
+      "expected_ids": 50,
+      "unique_expected_ids": 50,
+      "duplicate_expected_ids": [],
+      "cloud_pngs": 36,
+      "remote_pngs": 36,
+      "opened_pngs": 36,
+      "sha256_matched_progress_and_manifest": 36,
+      "local_only_ids": [],
+      "remote_only_ids": [],
+      "missing_ids": [
+        "fire-hydrants",
+        "seated-palms-up-wrist-curl-dumbbell",
+        "triceps-extension-dumbbell",
+        "squat-dumbbell",
+        "reverse-wrist-curl-dumbbell",
+        "pinwheel-curl-dumbbell",
+        "seated-incline-hammer-curl-dumbbell",
+        "bulgarian-split-squat-dumbbell",
+        "split-squat-dumbbell",
+        "biceps-curl-barbell",
+        "shrug-barbell",
+        "behind-the-back-wrist-curl-barbell",
+        "seated-wrist-curl-barbell",
+        "triceps-extension-barbell"
+      ],
+      "corrupt_ids": [],
+      "sha256_mismatch_ids": [],
+      "technical_issue_ids": [
+        "pushup-close-grip"
+      ],
+      "technical_issue_note": "PNG opens and SHA256 matches progress/manifest, but dimensions are 1536x1024 rather than square.",
+      "new_generation_attempts_during_audit": 0,
+      "batch_counts": [
+        {
+          "batch_id": "night-2026-10-01-001",
+          "expected": 10,
+          "cloud": 9,
+          "github_verified": 9,
+          "missing": 1
+        },
+        {
+          "batch_id": "night-2026-10-01-002",
+          "expected": 10,
+          "cloud": 10,
+          "github_verified": 10,
+          "missing": 0
+        },
+        {
+          "batch_id": "night-2026-10-01-003",
+          "expected": 10,
+          "cloud": 10,
+          "github_verified": 10,
+          "missing": 0
+        },
+        {
+          "batch_id": "night-2026-10-01-004",
+          "expected": 10,
+          "cloud": 7,
+          "github_verified": 7,
+          "missing": 3
+        },
+        {
+          "batch_id": "night-2026-10-01-005",
+          "expected": 10,
+          "cloud": 0,
+          "github_verified": 0,
+          "missing": 10
+        }
+      ]
+    }
   },
   "historical_mapping_metadata": {
     "schema_version": "1.0",
