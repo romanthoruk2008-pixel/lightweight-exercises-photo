@@ -13,7 +13,7 @@
     "generation_authorized": true,
     "supabase_status": "not_configured",
     "supabase_upload_authorized": false,
-    "generation_scope": "night-2026-10-01: first attempts audited; 36 PNGs verified in cloud and GitHub; 14 missing. A missing-only retry was previously authorized but is paused until the user reviews this audit report.",
+    "generation_scope": "night-2026-10-01: batch-004 retry generated 3 of 3 missing quota-blocked images once each; batch-005 (10 IDs) remains. Skip fire-hydrants and preserve pushup-close-grip as needs_fix.",
     "mass_generation_authorized": true,
     "pilot_ids": [
       "bench-press-barbell",
@@ -146,11 +146,11 @@
         }
       }
     ],
-    "active_batch_id": "night-2026-10-01-005",
+    "active_batch_id": "night-2026-10-01-004",
     "active_batch_item_id": null,
-    "active_batch_scope": "No generation during the completeness audit. Previously authorized one attempt per missing ID is deferred until the user asks to resume after seeing the report.",
-    "current_batch": "night-2026-10-01-005",
-    "next_action": "Report the exact 14 missing IDs and findings; wait for the user to direct resumption before any new image generation.",
+    "active_batch_scope": "batch-004 retry has 3 local attempt-2 PNGs, technical checks passed, user_review pending; complete GitHub checkpoint and remote hash verification before starting batch-005.",
+    "current_batch": "night-2026-10-01-004",
+    "next_action": "Commit/push the three batch-004 attempt-2 PNGs plus progress and manifest; verify remote hashes, mark backup verified, update handoff, then start batch-005. If generation returns HTTP 429, stop after preserving current progress.",
     "night_generation_remote_audit": {
       "audited_at_utc": "2026-10-01T08:16:06Z",
       "remote_branch": "work",
@@ -231,6 +231,41 @@
           "missing": 10
         }
       ]
+    },
+    "retry_authorization": {
+      "authorized_by_current_user_request": true,
+      "scope_ids": [
+        "seated-palms-up-wrist-curl-dumbbell",
+        "triceps-extension-dumbbell",
+        "squat-dumbbell",
+        "reverse-wrist-curl-dumbbell",
+        "pinwheel-curl-dumbbell",
+        "seated-incline-hammer-curl-dumbbell",
+        "bulgarian-split-squat-dumbbell",
+        "split-squat-dumbbell",
+        "biceps-curl-barbell",
+        "shrug-barbell",
+        "behind-the-back-wrist-curl-barbell",
+        "seated-wrist-curl-barbell",
+        "triceps-extension-barbell"
+      ],
+      "max_new_attempts_per_id": 1,
+      "skip_id": "fire-hydrants",
+      "no_visual_qa": true
+    },
+    "last_retry_checkpoint": {
+      "batch_id": "night-2026-10-01-004",
+      "ids": [
+        "seated-palms-up-wrist-curl-dumbbell",
+        "triceps-extension-dumbbell",
+        "squat-dumbbell"
+      ],
+      "attempt": 2,
+      "local_png_count": 3,
+      "technical_check_passed": 3,
+      "user_review": "pending",
+      "agent_visual_review": "not_performed",
+      "remote_verification": "pending"
     }
   },
   "historical_mapping_metadata": {
@@ -20409,7 +20444,7 @@
         "exists_at_preparation": true,
         "sha256": "873872b5d185f32da060a488743e1d4d202778ad8e4c48a919b69a5632813c85"
       },
-      "status": "technical_issue",
+      "status": "needs_fix",
       "included_in_generation": true,
       "archived_inclusion_authorized": false,
       "blocked_by": [
@@ -24101,13 +24136,13 @@
         "exists_at_preparation": true,
         "sha256": "cdd661c59c99b91f287ac2a484f87b266b529cf4739866971e8e1185b7c79581"
       },
-      "status": "generation_failed",
+      "status": "generated_needs_review",
       "included_in_generation": true,
       "archived_inclusion_authorized": false,
       "blocked_by": [
         "pilot_not_approved"
       ],
-      "attempts": 1,
+      "attempts": 2,
       "style_version": "v1",
       "visual_review": {
         "status": "not_reviewed",
@@ -24121,10 +24156,10 @@
         },
         "notes": null
       },
-      "result_path": "/workspace/lightweight-exercises-photo/assets/exercises/pending/night-2026-10-01/batch-004/seated-palms-up-wrist-curl-dumbbell/attempt-1.png",
+      "result_path": "/workspace/lightweight-exercises-photo/assets/exercises/pending/night-2026-10-01/batch-004/seated-palms-up-wrist-curl-dumbbell/attempt-2.png",
       "supabase_path": null,
       "supabase_upload_status": "not_configured",
-      "last_error": "image generation failed: http 429 Too Many Requests: Some(\"{\\\"error\\\":{\\\"type\\\":\\\"usage_limit_reached\\\",\\\"message\\\":\\\"The usage limit has been reached\\\",\\\"plan_type\\\":\\\"plus\\\",\\\"resets_at\\\":1790845839,\\\"eligible_promo\\\":null,\\\"limit_window_minutes\\\":null,\\\"resets_in_seconds\\\":30961}}\")",
+      "last_error": null,
       "attempt_history": [
         {
           "attempt": 1,
@@ -24155,20 +24190,74 @@
             "actual_dimensions": null,
             "fully_transparent_pixels": null
           }
+        },
+        {
+          "attempt": 2,
+          "id": "seated-palms-up-wrist-curl-dumbbell",
+          "batch_id": "night-2026-10-01-004",
+          "generation_run_id": "night-2026-10-01",
+          "generated_overnight": true,
+          "style_version": "v1",
+          "tool": "image_gen.imagegen",
+          "started_at": "2026-10-01T14:20:36.612594+03:00",
+          "prompt": "STYLE v1. Use the supplied approved human reference ONLY for the person's identity, anatomical 3D style, body proportions, materials and detail. Do not copy its pose, dumbbells, muscle highlighting or composition. Match the same bald athletic adult male, opaque silver-gray sculpted anatomical muscle surfaces, simple fitted black shorts, barefoot, neutral face and consistent natural proportions. One person, one exercise, one characteristic phase: no second figure, collage or motion ghosts. Equipment must be only the simple items named in this scene, neutral gray/black materials, complete and mechanically ordinary. Primary muscles: localized coral #F26445. Named secondary muscles: the same hue at roughly 45% intensity blended with gray, clearly lighter. Do not highlight muscles absent from the catalog list, make the body or shorts transparent, or apply a global orange cast/glow. Preserve clothing; highlight visible anatomical surfaces without inventing see-through tissue. Square PNG, unchanged target 1024x1024, true transparent alpha background outside the person and required equipment/mat and through any openings; no white or checkerboard backdrop, drawn floor plane, UI, text, labels, frames, decorations or halo. Entire person and every required piece of equipment must fit with transparent margins; adapt scale/camera without distortion or cropping. Accent pigment must use base sRGB #F26445 = RGB(242,100,69); retain this hue through ordinary 3D shading. Secondary highlights use this hue at 40-50% intensity blended with the gray body, not transparent tissue.\n\nEXERCISE ID: seated-palms-up-wrist-curl-dumbbell\nNAME: Seated Palms Up Wrist Curl\nCatalog equipment: dumbbell\nDepict only: two dumbbells, ordinary flat bench\nPrimary muscle: forearms\nSecondary muscles: []\n\nONE SPECIFIC SCENE: Seated on an ordinary flat bench with feet flat, BOTH FOREARMS RESTING ON THE THIGHS and wrists projecting just beyond knees. One dumbbell in each closed grip, PALMS UP. Small wrist-flexion top phase raises weights using wrists only, elbows and shoulders still. Elevated front-side camera shows wrist-to-knee clearance and grip; no biceps curl.\n\nENGLISH SOURCE (this ID only; do not substitute a familiar variant):\n{\"description\": \"Rest palms-up forearms on the thighs and curl the dumbbells upward with the wrists before lowering them.\", \"instructions\": [\"Sit on a bench with your feet flat on the ground and hold a dumbbell in each hand, palms facing up.\", \"Rest your forearms on your thighs, allowing your wrists to hang off the edge.\", \"Slowly curl your wrists upward, squeezing your forearms at the top of the movement.\", \"Pause for a moment, then lower your wrists back down to the starting position.\", \"Repeat for the desired number of repetitions.\"], \"form_cues\": [\"Keep the upper arms or thighs still.\", \"Keep wrists aligned.\", \"Lower the weight slowly.\"], \"common_mistakes\": [\"Swinging the torso.\", \"Letting the elbow drift.\", \"Dropping the weight.\"], \"safety_note\": \"Choose resistance that keeps the elbow and wrist path controlled.\", \"provenance\": \"adapted\"}\nMaintain source contact points and safe control. Render only this characteristic phase, not the entire instruction sequence. Reference anatomy is opaque; localize the specified muscle pigment without copying reference highlights.",
+          "reference": "assets/exercises/biceps-curl-dumbbell.png",
+          "status": "saved",
+          "result_path": "/workspace/lightweight-exercises-photo/assets/exercises/pending/night-2026-10-01/batch-004/seated-palms-up-wrist-curl-dumbbell/attempt-2.png",
+          "previous_attempt_error": "image generation failed: http 429 Too Many Requests: Some(\"{\\\"error\\\":{\\\"type\\\":\\\"usage_limit_reached\\\",\\\"message\\\":\\\"The usage limit has been reached\\\",\\\"plan_type\\\":\\\"plus\\\",\\\"resets_at\\\":1790845839,\\\"eligible_promo\\\":null,\\\"limit_window_minutes\\\":null,\\\"resets_in_seconds\\\":30961}}\")",
+          "agent_visual_review": "not_performed",
+          "user_review": "pending",
+          "finished_at": "2026-10-01T14:24:17.166039+03:00",
+          "error": null,
+          "technical_check": "passed",
+          "technical_check_details": {
+            "id": "seated-palms-up-wrist-curl-dumbbell",
+            "path": "/workspace/lightweight-exercises-photo/assets/exercises/pending/night-2026-10-01/batch-004/seated-palms-up-wrist-curl-dumbbell/attempt-2.png",
+            "errors": [],
+            "exists": true,
+            "sha256": "3dbcc4180255f6fde6e56e173a570fc3209bedaf0fffd6d793a3de3f2da07be4",
+            "matches_recorded_sha256": true,
+            "format": "PNG",
+            "opens": true,
+            "width": 1254,
+            "height": 1254,
+            "actual_dimensions": [
+              1254,
+              1254
+            ],
+            "square": true,
+            "mode": "RGBA",
+            "has_alpha_channel": true,
+            "fully_transparent_pixels": 1112447,
+            "scope": "PNG opens, square dimensions, actual transparent pixels, SHA256; no visual QA"
+          },
+          "generated_at": "2026-10-01T14:21:36.988592+03:00",
+          "sha256": "3dbcc4180255f6fde6e56e173a570fc3209bedaf0fffd6d793a3de3f2da07be4",
+          "recovered_from_tool_artifact": "/workspace/generated_images/exec-5f67888e-5f64-406a-8edb-48f864652090.png"
         }
       ],
-      "result_sha256": null,
-      "technical_check": "failed",
+      "result_sha256": "3dbcc4180255f6fde6e56e173a570fc3209bedaf0fffd6d793a3de3f2da07be4",
+      "technical_check": "passed",
       "technical_check_details": {
         "id": "seated-palms-up-wrist-curl-dumbbell",
-        "path": "assets/exercises/pending/night-2026-10-01/004/seated-palms-up-wrist-curl-dumbbell/attempt-1.png",
-        "errors": [
-          "image generation failed: http 429 Too Many Requests: Some(\"{\\\"error\\\":{\\\"type\\\":\\\"usage_limit_reached\\\",\\\"message\\\":\\\"The usage limit has been reached\\\",\\\"plan_type\\\":\\\"plus\\\",\\\"resets_at\\\":1790845839,\\\"eligible_promo\\\":null,\\\"limit_window_minutes\\\":null,\\\"resets_in_seconds\\\":30961}}\")"
+        "path": "/workspace/lightweight-exercises-photo/assets/exercises/pending/night-2026-10-01/batch-004/seated-palms-up-wrist-curl-dumbbell/attempt-2.png",
+        "errors": [],
+        "exists": true,
+        "sha256": "3dbcc4180255f6fde6e56e173a570fc3209bedaf0fffd6d793a3de3f2da07be4",
+        "matches_recorded_sha256": true,
+        "format": "PNG",
+        "opens": true,
+        "width": 1254,
+        "height": 1254,
+        "actual_dimensions": [
+          1254,
+          1254
         ],
-        "exists": false,
-        "sha256": null,
-        "actual_dimensions": null,
-        "fully_transparent_pixels": null
+        "square": true,
+        "mode": "RGBA",
+        "has_alpha_channel": true,
+        "fully_transparent_pixels": 1112447,
+        "scope": "PNG opens, square dimensions, actual transparent pixels, SHA256; no visual QA"
       },
       "agent_visual_review": "not_performed",
       "agent_visual_review_notes": [],
@@ -24178,7 +24267,18 @@
       "batch_id": "night-2026-10-01-004",
       "prompt": "STYLE v1. Use the supplied approved human reference ONLY for the person's identity, anatomical 3D style, body proportions, materials and detail. Do not copy its pose, dumbbells, muscle highlighting or composition. Match the same bald athletic adult male, opaque silver-gray sculpted anatomical muscle surfaces, simple fitted black shorts, barefoot, neutral face and consistent natural proportions. One person, one exercise, one characteristic phase: no second figure, collage or motion ghosts. Equipment must be only the simple items named in this scene, neutral gray/black materials, complete and mechanically ordinary. Primary muscles: localized coral #F26445. Named secondary muscles: the same hue at roughly 45% intensity blended with gray, clearly lighter. Do not highlight muscles absent from the catalog list, make the body or shorts transparent, or apply a global orange cast/glow. Preserve clothing; highlight visible anatomical surfaces without inventing see-through tissue. Square PNG, unchanged target 1024x1024, true transparent alpha background outside the person and required equipment/mat and through any openings; no white or checkerboard backdrop, drawn floor plane, UI, text, labels, frames, decorations or halo. Entire person and every required piece of equipment must fit with transparent margins; adapt scale/camera without distortion or cropping. Accent pigment must use base sRGB #F26445 = RGB(242,100,69); retain this hue through ordinary 3D shading. Secondary highlights use this hue at 40-50% intensity blended with the gray body, not transparent tissue.\n\nEXERCISE ID: seated-palms-up-wrist-curl-dumbbell\nNAME: Seated Palms Up Wrist Curl\nCatalog equipment: dumbbell\nDepict only: two dumbbells, ordinary flat bench\nPrimary muscle: forearms\nSecondary muscles: []\n\nONE SPECIFIC SCENE: Seated on an ordinary flat bench with feet flat, BOTH FOREARMS RESTING ON THE THIGHS and wrists projecting just beyond knees. One dumbbell in each closed grip, PALMS UP. Small wrist-flexion top phase raises weights using wrists only, elbows and shoulders still. Elevated front-side camera shows wrist-to-knee clearance and grip; no biceps curl.\n\nENGLISH SOURCE (this ID only; do not substitute a familiar variant):\n{\"description\": \"Rest palms-up forearms on the thighs and curl the dumbbells upward with the wrists before lowering them.\", \"instructions\": [\"Sit on a bench with your feet flat on the ground and hold a dumbbell in each hand, palms facing up.\", \"Rest your forearms on your thighs, allowing your wrists to hang off the edge.\", \"Slowly curl your wrists upward, squeezing your forearms at the top of the movement.\", \"Pause for a moment, then lower your wrists back down to the starting position.\", \"Repeat for the desired number of repetitions.\"], \"form_cues\": [\"Keep the upper arms or thighs still.\", \"Keep wrists aligned.\", \"Lower the weight slowly.\"], \"common_mistakes\": [\"Swinging the torso.\", \"Letting the elbow drift.\", \"Dropping the weight.\"], \"safety_note\": \"Choose resistance that keeps the elbow and wrist path controlled.\", \"provenance\": \"adapted\"}\nMaintain source contact points and safe control. Render only this characteristic phase, not the entire instruction sequence. Reference anatomy is opaque; localize the specified muscle pigment without copying reference highlights.",
       "reference_path": "assets/exercises/biceps-curl-dumbbell.png",
-      "backup_status": "no_file"
+      "backup_status": "local_saved",
+      "generated_at": "2026-10-01T14:21:36.988592+03:00",
+      "backup_history": [
+        {
+          "backup_id": "night-2026-10-01",
+          "storage": "git_repository_pending",
+          "status": "local_saved",
+          "repository_path": "assets/exercises/pending/night-2026-10-01/batch-004/seated-palms-up-wrist-curl-dumbbell/attempt-2.png",
+          "png_sha256": "3dbcc4180255f6fde6e56e173a570fc3209bedaf0fffd6d793a3de3f2da07be4",
+          "verified_at": null
+        }
+      ]
     },
     "seated-row-machine": {
       "id": "seated-row-machine",
@@ -28645,13 +28745,13 @@
         "exists_at_preparation": true,
         "sha256": "e62b3abce4d3284da0f8205a064100d1a8299ee659c409205d021d08765e06f7"
       },
-      "status": "generation_failed",
+      "status": "generated_needs_review",
       "included_in_generation": true,
       "archived_inclusion_authorized": false,
       "blocked_by": [
         "pilot_not_approved"
       ],
-      "attempts": 1,
+      "attempts": 2,
       "style_version": "v1",
       "visual_review": {
         "status": "not_reviewed",
@@ -28665,10 +28765,10 @@
         },
         "notes": null
       },
-      "result_path": "/workspace/lightweight-exercises-photo/assets/exercises/pending/night-2026-10-01/batch-004/squat-dumbbell/attempt-1.png",
+      "result_path": "/workspace/lightweight-exercises-photo/assets/exercises/pending/night-2026-10-01/batch-004/squat-dumbbell/attempt-2.png",
       "supabase_path": null,
       "supabase_upload_status": "not_configured",
-      "last_error": "image generation failed: http 429 Too Many Requests: Some(\"{\\\"error\\\":{\\\"type\\\":\\\"usage_limit_reached\\\",\\\"message\\\":\\\"The usage limit has been reached\\\",\\\"plan_type\\\":\\\"plus\\\",\\\"resets_at\\\":1790845839,\\\"eligible_promo\\\":null,\\\"limit_window_minutes\\\":null,\\\"resets_in_seconds\\\":30959}}\")",
+      "last_error": null,
       "attempt_history": [
         {
           "attempt": 1,
@@ -28699,20 +28799,74 @@
             "actual_dimensions": null,
             "fully_transparent_pixels": null
           }
+        },
+        {
+          "attempt": 2,
+          "id": "squat-dumbbell",
+          "batch_id": "night-2026-10-01-004",
+          "generation_run_id": "night-2026-10-01",
+          "generated_overnight": true,
+          "style_version": "v1",
+          "tool": "image_gen.imagegen",
+          "started_at": "2026-10-01T14:29:54.004180+03:00",
+          "prompt": "STYLE v1. Use the supplied approved human reference ONLY for the person's identity, anatomical 3D style, body proportions, materials and detail. Do not copy its pose, dumbbells, muscle highlighting or composition. Match the same bald athletic adult male, opaque silver-gray sculpted anatomical muscle surfaces, simple fitted black shorts, barefoot, neutral face and consistent natural proportions. One person, one exercise, one characteristic phase: no second figure, collage or motion ghosts. Equipment must be only the simple items named in this scene, neutral gray/black materials, complete and mechanically ordinary. Primary muscles: localized coral #F26445. Named secondary muscles: the same hue at roughly 45% intensity blended with gray, clearly lighter. Do not highlight muscles absent from the catalog list, make the body or shorts transparent, or apply a global orange cast/glow. Preserve clothing; highlight visible anatomical surfaces without inventing see-through tissue. Square PNG, unchanged target 1024x1024, true transparent alpha background outside the person and required equipment/mat and through any openings; no white or checkerboard backdrop, drawn floor plane, UI, text, labels, frames, decorations or halo. Entire person and every required piece of equipment must fit with transparent margins; adapt scale/camera without distortion or cropping. Accent pigment must use base sRGB #F26445 = RGB(242,100,69); retain this hue through ordinary 3D shading. Secondary highlights use this hue at 40-50% intensity blended with the gray body, not transparent tissue.\n\nEXERCISE ID: squat-dumbbell\nNAME: Squat (Dumbbell)\nCatalog equipment: dumbbell\nDepict only: two dumbbells\nPrimary muscle: quadriceps\nSecondary muscles: [\"hamstrings\", \"glutes\"]\n\nONE SPECIFIC SCENE: Bottom of a controlled dumbbell squat: feet shoulder-width, hips back and knees bend toward a comfortable near-parallel thigh position, both heels flat, chest lifted. ONE dumbbell in each hand hanging at the SIDES on straight relaxed arms, handles wrapped securely. Front three-quarter view shows separate weights and knees tracking toes. No goblet or front-rack grip.\n\nENGLISH SOURCE (this ID only; do not substitute a familiar variant):\n{\"description\": \"Squat (Dumbbell) lowers the hips by bending the hips and knees and returns to standing by driving through the feet.\", \"instructions\": [\"Stand with your feet shoulder-width apart, holding a dumbbell in each hand at your sides.\", \"Keeping your chest up and core engaged, lower your body down by bending at the knees and hips, as if sitting back into a chair.\", \"Continue lowering until your thighs are parallel to the ground, or as low as you can comfortably go.\", \"Pause for a moment at the bottom, then push through your heels to return to the starting position.\"], \"form_cues\": [\"Keep the knees tracking the toes.\", \"Keep the heels grounded.\", \"Brace the trunk through the depth.\"], \"common_mistakes\": [\"Letting the knees cave inward.\", \"Rounding the lower back.\", \"Bouncing or cutting the depth short.\"], \"safety_note\": \"Use a rack or machine stops and choose a depth you can control with both feet planted.\", \"provenance\": \"adapted\"}\nMaintain source contact points and safe control. Render only this characteristic phase, not the entire instruction sequence. Reference anatomy is opaque; localize the specified muscle pigment without copying reference highlights.",
+          "reference": "assets/exercises/biceps-curl-dumbbell.png",
+          "status": "saved",
+          "result_path": "/workspace/lightweight-exercises-photo/assets/exercises/pending/night-2026-10-01/batch-004/squat-dumbbell/attempt-2.png",
+          "previous_attempt_error": "image generation failed: http 429 Too Many Requests: Some(\"{\\\"error\\\":{\\\"type\\\":\\\"usage_limit_reached\\\",\\\"message\\\":\\\"The usage limit has been reached\\\",\\\"plan_type\\\":\\\"plus\\\",\\\"resets_at\\\":1790845839,\\\"eligible_promo\\\":null,\\\"limit_window_minutes\\\":null,\\\"resets_in_seconds\\\":30959}}\")",
+          "agent_visual_review": "not_performed",
+          "user_review": "pending",
+          "finished_at": "2026-10-01T14:30:49.314084+03:00",
+          "generated_at": "2026-10-01T14:30:48.820488+03:00",
+          "sha256": "7470c2067198392ab7110a285e998146d8cee1a21c8c69de5801f4ede97005b2",
+          "technical_check": "passed",
+          "technical_check_details": {
+            "id": "squat-dumbbell",
+            "path": "/workspace/lightweight-exercises-photo/assets/exercises/pending/night-2026-10-01/batch-004/squat-dumbbell/attempt-2.png",
+            "errors": [],
+            "exists": true,
+            "sha256": "7470c2067198392ab7110a285e998146d8cee1a21c8c69de5801f4ede97005b2",
+            "matches_recorded_sha256": true,
+            "format": "PNG",
+            "opens": true,
+            "width": 1254,
+            "height": 1254,
+            "actual_dimensions": [
+              1254,
+              1254
+            ],
+            "square": true,
+            "mode": "RGBA",
+            "has_alpha_channel": true,
+            "fully_transparent_pixels": 1217908,
+            "scope": "PNG opens, square dimensions, actual transparent pixels, SHA256; no visual QA"
+          },
+          "error": null,
+          "artifact_capture": "copied byte-for-byte from image_gen generated_images output"
         }
       ],
-      "result_sha256": null,
-      "technical_check": "failed",
+      "result_sha256": "7470c2067198392ab7110a285e998146d8cee1a21c8c69de5801f4ede97005b2",
+      "technical_check": "passed",
       "technical_check_details": {
         "id": "squat-dumbbell",
-        "path": "assets/exercises/pending/night-2026-10-01/004/squat-dumbbell/attempt-1.png",
-        "errors": [
-          "image generation failed: http 429 Too Many Requests: Some(\"{\\\"error\\\":{\\\"type\\\":\\\"usage_limit_reached\\\",\\\"message\\\":\\\"The usage limit has been reached\\\",\\\"plan_type\\\":\\\"plus\\\",\\\"resets_at\\\":1790845839,\\\"eligible_promo\\\":null,\\\"limit_window_minutes\\\":null,\\\"resets_in_seconds\\\":30959}}\")"
+        "path": "/workspace/lightweight-exercises-photo/assets/exercises/pending/night-2026-10-01/batch-004/squat-dumbbell/attempt-2.png",
+        "errors": [],
+        "exists": true,
+        "sha256": "7470c2067198392ab7110a285e998146d8cee1a21c8c69de5801f4ede97005b2",
+        "matches_recorded_sha256": true,
+        "format": "PNG",
+        "opens": true,
+        "width": 1254,
+        "height": 1254,
+        "actual_dimensions": [
+          1254,
+          1254
         ],
-        "exists": false,
-        "sha256": null,
-        "actual_dimensions": null,
-        "fully_transparent_pixels": null
+        "square": true,
+        "mode": "RGBA",
+        "has_alpha_channel": true,
+        "fully_transparent_pixels": 1217908,
+        "scope": "PNG opens, square dimensions, actual transparent pixels, SHA256; no visual QA"
       },
       "agent_visual_review": "not_performed",
       "agent_visual_review_notes": [],
@@ -28722,7 +28876,18 @@
       "batch_id": "night-2026-10-01-004",
       "prompt": "STYLE v1. Use the supplied approved human reference ONLY for the person's identity, anatomical 3D style, body proportions, materials and detail. Do not copy its pose, dumbbells, muscle highlighting or composition. Match the same bald athletic adult male, opaque silver-gray sculpted anatomical muscle surfaces, simple fitted black shorts, barefoot, neutral face and consistent natural proportions. One person, one exercise, one characteristic phase: no second figure, collage or motion ghosts. Equipment must be only the simple items named in this scene, neutral gray/black materials, complete and mechanically ordinary. Primary muscles: localized coral #F26445. Named secondary muscles: the same hue at roughly 45% intensity blended with gray, clearly lighter. Do not highlight muscles absent from the catalog list, make the body or shorts transparent, or apply a global orange cast/glow. Preserve clothing; highlight visible anatomical surfaces without inventing see-through tissue. Square PNG, unchanged target 1024x1024, true transparent alpha background outside the person and required equipment/mat and through any openings; no white or checkerboard backdrop, drawn floor plane, UI, text, labels, frames, decorations or halo. Entire person and every required piece of equipment must fit with transparent margins; adapt scale/camera without distortion or cropping. Accent pigment must use base sRGB #F26445 = RGB(242,100,69); retain this hue through ordinary 3D shading. Secondary highlights use this hue at 40-50% intensity blended with the gray body, not transparent tissue.\n\nEXERCISE ID: squat-dumbbell\nNAME: Squat (Dumbbell)\nCatalog equipment: dumbbell\nDepict only: two dumbbells\nPrimary muscle: quadriceps\nSecondary muscles: [\"hamstrings\", \"glutes\"]\n\nONE SPECIFIC SCENE: Bottom of a controlled dumbbell squat: feet shoulder-width, hips back and knees bend toward a comfortable near-parallel thigh position, both heels flat, chest lifted. ONE dumbbell in each hand hanging at the SIDES on straight relaxed arms, handles wrapped securely. Front three-quarter view shows separate weights and knees tracking toes. No goblet or front-rack grip.\n\nENGLISH SOURCE (this ID only; do not substitute a familiar variant):\n{\"description\": \"Squat (Dumbbell) lowers the hips by bending the hips and knees and returns to standing by driving through the feet.\", \"instructions\": [\"Stand with your feet shoulder-width apart, holding a dumbbell in each hand at your sides.\", \"Keeping your chest up and core engaged, lower your body down by bending at the knees and hips, as if sitting back into a chair.\", \"Continue lowering until your thighs are parallel to the ground, or as low as you can comfortably go.\", \"Pause for a moment at the bottom, then push through your heels to return to the starting position.\"], \"form_cues\": [\"Keep the knees tracking the toes.\", \"Keep the heels grounded.\", \"Brace the trunk through the depth.\"], \"common_mistakes\": [\"Letting the knees cave inward.\", \"Rounding the lower back.\", \"Bouncing or cutting the depth short.\"], \"safety_note\": \"Use a rack or machine stops and choose a depth you can control with both feet planted.\", \"provenance\": \"adapted\"}\nMaintain source contact points and safe control. Render only this characteristic phase, not the entire instruction sequence. Reference anatomy is opaque; localize the specified muscle pigment without copying reference highlights.",
       "reference_path": "assets/exercises/biceps-curl-dumbbell.png",
-      "backup_status": "no_file"
+      "backup_status": "local_saved",
+      "generated_at": "2026-10-01T14:30:48.820488+03:00",
+      "backup_history": [
+        {
+          "backup_id": "night-2026-10-01",
+          "storage": "git_repository_pending",
+          "status": "local_saved",
+          "repository_path": "assets/exercises/pending/night-2026-10-01/batch-004/squat-dumbbell/attempt-2.png",
+          "png_sha256": "7470c2067198392ab7110a285e998146d8cee1a21c8c69de5801f4ede97005b2",
+          "verified_at": null
+        }
+      ]
     },
     "squat-machine": {
       "id": "squat-machine",
@@ -31257,13 +31422,13 @@
         "exists_at_preparation": true,
         "sha256": "124b6ba591c30e7e1af6ba0169561d450c5ad7b86bad97e9aa178f2c7611256f"
       },
-      "status": "generation_failed",
+      "status": "generated_needs_review",
       "included_in_generation": true,
       "archived_inclusion_authorized": false,
       "blocked_by": [
         "pilot_not_approved"
       ],
-      "attempts": 1,
+      "attempts": 2,
       "style_version": "v1",
       "visual_review": {
         "status": "not_reviewed",
@@ -31277,10 +31442,10 @@
         },
         "notes": null
       },
-      "result_path": "/workspace/lightweight-exercises-photo/assets/exercises/pending/night-2026-10-01/batch-004/triceps-extension-dumbbell/attempt-1.png",
+      "result_path": "/workspace/lightweight-exercises-photo/assets/exercises/pending/night-2026-10-01/batch-004/triceps-extension-dumbbell/attempt-2.png",
       "supabase_path": null,
       "supabase_upload_status": "not_configured",
-      "last_error": "image generation failed: http 429 Too Many Requests: Some(\"{\\\"error\\\":{\\\"type\\\":\\\"usage_limit_reached\\\",\\\"message\\\":\\\"The usage limit has been reached\\\",\\\"plan_type\\\":\\\"plus\\\",\\\"resets_at\\\":1790845839,\\\"eligible_promo\\\":null,\\\"limit_window_minutes\\\":null,\\\"resets_in_seconds\\\":30960}}\")",
+      "last_error": null,
       "attempt_history": [
         {
           "attempt": 1,
@@ -31311,20 +31476,74 @@
             "actual_dimensions": null,
             "fully_transparent_pixels": null
           }
+        },
+        {
+          "attempt": 2,
+          "id": "triceps-extension-dumbbell",
+          "batch_id": "night-2026-10-01-004",
+          "generation_run_id": "night-2026-10-01",
+          "generated_overnight": true,
+          "style_version": "v1",
+          "tool": "image_gen.imagegen",
+          "started_at": "2026-10-01T14:26:08.713808+03:00",
+          "prompt": "STYLE v1. Use the supplied approved human reference ONLY for the person's identity, anatomical 3D style, body proportions, materials and detail. Do not copy its pose, dumbbells, muscle highlighting or composition. Match the same bald athletic adult male, opaque silver-gray sculpted anatomical muscle surfaces, simple fitted black shorts, barefoot, neutral face and consistent natural proportions. One person, one exercise, one characteristic phase: no second figure, collage or motion ghosts. Equipment must be only the simple items named in this scene, neutral gray/black materials, complete and mechanically ordinary. Primary muscles: localized coral #F26445. Named secondary muscles: the same hue at roughly 45% intensity blended with gray, clearly lighter. Do not highlight muscles absent from the catalog list, make the body or shorts transparent, or apply a global orange cast/glow. Preserve clothing; highlight visible anatomical surfaces without inventing see-through tissue. Square PNG, unchanged target 1024x1024, true transparent alpha background outside the person and required equipment/mat and through any openings; no white or checkerboard backdrop, drawn floor plane, UI, text, labels, frames, decorations or halo. Entire person and every required piece of equipment must fit with transparent margins; adapt scale/camera without distortion or cropping. Accent pigment must use base sRGB #F26445 = RGB(242,100,69); retain this hue through ordinary 3D shading. Secondary highlights use this hue at 40-50% intensity blended with the gray body, not transparent tissue.\n\nEXERCISE ID: triceps-extension-dumbbell\nNAME: Triceps Extension (Dumbbell)\nCatalog equipment: dumbbell\nDepict only: two dumbbells, ordinary flat bench\nPrimary muscle: triceps\nSecondary muscles: []\n\nONE SPECIFIC SCENE: Supine flat-bench elbow-extension lowered phase: head/back/pelvis supported, feet planted, ONE DUMBBELL IN EACH HAND with NEUTRAL facing palms. Upper arms fixed above chest while elbows bend so weights sit BESIDE THE FOREHEAD with clear noncontact space. Wrists neutral, elbows controlled. Elevated side three-quarter camera clearly separates both dumbbells and head; no seated overhead variant.\n\nENGLISH SOURCE (this ID only; do not substitute a familiar variant):\n{\"description\": \"Triceps Extension (Dumbbell) lies on a flat bench and lowers one dumbbell in each hand beside the forehead.\", \"instructions\": [\"Lie on a flat bench with feet planted and dumbbells above the chest.\", \"Grip a neutral grip on one dumbbell in each hand and keep the upper arms fixed beside or above the torso.\", \"Bend the elbows to lower the resistance to the forehead or behind the head.\", \"Pause at the endpoint, then extend the elbows to return to straight arms.\"], \"form_cues\": [\"Keep upper arms still.\", \"Keep wrists neutral.\", \"Move only at the elbows.\"], \"common_mistakes\": [\"Flaring the elbows.\", \"Moving the shoulders.\", \"Dropping the resistance.\"], \"safety_note\": \"Use a load you can lower slowly and keep clear space around the head.\", \"provenance\": \"adapted\"}\nMaintain source contact points and safe control. Render only this characteristic phase, not the entire instruction sequence. Reference anatomy is opaque; localize the specified muscle pigment without copying reference highlights.",
+          "reference": "assets/exercises/biceps-curl-dumbbell.png",
+          "status": "saved",
+          "result_path": "/workspace/lightweight-exercises-photo/assets/exercises/pending/night-2026-10-01/batch-004/triceps-extension-dumbbell/attempt-2.png",
+          "previous_attempt_error": "image generation failed: http 429 Too Many Requests: Some(\"{\\\"error\\\":{\\\"type\\\":\\\"usage_limit_reached\\\",\\\"message\\\":\\\"The usage limit has been reached\\\",\\\"plan_type\\\":\\\"plus\\\",\\\"resets_at\\\":1790845839,\\\"eligible_promo\\\":null,\\\"limit_window_minutes\\\":null,\\\"resets_in_seconds\\\":30960}}\")",
+          "agent_visual_review": "not_performed",
+          "user_review": "pending",
+          "finished_at": "2026-10-01T14:29:10.894338+03:00",
+          "generated_at": "2026-10-01T14:27:04.287645+03:00",
+          "sha256": "ce12411b083c3f65647b547a2dd5440beeb532657ec98fa74e3f297cbee7eb06",
+          "technical_check": "passed",
+          "technical_check_details": {
+            "id": "triceps-extension-dumbbell",
+            "path": "/workspace/lightweight-exercises-photo/assets/exercises/pending/night-2026-10-01/batch-004/triceps-extension-dumbbell/attempt-2.png",
+            "errors": [],
+            "exists": true,
+            "sha256": "ce12411b083c3f65647b547a2dd5440beeb532657ec98fa74e3f297cbee7eb06",
+            "matches_recorded_sha256": true,
+            "format": "PNG",
+            "opens": true,
+            "width": 1254,
+            "height": 1254,
+            "actual_dimensions": [
+              1254,
+              1254
+            ],
+            "square": true,
+            "mode": "RGBA",
+            "has_alpha_channel": true,
+            "fully_transparent_pixels": 1102848,
+            "scope": "PNG opens, square dimensions, actual transparent pixels, SHA256; no visual QA"
+          },
+          "error": null,
+          "artifact_capture": "copied byte-for-byte from image_gen generated_images output"
         }
       ],
-      "result_sha256": null,
-      "technical_check": "failed",
+      "result_sha256": "ce12411b083c3f65647b547a2dd5440beeb532657ec98fa74e3f297cbee7eb06",
+      "technical_check": "passed",
       "technical_check_details": {
         "id": "triceps-extension-dumbbell",
-        "path": "assets/exercises/pending/night-2026-10-01/004/triceps-extension-dumbbell/attempt-1.png",
-        "errors": [
-          "image generation failed: http 429 Too Many Requests: Some(\"{\\\"error\\\":{\\\"type\\\":\\\"usage_limit_reached\\\",\\\"message\\\":\\\"The usage limit has been reached\\\",\\\"plan_type\\\":\\\"plus\\\",\\\"resets_at\\\":1790845839,\\\"eligible_promo\\\":null,\\\"limit_window_minutes\\\":null,\\\"resets_in_seconds\\\":30960}}\")"
+        "path": "/workspace/lightweight-exercises-photo/assets/exercises/pending/night-2026-10-01/batch-004/triceps-extension-dumbbell/attempt-2.png",
+        "errors": [],
+        "exists": true,
+        "sha256": "ce12411b083c3f65647b547a2dd5440beeb532657ec98fa74e3f297cbee7eb06",
+        "matches_recorded_sha256": true,
+        "format": "PNG",
+        "opens": true,
+        "width": 1254,
+        "height": 1254,
+        "actual_dimensions": [
+          1254,
+          1254
         ],
-        "exists": false,
-        "sha256": null,
-        "actual_dimensions": null,
-        "fully_transparent_pixels": null
+        "square": true,
+        "mode": "RGBA",
+        "has_alpha_channel": true,
+        "fully_transparent_pixels": 1102848,
+        "scope": "PNG opens, square dimensions, actual transparent pixels, SHA256; no visual QA"
       },
       "agent_visual_review": "not_performed",
       "agent_visual_review_notes": [],
@@ -31334,7 +31553,18 @@
       "batch_id": "night-2026-10-01-004",
       "prompt": "STYLE v1. Use the supplied approved human reference ONLY for the person's identity, anatomical 3D style, body proportions, materials and detail. Do not copy its pose, dumbbells, muscle highlighting or composition. Match the same bald athletic adult male, opaque silver-gray sculpted anatomical muscle surfaces, simple fitted black shorts, barefoot, neutral face and consistent natural proportions. One person, one exercise, one characteristic phase: no second figure, collage or motion ghosts. Equipment must be only the simple items named in this scene, neutral gray/black materials, complete and mechanically ordinary. Primary muscles: localized coral #F26445. Named secondary muscles: the same hue at roughly 45% intensity blended with gray, clearly lighter. Do not highlight muscles absent from the catalog list, make the body or shorts transparent, or apply a global orange cast/glow. Preserve clothing; highlight visible anatomical surfaces without inventing see-through tissue. Square PNG, unchanged target 1024x1024, true transparent alpha background outside the person and required equipment/mat and through any openings; no white or checkerboard backdrop, drawn floor plane, UI, text, labels, frames, decorations or halo. Entire person and every required piece of equipment must fit with transparent margins; adapt scale/camera without distortion or cropping. Accent pigment must use base sRGB #F26445 = RGB(242,100,69); retain this hue through ordinary 3D shading. Secondary highlights use this hue at 40-50% intensity blended with the gray body, not transparent tissue.\n\nEXERCISE ID: triceps-extension-dumbbell\nNAME: Triceps Extension (Dumbbell)\nCatalog equipment: dumbbell\nDepict only: two dumbbells, ordinary flat bench\nPrimary muscle: triceps\nSecondary muscles: []\n\nONE SPECIFIC SCENE: Supine flat-bench elbow-extension lowered phase: head/back/pelvis supported, feet planted, ONE DUMBBELL IN EACH HAND with NEUTRAL facing palms. Upper arms fixed above chest while elbows bend so weights sit BESIDE THE FOREHEAD with clear noncontact space. Wrists neutral, elbows controlled. Elevated side three-quarter camera clearly separates both dumbbells and head; no seated overhead variant.\n\nENGLISH SOURCE (this ID only; do not substitute a familiar variant):\n{\"description\": \"Triceps Extension (Dumbbell) lies on a flat bench and lowers one dumbbell in each hand beside the forehead.\", \"instructions\": [\"Lie on a flat bench with feet planted and dumbbells above the chest.\", \"Grip a neutral grip on one dumbbell in each hand and keep the upper arms fixed beside or above the torso.\", \"Bend the elbows to lower the resistance to the forehead or behind the head.\", \"Pause at the endpoint, then extend the elbows to return to straight arms.\"], \"form_cues\": [\"Keep upper arms still.\", \"Keep wrists neutral.\", \"Move only at the elbows.\"], \"common_mistakes\": [\"Flaring the elbows.\", \"Moving the shoulders.\", \"Dropping the resistance.\"], \"safety_note\": \"Use a load you can lower slowly and keep clear space around the head.\", \"provenance\": \"adapted\"}\nMaintain source contact points and safe control. Render only this characteristic phase, not the entire instruction sequence. Reference anatomy is opaque; localize the specified muscle pigment without copying reference highlights.",
       "reference_path": "assets/exercises/biceps-curl-dumbbell.png",
-      "backup_status": "no_file"
+      "backup_status": "local_saved",
+      "generated_at": "2026-10-01T14:27:04.287645+03:00",
+      "backup_history": [
+        {
+          "backup_id": "night-2026-10-01",
+          "storage": "git_repository_pending",
+          "status": "local_saved",
+          "repository_path": "assets/exercises/pending/night-2026-10-01/batch-004/triceps-extension-dumbbell/attempt-2.png",
+          "png_sha256": "ce12411b083c3f65647b547a2dd5440beeb532657ec98fa74e3f297cbee7eb06",
+          "verified_at": null
+        }
+      ]
     },
     "triceps-extension-machine": {
       "id": "triceps-extension-machine",
