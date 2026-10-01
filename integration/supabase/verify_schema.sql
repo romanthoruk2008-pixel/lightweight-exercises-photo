@@ -19,6 +19,13 @@ SELECT conname, pg_get_constraintdef(oid) AS definition
 FROM pg_constraint
 WHERE conrelid = 'public.catalog_exercise'::regclass AND contype = 'c';
 
+-- Full definitions were supplied as JSON and retained in sql_editor_evidence.json.
+SELECT jsonb_pretty(jsonb_agg(
+    jsonb_build_object('name', conname, 'definition', pg_get_constraintdef(oid))
+    ORDER BY conname)) AS checks
+FROM pg_constraint
+WHERE conrelid = 'public.catalog_exercise'::regclass AND contype = 'c';
+
 SELECT rolname, rolbypassrls,
        has_table_privilege(rolname, 'public.catalog_exercise', 'SELECT') AS can_select
 FROM pg_roles WHERE rolname IN ('service_role', 'anon', 'authenticated');

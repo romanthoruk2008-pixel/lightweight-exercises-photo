@@ -21,6 +21,7 @@ from PIL import Image
 ROOT = Path(__file__).resolve().parents[2]
 SOURCE_COMMIT = "a6f296cbc6737991dd367e929b3e2df25874d4d8"
 CATALOG_SHA256 = "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989"
+CHECKS_SHA256 = "7ad6009909118d81af12199a9baf9e1fbd052cf336c4efe7d75b15c72dc574c6"
 HOST = "yywyrbhqfavjdgonlzma.supabase.co"
 BASE = "https://" + HOST
 BUCKET = "exercise-images"
@@ -51,6 +52,57 @@ def read_json(path):
 def canonical_digest(value):
     return digest(json.dumps(value, ensure_ascii=False, sort_keys=True,
                              separators=(",", ":")).encode())
+
+
+def evaluate_sql_evidence(evidence):
+    """Record SQL observations separately from REST credentials and semantics."""
+    if not evidence:
+        return {"catalog_empty_confirmed": False, "column_default_confirmed": False,
+                "full_check_definitions_available": False}
+    if evidence.get("project_ref") != HOST.split(".")[0]:
+        raise RuntimeError("SQL evidence belongs to a different Supabase project")
+    count = evidence.get("catalog_count_result", {})
+    column = evidence.get("replaces_ids_column_result", {})
+    checks = evidence.get("check_constraints_result", {})
+    definitions = checks.get("full_definitions")
+    full_checks = (isinstance(definitions, list) and len(definitions) == checks.get("count")
+                   and all(isinstance(row.get("definition"), str) and row["definition"] for row in definitions))
+    checks_supported = full_checks and canonical_digest(definitions) == CHECKS_SHA256
+    return {
+        "source": "User-provided Supabase SQL Editor SELECT results",
+        "catalog_empty_confirmed": (type(count.get("catalog_row_count")) is int
+            and count["catalog_row_count"] == 0 and count.get("rls_applies_to_editor") is False),
+        "column_default_confirmed": "column_default" in column,
+        "column": column,
+        "reported_check_count": checks.get("count"),
+        "full_check_definitions_available": full_checks,
+        "check_definitions_supported_by_validator": checks_supported,
+        "replaces_ids_semantics": "unknown",
+        "executed_at": evidence.get("executed_at"),
+    }
+
+
+def sql_evidence_review():
+    path = ROOT / "integration/supabase/sql_editor_evidence.json"
+    return evaluate_sql_evidence(read_json(path) if path.is_file() else None)
+
+
+def constraint_violations(row):
+    """Evaluate the eight supplied CHECK rules for planned effective row values."""
+    origin, sha = row.get("image_origin"), row.get("image_sha256")
+    width, height = row.get("image_width"), row.get("image_height")
+    rules = {
+        "catalog_exercise_gym_visual_is_credited": origin != "gym_visual_edit" or bool((row.get("attribution") or "").strip(" ")),
+        "catalog_exercise_has_english": isinstance(row.get("content", {}).get("en"), dict),
+        "catalog_exercise_id_is_slug": bool(re.fullmatch(r"[a-z0-9]+(-[a-z0-9]+)*", row["id"])),
+        "catalog_exercise_image_all_or_nothing": sum(row.get(field) is None for field in
+            ("image_path", "image_sha256", "image_width", "image_height", "image_origin")) in (0, 5),
+        "catalog_exercise_image_origin_is_known": origin is None or origin in ("gym_visual_edit", "generated"),
+        "catalog_exercise_image_sha256_is_hex": sha is None or bool(re.fullmatch(r"[0-9a-f]{64}", sha)),
+        "catalog_exercise_image_size_is_positive": (width is None or width > 0) and (height is None or height > 0),
+        "catalog_exercise_lists_are_arrays": isinstance(row.get("secondary_muscles"), list) and isinstance(row.get("replaces_ids"), list),
+    }
+    return [name for name, passed in rules.items() if not passed]
 
 
 def source_path(value):
@@ -229,12 +281,15 @@ def inspect_database():
     objects, list_status, _ = api.request("/storage/v1/object/list/" + BUCKET,
                                          body={"prefix": "", "limit": 100, "offset": 0})
     catalog_schema = schema["definitions"]["catalog_exercise"]
+    sql_review = sql_evidence_review()
     snapshot = {
         "checked_at_utc": datetime.now(timezone.utc).isoformat(),
         "project_ref": HOST.split(".")[0], "secret_binding_name": "exerciseuploader",
         "auth_admin_read_http": admin_status, "server_admin_read_confirmed": admin_status == 200,
         "postgrest_role_and_bypassrls_independently_verified": False,
-        "catalog_actual_emptiness_independently_confirmed": False,
+        "catalog_actual_emptiness_independently_confirmed": sql_review["catalog_empty_confirmed"],
+        "sql_evidence_review": sql_review,
+        "current_visible_count_matches_sql_empty_check": len(ci) == 0 if sql_review["catalog_empty_confirmed"] else None,
         "catalog_visible_rows": len(ci), "bucket": safe_bucket,
         "table_visible_rows": {name: len(rows) for name, rows in tables.items()},
         "table_content_ranges": ranges,
@@ -244,7 +299,7 @@ def inspect_database():
         "storage_root_entries_visible": len(objects) if isinstance(objects, list) else None,
         "replaces_ids_rest_schema": catalog_schema["properties"]["replaces_ids"],
         "replaces_ids_required_in_openapi": "replaces_ids" in catalog_schema["required"],
-        "replaces_ids_sql_default": "not_exposed_in_available_metadata",
+        "replaces_ids_sql_default": sql_review.get("column", {}).get("column_default", "not_confirmed"),
         "schema_definitions": schema["definitions"],
         "application_code_available": False, "ordinary_client_access_verified": False,
         "supabase_writes": 0,
@@ -263,13 +318,28 @@ def build_plan(online):
         raise RuntimeError("Language block count changed")
     progress = read_json(ROOT / "data/exercise-image-progress.json")["exercises"]
     choices = candidates()
-    snapshot, db = inspect_database() if online else ({"network_checks_run": False}, {})
+    snapshot, db = inspect_database() if online else (
+        {"network_checks_run": False, "sql_evidence_review": sql_evidence_review()}, {})
+    sql_review = snapshot["sql_evidence_review"]
+    can_validate_defaults = (sql_review.get("check_definitions_supported_by_validator", False)
+        and sql_review.get("column", {}).get("column_default") == "'[]'::jsonb")
+    catalog_drafts, catalog_check_failures = [], []
+    for eid, source in sorted(catalog.items()):
+        draft = {field: source[field] for field in DIRECT_FIELDS}
+        draft.update({field: None for field in
+            ("image_path", "image_sha256", "image_width", "image_height", "image_origin")})
+        # Deliberately omit replaces_ids and updated_at; no source value is invented.
+        catalog_drafts.append(draft)
+        if can_validate_defaults:
+            effective = {**draft, "replaces_ids": []}  # Verified SQL default, validation only.
+            for violation in constraint_violations(effective):
+                catalog_check_failures.append({"exercise_id": eid, "constraint": violation})
     pngs = []
     for eid, state in sorted(progress.items()):
         if state.get("user_review") != "approved":
             continue
         sha = state.get("accepted_sha256")
-        if not re.fullmatch(r"[a-z0-9-]+", eid) or not isinstance(sha, str) or not re.fullmatch(r"[0-9a-f]{64}", sha):
+        if not re.fullmatch(r"[a-z0-9]+(-[a-z0-9]+)*", eid) or not isinstance(sha, str) or not re.fullmatch(r"[0-9a-f]{64}", sha):
             raise RuntimeError("Invalid approved ID or accepted SHA256")
         if eid not in catalog or catalog[eid]["archived"]:
             raise RuntimeError("Approved source ID missing or archived: " + eid)
@@ -279,8 +349,16 @@ def build_plan(online):
         source, manifest = sorted(set(matches), key=lambda item: ("/pending/" in item[0], item))[0]
         check = verify_png(source, sha)
         destination = eid + "/" + sha + ".png"
+        patch = {"image_path": destination, "image_sha256": sha,
+                 "image_width": check.get("width"), "image_height": check.get("height"),
+                 "image_origin": "generated"}
+        image_check_failures = None
+        if can_validate_defaults:
+            effective = {**catalog[eid], **patch, "replaces_ids": []}
+            image_check_failures = constraint_violations(effective)
         row = db.get(eid)
         issues = list(check["issues"])
+        issues.extend("sql_check_violation:" + name for name in image_check_failures or [])
         if online:
             if row is None:
                 issues.append("database_record_not_visible")
@@ -303,9 +381,8 @@ def build_plan(online):
             "db_record": None if row is None else {"table": "catalog_exercise", "id": row["id"],
                 "image_path": row.get("image_path"), "image_sha256": row.get("image_sha256"),
                 "updated_at": row.get("updated_at")},
-            "proposed_image_patch": {"image_path": destination, "image_sha256": sha,
-                "image_width": check.get("width"), "image_height": check.get("height"),
-                "image_origin": "generated"},
+            "proposed_image_patch": patch,
+            "sql_check_violations": image_check_failures,
             "issues": issues,
         })
     ready = sum(row["byte_verification"]["ready_for_upload_bytes"] for row in pngs)
@@ -322,15 +399,31 @@ def build_plan(online):
         "recorded_technical_failed_preserved": [row["exercise_id"] for row in pngs if row["recorded_technical_check"] == "failed"],
         "generated_pending_excluded": sum(state.get("user_review") == "pending" and bool(state.get("result_sha256")) for state in progress.values()),
         "bucket_constraints_match": bucket_matches,
-        "import_blockers": ["replaces_ids_semantics_default_and_values_unresolved",
-            "catalog_actual_emptiness_not_independently_confirmed",
+        "catalog_empty_confirmed_by_sql": sql_review["catalog_empty_confirmed"],
+        "replaces_ids_default_confirmed": sql_review["column_default_confirmed"],
+        "replaces_ids_sql_default": sql_review.get("column", {}).get("column_default"),
+        "full_check_definitions_available": sql_review["full_check_definitions_available"],
+        "catalog_sql_checks_evaluated": can_validate_defaults,
+        "catalog_sql_check_failures": catalog_check_failures,
+        "approved_image_sql_check_failures": [row["exercise_id"] for row in pngs if row["sql_check_violations"]],
+        "import_blockers": ["replaces_ids_business_semantics_unresolved",
             "ordinary_client_read_permissions_unverified", "supabase_write_not_authorized"],
         "supabase_writes": 0, "png_uploads": 0,
     }
+    if not sql_review["catalog_empty_confirmed"]:
+        summary["import_blockers"].append("catalog_actual_emptiness_not_independently_confirmed")
+    if not sql_review["column_default_confirmed"]:
+        summary["import_blockers"].append("replaces_ids_sql_default_not_confirmed")
+    if not can_validate_defaults:
+        summary["import_blockers"].append("catalog_sql_checks_not_supported_or_incomplete")
+    if catalog_check_failures or summary["approved_image_sql_check_failures"]:
+        summary["import_blockers"].append("catalog_sql_check_violations")
     if online:
         summary["approved_missing_visible_db_record"] = sum(row["db_record"] is None for row in pngs)
         summary["catalog_missing_visible_ids"] = len(set(catalog) - set(db))
         summary["database_extra_visible_ids"] = len(set(db) - set(catalog))
+        if sql_review["catalog_empty_confirmed"] and db:
+            summary["import_blockers"].append("catalog_changed_since_sql_empty_check")
     if not bucket_matches:
         summary["import_blockers"].append("bucket_constraints_changed")
     if ready != len(pngs):
@@ -338,7 +431,10 @@ def build_plan(online):
     catalog_plan = {
         "source_commit": SOURCE_COMMIT, "catalog_sha256": CATALOG_SHA256,
         "join": "catalog.json.exercises[].id = public.catalog_exercise.id",
-        "replaces_ids": {"status": "unresolved", "payload_not_generated": True},
+        "replaces_ids": {"semantics": "unknown", "omitted_in_insert_draft": True,
+                         "sql_column": sql_review.get("column")},
+        "insert_draft_is_not_write_authorization": True,
+        "insert_records": catalog_drafts,
         "records": [{"exercise_id": eid, "archived": row["archived"],
                      "language_blocks": len(row["content"]), "content_sha256": canonical_digest(row["content"]),
                      "database_record_visible": eid in db if online else None}

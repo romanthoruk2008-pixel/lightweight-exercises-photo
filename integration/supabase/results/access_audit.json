@@ -1,11 +1,28 @@
 {
-  "checked_at_utc": "2026-10-01T20:53:05.135586+00:00",
+  "checked_at_utc": "2026-10-01T21:12:47.289579+00:00",
   "project_ref": "yywyrbhqfavjdgonlzma",
   "secret_binding_name": "exerciseuploader",
   "auth_admin_read_http": 200,
   "server_admin_read_confirmed": true,
   "postgrest_role_and_bypassrls_independently_verified": false,
-  "catalog_actual_emptiness_independently_confirmed": false,
+  "catalog_actual_emptiness_independently_confirmed": true,
+  "sql_evidence_review": {
+    "source": "User-provided Supabase SQL Editor SELECT results",
+    "catalog_empty_confirmed": true,
+    "column_default_confirmed": true,
+    "column": {
+      "sql_type": "jsonb",
+      "not_null": true,
+      "column_default": "'[]'::jsonb",
+      "description": null
+    },
+    "reported_check_count": 8,
+    "full_check_definitions_available": true,
+    "check_definitions_supported_by_validator": true,
+    "replaces_ids_semantics": "unknown",
+    "executed_at": null
+  },
+  "current_visible_count_matches_sql_empty_check": true,
   "catalog_visible_rows": 0,
   "bucket": {
     "id": "exercise-images",
@@ -63,7 +80,7 @@
     "format": "jsonb"
   },
   "replaces_ids_required_in_openapi": true,
-  "replaces_ids_sql_default": "not_exposed_in_available_metadata",
+  "replaces_ids_sql_default": "'[]'::jsonb",
   "schema_definitions": {
     "exercise": {
       "required": [

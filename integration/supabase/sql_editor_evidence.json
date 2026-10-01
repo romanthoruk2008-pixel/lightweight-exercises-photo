@@ -1,0 +1,57 @@
+{
+  "project_ref": "yywyrbhqfavjdgonlzma",
+  "provided_by": "user",
+  "execution_context": "Supabase SQL Editor",
+  "executed_at": null,
+  "catalog_count_result": {
+    "editor_role": "postgres",
+    "rls_applies_to_editor": false,
+    "catalog_row_count": 0
+  },
+  "replaces_ids_column_result": {
+    "sql_type": "jsonb",
+    "not_null": true,
+    "column_default": "'[]'::jsonb",
+    "description": null
+  },
+  "check_constraints_result": {
+    "count": 8,
+    "full_definitions": [
+      {
+        "name": "catalog_exercise_gym_visual_is_credited",
+        "definition": "CHECK (((image_origin IS DISTINCT FROM 'gym_visual_edit'::text) OR (COALESCE(btrim(attribution), ''::text) <> ''::text)))"
+      },
+      {
+        "name": "catalog_exercise_has_english",
+        "definition": "CHECK ((COALESCE(jsonb_typeof((content -> 'en'::text)), ''::text) = 'object'::text))"
+      },
+      {
+        "name": "catalog_exercise_id_is_slug",
+        "definition": "CHECK ((id ~ '^[a-z0-9]+(-[a-z0-9]+)*$'::text))"
+      },
+      {
+        "name": "catalog_exercise_image_all_or_nothing",
+        "definition": "CHECK ((num_nulls(image_path, image_sha256, image_width, image_height, image_origin) = ANY (ARRAY[0, 5])))"
+      },
+      {
+        "name": "catalog_exercise_image_origin_is_known",
+        "definition": "CHECK ((image_origin = ANY (ARRAY['gym_visual_edit'::text, 'generated'::text])))"
+      },
+      {
+        "name": "catalog_exercise_image_sha256_is_hex",
+        "definition": "CHECK ((image_sha256 ~ '^[0-9a-f]{64}$'::text))"
+      },
+      {
+        "name": "catalog_exercise_image_size_is_positive",
+        "definition": "CHECK (((image_width > 0) AND (image_height > 0)))"
+      },
+      {
+        "name": "catalog_exercise_lists_are_arrays",
+        "definition": "CHECK (((jsonb_typeof(secondary_muscles) = 'array'::text) AND (jsonb_typeof(replaces_ids) = 'array'::text)))"
+      }
+    ]
+  },
+  "replaces_ids_semantics": "unknown",
+  "application_repository": "unknown",
+  "user_instruction": "Keep Supabase read-only; do not infer replaces_ids semantics from its empty-array default."
+}

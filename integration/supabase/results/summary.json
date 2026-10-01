@@ -21,9 +21,15 @@
   ],
   "generated_pending_excluded": 21,
   "bucket_constraints_match": true,
+  "catalog_empty_confirmed_by_sql": true,
+  "replaces_ids_default_confirmed": true,
+  "replaces_ids_sql_default": "'[]'::jsonb",
+  "full_check_definitions_available": true,
+  "catalog_sql_checks_evaluated": true,
+  "catalog_sql_check_failures": [],
+  "approved_image_sql_check_failures": [],
   "import_blockers": [
-    "replaces_ids_semantics_default_and_values_unresolved",
-    "catalog_actual_emptiness_not_independently_confirmed",
+    "replaces_ids_business_semantics_unresolved",
     "ordinary_client_read_permissions_unverified",
     "supabase_write_not_authorized"
   ],

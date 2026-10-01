@@ -86,5 +86,83 @@ class ReadOnlyTests(unittest.TestCase):
         self.assertIn("offset=3", queries[2])
 
 
+class SqlEvidenceTests(unittest.TestCase):
+    def evidence(self, rls=False):
+        return {
+            "project_ref": module.HOST.split(".")[0],
+            "catalog_count_result": {"editor_role": "postgres",
+                "rls_applies_to_editor": rls, "catalog_row_count": 0},
+            "replaces_ids_column_result": {"sql_type": "jsonb", "not_null": True,
+                "column_default": "'[]'::jsonb", "description": None},
+            "check_constraints_result": {"count": 8, "full_definitions": None},
+        }
+
+    def test_sql_count_without_rls_confirms_empty_but_not_semantics(self):
+        result = module.evaluate_sql_evidence(self.evidence())
+        self.assertTrue(result["catalog_empty_confirmed"])
+        self.assertTrue(result["column_default_confirmed"])
+        self.assertEqual(result["replaces_ids_semantics"], "unknown")
+        self.assertFalse(result["full_check_definitions_available"])
+
+    def test_zero_count_with_rls_does_not_confirm_empty(self):
+        self.assertFalse(module.evaluate_sql_evidence(self.evidence(rls=True))["catalog_empty_confirmed"])
+
+    def test_different_project_evidence_is_refused(self):
+        evidence = self.evidence()
+        evidence["project_ref"] = "another-project"
+        with self.assertRaises(RuntimeError):
+            module.evaluate_sql_evidence(evidence)
+
+    def test_missing_sql_evidence_remains_unconfirmed(self):
+        result = module.evaluate_sql_evidence(None)
+        self.assertFalse(result["catalog_empty_confirmed"])
+        self.assertFalse(result["column_default_confirmed"])
+
+    def test_unreviewed_check_definition_does_not_use_known_validator(self):
+        evidence = module.read_json(module.ROOT / "integration/supabase/sql_editor_evidence.json")
+        evidence["check_constraints_result"]["full_definitions"][0]["definition"] = "CHECK (false)"
+        result = module.evaluate_sql_evidence(evidence)
+        self.assertTrue(result["full_check_definitions_available"])
+        self.assertFalse(result["check_definitions_supported_by_validator"])
+
+
+class ConstraintTests(unittest.TestCase):
+    def row(self):
+        return {"id": "sample-exercise", "content": {"en": {}},
+                "secondary_muscles": [], "replaces_ids": [],
+                "image_path": None, "image_sha256": None, "image_width": None,
+                "image_height": None, "image_origin": None}
+
+    def test_seed_without_images_passes_nullable_image_checks(self):
+        self.assertEqual(module.constraint_violations(self.row()), [])
+
+    def test_partial_image_link_is_rejected(self):
+        row = self.row()
+        row["image_path"] = "sample.png"
+        self.assertIn("catalog_exercise_image_all_or_nothing", module.constraint_violations(row))
+
+    def test_invalid_catalog_content_slug_and_lists_are_rejected(self):
+        row = self.row()
+        row.update({"id": "sample--exercise", "content": {"uk": {}}, "replaces_ids": {}})
+        failed = module.constraint_violations(row)
+        self.assertIn("catalog_exercise_id_is_slug", failed)
+        self.assertIn("catalog_exercise_has_english", failed)
+        self.assertIn("catalog_exercise_lists_are_arrays", failed)
+
+    def test_gym_visual_origin_requires_actual_credit(self):
+        row = self.row()
+        row.update({"image_path": "sample.png", "image_sha256": "a" * 64,
+                    "image_width": 1254, "image_height": 1254, "image_origin": "gym_visual_edit"})
+        self.assertIn("catalog_exercise_gym_visual_is_credited", module.constraint_violations(row))
+        row["attribution"] = "Verified source credit"
+        self.assertEqual(module.constraint_violations(row), [])
+
+    def test_generated_accepted_non_square_image_is_allowed_by_sql(self):
+        row = self.row()
+        row.update({"image_path": "sample.png", "image_sha256": "a" * 64,
+                    "image_width": 1536, "image_height": 1024, "image_origin": "generated"})
+        self.assertEqual(module.constraint_violations(row), [])
+
+
 if __name__ == "__main__":
     unittest.main()

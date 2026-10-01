@@ -29,17 +29,19 @@ GET REST schema, усіх п'яти таблиць і Storage metadata пове�
 сервера. Дублікатів або розірваних зв'язків у видимій вибірці немає, але
 порожня вибірка не є доказом їх відсутності в усій БД.
 
-Серверні Admin-права підтверджені. **Фактична порожнеча каталогу та точна
-роль PostgREST/BYPASSRLS незалежно не підтверджені.** `pg_catalog` не
-експонується (HTTP 406, PGRST106), SQL connection/management access і код
-апки недоступні. Не змінювали RLS/grants і не викликали `rls_auto_enable`.
+Серверні Admin-права підтверджені. **Фактична порожнеча каталогу на момент
+SQL-перевірки підтверджена незалежним SQL-підрахунком**, результати якого
+надав користувач: editor_role=postgres, rls_applies_to_editor=false,
+catalog_row_count=0. Джерело збережено у `sql_editor_evidence.json`; агент
+сам цей SQL не виконував, час виконання не вигадано. Це підтвердження
+стосується `public.catalog_exercise`, не всіх таблиць або всієї БД.
 
-Мінімальна додаткова дія: виконати перший SELECT із `verify_schema.sql` у
-Supabase SQL Editor. `rls_applies_to_editor=false` та `catalog_row_count=0`
-підтвердять порожнечу без змін RLS. Решта SELECT встановлюють default,
-CHECK, role metadata і policies без розкриття користувацьких записів.
-Надавати пароль БД, personal token чи новий ключ для цієї перевірки не
-потрібно: достатньо результатів SELECT.
+Точна роль PostgREST/BYPASSRLS досі не перевірена через role metadata.
+`pg_catalog` не експонується (HTTP 406, PGRST106); SQL connection/management
+access і код апки недоступні. Не змінювали RLS/grants і не викликали
+`rls_auto_enable`. Нове читання REST узгоджується з SQL count=0. Якщо під
+час наступного dry-run з'являться рядки, це окреме блокування зміни стану,
+а не дозвіл на upsert. Повторювати вже надані SELECT зараз не потрібно.
 
 ## Схема, зв'язки й мовні дані
 
@@ -58,8 +60,10 @@ metadata не показаний; він може посилатися на cata
 
 ## `replaces_ids`
 
-REST підтверджує JSONB і required/non-null; не підтверджує SQL default,
-CHECK чи призначення. У checkout немає SQL-міграцій/коду апки; поле та
+SQL Editor підтвердив JSONB, NOT NULL, default `'[]'::jsonb`, comment NULL.
+Користувач також надав повні definitions усіх восьми CHECK constraints.
+Вони збережені без скорочень у `sql_editor_evidence.json`; REST сам не
+надавав цих метаданих. У checkout немає SQL-міграцій/коду апки; поле та
 replacement-related ключі відсутні у вихідному каталозі.
 
 Оригінальний `working-manifest.json` із `exercise-source-v1` також
@@ -69,12 +73,25 @@ replacement-related ключів/`replaces_ids` немає. У ZIP directory н�
 SQL/міграцій. Використано HTTP byte ranges для directory/manifest;
 повний SHA256 411210021-byte ZIP не перевірявся та не заявляється.
 
-`[]` не підставлено. JSONB сам по собі допускає різні JSON-форми; SQL
-CHECK/семантика можуть їх звужувати. Користувач повідомив, що міграції/код,
+CHECK `catalog_exercise_lists_are_arrays` вимагає масив у replaces_ids,
+але не встановлює тип його елементів, напрямок заміни чи валідність ID.
+Користувач повідомив, що міграції/код,
 призначення й значення йому невідомі, та прямо вказав залишити поле
 невідомим без довільного заповнення. Це зафіксовано у `field_mapping.md`;
-payload каталогу не генерується. Результати SELECT ще потрібні для
-перевірки SQL default/CHECK; бізнес-семантику сам default не доводить.
+бізнес-семантику сам default не доводить. Підготовлено тільки чернетку
+вставки з пропущеним `replaces_ids`: жодного значення від агента не
+підставлено. Для перевірки ефективного рядка локально враховано відомий
+SQL default []; це не запис у Supabase і не рішення про заміни.
+
+Усі 451 записи чернетки та 135 повних image patch проходять локальну
+перевірку восьми наданих CHECK. Чернетка має всі image-поля NULL; image
+patch містить одразу path/hash/width/height/origin, як вимагає правило
+all-or-nothing. `image_origin=generated` дозволений без attribution;
+`gym_visual_edit` вимагав би непорожнього credit. Усі source ID є slug,
+кожний content має English object, secondary_muscles є масивом.
+Перевірка Python стосується цього SQL snapshot, не замінює реальний SQL
+INSERT і не перевіряє невідомі triggers або поведінку апки. Checksum
+definitions не дозволяє тихо застосувати ці правила до змінених CHECK.
 
 ## Bucket і 135 прийнятих PNG
 
@@ -102,8 +119,9 @@ pushup-close-grip, seated-shoulder-press-machine. Target 1024×1024,
 
 Повний план: `results/approved_png_plan.json`. Destination:
 `<exercise_id>/<accepted_sha256>.png`, bucket `exercise-images`.
-Всі 135 `db_record=null` означають відсутність **видимого** відповідного
-запису, а не доведену відсутність рядка в БД.
+Всі 135 `db_record=null` відповідають відсутності видимого DB record;
+SQL count=0 без RLS незалежно підтвердив, що каталог на момент тієї
+перевірки порожній. Перед зображеннями потрібне наповнення каталогу.
 
 ## Апка й блокування
 
@@ -112,8 +130,9 @@ pushup-close-grip, seated-shoulder-press-machine. Target 1024×1024,
 Public bucket URL передбачає читання objects, не доводить права list/write.
 Client має отримувати public URL за image_path, не отримувати admin secret.
 
-Перед імпортом потрібні: незалежний SQL count/metadata; визначення і джерело
-replaces_ids; перевірка клієнтських policies/коду; окремий дозвіл на записи
+Count/default/вісім CHECK тепер підтверджені. Перед імпортом потрібні:
+семантичне рішення щодо replaces_ids; перевірка клієнтських policies/коду;
+окремий дозвіл на записи
 Supabase. Схема вже має image/content-поля, тому міграція для цих полів не
 виявлена як необхідна. Не пропонується обхід RLS або сліпий upsert.
 
@@ -121,6 +140,10 @@ Supabase. Схема вже має image/content-поля, тому міграц
 
 Live dry-run сформував 135 PNG rows і 451 catalog plan row; вихідний код 2
 очікуваний через описані блокування. Supabase writes=0, PNG uploads=0.
-Усі 7 тестів пройшли. Негативні тести перевіряють SHA mismatch, непрозорий alpha, truncated PNG,
+Усі 17 тестів пройшли. Негативні тести перевіряють SHA mismatch, непрозорий alpha, truncated PNG,
 bucket size limit, mutation/RPC guard і пагінацію зі зменшеними сторінками.
+Додані перевірки не приймають RLS-filtered zero count як доказ порожнечі,
+не приймають evidence іншого проєкту, не трактують default як семантику,
+відхиляють нові невідомі CHECK та часткові image links. Позитивні випадки
+підтверджують seed без images і прийнятий не-квадратний generated PNG.
 Деталі відтворення у README. Підготовка не означає імпорт або міграцію.
