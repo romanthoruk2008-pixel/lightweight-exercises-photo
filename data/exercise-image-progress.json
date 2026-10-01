@@ -146,11 +146,11 @@
         }
       }
     ],
-    "active_batch_id": "night-2026-10-01-005",
+    "active_batch_id": "night-2026-10-01-004",
     "active_batch_item_id": null,
     "active_batch_scope": "All authorized retry generation work is complete. 48/50 IDs have PNGs; 9 batch-005 PNGs were verified on GitHub. Await user review; do not generate further images without a new request.",
     "current_batch": "night-2026-10-01-005",
-    "next_action": "Wait for user review. Do not regenerate reverse-wrist-curl-dumbbell, fire-hydrants, or any existing result without a new explicit request.",
+    "next_action": "Save triceps-extension-dumbbell attempt-3 and approval metadata to GitHub, verify remote SHA256; then await user review of the corrected PNG.",
     "night_generation_remote_audit": {
       "audited_at_utc": "2026-10-01T08:16:06Z",
       "remote_branch": "work",
@@ -297,6 +297,65 @@
       "note": "Do not retry reverse-wrist-curl-dumbbell without a new explicit request; its second imagegen invocation was interrupted and produced no file.",
       "batch005_github_verified": 9,
       "remote_commit": "3f967fd137e445aca32fd3f302510386ab44cc12"
+    },
+    "night_user_approval": {
+      "recorded_at": "2026-10-01T15:03:09.768874+03:00",
+      "approved_ids": [
+        "bird-dog",
+        "dead-bug",
+        "glute-kickback-on-floor",
+        "kneeling-pushup",
+        "pushup-close-grip",
+        "reverse-plank",
+        "side-bend",
+        "heel-taps",
+        "russian-twist-body-weight",
+        "lateral-lunge",
+        "lateral-squat",
+        "reverse-lunge",
+        "sumo-squat",
+        "single-leg-glute-bridge",
+        "lying-knee-raise",
+        "reverse-crunch",
+        "oblique-crunch",
+        "elbow-to-knee",
+        "shoulder-taps",
+        "flutter-kicks",
+        "ab-scissors",
+        "pike-pushup",
+        "one-arm-pushup",
+        "pistol-squat",
+        "hollow-rock",
+        "superman",
+        "toe-touch",
+        "v-up",
+        "jackknife-situp",
+        "lying-neck-curls",
+        "hip-thrust",
+        "incline-push-ups",
+        "single-leg-hip-thrust",
+        "bench-press-dumbbell",
+        "reverse-curl-dumbbell",
+        "seated-lateral-raise-dumbbell",
+        "seated-palms-up-wrist-curl-dumbbell",
+        "squat-dumbbell",
+        "pinwheel-curl-dumbbell",
+        "seated-incline-hammer-curl-dumbbell",
+        "bulgarian-split-squat-dumbbell",
+        "split-squat-dumbbell",
+        "biceps-curl-barbell",
+        "shrug-barbell",
+        "behind-the-back-wrist-curl-barbell",
+        "seated-wrist-curl-barbell",
+        "triceps-extension-barbell"
+      ],
+      "approved_count": 47,
+      "exception_id": "triceps-extension-dumbbell",
+      "excluded_missing_ids": [
+        "fire-hydrants",
+        "reverse-wrist-curl-dumbbell"
+      ],
+      "note": "Latest user blanket acceptance applies to all existing night PNGs except the attached target. Preserve any factual technical failures separately."
     }
   },
   "historical_mapping_metadata": {
@@ -378,7 +437,7 @@
         "mapping": null
       },
       "source_reference_image": null,
-      "status": "generated_needs_review",
+      "status": "approved",
       "included_in_generation": true,
       "archived_inclusion_authorized": false,
       "blocked_by": [
@@ -417,7 +476,7 @@
           "status": "saved",
           "result_path": "/workspace/lightweight-exercises-photo/assets/exercises/pending/night-2026-10-01/batch-003/ab-scissors/attempt-1.png",
           "agent_visual_review": "not_performed",
-          "user_review": "pending",
+          "user_review": "approved",
           "finished_at": "2026-10-01T03:13:58.894567+03:00",
           "sha256": "1b8c1cac8e4111da58adbabbbc57e76c72ec1f556ecd9194f507b0b0909e40c9",
           "technical_check": "passed",
@@ -442,7 +501,10 @@
             "fully_transparent_pixels": 1304097,
             "scope": "PNG decode, square dimensions, true alpha transparency, SHA256; no visual QA"
           },
-          "error": null
+          "error": null,
+          "accepted_path": "/workspace/lightweight-exercises-photo/assets/exercises/pending/night-2026-10-01/batch-003/ab-scissors/attempt-1.png",
+          "accepted_sha256": "1b8c1cac8e4111da58adbabbbc57e76c72ec1f556ecd9194f507b0b0909e40c9",
+          "approval_recorded_at": "2026-10-01T15:03:09.768874+03:00"
         }
       ],
       "result_sha256": "1b8c1cac8e4111da58adbabbbc57e76c72ec1f556ecd9194f507b0b0909e40c9",
@@ -470,7 +532,7 @@
       },
       "agent_visual_review": "not_performed",
       "agent_visual_review_notes": [],
-      "user_review": "pending",
+      "user_review": "approved",
       "generation_run_id": "night-2026-10-01",
       "generated_overnight": true,
       "batch_id": "night-2026-10-01-003",
@@ -508,6 +570,21 @@
           "png_sha256": "1b8c1cac8e4111da58adbabbbc57e76c72ec1f556ecd9194f507b0b0909e40c9",
           "verified_at": "2026-10-01T03:45:41.209794+03:00",
           "verified_commit": "a0f650d0c2add34b8bab916c54169d99a00f2d00"
+        }
+      ],
+      "accepted_path": "/workspace/lightweight-exercises-photo/assets/exercises/pending/night-2026-10-01/batch-003/ab-scissors/attempt-1.png",
+      "accepted_sha256": "1b8c1cac8e4111da58adbabbbc57e76c72ec1f556ecd9194f507b0b0909e40c9",
+      "accepted_at": "2026-10-01T15:03:09.768874+03:00",
+      "approval_timestamp_source": "decision_recorded_at",
+      "user_review_history": [
+        {
+          "recorded_at": "2026-10-01T15:03:09.768874+03:00",
+          "by": "user",
+          "decision": "approved",
+          "accepted_attempt": 1,
+          "accepted_path": "/workspace/lightweight-exercises-photo/assets/exercises/pending/night-2026-10-01/batch-003/ab-scissors/attempt-1.png",
+          "accepted_sha256": "1b8c1cac8e4111da58adbabbbc57e76c72ec1f556ecd9194f507b0b0909e40c9",
+          "reason": "User accepts all existing night-generation images except the attached triceps-extension-dumbbell image."
         }
       ]
     },
@@ -1606,7 +1683,7 @@
         "exists_at_preparation": true,
         "sha256": "2c2600abcbebd35d26c3e5ed85fc0ead35eb004dd541951a83bb012ed6c9e7a7"
       },
-      "status": "generated_needs_review",
+      "status": "approved",
       "included_in_generation": true,
       "archived_inclusion_authorized": false,
       "blocked_by": [
@@ -1676,7 +1753,7 @@
           "result_path": "/workspace/lightweight-exercises-photo/assets/exercises/pending/night-2026-10-01/batch-005/behind-the-back-wrist-curl-barbell/attempt-2.png",
           "previous_attempt_error": "image generation failed: http 429 Too Many Requests: Some(\"{\\\"error\\\":{\\\"type\\\":\\\"usage_limit_reached\\\",\\\"message\\\":\\\"The usage limit has been reached\\\",\\\"plan_type\\\":\\\"plus\\\",\\\"resets_at\\\":1790845839,\\\"eligible_promo\\\":null,\\\"limit_window_minutes\\\":null,\\\"resets_in_seconds\\\":30940}}\")",
           "agent_visual_review": "not_performed",
-          "user_review": "pending",
+          "user_review": "approved",
           "finished_at": "2026-10-01T14:46:44.541344+03:00",
           "generated_at": "2026-10-01T14:46:44.029122+03:00",
           "sha256": "0167251eadac7fbe460078cec3f3abe1f203cde6fa347307e24c7c4a77ab936e",
@@ -1707,7 +1784,10 @@
           "backup_status": "github_verified",
           "github_verified_at": "2026-10-01T11:52:54+00:00",
           "github_verified_commit": "3f967fd137e445aca32fd3f302510386ab44cc12",
-          "github_verified_sha256": "0167251eadac7fbe460078cec3f3abe1f203cde6fa347307e24c7c4a77ab936e"
+          "github_verified_sha256": "0167251eadac7fbe460078cec3f3abe1f203cde6fa347307e24c7c4a77ab936e",
+          "accepted_path": "/workspace/lightweight-exercises-photo/assets/exercises/pending/night-2026-10-01/batch-005/behind-the-back-wrist-curl-barbell/attempt-2.png",
+          "accepted_sha256": "0167251eadac7fbe460078cec3f3abe1f203cde6fa347307e24c7c4a77ab936e",
+          "approval_recorded_at": "2026-10-01T15:03:09.768874+03:00"
         }
       ],
       "result_sha256": "0167251eadac7fbe460078cec3f3abe1f203cde6fa347307e24c7c4a77ab936e",
@@ -1735,7 +1815,7 @@
       },
       "agent_visual_review": "not_performed",
       "agent_visual_review_notes": [],
-      "user_review": "pending",
+      "user_review": "approved",
       "generation_run_id": "night-2026-10-01",
       "generated_overnight": true,
       "batch_id": "night-2026-10-01-005",
@@ -1755,7 +1835,22 @@
       ],
       "github_verified_at": "2026-10-01T11:52:54+00:00",
       "github_verified_commit": "3f967fd137e445aca32fd3f302510386ab44cc12",
-      "github_verified_sha256": "0167251eadac7fbe460078cec3f3abe1f203cde6fa347307e24c7c4a77ab936e"
+      "github_verified_sha256": "0167251eadac7fbe460078cec3f3abe1f203cde6fa347307e24c7c4a77ab936e",
+      "accepted_path": "/workspace/lightweight-exercises-photo/assets/exercises/pending/night-2026-10-01/batch-005/behind-the-back-wrist-curl-barbell/attempt-2.png",
+      "accepted_sha256": "0167251eadac7fbe460078cec3f3abe1f203cde6fa347307e24c7c4a77ab936e",
+      "accepted_at": "2026-10-01T15:03:09.768874+03:00",
+      "approval_timestamp_source": "decision_recorded_at",
+      "user_review_history": [
+        {
+          "recorded_at": "2026-10-01T15:03:09.768874+03:00",
+          "by": "user",
+          "decision": "approved",
+          "accepted_attempt": 2,
+          "accepted_path": "/workspace/lightweight-exercises-photo/assets/exercises/pending/night-2026-10-01/batch-005/behind-the-back-wrist-curl-barbell/attempt-2.png",
+          "accepted_sha256": "0167251eadac7fbe460078cec3f3abe1f203cde6fa347307e24c7c4a77ab936e",
+          "reason": "User accepts all existing night-generation images except the attached triceps-extension-dumbbell image."
+        }
+      ]
     },
     "belt-squat-machine": {
       "id": "belt-squat-machine",
@@ -2229,7 +2324,7 @@
         "exists_at_preparation": true,
         "sha256": "3f007f6e74bf23ae843aea1934fe5b2a1d65e464e0ddedf4b5dcadbe47461034"
       },
-      "status": "generated_needs_review",
+      "status": "approved",
       "included_in_generation": true,
       "archived_inclusion_authorized": false,
       "blocked_by": [
@@ -2268,7 +2363,7 @@
           "status": "saved",
           "result_path": "/workspace/lightweight-exercises-photo/assets/exercises/pending/night-2026-10-01/batch-004/bench-press-dumbbell/attempt-1.png",
           "agent_visual_review": "not_performed",
-          "user_review": "pending",
+          "user_review": "approved",
           "finished_at": "2026-10-01T03:31:49.237375+03:00",
           "sha256": "09dec9106c86af562272688745760bfe53d6c26ea8d9b13471d1a23fac59aa94",
           "technical_check": "passed",
@@ -2293,7 +2388,10 @@
             "fully_transparent_pixels": 1073905,
             "scope": "PNG decode, square dimensions, true alpha transparency, SHA256; no visual QA"
           },
-          "error": null
+          "error": null,
+          "accepted_path": "/workspace/lightweight-exercises-photo/assets/exercises/pending/night-2026-10-01/batch-004/bench-press-dumbbell/attempt-1.png",
+          "accepted_sha256": "09dec9106c86af562272688745760bfe53d6c26ea8d9b13471d1a23fac59aa94",
+          "approval_recorded_at": "2026-10-01T15:03:09.768874+03:00"
         }
       ],
       "result_sha256": "09dec9106c86af562272688745760bfe53d6c26ea8d9b13471d1a23fac59aa94",
@@ -2321,7 +2419,7 @@
       },
       "agent_visual_review": "not_performed",
       "agent_visual_review_notes": [],
-      "user_review": "pending",
+      "user_review": "approved",
       "generation_run_id": "night-2026-10-01",
       "generated_overnight": true,
       "batch_id": "night-2026-10-01-004",
@@ -2359,6 +2457,21 @@
           "png_sha256": "09dec9106c86af562272688745760bfe53d6c26ea8d9b13471d1a23fac59aa94",
           "verified_at": "2026-10-01T03:45:41.209794+03:00",
           "verified_commit": "a0f650d0c2add34b8bab916c54169d99a00f2d00"
+        }
+      ],
+      "accepted_path": "/workspace/lightweight-exercises-photo/assets/exercises/pending/night-2026-10-01/batch-004/bench-press-dumbbell/attempt-1.png",
+      "accepted_sha256": "09dec9106c86af562272688745760bfe53d6c26ea8d9b13471d1a23fac59aa94",
+      "accepted_at": "2026-10-01T15:03:09.768874+03:00",
+      "approval_timestamp_source": "decision_recorded_at",
+      "user_review_history": [
+        {
+          "recorded_at": "2026-10-01T15:03:09.768874+03:00",
+          "by": "user",
+          "decision": "approved",
+          "accepted_attempt": 1,
+          "accepted_path": "/workspace/lightweight-exercises-photo/assets/exercises/pending/night-2026-10-01/batch-004/bench-press-dumbbell/attempt-1.png",
+          "accepted_sha256": "09dec9106c86af562272688745760bfe53d6c26ea8d9b13471d1a23fac59aa94",
+          "reason": "User accepts all existing night-generation images except the attached triceps-extension-dumbbell image."
         }
       ]
     },
@@ -2940,7 +3053,7 @@
         "exists_at_preparation": true,
         "sha256": "6bc7f4e746e85969863fcabbf86eb714a8d4cbf0d0e71b055308ff47672922cb"
       },
-      "status": "generated_needs_review",
+      "status": "approved",
       "included_in_generation": true,
       "archived_inclusion_authorized": false,
       "blocked_by": [
@@ -3010,7 +3123,7 @@
           "result_path": "/workspace/lightweight-exercises-photo/assets/exercises/pending/night-2026-10-01/batch-005/biceps-curl-barbell/attempt-2.png",
           "previous_attempt_error": "image generation failed: http 429 Too Many Requests: Some(\"{\\\"error\\\":{\\\"type\\\":\\\"usage_limit_reached\\\",\\\"message\\\":\\\"The usage limit has been reached\\\",\\\"plan_type\\\":\\\"plus\\\",\\\"resets_at\\\":1790845839,\\\"eligible_promo\\\":null,\\\"limit_window_minutes\\\":null,\\\"resets_in_seconds\\\":30943}}\")",
           "agent_visual_review": "not_performed",
-          "user_review": "pending",
+          "user_review": "approved",
           "finished_at": "2026-10-01T14:44:32.292624+03:00",
           "generated_at": "2026-10-01T14:44:31.814275+03:00",
           "sha256": "06795939d21728c79eced4c519de117e2ca3828d62c24deff3d95d05a613d35e",
@@ -3041,7 +3154,10 @@
           "backup_status": "github_verified",
           "github_verified_at": "2026-10-01T11:52:54+00:00",
           "github_verified_commit": "3f967fd137e445aca32fd3f302510386ab44cc12",
-          "github_verified_sha256": "06795939d21728c79eced4c519de117e2ca3828d62c24deff3d95d05a613d35e"
+          "github_verified_sha256": "06795939d21728c79eced4c519de117e2ca3828d62c24deff3d95d05a613d35e",
+          "accepted_path": "/workspace/lightweight-exercises-photo/assets/exercises/pending/night-2026-10-01/batch-005/biceps-curl-barbell/attempt-2.png",
+          "accepted_sha256": "06795939d21728c79eced4c519de117e2ca3828d62c24deff3d95d05a613d35e",
+          "approval_recorded_at": "2026-10-01T15:03:09.768874+03:00"
         }
       ],
       "result_sha256": "06795939d21728c79eced4c519de117e2ca3828d62c24deff3d95d05a613d35e",
@@ -3069,7 +3185,7 @@
       },
       "agent_visual_review": "not_performed",
       "agent_visual_review_notes": [],
-      "user_review": "pending",
+      "user_review": "approved",
       "generation_run_id": "night-2026-10-01",
       "generated_overnight": true,
       "batch_id": "night-2026-10-01-005",
@@ -3089,7 +3205,22 @@
       ],
       "github_verified_at": "2026-10-01T11:52:54+00:00",
       "github_verified_commit": "3f967fd137e445aca32fd3f302510386ab44cc12",
-      "github_verified_sha256": "06795939d21728c79eced4c519de117e2ca3828d62c24deff3d95d05a613d35e"
+      "github_verified_sha256": "06795939d21728c79eced4c519de117e2ca3828d62c24deff3d95d05a613d35e",
+      "accepted_path": "/workspace/lightweight-exercises-photo/assets/exercises/pending/night-2026-10-01/batch-005/biceps-curl-barbell/attempt-2.png",
+      "accepted_sha256": "06795939d21728c79eced4c519de117e2ca3828d62c24deff3d95d05a613d35e",
+      "accepted_at": "2026-10-01T15:03:09.768874+03:00",
+      "approval_timestamp_source": "decision_recorded_at",
+      "user_review_history": [
+        {
+          "recorded_at": "2026-10-01T15:03:09.768874+03:00",
+          "by": "user",
+          "decision": "approved",
+          "accepted_attempt": 2,
+          "accepted_path": "/workspace/lightweight-exercises-photo/assets/exercises/pending/night-2026-10-01/batch-005/biceps-curl-barbell/attempt-2.png",
+          "accepted_sha256": "06795939d21728c79eced4c519de117e2ca3828d62c24deff3d95d05a613d35e",
+          "reason": "User accepts all existing night-generation images except the attached triceps-extension-dumbbell image."
+        }
+      ]
     },
     "biceps-curl-cable-machine": {
       "id": "biceps-curl-cable-machine",
@@ -3600,7 +3731,7 @@
         "mapping": null
       },
       "source_reference_image": null,
-      "status": "generated_needs_review",
+      "status": "approved",
       "included_in_generation": true,
       "archived_inclusion_authorized": false,
       "blocked_by": [
@@ -3639,7 +3770,7 @@
           "status": "saved",
           "result_path": "/workspace/lightweight-exercises-photo/assets/exercises/pending/night-2026-10-01/batch-001/bird-dog/attempt-1.png",
           "agent_visual_review": "not_performed",
-          "user_review": "pending",
+          "user_review": "approved",
           "finished_at": "2026-10-01T02:31:52.931312+03:00",
           "sha256": "8d1a326f45fc15cb85053f6e4f651c40ac7e3a8205cb08c5df08ef791e3299a7",
           "technical_check": "passed",
@@ -3664,7 +3795,10 @@
             "fully_transparent_pixels": 1290013,
             "scope": "PNG decode, square dimensions, true alpha transparency, SHA256; no visual QA"
           },
-          "error": null
+          "error": null,
+          "accepted_path": "/workspace/lightweight-exercises-photo/assets/exercises/pending/night-2026-10-01/batch-001/bird-dog/attempt-1.png",
+          "accepted_sha256": "8d1a326f45fc15cb85053f6e4f651c40ac7e3a8205cb08c5df08ef791e3299a7",
+          "approval_recorded_at": "2026-10-01T15:03:09.768874+03:00"
         }
       ],
       "result_sha256": "8d1a326f45fc15cb85053f6e4f651c40ac7e3a8205cb08c5df08ef791e3299a7",
@@ -3692,7 +3826,7 @@
       },
       "agent_visual_review": "not_performed",
       "agent_visual_review_notes": [],
-      "user_review": "pending",
+      "user_review": "approved",
       "generation_run_id": "night-2026-10-01",
       "generated_overnight": true,
       "batch_id": "night-2026-10-01-001",
@@ -3730,6 +3864,21 @@
           "png_sha256": "8d1a326f45fc15cb85053f6e4f651c40ac7e3a8205cb08c5df08ef791e3299a7",
           "verified_at": "2026-10-01T03:45:41.209794+03:00",
           "verified_commit": "a0f650d0c2add34b8bab916c54169d99a00f2d00"
+        }
+      ],
+      "accepted_path": "/workspace/lightweight-exercises-photo/assets/exercises/pending/night-2026-10-01/batch-001/bird-dog/attempt-1.png",
+      "accepted_sha256": "8d1a326f45fc15cb85053f6e4f651c40ac7e3a8205cb08c5df08ef791e3299a7",
+      "accepted_at": "2026-10-01T15:03:09.768874+03:00",
+      "approval_timestamp_source": "decision_recorded_at",
+      "user_review_history": [
+        {
+          "recorded_at": "2026-10-01T15:03:09.768874+03:00",
+          "by": "user",
+          "decision": "approved",
+          "accepted_attempt": 1,
+          "accepted_path": "/workspace/lightweight-exercises-photo/assets/exercises/pending/night-2026-10-01/batch-001/bird-dog/attempt-1.png",
+          "accepted_sha256": "8d1a326f45fc15cb85053f6e4f651c40ac7e3a8205cb08c5df08ef791e3299a7",
+          "reason": "User accepts all existing night-generation images except the attached triceps-extension-dumbbell image."
         }
       ]
     },
@@ -4061,7 +4210,7 @@
         "exists_at_preparation": true,
         "sha256": "88f318f9a121578e356f2c6129644fd287af0a6ef028a297b64a3f08a4ea26fb"
       },
-      "status": "generated_needs_review",
+      "status": "approved",
       "included_in_generation": true,
       "archived_inclusion_authorized": false,
       "blocked_by": [
@@ -4131,7 +4280,7 @@
           "result_path": "/workspace/lightweight-exercises-photo/assets/exercises/pending/night-2026-10-01/batch-005/bulgarian-split-squat-dumbbell/attempt-2.png",
           "previous_attempt_error": "image generation failed: http 429 Too Many Requests: Some(\"{\\\"error\\\":{\\\"type\\\":\\\"usage_limit_reached\\\",\\\"message\\\":\\\"The usage limit has been reached\\\",\\\"plan_type\\\":\\\"plus\\\",\\\"resets_at\\\":1790845839,\\\"eligible_promo\\\":null,\\\"limit_window_minutes\\\":null,\\\"resets_in_seconds\\\":30946}}\")",
           "agent_visual_review": "not_performed",
-          "user_review": "pending",
+          "user_review": "approved",
           "finished_at": "2026-10-01T14:42:14.305332+03:00",
           "generated_at": "2026-10-01T14:42:13.787296+03:00",
           "sha256": "858bffd51b77ecd5e6ea20255b129d6856ed9ad2e52366bed0300fc28e86b1a1",
@@ -4162,7 +4311,10 @@
           "backup_status": "github_verified",
           "github_verified_at": "2026-10-01T11:52:54+00:00",
           "github_verified_commit": "3f967fd137e445aca32fd3f302510386ab44cc12",
-          "github_verified_sha256": "858bffd51b77ecd5e6ea20255b129d6856ed9ad2e52366bed0300fc28e86b1a1"
+          "github_verified_sha256": "858bffd51b77ecd5e6ea20255b129d6856ed9ad2e52366bed0300fc28e86b1a1",
+          "accepted_path": "/workspace/lightweight-exercises-photo/assets/exercises/pending/night-2026-10-01/batch-005/bulgarian-split-squat-dumbbell/attempt-2.png",
+          "accepted_sha256": "858bffd51b77ecd5e6ea20255b129d6856ed9ad2e52366bed0300fc28e86b1a1",
+          "approval_recorded_at": "2026-10-01T15:03:09.768874+03:00"
         }
       ],
       "result_sha256": "858bffd51b77ecd5e6ea20255b129d6856ed9ad2e52366bed0300fc28e86b1a1",
@@ -4190,7 +4342,7 @@
       },
       "agent_visual_review": "not_performed",
       "agent_visual_review_notes": [],
-      "user_review": "pending",
+      "user_review": "approved",
       "generation_run_id": "night-2026-10-01",
       "generated_overnight": true,
       "batch_id": "night-2026-10-01-005",
@@ -4210,7 +4362,22 @@
       ],
       "github_verified_at": "2026-10-01T11:52:54+00:00",
       "github_verified_commit": "3f967fd137e445aca32fd3f302510386ab44cc12",
-      "github_verified_sha256": "858bffd51b77ecd5e6ea20255b129d6856ed9ad2e52366bed0300fc28e86b1a1"
+      "github_verified_sha256": "858bffd51b77ecd5e6ea20255b129d6856ed9ad2e52366bed0300fc28e86b1a1",
+      "accepted_path": "/workspace/lightweight-exercises-photo/assets/exercises/pending/night-2026-10-01/batch-005/bulgarian-split-squat-dumbbell/attempt-2.png",
+      "accepted_sha256": "858bffd51b77ecd5e6ea20255b129d6856ed9ad2e52366bed0300fc28e86b1a1",
+      "accepted_at": "2026-10-01T15:03:09.768874+03:00",
+      "approval_timestamp_source": "decision_recorded_at",
+      "user_review_history": [
+        {
+          "recorded_at": "2026-10-01T15:03:09.768874+03:00",
+          "by": "user",
+          "decision": "approved",
+          "accepted_attempt": 2,
+          "accepted_path": "/workspace/lightweight-exercises-photo/assets/exercises/pending/night-2026-10-01/batch-005/bulgarian-split-squat-dumbbell/attempt-2.png",
+          "accepted_sha256": "858bffd51b77ecd5e6ea20255b129d6856ed9ad2e52366bed0300fc28e86b1a1",
+          "reason": "User accepts all existing night-generation images except the attached triceps-extension-dumbbell image."
+        }
+      ]
     },
     "burpee": {
       "id": "burpee",
@@ -7210,7 +7377,7 @@
         "exists_at_preparation": true,
         "sha256": "c7acc732835d6d4906205b27b0aa8efaf00a6a56c6e4e9e86f320719efff93fe"
       },
-      "status": "generated_needs_review",
+      "status": "approved",
       "included_in_generation": true,
       "archived_inclusion_authorized": false,
       "blocked_by": [
@@ -7249,7 +7416,7 @@
           "status": "saved",
           "result_path": "/workspace/lightweight-exercises-photo/assets/exercises/pending/night-2026-10-01/batch-001/dead-bug/attempt-1.png",
           "agent_visual_review": "not_performed",
-          "user_review": "pending",
+          "user_review": "approved",
           "finished_at": "2026-10-01T02:42:57.887619+03:00",
           "sha256": "6c7c60ba995ad4f87b157e833d7f9daa46c2a5497963a08c35c0bcd0b1d94317",
           "technical_check": "passed",
@@ -7274,7 +7441,10 @@
             "fully_transparent_pixels": 1367137,
             "scope": "PNG decode, square dimensions, true alpha transparency, SHA256; no visual QA"
           },
-          "error": null
+          "error": null,
+          "accepted_path": "/workspace/lightweight-exercises-photo/assets/exercises/pending/night-2026-10-01/batch-001/dead-bug/attempt-1.png",
+          "accepted_sha256": "6c7c60ba995ad4f87b157e833d7f9daa46c2a5497963a08c35c0bcd0b1d94317",
+          "approval_recorded_at": "2026-10-01T15:03:09.768874+03:00"
         }
       ],
       "result_sha256": "6c7c60ba995ad4f87b157e833d7f9daa46c2a5497963a08c35c0bcd0b1d94317",
@@ -7302,7 +7472,7 @@
       },
       "agent_visual_review": "not_performed",
       "agent_visual_review_notes": [],
-      "user_review": "pending",
+      "user_review": "approved",
       "generation_run_id": "night-2026-10-01",
       "generated_overnight": true,
       "batch_id": "night-2026-10-01-001",
@@ -7348,6 +7518,21 @@
           "png_sha256": "6c7c60ba995ad4f87b157e833d7f9daa46c2a5497963a08c35c0bcd0b1d94317",
           "verified_at": "2026-10-01T03:45:41.209794+03:00",
           "verified_commit": "a0f650d0c2add34b8bab916c54169d99a00f2d00"
+        }
+      ],
+      "accepted_path": "/workspace/lightweight-exercises-photo/assets/exercises/pending/night-2026-10-01/batch-001/dead-bug/attempt-1.png",
+      "accepted_sha256": "6c7c60ba995ad4f87b157e833d7f9daa46c2a5497963a08c35c0bcd0b1d94317",
+      "accepted_at": "2026-10-01T15:03:09.768874+03:00",
+      "approval_timestamp_source": "decision_recorded_at",
+      "user_review_history": [
+        {
+          "recorded_at": "2026-10-01T15:03:09.768874+03:00",
+          "by": "user",
+          "decision": "approved",
+          "accepted_attempt": 1,
+          "accepted_path": "/workspace/lightweight-exercises-photo/assets/exercises/pending/night-2026-10-01/batch-001/dead-bug/attempt-1.png",
+          "accepted_sha256": "6c7c60ba995ad4f87b157e833d7f9daa46c2a5497963a08c35c0bcd0b1d94317",
+          "reason": "User accepts all existing night-generation images except the attached triceps-extension-dumbbell image."
         }
       ]
     },
@@ -8649,7 +8834,7 @@
         "exists_at_preparation": true,
         "sha256": "d126d704a9885b952770139312862171d157fbf881215146ec806741bf3cd13a"
       },
-      "status": "generated_needs_review",
+      "status": "approved",
       "included_in_generation": true,
       "archived_inclusion_authorized": false,
       "blocked_by": [
@@ -8688,7 +8873,7 @@
           "status": "saved",
           "result_path": "/workspace/lightweight-exercises-photo/assets/exercises/pending/night-2026-10-01/batch-002/elbow-to-knee/attempt-1.png",
           "agent_visual_review": "not_performed",
-          "user_review": "pending",
+          "user_review": "approved",
           "finished_at": "2026-10-01T03:10:13.242656+03:00",
           "sha256": "717d2c9dfcaa8c716764011bc1d316cbff91eb3190801228fd20395ea80e27c5",
           "technical_check": "passed",
@@ -8713,7 +8898,10 @@
             "fully_transparent_pixels": 1153167,
             "scope": "PNG decode, square dimensions, true alpha transparency, SHA256; no visual QA"
           },
-          "error": null
+          "error": null,
+          "accepted_path": "/workspace/lightweight-exercises-photo/assets/exercises/pending/night-2026-10-01/batch-002/elbow-to-knee/attempt-1.png",
+          "accepted_sha256": "717d2c9dfcaa8c716764011bc1d316cbff91eb3190801228fd20395ea80e27c5",
+          "approval_recorded_at": "2026-10-01T15:03:09.768874+03:00"
         }
       ],
       "result_sha256": "717d2c9dfcaa8c716764011bc1d316cbff91eb3190801228fd20395ea80e27c5",
@@ -8741,7 +8929,7 @@
       },
       "agent_visual_review": "not_performed",
       "agent_visual_review_notes": [],
-      "user_review": "pending",
+      "user_review": "approved",
       "generation_run_id": "night-2026-10-01",
       "generated_overnight": true,
       "batch_id": "night-2026-10-01-002",
@@ -8779,6 +8967,21 @@
           "png_sha256": "717d2c9dfcaa8c716764011bc1d316cbff91eb3190801228fd20395ea80e27c5",
           "verified_at": "2026-10-01T03:45:41.209794+03:00",
           "verified_commit": "a0f650d0c2add34b8bab916c54169d99a00f2d00"
+        }
+      ],
+      "accepted_path": "/workspace/lightweight-exercises-photo/assets/exercises/pending/night-2026-10-01/batch-002/elbow-to-knee/attempt-1.png",
+      "accepted_sha256": "717d2c9dfcaa8c716764011bc1d316cbff91eb3190801228fd20395ea80e27c5",
+      "accepted_at": "2026-10-01T15:03:09.768874+03:00",
+      "approval_timestamp_source": "decision_recorded_at",
+      "user_review_history": [
+        {
+          "recorded_at": "2026-10-01T15:03:09.768874+03:00",
+          "by": "user",
+          "decision": "approved",
+          "accepted_attempt": 1,
+          "accepted_path": "/workspace/lightweight-exercises-photo/assets/exercises/pending/night-2026-10-01/batch-002/elbow-to-knee/attempt-1.png",
+          "accepted_sha256": "717d2c9dfcaa8c716764011bc1d316cbff91eb3190801228fd20395ea80e27c5",
+          "reason": "User accepts all existing night-generation images except the attached triceps-extension-dumbbell image."
         }
       ]
     },
@@ -9508,7 +9711,7 @@
         "exists_at_preparation": true,
         "sha256": "e96187baa4fdd3fd5184fb64a5e5b6093aac7c08f10a64204f23b9592a2a086f"
       },
-      "status": "generated_needs_review",
+      "status": "approved",
       "included_in_generation": true,
       "archived_inclusion_authorized": false,
       "blocked_by": [
@@ -9547,7 +9750,7 @@
           "status": "saved",
           "result_path": "/workspace/lightweight-exercises-photo/assets/exercises/pending/night-2026-10-01/batch-003/flutter-kicks/attempt-1.png",
           "agent_visual_review": "not_performed",
-          "user_review": "pending",
+          "user_review": "approved",
           "finished_at": "2026-10-01T03:12:50.168934+03:00",
           "sha256": "cc5fb9f20faca5978a78cb5caf7f742b3f421020de3294f9d719ab4ca4459a6b",
           "technical_check": "passed",
@@ -9572,7 +9775,10 @@
             "fully_transparent_pixels": 1337227,
             "scope": "PNG decode, square dimensions, true alpha transparency, SHA256; no visual QA"
           },
-          "error": null
+          "error": null,
+          "accepted_path": "/workspace/lightweight-exercises-photo/assets/exercises/pending/night-2026-10-01/batch-003/flutter-kicks/attempt-1.png",
+          "accepted_sha256": "cc5fb9f20faca5978a78cb5caf7f742b3f421020de3294f9d719ab4ca4459a6b",
+          "approval_recorded_at": "2026-10-01T15:03:09.768874+03:00"
         }
       ],
       "result_sha256": "cc5fb9f20faca5978a78cb5caf7f742b3f421020de3294f9d719ab4ca4459a6b",
@@ -9600,7 +9806,7 @@
       },
       "agent_visual_review": "not_performed",
       "agent_visual_review_notes": [],
-      "user_review": "pending",
+      "user_review": "approved",
       "generation_run_id": "night-2026-10-01",
       "generated_overnight": true,
       "batch_id": "night-2026-10-01-003",
@@ -9638,6 +9844,21 @@
           "png_sha256": "cc5fb9f20faca5978a78cb5caf7f742b3f421020de3294f9d719ab4ca4459a6b",
           "verified_at": "2026-10-01T03:45:41.209794+03:00",
           "verified_commit": "a0f650d0c2add34b8bab916c54169d99a00f2d00"
+        }
+      ],
+      "accepted_path": "/workspace/lightweight-exercises-photo/assets/exercises/pending/night-2026-10-01/batch-003/flutter-kicks/attempt-1.png",
+      "accepted_sha256": "cc5fb9f20faca5978a78cb5caf7f742b3f421020de3294f9d719ab4ca4459a6b",
+      "accepted_at": "2026-10-01T15:03:09.768874+03:00",
+      "approval_timestamp_source": "decision_recorded_at",
+      "user_review_history": [
+        {
+          "recorded_at": "2026-10-01T15:03:09.768874+03:00",
+          "by": "user",
+          "decision": "approved",
+          "accepted_attempt": 1,
+          "accepted_path": "/workspace/lightweight-exercises-photo/assets/exercises/pending/night-2026-10-01/batch-003/flutter-kicks/attempt-1.png",
+          "accepted_sha256": "cc5fb9f20faca5978a78cb5caf7f742b3f421020de3294f9d719ab4ca4459a6b",
+          "reason": "User accepts all existing night-generation images except the attached triceps-extension-dumbbell image."
         }
       ]
     },
@@ -10726,7 +10947,7 @@
         "mapping": null
       },
       "source_reference_image": null,
-      "status": "generated_needs_review",
+      "status": "approved",
       "included_in_generation": true,
       "archived_inclusion_authorized": false,
       "blocked_by": [
@@ -10765,7 +10986,7 @@
           "status": "saved",
           "result_path": "/workspace/lightweight-exercises-photo/assets/exercises/pending/night-2026-10-01/batch-001/glute-kickback-on-floor/attempt-1.png",
           "agent_visual_review": "not_performed",
-          "user_review": "pending",
+          "user_review": "approved",
           "finished_at": "2026-10-01T02:47:52.277334+03:00",
           "sha256": "ab34df6b1b6b4659b675a22f22fa99de8fc0ee9eab32ee1308f5754f15094a1d",
           "technical_check": "passed",
@@ -10790,7 +11011,10 @@
             "fully_transparent_pixels": 1332462,
             "scope": "PNG decode, square dimensions, true alpha transparency, SHA256; no visual QA"
           },
-          "error": null
+          "error": null,
+          "accepted_path": "/workspace/lightweight-exercises-photo/assets/exercises/pending/night-2026-10-01/batch-001/glute-kickback-on-floor/attempt-1.png",
+          "accepted_sha256": "ab34df6b1b6b4659b675a22f22fa99de8fc0ee9eab32ee1308f5754f15094a1d",
+          "approval_recorded_at": "2026-10-01T15:03:09.768874+03:00"
         }
       ],
       "result_sha256": "ab34df6b1b6b4659b675a22f22fa99de8fc0ee9eab32ee1308f5754f15094a1d",
@@ -10818,7 +11042,7 @@
       },
       "agent_visual_review": "not_performed",
       "agent_visual_review_notes": [],
-      "user_review": "pending",
+      "user_review": "approved",
       "generation_run_id": "night-2026-10-01",
       "generated_overnight": true,
       "batch_id": "night-2026-10-01-001",
@@ -10856,6 +11080,21 @@
           "png_sha256": "ab34df6b1b6b4659b675a22f22fa99de8fc0ee9eab32ee1308f5754f15094a1d",
           "verified_at": "2026-10-01T03:45:41.209794+03:00",
           "verified_commit": "a0f650d0c2add34b8bab916c54169d99a00f2d00"
+        }
+      ],
+      "accepted_path": "/workspace/lightweight-exercises-photo/assets/exercises/pending/night-2026-10-01/batch-001/glute-kickback-on-floor/attempt-1.png",
+      "accepted_sha256": "ab34df6b1b6b4659b675a22f22fa99de8fc0ee9eab32ee1308f5754f15094a1d",
+      "accepted_at": "2026-10-01T15:03:09.768874+03:00",
+      "approval_timestamp_source": "decision_recorded_at",
+      "user_review_history": [
+        {
+          "recorded_at": "2026-10-01T15:03:09.768874+03:00",
+          "by": "user",
+          "decision": "approved",
+          "accepted_attempt": 1,
+          "accepted_path": "/workspace/lightweight-exercises-photo/assets/exercises/pending/night-2026-10-01/batch-001/glute-kickback-on-floor/attempt-1.png",
+          "accepted_sha256": "ab34df6b1b6b4659b675a22f22fa99de8fc0ee9eab32ee1308f5754f15094a1d",
+          "reason": "User accepts all existing night-generation images except the attached triceps-extension-dumbbell image."
         }
       ]
     },
@@ -11899,7 +12138,7 @@
         "exists_at_preparation": true,
         "sha256": "43c640d46c35ee409d1c3044b93b8a845b1b42dd1d4e932415928887eb934faf"
       },
-      "status": "generated_needs_review",
+      "status": "approved",
       "included_in_generation": true,
       "archived_inclusion_authorized": false,
       "blocked_by": [
@@ -11938,7 +12177,7 @@
           "status": "saved",
           "result_path": "/workspace/lightweight-exercises-photo/assets/exercises/pending/night-2026-10-01/batch-001/heel-taps/attempt-1.png",
           "agent_visual_review": "not_performed",
-          "user_review": "pending",
+          "user_review": "approved",
           "finished_at": "2026-10-01T02:54:46.623204+03:00",
           "sha256": "bb70a32b3bc758327fb442652698b67649c04f697c54f70f820358769c4e4b22",
           "technical_check": "passed",
@@ -11963,7 +12202,10 @@
             "fully_transparent_pixels": 1104462,
             "scope": "PNG decode, square dimensions, true alpha transparency, SHA256; no visual QA"
           },
-          "error": null
+          "error": null,
+          "accepted_path": "/workspace/lightweight-exercises-photo/assets/exercises/pending/night-2026-10-01/batch-001/heel-taps/attempt-1.png",
+          "accepted_sha256": "bb70a32b3bc758327fb442652698b67649c04f697c54f70f820358769c4e4b22",
+          "approval_recorded_at": "2026-10-01T15:03:09.768874+03:00"
         }
       ],
       "result_sha256": "bb70a32b3bc758327fb442652698b67649c04f697c54f70f820358769c4e4b22",
@@ -11991,7 +12233,7 @@
       },
       "agent_visual_review": "not_performed",
       "agent_visual_review_notes": [],
-      "user_review": "pending",
+      "user_review": "approved",
       "generation_run_id": "night-2026-10-01",
       "generated_overnight": true,
       "batch_id": "night-2026-10-01-001",
@@ -12029,6 +12271,21 @@
           "png_sha256": "bb70a32b3bc758327fb442652698b67649c04f697c54f70f820358769c4e4b22",
           "verified_at": "2026-10-01T03:45:41.209794+03:00",
           "verified_commit": "a0f650d0c2add34b8bab916c54169d99a00f2d00"
+        }
+      ],
+      "accepted_path": "/workspace/lightweight-exercises-photo/assets/exercises/pending/night-2026-10-01/batch-001/heel-taps/attempt-1.png",
+      "accepted_sha256": "bb70a32b3bc758327fb442652698b67649c04f697c54f70f820358769c4e4b22",
+      "accepted_at": "2026-10-01T15:03:09.768874+03:00",
+      "approval_timestamp_source": "decision_recorded_at",
+      "user_review_history": [
+        {
+          "recorded_at": "2026-10-01T15:03:09.768874+03:00",
+          "by": "user",
+          "decision": "approved",
+          "accepted_attempt": 1,
+          "accepted_path": "/workspace/lightweight-exercises-photo/assets/exercises/pending/night-2026-10-01/batch-001/heel-taps/attempt-1.png",
+          "accepted_sha256": "bb70a32b3bc758327fb442652698b67649c04f697c54f70f820358769c4e4b22",
+          "reason": "User accepts all existing night-generation images except the attached triceps-extension-dumbbell image."
         }
       ]
     },
@@ -12515,7 +12772,7 @@
         "mapping": null
       },
       "source_reference_image": null,
-      "status": "generated_needs_review",
+      "status": "approved",
       "included_in_generation": true,
       "archived_inclusion_authorized": false,
       "blocked_by": [
@@ -12554,7 +12811,7 @@
           "status": "saved",
           "result_path": "/workspace/lightweight-exercises-photo/assets/exercises/pending/night-2026-10-01/batch-004/hip-thrust/attempt-1.png",
           "agent_visual_review": "not_performed",
-          "user_review": "pending",
+          "user_review": "approved",
           "finished_at": "2026-10-01T03:27:27.672341+03:00",
           "sha256": "daae5e05fd1ce8929c5afccf4fa3ead37d6cece576a45e0d11685b0ed2ac149a",
           "technical_check": "passed",
@@ -12579,7 +12836,10 @@
             "fully_transparent_pixels": 1153537,
             "scope": "PNG decode, square dimensions, true alpha transparency, SHA256; no visual QA"
           },
-          "error": null
+          "error": null,
+          "accepted_path": "/workspace/lightweight-exercises-photo/assets/exercises/pending/night-2026-10-01/batch-004/hip-thrust/attempt-1.png",
+          "accepted_sha256": "daae5e05fd1ce8929c5afccf4fa3ead37d6cece576a45e0d11685b0ed2ac149a",
+          "approval_recorded_at": "2026-10-01T15:03:09.768874+03:00"
         }
       ],
       "result_sha256": "daae5e05fd1ce8929c5afccf4fa3ead37d6cece576a45e0d11685b0ed2ac149a",
@@ -12607,7 +12867,7 @@
       },
       "agent_visual_review": "not_performed",
       "agent_visual_review_notes": [],
-      "user_review": "pending",
+      "user_review": "approved",
       "generation_run_id": "night-2026-10-01",
       "generated_overnight": true,
       "batch_id": "night-2026-10-01-004",
@@ -12645,6 +12905,21 @@
           "png_sha256": "daae5e05fd1ce8929c5afccf4fa3ead37d6cece576a45e0d11685b0ed2ac149a",
           "verified_at": "2026-10-01T03:45:41.209794+03:00",
           "verified_commit": "a0f650d0c2add34b8bab916c54169d99a00f2d00"
+        }
+      ],
+      "accepted_path": "/workspace/lightweight-exercises-photo/assets/exercises/pending/night-2026-10-01/batch-004/hip-thrust/attempt-1.png",
+      "accepted_sha256": "daae5e05fd1ce8929c5afccf4fa3ead37d6cece576a45e0d11685b0ed2ac149a",
+      "accepted_at": "2026-10-01T15:03:09.768874+03:00",
+      "approval_timestamp_source": "decision_recorded_at",
+      "user_review_history": [
+        {
+          "recorded_at": "2026-10-01T15:03:09.768874+03:00",
+          "by": "user",
+          "decision": "approved",
+          "accepted_attempt": 1,
+          "accepted_path": "/workspace/lightweight-exercises-photo/assets/exercises/pending/night-2026-10-01/batch-004/hip-thrust/attempt-1.png",
+          "accepted_sha256": "daae5e05fd1ce8929c5afccf4fa3ead37d6cece576a45e0d11685b0ed2ac149a",
+          "reason": "User accepts all existing night-generation images except the attached triceps-extension-dumbbell image."
         }
       ]
     },
@@ -12876,7 +13151,7 @@
         "mapping": null
       },
       "source_reference_image": null,
-      "status": "generated_needs_review",
+      "status": "approved",
       "included_in_generation": true,
       "archived_inclusion_authorized": false,
       "blocked_by": [
@@ -12915,7 +13190,7 @@
           "status": "saved",
           "result_path": "/workspace/lightweight-exercises-photo/assets/exercises/pending/night-2026-10-01/batch-003/hollow-rock/attempt-1.png",
           "agent_visual_review": "not_performed",
-          "user_review": "pending",
+          "user_review": "approved",
           "finished_at": "2026-10-01T03:19:15.974133+03:00",
           "sha256": "b79dbf1e42f419e12072e952fa50c051af6f4d05bce25763c324d1cbf5a4c80b",
           "technical_check": "passed",
@@ -12940,7 +13215,10 @@
             "fully_transparent_pixels": 1385191,
             "scope": "PNG decode, square dimensions, true alpha transparency, SHA256; no visual QA"
           },
-          "error": null
+          "error": null,
+          "accepted_path": "/workspace/lightweight-exercises-photo/assets/exercises/pending/night-2026-10-01/batch-003/hollow-rock/attempt-1.png",
+          "accepted_sha256": "b79dbf1e42f419e12072e952fa50c051af6f4d05bce25763c324d1cbf5a4c80b",
+          "approval_recorded_at": "2026-10-01T15:03:09.768874+03:00"
         }
       ],
       "result_sha256": "b79dbf1e42f419e12072e952fa50c051af6f4d05bce25763c324d1cbf5a4c80b",
@@ -12968,7 +13246,7 @@
       },
       "agent_visual_review": "not_performed",
       "agent_visual_review_notes": [],
-      "user_review": "pending",
+      "user_review": "approved",
       "generation_run_id": "night-2026-10-01",
       "generated_overnight": true,
       "batch_id": "night-2026-10-01-003",
@@ -13006,6 +13284,21 @@
           "png_sha256": "b79dbf1e42f419e12072e952fa50c051af6f4d05bce25763c324d1cbf5a4c80b",
           "verified_at": "2026-10-01T03:45:41.209794+03:00",
           "verified_commit": "a0f650d0c2add34b8bab916c54169d99a00f2d00"
+        }
+      ],
+      "accepted_path": "/workspace/lightweight-exercises-photo/assets/exercises/pending/night-2026-10-01/batch-003/hollow-rock/attempt-1.png",
+      "accepted_sha256": "b79dbf1e42f419e12072e952fa50c051af6f4d05bce25763c324d1cbf5a4c80b",
+      "accepted_at": "2026-10-01T15:03:09.768874+03:00",
+      "approval_timestamp_source": "decision_recorded_at",
+      "user_review_history": [
+        {
+          "recorded_at": "2026-10-01T15:03:09.768874+03:00",
+          "by": "user",
+          "decision": "approved",
+          "accepted_attempt": 1,
+          "accepted_path": "/workspace/lightweight-exercises-photo/assets/exercises/pending/night-2026-10-01/batch-003/hollow-rock/attempt-1.png",
+          "accepted_sha256": "b79dbf1e42f419e12072e952fa50c051af6f4d05bce25763c324d1cbf5a4c80b",
+          "reason": "User accepts all existing night-generation images except the attached triceps-extension-dumbbell image."
         }
       ]
     },
@@ -13307,7 +13600,7 @@
         "exists_at_preparation": true,
         "sha256": "1bafd2e3eb5acdafd5a41e24142e9ace5d6c1c2fd3266909e9f04637e6fb99ef"
       },
-      "status": "generated_needs_review",
+      "status": "approved",
       "included_in_generation": true,
       "archived_inclusion_authorized": false,
       "blocked_by": [
@@ -13346,7 +13639,7 @@
           "status": "saved",
           "result_path": "/workspace/lightweight-exercises-photo/assets/exercises/pending/night-2026-10-01/batch-004/incline-push-ups/attempt-1.png",
           "agent_visual_review": "not_performed",
-          "user_review": "pending",
+          "user_review": "approved",
           "finished_at": "2026-10-01T03:28:36.485074+03:00",
           "sha256": "5b6ded729c93d9b8b17d9a14d9003f1a9a4bd60351592899ed56b29d301bb43a",
           "technical_check": "passed",
@@ -13371,7 +13664,10 @@
             "fully_transparent_pixels": 1186383,
             "scope": "PNG decode, square dimensions, true alpha transparency, SHA256; no visual QA"
           },
-          "error": null
+          "error": null,
+          "accepted_path": "/workspace/lightweight-exercises-photo/assets/exercises/pending/night-2026-10-01/batch-004/incline-push-ups/attempt-1.png",
+          "accepted_sha256": "5b6ded729c93d9b8b17d9a14d9003f1a9a4bd60351592899ed56b29d301bb43a",
+          "approval_recorded_at": "2026-10-01T15:03:09.768874+03:00"
         }
       ],
       "result_sha256": "5b6ded729c93d9b8b17d9a14d9003f1a9a4bd60351592899ed56b29d301bb43a",
@@ -13399,7 +13695,7 @@
       },
       "agent_visual_review": "not_performed",
       "agent_visual_review_notes": [],
-      "user_review": "pending",
+      "user_review": "approved",
       "generation_run_id": "night-2026-10-01",
       "generated_overnight": true,
       "batch_id": "night-2026-10-01-004",
@@ -13437,6 +13733,21 @@
           "png_sha256": "5b6ded729c93d9b8b17d9a14d9003f1a9a4bd60351592899ed56b29d301bb43a",
           "verified_at": "2026-10-01T03:45:41.209794+03:00",
           "verified_commit": "a0f650d0c2add34b8bab916c54169d99a00f2d00"
+        }
+      ],
+      "accepted_path": "/workspace/lightweight-exercises-photo/assets/exercises/pending/night-2026-10-01/batch-004/incline-push-ups/attempt-1.png",
+      "accepted_sha256": "5b6ded729c93d9b8b17d9a14d9003f1a9a4bd60351592899ed56b29d301bb43a",
+      "accepted_at": "2026-10-01T15:03:09.768874+03:00",
+      "approval_timestamp_source": "decision_recorded_at",
+      "user_review_history": [
+        {
+          "recorded_at": "2026-10-01T15:03:09.768874+03:00",
+          "by": "user",
+          "decision": "approved",
+          "accepted_attempt": 1,
+          "accepted_path": "/workspace/lightweight-exercises-photo/assets/exercises/pending/night-2026-10-01/batch-004/incline-push-ups/attempt-1.png",
+          "accepted_sha256": "5b6ded729c93d9b8b17d9a14d9003f1a9a4bd60351592899ed56b29d301bb43a",
+          "reason": "User accepts all existing night-generation images except the attached triceps-extension-dumbbell image."
         }
       ]
     },
@@ -13783,7 +14094,7 @@
         "exists_at_preparation": true,
         "sha256": "d1052650232f4b8a1ba15df2a9e45510ac2a4c4f0d0b1987baae9eb2d4408987"
       },
-      "status": "generated_needs_review",
+      "status": "approved",
       "included_in_generation": true,
       "archived_inclusion_authorized": false,
       "blocked_by": [
@@ -13822,7 +14133,7 @@
           "status": "saved",
           "result_path": "/workspace/lightweight-exercises-photo/assets/exercises/pending/night-2026-10-01/batch-003/jackknife-situp/attempt-1.png",
           "agent_visual_review": "not_performed",
-          "user_review": "pending",
+          "user_review": "approved",
           "finished_at": "2026-10-01T03:24:35.982520+03:00",
           "sha256": "2d71b32eda9c47cd3900c9fba4a727e10f6b6f3fce4be5bddd3f782a0ca8d7b5",
           "technical_check": "passed",
@@ -13847,7 +14158,10 @@
             "fully_transparent_pixels": 1123887,
             "scope": "PNG decode, square dimensions, true alpha transparency, SHA256; no visual QA"
           },
-          "error": null
+          "error": null,
+          "accepted_path": "/workspace/lightweight-exercises-photo/assets/exercises/pending/night-2026-10-01/batch-003/jackknife-situp/attempt-1.png",
+          "accepted_sha256": "2d71b32eda9c47cd3900c9fba4a727e10f6b6f3fce4be5bddd3f782a0ca8d7b5",
+          "approval_recorded_at": "2026-10-01T15:03:09.768874+03:00"
         }
       ],
       "result_sha256": "2d71b32eda9c47cd3900c9fba4a727e10f6b6f3fce4be5bddd3f782a0ca8d7b5",
@@ -13875,7 +14189,7 @@
       },
       "agent_visual_review": "not_performed",
       "agent_visual_review_notes": [],
-      "user_review": "pending",
+      "user_review": "approved",
       "generation_run_id": "night-2026-10-01",
       "generated_overnight": true,
       "batch_id": "night-2026-10-01-003",
@@ -13913,6 +14227,21 @@
           "png_sha256": "2d71b32eda9c47cd3900c9fba4a727e10f6b6f3fce4be5bddd3f782a0ca8d7b5",
           "verified_at": "2026-10-01T03:45:41.209794+03:00",
           "verified_commit": "a0f650d0c2add34b8bab916c54169d99a00f2d00"
+        }
+      ],
+      "accepted_path": "/workspace/lightweight-exercises-photo/assets/exercises/pending/night-2026-10-01/batch-003/jackknife-situp/attempt-1.png",
+      "accepted_sha256": "2d71b32eda9c47cd3900c9fba4a727e10f6b6f3fce4be5bddd3f782a0ca8d7b5",
+      "accepted_at": "2026-10-01T15:03:09.768874+03:00",
+      "approval_timestamp_source": "decision_recorded_at",
+      "user_review_history": [
+        {
+          "recorded_at": "2026-10-01T15:03:09.768874+03:00",
+          "by": "user",
+          "decision": "approved",
+          "accepted_attempt": 1,
+          "accepted_path": "/workspace/lightweight-exercises-photo/assets/exercises/pending/night-2026-10-01/batch-003/jackknife-situp/attempt-1.png",
+          "accepted_sha256": "2d71b32eda9c47cd3900c9fba4a727e10f6b6f3fce4be5bddd3f782a0ca8d7b5",
+          "reason": "User accepts all existing night-generation images except the attached triceps-extension-dumbbell image."
         }
       ]
     },
@@ -14894,7 +15223,7 @@
         "exists_at_preparation": true,
         "sha256": "0bc0b5b8c55cb6bfee3836193e9c3341382ea8105ef630d8fea812798a505e01"
       },
-      "status": "generated_needs_review",
+      "status": "approved",
       "included_in_generation": true,
       "archived_inclusion_authorized": false,
       "blocked_by": [
@@ -14933,7 +15262,7 @@
           "status": "saved",
           "result_path": "/workspace/lightweight-exercises-photo/assets/exercises/pending/night-2026-10-01/batch-001/kneeling-pushup/attempt-1.png",
           "agent_visual_review": "not_performed",
-          "user_review": "pending",
+          "user_review": "approved",
           "finished_at": "2026-10-01T02:49:06.833428+03:00",
           "sha256": "d2728eb0953889aa209f2c7ce1c70373eb186b3356ced2d4a24d9bef04f70d4d",
           "technical_check": "passed",
@@ -14958,7 +15287,10 @@
             "fully_transparent_pixels": 1267647,
             "scope": "PNG decode, square dimensions, true alpha transparency, SHA256; no visual QA"
           },
-          "error": null
+          "error": null,
+          "accepted_path": "/workspace/lightweight-exercises-photo/assets/exercises/pending/night-2026-10-01/batch-001/kneeling-pushup/attempt-1.png",
+          "accepted_sha256": "d2728eb0953889aa209f2c7ce1c70373eb186b3356ced2d4a24d9bef04f70d4d",
+          "approval_recorded_at": "2026-10-01T15:03:09.768874+03:00"
         }
       ],
       "result_sha256": "d2728eb0953889aa209f2c7ce1c70373eb186b3356ced2d4a24d9bef04f70d4d",
@@ -14986,7 +15318,7 @@
       },
       "agent_visual_review": "not_performed",
       "agent_visual_review_notes": [],
-      "user_review": "pending",
+      "user_review": "approved",
       "generation_run_id": "night-2026-10-01",
       "generated_overnight": true,
       "batch_id": "night-2026-10-01-001",
@@ -15024,6 +15356,21 @@
           "png_sha256": "d2728eb0953889aa209f2c7ce1c70373eb186b3356ced2d4a24d9bef04f70d4d",
           "verified_at": "2026-10-01T03:45:41.209794+03:00",
           "verified_commit": "a0f650d0c2add34b8bab916c54169d99a00f2d00"
+        }
+      ],
+      "accepted_path": "/workspace/lightweight-exercises-photo/assets/exercises/pending/night-2026-10-01/batch-001/kneeling-pushup/attempt-1.png",
+      "accepted_sha256": "d2728eb0953889aa209f2c7ce1c70373eb186b3356ced2d4a24d9bef04f70d4d",
+      "accepted_at": "2026-10-01T15:03:09.768874+03:00",
+      "approval_timestamp_source": "decision_recorded_at",
+      "user_review_history": [
+        {
+          "recorded_at": "2026-10-01T15:03:09.768874+03:00",
+          "by": "user",
+          "decision": "approved",
+          "accepted_attempt": 1,
+          "accepted_path": "/workspace/lightweight-exercises-photo/assets/exercises/pending/night-2026-10-01/batch-001/kneeling-pushup/attempt-1.png",
+          "accepted_sha256": "d2728eb0953889aa209f2c7ce1c70373eb186b3356ced2d4a24d9bef04f70d4d",
+          "reason": "User accepts all existing night-generation images except the attached triceps-extension-dumbbell image."
         }
       ]
     },
@@ -15751,7 +16098,7 @@
         "mapping": null
       },
       "source_reference_image": null,
-      "status": "generated_needs_review",
+      "status": "approved",
       "included_in_generation": true,
       "archived_inclusion_authorized": false,
       "blocked_by": [
@@ -15790,7 +16137,7 @@
           "status": "saved",
           "result_path": "/workspace/lightweight-exercises-photo/assets/exercises/pending/night-2026-10-01/batch-002/lateral-lunge/attempt-1.png",
           "agent_visual_review": "not_performed",
-          "user_review": "pending",
+          "user_review": "approved",
           "finished_at": "2026-10-01T02:59:19.540646+03:00",
           "sha256": "2a8683446fad806fcb3b2ac51c1fc538c3e7ddeb4c0a56cb22cf5f3f3a4e9404",
           "technical_check": "passed",
@@ -15815,7 +16162,10 @@
             "fully_transparent_pixels": 1202329,
             "scope": "PNG decode, square dimensions, true alpha transparency, SHA256; no visual QA"
           },
-          "error": null
+          "error": null,
+          "accepted_path": "/workspace/lightweight-exercises-photo/assets/exercises/pending/night-2026-10-01/batch-002/lateral-lunge/attempt-1.png",
+          "accepted_sha256": "2a8683446fad806fcb3b2ac51c1fc538c3e7ddeb4c0a56cb22cf5f3f3a4e9404",
+          "approval_recorded_at": "2026-10-01T15:03:09.768874+03:00"
         }
       ],
       "result_sha256": "2a8683446fad806fcb3b2ac51c1fc538c3e7ddeb4c0a56cb22cf5f3f3a4e9404",
@@ -15843,7 +16193,7 @@
       },
       "agent_visual_review": "not_performed",
       "agent_visual_review_notes": [],
-      "user_review": "pending",
+      "user_review": "approved",
       "generation_run_id": "night-2026-10-01",
       "generated_overnight": true,
       "batch_id": "night-2026-10-01-002",
@@ -15881,6 +16231,21 @@
           "png_sha256": "2a8683446fad806fcb3b2ac51c1fc538c3e7ddeb4c0a56cb22cf5f3f3a4e9404",
           "verified_at": "2026-10-01T03:45:41.209794+03:00",
           "verified_commit": "a0f650d0c2add34b8bab916c54169d99a00f2d00"
+        }
+      ],
+      "accepted_path": "/workspace/lightweight-exercises-photo/assets/exercises/pending/night-2026-10-01/batch-002/lateral-lunge/attempt-1.png",
+      "accepted_sha256": "2a8683446fad806fcb3b2ac51c1fc538c3e7ddeb4c0a56cb22cf5f3f3a4e9404",
+      "accepted_at": "2026-10-01T15:03:09.768874+03:00",
+      "approval_timestamp_source": "decision_recorded_at",
+      "user_review_history": [
+        {
+          "recorded_at": "2026-10-01T15:03:09.768874+03:00",
+          "by": "user",
+          "decision": "approved",
+          "accepted_attempt": 1,
+          "accepted_path": "/workspace/lightweight-exercises-photo/assets/exercises/pending/night-2026-10-01/batch-002/lateral-lunge/attempt-1.png",
+          "accepted_sha256": "2a8683446fad806fcb3b2ac51c1fc538c3e7ddeb4c0a56cb22cf5f3f3a4e9404",
+          "reason": "User accepts all existing night-generation images except the attached triceps-extension-dumbbell image."
         }
       ]
     },
@@ -16248,7 +16613,7 @@
         "mapping": null
       },
       "source_reference_image": null,
-      "status": "generated_needs_review",
+      "status": "approved",
       "included_in_generation": true,
       "archived_inclusion_authorized": false,
       "blocked_by": [
@@ -16287,7 +16652,7 @@
           "status": "saved",
           "result_path": "/workspace/lightweight-exercises-photo/assets/exercises/pending/night-2026-10-01/batch-002/lateral-squat/attempt-1.png",
           "agent_visual_review": "not_performed",
-          "user_review": "pending",
+          "user_review": "approved",
           "finished_at": "2026-10-01T03:00:38.285101+03:00",
           "sha256": "ee4ef35cd3c0e66692884bd135eccc312b823c6f2824f380baa3a085f6854cf5",
           "technical_check": "passed",
@@ -16312,7 +16677,10 @@
             "fully_transparent_pixels": 1246648,
             "scope": "PNG decode, square dimensions, true alpha transparency, SHA256; no visual QA"
           },
-          "error": null
+          "error": null,
+          "accepted_path": "/workspace/lightweight-exercises-photo/assets/exercises/pending/night-2026-10-01/batch-002/lateral-squat/attempt-1.png",
+          "accepted_sha256": "ee4ef35cd3c0e66692884bd135eccc312b823c6f2824f380baa3a085f6854cf5",
+          "approval_recorded_at": "2026-10-01T15:03:09.768874+03:00"
         }
       ],
       "result_sha256": "ee4ef35cd3c0e66692884bd135eccc312b823c6f2824f380baa3a085f6854cf5",
@@ -16340,7 +16708,7 @@
       },
       "agent_visual_review": "not_performed",
       "agent_visual_review_notes": [],
-      "user_review": "pending",
+      "user_review": "approved",
       "generation_run_id": "night-2026-10-01",
       "generated_overnight": true,
       "batch_id": "night-2026-10-01-002",
@@ -16378,6 +16746,21 @@
           "png_sha256": "ee4ef35cd3c0e66692884bd135eccc312b823c6f2824f380baa3a085f6854cf5",
           "verified_at": "2026-10-01T03:45:41.209794+03:00",
           "verified_commit": "a0f650d0c2add34b8bab916c54169d99a00f2d00"
+        }
+      ],
+      "accepted_path": "/workspace/lightweight-exercises-photo/assets/exercises/pending/night-2026-10-01/batch-002/lateral-squat/attempt-1.png",
+      "accepted_sha256": "ee4ef35cd3c0e66692884bd135eccc312b823c6f2824f380baa3a085f6854cf5",
+      "accepted_at": "2026-10-01T15:03:09.768874+03:00",
+      "approval_timestamp_source": "decision_recorded_at",
+      "user_review_history": [
+        {
+          "recorded_at": "2026-10-01T15:03:09.768874+03:00",
+          "by": "user",
+          "decision": "approved",
+          "accepted_attempt": 1,
+          "accepted_path": "/workspace/lightweight-exercises-photo/assets/exercises/pending/night-2026-10-01/batch-002/lateral-squat/attempt-1.png",
+          "accepted_sha256": "ee4ef35cd3c0e66692884bd135eccc312b823c6f2824f380baa3a085f6854cf5",
+          "reason": "User accepts all existing night-generation images except the attached triceps-extension-dumbbell image."
         }
       ]
     },
@@ -17020,7 +17403,7 @@
         "mapping": null
       },
       "source_reference_image": null,
-      "status": "generated_needs_review",
+      "status": "approved",
       "included_in_generation": true,
       "archived_inclusion_authorized": false,
       "blocked_by": [
@@ -17059,7 +17442,7 @@
           "status": "saved",
           "result_path": "/workspace/lightweight-exercises-photo/assets/exercises/pending/night-2026-10-01/batch-002/lying-knee-raise/attempt-1.png",
           "agent_visual_review": "not_performed",
-          "user_review": "pending",
+          "user_review": "approved",
           "finished_at": "2026-10-01T03:06:01.777164+03:00",
           "sha256": "335782224bb4904cb7ad007b4ea9f41f30362eefd26bb69a6db9f0f2b86c3aa4",
           "technical_check": "passed",
@@ -17084,7 +17467,10 @@
             "fully_transparent_pixels": 1157026,
             "scope": "PNG decode, square dimensions, true alpha transparency, SHA256; no visual QA"
           },
-          "error": null
+          "error": null,
+          "accepted_path": "/workspace/lightweight-exercises-photo/assets/exercises/pending/night-2026-10-01/batch-002/lying-knee-raise/attempt-1.png",
+          "accepted_sha256": "335782224bb4904cb7ad007b4ea9f41f30362eefd26bb69a6db9f0f2b86c3aa4",
+          "approval_recorded_at": "2026-10-01T15:03:09.768874+03:00"
         }
       ],
       "result_sha256": "335782224bb4904cb7ad007b4ea9f41f30362eefd26bb69a6db9f0f2b86c3aa4",
@@ -17112,7 +17498,7 @@
       },
       "agent_visual_review": "not_performed",
       "agent_visual_review_notes": [],
-      "user_review": "pending",
+      "user_review": "approved",
       "generation_run_id": "night-2026-10-01",
       "generated_overnight": true,
       "batch_id": "night-2026-10-01-002",
@@ -17150,6 +17536,21 @@
           "png_sha256": "335782224bb4904cb7ad007b4ea9f41f30362eefd26bb69a6db9f0f2b86c3aa4",
           "verified_at": "2026-10-01T03:45:41.209794+03:00",
           "verified_commit": "a0f650d0c2add34b8bab916c54169d99a00f2d00"
+        }
+      ],
+      "accepted_path": "/workspace/lightweight-exercises-photo/assets/exercises/pending/night-2026-10-01/batch-002/lying-knee-raise/attempt-1.png",
+      "accepted_sha256": "335782224bb4904cb7ad007b4ea9f41f30362eefd26bb69a6db9f0f2b86c3aa4",
+      "accepted_at": "2026-10-01T15:03:09.768874+03:00",
+      "approval_timestamp_source": "decision_recorded_at",
+      "user_review_history": [
+        {
+          "recorded_at": "2026-10-01T15:03:09.768874+03:00",
+          "by": "user",
+          "decision": "approved",
+          "accepted_attempt": 1,
+          "accepted_path": "/workspace/lightweight-exercises-photo/assets/exercises/pending/night-2026-10-01/batch-002/lying-knee-raise/attempt-1.png",
+          "accepted_sha256": "335782224bb4904cb7ad007b4ea9f41f30362eefd26bb69a6db9f0f2b86c3aa4",
+          "reason": "User accepts all existing night-generation images except the attached triceps-extension-dumbbell image."
         }
       ]
     },
@@ -17412,7 +17813,7 @@
         "mapping": null
       },
       "source_reference_image": null,
-      "status": "generated_needs_review",
+      "status": "approved",
       "included_in_generation": true,
       "archived_inclusion_authorized": false,
       "blocked_by": [
@@ -17451,7 +17852,7 @@
           "status": "saved",
           "result_path": "/workspace/lightweight-exercises-photo/assets/exercises/pending/night-2026-10-01/batch-004/lying-neck-curls/attempt-1.png",
           "agent_visual_review": "not_performed",
-          "user_review": "pending",
+          "user_review": "approved",
           "finished_at": "2026-10-01T03:25:59.782659+03:00",
           "sha256": "6c4619581f4b06b3ef464f31dce6d0e41ed0c7861461b9a62f4201e22125a698",
           "technical_check": "passed",
@@ -17476,7 +17877,10 @@
             "fully_transparent_pixels": 1266090,
             "scope": "PNG decode, square dimensions, true alpha transparency, SHA256; no visual QA"
           },
-          "error": null
+          "error": null,
+          "accepted_path": "/workspace/lightweight-exercises-photo/assets/exercises/pending/night-2026-10-01/batch-004/lying-neck-curls/attempt-1.png",
+          "accepted_sha256": "6c4619581f4b06b3ef464f31dce6d0e41ed0c7861461b9a62f4201e22125a698",
+          "approval_recorded_at": "2026-10-01T15:03:09.768874+03:00"
         }
       ],
       "result_sha256": "6c4619581f4b06b3ef464f31dce6d0e41ed0c7861461b9a62f4201e22125a698",
@@ -17504,7 +17908,7 @@
       },
       "agent_visual_review": "not_performed",
       "agent_visual_review_notes": [],
-      "user_review": "pending",
+      "user_review": "approved",
       "generation_run_id": "night-2026-10-01",
       "generated_overnight": true,
       "batch_id": "night-2026-10-01-004",
@@ -17542,6 +17946,21 @@
           "png_sha256": "6c4619581f4b06b3ef464f31dce6d0e41ed0c7861461b9a62f4201e22125a698",
           "verified_at": "2026-10-01T03:45:41.209794+03:00",
           "verified_commit": "a0f650d0c2add34b8bab916c54169d99a00f2d00"
+        }
+      ],
+      "accepted_path": "/workspace/lightweight-exercises-photo/assets/exercises/pending/night-2026-10-01/batch-004/lying-neck-curls/attempt-1.png",
+      "accepted_sha256": "6c4619581f4b06b3ef464f31dce6d0e41ed0c7861461b9a62f4201e22125a698",
+      "accepted_at": "2026-10-01T15:03:09.768874+03:00",
+      "approval_timestamp_source": "decision_recorded_at",
+      "user_review_history": [
+        {
+          "recorded_at": "2026-10-01T15:03:09.768874+03:00",
+          "by": "user",
+          "decision": "approved",
+          "accepted_attempt": 1,
+          "accepted_path": "/workspace/lightweight-exercises-photo/assets/exercises/pending/night-2026-10-01/batch-004/lying-neck-curls/attempt-1.png",
+          "accepted_sha256": "6c4619581f4b06b3ef464f31dce6d0e41ed0c7861461b9a62f4201e22125a698",
+          "reason": "User accepts all existing night-generation images except the attached triceps-extension-dumbbell image."
         }
       ]
     },
@@ -17978,7 +18397,7 @@
         "exists_at_preparation": true,
         "sha256": "6f6668f627259094c079d79209625efb1f0cc4a6a79ebbdf3d81ffb90e8e5303"
       },
-      "status": "generated_needs_review",
+      "status": "approved",
       "included_in_generation": true,
       "archived_inclusion_authorized": false,
       "blocked_by": [
@@ -18017,7 +18436,7 @@
           "status": "saved",
           "result_path": "/workspace/lightweight-exercises-photo/assets/exercises/pending/night-2026-10-01/batch-002/oblique-crunch/attempt-1.png",
           "agent_visual_review": "not_performed",
-          "user_review": "pending",
+          "user_review": "approved",
           "finished_at": "2026-10-01T03:08:50.194769+03:00",
           "sha256": "43b14e0456bd227eb4d12c17ca8e632a991a48355951d62693d14d937b4b085e",
           "technical_check": "passed",
@@ -18042,7 +18461,10 @@
             "fully_transparent_pixels": 1144699,
             "scope": "PNG decode, square dimensions, true alpha transparency, SHA256; no visual QA"
           },
-          "error": null
+          "error": null,
+          "accepted_path": "/workspace/lightweight-exercises-photo/assets/exercises/pending/night-2026-10-01/batch-002/oblique-crunch/attempt-1.png",
+          "accepted_sha256": "43b14e0456bd227eb4d12c17ca8e632a991a48355951d62693d14d937b4b085e",
+          "approval_recorded_at": "2026-10-01T15:03:09.768874+03:00"
         }
       ],
       "result_sha256": "43b14e0456bd227eb4d12c17ca8e632a991a48355951d62693d14d937b4b085e",
@@ -18070,7 +18492,7 @@
       },
       "agent_visual_review": "not_performed",
       "agent_visual_review_notes": [],
-      "user_review": "pending",
+      "user_review": "approved",
       "generation_run_id": "night-2026-10-01",
       "generated_overnight": true,
       "batch_id": "night-2026-10-01-002",
@@ -18109,6 +18531,21 @@
           "verified_at": "2026-10-01T03:45:41.209794+03:00",
           "verified_commit": "a0f650d0c2add34b8bab916c54169d99a00f2d00"
         }
+      ],
+      "accepted_path": "/workspace/lightweight-exercises-photo/assets/exercises/pending/night-2026-10-01/batch-002/oblique-crunch/attempt-1.png",
+      "accepted_sha256": "43b14e0456bd227eb4d12c17ca8e632a991a48355951d62693d14d937b4b085e",
+      "accepted_at": "2026-10-01T15:03:09.768874+03:00",
+      "approval_timestamp_source": "decision_recorded_at",
+      "user_review_history": [
+        {
+          "recorded_at": "2026-10-01T15:03:09.768874+03:00",
+          "by": "user",
+          "decision": "approved",
+          "accepted_attempt": 1,
+          "accepted_path": "/workspace/lightweight-exercises-photo/assets/exercises/pending/night-2026-10-01/batch-002/oblique-crunch/attempt-1.png",
+          "accepted_sha256": "43b14e0456bd227eb4d12c17ca8e632a991a48355951d62693d14d937b4b085e",
+          "reason": "User accepts all existing night-generation images except the attached triceps-extension-dumbbell image."
+        }
       ]
     },
     "one-arm-pushup": {
@@ -18134,7 +18571,7 @@
         "exists_at_preparation": true,
         "sha256": "fcac03c57789cf1fddf289d9f5297687440ee4667f12aaf676127fbae4bdbc8b"
       },
-      "status": "generated_needs_review",
+      "status": "approved",
       "included_in_generation": true,
       "archived_inclusion_authorized": false,
       "blocked_by": [
@@ -18173,7 +18610,7 @@
           "status": "saved",
           "result_path": "/workspace/lightweight-exercises-photo/assets/exercises/pending/night-2026-10-01/batch-003/one-arm-pushup/attempt-1.png",
           "agent_visual_review": "not_performed",
-          "user_review": "pending",
+          "user_review": "approved",
           "finished_at": "2026-10-01T03:16:44.337702+03:00",
           "sha256": "5bc4575c62dfbba1da76a7073e6ead27767b73275171d80665a63e00e8adfa1d",
           "technical_check": "passed",
@@ -18198,7 +18635,10 @@
             "fully_transparent_pixels": 1207288,
             "scope": "PNG decode, square dimensions, true alpha transparency, SHA256; no visual QA"
           },
-          "error": null
+          "error": null,
+          "accepted_path": "/workspace/lightweight-exercises-photo/assets/exercises/pending/night-2026-10-01/batch-003/one-arm-pushup/attempt-1.png",
+          "accepted_sha256": "5bc4575c62dfbba1da76a7073e6ead27767b73275171d80665a63e00e8adfa1d",
+          "approval_recorded_at": "2026-10-01T15:03:09.768874+03:00"
         }
       ],
       "result_sha256": "5bc4575c62dfbba1da76a7073e6ead27767b73275171d80665a63e00e8adfa1d",
@@ -18226,7 +18666,7 @@
       },
       "agent_visual_review": "not_performed",
       "agent_visual_review_notes": [],
-      "user_review": "pending",
+      "user_review": "approved",
       "generation_run_id": "night-2026-10-01",
       "generated_overnight": true,
       "batch_id": "night-2026-10-01-003",
@@ -18264,6 +18704,21 @@
           "png_sha256": "5bc4575c62dfbba1da76a7073e6ead27767b73275171d80665a63e00e8adfa1d",
           "verified_at": "2026-10-01T03:45:41.209794+03:00",
           "verified_commit": "a0f650d0c2add34b8bab916c54169d99a00f2d00"
+        }
+      ],
+      "accepted_path": "/workspace/lightweight-exercises-photo/assets/exercises/pending/night-2026-10-01/batch-003/one-arm-pushup/attempt-1.png",
+      "accepted_sha256": "5bc4575c62dfbba1da76a7073e6ead27767b73275171d80665a63e00e8adfa1d",
+      "accepted_at": "2026-10-01T15:03:09.768874+03:00",
+      "approval_timestamp_source": "decision_recorded_at",
+      "user_review_history": [
+        {
+          "recorded_at": "2026-10-01T15:03:09.768874+03:00",
+          "by": "user",
+          "decision": "approved",
+          "accepted_attempt": 1,
+          "accepted_path": "/workspace/lightweight-exercises-photo/assets/exercises/pending/night-2026-10-01/batch-003/one-arm-pushup/attempt-1.png",
+          "accepted_sha256": "5bc4575c62dfbba1da76a7073e6ead27767b73275171d80665a63e00e8adfa1d",
+          "reason": "User accepts all existing night-generation images except the attached triceps-extension-dumbbell image."
         }
       ]
     },
@@ -18915,7 +19370,7 @@
         "mapping": null
       },
       "source_reference_image": null,
-      "status": "generated_needs_review",
+      "status": "approved",
       "included_in_generation": true,
       "archived_inclusion_authorized": false,
       "blocked_by": [
@@ -18954,7 +19409,7 @@
           "status": "saved",
           "result_path": "/workspace/lightweight-exercises-photo/assets/exercises/pending/night-2026-10-01/batch-003/pike-pushup/attempt-1.png",
           "agent_visual_review": "not_performed",
-          "user_review": "pending",
+          "user_review": "approved",
           "finished_at": "2026-10-01T03:15:19.506839+03:00",
           "sha256": "a5a9db4abffc13662c1107d82ad25d1541a8e0b4b67d3b7cae56ac03126367b6",
           "technical_check": "passed",
@@ -18979,7 +19434,10 @@
             "fully_transparent_pixels": 1204303,
             "scope": "PNG decode, square dimensions, true alpha transparency, SHA256; no visual QA"
           },
-          "error": null
+          "error": null,
+          "accepted_path": "/workspace/lightweight-exercises-photo/assets/exercises/pending/night-2026-10-01/batch-003/pike-pushup/attempt-1.png",
+          "accepted_sha256": "a5a9db4abffc13662c1107d82ad25d1541a8e0b4b67d3b7cae56ac03126367b6",
+          "approval_recorded_at": "2026-10-01T15:03:09.768874+03:00"
         }
       ],
       "result_sha256": "a5a9db4abffc13662c1107d82ad25d1541a8e0b4b67d3b7cae56ac03126367b6",
@@ -19007,7 +19465,7 @@
       },
       "agent_visual_review": "not_performed",
       "agent_visual_review_notes": [],
-      "user_review": "pending",
+      "user_review": "approved",
       "generation_run_id": "night-2026-10-01",
       "generated_overnight": true,
       "batch_id": "night-2026-10-01-003",
@@ -19045,6 +19503,21 @@
           "png_sha256": "a5a9db4abffc13662c1107d82ad25d1541a8e0b4b67d3b7cae56ac03126367b6",
           "verified_at": "2026-10-01T03:45:41.209794+03:00",
           "verified_commit": "a0f650d0c2add34b8bab916c54169d99a00f2d00"
+        }
+      ],
+      "accepted_path": "/workspace/lightweight-exercises-photo/assets/exercises/pending/night-2026-10-01/batch-003/pike-pushup/attempt-1.png",
+      "accepted_sha256": "a5a9db4abffc13662c1107d82ad25d1541a8e0b4b67d3b7cae56ac03126367b6",
+      "accepted_at": "2026-10-01T15:03:09.768874+03:00",
+      "approval_timestamp_source": "decision_recorded_at",
+      "user_review_history": [
+        {
+          "recorded_at": "2026-10-01T15:03:09.768874+03:00",
+          "by": "user",
+          "decision": "approved",
+          "accepted_attempt": 1,
+          "accepted_path": "/workspace/lightweight-exercises-photo/assets/exercises/pending/night-2026-10-01/batch-003/pike-pushup/attempt-1.png",
+          "accepted_sha256": "a5a9db4abffc13662c1107d82ad25d1541a8e0b4b67d3b7cae56ac03126367b6",
+          "reason": "User accepts all existing night-generation images except the attached triceps-extension-dumbbell image."
         }
       ]
     },
@@ -19116,7 +19589,7 @@
         "mapping": null
       },
       "source_reference_image": null,
-      "status": "generated_needs_review",
+      "status": "approved",
       "included_in_generation": true,
       "archived_inclusion_authorized": false,
       "blocked_by": [
@@ -19186,7 +19659,7 @@
           "result_path": "/workspace/lightweight-exercises-photo/assets/exercises/pending/night-2026-10-01/batch-005/pinwheel-curl-dumbbell/attempt-2.png",
           "previous_attempt_error": "image generation failed: http 429 Too Many Requests: Some(\"{\\\"error\\\":{\\\"type\\\":\\\"usage_limit_reached\\\",\\\"message\\\":\\\"The usage limit has been reached\\\",\\\"plan_type\\\":\\\"plus\\\",\\\"resets_at\\\":1790845839,\\\"eligible_promo\\\":null,\\\"limit_window_minutes\\\":null,\\\"resets_in_seconds\\\":30948}}\")",
           "agent_visual_review": "not_performed",
-          "user_review": "pending",
+          "user_review": "approved",
           "finished_at": "2026-10-01T14:39:40.073105+03:00",
           "generated_at": "2026-10-01T14:39:39.571938+03:00",
           "sha256": "b15e7e8549a87ecb1571adbf8eefa0f8c9684b4487ada9edecbf4b0582c8c545",
@@ -19217,7 +19690,10 @@
           "backup_status": "github_verified",
           "github_verified_at": "2026-10-01T11:52:54+00:00",
           "github_verified_commit": "3f967fd137e445aca32fd3f302510386ab44cc12",
-          "github_verified_sha256": "b15e7e8549a87ecb1571adbf8eefa0f8c9684b4487ada9edecbf4b0582c8c545"
+          "github_verified_sha256": "b15e7e8549a87ecb1571adbf8eefa0f8c9684b4487ada9edecbf4b0582c8c545",
+          "accepted_path": "/workspace/lightweight-exercises-photo/assets/exercises/pending/night-2026-10-01/batch-005/pinwheel-curl-dumbbell/attempt-2.png",
+          "accepted_sha256": "b15e7e8549a87ecb1571adbf8eefa0f8c9684b4487ada9edecbf4b0582c8c545",
+          "approval_recorded_at": "2026-10-01T15:03:09.768874+03:00"
         }
       ],
       "result_sha256": "b15e7e8549a87ecb1571adbf8eefa0f8c9684b4487ada9edecbf4b0582c8c545",
@@ -19245,7 +19721,7 @@
       },
       "agent_visual_review": "not_performed",
       "agent_visual_review_notes": [],
-      "user_review": "pending",
+      "user_review": "approved",
       "generation_run_id": "night-2026-10-01",
       "generated_overnight": true,
       "batch_id": "night-2026-10-01-005",
@@ -19265,7 +19741,22 @@
       ],
       "github_verified_at": "2026-10-01T11:52:54+00:00",
       "github_verified_commit": "3f967fd137e445aca32fd3f302510386ab44cc12",
-      "github_verified_sha256": "b15e7e8549a87ecb1571adbf8eefa0f8c9684b4487ada9edecbf4b0582c8c545"
+      "github_verified_sha256": "b15e7e8549a87ecb1571adbf8eefa0f8c9684b4487ada9edecbf4b0582c8c545",
+      "accepted_path": "/workspace/lightweight-exercises-photo/assets/exercises/pending/night-2026-10-01/batch-005/pinwheel-curl-dumbbell/attempt-2.png",
+      "accepted_sha256": "b15e7e8549a87ecb1571adbf8eefa0f8c9684b4487ada9edecbf4b0582c8c545",
+      "accepted_at": "2026-10-01T15:03:09.768874+03:00",
+      "approval_timestamp_source": "decision_recorded_at",
+      "user_review_history": [
+        {
+          "recorded_at": "2026-10-01T15:03:09.768874+03:00",
+          "by": "user",
+          "decision": "approved",
+          "accepted_attempt": 2,
+          "accepted_path": "/workspace/lightweight-exercises-photo/assets/exercises/pending/night-2026-10-01/batch-005/pinwheel-curl-dumbbell/attempt-2.png",
+          "accepted_sha256": "b15e7e8549a87ecb1571adbf8eefa0f8c9684b4487ada9edecbf4b0582c8c545",
+          "reason": "User accepts all existing night-generation images except the attached triceps-extension-dumbbell image."
+        }
+      ]
     },
     "pistol-squat": {
       "id": "pistol-squat",
@@ -19290,7 +19781,7 @@
         "exists_at_preparation": true,
         "sha256": "59bc99314cbd1bbe804e469c16f251bf9a69c726e634d823c4e2dcc28c709dfc"
       },
-      "status": "generated_needs_review",
+      "status": "approved",
       "included_in_generation": true,
       "archived_inclusion_authorized": false,
       "blocked_by": [
@@ -19329,7 +19820,7 @@
           "status": "saved",
           "result_path": "/workspace/lightweight-exercises-photo/assets/exercises/pending/night-2026-10-01/batch-003/pistol-squat/attempt-1.png",
           "agent_visual_review": "not_performed",
-          "user_review": "pending",
+          "user_review": "approved",
           "finished_at": "2026-10-01T03:18:07.890651+03:00",
           "sha256": "51e3fbf834633553948803e1b4c8d058b2c1777c6f661278edd1145007ca5cb8",
           "technical_check": "passed",
@@ -19354,7 +19845,10 @@
             "fully_transparent_pixels": 1214734,
             "scope": "PNG decode, square dimensions, true alpha transparency, SHA256; no visual QA"
           },
-          "error": null
+          "error": null,
+          "accepted_path": "/workspace/lightweight-exercises-photo/assets/exercises/pending/night-2026-10-01/batch-003/pistol-squat/attempt-1.png",
+          "accepted_sha256": "51e3fbf834633553948803e1b4c8d058b2c1777c6f661278edd1145007ca5cb8",
+          "approval_recorded_at": "2026-10-01T15:03:09.768874+03:00"
         }
       ],
       "result_sha256": "51e3fbf834633553948803e1b4c8d058b2c1777c6f661278edd1145007ca5cb8",
@@ -19382,7 +19876,7 @@
       },
       "agent_visual_review": "not_performed",
       "agent_visual_review_notes": [],
-      "user_review": "pending",
+      "user_review": "approved",
       "generation_run_id": "night-2026-10-01",
       "generated_overnight": true,
       "batch_id": "night-2026-10-01-003",
@@ -19420,6 +19914,21 @@
           "png_sha256": "51e3fbf834633553948803e1b4c8d058b2c1777c6f661278edd1145007ca5cb8",
           "verified_at": "2026-10-01T03:45:41.209794+03:00",
           "verified_commit": "a0f650d0c2add34b8bab916c54169d99a00f2d00"
+        }
+      ],
+      "accepted_path": "/workspace/lightweight-exercises-photo/assets/exercises/pending/night-2026-10-01/batch-003/pistol-squat/attempt-1.png",
+      "accepted_sha256": "51e3fbf834633553948803e1b4c8d058b2c1777c6f661278edd1145007ca5cb8",
+      "accepted_at": "2026-10-01T15:03:09.768874+03:00",
+      "approval_timestamp_source": "decision_recorded_at",
+      "user_review_history": [
+        {
+          "recorded_at": "2026-10-01T15:03:09.768874+03:00",
+          "by": "user",
+          "decision": "approved",
+          "accepted_attempt": 1,
+          "accepted_path": "/workspace/lightweight-exercises-photo/assets/exercises/pending/night-2026-10-01/batch-003/pistol-squat/attempt-1.png",
+          "accepted_sha256": "51e3fbf834633553948803e1b4c8d058b2c1777c6f661278edd1145007ca5cb8",
+          "reason": "User accepts all existing night-generation images except the attached triceps-extension-dumbbell image."
         }
       ]
     },
@@ -20763,7 +21272,7 @@
         "exists_at_preparation": true,
         "sha256": "873872b5d185f32da060a488743e1d4d202778ad8e4c48a919b69a5632813c85"
       },
-      "status": "needs_fix",
+      "status": "approved",
       "included_in_generation": true,
       "archived_inclusion_authorized": false,
       "blocked_by": [
@@ -20802,7 +21311,7 @@
           "status": "saved",
           "result_path": "/workspace/lightweight-exercises-photo/assets/exercises/pending/night-2026-10-01/batch-001/pushup-close-grip/attempt-1.png",
           "agent_visual_review": "not_performed",
-          "user_review": "pending",
+          "user_review": "approved",
           "finished_at": "2026-10-01T02:50:44.233254+03:00",
           "sha256": "d956f643a1df9c371d88833c008e6ec56c9ea632f91e2b3033f96e349cca9f7b",
           "technical_check": "failed",
@@ -20829,7 +21338,10 @@
             "fully_transparent_pixels": 1214774,
             "scope": "PNG decode, square dimensions, true alpha transparency, SHA256; no visual QA"
           },
-          "error": "image is not square"
+          "error": "image is not square",
+          "accepted_path": "/workspace/lightweight-exercises-photo/assets/exercises/pending/night-2026-10-01/batch-001/pushup-close-grip/attempt-1.png",
+          "accepted_sha256": "d956f643a1df9c371d88833c008e6ec56c9ea632f91e2b3033f96e349cca9f7b",
+          "approval_recorded_at": "2026-10-01T15:03:09.768874+03:00"
         }
       ],
       "result_sha256": "d956f643a1df9c371d88833c008e6ec56c9ea632f91e2b3033f96e349cca9f7b",
@@ -20859,7 +21371,7 @@
       },
       "agent_visual_review": "not_performed",
       "agent_visual_review_notes": [],
-      "user_review": "pending",
+      "user_review": "approved",
       "generation_run_id": "night-2026-10-01",
       "generated_overnight": true,
       "batch_id": "night-2026-10-01-001",
@@ -20897,6 +21409,24 @@
           "png_sha256": "d956f643a1df9c371d88833c008e6ec56c9ea632f91e2b3033f96e349cca9f7b",
           "verified_at": "2026-10-01T03:45:41.209794+03:00",
           "verified_commit": "a0f650d0c2add34b8bab916c54169d99a00f2d00"
+        }
+      ],
+      "accepted_path": "/workspace/lightweight-exercises-photo/assets/exercises/pending/night-2026-10-01/batch-001/pushup-close-grip/attempt-1.png",
+      "accepted_sha256": "d956f643a1df9c371d88833c008e6ec56c9ea632f91e2b3033f96e349cca9f7b",
+      "accepted_at": "2026-10-01T15:03:09.768874+03:00",
+      "approval_timestamp_source": "decision_recorded_at",
+      "user_review_history": [
+        {
+          "recorded_at": "2026-10-01T15:03:09.768874+03:00",
+          "by": "user",
+          "decision": "approved",
+          "accepted_attempt": 1,
+          "accepted_path": "/workspace/lightweight-exercises-photo/assets/exercises/pending/night-2026-10-01/batch-001/pushup-close-grip/attempt-1.png",
+          "accepted_sha256": "d956f643a1df9c371d88833c008e6ec56c9ea632f91e2b3033f96e349cca9f7b",
+          "reason": "User accepts all existing night-generation images except the attached triceps-extension-dumbbell image.",
+          "technical_exceptions": [
+            "image is not square"
+          ]
         }
       ]
     },
@@ -21293,7 +21823,7 @@
         "exists_at_preparation": true,
         "sha256": "1682bc06e6bebe4faf60b3a1604b466f9754679517dd05750981835acabac4e3"
       },
-      "status": "generated_needs_review",
+      "status": "approved",
       "included_in_generation": true,
       "archived_inclusion_authorized": false,
       "blocked_by": [
@@ -21332,7 +21862,7 @@
           "status": "saved",
           "result_path": "/workspace/lightweight-exercises-photo/assets/exercises/pending/night-2026-10-01/batch-002/reverse-crunch/attempt-1.png",
           "agent_visual_review": "not_performed",
-          "user_review": "pending",
+          "user_review": "approved",
           "finished_at": "2026-10-01T03:07:23.860991+03:00",
           "sha256": "3dbe77e9876c382f47b0aa2437318511846da144555be9b660295fdcc9f0dfff",
           "technical_check": "passed",
@@ -21357,7 +21887,10 @@
             "fully_transparent_pixels": 1137858,
             "scope": "PNG decode, square dimensions, true alpha transparency, SHA256; no visual QA"
           },
-          "error": null
+          "error": null,
+          "accepted_path": "/workspace/lightweight-exercises-photo/assets/exercises/pending/night-2026-10-01/batch-002/reverse-crunch/attempt-1.png",
+          "accepted_sha256": "3dbe77e9876c382f47b0aa2437318511846da144555be9b660295fdcc9f0dfff",
+          "approval_recorded_at": "2026-10-01T15:03:09.768874+03:00"
         }
       ],
       "result_sha256": "3dbe77e9876c382f47b0aa2437318511846da144555be9b660295fdcc9f0dfff",
@@ -21385,7 +21918,7 @@
       },
       "agent_visual_review": "not_performed",
       "agent_visual_review_notes": [],
-      "user_review": "pending",
+      "user_review": "approved",
       "generation_run_id": "night-2026-10-01",
       "generated_overnight": true,
       "batch_id": "night-2026-10-01-002",
@@ -21423,6 +21956,21 @@
           "png_sha256": "3dbe77e9876c382f47b0aa2437318511846da144555be9b660295fdcc9f0dfff",
           "verified_at": "2026-10-01T03:45:41.209794+03:00",
           "verified_commit": "a0f650d0c2add34b8bab916c54169d99a00f2d00"
+        }
+      ],
+      "accepted_path": "/workspace/lightweight-exercises-photo/assets/exercises/pending/night-2026-10-01/batch-002/reverse-crunch/attempt-1.png",
+      "accepted_sha256": "3dbe77e9876c382f47b0aa2437318511846da144555be9b660295fdcc9f0dfff",
+      "accepted_at": "2026-10-01T15:03:09.768874+03:00",
+      "approval_timestamp_source": "decision_recorded_at",
+      "user_review_history": [
+        {
+          "recorded_at": "2026-10-01T15:03:09.768874+03:00",
+          "by": "user",
+          "decision": "approved",
+          "accepted_attempt": 1,
+          "accepted_path": "/workspace/lightweight-exercises-photo/assets/exercises/pending/night-2026-10-01/batch-002/reverse-crunch/attempt-1.png",
+          "accepted_sha256": "3dbe77e9876c382f47b0aa2437318511846da144555be9b660295fdcc9f0dfff",
+          "reason": "User accepts all existing night-generation images except the attached triceps-extension-dumbbell image."
         }
       ]
     },
@@ -21690,7 +22238,7 @@
         "exists_at_preparation": true,
         "sha256": "af7b5418db79e0906111a35251fd26c048f70d7d6835c5242116eb0344b1618b"
       },
-      "status": "generated_needs_review",
+      "status": "approved",
       "included_in_generation": true,
       "archived_inclusion_authorized": false,
       "blocked_by": [
@@ -21729,7 +22277,7 @@
           "status": "saved",
           "result_path": "/workspace/lightweight-exercises-photo/assets/exercises/pending/night-2026-10-01/batch-004/reverse-curl-dumbbell/attempt-1.png",
           "agent_visual_review": "not_performed",
-          "user_review": "pending",
+          "user_review": "approved",
           "finished_at": "2026-10-01T03:33:06.412975+03:00",
           "sha256": "e529541b17bbde53e6d2fdacd7fade260b1b00f223af6e07f34d4b7a12c22bf8",
           "technical_check": "passed",
@@ -21754,7 +22302,10 @@
             "fully_transparent_pixels": 1275010,
             "scope": "PNG decode, square dimensions, true alpha transparency, SHA256; no visual QA"
           },
-          "error": null
+          "error": null,
+          "accepted_path": "/workspace/lightweight-exercises-photo/assets/exercises/pending/night-2026-10-01/batch-004/reverse-curl-dumbbell/attempt-1.png",
+          "accepted_sha256": "e529541b17bbde53e6d2fdacd7fade260b1b00f223af6e07f34d4b7a12c22bf8",
+          "approval_recorded_at": "2026-10-01T15:03:09.768874+03:00"
         }
       ],
       "result_sha256": "e529541b17bbde53e6d2fdacd7fade260b1b00f223af6e07f34d4b7a12c22bf8",
@@ -21782,7 +22333,7 @@
       },
       "agent_visual_review": "not_performed",
       "agent_visual_review_notes": [],
-      "user_review": "pending",
+      "user_review": "approved",
       "generation_run_id": "night-2026-10-01",
       "generated_overnight": true,
       "batch_id": "night-2026-10-01-004",
@@ -21820,6 +22371,21 @@
           "png_sha256": "e529541b17bbde53e6d2fdacd7fade260b1b00f223af6e07f34d4b7a12c22bf8",
           "verified_at": "2026-10-01T03:45:41.209794+03:00",
           "verified_commit": "a0f650d0c2add34b8bab916c54169d99a00f2d00"
+        }
+      ],
+      "accepted_path": "/workspace/lightweight-exercises-photo/assets/exercises/pending/night-2026-10-01/batch-004/reverse-curl-dumbbell/attempt-1.png",
+      "accepted_sha256": "e529541b17bbde53e6d2fdacd7fade260b1b00f223af6e07f34d4b7a12c22bf8",
+      "accepted_at": "2026-10-01T15:03:09.768874+03:00",
+      "approval_timestamp_source": "decision_recorded_at",
+      "user_review_history": [
+        {
+          "recorded_at": "2026-10-01T15:03:09.768874+03:00",
+          "by": "user",
+          "decision": "approved",
+          "accepted_attempt": 1,
+          "accepted_path": "/workspace/lightweight-exercises-photo/assets/exercises/pending/night-2026-10-01/batch-004/reverse-curl-dumbbell/attempt-1.png",
+          "accepted_sha256": "e529541b17bbde53e6d2fdacd7fade260b1b00f223af6e07f34d4b7a12c22bf8",
+          "reason": "User accepts all existing night-generation images except the attached triceps-extension-dumbbell image."
         }
       ]
     },
@@ -22111,7 +22677,7 @@
         "mapping": null
       },
       "source_reference_image": null,
-      "status": "generated_needs_review",
+      "status": "approved",
       "included_in_generation": true,
       "archived_inclusion_authorized": false,
       "blocked_by": [
@@ -22150,7 +22716,7 @@
           "status": "saved",
           "result_path": "/workspace/lightweight-exercises-photo/assets/exercises/pending/night-2026-10-01/batch-002/reverse-lunge/attempt-1.png",
           "agent_visual_review": "not_performed",
-          "user_review": "pending",
+          "user_review": "approved",
           "finished_at": "2026-10-01T03:02:00.374343+03:00",
           "sha256": "49360521c095734697d180d6b3225e7ecafbc4ff38de649b98f9438ca29ac142",
           "technical_check": "passed",
@@ -22175,7 +22741,10 @@
             "fully_transparent_pixels": 1218166,
             "scope": "PNG decode, square dimensions, true alpha transparency, SHA256; no visual QA"
           },
-          "error": null
+          "error": null,
+          "accepted_path": "/workspace/lightweight-exercises-photo/assets/exercises/pending/night-2026-10-01/batch-002/reverse-lunge/attempt-1.png",
+          "accepted_sha256": "49360521c095734697d180d6b3225e7ecafbc4ff38de649b98f9438ca29ac142",
+          "approval_recorded_at": "2026-10-01T15:03:09.768874+03:00"
         }
       ],
       "result_sha256": "49360521c095734697d180d6b3225e7ecafbc4ff38de649b98f9438ca29ac142",
@@ -22203,7 +22772,7 @@
       },
       "agent_visual_review": "not_performed",
       "agent_visual_review_notes": [],
-      "user_review": "pending",
+      "user_review": "approved",
       "generation_run_id": "night-2026-10-01",
       "generated_overnight": true,
       "batch_id": "night-2026-10-01-002",
@@ -22241,6 +22810,21 @@
           "png_sha256": "49360521c095734697d180d6b3225e7ecafbc4ff38de649b98f9438ca29ac142",
           "verified_at": "2026-10-01T03:45:41.209794+03:00",
           "verified_commit": "a0f650d0c2add34b8bab916c54169d99a00f2d00"
+        }
+      ],
+      "accepted_path": "/workspace/lightweight-exercises-photo/assets/exercises/pending/night-2026-10-01/batch-002/reverse-lunge/attempt-1.png",
+      "accepted_sha256": "49360521c095734697d180d6b3225e7ecafbc4ff38de649b98f9438ca29ac142",
+      "accepted_at": "2026-10-01T15:03:09.768874+03:00",
+      "approval_timestamp_source": "decision_recorded_at",
+      "user_review_history": [
+        {
+          "recorded_at": "2026-10-01T15:03:09.768874+03:00",
+          "by": "user",
+          "decision": "approved",
+          "accepted_attempt": 1,
+          "accepted_path": "/workspace/lightweight-exercises-photo/assets/exercises/pending/night-2026-10-01/batch-002/reverse-lunge/attempt-1.png",
+          "accepted_sha256": "49360521c095734697d180d6b3225e7ecafbc4ff38de649b98f9438ca29ac142",
+          "reason": "User accepts all existing night-generation images except the attached triceps-extension-dumbbell image."
         }
       ]
     },
@@ -22372,7 +22956,7 @@
         "mapping": null
       },
       "source_reference_image": null,
-      "status": "generated_needs_review",
+      "status": "approved",
       "included_in_generation": true,
       "archived_inclusion_authorized": false,
       "blocked_by": [
@@ -22411,7 +22995,7 @@
           "status": "saved",
           "result_path": "/workspace/lightweight-exercises-photo/assets/exercises/pending/night-2026-10-01/batch-001/reverse-plank/attempt-1.png",
           "agent_visual_review": "not_performed",
-          "user_review": "pending",
+          "user_review": "approved",
           "finished_at": "2026-10-01T02:51:58.228182+03:00",
           "sha256": "4044cfe1b4de524d52c8f7d2191f54691906ec99a93e070ef3617c4c590d3c71",
           "technical_check": "passed",
@@ -22436,7 +23020,10 @@
             "fully_transparent_pixels": 1310830,
             "scope": "PNG decode, square dimensions, true alpha transparency, SHA256; no visual QA"
           },
-          "error": null
+          "error": null,
+          "accepted_path": "/workspace/lightweight-exercises-photo/assets/exercises/pending/night-2026-10-01/batch-001/reverse-plank/attempt-1.png",
+          "accepted_sha256": "4044cfe1b4de524d52c8f7d2191f54691906ec99a93e070ef3617c4c590d3c71",
+          "approval_recorded_at": "2026-10-01T15:03:09.768874+03:00"
         }
       ],
       "result_sha256": "4044cfe1b4de524d52c8f7d2191f54691906ec99a93e070ef3617c4c590d3c71",
@@ -22464,7 +23051,7 @@
       },
       "agent_visual_review": "not_performed",
       "agent_visual_review_notes": [],
-      "user_review": "pending",
+      "user_review": "approved",
       "generation_run_id": "night-2026-10-01",
       "generated_overnight": true,
       "batch_id": "night-2026-10-01-001",
@@ -22502,6 +23089,21 @@
           "png_sha256": "4044cfe1b4de524d52c8f7d2191f54691906ec99a93e070ef3617c4c590d3c71",
           "verified_at": "2026-10-01T03:45:41.209794+03:00",
           "verified_commit": "a0f650d0c2add34b8bab916c54169d99a00f2d00"
+        }
+      ],
+      "accepted_path": "/workspace/lightweight-exercises-photo/assets/exercises/pending/night-2026-10-01/batch-001/reverse-plank/attempt-1.png",
+      "accepted_sha256": "4044cfe1b4de524d52c8f7d2191f54691906ec99a93e070ef3617c4c590d3c71",
+      "accepted_at": "2026-10-01T15:03:09.768874+03:00",
+      "approval_timestamp_source": "decision_recorded_at",
+      "user_review_history": [
+        {
+          "recorded_at": "2026-10-01T15:03:09.768874+03:00",
+          "by": "user",
+          "decision": "approved",
+          "accepted_attempt": 1,
+          "accepted_path": "/workspace/lightweight-exercises-photo/assets/exercises/pending/night-2026-10-01/batch-001/reverse-plank/attempt-1.png",
+          "accepted_sha256": "4044cfe1b4de524d52c8f7d2191f54691906ec99a93e070ef3617c4c590d3c71",
+          "reason": "User accepts all existing night-generation images except the attached triceps-extension-dumbbell image."
         }
       ]
     },
@@ -23322,7 +23924,7 @@
         "exists_at_preparation": true,
         "sha256": "d6ac863e3471028896c1a971056963cdf950740ad62795d217b6a8adfd480067"
       },
-      "status": "generated_needs_review",
+      "status": "approved",
       "included_in_generation": true,
       "archived_inclusion_authorized": false,
       "blocked_by": [
@@ -23361,7 +23963,7 @@
           "status": "saved",
           "result_path": "/workspace/lightweight-exercises-photo/assets/exercises/pending/night-2026-10-01/batch-001/russian-twist-body-weight/attempt-1.png",
           "agent_visual_review": "not_performed",
-          "user_review": "pending",
+          "user_review": "approved",
           "finished_at": "2026-10-01T02:56:14.719866+03:00",
           "sha256": "186a220e329990ee56cf5031aceb01a020b5357309f80aebaf074ceb2b9b73e8",
           "technical_check": "passed",
@@ -23386,7 +23988,10 @@
             "fully_transparent_pixels": 1130128,
             "scope": "PNG decode, square dimensions, true alpha transparency, SHA256; no visual QA"
           },
-          "error": null
+          "error": null,
+          "accepted_path": "/workspace/lightweight-exercises-photo/assets/exercises/pending/night-2026-10-01/batch-001/russian-twist-body-weight/attempt-1.png",
+          "accepted_sha256": "186a220e329990ee56cf5031aceb01a020b5357309f80aebaf074ceb2b9b73e8",
+          "approval_recorded_at": "2026-10-01T15:03:09.768874+03:00"
         }
       ],
       "result_sha256": "186a220e329990ee56cf5031aceb01a020b5357309f80aebaf074ceb2b9b73e8",
@@ -23414,7 +24019,7 @@
       },
       "agent_visual_review": "not_performed",
       "agent_visual_review_notes": [],
-      "user_review": "pending",
+      "user_review": "approved",
       "generation_run_id": "night-2026-10-01",
       "generated_overnight": true,
       "batch_id": "night-2026-10-01-001",
@@ -23452,6 +24057,21 @@
           "png_sha256": "186a220e329990ee56cf5031aceb01a020b5357309f80aebaf074ceb2b9b73e8",
           "verified_at": "2026-10-01T03:45:41.209794+03:00",
           "verified_commit": "a0f650d0c2add34b8bab916c54169d99a00f2d00"
+        }
+      ],
+      "accepted_path": "/workspace/lightweight-exercises-photo/assets/exercises/pending/night-2026-10-01/batch-001/russian-twist-body-weight/attempt-1.png",
+      "accepted_sha256": "186a220e329990ee56cf5031aceb01a020b5357309f80aebaf074ceb2b9b73e8",
+      "accepted_at": "2026-10-01T15:03:09.768874+03:00",
+      "approval_timestamp_source": "decision_recorded_at",
+      "user_review_history": [
+        {
+          "recorded_at": "2026-10-01T15:03:09.768874+03:00",
+          "by": "user",
+          "decision": "approved",
+          "accepted_attempt": 1,
+          "accepted_path": "/workspace/lightweight-exercises-photo/assets/exercises/pending/night-2026-10-01/batch-001/russian-twist-body-weight/attempt-1.png",
+          "accepted_sha256": "186a220e329990ee56cf5031aceb01a020b5357309f80aebaf074ceb2b9b73e8",
+          "reason": "User accepts all existing night-generation images except the attached triceps-extension-dumbbell image."
         }
       ]
     },
@@ -24063,7 +24683,7 @@
         "exists_at_preparation": true,
         "sha256": "c0eeb9528ea7827e8100843d22a270ed1b05a42afa62193845cd609a1078872f"
       },
-      "status": "generated_needs_review",
+      "status": "approved",
       "included_in_generation": true,
       "archived_inclusion_authorized": false,
       "blocked_by": [
@@ -24133,7 +24753,7 @@
           "result_path": "/workspace/lightweight-exercises-photo/assets/exercises/pending/night-2026-10-01/batch-005/seated-incline-hammer-curl-dumbbell/attempt-2.png",
           "previous_attempt_error": "image generation failed: http 429 Too Many Requests: Some(\"{\\\"error\\\":{\\\"type\\\":\\\"usage_limit_reached\\\",\\\"message\\\":\\\"The usage limit has been reached\\\",\\\"plan_type\\\":\\\"plus\\\",\\\"resets_at\\\":1790845839,\\\"eligible_promo\\\":null,\\\"limit_window_minutes\\\":null,\\\"resets_in_seconds\\\":30947}}\")",
           "agent_visual_review": "not_performed",
-          "user_review": "pending",
+          "user_review": "approved",
           "finished_at": "2026-10-01T14:41:05.437573+03:00",
           "generated_at": "2026-10-01T14:41:04.929827+03:00",
           "sha256": "b75d3b1aa9905a530776af26a4b95a60e754f5550d6690ef12ae9161d6774fbb",
@@ -24164,7 +24784,10 @@
           "backup_status": "github_verified",
           "github_verified_at": "2026-10-01T11:52:54+00:00",
           "github_verified_commit": "3f967fd137e445aca32fd3f302510386ab44cc12",
-          "github_verified_sha256": "b75d3b1aa9905a530776af26a4b95a60e754f5550d6690ef12ae9161d6774fbb"
+          "github_verified_sha256": "b75d3b1aa9905a530776af26a4b95a60e754f5550d6690ef12ae9161d6774fbb",
+          "accepted_path": "/workspace/lightweight-exercises-photo/assets/exercises/pending/night-2026-10-01/batch-005/seated-incline-hammer-curl-dumbbell/attempt-2.png",
+          "accepted_sha256": "b75d3b1aa9905a530776af26a4b95a60e754f5550d6690ef12ae9161d6774fbb",
+          "approval_recorded_at": "2026-10-01T15:03:09.768874+03:00"
         }
       ],
       "result_sha256": "b75d3b1aa9905a530776af26a4b95a60e754f5550d6690ef12ae9161d6774fbb",
@@ -24192,7 +24815,7 @@
       },
       "agent_visual_review": "not_performed",
       "agent_visual_review_notes": [],
-      "user_review": "pending",
+      "user_review": "approved",
       "generation_run_id": "night-2026-10-01",
       "generated_overnight": true,
       "batch_id": "night-2026-10-01-005",
@@ -24212,7 +24835,22 @@
       ],
       "github_verified_at": "2026-10-01T11:52:54+00:00",
       "github_verified_commit": "3f967fd137e445aca32fd3f302510386ab44cc12",
-      "github_verified_sha256": "b75d3b1aa9905a530776af26a4b95a60e754f5550d6690ef12ae9161d6774fbb"
+      "github_verified_sha256": "b75d3b1aa9905a530776af26a4b95a60e754f5550d6690ef12ae9161d6774fbb",
+      "accepted_path": "/workspace/lightweight-exercises-photo/assets/exercises/pending/night-2026-10-01/batch-005/seated-incline-hammer-curl-dumbbell/attempt-2.png",
+      "accepted_sha256": "b75d3b1aa9905a530776af26a4b95a60e754f5550d6690ef12ae9161d6774fbb",
+      "accepted_at": "2026-10-01T15:03:09.768874+03:00",
+      "approval_timestamp_source": "decision_recorded_at",
+      "user_review_history": [
+        {
+          "recorded_at": "2026-10-01T15:03:09.768874+03:00",
+          "by": "user",
+          "decision": "approved",
+          "accepted_attempt": 2,
+          "accepted_path": "/workspace/lightweight-exercises-photo/assets/exercises/pending/night-2026-10-01/batch-005/seated-incline-hammer-curl-dumbbell/attempt-2.png",
+          "accepted_sha256": "b75d3b1aa9905a530776af26a4b95a60e754f5550d6690ef12ae9161d6774fbb",
+          "reason": "User accepts all existing night-generation images except the attached triceps-extension-dumbbell image."
+        }
+      ]
     },
     "seated-lateral-raise-dumbbell": {
       "id": "seated-lateral-raise-dumbbell",
@@ -24237,7 +24875,7 @@
         "exists_at_preparation": true,
         "sha256": "4c48efe52ddd40a734070d56440bcd204f8d7103a6e75d7cc7781ceaa0dc9d9f"
       },
-      "status": "generated_needs_review",
+      "status": "approved",
       "included_in_generation": true,
       "archived_inclusion_authorized": false,
       "blocked_by": [
@@ -24276,7 +24914,7 @@
           "status": "saved",
           "result_path": "/workspace/lightweight-exercises-photo/assets/exercises/pending/night-2026-10-01/batch-004/seated-lateral-raise-dumbbell/attempt-1.png",
           "agent_visual_review": "not_performed",
-          "user_review": "pending",
+          "user_review": "approved",
           "finished_at": "2026-10-01T03:34:37.182513+03:00",
           "sha256": "be26d567ad2c19034df3c5b2352c1de3cd1889b69fab8feee726643bc03fcbce",
           "technical_check": "passed",
@@ -24301,7 +24939,10 @@
             "fully_transparent_pixels": 1117983,
             "scope": "PNG decode, square dimensions, true alpha transparency, SHA256; no visual QA"
           },
-          "error": null
+          "error": null,
+          "accepted_path": "/workspace/lightweight-exercises-photo/assets/exercises/pending/night-2026-10-01/batch-004/seated-lateral-raise-dumbbell/attempt-1.png",
+          "accepted_sha256": "be26d567ad2c19034df3c5b2352c1de3cd1889b69fab8feee726643bc03fcbce",
+          "approval_recorded_at": "2026-10-01T15:03:09.768874+03:00"
         }
       ],
       "result_sha256": "be26d567ad2c19034df3c5b2352c1de3cd1889b69fab8feee726643bc03fcbce",
@@ -24329,7 +24970,7 @@
       },
       "agent_visual_review": "not_performed",
       "agent_visual_review_notes": [],
-      "user_review": "pending",
+      "user_review": "approved",
       "generation_run_id": "night-2026-10-01",
       "generated_overnight": true,
       "batch_id": "night-2026-10-01-004",
@@ -24367,6 +25008,21 @@
           "png_sha256": "be26d567ad2c19034df3c5b2352c1de3cd1889b69fab8feee726643bc03fcbce",
           "verified_at": "2026-10-01T03:45:41.209794+03:00",
           "verified_commit": "a0f650d0c2add34b8bab916c54169d99a00f2d00"
+        }
+      ],
+      "accepted_path": "/workspace/lightweight-exercises-photo/assets/exercises/pending/night-2026-10-01/batch-004/seated-lateral-raise-dumbbell/attempt-1.png",
+      "accepted_sha256": "be26d567ad2c19034df3c5b2352c1de3cd1889b69fab8feee726643bc03fcbce",
+      "accepted_at": "2026-10-01T15:03:09.768874+03:00",
+      "approval_timestamp_source": "decision_recorded_at",
+      "user_review_history": [
+        {
+          "recorded_at": "2026-10-01T15:03:09.768874+03:00",
+          "by": "user",
+          "decision": "approved",
+          "accepted_attempt": 1,
+          "accepted_path": "/workspace/lightweight-exercises-photo/assets/exercises/pending/night-2026-10-01/batch-004/seated-lateral-raise-dumbbell/attempt-1.png",
+          "accepted_sha256": "be26d567ad2c19034df3c5b2352c1de3cd1889b69fab8feee726643bc03fcbce",
+          "reason": "User accepts all existing night-generation images except the attached triceps-extension-dumbbell image."
         }
       ]
     },
@@ -24558,7 +25214,7 @@
         "exists_at_preparation": true,
         "sha256": "cdd661c59c99b91f287ac2a484f87b266b529cf4739866971e8e1185b7c79581"
       },
-      "status": "generated_needs_review",
+      "status": "approved",
       "included_in_generation": true,
       "archived_inclusion_authorized": false,
       "blocked_by": [
@@ -24628,7 +25284,7 @@
           "result_path": "/workspace/lightweight-exercises-photo/assets/exercises/pending/night-2026-10-01/batch-004/seated-palms-up-wrist-curl-dumbbell/attempt-2.png",
           "previous_attempt_error": "image generation failed: http 429 Too Many Requests: Some(\"{\\\"error\\\":{\\\"type\\\":\\\"usage_limit_reached\\\",\\\"message\\\":\\\"The usage limit has been reached\\\",\\\"plan_type\\\":\\\"plus\\\",\\\"resets_at\\\":1790845839,\\\"eligible_promo\\\":null,\\\"limit_window_minutes\\\":null,\\\"resets_in_seconds\\\":30961}}\")",
           "agent_visual_review": "not_performed",
-          "user_review": "pending",
+          "user_review": "approved",
           "finished_at": "2026-10-01T14:24:17.166039+03:00",
           "error": null,
           "technical_check": "passed",
@@ -24655,7 +25311,10 @@
           },
           "generated_at": "2026-10-01T14:21:36.988592+03:00",
           "sha256": "3dbcc4180255f6fde6e56e173a570fc3209bedaf0fffd6d793a3de3f2da07be4",
-          "recovered_from_tool_artifact": "/workspace/generated_images/exec-5f67888e-5f64-406a-8edb-48f864652090.png"
+          "recovered_from_tool_artifact": "/workspace/generated_images/exec-5f67888e-5f64-406a-8edb-48f864652090.png",
+          "accepted_path": "/workspace/lightweight-exercises-photo/assets/exercises/pending/night-2026-10-01/batch-004/seated-palms-up-wrist-curl-dumbbell/attempt-2.png",
+          "accepted_sha256": "3dbcc4180255f6fde6e56e173a570fc3209bedaf0fffd6d793a3de3f2da07be4",
+          "approval_recorded_at": "2026-10-01T15:03:09.768874+03:00"
         }
       ],
       "result_sha256": "3dbcc4180255f6fde6e56e173a570fc3209bedaf0fffd6d793a3de3f2da07be4",
@@ -24683,7 +25342,7 @@
       },
       "agent_visual_review": "not_performed",
       "agent_visual_review_notes": [],
-      "user_review": "pending",
+      "user_review": "approved",
       "generation_run_id": "night-2026-10-01",
       "generated_overnight": true,
       "batch_id": "night-2026-10-01-004",
@@ -24700,6 +25359,21 @@
           "png_sha256": "3dbcc4180255f6fde6e56e173a570fc3209bedaf0fffd6d793a3de3f2da07be4",
           "verified_at": "2026-10-01T14:33:46.182509+03:00",
           "verified_commit": "79c1774406db73069dff0a5270bc9b8cba815209"
+        }
+      ],
+      "accepted_path": "/workspace/lightweight-exercises-photo/assets/exercises/pending/night-2026-10-01/batch-004/seated-palms-up-wrist-curl-dumbbell/attempt-2.png",
+      "accepted_sha256": "3dbcc4180255f6fde6e56e173a570fc3209bedaf0fffd6d793a3de3f2da07be4",
+      "accepted_at": "2026-10-01T15:03:09.768874+03:00",
+      "approval_timestamp_source": "decision_recorded_at",
+      "user_review_history": [
+        {
+          "recorded_at": "2026-10-01T15:03:09.768874+03:00",
+          "by": "user",
+          "decision": "approved",
+          "accepted_attempt": 2,
+          "accepted_path": "/workspace/lightweight-exercises-photo/assets/exercises/pending/night-2026-10-01/batch-004/seated-palms-up-wrist-curl-dumbbell/attempt-2.png",
+          "accepted_sha256": "3dbcc4180255f6fde6e56e173a570fc3209bedaf0fffd6d793a3de3f2da07be4",
+          "reason": "User accepts all existing night-generation images except the attached triceps-extension-dumbbell image."
         }
       ]
     },
@@ -25075,7 +25749,7 @@
         "exists_at_preparation": true,
         "sha256": "c2194b8d7b973ef840349947b514f588e718c39735b6f7a965e5c2718e6f58ed"
       },
-      "status": "generated_needs_review",
+      "status": "approved",
       "included_in_generation": true,
       "archived_inclusion_authorized": false,
       "blocked_by": [
@@ -25145,7 +25819,7 @@
           "result_path": "/workspace/lightweight-exercises-photo/assets/exercises/pending/night-2026-10-01/batch-005/seated-wrist-curl-barbell/attempt-2.png",
           "previous_attempt_error": "image generation failed: http 429 Too Many Requests: Some(\"{\\\"error\\\":{\\\"type\\\":\\\"usage_limit_reached\\\",\\\"message\\\":\\\"The usage limit has been reached\\\",\\\"plan_type\\\":\\\"plus\\\",\\\"resets_at\\\":1790845839,\\\"eligible_promo\\\":null,\\\"limit_window_minutes\\\":null,\\\"resets_in_seconds\\\":30939}}\")",
           "agent_visual_review": "not_performed",
-          "user_review": "pending",
+          "user_review": "approved",
           "finished_at": "2026-10-01T14:47:53.706453+03:00",
           "generated_at": "2026-10-01T14:47:53.198612+03:00",
           "sha256": "b3d6e76b6d9b5034dc40c83889af1063f44040d2caff2d79280c635c900436b0",
@@ -25176,7 +25850,10 @@
           "backup_status": "github_verified",
           "github_verified_at": "2026-10-01T11:52:54+00:00",
           "github_verified_commit": "3f967fd137e445aca32fd3f302510386ab44cc12",
-          "github_verified_sha256": "b3d6e76b6d9b5034dc40c83889af1063f44040d2caff2d79280c635c900436b0"
+          "github_verified_sha256": "b3d6e76b6d9b5034dc40c83889af1063f44040d2caff2d79280c635c900436b0",
+          "accepted_path": "/workspace/lightweight-exercises-photo/assets/exercises/pending/night-2026-10-01/batch-005/seated-wrist-curl-barbell/attempt-2.png",
+          "accepted_sha256": "b3d6e76b6d9b5034dc40c83889af1063f44040d2caff2d79280c635c900436b0",
+          "approval_recorded_at": "2026-10-01T15:03:09.768874+03:00"
         }
       ],
       "result_sha256": "b3d6e76b6d9b5034dc40c83889af1063f44040d2caff2d79280c635c900436b0",
@@ -25204,7 +25881,7 @@
       },
       "agent_visual_review": "not_performed",
       "agent_visual_review_notes": [],
-      "user_review": "pending",
+      "user_review": "approved",
       "generation_run_id": "night-2026-10-01",
       "generated_overnight": true,
       "batch_id": "night-2026-10-01-005",
@@ -25224,7 +25901,22 @@
       ],
       "github_verified_at": "2026-10-01T11:52:54+00:00",
       "github_verified_commit": "3f967fd137e445aca32fd3f302510386ab44cc12",
-      "github_verified_sha256": "b3d6e76b6d9b5034dc40c83889af1063f44040d2caff2d79280c635c900436b0"
+      "github_verified_sha256": "b3d6e76b6d9b5034dc40c83889af1063f44040d2caff2d79280c635c900436b0",
+      "accepted_path": "/workspace/lightweight-exercises-photo/assets/exercises/pending/night-2026-10-01/batch-005/seated-wrist-curl-barbell/attempt-2.png",
+      "accepted_sha256": "b3d6e76b6d9b5034dc40c83889af1063f44040d2caff2d79280c635c900436b0",
+      "accepted_at": "2026-10-01T15:03:09.768874+03:00",
+      "approval_timestamp_source": "decision_recorded_at",
+      "user_review_history": [
+        {
+          "recorded_at": "2026-10-01T15:03:09.768874+03:00",
+          "by": "user",
+          "decision": "approved",
+          "accepted_attempt": 2,
+          "accepted_path": "/workspace/lightweight-exercises-photo/assets/exercises/pending/night-2026-10-01/batch-005/seated-wrist-curl-barbell/attempt-2.png",
+          "accepted_sha256": "b3d6e76b6d9b5034dc40c83889af1063f44040d2caff2d79280c635c900436b0",
+          "reason": "User accepts all existing night-generation images except the attached triceps-extension-dumbbell image."
+        }
+      ]
     },
     "seated-wrist-extension-barbell": {
       "id": "seated-wrist-extension-barbell",
@@ -25545,7 +26237,7 @@
         "exists_at_preparation": true,
         "sha256": "2466c55efe9bab684d92dd83c8bc080b9128ba6a06b435e1415d727d272b2d95"
       },
-      "status": "generated_needs_review",
+      "status": "approved",
       "included_in_generation": true,
       "archived_inclusion_authorized": false,
       "blocked_by": [
@@ -25584,7 +26276,7 @@
           "status": "saved",
           "result_path": "/workspace/lightweight-exercises-photo/assets/exercises/pending/night-2026-10-01/batch-002/shoulder-taps/attempt-1.png",
           "agent_visual_review": "not_performed",
-          "user_review": "pending",
+          "user_review": "approved",
           "finished_at": "2026-10-01T03:11:32.116893+03:00",
           "sha256": "8aa25fe87328ebdc23fa17328573c0fafea763d9f80c2ecfa15e68796faef48f",
           "technical_check": "passed",
@@ -25609,7 +26301,10 @@
             "fully_transparent_pixels": 1217995,
             "scope": "PNG decode, square dimensions, true alpha transparency, SHA256; no visual QA"
           },
-          "error": null
+          "error": null,
+          "accepted_path": "/workspace/lightweight-exercises-photo/assets/exercises/pending/night-2026-10-01/batch-002/shoulder-taps/attempt-1.png",
+          "accepted_sha256": "8aa25fe87328ebdc23fa17328573c0fafea763d9f80c2ecfa15e68796faef48f",
+          "approval_recorded_at": "2026-10-01T15:03:09.768874+03:00"
         }
       ],
       "result_sha256": "8aa25fe87328ebdc23fa17328573c0fafea763d9f80c2ecfa15e68796faef48f",
@@ -25637,7 +26332,7 @@
       },
       "agent_visual_review": "not_performed",
       "agent_visual_review_notes": [],
-      "user_review": "pending",
+      "user_review": "approved",
       "generation_run_id": "night-2026-10-01",
       "generated_overnight": true,
       "batch_id": "night-2026-10-01-002",
@@ -25676,6 +26371,21 @@
           "verified_at": "2026-10-01T03:45:41.209794+03:00",
           "verified_commit": "a0f650d0c2add34b8bab916c54169d99a00f2d00"
         }
+      ],
+      "accepted_path": "/workspace/lightweight-exercises-photo/assets/exercises/pending/night-2026-10-01/batch-002/shoulder-taps/attempt-1.png",
+      "accepted_sha256": "8aa25fe87328ebdc23fa17328573c0fafea763d9f80c2ecfa15e68796faef48f",
+      "accepted_at": "2026-10-01T15:03:09.768874+03:00",
+      "approval_timestamp_source": "decision_recorded_at",
+      "user_review_history": [
+        {
+          "recorded_at": "2026-10-01T15:03:09.768874+03:00",
+          "by": "user",
+          "decision": "approved",
+          "accepted_attempt": 1,
+          "accepted_path": "/workspace/lightweight-exercises-photo/assets/exercises/pending/night-2026-10-01/batch-002/shoulder-taps/attempt-1.png",
+          "accepted_sha256": "8aa25fe87328ebdc23fa17328573c0fafea763d9f80c2ecfa15e68796faef48f",
+          "reason": "User accepts all existing night-generation images except the attached triceps-extension-dumbbell image."
+        }
       ]
     },
     "shrug-barbell": {
@@ -25701,7 +26411,7 @@
         "exists_at_preparation": true,
         "sha256": "83b660c5acfbec5a4af42e97343e1329af552ff65a1aa36092162b8068c8c966"
       },
-      "status": "generated_needs_review",
+      "status": "approved",
       "included_in_generation": true,
       "archived_inclusion_authorized": false,
       "blocked_by": [
@@ -25771,7 +26481,7 @@
           "result_path": "/workspace/lightweight-exercises-photo/assets/exercises/pending/night-2026-10-01/batch-005/shrug-barbell/attempt-2.png",
           "previous_attempt_error": "image generation failed: http 429 Too Many Requests: Some(\"{\\\"error\\\":{\\\"type\\\":\\\"usage_limit_reached\\\",\\\"message\\\":\\\"The usage limit has been reached\\\",\\\"plan_type\\\":\\\"plus\\\",\\\"resets_at\\\":1790845839,\\\"eligible_promo\\\":null,\\\"limit_window_minutes\\\":null,\\\"resets_in_seconds\\\":30942}}\")",
           "agent_visual_review": "not_performed",
-          "user_review": "pending",
+          "user_review": "approved",
           "finished_at": "2026-10-01T14:45:34.776329+03:00",
           "generated_at": "2026-10-01T14:45:34.283620+03:00",
           "sha256": "8dce6affa10524b968372cb4e64ee892ba1e1737136a131859e1f4128f33bf89",
@@ -25802,7 +26512,10 @@
           "backup_status": "github_verified",
           "github_verified_at": "2026-10-01T11:52:54+00:00",
           "github_verified_commit": "3f967fd137e445aca32fd3f302510386ab44cc12",
-          "github_verified_sha256": "8dce6affa10524b968372cb4e64ee892ba1e1737136a131859e1f4128f33bf89"
+          "github_verified_sha256": "8dce6affa10524b968372cb4e64ee892ba1e1737136a131859e1f4128f33bf89",
+          "accepted_path": "/workspace/lightweight-exercises-photo/assets/exercises/pending/night-2026-10-01/batch-005/shrug-barbell/attempt-2.png",
+          "accepted_sha256": "8dce6affa10524b968372cb4e64ee892ba1e1737136a131859e1f4128f33bf89",
+          "approval_recorded_at": "2026-10-01T15:03:09.768874+03:00"
         }
       ],
       "result_sha256": "8dce6affa10524b968372cb4e64ee892ba1e1737136a131859e1f4128f33bf89",
@@ -25830,7 +26543,7 @@
       },
       "agent_visual_review": "not_performed",
       "agent_visual_review_notes": [],
-      "user_review": "pending",
+      "user_review": "approved",
       "generation_run_id": "night-2026-10-01",
       "generated_overnight": true,
       "batch_id": "night-2026-10-01-005",
@@ -25850,7 +26563,22 @@
       ],
       "github_verified_at": "2026-10-01T11:52:54+00:00",
       "github_verified_commit": "3f967fd137e445aca32fd3f302510386ab44cc12",
-      "github_verified_sha256": "8dce6affa10524b968372cb4e64ee892ba1e1737136a131859e1f4128f33bf89"
+      "github_verified_sha256": "8dce6affa10524b968372cb4e64ee892ba1e1737136a131859e1f4128f33bf89",
+      "accepted_path": "/workspace/lightweight-exercises-photo/assets/exercises/pending/night-2026-10-01/batch-005/shrug-barbell/attempt-2.png",
+      "accepted_sha256": "8dce6affa10524b968372cb4e64ee892ba1e1737136a131859e1f4128f33bf89",
+      "accepted_at": "2026-10-01T15:03:09.768874+03:00",
+      "approval_timestamp_source": "decision_recorded_at",
+      "user_review_history": [
+        {
+          "recorded_at": "2026-10-01T15:03:09.768874+03:00",
+          "by": "user",
+          "decision": "approved",
+          "accepted_attempt": 2,
+          "accepted_path": "/workspace/lightweight-exercises-photo/assets/exercises/pending/night-2026-10-01/batch-005/shrug-barbell/attempt-2.png",
+          "accepted_sha256": "8dce6affa10524b968372cb4e64ee892ba1e1737136a131859e1f4128f33bf89",
+          "reason": "User accepts all existing night-generation images except the attached triceps-extension-dumbbell image."
+        }
+      ]
     },
     "shrug-cable-machine": {
       "id": "shrug-cable-machine",
@@ -26226,7 +26954,7 @@
         "exists_at_preparation": true,
         "sha256": "a9f0c0577ef4515aaa259edb673d40ca2e44026f84f74f7438404c92cf3f288e"
       },
-      "status": "generated_needs_review",
+      "status": "approved",
       "included_in_generation": true,
       "archived_inclusion_authorized": false,
       "blocked_by": [
@@ -26265,7 +26993,7 @@
           "status": "saved",
           "result_path": "/workspace/lightweight-exercises-photo/assets/exercises/pending/night-2026-10-01/batch-001/side-bend/attempt-1.png",
           "agent_visual_review": "not_performed",
-          "user_review": "pending",
+          "user_review": "approved",
           "finished_at": "2026-10-01T02:53:17.132260+03:00",
           "sha256": "01ef6c64e9bc34d39c543d189f45131b98c6f980358444a51b00a28c9e998eb4",
           "technical_check": "passed",
@@ -26290,7 +27018,10 @@
             "fully_transparent_pixels": 1255485,
             "scope": "PNG decode, square dimensions, true alpha transparency, SHA256; no visual QA"
           },
-          "error": null
+          "error": null,
+          "accepted_path": "/workspace/lightweight-exercises-photo/assets/exercises/pending/night-2026-10-01/batch-001/side-bend/attempt-1.png",
+          "accepted_sha256": "01ef6c64e9bc34d39c543d189f45131b98c6f980358444a51b00a28c9e998eb4",
+          "approval_recorded_at": "2026-10-01T15:03:09.768874+03:00"
         }
       ],
       "result_sha256": "01ef6c64e9bc34d39c543d189f45131b98c6f980358444a51b00a28c9e998eb4",
@@ -26318,7 +27049,7 @@
       },
       "agent_visual_review": "not_performed",
       "agent_visual_review_notes": [],
-      "user_review": "pending",
+      "user_review": "approved",
       "generation_run_id": "night-2026-10-01",
       "generated_overnight": true,
       "batch_id": "night-2026-10-01-001",
@@ -26356,6 +27087,21 @@
           "png_sha256": "01ef6c64e9bc34d39c543d189f45131b98c6f980358444a51b00a28c9e998eb4",
           "verified_at": "2026-10-01T03:45:41.209794+03:00",
           "verified_commit": "a0f650d0c2add34b8bab916c54169d99a00f2d00"
+        }
+      ],
+      "accepted_path": "/workspace/lightweight-exercises-photo/assets/exercises/pending/night-2026-10-01/batch-001/side-bend/attempt-1.png",
+      "accepted_sha256": "01ef6c64e9bc34d39c543d189f45131b98c6f980358444a51b00a28c9e998eb4",
+      "accepted_at": "2026-10-01T15:03:09.768874+03:00",
+      "approval_timestamp_source": "decision_recorded_at",
+      "user_review_history": [
+        {
+          "recorded_at": "2026-10-01T15:03:09.768874+03:00",
+          "by": "user",
+          "decision": "approved",
+          "accepted_attempt": 1,
+          "accepted_path": "/workspace/lightweight-exercises-photo/assets/exercises/pending/night-2026-10-01/batch-001/side-bend/attempt-1.png",
+          "accepted_sha256": "01ef6c64e9bc34d39c543d189f45131b98c6f980358444a51b00a28c9e998eb4",
+          "reason": "User accepts all existing night-generation images except the attached triceps-extension-dumbbell image."
         }
       ]
     },
@@ -27103,7 +27849,7 @@
         "exists_at_preparation": true,
         "sha256": "c86ea85aa583a446114ad6631501cd7cc9934014ab6eee26ed1fdfdcb88e2a5b"
       },
-      "status": "generated_needs_review",
+      "status": "approved",
       "included_in_generation": true,
       "archived_inclusion_authorized": false,
       "blocked_by": [
@@ -27142,7 +27888,7 @@
           "status": "saved",
           "result_path": "/workspace/lightweight-exercises-photo/assets/exercises/pending/night-2026-10-01/batch-002/single-leg-glute-bridge/attempt-1.png",
           "agent_visual_review": "not_performed",
-          "user_review": "pending",
+          "user_review": "approved",
           "finished_at": "2026-10-01T03:04:36.560324+03:00",
           "sha256": "1b21fbcfbeda31047d03cfe071d317667395f8f62c14bc4bf7f14d912fcce32b",
           "technical_check": "passed",
@@ -27167,7 +27913,10 @@
             "fully_transparent_pixels": 1326260,
             "scope": "PNG decode, square dimensions, true alpha transparency, SHA256; no visual QA"
           },
-          "error": null
+          "error": null,
+          "accepted_path": "/workspace/lightweight-exercises-photo/assets/exercises/pending/night-2026-10-01/batch-002/single-leg-glute-bridge/attempt-1.png",
+          "accepted_sha256": "1b21fbcfbeda31047d03cfe071d317667395f8f62c14bc4bf7f14d912fcce32b",
+          "approval_recorded_at": "2026-10-01T15:03:09.768874+03:00"
         }
       ],
       "result_sha256": "1b21fbcfbeda31047d03cfe071d317667395f8f62c14bc4bf7f14d912fcce32b",
@@ -27195,7 +27944,7 @@
       },
       "agent_visual_review": "not_performed",
       "agent_visual_review_notes": [],
-      "user_review": "pending",
+      "user_review": "approved",
       "generation_run_id": "night-2026-10-01",
       "generated_overnight": true,
       "batch_id": "night-2026-10-01-002",
@@ -27234,6 +27983,21 @@
           "verified_at": "2026-10-01T03:45:41.209794+03:00",
           "verified_commit": "a0f650d0c2add34b8bab916c54169d99a00f2d00"
         }
+      ],
+      "accepted_path": "/workspace/lightweight-exercises-photo/assets/exercises/pending/night-2026-10-01/batch-002/single-leg-glute-bridge/attempt-1.png",
+      "accepted_sha256": "1b21fbcfbeda31047d03cfe071d317667395f8f62c14bc4bf7f14d912fcce32b",
+      "accepted_at": "2026-10-01T15:03:09.768874+03:00",
+      "approval_timestamp_source": "decision_recorded_at",
+      "user_review_history": [
+        {
+          "recorded_at": "2026-10-01T15:03:09.768874+03:00",
+          "by": "user",
+          "decision": "approved",
+          "accepted_attempt": 1,
+          "accepted_path": "/workspace/lightweight-exercises-photo/assets/exercises/pending/night-2026-10-01/batch-002/single-leg-glute-bridge/attempt-1.png",
+          "accepted_sha256": "1b21fbcfbeda31047d03cfe071d317667395f8f62c14bc4bf7f14d912fcce32b",
+          "reason": "User accepts all existing night-generation images except the attached triceps-extension-dumbbell image."
+        }
       ]
     },
     "single-leg-hip-thrust": {
@@ -27254,7 +28018,7 @@
         "mapping": null
       },
       "source_reference_image": null,
-      "status": "generated_needs_review",
+      "status": "approved",
       "included_in_generation": true,
       "archived_inclusion_authorized": false,
       "blocked_by": [
@@ -27293,7 +28057,7 @@
           "status": "saved",
           "result_path": "/workspace/lightweight-exercises-photo/assets/exercises/pending/night-2026-10-01/batch-004/single-leg-hip-thrust/attempt-1.png",
           "agent_visual_review": "not_performed",
-          "user_review": "pending",
+          "user_review": "approved",
           "finished_at": "2026-10-01T03:30:06.952353+03:00",
           "sha256": "c2128c367b1b326566cd2c72815e833b33125dbbc8504e762e9f2ca4af54f671",
           "technical_check": "passed",
@@ -27318,7 +28082,10 @@
             "fully_transparent_pixels": 1166185,
             "scope": "PNG decode, square dimensions, true alpha transparency, SHA256; no visual QA"
           },
-          "error": null
+          "error": null,
+          "accepted_path": "/workspace/lightweight-exercises-photo/assets/exercises/pending/night-2026-10-01/batch-004/single-leg-hip-thrust/attempt-1.png",
+          "accepted_sha256": "c2128c367b1b326566cd2c72815e833b33125dbbc8504e762e9f2ca4af54f671",
+          "approval_recorded_at": "2026-10-01T15:03:09.768874+03:00"
         }
       ],
       "result_sha256": "c2128c367b1b326566cd2c72815e833b33125dbbc8504e762e9f2ca4af54f671",
@@ -27346,7 +28113,7 @@
       },
       "agent_visual_review": "not_performed",
       "agent_visual_review_notes": [],
-      "user_review": "pending",
+      "user_review": "approved",
       "generation_run_id": "night-2026-10-01",
       "generated_overnight": true,
       "batch_id": "night-2026-10-01-004",
@@ -27384,6 +28151,21 @@
           "png_sha256": "c2128c367b1b326566cd2c72815e833b33125dbbc8504e762e9f2ca4af54f671",
           "verified_at": "2026-10-01T03:45:41.209794+03:00",
           "verified_commit": "a0f650d0c2add34b8bab916c54169d99a00f2d00"
+        }
+      ],
+      "accepted_path": "/workspace/lightweight-exercises-photo/assets/exercises/pending/night-2026-10-01/batch-004/single-leg-hip-thrust/attempt-1.png",
+      "accepted_sha256": "c2128c367b1b326566cd2c72815e833b33125dbbc8504e762e9f2ca4af54f671",
+      "accepted_at": "2026-10-01T15:03:09.768874+03:00",
+      "approval_timestamp_source": "decision_recorded_at",
+      "user_review_history": [
+        {
+          "recorded_at": "2026-10-01T15:03:09.768874+03:00",
+          "by": "user",
+          "decision": "approved",
+          "accepted_attempt": 1,
+          "accepted_path": "/workspace/lightweight-exercises-photo/assets/exercises/pending/night-2026-10-01/batch-004/single-leg-hip-thrust/attempt-1.png",
+          "accepted_sha256": "c2128c367b1b326566cd2c72815e833b33125dbbc8504e762e9f2ca4af54f671",
+          "reason": "User accepts all existing night-generation images except the attached triceps-extension-dumbbell image."
         }
       ]
     },
@@ -28851,7 +29633,7 @@
         "mapping": null
       },
       "source_reference_image": null,
-      "status": "generated_needs_review",
+      "status": "approved",
       "included_in_generation": true,
       "archived_inclusion_authorized": false,
       "blocked_by": [
@@ -28921,7 +29703,7 @@
           "result_path": "/workspace/lightweight-exercises-photo/assets/exercises/pending/night-2026-10-01/batch-005/split-squat-dumbbell/attempt-2.png",
           "previous_attempt_error": "image generation failed: http 429 Too Many Requests: Some(\"{\\\"error\\\":{\\\"type\\\":\\\"usage_limit_reached\\\",\\\"message\\\":\\\"The usage limit has been reached\\\",\\\"plan_type\\\":\\\"plus\\\",\\\"resets_at\\\":1790845839,\\\"eligible_promo\\\":null,\\\"limit_window_minutes\\\":null,\\\"resets_in_seconds\\\":30944}}\")",
           "agent_visual_review": "not_performed",
-          "user_review": "pending",
+          "user_review": "approved",
           "finished_at": "2026-10-01T14:43:22.632445+03:00",
           "generated_at": "2026-10-01T14:43:22.140772+03:00",
           "sha256": "9a491c0f2c861e31c88479312b670051bd711e45ca2e5bbbd90a1a342ae30b39",
@@ -28952,7 +29734,10 @@
           "backup_status": "github_verified",
           "github_verified_at": "2026-10-01T11:52:54+00:00",
           "github_verified_commit": "3f967fd137e445aca32fd3f302510386ab44cc12",
-          "github_verified_sha256": "9a491c0f2c861e31c88479312b670051bd711e45ca2e5bbbd90a1a342ae30b39"
+          "github_verified_sha256": "9a491c0f2c861e31c88479312b670051bd711e45ca2e5bbbd90a1a342ae30b39",
+          "accepted_path": "/workspace/lightweight-exercises-photo/assets/exercises/pending/night-2026-10-01/batch-005/split-squat-dumbbell/attempt-2.png",
+          "accepted_sha256": "9a491c0f2c861e31c88479312b670051bd711e45ca2e5bbbd90a1a342ae30b39",
+          "approval_recorded_at": "2026-10-01T15:03:09.768874+03:00"
         }
       ],
       "result_sha256": "9a491c0f2c861e31c88479312b670051bd711e45ca2e5bbbd90a1a342ae30b39",
@@ -28980,7 +29765,7 @@
       },
       "agent_visual_review": "not_performed",
       "agent_visual_review_notes": [],
-      "user_review": "pending",
+      "user_review": "approved",
       "generation_run_id": "night-2026-10-01",
       "generated_overnight": true,
       "batch_id": "night-2026-10-01-005",
@@ -29000,7 +29785,22 @@
       ],
       "github_verified_at": "2026-10-01T11:52:54+00:00",
       "github_verified_commit": "3f967fd137e445aca32fd3f302510386ab44cc12",
-      "github_verified_sha256": "9a491c0f2c861e31c88479312b670051bd711e45ca2e5bbbd90a1a342ae30b39"
+      "github_verified_sha256": "9a491c0f2c861e31c88479312b670051bd711e45ca2e5bbbd90a1a342ae30b39",
+      "accepted_path": "/workspace/lightweight-exercises-photo/assets/exercises/pending/night-2026-10-01/batch-005/split-squat-dumbbell/attempt-2.png",
+      "accepted_sha256": "9a491c0f2c861e31c88479312b670051bd711e45ca2e5bbbd90a1a342ae30b39",
+      "accepted_at": "2026-10-01T15:03:09.768874+03:00",
+      "approval_timestamp_source": "decision_recorded_at",
+      "user_review_history": [
+        {
+          "recorded_at": "2026-10-01T15:03:09.768874+03:00",
+          "by": "user",
+          "decision": "approved",
+          "accepted_attempt": 2,
+          "accepted_path": "/workspace/lightweight-exercises-photo/assets/exercises/pending/night-2026-10-01/batch-005/split-squat-dumbbell/attempt-2.png",
+          "accepted_sha256": "9a491c0f2c861e31c88479312b670051bd711e45ca2e5bbbd90a1a342ae30b39",
+          "reason": "User accepts all existing night-generation images except the attached triceps-extension-dumbbell image."
+        }
+      ]
     },
     "sprints": {
       "id": "sprints",
@@ -29384,7 +30184,7 @@
         "exists_at_preparation": true,
         "sha256": "e62b3abce4d3284da0f8205a064100d1a8299ee659c409205d021d08765e06f7"
       },
-      "status": "generated_needs_review",
+      "status": "approved",
       "included_in_generation": true,
       "archived_inclusion_authorized": false,
       "blocked_by": [
@@ -29454,7 +30254,7 @@
           "result_path": "/workspace/lightweight-exercises-photo/assets/exercises/pending/night-2026-10-01/batch-004/squat-dumbbell/attempt-2.png",
           "previous_attempt_error": "image generation failed: http 429 Too Many Requests: Some(\"{\\\"error\\\":{\\\"type\\\":\\\"usage_limit_reached\\\",\\\"message\\\":\\\"The usage limit has been reached\\\",\\\"plan_type\\\":\\\"plus\\\",\\\"resets_at\\\":1790845839,\\\"eligible_promo\\\":null,\\\"limit_window_minutes\\\":null,\\\"resets_in_seconds\\\":30959}}\")",
           "agent_visual_review": "not_performed",
-          "user_review": "pending",
+          "user_review": "approved",
           "finished_at": "2026-10-01T14:30:49.314084+03:00",
           "generated_at": "2026-10-01T14:30:48.820488+03:00",
           "sha256": "7470c2067198392ab7110a285e998146d8cee1a21c8c69de5801f4ede97005b2",
@@ -29481,7 +30281,10 @@
             "scope": "PNG opens, square dimensions, actual transparent pixels, SHA256; no visual QA"
           },
           "error": null,
-          "artifact_capture": "copied byte-for-byte from image_gen generated_images output"
+          "artifact_capture": "copied byte-for-byte from image_gen generated_images output",
+          "accepted_path": "/workspace/lightweight-exercises-photo/assets/exercises/pending/night-2026-10-01/batch-004/squat-dumbbell/attempt-2.png",
+          "accepted_sha256": "7470c2067198392ab7110a285e998146d8cee1a21c8c69de5801f4ede97005b2",
+          "approval_recorded_at": "2026-10-01T15:03:09.768874+03:00"
         }
       ],
       "result_sha256": "7470c2067198392ab7110a285e998146d8cee1a21c8c69de5801f4ede97005b2",
@@ -29509,7 +30312,7 @@
       },
       "agent_visual_review": "not_performed",
       "agent_visual_review_notes": [],
-      "user_review": "pending",
+      "user_review": "approved",
       "generation_run_id": "night-2026-10-01",
       "generated_overnight": true,
       "batch_id": "night-2026-10-01-004",
@@ -29526,6 +30329,21 @@
           "png_sha256": "7470c2067198392ab7110a285e998146d8cee1a21c8c69de5801f4ede97005b2",
           "verified_at": "2026-10-01T14:33:46.182509+03:00",
           "verified_commit": "79c1774406db73069dff0a5270bc9b8cba815209"
+        }
+      ],
+      "accepted_path": "/workspace/lightweight-exercises-photo/assets/exercises/pending/night-2026-10-01/batch-004/squat-dumbbell/attempt-2.png",
+      "accepted_sha256": "7470c2067198392ab7110a285e998146d8cee1a21c8c69de5801f4ede97005b2",
+      "accepted_at": "2026-10-01T15:03:09.768874+03:00",
+      "approval_timestamp_source": "decision_recorded_at",
+      "user_review_history": [
+        {
+          "recorded_at": "2026-10-01T15:03:09.768874+03:00",
+          "by": "user",
+          "decision": "approved",
+          "accepted_attempt": 2,
+          "accepted_path": "/workspace/lightweight-exercises-photo/assets/exercises/pending/night-2026-10-01/batch-004/squat-dumbbell/attempt-2.png",
+          "accepted_sha256": "7470c2067198392ab7110a285e998146d8cee1a21c8c69de5801f4ede97005b2",
+          "reason": "User accepts all existing night-generation images except the attached triceps-extension-dumbbell image."
         }
       ]
     },
@@ -30757,7 +31575,7 @@
         "mapping": null
       },
       "source_reference_image": null,
-      "status": "generated_needs_review",
+      "status": "approved",
       "included_in_generation": true,
       "archived_inclusion_authorized": false,
       "blocked_by": [
@@ -30796,7 +31614,7 @@
           "status": "saved",
           "result_path": "/workspace/lightweight-exercises-photo/assets/exercises/pending/night-2026-10-01/batch-002/sumo-squat/attempt-1.png",
           "agent_visual_review": "not_performed",
-          "user_review": "pending",
+          "user_review": "approved",
           "finished_at": "2026-10-01T03:03:25.915794+03:00",
           "sha256": "0569d6d23add0e8832089cc96bf6587dda3382c50586637c8605692816201b33",
           "technical_check": "passed",
@@ -30821,7 +31639,10 @@
             "fully_transparent_pixels": 1194704,
             "scope": "PNG decode, square dimensions, true alpha transparency, SHA256; no visual QA"
           },
-          "error": null
+          "error": null,
+          "accepted_path": "/workspace/lightweight-exercises-photo/assets/exercises/pending/night-2026-10-01/batch-002/sumo-squat/attempt-1.png",
+          "accepted_sha256": "0569d6d23add0e8832089cc96bf6587dda3382c50586637c8605692816201b33",
+          "approval_recorded_at": "2026-10-01T15:03:09.768874+03:00"
         }
       ],
       "result_sha256": "0569d6d23add0e8832089cc96bf6587dda3382c50586637c8605692816201b33",
@@ -30849,7 +31670,7 @@
       },
       "agent_visual_review": "not_performed",
       "agent_visual_review_notes": [],
-      "user_review": "pending",
+      "user_review": "approved",
       "generation_run_id": "night-2026-10-01",
       "generated_overnight": true,
       "batch_id": "night-2026-10-01-002",
@@ -30887,6 +31708,21 @@
           "png_sha256": "0569d6d23add0e8832089cc96bf6587dda3382c50586637c8605692816201b33",
           "verified_at": "2026-10-01T03:45:41.209794+03:00",
           "verified_commit": "a0f650d0c2add34b8bab916c54169d99a00f2d00"
+        }
+      ],
+      "accepted_path": "/workspace/lightweight-exercises-photo/assets/exercises/pending/night-2026-10-01/batch-002/sumo-squat/attempt-1.png",
+      "accepted_sha256": "0569d6d23add0e8832089cc96bf6587dda3382c50586637c8605692816201b33",
+      "accepted_at": "2026-10-01T15:03:09.768874+03:00",
+      "approval_timestamp_source": "decision_recorded_at",
+      "user_review_history": [
+        {
+          "recorded_at": "2026-10-01T15:03:09.768874+03:00",
+          "by": "user",
+          "decision": "approved",
+          "accepted_attempt": 1,
+          "accepted_path": "/workspace/lightweight-exercises-photo/assets/exercises/pending/night-2026-10-01/batch-002/sumo-squat/attempt-1.png",
+          "accepted_sha256": "0569d6d23add0e8832089cc96bf6587dda3382c50586637c8605692816201b33",
+          "reason": "User accepts all existing night-generation images except the attached triceps-extension-dumbbell image."
         }
       ]
     },
@@ -31063,7 +31899,7 @@
         "mapping": null
       },
       "source_reference_image": null,
-      "status": "generated_needs_review",
+      "status": "approved",
       "included_in_generation": true,
       "archived_inclusion_authorized": false,
       "blocked_by": [
@@ -31102,7 +31938,7 @@
           "status": "saved",
           "result_path": "/workspace/lightweight-exercises-photo/assets/exercises/pending/night-2026-10-01/batch-003/superman/attempt-1.png",
           "agent_visual_review": "not_performed",
-          "user_review": "pending",
+          "user_review": "approved",
           "finished_at": "2026-10-01T03:20:23.597217+03:00",
           "sha256": "705c666f3afc38b3fc8973b582bb774bda7ca65e3f1dc6adddf1ef520e182b8e",
           "technical_check": "passed",
@@ -31127,7 +31963,10 @@
             "fully_transparent_pixels": 1377405,
             "scope": "PNG decode, square dimensions, true alpha transparency, SHA256; no visual QA"
           },
-          "error": null
+          "error": null,
+          "accepted_path": "/workspace/lightweight-exercises-photo/assets/exercises/pending/night-2026-10-01/batch-003/superman/attempt-1.png",
+          "accepted_sha256": "705c666f3afc38b3fc8973b582bb774bda7ca65e3f1dc6adddf1ef520e182b8e",
+          "approval_recorded_at": "2026-10-01T15:03:09.768874+03:00"
         }
       ],
       "result_sha256": "705c666f3afc38b3fc8973b582bb774bda7ca65e3f1dc6adddf1ef520e182b8e",
@@ -31155,7 +31994,7 @@
       },
       "agent_visual_review": "not_performed",
       "agent_visual_review_notes": [],
-      "user_review": "pending",
+      "user_review": "approved",
       "generation_run_id": "night-2026-10-01",
       "generated_overnight": true,
       "batch_id": "night-2026-10-01-003",
@@ -31193,6 +32032,21 @@
           "png_sha256": "705c666f3afc38b3fc8973b582bb774bda7ca65e3f1dc6adddf1ef520e182b8e",
           "verified_at": "2026-10-01T03:45:41.209794+03:00",
           "verified_commit": "a0f650d0c2add34b8bab916c54169d99a00f2d00"
+        }
+      ],
+      "accepted_path": "/workspace/lightweight-exercises-photo/assets/exercises/pending/night-2026-10-01/batch-003/superman/attempt-1.png",
+      "accepted_sha256": "705c666f3afc38b3fc8973b582bb774bda7ca65e3f1dc6adddf1ef520e182b8e",
+      "accepted_at": "2026-10-01T15:03:09.768874+03:00",
+      "approval_timestamp_source": "decision_recorded_at",
+      "user_review_history": [
+        {
+          "recorded_at": "2026-10-01T15:03:09.768874+03:00",
+          "by": "user",
+          "decision": "approved",
+          "accepted_attempt": 1,
+          "accepted_path": "/workspace/lightweight-exercises-photo/assets/exercises/pending/night-2026-10-01/batch-003/superman/attempt-1.png",
+          "accepted_sha256": "705c666f3afc38b3fc8973b582bb774bda7ca65e3f1dc6adddf1ef520e182b8e",
+          "reason": "User accepts all existing night-generation images except the attached triceps-extension-dumbbell image."
         }
       ]
     },
@@ -31434,7 +32288,7 @@
         "exists_at_preparation": true,
         "sha256": "8c6f2e1f540e59b3dbe9997407017d7f6f8f9400b3f84d898ee2ac0d2d01c759"
       },
-      "status": "generated_needs_review",
+      "status": "approved",
       "included_in_generation": true,
       "archived_inclusion_authorized": false,
       "blocked_by": [
@@ -31473,7 +32327,7 @@
           "status": "saved",
           "result_path": "/workspace/lightweight-exercises-photo/assets/exercises/pending/night-2026-10-01/batch-003/toe-touch/attempt-1.png",
           "agent_visual_review": "not_performed",
-          "user_review": "pending",
+          "user_review": "approved",
           "finished_at": "2026-10-01T03:21:40.080059+03:00",
           "sha256": "3b4ef416235bdf9ff65273e9a9ca9095d25baea2ad211c88041669b127b37308",
           "technical_check": "passed",
@@ -31498,7 +32352,10 @@
             "fully_transparent_pixels": 1289714,
             "scope": "PNG decode, square dimensions, true alpha transparency, SHA256; no visual QA"
           },
-          "error": null
+          "error": null,
+          "accepted_path": "/workspace/lightweight-exercises-photo/assets/exercises/pending/night-2026-10-01/batch-003/toe-touch/attempt-1.png",
+          "accepted_sha256": "3b4ef416235bdf9ff65273e9a9ca9095d25baea2ad211c88041669b127b37308",
+          "approval_recorded_at": "2026-10-01T15:03:09.768874+03:00"
         }
       ],
       "result_sha256": "3b4ef416235bdf9ff65273e9a9ca9095d25baea2ad211c88041669b127b37308",
@@ -31526,7 +32383,7 @@
       },
       "agent_visual_review": "not_performed",
       "agent_visual_review_notes": [],
-      "user_review": "pending",
+      "user_review": "approved",
       "generation_run_id": "night-2026-10-01",
       "generated_overnight": true,
       "batch_id": "night-2026-10-01-003",
@@ -31564,6 +32421,21 @@
           "png_sha256": "3b4ef416235bdf9ff65273e9a9ca9095d25baea2ad211c88041669b127b37308",
           "verified_at": "2026-10-01T03:45:41.209794+03:00",
           "verified_commit": "a0f650d0c2add34b8bab916c54169d99a00f2d00"
+        }
+      ],
+      "accepted_path": "/workspace/lightweight-exercises-photo/assets/exercises/pending/night-2026-10-01/batch-003/toe-touch/attempt-1.png",
+      "accepted_sha256": "3b4ef416235bdf9ff65273e9a9ca9095d25baea2ad211c88041669b127b37308",
+      "accepted_at": "2026-10-01T15:03:09.768874+03:00",
+      "approval_timestamp_source": "decision_recorded_at",
+      "user_review_history": [
+        {
+          "recorded_at": "2026-10-01T15:03:09.768874+03:00",
+          "by": "user",
+          "decision": "approved",
+          "accepted_attempt": 1,
+          "accepted_path": "/workspace/lightweight-exercises-photo/assets/exercises/pending/night-2026-10-01/batch-003/toe-touch/attempt-1.png",
+          "accepted_sha256": "3b4ef416235bdf9ff65273e9a9ca9095d25baea2ad211c88041669b127b37308",
+          "reason": "User accepts all existing night-generation images except the attached triceps-extension-dumbbell image."
         }
       ]
     },
@@ -31910,7 +32782,7 @@
         "exists_at_preparation": true,
         "sha256": "6a64eaeda320ea72001037f092e3e50cd53db67891182e13f5e1321d38827447"
       },
-      "status": "generated_needs_review",
+      "status": "approved",
       "included_in_generation": true,
       "archived_inclusion_authorized": false,
       "blocked_by": [
@@ -31980,7 +32852,7 @@
           "result_path": "/workspace/lightweight-exercises-photo/assets/exercises/pending/night-2026-10-01/batch-005/triceps-extension-barbell/attempt-2.png",
           "previous_attempt_error": "image generation failed: http 429 Too Many Requests: Some(\"{\\\"error\\\":{\\\"type\\\":\\\"usage_limit_reached\\\",\\\"message\\\":\\\"The usage limit has been reached\\\",\\\"plan_type\\\":\\\"plus\\\",\\\"resets_at\\\":1790845839,\\\"eligible_promo\\\":null,\\\"limit_window_minutes\\\":null,\\\"resets_in_seconds\\\":30938}}\")",
           "agent_visual_review": "not_performed",
-          "user_review": "pending",
+          "user_review": "approved",
           "finished_at": "2026-10-01T14:49:51.825503+03:00",
           "generated_at": "2026-10-01T14:49:51.329155+03:00",
           "sha256": "2dd29f11088b6322c434542c967984c27d4ab6175bb8951812fe387401effc9c",
@@ -32011,7 +32883,10 @@
           "backup_status": "github_verified",
           "github_verified_at": "2026-10-01T11:52:54+00:00",
           "github_verified_commit": "3f967fd137e445aca32fd3f302510386ab44cc12",
-          "github_verified_sha256": "2dd29f11088b6322c434542c967984c27d4ab6175bb8951812fe387401effc9c"
+          "github_verified_sha256": "2dd29f11088b6322c434542c967984c27d4ab6175bb8951812fe387401effc9c",
+          "accepted_path": "/workspace/lightweight-exercises-photo/assets/exercises/pending/night-2026-10-01/batch-005/triceps-extension-barbell/attempt-2.png",
+          "accepted_sha256": "2dd29f11088b6322c434542c967984c27d4ab6175bb8951812fe387401effc9c",
+          "approval_recorded_at": "2026-10-01T15:03:09.768874+03:00"
         }
       ],
       "result_sha256": "2dd29f11088b6322c434542c967984c27d4ab6175bb8951812fe387401effc9c",
@@ -32039,7 +32914,7 @@
       },
       "agent_visual_review": "not_performed",
       "agent_visual_review_notes": [],
-      "user_review": "pending",
+      "user_review": "approved",
       "generation_run_id": "night-2026-10-01",
       "generated_overnight": true,
       "batch_id": "night-2026-10-01-005",
@@ -32059,7 +32934,22 @@
       ],
       "github_verified_at": "2026-10-01T11:52:54+00:00",
       "github_verified_commit": "3f967fd137e445aca32fd3f302510386ab44cc12",
-      "github_verified_sha256": "2dd29f11088b6322c434542c967984c27d4ab6175bb8951812fe387401effc9c"
+      "github_verified_sha256": "2dd29f11088b6322c434542c967984c27d4ab6175bb8951812fe387401effc9c",
+      "accepted_path": "/workspace/lightweight-exercises-photo/assets/exercises/pending/night-2026-10-01/batch-005/triceps-extension-barbell/attempt-2.png",
+      "accepted_sha256": "2dd29f11088b6322c434542c967984c27d4ab6175bb8951812fe387401effc9c",
+      "accepted_at": "2026-10-01T15:03:09.768874+03:00",
+      "approval_timestamp_source": "decision_recorded_at",
+      "user_review_history": [
+        {
+          "recorded_at": "2026-10-01T15:03:09.768874+03:00",
+          "by": "user",
+          "decision": "approved",
+          "accepted_attempt": 2,
+          "accepted_path": "/workspace/lightweight-exercises-photo/assets/exercises/pending/night-2026-10-01/batch-005/triceps-extension-barbell/attempt-2.png",
+          "accepted_sha256": "2dd29f11088b6322c434542c967984c27d4ab6175bb8951812fe387401effc9c",
+          "reason": "User accepts all existing night-generation images except the attached triceps-extension-dumbbell image."
+        }
+      ]
     },
     "triceps-extension-cable-machine": {
       "id": "triceps-extension-cable-machine",
@@ -32140,7 +33030,7 @@
       "blocked_by": [
         "pilot_not_approved"
       ],
-      "attempts": 2,
+      "attempts": 3,
       "style_version": "v1",
       "visual_review": {
         "status": "not_reviewed",
@@ -32154,7 +33044,7 @@
         },
         "notes": null
       },
-      "result_path": "/workspace/lightweight-exercises-photo/assets/exercises/pending/night-2026-10-01/batch-004/triceps-extension-dumbbell/attempt-2.png",
+      "result_path": "/workspace/lightweight-exercises-photo/assets/exercises/pending/night-2026-10-01/batch-004/triceps-extension-dumbbell/attempt-3.png",
       "supabase_path": null,
       "supabase_upload_status": "not_configured",
       "last_error": null,
@@ -32231,20 +33121,63 @@
             "scope": "PNG opens, square dimensions, actual transparent pixels, SHA256; no visual QA"
           },
           "error": null,
-          "artifact_capture": "copied byte-for-byte from image_gen generated_images output"
+          "artifact_capture": "copied byte-for-byte from image_gen generated_images output",
+          "user_feedback": "User requested a localized correction of the malformed dumbbell on the right-hand side of the image (the upper/farther dumbbell). All other elements are accepted."
+        },
+        {
+          "attempt": 3,
+          "id": "triceps-extension-dumbbell",
+          "batch_id": "night-2026-10-01-004",
+          "generation_run_id": "night-2026-10-01",
+          "generated_overnight": true,
+          "style_version": "v1",
+          "tool": "image_gen.imagegen",
+          "started_at": "2026-10-01T15:03:09.768874+03:00",
+          "prompt": "Edit the supplied PNG as a precise localized repair for exercise ID triceps-extension-dumbbell, style v1. Keep the existing square composition, same bald athletic silver-gray anatomical adult male in black shorts, same proportions, materials, muscle detail, bench, body position, limb positions, facial appearance, lighting and camera. The person is lying supine on a flat bench performing the lowered phase of two-dumbbell lying triceps extensions: back, head and pelvis supported, feet planted, upper arms steady, elbows bent, wrists neutral, a separate dumbbell in each closed neutral grip with weights clear of the head. The user accepts this pose and all other elements.\n\nREPAIR ONLY THE DUMBBELL ON THE RIGHT SIDE OF THE IMAGE: this is the upper/farther dumbbell above the head, around the upper-center portion of the image, farther right than the other dumbbell. Its hand-to-handle and weight assembly are malformed. Reconstruct that single dumbbell as one mechanically coherent ordinary dumbbell: two matching round black weight stacks, each centered on the same straight cylindrical metal shaft, one clean cylindrical grip section between them, and small centered end caps. The existing hand must wrap naturally around the middle grip, with the shaft distinct from fingers and forearm. Both stacks must be complete circular solids, aligned on the same axis, with clear separation from skin. Remove the deformed extra bulge, fused material, duplicate plate/shaft and broken connection around this dumbbell. Maintain the current hand position and plausible neutral wrist; preserve the other dumbbell completely. There must remain exactly two dumbbells, one per hand. Do not add equipment or change the exercise.\n\nPreserve style v1: opaque silver-gray sculpted anatomy, local triceps accent pigment base sRGB #F26445 (242,100,69) under normal 3D shading; chest and other muscles stay neutral, no glow or overall orange tint. Preserve the fully visible human and complete simple flat bench. Output a square PNG, target 1024x1024, with a REAL transparent alpha background including empty spaces between body, arms, dumbbells and bench. The black seen outside the subject in the reference viewer is transparency display, not a background to paint. No black, white or checkerboard backdrop, no floor plane, text, labels, frame, interface, collage or additional person. Preserve the original scene as closely as possible except for the requested right-side dumbbell repair.",
+          "reference_paths": [
+            "/workspace/lightweight-exercises-photo/assets/exercises/pending/night-2026-10-01/batch-004/triceps-extension-dumbbell/attempt-2.png"
+          ],
+          "reference_sha256": "ce12411b083c3f65647b547a2dd5440beeb532657ec98fa74e3f297cbee7eb06",
+          "status": "succeeded",
+          "result_path": "/workspace/lightweight-exercises-photo/assets/exercises/pending/night-2026-10-01/batch-004/triceps-extension-dumbbell/attempt-3.png",
+          "user_review": "pending",
+          "agent_visual_review": "not_performed",
+          "authorization": "Explicit user request to repair this specific dumbbell artifact; one edit invocation.",
+          "finished_at": "2026-10-01T15:06:51.096210+03:00",
+          "generated_at": "2026-10-01T15:06:51.096210+03:00",
+          "result_sha256": "81f3bd29e2a18dfcc9027eee6f4ee4c7315eb311a08f23d60068d62b1159fa01",
+          "technical_check": "passed",
+          "technical_check_details": {
+            "id": "triceps-extension-dumbbell",
+            "path": "/workspace/lightweight-exercises-photo/assets/exercises/pending/night-2026-10-01/batch-004/triceps-extension-dumbbell/attempt-3.png",
+            "exists": true,
+            "opens": true,
+            "format": "PNG",
+            "width": 1254,
+            "height": 1254,
+            "actual_dimensions": [
+              1254,
+              1254
+            ],
+            "square": true,
+            "mode": "RGBA",
+            "has_alpha_channel": true,
+            "fully_transparent_pixels": 1103581,
+            "sha256": "81f3bd29e2a18dfcc9027eee6f4ee4c7315eb311a08f23d60068d62b1159fa01",
+            "errors": [],
+            "scope": "File checks only; no post-generation visual QA"
+          },
+          "backup_status": "local_saved"
         }
       ],
-      "result_sha256": "ce12411b083c3f65647b547a2dd5440beeb532657ec98fa74e3f297cbee7eb06",
+      "result_sha256": "81f3bd29e2a18dfcc9027eee6f4ee4c7315eb311a08f23d60068d62b1159fa01",
       "technical_check": "passed",
       "technical_check_details": {
         "id": "triceps-extension-dumbbell",
-        "path": "/workspace/lightweight-exercises-photo/assets/exercises/pending/night-2026-10-01/batch-004/triceps-extension-dumbbell/attempt-2.png",
-        "errors": [],
+        "path": "/workspace/lightweight-exercises-photo/assets/exercises/pending/night-2026-10-01/batch-004/triceps-extension-dumbbell/attempt-3.png",
         "exists": true,
-        "sha256": "ce12411b083c3f65647b547a2dd5440beeb532657ec98fa74e3f297cbee7eb06",
-        "matches_recorded_sha256": true,
-        "format": "PNG",
         "opens": true,
+        "format": "PNG",
         "width": 1254,
         "height": 1254,
         "actual_dimensions": [
@@ -32254,8 +33187,10 @@
         "square": true,
         "mode": "RGBA",
         "has_alpha_channel": true,
-        "fully_transparent_pixels": 1102848,
-        "scope": "PNG opens, square dimensions, actual transparent pixels, SHA256; no visual QA"
+        "fully_transparent_pixels": 1103581,
+        "sha256": "81f3bd29e2a18dfcc9027eee6f4ee4c7315eb311a08f23d60068d62b1159fa01",
+        "errors": [],
+        "scope": "File checks only; no post-generation visual QA"
       },
       "agent_visual_review": "not_performed",
       "agent_visual_review_notes": [],
@@ -32263,10 +33198,10 @@
       "generation_run_id": "night-2026-10-01",
       "generated_overnight": true,
       "batch_id": "night-2026-10-01-004",
-      "prompt": "STYLE v1. Use the supplied approved human reference ONLY for the person's identity, anatomical 3D style, body proportions, materials and detail. Do not copy its pose, dumbbells, muscle highlighting or composition. Match the same bald athletic adult male, opaque silver-gray sculpted anatomical muscle surfaces, simple fitted black shorts, barefoot, neutral face and consistent natural proportions. One person, one exercise, one characteristic phase: no second figure, collage or motion ghosts. Equipment must be only the simple items named in this scene, neutral gray/black materials, complete and mechanically ordinary. Primary muscles: localized coral #F26445. Named secondary muscles: the same hue at roughly 45% intensity blended with gray, clearly lighter. Do not highlight muscles absent from the catalog list, make the body or shorts transparent, or apply a global orange cast/glow. Preserve clothing; highlight visible anatomical surfaces without inventing see-through tissue. Square PNG, unchanged target 1024x1024, true transparent alpha background outside the person and required equipment/mat and through any openings; no white or checkerboard backdrop, drawn floor plane, UI, text, labels, frames, decorations or halo. Entire person and every required piece of equipment must fit with transparent margins; adapt scale/camera without distortion or cropping. Accent pigment must use base sRGB #F26445 = RGB(242,100,69); retain this hue through ordinary 3D shading. Secondary highlights use this hue at 40-50% intensity blended with the gray body, not transparent tissue.\n\nEXERCISE ID: triceps-extension-dumbbell\nNAME: Triceps Extension (Dumbbell)\nCatalog equipment: dumbbell\nDepict only: two dumbbells, ordinary flat bench\nPrimary muscle: triceps\nSecondary muscles: []\n\nONE SPECIFIC SCENE: Supine flat-bench elbow-extension lowered phase: head/back/pelvis supported, feet planted, ONE DUMBBELL IN EACH HAND with NEUTRAL facing palms. Upper arms fixed above chest while elbows bend so weights sit BESIDE THE FOREHEAD with clear noncontact space. Wrists neutral, elbows controlled. Elevated side three-quarter camera clearly separates both dumbbells and head; no seated overhead variant.\n\nENGLISH SOURCE (this ID only; do not substitute a familiar variant):\n{\"description\": \"Triceps Extension (Dumbbell) lies on a flat bench and lowers one dumbbell in each hand beside the forehead.\", \"instructions\": [\"Lie on a flat bench with feet planted and dumbbells above the chest.\", \"Grip a neutral grip on one dumbbell in each hand and keep the upper arms fixed beside or above the torso.\", \"Bend the elbows to lower the resistance to the forehead or behind the head.\", \"Pause at the endpoint, then extend the elbows to return to straight arms.\"], \"form_cues\": [\"Keep upper arms still.\", \"Keep wrists neutral.\", \"Move only at the elbows.\"], \"common_mistakes\": [\"Flaring the elbows.\", \"Moving the shoulders.\", \"Dropping the resistance.\"], \"safety_note\": \"Use a load you can lower slowly and keep clear space around the head.\", \"provenance\": \"adapted\"}\nMaintain source contact points and safe control. Render only this characteristic phase, not the entire instruction sequence. Reference anatomy is opaque; localize the specified muscle pigment without copying reference highlights.",
-      "reference_path": "assets/exercises/biceps-curl-dumbbell.png",
-      "backup_status": "github_verified",
-      "generated_at": "2026-10-01T14:27:04.287645+03:00",
+      "prompt": "Edit the supplied PNG as a precise localized repair for exercise ID triceps-extension-dumbbell, style v1. Keep the existing square composition, same bald athletic silver-gray anatomical adult male in black shorts, same proportions, materials, muscle detail, bench, body position, limb positions, facial appearance, lighting and camera. The person is lying supine on a flat bench performing the lowered phase of two-dumbbell lying triceps extensions: back, head and pelvis supported, feet planted, upper arms steady, elbows bent, wrists neutral, a separate dumbbell in each closed neutral grip with weights clear of the head. The user accepts this pose and all other elements.\n\nREPAIR ONLY THE DUMBBELL ON THE RIGHT SIDE OF THE IMAGE: this is the upper/farther dumbbell above the head, around the upper-center portion of the image, farther right than the other dumbbell. Its hand-to-handle and weight assembly are malformed. Reconstruct that single dumbbell as one mechanically coherent ordinary dumbbell: two matching round black weight stacks, each centered on the same straight cylindrical metal shaft, one clean cylindrical grip section between them, and small centered end caps. The existing hand must wrap naturally around the middle grip, with the shaft distinct from fingers and forearm. Both stacks must be complete circular solids, aligned on the same axis, with clear separation from skin. Remove the deformed extra bulge, fused material, duplicate plate/shaft and broken connection around this dumbbell. Maintain the current hand position and plausible neutral wrist; preserve the other dumbbell completely. There must remain exactly two dumbbells, one per hand. Do not add equipment or change the exercise.\n\nPreserve style v1: opaque silver-gray sculpted anatomy, local triceps accent pigment base sRGB #F26445 (242,100,69) under normal 3D shading; chest and other muscles stay neutral, no glow or overall orange tint. Preserve the fully visible human and complete simple flat bench. Output a square PNG, target 1024x1024, with a REAL transparent alpha background including empty spaces between body, arms, dumbbells and bench. The black seen outside the subject in the reference viewer is transparency display, not a background to paint. No black, white or checkerboard backdrop, no floor plane, text, labels, frame, interface, collage or additional person. Preserve the original scene as closely as possible except for the requested right-side dumbbell repair.",
+      "reference_path": "/workspace/lightweight-exercises-photo/assets/exercises/pending/night-2026-10-01/batch-004/triceps-extension-dumbbell/attempt-2.png",
+      "backup_status": "local_saved",
+      "generated_at": "2026-10-01T15:06:51.096210+03:00",
       "backup_history": [
         {
           "backup_id": "night-2026-10-01",
@@ -32276,6 +33211,17 @@
           "png_sha256": "ce12411b083c3f65647b547a2dd5440beeb532657ec98fa74e3f297cbee7eb06",
           "verified_at": "2026-10-01T14:33:46.182509+03:00",
           "verified_commit": "79c1774406db73069dff0a5270bc9b8cba815209"
+        }
+      ],
+      "user_feedback": "User requested a localized correction of the malformed dumbbell on the right-hand side of the image (the upper/farther dumbbell). All other elements are accepted.",
+      "user_review_history": [
+        {
+          "recorded_at": "2026-10-01T15:03:09.768874+03:00",
+          "by": "user",
+          "decision": "changes_requested",
+          "reviewed_path": "/workspace/lightweight-exercises-photo/assets/exercises/pending/night-2026-10-01/batch-004/triceps-extension-dumbbell/attempt-2.png",
+          "reviewed_sha256": "ce12411b083c3f65647b547a2dd5440beeb532657ec98fa74e3f297cbee7eb06",
+          "reason": "User requested a localized correction of the malformed dumbbell on the right-hand side of the image (the upper/farther dumbbell). All other elements are accepted."
         }
       ]
     },
@@ -32973,7 +33919,7 @@
         "mapping": null
       },
       "source_reference_image": null,
-      "status": "generated_needs_review",
+      "status": "approved",
       "included_in_generation": true,
       "archived_inclusion_authorized": false,
       "blocked_by": [
@@ -33012,7 +33958,7 @@
           "status": "saved",
           "result_path": "/workspace/lightweight-exercises-photo/assets/exercises/pending/night-2026-10-01/batch-003/v-up/attempt-1.png",
           "agent_visual_review": "not_performed",
-          "user_review": "pending",
+          "user_review": "approved",
           "finished_at": "2026-10-01T03:23:08.395048+03:00",
           "sha256": "09257f919b0c7a23e760fa53cbb46d92d42dafe46d9580cc54b68fc8c19afda3",
           "technical_check": "passed",
@@ -33037,7 +33983,10 @@
             "fully_transparent_pixels": 1124492,
             "scope": "PNG decode, square dimensions, true alpha transparency, SHA256; no visual QA"
           },
-          "error": null
+          "error": null,
+          "accepted_path": "/workspace/lightweight-exercises-photo/assets/exercises/pending/night-2026-10-01/batch-003/v-up/attempt-1.png",
+          "accepted_sha256": "09257f919b0c7a23e760fa53cbb46d92d42dafe46d9580cc54b68fc8c19afda3",
+          "approval_recorded_at": "2026-10-01T15:03:09.768874+03:00"
         }
       ],
       "result_sha256": "09257f919b0c7a23e760fa53cbb46d92d42dafe46d9580cc54b68fc8c19afda3",
@@ -33065,7 +34014,7 @@
       },
       "agent_visual_review": "not_performed",
       "agent_visual_review_notes": [],
-      "user_review": "pending",
+      "user_review": "approved",
       "generation_run_id": "night-2026-10-01",
       "generated_overnight": true,
       "batch_id": "night-2026-10-01-003",
@@ -33103,6 +34052,21 @@
           "png_sha256": "09257f919b0c7a23e760fa53cbb46d92d42dafe46d9580cc54b68fc8c19afda3",
           "verified_at": "2026-10-01T03:45:41.209794+03:00",
           "verified_commit": "a0f650d0c2add34b8bab916c54169d99a00f2d00"
+        }
+      ],
+      "accepted_path": "/workspace/lightweight-exercises-photo/assets/exercises/pending/night-2026-10-01/batch-003/v-up/attempt-1.png",
+      "accepted_sha256": "09257f919b0c7a23e760fa53cbb46d92d42dafe46d9580cc54b68fc8c19afda3",
+      "accepted_at": "2026-10-01T15:03:09.768874+03:00",
+      "approval_timestamp_source": "decision_recorded_at",
+      "user_review_history": [
+        {
+          "recorded_at": "2026-10-01T15:03:09.768874+03:00",
+          "by": "user",
+          "decision": "approved",
+          "accepted_attempt": 1,
+          "accepted_path": "/workspace/lightweight-exercises-photo/assets/exercises/pending/night-2026-10-01/batch-003/v-up/attempt-1.png",
+          "accepted_sha256": "09257f919b0c7a23e760fa53cbb46d92d42dafe46d9580cc54b68fc8c19afda3",
+          "reason": "User accepts all existing night-generation images except the attached triceps-extension-dumbbell image."
         }
       ]
     },

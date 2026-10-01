@@ -302,3 +302,13 @@ PNG збережені для: `pinwheel-curl-dumbbell`, `seated-incline-hammer-
 
 
 Batch-005 GitHub checkpoint 2026-10-01T11:52:54+00:00: commit `3f967fd137e445aca32fd3f302510386ab44cc12` contains all 9 new attempt-2 PNGs and their progress/manifest metadata. After fetching `origin/work`, every remote PNG opened successfully and matched its progress/manifest SHA256; all were square 1254×1254 with actual transparent pixels. The 9 are marked `backup_status=github_verified`; they remain `user_review=pending`. Overall night set: 48/50 PNGs, 47 pass technical checks. Missing PNGs: `fire-hydrants` (skipped pending user reference) and `reverse-wrist-curl-dumbbell` (attempt-2 call interrupted; no result; not retried). `pushup-close-grip` remains a technical issue (1536×1024) and was not modified. No visual QA, Supabase upload, or additional generation was performed.
+
+
+### Рішення користувача й точкова корекція (2026-10-01T15:03:09.768874+03:00)
+
+Користувач прийняв усі наявні нічні PNG, крім прикріпленого `triceps-extension-dumbbell` attempt-2 (SHA256 `ce12411b083c3f65647b547a2dd5440beeb532657ec98fa74e3f297cbee7eb06`). Для інших 47 PNG записано `user_review=approved`, загальний status `approved` та незмінні accepted path/SHA256 у progress; nightly manifest також оновлено. Рішення про `pushup-close-grip` записане як прийняття файла, але його фактична технічна невідповідність 1536×1024 збережена; ресайзу чи генерації не робити. Два ID без файлів не схвалені.
+
+Дозволена одна точкова правка гантелі праворуч для `triceps-extension-dumbbell`. Attempt-2 збережено; attempt-3 підготовлено за `/tmp/triceps-dumbbell-correction.json`, цільовий шлях `assets/exercises/pending/night-2026-10-01/batch-004/triceps-extension-dumbbell/attempt-3.png`. Нова версія потребує окремого перегляду користувачем. Випадкове повідомлення про групування конструкцій обладнання ігнорувати.
+
+
+Correction checkpoint 2026-10-01T15:06:51.096210+03:00: Correction attempt-3 saved at `assets/exercises/pending/night-2026-10-01/batch-004/triceps-extension-dumbbell/attempt-3.png`, SHA256 `81f3bd29e2a18dfcc9027eee6f4ee4c7315eb311a08f23d60068d62b1159fa01`, dimensions 1254×1254, transparent pixels 1103581, technical_check=passed. New result user_review=pending; original attempt-2 remains unchanged. No post-generation visual QA or retry.
