@@ -1,12 +1,12 @@
 # Передача задачі — генерація night-2026-10-01
 
-## Поточний етап: 21/50 спроб; 19 PNG створено, 2 помилок
+## Поточний етап: 31/50 спроб; 29 PNG створено, 2 помилок
 
 Користувач прямо дозволив усі 50 підготовлених вправ. Генерувати лише вбудованим image_gen.imagegen; prompts та порядок брати з п’яти пакетів. Clarifications не включати. Один виклик на ID, без повторів. user_review=pending, agent_visual_review=not_performed.
 
 Файли: assets/exercises/pending/night-2026-10-01/batch-001 … batch-005/<exercise_id>/attempt-1.png. Manifest: data/batches/night-2026-10-01-manifest.json. Перевірка: PNG відкривається, квадратний, має alpha=0 пікселі; зафіксовано фактичні розміри й SHA256. Без візуального QA та ресайзу.
 
-Контрольна точка night-2026-10-01-002: remote commit b69854cf72d95bfa85bb8f593186c150fe3621b2: SHA256 confirmed for 10 PNGs. Загалом: 19 PNG створено, 2 помилок, 19 PNG підтверджено на GitHub. Далі: night-2026-10-01-003.
+Контрольна точка night-2026-10-01-003: local checkpoint ready; remote SHA256 verification pending. Загалом: 29 PNG створено, 2 помилок, 19 PNG підтверджено на GitHub. Далі: night-2026-10-01-004.
 
 Еталон: assets/exercises/biceps-curl-dumbbell.png; SHA256 52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f. Лише зовнішність, пропорції, матеріали й деталізація. Поза й обладнання — за prompt поточного ID. Не використовувати старі 48 PNG. Без Release, ZIP, Supabase чи секретів.
 
