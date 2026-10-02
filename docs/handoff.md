@@ -1,3 +1,15 @@
+## Review decision: packages 011–015; three corrections requested
+
+2026-10-02T13:07:22+00:00: The user approved 40 of the 43 GitHub-verified attempt-1 PNGs from `agent-03-others-011` through `agent-03-others-015`. Their progress and batch-manifest records now have `status=user_review=approved`, with exact accepted paths and SHA256 values. The three exceptions remain unaccepted and are marked `status=user_review=needs_fix`; their attempt-1 files are preserved:
+
+- `around-the-world-dumbbell`: generate matching complete dumbbells in both hands, with intact symmetric plates and handles.
+- `bench-press-close-grip-barbell`: orient both hands consistently in the same normal overhand grip; keep wrists aligned.
+- `dumbbell-squeeze-press`: fix the hand/arm artifact and render two intact matching dumbbells held together over the chest.
+
+Next: create one `attempt-2` for each exception, using the accepted human reference `assets/exercises/biceps-curl-dumbbell.png` (SHA256 `52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f`) in every built-in imagegen call. Keep each new result `user_review=pending`, `agent_visual_review=not_performed`; run only the prescribed technical checks, then push and remotely verify PNGs and metadata. Do not alter the 40 accepted outputs, batch 009, blocked exercises, or Supabase.
+
+---
+
 ## Agent-03 round 3 latest status after continuation
 
 2026-10-01T18:05:53+00:00: спробу продовження з `hanging-knee-raise` зупинив HTTP 429. Для цього ID зафіксовано дві заблоковані спроби, результату немає. Збережених PNG лишається 21/30: пакет 007 — 10/10, 008 — 10/10, 009 — `dead-hang` 1/10. Наступна дія після відновлення квоти: звірити progress і почати з `hanging-knee-raise` (спроба 3). Не перегенеровувати `dead-hang` або готові 007–008; інші 8 ID 009 не запускались.
