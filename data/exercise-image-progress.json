@@ -146,11 +146,11 @@
         }
       }
     ],
-    "active_batch_id": "agent-03-others-014",
+    "active_batch_id": "agent-03-others-015",
     "active_batch_item_id": null,
-    "active_batch_scope": "Package 014 is generated, pushed, and remote-verified; continue with package 015.",
+    "active_batch_scope": "Package 015 generation finished locally; push and verify the final checkpoint.",
     "current_batch": "night-2026-10-01-004",
-    "next_action": "Start package 015 in exact queue order.",
+    "next_action": "Commit/push package 015 and verify remote hashes; then wait for user review.",
     "night_generation_remote_audit": {
       "audited_at_utc": "2026-10-01T08:16:06Z",
       "remote_branch": "work",
@@ -765,67 +765,11 @@
       "accepted_commit": "e814d6deb9aba779536423dc26cafea0e99a8c75"
     },
     "agent03_last_package_checkpoint": {
-      "batch_id": "agent-03-others-014",
-      "completed_at": "2026-10-02T12:46:37.443968+00:00",
-      "generated_count": 10,
+      "batch_id": "agent-03-others-015",
+      "completed_at": "2026-10-02T12:55:36.770061+00:00",
+      "generated_count": 6,
       "failed_ids": [],
-      "next_batch_id": "agent-03-others-015",
-      "verified_at": "2026-10-02T12:47:14.425643+00:00",
-      "content_commit": "bffc6f41e512e28b4e383e8dfa711aee07c710fc",
-      "verified_commit": "bffc6f41e512e28b4e383e8dfa711aee07c710fc",
-      "backup_status": "github_verified",
-      "files": [
-        {
-          "exercise_id": "around-the-world-dumbbell",
-          "path": "assets/exercises/pending/agent-03-others-014/around-the-world-dumbbell/attempt-1.png",
-          "sha256": "8b84238888980c463822e22e47ea5e57b6c92b071db4a3d25a4d4c76bb2c2543"
-        },
-        {
-          "exercise_id": "bench-press-close-grip-barbell",
-          "path": "assets/exercises/pending/agent-03-others-014/bench-press-close-grip-barbell/attempt-1.png",
-          "sha256": "a2c113ea96e9ee0083840105570f03594220ac7ffe8937b70524ab1e588a815e"
-        },
-        {
-          "exercise_id": "bench-press-wide-grip-barbell",
-          "path": "assets/exercises/pending/agent-03-others-014/bench-press-wide-grip-barbell/attempt-1.png",
-          "sha256": "a003e970ec1617c4109c37c1e65781f86cf6ecfa16a95d66982c002351585eb2"
-        },
-        {
-          "exercise_id": "box-jump",
-          "path": "assets/exercises/pending/agent-03-others-014/box-jump/attempt-1.png",
-          "sha256": "c0a5103f2e4a32e791c0d6f152407d54647e6ac9027d3cd2b1103ac4857c1023"
-        },
-        {
-          "exercise_id": "chest-fly-band-resistance-band",
-          "path": "assets/exercises/pending/agent-03-others-014/chest-fly-band-resistance-band/attempt-1.png",
-          "sha256": "619219119bcc43a26483bf687881b6cb244fe4e86345bbfe910e130ab3750831"
-        },
-        {
-          "exercise_id": "chest-fly-suspension",
-          "path": "assets/exercises/pending/agent-03-others-014/chest-fly-suspension/attempt-1.png",
-          "sha256": "80d2bb41dc4933f2dffd8fd39ff1addee1072c4d632575b0fe7e82a399a548c1"
-        },
-        {
-          "exercise_id": "crunch-weighted",
-          "path": "assets/exercises/pending/agent-03-others-014/crunch-weighted/attempt-1.png",
-          "sha256": "8cca37196e7d0a5fb4b372ae9e56e89397b75ca3a372c938be747560c557e17b"
-        },
-        {
-          "exercise_id": "decline-chest-fly-dumbbell",
-          "path": "assets/exercises/pending/agent-03-others-014/decline-chest-fly-dumbbell/attempt-1.png",
-          "sha256": "51844a41b54b2d1b76d5578169772a379d8af683eaea4fb943fb198383f47971"
-        },
-        {
-          "exercise_id": "decline-crunch-weighted",
-          "path": "assets/exercises/pending/agent-03-others-014/decline-crunch-weighted/attempt-1.png",
-          "sha256": "785e8413779cf37ec2d117e8750fbc90eb9e4f70056f23a0fa04261370cd7fff"
-        },
-        {
-          "exercise_id": "dumbbell-squeeze-press",
-          "path": "assets/exercises/pending/agent-03-others-014/dumbbell-squeeze-press/attempt-1.png",
-          "sha256": "6a8cfd114cfb43e34dab8eeb5857103edace8a47c2097c4dcb5f3d64fcb6bbca"
-        }
-      ]
+      "next_batch_id": null
     }
   },
   "historical_mapping_metadata": {
@@ -11854,14 +11798,14 @@
         "exists_at_preparation": true,
         "sha256": "3f0298ee027a93bb9f95c060f10c83cd8ae9cb455f347a28119fc2e174c8a588"
       },
-      "status": "not_started",
+      "status": "generated",
       "included_in_generation": false,
       "archived_inclusion_authorized": false,
       "blocked_by": [
         "pilot_not_approved"
       ],
-      "attempts": 0,
-      "style_version": null,
+      "attempts": 1,
+      "style_version": "v1",
       "visual_review": {
         "status": "not_reviewed",
         "reviewer": null,
@@ -11874,16 +11818,71 @@
         },
         "notes": null
       },
-      "result_path": null,
+      "result_path": "assets/exercises/pending/agent-03-others-015/dumbbell-step-up/attempt-1.png",
       "supabase_path": null,
       "supabase_upload_status": "not_configured",
       "last_error": null,
-      "attempt_history": [],
-      "result_sha256": null,
-      "technical_check": null,
-      "technical_check_details": null,
+      "attempt_history": [
+        {
+          "attempt": 1,
+          "id": "dumbbell-step-up",
+          "batch_id": "agent-03-others-015",
+          "run_id": "lightweight-agent-03-others-010-015-2026-10-02",
+          "style_version": "v1",
+          "tool": "image_gen.imagegen",
+          "tool_call_index": 60,
+          "status": "completed",
+          "started_at": "2026-10-02T15:47:51.616255+03:00",
+          "prompt": "Create exactly ONE square transparent PNG of the exact exercise below, using the referenced human for APPEARANCE ONLY. Render only the selected phase and camera. Identity/path/hash fields are metadata, never visible text.\n{\n  \"exact_catalogue_source\": {\n    \"equipment\": \"dumbbell\",\n    \"primary_muscle\": \"quadriceps\",\n    \"secondary_muscles\": [\n      \"glutes\",\n      \"hamstrings\"\n    ],\n    \"source_english\": {\n      \"common_mistakes\": [\n        \"Jumping off the back leg.\",\n        \"Letting the knee cave inward.\",\n        \"Dropping from the step.\"\n      ],\n      \"description\": \"Dumbbell Step Up drives through one foot on a stable step to stand tall, then controls the return to the floor.\",\n      \"form_cues\": [\n        \"Keep the whole foot supported.\",\n        \"Track the knee over the toes.\",\n        \"Control the descent.\"\n      ],\n      \"instructions\": [\n        \"Place the dumbbells beside a stable step and put one full foot on top.\",\n        \"Drive through that foot to stand tall without pushing off the trailing leg.\",\n        \"Control the step down and return the foot to the floor.\",\n        \"Complete the planned repetitions, then switch sides.\"\n      ],\n      \"provenance\": \"adapted\",\n      \"safety_note\": \"Use a stable step height that permits a controlled single-leg descent.\"\n    }\n  },\n  \"human_reference\": {\n    \"absolute_path\": \"/workspace/lightweight-exercises-photo/assets/exercises/biceps-curl-dumbbell.png\",\n    \"branch\": \"work\",\n    \"pixels_reviewed_during_preparation\": false,\n    \"repository_path\": \"assets/exercises/biceps-curl-dumbbell.png\",\n    \"role\": \"Human appearance/proportions/materials/anatomical style ONLY. Exercise pose, grip, equipment and muscles come from the exact-ID catalogue, never the reference.\",\n    \"sha256\": \"52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f\",\n    \"source_commit\": \"a6f296cbc6737991dd367e929b3e2df25874d4d8\"\n  },\n  \"identity_do_not_render_as_text\": {\n    \"exercise_id\": \"dumbbell-step-up\",\n    \"name\": \"Dumbbell Step Up\",\n    \"source_catalog_record_sha256\": \"af3d258b8e3894a004dcaef6a8fba2e0522140f969691707b6f3459ed6181998\",\n    \"source_catalog_sha256\": \"a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989\"\n  },\n  \"scene\": {\n    \"camera\": \"Front-side three-quarter view showing right sole, both hanging weights and full step.\",\n    \"grip\": \"One dumbbell in EACH hand with palms toward body as cited same-ID es source states.\",\n    \"pose\": \"Whole RIGHT foot on stable step, body rising by right-leg drive without trailing-leg push; shoulders quiet.\",\n    \"single_phase\": \"Right-foot box ascent carrying both dumbbells\",\n    \"source_instruction_quotes\": [\n      {\n        \"index\": 0,\n        \"text\": \"Place the dumbbells beside a stable step and put one full foot on top.\"\n      },\n      {\n        \"index\": 1,\n        \"text\": \"Drive through that foot to stand tall without pushing off the trailing leg.\"\n      },\n      {\n        \"index\": 2,\n        \"text\": \"Control the step down and return the foot to the floor.\"\n      },\n      {\n        \"index\": 3,\n        \"text\": \"Complete the planned repetitions, then switch sides.\"\n      }\n    ],\n    \"supports_and_equipment\": \"Full right sole on step, left foot follows from floor; no invented height or floor-resting weights during this phase.\"\n  },\n  \"source_resolution\": \"Es/ru прямо задають по гантелі в кожній руці долонями до тулуба та праву стопу на сходинці. English placement beside step — неповна підготовка, не заборона тримати вагу.\",\n  \"source_use_rule\": \"Preserve original English. The cited additional fields of THIS SAME exercise ID fill missing detail only; do not substitute another exercise or silently rewrite the source.\",\n  \"style\": {\n    \"background\": \"Genuinely transparent PNG background, no white/checkerboard layer, no environment scene.\",\n    \"framing\": \"Full figure and all required equipment/supports visible within a square. Scale and use a three-quarter view to expose the specified contacts without changing anatomy, equipment, grip or technique.\",\n    \"human_model\": \"One athletic bald male anatomical mannequin, opaque silver-gray muscular surfaces, consistent proportions and detailed 3D materials, plain black shorts, barefoot.\",\n    \"material_rules\": \"Highlights never make tissue transparent; no glow, whole-body orange tint, hair, text, labels, arrows, UI, borders, collage or extra person.\",\n    \"no_invention\": \"Technique, equipment and muscles come only from the attached exact catalogue record. No extra attachments, numerical weights, brands or exact angles absent from the source.\",\n    \"output\": {\n      \"format\": \"PNG\",\n      \"height\": 1024,\n      \"one_person\": true,\n      \"one_phase\": true,\n      \"width\": 1024\n    },\n    \"primary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"rule\": \"Highlight only the exact primary muscle group provided for this exercise.\"\n    },\n    \"secondary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"intensity_fraction\": [\n        0.4,\n        0.5\n      ],\n      \"rule\": \"Only the exact secondary muscles, lighter same-hue highlight; if the list is empty add no secondary target.\"\n    },\n    \"version\": \"v1\"\n  },\n  \"style_document_sha256\": \"8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578\",\n  \"supplementary_same_ID_sources\": [\n    {\n      \"catalog_path\": \"data/exercises/catalog.json\",\n      \"catalog_record_sha256\": \"af3d258b8e3894a004dcaef6a8fba2e0522140f969691707b6f3459ed6181998\",\n      \"catalog_sha256\": \"a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989\",\n      \"exercise_id\": \"dumbbell-step-up\",\n      \"field\": \"content.es.instructions[0]\",\n      \"source_commit\": \"a6f296cbc6737991dd367e929b3e2df25874d4d8\",\n      \"value\": \"Ponte de pie frente a un banco o escalón con una mancuerna en cada mano, con las palmas hacia tu cuerpo.\"\n    },\n    {\n      \"catalog_path\": \"data/exercises/catalog.json\",\n      \"catalog_record_sha256\": \"af3d258b8e3894a004dcaef6a8fba2e0522140f969691707b6f3459ed6181998\",\n      \"catalog_sha256\": \"a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989\",\n      \"exercise_id\": \"dumbbell-step-up\",\n      \"field\": \"content.es.instructions[1]\",\n      \"source_commit\": \"a6f296cbc6737991dd367e929b3e2df25874d4d8\",\n      \"value\": \"Coloca el pie derecho sobre el banco o escalón, asegurándote de que todo el pie esté en contacto con la superficie.\"\n    },\n    {\n      \"catalog_path\": \"data/exercises/catalog.json\",\n      \"catalog_record_sha256\": \"af3d258b8e3894a004dcaef6a8fba2e0522140f969691707b6f3459ed6181998\",\n      \"catalog_sha256\": \"a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989\",\n      \"exercise_id\": \"dumbbell-step-up\",\n      \"field\": \"content.ru.instructions[0]\",\n      \"source_commit\": \"a6f296cbc6737991dd367e929b3e2df25874d4d8\",\n      \"value\": \"Встаньте перед скамьей или сделайте шаг вперед, взяв в каждую руку по гантели ладонями к телу.\"\n    }\n  ]\n}",
+          "prompt_sha256": "df748f5d58c0977e05b0b47c6c9d98a6419e9b78cb39a8fdb6b4f178c8ad913e",
+          "reference_path": "assets/exercises/biceps-curl-dumbbell.png",
+          "reference_sha256": "52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f",
+          "result_path": "assets/exercises/pending/agent-03-others-015/dumbbell-step-up/attempt-1.png",
+          "completed_at": "2026-10-02T15:48:49.873619+03:00",
+          "result_sha256": "627ae749df42bff2cf77efa7e9fb5eb12220c173355deb63d75f1bba46a34fa2",
+          "dimensions": {
+            "width": 1254,
+            "height": 1254
+          },
+          "technical_check": "passed",
+          "technical_check_details": {
+            "format": "PNG",
+            "dimensions": {
+              "width": 1254,
+              "height": 1254
+            },
+            "mode": "RGBA",
+            "has_alpha": true,
+            "transparent_pixel_count": 1225037,
+            "sha256": "627ae749df42bff2cf77efa7e9fb5eb12220c173355deb63d75f1bba46a34fa2",
+            "exercise_id": "dumbbell-step-up",
+            "repository_path": "assets/exercises/pending/agent-03-others-015/dumbbell-step-up/attempt-1.png",
+            "errors": []
+          },
+          "tool_response_metadata": {
+            "tool_call_id": "image_gen.imagegen#60",
+            "output_hint": "/workspace/generated_images/exec-c784288a-0ff7-44b4-b255-8281e322bf7e.png"
+          }
+        }
+      ],
+      "result_sha256": "627ae749df42bff2cf77efa7e9fb5eb12220c173355deb63d75f1bba46a34fa2",
+      "technical_check": "passed",
+      "technical_check_details": {
+        "format": "PNG",
+        "dimensions": {
+          "width": 1254,
+          "height": 1254
+        },
+        "mode": "RGBA",
+        "has_alpha": true,
+        "transparent_pixel_count": 1225037,
+        "sha256": "627ae749df42bff2cf77efa7e9fb5eb12220c173355deb63d75f1bba46a34fa2",
+        "exercise_id": "dumbbell-step-up",
+        "repository_path": "assets/exercises/pending/agent-03-others-015/dumbbell-step-up/attempt-1.png",
+        "errors": []
+      },
       "agent_visual_review": "not_performed",
-      "agent_visual_review_notes": [],
+      "agent_visual_review_notes": null,
       "user_review": "pending"
     },
     "elbow-to-knee": {
@@ -12139,14 +12138,14 @@
         "exists_at_preparation": true,
         "sha256": "e7415a354c0c60135ad5f13bdd118e45b4fe309cdaddd8682b60cccff2734c0d"
       },
-      "status": "not_started",
+      "status": "generated",
       "included_in_generation": false,
       "archived_inclusion_authorized": false,
       "blocked_by": [
         "pilot_not_approved"
       ],
-      "attempts": 0,
-      "style_version": null,
+      "attempts": 1,
+      "style_version": "v1",
       "visual_review": {
         "status": "not_reviewed",
         "reviewer": null,
@@ -12159,16 +12158,71 @@
         },
         "notes": null
       },
-      "result_path": null,
+      "result_path": "assets/exercises/pending/agent-03-others-015/ez-bar-biceps-curl-barbell/attempt-1.png",
       "supabase_path": null,
       "supabase_upload_status": "not_configured",
       "last_error": null,
-      "attempt_history": [],
-      "result_sha256": null,
-      "technical_check": null,
-      "technical_check_details": null,
+      "attempt_history": [
+        {
+          "attempt": 1,
+          "id": "ez-bar-biceps-curl-barbell",
+          "batch_id": "agent-03-others-015",
+          "run_id": "lightweight-agent-03-others-010-015-2026-10-02",
+          "style_version": "v1",
+          "tool": "image_gen.imagegen",
+          "tool_call_index": 61,
+          "status": "completed",
+          "started_at": "2026-10-02T15:49:07.339482+03:00",
+          "prompt": "Create exactly ONE square transparent PNG of the exact exercise below, using the referenced human for APPEARANCE ONLY. Render only the selected phase and camera. Identity/path/hash fields are metadata, never visible text.\n{\n  \"exact_catalogue_source\": {\n    \"equipment\": \"barbell\",\n    \"primary_muscle\": \"biceps\",\n    \"secondary_muscles\": [],\n    \"source_english\": {\n      \"common_mistakes\": [\n        \"Swinging the torso.\",\n        \"Letting elbows travel forward.\",\n        \"Dropping the resistance.\"\n      ],\n      \"description\": \"EZ Bar Biceps Curl curls the barbell toward the shoulders with the underhand grip, keeping the upper arms controlled.\",\n      \"form_cues\": [\n        \"Keep elbows close.\",\n        \"Keep wrists neutral.\",\n        \"Use a smooth tempo.\"\n      ],\n      \"instructions\": [\n        \"Stand or sit tall with the barbell and use a underhand grip.\",\n        \"Keep the upper arms still and curl the resistance toward the shoulders.\",\n        \"Pause at the top without lifting the elbows.\",\n        \"Lower slowly until the elbows are nearly straight.\"\n      ],\n      \"provenance\": \"adapted\",\n      \"safety_note\": \"Use a load or band tension that allows a controlled elbow path and return.\"\n    }\n  },\n  \"human_reference\": {\n    \"absolute_path\": \"/workspace/lightweight-exercises-photo/assets/exercises/biceps-curl-dumbbell.png\",\n    \"branch\": \"work\",\n    \"pixels_reviewed_during_preparation\": false,\n    \"repository_path\": \"assets/exercises/biceps-curl-dumbbell.png\",\n    \"role\": \"Human appearance/proportions/materials/anatomical style ONLY. Exercise pose, grip, equipment and muscles come from the exact-ID catalogue, never the reference.\",\n    \"sha256\": \"52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f\",\n    \"source_commit\": \"a6f296cbc6737991dd367e929b3e2df25874d4d8\"\n  },\n  \"identity_do_not_render_as_text\": {\n    \"exercise_id\": \"ez-bar-biceps-curl-barbell\",\n    \"name\": \"EZ Bar Biceps Curl\",\n    \"source_catalog_record_sha256\": \"9cb4c1eaf5829a1812882f4a8ba7d6ab5f397d908721471619fa0c4451c92beb\",\n    \"source_catalog_sha256\": \"a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989\"\n  },\n  \"scene\": {\n    \"camera\": \"Front three-quarter view exposing bent EZ bar, underhand grip and fixed upper arms.\",\n    \"grip\": \"Both hands use source UNDERHAND grip on standard compatible bent EZ bar; no invented exact bends or numerical width.\",\n    \"pose\": \"Choose source standing option, upper arms still beside torso and elbows close; curl EZ bar toward shoulders without swing.\",\n    \"single_phase\": \"Controlled supinated EZ curl top\",\n    \"source_instruction_quotes\": [\n      {\n        \"index\": 0,\n        \"text\": \"Stand or sit tall with the barbell and use a underhand grip.\"\n      },\n      {\n        \"index\": 1,\n        \"text\": \"Keep the upper arms still and curl the resistance toward the shoulders.\"\n      },\n      {\n        \"index\": 2,\n        \"text\": \"Pause at the top without lifting the elbows.\"\n      },\n      {\n        \"index\": 3,\n        \"text\": \"Lower slowly until the elbows are nearly straight.\"\n      }\n    ],\n    \"supports_and_equipment\": \"Both feet grounded, no preacher pad or straight-bar substitution.\"\n  },\n  \"source_resolution\": \"Uk прямо задає EZ-штангу зворотним хватом; English barbell є ширшим типом, не вимогою прямого грифа.\",\n  \"source_use_rule\": \"Preserve original English. The cited additional fields of THIS SAME exercise ID fill missing detail only; do not substitute another exercise or silently rewrite the source.\",\n  \"style\": {\n    \"background\": \"Genuinely transparent PNG background, no white/checkerboard layer, no environment scene.\",\n    \"framing\": \"Full figure and all required equipment/supports visible within a square. Scale and use a three-quarter view to expose the specified contacts without changing anatomy, equipment, grip or technique.\",\n    \"human_model\": \"One athletic bald male anatomical mannequin, opaque silver-gray muscular surfaces, consistent proportions and detailed 3D materials, plain black shorts, barefoot.\",\n    \"material_rules\": \"Highlights never make tissue transparent; no glow, whole-body orange tint, hair, text, labels, arrows, UI, borders, collage or extra person.\",\n    \"no_invention\": \"Technique, equipment and muscles come only from the attached exact catalogue record. No extra attachments, numerical weights, brands or exact angles absent from the source.\",\n    \"output\": {\n      \"format\": \"PNG\",\n      \"height\": 1024,\n      \"one_person\": true,\n      \"one_phase\": true,\n      \"width\": 1024\n    },\n    \"primary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"rule\": \"Highlight only the exact primary muscle group provided for this exercise.\"\n    },\n    \"secondary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"intensity_fraction\": [\n        0.4,\n        0.5\n      ],\n      \"rule\": \"Only the exact secondary muscles, lighter same-hue highlight; if the list is empty add no secondary target.\"\n    },\n    \"version\": \"v1\"\n  },\n  \"style_document_sha256\": \"8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578\",\n  \"supplementary_same_ID_sources\": [\n    {\n      \"catalog_path\": \"data/exercises/catalog.json\",\n      \"catalog_record_sha256\": \"9cb4c1eaf5829a1812882f4a8ba7d6ab5f397d908721471619fa0c4451c92beb\",\n      \"catalog_sha256\": \"a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989\",\n      \"exercise_id\": \"ez-bar-biceps-curl-barbell\",\n      \"field\": \"content.uk.instructions[0]\",\n      \"source_commit\": \"a6f296cbc6737991dd367e929b3e2df25874d4d8\",\n      \"value\": \"Станьте або сядьте рівно, тримаючи EZ-штангу зворотним хватом.\"\n    },\n    {\n      \"catalog_path\": \"data/exercises/catalog.json\",\n      \"catalog_record_sha256\": \"9cb4c1eaf5829a1812882f4a8ba7d6ab5f397d908721471619fa0c4451c92beb\",\n      \"catalog_sha256\": \"a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989\",\n      \"exercise_id\": \"ez-bar-biceps-curl-barbell\",\n      \"field\": \"content.en.instructions[0]\",\n      \"source_commit\": \"a6f296cbc6737991dd367e929b3e2df25874d4d8\",\n      \"value\": \"Stand or sit tall with the barbell and use a underhand grip.\"\n    },\n    {\n      \"catalog_path\": \"data/exercises/catalog.json\",\n      \"catalog_record_sha256\": \"9cb4c1eaf5829a1812882f4a8ba7d6ab5f397d908721471619fa0c4451c92beb\",\n      \"catalog_sha256\": \"a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989\",\n      \"exercise_id\": \"ez-bar-biceps-curl-barbell\",\n      \"field\": \"match.rationale\",\n      \"source_commit\": \"a6f296cbc6737991dd367e929b3e2df25874d4d8\",\n      \"value\": \"The EZ-bar curl matches EZ-bar equipment, standing supinated curl position, elbow-flexion path, range and biceps target.\"\n    }\n  ]\n}",
+          "prompt_sha256": "805c2495b764d8b6301b5be00cfb89a4af28fac0c12337cd0e95519409819f68",
+          "reference_path": "assets/exercises/biceps-curl-dumbbell.png",
+          "reference_sha256": "52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f",
+          "result_path": "assets/exercises/pending/agent-03-others-015/ez-bar-biceps-curl-barbell/attempt-1.png",
+          "completed_at": "2026-10-02T15:50:07.849222+03:00",
+          "result_sha256": "11d392ce6a480d4e7e4659e5cd2ab390e23015a9da2f92c0c9e423459c61c883",
+          "dimensions": {
+            "width": 1254,
+            "height": 1254
+          },
+          "technical_check": "passed",
+          "technical_check_details": {
+            "format": "PNG",
+            "dimensions": {
+              "width": 1254,
+              "height": 1254
+            },
+            "mode": "RGBA",
+            "has_alpha": true,
+            "transparent_pixel_count": 1225441,
+            "sha256": "11d392ce6a480d4e7e4659e5cd2ab390e23015a9da2f92c0c9e423459c61c883",
+            "exercise_id": "ez-bar-biceps-curl-barbell",
+            "repository_path": "assets/exercises/pending/agent-03-others-015/ez-bar-biceps-curl-barbell/attempt-1.png",
+            "errors": []
+          },
+          "tool_response_metadata": {
+            "tool_call_id": "image_gen.imagegen#61",
+            "output_hint": "/workspace/generated_images/exec-44d03e8e-e3d3-480b-8c13-4d3c08ad1bb1.png"
+          }
+        }
+      ],
+      "result_sha256": "11d392ce6a480d4e7e4659e5cd2ab390e23015a9da2f92c0c9e423459c61c883",
+      "technical_check": "passed",
+      "technical_check_details": {
+        "format": "PNG",
+        "dimensions": {
+          "width": 1254,
+          "height": 1254
+        },
+        "mode": "RGBA",
+        "has_alpha": true,
+        "transparent_pixel_count": 1225441,
+        "sha256": "11d392ce6a480d4e7e4659e5cd2ab390e23015a9da2f92c0c9e423459c61c883",
+        "exercise_id": "ez-bar-biceps-curl-barbell",
+        "repository_path": "assets/exercises/pending/agent-03-others-015/ez-bar-biceps-curl-barbell/attempt-1.png",
+        "errors": []
+      },
       "agent_visual_review": "not_performed",
-      "agent_visual_review_notes": [],
+      "agent_visual_review_notes": null,
       "user_review": "pending"
     },
     "face-pull-machine": {
@@ -13207,14 +13261,14 @@
         "mapping": null
       },
       "source_reference_image": null,
-      "status": "not_started",
+      "status": "generated",
       "included_in_generation": false,
       "archived_inclusion_authorized": false,
       "blocked_by": [
         "pilot_not_approved"
       ],
-      "attempts": 0,
-      "style_version": null,
+      "attempts": 1,
+      "style_version": "v1",
       "visual_review": {
         "status": "not_reviewed",
         "reviewer": null,
@@ -13227,16 +13281,71 @@
         },
         "notes": null
       },
-      "result_path": null,
+      "result_path": "assets/exercises/pending/agent-03-others-015/frog-jumps/attempt-1.png",
       "supabase_path": null,
       "supabase_upload_status": "not_configured",
       "last_error": null,
-      "attempt_history": [],
-      "result_sha256": null,
-      "technical_check": null,
-      "technical_check_details": null,
+      "attempt_history": [
+        {
+          "attempt": 1,
+          "id": "frog-jumps",
+          "batch_id": "agent-03-others-015",
+          "run_id": "lightweight-agent-03-others-010-015-2026-10-02",
+          "style_version": "v1",
+          "tool": "image_gen.imagegen",
+          "tool_call_index": 62,
+          "status": "completed",
+          "started_at": "2026-10-02T15:50:25.742799+03:00",
+          "prompt": "Create exactly ONE square transparent PNG of the exact exercise below, using the referenced human for APPEARANCE ONLY. Render only the selected phase and camera. Identity/path/hash fields are metadata, never visible text.\n{\n  \"exact_catalogue_source\": {\n    \"equipment\": \"none\",\n    \"primary_muscle\": \"quadriceps\",\n    \"secondary_muscles\": [\n      \"glutes\",\n      \"hamstrings\",\n      \"calves\"\n    ],\n    \"source_english\": {\n      \"common_mistakes\": [\n        \"Landing stiff-legged.\",\n        \"Letting knees cave inward.\",\n        \"Chasing height over control.\"\n      ],\n      \"description\": \"Frog Jumps produces a coordinated takeoff and a quiet, flexed-knee landing before the next repetition.\",\n      \"form_cues\": [\n        \"Use the arms naturally.\",\n        \"Land quietly.\",\n        \"Keep knees tracking over toes.\"\n      ],\n      \"instructions\": [\n        \"Set up with your bodyweight and land in a balanced athletic stance.\",\n        \"Dip through the hips and knees, then drive upward or forward as the exercise requires.\",\n        \"Land softly with knees and hips flexed and the feet stable.\",\n        \"Reset fully before the next repetition.\"\n      ],\n      \"provenance\": \"authored\",\n      \"safety_note\": \"Use a clear, non-slip landing surface and stop when landings become noisy.\"\n    }\n  },\n  \"human_reference\": {\n    \"absolute_path\": \"/workspace/lightweight-exercises-photo/assets/exercises/biceps-curl-dumbbell.png\",\n    \"branch\": \"work\",\n    \"pixels_reviewed_during_preparation\": false,\n    \"repository_path\": \"assets/exercises/biceps-curl-dumbbell.png\",\n    \"role\": \"Human appearance/proportions/materials/anatomical style ONLY. Exercise pose, grip, equipment and muscles come from the exact-ID catalogue, never the reference.\",\n    \"sha256\": \"52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f\",\n    \"source_commit\": \"a6f296cbc6737991dd367e929b3e2df25874d4d8\"\n  },\n  \"identity_do_not_render_as_text\": {\n    \"exercise_id\": \"frog-jumps\",\n    \"name\": \"Frog Jumps\",\n    \"source_catalog_record_sha256\": \"5f5e541c4089572b04d19c0a69eb2a5d5b2cae324cac30fa60055399c4111405\",\n    \"source_catalog_sha256\": \"a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989\"\n  },\n  \"scene\": {\n    \"camera\": \"Side-front three-quarter view showing deep crouch, controlled knees and complete grounded figure.\",\n    \"grip\": \"Hands free, use arms naturally for balance; no external load.\",\n    \"pose\": \"Begin in DEEP bodyweight squat as cited Russian source states, hips/knees flexed and feet stable, ready for the upward-and-forward option cited in Spanish.\",\n    \"single_phase\": \"Deep controlled crouch before forward/upward jump\",\n    \"source_instruction_quotes\": [\n      {\n        \"index\": 0,\n        \"text\": \"Set up with your bodyweight and land in a balanced athletic stance.\"\n      },\n      {\n        \"index\": 1,\n        \"text\": \"Dip through the hips and knees, then drive upward or forward as the exercise requires.\"\n      },\n      {\n        \"index\": 2,\n        \"text\": \"Land softly with knees and hips flexed and the feet stable.\"\n      },\n      {\n        \"index\": 3,\n        \"text\": \"Reset fully before the next repetition.\"\n      }\n    ],\n    \"supports_and_equipment\": \"Both feet on clear non-slip floor in this pre-takeoff phase; no box or weighted variant.\"\n  },\n  \"source_resolution\": \"Ru задає глибокий початковий присід, es — напрямок угору й уперед; обрано передній варіант, дозволений English upward or forward.\",\n  \"source_use_rule\": \"Preserve original English. The cited additional fields of THIS SAME exercise ID fill missing detail only; do not substitute another exercise or silently rewrite the source.\",\n  \"style\": {\n    \"background\": \"Genuinely transparent PNG background, no white/checkerboard layer, no environment scene.\",\n    \"framing\": \"Full figure and all required equipment/supports visible within a square. Scale and use a three-quarter view to expose the specified contacts without changing anatomy, equipment, grip or technique.\",\n    \"human_model\": \"One athletic bald male anatomical mannequin, opaque silver-gray muscular surfaces, consistent proportions and detailed 3D materials, plain black shorts, barefoot.\",\n    \"material_rules\": \"Highlights never make tissue transparent; no glow, whole-body orange tint, hair, text, labels, arrows, UI, borders, collage or extra person.\",\n    \"no_invention\": \"Technique, equipment and muscles come only from the attached exact catalogue record. No extra attachments, numerical weights, brands or exact angles absent from the source.\",\n    \"output\": {\n      \"format\": \"PNG\",\n      \"height\": 1024,\n      \"one_person\": true,\n      \"one_phase\": true,\n      \"width\": 1024\n    },\n    \"primary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"rule\": \"Highlight only the exact primary muscle group provided for this exercise.\"\n    },\n    \"secondary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"intensity_fraction\": [\n        0.4,\n        0.5\n      ],\n      \"rule\": \"Only the exact secondary muscles, lighter same-hue highlight; if the list is empty add no secondary target.\"\n    },\n    \"version\": \"v1\"\n  },\n  \"style_document_sha256\": \"8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578\",\n  \"supplementary_same_ID_sources\": [\n    {\n      \"catalog_path\": \"data/exercises/catalog.json\",\n      \"catalog_record_sha256\": \"5f5e541c4089572b04d19c0a69eb2a5d5b2cae324cac30fa60055399c4111405\",\n      \"catalog_sha256\": \"a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989\",\n      \"exercise_id\": \"frog-jumps\",\n      \"field\": \"content.ru.instructions[0]\",\n      \"source_commit\": \"a6f296cbc6737991dd367e929b3e2df25874d4d8\",\n      \"value\": \"Начните с веса собственного тела из глубокого приседа и приготовьтесь приземлиться в устойчивую спортивную стойку.\"\n    },\n    {\n      \"catalog_path\": \"data/exercises/catalog.json\",\n      \"catalog_record_sha256\": \"5f5e541c4089572b04d19c0a69eb2a5d5b2cae324cac30fa60055399c4111405\",\n      \"catalog_sha256\": \"a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989\",\n      \"exercise_id\": \"frog-jumps\",\n      \"field\": \"content.es.instructions[1]\",\n      \"source_commit\": \"a6f296cbc6737991dd367e929b3e2df25874d4d8\",\n      \"value\": \"Flexiona las caderas y las rodillas y luego impúlsate hacia arriba y hacia delante.\"\n    },\n    {\n      \"catalog_path\": \"data/exercises/catalog.json\",\n      \"catalog_record_sha256\": \"5f5e541c4089572b04d19c0a69eb2a5d5b2cae324cac30fa60055399c4111405\",\n      \"catalog_sha256\": \"a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989\",\n      \"exercise_id\": \"frog-jumps\",\n      \"field\": \"content.en.instructions[1]\",\n      \"source_commit\": \"a6f296cbc6737991dd367e929b3e2df25874d4d8\",\n      \"value\": \"Dip through the hips and knees, then drive upward or forward as the exercise requires.\"\n    }\n  ]\n}",
+          "prompt_sha256": "aea3b23bf5acd4d6d24389e63490cba83b1d4f753306949cf556ee55fd0fcd49",
+          "reference_path": "assets/exercises/biceps-curl-dumbbell.png",
+          "reference_sha256": "52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f",
+          "result_path": "assets/exercises/pending/agent-03-others-015/frog-jumps/attempt-1.png",
+          "completed_at": "2026-10-02T15:51:28.709173+03:00",
+          "result_sha256": "c75eae5e4adfcaa6ead70dafc5da6bba5f7a977bc045be19a423f83a812527ff",
+          "dimensions": {
+            "width": 1254,
+            "height": 1254
+          },
+          "technical_check": "passed",
+          "technical_check_details": {
+            "format": "PNG",
+            "dimensions": {
+              "width": 1254,
+              "height": 1254
+            },
+            "mode": "RGBA",
+            "has_alpha": true,
+            "transparent_pixel_count": 1166512,
+            "sha256": "c75eae5e4adfcaa6ead70dafc5da6bba5f7a977bc045be19a423f83a812527ff",
+            "exercise_id": "frog-jumps",
+            "repository_path": "assets/exercises/pending/agent-03-others-015/frog-jumps/attempt-1.png",
+            "errors": []
+          },
+          "tool_response_metadata": {
+            "tool_call_id": "image_gen.imagegen#62",
+            "output_hint": "/workspace/generated_images/exec-a0b7a0d3-60be-43ed-9f42-4c595d645ac3.png"
+          }
+        }
+      ],
+      "result_sha256": "c75eae5e4adfcaa6ead70dafc5da6bba5f7a977bc045be19a423f83a812527ff",
+      "technical_check": "passed",
+      "technical_check_details": {
+        "format": "PNG",
+        "dimensions": {
+          "width": 1254,
+          "height": 1254
+        },
+        "mode": "RGBA",
+        "has_alpha": true,
+        "transparent_pixel_count": 1166512,
+        "sha256": "c75eae5e4adfcaa6ead70dafc5da6bba5f7a977bc045be19a423f83a812527ff",
+        "exercise_id": "frog-jumps",
+        "repository_path": "assets/exercises/pending/agent-03-others-015/frog-jumps/attempt-1.png",
+        "errors": []
+      },
       "agent_visual_review": "not_performed",
-      "agent_visual_review_notes": [],
+      "agent_visual_review_notes": null,
       "user_review": "pending"
     },
     "frog-pumps-dumbbell": {
@@ -14070,14 +14179,14 @@
         "exists_at_preparation": true,
         "sha256": "7dfb739e4060e402d71201195b34d81a3bfbc26cf3c8243c476be855744aef7d"
       },
-      "status": "not_started",
+      "status": "generated",
       "included_in_generation": false,
       "archived_inclusion_authorized": false,
       "blocked_by": [
         "pilot_not_approved"
       ],
-      "attempts": 0,
-      "style_version": null,
+      "attempts": 1,
+      "style_version": "v1",
       "visual_review": {
         "status": "not_reviewed",
         "reviewer": null,
@@ -14090,16 +14199,71 @@
         },
         "notes": null
       },
-      "result_path": null,
+      "result_path": "assets/exercises/pending/agent-03-others-015/full-squat-barbell/attempt-1.png",
       "supabase_path": null,
       "supabase_upload_status": "not_configured",
       "last_error": null,
-      "attempt_history": [],
-      "result_sha256": null,
-      "technical_check": null,
-      "technical_check_details": null,
+      "attempt_history": [
+        {
+          "attempt": 1,
+          "id": "full-squat-barbell",
+          "batch_id": "agent-03-others-015",
+          "run_id": "lightweight-agent-03-others-010-015-2026-10-02",
+          "style_version": "v1",
+          "tool": "image_gen.imagegen",
+          "tool_call_index": 63,
+          "status": "completed",
+          "started_at": "2026-10-02T15:51:44.285183+03:00",
+          "prompt": "Create exactly ONE square transparent PNG of the exact exercise below, using the referenced human for APPEARANCE ONLY. Render only the selected phase and camera. Identity/path/hash fields are metadata, never visible text.\n{\n  \"exact_catalogue_source\": {\n    \"equipment\": \"barbell\",\n    \"primary_muscle\": \"quadriceps\",\n    \"secondary_muscles\": [\n      \"hamstrings\",\n      \"glutes\"\n    ],\n    \"source_english\": {\n      \"common_mistakes\": [\n        \"Knees collapsing inward.\",\n        \"Lifting the heels.\",\n        \"Bouncing at depth.\"\n      ],\n      \"description\": \"Full Squat bends the hips and knees through a bilateral squat path before returning to standing.\",\n      \"form_cues\": [\n        \"Keep heels planted.\",\n        \"Track knees over toes.\",\n        \"Brace the trunk.\"\n      ],\n      \"instructions\": [\n        \"Stand with the barbell and feet about shoulder-width apart.\",\n        \"Bend the hips and knees to the controlled depth while keeping both feet planted.\",\n        \"Keep knees tracking over the toes and pause at the endpoint.\",\n        \"Drive through the whole foot to stand and reset.\"\n      ],\n      \"provenance\": \"adapted\",\n      \"safety_note\": \"Choose a depth and load that keep the feet, knees, and spine stable.\"\n    }\n  },\n  \"human_reference\": {\n    \"absolute_path\": \"/workspace/lightweight-exercises-photo/assets/exercises/biceps-curl-dumbbell.png\",\n    \"branch\": \"work\",\n    \"pixels_reviewed_during_preparation\": false,\n    \"repository_path\": \"assets/exercises/biceps-curl-dumbbell.png\",\n    \"role\": \"Human appearance/proportions/materials/anatomical style ONLY. Exercise pose, grip, equipment and muscles come from the exact-ID catalogue, never the reference.\",\n    \"sha256\": \"52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f\",\n    \"source_commit\": \"a6f296cbc6737991dd367e929b3e2df25874d4d8\"\n  },\n  \"identity_do_not_render_as_text\": {\n    \"exercise_id\": \"full-squat-barbell\",\n    \"name\": \"Full Squat\",\n    \"source_catalog_record_sha256\": \"d7ca542132794c5101f0eb19e2dd5864e64eee919c23937cccc09213d08989cc\",\n    \"source_catalog_sha256\": \"a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989\"\n  },\n  \"scene\": {\n    \"camera\": \"Side-front three-quarter view showing upper-back bar support, thigh depth and both heels.\",\n    \"grip\": \"Both hands securely hold bar across upper back; choose source TRAPEZIUS support option, no numerical grip width.\",\n    \"pose\": \"Stand approximately shoulder-width with toes slightly out; hips/knees flexed to source parallel-or-slightly-below option, heels planted and trunk braced.\",\n    \"single_phase\": \"Controlled squat just below parallel\",\n    \"source_instruction_quotes\": [\n      {\n        \"index\": 0,\n        \"text\": \"Stand with the barbell and feet about shoulder-width apart.\"\n      },\n      {\n        \"index\": 1,\n        \"text\": \"Bend the hips and knees to the controlled depth while keeping both feet planted.\"\n      },\n      {\n        \"index\": 2,\n        \"text\": \"Keep knees tracking over the toes and pause at the endpoint.\"\n      },\n      {\n        \"index\": 3,\n        \"text\": \"Drive through the whole foot to stand and reset.\"\n      }\n    ],\n    \"supports_and_equipment\": \"Free bar rests on upper back and feet stay grounded; no Smith, front-rack substitution or forced excess depth.\"\n  },\n  \"source_resolution\": \"Es/ru прямо задають гриф на верхній спині й глибину до паралелі або трохи нижче; обрано дозволену опору на трапеції та контрольовану нижню фазу.\",\n  \"source_use_rule\": \"Preserve original English. The cited additional fields of THIS SAME exercise ID fill missing detail only; do not substitute another exercise or silently rewrite the source.\",\n  \"style\": {\n    \"background\": \"Genuinely transparent PNG background, no white/checkerboard layer, no environment scene.\",\n    \"framing\": \"Full figure and all required equipment/supports visible within a square. Scale and use a three-quarter view to expose the specified contacts without changing anatomy, equipment, grip or technique.\",\n    \"human_model\": \"One athletic bald male anatomical mannequin, opaque silver-gray muscular surfaces, consistent proportions and detailed 3D materials, plain black shorts, barefoot.\",\n    \"material_rules\": \"Highlights never make tissue transparent; no glow, whole-body orange tint, hair, text, labels, arrows, UI, borders, collage or extra person.\",\n    \"no_invention\": \"Technique, equipment and muscles come only from the attached exact catalogue record. No extra attachments, numerical weights, brands or exact angles absent from the source.\",\n    \"output\": {\n      \"format\": \"PNG\",\n      \"height\": 1024,\n      \"one_person\": true,\n      \"one_phase\": true,\n      \"width\": 1024\n    },\n    \"primary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"rule\": \"Highlight only the exact primary muscle group provided for this exercise.\"\n    },\n    \"secondary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"intensity_fraction\": [\n        0.4,\n        0.5\n      ],\n      \"rule\": \"Only the exact secondary muscles, lighter same-hue highlight; if the list is empty add no secondary target.\"\n    },\n    \"version\": \"v1\"\n  },\n  \"style_document_sha256\": \"8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578\",\n  \"supplementary_same_ID_sources\": [\n    {\n      \"catalog_path\": \"data/exercises/catalog.json\",\n      \"catalog_record_sha256\": \"d7ca542132794c5101f0eb19e2dd5864e64eee919c23937cccc09213d08989cc\",\n      \"catalog_sha256\": \"a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989\",\n      \"exercise_id\": \"full-squat-barbell\",\n      \"field\": \"content.es.instructions[1]\",\n      \"source_commit\": \"a6f296cbc6737991dd367e929b3e2df25874d4d8\",\n      \"value\": \"Sujeta la barra sobre la parte superior de la espalda, apoyándola en los trapecios o los deltoides posteriores.\"\n    },\n    {\n      \"catalog_path\": \"data/exercises/catalog.json\",\n      \"catalog_record_sha256\": \"d7ca542132794c5101f0eb19e2dd5864e64eee919c23937cccc09213d08989cc\",\n      \"catalog_sha256\": \"a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989\",\n      \"exercise_id\": \"full-squat-barbell\",\n      \"field\": \"content.es.instructions[4]\",\n      \"source_commit\": \"a6f296cbc6737991dd367e929b3e2df25874d4d8\",\n      \"value\": \"Baja hasta que los muslos queden paralelos al suelo o un poco por debajo.\"\n    }\n  ]\n}",
+          "prompt_sha256": "0e34723bd625cf249261eafc127df1b7daa9d514886de2cffa68ba1277d60474",
+          "reference_path": "assets/exercises/biceps-curl-dumbbell.png",
+          "reference_sha256": "52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f",
+          "result_path": "assets/exercises/pending/agent-03-others-015/full-squat-barbell/attempt-1.png",
+          "completed_at": "2026-10-02T15:52:34.330972+03:00",
+          "result_sha256": "3342d6f608f5a9cc80cd0d55c79c5b2710669f4aeb6cb4576aa8755a06f41007",
+          "dimensions": {
+            "width": 1254,
+            "height": 1254
+          },
+          "technical_check": "passed",
+          "technical_check_details": {
+            "format": "PNG",
+            "dimensions": {
+              "width": 1254,
+              "height": 1254
+            },
+            "mode": "RGBA",
+            "has_alpha": true,
+            "transparent_pixel_count": 1025198,
+            "sha256": "3342d6f608f5a9cc80cd0d55c79c5b2710669f4aeb6cb4576aa8755a06f41007",
+            "exercise_id": "full-squat-barbell",
+            "repository_path": "assets/exercises/pending/agent-03-others-015/full-squat-barbell/attempt-1.png",
+            "errors": []
+          },
+          "tool_response_metadata": {
+            "tool_call_id": "image_gen.imagegen#63",
+            "output_hint": "/workspace/generated_images/exec-cd6a85dc-c311-4f9b-b152-d4e37632e61e.png"
+          }
+        }
+      ],
+      "result_sha256": "3342d6f608f5a9cc80cd0d55c79c5b2710669f4aeb6cb4576aa8755a06f41007",
+      "technical_check": "passed",
+      "technical_check_details": {
+        "format": "PNG",
+        "dimensions": {
+          "width": 1254,
+          "height": 1254
+        },
+        "mode": "RGBA",
+        "has_alpha": true,
+        "transparent_pixel_count": 1025198,
+        "sha256": "3342d6f608f5a9cc80cd0d55c79c5b2710669f4aeb6cb4576aa8755a06f41007",
+        "exercise_id": "full-squat-barbell",
+        "repository_path": "assets/exercises/pending/agent-03-others-015/full-squat-barbell/attempt-1.png",
+        "errors": []
+      },
       "agent_visual_review": "not_performed",
-      "agent_visual_review_notes": [],
+      "agent_visual_review_notes": null,
       "user_review": "pending"
     },
     "glute-bridge": {
@@ -14311,14 +14475,14 @@
         "exists_at_preparation": true,
         "sha256": "9131005e3e47652c0e65b6a9bde0304176f642d7a13fca2c183dbcfd7e3f0b5f"
       },
-      "status": "not_started",
+      "status": "generated",
       "included_in_generation": false,
       "archived_inclusion_authorized": false,
       "blocked_by": [
         "pilot_not_approved"
       ],
-      "attempts": 0,
-      "style_version": null,
+      "attempts": 1,
+      "style_version": "v1",
       "visual_review": {
         "status": "not_reviewed",
         "reviewer": null,
@@ -14331,16 +14495,71 @@
         },
         "notes": null
       },
-      "result_path": null,
+      "result_path": "assets/exercises/pending/agent-03-others-015/glute-bridge-barbell/attempt-1.png",
       "supabase_path": null,
       "supabase_upload_status": "not_configured",
       "last_error": null,
-      "attempt_history": [],
-      "result_sha256": null,
-      "technical_check": null,
-      "technical_check_details": null,
+      "attempt_history": [
+        {
+          "attempt": 1,
+          "id": "glute-bridge-barbell",
+          "batch_id": "agent-03-others-015",
+          "run_id": "lightweight-agent-03-others-010-015-2026-10-02",
+          "style_version": "v1",
+          "tool": "image_gen.imagegen",
+          "tool_call_index": 64,
+          "status": "completed",
+          "started_at": "2026-10-02T15:52:52.586581+03:00",
+          "prompt": "Create exactly ONE square transparent PNG of the exact exercise below, using the referenced human for APPEARANCE ONLY. Render only the selected phase and camera. Identity/path/hash fields are metadata, never visible text.\n{\n  \"exact_catalogue_source\": {\n    \"equipment\": \"barbell\",\n    \"primary_muscle\": \"glutes\",\n    \"secondary_muscles\": [\n      \"hamstrings\",\n      \"adductors\",\n      \"quadriceps\"\n    ],\n    \"source_english\": {\n      \"common_mistakes\": [\n        \"Overarching the back.\",\n        \"Pushing through the toes only.\",\n        \"Letting knees fall inward.\"\n      ],\n      \"description\": \"Glute Bridge (Barbell) lifts the hips from the floor by driving through the feet and squeezing the glutes, then lowers slowly.\",\n      \"form_cues\": [\n        \"Keep knees tracking forward.\",\n        \"Squeeze the glutes.\",\n        \"Keep ribs down.\"\n      ],\n      \"instructions\": [\n        \"Lie on your back with knees bent and the barbell positioned securely if used.\",\n        \"Brace the abdomen and drive through the feet to lift the hips.\",\n        \"Pause when the torso and thighs form a straight line without arching.\",\n        \"Lower the hips slowly to the floor.\"\n      ],\n      \"provenance\": \"adapted\",\n      \"safety_note\": \"Use a stable surface and stop if the back arches sharply at the top.\"\n    }\n  },\n  \"human_reference\": {\n    \"absolute_path\": \"/workspace/lightweight-exercises-photo/assets/exercises/biceps-curl-dumbbell.png\",\n    \"branch\": \"work\",\n    \"pixels_reviewed_during_preparation\": false,\n    \"repository_path\": \"assets/exercises/biceps-curl-dumbbell.png\",\n    \"role\": \"Human appearance/proportions/materials/anatomical style ONLY. Exercise pose, grip, equipment and muscles come from the exact-ID catalogue, never the reference.\",\n    \"sha256\": \"52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f\",\n    \"source_commit\": \"a6f296cbc6737991dd367e929b3e2df25874d4d8\"\n  },\n  \"identity_do_not_render_as_text\": {\n    \"exercise_id\": \"glute-bridge-barbell\",\n    \"name\": \"Glute Bridge (Barbell)\",\n    \"source_catalog_record_sha256\": \"1cb281208ac6a37161bab96d711f013c91dd1a32df0a22a97530f4961518b043\",\n    \"source_catalog_sha256\": \"a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989\"\n  },\n  \"scene\": {\n    \"camera\": \"Side three-quarter view showing floor supports, bar-hip contact and both holding hands.\",\n    \"grip\": \"Both hands HOLD BAR FIRMLY at hip crease as cited Spanish instructions specify.\",\n    \"pose\": \"Lie on back, knees bent and feet flat; hips lift until torso and thighs align, ribs down and no back arch.\",\n    \"single_phase\": \"Hip-extension top with hands steadying bar\",\n    \"source_instruction_quotes\": [\n      {\n        \"index\": 0,\n        \"text\": \"Lie on your back with knees bent and the barbell positioned securely if used.\"\n      },\n      {\n        \"index\": 1,\n        \"text\": \"Brace the abdomen and drive through the feet to lift the hips.\"\n      },\n      {\n        \"index\": 2,\n        \"text\": \"Pause when the torso and thighs form a straight line without arching.\"\n      },\n      {\n        \"index\": 3,\n        \"text\": \"Lower the hips slowly to the floor.\"\n      }\n    ],\n    \"supports_and_equipment\": \"Shoulder/upper back on floor, feet grounded; bar across HIPS per same-ID es/uk. No bench hip thrust or invented pad.\"\n  },\n  \"source_resolution\": \"Es/ru прямо задають гриф на стегнах і утримання обома руками; uk уточнює складку стегон. Це відповідає English securely positioned.\",\n  \"source_use_rule\": \"Preserve original English. The cited additional fields of THIS SAME exercise ID fill missing detail only; do not substitute another exercise or silently rewrite the source.\",\n  \"style\": {\n    \"background\": \"Genuinely transparent PNG background, no white/checkerboard layer, no environment scene.\",\n    \"framing\": \"Full figure and all required equipment/supports visible within a square. Scale and use a three-quarter view to expose the specified contacts without changing anatomy, equipment, grip or technique.\",\n    \"human_model\": \"One athletic bald male anatomical mannequin, opaque silver-gray muscular surfaces, consistent proportions and detailed 3D materials, plain black shorts, barefoot.\",\n    \"material_rules\": \"Highlights never make tissue transparent; no glow, whole-body orange tint, hair, text, labels, arrows, UI, borders, collage or extra person.\",\n    \"no_invention\": \"Technique, equipment and muscles come only from the attached exact catalogue record. No extra attachments, numerical weights, brands or exact angles absent from the source.\",\n    \"output\": {\n      \"format\": \"PNG\",\n      \"height\": 1024,\n      \"one_person\": true,\n      \"one_phase\": true,\n      \"width\": 1024\n    },\n    \"primary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"rule\": \"Highlight only the exact primary muscle group provided for this exercise.\"\n    },\n    \"secondary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"intensity_fraction\": [\n        0.4,\n        0.5\n      ],\n      \"rule\": \"Only the exact secondary muscles, lighter same-hue highlight; if the list is empty add no secondary target.\"\n    },\n    \"version\": \"v1\"\n  },\n  \"style_document_sha256\": \"8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578\",\n  \"supplementary_same_ID_sources\": [\n    {\n      \"catalog_path\": \"data/exercises/catalog.json\",\n      \"catalog_record_sha256\": \"1cb281208ac6a37161bab96d711f013c91dd1a32df0a22a97530f4961518b043\",\n      \"catalog_sha256\": \"a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989\",\n      \"exercise_id\": \"glute-bridge-barbell\",\n      \"field\": \"content.es.instructions[0]\",\n      \"source_commit\": \"a6f296cbc6737991dd367e929b3e2df25874d4d8\",\n      \"value\": \"Empieza tumbado boca arriba en el suelo con las rodillas flexionadas y los pies planos sobre el suelo.\"\n    },\n    {\n      \"catalog_path\": \"data/exercises/catalog.json\",\n      \"catalog_record_sha256\": \"1cb281208ac6a37161bab96d711f013c91dd1a32df0a22a97530f4961518b043\",\n      \"catalog_sha256\": \"a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989\",\n      \"exercise_id\": \"glute-bridge-barbell\",\n      \"field\": \"content.es.instructions[1]\",\n      \"source_commit\": \"a6f296cbc6737991dd367e929b3e2df25874d4d8\",\n      \"value\": \"Coloca una barra sobre las caderas, sujetándola con firmeza con ambas manos.\"\n    },\n    {\n      \"catalog_path\": \"data/exercises/catalog.json\",\n      \"catalog_record_sha256\": \"1cb281208ac6a37161bab96d711f013c91dd1a32df0a22a97530f4961518b043\",\n      \"catalog_sha256\": \"a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989\",\n      \"exercise_id\": \"glute-bridge-barbell\",\n      \"field\": \"content.uk.instructions[0]\",\n      \"source_commit\": \"a6f296cbc6737991dd367e929b3e2df25874d4d8\",\n      \"value\": \"Ляжте на спину, зігніть коліна та надійно розмістіть штангу в складці стегон.\"\n    }\n  ]\n}",
+          "prompt_sha256": "8deefced9362e6cf108dc9da74ec29d4bc556430aea17c39a33cfc3dd195d5b8",
+          "reference_path": "assets/exercises/biceps-curl-dumbbell.png",
+          "reference_sha256": "52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f",
+          "result_path": "assets/exercises/pending/agent-03-others-015/glute-bridge-barbell/attempt-1.png",
+          "completed_at": "2026-10-02T15:53:42.300474+03:00",
+          "result_sha256": "54f24da29159e03919d9e17151d07d8e904c16fc55835f391605f0190cb41ed5",
+          "dimensions": {
+            "width": 1254,
+            "height": 1254
+          },
+          "technical_check": "passed",
+          "technical_check_details": {
+            "format": "PNG",
+            "dimensions": {
+              "width": 1254,
+              "height": 1254
+            },
+            "mode": "RGBA",
+            "has_alpha": true,
+            "transparent_pixel_count": 1189469,
+            "sha256": "54f24da29159e03919d9e17151d07d8e904c16fc55835f391605f0190cb41ed5",
+            "exercise_id": "glute-bridge-barbell",
+            "repository_path": "assets/exercises/pending/agent-03-others-015/glute-bridge-barbell/attempt-1.png",
+            "errors": []
+          },
+          "tool_response_metadata": {
+            "tool_call_id": "image_gen.imagegen#64",
+            "output_hint": "/workspace/generated_images/exec-ccb28af1-c28a-4e3c-b898-5d0eb4a2e0e9.png"
+          }
+        }
+      ],
+      "result_sha256": "54f24da29159e03919d9e17151d07d8e904c16fc55835f391605f0190cb41ed5",
+      "technical_check": "passed",
+      "technical_check_details": {
+        "format": "PNG",
+        "dimensions": {
+          "width": 1254,
+          "height": 1254
+        },
+        "mode": "RGBA",
+        "has_alpha": true,
+        "transparent_pixel_count": 1189469,
+        "sha256": "54f24da29159e03919d9e17151d07d8e904c16fc55835f391605f0190cb41ed5",
+        "exercise_id": "glute-bridge-barbell",
+        "repository_path": "assets/exercises/pending/agent-03-others-015/glute-bridge-barbell/attempt-1.png",
+        "errors": []
+      },
       "agent_visual_review": "not_performed",
-      "agent_visual_review_notes": [],
+      "agent_visual_review_notes": null,
       "user_review": "pending"
     },
     "glute-ham-raise-machine": {
@@ -16340,14 +16559,14 @@
         "mapping": null
       },
       "source_reference_image": null,
-      "status": "not_started",
+      "status": "generated",
       "included_in_generation": false,
       "archived_inclusion_authorized": false,
       "blocked_by": [
         "pilot_not_approved"
       ],
-      "attempts": 0,
-      "style_version": null,
+      "attempts": 1,
+      "style_version": "v1",
       "visual_review": {
         "status": "not_reviewed",
         "reviewer": null,
@@ -16360,16 +16579,71 @@
         },
         "notes": null
       },
-      "result_path": null,
+      "result_path": "assets/exercises/pending/agent-03-others-015/hex-press-dumbbell/attempt-1.png",
       "supabase_path": null,
       "supabase_upload_status": "not_configured",
       "last_error": null,
-      "attempt_history": [],
-      "result_sha256": null,
-      "technical_check": null,
-      "technical_check_details": null,
+      "attempt_history": [
+        {
+          "attempt": 1,
+          "id": "hex-press-dumbbell",
+          "batch_id": "agent-03-others-015",
+          "run_id": "lightweight-agent-03-others-010-015-2026-10-02",
+          "style_version": "v1",
+          "tool": "image_gen.imagegen",
+          "tool_call_index": 65,
+          "status": "completed",
+          "started_at": "2026-10-02T15:54:00.464308+03:00",
+          "prompt": "Create exactly ONE square transparent PNG of the exact exercise below, using the referenced human for APPEARANCE ONLY. Render only the selected phase and camera. Identity/path/hash fields are metadata, never visible text.\n{\n  \"exact_catalogue_source\": {\n    \"equipment\": \"dumbbell\",\n    \"primary_muscle\": \"chest\",\n    \"secondary_muscles\": [\n      \"shoulders\",\n      \"triceps\"\n    ],\n    \"source_english\": {\n      \"common_mistakes\": [\n        \"Bouncing at the bottom.\",\n        \"Flaring the elbows.\",\n        \"Arching to shorten the range.\"\n      ],\n      \"description\": \"Hex Press (Dumbbell) is a supported chest press using one dumbbell in each hand.\",\n      \"form_cues\": [\n        \"Keep wrists stacked.\",\n        \"Keep shoulder blades supported.\",\n        \"Press evenly.\"\n      ],\n      \"instructions\": [\n        \"Lie on a flat bench with feet planted. Grip one dumbbell in each hand and hold it over the chest.\",\n        \"Lower the resistance toward the chest with elbows controlled.\",\n        \"Pause without bouncing or losing shoulder position.\",\n        \"Press back to straight arms, then rerack or set the weights down safely.\"\n      ],\n      \"provenance\": \"authored\",\n      \"safety_note\": \"Use a spotter or safeties for the loaded press and stop before shoulder control is lost.\"\n    }\n  },\n  \"human_reference\": {\n    \"absolute_path\": \"/workspace/lightweight-exercises-photo/assets/exercises/biceps-curl-dumbbell.png\",\n    \"branch\": \"work\",\n    \"pixels_reviewed_during_preparation\": false,\n    \"repository_path\": \"assets/exercises/biceps-curl-dumbbell.png\",\n    \"role\": \"Human appearance/proportions/materials/anatomical style ONLY. Exercise pose, grip, equipment and muscles come from the exact-ID catalogue, never the reference.\",\n    \"sha256\": \"52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f\",\n    \"source_commit\": \"a6f296cbc6737991dd367e929b3e2df25874d4d8\"\n  },\n  \"identity_do_not_render_as_text\": {\n    \"exercise_id\": \"hex-press-dumbbell\",\n    \"name\": \"Hex Press (Dumbbell)\",\n    \"source_catalog_record_sha256\": \"2b6cc1a950016995905c5df4d4d03cbd4da3296e5fda852be55897f5d3f199b6\",\n    \"source_catalog_sha256\": \"a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989\"\n  },\n  \"scene\": {\n    \"camera\": \"Front-side three-quarter view making inward dumbbell contact and both wrists visible.\",\n    \"grip\": \"One dumbbell per hand; continuously squeeze the two weights INWARD TOGETHER as exact-ID match.rationale explicitly defines.\",\n    \"pose\": \"Lie on flat bench, feet planted and shoulder blades supported, arms press weights above chest with controlled elbows.\",\n    \"single_phase\": \"Continuous inward-squeeze press above chest\",\n    \"source_instruction_quotes\": [\n      {\n        \"index\": 0,\n        \"text\": \"Lie on a flat bench with feet planted. Grip one dumbbell in each hand and hold it over the chest.\"\n      },\n      {\n        \"index\": 1,\n        \"text\": \"Lower the resistance toward the chest with elbows controlled.\"\n      },\n      {\n        \"index\": 2,\n        \"text\": \"Pause without bouncing or losing shoulder position.\"\n      },\n      {\n        \"index\": 3,\n        \"text\": \"Press back to straight arms, then rerack or set the weights down safely.\"\n      }\n    ],\n    \"supports_and_equipment\": \"Flat bench and grounded feet, compatible safety supports per English source; no invented hexagonal shape, machine or second person.\"\n  },\n  \"source_resolution\": \"Власний match.rationale прямо визначає continuous inward dumbbell squeeze, uk description називає притискання. Це доповнення того самого ID, не запозичення Squeeze Press.\",\n  \"source_use_rule\": \"Preserve original English. The cited additional fields of THIS SAME exercise ID fill missing detail only; do not substitute another exercise or silently rewrite the source.\",\n  \"style\": {\n    \"background\": \"Genuinely transparent PNG background, no white/checkerboard layer, no environment scene.\",\n    \"framing\": \"Full figure and all required equipment/supports visible within a square. Scale and use a three-quarter view to expose the specified contacts without changing anatomy, equipment, grip or technique.\",\n    \"human_model\": \"One athletic bald male anatomical mannequin, opaque silver-gray muscular surfaces, consistent proportions and detailed 3D materials, plain black shorts, barefoot.\",\n    \"material_rules\": \"Highlights never make tissue transparent; no glow, whole-body orange tint, hair, text, labels, arrows, UI, borders, collage or extra person.\",\n    \"no_invention\": \"Technique, equipment and muscles come only from the attached exact catalogue record. No extra attachments, numerical weights, brands or exact angles absent from the source.\",\n    \"output\": {\n      \"format\": \"PNG\",\n      \"height\": 1024,\n      \"one_person\": true,\n      \"one_phase\": true,\n      \"width\": 1024\n    },\n    \"primary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"rule\": \"Highlight only the exact primary muscle group provided for this exercise.\"\n    },\n    \"secondary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"intensity_fraction\": [\n        0.4,\n        0.5\n      ],\n      \"rule\": \"Only the exact secondary muscles, lighter same-hue highlight; if the list is empty add no secondary target.\"\n    },\n    \"version\": \"v1\"\n  },\n  \"style_document_sha256\": \"8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578\",\n  \"supplementary_same_ID_sources\": [\n    {\n      \"catalog_path\": \"data/exercises/catalog.json\",\n      \"catalog_record_sha256\": \"2b6cc1a950016995905c5df4d4d03cbd4da3296e5fda852be55897f5d3f199b6\",\n      \"catalog_sha256\": \"a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989\",\n      \"exercise_id\": \"hex-press-dumbbell\",\n      \"field\": \"match.rationale\",\n      \"source_commit\": \"a6f296cbc6737991dd367e929b3e2df25874d4d8\",\n      \"value\": \"No candidate includes the hex press's defining continuous inward dumbbell squeeze during the chest press.\"\n    },\n    {\n      \"catalog_path\": \"data/exercises/catalog.json\",\n      \"catalog_record_sha256\": \"2b6cc1a950016995905c5df4d4d03cbd4da3296e5fda852be55897f5d3f199b6\",\n      \"catalog_sha256\": \"a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989\",\n      \"exercise_id\": \"hex-press-dumbbell\",\n      \"field\": \"content.uk.description\",\n      \"source_commit\": \"a6f296cbc6737991dd367e929b3e2df25874d4d8\",\n      \"value\": \"Жим гантелей із притисканням: це жим для грудей із опорою, під час якого в кожній руці утримується по гантелі.\"\n    }\n  ]\n}",
+          "prompt_sha256": "85d638c588484a6cc944c9f13c83ef457bd3f90ecf61ca6d833058a6fe7d3278",
+          "reference_path": "assets/exercises/biceps-curl-dumbbell.png",
+          "reference_sha256": "52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f",
+          "result_path": "assets/exercises/pending/agent-03-others-015/hex-press-dumbbell/attempt-1.png",
+          "completed_at": "2026-10-02T15:55:07.286677+03:00",
+          "result_sha256": "6afebb4b464053fee8ab4abfd71f4bca8f31ffe0b183b21e600b68ab4cdcdc0f",
+          "dimensions": {
+            "width": 1254,
+            "height": 1254
+          },
+          "technical_check": "passed",
+          "technical_check_details": {
+            "format": "PNG",
+            "dimensions": {
+              "width": 1254,
+              "height": 1254
+            },
+            "mode": "RGBA",
+            "has_alpha": true,
+            "transparent_pixel_count": 1119913,
+            "sha256": "6afebb4b464053fee8ab4abfd71f4bca8f31ffe0b183b21e600b68ab4cdcdc0f",
+            "exercise_id": "hex-press-dumbbell",
+            "repository_path": "assets/exercises/pending/agent-03-others-015/hex-press-dumbbell/attempt-1.png",
+            "errors": []
+          },
+          "tool_response_metadata": {
+            "tool_call_id": "image_gen.imagegen#65",
+            "output_hint": "/workspace/generated_images/exec-d1af7d4c-4f1c-4598-835f-1b13fe047120.png"
+          }
+        }
+      ],
+      "result_sha256": "6afebb4b464053fee8ab4abfd71f4bca8f31ffe0b183b21e600b68ab4cdcdc0f",
+      "technical_check": "passed",
+      "technical_check_details": {
+        "format": "PNG",
+        "dimensions": {
+          "width": 1254,
+          "height": 1254
+        },
+        "mode": "RGBA",
+        "has_alpha": true,
+        "transparent_pixel_count": 1119913,
+        "sha256": "6afebb4b464053fee8ab4abfd71f4bca8f31ffe0b183b21e600b68ab4cdcdc0f",
+        "exercise_id": "hex-press-dumbbell",
+        "repository_path": "assets/exercises/pending/agent-03-others-015/hex-press-dumbbell/attempt-1.png",
+        "errors": []
+      },
       "agent_visual_review": "not_performed",
-      "agent_visual_review_notes": [],
+      "agent_visual_review_notes": null,
       "user_review": "pending"
     },
     "high-knee-skips": {

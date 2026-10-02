@@ -595,3 +595,15 @@ Generation complete: 10/10 images. Technical checks passed for each generated PN
 - `dumbbell-squeeze-press` — `assets/exercises/pending/agent-03-others-014/dumbbell-squeeze-press/attempt-1.png`; SHA256 `6a8cfd114cfb43e34dab8eeb5857103edace8a47c2097c4dcb5f3d64fcb6bbca`
 
 GitHub verification — Agent-03 package 014: 10/10 remote PNG blobs matched local files, progress and manifest SHA256; each remote PNG decoded as square RGBA with transparent pixels. Verified content commit `bffc6f41e512e28b4e383e8dfa711aee07c710fc`. All 10 remain `user_review=pending`, `agent_visual_review=not_performed`; package 015 is next.
+
+
+## Agent-03 package 015 — local checkpoint (2026-10-02T12:55:36.770061+00:00)
+
+Generation complete: 6/6 images. Technical checks passed for each generated PNG; generation/technical errors: 0. All generated items remain `user_review=pending`, `agent_visual_review=not_performed`. Package 015 files and metadata are being pushed to `work`; after verification wait for user review.
+
+- `dumbbell-step-up` — `assets/exercises/pending/agent-03-others-015/dumbbell-step-up/attempt-1.png`; SHA256 `627ae749df42bff2cf77efa7e9fb5eb12220c173355deb63d75f1bba46a34fa2`
+- `ez-bar-biceps-curl-barbell` — `assets/exercises/pending/agent-03-others-015/ez-bar-biceps-curl-barbell/attempt-1.png`; SHA256 `11d392ce6a480d4e7e4659e5cd2ab390e23015a9da2f92c0c9e423459c61c883`
+- `frog-jumps` — `assets/exercises/pending/agent-03-others-015/frog-jumps/attempt-1.png`; SHA256 `c75eae5e4adfcaa6ead70dafc5da6bba5f7a977bc045be19a423f83a812527ff`
+- `full-squat-barbell` — `assets/exercises/pending/agent-03-others-015/full-squat-barbell/attempt-1.png`; SHA256 `3342d6f608f5a9cc80cd0d55c79c5b2710669f4aeb6cb4576aa8755a06f41007`
+- `glute-bridge-barbell` — `assets/exercises/pending/agent-03-others-015/glute-bridge-barbell/attempt-1.png`; SHA256 `54f24da29159e03919d9e17151d07d8e904c16fc55835f391605f0190cb41ed5`
+- `hex-press-dumbbell` — `assets/exercises/pending/agent-03-others-015/hex-press-dumbbell/attempt-1.png`; SHA256 `6afebb4b464053fee8ab4abfd71f4bca8f31ffe0b183b21e600b68ab4cdcdc0f`
