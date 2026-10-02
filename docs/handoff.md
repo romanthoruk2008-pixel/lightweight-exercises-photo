@@ -1,3 +1,7 @@
+## Current checkpoint — agent-03-others-021
+
+2026-10-02: package 021 has 10/10 generated results. Every exercise used its prepared exact-ID prompt, neutral-primary v1 addendum and the verified human appearance reference. Files are saved under `assets/exercises/pending/agent-03-others-021/<exercise_id>/attempt-1.png`; all `user_review=pending`, `agent_visual_review=not_performed`. The generated PNGs decode and contain genuine transparent pixels, but all are 1254×1254 against the 1024×1024 target; `technical_check=failed` records that mismatch. No resizing or retry was performed. Remote SHA verification is the next checkpoint before continuing package 022. Packages 019–020 were untouched.
+
 # Актуальна контрольна точка — схвалення agent-03-others-016 (2026-10-02)
 
 Користувач явно схвалив усі 10 результатів пакета agent-03-others-016. Вони збережені байт-у-байт у assets/exercises/<exercise_id>.png; user_review/status=approved, точні accepted path/SHA та рішення зафіксовані в progress і package manifest. PNG залишаються 1254×1254, тому technical_check=failed з явним винятком щодо цільових 1024×1024; файли не ресайзили й не перегенеровували. Агентську візуальну перевірку не проводили.
