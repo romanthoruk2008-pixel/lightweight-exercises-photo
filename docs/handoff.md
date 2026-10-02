@@ -4,7 +4,7 @@
 
 `landmine-squat-and-press-barbell` виключений зі схвалення. Attempt-1 збережений без змін і позначений needs_fix за запитом користувача. Attempt-2: `assets/exercises/pending/agent-03-others-021/landmine-squat-and-press-barbell/attempt-2.png`, SHA256 `abc7e81e0c8b1e2735b0186aab58186e5181a24c9d296911a04bb53e6a255745`; PNG відкривається, має alpha, але його розмір 1254×1254 залишає technical check failed. Attempt-2 має `user_review=pending` і очікує рішення користувача.
 
-Зміни готуються лише у `agent-05-parallel-generation`; наступна дія — пушити approvals і landmine attempt-2, звірити віддалені SHA256, потім продовжити підготовлений пакет 023. Work та Supabase не змінювати.
+Зміни запушено лише у `agent-05-parallel-generation`, commit `9ea6050dab2149e684c46699bd3a7dd4d71bb162`. Після fetch звірено SHA256 21 PNG attempt: 11 для пакета 021 (включно з обома landmine attempts) і 10 для 022. Наступна дія — продовжити підготовлений пакет 023. Work та Supabase не змінювалися.
 
 ---
 
