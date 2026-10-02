@@ -1,12 +1,12 @@
-## Review decision: packages 011–015; three corrections requested
+## Review decision and correction checkpoint: packages 011–015
 
-2026-10-02T13:07:22+00:00: The user approved 40 of the 43 GitHub-verified attempt-1 PNGs from `agent-03-others-011` through `agent-03-others-015`. Their progress and batch-manifest records now have `status=user_review=approved`, with exact accepted paths and SHA256 values. The three exceptions remain unaccepted and are marked `status=user_review=needs_fix`; their attempt-1 files are preserved:
+2026-10-02T13:19:44+00:00: The user approved 40 of 43 attempt-1 images from batches 011–015; progress and batch manifest record their exact accepted paths and SHA256 values. Their approval metadata was pushed to `work` in commit `d2a5fa0`. The three exceptions remain `needs_fix` on attempt-1, which is preserved. One correction was generated for each using the built-in `image_gen.imagegen`, with the accepted human reference supplied in every call. All three passed PNG decode, square-dimension, transparency, and ID/path/SHA checks; no agent visual review was performed.
 
-- `around-the-world-dumbbell`: generate matching complete dumbbells in both hands, with intact symmetric plates and handles.
-- `bench-press-close-grip-barbell`: orient both hands consistently in the same normal overhand grip; keep wrists aligned.
-- `dumbbell-squeeze-press`: fix the hand/arm artifact and render two intact matching dumbbells held together over the chest.
+- `around-the-world-dumbbell` attempt-2: `assets/exercises/pending/agent-03-others-014/around-the-world-dumbbell/attempt-2.png`; SHA256 `f722564484cab98a4fa740a20ebe9e50ad47e4c1125ca02cf6312c19098a1532`; passed; `user_review=pending`, `agent_visual_review=not_performed`.
+- `bench-press-close-grip-barbell` attempt-2: `assets/exercises/pending/agent-03-others-014/bench-press-close-grip-barbell/attempt-2.png`; SHA256 `9ebfc19c4d5ccab37db5c69842a717345f884f25166343e8ae46c5207ae7a1c9`; passed; `user_review=pending`, `agent_visual_review=not_performed`.
+- `dumbbell-squeeze-press` attempt-2: `assets/exercises/pending/agent-03-others-014/dumbbell-squeeze-press/attempt-2.png`; SHA256 `f6417715e2afbddb0e64c5b3344a9bc6fab1c21b943baf0f7d4b8b0b094ef676`; passed; `user_review=pending`, `agent_visual_review=not_performed`.
 
-Next: create one `attempt-2` for each exception, using the accepted human reference `assets/exercises/biceps-curl-dumbbell.png` (SHA256 `52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f`) in every built-in imagegen call. Keep each new result `user_review=pending`, `agent_visual_review=not_performed`; run only the prescribed technical checks, then push and remotely verify PNGs and metadata. Do not alter the 40 accepted outputs, batch 009, blocked exercises, or Supabase.
+The correction PNGs and their metadata are ready for a package-014 checkpoint push and exact remote SHA256 verification. Keep these attempts pending user review. Do not alter the 40 accepted outputs, batch 009, blocked exercises, or Supabase.
 
 ---
 
