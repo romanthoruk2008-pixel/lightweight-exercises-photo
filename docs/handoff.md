@@ -544,3 +544,19 @@ Generation complete: 10/10 images. Technical checks passed for each generated PN
 - `lateral-box-jump` — `assets/exercises/pending/agent-03-others-011/lateral-box-jump/attempt-1.png`; SHA256 `4082067a4cf7b719f1b360a6b9e69f8899fd65a104f3af2af74acbf64b13c1ed`
 
 GitHub verification — Agent-03 package 011: 10/10 PNG blobs at `work` matched local files, progress and manifest SHA256; each remote PNG decoded as square RGBA with transparent pixels. Verified content commit `56501c890d54273add7f6fa49947f74a9da8f6ab`. All 10 remain `user_review=pending`, `agent_visual_review=not_performed`; package 012 is next.
+
+
+## Agent-03 package 012 — local checkpoint (2026-10-02T12:23:06.266984+00:00)
+
+Generation complete: 10/10 images. Technical checks passed for each generated PNG; generation/technical errors: 0. All generated items remain `user_review=pending`, `agent_visual_review=not_performed`. Package 012 files and metadata are being pushed to `work`; next is package 013.
+
+- `lying-neck-curls-weighted-plate` — `assets/exercises/pending/agent-03-others-012/lying-neck-curls-weighted-plate/attempt-1.png`; SHA256 `8d221b36c9d6ab190a662fad57d41b807c9281492b13e2c3515305c3596940ef`
+- `meadows-rows-barbell` — `assets/exercises/pending/agent-03-others-012/meadows-rows-barbell/attempt-1.png`; SHA256 `80c5009d8397522fb574c9cb218b2e23c2768cea8d096b6e4242daf96287ca78`
+- `overhead-plate-raise` — `assets/exercises/pending/agent-03-others-012/overhead-plate-raise/attempt-1.png`; SHA256 `59272939ade3243eee0e1c1ed4fd5dffec00559a5c80c498a4300ec2133708a0`
+- `plate-curl` — `assets/exercises/pending/agent-03-others-012/plate-curl/attempt-1.png`; SHA256 `93e995556c13127ff18479ebb69102715a36f20f4793878c5879cd68ccb15c7a`
+- `plate-front-raise` — `assets/exercises/pending/agent-03-others-012/plate-front-raise/attempt-1.png`; SHA256 `d4446648eb119388357944cdafda016c4f501c7ee5a73f9255261975233414cc`
+- `plate-press` — `assets/exercises/pending/agent-03-others-012/plate-press/attempt-1.png`; SHA256 `30e4f67117a6acbd8ddd1e88aeaee5c79faefd801521a18a79dbaa80bb1e6c03`
+- `preacher-curl-barbell` — `assets/exercises/pending/agent-03-others-012/preacher-curl-barbell/attempt-1.png`; SHA256 `a7fb8cfae94d6280baa36818de954c61b76a2ef20ad08da8a62dedd2a8dd363d`
+- `preacher-curl-dumbbell` — `assets/exercises/pending/agent-03-others-012/preacher-curl-dumbbell/attempt-1.png`; SHA256 `e39faeb9db53d683f9ed03719ca296ff07d7b99e19406fc2e18e724e7e0a82ab`
+- `rack-pull-barbell` — `assets/exercises/pending/agent-03-others-012/rack-pull-barbell/attempt-1.png`; SHA256 `31487e08841e4ff93daf213077eccddbf2ba7c0d64dd0df85dfc50b7d1177367`
+- `russian-twist-weighted-plate` — `assets/exercises/pending/agent-03-others-012/russian-twist-weighted-plate/attempt-1.png`; SHA256 `6eb32a0c36930a1c891c09eeb12c6591be68945ae7116d65392464d8e44a8820`
