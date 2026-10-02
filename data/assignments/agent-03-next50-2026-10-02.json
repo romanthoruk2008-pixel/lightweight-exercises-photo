@@ -1,0 +1,133 @@
+{
+  "schema_version": 1,
+  "assignment_round": "agent-03-next50-2026-10-02",
+  "status": "partial_ready_insufficient_eligible_exercises",
+  "prepared_at": "2026-10-02T20:56:19.117953+03:00",
+  "source_branch": "agent-03-inventory-2026-10-01",
+  "source_content_parent_commit": "91a80cd9c0cfbb33088f24488af24c781ab2bbf3",
+  "catalog_source_commit": "bc67b32e93322bac86b7a31264cd0f8b2ab3f6eb",
+  "requested_count": 50,
+  "requested_batch_count": 5,
+  "prepared_count": 12,
+  "shortfall": 38,
+  "exercise_ids": [
+    "front-raise-band-resistance-band",
+    "front-raise-suspension",
+    "front-squat-barbell",
+    "hack-squat-barbell",
+    "jump-squat",
+    "jumping-lunge",
+    "leg-raise-parallel-bars-machine",
+    "negative-pullup",
+    "pullup-weighted-machine",
+    "ring-dips",
+    "ring-pullup",
+    "squat-band-resistance-band"
+  ],
+  "batch_paths": [
+    "data/batches/agent-03-others-024.json",
+    "data/batches/agent-03-others-025.json"
+  ],
+  "audited_commits": {
+    "origin/agent-02-machines-001": "2c27f90d8e2be0c1f349b81231897fd204d543b5",
+    "origin/agent-03-inventory-2026-10-01": "91a80cd9c0cfbb33088f24488af24c781ab2bbf3",
+    "origin/agent-04-supabase-integration": "544b908b8bd17d8c8bccf8e8160c08abd9564f76",
+    "origin/agent-05-parallel-generation": "172ea1052d0a1be125d79fb8a3d4ab18283b5bee",
+    "origin/main": "a74adc6d107206429ffd225104899e240470f170",
+    "origin/work": "bc67b32e93322bac86b7a31264cd0f8b2ab3f6eb",
+    "HEAD": "91a80cd9c0cfbb33088f24488af24c781ab2bbf3"
+  },
+  "catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+  "generation_authorized_now": false,
+  "execution_requires_user_delivery_to_generator": true,
+  "supersedes_own_unexecuted_plans": [
+    {
+      "source_batch_id": "agent-03-others-017",
+      "source_batch_path": "data/batches/agent-03-others-017.json",
+      "source_batch_sha256": "3ebca76196f66392763a997760bb86f2505259fb469047b567f6fb1abe046066",
+      "exercise_ids": [
+        "front-raise-band-resistance-band",
+        "front-raise-suspension",
+        "front-squat-barbell",
+        "hack-squat-barbell",
+        "jump-squat",
+        "jumping-lunge",
+        "leg-raise-parallel-bars-machine",
+        "negative-pullup",
+        "pullup-weighted-machine",
+        "ring-dips"
+      ],
+      "new_batch_ids": [
+        "agent-03-others-024"
+      ],
+      "status": "superseded_for_listed_IDs_only",
+      "foreign_or_attempted_assignments_taken": false
+    },
+    {
+      "source_batch_id": "agent-03-others-018",
+      "source_batch_path": "data/batches/agent-03-others-018.json",
+      "source_batch_sha256": "83f30455d4a4cc2e1d3c875b0f257300a3bdeea585af1e3ef8b86ec5dad4fe05",
+      "exercise_ids": [
+        "ring-pullup",
+        "squat-band-resistance-band"
+      ],
+      "new_batch_ids": [
+        "agent-03-others-025"
+      ],
+      "status": "superseded_for_listed_IDs_only",
+      "foreign_or_attempted_assignments_taken": false
+    }
+  ],
+  "assignments": [
+    {
+      "generator": "generator-a",
+      "status": "ready",
+      "requested_count": 30,
+      "exercise_count": 12,
+      "exercise_ids": [
+        "front-raise-band-resistance-band",
+        "front-raise-suspension",
+        "front-squat-barbell",
+        "hack-squat-barbell",
+        "jump-squat",
+        "jumping-lunge",
+        "leg-raise-parallel-bars-machine",
+        "negative-pullup",
+        "pullup-weighted-machine",
+        "ring-dips",
+        "ring-pullup",
+        "squat-band-resistance-band"
+      ],
+      "batch_ids": [
+        "agent-03-others-024",
+        "agent-03-others-025"
+      ],
+      "batch_paths": [
+        "data/batches/agent-03-others-024.json",
+        "data/batches/agent-03-others-025.json"
+      ],
+      "planned_worker_branch": "agent-06-generator-a-2026-10-02",
+      "cloud_result_root": "/workspace/exercise-image-results/agent-03-next50-2026-10-02/generator-a",
+      "repository_result_root": "assets/exercises/pending/agent-03-next50-2026-10-02/generator-a",
+      "manifest_path": "data/manifests/agent-03-next50-2026-10-02/generator-a.json"
+    },
+    {
+      "generator": "generator-b",
+      "status": "held_no_eligible_exercises",
+      "requested_count": 20,
+      "exercise_count": 0,
+      "exercise_ids": [],
+      "batch_ids": [],
+      "batch_paths": [],
+      "planned_worker_branch": "agent-07-generator-b-2026-10-02",
+      "cloud_result_root": "/workspace/exercise-image-results/agent-03-next50-2026-10-02/generator-b",
+      "repository_result_root": "assets/exercises/pending/agent-03-next50-2026-10-02/generator-b",
+      "manifest_path": "data/manifests/agent-03-next50-2026-10-02/generator-b.json"
+    }
+  ],
+  "limits": [
+    "Only fetched committed Git data are visible; unpushed files of other cloud tasks may be inaccessible.",
+    "No PNG pixel QA, no generation, no Supabase. Existing failed/noPNG calls remain in previous batch.",
+    "Original 017/018 files remain immutable historical preparation, not an additional live generation assignment."
+  ]
+}
