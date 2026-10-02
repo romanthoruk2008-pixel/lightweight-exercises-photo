@@ -1,0 +1,2002 @@
+{
+  "schema_version": 1,
+  "batch_id": "agent-03-others-019",
+  "owner_agent": "agent-03",
+  "branch": "agent-03-inventory-2026-10-01",
+  "status": "ready",
+  "prepared_at": "2026-10-02T17:33:44.288199+03:00",
+  "catalog_source_commit": "f6c8874805203c78d804eb073e1627c6d4ddc78e",
+  "audited_commits": {
+    "origin/agent-02-machines-001": "2c27f90d8e2be0c1f349b81231897fd204d543b5",
+    "origin/agent-04-supabase-integration": "68e9f7a30666d4fa6f83aa48717311f8876f2021",
+    "origin/agent-05-parallel-generation": "3e1d86cc9ea408c834a126b4971ac221cc4a1637",
+    "origin/main": "a74adc6d107206429ffd225104899e240470f170",
+    "origin/work": "f6c8874805203c78d804eb073e1627c6d4ddc78e",
+    "HEAD": "acc5375aca0897efeb39b49a18ac0ef7e6e6a5dc"
+  },
+  "catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+  "style_version": "v1-neutral-primary-2026-10-02",
+  "base_style_version": "v1",
+  "base_style_sha256": "8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578",
+  "style_addendum_path": "docs/exercise-image-style-neutral-primary.md",
+  "style_addendum_sha256": "86204ab43f23d119a1eb25cafdbda2518b741a0090b4ffb0ceb9086952314439",
+  "style_decision_path": "data/style-decisions/agent-03-neutral-primary-approved.json",
+  "style_decision_sha256": "96a4d80dafd45956d40c82979d48ecd5d683b24437b02eac0bc45f33826ac155",
+  "exercise_count": 10,
+  "exercise_ids": [
+    "aerobics",
+    "ball-slams",
+    "battle-ropes-machine",
+    "boxing",
+    "burpee",
+    "burpee-broad-jumps",
+    "burpee-over-the-bar",
+    "clean-and-jerk-barbell",
+    "clean-and-press-barbell",
+    "clean-pull-barbell"
+  ],
+  "exercises": [
+    {
+      "exercise_id": "aerobics",
+      "name": "Aerobics",
+      "source_english": {
+        "description": "Aerobics is a rhythmic sequence of low- to moderate-impact steps and arm patterns performed continuously for the selected duration.",
+        "instructions": [
+          "Stand tall with relaxed shoulders and begin with easy marching.",
+          "Add coordinated arm and leg patterns while keeping a comfortable rhythm.",
+          "Progress the pace or pattern without losing stable foot placement.",
+          "Continue for the planned duration, then gradually slow down."
+        ],
+        "form_cues": [
+          "Land softly.",
+          "Keep breathing conversationally.",
+          "Stay light on your feet."
+        ],
+        "common_mistakes": [
+          "Starting at an all-out pace.",
+          "Locking the knees.",
+          "Ignoring unstable footing."
+        ],
+        "safety_note": "Use a clear, non-slip floor and lower the pace before footwork becomes unstable.",
+        "provenance": "authored"
+      },
+      "equipment": "none",
+      "primary_muscle": "cardio",
+      "secondary_muscles": [],
+      "source_catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+      "source_catalog_record_sha256": "740c785885ba92265788aa3469e87a376e59095ae27a40187dd746c4773ab219",
+      "source_english_sha256": "ff80579895e2db5e20f60ce4b152cee563035e81f9cd390e5b216b3364ca0b84",
+      "status": "ready",
+      "technical_status": "ready",
+      "prompt_prepared": true,
+      "prompt_status": "complete",
+      "prompt_template": null,
+      "generation_prompt": "Create exactly ONE square transparent PNG of the exact exercise and selected single phase. Metadata fields must never appear as text.\nDo not render multiple phases, raw disputed alternatives, or inferred muscle targets.\n{\n  \"approved_style_addendum\": {\n    \"decision_path\": \"data/style-decisions/agent-03-neutral-primary-approved.json\",\n    \"decision_sha256\": \"96a4d80dafd45956d40c82979d48ecd5d683b24437b02eac0bc45f33826ac155\",\n    \"path\": \"docs/exercise-image-style-neutral-primary.md\",\n    \"sha256\": \"86204ab43f23d119a1eb25cafdbda2518b741a0090b4ffb0ceb9086952314439\",\n    \"user_quote\": \"Для full_body, cardio, other тіло залишається нейтральним\\nсріблясто-сірим. Підсвічуються лише конкретні\\nsecondary_muscles, записані для точного ID,\\nкольором #F26445 на 40–50% інтенсивності.\\nПорожній secondary список означає відсутність підсвітки.\",\n    \"version\": \"v1-neutral-primary-2026-10-02\"\n  },\n  \"base_style_sha256\": \"8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578\",\n  \"exact_catalogue_source\": {\n    \"equipment\": \"none\",\n    \"primary_muscle\": \"cardio\",\n    \"secondary_muscles\": [],\n    \"source_english\": {\n      \"common_mistakes\": [\n        \"Starting at an all-out pace.\",\n        \"Locking the knees.\",\n        \"Ignoring unstable footing.\"\n      ],\n      \"description\": \"Aerobics is a rhythmic sequence of low- to moderate-impact steps and arm patterns performed continuously for the selected duration.\",\n      \"form_cues\": [\n        \"Land softly.\",\n        \"Keep breathing conversationally.\",\n        \"Stay light on your feet.\"\n      ],\n      \"instructions\": [\n        \"Stand tall with relaxed shoulders and begin with easy marching.\",\n        \"Add coordinated arm and leg patterns while keeping a comfortable rhythm.\",\n        \"Progress the pace or pattern without losing stable foot placement.\",\n        \"Continue for the planned duration, then gradually slow down.\"\n      ],\n      \"provenance\": \"authored\",\n      \"safety_note\": \"Use a clear, non-slip floor and lower the pace before footwork becomes unstable.\"\n    }\n  },\n  \"human_reference\": {\n    \"absolute_path\": \"/workspace/lightweight-exercises-photo/assets/exercises/biceps-curl-dumbbell.png\",\n    \"branch\": \"work\",\n    \"pixels_reviewed_during_preparation\": false,\n    \"repository_path\": \"assets/exercises/biceps-curl-dumbbell.png\",\n    \"role\": \"Human appearance/proportions/materials/anatomical style ONLY. Exercise pose, grip, equipment and muscles come from the exact-ID catalogue, never the reference.\",\n    \"sha256\": \"52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f\",\n    \"source_commit\": \"bffc6f41e512e28b4e383e8dfa711aee07c710fc\"\n  },\n  \"identity_do_not_render_as_text\": {\n    \"catalog_record_sha256\": \"740c785885ba92265788aa3469e87a376e59095ae27a40187dd746c4773ab219\",\n    \"catalog_sha256\": \"a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989\",\n    \"exercise_id\": \"aerobics\",\n    \"name\": \"Aerobics\"\n  },\n  \"same_ID_supplementary_fields\": [],\n  \"selected_render_scene\": {\n    \"camera\": \"Front-side three-quarter view showing complete person, prescribed grip and all supports/contacts within square; no crop.\",\n    \"exercise_id\": \"aerobics\",\n    \"grip\": \"Hands free, no equipment.\",\n    \"movement_trajectory\": \"Alternate controlled marching steps and coordinated arms at comfortable rhythm.\",\n    \"never_infer_muscles_from_pose_or_reference\": true,\n    \"one_phase_only\": true,\n    \"pose\": \"Upright torso and relaxed shoulders, one knee lifting in gentle source march, opposite arm coordinating, no maximal effort.\",\n    \"single_phase\": \"Easy marching phase\",\n    \"supports_and_equipment\": \"Other foot supports on clear non-slip floor; no step platform invented.\"\n  },\n  \"source_use_rule\": \"Render ONLY selected_render_scene and the explicit exact-ID resolution; original English stays verbatim for provenance even when a disputed field is overridden. Do not invent a substitute exercise or copy reference pose/equipment/muscle colors.\",\n  \"style\": {\n    \"approval_status\": \"approved\",\n    \"background\": \"Genuinely transparent PNG background, no white/checkerboard layer, no environment scene.\",\n    \"base_version\": \"v1\",\n    \"framing\": \"Full figure and all required equipment/supports visible within a square. Scale and use a three-quarter view to expose the specified contacts without changing anatomy, equipment, grip or technique.\",\n    \"human_model\": \"One athletic bald male anatomical mannequin, opaque silver-gray muscular surfaces, consistent proportions and detailed 3D materials, plain black shorts, barefoot.\",\n    \"material_rules\": \"Highlights never make tissue transparent; no glow, whole-body orange tint, hair, text, labels, arrows, UI, borders, collage or extra person.\",\n    \"no_invention\": \"Exact catalogue ID controls identity, raw equipment and muscles. Only the embedded verified same-ID/source-variant decisions may clarify rendering technique. No guessed weights, brands, attachments or muscle targets.\",\n    \"output\": {\n      \"format\": \"PNG\",\n      \"height\": 1024,\n      \"one_person\": true,\n      \"one_phase\": true,\n      \"width\": 1024\n    },\n    \"primary_highlight\": {\n      \"hex\": null,\n      \"rule\": \"full_body/cardio/other are broad labels, NOT anatomical targets. Entire body neutral opaque silver-gray except explicitly listed concrete secondary targets.\"\n    },\n    \"secondary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"intensity_fraction\": [\n        0.4,\n        0.5\n      ],\n      \"rule\": \"Only the exact secondary muscles, lighter same-hue highlight; if the list is empty add no secondary target.\"\n    },\n    \"version\": \"v1-neutral-primary-2026-10-02\"\n  },\n  \"technical_blocker\": null,\n  \"technique_resolution\": null\n}",
+      "prompt_payload": {
+        "identity_do_not_render_as_text": {
+          "exercise_id": "aerobics",
+          "name": "Aerobics",
+          "catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+          "catalog_record_sha256": "740c785885ba92265788aa3469e87a376e59095ae27a40187dd746c4773ab219"
+        },
+        "exact_catalogue_source": {
+          "source_english": {
+            "description": "Aerobics is a rhythmic sequence of low- to moderate-impact steps and arm patterns performed continuously for the selected duration.",
+            "instructions": [
+              "Stand tall with relaxed shoulders and begin with easy marching.",
+              "Add coordinated arm and leg patterns while keeping a comfortable rhythm.",
+              "Progress the pace or pattern without losing stable foot placement.",
+              "Continue for the planned duration, then gradually slow down."
+            ],
+            "form_cues": [
+              "Land softly.",
+              "Keep breathing conversationally.",
+              "Stay light on your feet."
+            ],
+            "common_mistakes": [
+              "Starting at an all-out pace.",
+              "Locking the knees.",
+              "Ignoring unstable footing."
+            ],
+            "safety_note": "Use a clear, non-slip floor and lower the pace before footwork becomes unstable.",
+            "provenance": "authored"
+          },
+          "equipment": "none",
+          "primary_muscle": "cardio",
+          "secondary_muscles": []
+        },
+        "human_reference": {
+          "repository_path": "assets/exercises/biceps-curl-dumbbell.png",
+          "absolute_path": "/workspace/lightweight-exercises-photo/assets/exercises/biceps-curl-dumbbell.png",
+          "sha256": "52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f",
+          "branch": "work",
+          "source_commit": "bffc6f41e512e28b4e383e8dfa711aee07c710fc",
+          "role": "Human appearance/proportions/materials/anatomical style ONLY. Exercise pose, grip, equipment and muscles come from the exact-ID catalogue, never the reference.",
+          "pixels_reviewed_during_preparation": false
+        },
+        "style": {
+          "version": "v1-neutral-primary-2026-10-02",
+          "human_model": "One athletic bald male anatomical mannequin, opaque silver-gray muscular surfaces, consistent proportions and detailed 3D materials, plain black shorts, barefoot.",
+          "primary_highlight": {
+            "hex": null,
+            "rule": "full_body/cardio/other are broad labels, NOT anatomical targets. Entire body neutral opaque silver-gray except explicitly listed concrete secondary targets."
+          },
+          "secondary_highlight": {
+            "hex": "#F26445",
+            "intensity_fraction": [
+              0.4,
+              0.5
+            ],
+            "rule": "Only the exact secondary muscles, lighter same-hue highlight; if the list is empty add no secondary target."
+          },
+          "background": "Genuinely transparent PNG background, no white/checkerboard layer, no environment scene.",
+          "output": {
+            "format": "PNG",
+            "width": 1024,
+            "height": 1024,
+            "one_person": true,
+            "one_phase": true
+          },
+          "material_rules": "Highlights never make tissue transparent; no glow, whole-body orange tint, hair, text, labels, arrows, UI, borders, collage or extra person.",
+          "framing": "Full figure and all required equipment/supports visible within a square. Scale and use a three-quarter view to expose the specified contacts without changing anatomy, equipment, grip or technique.",
+          "no_invention": "Exact catalogue ID controls identity, raw equipment and muscles. Only the embedded verified same-ID/source-variant decisions may clarify rendering technique. No guessed weights, brands, attachments or muscle targets.",
+          "base_version": "v1",
+          "approval_status": "approved"
+        },
+        "base_style_sha256": "8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578",
+        "selected_render_scene": {
+          "exercise_id": "aerobics",
+          "single_phase": "Easy marching phase",
+          "pose": "Upright torso and relaxed shoulders, one knee lifting in gentle source march, opposite arm coordinating, no maximal effort.",
+          "grip": "Hands free, no equipment.",
+          "supports_and_equipment": "Other foot supports on clear non-slip floor; no step platform invented.",
+          "movement_trajectory": "Alternate controlled marching steps and coordinated arms at comfortable rhythm.",
+          "camera": "Front-side three-quarter view showing complete person, prescribed grip and all supports/contacts within square; no crop.",
+          "one_phase_only": true,
+          "never_infer_muscles_from_pose_or_reference": true
+        },
+        "technique_resolution": null,
+        "same_ID_supplementary_fields": [],
+        "technical_blocker": null,
+        "source_use_rule": "Render ONLY selected_render_scene and the explicit exact-ID resolution; original English stays verbatim for provenance even when a disputed field is overridden. Do not invent a substitute exercise or copy reference pose/equipment/muscle colors.",
+        "approved_style_addendum": {
+          "version": "v1-neutral-primary-2026-10-02",
+          "path": "docs/exercise-image-style-neutral-primary.md",
+          "sha256": "86204ab43f23d119a1eb25cafdbda2518b741a0090b4ffb0ceb9086952314439",
+          "decision_path": "data/style-decisions/agent-03-neutral-primary-approved.json",
+          "decision_sha256": "96a4d80dafd45956d40c82979d48ecd5d683b24437b02eac0bc45f33826ac155",
+          "user_quote": "Для full_body, cardio, other тіло залишається нейтральним\nсріблясто-сірим. Підсвічуються лише конкретні\nsecondary_muscles, записані для точного ID,\nкольором #F26445 на 40–50% інтенсивності.\nПорожній secondary список означає відсутність підсвітки."
+        }
+      },
+      "prompt_sha256": "03410684c647e88f83e1fc2348827cd1d78f15cedc781fc2d318b9a5b1783e7e",
+      "scene": {
+        "exercise_id": "aerobics",
+        "single_phase": "Easy marching phase",
+        "pose": "Upright torso and relaxed shoulders, one knee lifting in gentle source march, opposite arm coordinating, no maximal effort.",
+        "grip": "Hands free, no equipment.",
+        "supports_and_equipment": "Other foot supports on clear non-slip floor; no step platform invented.",
+        "movement_trajectory": "Alternate controlled marching steps and coordinated arms at comfortable rhythm.",
+        "camera": "Front-side three-quarter view showing complete person, prescribed grip and all supports/contacts within square; no crop.",
+        "one_phase_only": true,
+        "never_infer_muscles_from_pose_or_reference": true
+      },
+      "technique_resolution": null,
+      "same_ID_supplementary_fields": [],
+      "style_version": "v1-neutral-primary-2026-10-02",
+      "base_style_version": "v1",
+      "base_style_sha256": "8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578",
+      "style_proposal_path": null,
+      "style_proposal_sha256": null,
+      "human_reference": {
+        "repository_path": "assets/exercises/biceps-curl-dumbbell.png",
+        "absolute_path": "/workspace/lightweight-exercises-photo/assets/exercises/biceps-curl-dumbbell.png",
+        "sha256": "52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f",
+        "branch": "work",
+        "source_commit": "bffc6f41e512e28b4e383e8dfa711aee07c710fc",
+        "role": "Human appearance/proportions/materials/anatomical style ONLY. Exercise pose, grip, equipment and muscles come from the exact-ID catalogue, never the reference.",
+        "pixels_reviewed_during_preparation": false
+      },
+      "attempts": 0,
+      "result_path": null,
+      "result_sha256": null,
+      "user_review": null,
+      "technical_check": null,
+      "agent_visual_review": "not_performed",
+      "generation_authorized_now": false,
+      "technical_question": null,
+      "assignment_kind": "ready_own_batch_preparation_only",
+      "batch_id": "agent-03-others-019",
+      "planned_png_path": "/workspace/exercise-image-results/agent-03-others-019/aerobics/attempt-1.png",
+      "planned_output_relative_path": "agent-03-others-019/aerobics/attempt-1.png",
+      "output_path_policy": "Exact batch_id/exercise_id/attempt path. Do not map generated files by name similarity or array position.",
+      "style_approval_status": "approved",
+      "style_addendum_path": "docs/exercise-image-style-neutral-primary.md",
+      "style_addendum_sha256": "86204ab43f23d119a1eb25cafdbda2518b741a0090b4ffb0ceb9086952314439",
+      "style_decision_path": "data/style-decisions/agent-03-neutral-primary-approved.json",
+      "style_decision_sha256": "96a4d80dafd45956d40c82979d48ecd5d683b24437b02eac0bc45f33826ac155",
+      "source_draft_path": "data/queues/agent-03-neutral-primary-style-drafts.json",
+      "source_draft_file_sha256": "6185597c9402fd8c46ed4b869de7073c129df21c65bbc461080cea6827657d3b",
+      "source_draft_prompt_sha256": "d1b5bf873e580b8a9f0562739a509ed20a56eb40e9c0f90f1c430ed8001aea18",
+      "style_path": "docs/exercise-image-style-neutral-primary.md",
+      "style_sha256": "86204ab43f23d119a1eb25cafdbda2518b741a0090b4ffb0ceb9086952314439"
+    },
+    {
+      "exercise_id": "ball-slams",
+      "name": "Ball Slams",
+      "source_english": {
+        "description": "Ball Slams raise a medicine ball overhead and drive it into the floor using the hips, trunk, and arms together.",
+        "instructions": [
+          "Stand with feet about shoulder-width apart and hold the medicine ball overhead with both hands.",
+          "Brace your trunk and bend the hips and knees slightly.",
+          "Drive the ball forcefully into the floor in front of you.",
+          "Retrieve it with a squat or hinge and reset before the next repetition."
+        ],
+        "form_cues": [
+          "Keep the ball in front of you.",
+          "Use the hips and trunk together.",
+          "Stay balanced after the slam."
+        ],
+        "common_mistakes": [
+          "Bending only at the waist.",
+          "Reaching behind the body overhead.",
+          "Catching a rebound with locked knees."
+        ],
+        "safety_note": "Use a slam-rated medicine ball and keep the rebound area clear.",
+        "provenance": "adapted"
+      },
+      "equipment": "other",
+      "primary_muscle": "full_body",
+      "secondary_muscles": [],
+      "source_catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+      "source_catalog_record_sha256": "916354dda0484f4f320d1665fe1f509c346e42f9f4d70176f4b474e45efd3fc8",
+      "source_english_sha256": "c53c4c9ce9eb305972a6e5d0462818e7f2bb41ea0f0c015eef6f6e3ecd9d4f71",
+      "status": "ready",
+      "technical_status": "ready",
+      "prompt_prepared": true,
+      "prompt_status": "complete",
+      "prompt_template": null,
+      "generation_prompt": "Create exactly ONE square transparent PNG of the exact exercise and selected single phase. Metadata fields must never appear as text.\nDo not render multiple phases, raw disputed alternatives, or inferred muscle targets.\n{\n  \"approved_style_addendum\": {\n    \"decision_path\": \"data/style-decisions/agent-03-neutral-primary-approved.json\",\n    \"decision_sha256\": \"96a4d80dafd45956d40c82979d48ecd5d683b24437b02eac0bc45f33826ac155\",\n    \"path\": \"docs/exercise-image-style-neutral-primary.md\",\n    \"sha256\": \"86204ab43f23d119a1eb25cafdbda2518b741a0090b4ffb0ceb9086952314439\",\n    \"user_quote\": \"Для full_body, cardio, other тіло залишається нейтральним\\nсріблясто-сірим. Підсвічуються лише конкретні\\nsecondary_muscles, записані для точного ID,\\nкольором #F26445 на 40–50% інтенсивності.\\nПорожній secondary список означає відсутність підсвітки.\",\n    \"version\": \"v1-neutral-primary-2026-10-02\"\n  },\n  \"base_style_sha256\": \"8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578\",\n  \"exact_catalogue_source\": {\n    \"equipment\": \"other\",\n    \"primary_muscle\": \"full_body\",\n    \"secondary_muscles\": [],\n    \"source_english\": {\n      \"common_mistakes\": [\n        \"Bending only at the waist.\",\n        \"Reaching behind the body overhead.\",\n        \"Catching a rebound with locked knees.\"\n      ],\n      \"description\": \"Ball Slams raise a medicine ball overhead and drive it into the floor using the hips, trunk, and arms together.\",\n      \"form_cues\": [\n        \"Keep the ball in front of you.\",\n        \"Use the hips and trunk together.\",\n        \"Stay balanced after the slam.\"\n      ],\n      \"instructions\": [\n        \"Stand with feet about shoulder-width apart and hold the medicine ball overhead with both hands.\",\n        \"Brace your trunk and bend the hips and knees slightly.\",\n        \"Drive the ball forcefully into the floor in front of you.\",\n        \"Retrieve it with a squat or hinge and reset before the next repetition.\"\n      ],\n      \"provenance\": \"adapted\",\n      \"safety_note\": \"Use a slam-rated medicine ball and keep the rebound area clear.\"\n    }\n  },\n  \"human_reference\": {\n    \"absolute_path\": \"/workspace/lightweight-exercises-photo/assets/exercises/biceps-curl-dumbbell.png\",\n    \"branch\": \"work\",\n    \"pixels_reviewed_during_preparation\": false,\n    \"repository_path\": \"assets/exercises/biceps-curl-dumbbell.png\",\n    \"role\": \"Human appearance/proportions/materials/anatomical style ONLY. Exercise pose, grip, equipment and muscles come from the exact-ID catalogue, never the reference.\",\n    \"sha256\": \"52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f\",\n    \"source_commit\": \"bffc6f41e512e28b4e383e8dfa711aee07c710fc\"\n  },\n  \"identity_do_not_render_as_text\": {\n    \"catalog_record_sha256\": \"916354dda0484f4f320d1665fe1f509c346e42f9f4d70176f4b474e45efd3fc8\",\n    \"catalog_sha256\": \"a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989\",\n    \"exercise_id\": \"ball-slams\",\n    \"name\": \"Ball Slams\"\n  },\n  \"same_ID_supplementary_fields\": [],\n  \"selected_render_scene\": {\n    \"camera\": \"Front-side three-quarter view showing complete person, prescribed grip and all supports/contacts within square; no crop.\",\n    \"exercise_id\": \"ball-slams\",\n    \"grip\": \"Both hands securely support the SAME slam-rated medicine ball.\",\n    \"movement_trajectory\": \"Drive overhead ball into floor in front, retrieve by controlled squat/hinge, reset.\",\n    \"never_infer_muscles_from_pose_or_reference\": true,\n    \"one_phase_only\": true,\n    \"pose\": \"Stand about shoulder-width, both arms securely hold ball overhead in FRONT, core braced and knees/hips soft.\",\n    \"single_phase\": \"Ball overhead before slam\",\n    \"supports_and_equipment\": \"Both feet grounded, clear rebound/landing area, no wall target.\"\n  },\n  \"source_use_rule\": \"Render ONLY selected_render_scene and the explicit exact-ID resolution; original English stays verbatim for provenance even when a disputed field is overridden. Do not invent a substitute exercise or copy reference pose/equipment/muscle colors.\",\n  \"style\": {\n    \"approval_status\": \"approved\",\n    \"background\": \"Genuinely transparent PNG background, no white/checkerboard layer, no environment scene.\",\n    \"base_version\": \"v1\",\n    \"framing\": \"Full figure and all required equipment/supports visible within a square. Scale and use a three-quarter view to expose the specified contacts without changing anatomy, equipment, grip or technique.\",\n    \"human_model\": \"One athletic bald male anatomical mannequin, opaque silver-gray muscular surfaces, consistent proportions and detailed 3D materials, plain black shorts, barefoot.\",\n    \"material_rules\": \"Highlights never make tissue transparent; no glow, whole-body orange tint, hair, text, labels, arrows, UI, borders, collage or extra person.\",\n    \"no_invention\": \"Exact catalogue ID controls identity, raw equipment and muscles. Only the embedded verified same-ID/source-variant decisions may clarify rendering technique. No guessed weights, brands, attachments or muscle targets.\",\n    \"output\": {\n      \"format\": \"PNG\",\n      \"height\": 1024,\n      \"one_person\": true,\n      \"one_phase\": true,\n      \"width\": 1024\n    },\n    \"primary_highlight\": {\n      \"hex\": null,\n      \"rule\": \"full_body/cardio/other are broad labels, NOT anatomical targets. Entire body neutral opaque silver-gray except explicitly listed concrete secondary targets.\"\n    },\n    \"secondary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"intensity_fraction\": [\n        0.4,\n        0.5\n      ],\n      \"rule\": \"Only the exact secondary muscles, lighter same-hue highlight; if the list is empty add no secondary target.\"\n    },\n    \"version\": \"v1-neutral-primary-2026-10-02\"\n  },\n  \"technical_blocker\": null,\n  \"technique_resolution\": null\n}",
+      "prompt_payload": {
+        "identity_do_not_render_as_text": {
+          "exercise_id": "ball-slams",
+          "name": "Ball Slams",
+          "catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+          "catalog_record_sha256": "916354dda0484f4f320d1665fe1f509c346e42f9f4d70176f4b474e45efd3fc8"
+        },
+        "exact_catalogue_source": {
+          "source_english": {
+            "description": "Ball Slams raise a medicine ball overhead and drive it into the floor using the hips, trunk, and arms together.",
+            "instructions": [
+              "Stand with feet about shoulder-width apart and hold the medicine ball overhead with both hands.",
+              "Brace your trunk and bend the hips and knees slightly.",
+              "Drive the ball forcefully into the floor in front of you.",
+              "Retrieve it with a squat or hinge and reset before the next repetition."
+            ],
+            "form_cues": [
+              "Keep the ball in front of you.",
+              "Use the hips and trunk together.",
+              "Stay balanced after the slam."
+            ],
+            "common_mistakes": [
+              "Bending only at the waist.",
+              "Reaching behind the body overhead.",
+              "Catching a rebound with locked knees."
+            ],
+            "safety_note": "Use a slam-rated medicine ball and keep the rebound area clear.",
+            "provenance": "adapted"
+          },
+          "equipment": "other",
+          "primary_muscle": "full_body",
+          "secondary_muscles": []
+        },
+        "human_reference": {
+          "repository_path": "assets/exercises/biceps-curl-dumbbell.png",
+          "absolute_path": "/workspace/lightweight-exercises-photo/assets/exercises/biceps-curl-dumbbell.png",
+          "sha256": "52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f",
+          "branch": "work",
+          "source_commit": "bffc6f41e512e28b4e383e8dfa711aee07c710fc",
+          "role": "Human appearance/proportions/materials/anatomical style ONLY. Exercise pose, grip, equipment and muscles come from the exact-ID catalogue, never the reference.",
+          "pixels_reviewed_during_preparation": false
+        },
+        "style": {
+          "version": "v1-neutral-primary-2026-10-02",
+          "human_model": "One athletic bald male anatomical mannequin, opaque silver-gray muscular surfaces, consistent proportions and detailed 3D materials, plain black shorts, barefoot.",
+          "primary_highlight": {
+            "hex": null,
+            "rule": "full_body/cardio/other are broad labels, NOT anatomical targets. Entire body neutral opaque silver-gray except explicitly listed concrete secondary targets."
+          },
+          "secondary_highlight": {
+            "hex": "#F26445",
+            "intensity_fraction": [
+              0.4,
+              0.5
+            ],
+            "rule": "Only the exact secondary muscles, lighter same-hue highlight; if the list is empty add no secondary target."
+          },
+          "background": "Genuinely transparent PNG background, no white/checkerboard layer, no environment scene.",
+          "output": {
+            "format": "PNG",
+            "width": 1024,
+            "height": 1024,
+            "one_person": true,
+            "one_phase": true
+          },
+          "material_rules": "Highlights never make tissue transparent; no glow, whole-body orange tint, hair, text, labels, arrows, UI, borders, collage or extra person.",
+          "framing": "Full figure and all required equipment/supports visible within a square. Scale and use a three-quarter view to expose the specified contacts without changing anatomy, equipment, grip or technique.",
+          "no_invention": "Exact catalogue ID controls identity, raw equipment and muscles. Only the embedded verified same-ID/source-variant decisions may clarify rendering technique. No guessed weights, brands, attachments or muscle targets.",
+          "base_version": "v1",
+          "approval_status": "approved"
+        },
+        "base_style_sha256": "8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578",
+        "selected_render_scene": {
+          "exercise_id": "ball-slams",
+          "single_phase": "Ball overhead before slam",
+          "pose": "Stand about shoulder-width, both arms securely hold ball overhead in FRONT, core braced and knees/hips soft.",
+          "grip": "Both hands securely support the SAME slam-rated medicine ball.",
+          "supports_and_equipment": "Both feet grounded, clear rebound/landing area, no wall target.",
+          "movement_trajectory": "Drive overhead ball into floor in front, retrieve by controlled squat/hinge, reset.",
+          "camera": "Front-side three-quarter view showing complete person, prescribed grip and all supports/contacts within square; no crop.",
+          "one_phase_only": true,
+          "never_infer_muscles_from_pose_or_reference": true
+        },
+        "technique_resolution": null,
+        "same_ID_supplementary_fields": [],
+        "technical_blocker": null,
+        "source_use_rule": "Render ONLY selected_render_scene and the explicit exact-ID resolution; original English stays verbatim for provenance even when a disputed field is overridden. Do not invent a substitute exercise or copy reference pose/equipment/muscle colors.",
+        "approved_style_addendum": {
+          "version": "v1-neutral-primary-2026-10-02",
+          "path": "docs/exercise-image-style-neutral-primary.md",
+          "sha256": "86204ab43f23d119a1eb25cafdbda2518b741a0090b4ffb0ceb9086952314439",
+          "decision_path": "data/style-decisions/agent-03-neutral-primary-approved.json",
+          "decision_sha256": "96a4d80dafd45956d40c82979d48ecd5d683b24437b02eac0bc45f33826ac155",
+          "user_quote": "Для full_body, cardio, other тіло залишається нейтральним\nсріблясто-сірим. Підсвічуються лише конкретні\nsecondary_muscles, записані для точного ID,\nкольором #F26445 на 40–50% інтенсивності.\nПорожній secondary список означає відсутність підсвітки."
+        }
+      },
+      "prompt_sha256": "c7978be790e2b40cfa3df323ac00825b0f7bcb501e50b794c6dcd3728b421e2a",
+      "scene": {
+        "exercise_id": "ball-slams",
+        "single_phase": "Ball overhead before slam",
+        "pose": "Stand about shoulder-width, both arms securely hold ball overhead in FRONT, core braced and knees/hips soft.",
+        "grip": "Both hands securely support the SAME slam-rated medicine ball.",
+        "supports_and_equipment": "Both feet grounded, clear rebound/landing area, no wall target.",
+        "movement_trajectory": "Drive overhead ball into floor in front, retrieve by controlled squat/hinge, reset.",
+        "camera": "Front-side three-quarter view showing complete person, prescribed grip and all supports/contacts within square; no crop.",
+        "one_phase_only": true,
+        "never_infer_muscles_from_pose_or_reference": true
+      },
+      "technique_resolution": null,
+      "same_ID_supplementary_fields": [],
+      "style_version": "v1-neutral-primary-2026-10-02",
+      "base_style_version": "v1",
+      "base_style_sha256": "8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578",
+      "style_proposal_path": null,
+      "style_proposal_sha256": null,
+      "human_reference": {
+        "repository_path": "assets/exercises/biceps-curl-dumbbell.png",
+        "absolute_path": "/workspace/lightweight-exercises-photo/assets/exercises/biceps-curl-dumbbell.png",
+        "sha256": "52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f",
+        "branch": "work",
+        "source_commit": "bffc6f41e512e28b4e383e8dfa711aee07c710fc",
+        "role": "Human appearance/proportions/materials/anatomical style ONLY. Exercise pose, grip, equipment and muscles come from the exact-ID catalogue, never the reference.",
+        "pixels_reviewed_during_preparation": false
+      },
+      "attempts": 0,
+      "result_path": null,
+      "result_sha256": null,
+      "user_review": null,
+      "technical_check": null,
+      "agent_visual_review": "not_performed",
+      "generation_authorized_now": false,
+      "technical_question": null,
+      "assignment_kind": "ready_own_batch_preparation_only",
+      "batch_id": "agent-03-others-019",
+      "planned_png_path": "/workspace/exercise-image-results/agent-03-others-019/ball-slams/attempt-1.png",
+      "planned_output_relative_path": "agent-03-others-019/ball-slams/attempt-1.png",
+      "output_path_policy": "Exact batch_id/exercise_id/attempt path. Do not map generated files by name similarity or array position.",
+      "style_approval_status": "approved",
+      "style_addendum_path": "docs/exercise-image-style-neutral-primary.md",
+      "style_addendum_sha256": "86204ab43f23d119a1eb25cafdbda2518b741a0090b4ffb0ceb9086952314439",
+      "style_decision_path": "data/style-decisions/agent-03-neutral-primary-approved.json",
+      "style_decision_sha256": "96a4d80dafd45956d40c82979d48ecd5d683b24437b02eac0bc45f33826ac155",
+      "source_draft_path": "data/queues/agent-03-neutral-primary-style-drafts.json",
+      "source_draft_file_sha256": "6185597c9402fd8c46ed4b869de7073c129df21c65bbc461080cea6827657d3b",
+      "source_draft_prompt_sha256": "0f9bdca3fb64107eee402dc574587c5d0dc92dc3ab2df8af5aaac00bdb702993",
+      "style_path": "docs/exercise-image-style-neutral-primary.md",
+      "style_sha256": "86204ab43f23d119a1eb25cafdbda2518b741a0090b4ffb0ceb9086952314439"
+    },
+    {
+      "exercise_id": "battle-ropes-machine",
+      "name": "Battle Ropes",
+      "source_english": {
+        "description": "Battle Ropes create alternating waves from a stable athletic stance, with the rope motion traveling toward its anchor.",
+        "instructions": [
+          "Stand with a soft bend in the knees and hold one rope end in each hand.",
+          "Brace your trunk and create alternating waves by lifting and lowering the hands.",
+          "Keep the waves traveling toward the anchor rather than swinging the torso.",
+          "Work for the planned interval, then lower the ropes under control."
+        ],
+        "form_cues": [
+          "Keep a stable base.",
+          "Relax the neck.",
+          "Match the wave to your breathing."
+        ],
+        "common_mistakes": [
+          "Locking the knees.",
+          "Using only the shoulders.",
+          "Leaning back against the rope tension."
+        ],
+        "safety_note": "Secure the rope anchor and keep both feet planted during waves.",
+        "provenance": "adapted"
+      },
+      "equipment": "machine",
+      "primary_muscle": "cardio",
+      "secondary_muscles": [],
+      "source_catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+      "source_catalog_record_sha256": "3a1fa6239e892a8aed52fb5a826d75a31b33105275cd8a080f5f3ea3696fa066",
+      "source_english_sha256": "936ca7713a8438b670e787a1f0ed7d7f2bb858c6ec04a38dac5ab711771e22d3",
+      "status": "ready",
+      "technical_status": "ready",
+      "prompt_prepared": true,
+      "prompt_status": "complete",
+      "prompt_template": null,
+      "generation_prompt": "Create exactly ONE square transparent PNG of the exact exercise and selected single phase. Metadata fields must never appear as text.\nDo not render multiple phases, raw disputed alternatives, or inferred muscle targets.\n{\n  \"approved_style_addendum\": {\n    \"decision_path\": \"data/style-decisions/agent-03-neutral-primary-approved.json\",\n    \"decision_sha256\": \"96a4d80dafd45956d40c82979d48ecd5d683b24437b02eac0bc45f33826ac155\",\n    \"path\": \"docs/exercise-image-style-neutral-primary.md\",\n    \"sha256\": \"86204ab43f23d119a1eb25cafdbda2518b741a0090b4ffb0ceb9086952314439\",\n    \"user_quote\": \"Для full_body, cardio, other тіло залишається нейтральним\\nсріблясто-сірим. Підсвічуються лише конкретні\\nsecondary_muscles, записані для точного ID,\\nкольором #F26445 на 40–50% інтенсивності.\\nПорожній secondary список означає відсутність підсвітки.\",\n    \"version\": \"v1-neutral-primary-2026-10-02\"\n  },\n  \"base_style_sha256\": \"8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578\",\n  \"exact_catalogue_source\": {\n    \"equipment\": \"machine\",\n    \"primary_muscle\": \"cardio\",\n    \"secondary_muscles\": [],\n    \"source_english\": {\n      \"common_mistakes\": [\n        \"Locking the knees.\",\n        \"Using only the shoulders.\",\n        \"Leaning back against the rope tension.\"\n      ],\n      \"description\": \"Battle Ropes create alternating waves from a stable athletic stance, with the rope motion traveling toward its anchor.\",\n      \"form_cues\": [\n        \"Keep a stable base.\",\n        \"Relax the neck.\",\n        \"Match the wave to your breathing.\"\n      ],\n      \"instructions\": [\n        \"Stand with a soft bend in the knees and hold one rope end in each hand.\",\n        \"Brace your trunk and create alternating waves by lifting and lowering the hands.\",\n        \"Keep the waves traveling toward the anchor rather than swinging the torso.\",\n        \"Work for the planned interval, then lower the ropes under control.\"\n      ],\n      \"provenance\": \"adapted\",\n      \"safety_note\": \"Secure the rope anchor and keep both feet planted during waves.\"\n    }\n  },\n  \"human_reference\": {\n    \"absolute_path\": \"/workspace/lightweight-exercises-photo/assets/exercises/biceps-curl-dumbbell.png\",\n    \"branch\": \"work\",\n    \"pixels_reviewed_during_preparation\": false,\n    \"repository_path\": \"assets/exercises/biceps-curl-dumbbell.png\",\n    \"role\": \"Human appearance/proportions/materials/anatomical style ONLY. Exercise pose, grip, equipment and muscles come from the exact-ID catalogue, never the reference.\",\n    \"sha256\": \"52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f\",\n    \"source_commit\": \"bffc6f41e512e28b4e383e8dfa711aee07c710fc\"\n  },\n  \"identity_do_not_render_as_text\": {\n    \"catalog_record_sha256\": \"3a1fa6239e892a8aed52fb5a826d75a31b33105275cd8a080f5f3ea3696fa066\",\n    \"catalog_sha256\": \"a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989\",\n    \"exercise_id\": \"battle-ropes-machine\",\n    \"name\": \"Battle Ropes\"\n  },\n  \"same_ID_supplementary_fields\": [],\n  \"selected_render_scene\": {\n    \"camera\": \"Front-side three-quarter view showing complete person, prescribed grip and all supports/contacts within square; no crop.\",\n    \"exercise_id\": \"battle-ropes-machine\",\n    \"grip\": \"One rope END firmly in each hand.\",\n    \"movement_trajectory\": \"Alternate lifting/lowering hands so waves travel toward rope anchor.\",\n    \"never_infer_muscles_from_pose_or_reference\": true,\n    \"one_phase_only\": true,\n    \"pose\": \"Stable athletic stance with soft knees, right hand higher and left lower creating alternating waves, quiet trunk.\",\n    \"single_phase\": \"Alternating rope waves\",\n    \"supports_and_equipment\": \"Both feet planted; the two ends belong to battle rope fixed at visible secure distant anchor. No cable station or weight stack.\"\n  },\n  \"source_use_rule\": \"Render ONLY selected_render_scene and the explicit exact-ID resolution; original English stays verbatim for provenance even when a disputed field is overridden. Do not invent a substitute exercise or copy reference pose/equipment/muscle colors.\",\n  \"style\": {\n    \"approval_status\": \"approved\",\n    \"background\": \"Genuinely transparent PNG background, no white/checkerboard layer, no environment scene.\",\n    \"base_version\": \"v1\",\n    \"framing\": \"Full figure and all required equipment/supports visible within a square. Scale and use a three-quarter view to expose the specified contacts without changing anatomy, equipment, grip or technique.\",\n    \"human_model\": \"One athletic bald male anatomical mannequin, opaque silver-gray muscular surfaces, consistent proportions and detailed 3D materials, plain black shorts, barefoot.\",\n    \"material_rules\": \"Highlights never make tissue transparent; no glow, whole-body orange tint, hair, text, labels, arrows, UI, borders, collage or extra person.\",\n    \"no_invention\": \"Exact catalogue ID controls identity, raw equipment and muscles. Only the embedded verified same-ID/source-variant decisions may clarify rendering technique. No guessed weights, brands, attachments or muscle targets.\",\n    \"output\": {\n      \"format\": \"PNG\",\n      \"height\": 1024,\n      \"one_person\": true,\n      \"one_phase\": true,\n      \"width\": 1024\n    },\n    \"primary_highlight\": {\n      \"hex\": null,\n      \"rule\": \"full_body/cardio/other are broad labels, NOT anatomical targets. Entire body neutral opaque silver-gray except explicitly listed concrete secondary targets.\"\n    },\n    \"secondary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"intensity_fraction\": [\n        0.4,\n        0.5\n      ],\n      \"rule\": \"Only the exact secondary muscles, lighter same-hue highlight; if the list is empty add no secondary target.\"\n    },\n    \"version\": \"v1-neutral-primary-2026-10-02\"\n  },\n  \"technical_blocker\": null,\n  \"technique_resolution\": null\n}",
+      "prompt_payload": {
+        "identity_do_not_render_as_text": {
+          "exercise_id": "battle-ropes-machine",
+          "name": "Battle Ropes",
+          "catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+          "catalog_record_sha256": "3a1fa6239e892a8aed52fb5a826d75a31b33105275cd8a080f5f3ea3696fa066"
+        },
+        "exact_catalogue_source": {
+          "source_english": {
+            "description": "Battle Ropes create alternating waves from a stable athletic stance, with the rope motion traveling toward its anchor.",
+            "instructions": [
+              "Stand with a soft bend in the knees and hold one rope end in each hand.",
+              "Brace your trunk and create alternating waves by lifting and lowering the hands.",
+              "Keep the waves traveling toward the anchor rather than swinging the torso.",
+              "Work for the planned interval, then lower the ropes under control."
+            ],
+            "form_cues": [
+              "Keep a stable base.",
+              "Relax the neck.",
+              "Match the wave to your breathing."
+            ],
+            "common_mistakes": [
+              "Locking the knees.",
+              "Using only the shoulders.",
+              "Leaning back against the rope tension."
+            ],
+            "safety_note": "Secure the rope anchor and keep both feet planted during waves.",
+            "provenance": "adapted"
+          },
+          "equipment": "machine",
+          "primary_muscle": "cardio",
+          "secondary_muscles": []
+        },
+        "human_reference": {
+          "repository_path": "assets/exercises/biceps-curl-dumbbell.png",
+          "absolute_path": "/workspace/lightweight-exercises-photo/assets/exercises/biceps-curl-dumbbell.png",
+          "sha256": "52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f",
+          "branch": "work",
+          "source_commit": "bffc6f41e512e28b4e383e8dfa711aee07c710fc",
+          "role": "Human appearance/proportions/materials/anatomical style ONLY. Exercise pose, grip, equipment and muscles come from the exact-ID catalogue, never the reference.",
+          "pixels_reviewed_during_preparation": false
+        },
+        "style": {
+          "version": "v1-neutral-primary-2026-10-02",
+          "human_model": "One athletic bald male anatomical mannequin, opaque silver-gray muscular surfaces, consistent proportions and detailed 3D materials, plain black shorts, barefoot.",
+          "primary_highlight": {
+            "hex": null,
+            "rule": "full_body/cardio/other are broad labels, NOT anatomical targets. Entire body neutral opaque silver-gray except explicitly listed concrete secondary targets."
+          },
+          "secondary_highlight": {
+            "hex": "#F26445",
+            "intensity_fraction": [
+              0.4,
+              0.5
+            ],
+            "rule": "Only the exact secondary muscles, lighter same-hue highlight; if the list is empty add no secondary target."
+          },
+          "background": "Genuinely transparent PNG background, no white/checkerboard layer, no environment scene.",
+          "output": {
+            "format": "PNG",
+            "width": 1024,
+            "height": 1024,
+            "one_person": true,
+            "one_phase": true
+          },
+          "material_rules": "Highlights never make tissue transparent; no glow, whole-body orange tint, hair, text, labels, arrows, UI, borders, collage or extra person.",
+          "framing": "Full figure and all required equipment/supports visible within a square. Scale and use a three-quarter view to expose the specified contacts without changing anatomy, equipment, grip or technique.",
+          "no_invention": "Exact catalogue ID controls identity, raw equipment and muscles. Only the embedded verified same-ID/source-variant decisions may clarify rendering technique. No guessed weights, brands, attachments or muscle targets.",
+          "base_version": "v1",
+          "approval_status": "approved"
+        },
+        "base_style_sha256": "8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578",
+        "selected_render_scene": {
+          "exercise_id": "battle-ropes-machine",
+          "single_phase": "Alternating rope waves",
+          "pose": "Stable athletic stance with soft knees, right hand higher and left lower creating alternating waves, quiet trunk.",
+          "grip": "One rope END firmly in each hand.",
+          "supports_and_equipment": "Both feet planted; the two ends belong to battle rope fixed at visible secure distant anchor. No cable station or weight stack.",
+          "movement_trajectory": "Alternate lifting/lowering hands so waves travel toward rope anchor.",
+          "camera": "Front-side three-quarter view showing complete person, prescribed grip and all supports/contacts within square; no crop.",
+          "one_phase_only": true,
+          "never_infer_muscles_from_pose_or_reference": true
+        },
+        "technique_resolution": null,
+        "same_ID_supplementary_fields": [],
+        "technical_blocker": null,
+        "source_use_rule": "Render ONLY selected_render_scene and the explicit exact-ID resolution; original English stays verbatim for provenance even when a disputed field is overridden. Do not invent a substitute exercise or copy reference pose/equipment/muscle colors.",
+        "approved_style_addendum": {
+          "version": "v1-neutral-primary-2026-10-02",
+          "path": "docs/exercise-image-style-neutral-primary.md",
+          "sha256": "86204ab43f23d119a1eb25cafdbda2518b741a0090b4ffb0ceb9086952314439",
+          "decision_path": "data/style-decisions/agent-03-neutral-primary-approved.json",
+          "decision_sha256": "96a4d80dafd45956d40c82979d48ecd5d683b24437b02eac0bc45f33826ac155",
+          "user_quote": "Для full_body, cardio, other тіло залишається нейтральним\nсріблясто-сірим. Підсвічуються лише конкретні\nsecondary_muscles, записані для точного ID,\nкольором #F26445 на 40–50% інтенсивності.\nПорожній secondary список означає відсутність підсвітки."
+        }
+      },
+      "prompt_sha256": "4b270c79d5f6acbbcfbb6edda0a34fef26f457996bf0182bf1b4aa1049a711ad",
+      "scene": {
+        "exercise_id": "battle-ropes-machine",
+        "single_phase": "Alternating rope waves",
+        "pose": "Stable athletic stance with soft knees, right hand higher and left lower creating alternating waves, quiet trunk.",
+        "grip": "One rope END firmly in each hand.",
+        "supports_and_equipment": "Both feet planted; the two ends belong to battle rope fixed at visible secure distant anchor. No cable station or weight stack.",
+        "movement_trajectory": "Alternate lifting/lowering hands so waves travel toward rope anchor.",
+        "camera": "Front-side three-quarter view showing complete person, prescribed grip and all supports/contacts within square; no crop.",
+        "one_phase_only": true,
+        "never_infer_muscles_from_pose_or_reference": true
+      },
+      "technique_resolution": null,
+      "same_ID_supplementary_fields": [],
+      "style_version": "v1-neutral-primary-2026-10-02",
+      "base_style_version": "v1",
+      "base_style_sha256": "8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578",
+      "style_proposal_path": null,
+      "style_proposal_sha256": null,
+      "human_reference": {
+        "repository_path": "assets/exercises/biceps-curl-dumbbell.png",
+        "absolute_path": "/workspace/lightweight-exercises-photo/assets/exercises/biceps-curl-dumbbell.png",
+        "sha256": "52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f",
+        "branch": "work",
+        "source_commit": "bffc6f41e512e28b4e383e8dfa711aee07c710fc",
+        "role": "Human appearance/proportions/materials/anatomical style ONLY. Exercise pose, grip, equipment and muscles come from the exact-ID catalogue, never the reference.",
+        "pixels_reviewed_during_preparation": false
+      },
+      "attempts": 0,
+      "result_path": null,
+      "result_sha256": null,
+      "user_review": null,
+      "technical_check": null,
+      "agent_visual_review": "not_performed",
+      "generation_authorized_now": false,
+      "technical_question": null,
+      "assignment_kind": "ready_own_batch_preparation_only",
+      "batch_id": "agent-03-others-019",
+      "planned_png_path": "/workspace/exercise-image-results/agent-03-others-019/battle-ropes-machine/attempt-1.png",
+      "planned_output_relative_path": "agent-03-others-019/battle-ropes-machine/attempt-1.png",
+      "output_path_policy": "Exact batch_id/exercise_id/attempt path. Do not map generated files by name similarity or array position.",
+      "style_approval_status": "approved",
+      "style_addendum_path": "docs/exercise-image-style-neutral-primary.md",
+      "style_addendum_sha256": "86204ab43f23d119a1eb25cafdbda2518b741a0090b4ffb0ceb9086952314439",
+      "style_decision_path": "data/style-decisions/agent-03-neutral-primary-approved.json",
+      "style_decision_sha256": "96a4d80dafd45956d40c82979d48ecd5d683b24437b02eac0bc45f33826ac155",
+      "source_draft_path": "data/queues/agent-03-neutral-primary-style-drafts.json",
+      "source_draft_file_sha256": "6185597c9402fd8c46ed4b869de7073c129df21c65bbc461080cea6827657d3b",
+      "source_draft_prompt_sha256": "ebb82f91b30770f7c7fbc3f1d1a5108a2d46297a5a556ea38896027f341774bc",
+      "style_path": "docs/exercise-image-style-neutral-primary.md",
+      "style_sha256": "86204ab43f23d119a1eb25cafdbda2518b741a0090b4ffb0ceb9086952314439"
+    },
+    {
+      "exercise_id": "boxing",
+      "name": "Boxing",
+      "source_english": {
+        "description": "Boxing alternates straight punches and hooks with light footwork, returning each hand to guard between strikes.",
+        "instructions": [
+          "Stand in a balanced stance with hands near the face.",
+          "Throw controlled straight punches and hooks while rotating through the hips.",
+          "Return each hand to guard before the opposite punch.",
+          "Continue for the planned interval and slow the footwork before stopping."
+        ],
+        "form_cues": [
+          "Keep chin tucked.",
+          "Rotate the hips.",
+          "Breathe out on strikes."
+        ],
+        "common_mistakes": [
+          "Locking the elbows.",
+          "Dropping the guard.",
+          "Over-rotating the knees."
+        ],
+        "safety_note": "Use clear space and stop before punches lose wrist and shoulder alignment.",
+        "provenance": "authored"
+      },
+      "equipment": "none",
+      "primary_muscle": "cardio",
+      "secondary_muscles": [],
+      "source_catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+      "source_catalog_record_sha256": "7435ac51c1e583661962709beec21fe6bf1a589b329f347f68c5bfd67d201e3b",
+      "source_english_sha256": "e72ad651968a596cb136179cdafb953204fb74b8bb92ff3107974c9da85e6567",
+      "status": "ready",
+      "technical_status": "ready",
+      "prompt_prepared": true,
+      "prompt_status": "complete",
+      "prompt_template": null,
+      "generation_prompt": "Create exactly ONE square transparent PNG of the exact exercise and selected single phase. Metadata fields must never appear as text.\nDo not render multiple phases, raw disputed alternatives, or inferred muscle targets.\n{\n  \"approved_style_addendum\": {\n    \"decision_path\": \"data/style-decisions/agent-03-neutral-primary-approved.json\",\n    \"decision_sha256\": \"96a4d80dafd45956d40c82979d48ecd5d683b24437b02eac0bc45f33826ac155\",\n    \"path\": \"docs/exercise-image-style-neutral-primary.md\",\n    \"sha256\": \"86204ab43f23d119a1eb25cafdbda2518b741a0090b4ffb0ceb9086952314439\",\n    \"user_quote\": \"Для full_body, cardio, other тіло залишається нейтральним\\nсріблясто-сірим. Підсвічуються лише конкретні\\nsecondary_muscles, записані для точного ID,\\nкольором #F26445 на 40–50% інтенсивності.\\nПорожній secondary список означає відсутність підсвітки.\",\n    \"version\": \"v1-neutral-primary-2026-10-02\"\n  },\n  \"base_style_sha256\": \"8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578\",\n  \"exact_catalogue_source\": {\n    \"equipment\": \"none\",\n    \"primary_muscle\": \"cardio\",\n    \"secondary_muscles\": [],\n    \"source_english\": {\n      \"common_mistakes\": [\n        \"Locking the elbows.\",\n        \"Dropping the guard.\",\n        \"Over-rotating the knees.\"\n      ],\n      \"description\": \"Boxing alternates straight punches and hooks with light footwork, returning each hand to guard between strikes.\",\n      \"form_cues\": [\n        \"Keep chin tucked.\",\n        \"Rotate the hips.\",\n        \"Breathe out on strikes.\"\n      ],\n      \"instructions\": [\n        \"Stand in a balanced stance with hands near the face.\",\n        \"Throw controlled straight punches and hooks while rotating through the hips.\",\n        \"Return each hand to guard before the opposite punch.\",\n        \"Continue for the planned interval and slow the footwork before stopping.\"\n      ],\n      \"provenance\": \"authored\",\n      \"safety_note\": \"Use clear space and stop before punches lose wrist and shoulder alignment.\"\n    }\n  },\n  \"human_reference\": {\n    \"absolute_path\": \"/workspace/lightweight-exercises-photo/assets/exercises/biceps-curl-dumbbell.png\",\n    \"branch\": \"work\",\n    \"pixels_reviewed_during_preparation\": false,\n    \"repository_path\": \"assets/exercises/biceps-curl-dumbbell.png\",\n    \"role\": \"Human appearance/proportions/materials/anatomical style ONLY. Exercise pose, grip, equipment and muscles come from the exact-ID catalogue, never the reference.\",\n    \"sha256\": \"52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f\",\n    \"source_commit\": \"bffc6f41e512e28b4e383e8dfa711aee07c710fc\"\n  },\n  \"identity_do_not_render_as_text\": {\n    \"catalog_record_sha256\": \"7435ac51c1e583661962709beec21fe6bf1a589b329f347f68c5bfd67d201e3b\",\n    \"catalog_sha256\": \"a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989\",\n    \"exercise_id\": \"boxing\",\n    \"name\": \"Boxing\"\n  },\n  \"same_ID_supplementary_fields\": [],\n  \"selected_render_scene\": {\n    \"camera\": \"Front-side three-quarter view showing complete person, prescribed grip and all supports/contacts within square; no crop.\",\n    \"exercise_id\": \"boxing\",\n    \"grip\": \"Hands unweighted; one fist punching, other at guard, no invented gloves or bag.\",\n    \"movement_trajectory\": \"Alternate straight punches/hooks and return each hand to guard; choose one straight punch phase.\",\n    \"never_infer_muscles_from_pose_or_reference\": true,\n    \"one_phase_only\": true,\n    \"pose\": \"Balanced boxing stance, hips rotate with one controlled straight punch, elbow not locked, chin tucked, opposite hand near face.\",\n    \"single_phase\": \"Controlled straight punch with opposite guard\",\n    \"supports_and_equipment\": \"Stable floor foot contacts in clear space.\"\n  },\n  \"source_use_rule\": \"Render ONLY selected_render_scene and the explicit exact-ID resolution; original English stays verbatim for provenance even when a disputed field is overridden. Do not invent a substitute exercise or copy reference pose/equipment/muscle colors.\",\n  \"style\": {\n    \"approval_status\": \"approved\",\n    \"background\": \"Genuinely transparent PNG background, no white/checkerboard layer, no environment scene.\",\n    \"base_version\": \"v1\",\n    \"framing\": \"Full figure and all required equipment/supports visible within a square. Scale and use a three-quarter view to expose the specified contacts without changing anatomy, equipment, grip or technique.\",\n    \"human_model\": \"One athletic bald male anatomical mannequin, opaque silver-gray muscular surfaces, consistent proportions and detailed 3D materials, plain black shorts, barefoot.\",\n    \"material_rules\": \"Highlights never make tissue transparent; no glow, whole-body orange tint, hair, text, labels, arrows, UI, borders, collage or extra person.\",\n    \"no_invention\": \"Exact catalogue ID controls identity, raw equipment and muscles. Only the embedded verified same-ID/source-variant decisions may clarify rendering technique. No guessed weights, brands, attachments or muscle targets.\",\n    \"output\": {\n      \"format\": \"PNG\",\n      \"height\": 1024,\n      \"one_person\": true,\n      \"one_phase\": true,\n      \"width\": 1024\n    },\n    \"primary_highlight\": {\n      \"hex\": null,\n      \"rule\": \"full_body/cardio/other are broad labels, NOT anatomical targets. Entire body neutral opaque silver-gray except explicitly listed concrete secondary targets.\"\n    },\n    \"secondary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"intensity_fraction\": [\n        0.4,\n        0.5\n      ],\n      \"rule\": \"Only the exact secondary muscles, lighter same-hue highlight; if the list is empty add no secondary target.\"\n    },\n    \"version\": \"v1-neutral-primary-2026-10-02\"\n  },\n  \"technical_blocker\": null,\n  \"technique_resolution\": null\n}",
+      "prompt_payload": {
+        "identity_do_not_render_as_text": {
+          "exercise_id": "boxing",
+          "name": "Boxing",
+          "catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+          "catalog_record_sha256": "7435ac51c1e583661962709beec21fe6bf1a589b329f347f68c5bfd67d201e3b"
+        },
+        "exact_catalogue_source": {
+          "source_english": {
+            "description": "Boxing alternates straight punches and hooks with light footwork, returning each hand to guard between strikes.",
+            "instructions": [
+              "Stand in a balanced stance with hands near the face.",
+              "Throw controlled straight punches and hooks while rotating through the hips.",
+              "Return each hand to guard before the opposite punch.",
+              "Continue for the planned interval and slow the footwork before stopping."
+            ],
+            "form_cues": [
+              "Keep chin tucked.",
+              "Rotate the hips.",
+              "Breathe out on strikes."
+            ],
+            "common_mistakes": [
+              "Locking the elbows.",
+              "Dropping the guard.",
+              "Over-rotating the knees."
+            ],
+            "safety_note": "Use clear space and stop before punches lose wrist and shoulder alignment.",
+            "provenance": "authored"
+          },
+          "equipment": "none",
+          "primary_muscle": "cardio",
+          "secondary_muscles": []
+        },
+        "human_reference": {
+          "repository_path": "assets/exercises/biceps-curl-dumbbell.png",
+          "absolute_path": "/workspace/lightweight-exercises-photo/assets/exercises/biceps-curl-dumbbell.png",
+          "sha256": "52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f",
+          "branch": "work",
+          "source_commit": "bffc6f41e512e28b4e383e8dfa711aee07c710fc",
+          "role": "Human appearance/proportions/materials/anatomical style ONLY. Exercise pose, grip, equipment and muscles come from the exact-ID catalogue, never the reference.",
+          "pixels_reviewed_during_preparation": false
+        },
+        "style": {
+          "version": "v1-neutral-primary-2026-10-02",
+          "human_model": "One athletic bald male anatomical mannequin, opaque silver-gray muscular surfaces, consistent proportions and detailed 3D materials, plain black shorts, barefoot.",
+          "primary_highlight": {
+            "hex": null,
+            "rule": "full_body/cardio/other are broad labels, NOT anatomical targets. Entire body neutral opaque silver-gray except explicitly listed concrete secondary targets."
+          },
+          "secondary_highlight": {
+            "hex": "#F26445",
+            "intensity_fraction": [
+              0.4,
+              0.5
+            ],
+            "rule": "Only the exact secondary muscles, lighter same-hue highlight; if the list is empty add no secondary target."
+          },
+          "background": "Genuinely transparent PNG background, no white/checkerboard layer, no environment scene.",
+          "output": {
+            "format": "PNG",
+            "width": 1024,
+            "height": 1024,
+            "one_person": true,
+            "one_phase": true
+          },
+          "material_rules": "Highlights never make tissue transparent; no glow, whole-body orange tint, hair, text, labels, arrows, UI, borders, collage or extra person.",
+          "framing": "Full figure and all required equipment/supports visible within a square. Scale and use a three-quarter view to expose the specified contacts without changing anatomy, equipment, grip or technique.",
+          "no_invention": "Exact catalogue ID controls identity, raw equipment and muscles. Only the embedded verified same-ID/source-variant decisions may clarify rendering technique. No guessed weights, brands, attachments or muscle targets.",
+          "base_version": "v1",
+          "approval_status": "approved"
+        },
+        "base_style_sha256": "8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578",
+        "selected_render_scene": {
+          "exercise_id": "boxing",
+          "single_phase": "Controlled straight punch with opposite guard",
+          "pose": "Balanced boxing stance, hips rotate with one controlled straight punch, elbow not locked, chin tucked, opposite hand near face.",
+          "grip": "Hands unweighted; one fist punching, other at guard, no invented gloves or bag.",
+          "supports_and_equipment": "Stable floor foot contacts in clear space.",
+          "movement_trajectory": "Alternate straight punches/hooks and return each hand to guard; choose one straight punch phase.",
+          "camera": "Front-side three-quarter view showing complete person, prescribed grip and all supports/contacts within square; no crop.",
+          "one_phase_only": true,
+          "never_infer_muscles_from_pose_or_reference": true
+        },
+        "technique_resolution": null,
+        "same_ID_supplementary_fields": [],
+        "technical_blocker": null,
+        "source_use_rule": "Render ONLY selected_render_scene and the explicit exact-ID resolution; original English stays verbatim for provenance even when a disputed field is overridden. Do not invent a substitute exercise or copy reference pose/equipment/muscle colors.",
+        "approved_style_addendum": {
+          "version": "v1-neutral-primary-2026-10-02",
+          "path": "docs/exercise-image-style-neutral-primary.md",
+          "sha256": "86204ab43f23d119a1eb25cafdbda2518b741a0090b4ffb0ceb9086952314439",
+          "decision_path": "data/style-decisions/agent-03-neutral-primary-approved.json",
+          "decision_sha256": "96a4d80dafd45956d40c82979d48ecd5d683b24437b02eac0bc45f33826ac155",
+          "user_quote": "Для full_body, cardio, other тіло залишається нейтральним\nсріблясто-сірим. Підсвічуються лише конкретні\nsecondary_muscles, записані для точного ID,\nкольором #F26445 на 40–50% інтенсивності.\nПорожній secondary список означає відсутність підсвітки."
+        }
+      },
+      "prompt_sha256": "8c5deacd551bd63aec6207e53b86e54b55242c1536f5ef0baec92195c77f124c",
+      "scene": {
+        "exercise_id": "boxing",
+        "single_phase": "Controlled straight punch with opposite guard",
+        "pose": "Balanced boxing stance, hips rotate with one controlled straight punch, elbow not locked, chin tucked, opposite hand near face.",
+        "grip": "Hands unweighted; one fist punching, other at guard, no invented gloves or bag.",
+        "supports_and_equipment": "Stable floor foot contacts in clear space.",
+        "movement_trajectory": "Alternate straight punches/hooks and return each hand to guard; choose one straight punch phase.",
+        "camera": "Front-side three-quarter view showing complete person, prescribed grip and all supports/contacts within square; no crop.",
+        "one_phase_only": true,
+        "never_infer_muscles_from_pose_or_reference": true
+      },
+      "technique_resolution": null,
+      "same_ID_supplementary_fields": [],
+      "style_version": "v1-neutral-primary-2026-10-02",
+      "base_style_version": "v1",
+      "base_style_sha256": "8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578",
+      "style_proposal_path": null,
+      "style_proposal_sha256": null,
+      "human_reference": {
+        "repository_path": "assets/exercises/biceps-curl-dumbbell.png",
+        "absolute_path": "/workspace/lightweight-exercises-photo/assets/exercises/biceps-curl-dumbbell.png",
+        "sha256": "52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f",
+        "branch": "work",
+        "source_commit": "bffc6f41e512e28b4e383e8dfa711aee07c710fc",
+        "role": "Human appearance/proportions/materials/anatomical style ONLY. Exercise pose, grip, equipment and muscles come from the exact-ID catalogue, never the reference.",
+        "pixels_reviewed_during_preparation": false
+      },
+      "attempts": 0,
+      "result_path": null,
+      "result_sha256": null,
+      "user_review": null,
+      "technical_check": null,
+      "agent_visual_review": "not_performed",
+      "generation_authorized_now": false,
+      "technical_question": null,
+      "assignment_kind": "ready_own_batch_preparation_only",
+      "batch_id": "agent-03-others-019",
+      "planned_png_path": "/workspace/exercise-image-results/agent-03-others-019/boxing/attempt-1.png",
+      "planned_output_relative_path": "agent-03-others-019/boxing/attempt-1.png",
+      "output_path_policy": "Exact batch_id/exercise_id/attempt path. Do not map generated files by name similarity or array position.",
+      "style_approval_status": "approved",
+      "style_addendum_path": "docs/exercise-image-style-neutral-primary.md",
+      "style_addendum_sha256": "86204ab43f23d119a1eb25cafdbda2518b741a0090b4ffb0ceb9086952314439",
+      "style_decision_path": "data/style-decisions/agent-03-neutral-primary-approved.json",
+      "style_decision_sha256": "96a4d80dafd45956d40c82979d48ecd5d683b24437b02eac0bc45f33826ac155",
+      "source_draft_path": "data/queues/agent-03-neutral-primary-style-drafts.json",
+      "source_draft_file_sha256": "6185597c9402fd8c46ed4b869de7073c129df21c65bbc461080cea6827657d3b",
+      "source_draft_prompt_sha256": "485efdd89ceffb186c66493a9512a2bb1576cac6260356e9a74bf7c2f71c3d2c",
+      "style_path": "docs/exercise-image-style-neutral-primary.md",
+      "style_sha256": "86204ab43f23d119a1eb25cafdbda2518b741a0090b4ffb0ceb9086952314439"
+    },
+    {
+      "exercise_id": "burpee",
+      "name": "Burpee",
+      "source_english": {
+        "description": "Burpee combines a squat-to-plank transition with a soft vertical jump.",
+        "instructions": [
+          "Stand tall, squat, and place the hands on the floor.",
+          "Step or jump both feet back into a plank, then return them under the hips.",
+          "Stand and jump straight up, landing with bent knees.",
+          "Turn or reset under control before the next repetition."
+        ],
+        "form_cues": [
+          "Brace the plank.",
+          "Land quietly.",
+          "Keep hands under shoulders."
+        ],
+        "common_mistakes": [
+          "Letting hips sag.",
+          "Jumping before standing tall.",
+          "Landing stiff-legged."
+        ],
+        "safety_note": "Use a step-back or step-over version if the plank or landing cannot stay controlled.",
+        "provenance": "adapted"
+      },
+      "equipment": "none",
+      "primary_muscle": "full_body",
+      "secondary_muscles": [],
+      "source_catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+      "source_catalog_record_sha256": "5c9d19b53b1a206e71b00f4cb74ea7173e6fbe1eb874323a1424215568e2e3d7",
+      "source_english_sha256": "63be81dfb8e26e339a78ea610c3b0a4464b6c6616ab257b3d374c55eaec8954d",
+      "status": "ready",
+      "technical_status": "ready",
+      "prompt_prepared": true,
+      "prompt_status": "complete",
+      "prompt_template": null,
+      "generation_prompt": "Create exactly ONE square transparent PNG of the exact exercise and selected single phase. Metadata fields must never appear as text.\nDo not render multiple phases, raw disputed alternatives, or inferred muscle targets.\n{\n  \"approved_style_addendum\": {\n    \"decision_path\": \"data/style-decisions/agent-03-neutral-primary-approved.json\",\n    \"decision_sha256\": \"96a4d80dafd45956d40c82979d48ecd5d683b24437b02eac0bc45f33826ac155\",\n    \"path\": \"docs/exercise-image-style-neutral-primary.md\",\n    \"sha256\": \"86204ab43f23d119a1eb25cafdbda2518b741a0090b4ffb0ceb9086952314439\",\n    \"user_quote\": \"Для full_body, cardio, other тіло залишається нейтральним\\nсріблясто-сірим. Підсвічуються лише конкретні\\nsecondary_muscles, записані для точного ID,\\nкольором #F26445 на 40–50% інтенсивності.\\nПорожній secondary список означає відсутність підсвітки.\",\n    \"version\": \"v1-neutral-primary-2026-10-02\"\n  },\n  \"base_style_sha256\": \"8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578\",\n  \"exact_catalogue_source\": {\n    \"equipment\": \"none\",\n    \"primary_muscle\": \"full_body\",\n    \"secondary_muscles\": [],\n    \"source_english\": {\n      \"common_mistakes\": [\n        \"Letting hips sag.\",\n        \"Jumping before standing tall.\",\n        \"Landing stiff-legged.\"\n      ],\n      \"description\": \"Burpee combines a squat-to-plank transition with a soft vertical jump.\",\n      \"form_cues\": [\n        \"Brace the plank.\",\n        \"Land quietly.\",\n        \"Keep hands under shoulders.\"\n      ],\n      \"instructions\": [\n        \"Stand tall, squat, and place the hands on the floor.\",\n        \"Step or jump both feet back into a plank, then return them under the hips.\",\n        \"Stand and jump straight up, landing with bent knees.\",\n        \"Turn or reset under control before the next repetition.\"\n      ],\n      \"provenance\": \"adapted\",\n      \"safety_note\": \"Use a step-back or step-over version if the plank or landing cannot stay controlled.\"\n    }\n  },\n  \"human_reference\": {\n    \"absolute_path\": \"/workspace/lightweight-exercises-photo/assets/exercises/biceps-curl-dumbbell.png\",\n    \"branch\": \"work\",\n    \"pixels_reviewed_during_preparation\": false,\n    \"repository_path\": \"assets/exercises/biceps-curl-dumbbell.png\",\n    \"role\": \"Human appearance/proportions/materials/anatomical style ONLY. Exercise pose, grip, equipment and muscles come from the exact-ID catalogue, never the reference.\",\n    \"sha256\": \"52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f\",\n    \"source_commit\": \"bffc6f41e512e28b4e383e8dfa711aee07c710fc\"\n  },\n  \"identity_do_not_render_as_text\": {\n    \"catalog_record_sha256\": \"5c9d19b53b1a206e71b00f4cb74ea7173e6fbe1eb874323a1424215568e2e3d7\",\n    \"catalog_sha256\": \"a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989\",\n    \"exercise_id\": \"burpee\",\n    \"name\": \"Burpee\"\n  },\n  \"same_ID_supplementary_fields\": [],\n  \"selected_render_scene\": {\n    \"camera\": \"Front-side three-quarter view showing complete person, prescribed grip and all supports/contacts within square; no crop.\",\n    \"exercise_id\": \"burpee\",\n    \"grip\": \"Palms on floor directly under shoulders, no handles.\",\n    \"movement_trajectory\": \"Squat to palms down, step/jump feet to plank, return feet, stand and vertical jump with soft landing.\",\n    \"never_infer_muscles_from_pose_or_reference\": true,\n    \"one_phase_only\": true,\n    \"pose\": \"Straight high plank, trunk braced and no hip sag before feet return under hips.\",\n    \"single_phase\": \"Braced plank transition\",\n    \"supports_and_equipment\": \"Both palms and toes on non-slip floor, no extra equipment.\"\n  },\n  \"source_use_rule\": \"Render ONLY selected_render_scene and the explicit exact-ID resolution; original English stays verbatim for provenance even when a disputed field is overridden. Do not invent a substitute exercise or copy reference pose/equipment/muscle colors.\",\n  \"style\": {\n    \"approval_status\": \"approved\",\n    \"background\": \"Genuinely transparent PNG background, no white/checkerboard layer, no environment scene.\",\n    \"base_version\": \"v1\",\n    \"framing\": \"Full figure and all required equipment/supports visible within a square. Scale and use a three-quarter view to expose the specified contacts without changing anatomy, equipment, grip or technique.\",\n    \"human_model\": \"One athletic bald male anatomical mannequin, opaque silver-gray muscular surfaces, consistent proportions and detailed 3D materials, plain black shorts, barefoot.\",\n    \"material_rules\": \"Highlights never make tissue transparent; no glow, whole-body orange tint, hair, text, labels, arrows, UI, borders, collage or extra person.\",\n    \"no_invention\": \"Exact catalogue ID controls identity, raw equipment and muscles. Only the embedded verified same-ID/source-variant decisions may clarify rendering technique. No guessed weights, brands, attachments or muscle targets.\",\n    \"output\": {\n      \"format\": \"PNG\",\n      \"height\": 1024,\n      \"one_person\": true,\n      \"one_phase\": true,\n      \"width\": 1024\n    },\n    \"primary_highlight\": {\n      \"hex\": null,\n      \"rule\": \"full_body/cardio/other are broad labels, NOT anatomical targets. Entire body neutral opaque silver-gray except explicitly listed concrete secondary targets.\"\n    },\n    \"secondary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"intensity_fraction\": [\n        0.4,\n        0.5\n      ],\n      \"rule\": \"Only the exact secondary muscles, lighter same-hue highlight; if the list is empty add no secondary target.\"\n    },\n    \"version\": \"v1-neutral-primary-2026-10-02\"\n  },\n  \"technical_blocker\": null,\n  \"technique_resolution\": null\n}",
+      "prompt_payload": {
+        "identity_do_not_render_as_text": {
+          "exercise_id": "burpee",
+          "name": "Burpee",
+          "catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+          "catalog_record_sha256": "5c9d19b53b1a206e71b00f4cb74ea7173e6fbe1eb874323a1424215568e2e3d7"
+        },
+        "exact_catalogue_source": {
+          "source_english": {
+            "description": "Burpee combines a squat-to-plank transition with a soft vertical jump.",
+            "instructions": [
+              "Stand tall, squat, and place the hands on the floor.",
+              "Step or jump both feet back into a plank, then return them under the hips.",
+              "Stand and jump straight up, landing with bent knees.",
+              "Turn or reset under control before the next repetition."
+            ],
+            "form_cues": [
+              "Brace the plank.",
+              "Land quietly.",
+              "Keep hands under shoulders."
+            ],
+            "common_mistakes": [
+              "Letting hips sag.",
+              "Jumping before standing tall.",
+              "Landing stiff-legged."
+            ],
+            "safety_note": "Use a step-back or step-over version if the plank or landing cannot stay controlled.",
+            "provenance": "adapted"
+          },
+          "equipment": "none",
+          "primary_muscle": "full_body",
+          "secondary_muscles": []
+        },
+        "human_reference": {
+          "repository_path": "assets/exercises/biceps-curl-dumbbell.png",
+          "absolute_path": "/workspace/lightweight-exercises-photo/assets/exercises/biceps-curl-dumbbell.png",
+          "sha256": "52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f",
+          "branch": "work",
+          "source_commit": "bffc6f41e512e28b4e383e8dfa711aee07c710fc",
+          "role": "Human appearance/proportions/materials/anatomical style ONLY. Exercise pose, grip, equipment and muscles come from the exact-ID catalogue, never the reference.",
+          "pixels_reviewed_during_preparation": false
+        },
+        "style": {
+          "version": "v1-neutral-primary-2026-10-02",
+          "human_model": "One athletic bald male anatomical mannequin, opaque silver-gray muscular surfaces, consistent proportions and detailed 3D materials, plain black shorts, barefoot.",
+          "primary_highlight": {
+            "hex": null,
+            "rule": "full_body/cardio/other are broad labels, NOT anatomical targets. Entire body neutral opaque silver-gray except explicitly listed concrete secondary targets."
+          },
+          "secondary_highlight": {
+            "hex": "#F26445",
+            "intensity_fraction": [
+              0.4,
+              0.5
+            ],
+            "rule": "Only the exact secondary muscles, lighter same-hue highlight; if the list is empty add no secondary target."
+          },
+          "background": "Genuinely transparent PNG background, no white/checkerboard layer, no environment scene.",
+          "output": {
+            "format": "PNG",
+            "width": 1024,
+            "height": 1024,
+            "one_person": true,
+            "one_phase": true
+          },
+          "material_rules": "Highlights never make tissue transparent; no glow, whole-body orange tint, hair, text, labels, arrows, UI, borders, collage or extra person.",
+          "framing": "Full figure and all required equipment/supports visible within a square. Scale and use a three-quarter view to expose the specified contacts without changing anatomy, equipment, grip or technique.",
+          "no_invention": "Exact catalogue ID controls identity, raw equipment and muscles. Only the embedded verified same-ID/source-variant decisions may clarify rendering technique. No guessed weights, brands, attachments or muscle targets.",
+          "base_version": "v1",
+          "approval_status": "approved"
+        },
+        "base_style_sha256": "8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578",
+        "selected_render_scene": {
+          "exercise_id": "burpee",
+          "single_phase": "Braced plank transition",
+          "pose": "Straight high plank, trunk braced and no hip sag before feet return under hips.",
+          "grip": "Palms on floor directly under shoulders, no handles.",
+          "supports_and_equipment": "Both palms and toes on non-slip floor, no extra equipment.",
+          "movement_trajectory": "Squat to palms down, step/jump feet to plank, return feet, stand and vertical jump with soft landing.",
+          "camera": "Front-side three-quarter view showing complete person, prescribed grip and all supports/contacts within square; no crop.",
+          "one_phase_only": true,
+          "never_infer_muscles_from_pose_or_reference": true
+        },
+        "technique_resolution": null,
+        "same_ID_supplementary_fields": [],
+        "technical_blocker": null,
+        "source_use_rule": "Render ONLY selected_render_scene and the explicit exact-ID resolution; original English stays verbatim for provenance even when a disputed field is overridden. Do not invent a substitute exercise or copy reference pose/equipment/muscle colors.",
+        "approved_style_addendum": {
+          "version": "v1-neutral-primary-2026-10-02",
+          "path": "docs/exercise-image-style-neutral-primary.md",
+          "sha256": "86204ab43f23d119a1eb25cafdbda2518b741a0090b4ffb0ceb9086952314439",
+          "decision_path": "data/style-decisions/agent-03-neutral-primary-approved.json",
+          "decision_sha256": "96a4d80dafd45956d40c82979d48ecd5d683b24437b02eac0bc45f33826ac155",
+          "user_quote": "Для full_body, cardio, other тіло залишається нейтральним\nсріблясто-сірим. Підсвічуються лише конкретні\nsecondary_muscles, записані для точного ID,\nкольором #F26445 на 40–50% інтенсивності.\nПорожній secondary список означає відсутність підсвітки."
+        }
+      },
+      "prompt_sha256": "d19f1530a5813292726dbb9c4f9fb5155bc48237071fa1893ab8bab9ed55e431",
+      "scene": {
+        "exercise_id": "burpee",
+        "single_phase": "Braced plank transition",
+        "pose": "Straight high plank, trunk braced and no hip sag before feet return under hips.",
+        "grip": "Palms on floor directly under shoulders, no handles.",
+        "supports_and_equipment": "Both palms and toes on non-slip floor, no extra equipment.",
+        "movement_trajectory": "Squat to palms down, step/jump feet to plank, return feet, stand and vertical jump with soft landing.",
+        "camera": "Front-side three-quarter view showing complete person, prescribed grip and all supports/contacts within square; no crop.",
+        "one_phase_only": true,
+        "never_infer_muscles_from_pose_or_reference": true
+      },
+      "technique_resolution": null,
+      "same_ID_supplementary_fields": [],
+      "style_version": "v1-neutral-primary-2026-10-02",
+      "base_style_version": "v1",
+      "base_style_sha256": "8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578",
+      "style_proposal_path": null,
+      "style_proposal_sha256": null,
+      "human_reference": {
+        "repository_path": "assets/exercises/biceps-curl-dumbbell.png",
+        "absolute_path": "/workspace/lightweight-exercises-photo/assets/exercises/biceps-curl-dumbbell.png",
+        "sha256": "52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f",
+        "branch": "work",
+        "source_commit": "bffc6f41e512e28b4e383e8dfa711aee07c710fc",
+        "role": "Human appearance/proportions/materials/anatomical style ONLY. Exercise pose, grip, equipment and muscles come from the exact-ID catalogue, never the reference.",
+        "pixels_reviewed_during_preparation": false
+      },
+      "attempts": 0,
+      "result_path": null,
+      "result_sha256": null,
+      "user_review": null,
+      "technical_check": null,
+      "agent_visual_review": "not_performed",
+      "generation_authorized_now": false,
+      "technical_question": null,
+      "assignment_kind": "ready_own_batch_preparation_only",
+      "batch_id": "agent-03-others-019",
+      "planned_png_path": "/workspace/exercise-image-results/agent-03-others-019/burpee/attempt-1.png",
+      "planned_output_relative_path": "agent-03-others-019/burpee/attempt-1.png",
+      "output_path_policy": "Exact batch_id/exercise_id/attempt path. Do not map generated files by name similarity or array position.",
+      "style_approval_status": "approved",
+      "style_addendum_path": "docs/exercise-image-style-neutral-primary.md",
+      "style_addendum_sha256": "86204ab43f23d119a1eb25cafdbda2518b741a0090b4ffb0ceb9086952314439",
+      "style_decision_path": "data/style-decisions/agent-03-neutral-primary-approved.json",
+      "style_decision_sha256": "96a4d80dafd45956d40c82979d48ecd5d683b24437b02eac0bc45f33826ac155",
+      "source_draft_path": "data/queues/agent-03-neutral-primary-style-drafts.json",
+      "source_draft_file_sha256": "6185597c9402fd8c46ed4b869de7073c129df21c65bbc461080cea6827657d3b",
+      "source_draft_prompt_sha256": "29a70218d5517f2c75a100a50608710bf0dbcab955aea78925275db8fbf2c414",
+      "style_path": "docs/exercise-image-style-neutral-primary.md",
+      "style_sha256": "86204ab43f23d119a1eb25cafdbda2518b741a0090b4ffb0ceb9086952314439"
+    },
+    {
+      "exercise_id": "burpee-broad-jumps",
+      "name": "Burpee Broad Jumps",
+      "source_english": {
+        "description": "Burpee Broad Jumps produces a coordinated takeoff and a quiet, flexed-knee landing before the next repetition.",
+        "instructions": [
+          "Set up with your bodyweight and land in a balanced athletic stance.",
+          "Dip through the hips and knees, then drive upward or forward as the exercise requires.",
+          "Land softly with knees and hips flexed and the feet stable.",
+          "Reset fully before the next repetition."
+        ],
+        "form_cues": [
+          "Use the arms naturally.",
+          "Land quietly.",
+          "Keep knees tracking over toes."
+        ],
+        "common_mistakes": [
+          "Landing stiff-legged.",
+          "Letting knees cave inward.",
+          "Chasing height over control."
+        ],
+        "safety_note": "Use a clear, non-slip landing surface and stop when landings become noisy.",
+        "provenance": "authored"
+      },
+      "equipment": "none",
+      "primary_muscle": "full_body",
+      "secondary_muscles": [],
+      "source_catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+      "source_catalog_record_sha256": "6972075ab6d9b62a5772a33b8ceecceeb2ae396def1a012ffdeefda94de30f76",
+      "source_english_sha256": "5b2b11c4434e48f57a27af2d55cb99bad5ba40808bece726afd3e7a31e3a531c",
+      "status": "ready",
+      "technical_status": "ready",
+      "prompt_prepared": true,
+      "prompt_status": "complete",
+      "prompt_template": null,
+      "generation_prompt": "Create exactly ONE square transparent PNG of the exact exercise and selected single phase. Metadata fields must never appear as text.\nDo not render multiple phases, raw disputed alternatives, or inferred muscle targets.\n{\n  \"approved_style_addendum\": {\n    \"decision_path\": \"data/style-decisions/agent-03-neutral-primary-approved.json\",\n    \"decision_sha256\": \"96a4d80dafd45956d40c82979d48ecd5d683b24437b02eac0bc45f33826ac155\",\n    \"path\": \"docs/exercise-image-style-neutral-primary.md\",\n    \"sha256\": \"86204ab43f23d119a1eb25cafdbda2518b741a0090b4ffb0ceb9086952314439\",\n    \"user_quote\": \"Для full_body, cardio, other тіло залишається нейтральним\\nсріблясто-сірим. Підсвічуються лише конкретні\\nsecondary_muscles, записані для точного ID,\\nкольором #F26445 на 40–50% інтенсивності.\\nПорожній secondary список означає відсутність підсвітки.\",\n    \"version\": \"v1-neutral-primary-2026-10-02\"\n  },\n  \"base_style_sha256\": \"8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578\",\n  \"exact_catalogue_source\": {\n    \"equipment\": \"none\",\n    \"primary_muscle\": \"full_body\",\n    \"secondary_muscles\": [],\n    \"source_english\": {\n      \"common_mistakes\": [\n        \"Landing stiff-legged.\",\n        \"Letting knees cave inward.\",\n        \"Chasing height over control.\"\n      ],\n      \"description\": \"Burpee Broad Jumps produces a coordinated takeoff and a quiet, flexed-knee landing before the next repetition.\",\n      \"form_cues\": [\n        \"Use the arms naturally.\",\n        \"Land quietly.\",\n        \"Keep knees tracking over toes.\"\n      ],\n      \"instructions\": [\n        \"Set up with your bodyweight and land in a balanced athletic stance.\",\n        \"Dip through the hips and knees, then drive upward or forward as the exercise requires.\",\n        \"Land softly with knees and hips flexed and the feet stable.\",\n        \"Reset fully before the next repetition.\"\n      ],\n      \"provenance\": \"authored\",\n      \"safety_note\": \"Use a clear, non-slip landing surface and stop when landings become noisy.\"\n    }\n  },\n  \"human_reference\": {\n    \"absolute_path\": \"/workspace/lightweight-exercises-photo/assets/exercises/biceps-curl-dumbbell.png\",\n    \"branch\": \"work\",\n    \"pixels_reviewed_during_preparation\": false,\n    \"repository_path\": \"assets/exercises/biceps-curl-dumbbell.png\",\n    \"role\": \"Human appearance/proportions/materials/anatomical style ONLY. Exercise pose, grip, equipment and muscles come from the exact-ID catalogue, never the reference.\",\n    \"sha256\": \"52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f\",\n    \"source_commit\": \"bffc6f41e512e28b4e383e8dfa711aee07c710fc\"\n  },\n  \"identity_do_not_render_as_text\": {\n    \"catalog_record_sha256\": \"6972075ab6d9b62a5772a33b8ceecceeb2ae396def1a012ffdeefda94de30f76\",\n    \"catalog_sha256\": \"a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989\",\n    \"exercise_id\": \"burpee-broad-jumps\",\n    \"name\": \"Burpee Broad Jumps\"\n  },\n  \"same_ID_supplementary_fields\": [\n    {\n      \"catalog_path\": \"data/exercises/catalog.json\",\n      \"catalog_record_sha256\": \"6972075ab6d9b62a5772a33b8ceecceeb2ae396def1a012ffdeefda94de30f76\",\n      \"catalog_sha256\": \"a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989\",\n      \"exercise_id\": \"burpee-broad-jumps\",\n      \"field\": \"content.es.instructions[0]\",\n      \"source_commit\": \"bffc6f41e512e28b4e383e8dfa711aee07c710fc\",\n      \"value\": \"Comienza de pie, baja a una sentadilla y coloca las manos en el suelo.\"\n    },\n    {\n      \"catalog_path\": \"data/exercises/catalog.json\",\n      \"catalog_record_sha256\": \"6972075ab6d9b62a5772a33b8ceecceeb2ae396def1a012ffdeefda94de30f76\",\n      \"catalog_sha256\": \"a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989\",\n      \"exercise_id\": \"burpee-broad-jumps\",\n      \"field\": \"content.es.instructions[1]\",\n      \"source_commit\": \"bffc6f41e512e28b4e383e8dfa711aee07c710fc\",\n      \"value\": \"Salta o lleva ambos pies atrás hasta una plancha y vuelve a llevarlos bajo las caderas.\"\n    },\n    {\n      \"catalog_path\": \"data/exercises/catalog.json\",\n      \"catalog_record_sha256\": \"6972075ab6d9b62a5772a33b8ceecceeb2ae396def1a012ffdeefda94de30f76\",\n      \"catalog_sha256\": \"a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989\",\n      \"exercise_id\": \"burpee-broad-jumps\",\n      \"field\": \"content.es.instructions[2]\",\n      \"source_commit\": \"bffc6f41e512e28b4e383e8dfa711aee07c710fc\",\n      \"value\": \"Levántate y salta hacia delante con ambos pies, aterrizando con las rodillas y las caderas flexionadas.\"\n    },\n    {\n      \"catalog_path\": \"data/exercises/catalog.json\",\n      \"catalog_record_sha256\": \"6972075ab6d9b62a5772a33b8ceecceeb2ae396def1a012ffdeefda94de30f76\",\n      \"catalog_sha256\": \"a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989\",\n      \"exercise_id\": \"burpee-broad-jumps\",\n      \"field\": \"match.rationale\",\n      \"source_commit\": \"bffc6f41e512e28b4e383e8dfa711aee07c710fc\",\n      \"value\": \"No candidate combines the burpee sequence with the required broad forward jump and matching landing path.\"\n    }\n  ],\n  \"selected_render_scene\": {\n    \"camera\": \"Front-side three-quarter view showing complete person, prescribed grip and all supports/contacts within square; no crop.\",\n    \"exercise_id\": \"burpee-broad-jumps\",\n    \"grip\": \"Hands free; earlier plank uses floor palms.\",\n    \"movement_trajectory\": \"Same-ID es/pl: squat→hands down→plank→feet in→stand→FORWARD broad jump; depict only soft landing.\",\n    \"never_infer_muscles_from_pose_or_reference\": true,\n    \"one_phase_only\": true,\n    \"pose\": \"Both feet landing forward with knees/hips flexed after source burpee sequence, arms balancing naturally and torso controlled.\",\n    \"single_phase\": \"Forward broad-jump soft landing\",\n    \"supports_and_equipment\": \"Both feet on clear non-slip landing floor, no box or vertical-only jump.\"\n  },\n  \"source_use_rule\": \"Render ONLY selected_render_scene and the explicit exact-ID resolution; original English stays verbatim for provenance even when a disputed field is overridden. Do not invent a substitute exercise or copy reference pose/equipment/muscle colors.\",\n  \"style\": {\n    \"approval_status\": \"approved\",\n    \"background\": \"Genuinely transparent PNG background, no white/checkerboard layer, no environment scene.\",\n    \"base_version\": \"v1\",\n    \"framing\": \"Full figure and all required equipment/supports visible within a square. Scale and use a three-quarter view to expose the specified contacts without changing anatomy, equipment, grip or technique.\",\n    \"human_model\": \"One athletic bald male anatomical mannequin, opaque silver-gray muscular surfaces, consistent proportions and detailed 3D materials, plain black shorts, barefoot.\",\n    \"material_rules\": \"Highlights never make tissue transparent; no glow, whole-body orange tint, hair, text, labels, arrows, UI, borders, collage or extra person.\",\n    \"no_invention\": \"Exact catalogue ID controls identity, raw equipment and muscles. Only the embedded verified same-ID/source-variant decisions may clarify rendering technique. No guessed weights, brands, attachments or muscle targets.\",\n    \"output\": {\n      \"format\": \"PNG\",\n      \"height\": 1024,\n      \"one_person\": true,\n      \"one_phase\": true,\n      \"width\": 1024\n    },\n    \"primary_highlight\": {\n      \"hex\": null,\n      \"rule\": \"full_body/cardio/other are broad labels, NOT anatomical targets. Entire body neutral opaque silver-gray except explicitly listed concrete secondary targets.\"\n    },\n    \"secondary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"intensity_fraction\": [\n        0.4,\n        0.5\n      ],\n      \"rule\": \"Only the exact secondary muscles, lighter same-hue highlight; if the list is empty add no secondary target.\"\n    },\n    \"version\": \"v1-neutral-primary-2026-10-02\"\n  },\n  \"technical_blocker\": null,\n  \"technique_resolution\": null\n}",
+      "prompt_payload": {
+        "identity_do_not_render_as_text": {
+          "exercise_id": "burpee-broad-jumps",
+          "name": "Burpee Broad Jumps",
+          "catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+          "catalog_record_sha256": "6972075ab6d9b62a5772a33b8ceecceeb2ae396def1a012ffdeefda94de30f76"
+        },
+        "exact_catalogue_source": {
+          "source_english": {
+            "description": "Burpee Broad Jumps produces a coordinated takeoff and a quiet, flexed-knee landing before the next repetition.",
+            "instructions": [
+              "Set up with your bodyweight and land in a balanced athletic stance.",
+              "Dip through the hips and knees, then drive upward or forward as the exercise requires.",
+              "Land softly with knees and hips flexed and the feet stable.",
+              "Reset fully before the next repetition."
+            ],
+            "form_cues": [
+              "Use the arms naturally.",
+              "Land quietly.",
+              "Keep knees tracking over toes."
+            ],
+            "common_mistakes": [
+              "Landing stiff-legged.",
+              "Letting knees cave inward.",
+              "Chasing height over control."
+            ],
+            "safety_note": "Use a clear, non-slip landing surface and stop when landings become noisy.",
+            "provenance": "authored"
+          },
+          "equipment": "none",
+          "primary_muscle": "full_body",
+          "secondary_muscles": []
+        },
+        "human_reference": {
+          "repository_path": "assets/exercises/biceps-curl-dumbbell.png",
+          "absolute_path": "/workspace/lightweight-exercises-photo/assets/exercises/biceps-curl-dumbbell.png",
+          "sha256": "52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f",
+          "branch": "work",
+          "source_commit": "bffc6f41e512e28b4e383e8dfa711aee07c710fc",
+          "role": "Human appearance/proportions/materials/anatomical style ONLY. Exercise pose, grip, equipment and muscles come from the exact-ID catalogue, never the reference.",
+          "pixels_reviewed_during_preparation": false
+        },
+        "style": {
+          "version": "v1-neutral-primary-2026-10-02",
+          "human_model": "One athletic bald male anatomical mannequin, opaque silver-gray muscular surfaces, consistent proportions and detailed 3D materials, plain black shorts, barefoot.",
+          "primary_highlight": {
+            "hex": null,
+            "rule": "full_body/cardio/other are broad labels, NOT anatomical targets. Entire body neutral opaque silver-gray except explicitly listed concrete secondary targets."
+          },
+          "secondary_highlight": {
+            "hex": "#F26445",
+            "intensity_fraction": [
+              0.4,
+              0.5
+            ],
+            "rule": "Only the exact secondary muscles, lighter same-hue highlight; if the list is empty add no secondary target."
+          },
+          "background": "Genuinely transparent PNG background, no white/checkerboard layer, no environment scene.",
+          "output": {
+            "format": "PNG",
+            "width": 1024,
+            "height": 1024,
+            "one_person": true,
+            "one_phase": true
+          },
+          "material_rules": "Highlights never make tissue transparent; no glow, whole-body orange tint, hair, text, labels, arrows, UI, borders, collage or extra person.",
+          "framing": "Full figure and all required equipment/supports visible within a square. Scale and use a three-quarter view to expose the specified contacts without changing anatomy, equipment, grip or technique.",
+          "no_invention": "Exact catalogue ID controls identity, raw equipment and muscles. Only the embedded verified same-ID/source-variant decisions may clarify rendering technique. No guessed weights, brands, attachments or muscle targets.",
+          "base_version": "v1",
+          "approval_status": "approved"
+        },
+        "base_style_sha256": "8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578",
+        "selected_render_scene": {
+          "exercise_id": "burpee-broad-jumps",
+          "single_phase": "Forward broad-jump soft landing",
+          "pose": "Both feet landing forward with knees/hips flexed after source burpee sequence, arms balancing naturally and torso controlled.",
+          "grip": "Hands free; earlier plank uses floor palms.",
+          "supports_and_equipment": "Both feet on clear non-slip landing floor, no box or vertical-only jump.",
+          "movement_trajectory": "Same-ID es/pl: squat→hands down→plank→feet in→stand→FORWARD broad jump; depict only soft landing.",
+          "camera": "Front-side three-quarter view showing complete person, prescribed grip and all supports/contacts within square; no crop.",
+          "one_phase_only": true,
+          "never_infer_muscles_from_pose_or_reference": true
+        },
+        "technique_resolution": null,
+        "same_ID_supplementary_fields": [
+          {
+            "exercise_id": "burpee-broad-jumps",
+            "catalog_path": "data/exercises/catalog.json",
+            "catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+            "source_commit": "bffc6f41e512e28b4e383e8dfa711aee07c710fc",
+            "field": "content.es.instructions[0]",
+            "value": "Comienza de pie, baja a una sentadilla y coloca las manos en el suelo.",
+            "catalog_record_sha256": "6972075ab6d9b62a5772a33b8ceecceeb2ae396def1a012ffdeefda94de30f76"
+          },
+          {
+            "exercise_id": "burpee-broad-jumps",
+            "catalog_path": "data/exercises/catalog.json",
+            "catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+            "source_commit": "bffc6f41e512e28b4e383e8dfa711aee07c710fc",
+            "field": "content.es.instructions[1]",
+            "value": "Salta o lleva ambos pies atrás hasta una plancha y vuelve a llevarlos bajo las caderas.",
+            "catalog_record_sha256": "6972075ab6d9b62a5772a33b8ceecceeb2ae396def1a012ffdeefda94de30f76"
+          },
+          {
+            "exercise_id": "burpee-broad-jumps",
+            "catalog_path": "data/exercises/catalog.json",
+            "catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+            "source_commit": "bffc6f41e512e28b4e383e8dfa711aee07c710fc",
+            "field": "content.es.instructions[2]",
+            "value": "Levántate y salta hacia delante con ambos pies, aterrizando con las rodillas y las caderas flexionadas.",
+            "catalog_record_sha256": "6972075ab6d9b62a5772a33b8ceecceeb2ae396def1a012ffdeefda94de30f76"
+          },
+          {
+            "exercise_id": "burpee-broad-jumps",
+            "catalog_path": "data/exercises/catalog.json",
+            "catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+            "source_commit": "bffc6f41e512e28b4e383e8dfa711aee07c710fc",
+            "field": "match.rationale",
+            "value": "No candidate combines the burpee sequence with the required broad forward jump and matching landing path.",
+            "catalog_record_sha256": "6972075ab6d9b62a5772a33b8ceecceeb2ae396def1a012ffdeefda94de30f76"
+          }
+        ],
+        "technical_blocker": null,
+        "source_use_rule": "Render ONLY selected_render_scene and the explicit exact-ID resolution; original English stays verbatim for provenance even when a disputed field is overridden. Do not invent a substitute exercise or copy reference pose/equipment/muscle colors.",
+        "approved_style_addendum": {
+          "version": "v1-neutral-primary-2026-10-02",
+          "path": "docs/exercise-image-style-neutral-primary.md",
+          "sha256": "86204ab43f23d119a1eb25cafdbda2518b741a0090b4ffb0ceb9086952314439",
+          "decision_path": "data/style-decisions/agent-03-neutral-primary-approved.json",
+          "decision_sha256": "96a4d80dafd45956d40c82979d48ecd5d683b24437b02eac0bc45f33826ac155",
+          "user_quote": "Для full_body, cardio, other тіло залишається нейтральним\nсріблясто-сірим. Підсвічуються лише конкретні\nsecondary_muscles, записані для точного ID,\nкольором #F26445 на 40–50% інтенсивності.\nПорожній secondary список означає відсутність підсвітки."
+        }
+      },
+      "prompt_sha256": "08986eaa1a4cbcf0c4c4ccad59980f048ac02827a69166f0b133edf561a9c408",
+      "scene": {
+        "exercise_id": "burpee-broad-jumps",
+        "single_phase": "Forward broad-jump soft landing",
+        "pose": "Both feet landing forward with knees/hips flexed after source burpee sequence, arms balancing naturally and torso controlled.",
+        "grip": "Hands free; earlier plank uses floor palms.",
+        "supports_and_equipment": "Both feet on clear non-slip landing floor, no box or vertical-only jump.",
+        "movement_trajectory": "Same-ID es/pl: squat→hands down→plank→feet in→stand→FORWARD broad jump; depict only soft landing.",
+        "camera": "Front-side three-quarter view showing complete person, prescribed grip and all supports/contacts within square; no crop.",
+        "one_phase_only": true,
+        "never_infer_muscles_from_pose_or_reference": true
+      },
+      "technique_resolution": null,
+      "same_ID_supplementary_fields": [
+        {
+          "exercise_id": "burpee-broad-jumps",
+          "catalog_path": "data/exercises/catalog.json",
+          "catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+          "source_commit": "bffc6f41e512e28b4e383e8dfa711aee07c710fc",
+          "field": "content.es.instructions[0]",
+          "value": "Comienza de pie, baja a una sentadilla y coloca las manos en el suelo.",
+          "catalog_record_sha256": "6972075ab6d9b62a5772a33b8ceecceeb2ae396def1a012ffdeefda94de30f76"
+        },
+        {
+          "exercise_id": "burpee-broad-jumps",
+          "catalog_path": "data/exercises/catalog.json",
+          "catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+          "source_commit": "bffc6f41e512e28b4e383e8dfa711aee07c710fc",
+          "field": "content.es.instructions[1]",
+          "value": "Salta o lleva ambos pies atrás hasta una plancha y vuelve a llevarlos bajo las caderas.",
+          "catalog_record_sha256": "6972075ab6d9b62a5772a33b8ceecceeb2ae396def1a012ffdeefda94de30f76"
+        },
+        {
+          "exercise_id": "burpee-broad-jumps",
+          "catalog_path": "data/exercises/catalog.json",
+          "catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+          "source_commit": "bffc6f41e512e28b4e383e8dfa711aee07c710fc",
+          "field": "content.es.instructions[2]",
+          "value": "Levántate y salta hacia delante con ambos pies, aterrizando con las rodillas y las caderas flexionadas.",
+          "catalog_record_sha256": "6972075ab6d9b62a5772a33b8ceecceeb2ae396def1a012ffdeefda94de30f76"
+        },
+        {
+          "exercise_id": "burpee-broad-jumps",
+          "catalog_path": "data/exercises/catalog.json",
+          "catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+          "source_commit": "bffc6f41e512e28b4e383e8dfa711aee07c710fc",
+          "field": "match.rationale",
+          "value": "No candidate combines the burpee sequence with the required broad forward jump and matching landing path.",
+          "catalog_record_sha256": "6972075ab6d9b62a5772a33b8ceecceeb2ae396def1a012ffdeefda94de30f76"
+        }
+      ],
+      "style_version": "v1-neutral-primary-2026-10-02",
+      "base_style_version": "v1",
+      "base_style_sha256": "8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578",
+      "style_proposal_path": null,
+      "style_proposal_sha256": null,
+      "human_reference": {
+        "repository_path": "assets/exercises/biceps-curl-dumbbell.png",
+        "absolute_path": "/workspace/lightweight-exercises-photo/assets/exercises/biceps-curl-dumbbell.png",
+        "sha256": "52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f",
+        "branch": "work",
+        "source_commit": "bffc6f41e512e28b4e383e8dfa711aee07c710fc",
+        "role": "Human appearance/proportions/materials/anatomical style ONLY. Exercise pose, grip, equipment and muscles come from the exact-ID catalogue, never the reference.",
+        "pixels_reviewed_during_preparation": false
+      },
+      "attempts": 0,
+      "result_path": null,
+      "result_sha256": null,
+      "user_review": null,
+      "technical_check": null,
+      "agent_visual_review": "not_performed",
+      "generation_authorized_now": false,
+      "technical_question": null,
+      "assignment_kind": "ready_own_batch_preparation_only",
+      "batch_id": "agent-03-others-019",
+      "planned_png_path": "/workspace/exercise-image-results/agent-03-others-019/burpee-broad-jumps/attempt-1.png",
+      "planned_output_relative_path": "agent-03-others-019/burpee-broad-jumps/attempt-1.png",
+      "output_path_policy": "Exact batch_id/exercise_id/attempt path. Do not map generated files by name similarity or array position.",
+      "style_approval_status": "approved",
+      "style_addendum_path": "docs/exercise-image-style-neutral-primary.md",
+      "style_addendum_sha256": "86204ab43f23d119a1eb25cafdbda2518b741a0090b4ffb0ceb9086952314439",
+      "style_decision_path": "data/style-decisions/agent-03-neutral-primary-approved.json",
+      "style_decision_sha256": "96a4d80dafd45956d40c82979d48ecd5d683b24437b02eac0bc45f33826ac155",
+      "source_draft_path": "data/queues/agent-03-neutral-primary-style-drafts.json",
+      "source_draft_file_sha256": "6185597c9402fd8c46ed4b869de7073c129df21c65bbc461080cea6827657d3b",
+      "source_draft_prompt_sha256": "51df690aa8d66a6f368d7c3db83fd0f5552be16bd0df0854971903b5dc4fcbbc",
+      "style_path": "docs/exercise-image-style-neutral-primary.md",
+      "style_sha256": "86204ab43f23d119a1eb25cafdbda2518b741a0090b4ffb0ceb9086952314439"
+    },
+    {
+      "exercise_id": "burpee-over-the-bar",
+      "name": "Burpee Over the Bar",
+      "source_english": {
+        "description": "Burpee Over the Bar combines a squat-to-plank transition with a lateral jump over the bar.",
+        "instructions": [
+          "Stand tall, squat, and place the hands on the floor.",
+          "Step or jump both feet back into a plank, then return them under the hips.",
+          "Stand and jump sideways over the bar, landing on the opposite side.",
+          "Turn or reset under control before the next repetition."
+        ],
+        "form_cues": [
+          "Brace the plank.",
+          "Land quietly.",
+          "Keep hands under shoulders."
+        ],
+        "common_mistakes": [
+          "Letting hips sag.",
+          "Jumping before standing tall.",
+          "Landing stiff-legged."
+        ],
+        "safety_note": "Use a step-back or step-over version if the plank or landing cannot stay controlled.",
+        "provenance": "authored"
+      },
+      "equipment": "none",
+      "primary_muscle": "full_body",
+      "secondary_muscles": [],
+      "source_catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+      "source_catalog_record_sha256": "0c09cca6bc7c536ee3f1683fee76ef799c477357f221025c2eccbf07d0380908",
+      "source_english_sha256": "1b1c6f69e8a3ed680255c832f62b65f09340d13a1f6af71ea884f80849edf842",
+      "status": "ready",
+      "technical_status": "ready",
+      "prompt_prepared": true,
+      "prompt_status": "complete",
+      "prompt_template": null,
+      "generation_prompt": "Create exactly ONE square transparent PNG of the exact exercise and selected single phase. Metadata fields must never appear as text.\nDo not render multiple phases, raw disputed alternatives, or inferred muscle targets.\n{\n  \"approved_style_addendum\": {\n    \"decision_path\": \"data/style-decisions/agent-03-neutral-primary-approved.json\",\n    \"decision_sha256\": \"96a4d80dafd45956d40c82979d48ecd5d683b24437b02eac0bc45f33826ac155\",\n    \"path\": \"docs/exercise-image-style-neutral-primary.md\",\n    \"sha256\": \"86204ab43f23d119a1eb25cafdbda2518b741a0090b4ffb0ceb9086952314439\",\n    \"user_quote\": \"Для full_body, cardio, other тіло залишається нейтральним\\nсріблясто-сірим. Підсвічуються лише конкретні\\nsecondary_muscles, записані для точного ID,\\nкольором #F26445 на 40–50% інтенсивності.\\nПорожній secondary список означає відсутність підсвітки.\",\n    \"version\": \"v1-neutral-primary-2026-10-02\"\n  },\n  \"base_style_sha256\": \"8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578\",\n  \"exact_catalogue_source\": {\n    \"equipment\": \"none\",\n    \"primary_muscle\": \"full_body\",\n    \"secondary_muscles\": [],\n    \"source_english\": {\n      \"common_mistakes\": [\n        \"Letting hips sag.\",\n        \"Jumping before standing tall.\",\n        \"Landing stiff-legged.\"\n      ],\n      \"description\": \"Burpee Over the Bar combines a squat-to-plank transition with a lateral jump over the bar.\",\n      \"form_cues\": [\n        \"Brace the plank.\",\n        \"Land quietly.\",\n        \"Keep hands under shoulders.\"\n      ],\n      \"instructions\": [\n        \"Stand tall, squat, and place the hands on the floor.\",\n        \"Step or jump both feet back into a plank, then return them under the hips.\",\n        \"Stand and jump sideways over the bar, landing on the opposite side.\",\n        \"Turn or reset under control before the next repetition.\"\n      ],\n      \"provenance\": \"authored\",\n      \"safety_note\": \"Use a step-back or step-over version if the plank or landing cannot stay controlled.\"\n    }\n  },\n  \"human_reference\": {\n    \"absolute_path\": \"/workspace/lightweight-exercises-photo/assets/exercises/biceps-curl-dumbbell.png\",\n    \"branch\": \"work\",\n    \"pixels_reviewed_during_preparation\": false,\n    \"repository_path\": \"assets/exercises/biceps-curl-dumbbell.png\",\n    \"role\": \"Human appearance/proportions/materials/anatomical style ONLY. Exercise pose, grip, equipment and muscles come from the exact-ID catalogue, never the reference.\",\n    \"sha256\": \"52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f\",\n    \"source_commit\": \"bffc6f41e512e28b4e383e8dfa711aee07c710fc\"\n  },\n  \"identity_do_not_render_as_text\": {\n    \"catalog_record_sha256\": \"0c09cca6bc7c536ee3f1683fee76ef799c477357f221025c2eccbf07d0380908\",\n    \"catalog_sha256\": \"a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989\",\n    \"exercise_id\": \"burpee-over-the-bar\",\n    \"name\": \"Burpee Over the Bar\"\n  },\n  \"same_ID_supplementary_fields\": [\n    {\n      \"catalog_path\": \"data/exercises/catalog.json\",\n      \"catalog_record_sha256\": \"0c09cca6bc7c536ee3f1683fee76ef799c477357f221025c2eccbf07d0380908\",\n      \"catalog_sha256\": \"a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989\",\n      \"exercise_id\": \"burpee-over-the-bar\",\n      \"field\": \"content.en.description\",\n      \"source_commit\": \"bffc6f41e512e28b4e383e8dfa711aee07c710fc\",\n      \"value\": \"Burpee Over the Bar combines a squat-to-plank transition with a lateral jump over the bar.\"\n    },\n    {\n      \"catalog_path\": \"data/exercises/catalog.json\",\n      \"catalog_record_sha256\": \"0c09cca6bc7c536ee3f1683fee76ef799c477357f221025c2eccbf07d0380908\",\n      \"catalog_sha256\": \"a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989\",\n      \"exercise_id\": \"burpee-over-the-bar\",\n      \"field\": \"content.en.instructions[2]\",\n      \"source_commit\": \"bffc6f41e512e28b4e383e8dfa711aee07c710fc\",\n      \"value\": \"Stand and jump sideways over the bar, landing on the opposite side.\"\n    }\n  ],\n  \"selected_render_scene\": {\n    \"camera\": \"Front-side three-quarter view showing complete person, prescribed grip and all supports/contacts within square; no crop.\",\n    \"exercise_id\": \"burpee-over-the-bar\",\n    \"grip\": \"Hands free; palms only contact floor in preceding plank.\",\n    \"movement_trajectory\": \"Squat to plank and return feet, stand, jump sideways over bar, land softly on opposite side.\",\n    \"never_infer_muscles_from_pose_or_reference\": true,\n    \"one_phase_only\": true,\n    \"pose\": \"Athlete airborne SIDEWAYS over low grounded bar after standing from plank, knees soft and torso controlled, no bar load held.\",\n    \"single_phase\": \"Lateral airborne bar crossing\",\n    \"supports_and_equipment\": \"A stationary standard free bar lies on floor below lateral jump; no moving bar or hurdle substitution.\"\n  },\n  \"source_use_rule\": \"Render ONLY selected_render_scene and the explicit exact-ID resolution; original English stays verbatim for provenance even when a disputed field is overridden. Do not invent a substitute exercise or copy reference pose/equipment/muscle colors.\",\n  \"style\": {\n    \"approval_status\": \"approved\",\n    \"background\": \"Genuinely transparent PNG background, no white/checkerboard layer, no environment scene.\",\n    \"base_version\": \"v1\",\n    \"framing\": \"Full figure and all required equipment/supports visible within a square. Scale and use a three-quarter view to expose the specified contacts without changing anatomy, equipment, grip or technique.\",\n    \"human_model\": \"One athletic bald male anatomical mannequin, opaque silver-gray muscular surfaces, consistent proportions and detailed 3D materials, plain black shorts, barefoot.\",\n    \"material_rules\": \"Highlights never make tissue transparent; no glow, whole-body orange tint, hair, text, labels, arrows, UI, borders, collage or extra person.\",\n    \"no_invention\": \"Exact catalogue ID controls identity, raw equipment and muscles. Only the embedded verified same-ID/source-variant decisions may clarify rendering technique. No guessed weights, brands, attachments or muscle targets.\",\n    \"output\": {\n      \"format\": \"PNG\",\n      \"height\": 1024,\n      \"one_person\": true,\n      \"one_phase\": true,\n      \"width\": 1024\n    },\n    \"primary_highlight\": {\n      \"hex\": null,\n      \"rule\": \"full_body/cardio/other are broad labels, NOT anatomical targets. Entire body neutral opaque silver-gray except explicitly listed concrete secondary targets.\"\n    },\n    \"secondary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"intensity_fraction\": [\n        0.4,\n        0.5\n      ],\n      \"rule\": \"Only the exact secondary muscles, lighter same-hue highlight; if the list is empty add no secondary target.\"\n    },\n    \"version\": \"v1-neutral-primary-2026-10-02\"\n  },\n  \"technical_blocker\": null,\n  \"technique_resolution\": null\n}",
+      "prompt_payload": {
+        "identity_do_not_render_as_text": {
+          "exercise_id": "burpee-over-the-bar",
+          "name": "Burpee Over the Bar",
+          "catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+          "catalog_record_sha256": "0c09cca6bc7c536ee3f1683fee76ef799c477357f221025c2eccbf07d0380908"
+        },
+        "exact_catalogue_source": {
+          "source_english": {
+            "description": "Burpee Over the Bar combines a squat-to-plank transition with a lateral jump over the bar.",
+            "instructions": [
+              "Stand tall, squat, and place the hands on the floor.",
+              "Step or jump both feet back into a plank, then return them under the hips.",
+              "Stand and jump sideways over the bar, landing on the opposite side.",
+              "Turn or reset under control before the next repetition."
+            ],
+            "form_cues": [
+              "Brace the plank.",
+              "Land quietly.",
+              "Keep hands under shoulders."
+            ],
+            "common_mistakes": [
+              "Letting hips sag.",
+              "Jumping before standing tall.",
+              "Landing stiff-legged."
+            ],
+            "safety_note": "Use a step-back or step-over version if the plank or landing cannot stay controlled.",
+            "provenance": "authored"
+          },
+          "equipment": "none",
+          "primary_muscle": "full_body",
+          "secondary_muscles": []
+        },
+        "human_reference": {
+          "repository_path": "assets/exercises/biceps-curl-dumbbell.png",
+          "absolute_path": "/workspace/lightweight-exercises-photo/assets/exercises/biceps-curl-dumbbell.png",
+          "sha256": "52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f",
+          "branch": "work",
+          "source_commit": "bffc6f41e512e28b4e383e8dfa711aee07c710fc",
+          "role": "Human appearance/proportions/materials/anatomical style ONLY. Exercise pose, grip, equipment and muscles come from the exact-ID catalogue, never the reference.",
+          "pixels_reviewed_during_preparation": false
+        },
+        "style": {
+          "version": "v1-neutral-primary-2026-10-02",
+          "human_model": "One athletic bald male anatomical mannequin, opaque silver-gray muscular surfaces, consistent proportions and detailed 3D materials, plain black shorts, barefoot.",
+          "primary_highlight": {
+            "hex": null,
+            "rule": "full_body/cardio/other are broad labels, NOT anatomical targets. Entire body neutral opaque silver-gray except explicitly listed concrete secondary targets."
+          },
+          "secondary_highlight": {
+            "hex": "#F26445",
+            "intensity_fraction": [
+              0.4,
+              0.5
+            ],
+            "rule": "Only the exact secondary muscles, lighter same-hue highlight; if the list is empty add no secondary target."
+          },
+          "background": "Genuinely transparent PNG background, no white/checkerboard layer, no environment scene.",
+          "output": {
+            "format": "PNG",
+            "width": 1024,
+            "height": 1024,
+            "one_person": true,
+            "one_phase": true
+          },
+          "material_rules": "Highlights never make tissue transparent; no glow, whole-body orange tint, hair, text, labels, arrows, UI, borders, collage or extra person.",
+          "framing": "Full figure and all required equipment/supports visible within a square. Scale and use a three-quarter view to expose the specified contacts without changing anatomy, equipment, grip or technique.",
+          "no_invention": "Exact catalogue ID controls identity, raw equipment and muscles. Only the embedded verified same-ID/source-variant decisions may clarify rendering technique. No guessed weights, brands, attachments or muscle targets.",
+          "base_version": "v1",
+          "approval_status": "approved"
+        },
+        "base_style_sha256": "8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578",
+        "selected_render_scene": {
+          "exercise_id": "burpee-over-the-bar",
+          "single_phase": "Lateral airborne bar crossing",
+          "pose": "Athlete airborne SIDEWAYS over low grounded bar after standing from plank, knees soft and torso controlled, no bar load held.",
+          "grip": "Hands free; palms only contact floor in preceding plank.",
+          "supports_and_equipment": "A stationary standard free bar lies on floor below lateral jump; no moving bar or hurdle substitution.",
+          "movement_trajectory": "Squat to plank and return feet, stand, jump sideways over bar, land softly on opposite side.",
+          "camera": "Front-side three-quarter view showing complete person, prescribed grip and all supports/contacts within square; no crop.",
+          "one_phase_only": true,
+          "never_infer_muscles_from_pose_or_reference": true
+        },
+        "technique_resolution": null,
+        "same_ID_supplementary_fields": [
+          {
+            "exercise_id": "burpee-over-the-bar",
+            "catalog_path": "data/exercises/catalog.json",
+            "catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+            "source_commit": "bffc6f41e512e28b4e383e8dfa711aee07c710fc",
+            "field": "content.en.description",
+            "value": "Burpee Over the Bar combines a squat-to-plank transition with a lateral jump over the bar.",
+            "catalog_record_sha256": "0c09cca6bc7c536ee3f1683fee76ef799c477357f221025c2eccbf07d0380908"
+          },
+          {
+            "exercise_id": "burpee-over-the-bar",
+            "catalog_path": "data/exercises/catalog.json",
+            "catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+            "source_commit": "bffc6f41e512e28b4e383e8dfa711aee07c710fc",
+            "field": "content.en.instructions[2]",
+            "value": "Stand and jump sideways over the bar, landing on the opposite side.",
+            "catalog_record_sha256": "0c09cca6bc7c536ee3f1683fee76ef799c477357f221025c2eccbf07d0380908"
+          }
+        ],
+        "technical_blocker": null,
+        "source_use_rule": "Render ONLY selected_render_scene and the explicit exact-ID resolution; original English stays verbatim for provenance even when a disputed field is overridden. Do not invent a substitute exercise or copy reference pose/equipment/muscle colors.",
+        "approved_style_addendum": {
+          "version": "v1-neutral-primary-2026-10-02",
+          "path": "docs/exercise-image-style-neutral-primary.md",
+          "sha256": "86204ab43f23d119a1eb25cafdbda2518b741a0090b4ffb0ceb9086952314439",
+          "decision_path": "data/style-decisions/agent-03-neutral-primary-approved.json",
+          "decision_sha256": "96a4d80dafd45956d40c82979d48ecd5d683b24437b02eac0bc45f33826ac155",
+          "user_quote": "Для full_body, cardio, other тіло залишається нейтральним\nсріблясто-сірим. Підсвічуються лише конкретні\nsecondary_muscles, записані для точного ID,\nкольором #F26445 на 40–50% інтенсивності.\nПорожній secondary список означає відсутність підсвітки."
+        }
+      },
+      "prompt_sha256": "feb8e23686503bf47849b4429472ddac75112efe7183ee103ecb0ee82b515905",
+      "scene": {
+        "exercise_id": "burpee-over-the-bar",
+        "single_phase": "Lateral airborne bar crossing",
+        "pose": "Athlete airborne SIDEWAYS over low grounded bar after standing from plank, knees soft and torso controlled, no bar load held.",
+        "grip": "Hands free; palms only contact floor in preceding plank.",
+        "supports_and_equipment": "A stationary standard free bar lies on floor below lateral jump; no moving bar or hurdle substitution.",
+        "movement_trajectory": "Squat to plank and return feet, stand, jump sideways over bar, land softly on opposite side.",
+        "camera": "Front-side three-quarter view showing complete person, prescribed grip and all supports/contacts within square; no crop.",
+        "one_phase_only": true,
+        "never_infer_muscles_from_pose_or_reference": true
+      },
+      "technique_resolution": null,
+      "same_ID_supplementary_fields": [
+        {
+          "exercise_id": "burpee-over-the-bar",
+          "catalog_path": "data/exercises/catalog.json",
+          "catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+          "source_commit": "bffc6f41e512e28b4e383e8dfa711aee07c710fc",
+          "field": "content.en.description",
+          "value": "Burpee Over the Bar combines a squat-to-plank transition with a lateral jump over the bar.",
+          "catalog_record_sha256": "0c09cca6bc7c536ee3f1683fee76ef799c477357f221025c2eccbf07d0380908"
+        },
+        {
+          "exercise_id": "burpee-over-the-bar",
+          "catalog_path": "data/exercises/catalog.json",
+          "catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+          "source_commit": "bffc6f41e512e28b4e383e8dfa711aee07c710fc",
+          "field": "content.en.instructions[2]",
+          "value": "Stand and jump sideways over the bar, landing on the opposite side.",
+          "catalog_record_sha256": "0c09cca6bc7c536ee3f1683fee76ef799c477357f221025c2eccbf07d0380908"
+        }
+      ],
+      "style_version": "v1-neutral-primary-2026-10-02",
+      "base_style_version": "v1",
+      "base_style_sha256": "8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578",
+      "style_proposal_path": null,
+      "style_proposal_sha256": null,
+      "human_reference": {
+        "repository_path": "assets/exercises/biceps-curl-dumbbell.png",
+        "absolute_path": "/workspace/lightweight-exercises-photo/assets/exercises/biceps-curl-dumbbell.png",
+        "sha256": "52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f",
+        "branch": "work",
+        "source_commit": "bffc6f41e512e28b4e383e8dfa711aee07c710fc",
+        "role": "Human appearance/proportions/materials/anatomical style ONLY. Exercise pose, grip, equipment and muscles come from the exact-ID catalogue, never the reference.",
+        "pixels_reviewed_during_preparation": false
+      },
+      "attempts": 0,
+      "result_path": null,
+      "result_sha256": null,
+      "user_review": null,
+      "technical_check": null,
+      "agent_visual_review": "not_performed",
+      "generation_authorized_now": false,
+      "technical_question": null,
+      "assignment_kind": "ready_own_batch_preparation_only",
+      "batch_id": "agent-03-others-019",
+      "planned_png_path": "/workspace/exercise-image-results/agent-03-others-019/burpee-over-the-bar/attempt-1.png",
+      "planned_output_relative_path": "agent-03-others-019/burpee-over-the-bar/attempt-1.png",
+      "output_path_policy": "Exact batch_id/exercise_id/attempt path. Do not map generated files by name similarity or array position.",
+      "style_approval_status": "approved",
+      "style_addendum_path": "docs/exercise-image-style-neutral-primary.md",
+      "style_addendum_sha256": "86204ab43f23d119a1eb25cafdbda2518b741a0090b4ffb0ceb9086952314439",
+      "style_decision_path": "data/style-decisions/agent-03-neutral-primary-approved.json",
+      "style_decision_sha256": "96a4d80dafd45956d40c82979d48ecd5d683b24437b02eac0bc45f33826ac155",
+      "source_draft_path": "data/queues/agent-03-neutral-primary-style-drafts.json",
+      "source_draft_file_sha256": "6185597c9402fd8c46ed4b869de7073c129df21c65bbc461080cea6827657d3b",
+      "source_draft_prompt_sha256": "c03b2276da5f0bc5bf834b8b7725522a9617b3c963813d60c36d8a50ff8f11e7",
+      "style_path": "docs/exercise-image-style-neutral-primary.md",
+      "style_sha256": "86204ab43f23d119a1eb25cafdbda2518b741a0090b4ffb0ceb9086952314439"
+    },
+    {
+      "exercise_id": "clean-and-jerk-barbell",
+      "name": "Clean and Jerk",
+      "source_english": {
+        "description": "Clean and Jerk combines a barbell clean to the shoulders with a dip-and-drive overhead jerk.",
+        "instructions": [
+          "Start with the barbell from the floor and keep the back neutral.",
+          "Extend the hips and knees to pull the load into the rack position.",
+          "Dip slightly and drive overhead into a stable split or power stance.",
+          "Lower the load safely and reset each repetition."
+        ],
+        "form_cues": [
+          "Keep the load close.",
+          "Receive with soft knees.",
+          "Lock out only when stable."
+        ],
+        "common_mistakes": [
+          "Pulling with rounded back.",
+          "Pressing out a missed jerk.",
+          "Rushing the reset."
+        ],
+        "safety_note": "Use a light practice load until the rack and overhead receiving positions are stable.",
+        "provenance": "authored"
+      },
+      "equipment": "barbell",
+      "primary_muscle": "full_body",
+      "secondary_muscles": [],
+      "source_catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+      "source_catalog_record_sha256": "9a61909b085a57a7c2982d26b502cec2dd6f306351738c8795707fbf301b83fa",
+      "source_english_sha256": "bf3044bd560fc9b55c1a643b88e758b570f438594a9b839536ae8c538759b3c6",
+      "status": "ready",
+      "technical_status": "ready",
+      "prompt_prepared": true,
+      "prompt_status": "complete",
+      "prompt_template": null,
+      "generation_prompt": "Create exactly ONE square transparent PNG of the exact exercise and selected single phase. Metadata fields must never appear as text.\nDo not render multiple phases, raw disputed alternatives, or inferred muscle targets.\n{\n  \"approved_style_addendum\": {\n    \"decision_path\": \"data/style-decisions/agent-03-neutral-primary-approved.json\",\n    \"decision_sha256\": \"96a4d80dafd45956d40c82979d48ecd5d683b24437b02eac0bc45f33826ac155\",\n    \"path\": \"docs/exercise-image-style-neutral-primary.md\",\n    \"sha256\": \"86204ab43f23d119a1eb25cafdbda2518b741a0090b4ffb0ceb9086952314439\",\n    \"user_quote\": \"Для full_body, cardio, other тіло залишається нейтральним\\nсріблясто-сірим. Підсвічуються лише конкретні\\nsecondary_muscles, записані для точного ID,\\nкольором #F26445 на 40–50% інтенсивності.\\nПорожній secondary список означає відсутність підсвітки.\",\n    \"version\": \"v1-neutral-primary-2026-10-02\"\n  },\n  \"base_style_sha256\": \"8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578\",\n  \"exact_catalogue_source\": {\n    \"equipment\": \"barbell\",\n    \"primary_muscle\": \"full_body\",\n    \"secondary_muscles\": [],\n    \"source_english\": {\n      \"common_mistakes\": [\n        \"Pulling with rounded back.\",\n        \"Pressing out a missed jerk.\",\n        \"Rushing the reset.\"\n      ],\n      \"description\": \"Clean and Jerk combines a barbell clean to the shoulders with a dip-and-drive overhead jerk.\",\n      \"form_cues\": [\n        \"Keep the load close.\",\n        \"Receive with soft knees.\",\n        \"Lock out only when stable.\"\n      ],\n      \"instructions\": [\n        \"Start with the barbell from the floor and keep the back neutral.\",\n        \"Extend the hips and knees to pull the load into the rack position.\",\n        \"Dip slightly and drive overhead into a stable split or power stance.\",\n        \"Lower the load safely and reset each repetition.\"\n      ],\n      \"provenance\": \"authored\",\n      \"safety_note\": \"Use a light practice load until the rack and overhead receiving positions are stable.\"\n    }\n  },\n  \"human_reference\": {\n    \"absolute_path\": \"/workspace/lightweight-exercises-photo/assets/exercises/biceps-curl-dumbbell.png\",\n    \"branch\": \"work\",\n    \"pixels_reviewed_during_preparation\": false,\n    \"repository_path\": \"assets/exercises/biceps-curl-dumbbell.png\",\n    \"role\": \"Human appearance/proportions/materials/anatomical style ONLY. Exercise pose, grip, equipment and muscles come from the exact-ID catalogue, never the reference.\",\n    \"sha256\": \"52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f\",\n    \"source_commit\": \"bffc6f41e512e28b4e383e8dfa711aee07c710fc\"\n  },\n  \"identity_do_not_render_as_text\": {\n    \"catalog_record_sha256\": \"9a61909b085a57a7c2982d26b502cec2dd6f306351738c8795707fbf301b83fa\",\n    \"catalog_sha256\": \"a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989\",\n    \"exercise_id\": \"clean-and-jerk-barbell\",\n    \"name\": \"Clean and Jerk\"\n  },\n  \"same_ID_supplementary_fields\": [],\n  \"selected_render_scene\": {\n    \"camera\": \"Front-side three-quarter view showing complete person, prescribed grip and all supports/contacts within square; no crop.\",\n    \"exercise_id\": \"clean-and-jerk-barbell\",\n    \"grip\": \"Both hands securely grip the SAME bar in overhead rack, no invented width or alternate weights.\",\n    \"movement_trajectory\": \"Floor clean to shoulders, dip/drive overhead into source split option, lower safely; depict only jerk catch.\",\n    \"never_infer_muscles_from_pose_or_reference\": true,\n    \"one_phase_only\": true,\n    \"pose\": \"Bar overhead with straight elbows and stable split stance, front/rear knees soft, neutral braced torso.\",\n    \"single_phase\": \"Stable split-jerk overhead endpoint\",\n    \"supports_and_equipment\": \"Front and rear feet grounded in explicit split source option; free bar overhead with clear space.\"\n  },\n  \"source_use_rule\": \"Render ONLY selected_render_scene and the explicit exact-ID resolution; original English stays verbatim for provenance even when a disputed field is overridden. Do not invent a substitute exercise or copy reference pose/equipment/muscle colors.\",\n  \"style\": {\n    \"approval_status\": \"approved\",\n    \"background\": \"Genuinely transparent PNG background, no white/checkerboard layer, no environment scene.\",\n    \"base_version\": \"v1\",\n    \"framing\": \"Full figure and all required equipment/supports visible within a square. Scale and use a three-quarter view to expose the specified contacts without changing anatomy, equipment, grip or technique.\",\n    \"human_model\": \"One athletic bald male anatomical mannequin, opaque silver-gray muscular surfaces, consistent proportions and detailed 3D materials, plain black shorts, barefoot.\",\n    \"material_rules\": \"Highlights never make tissue transparent; no glow, whole-body orange tint, hair, text, labels, arrows, UI, borders, collage or extra person.\",\n    \"no_invention\": \"Exact catalogue ID controls identity, raw equipment and muscles. Only the embedded verified same-ID/source-variant decisions may clarify rendering technique. No guessed weights, brands, attachments or muscle targets.\",\n    \"output\": {\n      \"format\": \"PNG\",\n      \"height\": 1024,\n      \"one_person\": true,\n      \"one_phase\": true,\n      \"width\": 1024\n    },\n    \"primary_highlight\": {\n      \"hex\": null,\n      \"rule\": \"full_body/cardio/other are broad labels, NOT anatomical targets. Entire body neutral opaque silver-gray except explicitly listed concrete secondary targets.\"\n    },\n    \"secondary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"intensity_fraction\": [\n        0.4,\n        0.5\n      ],\n      \"rule\": \"Only the exact secondary muscles, lighter same-hue highlight; if the list is empty add no secondary target.\"\n    },\n    \"version\": \"v1-neutral-primary-2026-10-02\"\n  },\n  \"technical_blocker\": null,\n  \"technique_resolution\": null\n}",
+      "prompt_payload": {
+        "identity_do_not_render_as_text": {
+          "exercise_id": "clean-and-jerk-barbell",
+          "name": "Clean and Jerk",
+          "catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+          "catalog_record_sha256": "9a61909b085a57a7c2982d26b502cec2dd6f306351738c8795707fbf301b83fa"
+        },
+        "exact_catalogue_source": {
+          "source_english": {
+            "description": "Clean and Jerk combines a barbell clean to the shoulders with a dip-and-drive overhead jerk.",
+            "instructions": [
+              "Start with the barbell from the floor and keep the back neutral.",
+              "Extend the hips and knees to pull the load into the rack position.",
+              "Dip slightly and drive overhead into a stable split or power stance.",
+              "Lower the load safely and reset each repetition."
+            ],
+            "form_cues": [
+              "Keep the load close.",
+              "Receive with soft knees.",
+              "Lock out only when stable."
+            ],
+            "common_mistakes": [
+              "Pulling with rounded back.",
+              "Pressing out a missed jerk.",
+              "Rushing the reset."
+            ],
+            "safety_note": "Use a light practice load until the rack and overhead receiving positions are stable.",
+            "provenance": "authored"
+          },
+          "equipment": "barbell",
+          "primary_muscle": "full_body",
+          "secondary_muscles": []
+        },
+        "human_reference": {
+          "repository_path": "assets/exercises/biceps-curl-dumbbell.png",
+          "absolute_path": "/workspace/lightweight-exercises-photo/assets/exercises/biceps-curl-dumbbell.png",
+          "sha256": "52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f",
+          "branch": "work",
+          "source_commit": "bffc6f41e512e28b4e383e8dfa711aee07c710fc",
+          "role": "Human appearance/proportions/materials/anatomical style ONLY. Exercise pose, grip, equipment and muscles come from the exact-ID catalogue, never the reference.",
+          "pixels_reviewed_during_preparation": false
+        },
+        "style": {
+          "version": "v1-neutral-primary-2026-10-02",
+          "human_model": "One athletic bald male anatomical mannequin, opaque silver-gray muscular surfaces, consistent proportions and detailed 3D materials, plain black shorts, barefoot.",
+          "primary_highlight": {
+            "hex": null,
+            "rule": "full_body/cardio/other are broad labels, NOT anatomical targets. Entire body neutral opaque silver-gray except explicitly listed concrete secondary targets."
+          },
+          "secondary_highlight": {
+            "hex": "#F26445",
+            "intensity_fraction": [
+              0.4,
+              0.5
+            ],
+            "rule": "Only the exact secondary muscles, lighter same-hue highlight; if the list is empty add no secondary target."
+          },
+          "background": "Genuinely transparent PNG background, no white/checkerboard layer, no environment scene.",
+          "output": {
+            "format": "PNG",
+            "width": 1024,
+            "height": 1024,
+            "one_person": true,
+            "one_phase": true
+          },
+          "material_rules": "Highlights never make tissue transparent; no glow, whole-body orange tint, hair, text, labels, arrows, UI, borders, collage or extra person.",
+          "framing": "Full figure and all required equipment/supports visible within a square. Scale and use a three-quarter view to expose the specified contacts without changing anatomy, equipment, grip or technique.",
+          "no_invention": "Exact catalogue ID controls identity, raw equipment and muscles. Only the embedded verified same-ID/source-variant decisions may clarify rendering technique. No guessed weights, brands, attachments or muscle targets.",
+          "base_version": "v1",
+          "approval_status": "approved"
+        },
+        "base_style_sha256": "8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578",
+        "selected_render_scene": {
+          "exercise_id": "clean-and-jerk-barbell",
+          "single_phase": "Stable split-jerk overhead endpoint",
+          "pose": "Bar overhead with straight elbows and stable split stance, front/rear knees soft, neutral braced torso.",
+          "grip": "Both hands securely grip the SAME bar in overhead rack, no invented width or alternate weights.",
+          "supports_and_equipment": "Front and rear feet grounded in explicit split source option; free bar overhead with clear space.",
+          "movement_trajectory": "Floor clean to shoulders, dip/drive overhead into source split option, lower safely; depict only jerk catch.",
+          "camera": "Front-side three-quarter view showing complete person, prescribed grip and all supports/contacts within square; no crop.",
+          "one_phase_only": true,
+          "never_infer_muscles_from_pose_or_reference": true
+        },
+        "technique_resolution": null,
+        "same_ID_supplementary_fields": [],
+        "technical_blocker": null,
+        "source_use_rule": "Render ONLY selected_render_scene and the explicit exact-ID resolution; original English stays verbatim for provenance even when a disputed field is overridden. Do not invent a substitute exercise or copy reference pose/equipment/muscle colors.",
+        "approved_style_addendum": {
+          "version": "v1-neutral-primary-2026-10-02",
+          "path": "docs/exercise-image-style-neutral-primary.md",
+          "sha256": "86204ab43f23d119a1eb25cafdbda2518b741a0090b4ffb0ceb9086952314439",
+          "decision_path": "data/style-decisions/agent-03-neutral-primary-approved.json",
+          "decision_sha256": "96a4d80dafd45956d40c82979d48ecd5d683b24437b02eac0bc45f33826ac155",
+          "user_quote": "Для full_body, cardio, other тіло залишається нейтральним\nсріблясто-сірим. Підсвічуються лише конкретні\nsecondary_muscles, записані для точного ID,\nкольором #F26445 на 40–50% інтенсивності.\nПорожній secondary список означає відсутність підсвітки."
+        }
+      },
+      "prompt_sha256": "3264b324530ced1525a1500d914ff98a4e5f65db3e1cbac745d48207f612862a",
+      "scene": {
+        "exercise_id": "clean-and-jerk-barbell",
+        "single_phase": "Stable split-jerk overhead endpoint",
+        "pose": "Bar overhead with straight elbows and stable split stance, front/rear knees soft, neutral braced torso.",
+        "grip": "Both hands securely grip the SAME bar in overhead rack, no invented width or alternate weights.",
+        "supports_and_equipment": "Front and rear feet grounded in explicit split source option; free bar overhead with clear space.",
+        "movement_trajectory": "Floor clean to shoulders, dip/drive overhead into source split option, lower safely; depict only jerk catch.",
+        "camera": "Front-side three-quarter view showing complete person, prescribed grip and all supports/contacts within square; no crop.",
+        "one_phase_only": true,
+        "never_infer_muscles_from_pose_or_reference": true
+      },
+      "technique_resolution": null,
+      "same_ID_supplementary_fields": [],
+      "style_version": "v1-neutral-primary-2026-10-02",
+      "base_style_version": "v1",
+      "base_style_sha256": "8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578",
+      "style_proposal_path": null,
+      "style_proposal_sha256": null,
+      "human_reference": {
+        "repository_path": "assets/exercises/biceps-curl-dumbbell.png",
+        "absolute_path": "/workspace/lightweight-exercises-photo/assets/exercises/biceps-curl-dumbbell.png",
+        "sha256": "52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f",
+        "branch": "work",
+        "source_commit": "bffc6f41e512e28b4e383e8dfa711aee07c710fc",
+        "role": "Human appearance/proportions/materials/anatomical style ONLY. Exercise pose, grip, equipment and muscles come from the exact-ID catalogue, never the reference.",
+        "pixels_reviewed_during_preparation": false
+      },
+      "attempts": 0,
+      "result_path": null,
+      "result_sha256": null,
+      "user_review": null,
+      "technical_check": null,
+      "agent_visual_review": "not_performed",
+      "generation_authorized_now": false,
+      "technical_question": null,
+      "assignment_kind": "ready_own_batch_preparation_only",
+      "batch_id": "agent-03-others-019",
+      "planned_png_path": "/workspace/exercise-image-results/agent-03-others-019/clean-and-jerk-barbell/attempt-1.png",
+      "planned_output_relative_path": "agent-03-others-019/clean-and-jerk-barbell/attempt-1.png",
+      "output_path_policy": "Exact batch_id/exercise_id/attempt path. Do not map generated files by name similarity or array position.",
+      "style_approval_status": "approved",
+      "style_addendum_path": "docs/exercise-image-style-neutral-primary.md",
+      "style_addendum_sha256": "86204ab43f23d119a1eb25cafdbda2518b741a0090b4ffb0ceb9086952314439",
+      "style_decision_path": "data/style-decisions/agent-03-neutral-primary-approved.json",
+      "style_decision_sha256": "96a4d80dafd45956d40c82979d48ecd5d683b24437b02eac0bc45f33826ac155",
+      "source_draft_path": "data/queues/agent-03-neutral-primary-style-drafts.json",
+      "source_draft_file_sha256": "6185597c9402fd8c46ed4b869de7073c129df21c65bbc461080cea6827657d3b",
+      "source_draft_prompt_sha256": "43790336a69cff8af2ac51a9c2751c2d8ce141a69603c67b7f1fb84fb5160578",
+      "style_path": "docs/exercise-image-style-neutral-primary.md",
+      "style_sha256": "86204ab43f23d119a1eb25cafdbda2518b741a0090b4ffb0ceb9086952314439"
+    },
+    {
+      "exercise_id": "clean-and-press-barbell",
+      "name": "Clean and Press",
+      "source_english": {
+        "description": "Clean and Press lifts a barbell from the floor to the shoulders, then presses it overhead after the clean.",
+        "instructions": [
+          "Stand over the barbell with a shoulder-width grip and neutral back.",
+          "Extend the hips and knees to catch the bar at the shoulders with soft knees.",
+          "Press the bar overhead until the elbows are straight without leaning back.",
+          "Lower to the shoulders, then the floor, and reset."
+        ],
+        "form_cues": [
+          "Keep the bar close.",
+          "Finish the clean before pressing.",
+          "Stack wrists overhead."
+        ],
+        "common_mistakes": [
+          "Pressing before the catch is stable.",
+          "Arching overhead.",
+          "Dropping the bar."
+        ],
+        "safety_note": "Use a light load and clear overhead space until both phases are controlled.",
+        "provenance": "adapted"
+      },
+      "equipment": "barbell",
+      "primary_muscle": "full_body",
+      "secondary_muscles": [],
+      "source_catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+      "source_catalog_record_sha256": "d1c5a7510f0ec0e7a096766f1a113ae93403c594c47fd7c4aa3bf71e9c14c773",
+      "source_english_sha256": "efc79e02fcb6d19dfd4000a3ef8edc4a4a8289cadd3a3fddcc220e91f3b2bdb2",
+      "status": "ready",
+      "technical_status": "ready",
+      "prompt_prepared": true,
+      "prompt_status": "complete",
+      "prompt_template": null,
+      "generation_prompt": "Create exactly ONE square transparent PNG of the exact exercise and selected single phase. Metadata fields must never appear as text.\nDo not render multiple phases, raw disputed alternatives, or inferred muscle targets.\n{\n  \"approved_style_addendum\": {\n    \"decision_path\": \"data/style-decisions/agent-03-neutral-primary-approved.json\",\n    \"decision_sha256\": \"96a4d80dafd45956d40c82979d48ecd5d683b24437b02eac0bc45f33826ac155\",\n    \"path\": \"docs/exercise-image-style-neutral-primary.md\",\n    \"sha256\": \"86204ab43f23d119a1eb25cafdbda2518b741a0090b4ffb0ceb9086952314439\",\n    \"user_quote\": \"Для full_body, cardio, other тіло залишається нейтральним\\nсріблясто-сірим. Підсвічуються лише конкретні\\nsecondary_muscles, записані для точного ID,\\nкольором #F26445 на 40–50% інтенсивності.\\nПорожній secondary список означає відсутність підсвітки.\",\n    \"version\": \"v1-neutral-primary-2026-10-02\"\n  },\n  \"base_style_sha256\": \"8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578\",\n  \"exact_catalogue_source\": {\n    \"equipment\": \"barbell\",\n    \"primary_muscle\": \"full_body\",\n    \"secondary_muscles\": [],\n    \"source_english\": {\n      \"common_mistakes\": [\n        \"Pressing before the catch is stable.\",\n        \"Arching overhead.\",\n        \"Dropping the bar.\"\n      ],\n      \"description\": \"Clean and Press lifts a barbell from the floor to the shoulders, then presses it overhead after the clean.\",\n      \"form_cues\": [\n        \"Keep the bar close.\",\n        \"Finish the clean before pressing.\",\n        \"Stack wrists overhead.\"\n      ],\n      \"instructions\": [\n        \"Stand over the barbell with a shoulder-width grip and neutral back.\",\n        \"Extend the hips and knees to catch the bar at the shoulders with soft knees.\",\n        \"Press the bar overhead until the elbows are straight without leaning back.\",\n        \"Lower to the shoulders, then the floor, and reset.\"\n      ],\n      \"provenance\": \"adapted\",\n      \"safety_note\": \"Use a light load and clear overhead space until both phases are controlled.\"\n    }\n  },\n  \"human_reference\": {\n    \"absolute_path\": \"/workspace/lightweight-exercises-photo/assets/exercises/biceps-curl-dumbbell.png\",\n    \"branch\": \"work\",\n    \"pixels_reviewed_during_preparation\": false,\n    \"repository_path\": \"assets/exercises/biceps-curl-dumbbell.png\",\n    \"role\": \"Human appearance/proportions/materials/anatomical style ONLY. Exercise pose, grip, equipment and muscles come from the exact-ID catalogue, never the reference.\",\n    \"sha256\": \"52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f\",\n    \"source_commit\": \"bffc6f41e512e28b4e383e8dfa711aee07c710fc\"\n  },\n  \"identity_do_not_render_as_text\": {\n    \"catalog_record_sha256\": \"d1c5a7510f0ec0e7a096766f1a113ae93403c594c47fd7c4aa3bf71e9c14c773\",\n    \"catalog_sha256\": \"a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989\",\n    \"exercise_id\": \"clean-and-press-barbell\",\n    \"name\": \"Clean and Press\"\n  },\n  \"same_ID_supplementary_fields\": [],\n  \"selected_render_scene\": {\n    \"camera\": \"Front-side three-quarter view showing complete person, prescribed grip and all supports/contacts within square; no crop.\",\n    \"exercise_id\": \"clean-and-press-barbell\",\n    \"grip\": \"Both hands on SAME free bar, source shoulder-width grip.\",\n    \"movement_trajectory\": \"Clean floor-to-shoulders and stabilize, then press overhead, lower to shoulders and floor.\",\n    \"never_infer_muscles_from_pose_or_reference\": true,\n    \"one_phase_only\": true,\n    \"pose\": \"Stand tall with braced core, elbows straight and wrists stacked overhead, no lumbar lean-back.\",\n    \"single_phase\": \"Controlled overhead press endpoint\",\n    \"supports_and_equipment\": \"Both feet grounded, no split jerk or machine.\"\n  },\n  \"source_use_rule\": \"Render ONLY selected_render_scene and the explicit exact-ID resolution; original English stays verbatim for provenance even when a disputed field is overridden. Do not invent a substitute exercise or copy reference pose/equipment/muscle colors.\",\n  \"style\": {\n    \"approval_status\": \"approved\",\n    \"background\": \"Genuinely transparent PNG background, no white/checkerboard layer, no environment scene.\",\n    \"base_version\": \"v1\",\n    \"framing\": \"Full figure and all required equipment/supports visible within a square. Scale and use a three-quarter view to expose the specified contacts without changing anatomy, equipment, grip or technique.\",\n    \"human_model\": \"One athletic bald male anatomical mannequin, opaque silver-gray muscular surfaces, consistent proportions and detailed 3D materials, plain black shorts, barefoot.\",\n    \"material_rules\": \"Highlights never make tissue transparent; no glow, whole-body orange tint, hair, text, labels, arrows, UI, borders, collage or extra person.\",\n    \"no_invention\": \"Exact catalogue ID controls identity, raw equipment and muscles. Only the embedded verified same-ID/source-variant decisions may clarify rendering technique. No guessed weights, brands, attachments or muscle targets.\",\n    \"output\": {\n      \"format\": \"PNG\",\n      \"height\": 1024,\n      \"one_person\": true,\n      \"one_phase\": true,\n      \"width\": 1024\n    },\n    \"primary_highlight\": {\n      \"hex\": null,\n      \"rule\": \"full_body/cardio/other are broad labels, NOT anatomical targets. Entire body neutral opaque silver-gray except explicitly listed concrete secondary targets.\"\n    },\n    \"secondary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"intensity_fraction\": [\n        0.4,\n        0.5\n      ],\n      \"rule\": \"Only the exact secondary muscles, lighter same-hue highlight; if the list is empty add no secondary target.\"\n    },\n    \"version\": \"v1-neutral-primary-2026-10-02\"\n  },\n  \"technical_blocker\": null,\n  \"technique_resolution\": null\n}",
+      "prompt_payload": {
+        "identity_do_not_render_as_text": {
+          "exercise_id": "clean-and-press-barbell",
+          "name": "Clean and Press",
+          "catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+          "catalog_record_sha256": "d1c5a7510f0ec0e7a096766f1a113ae93403c594c47fd7c4aa3bf71e9c14c773"
+        },
+        "exact_catalogue_source": {
+          "source_english": {
+            "description": "Clean and Press lifts a barbell from the floor to the shoulders, then presses it overhead after the clean.",
+            "instructions": [
+              "Stand over the barbell with a shoulder-width grip and neutral back.",
+              "Extend the hips and knees to catch the bar at the shoulders with soft knees.",
+              "Press the bar overhead until the elbows are straight without leaning back.",
+              "Lower to the shoulders, then the floor, and reset."
+            ],
+            "form_cues": [
+              "Keep the bar close.",
+              "Finish the clean before pressing.",
+              "Stack wrists overhead."
+            ],
+            "common_mistakes": [
+              "Pressing before the catch is stable.",
+              "Arching overhead.",
+              "Dropping the bar."
+            ],
+            "safety_note": "Use a light load and clear overhead space until both phases are controlled.",
+            "provenance": "adapted"
+          },
+          "equipment": "barbell",
+          "primary_muscle": "full_body",
+          "secondary_muscles": []
+        },
+        "human_reference": {
+          "repository_path": "assets/exercises/biceps-curl-dumbbell.png",
+          "absolute_path": "/workspace/lightweight-exercises-photo/assets/exercises/biceps-curl-dumbbell.png",
+          "sha256": "52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f",
+          "branch": "work",
+          "source_commit": "bffc6f41e512e28b4e383e8dfa711aee07c710fc",
+          "role": "Human appearance/proportions/materials/anatomical style ONLY. Exercise pose, grip, equipment and muscles come from the exact-ID catalogue, never the reference.",
+          "pixels_reviewed_during_preparation": false
+        },
+        "style": {
+          "version": "v1-neutral-primary-2026-10-02",
+          "human_model": "One athletic bald male anatomical mannequin, opaque silver-gray muscular surfaces, consistent proportions and detailed 3D materials, plain black shorts, barefoot.",
+          "primary_highlight": {
+            "hex": null,
+            "rule": "full_body/cardio/other are broad labels, NOT anatomical targets. Entire body neutral opaque silver-gray except explicitly listed concrete secondary targets."
+          },
+          "secondary_highlight": {
+            "hex": "#F26445",
+            "intensity_fraction": [
+              0.4,
+              0.5
+            ],
+            "rule": "Only the exact secondary muscles, lighter same-hue highlight; if the list is empty add no secondary target."
+          },
+          "background": "Genuinely transparent PNG background, no white/checkerboard layer, no environment scene.",
+          "output": {
+            "format": "PNG",
+            "width": 1024,
+            "height": 1024,
+            "one_person": true,
+            "one_phase": true
+          },
+          "material_rules": "Highlights never make tissue transparent; no glow, whole-body orange tint, hair, text, labels, arrows, UI, borders, collage or extra person.",
+          "framing": "Full figure and all required equipment/supports visible within a square. Scale and use a three-quarter view to expose the specified contacts without changing anatomy, equipment, grip or technique.",
+          "no_invention": "Exact catalogue ID controls identity, raw equipment and muscles. Only the embedded verified same-ID/source-variant decisions may clarify rendering technique. No guessed weights, brands, attachments or muscle targets.",
+          "base_version": "v1",
+          "approval_status": "approved"
+        },
+        "base_style_sha256": "8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578",
+        "selected_render_scene": {
+          "exercise_id": "clean-and-press-barbell",
+          "single_phase": "Controlled overhead press endpoint",
+          "pose": "Stand tall with braced core, elbows straight and wrists stacked overhead, no lumbar lean-back.",
+          "grip": "Both hands on SAME free bar, source shoulder-width grip.",
+          "supports_and_equipment": "Both feet grounded, no split jerk or machine.",
+          "movement_trajectory": "Clean floor-to-shoulders and stabilize, then press overhead, lower to shoulders and floor.",
+          "camera": "Front-side three-quarter view showing complete person, prescribed grip and all supports/contacts within square; no crop.",
+          "one_phase_only": true,
+          "never_infer_muscles_from_pose_or_reference": true
+        },
+        "technique_resolution": null,
+        "same_ID_supplementary_fields": [],
+        "technical_blocker": null,
+        "source_use_rule": "Render ONLY selected_render_scene and the explicit exact-ID resolution; original English stays verbatim for provenance even when a disputed field is overridden. Do not invent a substitute exercise or copy reference pose/equipment/muscle colors.",
+        "approved_style_addendum": {
+          "version": "v1-neutral-primary-2026-10-02",
+          "path": "docs/exercise-image-style-neutral-primary.md",
+          "sha256": "86204ab43f23d119a1eb25cafdbda2518b741a0090b4ffb0ceb9086952314439",
+          "decision_path": "data/style-decisions/agent-03-neutral-primary-approved.json",
+          "decision_sha256": "96a4d80dafd45956d40c82979d48ecd5d683b24437b02eac0bc45f33826ac155",
+          "user_quote": "Для full_body, cardio, other тіло залишається нейтральним\nсріблясто-сірим. Підсвічуються лише конкретні\nsecondary_muscles, записані для точного ID,\nкольором #F26445 на 40–50% інтенсивності.\nПорожній secondary список означає відсутність підсвітки."
+        }
+      },
+      "prompt_sha256": "86265665ea42a6f41227ce8b066db99f132d58ad40f634a75e1255499ccd6189",
+      "scene": {
+        "exercise_id": "clean-and-press-barbell",
+        "single_phase": "Controlled overhead press endpoint",
+        "pose": "Stand tall with braced core, elbows straight and wrists stacked overhead, no lumbar lean-back.",
+        "grip": "Both hands on SAME free bar, source shoulder-width grip.",
+        "supports_and_equipment": "Both feet grounded, no split jerk or machine.",
+        "movement_trajectory": "Clean floor-to-shoulders and stabilize, then press overhead, lower to shoulders and floor.",
+        "camera": "Front-side three-quarter view showing complete person, prescribed grip and all supports/contacts within square; no crop.",
+        "one_phase_only": true,
+        "never_infer_muscles_from_pose_or_reference": true
+      },
+      "technique_resolution": null,
+      "same_ID_supplementary_fields": [],
+      "style_version": "v1-neutral-primary-2026-10-02",
+      "base_style_version": "v1",
+      "base_style_sha256": "8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578",
+      "style_proposal_path": null,
+      "style_proposal_sha256": null,
+      "human_reference": {
+        "repository_path": "assets/exercises/biceps-curl-dumbbell.png",
+        "absolute_path": "/workspace/lightweight-exercises-photo/assets/exercises/biceps-curl-dumbbell.png",
+        "sha256": "52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f",
+        "branch": "work",
+        "source_commit": "bffc6f41e512e28b4e383e8dfa711aee07c710fc",
+        "role": "Human appearance/proportions/materials/anatomical style ONLY. Exercise pose, grip, equipment and muscles come from the exact-ID catalogue, never the reference.",
+        "pixels_reviewed_during_preparation": false
+      },
+      "attempts": 0,
+      "result_path": null,
+      "result_sha256": null,
+      "user_review": null,
+      "technical_check": null,
+      "agent_visual_review": "not_performed",
+      "generation_authorized_now": false,
+      "technical_question": null,
+      "assignment_kind": "ready_own_batch_preparation_only",
+      "batch_id": "agent-03-others-019",
+      "planned_png_path": "/workspace/exercise-image-results/agent-03-others-019/clean-and-press-barbell/attempt-1.png",
+      "planned_output_relative_path": "agent-03-others-019/clean-and-press-barbell/attempt-1.png",
+      "output_path_policy": "Exact batch_id/exercise_id/attempt path. Do not map generated files by name similarity or array position.",
+      "style_approval_status": "approved",
+      "style_addendum_path": "docs/exercise-image-style-neutral-primary.md",
+      "style_addendum_sha256": "86204ab43f23d119a1eb25cafdbda2518b741a0090b4ffb0ceb9086952314439",
+      "style_decision_path": "data/style-decisions/agent-03-neutral-primary-approved.json",
+      "style_decision_sha256": "96a4d80dafd45956d40c82979d48ecd5d683b24437b02eac0bc45f33826ac155",
+      "source_draft_path": "data/queues/agent-03-neutral-primary-style-drafts.json",
+      "source_draft_file_sha256": "6185597c9402fd8c46ed4b869de7073c129df21c65bbc461080cea6827657d3b",
+      "source_draft_prompt_sha256": "0f1c9e9b7dffdfc1e1f5efccefe15bbe99bc37dc9fb8325210e1f320ca291294",
+      "style_path": "docs/exercise-image-style-neutral-primary.md",
+      "style_sha256": "86204ab43f23d119a1eb25cafdbda2518b741a0090b4ffb0ceb9086952314439"
+    },
+    {
+      "exercise_id": "clean-pull-barbell",
+      "name": "Clean Pull",
+      "source_english": {
+        "description": "Clean Pull starts from the floor and uses leg and hip extension to bring the bar upward without receiving it in a front-rack catch.",
+        "instructions": [
+          "Stand with the bar over midfoot, hinge down, and grip it just outside the legs with the shins close to the bar.",
+          "Brace, push through the floor, and extend the hips and knees together.",
+          "Pull the bar upward with elbows high while keeping it close to the body.",
+          "Lower under control without turning the pull into a catch."
+        ],
+        "form_cues": [
+          "Keep the bar close.",
+          "Finish tall through the hips.",
+          "Do not yank with the arms first."
+        ],
+        "common_mistakes": [
+          "Rounding the back.",
+          "Jumping the bar away.",
+          "Bending the elbows too early."
+        ],
+        "safety_note": "Use a clear lifting lane and keep the bar close to the body.",
+        "provenance": "authored"
+      },
+      "equipment": "barbell",
+      "primary_muscle": "full_body",
+      "secondary_muscles": [],
+      "source_catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+      "source_catalog_record_sha256": "1f0f0180c4630cd76537e5971e0863fab5770d55f59439de70be26b342ff33f5",
+      "source_english_sha256": "c0777cd41b065e91de991e66175e1e604998f5f6f0b8848192df93e6b02f1d12",
+      "status": "ready",
+      "technical_status": "ready",
+      "prompt_prepared": true,
+      "prompt_status": "complete",
+      "prompt_template": null,
+      "generation_prompt": "Create exactly ONE square transparent PNG of the exact exercise and selected single phase. Metadata fields must never appear as text.\nDo not render multiple phases, raw disputed alternatives, or inferred muscle targets.\n{\n  \"approved_style_addendum\": {\n    \"decision_path\": \"data/style-decisions/agent-03-neutral-primary-approved.json\",\n    \"decision_sha256\": \"96a4d80dafd45956d40c82979d48ecd5d683b24437b02eac0bc45f33826ac155\",\n    \"path\": \"docs/exercise-image-style-neutral-primary.md\",\n    \"sha256\": \"86204ab43f23d119a1eb25cafdbda2518b741a0090b4ffb0ceb9086952314439\",\n    \"user_quote\": \"Для full_body, cardio, other тіло залишається нейтральним\\nсріблясто-сірим. Підсвічуються лише конкретні\\nsecondary_muscles, записані для точного ID,\\nкольором #F26445 на 40–50% інтенсивності.\\nПорожній secondary список означає відсутність підсвітки.\",\n    \"version\": \"v1-neutral-primary-2026-10-02\"\n  },\n  \"base_style_sha256\": \"8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578\",\n  \"exact_catalogue_source\": {\n    \"equipment\": \"barbell\",\n    \"primary_muscle\": \"full_body\",\n    \"secondary_muscles\": [],\n    \"source_english\": {\n      \"common_mistakes\": [\n        \"Rounding the back.\",\n        \"Jumping the bar away.\",\n        \"Bending the elbows too early.\"\n      ],\n      \"description\": \"Clean Pull starts from the floor and uses leg and hip extension to bring the bar upward without receiving it in a front-rack catch.\",\n      \"form_cues\": [\n        \"Keep the bar close.\",\n        \"Finish tall through the hips.\",\n        \"Do not yank with the arms first.\"\n      ],\n      \"instructions\": [\n        \"Stand with the bar over midfoot, hinge down, and grip it just outside the legs with the shins close to the bar.\",\n        \"Brace, push through the floor, and extend the hips and knees together.\",\n        \"Pull the bar upward with elbows high while keeping it close to the body.\",\n        \"Lower under control without turning the pull into a catch.\"\n      ],\n      \"provenance\": \"authored\",\n      \"safety_note\": \"Use a clear lifting lane and keep the bar close to the body.\"\n    }\n  },\n  \"human_reference\": {\n    \"absolute_path\": \"/workspace/lightweight-exercises-photo/assets/exercises/biceps-curl-dumbbell.png\",\n    \"branch\": \"work\",\n    \"pixels_reviewed_during_preparation\": false,\n    \"repository_path\": \"assets/exercises/biceps-curl-dumbbell.png\",\n    \"role\": \"Human appearance/proportions/materials/anatomical style ONLY. Exercise pose, grip, equipment and muscles come from the exact-ID catalogue, never the reference.\",\n    \"sha256\": \"52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f\",\n    \"source_commit\": \"bffc6f41e512e28b4e383e8dfa711aee07c710fc\"\n  },\n  \"identity_do_not_render_as_text\": {\n    \"catalog_record_sha256\": \"1f0f0180c4630cd76537e5971e0863fab5770d55f59439de70be26b342ff33f5\",\n    \"catalog_sha256\": \"a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989\",\n    \"exercise_id\": \"clean-pull-barbell\",\n    \"name\": \"Clean Pull\"\n  },\n  \"same_ID_supplementary_fields\": [],\n  \"selected_render_scene\": {\n    \"camera\": \"Front-side three-quarter view showing complete person, prescribed grip and all supports/contacts within square; no crop.\",\n    \"exercise_id\": \"clean-pull-barbell\",\n    \"grip\": \"Both hands securely grip bar just OUTSIDE legs.\",\n    \"movement_trajectory\": \"Floor start from midfoot, knee/hip extension and upward pull, lower WITHOUT receiving in front rack.\",\n    \"never_infer_muscles_from_pose_or_reference\": true,\n    \"one_phase_only\": true,\n    \"pose\": \"Neutral braced torso after knee/hip extension, bar close, elbows high only AFTER hip drive, no front-rack catch.\",\n    \"single_phase\": \"Tall extension with close upward bar\",\n    \"supports_and_equipment\": \"Feet grounded in controlled pulling stance, same free bar, clear lane.\"\n  },\n  \"source_use_rule\": \"Render ONLY selected_render_scene and the explicit exact-ID resolution; original English stays verbatim for provenance even when a disputed field is overridden. Do not invent a substitute exercise or copy reference pose/equipment/muscle colors.\",\n  \"style\": {\n    \"approval_status\": \"approved\",\n    \"background\": \"Genuinely transparent PNG background, no white/checkerboard layer, no environment scene.\",\n    \"base_version\": \"v1\",\n    \"framing\": \"Full figure and all required equipment/supports visible within a square. Scale and use a three-quarter view to expose the specified contacts without changing anatomy, equipment, grip or technique.\",\n    \"human_model\": \"One athletic bald male anatomical mannequin, opaque silver-gray muscular surfaces, consistent proportions and detailed 3D materials, plain black shorts, barefoot.\",\n    \"material_rules\": \"Highlights never make tissue transparent; no glow, whole-body orange tint, hair, text, labels, arrows, UI, borders, collage or extra person.\",\n    \"no_invention\": \"Exact catalogue ID controls identity, raw equipment and muscles. Only the embedded verified same-ID/source-variant decisions may clarify rendering technique. No guessed weights, brands, attachments or muscle targets.\",\n    \"output\": {\n      \"format\": \"PNG\",\n      \"height\": 1024,\n      \"one_person\": true,\n      \"one_phase\": true,\n      \"width\": 1024\n    },\n    \"primary_highlight\": {\n      \"hex\": null,\n      \"rule\": \"full_body/cardio/other are broad labels, NOT anatomical targets. Entire body neutral opaque silver-gray except explicitly listed concrete secondary targets.\"\n    },\n    \"secondary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"intensity_fraction\": [\n        0.4,\n        0.5\n      ],\n      \"rule\": \"Only the exact secondary muscles, lighter same-hue highlight; if the list is empty add no secondary target.\"\n    },\n    \"version\": \"v1-neutral-primary-2026-10-02\"\n  },\n  \"technical_blocker\": null,\n  \"technique_resolution\": null\n}",
+      "prompt_payload": {
+        "identity_do_not_render_as_text": {
+          "exercise_id": "clean-pull-barbell",
+          "name": "Clean Pull",
+          "catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+          "catalog_record_sha256": "1f0f0180c4630cd76537e5971e0863fab5770d55f59439de70be26b342ff33f5"
+        },
+        "exact_catalogue_source": {
+          "source_english": {
+            "description": "Clean Pull starts from the floor and uses leg and hip extension to bring the bar upward without receiving it in a front-rack catch.",
+            "instructions": [
+              "Stand with the bar over midfoot, hinge down, and grip it just outside the legs with the shins close to the bar.",
+              "Brace, push through the floor, and extend the hips and knees together.",
+              "Pull the bar upward with elbows high while keeping it close to the body.",
+              "Lower under control without turning the pull into a catch."
+            ],
+            "form_cues": [
+              "Keep the bar close.",
+              "Finish tall through the hips.",
+              "Do not yank with the arms first."
+            ],
+            "common_mistakes": [
+              "Rounding the back.",
+              "Jumping the bar away.",
+              "Bending the elbows too early."
+            ],
+            "safety_note": "Use a clear lifting lane and keep the bar close to the body.",
+            "provenance": "authored"
+          },
+          "equipment": "barbell",
+          "primary_muscle": "full_body",
+          "secondary_muscles": []
+        },
+        "human_reference": {
+          "repository_path": "assets/exercises/biceps-curl-dumbbell.png",
+          "absolute_path": "/workspace/lightweight-exercises-photo/assets/exercises/biceps-curl-dumbbell.png",
+          "sha256": "52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f",
+          "branch": "work",
+          "source_commit": "bffc6f41e512e28b4e383e8dfa711aee07c710fc",
+          "role": "Human appearance/proportions/materials/anatomical style ONLY. Exercise pose, grip, equipment and muscles come from the exact-ID catalogue, never the reference.",
+          "pixels_reviewed_during_preparation": false
+        },
+        "style": {
+          "version": "v1-neutral-primary-2026-10-02",
+          "human_model": "One athletic bald male anatomical mannequin, opaque silver-gray muscular surfaces, consistent proportions and detailed 3D materials, plain black shorts, barefoot.",
+          "primary_highlight": {
+            "hex": null,
+            "rule": "full_body/cardio/other are broad labels, NOT anatomical targets. Entire body neutral opaque silver-gray except explicitly listed concrete secondary targets."
+          },
+          "secondary_highlight": {
+            "hex": "#F26445",
+            "intensity_fraction": [
+              0.4,
+              0.5
+            ],
+            "rule": "Only the exact secondary muscles, lighter same-hue highlight; if the list is empty add no secondary target."
+          },
+          "background": "Genuinely transparent PNG background, no white/checkerboard layer, no environment scene.",
+          "output": {
+            "format": "PNG",
+            "width": 1024,
+            "height": 1024,
+            "one_person": true,
+            "one_phase": true
+          },
+          "material_rules": "Highlights never make tissue transparent; no glow, whole-body orange tint, hair, text, labels, arrows, UI, borders, collage or extra person.",
+          "framing": "Full figure and all required equipment/supports visible within a square. Scale and use a three-quarter view to expose the specified contacts without changing anatomy, equipment, grip or technique.",
+          "no_invention": "Exact catalogue ID controls identity, raw equipment and muscles. Only the embedded verified same-ID/source-variant decisions may clarify rendering technique. No guessed weights, brands, attachments or muscle targets.",
+          "base_version": "v1",
+          "approval_status": "approved"
+        },
+        "base_style_sha256": "8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578",
+        "selected_render_scene": {
+          "exercise_id": "clean-pull-barbell",
+          "single_phase": "Tall extension with close upward bar",
+          "pose": "Neutral braced torso after knee/hip extension, bar close, elbows high only AFTER hip drive, no front-rack catch.",
+          "grip": "Both hands securely grip bar just OUTSIDE legs.",
+          "supports_and_equipment": "Feet grounded in controlled pulling stance, same free bar, clear lane.",
+          "movement_trajectory": "Floor start from midfoot, knee/hip extension and upward pull, lower WITHOUT receiving in front rack.",
+          "camera": "Front-side three-quarter view showing complete person, prescribed grip and all supports/contacts within square; no crop.",
+          "one_phase_only": true,
+          "never_infer_muscles_from_pose_or_reference": true
+        },
+        "technique_resolution": null,
+        "same_ID_supplementary_fields": [],
+        "technical_blocker": null,
+        "source_use_rule": "Render ONLY selected_render_scene and the explicit exact-ID resolution; original English stays verbatim for provenance even when a disputed field is overridden. Do not invent a substitute exercise or copy reference pose/equipment/muscle colors.",
+        "approved_style_addendum": {
+          "version": "v1-neutral-primary-2026-10-02",
+          "path": "docs/exercise-image-style-neutral-primary.md",
+          "sha256": "86204ab43f23d119a1eb25cafdbda2518b741a0090b4ffb0ceb9086952314439",
+          "decision_path": "data/style-decisions/agent-03-neutral-primary-approved.json",
+          "decision_sha256": "96a4d80dafd45956d40c82979d48ecd5d683b24437b02eac0bc45f33826ac155",
+          "user_quote": "Для full_body, cardio, other тіло залишається нейтральним\nсріблясто-сірим. Підсвічуються лише конкретні\nsecondary_muscles, записані для точного ID,\nкольором #F26445 на 40–50% інтенсивності.\nПорожній secondary список означає відсутність підсвітки."
+        }
+      },
+      "prompt_sha256": "bfb41ad0034b117e15faeffb58c05974a819fd81647c1d0ac683430c0692441c",
+      "scene": {
+        "exercise_id": "clean-pull-barbell",
+        "single_phase": "Tall extension with close upward bar",
+        "pose": "Neutral braced torso after knee/hip extension, bar close, elbows high only AFTER hip drive, no front-rack catch.",
+        "grip": "Both hands securely grip bar just OUTSIDE legs.",
+        "supports_and_equipment": "Feet grounded in controlled pulling stance, same free bar, clear lane.",
+        "movement_trajectory": "Floor start from midfoot, knee/hip extension and upward pull, lower WITHOUT receiving in front rack.",
+        "camera": "Front-side three-quarter view showing complete person, prescribed grip and all supports/contacts within square; no crop.",
+        "one_phase_only": true,
+        "never_infer_muscles_from_pose_or_reference": true
+      },
+      "technique_resolution": null,
+      "same_ID_supplementary_fields": [],
+      "style_version": "v1-neutral-primary-2026-10-02",
+      "base_style_version": "v1",
+      "base_style_sha256": "8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578",
+      "style_proposal_path": null,
+      "style_proposal_sha256": null,
+      "human_reference": {
+        "repository_path": "assets/exercises/biceps-curl-dumbbell.png",
+        "absolute_path": "/workspace/lightweight-exercises-photo/assets/exercises/biceps-curl-dumbbell.png",
+        "sha256": "52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f",
+        "branch": "work",
+        "source_commit": "bffc6f41e512e28b4e383e8dfa711aee07c710fc",
+        "role": "Human appearance/proportions/materials/anatomical style ONLY. Exercise pose, grip, equipment and muscles come from the exact-ID catalogue, never the reference.",
+        "pixels_reviewed_during_preparation": false
+      },
+      "attempts": 0,
+      "result_path": null,
+      "result_sha256": null,
+      "user_review": null,
+      "technical_check": null,
+      "agent_visual_review": "not_performed",
+      "generation_authorized_now": false,
+      "technical_question": null,
+      "assignment_kind": "ready_own_batch_preparation_only",
+      "batch_id": "agent-03-others-019",
+      "planned_png_path": "/workspace/exercise-image-results/agent-03-others-019/clean-pull-barbell/attempt-1.png",
+      "planned_output_relative_path": "agent-03-others-019/clean-pull-barbell/attempt-1.png",
+      "output_path_policy": "Exact batch_id/exercise_id/attempt path. Do not map generated files by name similarity or array position.",
+      "style_approval_status": "approved",
+      "style_addendum_path": "docs/exercise-image-style-neutral-primary.md",
+      "style_addendum_sha256": "86204ab43f23d119a1eb25cafdbda2518b741a0090b4ffb0ceb9086952314439",
+      "style_decision_path": "data/style-decisions/agent-03-neutral-primary-approved.json",
+      "style_decision_sha256": "96a4d80dafd45956d40c82979d48ecd5d683b24437b02eac0bc45f33826ac155",
+      "source_draft_path": "data/queues/agent-03-neutral-primary-style-drafts.json",
+      "source_draft_file_sha256": "6185597c9402fd8c46ed4b869de7073c129df21c65bbc461080cea6827657d3b",
+      "source_draft_prompt_sha256": "8c181565dba2af4752e714821b372347644c72e8c2dfc25b1f51f60f4e92161d",
+      "style_path": "docs/exercise-image-style-neutral-primary.md",
+      "style_sha256": "86204ab43f23d119a1eb25cafdbda2518b741a0090b4ffb0ceb9086952314439"
+    }
+  ],
+  "source_evidence_path": "data/audits/agent-03-blocked-source-evidence.json",
+  "source_evidence_sha256": "4af28ce4f034f96b9b0839d5d4fd01f20b70398625c835f26bfc3461d65d607a",
+  "generation_authorized_now": false,
+  "constraints": {
+    "no_generation": true,
+    "old001018_immutable": true,
+    "catalog_shared_progress_Supabase_immutable": true
+  },
+  "style_path": "docs/exercise-image-style-neutral-primary.md",
+  "style_sha256": "86204ab43f23d119a1eb25cafdbda2518b741a0090b4ffb0ceb9086952314439"
+}

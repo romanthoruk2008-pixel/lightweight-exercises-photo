@@ -1,11 +1,21 @@
 {
   "schema_version": 1,
-  "kind": "unresolved_queue_NOT_generation_batch",
+  "kind": "recommendations_for_user_review_NOT_generation_batch",
   "owner_agent": "agent-03",
-  "status": "blocked",
+  "branch": "agent-03-inventory-2026-10-01",
+  "prepared_at": "2026-10-02T17:33:44.288199+03:00",
+  "audited_commits": {
+    "origin/agent-02-machines-001": "2c27f90d8e2be0c1f349b81231897fd204d543b5",
+    "origin/agent-04-supabase-integration": "68e9f7a30666d4fa6f83aa48717311f8876f2021",
+    "origin/agent-05-parallel-generation": "3e1d86cc9ea408c834a126b4971ac221cc4a1637",
+    "origin/main": "a74adc6d107206429ffd225104899e240470f170",
+    "origin/work": "f6c8874805203c78d804eb073e1627c6d4ddc78e",
+    "HEAD": "acc5375aca0897efeb39b49a18ac0ef7e6e6a5dc"
+  },
+  "catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
   "exercise_count": 22,
-  "technical_blocked_count": 22,
-  "awaiting_style_decision_count": 0,
+  "technical_questions_count": 12,
+  "additional_style_records_count": 10,
   "exercise_ids": [
     "chest-dip-weighted-machine",
     "drag-curl-barbell",
@@ -2499,7 +2509,72 @@
       "retain_blocked_until_support_verified": false
     }
   ],
-  "recommendations_path": "data/queues/agent-03-remaining-recommendations.json",
   "style_decision_path": "data/style-decisions/agent-03-neutral-primary-approved.json",
-  "generation_authorized_now": false
+  "style_decision_sha256": "96a4d80dafd45956d40c82979d48ecd5d683b24437b02eac0bc45f33826ac155",
+  "shared_decisions": [
+    {
+      "group_id": "compatible_footwear_exception",
+      "exercise_ids": [
+        "hiking",
+        "walking",
+        "snowboarding"
+      ],
+      "status": "awaiting_user_decision",
+      "recommendation": "Дозволити сумісне взуття/кріплення і захист, прямо потрібні каталогом; решта зовнішності v1 незмінна."
+    }
+  ],
+  "limits": [
+    "Evidence reuses exact-ID catalogue, verified original dataset binding and primary-source research from prior turn. No new external publication is claimed.",
+    "Illustration choices are proposals, not proof that conflicting source variants are identical. Footwear source confirmation still requires a separate style exception.",
+    "All 22 remain blocked; no recommended equipment, muscles, technique or English text has been written into catalogue."
+  ],
+  "generation_authorized_now": false,
+  "eligible_input_ids": [
+    "aerobics",
+    "ball-slams",
+    "battle-ropes-machine",
+    "boxing",
+    "burpee",
+    "burpee-broad-jumps",
+    "burpee-over-the-bar",
+    "clean-and-jerk-barbell",
+    "clean-and-press-barbell",
+    "clean-pull-barbell",
+    "climbing",
+    "deadlift-high-pull-barbell",
+    "dumbbell-snatch",
+    "farmers-walk",
+    "front-lever-hold",
+    "front-lever-raise",
+    "handstand-hold",
+    "hang-clean-barbell",
+    "hang-snatch-barbell",
+    "high-knee-skips",
+    "jump-rope",
+    "jump-shrug-barbell",
+    "kettlebell-clean",
+    "kettlebell-high-pull",
+    "kettlebell-snatch",
+    "kettlebell-swing",
+    "kettlebell-turkish-get-up",
+    "landmine-squat-and-press-barbell",
+    "overhead-squat-barbell",
+    "power-clean-barbell",
+    "power-snatch-barbell",
+    "running",
+    "skating",
+    "skiing",
+    "sled-pull",
+    "sled-push",
+    "snatch-barbell",
+    "split-jerk-barbell",
+    "sprints",
+    "suitcase-carry-dumbbell",
+    "swimming",
+    "thruster-barbell",
+    "thruster-kettlebell",
+    "wall-ball",
+    "warm-up"
+  ],
+  "excluded_since_style_decision": []
 }
