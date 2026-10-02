@@ -575,3 +575,5 @@ Generation complete: 7/7 images. Technical checks passed for each generated PNG;
 - `sumo-squat-kettlebell` — `assets/exercises/pending/agent-03-others-013/sumo-squat-kettlebell/attempt-1.png`; SHA256 `3adb69d22b1e6b33342ba04976c85bd2a5db71fa0da883eb46affad5f61e5d15`
 - `walking-lunge-sandbag` — `assets/exercises/pending/agent-03-others-013/walking-lunge-sandbag/attempt-1.png`; SHA256 `769b34a0317159c875df2c4f10751743eda0a48bb4e8e2790dfa56d96ad23b1a`
 - `wrist-roller-machine` — `assets/exercises/pending/agent-03-others-013/wrist-roller-machine/attempt-1.png`; SHA256 `221b66d7d90489d91a5488879cb5dc66336ca3f7425f1117d5375efe93cc13a0`
+
+GitHub verification — Agent-03 package 013: 7/7 remote PNG blobs matched local files, progress and manifest SHA256; each remote PNG decoded as square RGBA with transparent pixels. Verified content commit `b2e324eb399ec5ff2860d287956ce003c9e69d46`. All 7 remain `user_review=pending`, `agent_visual_review=not_performed`; package 014 is next.

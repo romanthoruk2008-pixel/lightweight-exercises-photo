@@ -148,9 +148,9 @@
     ],
     "active_batch_id": "agent-03-others-013",
     "active_batch_item_id": null,
-    "active_batch_scope": "Package 013 generation finished locally; push and verify its checkpoint, then proceed to package 014.",
+    "active_batch_scope": "Package 013 is generated, pushed, and remote-verified; continue with package 014.",
     "current_batch": "night-2026-10-01-004",
-    "next_action": "Commit/push package 013, verify remote hashes, then start package 014.",
+    "next_action": "Start package 014 in exact queue order.",
     "night_generation_remote_audit": {
       "audited_at_utc": "2026-10-01T08:16:06Z",
       "remote_branch": "work",
@@ -769,7 +769,48 @@
       "completed_at": "2026-10-02T12:32:51.546581+00:00",
       "generated_count": 7,
       "failed_ids": [],
-      "next_batch_id": "agent-03-others-014"
+      "next_batch_id": "agent-03-others-014",
+      "verified_at": "2026-10-02T12:33:25.472398+00:00",
+      "content_commit": "b2e324eb399ec5ff2860d287956ce003c9e69d46",
+      "verified_commit": "b2e324eb399ec5ff2860d287956ce003c9e69d46",
+      "backup_status": "github_verified",
+      "files": [
+        {
+          "exercise_id": "single-leg-standing-calf-raise-dumbbell",
+          "path": "assets/exercises/pending/agent-03-others-013/single-leg-standing-calf-raise-dumbbell/attempt-1.png",
+          "sha256": "984d53c3fe4c3fbb1e33ea669594016fa809e550c01cded8ed31cb48235b5961"
+        },
+        {
+          "exercise_id": "sissy-squat-weighted",
+          "path": "assets/exercises/pending/agent-03-others-013/sissy-squat-weighted/attempt-1.png",
+          "sha256": "2412fa523300ce8bfca3f8d0e993193e42bd560a1039f63793ff6adf331f9cd2"
+        },
+        {
+          "exercise_id": "situp-weighted",
+          "path": "assets/exercises/pending/agent-03-others-013/situp-weighted/attempt-1.png",
+          "sha256": "d08b81cd8f0b6252cc05017296f53c37cddb5b909eab30bce1b46a31fb64ca2b"
+        },
+        {
+          "exercise_id": "step-up",
+          "path": "assets/exercises/pending/agent-03-others-013/step-up/attempt-1.png",
+          "sha256": "a81f680091466a5f2ae8c0bcf63d357661f3f97a87a36a5052b524d6814f8d38"
+        },
+        {
+          "exercise_id": "sumo-squat-kettlebell",
+          "path": "assets/exercises/pending/agent-03-others-013/sumo-squat-kettlebell/attempt-1.png",
+          "sha256": "3adb69d22b1e6b33342ba04976c85bd2a5db71fa0da883eb46affad5f61e5d15"
+        },
+        {
+          "exercise_id": "walking-lunge-sandbag",
+          "path": "assets/exercises/pending/agent-03-others-013/walking-lunge-sandbag/attempt-1.png",
+          "sha256": "769b34a0317159c875df2c4f10751743eda0a48bb4e8e2790dfa56d96ad23b1a"
+        },
+        {
+          "exercise_id": "wrist-roller-machine",
+          "path": "assets/exercises/pending/agent-03-others-013/wrist-roller-machine/attempt-1.png",
+          "sha256": "221b66d7d90489d91a5488879cb5dc66336ca3f7425f1117d5375efe93cc13a0"
+        }
+      ]
     }
   },
   "historical_mapping_metadata": {
@@ -36381,7 +36422,10 @@
           "tool_response_metadata": {
             "tool_call_id": "image_gen.imagegen#43",
             "output_hint": "/workspace/generated_images/exec-57555dbb-af72-4b44-bbf1-626a6e3c738d.png"
-          }
+          },
+          "backup_status": "github_verified",
+          "verified_commit": "b2e324eb399ec5ff2860d287956ce003c9e69d46",
+          "verified_at": "2026-10-02T12:33:25.472398+00:00"
         }
       ],
       "result_sha256": "984d53c3fe4c3fbb1e33ea669594016fa809e550c01cded8ed31cb48235b5961",
@@ -36402,7 +36446,10 @@
       },
       "agent_visual_review": "not_performed",
       "agent_visual_review_notes": null,
-      "user_review": "pending"
+      "user_review": "pending",
+      "backup_status": "github_verified",
+      "verified_commit": "b2e324eb399ec5ff2860d287956ce003c9e69d46",
+      "verified_at": "2026-10-02T12:33:25.472398+00:00"
     },
     "single-leg-standing-calf-raise-machine": {
       "id": "single-leg-standing-calf-raise-machine",
@@ -36546,7 +36593,10 @@
           "tool_response_metadata": {
             "tool_call_id": "image_gen.imagegen#44",
             "output_hint": "/workspace/generated_images/exec-f99a554e-287c-49dc-b16e-b41fd0150d11.png"
-          }
+          },
+          "backup_status": "github_verified",
+          "verified_commit": "b2e324eb399ec5ff2860d287956ce003c9e69d46",
+          "verified_at": "2026-10-02T12:33:25.472398+00:00"
         }
       ],
       "result_sha256": "2412fa523300ce8bfca3f8d0e993193e42bd560a1039f63793ff6adf331f9cd2",
@@ -36567,7 +36617,10 @@
       },
       "agent_visual_review": "not_performed",
       "agent_visual_review_notes": null,
-      "user_review": "pending"
+      "user_review": "pending",
+      "backup_status": "github_verified",
+      "verified_commit": "b2e324eb399ec5ff2860d287956ce003c9e69d46",
+      "verified_at": "2026-10-02T12:33:25.472398+00:00"
     },
     "situp": {
       "id": "situp",
@@ -36837,7 +36890,10 @@
           "tool_response_metadata": {
             "tool_call_id": "image_gen.imagegen#45",
             "output_hint": "/workspace/generated_images/exec-5d400b89-2e32-4b57-a2f4-fc7d52a33260.png"
-          }
+          },
+          "backup_status": "github_verified",
+          "verified_commit": "b2e324eb399ec5ff2860d287956ce003c9e69d46",
+          "verified_at": "2026-10-02T12:33:25.472398+00:00"
         }
       ],
       "result_sha256": "d08b81cd8f0b6252cc05017296f53c37cddb5b909eab30bce1b46a31fb64ca2b",
@@ -36858,7 +36914,10 @@
       },
       "agent_visual_review": "not_performed",
       "agent_visual_review_notes": null,
-      "user_review": "pending"
+      "user_review": "pending",
+      "backup_status": "github_verified",
+      "verified_commit": "b2e324eb399ec5ff2860d287956ce003c9e69d46",
+      "verified_at": "2026-10-02T12:33:25.472398+00:00"
     },
     "skating": {
       "id": "skating",
@@ -40017,7 +40076,10 @@
           "tool_response_metadata": {
             "tool_call_id": "image_gen.imagegen#46",
             "output_hint": "/workspace/generated_images/exec-71f3dfe5-c9ca-48c9-aced-4b0546858cbe.png"
-          }
+          },
+          "backup_status": "github_verified",
+          "verified_commit": "b2e324eb399ec5ff2860d287956ce003c9e69d46",
+          "verified_at": "2026-10-02T12:33:25.472398+00:00"
         }
       ],
       "result_sha256": "a81f680091466a5f2ae8c0bcf63d357661f3f97a87a36a5052b524d6814f8d38",
@@ -40038,7 +40100,10 @@
       },
       "agent_visual_review": "not_performed",
       "agent_visual_review_notes": null,
-      "user_review": "pending"
+      "user_review": "pending",
+      "backup_status": "github_verified",
+      "verified_commit": "b2e324eb399ec5ff2860d287956ce003c9e69d46",
+      "verified_at": "2026-10-02T12:33:25.472398+00:00"
     },
     "sternum-pullup-gironda-machine": {
       "id": "sternum-pullup-gironda-machine",
@@ -41107,7 +41172,10 @@
           "tool_response_metadata": {
             "tool_call_id": "image_gen.imagegen#47",
             "output_hint": "/workspace/generated_images/exec-d2cd9ab9-c466-4377-9b7c-4e63e406e452.png"
-          }
+          },
+          "backup_status": "github_verified",
+          "verified_commit": "b2e324eb399ec5ff2860d287956ce003c9e69d46",
+          "verified_at": "2026-10-02T12:33:25.472398+00:00"
         }
       ],
       "result_sha256": "3adb69d22b1e6b33342ba04976c85bd2a5db71fa0da883eb46affad5f61e5d15",
@@ -41128,7 +41196,10 @@
       },
       "agent_visual_review": "not_performed",
       "agent_visual_review_notes": null,
-      "user_review": "pending"
+      "user_review": "pending",
+      "backup_status": "github_verified",
+      "verified_commit": "b2e324eb399ec5ff2860d287956ce003c9e69d46",
+      "verified_at": "2026-10-02T12:33:25.472398+00:00"
     },
     "superman": {
       "id": "superman",
@@ -44341,7 +44412,10 @@
           "tool_response_metadata": {
             "tool_call_id": "image_gen.imagegen#48",
             "output_hint": "/workspace/generated_images/exec-d5fc194f-a249-440d-9cf0-b50c155fa879.png"
-          }
+          },
+          "backup_status": "github_verified",
+          "verified_commit": "b2e324eb399ec5ff2860d287956ce003c9e69d46",
+          "verified_at": "2026-10-02T12:33:25.472398+00:00"
         }
       ],
       "result_sha256": "769b34a0317159c875df2c4f10751743eda0a48bb4e8e2790dfa56d96ad23b1a",
@@ -44362,7 +44436,10 @@
       },
       "agent_visual_review": "not_performed",
       "agent_visual_review_notes": null,
-      "user_review": "pending"
+      "user_review": "pending",
+      "backup_status": "github_verified",
+      "verified_commit": "b2e324eb399ec5ff2860d287956ce003c9e69d46",
+      "verified_at": "2026-10-02T12:33:25.472398+00:00"
     },
     "wall-ball": {
       "id": "wall-ball",
@@ -44927,7 +45004,10 @@
           "tool_response_metadata": {
             "tool_call_id": "image_gen.imagegen#49",
             "output_hint": "/workspace/generated_images/exec-97ed01b9-19fd-4533-9566-f94de95b5449.png"
-          }
+          },
+          "backup_status": "github_verified",
+          "verified_commit": "b2e324eb399ec5ff2860d287956ce003c9e69d46",
+          "verified_at": "2026-10-02T12:33:25.472398+00:00"
         }
       ],
       "result_sha256": "221b66d7d90489d91a5488879cb5dc66336ca3f7425f1117d5375efe93cc13a0",
@@ -44948,7 +45028,10 @@
       },
       "agent_visual_review": "not_performed",
       "agent_visual_review_notes": null,
-      "user_review": "pending"
+      "user_review": "pending",
+      "backup_status": "github_verified",
+      "verified_commit": "b2e324eb399ec5ff2860d287956ce003c9e69d46",
+      "verified_at": "2026-10-02T12:33:25.472398+00:00"
     },
     "yoga": {
       "id": "yoga",
