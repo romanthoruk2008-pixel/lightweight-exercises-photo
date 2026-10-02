@@ -562,3 +562,16 @@ Generation complete: 10/10 images. Technical checks passed for each generated PN
 - `russian-twist-weighted-plate` — `assets/exercises/pending/agent-03-others-012/russian-twist-weighted-plate/attempt-1.png`; SHA256 `6eb32a0c36930a1c891c09eeb12c6591be68945ae7116d65392464d8e44a8820`
 
 GitHub verification — Agent-03 package 012: 10/10 remote PNG blobs matched local files, progress and manifest SHA256; each remote PNG decoded as square RGBA with transparent pixels. Verified content commit `3abffc83ee6b80f7c152c876444d7b98d5ab9a58`. All 10 remain `user_review=pending`, `agent_visual_review=not_performed`; package 013 is next.
+
+
+## Agent-03 package 013 — local checkpoint (2026-10-02T12:32:51.546581+00:00)
+
+Generation complete: 7/7 images. Technical checks passed for each generated PNG; generation/technical errors: 0. All generated items remain `user_review=pending`, `agent_visual_review=not_performed`. Package 013 files and metadata are being pushed to `work`; next is package 014.
+
+- `single-leg-standing-calf-raise-dumbbell` — `assets/exercises/pending/agent-03-others-013/single-leg-standing-calf-raise-dumbbell/attempt-1.png`; SHA256 `984d53c3fe4c3fbb1e33ea669594016fa809e550c01cded8ed31cb48235b5961`
+- `sissy-squat-weighted` — `assets/exercises/pending/agent-03-others-013/sissy-squat-weighted/attempt-1.png`; SHA256 `2412fa523300ce8bfca3f8d0e993193e42bd560a1039f63793ff6adf331f9cd2`
+- `situp-weighted` — `assets/exercises/pending/agent-03-others-013/situp-weighted/attempt-1.png`; SHA256 `d08b81cd8f0b6252cc05017296f53c37cddb5b909eab30bce1b46a31fb64ca2b`
+- `step-up` — `assets/exercises/pending/agent-03-others-013/step-up/attempt-1.png`; SHA256 `a81f680091466a5f2ae8c0bcf63d357661f3f97a87a36a5052b524d6814f8d38`
+- `sumo-squat-kettlebell` — `assets/exercises/pending/agent-03-others-013/sumo-squat-kettlebell/attempt-1.png`; SHA256 `3adb69d22b1e6b33342ba04976c85bd2a5db71fa0da883eb46affad5f61e5d15`
+- `walking-lunge-sandbag` — `assets/exercises/pending/agent-03-others-013/walking-lunge-sandbag/attempt-1.png`; SHA256 `769b34a0317159c875df2c4f10751743eda0a48bb4e8e2790dfa56d96ad23b1a`
+- `wrist-roller-machine` — `assets/exercises/pending/agent-03-others-013/wrist-roller-machine/attempt-1.png`; SHA256 `221b66d7d90489d91a5488879cb5dc66336ca3f7425f1117d5375efe93cc13a0`
