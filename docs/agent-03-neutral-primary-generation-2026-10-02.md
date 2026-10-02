@@ -18,4 +18,6 @@ Exact authorized order:
 - Packages 021–023 excluded. Shared progress, catalog, blocked IDs, other batches, and Supabase were not modified.
 
 
-User review update 2026-10-02T16:04:25.395334+00:00: 19/20 approved; handstand-hold attempt 1 needs correction and remains excluded from approval. All 20 rows have muscle_highlight_status=none (empty catalog secondary muscle lists); agent_visual_review remains not_performed.
+User review update 2026-10-02T16:04:25.395334+00:00: 19/20 approved; handstand-hold attempt 1 remains needs_fix and attempt 2 is saved awaiting user review. All 20 rows have muscle_highlight_status=none (empty catalog secondary muscle lists); agent_visual_review remains not_performed.
+
+Handstand Hold attempt 2: assets/exercises/pending/agent-03-others-020/handstand-hold/attempt-2.png; SHA256 4381a221fb3eaaf82359e027091f81d772f07924e4b7fa38ff857978515df1b0; technical_check=passed; user_review=pending; head/neck alignment correction requested by user.

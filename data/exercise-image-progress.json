@@ -17376,11 +17376,11 @@
         "exists_at_preparation": true,
         "sha256": "27aceb469362cc0f7a0136636622c8151ba898da10875d73d5eb8b83cf5b4a16"
       },
-      "status": "needs_fix",
+      "status": "generated_needs_review",
       "included_in_generation": true,
       "archived_inclusion_authorized": false,
       "blocked_by": [],
-      "attempts": 1,
+      "attempts": 2,
       "style_version": "v1-neutral-primary-2026-10-02",
       "visual_review": {
         "status": "not_reviewed",
@@ -17394,10 +17394,10 @@
         },
         "notes": null
       },
-      "result_path": "assets/exercises/pending/agent-03-others-020/handstand-hold/attempt-1.png",
+      "result_path": "assets/exercises/pending/agent-03-others-020/handstand-hold/attempt-2.png",
       "supabase_path": null,
       "supabase_upload_status": "not_configured",
-      "last_error": "User requested correction: head and torso orientation appears twisted; attempt 1 is not accepted.",
+      "last_error": null,
       "attempt_history": [
         {
           "attempt": 1,
@@ -17440,9 +17440,49 @@
           "verified_at": "2026-10-02T15:51:46.052287+00:00",
           "user_review": "needs_fix",
           "user_reviewed_at": "2026-10-02T16:04:25.395334+00:00"
+        },
+        {
+          "attempt": 2,
+          "id": "handstand-hold",
+          "batch_id": "agent-03-others-020",
+          "run_id": "agent-03-neutral-primary-019-020-2026-10-02",
+          "style_version": "v1-neutral-primary-2026-10-02",
+          "tool": "image_gen.imagegen",
+          "tool_call_index": 117,
+          "status": "completed",
+          "started_at": "2026-10-02T16:06:59.477587+00:00",
+          "prompt_sha256": "fb1cd0601df8623b0314e0f1ba05585e68bac25b38b8d2277812a8656c63819c",
+          "prompt_manifest_path": "data/batches/agent-03-others-020-results-manifest.json",
+          "correction_reason": "User-requested correction for Handstand Hold: keep the exercise as a fully inverted handstand, with the torso and head anatomically aligned. Keep the head centered naturally between the upper arms, neck neutral and continuous with the spine. Turn the face only consistently with the chest and shoulder orientation; do not rotate the head 180 degrees relative to the torso, do not twist the neck, and do not reverse the torso independently. Show the same coherent front-facing torso and face direction; stack wrists, shoulders, hips, and ankles in one stable vertical handstand line, with controlled support and a plausible wall position.",
+          "reference_path": "assets/exercises/biceps-curl-dumbbell.png",
+          "reference_sha256": "52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f",
+          "result_path": "assets/exercises/pending/agent-03-others-020/handstand-hold/attempt-2.png",
+          "completed_at": "2026-10-02T16:07:59.693690+00:00",
+          "result_sha256": "4381a221fb3eaaf82359e027091f81d772f07924e4b7fa38ff857978515df1b0",
+          "dimensions": {
+            "width": 1254,
+            "height": 1254
+          },
+          "technical_check": "passed",
+          "technical_check_details": {
+            "format": "PNG",
+            "dimensions": {
+              "width": 1254,
+              "height": 1254
+            },
+            "mode": "RGBA",
+            "has_alpha": true,
+            "transparent_pixel_count": 1243913,
+            "sha256": "4381a221fb3eaaf82359e027091f81d772f07924e4b7fa38ff857978515df1b0",
+            "exercise_id": "handstand-hold",
+            "repository_path": "assets/exercises/pending/agent-03-others-020/handstand-hold/attempt-2.png",
+            "errors": []
+          },
+          "user_review": "pending",
+          "backup_status": "local_saved"
         }
       ],
-      "result_sha256": "3ccd5e247d9a7d6b64e24ab0044b6d8677360627df97f58f6be32737d3d7fdba",
+      "result_sha256": "4381a221fb3eaaf82359e027091f81d772f07924e4b7fa38ff857978515df1b0",
       "technical_check": "passed",
       "technical_check_details": {
         "format": "PNG",
@@ -17452,18 +17492,18 @@
         },
         "mode": "RGBA",
         "has_alpha": true,
-        "transparent_pixel_count": 1301843,
-        "sha256": "3ccd5e247d9a7d6b64e24ab0044b6d8677360627df97f58f6be32737d3d7fdba",
+        "transparent_pixel_count": 1243913,
+        "sha256": "4381a221fb3eaaf82359e027091f81d772f07924e4b7fa38ff857978515df1b0",
         "exercise_id": "handstand-hold",
-        "repository_path": "assets/exercises/pending/agent-03-others-020/handstand-hold/attempt-1.png",
+        "repository_path": "assets/exercises/pending/agent-03-others-020/handstand-hold/attempt-2.png",
         "errors": []
       },
       "agent_visual_review": "not_performed",
       "agent_visual_review_notes": [],
-      "user_review": "needs_fix",
+      "user_review": "pending",
       "muscle_highlight_status": "none",
       "muscle_highlight_reason": "Catalog secondary_muscles is empty; neutral silver-gray body without orange muscle highlighting.",
-      "user_review_notes": "User requested correction: head and torso orientation appears twisted; attempt 1 is not accepted."
+      "user_review_notes": null
     },
     "handstand-pushup": {
       "id": "handstand-pushup",
@@ -48646,5 +48686,5 @@
       "verification_method": "git fetch + ls-remote + ls-tree + SHA256 of every fetched PNG blob"
     }
   ],
-  "last_user_review_update": "2026-10-02T16:04:25.395334+00:00"
+  "last_user_review_update": "2026-10-02T16:09:11.163016+00:00"
 }
