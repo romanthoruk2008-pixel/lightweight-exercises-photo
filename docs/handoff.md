@@ -1,3 +1,11 @@
+## Current checkpoint — agent-03-others-023 (2026-10-02)
+
+Package 023 has 5/5 outputs from the exact prepared prompts and the required human appearance reference: swimming, thruster-barbell, thruster-kettlebell, wall-ball, warm-up. Each is `user_review=pending`, `agent_visual_review=not_performed`; all are in `assets/exercises/pending/agent-03-others-023/<exercise_id>/attempt-1.png` with SHA256 and decode/alpha checks in `data/batches/agent-03-others-023-agent-05-manifest.json`. All five PNGs are 1254×1254 rather than 1024×1024, so `technical_check=failed`; no resize or retry was done. Own manifest and PNGs are being checkpointed to `agent-05-parallel-generation`; shared progress remains unchanged for these pending results.
+
+The 19 accepted images from packages 021–022 and their approval records remain on this branch. `landmine-squat-and-press-barbell` attempt-1 is `needs_fix`; attempt-2 remains pending. The user clarified that the equipment must be parallel to another element, but that orientation reference still needs a precise description before a further correction. Work and Supabase are unchanged.
+
+---
+
 ## Актуальний checkpoint — схвалення пакетів 021–022 та landmine correction (2026-10-02)
 
 Користувач переглянув зображення пакетів agent-03-others-021 і agent-03-others-022 та схвалив 19 результатів. Для них у власних manifests і `data/exercise-image-progress.json` записано `user_review=approved`, `status=approved`, точні accepted path/SHA256 та історію рішення. Усі PNG зберігають факт технічної невідповідності розміру: 1254×1254 замість 1024×1024; користувач їх прийняв без ресайзу. Агентська візуальна перевірка не проводилась.
