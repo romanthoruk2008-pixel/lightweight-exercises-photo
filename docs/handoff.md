@@ -1,10 +1,12 @@
-## Current checkpoint — agent-03-others-022
+## Актуальний checkpoint — схвалення пакетів 021–022 та landmine correction (2026-10-02)
 
-2026-10-02: package 022 has 10/10 generated results from its prepared exact-ID prompts with the neutral-primary v1 addendum and human appearance reference. Results are in `assets/exercises/pending/agent-03-others-022/<exercise_id>/attempt-1.png`; all `user_review=pending`, `agent_visual_review=not_performed`. The PNGs decode and contain actual transparent pixels; all are 1254×1254 instead of the specified 1024×1024, so the technical mismatch remains recorded. No resize or retry was done. Fetched `origin/agent-05-parallel-generation` at `b74953cadc406e948f2c1f6e04362a57f00f0f97` and verified SHA256 for all 10 PNGs. Packages 019–020 were untouched. Next: continue package 023.
+Користувач переглянув зображення пакетів agent-03-others-021 і agent-03-others-022 та схвалив 19 результатів. Для них у власних manifests і `data/exercise-image-progress.json` записано `user_review=approved`, `status=approved`, точні accepted path/SHA256 та історію рішення. Усі PNG зберігають факт технічної невідповідності розміру: 1254×1254 замість 1024×1024; користувач їх прийняв без ресайзу. Агентська візуальна перевірка не проводилась.
 
-## Current checkpoint — agent-03-others-021
+`landmine-squat-and-press-barbell` виключений зі схвалення. Attempt-1 збережений без змін і позначений needs_fix за запитом користувача. Attempt-2: `assets/exercises/pending/agent-03-others-021/landmine-squat-and-press-barbell/attempt-2.png`, SHA256 `abc7e81e0c8b1e2735b0186aab58186e5181a24c9d296911a04bb53e6a255745`; PNG відкривається, має alpha, але його розмір 1254×1254 залишає technical check failed. Attempt-2 має `user_review=pending` і очікує рішення користувача.
 
-2026-10-02: package 021 has 10/10 generated results. Every exercise used its prepared exact-ID prompt, neutral-primary v1 addendum and the verified human appearance reference. Files are saved under `assets/exercises/pending/agent-03-others-021/<exercise_id>/attempt-1.png`; all `user_review=pending`, `agent_visual_review=not_performed`. The generated PNGs decode and contain genuine transparent pixels, but all are 1254×1254 against the 1024×1024 target; `technical_check=failed` records that mismatch. No resizing or retry was performed. Fetched `origin/agent-05-parallel-generation` at `6559d7ce2cfb1cd214eef54cf2037dd4f8999c0b` and verified SHA256 for all 10 PNGs. Packages 019–020 were untouched. Next: continue with package 022.
+Зміни готуються лише у `agent-05-parallel-generation`; наступна дія — пушити approvals і landmine attempt-2, звірити віддалені SHA256, потім продовжити підготовлений пакет 023. Work та Supabase не змінювати.
+
+---
 
 # Актуальна контрольна точка — схвалення agent-03-others-016 (2026-10-02)
 
