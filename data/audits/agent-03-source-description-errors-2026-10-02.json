@@ -1,0 +1,2820 @@
+{
+  "schema_version": 1,
+  "branch": "agent-03-inventory-2026-10-01",
+  "catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+  "catalog_modified": false,
+  "purpose": "Separate exact source errors, contradictions and unresolved variant gaps; no silent catalogue/translation repair.",
+  "exercises": [
+    {
+      "exercise_id": "waiter-curl-dumbbell",
+      "name": "Waiter Curl (Dumbbell)",
+      "status": "blocked_variant_or_source_conflict",
+      "problem_fields": [
+        {
+          "path": "name",
+          "exact_value": "Waiter Curl (Dumbbell)"
+        },
+        {
+          "path": "content.en.description",
+          "exact_value": "Waiter Curl (Dumbbell) curls both dumbbells from a palms-forward standing position while the elbows stay close to the body."
+        },
+        {
+          "path": "content.en.instructions",
+          "exact_value": [
+            "Stand with feet hip-width apart and hold one dumbbell in each hand with palms facing forward.",
+            "Keep the upper arms beside the ribs and curl both dumbbells toward the shoulders.",
+            "Pause at the top without lifting the elbows.",
+            "Lower the dumbbells slowly until the elbows are nearly straight."
+          ]
+        },
+        {
+          "path": "match.rationale",
+          "exact_value": "The dumbbell waiter curl matches dumbbell equipment, standing waiter-curl position, elbow-flexion path, range and biceps target."
+        }
+      ],
+      "problem": "English and selected dataset both describe an ordinary TWO-dumbbell supinated curl; no verified distinctive Waiter Curl grip/quantity. Binding and name do not confirm this variant. Do not replace it with either ordinary curl or a guessed single-dumbbell curl.",
+      "comparison_source": {
+        "exercise_id": "waiter-curl-dumbbell",
+        "catalog_record_sha256": "2cd1fe8e028ad86e3dda205fdf7ebac6934ec329984856d7622bcedaa5f70103",
+        "manifest_record_sha256": "314bc9f95a2443d5199ab2204d16310c8cab9c613be74ff8a43e71ac8ac8668d",
+        "all_catalog_manifest_fields_exact": true,
+        "source_dataset_id": "5201",
+        "source_selector": "dataset[id=\"5201\"]",
+        "original_dataset_record_sha256": "f4ee5791e315e3bad1aa56088d656328c99e79225ff488d3b63516dbba074a2a",
+        "original_dataset_english": [
+          "Stand up straight with a dumbbell in each hand, palms facing forward.",
+          "Keep your upper arms close to your body and your elbows tucked in.",
+          "Slowly curl the dumbbells up towards your shoulders, keeping your wrists straight.",
+          "Pause for a moment at the top, then slowly lower the dumbbells back down to the starting position.",
+          "Repeat for the desired number of repetitions."
+        ],
+        "original_dataset_name": "dumbbell waiter biceps curl",
+        "original_dataset_equipment": "dumbbell",
+        "catalog_match": {
+          "classification": "exact",
+          "confidence": 0.99,
+          "rationale": "The dumbbell waiter curl matches dumbbell equipment, standing waiter-curl position, elbow-flexion path, range and biceps target.",
+          "synonym_group": null
+        },
+        "supplementary_exact_ID_fields": {
+          "pl": {
+            "description": "Waiter curl z hantlami zgina oba łokcie z pozycji stojącej, z dłońmi skierowanymi do przodu i łokciami blisko tułowia.",
+            "instructions": [
+              "Stań prosto z hantlami w obu dłoniach, dłonie skierowane do przodu.",
+              "Trzymaj ramiona blisko ciała, a łokcie przyciśnięte do boków.",
+              "Powoli unieś hantle w stronę barków, trzymając nadgarstki proste.",
+              "Zatrzymaj się na chwilę na górze, a następnie powoli opuść hantle do pozycji wyjściowej.",
+              "Powtórz zalecaną liczbę powtórzeń."
+            ],
+            "form_cues": [
+              "Trzymaj nadgarstki prosto.",
+              "Przyciągnij łokcie do tułowia.",
+              "Stań wyprostowany."
+            ],
+            "common_mistakes": [
+              "Kołysanie tułowiem.",
+              "Odsuwanie łokci.",
+              "Upuszczanie hantli."
+            ],
+            "safety_note": "Użyj hantli, które możesz opuszczać bez przechylania i kołysania.",
+            "provenance": "source"
+          },
+          "uk": {
+            "description": "Згинання рук «офіціант» із гантелями виконується стоячи долонями вперед, коли лікті залишаються близько до тулуба.",
+            "instructions": [
+              "Встаньте, поставивши стопи на ширині таза, і тримайте по гантелі в кожній руці долонями вперед.",
+              "Притисніть верхні частини рук до ребер і зігніть обидва лікті, піднімаючи гантелі до плечей.",
+              "Затримайтеся у верхній точці, не піднімаючи лікті.",
+              "Повільно опускайте гантелі, доки лікті майже не випрямляться."
+            ],
+            "form_cues": [
+              "Тримайте зап’ястки прямими.",
+              "Притискайте лікті до тулуба.",
+              "Зберігайте вертикальну стійку."
+            ],
+            "common_mistakes": [
+              "Розгойдувати тулуб.",
+              "Дозволяти ліктям відходити від ребер.",
+              "Кидати гантелі вниз."
+            ],
+            "safety_note": "Використовуйте гантелі, які можете опускати без нахилу тулуба та розгойдування.",
+            "provenance": "adapted"
+          }
+        },
+        "binding_alone_is_not_technique_confirmation": true
+      },
+      "decision_source": "data/audits/agent-03-generator-b-continuation-2026-10-02-technique.json",
+      "not_user_PNG_approval": true
+    },
+    {
+      "exercise_id": "diamond-pushup",
+      "name": "Diamond Push Up",
+      "status": "rendering_resolved_catalog_unchanged",
+      "problem_fields": [
+        {
+          "path": "content.en.instructions",
+          "exact_value": [
+            "Set a straight plank with hands under or just inside the shoulders.",
+            "Lower the chest toward the floor while keeping the trunk rigid.",
+            "Press through the palms; for clap push-ups, leave the floor briefly and land softly.",
+            "Reset the plank with elbows straight before the next repetition."
+          ]
+        }
+      ],
+      "problem": "Generic conditional clap instruction does not apply to exact diamond no-clap variant; same-ID Polish + TRX confirm fixed hand geometry.",
+      "comparison_source": {
+        "exercise_id": "diamond-pushup",
+        "catalog_record_sha256": "3451a688462dcb3351770bac605c28795c2f2392f56bdc3b8fae4102f9fef5e4",
+        "manifest_record_sha256": "9a5648f1ef32d5a3af208f5c61f5e693d3defa4e5283d8c906cf68d6e8f088e4",
+        "all_catalog_manifest_fields_exact": true,
+        "source_dataset_id": "0283",
+        "source_selector": "dataset[id=\"0283\"]",
+        "original_dataset_record_sha256": "12a7ce0ee5c1adeffd3d11ab3123c9cd5ee1f8949d49ba77ee4383c561580fcd",
+        "original_dataset_english": [
+          "Start in a high plank position with your hands close together, forming a diamond shape with your thumbs and index fingers.",
+          "Keep your body in a straight line from head to toe, engaging your core and glutes.",
+          "Lower your chest towards the diamond shape formed by your hands, keeping your elbows close to your body.",
+          "Pause for a moment at the bottom, then push yourself back up to the starting position.",
+          "Repeat for the desired number of repetitions."
+        ],
+        "original_dataset_name": "diamond push-up",
+        "original_dataset_equipment": "body weight",
+        "catalog_match": {
+          "classification": "exact",
+          "confidence": 0.99,
+          "rationale": "The diamond push-up matches bodyweight equipment, close-hand plank position, elbow-flexion pressing path, range and triceps target.",
+          "synonym_group": null
+        },
+        "supplementary_exact_ID_fields": {
+          "pl": {
+            "description": "Pompka diamentowa wykonuje zgięcie łokci w wysokiej desce z dłońmi blisko siebie pod klatką, a następnie mocny wyprost ramion.",
+            "instructions": [
+              "Zacznij w pozycji wysokiej deski, dłonie ułożone blisko siebie, tworząc kształt diamentu kciukami i palcami wskazującymi.",
+              "Trzymaj ciało w jednej linii prostej od głowy do pięt, napinając mięśnie brzucha i pośladków.",
+              "Opuść klatkę piersiową w kierunku diamentu utworzonego przez dłonie, trzymając łokcie blisko ciała.",
+              "Zatrzymaj się na chwilę w dolnej pozycji, a następnie wypchnij się z powrotem do pozycji wyjściowej.",
+              "Powtórz zalecaną liczbę powtórzeń."
+            ],
+            "form_cues": [
+              "Utrzymuj ciało w jednej linii.",
+              "Prowadź łokcie pod kontrolą.",
+              "Nie blokuj gwałtownie łokci."
+            ],
+            "common_mistakes": [
+              "Opuszczanie bioder.",
+              "Rozchylanie łokci na boki.",
+              "Zatrzaskiwanie łokci w górze."
+            ],
+            "safety_note": "Jeśli nie utrzymujesz deski, oprzyj kolana na podłodze i zmniejsz zakres ruchu.",
+            "provenance": "source"
+          },
+          "uk": {
+            "description": "Алмазні віджимання опускають груди зі стабільної планки та виштовхують тіло вгору, коли кисті розташовані близько під грудьми.",
+            "instructions": [
+              "Вибудуйте пряму планку, розмістивши кисті під плечима або трохи ближче одна до одної, щоб утворити вузьку опору.",
+              "Опустіть груди до підлоги, утримуючи тулуб жорстким і рівним.",
+              "Відштовхніться долонями до випрямлення ліктів, не втрачаючи положення кистей.",
+              "Відновіть планку перед наступним повторенням."
+            ],
+            "form_cues": [
+              "Тримайте тіло на одній лінії.",
+              "Контролюйте положення ліктів.",
+              "Зберігайте кисті близько під грудьми."
+            ],
+            "common_mistakes": [
+              "Провисати стегнами.",
+              "Розводити лікті в сторони.",
+              "Приземлятися на заблоковані лікті."
+            ],
+            "safety_note": "Переходьте на коліна або підніміть опору, доки планка й повернення вгору не залишатимуться під контролем.",
+            "provenance": "adapted"
+          }
+        },
+        "binding_alone_is_not_technique_confirmation": true
+      },
+      "decision_source": "data/audits/agent-03-generator-b-continuation-2026-10-02-technique.json",
+      "not_user_PNG_approval": true
+    },
+    {
+      "exercise_id": "jumping-jack",
+      "name": "Jumping Jack",
+      "status": "rendering_resolved_catalog_unchanged",
+      "problem_fields": [
+        {
+          "path": "content.en.form_cues",
+          "exact_value": [
+            "Keep a steady rhythm.",
+            "Land or pedal softly.",
+            "Breathe continuously."
+          ]
+        }
+      ],
+      "problem": "Cue Land or pedal softly contains irrelevant pedal alternative; this ID is jumping jack, no bicycle. No catalogue edit.",
+      "comparison_source": {
+        "exercise_id": "jumping-jack",
+        "catalog_record_sha256": "51a8bf88098bbadcb6ea43bc57b7483bd7ff8e4f16eb18933ee3fd4e813fa111",
+        "manifest_record_sha256": "e47d77b50c0b73ad5aa4fd61d7cb49bf3e93621ade7d487e47e17ab73528cbf7",
+        "all_catalog_manifest_fields_exact": true,
+        "source_dataset_id": "3224",
+        "source_selector": "dataset[id=\"3224\"]",
+        "original_dataset_record_sha256": "d3a70101d7735cb37315852f81d8f9e72f4a4d44993b9c4cc953ba5c2db4d88e",
+        "original_dataset_english": [
+          "Stand with your feet together and your arms by your sides.",
+          "Jump up, spreading your feet apart and raising your arms above your head.",
+          "As you land, quickly jump back to the starting position.",
+          "Repeat for the desired number of repetitions."
+        ],
+        "original_dataset_name": "jack jump (male)",
+        "original_dataset_equipment": "body weight",
+        "catalog_match": {
+          "classification": "semantic",
+          "confidence": 0.95,
+          "rationale": "The bodyweight jack jump candidate depicts the same jumping-jack stance change and simultaneous arm-raise path as the generic jumping jack.",
+          "synonym_group": null
+        },
+        "supplementary_exact_ID_fields": {
+          "pl": {
+            "description": "Pajacyki łączą wyskok z rozstawieniem stóp i uniesieniem ramion nad głowę z szybkim powrotem do pozycji wyjściowej.",
+            "instructions": [
+              "Stań ze złączonymi stopami i rękami wzdłuż tułowia.",
+              "Wyskocz w górę, rozstawiając stopy i unosząc ręce nad głowę.",
+              "Podczas lądowania szybko wróć do pozycji wyjściowej.",
+              "Powtórz zgodnie z zaplanowaną liczbą powtórzeń."
+            ],
+            "form_cues": [
+              "Utrzymuj równy rytm.",
+              "Ląduj lub odbijaj się miękko.",
+              "Oddychaj bez przerw."
+            ],
+            "common_mistakes": [
+              "Rozpoczynanie zbyt szybkim tempem.",
+              "Sztywne lądowanie.",
+              "Gubienie postawy wraz ze zmęczeniem."
+            ],
+            "safety_note": "Wybierz tempo i podłoże, które pozwalają spokojnie oddychać oraz stabilnie lądować.",
+            "provenance": "source"
+          },
+          "uk": {
+            "description": "Стрибки «джампінг-джек»: розводьте стопи в сторони, піднімаючи руки над головою, а потім повертайте все у вихідне положення.",
+            "instructions": [
+              "Станьте, з’єднавши стопи, а руки опустіть уздовж тулуба.",
+              "Підстрибніть, розставте стопи й підніміть руки над головою.",
+              "Під час приземлення одразу підстрибніть назад у вихідне положення.",
+              "Повторіть потрібну кількість разів."
+            ],
+            "form_cues": [
+              "Підтримуйте рівномірний ритм.",
+              "М’яко приземляйтеся й легко працюйте стопами.",
+              "Дихайте безперервно."
+            ],
+            "common_mistakes": [
+              "Починати надто швидко.",
+              "Жорстко приземлятися.",
+              "Втрачати поставу в міру втоми."
+            ],
+            "safety_note": "Оберіть темп і поверхню, які дають змогу контролювати дихання та стабільно приземлятися.",
+            "provenance": "adapted"
+          }
+        },
+        "binding_alone_is_not_technique_confirmation": true
+      },
+      "decision_source": "data/audits/agent-03-generator-b-continuation-2026-10-02-technique.json",
+      "not_user_PNG_approval": true
+    },
+    {
+      "exercise_id": "chest-fly-dumbbell",
+      "name": "Chest Fly (Dumbbell)",
+      "status": "rendering_resolved_catalog_unchanged",
+      "problem_fields": [
+        {
+          "path": "content.en.instructions",
+          "exact_value": [
+            "Set up on the dumbbells with a soft bend in the elbows and the chest supported as required.",
+            "Open the arms only as far as the shoulders remain comfortable.",
+            "Bring the hands together by squeezing the chest without changing the elbow angle.",
+            "Return slowly to the starting position."
+          ]
+        }
+      ],
+      "problem": "Generic set up on dumbbells/chest supported does not itself define supine flat bench; selected original instructions + ACE explicitly do.",
+      "comparison_source": {
+        "exercise_id": "chest-fly-dumbbell",
+        "catalog_record_sha256": "e198956aef62095529fb5f5b9b8d5a88819752df46bcf0e63935514663600395",
+        "manifest_record_sha256": "585d5e046489abfe403298519ae5c4f36aeaf753dfcdb555ceea77a983979c70",
+        "all_catalog_manifest_fields_exact": true,
+        "source_dataset_id": "0308",
+        "source_selector": "dataset[id=\"0308\"]",
+        "original_dataset_record_sha256": "529da921789b74b31aa88f62ae7ef8b2174f43671626765ca144e6598dbd219f",
+        "original_dataset_english": [
+          "Lie flat on a bench with a dumbbell in each hand, palms facing each other.",
+          "Extend your arms straight up over your chest, with a slight bend in your elbows.",
+          "Keeping a slight bend in your elbows, lower your arms out to the sides in a wide arc until you feel a stretch in your chest.",
+          "Pause for a moment, then reverse the movement and bring the dumbbells back up to the starting position.",
+          "Repeat for the desired number of repetitions."
+        ],
+        "original_dataset_name": "dumbbell fly",
+        "original_dataset_equipment": "dumbbell",
+        "catalog_match": {
+          "classification": "exact",
+          "confidence": 0.99,
+          "rationale": "The dumbbell fly matches the bilateral dumbbell equipment, flat-bench position, wide chest-fly arc, range and pectoral target.",
+          "synonym_group": null
+        },
+        "supplementary_exact_ID_fields": {
+          "pl": {
+            "description": "Rozpiętki z hantlami otwierają i zamykają ramiona wokół klatki piersiowej przy lekko ugiętych łokciach, zamiast zamieniać ruch w wyciskanie.",
+            "instructions": [
+              "Połóż się płasko na ławce, trzymając hantle w obu rękach, dłonie skierowane do siebie.",
+              "Wyprostuj ramiona prosto nad klatką piersiową, z lekkim ugięciem w łokciach.",
+              "Utrzymując lekkie ugięcie w łokciach, opuść ramiona na boki szerokim łukiem, aż poczujesz rozciąganie w klatce piersiowej.",
+              "Zatrzymaj się na chwilę, a następnie wykonaj ruch odwrotny, przywracając hantle do pozycji wyjściowej.",
+              "Powtórz zalecaną liczbę powtórzeń."
+            ],
+            "form_cues": [
+              "Trzymaj łokcie lekko ugięte.",
+              "Poruszaj klatką piersiową, nie nadgarstkami.",
+              "Kontroluj ustawienie żeber."
+            ],
+            "common_mistakes": [
+              "Zamienianie ruchu w wyciskanie.",
+              "Nadmierne rozciąganie w dolnej pozycji.",
+              "Zderzanie hantli."
+            ],
+            "safety_note": "Użyj lekkiego obciążenia i przerwij, zanim bark osiągnie niekomfortowe rozciągnięcie.",
+            "provenance": "source"
+          },
+          "uk": {
+            "description": "Розведення рук на груди з гантелями розкриває й зводить руки з легко зігнутими ліктями, не перетворюючи рух на жим.",
+            "instructions": [
+              "Візьміть гантелі, залишивши лікті злегка зігнутими та розмістивши груди на передбаченій опорі.",
+              "Розведіть руки лише настільки, щоб плечам залишалося комфортно.",
+              "Зведіть кисті, стискаючи груди, не змінюючи кут у ліктях.",
+              "Повільно поверніться у вихідне положення."
+            ],
+            "form_cues": [
+              "Тримайте лікті злегка зігнутими.",
+              "Рухайтеся грудними м’язами, а не зап’ястями.",
+              "Контролюйте положення ребер."
+            ],
+            "common_mistakes": [
+              "Перетворювати рух на жим.",
+              "Надмірно розтягуватися в нижній точці.",
+              "Різко зводити гантелі."
+            ],
+            "safety_note": "Використовуйте легкі гантелі та зупиніть розведення до появи дискомфортного розтягнення плеча.",
+            "provenance": "adapted"
+          }
+        },
+        "binding_alone_is_not_technique_confirmation": true
+      },
+      "decision_source": "data/audits/agent-03-generator-b-continuation-2026-10-02-technique.json",
+      "not_user_PNG_approval": true
+    },
+    {
+      "exercise_id": "cross-body-hammer-curl-dumbbell",
+      "name": "Cross Body Hammer Curl",
+      "status": "rendering_resolved_catalog_unchanged",
+      "problem_fields": [
+        {
+          "path": "content.en.description",
+          "exact_value": "Cross Body Hammer Curl curls the barbell toward the shoulders with the neutral grip, keeping the upper arms controlled."
+        },
+        {
+          "path": "content.en.instructions",
+          "exact_value": [
+            "Stand or sit tall with the barbell and use a neutral grip.",
+            "Keep the upper arms still and curl the resistance toward the shoulders.",
+            "Pause at the top without lifting the elbows.",
+            "Lower slowly until the elbows are nearly straight."
+          ]
+        },
+        {
+          "path": "content.en.safety_note",
+          "exact_value": "Use a load or band tension that allows a controlled elbow path and return."
+        }
+      ],
+      "problem": "English barbell/straight toward shoulders conflicts with equipment=dumbbell and original/Polish neutral diagonal path.",
+      "comparison_source": {
+        "exercise_id": "cross-body-hammer-curl-dumbbell",
+        "catalog_record_sha256": "2003163b634d1d8381f94d079a2936b22c1b12fc3998ce45c09e2b8ab0168888",
+        "manifest_record_sha256": "98090f2313f931b167d06e16678adec752980ab79378b85857e38da05f4e5fed",
+        "all_catalog_manifest_fields_exact": true,
+        "source_dataset_id": "0298",
+        "source_selector": "dataset[id=\"0298\"]",
+        "original_dataset_record_sha256": "b601d9a3a2c80019d76f3842d1272ae3ebfd11f01abe9d256654862e11601d4d",
+        "original_dataset_english": [
+          "Stand up straight with a dumbbell in each hand, palms facing your body.",
+          "Keep your elbows close to your torso and your upper arms stationary.",
+          "Exhale and curl the weights while contracting your biceps, bringing the dumbbells across your body towards your opposite shoulder.",
+          "Continue to raise the dumbbells until your biceps are fully contracted and the dumbbells are at shoulder level.",
+          "Hold the contracted position for a brief pause as you squeeze your biceps.",
+          "Inhale and slowly begin to lower the dumbbells back to the starting position.",
+          "Repeat for the desired number of repetitions."
+        ],
+        "original_dataset_name": "dumbbell cross body hammer curl",
+        "original_dataset_equipment": "dumbbell",
+        "catalog_match": {
+          "classification": "exact",
+          "confidence": 0.99,
+          "rationale": "The dumbbell cross-body hammer curl candidate matches the neutral-grip diagonal curl path, standing position, range of motion, and biceps target.",
+          "synonym_group": null
+        },
+        "supplementary_exact_ID_fields": {
+          "pl": {
+            "description": "Uginanie młotkowe naprzemienne w poprzek ciała przyciąga hantle do barków chwytem neutralnym, przy nieruchomych ramionach.",
+            "instructions": [
+              "Stań prosto, trzymając hantle w obu rękach, dłonie skierowane do ciała.",
+              "Trzymaj łokcie blisko tułowia, a ramiona nieruchomo.",
+              "Wydychaj powietrze i uginaj przedramiona, napinając bicepsy, przenosząc hantle po przekątnej ciała w kierunku przeciwnego barku.",
+              "Kontynuuj unoszenie hantli, aż bicepsy będą w pełni napięte, a hantle znajdą się na wysokości barków.",
+              "Zatrzymaj się na chwilę w napiętej pozycji, mocno napinając bicepsy.",
+              "Wdychaj powietrze i powoli opuszczaj hantle do pozycji wyjściowej.",
+              "Powtórz zalecaną liczbę powtórzeń."
+            ],
+            "form_cues": [
+              "Trzymaj łokcie blisko.",
+              "Utrzymuj nadgarstki w pozycji neutralnej.",
+              "Stosuj płynne tempo."
+            ],
+            "common_mistakes": [
+              "Kołysanie tułowiem.",
+              "Pozwalanie, aby łokcie przesuwały się do przodu.",
+              "Nagłe opuszczanie obciążenia."
+            ],
+            "safety_note": "Dobierz obciążenie, które pozwala kontrolować tor łokci i powrót.",
+            "provenance": "source"
+          },
+          "uk": {
+            "description": "Молоткове згинання через корпус із гантелями піднімає гантель до протилежного плеча нейтральним хватом, утримуючи плечі нерухомими.",
+            "instructions": [
+              "Станьте або сядьте рівно, тримаючи по гантелі в кожній руці нейтральним хватом, долонями одна до одної.",
+              "Залишаючи плечі нерухомими, підніміть одну гантель по діагоналі до протилежного плеча.",
+              "Зробіть паузу у верхній точці, не піднімаючи лікоть.",
+              "Повільно опустіть гантель і повторіть рух іншою рукою."
+            ],
+            "form_cues": [
+              "Тримайте лікті близько до тулуба.",
+              "Зберігайте зап’ястя нейтральними.",
+              "Рухайтеся плавно без розгойдування."
+            ],
+            "common_mistakes": [
+              "Розгойдувати тулуб.",
+              "Виводити лікті вперед.",
+              "Різко скидати гантелі."
+            ],
+            "safety_note": "Оберіть вагу гантелей, яка дає змогу контролювати поперемінний рух через корпус і повернення.",
+            "provenance": "adapted"
+          }
+        },
+        "binding_alone_is_not_technique_confirmation": true
+      },
+      "decision_source": "data/audits/agent-03-generator-b-continuation-2026-10-02-technique.json",
+      "not_user_PNG_approval": true
+    },
+    {
+      "exercise_id": "concentration-curl-dumbbell",
+      "name": "Concentration Curl",
+      "status": "rendering_resolved_catalog_unchanged",
+      "problem_fields": [
+        {
+          "path": "content.en.description",
+          "exact_value": "Concentration Curl curls the barbell toward the shoulders with the underhand grip, keeping the upper arms controlled."
+        },
+        {
+          "path": "content.en.instructions",
+          "exact_value": [
+            "Stand or sit tall with the barbell and use a underhand grip.",
+            "Keep the upper arms still and curl the resistance toward the shoulders.",
+            "Pause at the top without lifting the elbows.",
+            "Lower slowly until the elbows are nearly straight."
+          ]
+        },
+        {
+          "path": "content.en.safety_note",
+          "exact_value": "Use a load or band tension that allows a controlled elbow path and return."
+        }
+      ],
+      "problem": "English barbell/stand or sit conflicts with equipment=dumbbell and original/Polish seated one-arm elbow-on-inner-thigh support.",
+      "comparison_source": {
+        "exercise_id": "concentration-curl-dumbbell",
+        "catalog_record_sha256": "5506fb3b9fb6b5109f0fe62ce2c6841c1593f15389512eb4d2c0c0e5a410e3e7",
+        "manifest_record_sha256": "29fd7cc837b60b664053aed1a62eec2c2e0d06f4c59d4d8371160e9c4cf05048",
+        "all_catalog_manifest_fields_exact": true,
+        "source_dataset_id": "0297",
+        "source_selector": "dataset[id=\"0297\"]",
+        "original_dataset_record_sha256": "34e0884fbc70af9496817ce7f8c742f37309dffd8cd2b46fe10751d341ccc6bb",
+        "original_dataset_english": [
+          "Sit on a bench with your legs spread apart and a dumbbell in one hand, resting your elbow on the inside of your thigh.",
+          "Fully extend your arm and hold the dumbbell with an underhand grip.",
+          "Keeping your upper arm stationary, exhale and curl the weight up towards your shoulder while contracting your biceps.",
+          "Continue to raise the dumbbell until your biceps are fully contracted and the dumbbell is at shoulder level.",
+          "Hold the contracted position for a brief pause as you squeeze your biceps.",
+          "Inhale and slowly lower the dumbbell back to the starting position.",
+          "Repeat for the desired number of repetitions, then switch arms."
+        ],
+        "original_dataset_name": "dumbbell concentration curl",
+        "original_dataset_equipment": "dumbbell",
+        "catalog_match": {
+          "classification": "exact",
+          "confidence": 0.99,
+          "rationale": "The dumbbell concentration curl candidate matches the supported single-arm dumbbell curl path, range of motion, and biceps target.",
+          "synonym_group": null
+        },
+        "supplementary_exact_ID_fields": {
+          "pl": {
+            "description": "Uginanie ramienia w podporze przyciąga hantlę do barku chwytem podchwytem, utrzymując ramię podparte o wewnętrzną stronę uda.",
+            "instructions": [
+              "Usiądź na ławce z rozstawionymi nogami, trzymając hantlę w jednej ręce, opierając łokieć o wewnętrzną stronę uda.",
+              "W pełni wyprostuj ramię i trzymaj hantlę chwytem podchwytem.",
+              "Trzymając ramię nieruchomo, wydychaj powietrze i unieś ciężar w kierunku barku, napinając biceps.",
+              "Kontynuuj unoszenie hantli, aż biceps będzie w pełni napięty, a hantla znajdzie się na wysokości barku.",
+              "Zatrzymaj się na chwilę w napiętej pozycji, mocno napinając biceps.",
+              "Wdychaj powietrze i powoli opuść hantlę do pozycji wyjściowej.",
+              "Powtórz zalecaną liczbę powtórzeń, następnie zmień ramię."
+            ],
+            "form_cues": [
+              "Trzymaj łokcie blisko.",
+              "Utrzymuj nadgarstki w pozycji neutralnej.",
+              "Stosuj płynne tempo."
+            ],
+            "common_mistakes": [
+              "Kołysanie tułowiem.",
+              "Pozwalanie, aby łokcie przesuwały się do przodu.",
+              "Nagłe opuszczanie obciążenia."
+            ],
+            "safety_note": "Dobierz obciążenie, które pozwala utrzymać ramię podparte i kontrolować cały powrót.",
+            "provenance": "source"
+          },
+          "uk": {
+            "description": "Концентроване згинання руки на біцепс із гантеллю ізолює руку, згинаючи її до плеча зворотним хватом і не дозволяючи плечу рухатися.",
+            "instructions": [
+              "Сядьте, розставте ноги й притисніть лікоть робочої руки до внутрішньої поверхні стегна, тримаючи гантель зворотним хватом.",
+              "Залишаючи плече нерухомим, зігніть руку та підніміть гантель до плеча.",
+              "Зробіть паузу у верхній точці, не піднімаючи лікоть.",
+              "Повільно опустіть гантель, доки лікоть майже не випрямиться."
+            ],
+            "form_cues": [
+              "Тримайте лікоть притиснутим до стегна.",
+              "Зберігайте зап’ястя нейтральним.",
+              "Рухайтеся плавно."
+            ],
+            "common_mistakes": [
+              "Розгойдувати тулуб.",
+              "Виводити лікоть від стегна.",
+              "Різко скидати гантель."
+            ],
+            "safety_note": "Оберіть таку вагу гантелі, яка дає змогу контролювати траєкторію ліктя та плавне повернення.",
+            "provenance": "adapted"
+          }
+        },
+        "binding_alone_is_not_technique_confirmation": true
+      },
+      "decision_source": "data/audits/agent-03-generator-b-continuation-2026-10-02-technique.json",
+      "not_user_PNG_approval": true
+    },
+    {
+      "exercise_id": "clean-barbell",
+      "name": "Clean",
+      "status": "rendering_resolved_catalog_unchanged",
+      "problem_fields": [
+        {
+          "path": "content.en.instructions",
+          "exact_value": [
+            "Start with the barbell in front of the legs and brace the trunk.",
+            "Drive through the floor or hips to bring the load close to the body.",
+            "Receive it at the shoulders with soft knees and elbows under the load.",
+            "Lower it under control and reset before the next repetition."
+          ]
+        },
+        {
+          "path": "match.rationale",
+          "exact_value": "The only barbell clean candidate is explicitly a power clean with a different catch depth, so it does not guarantee the reference clean's range of motion."
+        }
+      ],
+      "problem": "Elbows under load is insufficient front-rack geometry; CrossFit explicitly elbows forward. Power catch rejected by exact match rationale; full squat scene chosen with cited support.",
+      "comparison_source": {
+        "exercise_id": "clean-barbell",
+        "catalog_record_sha256": "082b1587e1e9090a3fa9ca47f8e8e0f0c5ae0470a7e3d1ea5f8c49e721c8883c",
+        "manifest_record_sha256": "cc020e20e3da9dbb0cf658b27848ea12795c07e6124918c52f0eaa7f5d71482a",
+        "all_catalog_manifest_fields_exact": true,
+        "source_dataset_id": null,
+        "source_selector": null,
+        "original_dataset_record_sha256": null,
+        "original_dataset_english": null,
+        "original_dataset_name": null,
+        "original_dataset_equipment": null,
+        "catalog_match": {
+          "classification": "generated",
+          "confidence": 0.95,
+          "rationale": "The only barbell clean candidate is explicitly a power clean with a different catch depth, so it does not guarantee the reference clean's range of motion.",
+          "synonym_group": null
+        },
+        "supplementary_exact_ID_fields": {
+          "pl": {
+            "description": "Zarzut zaczyna się ze sztangą przy nogach, wykorzystuje dynamiczny wyprost i kończy przyjęciem obciążenia na barkach przy miękkich kolanach.",
+            "instructions": [
+              "Zacznij ze sztangą przed nogami i napnij tułów.",
+              "Odepchnij podłoże lub wykorzystaj biodra, aby przybliżyć ciężar do ciała.",
+              "Przyjmij sztangę na barkach przy miękkich kolanach i łokciach pod ciężarem.",
+              "Opuść ją pod kontrolą i wróć do pozycji wyjściowej przed kolejnym powtórzeniem."
+            ],
+            "form_cues": [
+              "Trzymaj ciężar blisko.",
+              "Prostuj biodra i kolana razem.",
+              "Miękko przyjmuj sztangę."
+            ],
+            "common_mistakes": [
+              "Zbyt wczesne przyciąganie ramionami.",
+              "Przyjmowanie na sztywnych kolanach.",
+              "Pozwalanie, aby ciężar odsuwał się od ciała."
+            ],
+            "safety_note": "Ćwicz na wolnej przestrzeni i użyj obciążenia, które możesz bezpiecznie przyjąć na barkach.",
+            "provenance": "adapted"
+          },
+          "uk": {
+            "description": "Взяття штанги на груди починається зі штангою біля ніг, використовує потужне розгинання та завершується прийманням ваги на плечі з м’яко зігнутими колінами.",
+            "instructions": [
+              "Почніть зі штангою перед ногами та стабілізуйте тулуб.",
+              "Відштовхніться від підлоги й потужно розігніть стегна, утримуючи штангу близько до тіла.",
+              "Прийміть штангу на плечі з м’яко зігнутими колінами й ліктями під вагою.",
+              "Контрольовано опустіть штангу та відновіть вихідне положення перед наступним повторенням."
+            ],
+            "form_cues": [
+              "Тримайте штангу близько до тіла.",
+              "Одночасно розгинайте стегна й коліна.",
+              "М’яко приймайте вагу."
+            ],
+            "common_mistakes": [
+              "Занадто рано тягнути руками.",
+              "Приймати штангу на прямі коліна.",
+              "Дозволяти штанзі відходити від тіла."
+            ],
+            "safety_note": "Працюйте у вільному просторі та оберіть вагу, яку безпечно прийняти на плечі.",
+            "provenance": "adapted"
+          }
+        },
+        "binding_alone_is_not_technique_confirmation": true
+      },
+      "decision_source": "data/audits/agent-03-generator-b-continuation-2026-10-02-technique.json",
+      "not_user_PNG_approval": true
+    },
+    {
+      "exercise_id": "bicycle-crunch",
+      "name": "Bicycle Crunch",
+      "status": "blocked_variant_or_source_conflict",
+      "problem_fields": [
+        {
+          "path": "content.en.description",
+          "exact_value": "Bicycle Crunch curls the ribs toward the pelvis from a supine bent-knee position."
+        },
+        {
+          "path": "content.en.instructions",
+          "exact_value": [
+            "Lie on your back with knees bent and feet flat.",
+            "Brace and curl the ribs toward the pelvis.",
+            "Pause without pulling the neck.",
+            "Lower the torso slowly to the support."
+          ]
+        },
+        {
+          "path": "content.en.form_cues",
+          "exact_value": [
+            "Keep the chin relaxed.",
+            "Move ribs, not hips.",
+            "Exhale as you curl."
+          ]
+        },
+        {
+          "path": "content.en.common_mistakes",
+          "exact_value": [
+            "Pulling the head.",
+            "Using the legs to swing.",
+            "Dropping the torso."
+          ]
+        },
+        {
+          "path": "content.en.safety_note",
+          "exact_value": "Use a comfortable curl range and reduce the decline or load before the neck or back loses control."
+        },
+        {
+          "path": "match.rationale",
+          "exact_value": "The candidates lack a bodyweight bicycle-crunch image with the alternating elbow-to-opposite-knee movement path."
+        }
+      ],
+      "problem": "English specifies feet-flat ordinary crunch. Match rationale specifies alternating opposite elbow/knee cycling, but no exact supported leg configuration; generic bicycle demonstrations cannot determine this catalogue variant.",
+      "comparison_source": {
+        "exercise_id": "bicycle-crunch",
+        "catalog_record_sha256": "cb3590a1316661b22ce8afdff434538b102317096189a5f8a5b29d9d28f1cd9f",
+        "manifest_record_sha256": "7dd7e7b79967474ba96d644a7ee5c9b45904e77edf2a1b1c0f6e72682f71450a",
+        "all_catalog_manifest_fields_exact": true,
+        "source_dataset_id": null,
+        "source_selector": null,
+        "original_dataset_record_sha256": null,
+        "original_dataset_english": null,
+        "original_dataset_name": null,
+        "original_dataset_equipment": null,
+        "catalog_match": {
+          "classification": "generated",
+          "confidence": 0.98,
+          "rationale": "The candidates lack a bodyweight bicycle-crunch image with the alternating elbow-to-opposite-knee movement path.",
+          "synonym_group": null
+        },
+        "supplementary_exact_ID_fields": {
+          "pl": {
+            "description": "Spięcie brzucha w ruchu rowerowym przybliża żebra do miednicy z pozycji leżącej na plecach przy ugiętych kolanach.",
+            "instructions": [
+              "Połóż się na plecach z ugiętymi kolanami i stopami opartymi na podłodze.",
+              "Napnij tułów i przybliż żebra do miednicy, zginając tułów.",
+              "Zatrzymaj ruch, nie ciągnąc za szyję.",
+              "Powoli opuść tułów na podłoże."
+            ],
+            "form_cues": [
+              "Trzymaj brodę rozluźnioną.",
+              "Poruszaj żebrami, nie biodrami.",
+              "Wypuść powietrze podczas zgięcia."
+            ],
+            "common_mistakes": [
+              "Ciągnięcie głowy.",
+              "Wykorzystywanie nóg do nadania pędu.",
+              "Opuszczanie tułowia bez kontroli."
+            ],
+            "safety_note": "Użyj wygodnego zakresu zgięcia i zmniejsz nachylenie lub obciążenie, zanim szyja albo plecy stracą kontrolę.",
+            "provenance": "adapted"
+          },
+          "uk": {
+            "description": "Велосипедні скручування підкручують ребра до таза з положення лежачи на спині із зігнутими колінами.",
+            "instructions": [
+              "Ляжте на спину, зігніть коліна та поставте стопи на підлогу.",
+              "Напружте тулуб і підкрутіть ребра до таза.",
+              "Зробіть паузу, не тягнучи шию руками.",
+              "Повільно опустіть тулуб назад на опору."
+            ],
+            "form_cues": [
+              "Тримайте підборіддя розслабленим.",
+              "Рухайте ребрами, а не стегнами.",
+              "Видихайте під час скручування."
+            ],
+            "common_mistakes": [
+              "Тягнути голову вперед.",
+              "Розгойдуватися ногами.",
+              "Різко опускати тулуб."
+            ],
+            "safety_note": "Використовуйте комфортну амплітуду скручування та зменште нахил або навантаження до втрати контролю шиєю чи спиною.",
+            "provenance": "adapted"
+          }
+        },
+        "binding_alone_is_not_technique_confirmation": true
+      },
+      "decision_source": "data/audits/agent-03-generator-b-continuation-2026-10-02-technique.json",
+      "not_user_PNG_approval": true
+    },
+    {
+      "exercise_id": "bicycle-crunch-raised-legs",
+      "name": "Bicycle Crunch Raised Legs",
+      "status": "blocked_variant_or_source_conflict",
+      "problem_fields": [
+        {
+          "path": "content.en.description",
+          "exact_value": "Bicycle Crunch Raised Legs curls the ribs toward the pelvis from a supine bent-knee position."
+        },
+        {
+          "path": "content.en.instructions",
+          "exact_value": [
+            "Lie on your back with knees bent and feet flat.",
+            "Brace and curl the ribs toward the pelvis.",
+            "Pause without pulling the neck.",
+            "Lower the torso slowly to the support."
+          ]
+        },
+        {
+          "path": "content.en.form_cues",
+          "exact_value": [
+            "Keep the chin relaxed.",
+            "Move ribs, not hips.",
+            "Exhale as you curl."
+          ]
+        },
+        {
+          "path": "content.en.common_mistakes",
+          "exact_value": [
+            "Pulling the head.",
+            "Using the legs to swing.",
+            "Dropping the torso."
+          ]
+        },
+        {
+          "path": "content.en.safety_note",
+          "exact_value": "Use a comfortable curl range and reduce the decline or load before the neck or back loses control."
+        },
+        {
+          "path": "match.rationale",
+          "exact_value": "No candidate combines a bodyweight bicycle crunch with raised legs and the same alternating rotational path and range of motion."
+        }
+      ],
+      "problem": "English is identical feet-flat crunch while ID/match require raised-leg alternating rotation. Height/extension and distinction from the separate bicycle-crunch ID are not defined.",
+      "comparison_source": {
+        "exercise_id": "bicycle-crunch-raised-legs",
+        "catalog_record_sha256": "c03ae673cf61cbeb0eab4e630fc1a4a267a70548fa318c559e0a55d276ece179",
+        "manifest_record_sha256": "1f69208ea0f1c6ef842cbc1e5b92d69b565a59c6b90f7ea840a3f26af69263ce",
+        "all_catalog_manifest_fields_exact": true,
+        "source_dataset_id": null,
+        "source_selector": null,
+        "original_dataset_record_sha256": null,
+        "original_dataset_english": null,
+        "original_dataset_name": null,
+        "original_dataset_equipment": null,
+        "catalog_match": {
+          "classification": "generated",
+          "confidence": 0.98,
+          "rationale": "No candidate combines a bodyweight bicycle crunch with raised legs and the same alternating rotational path and range of motion.",
+          "synonym_group": null
+        },
+        "supplementary_exact_ID_fields": {
+          "pl": {
+            "description": "Spięcie brzucha w ruchu rowerowym z uniesionymi nogami przybliża żebra do miednicy z pozycji leżącej na plecach przy ugiętych kolanach.",
+            "instructions": [
+              "Połóż się na plecach z ugiętymi kolanami i stopami opartymi na podłodze.",
+              "Napnij tułów i przybliż żebra do miednicy, zginając tułów.",
+              "Zatrzymaj ruch, nie ciągnąc za szyję.",
+              "Powoli opuść tułów na podłoże."
+            ],
+            "form_cues": [
+              "Trzymaj brodę rozluźnioną.",
+              "Poruszaj żebrami, nie biodrami.",
+              "Wypuść powietrze podczas zgięcia."
+            ],
+            "common_mistakes": [
+              "Ciągnięcie głowy.",
+              "Wykorzystywanie nóg do nadania pędu.",
+              "Opuszczanie tułowia bez kontroli."
+            ],
+            "safety_note": "Użyj wygodnego zakresu zgięcia i zmniejsz nachylenie lub obciążenie, zanim szyja albo plecy stracą kontrolę.",
+            "provenance": "adapted"
+          },
+          "uk": {
+            "description": "Скручування з піднятими ногами підкручують ребра до таза з положення лежачи на спині та зігнутими колінами.",
+            "instructions": [
+              "Ляжте на спину, зігніть коліна та поставте стопи на підлогу.",
+              "Напружте тулуб і підкрутіть ребра до таза.",
+              "Зробіть паузу, не тягнучи шию.",
+              "Повільно опустіть тулуб назад на опору."
+            ],
+            "form_cues": [
+              "Тримайте підборіддя розслабленим.",
+              "Рухайте ребрами, а не стегнами.",
+              "Видихайте під час скручування."
+            ],
+            "common_mistakes": [
+              "Тягнути голову вперед.",
+              "Розгойдуватися ногами.",
+              "Різко опускати тулуб."
+            ],
+            "safety_note": "Використовуйте комфортну амплітуду скручування та зменште нахил або навантаження до втрати контролю шиєю чи спиною.",
+            "provenance": "adapted"
+          }
+        },
+        "binding_alone_is_not_technique_confirmation": true
+      },
+      "decision_source": "data/audits/agent-03-generator-b-continuation-2026-10-02-technique.json",
+      "not_user_PNG_approval": true
+    },
+    {
+      "exercise_id": "floor-triceps-dip",
+      "name": "Floor Triceps Dip",
+      "status": "blocked_variant_or_source_conflict",
+      "problem_fields": [
+        {
+          "path": "content.en.description",
+          "exact_value": "The Floor Triceps Dip lowers the body by bending the elbows between parallel supports, then presses back up while the shoulders remain controlled."
+        },
+        {
+          "path": "content.en.instructions",
+          "exact_value": [
+            "Sit with knees bent and hands behind the hips, fingers forward.",
+            "Press through the hands to lift the hips slightly.",
+            "Bend the elbows to lower the hips a short distance.",
+            "Straighten the elbows to return without shrugging."
+          ]
+        },
+        {
+          "path": "content.en.form_cues",
+          "exact_value": [
+            "Keep the chest open.",
+            "Point elbows back.",
+            "Use a small range."
+          ]
+        },
+        {
+          "path": "content.en.common_mistakes",
+          "exact_value": [
+            "Dropping the shoulders.",
+            "Flaring the elbows.",
+            "Moving the hips instead of the elbows."
+          ]
+        },
+        {
+          "path": "content.en.safety_note",
+          "exact_value": "Limit depth or use assistance if the front of the shoulder loses control."
+        },
+        {
+          "path": "match.rationale",
+          "exact_value": "The floor triceps dip matches bodyweight equipment, bench-edge seated position, elbow-flexion path, range and triceps target."
+        }
+      ],
+      "problem": "Three incompatible supports: English instructions floor, description parallel bars, selected dataset/Polish chair or bench edge. A demonstration of one does not determine the intended catalogue variant.",
+      "comparison_source": {
+        "exercise_id": "floor-triceps-dip",
+        "catalog_record_sha256": "bbdb6e84f8d930ad0ada8fa98cfbfbbec17758287f7f9d30f4a4e8ed559481d3",
+        "manifest_record_sha256": "c8f32efe2b8ba88468155acd9051492d3a434a2b3ddfbe8beefad3ab4aa58cfe",
+        "all_catalog_manifest_fields_exact": true,
+        "source_dataset_id": "0815",
+        "source_selector": "dataset[id=\"0815\"]",
+        "original_dataset_record_sha256": "1c70fb0c8cd4c376817b16fd59980549f46e283dcf92a2a8202465df0746d969",
+        "original_dataset_english": [
+          "Sit on the edge of a chair or bench with your hands next to your hips, fingers pointing forward.",
+          "Slide your butt off the front of the chair with your legs extended in front of you.",
+          "Straighten your arms, keeping a little bend in your elbows to keep tension on your triceps and off your elbow joints.",
+          "Slowly bend your elbows to lower your body toward the floor until your elbows are at about a 90-degree angle.",
+          "Once you reach the bottom of the movement, press down into the chair to straighten your elbows, returning to the starting position.",
+          "Repeat for the desired number of repetitions."
+        ],
+        "original_dataset_name": "triceps dips floor",
+        "original_dataset_equipment": "body weight",
+        "catalog_match": {
+          "classification": "exact",
+          "confidence": 0.99,
+          "rationale": "The floor triceps dip matches bodyweight equipment, bench-edge seated position, elbow-flexion path, range and triceps target.",
+          "synonym_group": null
+        },
+        "supplementary_exact_ID_fields": {
+          "pl": {
+            "description": "W dipie na ławce lub krześle opuszczasz biodra przez zgięcie łokci, a następnie wypychasz ciało z powrotem bez unoszenia barków.",
+            "instructions": [
+              "Usiądź na krawędzi krzesła lub ławki, z dłońmi obok bioder, palcami skierowanymi do przodu.",
+              "Zsuń pośladki z przodu krzesła, wyciągając nogi przed siebie.",
+              "Wyprostuj ramiona, zachowując lekkie ugięcie w łokciach, aby utrzymać napięcie w tricepsach, a nie w stawach łokciowych.",
+              "Powoli ugnij łokcie, opuszczając ciało w stronę podłogi, aż łokcie znajdą się pod kątem około 90 stopni.",
+              "Gdy osiągniesz najniższy punkt ruchu, naciśnij dłońmi na krzesło, aby wyprostować łokcie, wracając do pozycji wyjściowej.",
+              "Powtórz zgodnie z żądaną liczbą powtórzeń."
+            ],
+            "form_cues": [
+              "Utrzymuj otwartą klatkę piersiową.",
+              "Kieruj łokcie do tyłu.",
+              "Stosuj niewielki zakres."
+            ],
+            "common_mistakes": [
+              "Opuszczanie barków bez kontroli.",
+              "Rozchylanie łokci.",
+              "Poruszanie biodrami zamiast zginania łokci."
+            ],
+            "safety_note": "Ogranicz głębokość lub skorzystaj z pomocy, jeśli przednia część barku traci kontrolę.",
+            "provenance": "source"
+          },
+          "uk": {
+            "description": "Віджимання на трицепс від підлоги опускає стегна короткою амплітудою за рахунок згинання ліктів, а потім повертає їх угору під контролем плечей.",
+            "instructions": [
+              "Сядьте, зігніть коліна, поставте кисті позаду стегон і спрямуйте пальці вперед.",
+              "Відштовхніться кистями, щоб злегка підняти стегна.",
+              "Зігніть лікті та опустіть стегна на коротку відстань.",
+              "Випряміть лікті й поверніться вгору, не піднімаючи плечі до вух."
+            ],
+            "form_cues": [
+              "Тримайте груди відкритими.",
+              "Спрямовуйте лікті назад.",
+              "Працюйте в короткій амплітуді."
+            ],
+            "common_mistakes": [
+              "Опускати плечі.",
+              "Розводити лікті в сторони.",
+              "Рухати стегнами замість ліктів."
+            ],
+            "safety_note": "Зменште глибину або використайте допомогу, якщо передня частина плеча втрачає контроль.",
+            "provenance": "adapted"
+          }
+        },
+        "binding_alone_is_not_technique_confirmation": true
+      },
+      "decision_source": "data/audits/agent-03-generator-b-continuation-2026-10-02-technique.json",
+      "not_user_PNG_approval": true
+    },
+    {
+      "exercise_id": "lying-neck-extension",
+      "name": "Lying Neck Extension",
+      "status": "blocked_variant_or_source_conflict",
+      "problem_fields": [
+        {
+          "path": "content.en.description",
+          "exact_value": "Lying neck extension gently moves the head backward from a supported neutral position while the torso stays still."
+        },
+        {
+          "path": "content.en.instructions",
+          "exact_value": [
+            "Lie in the prescribed supported position with the head free and shoulders relaxed.",
+            "Start with the neck in a neutral line and brace lightly.",
+            "Extend the head a small distance while keeping the torso still.",
+            "Return slowly to neutral without dropping the head."
+          ]
+        },
+        {
+          "path": "content.en.form_cues",
+          "exact_value": [
+            "Use a very small range.",
+            "Keep the shoulders still.",
+            "Move smoothly through neutral."
+          ]
+        },
+        {
+          "path": "content.en.common_mistakes",
+          "exact_value": [
+            "Cranking the head backward.",
+            "Shrugging the shoulders.",
+            "Bouncing at end range."
+          ]
+        },
+        {
+          "path": "content.en.safety_note",
+          "exact_value": "Perform only a gentle unloaded range and stop for any neck pain, headache, or dizziness."
+        },
+        {
+          "path": "match.rationale",
+          "exact_value": "The lying triceps extensions and neck stretch do not depict supine cervical extension with the target neck movement path."
+        }
+      ],
+      "problem": "English leaves prescribed supported position undefined; match says supine while neck-extension orientation/support remains unspecified. No exact source fixes head/torso geometry.",
+      "comparison_source": {
+        "exercise_id": "lying-neck-extension",
+        "catalog_record_sha256": "749e1b5b3d9be89700fe9db3bf0191ba0a18cf1d9394346594968d5230452bff",
+        "manifest_record_sha256": "c43328743ea8e06fbffb03ad8d07aa14ffa204ea546ab148367530e1314a522d",
+        "all_catalog_manifest_fields_exact": true,
+        "source_dataset_id": null,
+        "source_selector": null,
+        "original_dataset_record_sha256": null,
+        "original_dataset_english": null,
+        "original_dataset_name": null,
+        "original_dataset_equipment": null,
+        "catalog_match": {
+          "classification": "generated",
+          "confidence": 0.99,
+          "rationale": "The lying triceps extensions and neck stretch do not depict supine cervical extension with the target neck movement path.",
+          "synonym_group": null
+        },
+        "supplementary_exact_ID_fields": {
+          "pl": {
+            "description": "Prostowanie szyi w leżeniu delikatnie przesuwa głowę do tyłu z podpartej pozycji neutralnej, podczas gdy tułów pozostaje nieruchomy.",
+            "instructions": [
+              "Ustaw się w podpartej pozycji z wolną głową i rozluźnionymi barkami.",
+              "Rozpocznij z szyją w neutralnej linii i lekko napnij tułów.",
+              "Przesuń głowę nieznacznie do tyłu, utrzymując tułów nieruchomo.",
+              "Powoli wróć do neutralnej pozycji bez opuszczania głowy."
+            ],
+            "form_cues": [
+              "Używaj bardzo małego zakresu.",
+              "Trzymaj barki nieruchomo.",
+              "Płynnie przechodź przez neutralną pozycję."
+            ],
+            "common_mistakes": [
+              "Mocne odchylanie głowy.",
+              "Wzruszanie barkami.",
+              "Odbijanie w końcowym zakresie."
+            ],
+            "safety_note": "Wykonuj tylko delikatny ruch bez obciążenia i przerwij przy bólu szyi, bólu głowy lub zawrotach głowy.",
+            "provenance": "adapted"
+          },
+          "uk": {
+            "description": "Розгинання шиї лежачи м’яко відводить голову назад із підтриманого нейтрального положення, тоді як тулуб залишається нерухомим.",
+            "instructions": [
+              "Ляжте у передбачене положення з опорою, залишивши голову вільною, а плечі розслабленими.",
+              "Почніть із нейтральної лінії шиї та легко напружте корпус.",
+              "На невелику відстань розігніть голову, не рухаючи тулубом.",
+              "Повільно поверніться в нейтральне положення, не кидаючи голову."
+            ],
+            "form_cues": [
+              "Використовуйте дуже малу амплітуду.",
+              "Тримайте плечі нерухомими.",
+              "Плавно проходьте через нейтральне положення."
+            ],
+            "common_mistakes": [
+              "Різко закидати голову назад.",
+              "Піднімати плечі.",
+              "Пружинити в кінцевій амплітуді."
+            ],
+            "safety_note": "Виконуйте лише м’який рух без навантаження та зупиніться при болю в шиї, головному болю або запамороченні.",
+            "provenance": "adapted"
+          }
+        },
+        "binding_alone_is_not_technique_confirmation": true
+      },
+      "decision_source": "data/audits/agent-03-generator-b-continuation-2026-10-02-technique.json",
+      "not_user_PNG_approval": true
+    },
+    {
+      "exercise_id": "seated-incline-curl-dumbbell",
+      "name": "Seated Incline Curl (Dumbbell)",
+      "status": "blocked_variant_or_source_conflict",
+      "problem_fields": [
+        {
+          "path": "content.en.description",
+          "exact_value": "Sit on a 45-degree incline with arms hanging behind the torso, curl both dumbbells toward the shoulders, then lower them."
+        },
+        {
+          "path": "content.en.instructions",
+          "exact_value": [
+            "Set an incline bench to a 45-degree angle and sit on it with a dumbbell in each hand, palms facing forward.",
+            "Rest your upper arms on the incline bench and let your elbows hang down, fully extending your arms.",
+            "Keeping your upper arms stationary, exhale and curl the weights while contracting your biceps.",
+            "Continue to raise the dumbbells until your biceps are fully contracted and the dumbbells are at shoulder level.",
+            "Hold the contracted position for a brief pause as you squeeze your biceps.",
+            "Inhale and slowly begin to lower the dumbbells back to the starting position."
+          ]
+        },
+        {
+          "path": "content.en.form_cues",
+          "exact_value": [
+            "Keep the upper arms or thighs still.",
+            "Keep wrists aligned.",
+            "Lower the weight slowly."
+          ]
+        },
+        {
+          "path": "content.en.common_mistakes",
+          "exact_value": [
+            "Swinging the torso.",
+            "Letting the elbow drift.",
+            "Dropping the weight."
+          ]
+        },
+        {
+          "path": "content.en.safety_note",
+          "exact_value": "Choose resistance that keeps the elbow and wrist path controlled."
+        },
+        {
+          "path": "match.rationale",
+          "exact_value": "The dumbbell incline curl matches the seated incline position, supinated curl path, range of motion, and biceps target."
+        }
+      ],
+      "problem": "Description requires arms hanging BEHIND torso; English and original dataset require upper arms resting ON incline bench. Do not substitute a preacher or unsupported incline curl without exact confirmation.",
+      "comparison_source": {
+        "exercise_id": "seated-incline-curl-dumbbell",
+        "catalog_record_sha256": "66fea6b3e8fea849cd6f53ceab8090c4ffdd3bd8d27d0436bd62fcdb3a96b460",
+        "manifest_record_sha256": "48fdb1ab1926b9f90bc49cde0d7dfc31308f8c2209560f596aa120f0d138a631",
+        "all_catalog_manifest_fields_exact": true,
+        "source_dataset_id": "0318",
+        "source_selector": "dataset[id=\"0318\"]",
+        "original_dataset_record_sha256": "2de8b1c62aa581f15979b9f06795f9a9ad8a030f2fd1baf15a55f097c7ed04be",
+        "original_dataset_english": [
+          "Set an incline bench to a 45-degree angle and sit on it with a dumbbell in each hand, palms facing forward.",
+          "Rest your upper arms on the incline bench and let your elbows hang down, fully extending your arms.",
+          "Keeping your upper arms stationary, exhale and curl the weights while contracting your biceps.",
+          "Continue to raise the dumbbells until your biceps are fully contracted and the dumbbells are at shoulder level.",
+          "Hold the contracted position for a brief pause as you squeeze your biceps.",
+          "Inhale and slowly begin to lower the dumbbells back to the starting position.",
+          "Repeat for the desired number of repetitions."
+        ],
+        "original_dataset_name": "dumbbell incline curl",
+        "original_dataset_equipment": "dumbbell",
+        "catalog_match": {
+          "classification": "semantic",
+          "confidence": 0.96,
+          "rationale": "The dumbbell incline curl matches the seated incline position, supinated curl path, range of motion, and biceps target.",
+          "synonym_group": null
+        },
+        "supplementary_exact_ID_fields": {
+          "pl": {
+            "description": "Uginanie hantli na ławce skośnej pod kątem 45 stopni wykonuje się z ramionami zwisającymi za tułowiem, a ciężary są przyciągane do barków i opuszczane.",
+            "instructions": [
+              "Ustaw ławkę skośną pod kątem 45 stopni i usiądź na niej, trzymając hantle w obu rękach, dłonie skierowane do przodu.",
+              "Oprzyj ramiona o ławkę skośną i pozwól, aby łokcie zwisały w dół, w pełni prostując ramiona.",
+              "Trzymając ramiona nieruchomo, wydychaj powietrze i uginaj przedramiona, napinając bicepsy.",
+              "Kontynuuj unoszenie hantli, aż bicepsy będą w pełni napięte, a hantle znajdą się na wysokości barków.",
+              "Zatrzymaj się na chwilę w napiętej pozycji, mocno napinając bicepsy.",
+              "Wdychaj powietrze i powoli opuszczaj hantle do pozycji wyjściowej.",
+              "Powtórz zalecaną liczbę powtórzeń."
+            ],
+            "form_cues": [
+              "Trzymaj ramiona górne nieruchomo.",
+              "Mocno napnij bicepsy na górze.",
+              "Opuszczaj hantle przez pełny zakres."
+            ],
+            "common_mistakes": [
+              "Odrywanie ramion od ławki.",
+              "Wypychanie łokci do przodu.",
+              "Upuszczanie hantli bez kontroli."
+            ],
+            "safety_note": "Użyj ciężaru, który pozwala utrzymać łokcie i barki stabilnie na ławce skośnej.",
+            "provenance": "source"
+          },
+          "uk": {
+            "description": "Згинання рук з гантелями на лаві під кутом 45 градусів: руки звисають позаду тулуба, гантелі рухаються до плечей, а потім повільно опускаються.",
+            "instructions": [
+              "Встановіть нахил лави 45° і сядьте, тримаючи в кожній руці гантель долонями вперед.",
+              "Притуліть плечі до лави, дозвольте ліктям звисати вниз і повністю випряміть руки.",
+              "Не рухаючи плечима, видихніть і зігніть руки, напружуючи біцепси.",
+              "Піднімайте гантелі, доки біцепси повністю не скоротяться, а гантелі не опиняться на рівні плечей.",
+              "Затримайтеся на коротку паузу у верхній точці та стисніть біцепси.",
+              "Вдихніть і повільно опустіть гантелі у вихідне положення."
+            ],
+            "form_cues": [
+              "Тримайте плечі нерухомими.",
+              "Вирівнюйте зап’ястя з передпліччями.",
+              "Повільно опускайте вагу."
+            ],
+            "common_mistakes": [
+              "Розгойдувати тулуб.",
+              "Підводити лікоть уперед.",
+              "Кидати вагу вниз із верхньої точки."
+            ],
+            "safety_note": "Оберіть опір, за якого траєкторія ліктя та зап’ястя залишається контрольованою.",
+            "provenance": "adapted"
+          }
+        },
+        "binding_alone_is_not_technique_confirmation": true
+      },
+      "decision_source": "data/audits/agent-03-generator-b-continuation-2026-10-02-technique.json",
+      "not_user_PNG_approval": true
+    },
+    {
+      "exercise_id": "chest-dip-weighted-machine",
+      "name": "Chest Dip (Weighted)",
+      "status": "blocked_variant_or_source_conflict",
+      "problem_fields": [
+        {
+          "path": "content.en.description",
+          "exact_value": "The Chest Dip (Weighted) lowers the body by bending the elbows between parallel supports, then presses back up while the shoulders remain controlled."
+        },
+        {
+          "path": "content.en.instructions",
+          "exact_value": [
+            "Mount the parallel handles with arms straight and the torso slightly inclined.",
+            "Bend the elbows to lower until the upper arms approach parallel with the floor.",
+            "Pause before the shoulders lose control.",
+            "Press through the handles to straighten the elbows and reset."
+          ]
+        },
+        {
+          "path": "content.en.form_cues",
+          "exact_value": [
+            "Keep shoulders down.",
+            "Point elbows back.",
+            "Keep legs still."
+          ]
+        },
+        {
+          "path": "content.en.common_mistakes",
+          "exact_value": [
+            "Dropping below control.",
+            "Flaring the elbows.",
+            "Swinging to start."
+          ]
+        },
+        {
+          "path": "content.en.safety_note",
+          "exact_value": "Use the assistance platform or a lighter load if the full dip depth cannot stay controlled."
+        },
+        {
+          "path": "match.rationale",
+          "exact_value": "The weighted straight-bar dip matches weighted equipment, the parallel-bar body position, dip path, range and pectoral target."
+        }
+      ],
+      "problem": "Parallel supports in English conflict with selected straight-bar dip source name; Rogue belt verifies external loading only, not which support/variant is intended.",
+      "comparison_source": {
+        "exercise_id": "chest-dip-weighted-machine",
+        "catalog_record_sha256": "351231c64248ce62b940b99b806293e579db87b20e112c1a0bd6b37f60c1fc60",
+        "manifest_record_sha256": "6d5fcd98c0d07954b86ad1f4c6f7ae633a8da01dde7f6132f5da8ec0b97ea58a",
+        "all_catalog_manifest_fields_exact": true,
+        "source_dataset_id": "3313",
+        "source_selector": "dataset[id=\"3313\"]",
+        "original_dataset_record_sha256": "9b70cdcd0815aa549fea86a7fb9677300c9053add96ebcc653d7ea939f99d23b",
+        "original_dataset_english": [
+          "Position yourself between parallel bars with your arms fully extended and your body straight.",
+          "Lower your body by bending your elbows until your upper arms are parallel to the ground.",
+          "Pause for a moment, then push yourself back up to the starting position by straightening your arms.",
+          "Repeat for the desired number of repetitions."
+        ],
+        "original_dataset_name": "weighted straight bar dip",
+        "original_dataset_equipment": "weighted",
+        "catalog_match": {
+          "classification": "exact",
+          "confidence": 0.97,
+          "rationale": "The weighted straight-bar dip matches weighted equipment, the parallel-bar body position, dip path, range and pectoral target.",
+          "synonym_group": null
+        },
+        "supplementary_exact_ID_fields": {
+          "pl": {
+            "description": "Dip na klatkę piersiową z dodatkowym ciężarem opuszcza ciało między poręczami przez ugięcie łokci, a następnie wypycha je w górę przy kontrolowanych barkach.",
+            "instructions": [
+              "Ustaw się pomiędzy poręczami równoległymi z w pełni wyprostowanymi ramionami i wyprostowanym ciałem.",
+              "Opuść ciało, uginając łokcie, aż ramiona będą równoległe do podłoża.",
+              "Zatrzymaj się na chwilę, a następnie wypchnij się z powrotem do pozycji wyjściowej, prostując ramiona.",
+              "Powtórz zgodnie z żądaną liczbą powtórzeń."
+            ],
+            "form_cues": [
+              "Trzymaj barki opuszczone.",
+              "Kieruj łokcie do tyłu.",
+              "Utrzymuj nogi nieruchomo."
+            ],
+            "common_mistakes": [
+              "Schodzenie poniżej kontroli.",
+              "Rozstawianie łokci.",
+              "Wykorzystywanie zamachu do rozpoczęcia ruchu."
+            ],
+            "safety_note": "Dobierz dodatkowy ciężar, który pozwala kontrolować pełne opuszczanie i wypychanie bez utraty ustawienia barków.",
+            "provenance": "source"
+          },
+          "uk": {
+            "description": "Зважене віджимання на брусах для грудей опускає тіло між паралельними рукоятями, а потім піднімає його під контролем плечей із додатковою вагою.",
+            "instructions": [
+              "Займіть положення на паралельних рукоятях із прямими руками та злегка нахиленим тулубом.",
+              "Зігніть лікті й опустіться, доки плечі не наблизяться до паралелі з підлогою.",
+              "Зробіть паузу до того, як плечі втратять контроль.",
+              "Відштовхніться рукоятями, випряміть лікті та поверніться у вихідне положення."
+            ],
+            "form_cues": [
+              "Опускайте плечі вниз.",
+              "Спрямовуйте лікті назад.",
+              "Тримайте ноги нерухомими."
+            ],
+            "common_mistakes": [
+              "Опускатися нижче, ніж дозволяє контроль.",
+              "Розводити лікті в сторони.",
+              "Розгойдуватися, щоб почати рух."
+            ],
+            "safety_note": "Зменште додаткову вагу або використайте допоміжну платформу, якщо повна глибина віджимання не залишається під контролем.",
+            "provenance": "adapted"
+          }
+        },
+        "binding_alone_is_not_technique_confirmation": true
+      },
+      "decision_source": "data/audits/agent-03-generator-b-continuation-2026-10-02-technique.json",
+      "not_user_PNG_approval": true
+    },
+    {
+      "exercise_id": "drag-curl-barbell",
+      "name": "Drag Curl",
+      "status": "blocked_variant_or_source_conflict",
+      "problem_fields": [
+        {
+          "path": "content.en.description",
+          "exact_value": "Drag Curl curls the barbell toward the shoulders with the underhand grip, keeping the upper arms controlled."
+        },
+        {
+          "path": "content.en.instructions",
+          "exact_value": [
+            "Stand or sit tall with the barbell and use a underhand grip.",
+            "Keep the upper arms still and curl the resistance toward the shoulders.",
+            "Pause at the top without lifting the elbows.",
+            "Lower slowly until the elbows are nearly straight."
+          ]
+        },
+        {
+          "path": "content.en.form_cues",
+          "exact_value": [
+            "Keep elbows close.",
+            "Keep wrists neutral.",
+            "Use a smooth tempo."
+          ]
+        },
+        {
+          "path": "content.en.common_mistakes",
+          "exact_value": [
+            "Swinging the torso.",
+            "Letting elbows travel forward.",
+            "Dropping the resistance."
+          ]
+        },
+        {
+          "path": "content.en.safety_note",
+          "exact_value": "Use a load or band tension that allows a controlled elbow path and return."
+        },
+        {
+          "path": "match.rationale",
+          "exact_value": "The barbell drag curl matches barbell equipment, standing position, bar-drag curl path, range and biceps target."
+        }
+      ],
+      "problem": "English/selected source keep upper arms still as ordinary curl; drag variant would require moving elbows backward with bar close to torso. No verified exact-variant source resolves this conflict.",
+      "comparison_source": {
+        "exercise_id": "drag-curl-barbell",
+        "catalog_record_sha256": "3cf726675d8e4ce39c2dfd4e4fbba0922159e3a7e2be0b4c786c0e28d1129982",
+        "manifest_record_sha256": "b934a2bd94d86f9a38b1d67a2a3a474870ba072157a31a561c2aefa162ab28fd",
+        "all_catalog_manifest_fields_exact": true,
+        "source_dataset_id": "0038",
+        "source_selector": "dataset[id=\"0038\"]",
+        "original_dataset_record_sha256": "ad3d696bdc24b7710864c0033d64263fe6bf57ef4252bbcda67535294c09a1b1",
+        "original_dataset_english": [
+          "Stand with your feet shoulder-width apart and hold a barbell with an underhand grip, palms facing up.",
+          "Let the barbell hang at arm's length in front of your thighs.",
+          "Keeping your upper arms stationary, curl the barbell up towards your chest by contracting your biceps.",
+          "Pause for a moment at the top, then slowly lower the barbell back down to the starting position.",
+          "Repeat for the desired number of repetitions."
+        ],
+        "original_dataset_name": "barbell drag curl",
+        "original_dataset_equipment": "barbell",
+        "catalog_match": {
+          "classification": "exact",
+          "confidence": 0.99,
+          "rationale": "The barbell drag curl matches barbell equipment, standing position, bar-drag curl path, range and biceps target.",
+          "synonym_group": null
+        },
+        "supplementary_exact_ID_fields": {
+          "pl": {
+            "description": "Uginanie ramion ze sztangą przyciąganą do tułowia prowadzi ciężar ku barkom podchwytem, przy nieruchomych ramionach.",
+            "instructions": [
+              "Stań w rozkroku na szerokość barków i chwyć sztangę chwytem podchwytem, dłonie skierowane do góry.",
+              "Trzymaj sztangę swobodnie opuszczoną na wyciągniętych ramionach przed udami.",
+              "Utrzymując ramiona nieruchomo, uginaj sztangę w kierunku klatki piersiowej, napinając biceps.",
+              "Zatrzymaj się na chwilę na górze, a następnie powoli opuść sztangę z powrotem do pozycji wyjściowej.",
+              "Powtórz odpowiednią liczbę razy."
+            ],
+            "form_cues": [
+              "Trzymaj łokcie blisko tułowia.",
+              "Utrzymuj neutralne nadgarstki.",
+              "Poruszaj się płynnym tempem."
+            ],
+            "common_mistakes": [
+              "Kołysanie tułowiem.",
+              "Przesuwanie łokci do przodu.",
+              "Upuszczanie ciężaru bez kontroli."
+            ],
+            "safety_note": "Dobierz ciężar pozwalający prowadzić łokcie i opuszczać sztangę pod pełną kontrolą.",
+            "provenance": "source"
+          },
+          "uk": {
+            "description": "Згинання рук «драг-керл» тягне штангу вгору вздовж тулуба до плечей зворотним хватом, утримуючи плечі нерухомими.",
+            "instructions": [
+              "Станьте або сядьте рівно, тримаючи штангу зворотним хватом.",
+              "Залишаючи плечі нерухомими, потягніть штангу вгору вздовж тулуба до плечей.",
+              "Зробіть паузу у верхній точці, не піднімаючи лікті.",
+              "Повільно опустіть штангу, доки лікті майже не випрямляться."
+            ],
+            "form_cues": [
+              "Тримайте лікті близько до тулуба.",
+              "Зберігайте зап’ястя в нейтральному положенні.",
+              "Рухайтеся плавно."
+            ],
+            "common_mistakes": [
+              "Розгойдувати тулуб.",
+              "Виводити лікті вперед.",
+              "Різко скидати опір."
+            ],
+            "safety_note": "Оберіть таку вагу штанги, яка дає змогу контролювати траєкторію ліктів і повернення.",
+            "provenance": "adapted"
+          }
+        },
+        "binding_alone_is_not_technique_confirmation": true
+      },
+      "decision_source": "data/audits/agent-03-generator-b-continuation-2026-10-02-technique.json",
+      "not_user_PNG_approval": true
+    },
+    {
+      "exercise_id": "feet-up-bench-press-barbell",
+      "name": "Feet Up Bench Press (Barbell)",
+      "status": "blocked_variant_or_source_conflict",
+      "problem_fields": [
+        {
+          "path": "content.en.description",
+          "exact_value": "Feet Up Bench Press (Barbell) is a supported chest press using the barbell."
+        },
+        {
+          "path": "content.en.instructions",
+          "exact_value": [
+            "Lie on a flat bench with feet planted. Grip the barbell and hold it over the chest.",
+            "Lower the resistance toward the chest with elbows controlled.",
+            "Pause without bouncing or losing shoulder position.",
+            "Press back to straight arms, then rerack or set the weights down safely."
+          ]
+        },
+        {
+          "path": "content.en.form_cues",
+          "exact_value": [
+            "Keep wrists stacked.",
+            "Keep shoulder blades supported.",
+            "Press evenly."
+          ]
+        },
+        {
+          "path": "content.en.common_mistakes",
+          "exact_value": [
+            "Bouncing at the bottom.",
+            "Flaring the elbows.",
+            "Arching to shorten the range."
+          ]
+        },
+        {
+          "path": "content.en.safety_note",
+          "exact_value": "Use a spotter or safeties for the loaded press and stop before shoulder control is lost."
+        },
+        {
+          "path": "match.rationale",
+          "exact_value": "Every barbell bench candidate places the feet on the floor or changes the bench angle, so none matches the feet-up flat-bench position."
+        }
+      ],
+      "problem": "English feet planted; Polish/Italian legs raised with bent knees; Spanish feet on bench. Exact supported position remains unresolved; Larsen straight-leg examples cannot choose it.",
+      "comparison_source": {
+        "exercise_id": "feet-up-bench-press-barbell",
+        "catalog_record_sha256": "4392780c4d3b66eda6be8bb84cc4b66dd3df6c840f11d563aeb6c9ce3e5b4da6",
+        "manifest_record_sha256": "7859924a949ac20d3325c663ba94804211eeda6d5327a6cf3aa152276564ced7",
+        "all_catalog_manifest_fields_exact": true,
+        "source_dataset_id": null,
+        "source_selector": null,
+        "original_dataset_record_sha256": null,
+        "original_dataset_english": null,
+        "original_dataset_name": null,
+        "original_dataset_equipment": null,
+        "catalog_match": {
+          "classification": "generated",
+          "confidence": 0.97,
+          "rationale": "Every barbell bench candidate places the feet on the floor or changes the bench angle, so none matches the feet-up flat-bench position.",
+          "synonym_group": null
+        },
+        "supplementary_exact_ID_fields": {
+          "pl": {
+            "description": "Wyciskanie sztangi z uniesionymi stopami wykonujesz na płaskiej ławce, utrzymując nogi uniesione i wypychając sztangę znad klatki.",
+            "instructions": [
+              "Połóż się na płaskiej ławce, unieś stopy nad podłogę i ugnij kolana; chwyć sztangę i utrzymaj ją nad klatką.",
+              "Powoli opuszczaj sztangę w kierunku klatki, kontrolując tor łokci.",
+              "Zatrzymaj sztangę bez odbijania i bez utraty oparcia łopatek.",
+              "Wypchnij ją do wyprostowanych ramion, a następnie bezpiecznie odłóż na stojak."
+            ],
+            "form_cues": [
+              "Utrzymuj nadgarstki nad przedramionami.",
+              "Trzymaj łopatki oparte o ławkę.",
+              "Wypychaj sztangę równomiernie."
+            ],
+            "common_mistakes": [
+              "Odbijanie sztangi od klatki.",
+              "Rozchylanie łokci.",
+              "Opuszczanie stóp na podłogę, by pomóc sobie nogami."
+            ],
+            "safety_note": "Użyj asekuracji lub zabezpieczeń stojaka, ponieważ uniesione stopy ograniczają stabilność podczas wyciskania.",
+            "provenance": "adapted"
+          },
+          "uk": {
+            "description": "Жим штанги лежачи з піднятими стопами — це жим грудей із опорою на рівну лаву та стопами, піднятими від підлоги.",
+            "instructions": [
+              "Ляжте на рівну лаву, підніміть стопи, візьміться за штангу та утримуйте її над грудьми.",
+              "Контрольовано опустіть штангу до грудей, керуючи положенням ліктів.",
+              "Зробіть паузу без відбивання від грудей і без втрати положення плечей.",
+              "Виштовхніть штангу до випрямлення рук, потім безпечно покладіть її на стійки."
+            ],
+            "form_cues": [
+              "Тримайте зап’ястя над ліктями.",
+              "Зберігайте лопатки на опорі.",
+              "Виштовхуйте штангу рівномірно."
+            ],
+            "common_mistakes": [
+              "Відбивати штангу в нижній точці.",
+              "Розводити лікті в сторони.",
+              "Надмірно прогинатися, скорочуючи амплітуду."
+            ],
+            "safety_note": "Для жиму з вагою використовуйте страхувальника або обмежувачі й зупиніться до втрати контролю над плечима.",
+            "provenance": "adapted"
+          }
+        },
+        "binding_alone_is_not_technique_confirmation": true
+      },
+      "decision_source": "data/audits/agent-03-generator-b-continuation-2026-10-02-technique.json",
+      "not_user_PNG_approval": true
+    },
+    {
+      "exercise_id": "hammer-curl-band-resistance-band",
+      "name": "Hammer Curl (Band)",
+      "status": "blocked_variant_or_source_conflict",
+      "problem_fields": [
+        {
+          "path": "content.en.description",
+          "exact_value": "Hammer Curl (Band) curls a resistance band toward the shoulders with the neutral grip, keeping the upper arms controlled."
+        },
+        {
+          "path": "content.en.instructions",
+          "exact_value": [
+            "Stand or sit tall with a resistance band and use a neutral grip.",
+            "Keep the upper arms still and curl the resistance toward the shoulders.",
+            "Pause at the top without lifting the elbows.",
+            "Lower slowly until the elbows are nearly straight."
+          ]
+        },
+        {
+          "path": "content.en.form_cues",
+          "exact_value": [
+            "Keep elbows close.",
+            "Keep wrists neutral.",
+            "Use a smooth tempo."
+          ]
+        },
+        {
+          "path": "content.en.common_mistakes",
+          "exact_value": [
+            "Swinging the torso.",
+            "Letting elbows travel forward.",
+            "Dropping the resistance."
+          ]
+        },
+        {
+          "path": "content.en.safety_note",
+          "exact_value": "Use a load or band tension that allows a controlled elbow path and return."
+        },
+        {
+          "path": "match.rationale",
+          "exact_value": "No band candidate uses a neutral hammer-curl grip and matching biceps path; the available band curls are underhand concentration or regular curls."
+        }
+      ],
+      "problem": "Neutral grip is known; exact band construction, handles and foot/anchor contact are not specified. Official dumbbell hammer curl does not resolve a band anchor.",
+      "comparison_source": {
+        "exercise_id": "hammer-curl-band-resistance-band",
+        "catalog_record_sha256": "4ce496bbc8127c9b4db59c00d2e7b582567a6672eed3b0f5b3321f1faa871f30",
+        "manifest_record_sha256": "ad3d3a416be96e85ca38377c822e7ab8fb017f38acfe702218a3b01e5d4cc495",
+        "all_catalog_manifest_fields_exact": true,
+        "source_dataset_id": null,
+        "source_selector": null,
+        "original_dataset_record_sha256": null,
+        "original_dataset_english": null,
+        "original_dataset_name": null,
+        "original_dataset_equipment": null,
+        "catalog_match": {
+          "classification": "generated",
+          "confidence": 0.98,
+          "rationale": "No band candidate uses a neutral hammer-curl grip and matching biceps path; the available band curls are underhand concentration or regular curls.",
+          "synonym_group": null
+        },
+        "supplementary_exact_ID_fields": {
+          "pl": {
+            "description": "Uginanie młotkowe z taśmą przyciąga opór do barków neutralnym chwytem, przy nieruchomej górnej części ramion.",
+            "instructions": [
+              "Stań lub usiądź prosto, trzymając taśmę oporową neutralnym chwytem, z kciukami skierowanymi do góry.",
+              "Utrzymuj górną część ramion nieruchomo i ugnij łokcie, przyciągając taśmę w stronę barków.",
+              "Zatrzymaj się na chwilę w górze bez unoszenia łokci.",
+              "Powoli opuść dłonie, aż łokcie będą prawie wyprostowane."
+            ],
+            "form_cues": [
+              "Trzymaj łokcie blisko tułowia.",
+              "Utrzymuj neutralne nadgarstki.",
+              "Stosuj płynne tempo."
+            ],
+            "common_mistakes": [
+              "Kołysanie tułowiem.",
+              "Wysuwanie łokci do przodu.",
+              "Upuszczanie taśmy bez kontroli."
+            ],
+            "safety_note": "Dobierz napięcie taśmy pozwalające kontrolować tor łokci i pełny powrót.",
+            "provenance": "adapted"
+          },
+          "uk": {
+            "description": "Молоткове згинання рук із гумовою стрічкою піднімає опір до плечей нейтральним хватом, утримуючи плечі нерухомими.",
+            "instructions": [
+              "Станьте або сядьте рівно, тримаючи гумову стрічку нейтральним хватом, долонями одна до одної.",
+              "Залишаючи плечі нерухомими, зігніть руки й потягніть стрічку до плечей.",
+              "Зробіть паузу у верхній точці, не піднімаючи лікті.",
+              "Повільно поверніть стрічку, доки лікті майже не випрямляться."
+            ],
+            "form_cues": [
+              "Тримайте лікті близько до тулуба.",
+              "Зберігайте зап’ястя нейтральними.",
+              "Рухайтеся плавно."
+            ],
+            "common_mistakes": [
+              "Розгойдувати тулуб.",
+              "Виводити лікті вперед.",
+              "Різко скидати натяг стрічки."
+            ],
+            "safety_note": "Оберіть такий натяг стрічки, який дає змогу контролювати траєкторію ліктів і повернення.",
+            "provenance": "adapted"
+          }
+        },
+        "binding_alone_is_not_technique_confirmation": true
+      },
+      "decision_source": "data/audits/agent-03-generator-b-continuation-2026-10-02-technique.json",
+      "not_user_PNG_approval": true
+    },
+    {
+      "exercise_id": "hip-thrust-barbell",
+      "name": "Hip Thrust (Barbell)",
+      "status": "blocked_variant_or_source_conflict",
+      "problem_fields": [
+        {
+          "path": "content.en.description",
+          "exact_value": "With the shoulders supported on a bench and a barbell across the hips, drive the hips upward until the torso and thighs align."
+        },
+        {
+          "path": "content.en.instructions",
+          "exact_value": [
+            "Lie flat on your back on a bench with your feet flat on the ground and your knees bent.",
+            "Hold the barbell with an overhand grip and position it on your hips.",
+            "Engaging your glutes, lift your hips off the bench until your body forms a straight line from your knees to your shoulders.",
+            "Pause for a moment at the top, then slowly lower your hips back down to the starting position.",
+            "Repeat for the desired number of repetitions."
+          ]
+        },
+        {
+          "path": "content.en.form_cues",
+          "exact_value": [
+            "Keep the trunk braced.",
+            "Keep the upper back on the bench as the hips reach full extension.",
+            "Finish each repetition under control."
+          ]
+        },
+        {
+          "path": "content.en.common_mistakes",
+          "exact_value": [
+            "Using momentum.",
+            "Losing the starting posture.",
+            "Rushing the return."
+          ]
+        },
+        {
+          "path": "content.en.safety_note",
+          "exact_value": "Use a comfortable range and stop if control or alignment deteriorates."
+        },
+        {
+          "path": "match.rationale",
+          "exact_value": "The barbell lying hip lift matches barbell-on-hips equipment, bench-supported supine position, hip-thrust path, range and glute target."
+        }
+      ],
+      "problem": "Description/cue support upper back only; English/dataset lie flat on bench and lift hips off it. Retrieved dumbbell hip-thrust material is not exact barbell-variant confirmation.",
+      "comparison_source": {
+        "exercise_id": "hip-thrust-barbell",
+        "catalog_record_sha256": "01222d152171562c044d3b797797e9b6c5b52511a6424fae8e71bcc4935a9422",
+        "manifest_record_sha256": "38fa7093a1b3eeb8b95716ba6148c01ed7351ef1a31cc944307bb064830336a8",
+        "all_catalog_manifest_fields_exact": true,
+        "source_dataset_id": "0058",
+        "source_selector": "dataset[id=\"0058\"]",
+        "original_dataset_record_sha256": "8cfe61c998078e446561f8bf99bbc26633e68582c0d48d0d70662651186a0fd1",
+        "original_dataset_english": [
+          "Lie flat on your back on a bench with your feet flat on the ground and your knees bent.",
+          "Hold the barbell with an overhand grip and position it on your hips.",
+          "Engaging your glutes, lift your hips off the bench until your body forms a straight line from your knees to your shoulders.",
+          "Pause for a moment at the top, then slowly lower your hips back down to the starting position.",
+          "Repeat for the desired number of repetitions."
+        ],
+        "original_dataset_name": "barbell lying lifting (on hip)",
+        "original_dataset_equipment": "barbell",
+        "catalog_match": {
+          "classification": "exact",
+          "confidence": 0.99,
+          "rationale": "The barbell lying hip lift matches barbell-on-hips equipment, bench-supported supine position, hip-thrust path, range and glute target.",
+          "synonym_group": null
+        },
+        "supplementary_exact_ID_fields": {
+          "pl": {
+            "description": "Mostek biodrowy ze sztangą opartą na biodrach wykonujesz z barkami na ławce, unosząc biodra do linii z tułowiem i udami.",
+            "instructions": [
+              "Połóż się płasko na plecach na ławce, stopy oprzyj płasko na podłodze, a kolana ugnij.",
+              "Chwyć sztangę chwytem nachwytem i umieść ją na biodrach.",
+              "Napinając pośladki, unieś biodra z ławki, aż ciało utworzy prostą linię od kolan do barków.",
+              "Zatrzymaj się na chwilę na górze, a następnie powoli opuść biodra z powrotem do pozycji wyjściowej.",
+              "Powtórz odpowiednią liczbę razy."
+            ],
+            "form_cues": [
+              "Utrzymuj napięty tułów.",
+              "Trzymaj górną część pleców na ławce przy pełnym wyproście bioder.",
+              "Kończ każde powtórzenie pod kontrolą."
+            ],
+            "common_mistakes": [
+              "Wykorzystywanie zamachu.",
+              "Gubienie pozycji początkowej.",
+              "Zbyt szybki powrót bioder."
+            ],
+            "safety_note": "Użyj wygodnego zakresu i przerwij, gdy pogarsza się kontrola lub ustawienie ciała.",
+            "provenance": "source"
+          },
+          "uk": {
+            "description": "Підйом таза зі штангою: плечі спираються на лаву, штанга лежить на стегнах, а сідниці піднімають таз до повного розгинання.",
+            "instructions": [
+              "Ляжте верхньою частиною спини на лаву, поставте стопи на підлогу та зігніть коліна.",
+              "Візьміться за штангу хватом зверху й розташуйте її на стегнах.",
+              "Напружте сідниці та підніміть таз, доки тіло не утворить пряму лінію від колін до плечей.",
+              "Затримайтеся у верхній точці, потім повільно опустіть таз у вихідне положення.",
+              "Повторіть потрібну кількість разів."
+            ],
+            "form_cues": [
+              "Напружуйте корпус.",
+              "Зберігайте верхню частину спини на лаві під час повного розгинання таза.",
+              "Завершуйте кожне повторення під контролем."
+            ],
+            "common_mistakes": [
+              "Використання інерції.",
+              "Втрата початкового положення.",
+              "Поспішне повернення."
+            ],
+            "safety_note": "Використовуйте зручну амплітуду та зупиніться, якщо погіршується контроль або вирівнювання.",
+            "provenance": "adapted"
+          }
+        },
+        "binding_alone_is_not_technique_confirmation": true
+      },
+      "decision_source": "data/audits/agent-03-generator-b-continuation-2026-10-02-technique.json",
+      "not_user_PNG_approval": true
+    },
+    {
+      "exercise_id": "landmine-180-barbell",
+      "name": "Landmine 180",
+      "status": "blocked_variant_or_source_conflict",
+      "problem_fields": [
+        {
+          "path": "content.en.description",
+          "exact_value": "Swing the anchored barbell in a controlled arc from one hip across the body to the other."
+        },
+        {
+          "path": "content.en.instructions",
+          "exact_value": [
+            "Stand with your feet shoulder-width apart and hold the barbell with both hands in front of your chest.",
+            "Bend your knees slightly and rotate your torso to the right, swinging the barbell down towards your right hip.",
+            "As you reach the bottom of the movement, quickly reverse the motion and rotate your torso to the left, swinging the barbell up and across your body towards your left shoulder.",
+            "Continue this twisting motion, alternating sides, for the desired number of repetitions."
+          ]
+        },
+        {
+          "path": "content.en.form_cues",
+          "exact_value": [
+            "Keep the trunk braced.",
+            "Keep the feet planted while the bar traces a controlled arc from one hip to the other.",
+            "Finish each repetition under control."
+          ]
+        },
+        {
+          "path": "content.en.common_mistakes",
+          "exact_value": [
+            "Using momentum.",
+            "Losing the starting posture.",
+            "Rushing the return."
+          ]
+        },
+        {
+          "path": "content.en.safety_note",
+          "exact_value": "Use a comfortable range and stop if control or alignment deteriorates."
+        },
+        {
+          "path": "match.rationale",
+          "exact_value": "The landmine 180 matches barbell landmine equipment, standing rotational path, range and abdominal target."
+        }
+      ],
+      "problem": "Hip-to-hip description/cues versus right-hip to left-shoulder instructions. A landmine press/row is a different trajectory and cannot choose endpoints.",
+      "comparison_source": {
+        "exercise_id": "landmine-180-barbell",
+        "catalog_record_sha256": "c5f25e5bd7749530c5511f43787ba25dc316da1a585a2a50c36366548e9c1860",
+        "manifest_record_sha256": "9d9a5db266c3c8e51cb788530c3813b1bd8baf70e2990527cd763fb55655eb0f",
+        "all_catalog_manifest_fields_exact": true,
+        "source_dataset_id": "0562",
+        "source_selector": "dataset[id=\"0562\"]",
+        "original_dataset_record_sha256": "48f2f752a2994fccf87f3c502e5b018f692950c0d6820e1590a9e03530e3cac9",
+        "original_dataset_english": [
+          "Stand with your feet shoulder-width apart and hold the barbell with both hands in front of your chest.",
+          "Bend your knees slightly and rotate your torso to the right, swinging the barbell down towards your right hip.",
+          "As you reach the bottom of the movement, quickly reverse the motion and rotate your torso to the left, swinging the barbell up and across your body towards your left shoulder.",
+          "Continue this twisting motion, alternating sides, for the desired number of repetitions."
+        ],
+        "original_dataset_name": "landmine 180",
+        "original_dataset_equipment": "barbell",
+        "catalog_match": {
+          "classification": "exact",
+          "confidence": 0.99,
+          "rationale": "The landmine 180 matches barbell landmine equipment, standing rotational path, range and abdominal target.",
+          "synonym_group": null
+        },
+        "supplementary_exact_ID_fields": {
+          "pl": {
+            "description": "Landmine prowadzi zakotwiczoną sztangę kontrolowanym łukiem od jednego biodra przez ciało do drugiego.",
+            "instructions": [
+              "Stań ze stopami rozstawionymi na szerokość barków i trzymaj sztangę obiema dłońmi przed klatką piersiową.",
+              "Ugnij lekko kolana i obróć tułów w prawo, opuszczając sztangę w kierunku prawego biodra.",
+              "Osiągając dolną część ruchu, szybko odwróć ruch i obróć tułów w lewo, wymachując sztangą w górę i w poprzek ciała w stronę lewego barku.",
+              "Kontynuuj ten ruch skrętny, zmieniając strony, zgodnie z zaplanowaną liczbą powtórzeń."
+            ],
+            "form_cues": [
+              "Utrzymuj napięty tułów.",
+              "Nie odrywaj stóp, gdy sztanga kreśli kontrolowany łuk od biodra do biodra.",
+              "Kończ każde powtórzenie pod kontrolą."
+            ],
+            "common_mistakes": [
+              "Wykorzystywanie zamachu.",
+              "Gubienie pozycji początkowej.",
+              "Zbyt szybki powrót."
+            ],
+            "safety_note": "Użyj wygodnego zakresu i przerwij, gdy pogarsza się kontrola lub ustawienie ciała.",
+            "provenance": "source"
+          },
+          "uk": {
+            "description": "Вправа landmine контрольовано проводить закріплену штангу дугою від одного стегна через корпус до іншого.",
+            "instructions": [
+              "Станьте, розставивши стопи на ширину плечей, і тримайте штангу обома руками перед грудьми.",
+              "Злегка зігніть коліна, поверніть корпус праворуч і опустіть штангу до правого стегна.",
+              "У нижній точці швидко змініть напрямок, поверніть корпус ліворуч і проведіть штангу вгору через корпус до лівого плеча.",
+              "Продовжуйте це скручування, чергуючи сторони протягом потрібної кількості повторень."
+            ],
+            "form_cues": [
+              "Напружуйте корпус.",
+              "Не відривайте стопи, поки штанга проходить контрольованою дугою від стегна до стегна.",
+              "Завершуйте кожне повторення під контролем."
+            ],
+            "common_mistakes": [
+              "Використання інерції.",
+              "Втрата початкового положення.",
+              "Поспішне повернення."
+            ],
+            "safety_note": "Використовуйте комфортну амплітуду та зупиніться, якщо погіршується контроль або вирівнювання.",
+            "provenance": "adapted"
+          }
+        },
+        "binding_alone_is_not_technique_confirmation": true
+      },
+      "decision_source": "data/audits/agent-03-generator-b-continuation-2026-10-02-technique.json",
+      "not_user_PNG_approval": true
+    },
+    {
+      "exercise_id": "lying-neck-extension-weighted-plate",
+      "name": "Lying Neck Extension (Weighted)",
+      "status": "blocked_variant_or_source_conflict",
+      "problem_fields": [
+        {
+          "path": "content.en.description",
+          "exact_value": "Weighted lying neck extension uses a light plate for a small, controlled supported neck-extension range."
+        },
+        {
+          "path": "content.en.instructions",
+          "exact_value": [
+            "Set up with the head supported and place a light plate securely at the back of the head with both hands.",
+            "Keep the shoulders relaxed and begin from a neutral neck.",
+            "Extend the head slightly against the plate while the torso stays still.",
+            "Return slowly to neutral and keep the plate controlled."
+          ]
+        },
+        {
+          "path": "content.en.form_cues",
+          "exact_value": [
+            "Use minimal load.",
+            "Support the plate with both hands.",
+            "Keep the range short and smooth."
+          ]
+        },
+        {
+          "path": "content.en.common_mistakes",
+          "exact_value": [
+            "Letting the plate pull the head suddenly.",
+            "Moving the shoulders with the neck.",
+            "Forcing end range."
+          ]
+        },
+        {
+          "path": "content.en.safety_note",
+          "exact_value": "Use only a very light plate and stop immediately for discomfort, dizziness, or loss of control."
+        },
+        {
+          "path": "match.rationale",
+          "exact_value": "No candidate shows a weighted plate-assisted lying neck extension, and the available loaded extensions target the triceps instead."
+        }
+      ],
+      "problem": "Head described as supported with plate on back of head; torso orientation and free neck range absent. Unloaded neck examples do not verify this weighted variant.",
+      "comparison_source": {
+        "exercise_id": "lying-neck-extension-weighted-plate",
+        "catalog_record_sha256": "d6f31d6fbd37b49ad389f47114287a0cc540e2e8eeb850d3c61be8f0fe4b1138",
+        "manifest_record_sha256": "8dd1abf50ebb908fe77ebeb39d6665e1af072081dd47b5d900b5392f4f8b5931",
+        "all_catalog_manifest_fields_exact": true,
+        "source_dataset_id": null,
+        "source_selector": null,
+        "original_dataset_record_sha256": null,
+        "original_dataset_english": null,
+        "original_dataset_name": null,
+        "original_dataset_equipment": null,
+        "catalog_match": {
+          "classification": "generated",
+          "confidence": 0.99,
+          "rationale": "No candidate shows a weighted plate-assisted lying neck extension, and the available loaded extensions target the triceps instead.",
+          "synonym_group": null
+        },
+        "supplementary_exact_ID_fields": {
+          "pl": {
+            "description": "Prostowanie szyi w leżeniu z obciążeniem wykorzystuje lekki talerz do małego, kontrolowanego ruchu wyprostu przy podpartej głowie.",
+            "instructions": [
+              "Ustaw się z podpartą głową i umieść lekki talerz stabilnie z tyłu głowy, przytrzymując go obiema dłońmi.",
+              "Rozluźnij barki i rozpocznij z szyją w neutralnej pozycji.",
+              "Delikatnie odchyl głowę przeciw oporowi talerza, utrzymując tułów nieruchomo.",
+              "Powoli wróć do neutralnej pozycji i nadal kontroluj talerz."
+            ],
+            "form_cues": [
+              "Używaj minimalnego obciążenia.",
+              "Podpieraj talerz obiema dłońmi.",
+              "Trzymaj zakres krótki i płynny."
+            ],
+            "common_mistakes": [
+              "Pozwalanie, by talerz nagle pociągnął głowę.",
+              "Poruszanie barkami razem z szyją.",
+              "Wymuszanie końcowego zakresu."
+            ],
+            "safety_note": "Użyj wyłącznie bardzo lekkiego talerza i natychmiast przerwij przy dyskomforcie, zawrotach głowy lub utracie kontroli.",
+            "provenance": "adapted"
+          },
+          "uk": {
+            "description": "Розгинання шиї лежачи з вагою використовує легкий млинець для невеликої контрольованої амплітуди розгинання шиї з опорою.",
+            "instructions": [
+              "Розташуйте голову на опорі й обома руками надійно притримуйте легкий млинець на потилиці.",
+              "Розслабте плечі та почніть із нейтрального положення шиї.",
+              "Злегка розігніть голову проти млинця, не рухаючи тулубом.",
+              "Повільно поверніться в нейтральне положення й продовжуйте контролювати млинець."
+            ],
+            "form_cues": [
+              "Використовуйте мінімальну вагу.",
+              "Підтримуйте млинець обома руками.",
+              "Тримайте амплітуду короткою та плавною."
+            ],
+            "common_mistakes": [
+              "Дозволяти млинцю різко тягнути голову.",
+              "Рухати плечима разом із шиєю.",
+              "Примусово збільшувати кінцеву амплітуду."
+            ],
+            "safety_note": "Використовуйте лише дуже легкий млинець і негайно зупиніться при дискомфорті, запамороченні або втраті контролю.",
+            "provenance": "adapted"
+          }
+        },
+        "binding_alone_is_not_technique_confirmation": true
+      },
+      "decision_source": "data/audits/agent-03-generator-b-continuation-2026-10-02-technique.json",
+      "not_user_PNG_approval": true
+    },
+    {
+      "exercise_id": "nordic-hamstrings-curls",
+      "name": "Nordic Hamstrings Curls",
+      "status": "blocked_variant_or_source_conflict",
+      "problem_fields": [
+        {
+          "path": "content.en.description",
+          "exact_value": "Nordic hamstring curls lower the body forward from tall kneeling while the ankles stay anchored and the hamstrings resist the descent."
+        },
+        {
+          "path": "content.en.instructions",
+          "exact_value": [
+            "Kneel tall with the ankles secured and the hips extended.",
+            "Brace the abdomen and keep the body in a straight line from knees to head.",
+            "Lean forward slowly by resisting with the hamstrings.",
+            "Catch yourself with the hands near the floor, then use assistance to return upright."
+          ]
+        },
+        {
+          "path": "content.en.form_cues",
+          "exact_value": [
+            "Keep the hips extended.",
+            "Lower as one unit.",
+            "Use the hands only as needed."
+          ]
+        },
+        {
+          "path": "content.en.common_mistakes",
+          "exact_value": [
+            "Bending at the hips.",
+            "Dropping quickly.",
+            "Trying to force a full range without control."
+          ]
+        },
+        {
+          "path": "content.en.safety_note",
+          "exact_value": "Anchor the ankles securely and use a range you can stop safely with the hands."
+        },
+        {
+          "path": "match.rationale",
+          "exact_value": "The stretch and inverse-curl candidates do not show the kneeling Nordic setup with a controlled forward hamstring eccentric."
+        }
+      ],
+      "problem": "Secured ankles are stated, but passive anchor/contact and assisted return without a second person are undefined. No verified standard rack/bench anchor selected; specialized apparatus remains next stage.",
+      "comparison_source": {
+        "exercise_id": "nordic-hamstrings-curls",
+        "catalog_record_sha256": "a37ce7435d277632217849cb78fd74950dcbf5e401195883798425e4f809c086",
+        "manifest_record_sha256": "84bc26aa363b831584c28d6435ec332a72a38869763082cb7594d97663f9eb35",
+        "all_catalog_manifest_fields_exact": true,
+        "source_dataset_id": null,
+        "source_selector": null,
+        "original_dataset_record_sha256": null,
+        "original_dataset_english": null,
+        "original_dataset_name": null,
+        "original_dataset_equipment": null,
+        "catalog_match": {
+          "classification": "generated",
+          "confidence": 0.99,
+          "rationale": "The stretch and inverse-curl candidates do not show the kneeling Nordic setup with a controlled forward hamstring eccentric.",
+          "synonym_group": null
+        },
+        "supplementary_exact_ID_fields": {
+          "pl": {
+            "description": "Nordic curl na mięśnie dwugłowe ud opuszcza ciało z wysokiego klęku do przodu przy zakotwiczonych kostkach, a mięśnie hamują zejście.",
+            "instructions": [
+              "Uklęknij prosto z zabezpieczonymi kostkami i wyprostowanymi biodrami.",
+              "Napnij brzuch i utrzymuj ciało w jednej linii od kolan do głowy.",
+              "Powoli pochylaj się do przodu, hamując ruch mięśniami dwugłowymi ud.",
+              "Podeprzyj się dłońmi blisko podłogi, a następnie użyj pomocy, aby wrócić do klęku."
+            ],
+            "form_cues": [
+              "Utrzymuj biodra wyprostowane.",
+              "Opuszczaj ciało jako jedną całość.",
+              "Używaj dłoni tylko w razie potrzeby."
+            ],
+            "common_mistakes": [
+              "Zginanie ciała w biodrach.",
+              "Szybkie opadanie.",
+              "Wymuszanie pełnego zakresu bez kontroli."
+            ],
+            "safety_note": "Pewnie zakotwicz kostki i wybierz zakres, w którym możesz bezpiecznie zatrzymać ruch dłońmi.",
+            "provenance": "adapted"
+          },
+          "uk": {
+            "description": "Скандинавське згинання задньої поверхні стегон опускає тіло вперед із високого положення на колінах, тоді як зафіксовані щиколотки, а м’язи стегон гальмують рух.",
+            "instructions": [
+              "Станьте на коліна, надійно зафіксуйте щиколотки та повністю розігніть таз.",
+              "Напружте прес і вирівняйте тіло від колін до голови.",
+              "Повільно нахиляйтеся вперед, гальмуючи рух задньою поверхнею стегон.",
+              "Підхопіть себе руками біля підлоги, потім використайте допомогу, щоб повернутися у вертикальне положення."
+            ],
+            "form_cues": [
+              "Зберігайте розгинання таза.",
+              "Опускайте тіло єдиним блоком.",
+              "Використовуйте руки лише за потреби."
+            ],
+            "common_mistakes": [
+              "Згинатися в тазостегнових суглобах.",
+              "Різко падати вперед.",
+              "Намагатися форсувати повну амплітуду без контролю."
+            ],
+            "safety_note": "Надійно зафіксуйте щиколотки та використовуйте таку амплітуду, яку можете безпечно зупинити руками.",
+            "provenance": "adapted"
+          }
+        },
+        "binding_alone_is_not_technique_confirmation": true
+      },
+      "decision_source": "data/audits/agent-03-generator-b-continuation-2026-10-02-technique.json",
+      "not_user_PNG_approval": true
+    },
+    {
+      "exercise_id": "pushup-weighted",
+      "name": "Push Up (Weighted)",
+      "status": "blocked_variant_or_source_conflict",
+      "problem_fields": [
+        {
+          "path": "content.en.description",
+          "exact_value": "A weighted push-up adds external load across the upper back while the body lowers and presses as one rigid plank."
+        },
+        {
+          "path": "content.en.instructions",
+          "exact_value": [
+            "Place the weight securely across the upper back and start in a high plank with hands under the shoulders.",
+            "Brace the core and lower the chest by bending the elbows while keeping the body straight.",
+            "Pause just above the floor, then press through the palms to return to the plank.",
+            "End the set before the load shifts or the hips sag."
+          ]
+        },
+        {
+          "path": "content.en.form_cues",
+          "exact_value": [
+            "Keep the weight centered.",
+            "Keep elbows angled back.",
+            "Maintain a straight body line."
+          ]
+        },
+        {
+          "path": "content.en.common_mistakes",
+          "exact_value": [
+            "Letting the plate slide.",
+            "Flaring the elbows.",
+            "Dropping the hips."
+          ]
+        },
+        {
+          "path": "content.en.safety_note",
+          "exact_value": "Use a spotter or secure loading method for the weight and stop if it shifts."
+        },
+        {
+          "path": "match.rationale",
+          "exact_value": "The weighted drop push-up adds a plyometric drop that differs from a regular weighted push-up, while the plain push-up lacks the load."
+        }
+      ],
+      "problem": "Official TRX confirms a vest is an admissible weighted push-up variant, not that this exact catalogue upper-back/plate load is a vest. Preserve alternatives; do not call our vest recommendation user-approved.",
+      "comparison_source": {
+        "exercise_id": "pushup-weighted",
+        "catalog_record_sha256": "1a7f803372e9b1e3ef30667daf102c715fe019aa53cac2d4d2a3361a12f6c065",
+        "manifest_record_sha256": "8f70e97c1f1926929051b28b1142474d8f69601fc8f06ef8fa08e38c3e5d1a0e",
+        "all_catalog_manifest_fields_exact": true,
+        "source_dataset_id": null,
+        "source_selector": null,
+        "original_dataset_record_sha256": null,
+        "original_dataset_english": null,
+        "original_dataset_name": null,
+        "original_dataset_equipment": null,
+        "catalog_match": {
+          "classification": "generated",
+          "confidence": 0.98,
+          "rationale": "The weighted drop push-up adds a plyometric drop that differs from a regular weighted push-up, while the plain push-up lacks the load.",
+          "synonym_group": null
+        },
+        "supplementary_exact_ID_fields": {
+          "pl": {
+            "description": "Pompka z obciążeniem umieszczonym na górnej części pleców opuszcza i wypycha ciało jako jedną sztywną deskę.",
+            "instructions": [
+              "Umieść ciężar stabilnie na górnej części pleców i zacznij w wysokiej desce z dłońmi pod barkami.",
+              "Napnij tułów i opuść klatkę, uginając łokcie przy zachowaniu prostej linii ciała.",
+              "Zatrzymaj się tuż nad podłogą, a następnie odepchnij się dłońmi i wróć do deski.",
+              "Zakończ serię, zanim ciężar się przesunie lub biodra zaczną opadać."
+            ],
+            "form_cues": [
+              "Trzymaj obciążenie wyśrodkowane.",
+              "Kieruj łokcie lekko do tyłu.",
+              "Utrzymuj ciało w jednej prostej linii."
+            ],
+            "common_mistakes": [
+              "Pozwalanie, by talerz się przesuwał.",
+              "Wypychanie łokci na boki.",
+              "Opuszczanie bioder."
+            ],
+            "safety_note": "Zastosuj asekurację lub pewny sposób ułożenia obciążenia i przerwij, jeśli zacznie się przesuwać.",
+            "provenance": "adapted"
+          },
+          "uk": {
+            "description": "Віджимання з вагою додає зовнішнє навантаження на верхню частину спини, поки тіло опускається й виштовхується як жорстка планка.",
+            "instructions": [
+              "Надійно розташуйте вагу на верхній частині спини та почніть у високій планці, поставивши долоні під плечима.",
+              "Напружте корпус і опустіть груди, згинаючи лікті та зберігаючи тіло прямим.",
+              "Зробіть паузу трохи над підлогою, потім відштовхніться долонями й поверніться в планку.",
+              "Завершіть підхід до зміщення ваги або провисання таза."
+            ],
+            "form_cues": [
+              "Тримайте вагу по центру.",
+              "Спрямовуйте лікті назад.",
+              "Зберігайте пряму лінію тіла."
+            ],
+            "common_mistakes": [
+              "Дозволяти млинцю зісковзувати.",
+              "Розводити лікті в сторони.",
+              "Опускати таз."
+            ],
+            "safety_note": "Використовуйте страхувальника або надійний спосіб розміщення ваги та зупиніться, якщо вона зміщується.",
+            "provenance": "adapted"
+          }
+        },
+        "binding_alone_is_not_technique_confirmation": true
+      },
+      "decision_source": "data/audits/agent-03-generator-b-continuation-2026-10-02-technique.json",
+      "not_user_PNG_approval": true
+    },
+    {
+      "exercise_id": "side-bend-dumbbell",
+      "name": "Side Bend (Dumbbell)",
+      "status": "blocked_variant_or_source_conflict",
+      "problem_fields": [
+        {
+          "path": "content.en.description",
+          "exact_value": "Hold one dumbbell at the side, bend the trunk away from it, return upright, then change hands."
+        },
+        {
+          "path": "content.en.instructions",
+          "exact_value": [
+            "Stand up straight with your feet shoulder-width apart and hold a dumbbell in one hand, letting it hang down by your side.",
+            "Keeping your back straight and your core engaged, slowly bend sideways at the waist towards the opposite side of the dumbbell, lowering the weight as far as you comfortably can.",
+            "Pause for a moment, then slowly return to the starting position.",
+            "Repeat for the desired number of repetitions, then switch sides and repeat."
+          ]
+        },
+        {
+          "path": "content.en.form_cues",
+          "exact_value": [
+            "Keep the support points fixed.",
+            "Use a quiet controlled path.",
+            "Reset fully between repetitions."
+          ]
+        },
+        {
+          "path": "content.en.common_mistakes",
+          "exact_value": [
+            "Shifting the support point.",
+            "Using momentum instead of the target joint path.",
+            "Cutting the return short."
+          ]
+        },
+        {
+          "path": "content.en.safety_note",
+          "exact_value": "Use a secure setup and stop if alignment or control is lost."
+        },
+        {
+          "path": "match.rationale",
+          "exact_value": "The dumbbell side bend matches dumbbell equipment, standing unilateral loading position, lateral trunk-flexion path, range and abdominal target."
+        }
+      ],
+      "problem": "Away/opposite the dumbbell plus lowering the weight gives contradictory lateral direction. No verified exact source determines which catalogue statement to override.",
+      "comparison_source": {
+        "exercise_id": "side-bend-dumbbell",
+        "catalog_record_sha256": "f43498a09ac7974f1f3a60ba0f86c4a8f5a9be74ece0c3dd004b3e357b1ac78d",
+        "manifest_record_sha256": "31103f5f77b872377ba4652b8d85ca311e289650a55159cf7598442d8555c90d",
+        "all_catalog_manifest_fields_exact": true,
+        "source_dataset_id": "0407",
+        "source_selector": "dataset[id=\"0407\"]",
+        "original_dataset_record_sha256": "35602d3706f78e365f5d1be3ee29c8e80a672779a2b1da08d14f5a91059ed2ff",
+        "original_dataset_english": [
+          "Stand up straight with your feet shoulder-width apart and hold a dumbbell in one hand, letting it hang down by your side.",
+          "Keeping your back straight and your core engaged, slowly bend sideways at the waist towards the opposite side of the dumbbell, lowering the weight as far as you comfortably can.",
+          "Pause for a moment, then slowly return to the starting position.",
+          "Repeat for the desired number of repetitions, then switch sides and repeat."
+        ],
+        "original_dataset_name": "dumbbell side bend",
+        "original_dataset_equipment": "dumbbell",
+        "catalog_match": {
+          "classification": "exact",
+          "confidence": 0.99,
+          "rationale": "The dumbbell side bend matches dumbbell equipment, standing unilateral loading position, lateral trunk-flexion path, range and abdominal target.",
+          "synonym_group": null
+        },
+        "supplementary_exact_ID_fields": {
+          "pl": {
+            "description": "Skłon boczny z hantlem trzymanym po jednej stronie pochyla tułów od ciężaru, wraca do pionu i zmienia rękę.",
+            "instructions": [
+              "Stań prosto w rozkroku na szerokość barków i trzymaj hantlę w jednej dłoni, pozwalając jej swobodnie zwisać z boku ciała.",
+              "Trzymając plecy proste, a mięśnie brzucha napięte, powoli pochyl tułów w bok, w stronę przeciwną do hantli, opuszczając ciężar tak nisko, jak to komfortowe.",
+              "Zatrzymaj się na chwilę, a następnie powoli wróć do pozycji wyjściowej.",
+              "Powtórz zalecaną liczbę powtórzeń, a następnie zmień stronę i powtórz."
+            ],
+            "form_cues": [
+              "Trzymaj biodra nieruchomo.",
+              "Pochylaj tułów bez skręcania.",
+              "Wracaj do pionu pod kontrolą."
+            ],
+            "common_mistakes": [
+              "Skręcanie tułowia.",
+              "Wykorzystywanie zamachu.",
+              "Zapadanie dolnej części pleców."
+            ],
+            "safety_note": "Użyj ciężaru i zakresu, przy których możesz utrzymać neutralne plecy oraz płynny skłon.",
+            "provenance": "source"
+          },
+          "uk": {
+            "description": "Нахил тулуба вбік з гантеллю: тримайте одну гантель біля стегна, нахиляйтеся в протилежний бік, повертайтеся вертикально та змінюйте руку.",
+            "instructions": [
+              "Станьте рівно, поставивши стопи на ширині плечей, і тримайте одну гантель, щоб вона звисала збоку.",
+              "Тримаючи спину рівною та корпус напруженим, повільно нахиліться вбік, у напрямку, протилежному гантелі, опускаючи її настільки, наскільки комфортно.",
+              "Зробіть паузу, потім повільно поверніться у вихідне положення.",
+              "Повторіть потрібну кількість разів, потім змініть бік і повторіть."
+            ],
+            "form_cues": [
+              "Не змінюйте положення стоп.",
+              "Нахиляйтеся плавною контрольованою траєкторією.",
+              "Повністю повертайтеся у вертикальне положення між повтореннями."
+            ],
+            "common_mistakes": [
+              "Зміщувати опорну стопу.",
+              "Використовувати інерцію замість контрольованого нахилу.",
+              "Не завершувати повернення у вертикальне положення."
+            ],
+            "safety_note": "Використовуйте надійну стійку та зупиніться, якщо втрачаєте вирівнювання або контроль.",
+            "provenance": "adapted"
+          }
+        },
+        "binding_alone_is_not_technique_confirmation": true
+      },
+      "decision_source": "data/audits/agent-03-generator-b-continuation-2026-10-02-technique.json",
+      "not_user_PNG_approval": true
+    },
+    {
+      "exercise_id": "single-arm-landmine-press-barbell",
+      "name": "Single Arm Landmine Press (Barbell)",
+      "status": "blocked_variant_or_source_conflict",
+      "problem_fields": [
+        {
+          "path": "content.en.description",
+          "exact_value": "Hold the anchored bar at one shoulder and press it diagonally forward before lowering and changing arms."
+        },
+        {
+          "path": "content.en.instructions",
+          "exact_value": [
+            "Stand beside the anchored end of a barbell and hold its sleeve at one shoulder with one hand.",
+            "Use a split stance and keep the free hand on the hip.",
+            "Press the bar diagonally forward until the working elbow is straight.",
+            "Lower the sleeve to the shoulder, then change arms."
+          ]
+        },
+        {
+          "path": "content.en.form_cues",
+          "exact_value": [
+            "Keep the trunk against support.",
+            "Track the elbows on the working path.",
+            "Stop short of a forced lockout."
+          ]
+        },
+        {
+          "path": "content.en.common_mistakes",
+          "exact_value": [
+            "Losing contact with the support.",
+            "Flaring the elbows abruptly.",
+            "Using momentum to lock out."
+          ]
+        },
+        {
+          "path": "content.en.safety_note",
+          "exact_value": "Use a secure back pad or station and stop before the shoulder loses control."
+        },
+        {
+          "path": "match.rationale",
+          "exact_value": "No candidate uses a barbell landmine setup for a unilateral angled shoulder press; the listed unilateral lifts have different positions and paths."
+        }
+      ],
+      "problem": "Standing split stance/free sleeve conflicts with anchored-end wording and required back pad. Official half-kneeling landmine press is not the catalogue standing supported variant.",
+      "comparison_source": {
+        "exercise_id": "single-arm-landmine-press-barbell",
+        "catalog_record_sha256": "d62781d085c8562bc403f78501f866e150f5bbd1b0ffc17dc87db84e4592249d",
+        "manifest_record_sha256": "813ad37dbdef762a90a70910c761a5b0da994924288377dd8a625f7002dbc3af",
+        "all_catalog_manifest_fields_exact": true,
+        "source_dataset_id": null,
+        "source_selector": null,
+        "original_dataset_record_sha256": null,
+        "original_dataset_english": null,
+        "original_dataset_name": null,
+        "original_dataset_equipment": null,
+        "catalog_match": {
+          "classification": "generated",
+          "confidence": 0.99,
+          "rationale": "No candidate uses a barbell landmine setup for a unilateral angled shoulder press; the listed unilateral lifts have different positions and paths.",
+          "synonym_group": null
+        },
+        "supplementary_exact_ID_fields": {
+          "pl": {
+            "description": "Jednorącz wyciskasz zakotwiczony koniec sztangi z wysokości jednego barku po skosie do przodu, a następnie opuszczasz go i zmieniasz rękę.",
+            "instructions": [
+              "Stań obok zakotwiczonego końca sztangi i trzymaj jej tuleję jedną ręką przy jednym barku.",
+              "Ustaw stopy w wykroku, a wolną rękę oprzyj na biodrze.",
+              "Wyciskaj sztangę po skosie do przodu, aż łokieć ręki pracującej będzie wyprostowany.",
+              "Opuść tuleję do barku, a następnie zmień rękę."
+            ],
+            "form_cues": [
+              "Utrzymuj wykrok stabilnie.",
+              "Prowadź sztangę po łuku do przodu.",
+              "Trzymaj żebra nad miednicą."
+            ],
+            "common_mistakes": [
+              "Skręcanie tułowia za sztangą.",
+              "Odchylanie się do tyłu.",
+              "Zbyt szybkie opuszczanie ciężaru."
+            ],
+            "safety_note": "Zabezpiecz punkt kotwiczenia i użyj ciężaru, który pozwala kontrolować sztangę jedną ręką.",
+            "provenance": "adapted"
+          },
+          "uk": {
+            "description": "Жим однією рукою в landmine зі штангою: тримайте закріплений гриф біля одного плеча, виштовхніть його по діагоналі вперед, опустіть і змініть руку.",
+            "instructions": [
+              "Станьте біля закріпленого кінця штанги та тримайте її втулку однією рукою біля плеча.",
+              "Займіть розножену стійку, а вільну руку покладіть на стегно.",
+              "Виштовхніть штангу по діагоналі вперед, доки робочий лікоть не випрямиться.",
+              "Опустіть втулку до плеча, потім змініть руку."
+            ],
+            "form_cues": [
+              "Тримайте корпус стабільним.",
+              "Ведіть лікоть по траєкторії руху.",
+              "Не блокуйте лікоть різко."
+            ],
+            "common_mistakes": [
+              "Втрачати стійке положення.",
+              "Різко розводити лікоть.",
+              "Використовувати інерцію для випрямлення."
+            ],
+            "safety_note": "Переконайтеся, що кінець штанги надійно закріплений, і зупиніться до втрати контролю плеча.",
+            "provenance": "adapted"
+          }
+        },
+        "binding_alone_is_not_technique_confirmation": true
+      },
+      "decision_source": "data/audits/agent-03-generator-b-continuation-2026-10-02-technique.json",
+      "not_user_PNG_approval": true
+    },
+    {
+      "exercise_id": "single-leg-standing-calf-raise-barbell",
+      "name": "Single Leg Standing Calf Raise (Barbell)",
+      "status": "blocked_variant_or_source_conflict",
+      "problem_fields": [
+        {
+          "path": "content.en.description",
+          "exact_value": "Hold the barbell across the upper back, raise one heel straight up, lower it, then change legs."
+        },
+        {
+          "path": "content.en.instructions",
+          "exact_value": [
+            "Stand with a barbell across the upper back and one foot planted on the floor.",
+            "Keep the other foot off the floor and hold the bar securely.",
+            "Raise the planted heel straight up onto the ball of the foot.",
+            "Lower the heel to the floor, then switch legs."
+          ]
+        },
+        {
+          "path": "content.en.form_cues",
+          "exact_value": [
+            "Keep the ankle over the second toe.",
+            "Pause at the top.",
+            "Lower without bouncing."
+          ]
+        },
+        {
+          "path": "content.en.common_mistakes",
+          "exact_value": [
+            "Bouncing at the bottom.",
+            "Rolling the ankle outward.",
+            "Pushing off with the other leg."
+          ]
+        },
+        {
+          "path": "content.en.safety_note",
+          "exact_value": "Use a handhold or machine support and keep the ankle moving vertically."
+        },
+        {
+          "path": "match.rationale",
+          "exact_value": "The barbell standing calf raise candidate is bilateral, while no candidate confirms a unilateral barbell standing calf raise."
+        }
+      ],
+      "problem": "Free bar across upper back needs both hands while safety requires a handhold/machine support; simultaneous support geometry is undefined. No substitution with Smith.",
+      "comparison_source": {
+        "exercise_id": "single-leg-standing-calf-raise-barbell",
+        "catalog_record_sha256": "656d280892804bb074dce5a0db05330a8e48536db197a7181873c3b03f8841e5",
+        "manifest_record_sha256": "19ff49f227eadaa465a164157f925074a9afa5f6839a76bef3766eb1312e092a",
+        "all_catalog_manifest_fields_exact": true,
+        "source_dataset_id": null,
+        "source_selector": null,
+        "original_dataset_record_sha256": null,
+        "original_dataset_english": null,
+        "original_dataset_name": null,
+        "original_dataset_equipment": null,
+        "catalog_match": {
+          "classification": "generated",
+          "confidence": 0.99,
+          "rationale": "The barbell standing calf raise candidate is bilateral, while no candidate confirms a unilateral barbell standing calf raise.",
+          "synonym_group": null
+        },
+        "supplementary_exact_ID_fields": {
+          "pl": {
+            "description": "Jednonóż wspięcie na palce ze sztangą opartą na górnej części pleców unosi piętę nogi podporowej, opuszcza ją i zmienia nogę.",
+            "instructions": [
+              "Stań ze sztangą opartą na górnej części pleców i jedną stopą ustawioną na podłodze.",
+              "Trzymaj drugą stopę uniesioną i pewnie utrzymuj sztangę.",
+              "Unieś piętę nogi podporowej prosto w górę, przechodząc na palce.",
+              "Opuść piętę na podłogę, a następnie zmień nogę."
+            ],
+            "form_cues": [
+              "Trzymaj sztangę stabilnie na plecach.",
+              "Prowadź piętę pionowo.",
+              "Utrzymuj kolano nogi podporowej nad stopą."
+            ],
+            "common_mistakes": [
+              "Kołysanie sztangą.",
+              "Zapadanie kostki do środka.",
+              "Odbijanie piętą w dole."
+            ],
+            "safety_note": "Użyj stojaka i asekuracji oraz ciężaru, który pozwala zachować równowagę na jednej nodze.",
+            "provenance": "adapted"
+          },
+          "uk": {
+            "description": "Підйом на носок однією ногою зі штангою: тримайте штангу на верхній частині спини, піднімайте одну п’яту, опускайте її та змінюйте ногу.",
+            "instructions": [
+              "Станьте зі штангою на верхній частині спини, поставивши одну стопу на підлогу.",
+              "Тримайте іншу стопу відірваною від підлоги та надійно утримуйте штангу.",
+              "Підніміть п’яту опорної ноги прямо вгору на передню частину стопи.",
+              "Опустіть п’яту на підлогу, потім змініть ногу."
+            ],
+            "form_cues": [
+              "Тримайте гомілкостоп над другим пальцем стопи.",
+              "Затримуйтеся у верхній точці.",
+              "Опускайтеся без пружиніння."
+            ],
+            "common_mistakes": [
+              "Пружинити в нижній точці.",
+              "Завалювати гомілкостоп назовні.",
+              "Відштовхуватися іншою ногою."
+            ],
+            "safety_note": "Використовуйте стійку опору для рівноваги та вагу, яку можете безпечно контролювати.",
+            "provenance": "adapted"
+          }
+        },
+        "binding_alone_is_not_technique_confirmation": true
+      },
+      "decision_source": "data/audits/agent-03-generator-b-continuation-2026-10-02-technique.json",
+      "not_user_PNG_approval": true
+    },
+    {
+      "exercise_id": "muscle-up-machine",
+      "name": "Muscle Up",
+      "status": "blocked_variant_or_source_conflict",
+      "problem_fields": [
+        {
+          "path": "content.en.description",
+          "exact_value": "Pull from a hang and transition the torso over the bar before pressing to support."
+        },
+        {
+          "path": "content.en.instructions",
+          "exact_value": [
+            "Start by hanging from a pull-up bar with your palms facing away from you and your arms fully extended.",
+            "Engage your core and pull your body up towards the bar, leading with your chest.",
+            "As you reach the top of the movement, transition your grip so that your palms are facing towards you.",
+            "Continue pulling yourself up until your chest is above the bar and your arms are fully flexed.",
+            "Reverse the movement by slowly lowering yourself back down to the starting position.",
+            "Repeat for the desired number of repetitions."
+          ]
+        },
+        {
+          "path": "content.en.form_cues",
+          "exact_value": [
+            "Keep the trunk braced.",
+            "Keep the kip controlled as the chest rises over the bar before the press.",
+            "Finish each repetition under control."
+          ]
+        },
+        {
+          "path": "content.en.common_mistakes",
+          "exact_value": [
+            "Using momentum.",
+            "Losing the starting posture.",
+            "Rushing the return."
+          ]
+        },
+        {
+          "path": "content.en.safety_note",
+          "exact_value": "Use a comfortable range and stop if control or alignment deteriorates."
+        },
+        {
+          "path": "match.rationale",
+          "exact_value": "The bodyweight muscle-up candidate matches the target muscle-up transition and full-body pulling-and-pressing path despite the generic machine field."
+        }
+      ],
+      "problem": "Official bar muscle-up confirms pull/transition/dip to extended-arm support. Catalogue/dataset demand turning overhand palms toward self and finish fully flexed; retrieved written sources do not settle exact grip transition. Rings or strict-only replacement forbidden.",
+      "comparison_source": {
+        "exercise_id": "muscle-up-machine",
+        "catalog_record_sha256": "9ce3dc7dfae48918cffcc338b0bd6209f309b47d176bb851f2248f80ef421b0c",
+        "manifest_record_sha256": "4c2e735fb5e61a0298ad6e6fdefbad2a9c8190693f07151e1c040a088c427d04",
+        "all_catalog_manifest_fields_exact": true,
+        "source_dataset_id": "0631",
+        "source_selector": "dataset[id=\"0631\"]",
+        "original_dataset_record_sha256": "fc6ee63ee380432b685d28c9dda1446c9d8ec50327946c64c8ff64d8bfd5de5c",
+        "original_dataset_english": [
+          "Start by hanging from a pull-up bar with your palms facing away from you and your arms fully extended.",
+          "Engage your core and pull your body up towards the bar, leading with your chest.",
+          "As you reach the top of the movement, transition your grip so that your palms are facing towards you.",
+          "Continue pulling yourself up until your chest is above the bar and your arms are fully flexed.",
+          "Reverse the movement by slowly lowering yourself back down to the starting position.",
+          "Repeat for the desired number of repetitions."
+        ],
+        "original_dataset_name": "muscle up",
+        "original_dataset_equipment": "body weight",
+        "catalog_match": {
+          "classification": "semantic",
+          "confidence": 0.95,
+          "rationale": "The bodyweight muscle-up candidate matches the target muscle-up transition and full-body pulling-and-pressing path despite the generic machine field.",
+          "synonym_group": null
+        },
+        "supplementary_exact_ID_fields": {
+          "pl": {
+            "description": "Podciąganie z przejściem nad drążek zaczynasz w zwisie, przeciągasz klatkę nad drążek, a następnie wypychasz ciało do podporu.",
+            "instructions": [
+              "Zacznij, zwisając na drążku do podciągania, dłonie skierowane od siebie, ramiona w pełni wyprostowane.",
+              "Napnij mięśnie tułowia i przyciągnij ciało w górę w kierunku drążka, prowadząc ruch klatką piersiową.",
+              "Gdy osiągniesz szczyt ruchu, zmień chwyt tak, aby dłonie były skierowane do ciebie.",
+              "Kontynuuj podciąganie, aż klatka piersiowa znajdzie się nad drążkiem, a ramiona będą w pełni ugięte.",
+              "Odwróć ruch, powoli opuszczając ciało do pozycji wyjściowej.",
+              "Powtórz zadaną liczbę powtórzeń."
+            ],
+            "form_cues": [
+              "Utrzymuj napięty tułów.",
+              "Kontroluj kip, gdy klatka przechodzi nad drążek przed wypchnięciem.",
+              "Kończ każde powtórzenie pod kontrolą."
+            ],
+            "common_mistakes": [
+              "Wykorzystywanie niekontrolowanego zamachu.",
+              "Gubienie pozycji początkowej.",
+              "Zbyt szybki powrót."
+            ],
+            "safety_note": "Użyj wygodnego zakresu i przerwij, gdy pogarsza się kontrola lub ustawienie ciała.",
+            "provenance": "source"
+          },
+          "uk": {
+            "description": "Вихід силою: підтягніться з вису, переведіть тулуб над перекладиною, а потім випряміть руки в упорі.",
+            "instructions": [
+              "Почніть із вису на перекладині, повернувши долоні від себе, і повністю випрямивши руки.",
+              "Напружте корпус і потягніть тіло до перекладини, ведучи рух грудьми.",
+              "Досягнувши верхньої точки, перебудуйте хват так, щоб долоні дивилися на вас.",
+              "Продовжуйте підтягуватися, доки груди не опиняться над перекладиною, а руки повністю не зігнуться.",
+              "Повільно виконайте рух у зворотному напрямку та опустіться у вихідне положення.",
+              "Повторіть потрібну кількість разів."
+            ],
+            "form_cues": [
+              "Напружуйте корпус.",
+              "Контролюйте кі́пінг, коли груди проходять над перекладиною перед жимом.",
+              "Завершуйте кожне повторення під контролем."
+            ],
+            "common_mistakes": [
+              "Використання інерції.",
+              "Втрата початкового положення.",
+              "Поспішне повернення."
+            ],
+            "safety_note": "Використовуйте комфортну амплітуду та зупиніться, якщо погіршується контроль або вирівнювання.",
+            "provenance": "adapted"
+          }
+        },
+        "binding_alone_is_not_technique_confirmation": true
+      },
+      "decision_source": "data/audits/agent-03-generator-b-continuation-2026-10-02-technique.json",
+      "not_user_PNG_approval": true
+    },
+    {
+      "exercise_id": "press-under-barbell",
+      "name": "Press Under",
+      "status": "blocked_variant_or_source_conflict",
+      "problem_fields": [
+        {
+          "path": "content.en.description",
+          "exact_value": "A press-under drill moves the body beneath a barbell as it is pressed to a stable overhead position."
+        },
+        {
+          "path": "content.en.instructions",
+          "exact_value": [
+            "Set the bar at an appropriate height and take a secure overhand grip.",
+            "Begin with the bar near the upper chest and brace the trunk.",
+            "Press the bar upward while actively moving the body underneath it.",
+            "Finish with the bar overhead and elbows locked, then return it to the start."
+          ]
+        },
+        {
+          "path": "content.en.form_cues",
+          "exact_value": [
+            "Keep the bar path close.",
+            "Move under a stable bar.",
+            "Stack wrists, elbows, and shoulders."
+          ]
+        },
+        {
+          "path": "content.en.common_mistakes",
+          "exact_value": [
+            "Pressing away from the bar.",
+            "Losing the trunk brace.",
+            "Receiving with bent or uneven arms."
+          ]
+        },
+        {
+          "path": "content.en.safety_note",
+          "exact_value": "Use an empty bar or light load and a rack with safety supports."
+        },
+        {
+          "path": "match.rationale",
+          "exact_value": "No candidate depicts the press-under's barbell-under movement and catch path; the listed presses are bench, overhead or pullover variants."
+        }
+      ],
+      "problem": "Overhead press-under receiving stance/depth unspecified: partial squat, full squat or split. Generic overhead press/clean examples do not define this drill.",
+      "comparison_source": {
+        "exercise_id": "press-under-barbell",
+        "catalog_record_sha256": "293ebef8922fc981a365854b48c15327a120272cd9e19e78ddb5754f4711ec36",
+        "manifest_record_sha256": "40f4af83ff278b4d5bf7ec4d6328b78ef647806a95576e1df615bc5193464139",
+        "all_catalog_manifest_fields_exact": true,
+        "source_dataset_id": null,
+        "source_selector": null,
+        "original_dataset_record_sha256": null,
+        "original_dataset_english": null,
+        "original_dataset_name": null,
+        "original_dataset_equipment": null,
+        "catalog_match": {
+          "classification": "generated",
+          "confidence": 0.98,
+          "rationale": "No candidate depicts the press-under's barbell-under movement and catch path; the listed presses are bench, overhead or pullover variants.",
+          "synonym_group": null
+        },
+        "supplementary_exact_ID_fields": {
+          "pl": {
+            "description": "Przejście pod sztangę polega na aktywnym przesunięciu ciała pod ciężar podczas wyciskania go do stabilnej pozycji nad głową.",
+            "instructions": [
+              "Ustaw sztangę na odpowiedniej wysokości i chwyć ją pewnym nachwytem.",
+              "Rozpocznij ze sztangą blisko górnej części klatki piersiowej i napnij tułów.",
+              "Wyciskaj sztangę w górę, jednocześnie aktywnie przesuwając ciało pod nią.",
+              "Zakończ ze sztangą nad głową i zablokowanymi łokciami, a następnie odłóż ją do pozycji wyjściowej."
+            ],
+            "form_cues": [
+              "Prowadź sztangę blisko ciała.",
+              "Przechodź pod stabilnie poruszaną sztangę.",
+              "Ustawiaj nadgarstki, łokcie i barki w jednej linii."
+            ],
+            "common_mistakes": [
+              "Odsuwanie się od sztangi podczas wyciskania.",
+              "Utrata napięcia tułowia.",
+              "Odbieranie ciężaru na ugiętych lub nierówno ustawionych ramionach."
+            ],
+            "safety_note": "Używaj pustej sztangi lub lekkiego ciężaru oraz stojaka z bolcami asekuracyjnymi.",
+            "provenance": "adapted"
+          },
+          "uk": {
+            "description": "Підсідання під штангу переміщує тіло під гриф, коли він вичавлюється у стабільне положення над головою.",
+            "instructions": [
+              "Встановіть штангу на відповідній висоті й надійно візьміться хватом зверху.",
+              "Почніть із грифа біля верхньої частини грудей і напружте корпус.",
+              "Вичавлюйте штангу вгору, активно переміщуючи тіло під неї.",
+              "Завершіть рух зі штангою над головою та зафіксованими ліктями, потім поверніть її у вихідне положення."
+            ],
+            "form_cues": [
+              "Тримайте штангу близько до тіла.",
+              "Переміщуйтеся під стабільний гриф.",
+              "Вирівнюйте зап’ястки, лікті та плечі в одну лінію."
+            ],
+            "common_mistakes": [
+              "Виштовхувати штангу від себе.",
+              "Втрачати напруження корпуса.",
+              "Приймати гриф зі зігнутими або нерівними руками."
+            ],
+            "safety_note": "Використовуйте порожню штангу або легку вагу та стійку зі страхувальними упорами.",
+            "provenance": "adapted"
+          }
+        },
+        "binding_alone_is_not_technique_confirmation": true
+      },
+      "decision_source": "data/audits/agent-03-generator-b-continuation-2026-10-02-technique.json",
+      "not_user_PNG_approval": true
+    }
+  ]
+}
