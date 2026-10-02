@@ -560,3 +560,5 @@ Generation complete: 10/10 images. Technical checks passed for each generated PN
 - `preacher-curl-dumbbell` — `assets/exercises/pending/agent-03-others-012/preacher-curl-dumbbell/attempt-1.png`; SHA256 `e39faeb9db53d683f9ed03719ca296ff07d7b99e19406fc2e18e724e7e0a82ab`
 - `rack-pull-barbell` — `assets/exercises/pending/agent-03-others-012/rack-pull-barbell/attempt-1.png`; SHA256 `31487e08841e4ff93daf213077eccddbf2ba7c0d64dd0df85dfc50b7d1177367`
 - `russian-twist-weighted-plate` — `assets/exercises/pending/agent-03-others-012/russian-twist-weighted-plate/attempt-1.png`; SHA256 `6eb32a0c36930a1c891c09eeb12c6591be68945ae7116d65392464d8e44a8820`
+
+GitHub verification — Agent-03 package 012: 10/10 remote PNG blobs matched local files, progress and manifest SHA256; each remote PNG decoded as square RGBA with transparent pixels. Verified content commit `3abffc83ee6b80f7c152c876444d7b98d5ab9a58`. All 10 remain `user_review=pending`, `agent_visual_review=not_performed`; package 013 is next.
