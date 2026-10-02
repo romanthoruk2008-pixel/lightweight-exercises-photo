@@ -6,7 +6,7 @@
   "status": "in_progress",
   "assignment_registry_path": "data/assignments/agent-03-generator-b-continuation-2026-10-02.json",
   "source_branch": "agent-03-inventory-2026-10-01",
-  "generation_calls_during_this_assignment": 9,
+  "generation_calls_during_this_assignment": 16,
   "user_review_policy": "pending until explicit user approval",
   "exercises": [
     {
@@ -1165,20 +1165,88 @@
       "source_task_path": "data/batches/agent-03-others-026.json",
       "prompt_sha256": "814eeccf16a3ce626f150ead2a4b6709bda629159a83c927b12ba477b2aec296",
       "catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
-      "status": "not_started",
-      "attempts": 0,
-      "next_attempt_number": 1,
-      "attempt_history": [],
-      "last_error": null,
+      "status": "technical_issue",
+      "attempts": 1,
+      "next_attempt_number": 2,
+      "attempt_history": [
+        {
+          "attempt_number": 1,
+          "tool": "image_gen.imagegen",
+          "started_at": "2026-10-02T22:08:17+00:00",
+          "finished_at": "2026-10-02T22:09:12+00:00",
+          "prompt_sha256": "814eeccf16a3ce626f150ead2a4b6709bda629159a83c927b12ba477b2aec296",
+          "style_version": "v1-neutral-primary-2026-10-02",
+          "reference_path": "assets/exercises/biceps-curl-dumbbell.png",
+          "reference_sha256": "52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f",
+          "status": "generated",
+          "result_path": "/workspace/exercise-image-results/agent-03-generator-b-continuation-2026-10-02/generator-b/agent-03-others-026/downward-dog/attempt-1.png",
+          "git_result_path": "assets/exercises/pending/agent-03-generator-b-continuation-2026-10-02/generator-b/agent-03-others-026/downward-dog/attempt-1.png",
+          "result_sha256": "a3ed4a72bf549905ef11241d297f190ce40fffd3faa57ddbbf88e2f61c00747c",
+          "technical_check": "failed",
+          "technical_check_details": {
+            "decode": "passed",
+            "format": "PNG",
+            "dimensions": [
+              1254,
+              1254
+            ],
+            "square": true,
+            "target_dimensions_passed": false,
+            "mode": "RGBA",
+            "alpha_channel": true,
+            "alpha_extrema": [
+              0,
+              255
+            ],
+            "fully_transparent_pixels": 1187490,
+            "transparent_corner_alpha": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "file_bytes": 769023
+          },
+          "agent_visual_review": "not_performed",
+          "user_review": "pending",
+          "error": null
+        }
+      ],
+      "last_error": "Generated PNG did not meet required PNG/1024x1024/transparent-background technical criteria; original image bytes preserved without resampling.",
       "history_provenance": [],
-      "assignment_generation_calls": 0,
-      "result_path": null,
-      "result_sha256": null,
-      "user_review": null,
+      "assignment_generation_calls": 1,
+      "result_path": "/workspace/exercise-image-results/agent-03-generator-b-continuation-2026-10-02/generator-b/agent-03-others-026/downward-dog/attempt-1.png",
+      "result_sha256": "a3ed4a72bf549905ef11241d297f190ce40fffd3faa57ddbbf88e2f61c00747c",
+      "user_review": "pending",
       "agent_visual_review": "not_performed",
       "planned_png_path": "/workspace/exercise-image-results/agent-03-generator-b-continuation-2026-10-02/generator-b/agent-03-others-026/downward-dog/attempt-1.png",
       "planned_git_png_path": "assets/exercises/pending/agent-03-generator-b-continuation-2026-10-02/generator-b/agent-03-others-026/downward-dog/attempt-1.png",
-      "planned_output_relative_path": "agent-03-others-026/downward-dog/attempt-1.png"
+      "planned_output_relative_path": "agent-03-others-026/downward-dog/attempt-1.png",
+      "technical_check": "failed",
+      "technical_check_details": {
+        "decode": "passed",
+        "format": "PNG",
+        "dimensions": [
+          1254,
+          1254
+        ],
+        "square": true,
+        "target_dimensions_passed": false,
+        "mode": "RGBA",
+        "alpha_channel": true,
+        "alpha_extrema": [
+          0,
+          255
+        ],
+        "fully_transparent_pixels": 1187490,
+        "transparent_corner_alpha": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "file_bytes": 769023
+      }
     },
     {
       "exercise_id": "bear-crawl",
@@ -1187,20 +1255,88 @@
       "source_task_path": "data/batches/agent-03-others-026.json",
       "prompt_sha256": "aa477a12c9ec0ff6d4ee69d56f79cb1ec3352562b3ae9b24e622d6b9cd0f860a",
       "catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
-      "status": "not_started",
-      "attempts": 0,
-      "next_attempt_number": 1,
-      "attempt_history": [],
-      "last_error": null,
+      "status": "technical_issue",
+      "attempts": 1,
+      "next_attempt_number": 2,
+      "attempt_history": [
+        {
+          "attempt_number": 1,
+          "tool": "image_gen.imagegen",
+          "started_at": "2026-10-02T22:09:32+00:00",
+          "finished_at": "2026-10-02T22:10:27+00:00",
+          "prompt_sha256": "aa477a12c9ec0ff6d4ee69d56f79cb1ec3352562b3ae9b24e622d6b9cd0f860a",
+          "style_version": "v1-neutral-primary-2026-10-02",
+          "reference_path": "assets/exercises/biceps-curl-dumbbell.png",
+          "reference_sha256": "52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f",
+          "status": "generated",
+          "result_path": "/workspace/exercise-image-results/agent-03-generator-b-continuation-2026-10-02/generator-b/agent-03-others-026/bear-crawl/attempt-1.png",
+          "git_result_path": "assets/exercises/pending/agent-03-generator-b-continuation-2026-10-02/generator-b/agent-03-others-026/bear-crawl/attempt-1.png",
+          "result_sha256": "07cc84658c4a665bb7dffddb8f7a816a80ac4630898b934b5927a882e904b8e9",
+          "technical_check": "failed",
+          "technical_check_details": {
+            "decode": "passed",
+            "format": "PNG",
+            "dimensions": [
+              1254,
+              1254
+            ],
+            "square": true,
+            "target_dimensions_passed": false,
+            "mode": "RGBA",
+            "alpha_channel": true,
+            "alpha_extrema": [
+              0,
+              255
+            ],
+            "fully_transparent_pixels": 1226827,
+            "transparent_corner_alpha": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "file_bytes": 675716
+          },
+          "agent_visual_review": "not_performed",
+          "user_review": "pending",
+          "error": null
+        }
+      ],
+      "last_error": "Generated PNG did not meet required PNG/1024x1024/transparent-background technical criteria; original image bytes preserved without resampling.",
       "history_provenance": [],
-      "assignment_generation_calls": 0,
-      "result_path": null,
-      "result_sha256": null,
-      "user_review": null,
+      "assignment_generation_calls": 1,
+      "result_path": "/workspace/exercise-image-results/agent-03-generator-b-continuation-2026-10-02/generator-b/agent-03-others-026/bear-crawl/attempt-1.png",
+      "result_sha256": "07cc84658c4a665bb7dffddb8f7a816a80ac4630898b934b5927a882e904b8e9",
+      "user_review": "pending",
       "agent_visual_review": "not_performed",
       "planned_png_path": "/workspace/exercise-image-results/agent-03-generator-b-continuation-2026-10-02/generator-b/agent-03-others-026/bear-crawl/attempt-1.png",
       "planned_git_png_path": "assets/exercises/pending/agent-03-generator-b-continuation-2026-10-02/generator-b/agent-03-others-026/bear-crawl/attempt-1.png",
-      "planned_output_relative_path": "agent-03-others-026/bear-crawl/attempt-1.png"
+      "planned_output_relative_path": "agent-03-others-026/bear-crawl/attempt-1.png",
+      "technical_check": "failed",
+      "technical_check_details": {
+        "decode": "passed",
+        "format": "PNG",
+        "dimensions": [
+          1254,
+          1254
+        ],
+        "square": true,
+        "target_dimensions_passed": false,
+        "mode": "RGBA",
+        "alpha_channel": true,
+        "alpha_extrema": [
+          0,
+          255
+        ],
+        "fully_transparent_pixels": 1226827,
+        "transparent_corner_alpha": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "file_bytes": 675716
+      }
     },
     {
       "exercise_id": "jumping-jack",
@@ -1209,20 +1345,88 @@
       "source_task_path": "data/batches/agent-03-others-026.json",
       "prompt_sha256": "40f494fa71df72c8837955d12441f6b7936a8fa76e4fd608aacfd6538bea0ec8",
       "catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
-      "status": "not_started",
-      "attempts": 0,
-      "next_attempt_number": 1,
-      "attempt_history": [],
-      "last_error": null,
+      "status": "technical_issue",
+      "attempts": 1,
+      "next_attempt_number": 2,
+      "attempt_history": [
+        {
+          "attempt_number": 1,
+          "tool": "image_gen.imagegen",
+          "started_at": "2026-10-02T22:10:47+00:00",
+          "finished_at": "2026-10-02T22:11:22+00:00",
+          "prompt_sha256": "40f494fa71df72c8837955d12441f6b7936a8fa76e4fd608aacfd6538bea0ec8",
+          "style_version": "v1-neutral-primary-2026-10-02",
+          "reference_path": "assets/exercises/biceps-curl-dumbbell.png",
+          "reference_sha256": "52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f",
+          "status": "generated",
+          "result_path": "/workspace/exercise-image-results/agent-03-generator-b-continuation-2026-10-02/generator-b/agent-03-others-026/jumping-jack/attempt-1.png",
+          "git_result_path": "assets/exercises/pending/agent-03-generator-b-continuation-2026-10-02/generator-b/agent-03-others-026/jumping-jack/attempt-1.png",
+          "result_sha256": "50cc19b621ecb1ca4955a5f09f01c6bb28a721b4be0f5481d6ad89b42e028ee4",
+          "technical_check": "failed",
+          "technical_check_details": {
+            "decode": "passed",
+            "format": "PNG",
+            "dimensions": [
+              1254,
+              1254
+            ],
+            "square": true,
+            "target_dimensions_passed": false,
+            "mode": "RGBA",
+            "alpha_channel": true,
+            "alpha_extrema": [
+              0,
+              255
+            ],
+            "fully_transparent_pixels": 1320483,
+            "transparent_corner_alpha": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "file_bytes": 555727
+          },
+          "agent_visual_review": "not_performed",
+          "user_review": "pending",
+          "error": null
+        }
+      ],
+      "last_error": "Generated PNG did not meet required PNG/1024x1024/transparent-background technical criteria; original image bytes preserved without resampling.",
       "history_provenance": [],
-      "assignment_generation_calls": 0,
-      "result_path": null,
-      "result_sha256": null,
-      "user_review": null,
+      "assignment_generation_calls": 1,
+      "result_path": "/workspace/exercise-image-results/agent-03-generator-b-continuation-2026-10-02/generator-b/agent-03-others-026/jumping-jack/attempt-1.png",
+      "result_sha256": "50cc19b621ecb1ca4955a5f09f01c6bb28a721b4be0f5481d6ad89b42e028ee4",
+      "user_review": "pending",
       "agent_visual_review": "not_performed",
       "planned_png_path": "/workspace/exercise-image-results/agent-03-generator-b-continuation-2026-10-02/generator-b/agent-03-others-026/jumping-jack/attempt-1.png",
       "planned_git_png_path": "assets/exercises/pending/agent-03-generator-b-continuation-2026-10-02/generator-b/agent-03-others-026/jumping-jack/attempt-1.png",
-      "planned_output_relative_path": "agent-03-others-026/jumping-jack/attempt-1.png"
+      "planned_output_relative_path": "agent-03-others-026/jumping-jack/attempt-1.png",
+      "technical_check": "failed",
+      "technical_check_details": {
+        "decode": "passed",
+        "format": "PNG",
+        "dimensions": [
+          1254,
+          1254
+        ],
+        "square": true,
+        "target_dimensions_passed": false,
+        "mode": "RGBA",
+        "alpha_channel": true,
+        "alpha_extrema": [
+          0,
+          255
+        ],
+        "fully_transparent_pixels": 1320483,
+        "transparent_corner_alpha": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "file_bytes": 555727
+      }
     },
     {
       "exercise_id": "high-knees",
@@ -1231,20 +1435,88 @@
       "source_task_path": "data/batches/agent-03-others-026.json",
       "prompt_sha256": "34bb68fb96694bbdeba96618652ac2666e0c54d1289a7fc047612f640babb164",
       "catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
-      "status": "not_started",
-      "attempts": 0,
-      "next_attempt_number": 1,
-      "attempt_history": [],
-      "last_error": null,
+      "status": "technical_issue",
+      "attempts": 1,
+      "next_attempt_number": 2,
+      "attempt_history": [
+        {
+          "attempt_number": 1,
+          "tool": "image_gen.imagegen",
+          "started_at": "2026-10-02T22:11:46+00:00",
+          "finished_at": "2026-10-02T22:12:38+00:00",
+          "prompt_sha256": "34bb68fb96694bbdeba96618652ac2666e0c54d1289a7fc047612f640babb164",
+          "style_version": "v1-neutral-primary-2026-10-02",
+          "reference_path": "assets/exercises/biceps-curl-dumbbell.png",
+          "reference_sha256": "52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f",
+          "status": "generated",
+          "result_path": "/workspace/exercise-image-results/agent-03-generator-b-continuation-2026-10-02/generator-b/agent-03-others-026/high-knees/attempt-1.png",
+          "git_result_path": "assets/exercises/pending/agent-03-generator-b-continuation-2026-10-02/generator-b/agent-03-others-026/high-knees/attempt-1.png",
+          "result_sha256": "09881aa4f1456677f939cd92774aba3c20d72bcdf21cb5d1a26f0f16c69f73a0",
+          "technical_check": "failed",
+          "technical_check_details": {
+            "decode": "passed",
+            "format": "PNG",
+            "dimensions": [
+              1254,
+              1254
+            ],
+            "square": true,
+            "target_dimensions_passed": false,
+            "mode": "RGBA",
+            "alpha_channel": true,
+            "alpha_extrema": [
+              0,
+              255
+            ],
+            "fully_transparent_pixels": 1308698,
+            "transparent_corner_alpha": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "file_bytes": 534078
+          },
+          "agent_visual_review": "not_performed",
+          "user_review": "pending",
+          "error": null
+        }
+      ],
+      "last_error": "Generated PNG did not meet required PNG/1024x1024/transparent-background technical criteria; original image bytes preserved without resampling.",
       "history_provenance": [],
-      "assignment_generation_calls": 0,
-      "result_path": null,
-      "result_sha256": null,
-      "user_review": null,
+      "assignment_generation_calls": 1,
+      "result_path": "/workspace/exercise-image-results/agent-03-generator-b-continuation-2026-10-02/generator-b/agent-03-others-026/high-knees/attempt-1.png",
+      "result_sha256": "09881aa4f1456677f939cd92774aba3c20d72bcdf21cb5d1a26f0f16c69f73a0",
+      "user_review": "pending",
       "agent_visual_review": "not_performed",
       "planned_png_path": "/workspace/exercise-image-results/agent-03-generator-b-continuation-2026-10-02/generator-b/agent-03-others-026/high-knees/attempt-1.png",
       "planned_git_png_path": "assets/exercises/pending/agent-03-generator-b-continuation-2026-10-02/generator-b/agent-03-others-026/high-knees/attempt-1.png",
-      "planned_output_relative_path": "agent-03-others-026/high-knees/attempt-1.png"
+      "planned_output_relative_path": "agent-03-others-026/high-knees/attempt-1.png",
+      "technical_check": "failed",
+      "technical_check_details": {
+        "decode": "passed",
+        "format": "PNG",
+        "dimensions": [
+          1254,
+          1254
+        ],
+        "square": true,
+        "target_dimensions_passed": false,
+        "mode": "RGBA",
+        "alpha_channel": true,
+        "alpha_extrema": [
+          0,
+          255
+        ],
+        "fully_transparent_pixels": 1308698,
+        "transparent_corner_alpha": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "file_bytes": 534078
+      }
     },
     {
       "exercise_id": "mountain-climber",
@@ -1253,20 +1525,88 @@
       "source_task_path": "data/batches/agent-03-others-026.json",
       "prompt_sha256": "ec8c5f67b0141c8c6279d41799e1aca26d9cf7901a5932e551dc105694ab5e06",
       "catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
-      "status": "not_started",
-      "attempts": 0,
-      "next_attempt_number": 1,
-      "attempt_history": [],
-      "last_error": null,
+      "status": "technical_issue",
+      "attempts": 1,
+      "next_attempt_number": 2,
+      "attempt_history": [
+        {
+          "attempt_number": 1,
+          "tool": "image_gen.imagegen",
+          "started_at": "2026-10-02T22:12:56+00:00",
+          "finished_at": "2026-10-02T22:13:50+00:00",
+          "prompt_sha256": "ec8c5f67b0141c8c6279d41799e1aca26d9cf7901a5932e551dc105694ab5e06",
+          "style_version": "v1-neutral-primary-2026-10-02",
+          "reference_path": "assets/exercises/biceps-curl-dumbbell.png",
+          "reference_sha256": "52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f",
+          "status": "generated",
+          "result_path": "/workspace/exercise-image-results/agent-03-generator-b-continuation-2026-10-02/generator-b/agent-03-others-026/mountain-climber/attempt-1.png",
+          "git_result_path": "assets/exercises/pending/agent-03-generator-b-continuation-2026-10-02/generator-b/agent-03-others-026/mountain-climber/attempt-1.png",
+          "result_sha256": "5d5ed7f2e635ce5df3cfd41e7a4a8803d17a5df22808cf9f825e123e170785c5",
+          "technical_check": "failed",
+          "technical_check_details": {
+            "decode": "passed",
+            "format": "PNG",
+            "dimensions": [
+              1254,
+              1254
+            ],
+            "square": true,
+            "target_dimensions_passed": false,
+            "mode": "RGBA",
+            "alpha_channel": true,
+            "alpha_extrema": [
+              0,
+              255
+            ],
+            "fully_transparent_pixels": 1177710,
+            "transparent_corner_alpha": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "file_bytes": 736992
+          },
+          "agent_visual_review": "not_performed",
+          "user_review": "pending",
+          "error": null
+        }
+      ],
+      "last_error": "Generated PNG did not meet required PNG/1024x1024/transparent-background technical criteria; original image bytes preserved without resampling.",
       "history_provenance": [],
-      "assignment_generation_calls": 0,
-      "result_path": null,
-      "result_sha256": null,
-      "user_review": null,
+      "assignment_generation_calls": 1,
+      "result_path": "/workspace/exercise-image-results/agent-03-generator-b-continuation-2026-10-02/generator-b/agent-03-others-026/mountain-climber/attempt-1.png",
+      "result_sha256": "5d5ed7f2e635ce5df3cfd41e7a4a8803d17a5df22808cf9f825e123e170785c5",
+      "user_review": "pending",
       "agent_visual_review": "not_performed",
       "planned_png_path": "/workspace/exercise-image-results/agent-03-generator-b-continuation-2026-10-02/generator-b/agent-03-others-026/mountain-climber/attempt-1.png",
       "planned_git_png_path": "assets/exercises/pending/agent-03-generator-b-continuation-2026-10-02/generator-b/agent-03-others-026/mountain-climber/attempt-1.png",
-      "planned_output_relative_path": "agent-03-others-026/mountain-climber/attempt-1.png"
+      "planned_output_relative_path": "agent-03-others-026/mountain-climber/attempt-1.png",
+      "technical_check": "failed",
+      "technical_check_details": {
+        "decode": "passed",
+        "format": "PNG",
+        "dimensions": [
+          1254,
+          1254
+        ],
+        "square": true,
+        "target_dimensions_passed": false,
+        "mode": "RGBA",
+        "alpha_channel": true,
+        "alpha_extrema": [
+          0,
+          255
+        ],
+        "fully_transparent_pixels": 1177710,
+        "transparent_corner_alpha": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "file_bytes": 736992
+      }
     },
     {
       "exercise_id": "diamond-pushup",
@@ -1275,20 +1615,88 @@
       "source_task_path": "data/batches/agent-03-others-026.json",
       "prompt_sha256": "41e30ecb60bcf4448c99abfc13ee7b130bdeb5ba7ef7c458570699c4897c0649",
       "catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
-      "status": "not_started",
-      "attempts": 0,
-      "next_attempt_number": 1,
-      "attempt_history": [],
-      "last_error": null,
+      "status": "technical_issue",
+      "attempts": 1,
+      "next_attempt_number": 2,
+      "attempt_history": [
+        {
+          "attempt_number": 1,
+          "tool": "image_gen.imagegen",
+          "started_at": "2026-10-02T22:14:12+00:00",
+          "finished_at": "2026-10-02T22:15:04+00:00",
+          "prompt_sha256": "41e30ecb60bcf4448c99abfc13ee7b130bdeb5ba7ef7c458570699c4897c0649",
+          "style_version": "v1",
+          "reference_path": "assets/exercises/biceps-curl-dumbbell.png",
+          "reference_sha256": "52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f",
+          "status": "generated",
+          "result_path": "/workspace/exercise-image-results/agent-03-generator-b-continuation-2026-10-02/generator-b/agent-03-others-026/diamond-pushup/attempt-1.png",
+          "git_result_path": "assets/exercises/pending/agent-03-generator-b-continuation-2026-10-02/generator-b/agent-03-others-026/diamond-pushup/attempt-1.png",
+          "result_sha256": "e5b0c20fc28f2ccda06b3367b3a375420c93d8aba8212498f4606f1d8e2df95b",
+          "technical_check": "failed",
+          "technical_check_details": {
+            "decode": "passed",
+            "format": "PNG",
+            "dimensions": [
+              1254,
+              1254
+            ],
+            "square": true,
+            "target_dimensions_passed": false,
+            "mode": "RGBA",
+            "alpha_channel": true,
+            "alpha_extrema": [
+              0,
+              255
+            ],
+            "fully_transparent_pixels": 1229599,
+            "transparent_corner_alpha": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "file_bytes": 662487
+          },
+          "agent_visual_review": "not_performed",
+          "user_review": "pending",
+          "error": null
+        }
+      ],
+      "last_error": "Generated PNG did not meet required PNG/1024x1024/transparent-background technical criteria; original image bytes preserved without resampling.",
       "history_provenance": [],
-      "assignment_generation_calls": 0,
-      "result_path": null,
-      "result_sha256": null,
-      "user_review": null,
+      "assignment_generation_calls": 1,
+      "result_path": "/workspace/exercise-image-results/agent-03-generator-b-continuation-2026-10-02/generator-b/agent-03-others-026/diamond-pushup/attempt-1.png",
+      "result_sha256": "e5b0c20fc28f2ccda06b3367b3a375420c93d8aba8212498f4606f1d8e2df95b",
+      "user_review": "pending",
       "agent_visual_review": "not_performed",
       "planned_png_path": "/workspace/exercise-image-results/agent-03-generator-b-continuation-2026-10-02/generator-b/agent-03-others-026/diamond-pushup/attempt-1.png",
       "planned_git_png_path": "assets/exercises/pending/agent-03-generator-b-continuation-2026-10-02/generator-b/agent-03-others-026/diamond-pushup/attempt-1.png",
-      "planned_output_relative_path": "agent-03-others-026/diamond-pushup/attempt-1.png"
+      "planned_output_relative_path": "agent-03-others-026/diamond-pushup/attempt-1.png",
+      "technical_check": "failed",
+      "technical_check_details": {
+        "decode": "passed",
+        "format": "PNG",
+        "dimensions": [
+          1254,
+          1254
+        ],
+        "square": true,
+        "target_dimensions_passed": false,
+        "mode": "RGBA",
+        "alpha_channel": true,
+        "alpha_extrema": [
+          0,
+          255
+        ],
+        "fully_transparent_pixels": 1229599,
+        "transparent_corner_alpha": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "file_bytes": 662487
+      }
     },
     {
       "exercise_id": "chest-fly-dumbbell",
@@ -1297,20 +1705,88 @@
       "source_task_path": "data/batches/agent-03-others-026.json",
       "prompt_sha256": "6a0601c7e268a3dc195351434d039c391faee85a74a4101ff7891e482ccff088",
       "catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
-      "status": "not_started",
-      "attempts": 0,
-      "next_attempt_number": 1,
-      "attempt_history": [],
-      "last_error": null,
+      "status": "technical_issue",
+      "attempts": 1,
+      "next_attempt_number": 2,
+      "attempt_history": [
+        {
+          "attempt_number": 1,
+          "tool": "image_gen.imagegen",
+          "started_at": "2026-10-02T22:15:24+00:00",
+          "finished_at": "2026-10-02T22:16:21+00:00",
+          "prompt_sha256": "6a0601c7e268a3dc195351434d039c391faee85a74a4101ff7891e482ccff088",
+          "style_version": "v1",
+          "reference_path": "assets/exercises/biceps-curl-dumbbell.png",
+          "reference_sha256": "52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f",
+          "status": "generated",
+          "result_path": "/workspace/exercise-image-results/agent-03-generator-b-continuation-2026-10-02/generator-b/agent-03-others-026/chest-fly-dumbbell/attempt-1.png",
+          "git_result_path": "assets/exercises/pending/agent-03-generator-b-continuation-2026-10-02/generator-b/agent-03-others-026/chest-fly-dumbbell/attempt-1.png",
+          "result_sha256": "b89bd8425577c115c94d6c95753ee470a777c3289561313141b1e86857d873c6",
+          "technical_check": "failed",
+          "technical_check_details": {
+            "decode": "passed",
+            "format": "PNG",
+            "dimensions": [
+              1254,
+              1254
+            ],
+            "square": true,
+            "target_dimensions_passed": false,
+            "mode": "RGBA",
+            "alpha_channel": true,
+            "alpha_extrema": [
+              0,
+              255
+            ],
+            "fully_transparent_pixels": 1107671,
+            "transparent_corner_alpha": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "file_bytes": 910035
+          },
+          "agent_visual_review": "not_performed",
+          "user_review": "pending",
+          "error": null
+        }
+      ],
+      "last_error": "Generated PNG did not meet required PNG/1024x1024/transparent-background technical criteria; original image bytes preserved without resampling.",
       "history_provenance": [],
-      "assignment_generation_calls": 0,
-      "result_path": null,
-      "result_sha256": null,
-      "user_review": null,
+      "assignment_generation_calls": 1,
+      "result_path": "/workspace/exercise-image-results/agent-03-generator-b-continuation-2026-10-02/generator-b/agent-03-others-026/chest-fly-dumbbell/attempt-1.png",
+      "result_sha256": "b89bd8425577c115c94d6c95753ee470a777c3289561313141b1e86857d873c6",
+      "user_review": "pending",
       "agent_visual_review": "not_performed",
       "planned_png_path": "/workspace/exercise-image-results/agent-03-generator-b-continuation-2026-10-02/generator-b/agent-03-others-026/chest-fly-dumbbell/attempt-1.png",
       "planned_git_png_path": "assets/exercises/pending/agent-03-generator-b-continuation-2026-10-02/generator-b/agent-03-others-026/chest-fly-dumbbell/attempt-1.png",
-      "planned_output_relative_path": "agent-03-others-026/chest-fly-dumbbell/attempt-1.png"
+      "planned_output_relative_path": "agent-03-others-026/chest-fly-dumbbell/attempt-1.png",
+      "technical_check": "failed",
+      "technical_check_details": {
+        "decode": "passed",
+        "format": "PNG",
+        "dimensions": [
+          1254,
+          1254
+        ],
+        "square": true,
+        "target_dimensions_passed": false,
+        "mode": "RGBA",
+        "alpha_channel": true,
+        "alpha_extrema": [
+          0,
+          255
+        ],
+        "fully_transparent_pixels": 1107671,
+        "transparent_corner_alpha": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "file_bytes": 910035
+      }
     },
     {
       "exercise_id": "hiit",
@@ -1533,8 +2009,8 @@
       "planned_output_relative_path": "agent-03-others-027/clean-barbell/attempt-1.png"
     }
   ],
-  "current_package": "agent-03-others-026",
-  "resume_point": "downward-dog",
+  "current_package": "agent-03-others-027",
+  "resume_point": "hiit",
   "completed_batches": [
     {
       "batch_id": "agent-03-others-009",
@@ -1542,6 +2018,14 @@
       "actual_generation_calls": 9,
       "pending_user_review": 9,
       "technical_issues": 9,
+      "status": "complete"
+    },
+    {
+      "batch_id": "agent-03-others-026",
+      "assigned_count": 7,
+      "actual_generation_calls": 7,
+      "pending_user_review": 7,
+      "technical_issues": 7,
       "status": "complete"
     }
   ]
