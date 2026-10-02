@@ -577,3 +577,19 @@ Generation complete: 7/7 images. Technical checks passed for each generated PNG;
 - `wrist-roller-machine` — `assets/exercises/pending/agent-03-others-013/wrist-roller-machine/attempt-1.png`; SHA256 `221b66d7d90489d91a5488879cb5dc66336ca3f7425f1117d5375efe93cc13a0`
 
 GitHub verification — Agent-03 package 013: 7/7 remote PNG blobs matched local files, progress and manifest SHA256; each remote PNG decoded as square RGBA with transparent pixels. Verified content commit `b2e324eb399ec5ff2860d287956ce003c9e69d46`. All 7 remain `user_review=pending`, `agent_visual_review=not_performed`; package 014 is next.
+
+
+## Agent-03 package 014 — local checkpoint (2026-10-02T12:46:37.443968+00:00)
+
+Generation complete: 10/10 images. Technical checks passed for each generated PNG; generation/technical errors: 0. All generated items remain `user_review=pending`, `agent_visual_review=not_performed`. Package 014 files and metadata are being pushed to `work`; next is package 015.
+
+- `around-the-world-dumbbell` — `assets/exercises/pending/agent-03-others-014/around-the-world-dumbbell/attempt-1.png`; SHA256 `8b84238888980c463822e22e47ea5e57b6c92b071db4a3d25a4d4c76bb2c2543`
+- `bench-press-close-grip-barbell` — `assets/exercises/pending/agent-03-others-014/bench-press-close-grip-barbell/attempt-1.png`; SHA256 `a2c113ea96e9ee0083840105570f03594220ac7ffe8937b70524ab1e588a815e`
+- `bench-press-wide-grip-barbell` — `assets/exercises/pending/agent-03-others-014/bench-press-wide-grip-barbell/attempt-1.png`; SHA256 `a003e970ec1617c4109c37c1e65781f86cf6ecfa16a95d66982c002351585eb2`
+- `box-jump` — `assets/exercises/pending/agent-03-others-014/box-jump/attempt-1.png`; SHA256 `c0a5103f2e4a32e791c0d6f152407d54647e6ac9027d3cd2b1103ac4857c1023`
+- `chest-fly-band-resistance-band` — `assets/exercises/pending/agent-03-others-014/chest-fly-band-resistance-band/attempt-1.png`; SHA256 `619219119bcc43a26483bf687881b6cb244fe4e86345bbfe910e130ab3750831`
+- `chest-fly-suspension` — `assets/exercises/pending/agent-03-others-014/chest-fly-suspension/attempt-1.png`; SHA256 `80d2bb41dc4933f2dffd8fd39ff1addee1072c4d632575b0fe7e82a399a548c1`
+- `crunch-weighted` — `assets/exercises/pending/agent-03-others-014/crunch-weighted/attempt-1.png`; SHA256 `8cca37196e7d0a5fb4b372ae9e56e89397b75ca3a372c938be747560c557e17b`
+- `decline-chest-fly-dumbbell` — `assets/exercises/pending/agent-03-others-014/decline-chest-fly-dumbbell/attempt-1.png`; SHA256 `51844a41b54b2d1b76d5578169772a379d8af683eaea4fb943fb198383f47971`
+- `decline-crunch-weighted` — `assets/exercises/pending/agent-03-others-014/decline-crunch-weighted/attempt-1.png`; SHA256 `785e8413779cf37ec2d117e8750fbc90eb9e4f70056f23a0fa04261370cd7fff`
+- `dumbbell-squeeze-press` — `assets/exercises/pending/agent-03-others-014/dumbbell-squeeze-press/attempt-1.png`; SHA256 `6a8cfd114cfb43e34dab8eeb5857103edace8a47c2097c4dcb5f3d64fcb6bbca`

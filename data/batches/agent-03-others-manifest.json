@@ -645,6 +645,96 @@
           "sha256": "221b66d7d90489d91a5488879cb5dc66336ca3f7425f1117d5375efe93cc13a0"
         }
       ]
+    },
+    "agent-03-others-014": {
+      "state": "generated_local",
+      "generated_count": 10,
+      "skipped_count": 0,
+      "failed_count": 0,
+      "backup_status": "local_saved",
+      "issues": [],
+      "expected_ids": [
+        "around-the-world-dumbbell",
+        "bench-press-close-grip-barbell",
+        "bench-press-wide-grip-barbell",
+        "box-jump",
+        "chest-fly-band-resistance-band",
+        "chest-fly-suspension",
+        "crunch-weighted",
+        "decline-chest-fly-dumbbell",
+        "decline-crunch-weighted",
+        "dumbbell-squeeze-press"
+      ],
+      "completed_ids": [
+        "around-the-world-dumbbell",
+        "bench-press-close-grip-barbell",
+        "bench-press-wide-grip-barbell",
+        "box-jump",
+        "chest-fly-band-resistance-band",
+        "chest-fly-suspension",
+        "crunch-weighted",
+        "decline-chest-fly-dumbbell",
+        "decline-crunch-weighted",
+        "dumbbell-squeeze-press"
+      ],
+      "skipped_ids": [],
+      "failed_ids": [],
+      "content_commit": null,
+      "verified_commit": null,
+      "verified_at": null,
+      "completed_at": "2026-10-02T12:46:37.443968+00:00",
+      "files": [
+        {
+          "exercise_id": "around-the-world-dumbbell",
+          "path": "assets/exercises/pending/agent-03-others-014/around-the-world-dumbbell/attempt-1.png",
+          "sha256": "8b84238888980c463822e22e47ea5e57b6c92b071db4a3d25a4d4c76bb2c2543"
+        },
+        {
+          "exercise_id": "bench-press-close-grip-barbell",
+          "path": "assets/exercises/pending/agent-03-others-014/bench-press-close-grip-barbell/attempt-1.png",
+          "sha256": "a2c113ea96e9ee0083840105570f03594220ac7ffe8937b70524ab1e588a815e"
+        },
+        {
+          "exercise_id": "bench-press-wide-grip-barbell",
+          "path": "assets/exercises/pending/agent-03-others-014/bench-press-wide-grip-barbell/attempt-1.png",
+          "sha256": "a003e970ec1617c4109c37c1e65781f86cf6ecfa16a95d66982c002351585eb2"
+        },
+        {
+          "exercise_id": "box-jump",
+          "path": "assets/exercises/pending/agent-03-others-014/box-jump/attempt-1.png",
+          "sha256": "c0a5103f2e4a32e791c0d6f152407d54647e6ac9027d3cd2b1103ac4857c1023"
+        },
+        {
+          "exercise_id": "chest-fly-band-resistance-band",
+          "path": "assets/exercises/pending/agent-03-others-014/chest-fly-band-resistance-band/attempt-1.png",
+          "sha256": "619219119bcc43a26483bf687881b6cb244fe4e86345bbfe910e130ab3750831"
+        },
+        {
+          "exercise_id": "chest-fly-suspension",
+          "path": "assets/exercises/pending/agent-03-others-014/chest-fly-suspension/attempt-1.png",
+          "sha256": "80d2bb41dc4933f2dffd8fd39ff1addee1072c4d632575b0fe7e82a399a548c1"
+        },
+        {
+          "exercise_id": "crunch-weighted",
+          "path": "assets/exercises/pending/agent-03-others-014/crunch-weighted/attempt-1.png",
+          "sha256": "8cca37196e7d0a5fb4b372ae9e56e89397b75ca3a372c938be747560c557e17b"
+        },
+        {
+          "exercise_id": "decline-chest-fly-dumbbell",
+          "path": "assets/exercises/pending/agent-03-others-014/decline-chest-fly-dumbbell/attempt-1.png",
+          "sha256": "51844a41b54b2d1b76d5578169772a379d8af683eaea4fb943fb198383f47971"
+        },
+        {
+          "exercise_id": "decline-crunch-weighted",
+          "path": "assets/exercises/pending/agent-03-others-014/decline-crunch-weighted/attempt-1.png",
+          "sha256": "785e8413779cf37ec2d117e8750fbc90eb9e4f70056f23a0fa04261370cd7fff"
+        },
+        {
+          "exercise_id": "dumbbell-squeeze-press",
+          "path": "assets/exercises/pending/agent-03-others-014/dumbbell-squeeze-press/attempt-1.png",
+          "sha256": "6a8cfd114cfb43e34dab8eeb5857103edace8a47c2097c4dcb5f3d64fcb6bbca"
+        }
+      ]
     }
   },
   "exercises": [
@@ -7085,9 +7175,529 @@
       "verified_at": "2026-10-02T12:33:25.472398+00:00",
       "reference_path": "assets/exercises/biceps-curl-dumbbell.png",
       "reference_sha256": "52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f"
+    },
+    {
+      "exercise_id": "around-the-world-dumbbell",
+      "name": "Around The World",
+      "batch_id": "agent-03-others-014",
+      "status": "generated",
+      "attempt": 1,
+      "style_version": "v1",
+      "prompt": "Create exactly ONE square transparent PNG of the exact exercise below, using the referenced human for APPEARANCE ONLY. Render only the selected phase and camera. Identity/path/hash fields are metadata, never visible text.\n{\n  \"exact_catalogue_source\": {\n    \"equipment\": \"dumbbell\",\n    \"primary_muscle\": \"chest\",\n    \"secondary_muscles\": [\n      \"upper_back\",\n      \"shoulders\",\n      \"lats\"\n    ],\n    \"source_english\": {\n      \"common_mistakes\": [\n        \"Bending the elbows to shorten the path.\",\n        \"Rotating the torso instead of the shoulders.\",\n        \"Using momentum.\"\n      ],\n      \"description\": \"Around The World traces a controlled circle with the dumbbells around the body while the torso stays steady.\",\n      \"form_cues\": [\n        \"Keep the circle continuous.\",\n        \"Brace the abdomen.\",\n        \"Use a light, controllable load.\"\n      ],\n      \"instructions\": [\n        \"Stand tall holding the dumbbells with your arms extended as appropriate for the movement.\",\n        \"Sweep the weight(s) in a smooth circle around the body without twisting the torso.\",\n        \"Keep the shoulders controlled as the hands pass through the front and overhead portions of the path.\",\n        \"Reverse or repeat the same circle for the planned repetitions.\"\n      ],\n      \"provenance\": \"adapted\",\n      \"safety_note\": \"Keep the dumbbell circle outside the head and stop before shoulder control is lost.\"\n    }\n  },\n  \"human_reference\": {\n    \"absolute_path\": \"/workspace/lightweight-exercises-photo/assets/exercises/biceps-curl-dumbbell.png\",\n    \"branch\": \"work\",\n    \"pixels_reviewed_during_preparation\": false,\n    \"repository_path\": \"assets/exercises/biceps-curl-dumbbell.png\",\n    \"role\": \"Human appearance/proportions/materials/anatomical style ONLY. Exercise pose, grip, equipment and muscles come from the exact-ID catalogue, never the reference.\",\n    \"sha256\": \"52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f\",\n    \"source_commit\": \"a6f296cbc6737991dd367e929b3e2df25874d4d8\"\n  },\n  \"identity_do_not_render_as_text\": {\n    \"exercise_id\": \"around-the-world-dumbbell\",\n    \"name\": \"Around The World\",\n    \"source_catalog_record_sha256\": \"a9a0eb52b0332ab807a6f169c98c560d5f361b84e1ed44ef4580fa24fa457a61\",\n    \"source_catalog_sha256\": \"a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989\"\n  },\n  \"scene\": {\n    \"camera\": \"Front three-quarter view showing both straight arms, palms and complete weights.\",\n    \"grip\": \"One dumbbell per hand, palms DOWN as same-ID Spanish instructions specify.\",\n    \"pose\": \"Stand shoulder-width, torso still, arms STRAIGHT out to sides at shoulder height before circling forward then overhead.\",\n    \"single_phase\": \"Source-defined arms-out start of circular path\",\n    \"source_instruction_quotes\": [\n      {\n        \"index\": 0,\n        \"text\": \"Stand tall holding the dumbbells with your arms extended as appropriate for the movement.\"\n      },\n      {\n        \"index\": 1,\n        \"text\": \"Sweep the weight(s) in a smooth circle around the body without twisting the torso.\"\n      },\n      {\n        \"index\": 2,\n        \"text\": \"Keep the shoulders controlled as the hands pass through the front and overhead portions of the path.\"\n      },\n      {\n        \"index\": 3,\n        \"text\": \"Reverse or repeat the same circle for the planned repetitions.\"\n      }\n    ],\n    \"supports_and_equipment\": \"Both feet grounded; no bench or one-weight waist pass.\"\n  },\n  \"source_resolution\": \"Дві гантелі, долоні вниз, початок із прямих рук убік на рівні плечей задано в es/ru; English описує передню й надголовну частини того ж кола.\",\n  \"source_use_rule\": \"Preserve original English. The cited additional fields of THIS SAME exercise ID fill missing detail only; do not substitute another exercise or silently rewrite the source.\",\n  \"style\": {\n    \"background\": \"Genuinely transparent PNG background, no white/checkerboard layer, no environment scene.\",\n    \"framing\": \"Full figure and all required equipment/supports visible within a square. Scale and use a three-quarter view to expose the specified contacts without changing anatomy, equipment, grip or technique.\",\n    \"human_model\": \"One athletic bald male anatomical mannequin, opaque silver-gray muscular surfaces, consistent proportions and detailed 3D materials, plain black shorts, barefoot.\",\n    \"material_rules\": \"Highlights never make tissue transparent; no glow, whole-body orange tint, hair, text, labels, arrows, UI, borders, collage or extra person.\",\n    \"no_invention\": \"Technique, equipment and muscles come only from the attached exact catalogue record. No extra attachments, numerical weights, brands or exact angles absent from the source.\",\n    \"output\": {\n      \"format\": \"PNG\",\n      \"height\": 1024,\n      \"one_person\": true,\n      \"one_phase\": true,\n      \"width\": 1024\n    },\n    \"primary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"rule\": \"Highlight only the exact primary muscle group provided for this exercise.\"\n    },\n    \"secondary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"intensity_fraction\": [\n        0.4,\n        0.5\n      ],\n      \"rule\": \"Only the exact secondary muscles, lighter same-hue highlight; if the list is empty add no secondary target.\"\n    },\n    \"version\": \"v1\"\n  },\n  \"style_document_sha256\": \"8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578\",\n  \"supplementary_same_ID_sources\": [\n    {\n      \"catalog_path\": \"data/exercises/catalog.json\",\n      \"catalog_record_sha256\": \"a9a0eb52b0332ab807a6f169c98c560d5f361b84e1ed44ef4580fa24fa457a61\",\n      \"catalog_sha256\": \"a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989\",\n      \"exercise_id\": \"around-the-world-dumbbell\",\n      \"field\": \"content.es.instructions[0]\",\n      \"source_commit\": \"a6f296cbc6737991dd367e929b3e2df25874d4d8\",\n      \"value\": \"Ponte de pie con los pies separados a la altura de los hombros y sostén una mancuerna en cada mano.\"\n    },\n    {\n      \"catalog_path\": \"data/exercises/catalog.json\",\n      \"catalog_record_sha256\": \"a9a0eb52b0332ab807a6f169c98c560d5f361b84e1ed44ef4580fa24fa457a61\",\n      \"catalog_sha256\": \"a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989\",\n      \"exercise_id\": \"around-the-world-dumbbell\",\n      \"field\": \"content.es.instructions[1]\",\n      \"source_commit\": \"a6f296cbc6737991dd367e929b3e2df25874d4d8\",\n      \"value\": \"Extiende los brazos rectos hacia los lados a la altura de los hombros, con las palmas hacia abajo.\"\n    },\n    {\n      \"catalog_path\": \"data/exercises/catalog.json\",\n      \"catalog_record_sha256\": \"a9a0eb52b0332ab807a6f169c98c560d5f361b84e1ed44ef4580fa24fa457a61\",\n      \"catalog_sha256\": \"a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989\",\n      \"exercise_id\": \"around-the-world-dumbbell\",\n      \"field\": \"content.es.instructions[2]\",\n      \"source_commit\": \"a6f296cbc6737991dd367e929b3e2df25874d4d8\",\n      \"value\": \"Manteniendo los brazos rectos, gira lentamente los brazos en un movimiento circular, llevando las mancuernas frente al cuerpo y luego por encima de la cabeza.\"\n    }\n  ]\n}",
+      "prompt_sha256": "ef82fe2d7fdd689a682db3b0a1f47c0a63a7f7f781243d1a1fe892095aa57a16",
+      "result_path": "assets/exercises/pending/agent-03-others-014/around-the-world-dumbbell/attempt-1.png",
+      "cloud_output_path": "/workspace/lightweight-exercises-photo/assets/exercises/pending/agent-03-others-014/around-the-world-dumbbell/attempt-1.png",
+      "result_sha256": "8b84238888980c463822e22e47ea5e57b6c92b071db4a3d25a4d4c76bb2c2543",
+      "dimensions": {
+        "width": 1254,
+        "height": 1254
+      },
+      "mime_type": "image/png",
+      "generated_at": "2026-10-02T15:34:52.790874+03:00",
+      "technical_check": "passed",
+      "user_review": "pending",
+      "agent_visual_review": "not_performed",
+      "backup_status": "local_saved",
+      "source_catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+      "source_catalog_record_sha256": "a9a0eb52b0332ab807a6f169c98c560d5f361b84e1ed44ef4580fa24fa457a61",
+      "source_english_sha256": "9951f946f229aeea1684c008c52b761da9dee2238f0c8185ca890378e2642536",
+      "tool_call_index": 50,
+      "branches_checked": [
+        "work"
+      ],
+      "technical_check_details": {
+        "format": "PNG",
+        "dimensions": {
+          "width": 1254,
+          "height": 1254
+        },
+        "mode": "RGBA",
+        "has_alpha": true,
+        "transparent_pixel_count": 1222309,
+        "sha256": "8b84238888980c463822e22e47ea5e57b6c92b071db4a3d25a4d4c76bb2c2543",
+        "exercise_id": "around-the-world-dumbbell",
+        "repository_path": "assets/exercises/pending/agent-03-others-014/around-the-world-dumbbell/attempt-1.png",
+        "errors": []
+      },
+      "tool_response_metadata": {
+        "tool_call_id": "image_gen.imagegen#50",
+        "output_hint": "/workspace/generated_images/exec-6276213f-0e92-451e-a6ec-7afa079ff4fb.png"
+      },
+      "verified_commit": null,
+      "verified_at": null,
+      "reference_path": "assets/exercises/biceps-curl-dumbbell.png",
+      "reference_sha256": "52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f"
+    },
+    {
+      "exercise_id": "bench-press-close-grip-barbell",
+      "name": "Bench Press - Close Grip (Barbell)",
+      "batch_id": "agent-03-others-014",
+      "status": "generated",
+      "attempt": 1,
+      "style_version": "v1",
+      "prompt": "Create exactly ONE square transparent PNG of the exact exercise below, using the referenced human for APPEARANCE ONLY. Render only the selected phase and camera. Identity/path/hash fields are metadata, never visible text.\n{\n  \"exact_catalogue_source\": {\n    \"equipment\": \"barbell\",\n    \"primary_muscle\": \"triceps\",\n    \"secondary_muscles\": [\n      \"chest\",\n      \"shoulders\"\n    ],\n    \"source_english\": {\n      \"common_mistakes\": [\n        \"Bouncing at the bottom.\",\n        \"Flaring the elbows.\",\n        \"Arching to shorten the range.\"\n      ],\n      \"description\": \"Bench Press - Close Grip (Barbell) is a supported chest press using the barbell.\",\n      \"form_cues\": [\n        \"Keep wrists stacked.\",\n        \"Keep shoulder blades supported.\",\n        \"Press evenly.\"\n      ],\n      \"instructions\": [\n        \"Lie on a flat bench with feet planted. Grip the barbell and hold it over the chest.\",\n        \"Lower the resistance toward the chest with elbows controlled.\",\n        \"Pause without bouncing or losing shoulder position.\",\n        \"Press back to straight arms, then rerack or set the weights down safely.\"\n      ],\n      \"provenance\": \"adapted\",\n      \"safety_note\": \"Use a spotter or safeties for the loaded press and stop before shoulder control is lost.\"\n    }\n  },\n  \"human_reference\": {\n    \"absolute_path\": \"/workspace/lightweight-exercises-photo/assets/exercises/biceps-curl-dumbbell.png\",\n    \"branch\": \"work\",\n    \"pixels_reviewed_during_preparation\": false,\n    \"repository_path\": \"assets/exercises/biceps-curl-dumbbell.png\",\n    \"role\": \"Human appearance/proportions/materials/anatomical style ONLY. Exercise pose, grip, equipment and muscles come from the exact-ID catalogue, never the reference.\",\n    \"sha256\": \"52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f\",\n    \"source_commit\": \"a6f296cbc6737991dd367e929b3e2df25874d4d8\"\n  },\n  \"identity_do_not_render_as_text\": {\n    \"exercise_id\": \"bench-press-close-grip-barbell\",\n    \"name\": \"Bench Press - Close Grip (Barbell)\",\n    \"source_catalog_record_sha256\": \"f9e476b9927f6aade2ca2ae35e25d7d39672eec1bc22b26b6d4cd92bbaaadd75\",\n    \"source_catalog_sha256\": \"a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989\"\n  },\n  \"scene\": {\n    \"camera\": \"Front-side three-quarter view exposing narrow hand spacing, elbows, feet and whole bench.\",\n    \"grip\": \"Both hands slightly NARROWER than shoulder width, exactly as cited Spanish source.\",\n    \"pose\": \"Lie on flat bench, feet planted, elbows close to torso as free bar approaches chest without bounce.\",\n    \"single_phase\": \"Close-grip controlled chest approach\",\n    \"source_instruction_quotes\": [\n      {\n        \"index\": 0,\n        \"text\": \"Lie on a flat bench with feet planted. Grip the barbell and hold it over the chest.\"\n      },\n      {\n        \"index\": 1,\n        \"text\": \"Lower the resistance toward the chest with elbows controlled.\"\n      },\n      {\n        \"index\": 2,\n        \"text\": \"Pause without bouncing or losing shoulder position.\"\n      },\n      {\n        \"index\": 3,\n        \"text\": \"Press back to straight arms, then rerack or set the weights down safely.\"\n      }\n    ],\n    \"supports_and_equipment\": \"Flat bench supports back and shoulder blades; stationary rack safeties per English safety alternative, no extra person.\"\n  },\n  \"source_resolution\": \"В es прямо задано хват трохи вужче плечей і лікті біля тулуба; це конкретизує загальний English grip.\",\n  \"source_use_rule\": \"Preserve original English. The cited additional fields of THIS SAME exercise ID fill missing detail only; do not substitute another exercise or silently rewrite the source.\",\n  \"style\": {\n    \"background\": \"Genuinely transparent PNG background, no white/checkerboard layer, no environment scene.\",\n    \"framing\": \"Full figure and all required equipment/supports visible within a square. Scale and use a three-quarter view to expose the specified contacts without changing anatomy, equipment, grip or technique.\",\n    \"human_model\": \"One athletic bald male anatomical mannequin, opaque silver-gray muscular surfaces, consistent proportions and detailed 3D materials, plain black shorts, barefoot.\",\n    \"material_rules\": \"Highlights never make tissue transparent; no glow, whole-body orange tint, hair, text, labels, arrows, UI, borders, collage or extra person.\",\n    \"no_invention\": \"Technique, equipment and muscles come only from the attached exact catalogue record. No extra attachments, numerical weights, brands or exact angles absent from the source.\",\n    \"output\": {\n      \"format\": \"PNG\",\n      \"height\": 1024,\n      \"one_person\": true,\n      \"one_phase\": true,\n      \"width\": 1024\n    },\n    \"primary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"rule\": \"Highlight only the exact primary muscle group provided for this exercise.\"\n    },\n    \"secondary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"intensity_fraction\": [\n        0.4,\n        0.5\n      ],\n      \"rule\": \"Only the exact secondary muscles, lighter same-hue highlight; if the list is empty add no secondary target.\"\n    },\n    \"version\": \"v1\"\n  },\n  \"style_document_sha256\": \"8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578\",\n  \"supplementary_same_ID_sources\": [\n    {\n      \"catalog_path\": \"data/exercises/catalog.json\",\n      \"catalog_record_sha256\": \"f9e476b9927f6aade2ca2ae35e25d7d39672eec1bc22b26b6d4cd92bbaaadd75\",\n      \"catalog_sha256\": \"a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989\",\n      \"exercise_id\": \"bench-press-close-grip-barbell\",\n      \"field\": \"content.es.instructions[1]\",\n      \"source_commit\": \"a6f296cbc6737991dd367e929b3e2df25874d4d8\",\n      \"value\": \"Agarra la barra con un agarre cerrado, un poco más estrecho que el ancho de los hombros.\"\n    },\n    {\n      \"catalog_path\": \"data/exercises/catalog.json\",\n      \"catalog_record_sha256\": \"f9e476b9927f6aade2ca2ae35e25d7d39672eec1bc22b26b6d4cd92bbaaadd75\",\n      \"catalog_sha256\": \"a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989\",\n      \"exercise_id\": \"bench-press-close-grip-barbell\",\n      \"field\": \"content.es.instructions[2]\",\n      \"source_commit\": \"a6f296cbc6737991dd367e929b3e2df25874d4d8\",\n      \"value\": \"Saca la barra del soporte y bájala lentamente hacia el pecho, manteniendo los codos cerca del cuerpo.\"\n    },\n    {\n      \"catalog_path\": \"data/exercises/catalog.json\",\n      \"catalog_record_sha256\": \"f9e476b9927f6aade2ca2ae35e25d7d39672eec1bc22b26b6d4cd92bbaaadd75\",\n      \"catalog_sha256\": \"a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989\",\n      \"exercise_id\": \"bench-press-close-grip-barbell\",\n      \"field\": \"content.uk.instructions[0]\",\n      \"source_commit\": \"a6f296cbc6737991dd367e929b3e2df25874d4d8\",\n      \"value\": \"Ляжте на рівну лаву, поставте стопи на підлогу, візьміться за штангу вузьким хватом і утримуйте її над грудьми.\"\n    }\n  ]\n}",
+      "prompt_sha256": "57f35c4ac457f682d2413abdb7de988a113dfc165864b13b439ba708648afe0d",
+      "result_path": "assets/exercises/pending/agent-03-others-014/bench-press-close-grip-barbell/attempt-1.png",
+      "cloud_output_path": "/workspace/lightweight-exercises-photo/assets/exercises/pending/agent-03-others-014/bench-press-close-grip-barbell/attempt-1.png",
+      "result_sha256": "a2c113ea96e9ee0083840105570f03594220ac7ffe8937b70524ab1e588a815e",
+      "dimensions": {
+        "width": 1254,
+        "height": 1254
+      },
+      "mime_type": "image/png",
+      "generated_at": "2026-10-02T15:36:18.130853+03:00",
+      "technical_check": "passed",
+      "user_review": "pending",
+      "agent_visual_review": "not_performed",
+      "backup_status": "local_saved",
+      "source_catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+      "source_catalog_record_sha256": "f9e476b9927f6aade2ca2ae35e25d7d39672eec1bc22b26b6d4cd92bbaaadd75",
+      "source_english_sha256": "7f665981d4c56c90047c3963e47ace43a8668db86db54236384cf82da33ca6ee",
+      "tool_call_index": 51,
+      "branches_checked": [
+        "work"
+      ],
+      "technical_check_details": {
+        "format": "PNG",
+        "dimensions": {
+          "width": 1254,
+          "height": 1254
+        },
+        "mode": "RGBA",
+        "has_alpha": true,
+        "transparent_pixel_count": 986205,
+        "sha256": "a2c113ea96e9ee0083840105570f03594220ac7ffe8937b70524ab1e588a815e",
+        "exercise_id": "bench-press-close-grip-barbell",
+        "repository_path": "assets/exercises/pending/agent-03-others-014/bench-press-close-grip-barbell/attempt-1.png",
+        "errors": []
+      },
+      "tool_response_metadata": {
+        "tool_call_id": "image_gen.imagegen#51",
+        "output_hint": "/workspace/generated_images/exec-e6528e4f-ead2-413a-ba2f-d620ba268406.png"
+      },
+      "verified_commit": null,
+      "verified_at": null,
+      "reference_path": "assets/exercises/biceps-curl-dumbbell.png",
+      "reference_sha256": "52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f"
+    },
+    {
+      "exercise_id": "bench-press-wide-grip-barbell",
+      "name": "Bench Press - Wide Grip (Barbell)",
+      "batch_id": "agent-03-others-014",
+      "status": "generated",
+      "attempt": 1,
+      "style_version": "v1",
+      "prompt": "Create exactly ONE square transparent PNG of the exact exercise below, using the referenced human for APPEARANCE ONLY. Render only the selected phase and camera. Identity/path/hash fields are metadata, never visible text.\n{\n  \"exact_catalogue_source\": {\n    \"equipment\": \"barbell\",\n    \"primary_muscle\": \"chest\",\n    \"secondary_muscles\": [\n      \"shoulders\",\n      \"triceps\"\n    ],\n    \"source_english\": {\n      \"common_mistakes\": [\n        \"Bouncing at the bottom.\",\n        \"Flaring the elbows.\",\n        \"Arching to shorten the range.\"\n      ],\n      \"description\": \"Bench Press - Wide Grip (Barbell) is a supported chest press using the barbell.\",\n      \"form_cues\": [\n        \"Keep wrists stacked.\",\n        \"Keep shoulder blades supported.\",\n        \"Press evenly.\"\n      ],\n      \"instructions\": [\n        \"Lie on a flat bench with feet planted. Grip the barbell and hold it over the chest.\",\n        \"Lower the resistance toward the chest with elbows controlled.\",\n        \"Pause without bouncing or losing shoulder position.\",\n        \"Press back to straight arms, then rerack or set the weights down safely.\"\n      ],\n      \"provenance\": \"adapted\",\n      \"safety_note\": \"Use a spotter or safeties for the loaded press and stop before shoulder control is lost.\"\n    }\n  },\n  \"human_reference\": {\n    \"absolute_path\": \"/workspace/lightweight-exercises-photo/assets/exercises/biceps-curl-dumbbell.png\",\n    \"branch\": \"work\",\n    \"pixels_reviewed_during_preparation\": false,\n    \"repository_path\": \"assets/exercises/biceps-curl-dumbbell.png\",\n    \"role\": \"Human appearance/proportions/materials/anatomical style ONLY. Exercise pose, grip, equipment and muscles come from the exact-ID catalogue, never the reference.\",\n    \"sha256\": \"52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f\",\n    \"source_commit\": \"a6f296cbc6737991dd367e929b3e2df25874d4d8\"\n  },\n  \"identity_do_not_render_as_text\": {\n    \"exercise_id\": \"bench-press-wide-grip-barbell\",\n    \"name\": \"Bench Press - Wide Grip (Barbell)\",\n    \"source_catalog_record_sha256\": \"1cdfba6a27d35752e0e938eb33b06951cf8e70b8988a8cf1321d8b2e8806de9b\",\n    \"source_catalog_sha256\": \"a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989\"\n  },\n  \"scene\": {\n    \"camera\": \"Front-side three-quarter view exposing wide grip and controlled chest approach.\",\n    \"grip\": \"Both hands slightly WIDER than shoulders as cited Spanish source.\",\n    \"pose\": \"Lie on flat bench, back supported and feet planted; lower bar toward chest with controlled slightly outward elbows.\",\n    \"single_phase\": \"Wide-grip controlled lower position\",\n    \"source_instruction_quotes\": [\n      {\n        \"index\": 0,\n        \"text\": \"Lie on a flat bench with feet planted. Grip the barbell and hold it over the chest.\"\n      },\n      {\n        \"index\": 1,\n        \"text\": \"Lower the resistance toward the chest with elbows controlled.\"\n      },\n      {\n        \"index\": 2,\n        \"text\": \"Pause without bouncing or losing shoulder position.\"\n      },\n      {\n        \"index\": 3,\n        \"text\": \"Press back to straight arms, then rerack or set the weights down safely.\"\n      }\n    ],\n    \"supports_and_equipment\": \"Flat bench, grounded feet and stationary rack safeties; no guided rails or spotter figure.\"\n  },\n  \"source_resolution\": \"В es прямо задано хват трохи ширше плечей; English не задає протилежної ширини.\",\n  \"source_use_rule\": \"Preserve original English. The cited additional fields of THIS SAME exercise ID fill missing detail only; do not substitute another exercise or silently rewrite the source.\",\n  \"style\": {\n    \"background\": \"Genuinely transparent PNG background, no white/checkerboard layer, no environment scene.\",\n    \"framing\": \"Full figure and all required equipment/supports visible within a square. Scale and use a three-quarter view to expose the specified contacts without changing anatomy, equipment, grip or technique.\",\n    \"human_model\": \"One athletic bald male anatomical mannequin, opaque silver-gray muscular surfaces, consistent proportions and detailed 3D materials, plain black shorts, barefoot.\",\n    \"material_rules\": \"Highlights never make tissue transparent; no glow, whole-body orange tint, hair, text, labels, arrows, UI, borders, collage or extra person.\",\n    \"no_invention\": \"Technique, equipment and muscles come only from the attached exact catalogue record. No extra attachments, numerical weights, brands or exact angles absent from the source.\",\n    \"output\": {\n      \"format\": \"PNG\",\n      \"height\": 1024,\n      \"one_person\": true,\n      \"one_phase\": true,\n      \"width\": 1024\n    },\n    \"primary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"rule\": \"Highlight only the exact primary muscle group provided for this exercise.\"\n    },\n    \"secondary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"intensity_fraction\": [\n        0.4,\n        0.5\n      ],\n      \"rule\": \"Only the exact secondary muscles, lighter same-hue highlight; if the list is empty add no secondary target.\"\n    },\n    \"version\": \"v1\"\n  },\n  \"style_document_sha256\": \"8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578\",\n  \"supplementary_same_ID_sources\": [\n    {\n      \"catalog_path\": \"data/exercises/catalog.json\",\n      \"catalog_record_sha256\": \"1cdfba6a27d35752e0e938eb33b06951cf8e70b8988a8cf1321d8b2e8806de9b\",\n      \"catalog_sha256\": \"a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989\",\n      \"exercise_id\": \"bench-press-wide-grip-barbell\",\n      \"field\": \"content.es.instructions[1]\",\n      \"source_commit\": \"a6f296cbc6737991dd367e929b3e2df25874d4d8\",\n      \"value\": \"Agarra la barra con un agarre amplio, un poco más ancho que la separación de los hombros.\"\n    },\n    {\n      \"catalog_path\": \"data/exercises/catalog.json\",\n      \"catalog_record_sha256\": \"1cdfba6a27d35752e0e938eb33b06951cf8e70b8988a8cf1321d8b2e8806de9b\",\n      \"catalog_sha256\": \"a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989\",\n      \"exercise_id\": \"bench-press-wide-grip-barbell\",\n      \"field\": \"content.es.instructions[3]\",\n      \"source_commit\": \"a6f296cbc6737991dd367e929b3e2df25874d4d8\",\n      \"value\": \"Baja la barra lentamente hacia el pecho, manteniendo los codos ligeramente abiertos hacia afuera.\"\n    }\n  ]\n}",
+      "prompt_sha256": "5d6849f1e6d14397022ef28e3dd12ea2dc9463ed111eddb52f5c817df2318125",
+      "result_path": "assets/exercises/pending/agent-03-others-014/bench-press-wide-grip-barbell/attempt-1.png",
+      "cloud_output_path": "/workspace/lightweight-exercises-photo/assets/exercises/pending/agent-03-others-014/bench-press-wide-grip-barbell/attempt-1.png",
+      "result_sha256": "a003e970ec1617c4109c37c1e65781f86cf6ecfa16a95d66982c002351585eb2",
+      "dimensions": {
+        "width": 1254,
+        "height": 1254
+      },
+      "mime_type": "image/png",
+      "generated_at": "2026-10-02T15:37:31.184133+03:00",
+      "technical_check": "passed",
+      "user_review": "pending",
+      "agent_visual_review": "not_performed",
+      "backup_status": "local_saved",
+      "source_catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+      "source_catalog_record_sha256": "1cdfba6a27d35752e0e938eb33b06951cf8e70b8988a8cf1321d8b2e8806de9b",
+      "source_english_sha256": "3d96cb1cdb88b65cf9efe41640d1f94a95e4bda062b48168d9fe65710a3b036b",
+      "tool_call_index": 52,
+      "branches_checked": [
+        "work"
+      ],
+      "technical_check_details": {
+        "format": "PNG",
+        "dimensions": {
+          "width": 1254,
+          "height": 1254
+        },
+        "mode": "RGBA",
+        "has_alpha": true,
+        "transparent_pixel_count": 920469,
+        "sha256": "a003e970ec1617c4109c37c1e65781f86cf6ecfa16a95d66982c002351585eb2",
+        "exercise_id": "bench-press-wide-grip-barbell",
+        "repository_path": "assets/exercises/pending/agent-03-others-014/bench-press-wide-grip-barbell/attempt-1.png",
+        "errors": []
+      },
+      "tool_response_metadata": {
+        "tool_call_id": "image_gen.imagegen#52",
+        "output_hint": "/workspace/generated_images/exec-41919797-b742-45aa-80f2-c2ddf95a0430.png"
+      },
+      "verified_commit": null,
+      "verified_at": null,
+      "reference_path": "assets/exercises/biceps-curl-dumbbell.png",
+      "reference_sha256": "52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f"
+    },
+    {
+      "exercise_id": "box-jump",
+      "name": "Box Jump",
+      "batch_id": "agent-03-others-014",
+      "status": "generated",
+      "attempt": 1,
+      "style_version": "v1",
+      "prompt": "Create exactly ONE square transparent PNG of the exact exercise below, using the referenced human for APPEARANCE ONLY. Render only the selected phase and camera. Identity/path/hash fields are metadata, never visible text.\n{\n  \"exact_catalogue_source\": {\n    \"equipment\": \"other\",\n    \"primary_muscle\": \"quadriceps\",\n    \"secondary_muscles\": [\n      \"hamstrings\",\n      \"glutes\",\n      \"calves\"\n    ],\n    \"source_english\": {\n      \"common_mistakes\": [\n        \"Landing stiff-legged.\",\n        \"Letting knees cave inward.\",\n        \"Chasing height over control.\"\n      ],\n      \"description\": \"Box Jump produces a coordinated takeoff and a quiet, flexed-knee landing before the next repetition.\",\n      \"form_cues\": [\n        \"Use the arms naturally.\",\n        \"Land quietly.\",\n        \"Keep knees tracking over toes.\"\n      ],\n      \"instructions\": [\n        \"Set up with a sturdy box and land in a balanced athletic stance.\",\n        \"Dip through the hips and knees, then drive upward or forward as the exercise requires.\",\n        \"Land softly with knees and hips flexed and the feet stable.\",\n        \"Reset fully before the next repetition.\"\n      ],\n      \"provenance\": \"authored\",\n      \"safety_note\": \"Use a clear, non-slip landing surface and stop when landings become noisy.\"\n    }\n  },\n  \"human_reference\": {\n    \"absolute_path\": \"/workspace/lightweight-exercises-photo/assets/exercises/biceps-curl-dumbbell.png\",\n    \"branch\": \"work\",\n    \"pixels_reviewed_during_preparation\": false,\n    \"repository_path\": \"assets/exercises/biceps-curl-dumbbell.png\",\n    \"role\": \"Human appearance/proportions/materials/anatomical style ONLY. Exercise pose, grip, equipment and muscles come from the exact-ID catalogue, never the reference.\",\n    \"sha256\": \"52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f\",\n    \"source_commit\": \"a6f296cbc6737991dd367e929b3e2df25874d4d8\"\n  },\n  \"identity_do_not_render_as_text\": {\n    \"exercise_id\": \"box-jump\",\n    \"name\": \"Box Jump\",\n    \"source_catalog_record_sha256\": \"d1b7ae6e396aecf883a432e46f4737b9ab0acaccf29174c7a3577a425603b421\",\n    \"source_catalog_sha256\": \"a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989\"\n  },\n  \"scene\": {\n    \"camera\": \"Front-side three-quarter view showing front approach relationship, both feet and whole box.\",\n    \"grip\": \"Hands free, arms used naturally as source cue permits.\",\n    \"pose\": \"Land on box with hips and knees flexed and balanced athletic stance following the same-ID forward/upward box ascent.\",\n    \"single_phase\": \"Soft two-foot landing on top of box\",\n    \"source_instruction_quotes\": [\n      {\n        \"index\": 0,\n        \"text\": \"Set up with a sturdy box and land in a balanced athletic stance.\"\n      },\n      {\n        \"index\": 1,\n        \"text\": \"Dip through the hips and knees, then drive upward or forward as the exercise requires.\"\n      },\n      {\n        \"index\": 2,\n        \"text\": \"Land softly with knees and hips flexed and the feet stable.\"\n      },\n      {\n        \"index\": 3,\n        \"text\": \"Reset fully before the next repetition.\"\n      }\n    ],\n    \"supports_and_equipment\": \"Both feet on stable box, clear non-slip landing surface; no invented numeric height.\"\n  },\n  \"source_resolution\": \"Es задає позицію перед тумбою та стрибок угору на неї, ru підтверджує стрибок на тумбу; посадка на тумбу не вигадана.\",\n  \"source_use_rule\": \"Preserve original English. The cited additional fields of THIS SAME exercise ID fill missing detail only; do not substitute another exercise or silently rewrite the source.\",\n  \"style\": {\n    \"background\": \"Genuinely transparent PNG background, no white/checkerboard layer, no environment scene.\",\n    \"framing\": \"Full figure and all required equipment/supports visible within a square. Scale and use a three-quarter view to expose the specified contacts without changing anatomy, equipment, grip or technique.\",\n    \"human_model\": \"One athletic bald male anatomical mannequin, opaque silver-gray muscular surfaces, consistent proportions and detailed 3D materials, plain black shorts, barefoot.\",\n    \"material_rules\": \"Highlights never make tissue transparent; no glow, whole-body orange tint, hair, text, labels, arrows, UI, borders, collage or extra person.\",\n    \"no_invention\": \"Technique, equipment and muscles come only from the attached exact catalogue record. No extra attachments, numerical weights, brands or exact angles absent from the source.\",\n    \"output\": {\n      \"format\": \"PNG\",\n      \"height\": 1024,\n      \"one_person\": true,\n      \"one_phase\": true,\n      \"width\": 1024\n    },\n    \"primary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"rule\": \"Highlight only the exact primary muscle group provided for this exercise.\"\n    },\n    \"secondary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"intensity_fraction\": [\n        0.4,\n        0.5\n      ],\n      \"rule\": \"Only the exact secondary muscles, lighter same-hue highlight; if the list is empty add no secondary target.\"\n    },\n    \"version\": \"v1\"\n  },\n  \"style_document_sha256\": \"8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578\",\n  \"supplementary_same_ID_sources\": [\n    {\n      \"catalog_path\": \"data/exercises/catalog.json\",\n      \"catalog_record_sha256\": \"d1b7ae6e396aecf883a432e46f4737b9ab0acaccf29174c7a3577a425603b421\",\n      \"catalog_sha256\": \"a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989\",\n      \"exercise_id\": \"box-jump\",\n      \"field\": \"content.es.instructions[0]\",\n      \"source_commit\": \"a6f296cbc6737991dd367e929b3e2df25874d4d8\",\n      \"value\": \"Colócate frente a un cajón resistente y prepárate para aterrizar en una postura atlética equilibrada.\"\n    },\n    {\n      \"catalog_path\": \"data/exercises/catalog.json\",\n      \"catalog_record_sha256\": \"d1b7ae6e396aecf883a432e46f4737b9ab0acaccf29174c7a3577a425603b421\",\n      \"catalog_sha256\": \"a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989\",\n      \"exercise_id\": \"box-jump\",\n      \"field\": \"content.es.instructions[1]\",\n      \"source_commit\": \"a6f296cbc6737991dd367e929b3e2df25874d4d8\",\n      \"value\": \"Flexiona las caderas y las rodillas y luego impúlsate hacia arriba para subir al cajón.\"\n    },\n    {\n      \"catalog_path\": \"data/exercises/catalog.json\",\n      \"catalog_record_sha256\": \"d1b7ae6e396aecf883a432e46f4737b9ab0acaccf29174c7a3577a425603b421\",\n      \"catalog_sha256\": \"a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989\",\n      \"exercise_id\": \"box-jump\",\n      \"field\": \"content.ru.instructions[1]\",\n      \"source_commit\": \"a6f296cbc6737991dd367e929b3e2df25874d4d8\",\n      \"value\": \"Слегка согните тазобедренные и коленные суставы, затем мощно выпрыгните на тумбу.\"\n    }\n  ]\n}",
+      "prompt_sha256": "12f0a46ac0db1719a52eafbe687a8b31d6be3e930fbe6c07d0f56c1aca5aa9d3",
+      "result_path": "assets/exercises/pending/agent-03-others-014/box-jump/attempt-1.png",
+      "cloud_output_path": "/workspace/lightweight-exercises-photo/assets/exercises/pending/agent-03-others-014/box-jump/attempt-1.png",
+      "result_sha256": "c0a5103f2e4a32e791c0d6f152407d54647e6ac9027d3cd2b1103ac4857c1023",
+      "dimensions": {
+        "width": 1254,
+        "height": 1254
+      },
+      "mime_type": "image/png",
+      "generated_at": "2026-10-02T15:38:53.925596+03:00",
+      "technical_check": "passed",
+      "user_review": "pending",
+      "agent_visual_review": "not_performed",
+      "backup_status": "local_saved",
+      "source_catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+      "source_catalog_record_sha256": "d1b7ae6e396aecf883a432e46f4737b9ab0acaccf29174c7a3577a425603b421",
+      "source_english_sha256": "f7b7111ae494ecdc9a6730d0ddbabd9e2169fb012f52aa332246b6b036b2068a",
+      "tool_call_index": 53,
+      "branches_checked": [
+        "work"
+      ],
+      "technical_check_details": {
+        "format": "PNG",
+        "dimensions": {
+          "width": 1254,
+          "height": 1254
+        },
+        "mode": "RGBA",
+        "has_alpha": true,
+        "transparent_pixel_count": 1186627,
+        "sha256": "c0a5103f2e4a32e791c0d6f152407d54647e6ac9027d3cd2b1103ac4857c1023",
+        "exercise_id": "box-jump",
+        "repository_path": "assets/exercises/pending/agent-03-others-014/box-jump/attempt-1.png",
+        "errors": []
+      },
+      "tool_response_metadata": {
+        "tool_call_id": "image_gen.imagegen#53",
+        "output_hint": "/workspace/generated_images/exec-1202cc83-8d56-461e-b2f4-57611056d4aa.png"
+      },
+      "verified_commit": null,
+      "verified_at": null,
+      "reference_path": "assets/exercises/biceps-curl-dumbbell.png",
+      "reference_sha256": "52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f"
+    },
+    {
+      "exercise_id": "chest-fly-band-resistance-band",
+      "name": "Chest Fly (Band)",
+      "batch_id": "agent-03-others-014",
+      "status": "generated",
+      "attempt": 1,
+      "style_version": "v1",
+      "prompt": "Create exactly ONE square transparent PNG of the exact exercise below, using the referenced human for APPEARANCE ONLY. Render only the selected phase and camera. Identity/path/hash fields are metadata, never visible text.\n{\n  \"exact_catalogue_source\": {\n    \"equipment\": \"resistance_band\",\n    \"primary_muscle\": \"chest\",\n    \"secondary_muscles\": [],\n    \"source_english\": {\n      \"common_mistakes\": [\n        \"Turning the movement into a press.\",\n        \"Overstretching at the bottom.\",\n        \"Snapping the handles together.\"\n      ],\n      \"description\": \"The Chest Fly (Band) opens and closes the arms around the chest with a soft elbow bend rather than turning the motion into a press.\",\n      \"form_cues\": [\n        \"Keep the elbows softly bent.\",\n        \"Move through the chest, not the wrists.\",\n        \"Keep the ribs controlled.\"\n      ],\n      \"instructions\": [\n        \"Set up on the resistance band with a soft bend in the elbows and the chest supported as required.\",\n        \"Open the arms only as far as the shoulders remain comfortable.\",\n        \"Bring the hands together by squeezing the chest without changing the elbow angle.\",\n        \"Return slowly to the starting position.\"\n      ],\n      \"provenance\": \"authored\",\n      \"safety_note\": \"Use a light load and stop before the shoulder reaches an uncomfortable stretch.\"\n    }\n  },\n  \"human_reference\": {\n    \"absolute_path\": \"/workspace/lightweight-exercises-photo/assets/exercises/biceps-curl-dumbbell.png\",\n    \"branch\": \"work\",\n    \"pixels_reviewed_during_preparation\": false,\n    \"repository_path\": \"assets/exercises/biceps-curl-dumbbell.png\",\n    \"role\": \"Human appearance/proportions/materials/anatomical style ONLY. Exercise pose, grip, equipment and muscles come from the exact-ID catalogue, never the reference.\",\n    \"sha256\": \"52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f\",\n    \"source_commit\": \"a6f296cbc6737991dd367e929b3e2df25874d4d8\"\n  },\n  \"identity_do_not_render_as_text\": {\n    \"exercise_id\": \"chest-fly-band-resistance-band\",\n    \"name\": \"Chest Fly (Band)\",\n    \"source_catalog_record_sha256\": \"ed4893ab23d658973e2bb9f2cc323260a0dfaba330f4921a831a6e11af2d86af\",\n    \"source_catalog_sha256\": \"a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989\"\n  },\n  \"scene\": {\n    \"camera\": \"Front-side three-quarter view exposing behind-chest anchor, elastic paths, grips and full figure.\",\n    \"grip\": \"Both hands firmly grasp resistance band, no invented attachments or handle brand.\",\n    \"pose\": \"Stand tall with soft fixed elbow bend, hands together in front of chest by chest contraction, ribs controlled.\",\n    \"single_phase\": \"Standing chest-level band fly closure\",\n    \"source_instruction_quotes\": [\n      {\n        \"index\": 0,\n        \"text\": \"Set up on the resistance band with a soft bend in the elbows and the chest supported as required.\"\n      },\n      {\n        \"index\": 1,\n        \"text\": \"Open the arms only as far as the shoulders remain comfortable.\"\n      },\n      {\n        \"index\": 2,\n        \"text\": \"Bring the hands together by squeezing the chest without changing the elbow angle.\"\n      },\n      {\n        \"index\": 3,\n        \"text\": \"Return slowly to the starting position.\"\n      }\n    ],\n    \"supports_and_equipment\": \"Band SECURELY anchored BEHIND at CHEST height per same-ID es text; feet grounded, no bench or pulley.\"\n  },\n  \"source_resolution\": \"Es прямо задає стояче положення й анкер позаду на рівні грудей; English chest support є умовним as required, не обов’язковою лавою.\",\n  \"source_use_rule\": \"Preserve original English. The cited additional fields of THIS SAME exercise ID fill missing detail only; do not substitute another exercise or silently rewrite the source.\",\n  \"style\": {\n    \"background\": \"Genuinely transparent PNG background, no white/checkerboard layer, no environment scene.\",\n    \"framing\": \"Full figure and all required equipment/supports visible within a square. Scale and use a three-quarter view to expose the specified contacts without changing anatomy, equipment, grip or technique.\",\n    \"human_model\": \"One athletic bald male anatomical mannequin, opaque silver-gray muscular surfaces, consistent proportions and detailed 3D materials, plain black shorts, barefoot.\",\n    \"material_rules\": \"Highlights never make tissue transparent; no glow, whole-body orange tint, hair, text, labels, arrows, UI, borders, collage or extra person.\",\n    \"no_invention\": \"Technique, equipment and muscles come only from the attached exact catalogue record. No extra attachments, numerical weights, brands or exact angles absent from the source.\",\n    \"output\": {\n      \"format\": \"PNG\",\n      \"height\": 1024,\n      \"one_person\": true,\n      \"one_phase\": true,\n      \"width\": 1024\n    },\n    \"primary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"rule\": \"Highlight only the exact primary muscle group provided for this exercise.\"\n    },\n    \"secondary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"intensity_fraction\": [\n        0.4,\n        0.5\n      ],\n      \"rule\": \"Only the exact secondary muscles, lighter same-hue highlight; if the list is empty add no secondary target.\"\n    },\n    \"version\": \"v1\"\n  },\n  \"style_document_sha256\": \"8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578\",\n  \"supplementary_same_ID_sources\": [\n    {\n      \"catalog_path\": \"data/exercises/catalog.json\",\n      \"catalog_record_sha256\": \"ed4893ab23d658973e2bb9f2cc323260a0dfaba330f4921a831a6e11af2d86af\",\n      \"catalog_sha256\": \"a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989\",\n      \"exercise_id\": \"chest-fly-band-resistance-band\",\n      \"field\": \"content.es.instructions[0]\",\n      \"source_commit\": \"a6f296cbc6737991dd367e929b3e2df25874d4d8\",\n      \"value\": \"Fija la banda detrás de ti a la altura del pecho y ponte de pie con los codos ligeramente flexionados.\"\n    },\n    {\n      \"catalog_path\": \"data/exercises/catalog.json\",\n      \"catalog_record_sha256\": \"ed4893ab23d658973e2bb9f2cc323260a0dfaba330f4921a831a6e11af2d86af\",\n      \"catalog_sha256\": \"a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989\",\n      \"exercise_id\": \"chest-fly-band-resistance-band\",\n      \"field\": \"content.es.instructions[2]\",\n      \"source_commit\": \"a6f296cbc6737991dd367e929b3e2df25874d4d8\",\n      \"value\": \"Junta las manos apretando el pecho sin cambiar el ángulo de los codos.\"\n    }\n  ]\n}",
+      "prompt_sha256": "1391aef7196b4f79680573eb2ff8dbee453af21a46de1cec9fed34a36dcfabb0",
+      "result_path": "assets/exercises/pending/agent-03-others-014/chest-fly-band-resistance-band/attempt-1.png",
+      "cloud_output_path": "/workspace/lightweight-exercises-photo/assets/exercises/pending/agent-03-others-014/chest-fly-band-resistance-band/attempt-1.png",
+      "result_sha256": "619219119bcc43a26483bf687881b6cb244fe4e86345bbfe910e130ab3750831",
+      "dimensions": {
+        "width": 1254,
+        "height": 1254
+      },
+      "mime_type": "image/png",
+      "generated_at": "2026-10-02T15:40:11.756074+03:00",
+      "technical_check": "passed",
+      "user_review": "pending",
+      "agent_visual_review": "not_performed",
+      "backup_status": "local_saved",
+      "source_catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+      "source_catalog_record_sha256": "ed4893ab23d658973e2bb9f2cc323260a0dfaba330f4921a831a6e11af2d86af",
+      "source_english_sha256": "a098f7fb238f079ebe10961d606dbf9d461a2dd952cb0d94f0a346cca5e309dc",
+      "tool_call_index": 54,
+      "branches_checked": [
+        "work"
+      ],
+      "technical_check_details": {
+        "format": "PNG",
+        "dimensions": {
+          "width": 1254,
+          "height": 1254
+        },
+        "mode": "RGBA",
+        "has_alpha": true,
+        "transparent_pixel_count": 1287436,
+        "sha256": "619219119bcc43a26483bf687881b6cb244fe4e86345bbfe910e130ab3750831",
+        "exercise_id": "chest-fly-band-resistance-band",
+        "repository_path": "assets/exercises/pending/agent-03-others-014/chest-fly-band-resistance-band/attempt-1.png",
+        "errors": []
+      },
+      "tool_response_metadata": {
+        "tool_call_id": "image_gen.imagegen#54",
+        "output_hint": "/workspace/generated_images/exec-68bc32dc-de9a-4625-9a51-5df98536933c.png"
+      },
+      "verified_commit": null,
+      "verified_at": null,
+      "reference_path": "assets/exercises/biceps-curl-dumbbell.png",
+      "reference_sha256": "52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f"
+    },
+    {
+      "exercise_id": "chest-fly-suspension",
+      "name": "Chest Fly (Suspension)",
+      "batch_id": "agent-03-others-014",
+      "status": "generated",
+      "attempt": 1,
+      "style_version": "v1",
+      "prompt": "Create exactly ONE square transparent PNG of the exact exercise below, using the referenced human for APPEARANCE ONLY. Render only the selected phase and camera. Identity/path/hash fields are metadata, never visible text.\n{\n  \"exact_catalogue_source\": {\n    \"equipment\": \"suspension\",\n    \"primary_muscle\": \"chest\",\n    \"secondary_muscles\": [],\n    \"source_english\": {\n      \"common_mistakes\": [\n        \"Turning the movement into a press.\",\n        \"Overstretching at the bottom.\",\n        \"Snapping the handles together.\"\n      ],\n      \"description\": \"The Chest Fly (Suspension) opens and closes the arms around the chest with a soft elbow bend rather than turning the motion into a press.\",\n      \"form_cues\": [\n        \"Keep the elbows softly bent.\",\n        \"Move through the chest, not the wrists.\",\n        \"Keep the ribs controlled.\"\n      ],\n      \"instructions\": [\n        \"Set up on your bodyweight with a soft bend in the elbows and the chest supported as required.\",\n        \"Open the arms only as far as the shoulders remain comfortable.\",\n        \"Bring the hands together by squeezing the chest without changing the elbow angle.\",\n        \"Return slowly to the starting position.\"\n      ],\n      \"provenance\": \"authored\",\n      \"safety_note\": \"Use a light load and stop before the shoulder reaches an uncomfortable stretch.\"\n    }\n  },\n  \"human_reference\": {\n    \"absolute_path\": \"/workspace/lightweight-exercises-photo/assets/exercises/biceps-curl-dumbbell.png\",\n    \"branch\": \"work\",\n    \"pixels_reviewed_during_preparation\": false,\n    \"repository_path\": \"assets/exercises/biceps-curl-dumbbell.png\",\n    \"role\": \"Human appearance/proportions/materials/anatomical style ONLY. Exercise pose, grip, equipment and muscles come from the exact-ID catalogue, never the reference.\",\n    \"sha256\": \"52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f\",\n    \"source_commit\": \"a6f296cbc6737991dd367e929b3e2df25874d4d8\"\n  },\n  \"identity_do_not_render_as_text\": {\n    \"exercise_id\": \"chest-fly-suspension\",\n    \"name\": \"Chest Fly (Suspension)\",\n    \"source_catalog_record_sha256\": \"6e7a1c1668dbda3967615b90bde53f0dbaaadec32e4c4450a4ec1430563e27c8\",\n    \"source_catalog_sha256\": \"a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989\"\n  },\n  \"scene\": {\n    \"camera\": \"Front-side three-quarter view showing forward lean, soft elbows, foot contacts and whole secure strap setup.\",\n    \"grip\": \"Both hands on suspension handles as cited same-ID uk/ru source specifies.\",\n    \"pose\": \"Body leans forward in stable straight line; arms open within controlled shoulder range, elbows soft and constant, chest/ribs controlled.\",\n    \"single_phase\": \"Forward-inclined suspended fly open phase\",\n    \"source_instruction_quotes\": [\n      {\n        \"index\": 0,\n        \"text\": \"Set up on your bodyweight with a soft bend in the elbows and the chest supported as required.\"\n      },\n      {\n        \"index\": 1,\n        \"text\": \"Open the arms only as far as the shoulders remain comfortable.\"\n      },\n      {\n        \"index\": 2,\n        \"text\": \"Bring the hands together by squeezing the chest without changing the elbow angle.\"\n      },\n      {\n        \"index\": 3,\n        \"text\": \"Return slowly to the starting position.\"\n      }\n    ],\n    \"supports_and_equipment\": \"Grounded feet and securely anchored straps support bodyweight; no invented chest pad or machine.\"\n  },\n  \"source_resolution\": \"Uk/ru/es задають руки на ременях і нахил тіла вперед; умовне English chest supported as required не задає обов’язкового грудного паду.\",\n  \"source_use_rule\": \"Preserve original English. The cited additional fields of THIS SAME exercise ID fill missing detail only; do not substitute another exercise or silently rewrite the source.\",\n  \"style\": {\n    \"background\": \"Genuinely transparent PNG background, no white/checkerboard layer, no environment scene.\",\n    \"framing\": \"Full figure and all required equipment/supports visible within a square. Scale and use a three-quarter view to expose the specified contacts without changing anatomy, equipment, grip or technique.\",\n    \"human_model\": \"One athletic bald male anatomical mannequin, opaque silver-gray muscular surfaces, consistent proportions and detailed 3D materials, plain black shorts, barefoot.\",\n    \"material_rules\": \"Highlights never make tissue transparent; no glow, whole-body orange tint, hair, text, labels, arrows, UI, borders, collage or extra person.\",\n    \"no_invention\": \"Technique, equipment and muscles come only from the attached exact catalogue record. No extra attachments, numerical weights, brands or exact angles absent from the source.\",\n    \"output\": {\n      \"format\": \"PNG\",\n      \"height\": 1024,\n      \"one_person\": true,\n      \"one_phase\": true,\n      \"width\": 1024\n    },\n    \"primary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"rule\": \"Highlight only the exact primary muscle group provided for this exercise.\"\n    },\n    \"secondary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"intensity_fraction\": [\n        0.4,\n        0.5\n      ],\n      \"rule\": \"Only the exact secondary muscles, lighter same-hue highlight; if the list is empty add no secondary target.\"\n    },\n    \"version\": \"v1\"\n  },\n  \"style_document_sha256\": \"8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578\",\n  \"supplementary_same_ID_sources\": [\n    {\n      \"catalog_path\": \"data/exercises/catalog.json\",\n      \"catalog_record_sha256\": \"6e7a1c1668dbda3967615b90bde53f0dbaaadec32e4c4450a4ec1430563e27c8\",\n      \"catalog_sha256\": \"a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989\",\n      \"exercise_id\": \"chest-fly-suspension\",\n      \"field\": \"content.uk.instructions[0]\",\n      \"source_commit\": \"a6f296cbc6737991dd367e929b3e2df25874d4d8\",\n      \"value\": \"Візьміться за підвісні ремені, нахиліть тіло вперед і залиште лікті злегка зігнутими, зберігаючи тулуб стабільним.\"\n    },\n    {\n      \"catalog_path\": \"data/exercises/catalog.json\",\n      \"catalog_record_sha256\": \"6e7a1c1668dbda3967615b90bde53f0dbaaadec32e4c4450a4ec1430563e27c8\",\n      \"catalog_sha256\": \"a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989\",\n      \"exercise_id\": \"chest-fly-suspension\",\n      \"field\": \"content.ru.instructions[0]\",\n      \"source_commit\": \"a6f296cbc6737991dd367e929b3e2df25874d4d8\",\n      \"value\": \"Возьмитесь за подвесные рукоятки и наклоните корпус вперёд, удерживая вес собственного тела и слегка сгибая локти.\"\n    },\n    {\n      \"catalog_path\": \"data/exercises/catalog.json\",\n      \"catalog_record_sha256\": \"6e7a1c1668dbda3967615b90bde53f0dbaaadec32e4c4450a4ec1430563e27c8\",\n      \"catalog_sha256\": \"a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989\",\n      \"exercise_id\": \"chest-fly-suspension\",\n      \"field\": \"content.es.instructions[0]\",\n      \"source_commit\": \"a6f296cbc6737991dd367e929b3e2df25874d4d8\",\n      \"value\": \"Sujeta las correas de suspensión y colócate inclinado hacia delante con los codos ligeramente flexionados.\"\n    }\n  ]\n}",
+      "prompt_sha256": "2b59ce9fd049d4cbc5124108aa3c8faf841c197815f76aec6915ca8cf9d35b4f",
+      "result_path": "assets/exercises/pending/agent-03-others-014/chest-fly-suspension/attempt-1.png",
+      "cloud_output_path": "/workspace/lightweight-exercises-photo/assets/exercises/pending/agent-03-others-014/chest-fly-suspension/attempt-1.png",
+      "result_sha256": "80d2bb41dc4933f2dffd8fd39ff1addee1072c4d632575b0fe7e82a399a548c1",
+      "dimensions": {
+        "width": 1254,
+        "height": 1254
+      },
+      "mime_type": "image/png",
+      "generated_at": "2026-10-02T15:41:34.130424+03:00",
+      "technical_check": "passed",
+      "user_review": "pending",
+      "agent_visual_review": "not_performed",
+      "backup_status": "local_saved",
+      "source_catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+      "source_catalog_record_sha256": "6e7a1c1668dbda3967615b90bde53f0dbaaadec32e4c4450a4ec1430563e27c8",
+      "source_english_sha256": "84946a3bddcbe736796db0df248b7806660b36bd93d3a50c24669b99036b42e9",
+      "tool_call_index": 55,
+      "branches_checked": [
+        "work"
+      ],
+      "technical_check_details": {
+        "format": "PNG",
+        "dimensions": {
+          "width": 1254,
+          "height": 1254
+        },
+        "mode": "RGBA",
+        "has_alpha": true,
+        "transparent_pixel_count": 1218832,
+        "sha256": "80d2bb41dc4933f2dffd8fd39ff1addee1072c4d632575b0fe7e82a399a548c1",
+        "exercise_id": "chest-fly-suspension",
+        "repository_path": "assets/exercises/pending/agent-03-others-014/chest-fly-suspension/attempt-1.png",
+        "errors": []
+      },
+      "tool_response_metadata": {
+        "tool_call_id": "image_gen.imagegen#55",
+        "output_hint": "/workspace/generated_images/exec-e15ef2ca-534f-4bc4-a3a0-d372c18e2bea.png"
+      },
+      "verified_commit": null,
+      "verified_at": null,
+      "reference_path": "assets/exercises/biceps-curl-dumbbell.png",
+      "reference_sha256": "52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f"
+    },
+    {
+      "exercise_id": "crunch-weighted",
+      "name": "Crunch (Weighted)",
+      "batch_id": "agent-03-others-014",
+      "status": "generated",
+      "attempt": 1,
+      "style_version": "v1",
+      "prompt": "Create exactly ONE square transparent PNG of the exact exercise below, using the referenced human for APPEARANCE ONLY. Render only the selected phase and camera. Identity/path/hash fields are metadata, never visible text.\n{\n  \"exact_catalogue_source\": {\n    \"equipment\": \"none\",\n    \"primary_muscle\": \"abdominals\",\n    \"secondary_muscles\": [],\n    \"source_english\": {\n      \"common_mistakes\": [\n        \"Pulling the head.\",\n        \"Using the legs to swing.\",\n        \"Dropping the torso.\"\n      ],\n      \"description\": \"Crunch (Weighted) curls the ribs toward the pelvis from a supine bent-knee position.\",\n      \"form_cues\": [\n        \"Keep the chin relaxed.\",\n        \"Move ribs, not hips.\",\n        \"Exhale as you curl.\"\n      ],\n      \"instructions\": [\n        \"Lie on your back with knees bent and feet flat.\",\n        \"Brace and curl the ribs toward the pelvis.\",\n        \"Pause without pulling the neck.\",\n        \"Lower the torso slowly to the support.\"\n      ],\n      \"provenance\": \"adapted\",\n      \"safety_note\": \"Use a comfortable curl range and reduce the decline or load before the neck or back loses control.\"\n    }\n  },\n  \"human_reference\": {\n    \"absolute_path\": \"/workspace/lightweight-exercises-photo/assets/exercises/biceps-curl-dumbbell.png\",\n    \"branch\": \"work\",\n    \"pixels_reviewed_during_preparation\": false,\n    \"repository_path\": \"assets/exercises/biceps-curl-dumbbell.png\",\n    \"role\": \"Human appearance/proportions/materials/anatomical style ONLY. Exercise pose, grip, equipment and muscles come from the exact-ID catalogue, never the reference.\",\n    \"sha256\": \"52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f\",\n    \"source_commit\": \"a6f296cbc6737991dd367e929b3e2df25874d4d8\"\n  },\n  \"identity_do_not_render_as_text\": {\n    \"exercise_id\": \"crunch-weighted\",\n    \"name\": \"Crunch (Weighted)\",\n    \"source_catalog_record_sha256\": \"f88eded54fa113168d7827f95113aef4ab3182066d98e106d7ef6406ac92d37c\",\n    \"source_catalog_sha256\": \"a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989\"\n  },\n  \"scene\": {\n    \"camera\": \"Side-front three-quarter view showing small curl and plate-to-chest contact.\",\n    \"grip\": \"Both hands hold one LIGHT PLATE at chest, choosing explicit same-ID plate-or-dumbbell option.\",\n    \"pose\": \"Lie supine, knees bent and feet flat; ribs curl toward pelvis, shoulder blades lift, neck not pulled.\",\n    \"single_phase\": \"Plate-at-chest small crunch top\",\n    \"source_instruction_quotes\": [\n      {\n        \"index\": 0,\n        \"text\": \"Lie on your back with knees bent and feet flat.\"\n      },\n      {\n        \"index\": 1,\n        \"text\": \"Brace and curl the ribs toward the pelvis.\"\n      },\n      {\n        \"index\": 2,\n        \"text\": \"Pause without pulling the neck.\"\n      },\n      {\n        \"index\": 3,\n        \"text\": \"Lower the torso slowly to the support.\"\n      }\n    ],\n    \"supports_and_equipment\": \"Back/pelvis and feet on floor; no full sit-up or unspecified forehead load. Raw equipment=none preserved.\"\n  },\n  \"source_resolution\": \"Es/ru прямо задають plate or dumbbell на грудях; обрано дозволений plate, English не забороняє навантаження.\",\n  \"source_use_rule\": \"Preserve original English. The cited additional fields of THIS SAME exercise ID fill missing detail only; do not substitute another exercise or silently rewrite the source.\",\n  \"style\": {\n    \"background\": \"Genuinely transparent PNG background, no white/checkerboard layer, no environment scene.\",\n    \"framing\": \"Full figure and all required equipment/supports visible within a square. Scale and use a three-quarter view to expose the specified contacts without changing anatomy, equipment, grip or technique.\",\n    \"human_model\": \"One athletic bald male anatomical mannequin, opaque silver-gray muscular surfaces, consistent proportions and detailed 3D materials, plain black shorts, barefoot.\",\n    \"material_rules\": \"Highlights never make tissue transparent; no glow, whole-body orange tint, hair, text, labels, arrows, UI, borders, collage or extra person.\",\n    \"no_invention\": \"Technique, equipment and muscles come only from the attached exact catalogue record. No extra attachments, numerical weights, brands or exact angles absent from the source.\",\n    \"output\": {\n      \"format\": \"PNG\",\n      \"height\": 1024,\n      \"one_person\": true,\n      \"one_phase\": true,\n      \"width\": 1024\n    },\n    \"primary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"rule\": \"Highlight only the exact primary muscle group provided for this exercise.\"\n    },\n    \"secondary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"intensity_fraction\": [\n        0.4,\n        0.5\n      ],\n      \"rule\": \"Only the exact secondary muscles, lighter same-hue highlight; if the list is empty add no secondary target.\"\n    },\n    \"version\": \"v1\"\n  },\n  \"style_document_sha256\": \"8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578\",\n  \"supplementary_same_ID_sources\": [\n    {\n      \"catalog_path\": \"data/exercises/catalog.json\",\n      \"catalog_record_sha256\": \"f88eded54fa113168d7827f95113aef4ab3182066d98e106d7ef6406ac92d37c\",\n      \"catalog_sha256\": \"a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989\",\n      \"exercise_id\": \"crunch-weighted\",\n      \"field\": \"content.es.instructions[1]\",\n      \"source_commit\": \"a6f296cbc6737991dd367e929b3e2df25874d4d8\",\n      \"value\": \"Sostén un disco de peso o una mancuerna sobre el pecho.\"\n    },\n    {\n      \"catalog_path\": \"data/exercises/catalog.json\",\n      \"catalog_record_sha256\": \"f88eded54fa113168d7827f95113aef4ab3182066d98e106d7ef6406ac92d37c\",\n      \"catalog_sha256\": \"a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989\",\n      \"exercise_id\": \"crunch-weighted\",\n      \"field\": \"content.ru.instructions[1]\",\n      \"source_commit\": \"a6f296cbc6737991dd367e929b3e2df25874d4d8\",\n      \"value\": \"Держите блин или гантель на груди.\"\n    }\n  ]\n}",
+      "prompt_sha256": "221c015881aceaed6a8438bf9e7cfdd9bad0cb019f59e83bd65452686b57b9ae",
+      "result_path": "assets/exercises/pending/agent-03-others-014/crunch-weighted/attempt-1.png",
+      "cloud_output_path": "/workspace/lightweight-exercises-photo/assets/exercises/pending/agent-03-others-014/crunch-weighted/attempt-1.png",
+      "result_sha256": "8cca37196e7d0a5fb4b372ae9e56e89397b75ca3a372c938be747560c557e17b",
+      "dimensions": {
+        "width": 1254,
+        "height": 1254
+      },
+      "mime_type": "image/png",
+      "generated_at": "2026-10-02T15:42:44.066188+03:00",
+      "technical_check": "passed",
+      "user_review": "pending",
+      "agent_visual_review": "not_performed",
+      "backup_status": "local_saved",
+      "source_catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+      "source_catalog_record_sha256": "f88eded54fa113168d7827f95113aef4ab3182066d98e106d7ef6406ac92d37c",
+      "source_english_sha256": "571b1d4c461db604c39fdad8e1ed5fd9dd03e845215ec78d35104929014355d4",
+      "tool_call_index": 56,
+      "branches_checked": [
+        "work"
+      ],
+      "technical_check_details": {
+        "format": "PNG",
+        "dimensions": {
+          "width": 1254,
+          "height": 1254
+        },
+        "mode": "RGBA",
+        "has_alpha": true,
+        "transparent_pixel_count": 1140160,
+        "sha256": "8cca37196e7d0a5fb4b372ae9e56e89397b75ca3a372c938be747560c557e17b",
+        "exercise_id": "crunch-weighted",
+        "repository_path": "assets/exercises/pending/agent-03-others-014/crunch-weighted/attempt-1.png",
+        "errors": []
+      },
+      "tool_response_metadata": {
+        "tool_call_id": "image_gen.imagegen#56",
+        "output_hint": "/workspace/generated_images/exec-d2c30985-d236-4e2d-a841-9e7f63c610cd.png"
+      },
+      "verified_commit": null,
+      "verified_at": null,
+      "reference_path": "assets/exercises/biceps-curl-dumbbell.png",
+      "reference_sha256": "52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f"
+    },
+    {
+      "exercise_id": "decline-chest-fly-dumbbell",
+      "name": "Decline Chest Fly (Dumbbell)",
+      "batch_id": "agent-03-others-014",
+      "status": "generated",
+      "attempt": 1,
+      "style_version": "v1",
+      "prompt": "Create exactly ONE square transparent PNG of the exact exercise below, using the referenced human for APPEARANCE ONLY. Render only the selected phase and camera. Identity/path/hash fields are metadata, never visible text.\n{\n  \"exact_catalogue_source\": {\n    \"equipment\": \"dumbbell\",\n    \"primary_muscle\": \"chest\",\n    \"secondary_muscles\": [],\n    \"source_english\": {\n      \"common_mistakes\": [\n        \"Turning the movement into a press.\",\n        \"Overstretching at the bottom.\",\n        \"Snapping the handles together.\"\n      ],\n      \"description\": \"The Decline Chest Fly (Dumbbell) opens and closes the arms around the chest with a soft elbow bend rather than turning the motion into a press.\",\n      \"form_cues\": [\n        \"Keep the elbows softly bent.\",\n        \"Move through the chest, not the wrists.\",\n        \"Keep the ribs controlled.\"\n      ],\n      \"instructions\": [\n        \"Set up on the dumbbells with a soft bend in the elbows and the chest supported as required.\",\n        \"Open the arms only as far as the shoulders remain comfortable.\",\n        \"Bring the hands together by squeezing the chest without changing the elbow angle.\",\n        \"Return slowly to the starting position.\"\n      ],\n      \"provenance\": \"adapted\",\n      \"safety_note\": \"Use a light load and stop before the shoulder reaches an uncomfortable stretch.\"\n    }\n  },\n  \"human_reference\": {\n    \"absolute_path\": \"/workspace/lightweight-exercises-photo/assets/exercises/biceps-curl-dumbbell.png\",\n    \"branch\": \"work\",\n    \"pixels_reviewed_during_preparation\": false,\n    \"repository_path\": \"assets/exercises/biceps-curl-dumbbell.png\",\n    \"role\": \"Human appearance/proportions/materials/anatomical style ONLY. Exercise pose, grip, equipment and muscles come from the exact-ID catalogue, never the reference.\",\n    \"sha256\": \"52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f\",\n    \"source_commit\": \"a6f296cbc6737991dd367e929b3e2df25874d4d8\"\n  },\n  \"identity_do_not_render_as_text\": {\n    \"exercise_id\": \"decline-chest-fly-dumbbell\",\n    \"name\": \"Decline Chest Fly (Dumbbell)\",\n    \"source_catalog_record_sha256\": \"abf450374f5854573ad0982ebabee6dbd6ef6d9463bf75af76bc65906afb66f8\",\n    \"source_catalog_sha256\": \"a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989\"\n  },\n  \"scene\": {\n    \"camera\": \"Front-side three-quarter view showing decline, foot supports, both grips and full bench.\",\n    \"grip\": \"One dumbbell per hand, palms facing EACH OTHER as cited Spanish source states.\",\n    \"pose\": \"Lie BACK on declined bench, head lower than hips, arms open in controlled wide arc with soft elbow bend.\",\n    \"single_phase\": \"Decline-supported comfortable wide arc\",\n    \"source_instruction_quotes\": [\n      {\n        \"index\": 0,\n        \"text\": \"Set up on the dumbbells with a soft bend in the elbows and the chest supported as required.\"\n      },\n      {\n        \"index\": 1,\n        \"text\": \"Open the arms only as far as the shoulders remain comfortable.\"\n      },\n      {\n        \"index\": 2,\n        \"text\": \"Bring the hands together by squeezing the chest without changing the elbow angle.\"\n      },\n      {\n        \"index\": 3,\n        \"text\": \"Return slowly to the starting position.\"\n      }\n    ],\n    \"supports_and_equipment\": \"Back on declined bench and feet SECURED; no prone chest pad or invented decline angle.\"\n  },\n  \"source_resolution\": \"Es/ru прямо задають лежачи спиною на decline-лаві, стопи закріплені, долоні одна до одної. Умовний English support не є вимогою лежати грудьми.\",\n  \"source_use_rule\": \"Preserve original English. The cited additional fields of THIS SAME exercise ID fill missing detail only; do not substitute another exercise or silently rewrite the source.\",\n  \"style\": {\n    \"background\": \"Genuinely transparent PNG background, no white/checkerboard layer, no environment scene.\",\n    \"framing\": \"Full figure and all required equipment/supports visible within a square. Scale and use a three-quarter view to expose the specified contacts without changing anatomy, equipment, grip or technique.\",\n    \"human_model\": \"One athletic bald male anatomical mannequin, opaque silver-gray muscular surfaces, consistent proportions and detailed 3D materials, plain black shorts, barefoot.\",\n    \"material_rules\": \"Highlights never make tissue transparent; no glow, whole-body orange tint, hair, text, labels, arrows, UI, borders, collage or extra person.\",\n    \"no_invention\": \"Technique, equipment and muscles come only from the attached exact catalogue record. No extra attachments, numerical weights, brands or exact angles absent from the source.\",\n    \"output\": {\n      \"format\": \"PNG\",\n      \"height\": 1024,\n      \"one_person\": true,\n      \"one_phase\": true,\n      \"width\": 1024\n    },\n    \"primary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"rule\": \"Highlight only the exact primary muscle group provided for this exercise.\"\n    },\n    \"secondary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"intensity_fraction\": [\n        0.4,\n        0.5\n      ],\n      \"rule\": \"Only the exact secondary muscles, lighter same-hue highlight; if the list is empty add no secondary target.\"\n    },\n    \"version\": \"v1\"\n  },\n  \"style_document_sha256\": \"8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578\",\n  \"supplementary_same_ID_sources\": [\n    {\n      \"catalog_path\": \"data/exercises/catalog.json\",\n      \"catalog_record_sha256\": \"abf450374f5854573ad0982ebabee6dbd6ef6d9463bf75af76bc65906afb66f8\",\n      \"catalog_sha256\": \"a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989\",\n      \"exercise_id\": \"decline-chest-fly-dumbbell\",\n      \"field\": \"content.es.instructions[0]\",\n      \"source_commit\": \"a6f296cbc6737991dd367e929b3e2df25874d4d8\",\n      \"value\": \"Túmbate en un banco declinado con los pies sujetos y la cabeza más baja que las caderas.\"\n    },\n    {\n      \"catalog_path\": \"data/exercises/catalog.json\",\n      \"catalog_record_sha256\": \"abf450374f5854573ad0982ebabee6dbd6ef6d9463bf75af76bc65906afb66f8\",\n      \"catalog_sha256\": \"a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989\",\n      \"exercise_id\": \"decline-chest-fly-dumbbell\",\n      \"field\": \"content.es.instructions[1]\",\n      \"source_commit\": \"a6f296cbc6737991dd367e929b3e2df25874d4d8\",\n      \"value\": \"Sostén una mancuerna en cada mano con las palmas enfrentadas entre sí y los brazos extendidos por encima del pecho.\"\n    },\n    {\n      \"catalog_path\": \"data/exercises/catalog.json\",\n      \"catalog_record_sha256\": \"abf450374f5854573ad0982ebabee6dbd6ef6d9463bf75af76bc65906afb66f8\",\n      \"catalog_sha256\": \"a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989\",\n      \"exercise_id\": \"decline-chest-fly-dumbbell\",\n      \"field\": \"content.uk.instructions[0]\",\n      \"source_commit\": \"a6f296cbc6737991dd367e929b3e2df25874d4d8\",\n      \"value\": \"Ляжте на лаву з нахилом униз, тримаючи гантелі, залиште лікті злегка зігнутими та притуліть спину до опори.\"\n    }\n  ]\n}",
+      "prompt_sha256": "bd04400e5fc6d2b7e23100f62b364f6484562ed4c32a995b0c3b647a4863a677",
+      "result_path": "assets/exercises/pending/agent-03-others-014/decline-chest-fly-dumbbell/attempt-1.png",
+      "cloud_output_path": "/workspace/lightweight-exercises-photo/assets/exercises/pending/agent-03-others-014/decline-chest-fly-dumbbell/attempt-1.png",
+      "result_sha256": "51844a41b54b2d1b76d5578169772a379d8af683eaea4fb943fb198383f47971",
+      "dimensions": {
+        "width": 1254,
+        "height": 1254
+      },
+      "mime_type": "image/png",
+      "generated_at": "2026-10-02T15:43:40.756011+03:00",
+      "technical_check": "passed",
+      "user_review": "pending",
+      "agent_visual_review": "not_performed",
+      "backup_status": "local_saved",
+      "source_catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+      "source_catalog_record_sha256": "abf450374f5854573ad0982ebabee6dbd6ef6d9463bf75af76bc65906afb66f8",
+      "source_english_sha256": "2bb1efe036d6eb66fdb3f03b7c79015ccb1db46135fe2cd1a18141d9c595aacf",
+      "tool_call_index": 57,
+      "branches_checked": [
+        "work"
+      ],
+      "technical_check_details": {
+        "format": "PNG",
+        "dimensions": {
+          "width": 1254,
+          "height": 1254
+        },
+        "mode": "RGBA",
+        "has_alpha": true,
+        "transparent_pixel_count": 1077825,
+        "sha256": "51844a41b54b2d1b76d5578169772a379d8af683eaea4fb943fb198383f47971",
+        "exercise_id": "decline-chest-fly-dumbbell",
+        "repository_path": "assets/exercises/pending/agent-03-others-014/decline-chest-fly-dumbbell/attempt-1.png",
+        "errors": []
+      },
+      "tool_response_metadata": {
+        "tool_call_id": "image_gen.imagegen#57",
+        "output_hint": "/workspace/generated_images/exec-a122041a-c6d3-4a86-b7c0-7c8dfecfcfe2.png"
+      },
+      "verified_commit": null,
+      "verified_at": null,
+      "reference_path": "assets/exercises/biceps-curl-dumbbell.png",
+      "reference_sha256": "52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f"
+    },
+    {
+      "exercise_id": "decline-crunch-weighted",
+      "name": "Decline Crunch (Weighted)",
+      "batch_id": "agent-03-others-014",
+      "status": "generated",
+      "attempt": 1,
+      "style_version": "v1",
+      "prompt": "Create exactly ONE square transparent PNG of the exact exercise below, using the referenced human for APPEARANCE ONLY. Render only the selected phase and camera. Identity/path/hash fields are metadata, never visible text.\n{\n  \"exact_catalogue_source\": {\n    \"equipment\": \"none\",\n    \"primary_muscle\": \"abdominals\",\n    \"secondary_muscles\": [],\n    \"source_english\": {\n      \"common_mistakes\": [\n        \"Pulling the head.\",\n        \"Using the legs to swing.\",\n        \"Dropping the torso.\"\n      ],\n      \"description\": \"Decline Crunch (Weighted) curls the ribs toward the pelvis from a declined bench position.\",\n      \"form_cues\": [\n        \"Keep the chin relaxed.\",\n        \"Move ribs, not hips.\",\n        \"Exhale as you curl.\"\n      ],\n      \"instructions\": [\n        \"Secure your feet on a decline bench and lie back.\",\n        \"Brace and curl the ribs toward the pelvis.\",\n        \"Pause without pulling the neck.\",\n        \"Lower the torso slowly to the support.\"\n      ],\n      \"provenance\": \"authored\",\n      \"safety_note\": \"Use a comfortable curl range and reduce the decline or load before the neck or back loses control.\"\n    }\n  },\n  \"human_reference\": {\n    \"absolute_path\": \"/workspace/lightweight-exercises-photo/assets/exercises/biceps-curl-dumbbell.png\",\n    \"branch\": \"work\",\n    \"pixels_reviewed_during_preparation\": false,\n    \"repository_path\": \"assets/exercises/biceps-curl-dumbbell.png\",\n    \"role\": \"Human appearance/proportions/materials/anatomical style ONLY. Exercise pose, grip, equipment and muscles come from the exact-ID catalogue, never the reference.\",\n    \"sha256\": \"52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f\",\n    \"source_commit\": \"a6f296cbc6737991dd367e929b3e2df25874d4d8\"\n  },\n  \"identity_do_not_render_as_text\": {\n    \"exercise_id\": \"decline-crunch-weighted\",\n    \"name\": \"Decline Crunch (Weighted)\",\n    \"source_catalog_record_sha256\": \"2f428c5fd0ad898f6594e3cce163e7bd4b470c3ba3046a7553aa9e68e6db2180\",\n    \"source_catalog_sha256\": \"a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989\"\n  },\n  \"scene\": {\n    \"camera\": \"Side-front three-quarter view showing decline, secured feet and plate contact.\",\n    \"grip\": \"Both hands secure SAME plate against chest throughout, explicitly stated in cited Russian source.\",\n    \"pose\": \"Supine on declined bench, ribs curl toward pelvis without neck pull or swinging legs.\",\n    \"single_phase\": \"Decline crunch with plate kept near chest\",\n    \"source_instruction_quotes\": [\n      {\n        \"index\": 0,\n        \"text\": \"Secure your feet on a decline bench and lie back.\"\n      },\n      {\n        \"index\": 1,\n        \"text\": \"Brace and curl the ribs toward the pelvis.\"\n      },\n      {\n        \"index\": 2,\n        \"text\": \"Pause without pulling the neck.\"\n      },\n      {\n        \"index\": 3,\n        \"text\": \"Lower the torso slowly to the support.\"\n      }\n    ],\n    \"supports_and_equipment\": \"Feet secured on decline bench, lower back/pelvis supported; no invented load number or head-held weight.\"\n  },\n  \"source_resolution\": \"Ru прямо задає plate біля грудей на decline-лаві; інші блоки не задають іншого обтяження.\",\n  \"source_use_rule\": \"Preserve original English. The cited additional fields of THIS SAME exercise ID fill missing detail only; do not substitute another exercise or silently rewrite the source.\",\n  \"style\": {\n    \"background\": \"Genuinely transparent PNG background, no white/checkerboard layer, no environment scene.\",\n    \"framing\": \"Full figure and all required equipment/supports visible within a square. Scale and use a three-quarter view to expose the specified contacts without changing anatomy, equipment, grip or technique.\",\n    \"human_model\": \"One athletic bald male anatomical mannequin, opaque silver-gray muscular surfaces, consistent proportions and detailed 3D materials, plain black shorts, barefoot.\",\n    \"material_rules\": \"Highlights never make tissue transparent; no glow, whole-body orange tint, hair, text, labels, arrows, UI, borders, collage or extra person.\",\n    \"no_invention\": \"Technique, equipment and muscles come only from the attached exact catalogue record. No extra attachments, numerical weights, brands or exact angles absent from the source.\",\n    \"output\": {\n      \"format\": \"PNG\",\n      \"height\": 1024,\n      \"one_person\": true,\n      \"one_phase\": true,\n      \"width\": 1024\n    },\n    \"primary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"rule\": \"Highlight only the exact primary muscle group provided for this exercise.\"\n    },\n    \"secondary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"intensity_fraction\": [\n        0.4,\n        0.5\n      ],\n      \"rule\": \"Only the exact secondary muscles, lighter same-hue highlight; if the list is empty add no secondary target.\"\n    },\n    \"version\": \"v1\"\n  },\n  \"style_document_sha256\": \"8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578\",\n  \"supplementary_same_ID_sources\": [\n    {\n      \"catalog_path\": \"data/exercises/catalog.json\",\n      \"catalog_record_sha256\": \"2f428c5fd0ad898f6594e3cce163e7bd4b470c3ba3046a7553aa9e68e6db2180\",\n      \"catalog_sha256\": \"a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989\",\n      \"exercise_id\": \"decline-crunch-weighted\",\n      \"field\": \"content.ru.instructions[0]\",\n      \"source_commit\": \"a6f296cbc6737991dd367e929b3e2df25874d4d8\",\n      \"value\": \"Зафиксируйте стопы на скамье с отрицательным наклоном, возьмите блин у груди и лягте на спину.\"\n    },\n    {\n      \"catalog_path\": \"data/exercises/catalog.json\",\n      \"catalog_record_sha256\": \"2f428c5fd0ad898f6594e3cce163e7bd4b470c3ba3046a7553aa9e68e6db2180\",\n      \"catalog_sha256\": \"a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989\",\n      \"exercise_id\": \"decline-crunch-weighted\",\n      \"field\": \"content.ru.instructions[1]\",\n      \"source_commit\": \"a6f296cbc6737991dd367e929b3e2df25874d4d8\",\n      \"value\": \"Напрягите корпус и подтяните рёбра к тазу, сохраняя отягощение у груди.\"\n    }\n  ]\n}",
+      "prompt_sha256": "1e4aa5a317fc79805893b1cdfc993ec5e361780f56dc0d0b439c3c9f84088b3a",
+      "result_path": "assets/exercises/pending/agent-03-others-014/decline-crunch-weighted/attempt-1.png",
+      "cloud_output_path": "/workspace/lightweight-exercises-photo/assets/exercises/pending/agent-03-others-014/decline-crunch-weighted/attempt-1.png",
+      "result_sha256": "785e8413779cf37ec2d117e8750fbc90eb9e4f70056f23a0fa04261370cd7fff",
+      "dimensions": {
+        "width": 1254,
+        "height": 1254
+      },
+      "mime_type": "image/png",
+      "generated_at": "2026-10-02T15:44:53.256910+03:00",
+      "technical_check": "passed",
+      "user_review": "pending",
+      "agent_visual_review": "not_performed",
+      "backup_status": "local_saved",
+      "source_catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+      "source_catalog_record_sha256": "2f428c5fd0ad898f6594e3cce163e7bd4b470c3ba3046a7553aa9e68e6db2180",
+      "source_english_sha256": "22c455ab617fe001762f4eafc5d6c06e052af950f42cb64a07405254b42a20b7",
+      "tool_call_index": 58,
+      "branches_checked": [
+        "work"
+      ],
+      "technical_check_details": {
+        "format": "PNG",
+        "dimensions": {
+          "width": 1254,
+          "height": 1254
+        },
+        "mode": "RGBA",
+        "has_alpha": true,
+        "transparent_pixel_count": 1077250,
+        "sha256": "785e8413779cf37ec2d117e8750fbc90eb9e4f70056f23a0fa04261370cd7fff",
+        "exercise_id": "decline-crunch-weighted",
+        "repository_path": "assets/exercises/pending/agent-03-others-014/decline-crunch-weighted/attempt-1.png",
+        "errors": []
+      },
+      "tool_response_metadata": {
+        "tool_call_id": "image_gen.imagegen#58",
+        "output_hint": "/workspace/generated_images/exec-0f30c308-d5b3-4b92-b7b3-c7e0327f7235.png"
+      },
+      "verified_commit": null,
+      "verified_at": null,
+      "reference_path": "assets/exercises/biceps-curl-dumbbell.png",
+      "reference_sha256": "52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f"
+    },
+    {
+      "exercise_id": "dumbbell-squeeze-press",
+      "name": "Dumbbell Squeeze Press",
+      "batch_id": "agent-03-others-014",
+      "status": "generated",
+      "attempt": 1,
+      "style_version": "v1",
+      "prompt": "Create exactly ONE square transparent PNG of the exact exercise below, using the referenced human for APPEARANCE ONLY. Render only the selected phase and camera. Identity/path/hash fields are metadata, never visible text.\n{\n  \"exact_catalogue_source\": {\n    \"equipment\": \"dumbbell\",\n    \"primary_muscle\": \"chest\",\n    \"secondary_muscles\": [\n      \"shoulders\",\n      \"triceps\"\n    ],\n    \"source_english\": {\n      \"common_mistakes\": [\n        \"Bouncing at the bottom.\",\n        \"Flaring the elbows.\",\n        \"Arching to shorten the range.\"\n      ],\n      \"description\": \"Dumbbell Squeeze Press is a supported chest press using one dumbbell in each hand.\",\n      \"form_cues\": [\n        \"Keep wrists stacked.\",\n        \"Keep shoulder blades supported.\",\n        \"Press evenly.\"\n      ],\n      \"instructions\": [\n        \"Lie on a flat bench with feet planted. Grip one dumbbell in each hand and hold it over the chest.\",\n        \"Lower the resistance toward the chest with elbows controlled.\",\n        \"Pause without bouncing or losing shoulder position.\",\n        \"Press back to straight arms, then rerack or set the weights down safely.\"\n      ],\n      \"provenance\": \"authored\",\n      \"safety_note\": \"Use a spotter or safeties for the loaded press and stop before shoulder control is lost.\"\n    }\n  },\n  \"human_reference\": {\n    \"absolute_path\": \"/workspace/lightweight-exercises-photo/assets/exercises/biceps-curl-dumbbell.png\",\n    \"branch\": \"work\",\n    \"pixels_reviewed_during_preparation\": false,\n    \"repository_path\": \"assets/exercises/biceps-curl-dumbbell.png\",\n    \"role\": \"Human appearance/proportions/materials/anatomical style ONLY. Exercise pose, grip, equipment and muscles come from the exact-ID catalogue, never the reference.\",\n    \"sha256\": \"52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f\",\n    \"source_commit\": \"a6f296cbc6737991dd367e929b3e2df25874d4d8\"\n  },\n  \"identity_do_not_render_as_text\": {\n    \"exercise_id\": \"dumbbell-squeeze-press\",\n    \"name\": \"Dumbbell Squeeze Press\",\n    \"source_catalog_record_sha256\": \"c402c02448345aaaabeb30ac033e8d0ffa311a072324c57a93496b6758b1db5e\",\n    \"source_catalog_sha256\": \"a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989\"\n  },\n  \"scene\": {\n    \"camera\": \"Front-side three-quarter view showing continuous dumbbell contact, wrists and full bench.\",\n    \"grip\": \"One dumbbell per hand, PRESSED AGAINST EACH OTHER with continuous inward pressure, as same-ID uk source explicitly requires.\",\n    \"pose\": \"Lie on flat bench with feet planted; two dumbbells approach chest with controlled elbows and no bounce.\",\n    \"single_phase\": \"Continuous-contact press lower phase\",\n    \"source_instruction_quotes\": [\n      {\n        \"index\": 0,\n        \"text\": \"Lie on a flat bench with feet planted. Grip one dumbbell in each hand and hold it over the chest.\"\n      },\n      {\n        \"index\": 1,\n        \"text\": \"Lower the resistance toward the chest with elbows controlled.\"\n      },\n      {\n        \"index\": 2,\n        \"text\": \"Pause without bouncing or losing shoulder position.\"\n      },\n      {\n        \"index\": 3,\n        \"text\": \"Press back to straight arms, then rerack or set the weights down safely.\"\n      }\n    ],\n    \"supports_and_equipment\": \"Back and shoulder blades supported on flat bench, feet grounded; compatible stationary safety supports, no second person.\"\n  },\n  \"source_resolution\": \"Uk прямо задає притиснуті гантелі та постійний тиск між ними на всіх фазах; English звичайний press не містить протилежної вимоги.\",\n  \"source_use_rule\": \"Preserve original English. The cited additional fields of THIS SAME exercise ID fill missing detail only; do not substitute another exercise or silently rewrite the source.\",\n  \"style\": {\n    \"background\": \"Genuinely transparent PNG background, no white/checkerboard layer, no environment scene.\",\n    \"framing\": \"Full figure and all required equipment/supports visible within a square. Scale and use a three-quarter view to expose the specified contacts without changing anatomy, equipment, grip or technique.\",\n    \"human_model\": \"One athletic bald male anatomical mannequin, opaque silver-gray muscular surfaces, consistent proportions and detailed 3D materials, plain black shorts, barefoot.\",\n    \"material_rules\": \"Highlights never make tissue transparent; no glow, whole-body orange tint, hair, text, labels, arrows, UI, borders, collage or extra person.\",\n    \"no_invention\": \"Technique, equipment and muscles come only from the attached exact catalogue record. No extra attachments, numerical weights, brands or exact angles absent from the source.\",\n    \"output\": {\n      \"format\": \"PNG\",\n      \"height\": 1024,\n      \"one_person\": true,\n      \"one_phase\": true,\n      \"width\": 1024\n    },\n    \"primary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"rule\": \"Highlight only the exact primary muscle group provided for this exercise.\"\n    },\n    \"secondary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"intensity_fraction\": [\n        0.4,\n        0.5\n      ],\n      \"rule\": \"Only the exact secondary muscles, lighter same-hue highlight; if the list is empty add no secondary target.\"\n    },\n    \"version\": \"v1\"\n  },\n  \"style_document_sha256\": \"8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578\",\n  \"supplementary_same_ID_sources\": [\n    {\n      \"catalog_path\": \"data/exercises/catalog.json\",\n      \"catalog_record_sha256\": \"c402c02448345aaaabeb30ac033e8d0ffa311a072324c57a93496b6758b1db5e\",\n      \"catalog_sha256\": \"a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989\",\n      \"exercise_id\": \"dumbbell-squeeze-press\",\n      \"field\": \"content.uk.description\",\n      \"source_commit\": \"a6f296cbc6737991dd367e929b3e2df25874d4d8\",\n      \"value\": \"Жим-стискання гантелей — це жим грудей із опорою на лаву, під час якого по одній гантелі утримують у кожній руці та притискають їх одна до одної.\"\n    },\n    {\n      \"catalog_path\": \"data/exercises/catalog.json\",\n      \"catalog_record_sha256\": \"c402c02448345aaaabeb30ac033e8d0ffa311a072324c57a93496b6758b1db5e\",\n      \"catalog_sha256\": \"a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989\",\n      \"exercise_id\": \"dumbbell-squeeze-press\",\n      \"field\": \"content.uk.instructions[0]\",\n      \"source_commit\": \"a6f296cbc6737991dd367e929b3e2df25874d4d8\",\n      \"value\": \"Ляжте на рівну лаву, поставте стопи на підлогу, візьміть по гантелі в кожну руку та притисніть їх одна до одної над грудьми.\"\n    },\n    {\n      \"catalog_path\": \"data/exercises/catalog.json\",\n      \"catalog_record_sha256\": \"c402c02448345aaaabeb30ac033e8d0ffa311a072324c57a93496b6758b1db5e\",\n      \"catalog_sha256\": \"a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989\",\n      \"exercise_id\": \"dumbbell-squeeze-press\",\n      \"field\": \"content.uk.instructions[1]\",\n      \"source_commit\": \"a6f296cbc6737991dd367e929b3e2df25874d4d8\",\n      \"value\": \"Контрольовано опустіть гантелі до грудей, продовжуючи стискати їх і керуючи ліктями.\"\n    },\n    {\n      \"catalog_path\": \"data/exercises/catalog.json\",\n      \"catalog_record_sha256\": \"c402c02448345aaaabeb30ac033e8d0ffa311a072324c57a93496b6758b1db5e\",\n      \"catalog_sha256\": \"a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989\",\n      \"exercise_id\": \"dumbbell-squeeze-press\",\n      \"field\": \"content.uk.instructions[3]\",\n      \"source_commit\": \"a6f296cbc6737991dd367e929b3e2df25874d4d8\",\n      \"value\": \"Виштовхніть гантелі до випрямлення рук, зберігаючи тиск між ними, потім безпечно покладіть їх.\"\n    }\n  ]\n}",
+      "prompt_sha256": "766641f0ad731cd85770643ef906eaaec10e5cd114c6971617bcf1e709a16100",
+      "result_path": "assets/exercises/pending/agent-03-others-014/dumbbell-squeeze-press/attempt-1.png",
+      "cloud_output_path": "/workspace/lightweight-exercises-photo/assets/exercises/pending/agent-03-others-014/dumbbell-squeeze-press/attempt-1.png",
+      "result_sha256": "6a8cfd114cfb43e34dab8eeb5857103edace8a47c2097c4dcb5f3d64fcb6bbca",
+      "dimensions": {
+        "width": 1254,
+        "height": 1254
+      },
+      "mime_type": "image/png",
+      "generated_at": "2026-10-02T15:46:11.357256+03:00",
+      "technical_check": "passed",
+      "user_review": "pending",
+      "agent_visual_review": "not_performed",
+      "backup_status": "local_saved",
+      "source_catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+      "source_catalog_record_sha256": "c402c02448345aaaabeb30ac033e8d0ffa311a072324c57a93496b6758b1db5e",
+      "source_english_sha256": "2d506299ddee86ccf4233a5a532988393a7563bcf85f29fa24ca364249999eb3",
+      "tool_call_index": 59,
+      "branches_checked": [
+        "work"
+      ],
+      "technical_check_details": {
+        "format": "PNG",
+        "dimensions": {
+          "width": 1254,
+          "height": 1254
+        },
+        "mode": "RGBA",
+        "has_alpha": true,
+        "transparent_pixel_count": 1084637,
+        "sha256": "6a8cfd114cfb43e34dab8eeb5857103edace8a47c2097c4dcb5f3d64fcb6bbca",
+        "exercise_id": "dumbbell-squeeze-press",
+        "repository_path": "assets/exercises/pending/agent-03-others-014/dumbbell-squeeze-press/attempt-1.png",
+        "errors": []
+      },
+      "tool_response_metadata": {
+        "tool_call_id": "image_gen.imagegen#59",
+        "output_hint": "/workspace/generated_images/exec-ec0037d3-2f1f-4237-972e-818daf36579a.png"
+      },
+      "verified_commit": null,
+      "verified_at": null,
+      "reference_path": "assets/exercises/biceps-curl-dumbbell.png",
+      "reference_sha256": "52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f"
     }
   ],
-  "last_updated_at": "2026-10-02T12:33:25.472398+00:00",
+  "last_updated_at": "2026-10-02T12:46:37.443968+00:00",
   "followup_preparation": {
     "source_branch": "agent-03-inventory-2026-10-01",
     "source_commit": "47f772a7824e2377f4454efe2e7365bcb2fec0b1",
