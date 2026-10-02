@@ -1,6 +1,6 @@
 ## Current checkpoint — landmine attempt-4 (2026-10-02)
 
-The user specified that the landmine bar must be perpendicular to the athlete. Attempt-4 follows that instruction: the straight shaft projects forward from both hands at the chest to the floor anchor ahead of the athlete. Targeted orientation comparison confirms this relation; no general visual approval was made. Attempt-4 is `user_review=pending`, SHA256 `8127124701edf64826364459168809b9c7eadb694356be68c8e9ed3f636c0cf6`; the 1254×1254 output remains a technical size issue. Attempts 1–3 remain preserved and marked for correction. Checkpoint includes attempt-3 and attempt-4 PNGs, updated own manifest and progress, only on `agent-05-parallel-generation`.
+The user specified that the landmine bar must be perpendicular to the athlete. Attempt-4 follows that instruction: the straight shaft projects forward from both hands at the chest to the floor anchor ahead of the athlete. Targeted orientation comparison confirms this relation; no general visual approval was made. Attempt-4 is `user_review=pending`, SHA256 `8127124701edf64826364459168809b9c7eadb694356be68c8e9ed3f636c0cf6`; the 1254×1254 output remains a technical size issue. Attempts 1–3 remain preserved and marked for correction. Attempt-3 and attempt-4 PNGs plus updated own manifest and progress were pushed only to `agent-05-parallel-generation` in commit `cb0ff91d6d832a30501bd9695d9c7cf8608c70b7`; SHA256 for all 13 saved package 021 PNG attempts was verified from the fetched remote branch.
 
 ---
 
