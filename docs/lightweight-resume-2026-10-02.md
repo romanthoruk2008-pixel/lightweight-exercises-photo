@@ -75,3 +75,5 @@
 | `triceps-dip-weighted-machine` | `assets/exercises/pending/agent-03-others-010/triceps-dip-weighted-machine/attempt-2.png` | `47148b6bb149951a53192d35e62a494fd3750d2fa3d3c1c88233b742c8525f42` | Груди й плечі — активний #F26445 на повній інтенсивності за прямим уточненням користувача. |
 
 До push: зробити fetch актуальної `work`, push чотири нові PNG, metadata й цей checkpoint без force push, перевірити remote SHA256 лише цих чотирьох файлів та записати `github_verified`. Після цього зупинитися й чекати перегляду/нової команди; пакет 011 не запускати.
+
+Remote checkpoint: four attempt-2 corrections were pushed to `work` at commit `9b90a1aaedf462baf40bf8c188a4c9ec144cafc6`. SHA256 was read from the remote Git blobs and matched the local PNG and progress/manifest for each ID. `backup_status=github_verified`; all remain `user_review=pending`, with no visual QA. Next action: wait for user review/instruction; keep package 011 paused.

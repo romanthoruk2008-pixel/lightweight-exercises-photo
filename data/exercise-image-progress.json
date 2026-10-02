@@ -147,10 +147,10 @@
       }
     ],
     "active_batch_id": "agent-03-others-010",
-    "active_batch_item_id": "triceps-dip-weighted-machine",
-    "active_batch_scope": "Four targeted corrections requested for package 010; package 011 paused.",
+    "active_batch_item_id": null,
+    "active_batch_scope": "Package 010 has 10 original PNGs plus 4 user-requested corrections, all pushed and remote-verified. Package 011 is paused.",
     "current_batch": "night-2026-10-01-004",
-    "next_action": "Finish four requested package-010 corrections, checkpoint/push and verify; do not start package 011 until a new user command.",
+    "next_action": "Wait for user review of the four attempt-2 corrections; do not start package 011 until a new user command.",
     "night_generation_remote_audit": {
       "audited_at_utc": "2026-10-01T08:16:06Z",
       "remote_branch": "work",
@@ -724,7 +724,44 @@
         "generated_output": null,
         "generation_attempt_counted": false
       }
-    ]
+    ],
+    "agent03_package010_correction_checkpoint": {
+      "verified_at": "2026-10-02T11:48:42.367722+00:00",
+      "content_commit": "9b90a1aaedf462baf40bf8c188a4c9ec144cafc6",
+      "verified_commit": "9b90a1aaedf462baf40bf8c188a4c9ec144cafc6",
+      "backup_status": "github_verified",
+      "correction_ids": [
+        "scapular-pull-ups",
+        "sternum-pullup-gironda-machine",
+        "triceps-dip-machine",
+        "triceps-dip-weighted-machine"
+      ],
+      "verified_files": [
+        {
+          "exercise_id": "scapular-pull-ups",
+          "path": "assets/exercises/pending/agent-03-others-010/scapular-pull-ups/attempt-2.png",
+          "sha256": "61247ed96a77b0107d7b18265d1341c034a3c6e33f0f9811c8a1328f015a328c"
+        },
+        {
+          "exercise_id": "sternum-pullup-gironda-machine",
+          "path": "assets/exercises/pending/agent-03-others-010/sternum-pullup-gironda-machine/attempt-2.png",
+          "sha256": "f7899d3fead2f1a745ba711de619cf934d9177a7ba4ff9eaf97d48b94e169828"
+        },
+        {
+          "exercise_id": "triceps-dip-machine",
+          "path": "assets/exercises/pending/agent-03-others-010/triceps-dip-machine/attempt-2.png",
+          "sha256": "6d8afacd9e2cbe5cc0331cbed50b80fad3e431fcc29ae5b4e632fd32e0b00064"
+        },
+        {
+          "exercise_id": "triceps-dip-weighted-machine",
+          "path": "assets/exercises/pending/agent-03-others-010/triceps-dip-weighted-machine/attempt-2.png",
+          "sha256": "47148b6bb149951a53192d35e62a494fd3750d2fa3d3c1c88233b742c8525f42"
+        }
+      ],
+      "user_review": "pending",
+      "agent_visual_review": "not_performed",
+      "next_action": "Wait for user review/instruction; package 011 remains paused."
+    }
   },
   "historical_mapping_metadata": {
     "schema_version": "1.0",
@@ -29978,7 +30015,10 @@
           "tool_response_metadata": {
             "tool_call_id": "image_gen.imagegen#19",
             "output_hint": "/workspace/generated_images/exec-adb00092-f442-4a98-a93b-8f54c141e4e0.png"
-          }
+          },
+          "backup_status": "github_verified",
+          "verified_commit": "9b90a1aaedf462baf40bf8c188a4c9ec144cafc6",
+          "verified_at": "2026-10-02T11:48:42.367722+00:00"
         }
       ],
       "result_sha256": "61247ed96a77b0107d7b18265d1341c034a3c6e33f0f9811c8a1328f015a328c",
@@ -29999,7 +30039,8 @@
       },
       "agent_visual_review": "not_performed",
       "agent_visual_review_notes": null,
-      "user_review": "pending"
+      "user_review": "pending",
+      "backup_status": "github_verified"
     },
     "seal-row-barbell": {
       "id": "seal-row-barbell",
@@ -38791,7 +38832,10 @@
           "tool_response_metadata": {
             "tool_call_id": "image_gen.imagegen#20",
             "output_hint": "/workspace/generated_images/exec-f782f75c-1e54-428d-ab64-cd2604c29916.png"
-          }
+          },
+          "backup_status": "github_verified",
+          "verified_commit": "9b90a1aaedf462baf40bf8c188a4c9ec144cafc6",
+          "verified_at": "2026-10-02T11:48:42.367722+00:00"
         }
       ],
       "result_sha256": "f7899d3fead2f1a745ba711de619cf934d9177a7ba4ff9eaf97d48b94e169828",
@@ -38812,7 +38856,8 @@
       },
       "agent_visual_review": "not_performed",
       "agent_visual_review_notes": null,
-      "user_review": "pending"
+      "user_review": "pending",
+      "backup_status": "github_verified"
     },
     "straight-arm-lat-pulldown-cable-machine": {
       "id": "straight-arm-lat-pulldown-cable-machine",
@@ -40573,7 +40618,10 @@
           "tool_response_metadata": {
             "tool_call_id": "image_gen.imagegen#21",
             "output_hint": "/workspace/generated_images/exec-d4ddc7ce-3f84-4416-bd91-c9384ad50284.png"
-          }
+          },
+          "backup_status": "github_verified",
+          "verified_commit": "9b90a1aaedf462baf40bf8c188a4c9ec144cafc6",
+          "verified_at": "2026-10-02T11:48:42.367722+00:00"
         }
       ],
       "result_sha256": "6d8afacd9e2cbe5cc0331cbed50b80fad3e431fcc29ae5b4e632fd32e0b00064",
@@ -40594,7 +40642,8 @@
       },
       "agent_visual_review": "not_performed",
       "agent_visual_review_notes": null,
-      "user_review": "pending"
+      "user_review": "pending",
+      "backup_status": "github_verified"
     },
     "triceps-dip-assisted-machine": {
       "id": "triceps-dip-assisted-machine",
@@ -40789,7 +40838,10 @@
           "tool_response_metadata": {
             "tool_call_id": "image_gen.imagegen#22",
             "output_hint": "/workspace/generated_images/exec-5b0713c4-124f-4877-9855-69bf7583e1da.png"
-          }
+          },
+          "backup_status": "github_verified",
+          "verified_commit": "9b90a1aaedf462baf40bf8c188a4c9ec144cafc6",
+          "verified_at": "2026-10-02T11:48:42.367722+00:00"
         }
       ],
       "result_sha256": "47148b6bb149951a53192d35e62a494fd3750d2fa3d3c1c88233b742c8525f42",
@@ -40810,7 +40862,8 @@
       },
       "agent_visual_review": "not_performed",
       "agent_visual_review_notes": null,
-      "user_review": "pending"
+      "user_review": "pending",
+      "backup_status": "github_verified"
     },
     "triceps-extension-barbell": {
       "id": "triceps-extension-barbell",
