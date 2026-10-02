@@ -1,10 +1,13 @@
-## Review update: attempt-2 approval and two new corrections
+## Review update: squeeze-press accepted; two attempt-3 corrections ready
 
-2026-10-02T13:25:48+00:00: The user accepted `dumbbell-squeeze-press` attempt-2; exact path/SHA are recorded below. Its PNG was already verified on `work`. This brings batches 011–015 to 41 approved of 43. The user rejected the current `around-the-world-dumbbell` and `bench-press-close-grip-barbell` corrections as still incorrect. Their attempt-1 and attempt-2 files remain unchanged.
+2026-10-02T13:32:21+00:00: The user accepted `dumbbell-squeeze-press` attempt-2; it remains accepted at `assets/exercises/pending/agent-03-others-014/dumbbell-squeeze-press/attempt-2.png` with SHA256 `f6417715e2afbddb0e64c5b3344a9bc6fab1c21b943baf0f7d4b8b0b094ef676`. The approval was pushed in `b6aee96`. Batches 011–015 now have 41 approved of 43.
 
-Accepted: `dumbbell-squeeze-press` — `assets/exercises/pending/agent-03-others-014/dumbbell-squeeze-press/attempt-2.png`; SHA256 `f6417715e2afbddb0e64c5b3344a9bc6fab1c21b943baf0f7d4b8b0b094ef676`; accepted attempt 2.
+The user returned `around-the-world-dumbbell` and `bench-press-close-grip-barbell` attempt-2 for correction. Prior files remain unchanged. New attempt-3 files are technically valid and pending user review:
 
-Next, make one fresh attempt-3 for each remaining ID using the exact exercise prompt/source plus the user's specific correction, with the accepted human reference supplied in each imagegen call. Keep attempt-3 pending user review. Do not delete prior PNG history, modify accepted results, change batch 009/blocked exercises, or touch Supabase.
+- `around-the-world-dumbbell`: `assets/exercises/pending/agent-03-others-014/around-the-world-dumbbell/attempt-3.png`; SHA256 `940cb44e1b897c401fa6dc39f2e01a15610f0c958effeff99cd7c6cc355871ba`; passed; `user_review=pending`. The correction redraws both dumbbells as a matching symmetric pair.
+- `bench-press-close-grip-barbell`: `assets/exercises/pending/agent-03-others-014/bench-press-close-grip-barbell/attempt-3.png`; SHA256 `90171bed2296fad8fdbbe674877e21157228e9c4181d0fa4fbc338a90ca3b3ab`; passed; `user_review=pending`. Both hands use the user's requested reverse grip.
+
+Both calls used built-in `image_gen.imagegen` and the accepted human reference SHA256 `52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f`. No agent visual review was performed. Next: push these PNGs and metadata, verify remote SHA256, then wait for user review. Do not change approved results, batch 009, blocked exercises, or Supabase.
 
 ---
 

@@ -1649,13 +1649,13 @@
         "exists_at_preparation": true,
         "sha256": "ec0b1f5a12a3934023b58f3651594c1447475b58e61883d5a1073fc5fecec035"
       },
-      "status": "needs_fix",
+      "status": "generated",
       "included_in_generation": false,
       "archived_inclusion_authorized": false,
       "blocked_by": [
         "pilot_not_approved"
       ],
-      "attempts": 2,
+      "attempts": 3,
       "style_version": "v1",
       "visual_review": {
         "status": "not_reviewed",
@@ -1669,7 +1669,7 @@
         },
         "notes": null
       },
-      "result_path": "assets/exercises/pending/agent-03-others-014/around-the-world-dumbbell/attempt-2.png",
+      "result_path": "assets/exercises/pending/agent-03-others-014/around-the-world-dumbbell/attempt-3.png",
       "supabase_path": null,
       "supabase_upload_status": "not_configured",
       "last_error": null,
@@ -1764,10 +1764,55 @@
           "backup_status": "github_verified",
           "verified_commit": "606740ecbaa0a717d8aa43e9e9a3ecc0320d689f",
           "verified_at": "2026-10-02T13:20:37+00:00",
-          "user_review": "pending"
+          "user_review": "needs_fix"
+        },
+        {
+          "attempt": 3,
+          "id": "around-the-world-dumbbell",
+          "batch_id": "agent-03-others-014",
+          "run_id": "lightweight-agent-03-package014-corrections-round2-2026-10-02",
+          "style_version": "v1",
+          "tool": "image_gen.imagegen",
+          "tool_call_index": 95,
+          "status": "completed",
+          "started_at": "2026-10-02T13:27:58+00:00",
+          "prompt": "Create exactly ONE square transparent PNG of the exact exercise below, using the referenced human for APPEARANCE ONLY. Render only the selected phase and camera. Identity/path/hash fields are metadata, never visible text.\n{\n  \"exact_catalogue_source\": {\n    \"equipment\": \"dumbbell\",\n    \"primary_muscle\": \"chest\",\n    \"secondary_muscles\": [\n      \"upper_back\",\n      \"shoulders\",\n      \"lats\"\n    ],\n    \"source_english\": {\n      \"common_mistakes\": [\n        \"Bending the elbows to shorten the path.\",\n        \"Rotating the torso instead of the shoulders.\",\n        \"Using momentum.\"\n      ],\n      \"description\": \"Around The World traces a controlled circle with the dumbbells around the body while the torso stays steady.\",\n      \"form_cues\": [\n        \"Keep the circle continuous.\",\n        \"Brace the abdomen.\",\n        \"Use a light, controllable load.\"\n      ],\n      \"instructions\": [\n        \"Stand tall holding the dumbbells with your arms extended as appropriate for the movement.\",\n        \"Sweep the weight(s) in a smooth circle around the body without twisting the torso.\",\n        \"Keep the shoulders controlled as the hands pass through the front and overhead portions of the path.\",\n        \"Reverse or repeat the same circle for the planned repetitions.\"\n      ],\n      \"provenance\": \"adapted\",\n      \"safety_note\": \"Keep the dumbbell circle outside the head and stop before shoulder control is lost.\"\n    }\n  },\n  \"human_reference\": {\n    \"absolute_path\": \"/workspace/lightweight-exercises-photo/assets/exercises/biceps-curl-dumbbell.png\",\n    \"branch\": \"work\",\n    \"pixels_reviewed_during_preparation\": false,\n    \"repository_path\": \"assets/exercises/biceps-curl-dumbbell.png\",\n    \"role\": \"Human appearance/proportions/materials/anatomical style ONLY. Exercise pose, grip, equipment and muscles come from the exact-ID catalogue, never the reference.\",\n    \"sha256\": \"52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f\",\n    \"source_commit\": \"a6f296cbc6737991dd367e929b3e2df25874d4d8\"\n  },\n  \"identity_do_not_render_as_text\": {\n    \"exercise_id\": \"around-the-world-dumbbell\",\n    \"name\": \"Around The World\",\n    \"source_catalog_record_sha256\": \"a9a0eb52b0332ab807a6f169c98c560d5f361b84e1ed44ef4580fa24fa457a61\",\n    \"source_catalog_sha256\": \"a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989\"\n  },\n  \"scene\": {\n    \"camera\": \"Front three-quarter view showing both straight arms, palms and complete weights.\",\n    \"grip\": \"One dumbbell per hand, palms DOWN as same-ID Spanish instructions specify.\",\n    \"pose\": \"Stand shoulder-width, torso still, arms STRAIGHT out to sides at shoulder height before circling forward then overhead.\",\n    \"single_phase\": \"Source-defined arms-out start of circular path\",\n    \"source_instruction_quotes\": [\n      {\n        \"index\": 0,\n        \"text\": \"Stand tall holding the dumbbells with your arms extended as appropriate for the movement.\"\n      },\n      {\n        \"index\": 1,\n        \"text\": \"Sweep the weight(s) in a smooth circle around the body without twisting the torso.\"\n      },\n      {\n        \"index\": 2,\n        \"text\": \"Keep the shoulders controlled as the hands pass through the front and overhead portions of the path.\"\n      },\n      {\n        \"index\": 3,\n        \"text\": \"Reverse or repeat the same circle for the planned repetitions.\"\n      }\n    ],\n    \"supports_and_equipment\": \"Both feet grounded; no bench or one-weight waist pass.\"\n  },\n  \"source_resolution\": \"Дві гантелі, долоні вниз, початок із прямих рук убік на рівні плечей задано в es/ru; English описує передню й надголовну частини того ж кола.\",\n  \"source_use_rule\": \"Preserve original English. The cited additional fields of THIS SAME exercise ID fill missing detail only; do not substitute another exercise or silently rewrite the source.\",\n  \"style\": {\n    \"background\": \"Genuinely transparent PNG background, no white/checkerboard layer, no environment scene.\",\n    \"framing\": \"Full figure and all required equipment/supports visible within a square. Scale and use a three-quarter view to expose the specified contacts without changing anatomy, equipment, grip or technique.\",\n    \"human_model\": \"One athletic bald male anatomical mannequin, opaque silver-gray muscular surfaces, consistent proportions and detailed 3D materials, plain black shorts, barefoot.\",\n    \"material_rules\": \"Highlights never make tissue transparent; no glow, whole-body orange tint, hair, text, labels, arrows, UI, borders, collage or extra person.\",\n    \"no_invention\": \"Technique, equipment and muscles come only from the attached exact catalogue record. No extra attachments, numerical weights, brands or exact angles absent from the source.\",\n    \"output\": {\n      \"format\": \"PNG\",\n      \"height\": 1024,\n      \"one_person\": true,\n      \"one_phase\": true,\n      \"width\": 1024\n    },\n    \"primary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"rule\": \"Highlight only the exact primary muscle group provided for this exercise.\"\n    },\n    \"secondary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"intensity_fraction\": [\n        0.4,\n        0.5\n      ],\n      \"rule\": \"Only the exact secondary muscles, lighter same-hue highlight; if the list is empty add no secondary target.\"\n    },\n    \"version\": \"v1\"\n  },\n  \"style_document_sha256\": \"8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578\",\n  \"supplementary_same_ID_sources\": [\n    {\n      \"catalog_path\": \"data/exercises/catalog.json\",\n      \"catalog_record_sha256\": \"a9a0eb52b0332ab807a6f169c98c560d5f361b84e1ed44ef4580fa24fa457a61\",\n      \"catalog_sha256\": \"a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989\",\n      \"exercise_id\": \"around-the-world-dumbbell\",\n      \"field\": \"content.es.instructions[0]\",\n      \"source_commit\": \"a6f296cbc6737991dd367e929b3e2df25874d4d8\",\n      \"value\": \"Ponte de pie con los pies separados a la altura de los hombros y sostén una mancuerna en cada mano.\"\n    },\n    {\n      \"catalog_path\": \"data/exercises/catalog.json\",\n      \"catalog_record_sha256\": \"a9a0eb52b0332ab807a6f169c98c560d5f361b84e1ed44ef4580fa24fa457a61\",\n      \"catalog_sha256\": \"a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989\",\n      \"exercise_id\": \"around-the-world-dumbbell\",\n      \"field\": \"content.es.instructions[1]\",\n      \"source_commit\": \"a6f296cbc6737991dd367e929b3e2df25874d4d8\",\n      \"value\": \"Extiende los brazos rectos hacia los lados a la altura de los hombros, con las palmas hacia abajo.\"\n    },\n    {\n      \"catalog_path\": \"data/exercises/catalog.json\",\n      \"catalog_record_sha256\": \"a9a0eb52b0332ab807a6f169c98c560d5f361b84e1ed44ef4580fa24fa457a61\",\n      \"catalog_sha256\": \"a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989\",\n      \"exercise_id\": \"around-the-world-dumbbell\",\n      \"field\": \"content.es.instructions[2]\",\n      \"source_commit\": \"a6f296cbc6737991dd367e929b3e2df25874d4d8\",\n      \"value\": \"Manteniendo los brazos rectos, gira lentamente los brazos en un movimiento circular, llevando las mancuernas frente al cuerpo y luego por encima de la cabeza.\"\n    }\n  ]\n}\n\nUSER CORRECTION for attempt-2. The FIRST attached image is the previous exercise illustration; use it only to preserve the same anatomical model, exercise pose, body proportions, shorts, and overall composition. Completely discard and redraw both existing dumbbells from scratch; do not retain or imitate their malformed plates. The SECOND attached image is the approved human appearance/material/style reference only. Depict exactly two standard matching dumbbells, one securely held in each hand. The two dumbbells must be identical in overall length, central handle, collar, plate count, plate diameter, and plate thickness. On each dumbbell, matching plates are symmetrically mounted on both ends of one straight handle. Both hands grip the centered handles naturally; both complete weights remain fully visible, with no cropping, missing plates, unequal plate sizes, bent handles, skew, or floating parts. Use a centered straight-on frontal camera with minimal perspective distortion so the two weights appear equal in size. Preserve the exact Around The World starting phase from this exercise ID: stand tall, torso steady, both arms straight out laterally at shoulder height, palms down, feet grounded. Preserve the correct target muscle highlights from the source prompt. Freshly reconstruct only the weights, not the prior defective shapes. One person, one phase, transparent square PNG, no text or decoration.",
+          "prompt_sha256": "1e7724bbeb0952557f4128454c02a8d44147dc71a6a7c546d79c0b656881137c",
+          "reference_path": "assets/exercises/biceps-curl-dumbbell.png",
+          "reference_sha256": "52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f",
+          "input_image_path": "assets/exercises/pending/agent-03-others-014/around-the-world-dumbbell/attempt-2.png",
+          "input_image_sha256": "f722564484cab98a4fa740a20ebe9e50ad47e4c1125ca02cf6312c19098a1532",
+          "result_path": "assets/exercises/pending/agent-03-others-014/around-the-world-dumbbell/attempt-3.png",
+          "correction_reason": "Replace both malformed dumbbells completely with two matching, complete and physically symmetric dumbbells; exactly equal plate count and size on both weights, no crop or perspective-induced mismatch.",
+          "generation_mode": "targeted_replace",
+          "completed_at": "2026-10-02T13:29:09+00:00",
+          "result_sha256": "940cb44e1b897c401fa6dc39f2e01a15610f0c958effeff99cd7c6cc355871ba",
+          "dimensions": {
+            "width": 1254,
+            "height": 1254
+          },
+          "technical_check": "passed",
+          "technical_check_details": {
+            "format": "PNG",
+            "dimensions": {
+              "width": 1254,
+              "height": 1254
+            },
+            "mode": "RGBA",
+            "has_alpha": true,
+            "transparent_pixel_count": 1225380,
+            "sha256": "940cb44e1b897c401fa6dc39f2e01a15610f0c958effeff99cd7c6cc355871ba",
+            "exercise_id": "around-the-world-dumbbell",
+            "repository_path": "assets/exercises/pending/agent-03-others-014/around-the-world-dumbbell/attempt-3.png",
+            "errors": []
+          },
+          "tool_response_metadata": {
+            "tool_call_id": "image_gen.imagegen#95",
+            "output_hint": "/workspace/generated_images/exec-a7bfb10f-eef0-4d5e-aedf-1f47f4a601b8.png"
+          }
         }
       ],
-      "result_sha256": "f722564484cab98a4fa740a20ebe9e50ad47e4c1125ca02cf6312c19098a1532",
+      "result_sha256": "940cb44e1b897c401fa6dc39f2e01a15610f0c958effeff99cd7c6cc355871ba",
       "technical_check": "passed",
       "technical_check_details": {
         "format": "PNG",
@@ -1777,18 +1822,18 @@
         },
         "mode": "RGBA",
         "has_alpha": true,
-        "transparent_pixel_count": 1218319,
-        "sha256": "f722564484cab98a4fa740a20ebe9e50ad47e4c1125ca02cf6312c19098a1532",
+        "transparent_pixel_count": 1225380,
+        "sha256": "940cb44e1b897c401fa6dc39f2e01a15610f0c958effeff99cd7c6cc355871ba",
         "exercise_id": "around-the-world-dumbbell",
-        "repository_path": "assets/exercises/pending/agent-03-others-014/around-the-world-dumbbell/attempt-2.png",
+        "repository_path": "assets/exercises/pending/agent-03-others-014/around-the-world-dumbbell/attempt-3.png",
         "errors": []
       },
       "agent_visual_review": "not_performed",
       "agent_visual_review_notes": null,
-      "user_review": "needs_fix",
-      "backup_status": "github_verified",
-      "verified_commit": "606740ecbaa0a717d8aa43e9e9a3ecc0320d689f",
-      "verified_at": "2026-10-02T13:20:37+00:00",
+      "user_review": "pending",
+      "backup_status": "local_saved",
+      "verified_commit": null,
+      "verified_at": null,
       "user_review_history": [
         {
           "by": "user",
@@ -1822,6 +1867,13 @@
           "requested_at": "2026-10-02T13:25:48+00:00",
           "by": "user",
           "reason": "Attempt-2 still has malformed/mismatched dumbbells. User requests a fresh generation with two complete, identical dumbbells, equal plate count and size, symmetric handles/plates, and no skew or cropping."
+        },
+        {
+          "for_attempt": 2,
+          "requested_at": "2026-10-02T13:27:58+00:00",
+          "by": "user",
+          "reason": "Replace both malformed dumbbells completely with two matching, complete and physically symmetric dumbbells; exactly equal plate count and size on both weights, no crop or perspective-induced mismatch.",
+          "attempt_3_started_at": "2026-10-02T13:27:58+00:00"
         }
       ]
     },
@@ -3433,13 +3485,13 @@
         "exists_at_preparation": true,
         "sha256": "31a60bcc9504379e02177376fd5624142f81a49c39deca35f7ed113e3099c7b8"
       },
-      "status": "needs_fix",
+      "status": "generated",
       "included_in_generation": false,
       "archived_inclusion_authorized": false,
       "blocked_by": [
         "pilot_not_approved"
       ],
-      "attempts": 2,
+      "attempts": 3,
       "style_version": "v1",
       "visual_review": {
         "status": "not_reviewed",
@@ -3453,7 +3505,7 @@
         },
         "notes": null
       },
-      "result_path": "assets/exercises/pending/agent-03-others-014/bench-press-close-grip-barbell/attempt-2.png",
+      "result_path": "assets/exercises/pending/agent-03-others-014/bench-press-close-grip-barbell/attempt-3.png",
       "supabase_path": null,
       "supabase_upload_status": "not_configured",
       "last_error": null,
@@ -3548,10 +3600,55 @@
           "backup_status": "github_verified",
           "verified_commit": "606740ecbaa0a717d8aa43e9e9a3ecc0320d689f",
           "verified_at": "2026-10-02T13:20:37+00:00",
-          "user_review": "pending"
+          "user_review": "needs_fix"
+        },
+        {
+          "attempt": 3,
+          "id": "bench-press-close-grip-barbell",
+          "batch_id": "agent-03-others-014",
+          "run_id": "lightweight-agent-03-package014-corrections-round2-2026-10-02",
+          "style_version": "v1",
+          "tool": "image_gen.imagegen",
+          "tool_call_index": 96,
+          "status": "completed",
+          "started_at": "2026-10-02T13:30:11+00:00",
+          "prompt": "Create exactly ONE square transparent PNG of the exact exercise below, using the referenced human for APPEARANCE ONLY. Render only the selected phase and camera. Identity/path/hash fields are metadata, never visible text.\n{\n  \"exact_catalogue_source\": {\n    \"equipment\": \"barbell\",\n    \"primary_muscle\": \"triceps\",\n    \"secondary_muscles\": [\n      \"chest\",\n      \"shoulders\"\n    ],\n    \"source_english\": {\n      \"common_mistakes\": [\n        \"Bouncing at the bottom.\",\n        \"Flaring the elbows.\",\n        \"Arching to shorten the range.\"\n      ],\n      \"description\": \"Bench Press - Close Grip (Barbell) is a supported chest press using the barbell.\",\n      \"form_cues\": [\n        \"Keep wrists stacked.\",\n        \"Keep shoulder blades supported.\",\n        \"Press evenly.\"\n      ],\n      \"instructions\": [\n        \"Lie on a flat bench with feet planted. Grip the barbell and hold it over the chest.\",\n        \"Lower the resistance toward the chest with elbows controlled.\",\n        \"Pause without bouncing or losing shoulder position.\",\n        \"Press back to straight arms, then rerack or set the weights down safely.\"\n      ],\n      \"provenance\": \"adapted\",\n      \"safety_note\": \"Use a spotter or safeties for the loaded press and stop before shoulder control is lost.\"\n    }\n  },\n  \"human_reference\": {\n    \"absolute_path\": \"/workspace/lightweight-exercises-photo/assets/exercises/biceps-curl-dumbbell.png\",\n    \"branch\": \"work\",\n    \"pixels_reviewed_during_preparation\": false,\n    \"repository_path\": \"assets/exercises/biceps-curl-dumbbell.png\",\n    \"role\": \"Human appearance/proportions/materials/anatomical style ONLY. Exercise pose, grip, equipment and muscles come from the exact-ID catalogue, never the reference.\",\n    \"sha256\": \"52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f\",\n    \"source_commit\": \"a6f296cbc6737991dd367e929b3e2df25874d4d8\"\n  },\n  \"identity_do_not_render_as_text\": {\n    \"exercise_id\": \"bench-press-close-grip-barbell\",\n    \"name\": \"Bench Press - Close Grip (Barbell)\",\n    \"source_catalog_record_sha256\": \"f9e476b9927f6aade2ca2ae35e25d7d39672eec1bc22b26b6d4cd92bbaaadd75\",\n    \"source_catalog_sha256\": \"a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989\"\n  },\n  \"scene\": {\n    \"camera\": \"Front-side three-quarter view exposing narrow hand spacing, elbows, feet and whole bench.\",\n    \"grip\": \"Both hands slightly NARROWER than shoulder width, exactly as cited Spanish source.\",\n    \"pose\": \"Lie on flat bench, feet planted, elbows close to torso as free bar approaches chest without bounce.\",\n    \"single_phase\": \"Close-grip controlled chest approach\",\n    \"source_instruction_quotes\": [\n      {\n        \"index\": 0,\n        \"text\": \"Lie on a flat bench with feet planted. Grip the barbell and hold it over the chest.\"\n      },\n      {\n        \"index\": 1,\n        \"text\": \"Lower the resistance toward the chest with elbows controlled.\"\n      },\n      {\n        \"index\": 2,\n        \"text\": \"Pause without bouncing or losing shoulder position.\"\n      },\n      {\n        \"index\": 3,\n        \"text\": \"Press back to straight arms, then rerack or set the weights down safely.\"\n      }\n    ],\n    \"supports_and_equipment\": \"Flat bench supports back and shoulder blades; stationary rack safeties per English safety alternative, no extra person.\"\n  },\n  \"source_resolution\": \"В es прямо задано хват трохи вужче плечей і лікті біля тулуба; це конкретизує загальний English grip.\",\n  \"source_use_rule\": \"Preserve original English. The cited additional fields of THIS SAME exercise ID fill missing detail only; do not substitute another exercise or silently rewrite the source.\",\n  \"style\": {\n    \"background\": \"Genuinely transparent PNG background, no white/checkerboard layer, no environment scene.\",\n    \"framing\": \"Full figure and all required equipment/supports visible within a square. Scale and use a three-quarter view to expose the specified contacts without changing anatomy, equipment, grip or technique.\",\n    \"human_model\": \"One athletic bald male anatomical mannequin, opaque silver-gray muscular surfaces, consistent proportions and detailed 3D materials, plain black shorts, barefoot.\",\n    \"material_rules\": \"Highlights never make tissue transparent; no glow, whole-body orange tint, hair, text, labels, arrows, UI, borders, collage or extra person.\",\n    \"no_invention\": \"Technique, equipment and muscles come only from the attached exact catalogue record. No extra attachments, numerical weights, brands or exact angles absent from the source.\",\n    \"output\": {\n      \"format\": \"PNG\",\n      \"height\": 1024,\n      \"one_person\": true,\n      \"one_phase\": true,\n      \"width\": 1024\n    },\n    \"primary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"rule\": \"Highlight only the exact primary muscle group provided for this exercise.\"\n    },\n    \"secondary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"intensity_fraction\": [\n        0.4,\n        0.5\n      ],\n      \"rule\": \"Only the exact secondary muscles, lighter same-hue highlight; if the list is empty add no secondary target.\"\n    },\n    \"version\": \"v1\"\n  },\n  \"style_document_sha256\": \"8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578\",\n  \"supplementary_same_ID_sources\": [\n    {\n      \"catalog_path\": \"data/exercises/catalog.json\",\n      \"catalog_record_sha256\": \"f9e476b9927f6aade2ca2ae35e25d7d39672eec1bc22b26b6d4cd92bbaaadd75\",\n      \"catalog_sha256\": \"a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989\",\n      \"exercise_id\": \"bench-press-close-grip-barbell\",\n      \"field\": \"content.es.instructions[1]\",\n      \"source_commit\": \"a6f296cbc6737991dd367e929b3e2df25874d4d8\",\n      \"value\": \"Agarra la barra con un agarre cerrado, un poco más estrecho que el ancho de los hombros.\"\n    },\n    {\n      \"catalog_path\": \"data/exercises/catalog.json\",\n      \"catalog_record_sha256\": \"f9e476b9927f6aade2ca2ae35e25d7d39672eec1bc22b26b6d4cd92bbaaadd75\",\n      \"catalog_sha256\": \"a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989\",\n      \"exercise_id\": \"bench-press-close-grip-barbell\",\n      \"field\": \"content.es.instructions[2]\",\n      \"source_commit\": \"a6f296cbc6737991dd367e929b3e2df25874d4d8\",\n      \"value\": \"Saca la barra del soporte y bájala lentamente hacia el pecho, manteniendo los codos cerca del cuerpo.\"\n    },\n    {\n      \"catalog_path\": \"data/exercises/catalog.json\",\n      \"catalog_record_sha256\": \"f9e476b9927f6aade2ca2ae35e25d7d39672eec1bc22b26b6d4cd92bbaaadd75\",\n      \"catalog_sha256\": \"a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989\",\n      \"exercise_id\": \"bench-press-close-grip-barbell\",\n      \"field\": \"content.uk.instructions[0]\",\n      \"source_commit\": \"a6f296cbc6737991dd367e929b3e2df25874d4d8\",\n      \"value\": \"Ляжте на рівну лаву, поставте стопи на підлогу, візьміться за штангу вузьким хватом і утримуйте її над грудьми.\"\n    }\n  ]\n}\n\nUSER-DIRECTED GRIP for this fresh generation: Both hands must use the same reverse (underhand, supinated) grip, exactly like holding a pull-up bar for a chin-up. The lifter is supine on the flat bench; orient BOTH palms toward the lifter’s face/head, with the fingers of BOTH hands curling toward the face/head around the same straight bar. This is intentionally a reverse grip on BOTH hands, not a standard overhand grip and not a mixed grip; do not turn one hand 180 degrees relative to the other. Keep the hands close together, slightly narrower than shoulder width, wrists aligned and forearms symmetric. Show the straight loaded bar held over the upper chest in a controlled bent-elbow press phase, both hands clearly visible and gripping it with closed thumbs. Use a front-side view from slightly above the head end so the reverse grip and both palms/fingers are legible without perspective distortion. Keep a secure flat bench, grounded feet, one person, a complete straight barbell, and the exact muscle targets in the source prompt (triceps primary, chest and shoulders lighter secondary highlights in #F26445). Use the second attached image only for the approved human anatomy/material/style. Render a new standalone image; do not imitate prior attempt hand placement. Transparent square PNG, no text or decoration.",
+          "prompt_sha256": "972e23056014a00bf766f2d9bcc2821fd3ecdd92ac57c9cba47635f676d403e2",
+          "reference_path": "assets/exercises/biceps-curl-dumbbell.png",
+          "reference_sha256": "52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f",
+          "input_image_path": null,
+          "input_image_sha256": null,
+          "result_path": "assets/exercises/pending/agent-03-others-014/bench-press-close-grip-barbell/attempt-3.png",
+          "correction_reason": "Fresh close-grip bench press using a consistent reverse/underhand supinated grip with both palms facing the lifter’s face/head and both sets of fingers curling toward the face; no mixed grip.",
+          "generation_mode": "fresh_generation",
+          "completed_at": "2026-10-02T13:31:22+00:00",
+          "result_sha256": "90171bed2296fad8fdbbe674877e21157228e9c4181d0fa4fbc338a90ca3b3ab",
+          "dimensions": {
+            "width": 1254,
+            "height": 1254
+          },
+          "technical_check": "passed",
+          "technical_check_details": {
+            "format": "PNG",
+            "dimensions": {
+              "width": 1254,
+              "height": 1254
+            },
+            "mode": "RGBA",
+            "has_alpha": true,
+            "transparent_pixel_count": 998537,
+            "sha256": "90171bed2296fad8fdbbe674877e21157228e9c4181d0fa4fbc338a90ca3b3ab",
+            "exercise_id": "bench-press-close-grip-barbell",
+            "repository_path": "assets/exercises/pending/agent-03-others-014/bench-press-close-grip-barbell/attempt-3.png",
+            "errors": []
+          },
+          "tool_response_metadata": {
+            "tool_call_id": "image_gen.imagegen#96",
+            "output_hint": "/workspace/generated_images/exec-f6d496cf-014d-4e90-83b5-d0f3df3d3e9e.png"
+          }
         }
       ],
-      "result_sha256": "9ebfc19c4d5ccab37db5c69842a717345f884f25166343e8ae46c5207ae7a1c9",
+      "result_sha256": "90171bed2296fad8fdbbe674877e21157228e9c4181d0fa4fbc338a90ca3b3ab",
       "technical_check": "passed",
       "technical_check_details": {
         "format": "PNG",
@@ -3561,18 +3658,18 @@
         },
         "mode": "RGBA",
         "has_alpha": true,
-        "transparent_pixel_count": 983334,
-        "sha256": "9ebfc19c4d5ccab37db5c69842a717345f884f25166343e8ae46c5207ae7a1c9",
+        "transparent_pixel_count": 998537,
+        "sha256": "90171bed2296fad8fdbbe674877e21157228e9c4181d0fa4fbc338a90ca3b3ab",
         "exercise_id": "bench-press-close-grip-barbell",
-        "repository_path": "assets/exercises/pending/agent-03-others-014/bench-press-close-grip-barbell/attempt-2.png",
+        "repository_path": "assets/exercises/pending/agent-03-others-014/bench-press-close-grip-barbell/attempt-3.png",
         "errors": []
       },
       "agent_visual_review": "not_performed",
       "agent_visual_review_notes": null,
-      "user_review": "needs_fix",
-      "backup_status": "github_verified",
-      "verified_commit": "606740ecbaa0a717d8aa43e9e9a3ecc0320d689f",
-      "verified_at": "2026-10-02T13:20:37+00:00",
+      "user_review": "pending",
+      "backup_status": "local_saved",
+      "verified_commit": null,
+      "verified_at": null,
       "user_review_history": [
         {
           "by": "user",
@@ -3606,6 +3703,13 @@
           "requested_at": "2026-10-02T13:25:48+00:00",
           "by": "user",
           "reason": "Attempt-2 still has an incorrect grip. User requests a fresh close-grip bench press with both hands using the same supinated reverse grip, palms and fingers oriented toward the face/head, with no mixed or 180-degree-opposed hand."
+        },
+        {
+          "for_attempt": 2,
+          "requested_at": "2026-10-02T13:30:11+00:00",
+          "by": "user",
+          "reason": "Fresh close-grip bench press using a consistent reverse/underhand supinated grip with both palms facing the lifter’s face/head and both sets of fingers curling toward the face; no mixed grip.",
+          "attempt_3_started_at": "2026-10-02T13:30:11+00:00"
         }
       ]
     },
