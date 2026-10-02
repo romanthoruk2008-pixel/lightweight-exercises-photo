@@ -148,9 +148,9 @@
     ],
     "active_batch_id": "agent-03-others-011",
     "active_batch_item_id": null,
-    "active_batch_scope": "Package 011 generation finished locally; push and verify its checkpoint, then proceed to package 012.",
+    "active_batch_scope": "Package 011 is generated, pushed, and remote-verified; continue with package 012.",
     "current_batch": "night-2026-10-01-004",
-    "next_action": "Commit/push package 011, verify remote hashes, then start package 012.",
+    "next_action": "Start package 012 in exact queue order.",
     "night_generation_remote_audit": {
       "audited_at_utc": "2026-10-01T08:16:06Z",
       "remote_branch": "work",
@@ -769,7 +769,63 @@
       "completed_at": "2026-10-02T12:09:10.099225+00:00",
       "generated_count": 10,
       "failed_ids": [],
-      "next_batch_id": "agent-03-others-012"
+      "next_batch_id": "agent-03-others-012",
+      "verified_at": "2026-10-02T12:10:35.044316+00:00",
+      "content_commit": "56501c890d54273add7f6fa49947f74a9da8f6ab",
+      "verified_commit": "56501c890d54273add7f6fa49947f74a9da8f6ab",
+      "backup_status": "github_verified",
+      "files": [
+        {
+          "exercise_id": "triceps-extension-suspension",
+          "path": "assets/exercises/pending/agent-03-others-011/triceps-extension-suspension/attempt-1.png",
+          "sha256": "0b40218e7657eba90a295c39c73e591f5c307aa5b83c52bb06bbf42c566114a2"
+        },
+        {
+          "exercise_id": "wide-pullup-machine",
+          "path": "assets/exercises/pending/agent-03-others-011/wide-pullup-machine/attempt-1.png",
+          "sha256": "87b7397a3282951c0886c4a2e101e4cb17425a527aa2259505285e87f273db11"
+        },
+        {
+          "exercise_id": "box-squat-barbell-hevy-3338464331414239",
+          "path": "assets/exercises/pending/agent-03-others-011/box-squat-barbell-hevy-3338464331414239/attempt-1.png",
+          "sha256": "47989bf2bce9a6ab5ae2e88915771086c0d98470dfd1a1a7a7bd67f7844300b9"
+        },
+        {
+          "exercise_id": "gorilla-row-kettlebell",
+          "path": "assets/exercises/pending/agent-03-others-011/gorilla-row-kettlebell/attempt-1.png",
+          "sha256": "ede825f7c33a856d75c628819b3e6421daa72868c8c15982e5c0ec6c1c0006fc"
+        },
+        {
+          "exercise_id": "kettlebell-around-the-world",
+          "path": "assets/exercises/pending/agent-03-others-011/kettlebell-around-the-world/attempt-1.png",
+          "sha256": "a6bef2b47d3b06fa6024e4fcec885c6b8b50bca67379a642c9cc2099a77dcadd"
+        },
+        {
+          "exercise_id": "kettlebell-curl",
+          "path": "assets/exercises/pending/agent-03-others-011/kettlebell-curl/attempt-1.png",
+          "sha256": "9a407ffe0582bec5dd121ab9553de26971390f7343cc367cbb011363016195c5"
+        },
+        {
+          "exercise_id": "kettlebell-goblet-squat",
+          "path": "assets/exercises/pending/agent-03-others-011/kettlebell-goblet-squat/attempt-1.png",
+          "sha256": "8c145f294f2c3ce74fa01047033bc6831800df30660359ffe031754dbdd10278"
+        },
+        {
+          "exercise_id": "kettlebell-shoulder-press",
+          "path": "assets/exercises/pending/agent-03-others-011/kettlebell-shoulder-press/attempt-1.png",
+          "sha256": "80d97bb5b625dd0083f9eead011052a3db8273ca00d46676400afa5005432d83"
+        },
+        {
+          "exercise_id": "landmine-row-barbell",
+          "path": "assets/exercises/pending/agent-03-others-011/landmine-row-barbell/attempt-1.png",
+          "sha256": "39c3a0170151f1ec3204f910e09feaafb8a97539444204e28f2156018932da1b"
+        },
+        {
+          "exercise_id": "lateral-box-jump",
+          "path": "assets/exercises/pending/agent-03-others-011/lateral-box-jump/attempt-1.png",
+          "sha256": "4082067a4cf7b719f1b360a6b9e69f8899fd65a104f3af2af74acbf64b13c1ed"
+        }
+      ]
     }
   },
   "historical_mapping_metadata": {
@@ -4896,7 +4952,10 @@
           "tool_response_metadata": {
             "tool_call_id": "image_gen.imagegen#25",
             "output_hint": "/workspace/generated_images/exec-dbb6f6c6-3ca5-413d-b095-6e4e807a60ef.png"
-          }
+          },
+          "backup_status": "github_verified",
+          "verified_commit": "56501c890d54273add7f6fa49947f74a9da8f6ab",
+          "verified_at": "2026-10-02T12:10:35.044316+00:00"
         }
       ],
       "result_sha256": "47989bf2bce9a6ab5ae2e88915771086c0d98470dfd1a1a7a7bd67f7844300b9",
@@ -4917,7 +4976,10 @@
       },
       "agent_visual_review": "not_performed",
       "agent_visual_review_notes": null,
-      "user_review": "pending"
+      "user_review": "pending",
+      "backup_status": "github_verified",
+      "verified_commit": "56501c890d54273add7f6fa49947f74a9da8f6ab",
+      "verified_at": "2026-10-02T12:10:35.044316+00:00"
     },
     "boxing": {
       "id": "boxing",
@@ -14376,7 +14438,10 @@
           "tool_response_metadata": {
             "tool_call_id": "image_gen.imagegen#26",
             "output_hint": "/workspace/generated_images/exec-bd1731ab-a768-4863-9a68-ae6800ee74c4.png"
-          }
+          },
+          "backup_status": "github_verified",
+          "verified_commit": "56501c890d54273add7f6fa49947f74a9da8f6ab",
+          "verified_at": "2026-10-02T12:10:35.044316+00:00"
         }
       ],
       "result_sha256": "ede825f7c33a856d75c628819b3e6421daa72868c8c15982e5c0ec6c1c0006fc",
@@ -14397,7 +14462,10 @@
       },
       "agent_visual_review": "not_performed",
       "agent_visual_review_notes": null,
-      "user_review": "pending"
+      "user_review": "pending",
+      "backup_status": "github_verified",
+      "verified_commit": "56501c890d54273add7f6fa49947f74a9da8f6ab",
+      "verified_at": "2026-10-02T12:10:35.044316+00:00"
     },
     "hack-squat-barbell": {
       "id": "hack-squat-barbell",
@@ -18473,7 +18541,10 @@
           "tool_response_metadata": {
             "tool_call_id": "image_gen.imagegen#27",
             "output_hint": "/workspace/generated_images/exec-cc7eb817-3477-4b4c-bb72-381bf2c08a31.png"
-          }
+          },
+          "backup_status": "github_verified",
+          "verified_commit": "56501c890d54273add7f6fa49947f74a9da8f6ab",
+          "verified_at": "2026-10-02T12:10:35.044316+00:00"
         }
       ],
       "result_sha256": "a6bef2b47d3b06fa6024e4fcec885c6b8b50bca67379a642c9cc2099a77dcadd",
@@ -18494,7 +18565,10 @@
       },
       "agent_visual_review": "not_performed",
       "agent_visual_review_notes": null,
-      "user_review": "pending"
+      "user_review": "pending",
+      "backup_status": "github_verified",
+      "verified_commit": "56501c890d54273add7f6fa49947f74a9da8f6ab",
+      "verified_at": "2026-10-02T12:10:35.044316+00:00"
     },
     "kettlebell-clean": {
       "id": "kettlebell-clean",
@@ -18628,7 +18702,10 @@
           "tool_response_metadata": {
             "tool_call_id": "image_gen.imagegen#28",
             "output_hint": "/workspace/generated_images/exec-070267c6-1f29-4596-9ce3-7a63e0886a3e.png"
-          }
+          },
+          "backup_status": "github_verified",
+          "verified_commit": "56501c890d54273add7f6fa49947f74a9da8f6ab",
+          "verified_at": "2026-10-02T12:10:35.044316+00:00"
         }
       ],
       "result_sha256": "9a407ffe0582bec5dd121ab9553de26971390f7343cc367cbb011363016195c5",
@@ -18649,7 +18726,10 @@
       },
       "agent_visual_review": "not_performed",
       "agent_visual_review_notes": null,
-      "user_review": "pending"
+      "user_review": "pending",
+      "backup_status": "github_verified",
+      "verified_commit": "56501c890d54273add7f6fa49947f74a9da8f6ab",
+      "verified_at": "2026-10-02T12:10:35.044316+00:00"
     },
     "kettlebell-goblet-squat": {
       "id": "kettlebell-goblet-squat",
@@ -18738,7 +18818,10 @@
           "tool_response_metadata": {
             "tool_call_id": "image_gen.imagegen#29",
             "output_hint": "/workspace/generated_images/exec-757124e7-dfe0-470c-93c7-603c7bc31ee4.png"
-          }
+          },
+          "backup_status": "github_verified",
+          "verified_commit": "56501c890d54273add7f6fa49947f74a9da8f6ab",
+          "verified_at": "2026-10-02T12:10:35.044316+00:00"
         }
       ],
       "result_sha256": "8c145f294f2c3ce74fa01047033bc6831800df30660359ffe031754dbdd10278",
@@ -18759,7 +18842,10 @@
       },
       "agent_visual_review": "not_performed",
       "agent_visual_review_notes": null,
-      "user_review": "pending"
+      "user_review": "pending",
+      "backup_status": "github_verified",
+      "verified_commit": "56501c890d54273add7f6fa49947f74a9da8f6ab",
+      "verified_at": "2026-10-02T12:10:35.044316+00:00"
     },
     "kettlebell-high-pull": {
       "id": "kettlebell-high-pull",
@@ -18903,7 +18989,10 @@
           "tool_response_metadata": {
             "tool_call_id": "image_gen.imagegen#30",
             "output_hint": "/workspace/generated_images/exec-dd1572f3-3d5f-492e-bf9b-5226ca47dbda.png"
-          }
+          },
+          "backup_status": "github_verified",
+          "verified_commit": "56501c890d54273add7f6fa49947f74a9da8f6ab",
+          "verified_at": "2026-10-02T12:10:35.044316+00:00"
         }
       ],
       "result_sha256": "80d97bb5b625dd0083f9eead011052a3db8273ca00d46676400afa5005432d83",
@@ -18924,7 +19013,10 @@
       },
       "agent_visual_review": "not_performed",
       "agent_visual_review_notes": null,
-      "user_review": "pending"
+      "user_review": "pending",
+      "backup_status": "github_verified",
+      "verified_commit": "56501c890d54273add7f6fa49947f74a9da8f6ab",
+      "verified_at": "2026-10-02T12:10:35.044316+00:00"
     },
     "kettlebell-snatch": {
       "id": "kettlebell-snatch",
@@ -19710,7 +19802,10 @@
           "tool_response_metadata": {
             "tool_call_id": "image_gen.imagegen#31",
             "output_hint": "/workspace/generated_images/exec-e58d5c70-d74f-443d-a215-558d48253906.png"
-          }
+          },
+          "backup_status": "github_verified",
+          "verified_commit": "56501c890d54273add7f6fa49947f74a9da8f6ab",
+          "verified_at": "2026-10-02T12:10:35.044316+00:00"
         }
       ],
       "result_sha256": "39c3a0170151f1ec3204f910e09feaafb8a97539444204e28f2156018932da1b",
@@ -19731,7 +19826,10 @@
       },
       "agent_visual_review": "not_performed",
       "agent_visual_review_notes": null,
-      "user_review": "pending"
+      "user_review": "pending",
+      "backup_status": "github_verified",
+      "verified_commit": "56501c890d54273add7f6fa49947f74a9da8f6ab",
+      "verified_at": "2026-10-02T12:10:35.044316+00:00"
     },
     "landmine-squat-and-press-barbell": {
       "id": "landmine-squat-and-press-barbell",
@@ -20130,7 +20228,10 @@
           "tool_response_metadata": {
             "tool_call_id": "image_gen.imagegen#32",
             "output_hint": "/workspace/generated_images/exec-6fd06637-b3eb-4034-ac42-ed7795658056.png"
-          }
+          },
+          "backup_status": "github_verified",
+          "verified_commit": "56501c890d54273add7f6fa49947f74a9da8f6ab",
+          "verified_at": "2026-10-02T12:10:35.044316+00:00"
         }
       ],
       "result_sha256": "4082067a4cf7b719f1b360a6b9e69f8899fd65a104f3af2af74acbf64b13c1ed",
@@ -20151,7 +20252,10 @@
       },
       "agent_visual_review": "not_performed",
       "agent_visual_review_notes": null,
-      "user_review": "pending"
+      "user_review": "pending",
+      "backup_status": "github_verified",
+      "verified_commit": "56501c890d54273add7f6fa49947f74a9da8f6ab",
+      "verified_at": "2026-10-02T12:10:35.044316+00:00"
     },
     "lateral-leg-raises": {
       "id": "lateral-leg-raises",
@@ -42089,7 +42193,10 @@
           "tool_response_metadata": {
             "tool_call_id": "image_gen.imagegen#23",
             "output_hint": "/workspace/generated_images/exec-c5ab59c0-69e9-4976-9e18-7f7f611e8bbe.png"
-          }
+          },
+          "backup_status": "github_verified",
+          "verified_commit": "56501c890d54273add7f6fa49947f74a9da8f6ab",
+          "verified_at": "2026-10-02T12:10:35.044316+00:00"
         }
       ],
       "result_sha256": "0b40218e7657eba90a295c39c73e591f5c307aa5b83c52bb06bbf42c566114a2",
@@ -42110,7 +42217,10 @@
       },
       "agent_visual_review": "not_performed",
       "agent_visual_review_notes": null,
-      "user_review": "pending"
+      "user_review": "pending",
+      "backup_status": "github_verified",
+      "verified_commit": "56501c890d54273add7f6fa49947f74a9da8f6ab",
+      "verified_at": "2026-10-02T12:10:35.044316+00:00"
     },
     "triceps-kickback-cable-machine": {
       "id": "triceps-kickback-cable-machine",
@@ -43709,7 +43819,10 @@
           "tool_response_metadata": {
             "tool_call_id": "image_gen.imagegen#24",
             "output_hint": "/workspace/generated_images/exec-ffdf54cf-42e1-4e0a-8fad-bb5e5dfb7c18.png"
-          }
+          },
+          "backup_status": "github_verified",
+          "verified_commit": "56501c890d54273add7f6fa49947f74a9da8f6ab",
+          "verified_at": "2026-10-02T12:10:35.044316+00:00"
         }
       ],
       "result_sha256": "87b7397a3282951c0886c4a2e101e4cb17425a527aa2259505285e87f273db11",
@@ -43730,7 +43843,10 @@
       },
       "agent_visual_review": "not_performed",
       "agent_visual_review_notes": null,
-      "user_review": "pending"
+      "user_review": "pending",
+      "backup_status": "github_verified",
+      "verified_commit": "56501c890d54273add7f6fa49947f74a9da8f6ab",
+      "verified_at": "2026-10-02T12:10:35.044316+00:00"
     },
     "wide-elbow-triceps-press-dumbbell": {
       "id": "wide-elbow-triceps-press-dumbbell",

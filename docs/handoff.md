@@ -542,3 +542,5 @@ Generation complete: 10/10 images. Technical checks passed for each generated PN
 - `kettlebell-shoulder-press` — `assets/exercises/pending/agent-03-others-011/kettlebell-shoulder-press/attempt-1.png`; SHA256 `80d97bb5b625dd0083f9eead011052a3db8273ca00d46676400afa5005432d83`
 - `landmine-row-barbell` — `assets/exercises/pending/agent-03-others-011/landmine-row-barbell/attempt-1.png`; SHA256 `39c3a0170151f1ec3204f910e09feaafb8a97539444204e28f2156018932da1b`
 - `lateral-box-jump` — `assets/exercises/pending/agent-03-others-011/lateral-box-jump/attempt-1.png`; SHA256 `4082067a4cf7b719f1b360a6b9e69f8899fd65a104f3af2af74acbf64b13c1ed`
+
+GitHub verification — Agent-03 package 011: 10/10 PNG blobs at `work` matched local files, progress and manifest SHA256; each remote PNG decoded as square RGBA with transparent pixels. Verified content commit `56501c890d54273add7f6fa49947f74a9da8f6ab`. All 10 remain `user_review=pending`, `agent_visual_review=not_performed`; package 012 is next.
