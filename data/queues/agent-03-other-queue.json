@@ -239,8 +239,8 @@
   ],
   "default_pending_note": "Untouched not_started records carry raw user_review=pending by default. They have no submitted result and were unknown in inventory; they are not awaiting review. Existing submitted pending results are excluded by PNG/result/attempt checks.",
   "ordering": "First 30 concrete simple compositions; then simple bodyweight/dumbbell/barbell/bench, then bars/rings/bands/suspension, then other explicitly specified apparatus. No exact angles/loads/attachments invented.",
-  "eligible_count": 227,
-  "prepared_count": 227,
+  "eligible_count": 237,
+  "prepared_count": 237,
   "remaining_unprepared_count": 0,
   "eligible_exercise_ids": [
     "standing-calf-raise",
@@ -469,7 +469,17 @@
     "snowboarding",
     "cross-body-hammer-curl-dumbbell",
     "concentration-curl-dumbbell",
-    "clean-barbell"
+    "clean-barbell",
+    "floor-triceps-dip",
+    "chest-dip-weighted-machine",
+    "drag-curl-barbell",
+    "feet-up-bench-press-barbell",
+    "hammer-curl-band-resistance-band",
+    "hip-thrust-barbell",
+    "landmine-180-barbell",
+    "lying-neck-extension",
+    "lying-neck-extension-weighted-plate",
+    "seated-incline-curl-dumbbell"
   ],
   "first_launch_ids": [
     "standing-calf-raise",
@@ -19553,6 +19563,197 @@
       "assigned_generator": "generator-b",
       "assignment_registry_path": "data/assignments/agent-03-generator-b-continuation-2026-10-02.json",
       "current_task_path": "data/batches/agent-03-others-027.json"
+    },
+    {
+      "exercise_id": "floor-triceps-dip",
+      "name": "Floor Triceps Dip",
+      "equipment": "none",
+      "primary_muscle": "triceps",
+      "secondary_muscles": [
+        "shoulders"
+      ],
+      "source_catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+      "source_catalog_record_sha256": "bbdb6e84f8d930ad0ada8fa98cfbfbbec17758287f7f9d30f4a4e8ed559481d3",
+      "source_english_sha256": "d9f0d7e6f3e28eda60324d4c27c89a45a1181e970194da598a5c5566e8ef5991",
+      "status": "ready_unassigned",
+      "assigned_generator": null,
+      "batch_id": null,
+      "prompt_prepared": true,
+      "style_version": "v1",
+      "current_task_path": "data/queues/agent-03-user-answers-2026-10-03-prepared.json",
+      "technique_decision_path": "data/technique-decisions/agent-03-user-answers-2026-10-03.json"
+    },
+    {
+      "exercise_id": "chest-dip-weighted-machine",
+      "name": "Chest Dip (Weighted)",
+      "equipment": "machine",
+      "primary_muscle": "chest",
+      "secondary_muscles": [
+        "triceps",
+        "shoulders"
+      ],
+      "source_catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+      "source_catalog_record_sha256": "351231c64248ce62b940b99b806293e579db87b20e112c1a0bd6b37f60c1fc60",
+      "source_english_sha256": "a757131bb84f10cdb09ea1610cdd03f0c52f6650c9fb0f86fbfd316e2fc7f1e7",
+      "status": "ready_unassigned",
+      "assigned_generator": null,
+      "batch_id": null,
+      "prompt_prepared": true,
+      "style_version": "v1",
+      "current_task_path": "data/queues/agent-03-user-answers-2026-10-03-prepared.json",
+      "technique_decision_path": "data/technique-decisions/agent-03-user-answers-2026-10-03.json"
+    },
+    {
+      "exercise_id": "drag-curl-barbell",
+      "name": "Drag Curl",
+      "equipment": "barbell",
+      "primary_muscle": "biceps",
+      "secondary_muscles": [],
+      "source_catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+      "source_catalog_record_sha256": "3cf726675d8e4ce39c2dfd4e4fbba0922159e3a7e2be0b4c786c0e28d1129982",
+      "source_english_sha256": "c547467749dfe42393873db2bcd013a80eb2900663a843d51bafb84a91f50bdf",
+      "status": "ready_unassigned",
+      "assigned_generator": null,
+      "batch_id": null,
+      "prompt_prepared": true,
+      "style_version": "v1",
+      "current_task_path": "data/queues/agent-03-user-answers-2026-10-03-prepared.json",
+      "technique_decision_path": "data/technique-decisions/agent-03-user-answers-2026-10-03.json"
+    },
+    {
+      "exercise_id": "feet-up-bench-press-barbell",
+      "name": "Feet Up Bench Press (Barbell)",
+      "equipment": "barbell",
+      "primary_muscle": "chest",
+      "secondary_muscles": [
+        "shoulders",
+        "triceps"
+      ],
+      "source_catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+      "source_catalog_record_sha256": "4392780c4d3b66eda6be8bb84cc4b66dd3df6c840f11d563aeb6c9ce3e5b4da6",
+      "source_english_sha256": "14b812e389389c0b6f2a34e680169d3647fdc82ef8e42a064c385a440b37e1cb",
+      "status": "ready_unassigned",
+      "assigned_generator": null,
+      "batch_id": null,
+      "prompt_prepared": true,
+      "style_version": "v1",
+      "current_task_path": "data/queues/agent-03-user-answers-2026-10-03-prepared.json",
+      "technique_decision_path": "data/technique-decisions/agent-03-user-answers-2026-10-03.json"
+    },
+    {
+      "exercise_id": "hammer-curl-band-resistance-band",
+      "name": "Hammer Curl (Band)",
+      "equipment": "resistance_band",
+      "primary_muscle": "biceps",
+      "secondary_muscles": [
+        "forearms"
+      ],
+      "source_catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+      "source_catalog_record_sha256": "4ce496bbc8127c9b4db59c00d2e7b582567a6672eed3b0f5b3321f1faa871f30",
+      "source_english_sha256": "ad5311e9b43cff3a926b8beac61af322c03df9e926eba71b1bb1e7214e7809e3",
+      "status": "ready_unassigned",
+      "assigned_generator": null,
+      "batch_id": null,
+      "prompt_prepared": true,
+      "style_version": "v1",
+      "current_task_path": "data/queues/agent-03-user-answers-2026-10-03-prepared.json",
+      "technique_decision_path": "data/technique-decisions/agent-03-user-answers-2026-10-03.json"
+    },
+    {
+      "exercise_id": "hip-thrust-barbell",
+      "name": "Hip Thrust (Barbell)",
+      "equipment": "barbell",
+      "primary_muscle": "glutes",
+      "secondary_muscles": [
+        "hamstrings",
+        "quadriceps",
+        "adductors"
+      ],
+      "source_catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+      "source_catalog_record_sha256": "01222d152171562c044d3b797797e9b6c5b52511a6424fae8e71bcc4935a9422",
+      "source_english_sha256": "7416db6bfcbd872137168b6c710b49893e2ae68b66b45bc32d81e4131f8dda80",
+      "status": "ready_unassigned",
+      "assigned_generator": null,
+      "batch_id": null,
+      "prompt_prepared": true,
+      "style_version": "v1",
+      "current_task_path": "data/queues/agent-03-user-answers-2026-10-03-prepared.json",
+      "technique_decision_path": "data/technique-decisions/agent-03-user-answers-2026-10-03.json"
+    },
+    {
+      "exercise_id": "landmine-180-barbell",
+      "name": "Landmine 180",
+      "equipment": "barbell",
+      "primary_muscle": "abdominals",
+      "secondary_muscles": [
+        "shoulders",
+        "chest",
+        "upper_back",
+        "traps",
+        "biceps",
+        "forearms"
+      ],
+      "source_catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+      "source_catalog_record_sha256": "c5f25e5bd7749530c5511f43787ba25dc316da1a585a2a50c36366548e9c1860",
+      "source_english_sha256": "9af06767d43e9235fd89accc3d36ec635664032adb6fdfdb4acfeac58bbc5145",
+      "status": "ready_unassigned",
+      "assigned_generator": null,
+      "batch_id": null,
+      "prompt_prepared": true,
+      "style_version": "v1",
+      "current_task_path": "data/queues/agent-03-user-answers-2026-10-03-prepared.json",
+      "technique_decision_path": "data/technique-decisions/agent-03-user-answers-2026-10-03.json"
+    },
+    {
+      "exercise_id": "lying-neck-extension",
+      "name": "Lying Neck Extension",
+      "equipment": "none",
+      "primary_muscle": "neck",
+      "secondary_muscles": [],
+      "source_catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+      "source_catalog_record_sha256": "749e1b5b3d9be89700fe9db3bf0191ba0a18cf1d9394346594968d5230452bff",
+      "source_english_sha256": "3ad75a7a91b5d816b94bc222ec019dc1231a3f1f4bf86dbd2b471d734300664b",
+      "status": "ready_unassigned",
+      "assigned_generator": null,
+      "batch_id": null,
+      "prompt_prepared": true,
+      "style_version": "v1",
+      "current_task_path": "data/queues/agent-03-user-answers-2026-10-03-prepared.json",
+      "technique_decision_path": "data/technique-decisions/agent-03-user-answers-2026-10-03.json"
+    },
+    {
+      "exercise_id": "lying-neck-extension-weighted-plate",
+      "name": "Lying Neck Extension (Weighted)",
+      "equipment": "plate",
+      "primary_muscle": "neck",
+      "secondary_muscles": [],
+      "source_catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+      "source_catalog_record_sha256": "d6f31d6fbd37b49ad389f47114287a0cc540e2e8eeb850d3c61be8f0fe4b1138",
+      "source_english_sha256": "5596335a7fff789ce70056a5aefc88ea845c382603938d92c69a074122c57157",
+      "status": "ready_unassigned",
+      "assigned_generator": null,
+      "batch_id": null,
+      "prompt_prepared": true,
+      "style_version": "v1",
+      "current_task_path": "data/queues/agent-03-user-answers-2026-10-03-prepared.json",
+      "technique_decision_path": "data/technique-decisions/agent-03-user-answers-2026-10-03.json"
+    },
+    {
+      "exercise_id": "seated-incline-curl-dumbbell",
+      "name": "Seated Incline Curl (Dumbbell)",
+      "equipment": "dumbbell",
+      "primary_muscle": "biceps",
+      "secondary_muscles": [],
+      "source_catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+      "source_catalog_record_sha256": "66fea6b3e8fea849cd6f53ceab8090c4ffdd3bd8d27d0436bd62fcdb3a96b460",
+      "source_english_sha256": "500d72c324b51fdc53481ebdb08df2eeae830f4a023631ae55647d23c1a1362b",
+      "status": "ready_unassigned",
+      "assigned_generator": null,
+      "batch_id": null,
+      "prompt_prepared": true,
+      "style_version": "v1",
+      "current_task_path": "data/queues/agent-03-user-answers-2026-10-03-prepared.json",
+      "technique_decision_path": "data/technique-decisions/agent-03-user-answers-2026-10-03.json"
     }
   ],
   "last_live_check": {
@@ -19571,7 +19772,7 @@
     "prepared_count": 12,
     "shortfall": 38
   },
-  "updated_at": "2026-10-03T00:16:01.381998+03:00",
+  "updated_at": "2026-10-03T01:41:07.698955+03:00",
   "next_launch_ids": [
     "21s-biceps-curl-barbell",
     "arnold-press-dumbbell",
@@ -24532,9 +24733,9 @@
     },
     "note": "Live Git observations only; own prior batch files unchanged. PNG presence is not user approval."
   },
-  "blocked_clarification_count": 20,
-  "blocked_clarification_path": "data/queues/agent-03-generator-b-continuation-2026-10-02-blocked.json",
-  "clarification_review_path": "data/queues/agent-03-generator-b-continuation-2026-10-02-blocked.json",
+  "blocked_clarification_count": 10,
+  "blocked_clarification_path": "data/queues/agent-03-user-answers-2026-10-03-blocked.json",
+  "clarification_review_path": "data/queues/agent-03-user-answers-2026-10-03-blocked.json",
   "completion": {
     "status": "eligible_preparation_finished_blocked_clarifications_remain",
     "prepared_at": "2026-10-02T01:21:10.062167+03:00",
@@ -25432,16 +25633,6 @@
     "waiter-curl-dumbbell",
     "bicycle-crunch",
     "bicycle-crunch-raised-legs",
-    "floor-triceps-dip",
-    "lying-neck-extension",
-    "seated-incline-curl-dumbbell",
-    "chest-dip-weighted-machine",
-    "drag-curl-barbell",
-    "feet-up-bench-press-barbell",
-    "hammer-curl-band-resistance-band",
-    "hip-thrust-barbell",
-    "landmine-180-barbell",
-    "lying-neck-extension-weighted-plate",
     "nordic-hamstrings-curls",
     "pushup-weighted",
     "side-bend-dumbbell",
@@ -25645,7 +25836,8 @@
     "decision_sheet_path": "data/queues/agent-03-user-decisions-2026-10-02.json",
     "generation_authorized_now": false,
     "existing_assignments_and_batches_unchanged": true,
-    "phase2_execution_gate": "NEXT stage after non-machine wave; do not transfer all 114 candidates as one assignment."
+    "phase2_execution_gate": "NEXT stage after non-machine wave; do not transfer all 114 candidates as one assignment.",
+    "latest_equipment_decisions_path": "data/technique-decisions/agent-03-user-answers-2026-10-03.json"
   },
   "ownership_interpretation_update": {
     "historical_night_scope_count": 15,
@@ -25732,5 +25924,14 @@
       "HEAD": "2ee4c3f612aa3e2d62935f5e0dab0100be37935f"
     },
     "scope": "PNG Git-tree presence, actual selected assignments and saved no-PNG history; no pixel/Supabase audit."
+  },
+  "latest_user_answers": {
+    "decision_path": "data/technique-decisions/agent-03-user-answers-2026-10-03.json",
+    "ready_unassigned_prompt_count": 10,
+    "ready_unassigned_path": "data/queues/agent-03-user-answers-2026-10-03-prepared.json",
+    "blocked_count": 10,
+    "existing_generator_routes_unchanged": true,
+    "equipment_choices_next_stage_count": 3,
+    "no_generation": true
   }
 }

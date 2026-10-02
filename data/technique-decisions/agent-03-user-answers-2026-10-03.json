@@ -1,0 +1,737 @@
+{
+  "schema_version": 1,
+  "recorded_at": "2026-10-03T01:41:07.698955+03:00",
+  "branch": "agent-03-inventory-2026-10-01",
+  "catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+  "audited_commits": {
+    "origin/agent-02-machines-001": "2c27f90d8e2be0c1f349b81231897fd204d543b5",
+    "origin/agent-03-inventory-2026-10-01": "6c1afef7f0c7637e86aea447ab60bbd5d2de8970",
+    "origin/agent-04-supabase-integration": "caf876345b7a2b78a9c55793bfa104010093d700",
+    "origin/agent-05-parallel-generation": "058e4810f858b5f0cca1d27384c8e36d525b24fa",
+    "origin/agent-06-generator-a-2026-10-02": "8b4e4d7de0572909b8e0f3591d60c87192194338",
+    "origin/agent-07-generator-b-2026-10-02": "9dfc775a57ff6856995addbaf28f303661a7b5de",
+    "origin/main": "a74adc6d107206429ffd225104899e240470f170",
+    "origin/work": "b0385b7e2f3382d545a6dff5304c81ba3c771096",
+    "HEAD": "6c1afef7f0c7637e86aea447ab60bbd5d2de8970"
+  },
+  "user_approved_variants": {
+    "floor-triceps-dip": "floor triceps dip — це, поняв, долоні на підлозі стоять",
+    "chest-dip-weighted-machine": "це бруся. Типу ти нахилений вперед ... роби обтяження на поясі",
+    "drag-curl-barbell": "Це справжній drag curl ... Оце воно.",
+    "feet-up-bench-press-barbell": "стопи по повітрі, тобто ноги випрямлені ... Оце feet up bench press.",
+    "hammer-curl-band-resistance-band": "Стрічка під стоп... Да-да-да, оце під стопами. Всьо нормально.",
+    "hip-thrust-barbell": "роби так, як ти це рекомендуєш: верхня спина на краю лави",
+    "landmine-180-barbell": "стегно-стегно має бути. Так, як ти рекомендуєш"
+  },
+  "source_confirmed_variants": [
+    "lying-neck-extension",
+    "lying-neck-extension-weighted-plate",
+    "seated-incline-curl-dumbbell"
+  ],
+  "records": [
+    {
+      "exercise_id": "floor-triceps-dip",
+      "status": "technique_resolved_prompt_prepared_unassigned",
+      "resolution": {
+        "status": "resolved",
+        "decision_kind": "user_selected_variant",
+        "user_response_excerpt": "floor triceps dip — це, поняв, долоні на підлозі стоять",
+        "excerpt_is_shortened_not_verbatim_full_transcript": true,
+        "user_decision_path": "data/technique-decisions/agent-03-user-answers-2026-10-03.json",
+        "primary_publications": [],
+        "catalog_conflicts_preserved_path": "data/audits/agent-03-source-description-errors-2026-10-02.json",
+        "catalog_modified": false,
+        "PNG_approval": false
+      }
+    },
+    {
+      "exercise_id": "chest-dip-weighted-machine",
+      "status": "technique_resolved_prompt_prepared_unassigned",
+      "resolution": {
+        "status": "resolved",
+        "decision_kind": "user_selected_variant",
+        "user_response_excerpt": "це бруся. Типу ти нахилений вперед ... роби обтяження на поясі",
+        "excerpt_is_shortened_not_verbatim_full_transcript": true,
+        "user_decision_path": "data/technique-decisions/agent-03-user-answers-2026-10-03.json",
+        "primary_publications": [
+          {
+            "url": "https://www.roguefitness.com/rogue-dip-belt",
+            "final_url": "https://www.roguefitness.com/rogue-dip-belt",
+            "retrieved_at": "2026-10-02T22:29:54.963933+00:00",
+            "http_status": 200,
+            "html_sha256": "a2bccec130a9c484e75284286c0ee9238b9b7f833f093d80f4fc0df3fe4597c5",
+            "publisher": "Rogue equipment manufacturer",
+            "extracted_text_sha256": "c468baf707bd0a94864467e214a273b8b84a7d73af92ed088d065975a96260b3",
+            "quotes": [
+              "Each Dip Belt comes equipped with a reinforced, comfort-fit nylon body, heavy stitching, a 30\" total chain length, and a pair of straight-gate, locking carabiners."
+            ],
+            "scope": "Belt-chain secure loading component only; user selects parallel-bar chest dip. Do not copy brand or numerical chain length.",
+            "muscle_targets_from_publisher_used": false,
+            "images_or_videos_downloaded": false
+          }
+        ],
+        "catalog_conflicts_preserved_path": "data/audits/agent-03-source-description-errors-2026-10-02.json",
+        "catalog_modified": false,
+        "PNG_approval": false
+      }
+    },
+    {
+      "exercise_id": "drag-curl-barbell",
+      "status": "technique_resolved_prompt_prepared_unassigned",
+      "resolution": {
+        "status": "resolved",
+        "decision_kind": "user_selected_variant",
+        "user_response_excerpt": "Це справжній drag curl ... Оце воно.",
+        "excerpt_is_shortened_not_verbatim_full_transcript": true,
+        "user_decision_path": "data/technique-decisions/agent-03-user-answers-2026-10-03.json",
+        "primary_publications": [
+          {
+            "url": "https://www.strengthlog.com/drag-curl/",
+            "final_url": "https://www.strengthlog.com/drag-curl/",
+            "retrieved_at": "2026-10-02T22:31:05.542406+00:00",
+            "http_status": 200,
+            "html_sha256": "d4ea7a2f1a29be35ca3e36f1d7006c527b28b02092474fe16dee1c6c9b23bb77",
+            "publisher": "StrengthLog official first-party exercise library",
+            "extracted_text_sha256": "5474041eeb501a5b018933d15ccf99873d73f80bbfecf2089404c280cbe00b7f",
+            "quotes": [
+              "Stand with feet shoulder-width apart, holding a barbell with palms facing up in a relaxed underhand grip.",
+              "Pull the bar up along your body by driving your elbows back, creating a “dragging” motion, unlike regular curls where you bend the elbow to lift the weight forward in a rotating movement."
+            ],
+            "scope": "Exact standing free-barbell drag curl corroborates user-selected elbows-back/bar-close variant.",
+            "muscle_targets_from_publisher_used": false,
+            "images_or_videos_downloaded": false
+          }
+        ],
+        "catalog_conflicts_preserved_path": "data/audits/agent-03-source-description-errors-2026-10-02.json",
+        "catalog_modified": false,
+        "PNG_approval": false
+      }
+    },
+    {
+      "exercise_id": "feet-up-bench-press-barbell",
+      "status": "technique_resolved_prompt_prepared_unassigned",
+      "resolution": {
+        "status": "resolved",
+        "decision_kind": "user_selected_variant",
+        "user_response_excerpt": "стопи по повітрі, тобто ноги випрямлені ... Оце feet up bench press.",
+        "excerpt_is_shortened_not_verbatim_full_transcript": true,
+        "user_decision_path": "data/technique-decisions/agent-03-user-answers-2026-10-03.json",
+        "primary_publications": [
+          {
+            "url": "https://www.strengthlog.com/feet-up-bench-press/",
+            "final_url": "https://www.strengthlog.com/feet-up-bench-press/",
+            "retrieved_at": "2026-10-02T22:39:48.747889+00:00",
+            "http_status": 200,
+            "html_sha256": "39abc437c6de2fc5631d33bd8681d1a4e167683e55d693f30dba9d173c129f4c",
+            "publisher": "StrengthLog official first-party exercise library",
+            "extracted_text_sha256": "8300a7ac2fa1cab310da8923ce5209809650b0325988368b59d0d46f2e419ecc",
+            "quotes": [
+              "Grip the bar slightly wider than shoulder-width apart.",
+              "Lift your feet up and hold them in the air."
+            ],
+            "scope": "Exact feet-up free-barbell bench-press grip/support and floating feet; STRAIGHT knees explicitly chosen by user, not inferred from a demonstration.",
+            "muscle_targets_from_publisher_used": false,
+            "images_or_videos_downloaded": false
+          },
+          {
+            "url": "https://www.strengthlog.com/bench-press/",
+            "final_url": "https://www.strengthlog.com/bench-press/",
+            "retrieved_at": "2026-10-02T22:35:19.667982+00:00",
+            "http_status": 200,
+            "html_sha256": "cea313e1ddcd8e256fb3dfd485efb5da9aaa7e939f034f2bd20b1bd6a820901b",
+            "publisher": "StrengthLog official first-party exercise library",
+            "extracted_text_sha256": "9a12e6af5cc6ce118f99dcfda31ce659b90537db3224708f110935491f9df2d3",
+            "quotes": [
+              "Your thumb must be on the opposing side of your other fingers. Meaning that you grip around the bar."
+            ],
+            "scope": "Closed-thumb grip component of the same free-barbell bench press only; does not determine floating-leg position or add leg drive.",
+            "muscle_targets_from_publisher_used": false,
+            "images_or_videos_downloaded": false
+          }
+        ],
+        "catalog_conflicts_preserved_path": "data/audits/agent-03-source-description-errors-2026-10-02.json",
+        "catalog_modified": false,
+        "PNG_approval": false
+      }
+    },
+    {
+      "exercise_id": "hammer-curl-band-resistance-band",
+      "status": "technique_resolved_prompt_prepared_unassigned",
+      "resolution": {
+        "status": "resolved",
+        "decision_kind": "user_selected_variant",
+        "user_response_excerpt": "Стрічка під стоп... Да-да-да, оце під стопами. Всьо нормально.",
+        "excerpt_is_shortened_not_verbatim_full_transcript": true,
+        "user_decision_path": "data/technique-decisions/agent-03-user-answers-2026-10-03.json",
+        "primary_publications": [],
+        "catalog_conflicts_preserved_path": "data/audits/agent-03-source-description-errors-2026-10-02.json",
+        "catalog_modified": false,
+        "PNG_approval": false
+      }
+    },
+    {
+      "exercise_id": "hip-thrust-barbell",
+      "status": "technique_resolved_prompt_prepared_unassigned",
+      "resolution": {
+        "status": "resolved",
+        "decision_kind": "user_selected_variant",
+        "user_response_excerpt": "роби так, як ти це рекомендуєш: верхня спина на краю лави",
+        "excerpt_is_shortened_not_verbatim_full_transcript": true,
+        "user_decision_path": "data/technique-decisions/agent-03-user-answers-2026-10-03.json",
+        "primary_publications": [],
+        "catalog_conflicts_preserved_path": "data/audits/agent-03-source-description-errors-2026-10-02.json",
+        "catalog_modified": false,
+        "PNG_approval": false
+      }
+    },
+    {
+      "exercise_id": "landmine-180-barbell",
+      "status": "technique_resolved_prompt_prepared_unassigned",
+      "resolution": {
+        "status": "resolved",
+        "decision_kind": "user_selected_variant",
+        "user_response_excerpt": "стегно-стегно має бути. Так, як ти рекомендуєш",
+        "excerpt_is_shortened_not_verbatim_full_transcript": true,
+        "user_decision_path": "data/technique-decisions/agent-03-user-answers-2026-10-03.json",
+        "primary_publications": [],
+        "catalog_conflicts_preserved_path": "data/audits/agent-03-source-description-errors-2026-10-02.json",
+        "catalog_modified": false,
+        "PNG_approval": false
+      }
+    },
+    {
+      "exercise_id": "lying-neck-extension",
+      "status": "technique_resolved_prompt_prepared_unassigned",
+      "resolution": {
+        "status": "resolved",
+        "decision_kind": "exact_variant_source_confirmation",
+        "user_response_excerpt": null,
+        "excerpt_is_shortened_not_verbatim_full_transcript": false,
+        "user_decision_path": "data/technique-decisions/agent-03-user-answers-2026-10-03.json",
+        "primary_publications": [
+          {
+            "url": "https://www.strengthlog.com/lying-neck-extension/",
+            "final_url": "https://www.strengthlog.com/lying-neck-extension/",
+            "retrieved_at": "2026-10-02T22:29:54.907625+00:00",
+            "http_status": 200,
+            "html_sha256": "ffd498c5dfbd6fa6a587c75126d1818b17335d62074e9d1242a237f6066aa2c5",
+            "publisher": "StrengthLog official first-party exercise library",
+            "extracted_text_sha256": "331c966431f880016b628e388f3dc3093d7224aa3e20d6ef0ff3bffd69654518",
+            "quotes": [
+              "Lie face down on a flat bench with your head hanging just off the edge.",
+              "Position your body so your chest and stomach are supported. If you want to, you can keep your feet on the ground for stability.",
+              "Place a weight plate on the back of your head, holding it with both hands.",
+              "You can do it without any resistance or use a weight plate to progressively overload the neck extensors for more strength, muscle growth, and endurance."
+            ],
+            "scope": "Exact prone bench-supported neck extension with FREE head, unloaded option and both-hand plate variant. Never import publisher muscle lists or claim a medical recommendation.",
+            "muscle_targets_from_publisher_used": false,
+            "images_or_videos_downloaded": false
+          }
+        ],
+        "catalog_conflicts_preserved_path": "data/audits/agent-03-source-description-errors-2026-10-02.json",
+        "catalog_modified": false,
+        "PNG_approval": false,
+        "user_context": "User describes torso on bench and says head must not bear against support; exact prone orientation/foot support and unloaded/plate variants confirmed independently by cited instructions."
+      }
+    },
+    {
+      "exercise_id": "lying-neck-extension-weighted-plate",
+      "status": "technique_resolved_prompt_prepared_unassigned",
+      "resolution": {
+        "status": "resolved",
+        "decision_kind": "exact_variant_source_confirmation",
+        "user_response_excerpt": null,
+        "excerpt_is_shortened_not_verbatim_full_transcript": false,
+        "user_decision_path": "data/technique-decisions/agent-03-user-answers-2026-10-03.json",
+        "primary_publications": [
+          {
+            "url": "https://www.strengthlog.com/lying-neck-extension/",
+            "final_url": "https://www.strengthlog.com/lying-neck-extension/",
+            "retrieved_at": "2026-10-02T22:29:54.907625+00:00",
+            "http_status": 200,
+            "html_sha256": "ffd498c5dfbd6fa6a587c75126d1818b17335d62074e9d1242a237f6066aa2c5",
+            "publisher": "StrengthLog official first-party exercise library",
+            "extracted_text_sha256": "331c966431f880016b628e388f3dc3093d7224aa3e20d6ef0ff3bffd69654518",
+            "quotes": [
+              "Lie face down on a flat bench with your head hanging just off the edge.",
+              "Position your body so your chest and stomach are supported. If you want to, you can keep your feet on the ground for stability.",
+              "Place a weight plate on the back of your head, holding it with both hands.",
+              "You can do it without any resistance or use a weight plate to progressively overload the neck extensors for more strength, muscle growth, and endurance."
+            ],
+            "scope": "Exact prone bench-supported neck extension with FREE head, unloaded option and both-hand plate variant. Never import publisher muscle lists or claim a medical recommendation.",
+            "muscle_targets_from_publisher_used": false,
+            "images_or_videos_downloaded": false
+          }
+        ],
+        "catalog_conflicts_preserved_path": "data/audits/agent-03-source-description-errors-2026-10-02.json",
+        "catalog_modified": false,
+        "PNG_approval": false,
+        "user_context": "User describes torso on bench and says head must not bear against support; exact prone orientation/foot support and unloaded/plate variants confirmed independently by cited instructions."
+      }
+    },
+    {
+      "exercise_id": "seated-incline-curl-dumbbell",
+      "status": "technique_resolved_prompt_prepared_unassigned",
+      "resolution": {
+        "status": "resolved",
+        "decision_kind": "exact_variant_source_confirmation",
+        "user_response_excerpt": null,
+        "excerpt_is_shortened_not_verbatim_full_transcript": false,
+        "user_decision_path": "data/technique-decisions/agent-03-user-answers-2026-10-03.json",
+        "primary_publications": [
+          {
+            "url": "https://www.strengthlog.com/incline-dumbbell-curl/",
+            "final_url": "https://www.strengthlog.com/incline-dumbbell-curl/",
+            "retrieved_at": "2026-10-02T22:31:05.540740+00:00",
+            "http_status": 200,
+            "html_sha256": "099b51f454a4cf432b7d994949370ac83735be383ca611580e6cfefe21963f92",
+            "publisher": "StrengthLog official first-party exercise library",
+            "extracted_text_sha256": "bd0b032dd64c99df7f40dca5c6b51894ce4d878f7d14d9249cbc1402115df3b7",
+            "quotes": [
+              "Grab a pair of dumbbells, and sit down on an inclined bench. Let your arms hang straight down by your sides.",
+              "Lift the dumbbells with control, by flexing your elbows."
+            ],
+            "scope": "Same seated incline two-dumbbell curl; arms hang freely behind inclined torso. 45-degree bench and supinated grip come from exact catalogue ID, not guessed from another exercise.",
+            "muscle_targets_from_publisher_used": false,
+            "images_or_videos_downloaded": false
+          }
+        ],
+        "catalog_conflicts_preserved_path": "data/audits/agent-03-source-description-errors-2026-10-02.json",
+        "catalog_modified": false,
+        "PNG_approval": false,
+        "user_context": "User requests independent research, not approval of our prior proposal. Source confirms freely hanging arms; catalogue supplies seated 45-degree bench, two dumbbells, palms forward."
+      }
+    }
+  ],
+  "equipment_choices_next_stage": {
+    "chest-press-machine": {
+      "spoken_label": "Chest press machine",
+      "selected_configuration": "Seated LEVER chest press, back supported, two handles press forward away from torso.",
+      "resolution_kind": "user_choice_and_exact_dataset_0576_confirmation",
+      "phase": 2,
+      "status": "equipment_choice_confirmed_held_next_stage",
+      "exercise_id": "chest-press-machine",
+      "name": "Chest Press (Machine)",
+      "source_english": {
+        "description": "Chest Press (Machine) is a supported chest press using the barbell.",
+        "instructions": [
+          "Lie on a flat bench with feet planted. Grip the barbell and hold it over the chest.",
+          "Lower the resistance toward the chest with elbows controlled.",
+          "Pause without bouncing or losing shoulder position.",
+          "Press back to straight arms, then rerack or set the weights down safely."
+        ],
+        "form_cues": [
+          "Keep wrists stacked.",
+          "Keep shoulder blades supported.",
+          "Press evenly."
+        ],
+        "common_mistakes": [
+          "Bouncing at the bottom.",
+          "Flaring the elbows.",
+          "Arching to shorten the range."
+        ],
+        "safety_note": "Use a spotter or safeties for the loaded press and stop before shoulder control is lost.",
+        "provenance": "adapted"
+      },
+      "equipment": "machine",
+      "primary_muscle": "chest",
+      "secondary_muscles": [
+        "shoulders",
+        "triceps"
+      ],
+      "source_catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+      "source_catalog_record_sha256": "cc27f00a90ab2b658b5d64b17050df7f3fff4fac474dadebbc36830eed8bd5b6",
+      "source_english_sha256": "ac4f0a48a92643548967006a3b283bd09d488f2395cfbb2a355b1d2cb3943815",
+      "source_question_path": "data/queues/agent-03-user-decisions-2026-10-02.json"
+    },
+    "decline-bench-press-machine": {
+      "spoken_label": "Decline bench press machine",
+      "selected_configuration": "Lying on declined bench between TWO independent plate-loaded lever arms; each arm has plate loading and its own hand contact. Not free barbell or Smith.",
+      "resolution_kind": "user_equipment_choice",
+      "phase": 2,
+      "status": "equipment_choice_confirmed_geometry_validation_next_stage",
+      "not_inferred": [
+        "exact bench angle",
+        "number/mass of plates",
+        "specific brand/model",
+        "exact foot restraint design"
+      ],
+      "next_action": "Validate declined body position, feet secured from exact catalogue, and compatible independent lever/handle geometry before rendering. Manufacturer access failures are not evidence.",
+      "exercise_id": "decline-bench-press-machine",
+      "name": "Decline Bench Press (Machine)",
+      "source_english": {
+        "description": "Decline Bench Press (Machine) is a supported chest press using the barbell.",
+        "instructions": [
+          "Lie on a declined bench with feet secured. Grip the barbell and hold it over the chest.",
+          "Lower the resistance toward the chest with elbows controlled.",
+          "Pause without bouncing or losing shoulder position.",
+          "Press back to straight arms, then rerack or set the weights down safely."
+        ],
+        "form_cues": [
+          "Keep wrists stacked.",
+          "Keep shoulder blades supported.",
+          "Press evenly."
+        ],
+        "common_mistakes": [
+          "Bouncing at the bottom.",
+          "Flaring the elbows.",
+          "Arching to shorten the range."
+        ],
+        "safety_note": "Use a spotter or safeties for the loaded press and stop before shoulder control is lost.",
+        "provenance": "authored"
+      },
+      "equipment": "machine",
+      "primary_muscle": "chest",
+      "secondary_muscles": [
+        "shoulders",
+        "triceps"
+      ],
+      "source_catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+      "source_catalog_record_sha256": "b86fc191cd5027e4a045a5bd83d18bd669c35ccbb59152a1e4516d05ee0bcd77",
+      "source_english_sha256": "a171fc8c76ccac1dc1fc187d90d93716676b977890f4eec165bfe150476b6c5d",
+      "source_question_path": "data/queues/agent-03-user-decisions-2026-10-02.json"
+    },
+    "inverted-row-machine": {
+      "spoken_label": "Military draw machine / Australian row",
+      "selected_configuration": "Australian/inverted bodyweight row beneath a FIXED Smith bar; bar locked at waist height, heels grounded, body straight, chest pulls toward stationary bar.",
+      "resolution_kind": "user_illustration_equipment_choice",
+      "ID_mapping_basis": "Original exact-ID question offered fixed Smith bar; user identifies Australian horizontal row and stationary Smith, not a similarly named exercise.",
+      "phase": 2,
+      "status": "fixed_Smith_choice_confirmed_held_next_stage",
+      "bar_must_not_move": true,
+      "exercise_id": "inverted-row-machine",
+      "name": "Inverted Row",
+      "source_english": {
+        "description": "Using the fixed bar or handles at waist height, pull the chest toward the support while keeping the body straight.",
+        "instructions": [
+          "Set the machine bar or handles around waist height and stand facing the support.",
+          "Grip the bar or handles, lean back with heels grounded, and keep the body straight.",
+          "Pull the chest toward the support by driving the elbows back.",
+          "Pause, then lower the body until the arms are extended without losing the straight line."
+        ],
+        "form_cues": [
+          "Brace the trunk before each pull.",
+          "Drive the elbows back.",
+          "Control the reach at the front."
+        ],
+        "common_mistakes": [
+          "Rounding the spine.",
+          "Shrugging instead of rowing.",
+          "Jerking with the torso."
+        ],
+        "safety_note": "Keep the body straight from shoulders to heels while pulling the chest toward the fixed bar.",
+        "provenance": "adapted"
+      },
+      "equipment": "machine",
+      "primary_muscle": "upper_back",
+      "secondary_muscles": [
+        "lats",
+        "biceps",
+        "forearms"
+      ],
+      "source_catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+      "source_catalog_record_sha256": "d3d8786b2547d74f79dd16b28838a709b731fb85ae3ef5cedf8a7b5a9b5dddec",
+      "source_english_sha256": "2545e611cf517998bc9a1411149e6975428c05773e419d5b7effbc5357ca3710",
+      "source_question_path": "data/queues/agent-03-user-decisions-2026-10-02.json"
+    }
+  },
+  "partial_answers_not_guessed": {
+    "bicycle-crunch": {
+      "confirmed": "On floor, knees bent about 90 degrees, opposite elbow toward opposite knee.",
+      "not_confirmed": "Does other leg stay bent in tabletop or alternately extend? Need distinguish two catalogue IDs.",
+      "status": "awaiting_variant_distinction"
+    },
+    "bicycle-crunch-raised-legs": {
+      "confirmed": "Opposite elbow/knee movement; legs must not rest on floor.",
+      "not_confirmed": "Exact bent/straight alternating configuration versus first bicycle ID is unclear in spoken response.",
+      "status": "awaiting_variant_distinction"
+    }
+  },
+  "existing_tasks_unchanged": [
+    {
+      "exercise_id": "cross-body-hammer-curl-dumbbell",
+      "PNG_sources": [
+        {
+          "branch": "agent-07-generator-b-2026-10-02",
+          "commit": "9dfc775a57ff6856995addbaf28f303661a7b5de",
+          "path": "assets/exercises/pending/agent-03-generator-b-continuation-2026-10-02/generator-b/agent-03-others-027/cross-body-hammer-curl-dumbbell/attempt-1.png"
+        }
+      ],
+      "assignment_sources": [
+        {
+          "branch": "agent-03-inventory-2026-10-01",
+          "commit": "6c1afef7f0c7637e86aea447ab60bbd5d2de8970",
+          "path": "data/batches/agent-03-others-027.json",
+          "json_pointer": "/exercises/7",
+          "sha256": "bb373a7e4c06c02c543de5edd992e1f60afb4b9828fccd986180edfb5886e9fb",
+          "batch_id": "agent-03-others-027",
+          "kind": "selected_batch"
+        },
+        {
+          "branch": "agent-03-inventory-2026-10-01",
+          "commit": "6c1afef7f0c7637e86aea447ab60bbd5d2de8970",
+          "path": "data/queues/agent-03-other-queue.json",
+          "json_pointer": "/exercises/224",
+          "sha256": "3aaff5fc6854282b4482f018c43574899b6f61e6ae408b15742c116af8339dce",
+          "batch_id": "agent-03-others-027",
+          "kind": "batch_queue_route"
+        },
+        {
+          "branch": "agent-07-generator-b-2026-10-02",
+          "commit": "9dfc775a57ff6856995addbaf28f303661a7b5de",
+          "path": "data/batches/agent-03-others-027.json",
+          "json_pointer": "/exercises/7",
+          "sha256": "bb373a7e4c06c02c543de5edd992e1f60afb4b9828fccd986180edfb5886e9fb",
+          "batch_id": "agent-03-others-027",
+          "kind": "selected_batch"
+        },
+        {
+          "branch": "agent-07-generator-b-2026-10-02",
+          "commit": "9dfc775a57ff6856995addbaf28f303661a7b5de",
+          "path": "data/queues/agent-03-other-queue.json",
+          "json_pointer": "/exercises/224",
+          "sha256": "3aaff5fc6854282b4482f018c43574899b6f61e6ae408b15742c116af8339dce",
+          "batch_id": "agent-03-others-027",
+          "kind": "batch_queue_route"
+        },
+        {
+          "branch": "agent-03-inventory-2026-10-01",
+          "commit": "6c1afef7f0c7637e86aea447ab60bbd5d2de8970",
+          "path": "data/batches/agent-03-others-027.json",
+          "json_pointer": "/exercises/7",
+          "sha256": "bb373a7e4c06c02c543de5edd992e1f60afb4b9828fccd986180edfb5886e9fb",
+          "batch_id": "agent-03-others-027",
+          "kind": "selected_batch"
+        },
+        {
+          "branch": "agent-03-inventory-2026-10-01",
+          "commit": "6c1afef7f0c7637e86aea447ab60bbd5d2de8970",
+          "path": "data/queues/agent-03-other-queue.json",
+          "json_pointer": "/exercises/224",
+          "sha256": "3aaff5fc6854282b4482f018c43574899b6f61e6ae408b15742c116af8339dce",
+          "batch_id": "agent-03-others-027",
+          "kind": "batch_queue_route"
+        }
+      ],
+      "action": "retain existing PNG/assignment; no new prompt or task",
+      "label_ambiguity": null
+    },
+    {
+      "exercise_id": "concentration-curl-dumbbell",
+      "PNG_sources": [
+        {
+          "branch": "agent-07-generator-b-2026-10-02",
+          "commit": "9dfc775a57ff6856995addbaf28f303661a7b5de",
+          "path": "assets/exercises/pending/agent-03-generator-b-continuation-2026-10-02/generator-b/agent-03-others-027/concentration-curl-dumbbell/attempt-1.png"
+        }
+      ],
+      "assignment_sources": [
+        {
+          "branch": "agent-03-inventory-2026-10-01",
+          "commit": "6c1afef7f0c7637e86aea447ab60bbd5d2de8970",
+          "path": "data/batches/agent-03-others-027.json",
+          "json_pointer": "/exercises/8",
+          "sha256": "bb373a7e4c06c02c543de5edd992e1f60afb4b9828fccd986180edfb5886e9fb",
+          "batch_id": "agent-03-others-027",
+          "kind": "selected_batch"
+        },
+        {
+          "branch": "agent-03-inventory-2026-10-01",
+          "commit": "6c1afef7f0c7637e86aea447ab60bbd5d2de8970",
+          "path": "data/queues/agent-03-other-queue.json",
+          "json_pointer": "/exercises/225",
+          "sha256": "3aaff5fc6854282b4482f018c43574899b6f61e6ae408b15742c116af8339dce",
+          "batch_id": "agent-03-others-027",
+          "kind": "batch_queue_route"
+        },
+        {
+          "branch": "agent-07-generator-b-2026-10-02",
+          "commit": "9dfc775a57ff6856995addbaf28f303661a7b5de",
+          "path": "data/batches/agent-03-others-027.json",
+          "json_pointer": "/exercises/8",
+          "sha256": "bb373a7e4c06c02c543de5edd992e1f60afb4b9828fccd986180edfb5886e9fb",
+          "batch_id": "agent-03-others-027",
+          "kind": "selected_batch"
+        },
+        {
+          "branch": "agent-07-generator-b-2026-10-02",
+          "commit": "9dfc775a57ff6856995addbaf28f303661a7b5de",
+          "path": "data/queues/agent-03-other-queue.json",
+          "json_pointer": "/exercises/225",
+          "sha256": "3aaff5fc6854282b4482f018c43574899b6f61e6ae408b15742c116af8339dce",
+          "batch_id": "agent-03-others-027",
+          "kind": "batch_queue_route"
+        },
+        {
+          "branch": "agent-03-inventory-2026-10-01",
+          "commit": "6c1afef7f0c7637e86aea447ab60bbd5d2de8970",
+          "path": "data/batches/agent-03-others-027.json",
+          "json_pointer": "/exercises/8",
+          "sha256": "bb373a7e4c06c02c543de5edd992e1f60afb4b9828fccd986180edfb5886e9fb",
+          "batch_id": "agent-03-others-027",
+          "kind": "selected_batch"
+        },
+        {
+          "branch": "agent-03-inventory-2026-10-01",
+          "commit": "6c1afef7f0c7637e86aea447ab60bbd5d2de8970",
+          "path": "data/queues/agent-03-other-queue.json",
+          "json_pointer": "/exercises/225",
+          "sha256": "3aaff5fc6854282b4482f018c43574899b6f61e6ae408b15742c116af8339dce",
+          "batch_id": "agent-03-others-027",
+          "kind": "batch_queue_route"
+        }
+      ],
+      "action": "retain existing PNG/assignment; no new prompt or task",
+      "label_ambiguity": "User said Zottman but described seated single dumbbell with elbow on inner thigh, which describes Concentration; do not map this approval to either ID until confirmed."
+    },
+    {
+      "exercise_id": "zottman-curl-dumbbell",
+      "PNG_sources": [
+        {
+          "branch": "agent-04-supabase-integration",
+          "commit": "caf876345b7a2b78a9c55793bfa104010093d700",
+          "path": "assets/exercises/pending/agent-03-others-002/zottman-curl-dumbbell/attempt-1.png"
+        },
+        {
+          "branch": "agent-05-parallel-generation",
+          "commit": "058e4810f858b5f0cca1d27384c8e36d525b24fa",
+          "path": "assets/exercises/pending/agent-03-others-002/zottman-curl-dumbbell/attempt-1.png"
+        },
+        {
+          "branch": "work",
+          "commit": "b0385b7e2f3382d545a6dff5304c81ba3c771096",
+          "path": "assets/exercises/pending/agent-03-others-002/zottman-curl-dumbbell/attempt-1.png"
+        }
+      ],
+      "assignment_sources": [
+        {
+          "branch": "agent-03-inventory-2026-10-01",
+          "commit": "6c1afef7f0c7637e86aea447ab60bbd5d2de8970",
+          "path": "data/batches/agent-03-others-002.json",
+          "json_pointer": "/exercises/8",
+          "sha256": "8bc34d8c1d8977145ff1e8f6f8fc53a459a7b3799d38460f730f4cfebbe25685",
+          "batch_id": "agent-03-others-002",
+          "kind": "selected_batch"
+        },
+        {
+          "branch": "agent-03-inventory-2026-10-01",
+          "commit": "6c1afef7f0c7637e86aea447ab60bbd5d2de8970",
+          "path": "data/queues/agent-03-other-queue.json",
+          "json_pointer": "/exercises/18",
+          "sha256": "3aaff5fc6854282b4482f018c43574899b6f61e6ae408b15742c116af8339dce",
+          "batch_id": "agent-03-others-002",
+          "kind": "batch_queue_route"
+        },
+        {
+          "branch": "agent-04-supabase-integration",
+          "commit": "caf876345b7a2b78a9c55793bfa104010093d700",
+          "path": "data/batches/agent-03-others-002.json",
+          "json_pointer": "/exercises/8",
+          "sha256": "8bc34d8c1d8977145ff1e8f6f8fc53a459a7b3799d38460f730f4cfebbe25685",
+          "batch_id": "agent-03-others-002",
+          "kind": "selected_batch"
+        },
+        {
+          "branch": "agent-05-parallel-generation",
+          "commit": "058e4810f858b5f0cca1d27384c8e36d525b24fa",
+          "path": "data/batches/agent-03-others-002.json",
+          "json_pointer": "/exercises/8",
+          "sha256": "8bc34d8c1d8977145ff1e8f6f8fc53a459a7b3799d38460f730f4cfebbe25685",
+          "batch_id": "agent-03-others-002",
+          "kind": "selected_batch"
+        },
+        {
+          "branch": "agent-05-parallel-generation",
+          "commit": "058e4810f858b5f0cca1d27384c8e36d525b24fa",
+          "path": "data/queues/agent-03-other-queue.json",
+          "json_pointer": "/exercises/18",
+          "sha256": "c286f84b8c4c1c1420781caedf8847bdcd79f64b56e3365472addcd83569651e",
+          "batch_id": "agent-03-others-002",
+          "kind": "batch_queue_route"
+        },
+        {
+          "branch": "agent-06-generator-a-2026-10-02",
+          "commit": "8b4e4d7de0572909b8e0f3591d60c87192194338",
+          "path": "data/batches/agent-03-others-002.json",
+          "json_pointer": "/exercises/8",
+          "sha256": "8bc34d8c1d8977145ff1e8f6f8fc53a459a7b3799d38460f730f4cfebbe25685",
+          "batch_id": "agent-03-others-002",
+          "kind": "selected_batch"
+        },
+        {
+          "branch": "agent-06-generator-a-2026-10-02",
+          "commit": "8b4e4d7de0572909b8e0f3591d60c87192194338",
+          "path": "data/queues/agent-03-other-queue.json",
+          "json_pointer": "/exercises/18",
+          "sha256": "a226cc77246e0589f3b05dc68f7826362484bbfa2edbcf36b4c79ff935803f97",
+          "batch_id": "agent-03-others-002",
+          "kind": "batch_queue_route"
+        },
+        {
+          "branch": "agent-07-generator-b-2026-10-02",
+          "commit": "9dfc775a57ff6856995addbaf28f303661a7b5de",
+          "path": "data/batches/agent-03-others-002.json",
+          "json_pointer": "/exercises/8",
+          "sha256": "8bc34d8c1d8977145ff1e8f6f8fc53a459a7b3799d38460f730f4cfebbe25685",
+          "batch_id": "agent-03-others-002",
+          "kind": "selected_batch"
+        },
+        {
+          "branch": "agent-07-generator-b-2026-10-02",
+          "commit": "9dfc775a57ff6856995addbaf28f303661a7b5de",
+          "path": "data/queues/agent-03-other-queue.json",
+          "json_pointer": "/exercises/18",
+          "sha256": "3aaff5fc6854282b4482f018c43574899b6f61e6ae408b15742c116af8339dce",
+          "batch_id": "agent-03-others-002",
+          "kind": "batch_queue_route"
+        },
+        {
+          "branch": "work",
+          "commit": "b0385b7e2f3382d545a6dff5304c81ba3c771096",
+          "path": "data/batches/agent-03-others-002.json",
+          "json_pointer": "/exercises/8",
+          "sha256": "8bc34d8c1d8977145ff1e8f6f8fc53a459a7b3799d38460f730f4cfebbe25685",
+          "batch_id": "agent-03-others-002",
+          "kind": "selected_batch"
+        },
+        {
+          "branch": "work",
+          "commit": "b0385b7e2f3382d545a6dff5304c81ba3c771096",
+          "path": "data/queues/agent-03-other-queue.json",
+          "json_pointer": "/exercises/18",
+          "sha256": "c286f84b8c4c1c1420781caedf8847bdcd79f64b56e3365472addcd83569651e",
+          "batch_id": "agent-03-others-002",
+          "kind": "batch_queue_route"
+        },
+        {
+          "branch": "agent-03-inventory-2026-10-01",
+          "commit": "6c1afef7f0c7637e86aea447ab60bbd5d2de8970",
+          "path": "data/batches/agent-03-others-002.json",
+          "json_pointer": "/exercises/8",
+          "sha256": "8bc34d8c1d8977145ff1e8f6f8fc53a459a7b3799d38460f730f4cfebbe25685",
+          "batch_id": "agent-03-others-002",
+          "kind": "selected_batch"
+        },
+        {
+          "branch": "agent-03-inventory-2026-10-01",
+          "commit": "6c1afef7f0c7637e86aea447ab60bbd5d2de8970",
+          "path": "data/queues/agent-03-other-queue.json",
+          "json_pointer": "/exercises/18",
+          "sha256": "3aaff5fc6854282b4482f018c43574899b6f61e6ae408b15742c116af8339dce",
+          "batch_id": "agent-03-others-002",
+          "kind": "batch_queue_route"
+        }
+      ],
+      "action": "retain existing PNG/assignment; no new prompt or task",
+      "label_ambiguity": "User said Zottman but described seated single dumbbell with elbow on inner thigh, which describes Concentration; do not map this approval to either ID until confirmed."
+    }
+  ],
+  "source_catalog_unchanged": true,
+  "PNG_approvals_unchanged": true,
+  "new_execution_assignments": false,
+  "generation_calls": 0,
+  "old_A_024_025_and_B_009_026_027_unchanged": true,
+  "prepared_path": "data/queues/agent-03-user-answers-2026-10-03-prepared.json",
+  "remaining_blocked_path": "data/queues/agent-03-user-answers-2026-10-03-blocked.json",
+  "research_path": "data/audits/agent-03-user-answers-2026-10-03-research.json"
+}
