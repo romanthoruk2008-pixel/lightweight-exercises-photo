@@ -1,12 +1,10 @@
-## Review decision and correction checkpoint: packages 011–015
+## Review update: attempt-2 approval and two new corrections
 
-2026-10-02T13:19:44+00:00: The user approved 40 of 43 attempt-1 images from batches 011–015; progress and batch manifest record their exact accepted paths and SHA256 values. Their approval metadata was pushed to `work` in commit `d2a5fa0`. The three exceptions remain `needs_fix` on attempt-1, which is preserved. One correction was generated for each using the built-in `image_gen.imagegen`, with the accepted human reference supplied in every call. All three passed PNG decode, square-dimension, transparency, and ID/path/SHA checks; no agent visual review was performed.
+2026-10-02T13:25:48+00:00: The user accepted `dumbbell-squeeze-press` attempt-2; exact path/SHA are recorded below. Its PNG was already verified on `work`. This brings batches 011–015 to 41 approved of 43. The user rejected the current `around-the-world-dumbbell` and `bench-press-close-grip-barbell` corrections as still incorrect. Their attempt-1 and attempt-2 files remain unchanged.
 
-- `around-the-world-dumbbell` attempt-2: `assets/exercises/pending/agent-03-others-014/around-the-world-dumbbell/attempt-2.png`; SHA256 `f722564484cab98a4fa740a20ebe9e50ad47e4c1125ca02cf6312c19098a1532`; passed; `user_review=pending`, `agent_visual_review=not_performed`.
-- `bench-press-close-grip-barbell` attempt-2: `assets/exercises/pending/agent-03-others-014/bench-press-close-grip-barbell/attempt-2.png`; SHA256 `9ebfc19c4d5ccab37db5c69842a717345f884f25166343e8ae46c5207ae7a1c9`; passed; `user_review=pending`, `agent_visual_review=not_performed`.
-- `dumbbell-squeeze-press` attempt-2: `assets/exercises/pending/agent-03-others-014/dumbbell-squeeze-press/attempt-2.png`; SHA256 `f6417715e2afbddb0e64c5b3344a9bc6fab1c21b943baf0f7d4b8b0b094ef676`; passed; `user_review=pending`, `agent_visual_review=not_performed`.
+Accepted: `dumbbell-squeeze-press` — `assets/exercises/pending/agent-03-others-014/dumbbell-squeeze-press/attempt-2.png`; SHA256 `f6417715e2afbddb0e64c5b3344a9bc6fab1c21b943baf0f7d4b8b0b094ef676`; accepted attempt 2.
 
-The correction PNGs and metadata were pushed to `work` in commit `606740ecbaa0a717d8aa43e9e9a3ecc0320d689f` and each remote file SHA256 was matched to the local record at 2026-10-02T13:20:37+00:00. All three are `backup_status=github_verified`; wait for user visual review. Keep these attempts pending user review. Do not alter the 40 accepted outputs, batch 009, blocked exercises, or Supabase.
+Next, make one fresh attempt-3 for each remaining ID using the exact exercise prompt/source plus the user's specific correction, with the accepted human reference supplied in each imagegen call. Keep attempt-3 pending user review. Do not delete prior PNG history, modify accepted results, change batch 009/blocked exercises, or touch Supabase.
 
 ---
 
