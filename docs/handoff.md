@@ -526,3 +526,19 @@ GitHub verification for the four Agent-03 package-010 corrections: pushed to `wo
 ## User approval — package 010 corrections (2026-10-02)
 
 The user explicitly accepted all four correction attempt-2 images. Shared progress records `status=approved`, `user_review=approved`, accepted attempt/path/SHA256 and the user decision history; the manifest records the same accepted files. Their GitHub backup remains `github_verified` at correction content commit `9b90a1aaedf462baf40bf8c188a4c9ec144cafc6`. Next: continue with package 011, then 012–015 in order. New results in those packages remain `user_review=pending` until separately reviewed.
+
+
+## Agent-03 package 011 — local checkpoint (2026-10-02T12:09:10.099225+00:00)
+
+Generation complete: 10/10 images. Technical checks passed for each generated PNG; imagegen/technical errors: 0. All generated items remain `user_review=pending`, `agent_visual_review=not_performed`. Package 011 files and metadata are being pushed to `work`; next is package 012.
+
+- `triceps-extension-suspension` — `assets/exercises/pending/agent-03-others-011/triceps-extension-suspension/attempt-1.png`; SHA256 `0b40218e7657eba90a295c39c73e591f5c307aa5b83c52bb06bbf42c566114a2`
+- `wide-pullup-machine` — `assets/exercises/pending/agent-03-others-011/wide-pullup-machine/attempt-1.png`; SHA256 `87b7397a3282951c0886c4a2e101e4cb17425a527aa2259505285e87f273db11`
+- `box-squat-barbell-hevy-3338464331414239` — `assets/exercises/pending/agent-03-others-011/box-squat-barbell-hevy-3338464331414239/attempt-1.png`; SHA256 `47989bf2bce9a6ab5ae2e88915771086c0d98470dfd1a1a7a7bd67f7844300b9`
+- `gorilla-row-kettlebell` — `assets/exercises/pending/agent-03-others-011/gorilla-row-kettlebell/attempt-1.png`; SHA256 `ede825f7c33a856d75c628819b3e6421daa72868c8c15982e5c0ec6c1c0006fc`
+- `kettlebell-around-the-world` — `assets/exercises/pending/agent-03-others-011/kettlebell-around-the-world/attempt-1.png`; SHA256 `a6bef2b47d3b06fa6024e4fcec885c6b8b50bca67379a642c9cc2099a77dcadd`
+- `kettlebell-curl` — `assets/exercises/pending/agent-03-others-011/kettlebell-curl/attempt-1.png`; SHA256 `9a407ffe0582bec5dd121ab9553de26971390f7343cc367cbb011363016195c5`
+- `kettlebell-goblet-squat` — `assets/exercises/pending/agent-03-others-011/kettlebell-goblet-squat/attempt-1.png`; SHA256 `8c145f294f2c3ce74fa01047033bc6831800df30660359ffe031754dbdd10278`
+- `kettlebell-shoulder-press` — `assets/exercises/pending/agent-03-others-011/kettlebell-shoulder-press/attempt-1.png`; SHA256 `80d97bb5b625dd0083f9eead011052a3db8273ca00d46676400afa5005432d83`
+- `landmine-row-barbell` — `assets/exercises/pending/agent-03-others-011/landmine-row-barbell/attempt-1.png`; SHA256 `39c3a0170151f1ec3204f910e09feaafb8a97539444204e28f2156018932da1b`
+- `lateral-box-jump` — `assets/exercises/pending/agent-03-others-011/lateral-box-jump/attempt-1.png`; SHA256 `4082067a4cf7b719f1b360a6b9e69f8899fd65a104f3af2af74acbf64b13c1ed`
