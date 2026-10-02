@@ -6,7 +6,7 @@
 - `bench-press-close-grip-barbell` attempt-2: `assets/exercises/pending/agent-03-others-014/bench-press-close-grip-barbell/attempt-2.png`; SHA256 `9ebfc19c4d5ccab37db5c69842a717345f884f25166343e8ae46c5207ae7a1c9`; passed; `user_review=pending`, `agent_visual_review=not_performed`.
 - `dumbbell-squeeze-press` attempt-2: `assets/exercises/pending/agent-03-others-014/dumbbell-squeeze-press/attempt-2.png`; SHA256 `f6417715e2afbddb0e64c5b3344a9bc6fab1c21b943baf0f7d4b8b0b094ef676`; passed; `user_review=pending`, `agent_visual_review=not_performed`.
 
-The correction PNGs and their metadata are ready for a package-014 checkpoint push and exact remote SHA256 verification. Keep these attempts pending user review. Do not alter the 40 accepted outputs, batch 009, blocked exercises, or Supabase.
+The correction PNGs and metadata were pushed to `work` in commit `606740ecbaa0a717d8aa43e9e9a3ecc0320d689f` and each remote file SHA256 was matched to the local record at 2026-10-02T13:20:37+00:00. All three are `backup_status=github_verified`; wait for user visual review. Keep these attempts pending user review. Do not alter the 40 accepted outputs, batch 009, blocked exercises, or Supabase.
 
 ---
 
