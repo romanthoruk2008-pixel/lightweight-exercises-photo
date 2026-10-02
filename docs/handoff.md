@@ -607,3 +607,5 @@ Generation complete: 6/6 images. Technical checks passed for each generated PNG;
 - `full-squat-barbell` — `assets/exercises/pending/agent-03-others-015/full-squat-barbell/attempt-1.png`; SHA256 `3342d6f608f5a9cc80cd0d55c79c5b2710669f4aeb6cb4576aa8755a06f41007`
 - `glute-bridge-barbell` — `assets/exercises/pending/agent-03-others-015/glute-bridge-barbell/attempt-1.png`; SHA256 `54f24da29159e03919d9e17151d07d8e904c16fc55835f391605f0190cb41ed5`
 - `hex-press-dumbbell` — `assets/exercises/pending/agent-03-others-015/hex-press-dumbbell/attempt-1.png`; SHA256 `6afebb4b464053fee8ab4abfd71f4bca8f31ffe0b183b21e600b68ab4cdcdc0f`
+
+GitHub verification — Agent-03 package 015: 6/6 remote PNG blobs matched local files, progress and manifest SHA256; each remote PNG decoded as square RGBA with transparent pixels. Verified content commit `54a37683b3508e782cd03637833004c341dd998c`. All 6 remain `user_review=pending`, `agent_visual_review=not_performed`. Packages 011–015 are complete; wait for user review.
