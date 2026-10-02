@@ -19222,7 +19222,7 @@
     "prepared_count": 12,
     "shortfall": 38
   },
-  "updated_at": "2026-10-02T20:56:19.117953+03:00",
+  "updated_at": "2026-10-02T21:55:38.393173+03:00",
   "next_launch_ids": [
     "21s-biceps-curl-barbell",
     "arnold-press-dumbbell",
@@ -25287,5 +25287,24 @@
     ],
     "status": "partial_ready_insufficient_eligible_exercises",
     "generation_authorized_now": false
+  },
+  "phase_plan": {
+    "decision_source": "latest user message: equipment groups at the end; send all questions and clarify ownership",
+    "phase1": "Non-machine eligible exercises first, including approved static bars; unresolved records await answers.",
+    "phase2_queue_path": "data/queues/agent-03-equipment-tail-queue.json",
+    "phase2_priority": 200,
+    "phase2_base_count": 111,
+    "phase2_source_resolved_additional_candidates": 3,
+    "decision_sheet_path": "data/queues/agent-03-user-decisions-2026-10-02.json",
+    "generation_authorized_now": false,
+    "existing_assignments_and_batches_unchanged": true
+  },
+  "ownership_interpretation_update": {
+    "review_path": "data/queues/agent-03-user-decisions-2026-10-02.json",
+    "historical_night_scope_count": 15,
+    "confirmed_current_owner": null,
+    "not_confirmed_active_generation_assignments": true,
+    "retain_scope_until_user_owner_decision": true,
+    "not_selected_examples_are_not_assignments": true
   }
 }
