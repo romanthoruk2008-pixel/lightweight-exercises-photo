@@ -1,8 +1,14 @@
+## Current checkpoint — landmine attempt-4 (2026-10-02)
+
+The user specified that the landmine bar must be perpendicular to the athlete. Attempt-4 follows that instruction: the straight shaft projects forward from both hands at the chest to the floor anchor ahead of the athlete. Targeted orientation comparison confirms this relation; no general visual approval was made. Attempt-4 is `user_review=pending`, SHA256 `8127124701edf64826364459168809b9c7eadb694356be68c8e9ed3f636c0cf6`; the 1254×1254 output remains a technical size issue. Attempts 1–3 remain preserved and marked for correction. Checkpoint includes attempt-3 and attempt-4 PNGs, updated own manifest and progress, only on `agent-05-parallel-generation`.
+
+---
+
 ## Current checkpoint — agent-03-others-023 (2026-10-02)
 
 Package 023 has 5/5 outputs from the exact prepared prompts and the required human appearance reference: swimming, thruster-barbell, thruster-kettlebell, wall-ball, warm-up. Each is `user_review=pending`, `agent_visual_review=not_performed`; all are in `assets/exercises/pending/agent-03-others-023/<exercise_id>/attempt-1.png` with SHA256 and decode/alpha checks in `data/batches/agent-03-others-023-agent-05-manifest.json`. All five PNGs are 1254×1254 rather than 1024×1024, so `technical_check=failed`; no resize or retry was done. Own manifest and PNGs were pushed to `agent-05-parallel-generation` in commit `b44e89f4887869bef097c68fb9bf2d2f9d67ae7a`; after fetch, SHA256 was verified for all 5 pending package PNG blobs. Shared progress remains unchanged for these pending results.
 
-The 19 accepted images from packages 021–022 and their approval records remain on this branch. `landmine-squat-and-press-barbell` attempt-1 is `needs_fix`; attempt-2 remains pending. The user says the landmine equipment must stand parallel to an element in the reference; the referent is ambiguous, so wait for a precise orientation before a further correction. Work and Supabase are unchanged.
+The 19 accepted images from packages 021–022 and their approval records remain on this branch. `landmine-squat-and-press-barbell` attempts 1–3 are retained and returned for correction; the user clarified that the bar must project perpendicular from the front plane of the torso toward the floor anchor. Attempt-4 has a straight bar from the hands in front of the chest to the anchor directly ahead, SHA256 `8127124701edf64826364459168809b9c7eadb694356be68c8e9ed3f636c0cf6`; it is 1254×1254, technically flagged for dimensions, and remains `user_review=pending`. A targeted orientation comparison was performed; full aesthetic QA was not. Work and Supabase are unchanged.
 
 ---
 
@@ -10,7 +16,7 @@ The 19 accepted images from packages 021–022 and their approval records remain
 
 Користувач переглянув зображення пакетів agent-03-others-021 і agent-03-others-022 та схвалив 19 результатів. Для них у власних manifests і `data/exercise-image-progress.json` записано `user_review=approved`, `status=approved`, точні accepted path/SHA256 та історію рішення. Усі PNG зберігають факт технічної невідповідності розміру: 1254×1254 замість 1024×1024; користувач їх прийняв без ресайзу. Агентська візуальна перевірка не проводилась.
 
-`landmine-squat-and-press-barbell` виключений зі схвалення. Attempt-1 збережений без змін і позначений needs_fix за запитом користувача. Attempt-2: `assets/exercises/pending/agent-03-others-021/landmine-squat-and-press-barbell/attempt-2.png`, SHA256 `abc7e81e0c8b1e2735b0186aab58186e5181a24c9d296911a04bb53e6a255745`; PNG відкривається, має alpha, але його розмір 1254×1254 залишає technical check failed. Attempt-2 має `user_review=pending` і очікує рішення користувача.
+`landmine-squat-and-press-barbell` виключений зі схвалення. Attempts 1–3 збережені; перші дві спроби користувач повернув, третя залишила гриф збоку й позначена needs_fix після цільового порівняння. Attempt-4: `assets/exercises/pending/agent-03-others-021/landmine-squat-and-press-barbell/attempt-4.png`, SHA256 `8127124701edf64826364459168809b9c7eadb694356be68c8e9ed3f636c0cf6`; пряма штанга йде від рук перед грудьми до анкера попереду. PNG 1254×1254, `technical_check=failed` лише через розмір; `user_review=pending`.
 
 Зміни запушено лише у `agent-05-parallel-generation`, commit `9ea6050dab2149e684c46699bd3a7dd4d71bb162`. Після fetch звірено SHA256 21 PNG attempt: 11 для пакета 021 (включно з обома landmine attempts) і 10 для 022. Наступна дія — продовжити підготовлений пакет 023. Work та Supabase не змінювалися.
 
