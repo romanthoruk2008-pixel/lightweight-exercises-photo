@@ -1,13 +1,8 @@
-## Review update: squeeze-press accepted; two attempt-3 corrections ready
+## User approval: final two package 014 corrections
 
-2026-10-02T13:32:21+00:00: The user accepted `dumbbell-squeeze-press` attempt-2; it remains accepted at `assets/exercises/pending/agent-03-others-014/dumbbell-squeeze-press/attempt-2.png` with SHA256 `f6417715e2afbddb0e64c5b3344a9bc6fab1c21b943baf0f7d4b8b0b094ef676`. The approval was pushed in `b6aee96`. Batches 011–015 now have 41 approved of 43.
+2026-10-02T13:34:29+00:00: The user approved `around-the-world-dumbbell` attempt-3 and `bench-press-close-grip-barbell` attempt-3. Exact accepted paths and SHA256 values are recorded in progress and the batch manifest. Both PNGs were already present in remote `work` and remain unchanged. Together with the 41 previously approved results, all 43 exercises from packages 011–015 are now approved.
 
-The user returned `around-the-world-dumbbell` and `bench-press-close-grip-barbell` attempt-2 for correction. Prior files remain unchanged. New attempt-3 files are technically valid and pending user review:
-
-- `around-the-world-dumbbell`: `assets/exercises/pending/agent-03-others-014/around-the-world-dumbbell/attempt-3.png`; SHA256 `940cb44e1b897c401fa6dc39f2e01a15610f0c958effeff99cd7c6cc355871ba`; passed; `user_review=pending`. The correction redraws both dumbbells as a matching symmetric pair.
-- `bench-press-close-grip-barbell`: `assets/exercises/pending/agent-03-others-014/bench-press-close-grip-barbell/attempt-3.png`; SHA256 `90171bed2296fad8fdbbe674877e21157228e9c4181d0fa4fbc338a90ca3b3ab`; passed; `user_review=pending`. Both hands use the user's requested reverse grip.
-
-Both calls used built-in `image_gen.imagegen` and the accepted human reference SHA256 `52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f`. No agent visual review was performed. Both correction PNGs and metadata were pushed in `54d87783fb890f724b963395dacb5840c5214097` at 2026-10-02T13:32:55+00:00; exact remote SHA256 values were matched. They are now `backup_status=github_verified`; wait for user visual review. Do not change approved results, batch 009, blocked exercises, or Supabase.
+Next: push this review metadata only, verify the two remote file hashes and approval records, then wait for the next request. Do not alter PNGs, batch 009, blocked exercises, or Supabase.
 
 ---
 
