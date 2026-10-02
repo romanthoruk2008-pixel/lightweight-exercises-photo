@@ -1,0 +1,592 @@
+{
+  "schema_version": 1,
+  "batch_id": "agent-03-others-018",
+  "owner_agent": "agent-03",
+  "branch": "agent-03-inventory-2026-10-01",
+  "status": "ready",
+  "prepared_at": "2026-10-02T15:47:08.155282+03:00",
+  "catalog_path": "data/exercises/catalog.json",
+  "catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+  "catalog_source_commit": "bffc6f41e512e28b4e383e8dfa711aee07c710fc",
+  "style_version": "v1",
+  "style_path": "docs/exercise-image-style.md",
+  "style_sha256": "8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578",
+  "human_reference": {
+    "repository_path": "assets/exercises/biceps-curl-dumbbell.png",
+    "absolute_path": "/workspace/lightweight-exercises-photo/assets/exercises/biceps-curl-dumbbell.png",
+    "sha256": "52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f",
+    "branch": "work",
+    "source_commit": "bffc6f41e512e28b4e383e8dfa711aee07c710fc",
+    "role": "Human appearance/proportions/materials/anatomical style ONLY. Exercise pose, grip, equipment and muscles come from the exact-ID catalogue, never the reference.",
+    "pixels_reviewed_during_preparation": false
+  },
+  "exercise_count": 2,
+  "exercise_ids": [
+    "ring-pullup",
+    "squat-band-resistance-band"
+  ],
+  "exercises": [
+    {
+      "exercise_id": "ring-pullup",
+      "name": "Ring Pull Up",
+      "source_english": {
+        "description": "Ring Pull Up pulls from a controlled hang until the chin reaches or clears the bar, then lowers under control.",
+        "instructions": [
+          "Hang from the rings with arms straight, shoulders active, and legs controlled.",
+          "Brace the core and pull the elbows down as the chest rises toward the rings.",
+          "Reach the chin above ring height or to a controlled top position.",
+          "Lower to a full hang without letting the rings swing."
+        ],
+        "form_cues": [
+          "Keep the rings close to the body.",
+          "Control rotation in the straps.",
+          "Use a quiet, full descent."
+        ],
+        "common_mistakes": [
+          "Kipping before mastering the hang.",
+          "Letting the rings drift apart.",
+          "Dropping from the top."
+        ],
+        "safety_note": "Check the rings and straps are secure and use assistance if the shoulders cannot control the instability.",
+        "provenance": "authored"
+      },
+      "equipment": "other",
+      "primary_muscle": "lats",
+      "secondary_muscles": [
+        "upper_back",
+        "biceps",
+        "forearms"
+      ],
+      "source_catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+      "source_catalog_record_sha256": "b26ec8a2881e0240dbea23e7934416b35604017d65e321c6e96f3168f4018087",
+      "source_english_sha256": "64b0e7c184cc4d70e2356520842b3e133f118e86ff8eedab45696b6904d1db00",
+      "status": "ready",
+      "technical_status": "ready",
+      "prompt_prepared": true,
+      "prompt_status": "complete",
+      "prompt_template": null,
+      "generation_prompt": "Create exactly ONE square transparent PNG of the exact exercise and selected single phase. Metadata fields must never appear as text.\nDo not render multiple phases, raw disputed alternatives, or inferred muscle targets.\n{\n  \"base_style_sha256\": \"8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578\",\n  \"exact_catalogue_source\": {\n    \"equipment\": \"other\",\n    \"primary_muscle\": \"lats\",\n    \"secondary_muscles\": [\n      \"upper_back\",\n      \"biceps\",\n      \"forearms\"\n    ],\n    \"source_english\": {\n      \"common_mistakes\": [\n        \"Kipping before mastering the hang.\",\n        \"Letting the rings drift apart.\",\n        \"Dropping from the top.\"\n      ],\n      \"description\": \"Ring Pull Up pulls from a controlled hang until the chin reaches or clears the bar, then lowers under control.\",\n      \"form_cues\": [\n        \"Keep the rings close to the body.\",\n        \"Control rotation in the straps.\",\n        \"Use a quiet, full descent.\"\n      ],\n      \"instructions\": [\n        \"Hang from the rings with arms straight, shoulders active, and legs controlled.\",\n        \"Brace the core and pull the elbows down as the chest rises toward the rings.\",\n        \"Reach the chin above ring height or to a controlled top position.\",\n        \"Lower to a full hang without letting the rings swing.\"\n      ],\n      \"provenance\": \"authored\",\n      \"safety_note\": \"Check the rings and straps are secure and use assistance if the shoulders cannot control the instability.\"\n    }\n  },\n  \"human_reference\": {\n    \"absolute_path\": \"/workspace/lightweight-exercises-photo/assets/exercises/biceps-curl-dumbbell.png\",\n    \"branch\": \"work\",\n    \"pixels_reviewed_during_preparation\": false,\n    \"repository_path\": \"assets/exercises/biceps-curl-dumbbell.png\",\n    \"role\": \"Human appearance/proportions/materials/anatomical style ONLY. Exercise pose, grip, equipment and muscles come from the exact-ID catalogue, never the reference.\",\n    \"sha256\": \"52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f\",\n    \"source_commit\": \"bffc6f41e512e28b4e383e8dfa711aee07c710fc\"\n  },\n  \"identity_do_not_render_as_text\": {\n    \"catalog_record_sha256\": \"b26ec8a2881e0240dbea23e7934416b35604017d65e321c6e96f3168f4018087\",\n    \"catalog_sha256\": \"a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989\",\n    \"exercise_id\": \"ring-pullup\",\n    \"name\": \"Ring Pull Up\"\n  },\n  \"same_ID_supplementary_fields\": [],\n  \"selected_render_scene\": {\n    \"camera\": \"Front-side three-quarter view showing whole person, all supports/anchors and each prescribed contact; square frame, no crop.\",\n    \"exercise_id\": \"ring-pullup\",\n    \"grip\": \"One closed hand encircles each RING, wrists aligned; exact palm rotation not prescribed or invented.\",\n    \"movement_trajectory\": \"Pull from straight-arm ring hang to controlled ring-height top, lower fully without ring swing.\",\n    \"never_infer_muscles_from_pose_or_reference\": true,\n    \"one_phase_only\": true,\n    \"pose\": \"Chest raised toward rings, chin above ring height, elbows down, trunk and legs quiet.\",\n    \"single_phase\": \"Controlled ring-height top\",\n    \"supports_and_equipment\": \"Two rings on secure overhead straps, body hanging clear of floor; do not replace hand contacts with BAR.\"\n  },\n  \"source_use_rule\": \"Render ONLY selected_render_scene and the explicit exact-ID resolution; original English stays verbatim for provenance even when a disputed field is overridden. Do not invent a substitute exercise or copy reference pose/equipment/muscle colors.\",\n  \"style\": {\n    \"background\": \"Genuinely transparent PNG background, no white/checkerboard layer, no environment scene.\",\n    \"framing\": \"Full figure and all required equipment/supports visible within a square. Scale and use a three-quarter view to expose the specified contacts without changing anatomy, equipment, grip or technique.\",\n    \"human_model\": \"One athletic bald male anatomical mannequin, opaque silver-gray muscular surfaces, consistent proportions and detailed 3D materials, plain black shorts, barefoot.\",\n    \"material_rules\": \"Highlights never make tissue transparent; no glow, whole-body orange tint, hair, text, labels, arrows, UI, borders, collage or extra person.\",\n    \"no_invention\": \"Exact catalogue ID controls identity, raw equipment and muscles. Only the embedded verified same-ID/source-variant decisions may clarify rendering technique. No guessed weights, brands, attachments or muscle targets.\",\n    \"output\": {\n      \"format\": \"PNG\",\n      \"height\": 1024,\n      \"one_person\": true,\n      \"one_phase\": true,\n      \"width\": 1024\n    },\n    \"primary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"rule\": \"Highlight only the exact primary muscle group provided for this exercise.\"\n    },\n    \"secondary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"intensity_fraction\": [\n        0.4,\n        0.5\n      ],\n      \"rule\": \"Only the exact secondary muscles, lighter same-hue highlight; if the list is empty add no secondary target.\"\n    },\n    \"version\": \"v1\"\n  },\n  \"style_proposal_sha256\": null,\n  \"technical_blocker\": null,\n  \"technique_resolution\": {\n    \"catalog_evidence\": [\n      {\n        \"catalog_path\": \"data/exercises/catalog.json\",\n        \"catalog_record_sha256\": \"b26ec8a2881e0240dbea23e7934416b35604017d65e321c6e96f3168f4018087\",\n        \"catalog_sha256\": \"a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989\",\n        \"exercise_id\": \"ring-pullup\",\n        \"field\": \"match.rationale\",\n        \"source_commit\": \"bffc6f41e512e28b4e383e8dfa711aee07c710fc\",\n        \"value\": \"The pull-up candidates use a bar or bodyweight setup and none confirms the target ring equipment and ring-specific pulling position.\"\n      },\n      {\n        \"catalog_path\": \"data/exercises/catalog.json\",\n        \"catalog_record_sha256\": \"b26ec8a2881e0240dbea23e7934416b35604017d65e321c6e96f3168f4018087\",\n        \"catalog_sha256\": \"a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989\",\n        \"exercise_id\": \"ring-pullup\",\n        \"field\": \"content.en.instructions[0]\",\n        \"source_commit\": \"bffc6f41e512e28b4e383e8dfa711aee07c710fc\",\n        \"value\": \"Hang from the rings with arms straight, shoulders active, and legs controlled.\"\n      },\n      {\n        \"catalog_path\": \"data/exercises/catalog.json\",\n        \"catalog_record_sha256\": \"b26ec8a2881e0240dbea23e7934416b35604017d65e321c6e96f3168f4018087\",\n        \"catalog_sha256\": \"a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989\",\n        \"exercise_id\": \"ring-pullup\",\n        \"field\": \"content.en.instructions[2]\",\n        \"source_commit\": \"bffc6f41e512e28b4e383e8dfa711aee07c710fc\",\n        \"value\": \"Reach the chin above ring height or to a controlled top position.\"\n      },\n      {\n        \"catalog_path\": \"data/exercises/catalog.json\",\n        \"catalog_record_sha256\": \"b26ec8a2881e0240dbea23e7934416b35604017d65e321c6e96f3168f4018087\",\n        \"catalog_sha256\": \"a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989\",\n        \"exercise_id\": \"ring-pullup\",\n        \"field\": \"content.pl.description\",\n        \"source_commit\": \"bffc6f41e512e28b4e383e8dfa711aee07c710fc\",\n        \"value\": \"Podciąganie na kółkach prowadzi ciało z kontrolowanego zwisu do wysokości brody nad kółkami, a następnie spokojnie je opuszcza.\"\n      },\n      {\n        \"catalog_path\": \"data/exercises/catalog.json\",\n        \"catalog_record_sha256\": \"b26ec8a2881e0240dbea23e7934416b35604017d65e321c6e96f3168f4018087\",\n        \"catalog_sha256\": \"a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989\",\n        \"exercise_id\": \"ring-pullup\",\n        \"field\": \"content.en.description\",\n        \"source_commit\": \"bffc6f41e512e28b4e383e8dfa711aee07c710fc\",\n        \"value\": \"Ring Pull Up pulls from a controlled hang until the chin reaches or clears the bar, then lowers under control.\"\n      }\n    ],\n    \"exercise_id\": \"ring-pullup\",\n    \"original_dataset_evidence\": [],\n    \"primary_publications\": [],\n    \"rationale_uk\": \"Generated match прямо каже, що bar candidates не підтверджують потрібні rings. Усі English instructions та uk/es/pl description задають chin above RING height. Bar у generic English description не є дозволом замінити кільця. Дві підвішені ручні опори, без вигаданого pronated/supinated повороту.\",\n    \"source_English_policy\": \"Quoted unchanged for provenance. Render the explicitly resolved scene and documented variant, not the disputed generic/erroneous fields; do not edit catalogue.\"\n  }\n}",
+      "prompt_payload": {
+        "identity_do_not_render_as_text": {
+          "exercise_id": "ring-pullup",
+          "name": "Ring Pull Up",
+          "catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+          "catalog_record_sha256": "b26ec8a2881e0240dbea23e7934416b35604017d65e321c6e96f3168f4018087"
+        },
+        "exact_catalogue_source": {
+          "source_english": {
+            "description": "Ring Pull Up pulls from a controlled hang until the chin reaches or clears the bar, then lowers under control.",
+            "instructions": [
+              "Hang from the rings with arms straight, shoulders active, and legs controlled.",
+              "Brace the core and pull the elbows down as the chest rises toward the rings.",
+              "Reach the chin above ring height or to a controlled top position.",
+              "Lower to a full hang without letting the rings swing."
+            ],
+            "form_cues": [
+              "Keep the rings close to the body.",
+              "Control rotation in the straps.",
+              "Use a quiet, full descent."
+            ],
+            "common_mistakes": [
+              "Kipping before mastering the hang.",
+              "Letting the rings drift apart.",
+              "Dropping from the top."
+            ],
+            "safety_note": "Check the rings and straps are secure and use assistance if the shoulders cannot control the instability.",
+            "provenance": "authored"
+          },
+          "equipment": "other",
+          "primary_muscle": "lats",
+          "secondary_muscles": [
+            "upper_back",
+            "biceps",
+            "forearms"
+          ]
+        },
+        "human_reference": {
+          "repository_path": "assets/exercises/biceps-curl-dumbbell.png",
+          "absolute_path": "/workspace/lightweight-exercises-photo/assets/exercises/biceps-curl-dumbbell.png",
+          "sha256": "52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f",
+          "branch": "work",
+          "source_commit": "bffc6f41e512e28b4e383e8dfa711aee07c710fc",
+          "role": "Human appearance/proportions/materials/anatomical style ONLY. Exercise pose, grip, equipment and muscles come from the exact-ID catalogue, never the reference.",
+          "pixels_reviewed_during_preparation": false
+        },
+        "style": {
+          "version": "v1",
+          "human_model": "One athletic bald male anatomical mannequin, opaque silver-gray muscular surfaces, consistent proportions and detailed 3D materials, plain black shorts, barefoot.",
+          "primary_highlight": {
+            "hex": "#F26445",
+            "rule": "Highlight only the exact primary muscle group provided for this exercise."
+          },
+          "secondary_highlight": {
+            "hex": "#F26445",
+            "intensity_fraction": [
+              0.4,
+              0.5
+            ],
+            "rule": "Only the exact secondary muscles, lighter same-hue highlight; if the list is empty add no secondary target."
+          },
+          "background": "Genuinely transparent PNG background, no white/checkerboard layer, no environment scene.",
+          "output": {
+            "format": "PNG",
+            "width": 1024,
+            "height": 1024,
+            "one_person": true,
+            "one_phase": true
+          },
+          "material_rules": "Highlights never make tissue transparent; no glow, whole-body orange tint, hair, text, labels, arrows, UI, borders, collage or extra person.",
+          "framing": "Full figure and all required equipment/supports visible within a square. Scale and use a three-quarter view to expose the specified contacts without changing anatomy, equipment, grip or technique.",
+          "no_invention": "Exact catalogue ID controls identity, raw equipment and muscles. Only the embedded verified same-ID/source-variant decisions may clarify rendering technique. No guessed weights, brands, attachments or muscle targets."
+        },
+        "base_style_sha256": "8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578",
+        "style_proposal_sha256": null,
+        "selected_render_scene": {
+          "exercise_id": "ring-pullup",
+          "single_phase": "Controlled ring-height top",
+          "pose": "Chest raised toward rings, chin above ring height, elbows down, trunk and legs quiet.",
+          "grip": "One closed hand encircles each RING, wrists aligned; exact palm rotation not prescribed or invented.",
+          "supports_and_equipment": "Two rings on secure overhead straps, body hanging clear of floor; do not replace hand contacts with BAR.",
+          "movement_trajectory": "Pull from straight-arm ring hang to controlled ring-height top, lower fully without ring swing.",
+          "camera": "Front-side three-quarter view showing whole person, all supports/anchors and each prescribed contact; square frame, no crop.",
+          "one_phase_only": true,
+          "never_infer_muscles_from_pose_or_reference": true
+        },
+        "technique_resolution": {
+          "exercise_id": "ring-pullup",
+          "rationale_uk": "Generated match прямо каже, що bar candidates не підтверджують потрібні rings. Усі English instructions та uk/es/pl description задають chin above RING height. Bar у generic English description не є дозволом замінити кільця. Дві підвішені ручні опори, без вигаданого pronated/supinated повороту.",
+          "catalog_evidence": [
+            {
+              "exercise_id": "ring-pullup",
+              "catalog_path": "data/exercises/catalog.json",
+              "catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+              "source_commit": "bffc6f41e512e28b4e383e8dfa711aee07c710fc",
+              "field": "match.rationale",
+              "value": "The pull-up candidates use a bar or bodyweight setup and none confirms the target ring equipment and ring-specific pulling position.",
+              "catalog_record_sha256": "b26ec8a2881e0240dbea23e7934416b35604017d65e321c6e96f3168f4018087"
+            },
+            {
+              "exercise_id": "ring-pullup",
+              "catalog_path": "data/exercises/catalog.json",
+              "catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+              "source_commit": "bffc6f41e512e28b4e383e8dfa711aee07c710fc",
+              "field": "content.en.instructions[0]",
+              "value": "Hang from the rings with arms straight, shoulders active, and legs controlled.",
+              "catalog_record_sha256": "b26ec8a2881e0240dbea23e7934416b35604017d65e321c6e96f3168f4018087"
+            },
+            {
+              "exercise_id": "ring-pullup",
+              "catalog_path": "data/exercises/catalog.json",
+              "catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+              "source_commit": "bffc6f41e512e28b4e383e8dfa711aee07c710fc",
+              "field": "content.en.instructions[2]",
+              "value": "Reach the chin above ring height or to a controlled top position.",
+              "catalog_record_sha256": "b26ec8a2881e0240dbea23e7934416b35604017d65e321c6e96f3168f4018087"
+            },
+            {
+              "exercise_id": "ring-pullup",
+              "catalog_path": "data/exercises/catalog.json",
+              "catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+              "source_commit": "bffc6f41e512e28b4e383e8dfa711aee07c710fc",
+              "field": "content.pl.description",
+              "value": "Podciąganie na kółkach prowadzi ciało z kontrolowanego zwisu do wysokości brody nad kółkami, a następnie spokojnie je opuszcza.",
+              "catalog_record_sha256": "b26ec8a2881e0240dbea23e7934416b35604017d65e321c6e96f3168f4018087"
+            },
+            {
+              "exercise_id": "ring-pullup",
+              "catalog_path": "data/exercises/catalog.json",
+              "catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+              "source_commit": "bffc6f41e512e28b4e383e8dfa711aee07c710fc",
+              "field": "content.en.description",
+              "value": "Ring Pull Up pulls from a controlled hang until the chin reaches or clears the bar, then lowers under control.",
+              "catalog_record_sha256": "b26ec8a2881e0240dbea23e7934416b35604017d65e321c6e96f3168f4018087"
+            }
+          ],
+          "original_dataset_evidence": [],
+          "primary_publications": [],
+          "source_English_policy": "Quoted unchanged for provenance. Render the explicitly resolved scene and documented variant, not the disputed generic/erroneous fields; do not edit catalogue."
+        },
+        "same_ID_supplementary_fields": [],
+        "technical_blocker": null,
+        "source_use_rule": "Render ONLY selected_render_scene and the explicit exact-ID resolution; original English stays verbatim for provenance even when a disputed field is overridden. Do not invent a substitute exercise or copy reference pose/equipment/muscle colors."
+      },
+      "prompt_sha256": "8d4f289cadfde1443d7aacd60a8c9e97a2f0be52cf56a61d8a4f16e60bf09aab",
+      "scene": {
+        "exercise_id": "ring-pullup",
+        "single_phase": "Controlled ring-height top",
+        "pose": "Chest raised toward rings, chin above ring height, elbows down, trunk and legs quiet.",
+        "grip": "One closed hand encircles each RING, wrists aligned; exact palm rotation not prescribed or invented.",
+        "supports_and_equipment": "Two rings on secure overhead straps, body hanging clear of floor; do not replace hand contacts with BAR.",
+        "movement_trajectory": "Pull from straight-arm ring hang to controlled ring-height top, lower fully without ring swing.",
+        "camera": "Front-side three-quarter view showing whole person, all supports/anchors and each prescribed contact; square frame, no crop.",
+        "one_phase_only": true,
+        "never_infer_muscles_from_pose_or_reference": true
+      },
+      "technique_resolution": {
+        "exercise_id": "ring-pullup",
+        "rationale_uk": "Generated match прямо каже, що bar candidates не підтверджують потрібні rings. Усі English instructions та uk/es/pl description задають chin above RING height. Bar у generic English description не є дозволом замінити кільця. Дві підвішені ручні опори, без вигаданого pronated/supinated повороту.",
+        "catalog_evidence": [
+          {
+            "exercise_id": "ring-pullup",
+            "catalog_path": "data/exercises/catalog.json",
+            "catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+            "source_commit": "bffc6f41e512e28b4e383e8dfa711aee07c710fc",
+            "field": "match.rationale",
+            "value": "The pull-up candidates use a bar or bodyweight setup and none confirms the target ring equipment and ring-specific pulling position.",
+            "catalog_record_sha256": "b26ec8a2881e0240dbea23e7934416b35604017d65e321c6e96f3168f4018087"
+          },
+          {
+            "exercise_id": "ring-pullup",
+            "catalog_path": "data/exercises/catalog.json",
+            "catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+            "source_commit": "bffc6f41e512e28b4e383e8dfa711aee07c710fc",
+            "field": "content.en.instructions[0]",
+            "value": "Hang from the rings with arms straight, shoulders active, and legs controlled.",
+            "catalog_record_sha256": "b26ec8a2881e0240dbea23e7934416b35604017d65e321c6e96f3168f4018087"
+          },
+          {
+            "exercise_id": "ring-pullup",
+            "catalog_path": "data/exercises/catalog.json",
+            "catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+            "source_commit": "bffc6f41e512e28b4e383e8dfa711aee07c710fc",
+            "field": "content.en.instructions[2]",
+            "value": "Reach the chin above ring height or to a controlled top position.",
+            "catalog_record_sha256": "b26ec8a2881e0240dbea23e7934416b35604017d65e321c6e96f3168f4018087"
+          },
+          {
+            "exercise_id": "ring-pullup",
+            "catalog_path": "data/exercises/catalog.json",
+            "catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+            "source_commit": "bffc6f41e512e28b4e383e8dfa711aee07c710fc",
+            "field": "content.pl.description",
+            "value": "Podciąganie na kółkach prowadzi ciało z kontrolowanego zwisu do wysokości brody nad kółkami, a następnie spokojnie je opuszcza.",
+            "catalog_record_sha256": "b26ec8a2881e0240dbea23e7934416b35604017d65e321c6e96f3168f4018087"
+          },
+          {
+            "exercise_id": "ring-pullup",
+            "catalog_path": "data/exercises/catalog.json",
+            "catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+            "source_commit": "bffc6f41e512e28b4e383e8dfa711aee07c710fc",
+            "field": "content.en.description",
+            "value": "Ring Pull Up pulls from a controlled hang until the chin reaches or clears the bar, then lowers under control.",
+            "catalog_record_sha256": "b26ec8a2881e0240dbea23e7934416b35604017d65e321c6e96f3168f4018087"
+          }
+        ],
+        "original_dataset_evidence": [],
+        "primary_publications": [],
+        "source_English_policy": "Quoted unchanged for provenance. Render the explicitly resolved scene and documented variant, not the disputed generic/erroneous fields; do not edit catalogue."
+      },
+      "same_ID_supplementary_fields": [],
+      "style_version": "v1",
+      "base_style_version": "v1",
+      "base_style_sha256": "8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578",
+      "style_proposal_path": null,
+      "style_proposal_sha256": null,
+      "human_reference": {
+        "repository_path": "assets/exercises/biceps-curl-dumbbell.png",
+        "absolute_path": "/workspace/lightweight-exercises-photo/assets/exercises/biceps-curl-dumbbell.png",
+        "sha256": "52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f",
+        "branch": "work",
+        "source_commit": "bffc6f41e512e28b4e383e8dfa711aee07c710fc",
+        "role": "Human appearance/proportions/materials/anatomical style ONLY. Exercise pose, grip, equipment and muscles come from the exact-ID catalogue, never the reference.",
+        "pixels_reviewed_during_preparation": false
+      },
+      "attempts": 0,
+      "result_path": null,
+      "result_sha256": null,
+      "user_review": null,
+      "technical_check": null,
+      "agent_visual_review": "not_performed",
+      "generation_authorized_now": false,
+      "technical_question": null,
+      "batch_id": "agent-03-others-018",
+      "planned_png_path": "/workspace/exercise-image-results/agent-03-others-018/ring-pullup/attempt-1.png",
+      "planned_output_relative_path": "agent-03-others-018/ring-pullup/attempt-1.png"
+    },
+    {
+      "exercise_id": "squat-band-resistance-band",
+      "name": "Squat (Band)",
+      "source_english": {
+        "description": "Squat (Band) lowers the hips by bending the hips and knees and returns to standing by driving through the feet.",
+        "instructions": [
+          "Stand with your feet shoulder-width apart, with the band placed just above your knees.",
+          "Keeping your chest up and core engaged, push your hips back and bend your knees to lower into a squat position.",
+          "Make sure your knees are tracking over your toes and your weight is in your heels.",
+          "Pause for a moment at the bottom, then push through your heels to return to the starting position."
+        ],
+        "form_cues": [
+          "Keep the knees tracking the toes.",
+          "Keep the heels grounded.",
+          "Brace the trunk through the depth."
+        ],
+        "common_mistakes": [
+          "Letting the knees cave inward.",
+          "Rounding the lower back.",
+          "Bouncing or cutting the depth short."
+        ],
+        "safety_note": "Use a rack or machine stops and choose a depth you can control with both feet planted.",
+        "provenance": "adapted"
+      },
+      "equipment": "resistance_band",
+      "primary_muscle": "quadriceps",
+      "secondary_muscles": [
+        "hamstrings",
+        "glutes"
+      ],
+      "source_catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+      "source_catalog_record_sha256": "05ca6f9779cfe9ed4f72576c0bd43bd8805dc57e621f65c21ab48719ddaf79aa",
+      "source_english_sha256": "b1993b64a62e724e659bd799cb6154beff21efeeec106944eff4d8bb75bca26f",
+      "status": "ready",
+      "technical_status": "ready",
+      "prompt_prepared": true,
+      "prompt_status": "complete",
+      "prompt_template": null,
+      "generation_prompt": "Create exactly ONE square transparent PNG of the exact exercise and selected single phase. Metadata fields must never appear as text.\nDo not render multiple phases, raw disputed alternatives, or inferred muscle targets.\n{\n  \"base_style_sha256\": \"8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578\",\n  \"exact_catalogue_source\": {\n    \"equipment\": \"resistance_band\",\n    \"primary_muscle\": \"quadriceps\",\n    \"secondary_muscles\": [\n      \"hamstrings\",\n      \"glutes\"\n    ],\n    \"source_english\": {\n      \"common_mistakes\": [\n        \"Letting the knees cave inward.\",\n        \"Rounding the lower back.\",\n        \"Bouncing or cutting the depth short.\"\n      ],\n      \"description\": \"Squat (Band) lowers the hips by bending the hips and knees and returns to standing by driving through the feet.\",\n      \"form_cues\": [\n        \"Keep the knees tracking the toes.\",\n        \"Keep the heels grounded.\",\n        \"Brace the trunk through the depth.\"\n      ],\n      \"instructions\": [\n        \"Stand with your feet shoulder-width apart, with the band placed just above your knees.\",\n        \"Keeping your chest up and core engaged, push your hips back and bend your knees to lower into a squat position.\",\n        \"Make sure your knees are tracking over your toes and your weight is in your heels.\",\n        \"Pause for a moment at the bottom, then push through your heels to return to the starting position.\"\n      ],\n      \"provenance\": \"adapted\",\n      \"safety_note\": \"Use a rack or machine stops and choose a depth you can control with both feet planted.\"\n    }\n  },\n  \"human_reference\": {\n    \"absolute_path\": \"/workspace/lightweight-exercises-photo/assets/exercises/biceps-curl-dumbbell.png\",\n    \"branch\": \"work\",\n    \"pixels_reviewed_during_preparation\": false,\n    \"repository_path\": \"assets/exercises/biceps-curl-dumbbell.png\",\n    \"role\": \"Human appearance/proportions/materials/anatomical style ONLY. Exercise pose, grip, equipment and muscles come from the exact-ID catalogue, never the reference.\",\n    \"sha256\": \"52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f\",\n    \"source_commit\": \"bffc6f41e512e28b4e383e8dfa711aee07c710fc\"\n  },\n  \"identity_do_not_render_as_text\": {\n    \"catalog_record_sha256\": \"05ca6f9779cfe9ed4f72576c0bd43bd8805dc57e621f65c21ab48719ddaf79aa\",\n    \"catalog_sha256\": \"a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989\",\n    \"exercise_id\": \"squat-band-resistance-band\",\n    \"name\": \"Squat (Band)\"\n  },\n  \"same_ID_supplementary_fields\": [],\n  \"selected_render_scene\": {\n    \"camera\": \"Front-side three-quarter view showing whole person, all supports/anchors and each prescribed contact; square frame, no crop.\",\n    \"exercise_id\": \"squat-band-resistance-band\",\n    \"grip\": \"Hands free for balance, no held bar or long-band ends.\",\n    \"movement_trajectory\": \"Flex hips/knees with controlled band tension above knees, then drive through heels to stand.\",\n    \"never_infer_muscles_from_pose_or_reference\": true,\n    \"one_phase_only\": true,\n    \"pose\": \"Feet shoulder-width/heels grounded, hips back and knees aligned with toes, chest lifted, paused comfortable depth.\",\n    \"single_phase\": \"Controlled knees-out band squat bottom\",\n    \"supports_and_equipment\": \"Short band LOOP just ABOVE knees, both feet on floor, passive unweighted RACK safety option nearby as English permits. No machine stops/rails, cable, weight stack or band under feet.\"\n  },\n  \"source_use_rule\": \"Render ONLY selected_render_scene and the explicit exact-ID resolution; original English stays verbatim for provenance even when a disputed field is overridden. Do not invent a substitute exercise or copy reference pose/equipment/muscle colors.\",\n  \"style\": {\n    \"background\": \"Genuinely transparent PNG background, no white/checkerboard layer, no environment scene.\",\n    \"framing\": \"Full figure and all required equipment/supports visible within a square. Scale and use a three-quarter view to expose the specified contacts without changing anatomy, equipment, grip or technique.\",\n    \"human_model\": \"One athletic bald male anatomical mannequin, opaque silver-gray muscular surfaces, consistent proportions and detailed 3D materials, plain black shorts, barefoot.\",\n    \"material_rules\": \"Highlights never make tissue transparent; no glow, whole-body orange tint, hair, text, labels, arrows, UI, borders, collage or extra person.\",\n    \"no_invention\": \"Exact catalogue ID controls identity, raw equipment and muscles. Only the embedded verified same-ID/source-variant decisions may clarify rendering technique. No guessed weights, brands, attachments or muscle targets.\",\n    \"output\": {\n      \"format\": \"PNG\",\n      \"height\": 1024,\n      \"one_person\": true,\n      \"one_phase\": true,\n      \"width\": 1024\n    },\n    \"primary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"rule\": \"Highlight only the exact primary muscle group provided for this exercise.\"\n    },\n    \"secondary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"intensity_fraction\": [\n        0.4,\n        0.5\n      ],\n      \"rule\": \"Only the exact secondary muscles, lighter same-hue highlight; if the list is empty add no secondary target.\"\n    },\n    \"version\": \"v1\"\n  },\n  \"style_proposal_sha256\": null,\n  \"technical_blocker\": null,\n  \"technique_resolution\": {\n    \"catalog_evidence\": [\n      {\n        \"catalog_path\": \"data/exercises/catalog.json\",\n        \"catalog_record_sha256\": \"05ca6f9779cfe9ed4f72576c0bd43bd8805dc57e621f65c21ab48719ddaf79aa\",\n        \"catalog_sha256\": \"a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989\",\n        \"exercise_id\": \"squat-band-resistance-band\",\n        \"field\": \"content.en.instructions[0]\",\n        \"source_commit\": \"bffc6f41e512e28b4e383e8dfa711aee07c710fc\",\n        \"value\": \"Stand with your feet shoulder-width apart, with the band placed just above your knees.\"\n      },\n      {\n        \"catalog_path\": \"data/exercises/catalog.json\",\n        \"catalog_record_sha256\": \"05ca6f9779cfe9ed4f72576c0bd43bd8805dc57e621f65c21ab48719ddaf79aa\",\n        \"catalog_sha256\": \"a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989\",\n        \"exercise_id\": \"squat-band-resistance-band\",\n        \"field\": \"content.en.safety_note\",\n        \"source_commit\": \"bffc6f41e512e28b4e383e8dfa711aee07c710fc\",\n        \"value\": \"Use a rack or machine stops and choose a depth you can control with both feet planted.\"\n      },\n      {\n        \"catalog_path\": \"data/exercises/catalog.json\",\n        \"catalog_record_sha256\": \"05ca6f9779cfe9ed4f72576c0bd43bd8805dc57e621f65c21ab48719ddaf79aa\",\n        \"catalog_sha256\": \"a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989\",\n        \"exercise_id\": \"squat-band-resistance-band\",\n        \"field\": \"match.rationale\",\n        \"source_commit\": \"bffc6f41e512e28b4e383e8dfa711aee07c710fc\",\n        \"value\": \"The band squat matches resistance-band equipment, standing squat position, knee-and-hip path, range and quadriceps target.\"\n      }\n    ],\n    \"exercise_id\": \"squat-band-resistance-band\",\n    \"original_dataset_evidence\": [\n      {\n        \"binding\": {\n          \"catalog_exercise_id\": \"squat-band-resistance-band\",\n          \"catalog_source_dataset_id\": \"1004\",\n          \"dataset_record_sha256\": \"a0d3982cde87a23262f8deed58bed96caaed6e3f254740ae1ebe02049e123282\",\n          \"manifest_candidate_fields_exact\": true,\n          \"manifest_selected_source_id\": \"1004\",\n          \"original_ID_occurrences\": 1,\n          \"selected_candidate_ID_occurrences\": 1\n        },\n        \"dataset_file_sha256\": \"656634224b8977b99a6d765470ee123260d4979715eaa4e7c0b7c8bb0d79f93d\",\n        \"exercise_id\": \"squat-band-resistance-band\",\n        \"field\": \"instruction_steps.en[0]\",\n        \"release_url\": \"https://github.com/romanthoruk2008-pixel/lightweight-exercises-photo/releases/tag/exercise-source-v1\",\n        \"source_dataset_id\": \"1004\",\n        \"value\": \"Stand with your feet shoulder-width apart, with the band placed just above your knees.\"\n      }\n    ],\n    \"primary_publications\": [],\n    \"rationale_uk\": \"Selected 1004 і всі instructions задають петлю ВИЩЕ колін, не довгу band deadlift петлю під стопами. English safety дозволяє rack OR machine stops: обрано лише пасивну стійку поруч/навколо вправи як safety option, без направляючих, тросів, вагового стека чи зміни опор ніг. Каталожна safety вимога збережена, не оголошена помилкою здогадкою.\",\n    \"source_English_policy\": \"Quoted unchanged for provenance. Render the explicitly resolved scene and documented variant, not the disputed generic/erroneous fields; do not edit catalogue.\"\n  }\n}",
+      "prompt_payload": {
+        "identity_do_not_render_as_text": {
+          "exercise_id": "squat-band-resistance-band",
+          "name": "Squat (Band)",
+          "catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+          "catalog_record_sha256": "05ca6f9779cfe9ed4f72576c0bd43bd8805dc57e621f65c21ab48719ddaf79aa"
+        },
+        "exact_catalogue_source": {
+          "source_english": {
+            "description": "Squat (Band) lowers the hips by bending the hips and knees and returns to standing by driving through the feet.",
+            "instructions": [
+              "Stand with your feet shoulder-width apart, with the band placed just above your knees.",
+              "Keeping your chest up and core engaged, push your hips back and bend your knees to lower into a squat position.",
+              "Make sure your knees are tracking over your toes and your weight is in your heels.",
+              "Pause for a moment at the bottom, then push through your heels to return to the starting position."
+            ],
+            "form_cues": [
+              "Keep the knees tracking the toes.",
+              "Keep the heels grounded.",
+              "Brace the trunk through the depth."
+            ],
+            "common_mistakes": [
+              "Letting the knees cave inward.",
+              "Rounding the lower back.",
+              "Bouncing or cutting the depth short."
+            ],
+            "safety_note": "Use a rack or machine stops and choose a depth you can control with both feet planted.",
+            "provenance": "adapted"
+          },
+          "equipment": "resistance_band",
+          "primary_muscle": "quadriceps",
+          "secondary_muscles": [
+            "hamstrings",
+            "glutes"
+          ]
+        },
+        "human_reference": {
+          "repository_path": "assets/exercises/biceps-curl-dumbbell.png",
+          "absolute_path": "/workspace/lightweight-exercises-photo/assets/exercises/biceps-curl-dumbbell.png",
+          "sha256": "52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f",
+          "branch": "work",
+          "source_commit": "bffc6f41e512e28b4e383e8dfa711aee07c710fc",
+          "role": "Human appearance/proportions/materials/anatomical style ONLY. Exercise pose, grip, equipment and muscles come from the exact-ID catalogue, never the reference.",
+          "pixels_reviewed_during_preparation": false
+        },
+        "style": {
+          "version": "v1",
+          "human_model": "One athletic bald male anatomical mannequin, opaque silver-gray muscular surfaces, consistent proportions and detailed 3D materials, plain black shorts, barefoot.",
+          "primary_highlight": {
+            "hex": "#F26445",
+            "rule": "Highlight only the exact primary muscle group provided for this exercise."
+          },
+          "secondary_highlight": {
+            "hex": "#F26445",
+            "intensity_fraction": [
+              0.4,
+              0.5
+            ],
+            "rule": "Only the exact secondary muscles, lighter same-hue highlight; if the list is empty add no secondary target."
+          },
+          "background": "Genuinely transparent PNG background, no white/checkerboard layer, no environment scene.",
+          "output": {
+            "format": "PNG",
+            "width": 1024,
+            "height": 1024,
+            "one_person": true,
+            "one_phase": true
+          },
+          "material_rules": "Highlights never make tissue transparent; no glow, whole-body orange tint, hair, text, labels, arrows, UI, borders, collage or extra person.",
+          "framing": "Full figure and all required equipment/supports visible within a square. Scale and use a three-quarter view to expose the specified contacts without changing anatomy, equipment, grip or technique.",
+          "no_invention": "Exact catalogue ID controls identity, raw equipment and muscles. Only the embedded verified same-ID/source-variant decisions may clarify rendering technique. No guessed weights, brands, attachments or muscle targets."
+        },
+        "base_style_sha256": "8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578",
+        "style_proposal_sha256": null,
+        "selected_render_scene": {
+          "exercise_id": "squat-band-resistance-band",
+          "single_phase": "Controlled knees-out band squat bottom",
+          "pose": "Feet shoulder-width/heels grounded, hips back and knees aligned with toes, chest lifted, paused comfortable depth.",
+          "grip": "Hands free for balance, no held bar or long-band ends.",
+          "supports_and_equipment": "Short band LOOP just ABOVE knees, both feet on floor, passive unweighted RACK safety option nearby as English permits. No machine stops/rails, cable, weight stack or band under feet.",
+          "movement_trajectory": "Flex hips/knees with controlled band tension above knees, then drive through heels to stand.",
+          "camera": "Front-side three-quarter view showing whole person, all supports/anchors and each prescribed contact; square frame, no crop.",
+          "one_phase_only": true,
+          "never_infer_muscles_from_pose_or_reference": true
+        },
+        "technique_resolution": {
+          "exercise_id": "squat-band-resistance-band",
+          "rationale_uk": "Selected 1004 і всі instructions задають петлю ВИЩЕ колін, не довгу band deadlift петлю під стопами. English safety дозволяє rack OR machine stops: обрано лише пасивну стійку поруч/навколо вправи як safety option, без направляючих, тросів, вагового стека чи зміни опор ніг. Каталожна safety вимога збережена, не оголошена помилкою здогадкою.",
+          "catalog_evidence": [
+            {
+              "exercise_id": "squat-band-resistance-band",
+              "catalog_path": "data/exercises/catalog.json",
+              "catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+              "source_commit": "bffc6f41e512e28b4e383e8dfa711aee07c710fc",
+              "field": "content.en.instructions[0]",
+              "value": "Stand with your feet shoulder-width apart, with the band placed just above your knees.",
+              "catalog_record_sha256": "05ca6f9779cfe9ed4f72576c0bd43bd8805dc57e621f65c21ab48719ddaf79aa"
+            },
+            {
+              "exercise_id": "squat-band-resistance-band",
+              "catalog_path": "data/exercises/catalog.json",
+              "catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+              "source_commit": "bffc6f41e512e28b4e383e8dfa711aee07c710fc",
+              "field": "content.en.safety_note",
+              "value": "Use a rack or machine stops and choose a depth you can control with both feet planted.",
+              "catalog_record_sha256": "05ca6f9779cfe9ed4f72576c0bd43bd8805dc57e621f65c21ab48719ddaf79aa"
+            },
+            {
+              "exercise_id": "squat-band-resistance-band",
+              "catalog_path": "data/exercises/catalog.json",
+              "catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+              "source_commit": "bffc6f41e512e28b4e383e8dfa711aee07c710fc",
+              "field": "match.rationale",
+              "value": "The band squat matches resistance-band equipment, standing squat position, knee-and-hip path, range and quadriceps target.",
+              "catalog_record_sha256": "05ca6f9779cfe9ed4f72576c0bd43bd8805dc57e621f65c21ab48719ddaf79aa"
+            }
+          ],
+          "original_dataset_evidence": [
+            {
+              "exercise_id": "squat-band-resistance-band",
+              "source_dataset_id": "1004",
+              "field": "instruction_steps.en[0]",
+              "value": "Stand with your feet shoulder-width apart, with the band placed just above your knees.",
+              "release_url": "https://github.com/romanthoruk2008-pixel/lightweight-exercises-photo/releases/tag/exercise-source-v1",
+              "dataset_file_sha256": "656634224b8977b99a6d765470ee123260d4979715eaa4e7c0b7c8bb0d79f93d",
+              "binding": {
+                "catalog_exercise_id": "squat-band-resistance-band",
+                "catalog_source_dataset_id": "1004",
+                "manifest_selected_source_id": "1004",
+                "original_ID_occurrences": 1,
+                "selected_candidate_ID_occurrences": 1,
+                "dataset_record_sha256": "a0d3982cde87a23262f8deed58bed96caaed6e3f254740ae1ebe02049e123282",
+                "manifest_candidate_fields_exact": true
+              }
+            }
+          ],
+          "primary_publications": [],
+          "source_English_policy": "Quoted unchanged for provenance. Render the explicitly resolved scene and documented variant, not the disputed generic/erroneous fields; do not edit catalogue."
+        },
+        "same_ID_supplementary_fields": [],
+        "technical_blocker": null,
+        "source_use_rule": "Render ONLY selected_render_scene and the explicit exact-ID resolution; original English stays verbatim for provenance even when a disputed field is overridden. Do not invent a substitute exercise or copy reference pose/equipment/muscle colors."
+      },
+      "prompt_sha256": "ba0d3b33af23179ed652cfa08fed294da28bf607ff4779eb6088cb3fb3df0669",
+      "scene": {
+        "exercise_id": "squat-band-resistance-band",
+        "single_phase": "Controlled knees-out band squat bottom",
+        "pose": "Feet shoulder-width/heels grounded, hips back and knees aligned with toes, chest lifted, paused comfortable depth.",
+        "grip": "Hands free for balance, no held bar or long-band ends.",
+        "supports_and_equipment": "Short band LOOP just ABOVE knees, both feet on floor, passive unweighted RACK safety option nearby as English permits. No machine stops/rails, cable, weight stack or band under feet.",
+        "movement_trajectory": "Flex hips/knees with controlled band tension above knees, then drive through heels to stand.",
+        "camera": "Front-side three-quarter view showing whole person, all supports/anchors and each prescribed contact; square frame, no crop.",
+        "one_phase_only": true,
+        "never_infer_muscles_from_pose_or_reference": true
+      },
+      "technique_resolution": {
+        "exercise_id": "squat-band-resistance-band",
+        "rationale_uk": "Selected 1004 і всі instructions задають петлю ВИЩЕ колін, не довгу band deadlift петлю під стопами. English safety дозволяє rack OR machine stops: обрано лише пасивну стійку поруч/навколо вправи як safety option, без направляючих, тросів, вагового стека чи зміни опор ніг. Каталожна safety вимога збережена, не оголошена помилкою здогадкою.",
+        "catalog_evidence": [
+          {
+            "exercise_id": "squat-band-resistance-band",
+            "catalog_path": "data/exercises/catalog.json",
+            "catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+            "source_commit": "bffc6f41e512e28b4e383e8dfa711aee07c710fc",
+            "field": "content.en.instructions[0]",
+            "value": "Stand with your feet shoulder-width apart, with the band placed just above your knees.",
+            "catalog_record_sha256": "05ca6f9779cfe9ed4f72576c0bd43bd8805dc57e621f65c21ab48719ddaf79aa"
+          },
+          {
+            "exercise_id": "squat-band-resistance-band",
+            "catalog_path": "data/exercises/catalog.json",
+            "catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+            "source_commit": "bffc6f41e512e28b4e383e8dfa711aee07c710fc",
+            "field": "content.en.safety_note",
+            "value": "Use a rack or machine stops and choose a depth you can control with both feet planted.",
+            "catalog_record_sha256": "05ca6f9779cfe9ed4f72576c0bd43bd8805dc57e621f65c21ab48719ddaf79aa"
+          },
+          {
+            "exercise_id": "squat-band-resistance-band",
+            "catalog_path": "data/exercises/catalog.json",
+            "catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+            "source_commit": "bffc6f41e512e28b4e383e8dfa711aee07c710fc",
+            "field": "match.rationale",
+            "value": "The band squat matches resistance-band equipment, standing squat position, knee-and-hip path, range and quadriceps target.",
+            "catalog_record_sha256": "05ca6f9779cfe9ed4f72576c0bd43bd8805dc57e621f65c21ab48719ddaf79aa"
+          }
+        ],
+        "original_dataset_evidence": [
+          {
+            "exercise_id": "squat-band-resistance-band",
+            "source_dataset_id": "1004",
+            "field": "instruction_steps.en[0]",
+            "value": "Stand with your feet shoulder-width apart, with the band placed just above your knees.",
+            "release_url": "https://github.com/romanthoruk2008-pixel/lightweight-exercises-photo/releases/tag/exercise-source-v1",
+            "dataset_file_sha256": "656634224b8977b99a6d765470ee123260d4979715eaa4e7c0b7c8bb0d79f93d",
+            "binding": {
+              "catalog_exercise_id": "squat-band-resistance-band",
+              "catalog_source_dataset_id": "1004",
+              "manifest_selected_source_id": "1004",
+              "original_ID_occurrences": 1,
+              "selected_candidate_ID_occurrences": 1,
+              "dataset_record_sha256": "a0d3982cde87a23262f8deed58bed96caaed6e3f254740ae1ebe02049e123282",
+              "manifest_candidate_fields_exact": true
+            }
+          }
+        ],
+        "primary_publications": [],
+        "source_English_policy": "Quoted unchanged for provenance. Render the explicitly resolved scene and documented variant, not the disputed generic/erroneous fields; do not edit catalogue."
+      },
+      "same_ID_supplementary_fields": [],
+      "style_version": "v1",
+      "base_style_version": "v1",
+      "base_style_sha256": "8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578",
+      "style_proposal_path": null,
+      "style_proposal_sha256": null,
+      "human_reference": {
+        "repository_path": "assets/exercises/biceps-curl-dumbbell.png",
+        "absolute_path": "/workspace/lightweight-exercises-photo/assets/exercises/biceps-curl-dumbbell.png",
+        "sha256": "52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f",
+        "branch": "work",
+        "source_commit": "bffc6f41e512e28b4e383e8dfa711aee07c710fc",
+        "role": "Human appearance/proportions/materials/anatomical style ONLY. Exercise pose, grip, equipment and muscles come from the exact-ID catalogue, never the reference.",
+        "pixels_reviewed_during_preparation": false
+      },
+      "attempts": 0,
+      "result_path": null,
+      "result_sha256": null,
+      "user_review": null,
+      "technical_check": null,
+      "agent_visual_review": "not_performed",
+      "generation_authorized_now": false,
+      "technical_question": null,
+      "batch_id": "agent-03-others-018",
+      "planned_png_path": "/workspace/exercise-image-results/agent-03-others-018/squat-band-resistance-band/attempt-1.png",
+      "planned_output_relative_path": "agent-03-others-018/squat-band-resistance-band/attempt-1.png"
+    }
+  ],
+  "generation_authorized_now": false,
+  "source_evidence_path": "data/audits/agent-03-blocked-source-evidence.json",
+  "constraints": {
+    "old_batches_001_015_immutable": true,
+    "no_generation": true,
+    "no_pixel_QA": true,
+    "no_Supabase": true,
+    "catalog_and_shared_progress_immutable": true,
+    "fresh_assignment_and_PNG_metadata_check_before_any_future_call": true
+  }
+}
