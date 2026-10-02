@@ -3,10 +3,10 @@
   "assignment_round": "agent-03-next50-2026-10-02",
   "generator": "generator-a",
   "branch": "agent-06-generator-a-2026-10-02",
-  "status": "in_progress",
+  "status": "completed",
   "user_review": "pending",
   "agent_visual_review": "not_performed",
-  "generation_calls": 10,
+  "generation_calls": 12,
   "source": {
     "branch": "agent-03-inventory-2026-10-01",
     "data_commit": "4ed2bafbf0cf690458d25a896275647d8fdf2d20",
@@ -558,16 +558,111 @@
         "ring-pullup",
         "squat-band-resistance-band"
       ],
-      "status": "not_started",
-      "results": [],
-      "remaining_ids": [
-        "ring-pullup",
-        "squat-band-resistance-band"
-      ]
+      "status": "completed",
+      "results": [
+        {
+          "exercise_id": "ring-pullup",
+          "name": "Ring Pull Up",
+          "batch_id": "agent-03-others-025",
+          "attempt": 1,
+          "status": "generated_needs_review",
+          "user_review": "pending",
+          "agent_visual_review": "not_performed",
+          "style_version": "v1",
+          "prompt_sha256": "d09f7a4d9a0b184652e8fcda0b271adf678d346a66fd9ffd7951bfc89dac376f",
+          "source_batch_path": "data/batches/agent-03-others-025.json",
+          "source_batch_sha256": "f11820271c3d1db5a742ee9775db7b9ee57d9f4cf4eae5e77e2f9545ae0e57fa",
+          "source_preparation_batch_id": "agent-03-others-018",
+          "source_preparation_batch_sha256": "83f30455d4a4cc2e1d3c875b0f257300a3bdeea585af1e3ef8b86ec5dad4fe05",
+          "catalog_source_commit": "bc67b32e93322bac86b7a31264cd0f8b2ab3f6eb",
+          "catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+          "catalog_record_sha256": "b26ec8a2881e0240dbea23e7934416b35604017d65e321c6e96f3168f4018087",
+          "style_sha256": "8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578",
+          "human_reference_path": "assets/exercises/biceps-curl-dumbbell.png",
+          "human_reference_sha256": "52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f",
+          "local_path": "/workspace/exercise-image-results/agent-03-next50-2026-10-02/generator-a/agent-03-others-025/ring-pullup/attempt-1.png",
+          "repository_path": "assets/exercises/pending/agent-03-next50-2026-10-02/generator-a/agent-03-others-025/ring-pullup/attempt-1.png",
+          "sha256": "ea1d8012b2182ed616956e19bbbf41919edf8c9342eaeffc96bb2e51a84a37a0",
+          "technical_check": {
+            "status": "failed",
+            "decoded": true,
+            "format": "PNG",
+            "mode": "RGBA",
+            "dimensions": [
+              1254,
+              1254
+            ],
+            "expected_dimensions": [
+              1024,
+              1024
+            ],
+            "square": true,
+            "transparent_pixel_count": 1287287,
+            "transparent_corner_alpha": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "transparent_perimeter_pixel_count": 4951,
+            "issues": [
+              "dimensions_do_not_match_1024x1024"
+            ]
+          }
+        },
+        {
+          "exercise_id": "squat-band-resistance-band",
+          "name": "Squat (Band)",
+          "batch_id": "agent-03-others-025",
+          "attempt": 1,
+          "status": "generated_needs_review",
+          "user_review": "pending",
+          "agent_visual_review": "not_performed",
+          "style_version": "v1",
+          "prompt_sha256": "8c6d44ec17249615786785382d572cb97ef477fb592706fe81159d3e8375c1e8",
+          "source_batch_path": "data/batches/agent-03-others-025.json",
+          "source_batch_sha256": "f11820271c3d1db5a742ee9775db7b9ee57d9f4cf4eae5e77e2f9545ae0e57fa",
+          "source_preparation_batch_id": "agent-03-others-018",
+          "source_preparation_batch_sha256": "83f30455d4a4cc2e1d3c875b0f257300a3bdeea585af1e3ef8b86ec5dad4fe05",
+          "catalog_source_commit": "bc67b32e93322bac86b7a31264cd0f8b2ab3f6eb",
+          "catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+          "catalog_record_sha256": "05ca6f9779cfe9ed4f72576c0bd43bd8805dc57e621f65c21ab48719ddaf79aa",
+          "style_sha256": "8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578",
+          "human_reference_path": "assets/exercises/biceps-curl-dumbbell.png",
+          "human_reference_sha256": "52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f",
+          "local_path": "/workspace/exercise-image-results/agent-03-next50-2026-10-02/generator-a/agent-03-others-025/squat-band-resistance-band/attempt-1.png",
+          "repository_path": "assets/exercises/pending/agent-03-next50-2026-10-02/generator-a/agent-03-others-025/squat-band-resistance-band/attempt-1.png",
+          "sha256": "0342de533195ae790bc3a054d39ae92a7817120cdd6254fb4fb5e7469f8be9bb",
+          "technical_check": {
+            "status": "failed",
+            "decoded": true,
+            "format": "PNG",
+            "mode": "RGBA",
+            "dimensions": [
+              1254,
+              1254
+            ],
+            "expected_dimensions": [
+              1024,
+              1024
+            ],
+            "square": true,
+            "transparent_pixel_count": 1196136,
+            "transparent_corner_alpha": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "transparent_perimeter_pixel_count": 5016,
+            "issues": [
+              "dimensions_do_not_match_1024x1024"
+            ]
+          }
+        }
+      ],
+      "remaining_ids": []
     }
   ],
-  "resume_at": {
-    "batch_id": "agent-03-others-025",
-    "exercise_id": "ring-pullup"
-  }
+  "resume_at": null
 }
