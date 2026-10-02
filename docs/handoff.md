@@ -507,3 +507,5 @@ Agent-03 follow-up 004–006 complete. The three packages yielded 30/30 single-c
 ## Пакет 010 — локальний checkpoint перед push
 
 2026-10-02: 10/10 PNG збережено окремо, технічні перевірки PNG/decode/square/transparency/ID/SHA256 пройшли; всі user_review=pending та agent_visual_review=not_performed. Під час інструментальної підготовки вісім запитів не містили prompt і були відхилені до генерації; вони не рахуються спробами й не витратили квоту. Після виправлення викликано точні batch prompts; остаточні valid tool-call indices: 1, 2, 11–18. Віддалену перевірку ще не проводили. Наступна дія: fetch актуальної work, push PNG+progress+manifest, перевірити всі 10 remote SHA256, відмітити github_verified і зафіксувати цей стан.
+
+Пакет 010 завершено й перевірено: 10/10 PNG у `work`, remote SHA256 кожного збігається з локальним файлом, progress і manifest. Content/verified commit: `8f61dedac47ec814a183a69508e10f05fb63f0fb` (`2026-10-02T11:24:07.853615+00:00`). Усі результати лишаються `user_review=pending`, `agent_visual_review=not_performed`; технічні перевірки пройшли. Продовження: пакет 011, перший ID `triceps-extension-suspension`.
