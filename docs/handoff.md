@@ -1,6 +1,6 @@
 ## Current checkpoint — agent-03-others-022
 
-2026-10-02: package 022 has 10/10 generated results from its prepared exact-ID prompts with the neutral-primary v1 addendum and human appearance reference. Results are in `assets/exercises/pending/agent-03-others-022/<exercise_id>/attempt-1.png`; all `user_review=pending`, `agent_visual_review=not_performed`. The PNGs decode and contain actual transparent pixels; all are 1254×1254 instead of the specified 1024×1024, so the technical mismatch remains recorded. No resize or retry was done. Remote SHA verification is pending. Packages 019–020 were untouched. Next: verify and continue package 023.
+2026-10-02: package 022 has 10/10 generated results from its prepared exact-ID prompts with the neutral-primary v1 addendum and human appearance reference. Results are in `assets/exercises/pending/agent-03-others-022/<exercise_id>/attempt-1.png`; all `user_review=pending`, `agent_visual_review=not_performed`. The PNGs decode and contain actual transparent pixels; all are 1254×1254 instead of the specified 1024×1024, so the technical mismatch remains recorded. No resize or retry was done. Fetched `origin/agent-05-parallel-generation` at `b74953cadc406e948f2c1f6e04362a57f00f0f97` and verified SHA256 for all 10 PNGs. Packages 019–020 were untouched. Next: continue package 023.
 
 ## Current checkpoint — agent-03-others-021
 
