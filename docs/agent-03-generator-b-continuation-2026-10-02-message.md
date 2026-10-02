@@ -1,0 +1,14 @@
+Ти генератор B. Працюй тільки в хмарі. Джерело: romanthoruk2008-pixel/lightweight-exercises-photo, гілка agent-03-inventory-2026-10-01, commit d2e58cdaae2502f54022fe32bc37b526baa5a1de. Створи власну гілку agent-07-generator-b-2026-10-02 саме від цього commit; поточні завдання інших агентів не забирай.
+
+Прочитай data/assignments/agent-03-generator-b-continuation-2026-10-02.json. Виконуй ПО ПОРЯДКУ лише:
+1. agent-03-others-009 — 9 продовжень, файл data/resumes/agent-03-others-009-generator-b.json; старий пакет не змінювати, dead-hang не включати. hanging-knee-raise: наступна спроба 3, решта восьми: спроба 1; всю попередню історію й помилки зберегти.
+2. agent-03-others-026 — 7 вправ, data/batches/agent-03-others-026.json.
+3. agent-03-others-027 — 10 вправ, data/batches/agent-03-others-027.json.
+
+Еталон assets/exercises/biceps-curl-dumbbell.png (SHA256 52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f) — лише зовнішність/матеріали. Стиль: docs/exercise-image-style.md, docs/exercise-image-style-neutral-primary.md, docs/exercise-image-style-illustration-footwear.md; версію брати з exact-ID рядка. Для full_body/cardio/other тіло нейтральне; secondary тільки з цього ID, #F26445 40–50%; порожній список — без підсвітки. Взуття лише для трьох дозволених ID. Поза/хват/опори/обладнання — з готового prompt та джерельно підтвердженого рішення, не з еталона.
+
+PNG локально: /workspace/exercise-image-results/agent-03-generator-b-continuation-2026-10-02/generator-b/<batch_id>/<exercise_id>/attempt-N.png; PNG у Git: assets/exercises/pending/agent-03-generator-b-continuation-2026-10-02/generator-b/<batch_id>/<exercise_id>/attempt-N.png. Власний manifest data/manifests/agent-03-generator-b-continuation-2026-10-02/generator-b.json; дописувати, не стирати історію 009. Перед кожним викликом fetch усі доступні гілки, перевірити PNG та призначення: існуючий PNG будь-якого статусу — skip; нове стороннє призначення — conflict/skip. Непушені дані інших задач можуть бути невидимі.
+
+Нові PNG: user_review=pending до явного схвалення користувача. Після КОЖНОГО пакета зберегти результати/manifest, commit і push власної гілки та перевірити remote. При quota/HTTP429/usage_limit_reached записати помилку й одразу зупинитися БЕЗ повторних викликів; вправи залишаються у цьому ж пакеті. Автоматичні повтори заборонені.
+
+A — 12 вправ 024–025 — не чіпати. Blocked, тренажери/троси/Сміт не виконувати. Каталог/переклади/work/shared progress/схвалення/чужі PNG/Supabase не змінювати. Генерація лише вбудованим imagegen у хмарі. Детальний handoff: docs/agent-03-generator-b-continuation-2026-10-02-handoff.md у підготовчій гілці (опублікований після source commit); його можна прочитати через git show актуального origin/agent-03-inventory-2026-10-01, не переносити інші завдання у свою гілку.
