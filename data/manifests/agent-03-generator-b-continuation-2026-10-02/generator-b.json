@@ -3,10 +3,10 @@
   "assignment_round": "agent-03-generator-b-continuation-2026-10-02",
   "generator": "generator-b",
   "planned_worker_branch": "agent-07-generator-b-2026-10-02",
-  "status": "prepared_not_started",
+  "status": "in_progress",
   "assignment_registry_path": "data/assignments/agent-03-generator-b-continuation-2026-10-02.json",
   "source_branch": "agent-03-inventory-2026-10-01",
-  "generation_calls_during_this_assignment": 0,
+  "generation_calls_during_this_assignment": 9,
   "user_review_policy": "pending until explicit user approval",
   "exercises": [
     {
@@ -16,9 +16,9 @@
       "source_task_path": "data/resumes/agent-03-others-009-generator-b.json",
       "prompt_sha256": "f89857bdc61630ae0937de8f72a4f207749686d1c2380286b6d61e3f7b6a81cd",
       "catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
-      "status": "ready_to_continue",
-      "attempts": 2,
-      "next_attempt_number": 3,
+      "status": "technical_issue",
+      "attempts": 3,
+      "next_attempt_number": 4,
       "attempt_history": [
         {
           "attempt": 1,
@@ -51,9 +51,51 @@
           "error": "image generation failed: http 429 Too Many Requests: Some(\"{\\\"error\\\":{\\\"type\\\":\\\"usage_limit_reached\\\",\\\"message\\\":\\\"The usage limit has been reached\\\",\\\"plan_type\\\":\\\"plus\\\",\\\"resets_at\\\":1790940095,\\\"eligible_promo\\\":null,\\\"limit_window_minutes\\\":null,\\\"resets_in_seconds\\\":62230}}\")",
           "user_review": "pending",
           "agent_visual_review": "not_performed"
+        },
+        {
+          "attempt_number": 3,
+          "tool": "image_gen.imagegen",
+          "started_at": "2026-10-02T21:47:18+00:00",
+          "finished_at": "2026-10-02T21:47:44+00:00",
+          "status": "generated",
+          "prompt_sha256": "f89857bdc61630ae0937de8f72a4f207749686d1c2380286b6d61e3f7b6a81cd",
+          "style_version": "v1",
+          "reference_path": "assets/exercises/biceps-curl-dumbbell.png",
+          "reference_sha256": "52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f",
+          "result_path": "/workspace/exercise-image-results/agent-03-generator-b-continuation-2026-10-02/generator-b/agent-03-others-009/hanging-knee-raise/attempt-3.png",
+          "git_result_path": "assets/exercises/pending/agent-03-generator-b-continuation-2026-10-02/generator-b/agent-03-others-009/hanging-knee-raise/attempt-3.png",
+          "result_sha256": "07d7126ed466185522db9f3c4a24f08663fbab1fec0ead13c8baaf661dc9e702",
+          "technical_check": "failed",
+          "technical_check_details": {
+            "decode": "passed",
+            "format": "PNG",
+            "dimensions": [
+              1254,
+              1254
+            ],
+            "square": true,
+            "target_dimensions_passed": false,
+            "mode": "RGBA",
+            "alpha_channel": true,
+            "alpha_extrema": [
+              0,
+              255
+            ],
+            "fully_transparent_pixels": 1184957,
+            "transparent_corner_alpha": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "file_bytes": 773100
+          },
+          "agent_visual_review": "not_performed",
+          "user_review": "pending",
+          "error": null
         }
       ],
-      "last_error": "image generation failed: http 429 Too Many Requests: Some(\"{\\\"error\\\":{\\\"type\\\":\\\"usage_limit_reached\\\",\\\"message\\\":\\\"The usage limit has been reached\\\",\\\"plan_type\\\":\\\"plus\\\",\\\"resets_at\\\":1790940095,\\\"eligible_promo\\\":null,\\\"limit_window_minutes\\\":null,\\\"resets_in_seconds\\\":62230}}\")",
+      "last_error": "Generated PNG did not meet required 1024x1024 output dimensions; original image preserved without resampling.",
       "history_provenance": [
         {
           "source": {
@@ -362,14 +404,39 @@
           }
         }
       ],
-      "assignment_generation_calls": 0,
-      "result_path": null,
-      "result_sha256": null,
-      "user_review": null,
+      "assignment_generation_calls": 1,
+      "result_path": "/workspace/exercise-image-results/agent-03-generator-b-continuation-2026-10-02/generator-b/agent-03-others-009/hanging-knee-raise/attempt-3.png",
+      "result_sha256": "07d7126ed466185522db9f3c4a24f08663fbab1fec0ead13c8baaf661dc9e702",
+      "user_review": "pending",
       "agent_visual_review": "not_performed",
       "planned_png_path": "/workspace/exercise-image-results/agent-03-generator-b-continuation-2026-10-02/generator-b/agent-03-others-009/hanging-knee-raise/attempt-3.png",
       "planned_git_png_path": "assets/exercises/pending/agent-03-generator-b-continuation-2026-10-02/generator-b/agent-03-others-009/hanging-knee-raise/attempt-3.png",
-      "planned_output_relative_path": "agent-03-others-009/hanging-knee-raise/attempt-3.png"
+      "planned_output_relative_path": "agent-03-others-009/hanging-knee-raise/attempt-3.png",
+      "technical_check": "failed",
+      "technical_check_details": {
+        "decode": "passed",
+        "format": "PNG",
+        "dimensions": [
+          1254,
+          1254
+        ],
+        "square": true,
+        "target_dimensions_passed": false,
+        "mode": "RGBA",
+        "alpha_channel": true,
+        "alpha_extrema": [
+          0,
+          255
+        ],
+        "fully_transparent_pixels": 1184957,
+        "transparent_corner_alpha": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "file_bytes": 773100
+      }
     },
     {
       "exercise_id": "hanging-leg-raise",
@@ -378,20 +445,88 @@
       "source_task_path": "data/resumes/agent-03-others-009-generator-b.json",
       "prompt_sha256": "38d708db7790a231951a29b2c8969ce399c841ef1bbd820f8acc45df0103e3ca",
       "catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
-      "status": "ready_to_continue",
-      "attempts": 0,
-      "next_attempt_number": 1,
-      "attempt_history": [],
-      "last_error": null,
+      "status": "technical_issue",
+      "attempts": 1,
+      "next_attempt_number": 2,
+      "attempt_history": [
+        {
+          "attempt_number": 1,
+          "tool": "image_gen.imagegen",
+          "started_at": "2026-10-02T21:55:19+00:00",
+          "finished_at": "2026-10-02T21:56:16+00:00",
+          "prompt_sha256": "38d708db7790a231951a29b2c8969ce399c841ef1bbd820f8acc45df0103e3ca",
+          "style_version": "v1",
+          "reference_path": "assets/exercises/biceps-curl-dumbbell.png",
+          "reference_sha256": "52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f",
+          "status": "generated",
+          "result_path": "/workspace/exercise-image-results/agent-03-generator-b-continuation-2026-10-02/generator-b/agent-03-others-009/hanging-leg-raise/attempt-1.png",
+          "git_result_path": "assets/exercises/pending/agent-03-generator-b-continuation-2026-10-02/generator-b/agent-03-others-009/hanging-leg-raise/attempt-1.png",
+          "result_sha256": "91f69052ceb238d7ca81676d54d692384201e8a92b42434e52940c9a325a4d4c",
+          "technical_check": "failed",
+          "technical_check_details": {
+            "decode": "passed",
+            "format": "PNG",
+            "dimensions": [
+              1254,
+              1254
+            ],
+            "square": true,
+            "target_dimensions_passed": false,
+            "mode": "RGBA",
+            "alpha_channel": true,
+            "alpha_extrema": [
+              0,
+              255
+            ],
+            "fully_transparent_pixels": 1158487,
+            "transparent_corner_alpha": [
+              0,
+              0,
+              1,
+              0
+            ],
+            "file_bytes": 812664
+          },
+          "agent_visual_review": "not_performed",
+          "user_review": "pending",
+          "error": null
+        }
+      ],
+      "last_error": "Generated PNG did not meet required PNG/1024x1024/transparent-background technical criteria; original image bytes preserved without resampling.",
       "history_provenance": [],
-      "assignment_generation_calls": 0,
-      "result_path": null,
-      "result_sha256": null,
-      "user_review": null,
+      "assignment_generation_calls": 1,
+      "result_path": "/workspace/exercise-image-results/agent-03-generator-b-continuation-2026-10-02/generator-b/agent-03-others-009/hanging-leg-raise/attempt-1.png",
+      "result_sha256": "91f69052ceb238d7ca81676d54d692384201e8a92b42434e52940c9a325a4d4c",
+      "user_review": "pending",
       "agent_visual_review": "not_performed",
       "planned_png_path": "/workspace/exercise-image-results/agent-03-generator-b-continuation-2026-10-02/generator-b/agent-03-others-009/hanging-leg-raise/attempt-1.png",
       "planned_git_png_path": "assets/exercises/pending/agent-03-generator-b-continuation-2026-10-02/generator-b/agent-03-others-009/hanging-leg-raise/attempt-1.png",
-      "planned_output_relative_path": "agent-03-others-009/hanging-leg-raise/attempt-1.png"
+      "planned_output_relative_path": "agent-03-others-009/hanging-leg-raise/attempt-1.png",
+      "technical_check": "failed",
+      "technical_check_details": {
+        "decode": "passed",
+        "format": "PNG",
+        "dimensions": [
+          1254,
+          1254
+        ],
+        "square": true,
+        "target_dimensions_passed": false,
+        "mode": "RGBA",
+        "alpha_channel": true,
+        "alpha_extrema": [
+          0,
+          255
+        ],
+        "fully_transparent_pixels": 1158487,
+        "transparent_corner_alpha": [
+          0,
+          0,
+          1,
+          0
+        ],
+        "file_bytes": 812664
+      }
     },
     {
       "exercise_id": "jack-knife-suspension",
@@ -400,20 +535,88 @@
       "source_task_path": "data/resumes/agent-03-others-009-generator-b.json",
       "prompt_sha256": "6a8ee7cd0c8d7e07d1158f83979bded49aa901a0dcc272cc524f26bbe4870a02",
       "catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
-      "status": "ready_to_continue",
-      "attempts": 0,
-      "next_attempt_number": 1,
-      "attempt_history": [],
-      "last_error": null,
+      "status": "technical_issue",
+      "attempts": 1,
+      "next_attempt_number": 2,
+      "attempt_history": [
+        {
+          "attempt_number": 1,
+          "tool": "image_gen.imagegen",
+          "started_at": "2026-10-02T21:56:37+00:00",
+          "finished_at": "2026-10-02T21:57:40+00:00",
+          "prompt_sha256": "6a8ee7cd0c8d7e07d1158f83979bded49aa901a0dcc272cc524f26bbe4870a02",
+          "style_version": "v1",
+          "reference_path": "assets/exercises/biceps-curl-dumbbell.png",
+          "reference_sha256": "52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f",
+          "status": "generated",
+          "result_path": "/workspace/exercise-image-results/agent-03-generator-b-continuation-2026-10-02/generator-b/agent-03-others-009/jack-knife-suspension/attempt-1.png",
+          "git_result_path": "assets/exercises/pending/agent-03-generator-b-continuation-2026-10-02/generator-b/agent-03-others-009/jack-knife-suspension/attempt-1.png",
+          "result_sha256": "e1a06aad89485b489dc1189e216e249f8da1c7598ae12c92d6d10a966790f6cc",
+          "technical_check": "failed",
+          "technical_check_details": {
+            "decode": "passed",
+            "format": "PNG",
+            "dimensions": [
+              1254,
+              1254
+            ],
+            "square": true,
+            "target_dimensions_passed": false,
+            "mode": "RGBA",
+            "alpha_channel": true,
+            "alpha_extrema": [
+              0,
+              255
+            ],
+            "fully_transparent_pixels": 1152067,
+            "transparent_corner_alpha": [
+              1,
+              0,
+              0,
+              0
+            ],
+            "file_bytes": 857012
+          },
+          "agent_visual_review": "not_performed",
+          "user_review": "pending",
+          "error": null
+        }
+      ],
+      "last_error": "Generated PNG did not meet required PNG/1024x1024/transparent-background technical criteria; original image bytes preserved without resampling.",
       "history_provenance": [],
-      "assignment_generation_calls": 0,
-      "result_path": null,
-      "result_sha256": null,
-      "user_review": null,
+      "assignment_generation_calls": 1,
+      "result_path": "/workspace/exercise-image-results/agent-03-generator-b-continuation-2026-10-02/generator-b/agent-03-others-009/jack-knife-suspension/attempt-1.png",
+      "result_sha256": "e1a06aad89485b489dc1189e216e249f8da1c7598ae12c92d6d10a966790f6cc",
+      "user_review": "pending",
       "agent_visual_review": "not_performed",
       "planned_png_path": "/workspace/exercise-image-results/agent-03-generator-b-continuation-2026-10-02/generator-b/agent-03-others-009/jack-knife-suspension/attempt-1.png",
       "planned_git_png_path": "assets/exercises/pending/agent-03-generator-b-continuation-2026-10-02/generator-b/agent-03-others-009/jack-knife-suspension/attempt-1.png",
-      "planned_output_relative_path": "agent-03-others-009/jack-knife-suspension/attempt-1.png"
+      "planned_output_relative_path": "agent-03-others-009/jack-knife-suspension/attempt-1.png",
+      "technical_check": "failed",
+      "technical_check_details": {
+        "decode": "passed",
+        "format": "PNG",
+        "dimensions": [
+          1254,
+          1254
+        ],
+        "square": true,
+        "target_dimensions_passed": false,
+        "mode": "RGBA",
+        "alpha_channel": true,
+        "alpha_extrema": [
+          0,
+          255
+        ],
+        "fully_transparent_pixels": 1152067,
+        "transparent_corner_alpha": [
+          1,
+          0,
+          0,
+          0
+        ],
+        "file_bytes": 857012
+      }
     },
     {
       "exercise_id": "kipping-pullup-machine",
@@ -422,20 +625,88 @@
       "source_task_path": "data/resumes/agent-03-others-009-generator-b.json",
       "prompt_sha256": "6cf475eac1432dc0280c54f30bb01d2b4ee020e90dd1230ec53a43e02e5236b9",
       "catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
-      "status": "ready_to_continue",
-      "attempts": 0,
-      "next_attempt_number": 1,
-      "attempt_history": [],
-      "last_error": null,
+      "status": "technical_issue",
+      "attempts": 1,
+      "next_attempt_number": 2,
+      "attempt_history": [
+        {
+          "attempt_number": 1,
+          "tool": "image_gen.imagegen",
+          "started_at": "2026-10-02T21:58:09+00:00",
+          "finished_at": "2026-10-02T21:58:49+00:00",
+          "prompt_sha256": "6cf475eac1432dc0280c54f30bb01d2b4ee020e90dd1230ec53a43e02e5236b9",
+          "style_version": "v1",
+          "reference_path": "assets/exercises/biceps-curl-dumbbell.png",
+          "reference_sha256": "52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f",
+          "status": "generated",
+          "result_path": "/workspace/exercise-image-results/agent-03-generator-b-continuation-2026-10-02/generator-b/agent-03-others-009/kipping-pullup-machine/attempt-1.png",
+          "git_result_path": "assets/exercises/pending/agent-03-generator-b-continuation-2026-10-02/generator-b/agent-03-others-009/kipping-pullup-machine/attempt-1.png",
+          "result_sha256": "b0f99baba4522cc4d3fba8c00b04830214884d04df1792fdb09a9d224af661a1",
+          "technical_check": "failed",
+          "technical_check_details": {
+            "decode": "passed",
+            "format": "PNG",
+            "dimensions": [
+              1254,
+              1254
+            ],
+            "square": true,
+            "target_dimensions_passed": false,
+            "mode": "RGBA",
+            "alpha_channel": true,
+            "alpha_extrema": [
+              0,
+              255
+            ],
+            "fully_transparent_pixels": 1145507,
+            "transparent_corner_alpha": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "file_bytes": 772008
+          },
+          "agent_visual_review": "not_performed",
+          "user_review": "pending",
+          "error": null
+        }
+      ],
+      "last_error": "Generated PNG did not meet required PNG/1024x1024/transparent-background technical criteria; original image bytes preserved without resampling.",
       "history_provenance": [],
-      "assignment_generation_calls": 0,
-      "result_path": null,
-      "result_sha256": null,
-      "user_review": null,
+      "assignment_generation_calls": 1,
+      "result_path": "/workspace/exercise-image-results/agent-03-generator-b-continuation-2026-10-02/generator-b/agent-03-others-009/kipping-pullup-machine/attempt-1.png",
+      "result_sha256": "b0f99baba4522cc4d3fba8c00b04830214884d04df1792fdb09a9d224af661a1",
+      "user_review": "pending",
       "agent_visual_review": "not_performed",
       "planned_png_path": "/workspace/exercise-image-results/agent-03-generator-b-continuation-2026-10-02/generator-b/agent-03-others-009/kipping-pullup-machine/attempt-1.png",
       "planned_git_png_path": "assets/exercises/pending/agent-03-generator-b-continuation-2026-10-02/generator-b/agent-03-others-009/kipping-pullup-machine/attempt-1.png",
-      "planned_output_relative_path": "agent-03-others-009/kipping-pullup-machine/attempt-1.png"
+      "planned_output_relative_path": "agent-03-others-009/kipping-pullup-machine/attempt-1.png",
+      "technical_check": "failed",
+      "technical_check_details": {
+        "decode": "passed",
+        "format": "PNG",
+        "dimensions": [
+          1254,
+          1254
+        ],
+        "square": true,
+        "target_dimensions_passed": false,
+        "mode": "RGBA",
+        "alpha_channel": true,
+        "alpha_extrema": [
+          0,
+          255
+        ],
+        "fully_transparent_pixels": 1145507,
+        "transparent_corner_alpha": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "file_bytes": 772008
+      }
     },
     {
       "exercise_id": "knee-raise-parallel-bars-machine",
@@ -444,20 +715,88 @@
       "source_task_path": "data/resumes/agent-03-others-009-generator-b.json",
       "prompt_sha256": "6b8b25f4c6da7954ea83d99d225c16382ce1e7147a7b6ced91fc285c67cd27e7",
       "catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
-      "status": "ready_to_continue",
-      "attempts": 0,
-      "next_attempt_number": 1,
-      "attempt_history": [],
-      "last_error": null,
+      "status": "technical_issue",
+      "attempts": 1,
+      "next_attempt_number": 2,
+      "attempt_history": [
+        {
+          "attempt_number": 1,
+          "tool": "image_gen.imagegen",
+          "started_at": "2026-10-02T21:59:08+00:00",
+          "finished_at": "2026-10-02T22:00:02+00:00",
+          "prompt_sha256": "6b8b25f4c6da7954ea83d99d225c16382ce1e7147a7b6ced91fc285c67cd27e7",
+          "style_version": "v1",
+          "reference_path": "assets/exercises/biceps-curl-dumbbell.png",
+          "reference_sha256": "52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f",
+          "status": "generated",
+          "result_path": "/workspace/exercise-image-results/agent-03-generator-b-continuation-2026-10-02/generator-b/agent-03-others-009/knee-raise-parallel-bars-machine/attempt-1.png",
+          "git_result_path": "assets/exercises/pending/agent-03-generator-b-continuation-2026-10-02/generator-b/agent-03-others-009/knee-raise-parallel-bars-machine/attempt-1.png",
+          "result_sha256": "a0c3fc43dc91d58f96577221cebed85ae96ecd270e0507e6aabbcb186a007a28",
+          "technical_check": "failed",
+          "technical_check_details": {
+            "decode": "passed",
+            "format": "PNG",
+            "dimensions": [
+              1254,
+              1254
+            ],
+            "square": true,
+            "target_dimensions_passed": false,
+            "mode": "RGBA",
+            "alpha_channel": true,
+            "alpha_extrema": [
+              0,
+              255
+            ],
+            "fully_transparent_pixels": 1203564,
+            "transparent_corner_alpha": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "file_bytes": 711368
+          },
+          "agent_visual_review": "not_performed",
+          "user_review": "pending",
+          "error": null
+        }
+      ],
+      "last_error": "Generated PNG did not meet required PNG/1024x1024/transparent-background technical criteria; original image bytes preserved without resampling.",
       "history_provenance": [],
-      "assignment_generation_calls": 0,
-      "result_path": null,
-      "result_sha256": null,
-      "user_review": null,
+      "assignment_generation_calls": 1,
+      "result_path": "/workspace/exercise-image-results/agent-03-generator-b-continuation-2026-10-02/generator-b/agent-03-others-009/knee-raise-parallel-bars-machine/attempt-1.png",
+      "result_sha256": "a0c3fc43dc91d58f96577221cebed85ae96ecd270e0507e6aabbcb186a007a28",
+      "user_review": "pending",
       "agent_visual_review": "not_performed",
       "planned_png_path": "/workspace/exercise-image-results/agent-03-generator-b-continuation-2026-10-02/generator-b/agent-03-others-009/knee-raise-parallel-bars-machine/attempt-1.png",
       "planned_git_png_path": "assets/exercises/pending/agent-03-generator-b-continuation-2026-10-02/generator-b/agent-03-others-009/knee-raise-parallel-bars-machine/attempt-1.png",
-      "planned_output_relative_path": "agent-03-others-009/knee-raise-parallel-bars-machine/attempt-1.png"
+      "planned_output_relative_path": "agent-03-others-009/knee-raise-parallel-bars-machine/attempt-1.png",
+      "technical_check": "failed",
+      "technical_check_details": {
+        "decode": "passed",
+        "format": "PNG",
+        "dimensions": [
+          1254,
+          1254
+        ],
+        "square": true,
+        "target_dimensions_passed": false,
+        "mode": "RGBA",
+        "alpha_channel": true,
+        "alpha_extrema": [
+          0,
+          255
+        ],
+        "fully_transparent_pixels": 1203564,
+        "transparent_corner_alpha": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "file_bytes": 711368
+      }
     },
     {
       "exercise_id": "kneeling-pulldown-band-machine",
@@ -466,20 +805,88 @@
       "source_task_path": "data/resumes/agent-03-others-009-generator-b.json",
       "prompt_sha256": "0847343e9f5f0918b490241342d0b47e07ba103ea597312cd822c714762bd74b",
       "catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
-      "status": "ready_to_continue",
-      "attempts": 0,
-      "next_attempt_number": 1,
-      "attempt_history": [],
-      "last_error": null,
+      "status": "technical_issue",
+      "attempts": 1,
+      "next_attempt_number": 2,
+      "attempt_history": [
+        {
+          "attempt_number": 1,
+          "tool": "image_gen.imagegen",
+          "started_at": "2026-10-02T22:00:44+00:00",
+          "finished_at": "2026-10-02T22:01:35+00:00",
+          "prompt_sha256": "0847343e9f5f0918b490241342d0b47e07ba103ea597312cd822c714762bd74b",
+          "style_version": "v1",
+          "reference_path": "assets/exercises/biceps-curl-dumbbell.png",
+          "reference_sha256": "52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f",
+          "status": "generated",
+          "result_path": "/workspace/exercise-image-results/agent-03-generator-b-continuation-2026-10-02/generator-b/agent-03-others-009/kneeling-pulldown-band-machine/attempt-1.png",
+          "git_result_path": "assets/exercises/pending/agent-03-generator-b-continuation-2026-10-02/generator-b/agent-03-others-009/kneeling-pulldown-band-machine/attempt-1.png",
+          "result_sha256": "bdb5c35aa1b7660294c4bec4f0cb805275a590e8f5ffaa4f25fe806787886207",
+          "technical_check": "failed",
+          "technical_check_details": {
+            "decode": "passed",
+            "format": "PNG",
+            "dimensions": [
+              1254,
+              1254
+            ],
+            "square": true,
+            "target_dimensions_passed": false,
+            "mode": "RGBA",
+            "alpha_channel": true,
+            "alpha_extrema": [
+              0,
+              255
+            ],
+            "fully_transparent_pixels": 1279594,
+            "transparent_corner_alpha": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "file_bytes": 623900
+          },
+          "agent_visual_review": "not_performed",
+          "user_review": "pending",
+          "error": null
+        }
+      ],
+      "last_error": "Generated PNG did not meet required PNG/1024x1024/transparent-background technical criteria; original image bytes preserved without resampling.",
       "history_provenance": [],
-      "assignment_generation_calls": 0,
-      "result_path": null,
-      "result_sha256": null,
-      "user_review": null,
+      "assignment_generation_calls": 1,
+      "result_path": "/workspace/exercise-image-results/agent-03-generator-b-continuation-2026-10-02/generator-b/agent-03-others-009/kneeling-pulldown-band-machine/attempt-1.png",
+      "result_sha256": "bdb5c35aa1b7660294c4bec4f0cb805275a590e8f5ffaa4f25fe806787886207",
+      "user_review": "pending",
       "agent_visual_review": "not_performed",
       "planned_png_path": "/workspace/exercise-image-results/agent-03-generator-b-continuation-2026-10-02/generator-b/agent-03-others-009/kneeling-pulldown-band-machine/attempt-1.png",
       "planned_git_png_path": "assets/exercises/pending/agent-03-generator-b-continuation-2026-10-02/generator-b/agent-03-others-009/kneeling-pulldown-band-machine/attempt-1.png",
-      "planned_output_relative_path": "agent-03-others-009/kneeling-pulldown-band-machine/attempt-1.png"
+      "planned_output_relative_path": "agent-03-others-009/kneeling-pulldown-band-machine/attempt-1.png",
+      "technical_check": "failed",
+      "technical_check_details": {
+        "decode": "passed",
+        "format": "PNG",
+        "dimensions": [
+          1254,
+          1254
+        ],
+        "square": true,
+        "target_dimensions_passed": false,
+        "mode": "RGBA",
+        "alpha_channel": true,
+        "alpha_extrema": [
+          0,
+          255
+        ],
+        "fully_transparent_pixels": 1279594,
+        "transparent_corner_alpha": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "file_bytes": 623900
+      }
     },
     {
       "exercise_id": "lat-pulldown-band-resistance-band",
@@ -488,20 +895,88 @@
       "source_task_path": "data/resumes/agent-03-others-009-generator-b.json",
       "prompt_sha256": "8de078cacb134df71059942c46bf00ed56e37528acf8bca081f260de9292efcf",
       "catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
-      "status": "ready_to_continue",
-      "attempts": 0,
-      "next_attempt_number": 1,
-      "attempt_history": [],
-      "last_error": null,
+      "status": "technical_issue",
+      "attempts": 1,
+      "next_attempt_number": 2,
+      "attempt_history": [
+        {
+          "attempt_number": 1,
+          "tool": "image_gen.imagegen",
+          "started_at": "2026-10-02T22:01:54+00:00",
+          "finished_at": "2026-10-02T22:02:53+00:00",
+          "prompt_sha256": "8de078cacb134df71059942c46bf00ed56e37528acf8bca081f260de9292efcf",
+          "style_version": "v1",
+          "reference_path": "assets/exercises/biceps-curl-dumbbell.png",
+          "reference_sha256": "52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f",
+          "status": "generated",
+          "result_path": "/workspace/exercise-image-results/agent-03-generator-b-continuation-2026-10-02/generator-b/agent-03-others-009/lat-pulldown-band-resistance-band/attempt-1.png",
+          "git_result_path": "assets/exercises/pending/agent-03-generator-b-continuation-2026-10-02/generator-b/agent-03-others-009/lat-pulldown-band-resistance-band/attempt-1.png",
+          "result_sha256": "fc26e32e4f1338b005b58ab4d211f9b89fef8a420a53899d950ba56074ea456e",
+          "technical_check": "failed",
+          "technical_check_details": {
+            "decode": "passed",
+            "format": "PNG",
+            "dimensions": [
+              1254,
+              1254
+            ],
+            "square": true,
+            "target_dimensions_passed": false,
+            "mode": "RGBA",
+            "alpha_channel": true,
+            "alpha_extrema": [
+              0,
+              255
+            ],
+            "fully_transparent_pixels": 1199937,
+            "transparent_corner_alpha": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "file_bytes": 719496
+          },
+          "agent_visual_review": "not_performed",
+          "user_review": "pending",
+          "error": null
+        }
+      ],
+      "last_error": "Generated PNG did not meet required PNG/1024x1024/transparent-background technical criteria; original image bytes preserved without resampling.",
       "history_provenance": [],
-      "assignment_generation_calls": 0,
-      "result_path": null,
-      "result_sha256": null,
-      "user_review": null,
+      "assignment_generation_calls": 1,
+      "result_path": "/workspace/exercise-image-results/agent-03-generator-b-continuation-2026-10-02/generator-b/agent-03-others-009/lat-pulldown-band-resistance-band/attempt-1.png",
+      "result_sha256": "fc26e32e4f1338b005b58ab4d211f9b89fef8a420a53899d950ba56074ea456e",
+      "user_review": "pending",
       "agent_visual_review": "not_performed",
       "planned_png_path": "/workspace/exercise-image-results/agent-03-generator-b-continuation-2026-10-02/generator-b/agent-03-others-009/lat-pulldown-band-resistance-band/attempt-1.png",
       "planned_git_png_path": "assets/exercises/pending/agent-03-generator-b-continuation-2026-10-02/generator-b/agent-03-others-009/lat-pulldown-band-resistance-band/attempt-1.png",
-      "planned_output_relative_path": "agent-03-others-009/lat-pulldown-band-resistance-band/attempt-1.png"
+      "planned_output_relative_path": "agent-03-others-009/lat-pulldown-band-resistance-band/attempt-1.png",
+      "technical_check": "failed",
+      "technical_check_details": {
+        "decode": "passed",
+        "format": "PNG",
+        "dimensions": [
+          1254,
+          1254
+        ],
+        "square": true,
+        "target_dimensions_passed": false,
+        "mode": "RGBA",
+        "alpha_channel": true,
+        "alpha_extrema": [
+          0,
+          255
+        ],
+        "fully_transparent_pixels": 1199937,
+        "transparent_corner_alpha": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "file_bytes": 719496
+      }
     },
     {
       "exercise_id": "lateral-band-walks-resistance-band",
@@ -510,20 +985,88 @@
       "source_task_path": "data/resumes/agent-03-others-009-generator-b.json",
       "prompt_sha256": "127fae61a17eff3db6c877ebd7cd7e1be04e9ab5d9b052b485837e493a2637a0",
       "catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
-      "status": "ready_to_continue",
-      "attempts": 0,
-      "next_attempt_number": 1,
-      "attempt_history": [],
-      "last_error": null,
+      "status": "technical_issue",
+      "attempts": 1,
+      "next_attempt_number": 2,
+      "attempt_history": [
+        {
+          "attempt_number": 1,
+          "tool": "image_gen.imagegen",
+          "started_at": "2026-10-02T22:03:14+00:00",
+          "finished_at": "2026-10-02T22:04:06+00:00",
+          "prompt_sha256": "127fae61a17eff3db6c877ebd7cd7e1be04e9ab5d9b052b485837e493a2637a0",
+          "style_version": "v1",
+          "reference_path": "assets/exercises/biceps-curl-dumbbell.png",
+          "reference_sha256": "52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f",
+          "status": "generated",
+          "result_path": "/workspace/exercise-image-results/agent-03-generator-b-continuation-2026-10-02/generator-b/agent-03-others-009/lateral-band-walks-resistance-band/attempt-1.png",
+          "git_result_path": "assets/exercises/pending/agent-03-generator-b-continuation-2026-10-02/generator-b/agent-03-others-009/lateral-band-walks-resistance-band/attempt-1.png",
+          "result_sha256": "64ecf6878f0b4bfe70382e9885c39508012f7f95b954785e47b190dba293efbc",
+          "technical_check": "failed",
+          "technical_check_details": {
+            "decode": "passed",
+            "format": "PNG",
+            "dimensions": [
+              1254,
+              1254
+            ],
+            "square": true,
+            "target_dimensions_passed": false,
+            "mode": "RGBA",
+            "alpha_channel": true,
+            "alpha_extrema": [
+              0,
+              255
+            ],
+            "fully_transparent_pixels": 1258416,
+            "transparent_corner_alpha": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "file_bytes": 669847
+          },
+          "agent_visual_review": "not_performed",
+          "user_review": "pending",
+          "error": null
+        }
+      ],
+      "last_error": "Generated PNG did not meet required PNG/1024x1024/transparent-background technical criteria; original image bytes preserved without resampling.",
       "history_provenance": [],
-      "assignment_generation_calls": 0,
-      "result_path": null,
-      "result_sha256": null,
-      "user_review": null,
+      "assignment_generation_calls": 1,
+      "result_path": "/workspace/exercise-image-results/agent-03-generator-b-continuation-2026-10-02/generator-b/agent-03-others-009/lateral-band-walks-resistance-band/attempt-1.png",
+      "result_sha256": "64ecf6878f0b4bfe70382e9885c39508012f7f95b954785e47b190dba293efbc",
+      "user_review": "pending",
       "agent_visual_review": "not_performed",
       "planned_png_path": "/workspace/exercise-image-results/agent-03-generator-b-continuation-2026-10-02/generator-b/agent-03-others-009/lateral-band-walks-resistance-band/attempt-1.png",
       "planned_git_png_path": "assets/exercises/pending/agent-03-generator-b-continuation-2026-10-02/generator-b/agent-03-others-009/lateral-band-walks-resistance-band/attempt-1.png",
-      "planned_output_relative_path": "agent-03-others-009/lateral-band-walks-resistance-band/attempt-1.png"
+      "planned_output_relative_path": "agent-03-others-009/lateral-band-walks-resistance-band/attempt-1.png",
+      "technical_check": "failed",
+      "technical_check_details": {
+        "decode": "passed",
+        "format": "PNG",
+        "dimensions": [
+          1254,
+          1254
+        ],
+        "square": true,
+        "target_dimensions_passed": false,
+        "mode": "RGBA",
+        "alpha_channel": true,
+        "alpha_extrema": [
+          0,
+          255
+        ],
+        "fully_transparent_pixels": 1258416,
+        "transparent_corner_alpha": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "file_bytes": 669847
+      }
     },
     {
       "exercise_id": "lateral-raise-band-resistance-band",
@@ -532,20 +1075,88 @@
       "source_task_path": "data/resumes/agent-03-others-009-generator-b.json",
       "prompt_sha256": "ce1f245096acf15aa4a3245b99381285024fd9431c9d9af0ed2d73c3309d47f8",
       "catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
-      "status": "ready_to_continue",
-      "attempts": 0,
-      "next_attempt_number": 1,
-      "attempt_history": [],
-      "last_error": null,
+      "status": "technical_issue",
+      "attempts": 1,
+      "next_attempt_number": 2,
+      "attempt_history": [
+        {
+          "attempt_number": 1,
+          "tool": "image_gen.imagegen",
+          "started_at": "2026-10-02T22:04:30+00:00",
+          "finished_at": "2026-10-02T22:05:22+00:00",
+          "prompt_sha256": "ce1f245096acf15aa4a3245b99381285024fd9431c9d9af0ed2d73c3309d47f8",
+          "style_version": "v1",
+          "reference_path": "assets/exercises/biceps-curl-dumbbell.png",
+          "reference_sha256": "52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f",
+          "status": "generated",
+          "result_path": "/workspace/exercise-image-results/agent-03-generator-b-continuation-2026-10-02/generator-b/agent-03-others-009/lateral-raise-band-resistance-band/attempt-1.png",
+          "git_result_path": "assets/exercises/pending/agent-03-generator-b-continuation-2026-10-02/generator-b/agent-03-others-009/lateral-raise-band-resistance-band/attempt-1.png",
+          "result_sha256": "8434d039e80c2a383d6cbda4f49f71b22ce4dc7a3dffe079ff1aaeef296af166",
+          "technical_check": "failed",
+          "technical_check_details": {
+            "decode": "passed",
+            "format": "PNG",
+            "dimensions": [
+              1254,
+              1254
+            ],
+            "square": true,
+            "target_dimensions_passed": false,
+            "mode": "RGBA",
+            "alpha_channel": true,
+            "alpha_extrema": [
+              0,
+              255
+            ],
+            "fully_transparent_pixels": 1230838,
+            "transparent_corner_alpha": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "file_bytes": 708755
+          },
+          "agent_visual_review": "not_performed",
+          "user_review": "pending",
+          "error": null
+        }
+      ],
+      "last_error": "Generated PNG did not meet required PNG/1024x1024/transparent-background technical criteria; original image bytes preserved without resampling.",
       "history_provenance": [],
-      "assignment_generation_calls": 0,
-      "result_path": null,
-      "result_sha256": null,
-      "user_review": null,
+      "assignment_generation_calls": 1,
+      "result_path": "/workspace/exercise-image-results/agent-03-generator-b-continuation-2026-10-02/generator-b/agent-03-others-009/lateral-raise-band-resistance-band/attempt-1.png",
+      "result_sha256": "8434d039e80c2a383d6cbda4f49f71b22ce4dc7a3dffe079ff1aaeef296af166",
+      "user_review": "pending",
       "agent_visual_review": "not_performed",
       "planned_png_path": "/workspace/exercise-image-results/agent-03-generator-b-continuation-2026-10-02/generator-b/agent-03-others-009/lateral-raise-band-resistance-band/attempt-1.png",
       "planned_git_png_path": "assets/exercises/pending/agent-03-generator-b-continuation-2026-10-02/generator-b/agent-03-others-009/lateral-raise-band-resistance-band/attempt-1.png",
-      "planned_output_relative_path": "agent-03-others-009/lateral-raise-band-resistance-band/attempt-1.png"
+      "planned_output_relative_path": "agent-03-others-009/lateral-raise-band-resistance-band/attempt-1.png",
+      "technical_check": "failed",
+      "technical_check_details": {
+        "decode": "passed",
+        "format": "PNG",
+        "dimensions": [
+          1254,
+          1254
+        ],
+        "square": true,
+        "target_dimensions_passed": false,
+        "mode": "RGBA",
+        "alpha_channel": true,
+        "alpha_extrema": [
+          0,
+          255
+        ],
+        "fully_transparent_pixels": 1230838,
+        "transparent_corner_alpha": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "file_bytes": 708755
+      }
     },
     {
       "exercise_id": "downward-dog",
@@ -920,6 +1531,18 @@
       "planned_png_path": "/workspace/exercise-image-results/agent-03-generator-b-continuation-2026-10-02/generator-b/agent-03-others-027/clean-barbell/attempt-1.png",
       "planned_git_png_path": "assets/exercises/pending/agent-03-generator-b-continuation-2026-10-02/generator-b/agent-03-others-027/clean-barbell/attempt-1.png",
       "planned_output_relative_path": "agent-03-others-027/clean-barbell/attempt-1.png"
+    }
+  ],
+  "current_package": "agent-03-others-026",
+  "resume_point": "downward-dog",
+  "completed_batches": [
+    {
+      "batch_id": "agent-03-others-009",
+      "assigned_count": 9,
+      "actual_generation_calls": 9,
+      "pending_user_review": 9,
+      "technical_issues": 9,
+      "status": "complete"
     }
   ]
 }
