@@ -502,3 +502,8 @@ Package agent-03-others-006 generation completed at 2026-10-01T15:49:06+00:00: 1
 
 
 Agent-03 follow-up 004–006 complete. The three packages yielded 30/30 single-call PNG outputs; each passed PNG-open, square-dimensions, alpha-channel, actual transparent-pixel and SHA256 checks. All local cloud copies match the repository outputs. User review is pending on all 30; agent_visual_review=not_performed. All three packages are github_verified in work; batch 006 content commit 70281961e7c81f43b528086b6f17d457914fdf62; remote verification recorded 2026-10-01T15:49:44+00:00. Next action: user review. Do not generate more Agent-03 packages until asked. Supabase unused.
+
+
+## Пакет 010 — локальний checkpoint перед push
+
+2026-10-02: 10/10 PNG збережено окремо, технічні перевірки PNG/decode/square/transparency/ID/SHA256 пройшли; всі user_review=pending та agent_visual_review=not_performed. Під час інструментальної підготовки вісім запитів не містили prompt і були відхилені до генерації; вони не рахуються спробами й не витратили квоту. Після виправлення викликано точні batch prompts; остаточні valid tool-call indices: 1, 2, 11–18. Віддалену перевірку ще не проводили. Наступна дія: fetch актуальної work, push PNG+progress+manifest, перевірити всі 10 remote SHA256, відмітити github_verified і зафіксувати цей стан.
