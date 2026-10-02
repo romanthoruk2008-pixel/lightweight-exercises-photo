@@ -146,11 +146,11 @@
         }
       }
     ],
-    "active_batch_id": "night-2026-10-01-004",
-    "active_batch_item_id": null,
-    "active_batch_scope": "All authorized retry generation work is complete. 48/50 IDs have PNGs; 9 batch-005 PNGs were verified on GitHub. Await user review; do not generate further images without a new request.",
+    "active_batch_id": "agent-03-others-010",
+    "active_batch_item_id": "triceps-dip-weighted-machine",
+    "active_batch_scope": "Four targeted corrections requested for package 010; package 011 paused.",
     "current_batch": "night-2026-10-01-004",
-    "next_action": "Verify the approved triceps-extension-dumbbell canonical copy on origin/work by SHA256 against accepted_sha256; then record github_verified metadata and await further user review requests.",
+    "next_action": "Finish four requested package-010 corrections, checkpoint/push and verify; do not start package 011 until a new user command.",
     "night_generation_remote_audit": {
       "audited_at_utc": "2026-10-01T08:16:06Z",
       "remote_branch": "work",
@@ -29869,7 +29869,7 @@
       "blocked_by": [
         "pilot_not_approved"
       ],
-      "attempts": 1,
+      "attempts": 2,
       "style_version": "v1",
       "visual_review": {
         "status": "not_reviewed",
@@ -29883,7 +29883,7 @@
         },
         "notes": null
       },
-      "result_path": "assets/exercises/pending/agent-03-others-010/scapular-pull-ups/attempt-1.png",
+      "result_path": "assets/exercises/pending/agent-03-others-010/scapular-pull-ups/attempt-2.png",
       "supabase_path": null,
       "supabase_upload_status": "not_configured",
       "last_error": null,
@@ -29928,9 +29928,60 @@
             "tool_call_id": "image_gen.imagegen#13",
             "output_hint": "/workspace/generated_images/exec-982a1128-bb9f-44f9-94e1-9647f1204691.png"
           }
+        },
+        {
+          "attempt": 2,
+          "id": "scapular-pull-ups",
+          "batch_id": "agent-03-others-010",
+          "run_id": "lightweight-agent-03-package010-corrections-2026-10-02",
+          "style_version": "v1",
+          "tool": "image_gen.imagegen",
+          "tool_call_index": 19,
+          "status": "completed",
+          "started_at": "2026-10-02T11:34:44.178546+00:00",
+          "prompt": "Edit the provided transparent PNG for the exact exercise scapular pull-ups. Preserve the same single adult male silver-gray 3D anatomical model, proportions, current scapular-pull-up pose, straight elbows, rear three-quarter view, hand contacts, lighting, black shorts, framing, and genuinely transparent background. Correct only the pull-up equipment: make the overhead bar a perfectly straight, level horizontal tube with both ends aligned at the same height; make the left and right wall mounts straight, symmetrical, secure, and visibly load-bearing, with clean rigid attachments at both bar ends. Keep both hands gripping the level bar correctly. At the user's request, add a restrained lighter orange #F26445 highlight at about 45% intensity only on the anatomical biceps of both upper arms; do not tint the whole arms. Preserve the existing upper-back/lats highlights and all other gray anatomy. No text, glow, extra equipment, extra limbs, or decorative objects. Output one square transparent PNG.",
+          "prompt_sha256": "23760862f30a9cc53da686370c9b77cc5883e9c8fee133aae737b05ea027c84f",
+          "reference_path": "assets/exercises/biceps-curl-dumbbell.png",
+          "reference_sha256": "52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f",
+          "reference_paths": [
+            "assets/exercises/pending/agent-03-others-010/scapular-pull-ups/attempt-1.png",
+            "assets/exercises/biceps-curl-dumbbell.png"
+          ],
+          "input_image_path": "assets/exercises/pending/agent-03-others-010/scapular-pull-ups/attempt-1.png",
+          "input_image_sha256": "3a4d486657be06f7513a15dadbe57405ab986d82f659991d91894bb55b485619",
+          "result_path": "assets/exercises/pending/agent-03-others-010/scapular-pull-ups/attempt-2.png",
+          "result_sha256": "61247ed96a77b0107d7b18265d1341c034a3c6e33f0f9811c8a1328f015a328c",
+          "technical_check": "passed",
+          "technical_check_details": {
+            "format": "PNG",
+            "dimensions": {
+              "width": 1254,
+              "height": 1254
+            },
+            "mode": "RGBA",
+            "has_alpha": true,
+            "transparent_pixel_count": 1320268,
+            "sha256": "61247ed96a77b0107d7b18265d1341c034a3c6e33f0f9811c8a1328f015a328c",
+            "exercise_id": "scapular-pull-ups",
+            "repository_path": "assets/exercises/pending/agent-03-others-010/scapular-pull-ups/attempt-2.png",
+            "errors": []
+          },
+          "user_review": "pending",
+          "agent_visual_review": "not_performed",
+          "correction_of_attempt": 1,
+          "correction_reason": "User requested straight, level pull-up bar and secure aligned mounts; add a subtle biceps highlight.",
+          "completed_at": "2026-10-02T11:36:49.152797+00:00",
+          "dimensions": {
+            "width": 1254,
+            "height": 1254
+          },
+          "tool_response_metadata": {
+            "tool_call_id": "image_gen.imagegen#19",
+            "output_hint": "/workspace/generated_images/exec-adb00092-f442-4a98-a93b-8f54c141e4e0.png"
+          }
         }
       ],
-      "result_sha256": "3a4d486657be06f7513a15dadbe57405ab986d82f659991d91894bb55b485619",
+      "result_sha256": "61247ed96a77b0107d7b18265d1341c034a3c6e33f0f9811c8a1328f015a328c",
       "technical_check": "passed",
       "technical_check_details": {
         "format": "PNG",
@@ -29940,10 +29991,10 @@
         },
         "mode": "RGBA",
         "has_alpha": true,
-        "transparent_pixel_count": 1315824,
-        "sha256": "3a4d486657be06f7513a15dadbe57405ab986d82f659991d91894bb55b485619",
+        "transparent_pixel_count": 1320268,
+        "sha256": "61247ed96a77b0107d7b18265d1341c034a3c6e33f0f9811c8a1328f015a328c",
         "exercise_id": "scapular-pull-ups",
-        "repository_path": "assets/exercises/pending/agent-03-others-010/scapular-pull-ups/attempt-1.png",
+        "repository_path": "assets/exercises/pending/agent-03-others-010/scapular-pull-ups/attempt-2.png",
         "errors": []
       },
       "agent_visual_review": "not_performed",
@@ -38631,7 +38682,7 @@
       "blocked_by": [
         "pilot_not_approved"
       ],
-      "attempts": 1,
+      "attempts": 2,
       "style_version": "v1",
       "visual_review": {
         "status": "not_reviewed",
@@ -38645,7 +38696,7 @@
         },
         "notes": null
       },
-      "result_path": "assets/exercises/pending/agent-03-others-010/sternum-pullup-gironda-machine/attempt-1.png",
+      "result_path": "assets/exercises/pending/agent-03-others-010/sternum-pullup-gironda-machine/attempt-2.png",
       "supabase_path": null,
       "supabase_upload_status": "not_configured",
       "last_error": null,
@@ -38690,9 +38741,60 @@
             "tool_call_id": "image_gen.imagegen#15",
             "output_hint": "/workspace/generated_images/exec-177fe64d-292e-48a4-b6cc-363bf43f1945.png"
           }
+        },
+        {
+          "attempt": 2,
+          "id": "sternum-pullup-gironda-machine",
+          "batch_id": "agent-03-others-010",
+          "run_id": "lightweight-agent-03-package010-corrections-2026-10-02",
+          "style_version": "v1",
+          "tool": "image_gen.imagegen",
+          "tool_call_index": 20,
+          "status": "completed",
+          "started_at": "2026-10-02T11:37:57.847746+00:00",
+          "prompt": "Edit the provided transparent PNG for the exact exercise sternum pull-up (Gironda). Preserve the same single adult male silver-gray 3D anatomical model, proportions, sternum-led pull-up pose, overhand grip, torso lean, hand contacts, camera, lighting, black shorts, framing, existing muscle highlights, and genuinely transparent background. Correct only the overhead pull-up equipment: make the bar a perfectly straight, level horizontal tube with both ends aligned at the same height; align and repair the support brackets so each end is attached cleanly to a sturdy, symmetrical, load-bearing frame, with no tilted bar, bent tube, or skewed mount. Keep both hands gripping the bar correctly. Do not change the exercise phase, body pose, anatomy, or add any hardware beyond the complete secure bar supports. No text, glow, extra limbs, or decorative objects. Output one square transparent PNG.",
+          "prompt_sha256": "6dab9ea8f2e630ecd20cd6cc2268f8559f1859b94a38797b9100c12c6ac2eaff",
+          "reference_path": "assets/exercises/biceps-curl-dumbbell.png",
+          "reference_sha256": "52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f",
+          "reference_paths": [
+            "assets/exercises/pending/agent-03-others-010/sternum-pullup-gironda-machine/attempt-1.png",
+            "assets/exercises/biceps-curl-dumbbell.png"
+          ],
+          "input_image_path": "assets/exercises/pending/agent-03-others-010/sternum-pullup-gironda-machine/attempt-1.png",
+          "input_image_sha256": "84cdb07d3fac2581a138282daf3403d8b120a1d37ff5c0f4dea934c5a64895c5",
+          "result_path": "assets/exercises/pending/agent-03-others-010/sternum-pullup-gironda-machine/attempt-2.png",
+          "result_sha256": "f7899d3fead2f1a745ba711de619cf934d9177a7ba4ff9eaf97d48b94e169828",
+          "technical_check": "passed",
+          "technical_check_details": {
+            "format": "PNG",
+            "dimensions": {
+              "width": 1254,
+              "height": 1254
+            },
+            "mode": "RGBA",
+            "has_alpha": true,
+            "transparent_pixel_count": 1067832,
+            "sha256": "f7899d3fead2f1a745ba711de619cf934d9177a7ba4ff9eaf97d48b94e169828",
+            "exercise_id": "sternum-pullup-gironda-machine",
+            "repository_path": "assets/exercises/pending/agent-03-others-010/sternum-pullup-gironda-machine/attempt-2.png",
+            "errors": []
+          },
+          "user_review": "pending",
+          "agent_visual_review": "not_performed",
+          "correction_of_attempt": 1,
+          "correction_reason": "User requested straight, level pull-up bar and corrected secure mounts.",
+          "completed_at": "2026-10-02T11:39:17.275792+00:00",
+          "dimensions": {
+            "width": 1254,
+            "height": 1254
+          },
+          "tool_response_metadata": {
+            "tool_call_id": "image_gen.imagegen#20",
+            "output_hint": "/workspace/generated_images/exec-f782f75c-1e54-428d-ab64-cd2604c29916.png"
+          }
         }
       ],
-      "result_sha256": "84cdb07d3fac2581a138282daf3403d8b120a1d37ff5c0f4dea934c5a64895c5",
+      "result_sha256": "f7899d3fead2f1a745ba711de619cf934d9177a7ba4ff9eaf97d48b94e169828",
       "technical_check": "passed",
       "technical_check_details": {
         "format": "PNG",
@@ -38702,10 +38804,10 @@
         },
         "mode": "RGBA",
         "has_alpha": true,
-        "transparent_pixel_count": 1121312,
-        "sha256": "84cdb07d3fac2581a138282daf3403d8b120a1d37ff5c0f4dea934c5a64895c5",
+        "transparent_pixel_count": 1067832,
+        "sha256": "f7899d3fead2f1a745ba711de619cf934d9177a7ba4ff9eaf97d48b94e169828",
         "exercise_id": "sternum-pullup-gironda-machine",
-        "repository_path": "assets/exercises/pending/agent-03-others-010/sternum-pullup-gironda-machine/attempt-1.png",
+        "repository_path": "assets/exercises/pending/agent-03-others-010/sternum-pullup-gironda-machine/attempt-2.png",
         "errors": []
       },
       "agent_visual_review": "not_performed",
@@ -40362,7 +40464,7 @@
       "blocked_by": [
         "pilot_not_approved"
       ],
-      "attempts": 1,
+      "attempts": 2,
       "style_version": "v1",
       "visual_review": {
         "status": "not_reviewed",
@@ -40376,7 +40478,7 @@
         },
         "notes": null
       },
-      "result_path": "assets/exercises/pending/agent-03-others-010/triceps-dip-machine/attempt-1.png",
+      "result_path": "assets/exercises/pending/agent-03-others-010/triceps-dip-machine/attempt-2.png",
       "supabase_path": null,
       "supabase_upload_status": "not_configured",
       "last_error": null,
@@ -40421,9 +40523,60 @@
             "tool_call_id": "image_gen.imagegen#17",
             "output_hint": "/workspace/generated_images/exec-961caa3e-b3c5-4e94-b0ac-dc267009bf62.png"
           }
+        },
+        {
+          "attempt": 2,
+          "id": "triceps-dip-machine",
+          "batch_id": "agent-03-others-010",
+          "run_id": "lightweight-agent-03-package010-corrections-2026-10-02",
+          "style_version": "v1",
+          "tool": "image_gen.imagegen",
+          "tool_call_index": 21,
+          "status": "completed",
+          "started_at": "2026-10-02T11:39:38.201309+00:00",
+          "prompt": "Edit the provided transparent PNG for the exact exercise bodyweight parallel-bar triceps dip. Preserve the same single adult male silver-gray 3D anatomical model, proportions, current dip pose, hand contacts, parallel-bar station, camera, lighting, black shorts, framing, and genuinely transparent background. Recolor the anatomical pectoral chest muscles on both sides and both deltoid shoulder muscles in a clear, vivid active orange #F26445 at full primary-highlight intensity, as specifically requested by the user. Keep the triceps highlight and all other anatomy as in the source image; keep muscle boundaries anatomically precise and the body fully opaque. Do not recolor equipment or unrelated muscles. No text, glow, extra equipment, extra limbs, or decorative objects. Output one square transparent PNG.",
+          "prompt_sha256": "e39abed55ce03ec1a349675c51b04e120b9cb0963e7ab9ded10cca418549b3fc",
+          "reference_path": "assets/exercises/biceps-curl-dumbbell.png",
+          "reference_sha256": "52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f",
+          "reference_paths": [
+            "assets/exercises/pending/agent-03-others-010/triceps-dip-machine/attempt-1.png",
+            "assets/exercises/biceps-curl-dumbbell.png"
+          ],
+          "input_image_path": "assets/exercises/pending/agent-03-others-010/triceps-dip-machine/attempt-1.png",
+          "input_image_sha256": "22391638bf6d44d87a3a7a9e1a75c7d6c8617da57bd947065525db588a6b580b",
+          "result_path": "assets/exercises/pending/agent-03-others-010/triceps-dip-machine/attempt-2.png",
+          "result_sha256": "6d8afacd9e2cbe5cc0331cbed50b80fad3e431fcc29ae5b4e632fd32e0b00064",
+          "technical_check": "passed",
+          "technical_check_details": {
+            "format": "PNG",
+            "dimensions": {
+              "width": 1254,
+              "height": 1254
+            },
+            "mode": "RGBA",
+            "has_alpha": true,
+            "transparent_pixel_count": 1129501,
+            "sha256": "6d8afacd9e2cbe5cc0331cbed50b80fad3e431fcc29ae5b4e632fd32e0b00064",
+            "exercise_id": "triceps-dip-machine",
+            "repository_path": "assets/exercises/pending/agent-03-others-010/triceps-dip-machine/attempt-2.png",
+            "errors": []
+          },
+          "user_review": "pending",
+          "agent_visual_review": "not_performed",
+          "correction_of_attempt": 1,
+          "correction_reason": "User explicitly requested active orange highlight on chest and shoulders for this dip image, overriding the original secondary-muscle intensity.",
+          "completed_at": "2026-10-02T11:40:52.591780+00:00",
+          "dimensions": {
+            "width": 1254,
+            "height": 1254
+          },
+          "tool_response_metadata": {
+            "tool_call_id": "image_gen.imagegen#21",
+            "output_hint": "/workspace/generated_images/exec-d4ddc7ce-3f84-4416-bd91-c9384ad50284.png"
+          }
         }
       ],
-      "result_sha256": "22391638bf6d44d87a3a7a9e1a75c7d6c8617da57bd947065525db588a6b580b",
+      "result_sha256": "6d8afacd9e2cbe5cc0331cbed50b80fad3e431fcc29ae5b4e632fd32e0b00064",
       "technical_check": "passed",
       "technical_check_details": {
         "format": "PNG",
@@ -40433,10 +40586,10 @@
         },
         "mode": "RGBA",
         "has_alpha": true,
-        "transparent_pixel_count": 1133247,
-        "sha256": "22391638bf6d44d87a3a7a9e1a75c7d6c8617da57bd947065525db588a6b580b",
+        "transparent_pixel_count": 1129501,
+        "sha256": "6d8afacd9e2cbe5cc0331cbed50b80fad3e431fcc29ae5b4e632fd32e0b00064",
         "exercise_id": "triceps-dip-machine",
-        "repository_path": "assets/exercises/pending/agent-03-others-010/triceps-dip-machine/attempt-1.png",
+        "repository_path": "assets/exercises/pending/agent-03-others-010/triceps-dip-machine/attempt-2.png",
         "errors": []
       },
       "agent_visual_review": "not_performed",
@@ -40527,7 +40680,7 @@
       "blocked_by": [
         "pilot_not_approved"
       ],
-      "attempts": 1,
+      "attempts": 2,
       "style_version": "v1",
       "visual_review": {
         "status": "not_reviewed",
@@ -40541,7 +40694,7 @@
         },
         "notes": null
       },
-      "result_path": "assets/exercises/pending/agent-03-others-010/triceps-dip-weighted-machine/attempt-1.png",
+      "result_path": "assets/exercises/pending/agent-03-others-010/triceps-dip-weighted-machine/attempt-2.png",
       "supabase_path": null,
       "supabase_upload_status": "not_configured",
       "last_error": null,
@@ -40586,9 +40739,60 @@
             "tool_call_id": "image_gen.imagegen#18",
             "output_hint": "/workspace/generated_images/exec-78e26350-febf-4f98-b786-953fa5896992.png"
           }
+        },
+        {
+          "attempt": 2,
+          "id": "triceps-dip-weighted-machine",
+          "batch_id": "agent-03-others-010",
+          "run_id": "lightweight-agent-03-package010-corrections-2026-10-02",
+          "style_version": "v1",
+          "tool": "image_gen.imagegen",
+          "tool_call_index": 22,
+          "status": "completed",
+          "started_at": "2026-10-02T11:40:57.708544+00:00",
+          "prompt": "Edit the provided transparent PNG for the exact exercise weighted parallel-bar triceps dip with its existing weighted vest. Preserve the same single adult male silver-gray 3D anatomical model, proportions, current weighted-dip pose, vest, hand contacts, parallel-bar station, camera, lighting, black shorts, framing, and genuinely transparent background. Recolor the anatomical pectoral chest muscles on both sides and both deltoid shoulder muscles in a clear, vivid active orange #F26445 at full primary-highlight intensity, as specifically requested by the user. Keep the triceps highlight and all other anatomy as in the source image; keep muscle boundaries anatomically precise and the body fully opaque. Do not recolor the vest, equipment, or unrelated muscles. No text, glow, extra equipment, extra limbs, or decorative objects. Output one square transparent PNG.",
+          "prompt_sha256": "1ac03c5d49630f74c47b41a23d09c6c6b8933bab1657d8636f2c3735c1699f7e",
+          "reference_path": "assets/exercises/biceps-curl-dumbbell.png",
+          "reference_sha256": "52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f",
+          "reference_paths": [
+            "assets/exercises/pending/agent-03-others-010/triceps-dip-weighted-machine/attempt-1.png",
+            "assets/exercises/biceps-curl-dumbbell.png"
+          ],
+          "input_image_path": "assets/exercises/pending/agent-03-others-010/triceps-dip-weighted-machine/attempt-1.png",
+          "input_image_sha256": "7ef71e3999798194ccf61d0251acf13fda8beab2f0d9c098d78853e7bee62f11",
+          "result_path": "assets/exercises/pending/agent-03-others-010/triceps-dip-weighted-machine/attempt-2.png",
+          "result_sha256": "47148b6bb149951a53192d35e62a494fd3750d2fa3d3c1c88233b742c8525f42",
+          "technical_check": "passed",
+          "technical_check_details": {
+            "format": "PNG",
+            "dimensions": {
+              "width": 1254,
+              "height": 1254
+            },
+            "mode": "RGBA",
+            "has_alpha": true,
+            "transparent_pixel_count": 1053539,
+            "sha256": "47148b6bb149951a53192d35e62a494fd3750d2fa3d3c1c88233b742c8525f42",
+            "exercise_id": "triceps-dip-weighted-machine",
+            "repository_path": "assets/exercises/pending/agent-03-others-010/triceps-dip-weighted-machine/attempt-2.png",
+            "errors": []
+          },
+          "user_review": "pending",
+          "agent_visual_review": "not_performed",
+          "correction_of_attempt": 1,
+          "correction_reason": "User explicitly requested active orange highlight on chest and shoulders for this weighted dip image, overriding the original secondary-muscle intensity.",
+          "completed_at": "2026-10-02T11:42:15.613004+00:00",
+          "dimensions": {
+            "width": 1254,
+            "height": 1254
+          },
+          "tool_response_metadata": {
+            "tool_call_id": "image_gen.imagegen#22",
+            "output_hint": "/workspace/generated_images/exec-5b0713c4-124f-4877-9855-69bf7583e1da.png"
+          }
         }
       ],
-      "result_sha256": "7ef71e3999798194ccf61d0251acf13fda8beab2f0d9c098d78853e7bee62f11",
+      "result_sha256": "47148b6bb149951a53192d35e62a494fd3750d2fa3d3c1c88233b742c8525f42",
       "technical_check": "passed",
       "technical_check_details": {
         "format": "PNG",
@@ -40598,10 +40802,10 @@
         },
         "mode": "RGBA",
         "has_alpha": true,
-        "transparent_pixel_count": 1060623,
-        "sha256": "7ef71e3999798194ccf61d0251acf13fda8beab2f0d9c098d78853e7bee62f11",
+        "transparent_pixel_count": 1053539,
+        "sha256": "47148b6bb149951a53192d35e62a494fd3750d2fa3d3c1c88233b742c8525f42",
         "exercise_id": "triceps-dip-weighted-machine",
-        "repository_path": "assets/exercises/pending/agent-03-others-010/triceps-dip-weighted-machine/attempt-1.png",
+        "repository_path": "assets/exercises/pending/agent-03-others-010/triceps-dip-weighted-machine/attempt-2.png",
         "errors": []
       },
       "agent_visual_review": "not_performed",

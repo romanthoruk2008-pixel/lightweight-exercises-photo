@@ -62,3 +62,16 @@
 2026-10-02: 10/10 PNG збережено окремо, технічні перевірки PNG/decode/square/transparency/ID/SHA256 пройшли; всі user_review=pending та agent_visual_review=not_performed. Під час інструментальної підготовки вісім запитів не містили prompt і були відхилені до генерації; вони не рахуються спробами й не витратили квоту. Після виправлення викликано точні batch prompts; остаточні valid tool-call indices: 1, 2, 11–18. Віддалену перевірку ще не проводили. Наступна дія: fetch актуальної work, push PNG+progress+manifest, перевірити всі 10 remote SHA256, відмітити github_verified і зафіксувати цей стан.
 
 Пакет 010 завершено й перевірено: 10/10 PNG у `work`, remote SHA256 кожного збігається з локальним файлом, progress і manifest. Content/verified commit: `8f61dedac47ec814a183a69508e10f05fb63f0fb` (`2026-10-02T11:24:07.853615+00:00`). Усі результати лишаються `user_review=pending`, `agent_visual_review=not_performed`; технічні перевірки пройшли. Продовження: пакет 011, перший ID `triceps-extension-suspension`.
+
+## Пакет 010 — чотири точкові корекції за запитом користувача
+
+2026-10-02: після завершення й push пакета 010 користувач замовив окремі правки. Використано вбудований image_gen.imagegen; для кожної edit-вправи передано її attempt-1 та погоджений еталон людини/стилю `assets/exercises/biceps-curl-dumbbell.png`, SHA256 `52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f`. Attempt-1 лишили незмінними. У всіх 4 нових файлів PNG декодується, квадратний формат 1254×1254, RGBA з прозорими пікселями, SHA256/ID/path записані в shared progress і `data/batches/agent-03-others-manifest.json`; `technical_check=passed`, `user_review=pending`, `agent_visual_review=not_performed`.
+
+| ID | Новий файл | SHA256 | Запитана правка |
+| --- | --- | --- | --- |
+| `scapular-pull-ups` | `assets/exercises/pending/agent-03-others-010/scapular-pull-ups/attempt-2.png` | `61247ed96a77b0107d7b18265d1341c034a3c6e33f0f9811c8a1328f015a328c` | Рівна горизонтальна перекладина, міцні рівні кріплення, легка додаткова підсвітка біцепсів. |
+| `sternum-pullup-gironda-machine` | `assets/exercises/pending/agent-03-others-010/sternum-pullup-gironda-machine/attempt-2.png` | `f7899d3fead2f1a745ba711de619cf934d9177a7ba4ff9eaf97d48b94e169828` | Рівна горизонтальна перекладина та узгоджені кріплення. |
+| `triceps-dip-machine` | `assets/exercises/pending/agent-03-others-010/triceps-dip-machine/attempt-2.png` | `6d8afacd9e2cbe5cc0331cbed50b80fad3e431fcc29ae5b4e632fd32e0b00064` | Груди й плечі — активний #F26445 на повній інтенсивності за прямим уточненням користувача. |
+| `triceps-dip-weighted-machine` | `assets/exercises/pending/agent-03-others-010/triceps-dip-weighted-machine/attempt-2.png` | `47148b6bb149951a53192d35e62a494fd3750d2fa3d3c1c88233b742c8525f42` | Груди й плечі — активний #F26445 на повній інтенсивності за прямим уточненням користувача. |
+
+До push: зробити fetch актуальної `work`, push чотири нові PNG, metadata й цей checkpoint без force push, перевірити remote SHA256 лише цих чотирьох файлів та записати `github_verified`. Після цього зупинитися й чекати перегляду/нової команди; пакет 011 не запускати.
