@@ -1,3 +1,13 @@
+# Актуальна контрольна точка — схвалення agent-03-others-016 (2026-10-02)
+
+Користувач явно схвалив усі 10 результатів пакета agent-03-others-016. Вони збережені байт-у-байт у assets/exercises/<exercise_id>.png; user_review/status=approved, точні accepted path/SHA та рішення зафіксовані в progress і package manifest. PNG залишаються 1254×1254, тому technical_check=failed з явним винятком щодо цільових 1024×1024; файли не ресайзили й не перегенеровували. Агентську візуальну перевірку не проводили.
+
+Гілка: agent-05-parallel-generation. GitHub snapshot: https://github.com/romanthoruk2008-pixel/lightweight-exercises-photo/commit/3e1d86cc9ea408c834a126b4971ac221cc4a1637. Перевірено SHA256 усіх 36 канонічних PNG за approved-images-manifest та 10 pending PNG пакета за package manifest. Work і Supabase не змінювали. Подальші пакети 017/018 не належать до цього handoff.
+
+Наступна дія: чекати окремого призначення; схвалені файли не замінювати автоматично.
+
+---
+
 ## User approval: final two package 014 corrections
 
 2026-10-02T13:34:29+00:00: The user approved `around-the-world-dumbbell` attempt-3 and `bench-press-close-grip-barbell` attempt-3. Exact accepted paths and SHA256 values are recorded in progress and the batch manifest. Both PNGs were already present in remote `work` and remain unchanged. Together with the 41 previously approved results, all 43 exercises from packages 011–015 are now approved.
