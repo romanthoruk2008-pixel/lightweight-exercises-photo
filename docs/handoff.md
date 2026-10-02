@@ -1,6 +1,6 @@
 ## Current checkpoint — agent-03-others-021
 
-2026-10-02: package 021 has 10/10 generated results. Every exercise used its prepared exact-ID prompt, neutral-primary v1 addendum and the verified human appearance reference. Files are saved under `assets/exercises/pending/agent-03-others-021/<exercise_id>/attempt-1.png`; all `user_review=pending`, `agent_visual_review=not_performed`. The generated PNGs decode and contain genuine transparent pixels, but all are 1254×1254 against the 1024×1024 target; `technical_check=failed` records that mismatch. No resizing or retry was performed. Remote SHA verification is the next checkpoint before continuing package 022. Packages 019–020 were untouched.
+2026-10-02: package 021 has 10/10 generated results. Every exercise used its prepared exact-ID prompt, neutral-primary v1 addendum and the verified human appearance reference. Files are saved under `assets/exercises/pending/agent-03-others-021/<exercise_id>/attempt-1.png`; all `user_review=pending`, `agent_visual_review=not_performed`. The generated PNGs decode and contain genuine transparent pixels, but all are 1254×1254 against the 1024×1024 target; `technical_check=failed` records that mismatch. No resizing or retry was performed. Fetched `origin/agent-05-parallel-generation` at `6559d7ce2cfb1cd214eef54cf2037dd4f8999c0b` and verified SHA256 for all 10 PNGs. Packages 019–020 were untouched. Next: continue with package 022.
 
 # Актуальна контрольна точка — схвалення agent-03-others-016 (2026-10-02)
 
