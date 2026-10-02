@@ -83,6 +83,37 @@ class ContinuationTests(unittest.TestCase):
         progress['user_review_history'] = [{'by': 'user', 'decision': 'approved', 'accepted_sha256': 'exact'}]
         self.assertIsNotNone(runner.explicit_evidence(progress, [], 'sample', 'exact'))
 
+    def generator_b_manifest(self):
+        row = {'exercise_id': 'sample', 'user_review': 'approved',
+               'accepted_sha256': 'a' * 64, 'accepted_path': 'assets/exercises/sample.png',
+               'user_approved_at': 'timestamp', 'technical_issue_accepted_by_user': True}
+        doc = {'exercises': [row], 'user_approval': {'accepted_by': 'user',
+               'decision': 'approved', 'approved_at': 'timestamp', 'exercise_count': 1,
+               'technical_dimension_mismatch_acknowledged': True}}
+        return row, doc
+
+    def test_generator_b_manifest_approval_keeps_exact_file_and_exception(self):
+        row, doc = self.generator_b_manifest()
+        evidence = runner.manifest_user_evidence(row, doc, 'sample', 'a' * 64)
+        self.assertEqual(evidence['file']['accepted_path'], row['accepted_path'])
+        self.assertTrue(evidence['file']['technical_issue_accepted_by_user'])
+        self.assertIsNotNone(runner.explicit_evidence({}, [('manifest.json', doc)], 'sample', 'a' * 64))
+        self.assertIsNone(runner.manifest_user_evidence(row, doc, 'sample', 'b' * 64))
+
+    def test_generator_b_manifest_approval_rejects_conflicting_scope_or_actor(self):
+        for key, value in [('accepted_by', 'agent'), ('decision', 'pending'),
+                           ('exercise_count', 2), ('approved_at', 'different'),
+                           ('approved_at', None)]:
+            with self.subTest(key=key, value=value):
+                row, doc = self.generator_b_manifest()
+                doc['user_approval'][key] = value
+                self.assertIsNone(runner.manifest_user_evidence(row, doc, 'sample', 'a' * 64))
+
+    def test_generator_b_manifest_does_not_infer_accepted_hash_from_result(self):
+        row, doc = self.generator_b_manifest()
+        row['result_sha256'] = row.pop('accepted_sha256')
+        self.assertIsNone(runner.explicit_evidence({}, [('manifest.json', doc)], 'sample', 'a' * 64))
+
 
 if __name__ == '__main__':
     unittest.main()

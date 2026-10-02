@@ -124,6 +124,18 @@ def manifest_user_evidence(row, doc, eid, sha):
             and row.get('accepted_at') == record.get('approved_at')):
         return {'file': {k: row[k] for k in ('exercise_id', 'accepted_path',
                  'accepted_sha256', 'accepted_at', 'approval_source')}, 'approval_record': record}
+    # Generator B records one explicit user decision for the manifest, with
+    # exact accepted path/hash and the same approval timestamp on each row.
+    approval = object_field(doc, 'user_approval')
+    rows = manifest_rows(doc)
+    if (approval.get('accepted_by') == 'user' and approval.get('decision') == 'approved'
+            and approval.get('approved_at')
+            and row.get('user_approved_at') == approval['approved_at']
+            and approval.get('exercise_count') == len(rows)
+            and all(v.get('user_review') == 'approved' for v in rows)):
+        return {'file': {k: row.get(k) for k in ('exercise_id', 'accepted_path',
+                'accepted_sha256', 'user_approved_at', 'user_approval_note',
+                'technical_issue_accepted_by_user')}, 'user_approval': approval}
     return None
 
 
