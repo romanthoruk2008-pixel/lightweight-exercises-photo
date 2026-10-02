@@ -77,6 +77,12 @@ class ContinuationTests(unittest.TestCase):
         text = '# User decision\nThe user did not approve the package.\n- sample: SHA256 exact\n'
         self.assertIsNone(runner.handoff_evidence(text, 'sample', 'exact'))
 
+    def test_scalar_approval_label_does_not_replace_user_hash_evidence(self):
+        progress = {'approval_decision': 'approved'}
+        self.assertIsNone(runner.explicit_evidence(progress, [], 'sample', 'exact'))
+        progress['user_review_history'] = [{'by': 'user', 'decision': 'approved', 'accepted_sha256': 'exact'}]
+        self.assertIsNotNone(runner.explicit_evidence(progress, [], 'sample', 'exact'))
+
 
 if __name__ == '__main__':
     unittest.main()

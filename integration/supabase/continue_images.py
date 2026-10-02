@@ -75,6 +75,11 @@ def known_transfers():
     return records
 
 
+def object_field(row, name):
+    value = row.get(name)
+    return value if isinstance(value, dict) else {}
+
+
 def accepted_row(row):
     """Read documented field aliases without modifying source approval data."""
     result = dict(row)
@@ -85,7 +90,7 @@ def accepted_row(row):
         result['accepted_sha256'] = row['accepted_result_sha256']
     if not result.get('accepted_path') and row.get('accepted_result_path'):
         result['accepted_path'] = row['accepted_result_path']
-    approval = row.get('user_approval', {})
+    approval = object_field(row, 'user_approval')
     if (approval.get('reviewed_by') == 'user' and approval.get('decision') == 'approved'):
         result.setdefault('accepted_sha256', approval.get('accepted_sha256'))
         result.setdefault('accepted_path', approval.get('accepted_path'))
@@ -109,11 +114,11 @@ def manifest_user_evidence(row, doc, eid, sha):
         return None
     if row.get('accepted_sha256') != sha or not path_of(row.get('accepted_path')):
         return None
-    approval = row.get('user_approval', {})
+    approval = object_field(row, 'user_approval')
     if (approval.get('reviewed_by') == 'user' and approval.get('decision') == 'approved'
             and approval.get('accepted_sha256') == sha):
         return approval
-    record = doc.get('approval_record', {})
+    record = object_field(doc, 'approval_record')
     if (row.get('approval_source') == 'explicit_user_approval_in_chat'
             and record.get('source') == 'explicit_user_approval_in_chat'
             and row.get('accepted_at') == record.get('approved_at')):
@@ -136,7 +141,7 @@ def handoff_evidence(text, eid, sha):
 
 def explicit_evidence(progress, manifests, eid, sha, handoff=None):
     history = progress.get('user_review_history', [])
-    decision = history[-1] if history else progress.get('approval_decision', {})
+    decision = history[-1] if history else object_field(progress, 'approval_decision')
     if (decision.get('by') != 'user'
             or decision.get('accepted_sha256', decision.get('sha256')) != sha):
         for _, doc in manifests:
@@ -166,7 +171,7 @@ def explicit_evidence(progress, manifests, eid, sha, handoff=None):
         return None
     # Agent-05 records per-file accepted hash and an explicit batch decision.
     for _, doc in manifests:
-        batch = doc.get('approval_decision', {})
+        batch = object_field(doc, 'approval_decision')
         if (batch.get('by') == 'user' and batch.get('decision') == 'approved'
                 and eid in batch.get('exercise_ids', [])):
             return {'file_decision': decision, 'batch_decision': batch}
@@ -273,7 +278,8 @@ def scan(originals, known):
                 'manifest_witnesses': witnesses,
                 'historical_technical_check': row.get('technical_check'),
                 'historical_technical_check_details': row.get('technical_check_details'),
-                'approval_technical_exceptions': row.get('approval_decision', {}).get('technical_exceptions', [])})
+                'source_approval_decision': row.get('approval_decision'),
+                'approval_technical_exceptions': object_field(row, 'approval_decision').get('technical_exceptions', [])})
     selected, blocked = [], []
     for eid, versions in sorted(candidates.items()):
         tips = [v for v in versions if not any(v['source_commit'] != w['source_commit']

@@ -127,3 +127,29 @@ PNG staging поза Git: `/workspace/supabase-image-staging/<source_commit>/<so
 - `agent-05-parallel-generation`: `172ea1052d0a1be125d79fb8a3d4ab18283b5bee`.
 - `agent-06-generator-a-2026-10-02`: `8b4e4d7de0572909b8e0f3591d60c87192194338`.
 - `work`: `bc67b32e93322bac86b7a31264cd0f8b2ab3f6eb`.
+
+<!-- continuation:continuation-2026-10-02-03 -->
+
+## Продовження схвалених PNG — continuation-2026-10-02-03
+
+Поточна контрольна точка: `2026-10-02T20:48:57.987507+00:00`.
+Нових Storage uploads: 31; завершених перенесень: 32; заміни прийнятих версій: 0.
+Попередніх перевірено: 244; pending пропущено: 0.
+Артефакти: `uploads/continuation-2026-10-02-03/plan.json`, `batch-*.json`, `summary.json`.
+Каталог не імпортувався повторно. Використано `continue_images.py` і перевірений `import_catalog_images.transfer_one`; лише Storage POST без upsert і п’ять image-полів із concurrency filters. Старі PNG не видаляються; content/451 ID/4448 мовних блоків незмінні.
+PNG staging поза Git: `/workspace/supabase-image-staging/<source_commit>/<source_png>`.
+
+### Фінальний результат третього продовження
+
+Завершено `2026-10-02T20:51:07.080159+00:00` UTC. Нових прийнятих PNG перевірено й прив’язано — 32; замін версій — 0; попередніх перенесень звірено — 244; разом — 276 точних ID із зображеннями. Pending — 0; додаткових approved після перенесення — 0; незавершених помилок/блокувань — 0.
+Пакети: 10, 10, 10, 2. Нові версії: 27 із work і 5 із agent-05; є точні accepted path/SHA256 та явні рішення користувача. Scalar approval_decision сам собою не є доказом схвалення; використано точні записи user_review_history. Адаптер лише читає новий формат джерела; схвалення не редагувалися.
+Усі PNG 1254×1254, RGBA, декодуються та містять прозорі пікселі; найбільший 1194670 байтів, bucket limit 5242880. П’ять історичних technical_check=failed та явно прийняті технічні винятки збережені.
+Зафіксовано 31 успішний Storage POST без upsert. На chinup-machine скрипт один раз зупинився з HTTP 401 після появи PNG у Storage й до зміни image-полів. Читання apikey каталогу/buckets знову дало 200; публічний SHA256 об’єкта підтверджено, рядок був незмінний. Після звіряння стану відновлено через ту саму контрольну точку; існуючий файл не перезаписано. Цей перенесений файл має storage_action=existing_bytes_verified_no_overwrite. Причина одноразової 401 не встановлена; докази та відновлення збережено в access_recheck.json.
+Повторне читання підтвердило точні 451 ID, source-поля, 4448 мовних блоків і 3 архівні записи без змін та всі 276 поточних image links. Public URL/SHA256 підтверджені; звичайний клієнтський доступ до каталогу лишається неперевіреним без publishable/anon key. RLS, grants, схему й користувацькі таблиці не змінено.
+Фінальні докази: `uploads/continuation-2026-10-02-03/completion.json`, `catalog_final_readback.json`, `final_source_review.json`, `resume_readonly_check.json`; 43 offline tests пройшли. Три complete transfers повторно перевірені з API mutations disabled.
+Відновлення цієї scope: `python3 -B integration/supabase/continue_images.py --run-id continuation-2026-10-02-03 --apply`. Для нових схвалень використовувати новий run-id і не змінювати frozen plan.
+- `agent-02-machines-001`: `2c27f90d8e2be0c1f349b81231897fd204d543b5`.
+- `agent-03-inventory-2026-10-01`: `2ee4c3f612aa3e2d62935f5e0dab0100be37935f`.
+- `agent-05-parallel-generation`: `058e4810f858b5f0cca1d27384c8e36d525b24fa`.
+- `agent-06-generator-a-2026-10-02`: `8b4e4d7de0572909b8e0f3591d60c87192194338`.
+- `work`: `b0385b7e2f3382d545a6dff5304c81ba3c771096`.
