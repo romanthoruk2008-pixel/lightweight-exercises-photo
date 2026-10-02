@@ -106,6 +106,34 @@ class TransferTests(unittest.TestCase):
         self.assertNotIn("POST", self.api.calls)
         self.assertNotIn("PATCH", self.api.calls)
 
+    def test_approved_replacement_requires_exact_verified_previous_link(self):
+        old = {"image_path": "sample/old.png", "image_sha256": "a" * 64,
+               "image_width": 16, "image_height": 16, "image_origin": "generated"}
+        self.api.current.update(old)
+        result = importer.transfer_one(self.api, self.item, self.original, None, old)
+        self.assertEqual(result["replaced_image"], old)
+        self.assertEqual(self.api.current["image_sha256"], self.item["accepted_sha256"])
+        self.assertNotIn("DELETE", self.api.calls)
+
+    def test_replacement_refuses_unexpected_previous_image(self):
+        self.api.current["image_path"] = "concurrent.png"
+        expected = {field: None for field in importer.IMAGE_FIELDS}
+        with self.assertRaises(RuntimeError):
+            importer.transfer_one(self.api, self.item, self.original, None, expected)
+        self.assertNotIn("POST", self.api.calls)
+
+    def test_concurrent_image_change_during_public_get_blocks_patch(self):
+        public = self.api.public
+        def changed(path, existence_check=False):
+            response = public(path, existence_check)
+            if not existence_check:
+                self.api.current["image_path"] = "concurrent.png"
+            return response
+        self.api.public = changed
+        with self.assertRaises(RuntimeError):
+            importer.transfer_one(self.api, self.item, self.original, None)
+        self.assertNotIn("PATCH", self.api.calls)
+
 
 class DefaultAndScopeTests(unittest.TestCase):
     def test_incomplete_manifest_cannot_produce_success_summary(self):

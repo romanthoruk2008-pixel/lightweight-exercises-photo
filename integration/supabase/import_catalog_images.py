@@ -243,7 +243,7 @@ def import_catalog(api, originals, seeds):
     return manifest
 
 
-def transfer_one(api, item, original, previous):
+def transfer_one(api, item, original, previous, expected_previous_image=None):
     eid, sha, path = item["exercise_id"], item["accepted_sha256"], item["destination_path"]
     patch = item["proposed_image_patch"]
     result = {"exercise_id": eid, "accepted_sha256": sha, "storage_path": path,
@@ -264,7 +264,9 @@ def transfer_one(api, item, original, previous):
     if not source_matches(row, original):
         raise RuntimeError("Catalog changed before image update: " + eid)
     if not image_matches(row, patch) and any(row.get(field) is not None for field in IMAGE_FIELDS):
-        raise RuntimeError("Existing image link conflict; no overwrite: " + eid)
+        if expected_previous_image is None or not image_matches(row, expected_previous_image):
+            raise RuntimeError("Existing image link conflict; no overwrite: " + eid)
+        result["replaced_image"] = dict(expected_previous_image)
     raw, status, headers = api.public(path, existence_check=True)
     if status == 200:
         verify_public(raw, status, headers, sha)
@@ -281,6 +283,14 @@ def transfer_one(api, item, original, previous):
         raise RuntimeError("Storage existence check failed with HTTP " + str(status))
     # Canonical public URL, without secret/auth, must pass before PATCH.
     result["file_verification"] = verify_public(*api.public(path), sha)
+    # A public download may take time. Reconcile any change before updating.
+    fresh = api.row(eid)
+    if not source_matches(fresh, original):
+        raise RuntimeError("Catalog changed during public verification: " + eid)
+    if not image_matches(fresh, patch) and not image_matches(
+            fresh, {field: row.get(field) for field in IMAGE_FIELDS}):
+        raise RuntimeError("Image link changed during public verification: " + eid)
+    row = fresh
     result["database_before"] = {"id": row["id"], "updated_at": row["updated_at"],
                                  **{field: row.get(field) for field in IMAGE_FIELDS}}
     if image_matches(row, patch):
@@ -290,8 +300,13 @@ def transfer_one(api, item, original, previous):
                                             {"Prefer": "return=representation"})
         updated = json.loads(raw)
         if len(updated) != 1 or updated[0]["id"] != eid or not image_matches(updated[0], patch):
-            raise RuntimeError("Conditional image update did not affect exactly one expected row")
-        result["database_action"] = "image_fields_updated"
+            # Read the conflicting state; never retry a write blindly.
+            current = api.row(eid)
+            if updated or not source_matches(current, original) or not image_matches(current, patch):
+                raise RuntimeError("Concurrent catalog/image conflict; no retry: " + eid)
+            result["concurrent_identical_link_verified"] = True
+        result["database_action"] = ("concurrent_identical_link_verified" if not updated
+                                     else "image_fields_updated")
         result["update_http_status"] = update_status
     after = api.row(eid)
     if not source_matches(after, original) or not image_matches(after, patch):

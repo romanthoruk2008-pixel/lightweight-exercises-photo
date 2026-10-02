@@ -71,3 +71,35 @@ live Supabase і `uploads` manifests. Не скидати схвалення/att
 `import_catalog_images.py --verify-only`: скрипт перевірить точні 451 ID,
 content/4448 мовних блоків звичайним клієнтом і оновить completion report
 без Supabase writes. Сам ключ у чат/файли не копіювати.
+
+<!-- continuation:continuation-2026-10-02 -->
+
+## Продовження схвалених PNG — continuation-2026-10-02
+
+Поточна контрольна точка: `2026-10-02T15:53:01.770498+00:00`.
+Нових Storage uploads: 57; завершених перенесень: 57; заміни прийнятих версій: 0.
+Попередніх перевірено: 135; pending пропущено: 27.
+Артефакти: `uploads/continuation-2026-10-02/plan.json`, `batch-*.json`, `summary.json`.
+Каталог не імпортувався повторно. Використано `continue_images.py` і перевірений `import_catalog_images.transfer_one`; лише Storage POST без upsert і п’ять image-полів із concurrency filters. Старі PNG не видаляються; content/451 ID/4448 мовних блоків незмінні.
+PNG staging поза Git: `/workspace/supabase-image-staging/<source_commit>/<source_png>`.
+
+### Фінальне звіряння продовження
+
+Завершено `2026-10-02T15:56:11.448484+00:00` UTC. Усі 57 нових PNG і попередні 135 зв’язків підтверджені; разом 192 точних ID із зображеннями. Каталог: 451 ID, 4448 мовних блоків, 3 архівні; усі source-поля незмінні.
+Нових завантажень — 57; замін попередньої прийнятої версії — 0; pending пропущено — 27; блокувань/помилок — 0. Усі нові PNG 1254×1254, декодуються й мають фактичні прозорі пікселі; збережено 10 явно прийнятих technical_check=failed через ціль 1024×1024.
+Фінальні докази: `uploads/continuation-2026-10-02/completion.json` і `resume_readonly_check.json` (3 complete transfers повторно перевірені з API mutations disabled; жодного запису).
+Відновлення саме цієї scope: `python3 -B integration/supabase/continue_images.py --run-id continuation-2026-10-02 --apply`. Нові схвалення потребують нового run-id; не замінювати frozen plan.
+Перевірені джерела:
+- `agent-02-machines-001`: `2c27f90d8e2be0c1f349b81231897fd204d543b5`.
+- `agent-03-inventory-2026-10-01`: `91a80cd9c0cfbb33088f24488af24c781ab2bbf3`.
+- `agent-05-parallel-generation`: `8fdae08adeaa14f4b9721ce164053634bda5b13f`.
+- `work`: `f6c8874805203c78d804eb073e1627c6d4ddc78e`.
+
+### Оновлені джерела після перенесення
+
+Повторна перевірка `2026-10-02T15:59:59.481559+00:00` UTC: додаткових approved немає; pending з фактичними PNG — 57 унікальних ID. Перший frozen plan мав 27 pending; після нових комітів з’явилися ще 30 у пакетах 019, 020 і 021. Shared progress навмисно не містить цих результатів; звірено manifests, Git trees і SHA256 усіх доступних pending blobs. Їх не завантажували.
+Точні ID і commits: `uploads/continuation-2026-10-02/final_source_review.json`. Frozen import plan та approval evidence не змінені.
+- `agent-02-machines-001`: `2c27f90d8e2be0c1f349b81231897fd204d543b5`.
+- `agent-03-inventory-2026-10-01`: `91a80cd9c0cfbb33088f24488af24c781ab2bbf3`.
+- `agent-05-parallel-generation`: `c69fd600f81d24116167ac4b936c3e194fbbba4f`.
+- `work`: `46fa5a197f6bb7d6611ea67e64707b4293422ef5`.

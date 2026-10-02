@@ -118,3 +118,45 @@ Recorded technical failures і нестандартні dimensions залиша�
 незмінними в source і плані. Всі mutations обмежено catalog_exercise та
 перевіреним набором Storage paths. Admin secret не замінює publishable
 key для перевірки звичайного клієнта.
+# Continuing approved images without importing the catalog
+
+Use `continue_images.py` for subsequent approved PNGs. It reuses the existing
+proxy client, PNG byte validator, public SHA256 verifier and `transfer_one`.
+Its API guard prohibits catalog INSERTs and PATCHes containing anything other
+than the five image fields. It never deletes old objects, changes approvals,
+performs visual QA or generates images.
+
+From `/workspace/lightweight-exercises-photo`, refresh only remote refs:
+
+```bash
+git fetch --no-tags origin '+refs/heads/*:refs/remotes/origin/*'
+python3 -B integration/supabase/continue_images.py --run-id continuation-2026-10-02
+python3 -B integration/supabase/continue_images.py --run-id continuation-2026-10-02 --apply
+```
+
+The first Python command reads Supabase and prepares cloud working files; it
+does not write to Supabase. The second performs explicitly authorized image
+transfers, in batches of ten, with separate manifests and handoff checkpoints.
+Use the same run ID to resume an interrupted plan. A new review scope needs a
+new run ID; omitting it derives one from the UTC date and fetched remote refs.
+Plans pin the exact source commits and accepted user decisions. They do not
+automatically choose the latest attempt or merge source branches.
+
+All PNG bytes are extracted by Git from accepted paths into
+`/workspace/supabase-image-staging/<source_commit>/<source_png>` outside the
+checkout. SHA256, decoding, dimensions, alpha and the bucket limit are checked.
+Explicitly accepted historical technical exceptions are retained as metadata.
+Staging can be restored from pinned Git blobs if a subsequent cloud runtime
+lacks those files. PNGs are not committed to the integration branch.
+
+An approved replacement may change an existing link only when its old five
+image fields match a previously verified import. The old Storage object is
+retained. Public hash verification precedes PATCH, a fresh row read reconciles
+concurrent changes, and optimistic filters include ID, updated_at and all old
+image fields. An unresolved conflict stops the batch without a blind retry.
+
+The original 135-PNG manifests remain historical evidence. Subsequent runs are
+recorded under `uploads/<run-id>/`, including source commits, approval evidence,
+exact hashes/paths, pending exclusions, byte checks, live reconciliation and
+individual transfer results. Keep the `exerciseuploader` binding and HTTPS proxy
+inherited from the cloud runtime; never copy their values into scripts or files.
