@@ -617,3 +617,30 @@ Generation complete: 6/6 images. Technical checks passed for each generated PNG;
 - `hex-press-dumbbell` — `assets/exercises/pending/agent-03-others-015/hex-press-dumbbell/attempt-1.png`; SHA256 `6afebb4b464053fee8ab4abfd71f4bca8f31ffe0b183b21e600b68ab4cdcdc0f`
 
 GitHub verification — Agent-03 package 015: 6/6 remote PNG blobs matched local files, progress and manifest SHA256; each remote PNG decoded as square RGBA with transparent pixels. Verified content commit `54a37683b3508e782cd03637833004c341dd998c`. All 6 remain `user_review=pending`, `agent_visual_review=not_performed`. Packages 011–015 are complete; wait for user review.
+
+
+## 2026-10-02 — neutral-primary packages 019–020 user review
+
+The user approved 19 of the 20 package results. user_review=approved, overall status=approved, and each accepted result path and SHA256 are recorded in data/exercise-image-progress.json and the per-package manifests. muscle_highlight_status=none is separate from review status: all selected catalog rows have an empty secondary_muscles list. agent_visual_review=not_performed remains unchanged.
+
+- aerobics — assets/exercises/pending/agent-03-others-019/aerobics/attempt-1.png; SHA256 1a36988602f2d95f5da0e9fba2d8e7be7baedefed56db2635582ac1a2f4f9de2
+- ball-slams — assets/exercises/pending/agent-03-others-019/ball-slams/attempt-1.png; SHA256 4e5f2bab70c6fe019b239ee11c4a4209183e17385f0045ad88eec92180841a1b
+- battle-ropes-machine — assets/exercises/pending/agent-03-others-019/battle-ropes-machine/attempt-1.png; SHA256 1b0b2082e779ed0ddf6760acfddb0b897ad6eaca18c59438f99ee6281584e8b3
+- boxing — assets/exercises/pending/agent-03-others-019/boxing/attempt-1.png; SHA256 0fb4e13bf002fdb6fa90bb81efc139054af256a3bf726e69e90b8d6fdd2ca117
+- burpee — assets/exercises/pending/agent-03-others-019/burpee/attempt-1.png; SHA256 d4b499ac81cf64f532172a29f7aec13a7a27644ea244054a6fc5c40088ba7dfb
+- burpee-broad-jumps — assets/exercises/pending/agent-03-others-019/burpee-broad-jumps/attempt-1.png; SHA256 8d221a7cb0feb6c18dba0aa8c3d9d877432c138f69fc5d9a997f50b06e5e6abd
+- burpee-over-the-bar — assets/exercises/pending/agent-03-others-019/burpee-over-the-bar/attempt-1.png; SHA256 82fe20ac17c81bb53747d19726297bb2c4a6d8ce2c4ad1222ebed4112c0654dd
+- clean-and-jerk-barbell — assets/exercises/pending/agent-03-others-019/clean-and-jerk-barbell/attempt-1.png; SHA256 ec6b157e9756f057113d1bcf6d24e5dc7d0a7f9a9c248985380def0a931d337d
+- clean-and-press-barbell — assets/exercises/pending/agent-03-others-019/clean-and-press-barbell/attempt-1.png; SHA256 16316e791aa8a10a4e0cc0e28d0555b9a4acf7c9e167f08331210d5bbc4c070e
+- clean-pull-barbell — assets/exercises/pending/agent-03-others-019/clean-pull-barbell/attempt-1.png; SHA256 745f5e78b2d0d201b4892c5129db44c1d659b00d3f128b72e7f272c2cfeb09df
+- climbing — assets/exercises/pending/agent-03-others-020/climbing/attempt-1.png; SHA256 a1138f6dc36661f88a6a73fcb101cd4e211127295521b15606c8a895693cea9a
+- deadlift-high-pull-barbell — assets/exercises/pending/agent-03-others-020/deadlift-high-pull-barbell/attempt-1.png; SHA256 1d86e40db49e40b654d52fd2f39ccd74ff055ee8828dafabcfebd6afe05eb7e3
+- dumbbell-snatch — assets/exercises/pending/agent-03-others-020/dumbbell-snatch/attempt-1.png; SHA256 71591b14b1908d22915d3a142135e72d04c8c96bdf875d071d7f408015e36303
+- farmers-walk — assets/exercises/pending/agent-03-others-020/farmers-walk/attempt-1.png; SHA256 81fb7b03fb645c08c4da806e22618ed5dda8331642e681fe4752ef31d731b89d
+- front-lever-hold — assets/exercises/pending/agent-03-others-020/front-lever-hold/attempt-1.png; SHA256 b0d4916274ea3664cab06e409dfc424fb94b86579da6d0b2dec3ab90fdb46383
+- front-lever-raise — assets/exercises/pending/agent-03-others-020/front-lever-raise/attempt-1.png; SHA256 aa2478344f8d02a9d398df04759f8cfb7343f4f40abbda683a2eed55b893e909
+- hang-clean-barbell — assets/exercises/pending/agent-03-others-020/hang-clean-barbell/attempt-1.png; SHA256 15af06da384a250185e4de89a1d829e9332d1c9e58113eb54d07820f88821b12
+- hang-snatch-barbell — assets/exercises/pending/agent-03-others-020/hang-snatch-barbell/attempt-1.png; SHA256 6394e29a199cf5ecd791432cc551b8dae6def0c40105f584953cd9b90def6738
+- high-knee-skips — assets/exercises/pending/agent-03-others-020/high-knee-skips/attempt-1.png; SHA256 88bcce1b35653cfab35a0e9d1348ed5a20ab4d8bee9ff20af25e01f9877c2bb6
+
+handstand-hold attempt 1 was marked needs_fix at the user's request and was not approved: assets/exercises/pending/agent-03-others-020/handstand-hold/attempt-1.png, SHA256 3ccd5e247d9a7d6b64e24ab0044b6d8677360627df97f58f6be32737d3d7fdba. Generate a corrected attempt 2 with the head aligned to the torso and no 180-degree neck twist; preserve attempt 1. The corrected result remains user_review=pending until the user decides.

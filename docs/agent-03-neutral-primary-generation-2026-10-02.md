@@ -16,3 +16,6 @@ Exact authorized order:
 - agent-03-others-019: aerobics, ball-slams, battle-ropes-machine, boxing, burpee, burpee-broad-jumps, burpee-over-the-bar, clean-and-jerk-barbell, clean-and-press-barbell, clean-pull-barbell.
 - agent-03-others-020, next: climbing, deadlift-high-pull-barbell, dumbbell-snatch, farmers-walk, front-lever-hold, front-lever-raise, handstand-hold, hang-clean-barbell, hang-snatch-barbell, high-knee-skips.
 - Packages 021–023 excluded. Shared progress, catalog, blocked IDs, other batches, and Supabase were not modified.
+
+
+User review update 2026-10-02T16:04:25.395334+00:00: 19/20 approved; handstand-hold attempt 1 needs correction and remains excluded from approval. All 20 rows have muscle_highlight_status=none (empty catalog secondary muscle lists); agent_visual_review remains not_performed.
