@@ -142,6 +142,16 @@ new run ID; omitting it derives one from the UTC date and fetched remote refs.
 Plans pin the exact source commits and accepted user decisions. They do not
 automatically choose the latest attempt or merge source branches.
 
+Source adapters also read `accepted_result_path` / `accepted_result_sha256`
+and explicit user decisions named `accepted`. The original fields and decision
+values are retained in the plan; source progress and manifests are not edited.
+For package 019/020, aliases require matching accepted fields in progress and
+the per-file manifest, plus the explicit decision in the pinned handoff.
+Nested generator manifests can supply acceptance without shared progress when
+each row has its exact accepted hash/path and an explicit user approval record.
+Only prior public GET checks run concurrently (four workers); Storage writes
+and database updates remain sequential in batches of ten.
+
 All PNG bytes are extracted by Git from accepted paths into
 `/workspace/supabase-image-staging/<source_commit>/<source_png>` outside the
 checkout. SHA256, decoding, dimensions, alpha and the bucket limit are checked.

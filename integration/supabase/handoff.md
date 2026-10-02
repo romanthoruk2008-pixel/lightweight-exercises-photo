@@ -103,3 +103,27 @@ PNG staging поза Git: `/workspace/supabase-image-staging/<source_commit>/<so
 - `agent-03-inventory-2026-10-01`: `91a80cd9c0cfbb33088f24488af24c781ab2bbf3`.
 - `agent-05-parallel-generation`: `c69fd600f81d24116167ac4b936c3e194fbbba4f`.
 - `work`: `46fa5a197f6bb7d6611ea67e64707b4293422ef5`.
+
+<!-- continuation:continuation-2026-10-02-02 -->
+
+## Продовження схвалених PNG — continuation-2026-10-02-02
+
+Поточна контрольна точка: `2026-10-02T19:35:55.237421+00:00`.
+Нових Storage uploads: 52; завершених перенесень: 52; заміни прийнятих версій: 0.
+Попередніх перевірено: 192; pending пропущено: 32.
+Артефакти: `uploads/continuation-2026-10-02-02/plan.json`, `batch-*.json`, `summary.json`.
+Каталог не імпортувався повторно. Використано `continue_images.py` і перевірений `import_catalog_images.transfer_one`; лише Storage POST без upsert і п’ять image-полів із concurrency filters. Старі PNG не видаляються; content/451 ID/4448 мовних блоків незмінні.
+PNG staging поза Git: `/workspace/supabase-image-staging/<source_commit>/<source_png>`.
+
+### Фінальний результат другого продовження
+
+Завершено `2026-10-02T19:39:02.666562+00:00` UTC. Нових PNG завантажено й прив’язано — 52; замін прийнятих версій — 0; попередніх перенесень перевірено — 192; разом — 244 точних ID із зображеннями. Pending із фактичними PNG пропущено — 32; помилок і блокувань — 0.
+Усі 451 source record, 4448 мовних блоків і 3 архівні статуси звірені без змін. Нові PNG: 20 із work (019/020), 20 із agent-05 (021/022), 12 із agent-06 (024/025). Handstand Hold — саме явно прийнята attempt-2.
+Додані адаптери accepted_result_path/accepted_result_sha256, явного рішення accepted, nested manifest і approval_record без shared progress. Джерельні схвалення/технічні винятки не редагувалися; accepted path/hash/рішення збережені у frozen plan. Механізм Storage POST без upsert → public SHA256 → image-only PATCH лишився тим самим.
+Фінальні докази: `uploads/continuation-2026-10-02-02/completion.json`, `final_source_review.json`, `resume_readonly_check.json`; 42 offline tests пройшли. Три complete transfers повторно перевірені з API mutations disabled; записів не було.
+Відновлення цієї scope: `python3 -B integration/supabase/continue_images.py --run-id continuation-2026-10-02-02 --apply`. Для нових схвалень створювати новий run-id.
+- `agent-02-machines-001`: `2c27f90d8e2be0c1f349b81231897fd204d543b5`.
+- `agent-03-inventory-2026-10-01`: `2ee4c3f612aa3e2d62935f5e0dab0100be37935f`.
+- `agent-05-parallel-generation`: `172ea1052d0a1be125d79fb8a3d4ab18283b5bee`.
+- `agent-06-generator-a-2026-10-02`: `8b4e4d7de0572909b8e0f3591d60c87192194338`.
+- `work`: `bc67b32e93322bac86b7a31264cd0f8b2ab3f6eb`.

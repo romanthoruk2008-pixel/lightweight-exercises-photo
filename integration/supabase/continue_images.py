@@ -7,6 +7,7 @@ Checkpoints pin Git commits, approvals, hashes and the initial database state.
 PNG staging is outside the repository, entirely in the cloud workspace.
 """
 import argparse
+from concurrent.futures import ThreadPoolExecutor
 from datetime import datetime, timezone
 import json
 from pathlib import Path
@@ -74,13 +75,92 @@ def known_transfers():
     return records
 
 
-def explicit_evidence(progress, manifests, eid, sha):
+def accepted_row(row):
+    """Read documented field aliases without modifying source approval data."""
+    result = dict(row)
+    result['source_user_review'] = row.get('user_review')
+    if row.get('user_review') == 'accepted':
+        result['user_review'] = 'approved'
+    if not result.get('accepted_sha256') and row.get('accepted_result_sha256'):
+        result['accepted_sha256'] = row['accepted_result_sha256']
+    if not result.get('accepted_path') and row.get('accepted_result_path'):
+        result['accepted_path'] = row['accepted_result_path']
+    approval = row.get('user_approval', {})
+    if (approval.get('reviewed_by') == 'user' and approval.get('decision') == 'approved'):
+        result.setdefault('accepted_sha256', approval.get('accepted_sha256'))
+        result.setdefault('accepted_path', approval.get('accepted_path'))
+    return result
+
+
+def manifest_rows(doc):
+    rows = doc.get('images', doc.get('exercises', doc.get('results', [])))
+    rows = rows.values() if isinstance(rows, dict) else rows
+    result = [accepted_row(row) for row in rows]
+    batches = doc.get('batches', [])
+    batches = batches.values() if isinstance(batches, dict) else batches
+    for batch in batches:
+        if isinstance(batch, dict):
+            result.extend(manifest_rows(batch))
+    return result
+
+
+def manifest_user_evidence(row, doc, eid, sha):
+    if row.get('exercise_id') != eid or row.get('user_review') != 'approved':
+        return None
+    if row.get('accepted_sha256') != sha or not path_of(row.get('accepted_path')):
+        return None
+    approval = row.get('user_approval', {})
+    if (approval.get('reviewed_by') == 'user' and approval.get('decision') == 'approved'
+            and approval.get('accepted_sha256') == sha):
+        return approval
+    record = doc.get('approval_record', {})
+    if (row.get('approval_source') == 'explicit_user_approval_in_chat'
+            and record.get('source') == 'explicit_user_approval_in_chat'
+            and row.get('accepted_at') == record.get('approved_at')):
+        return {'file': {k: row[k] for k in ('exercise_id', 'accepted_path',
+                 'accepted_sha256', 'accepted_at', 'approval_source')}, 'approval_record': record}
+    return None
+
+
+def handoff_evidence(text, eid, sha):
+    for section in re.split(r'(?m)(?=^#{1,6} )', text or ''):
+        lines = section.splitlines()
+        accepted = next((line for line in lines if eid in line and sha in line), None)
+        statement = next((line for line in lines if re.search(
+            r'(?:user (?:explicitly )?(?:approved|accepted)|користувач (?:явно )?(?:схвалив|прийняв))', line, re.I)), None)
+        if accepted and statement:
+            return {'source': 'docs/handoff.md', 'user_statement': statement,
+                    'accepted_file_statement': accepted}
+    return None
+
+
+def explicit_evidence(progress, manifests, eid, sha, handoff=None):
     history = progress.get('user_review_history', [])
     decision = history[-1] if history else progress.get('approval_decision', {})
     if (decision.get('by') != 'user'
             or decision.get('accepted_sha256', decision.get('sha256')) != sha):
+        for _, doc in manifests:
+            for row in manifest_rows(doc):
+                evidence = manifest_user_evidence(row, doc, eid, sha)
+                if evidence:
+                    return evidence
+        # Package 019/020 has an exact accepted_result_* record, a matching
+        # per-file manifest and explicit user acceptance in its pinned handoff.
+        if (progress.get('user_review') == 'approved'
+                and progress.get('accepted_result_sha256') == sha
+                and path_of(progress.get('accepted_result_path'))):
+            for _, doc in manifests:
+                for row in manifest_rows(doc):
+                    if (row.get('exercise_id') == eid and row.get('user_review') == 'approved'
+                            and row.get('accepted_sha256') == sha
+                            and path_of(row.get('accepted_path')) == path_of(progress['accepted_result_path'])):
+                        proof = handoff_evidence(handoff, eid, sha)
+                        if proof:
+                            return {**proof, 'source_user_review': progress.get('source_user_review'),
+                                'accepted_result_sha256': sha,
+                                'accepted_result_path': progress['accepted_result_path']}
         return None
-    if decision.get('decision') == 'approved':
+    if decision.get('decision') in ('approved', 'accepted'):
         return decision
     if decision.get('decision') is not None:
         return None
@@ -97,9 +177,7 @@ def manifest_pending_records(manifests, files):
     """Parallel generators may intentionally leave shared progress unchanged."""
     result = []
     for manifest_path, doc in manifests:
-        records = doc.get('images', doc.get('exercises', doc.get('results', [])))
-        records = records.values() if isinstance(records, dict) else records
-        for row in records:
+        for row in manifest_rows(doc):
             if row.get('user_review') != 'pending':
                 continue
             sha = row.get('result_sha256') or row.get('sha256')
@@ -128,10 +206,12 @@ def scan(originals, known):
         catalog_raw = git('show', commit + ':data/exercises/catalog.json')
         if legacy.source.digest(catalog_raw) != legacy.source.CATALOG_SHA256:
             raise RuntimeError('Source catalog changed: ' + ref)
-        progress = document(commit, 'data/exercise-image-progress.json')['exercises']
+        progress = {eid: accepted_row(row) for eid, row in
+                    document(commit, 'data/exercise-image-progress.json')['exercises'].items()}
         progress_snapshots.append((commit, progress))
         manifests = [(p, document(commit, p)) for p in sorted(files)
                      if p.startswith('data/') and 'manifest' in p and p.endswith('.json')]
+        handoff = git('show', commit + ':docs/handoff.md').decode() if 'docs/handoff.md' in files else ''
         for record in manifest_pending_records(manifests, files):
             if record['exercise_id'] not in originals:
                 raise RuntimeError('Unknown manifest exercise ID')
@@ -140,13 +220,17 @@ def scan(originals, known):
                 'manifest': record['manifest']})
         snapshots.append({'branch': ref.removeprefix('origin/'), 'commit': commit,
                           'manifests': [p for p, _ in manifests]})
-        for eid, row in progress.items():
+        inputs = {(eid, row.get('accepted_sha256')): row for eid, row in progress.items()}
+        for _, doc in manifests:
+            for row in manifest_rows(doc):
+                eid, sha = row.get('exercise_id'), row.get('accepted_sha256')
+                if eid in originals and sha and manifest_user_evidence(row, doc, eid, sha):
+                    inputs.setdefault((eid, sha), {**row, 'acceptance_from_manifest': True})
+        for (eid, _), row in inputs.items():
             if row.get('user_review') == 'pending' and row.get('result_sha256'):
                 paths = [path_of(row.get(k)) for k in ('result_path', 'repository_path', 'relative_png_path')]
                 for _, doc in manifests:
-                    records = doc.get('images', doc.get('exercises', []))
-                    records = records.values() if isinstance(records, dict) else records
-                    for record in records:
+                    for record in manifest_rows(doc):
                         if (record.get('exercise_id') == eid and record.get('user_review') == 'pending'
                                 and record.get('result_sha256', record.get('sha256')) == row['result_sha256']):
                             paths.extend(path_of(record.get(k)) for k in
@@ -162,9 +246,7 @@ def scan(originals, known):
                 raise RuntimeError('Invalid accepted ID/hash: ' + eid)
             witnesses, paths = [], []
             for manifest_path, doc in manifests:
-                rows = doc.get('images', doc.get('exercises', []))
-                rows = rows.values() if isinstance(rows, dict) else rows
-                for record in rows:
+                for record in manifest_rows(doc):
                     if record.get('exercise_id') != eid or record.get('user_review') != 'approved':
                         continue
                     accepted = record.get('accepted_sha256') or record.get('sha256') or record.get('result_sha256')
@@ -175,17 +257,19 @@ def scan(originals, known):
                         'technical_check': record.get('technical_check'),
                         'technical_exceptions': record.get('technical_exceptions', [])})
                     for name in ('accepted_repository_path', 'repository_path',
-                                 'accepted_relative_png_path', 'relative_png_path', 'accepted_path'):
+                                 'accepted_relative_png_path', 'relative_png_path', 'accepted_path', 'branch_output_path'):
                         path = path_of(record.get(name))
                         if path in files:
                             paths.append(path)
-            evidence = explicit_evidence(row, manifests, eid, sha)
+            evidence = explicit_evidence(row, manifests, eid, sha, handoff)
             paths = [p for p in [path_of(row.get('accepted_repository_path')),
                      path_of(row.get('accepted_path')), *paths] if p in files]
             candidates.setdefault(eid, []).append({'exercise_id': eid,
                 'accepted_sha256': sha, 'source_branch': ref.removeprefix('origin/'),
                 'source_commit': commit, 'source_png': paths[0] if paths else None,
                 'explicit_user_approval': evidence,
+                'acceptance_from_manifest': row.get('acceptance_from_manifest', False),
+                'source_user_review': row.get('source_user_review'),
                 'manifest_witnesses': witnesses,
                 'historical_technical_check': row.get('technical_check'),
                 'historical_technical_check_details': row.get('technical_check_details'),
@@ -200,7 +284,7 @@ def scan(originals, known):
                             'sha256': sorted(hashes)})
             continue
         v = tips[0]
-        if any(commit != v['source_commit'] and ancestor(v['source_commit'], commit)
+        if not v['acceptance_from_manifest'] and any(commit != v['source_commit'] and ancestor(v['source_commit'], commit)
                and progress[eid].get('user_review') != 'approved'
                for commit, progress in progress_snapshots):
             blocked.append({'exercise_id': eid, 'reason': 'descendant_progress_not_approved'})
@@ -232,8 +316,14 @@ def prepare(output, originals, known, api):
         raise RuntimeError('Bucket constraints changed')
     prior, plan = [], []
     desired = {v['exercise_id']: v['accepted_sha256'] for v in selected}
-    for (eid, sha), record in sorted(known.items()):
-        verification = legacy.verify_public(*api.public(record['storage_path']), sha)
+    def public_check(pair):
+        (_, sha), record = pair
+        return legacy.verify_public(*api.public(record['storage_path']), sha)
+    # Independent public GETs; no mutation is enabled until all pass.
+    pairs = sorted(known.items())
+    with ThreadPoolExecutor(max_workers=4) as pool:
+        public_checks = list(pool.map(public_check, pairs))
+    for ((eid, sha), record), verification in zip(pairs, public_checks):
         row = current[eid]
         matches = row['image_sha256'] == sha and row['image_path'] == record['storage_path']
         patch = record['_verified_image_patch']
@@ -332,8 +422,13 @@ def validate_plan(plan, originals):
         identities.add(eid)
         if commit not in sources:
             sources[commit] = document(commit, 'data/exercise-image-progress.json')['exercises']
-        approved = sources[commit][eid]
-        if approved.get('user_review') != 'approved' or approved.get('accepted_sha256') != sha:
+        approved = accepted_row(sources[commit][eid])
+        if item.get('acceptance_from_manifest'):
+            docs = [(v['manifest'], document(commit, v['manifest'])) for v in item['manifest_witnesses']]
+            if not any(manifest_user_evidence(row, doc, eid, sha)
+                       for _, doc in docs for row in manifest_rows(doc)):
+                raise RuntimeError('Frozen manifest acceptance differs: ' + eid)
+        elif approved.get('user_review') != 'approved' or approved.get('accepted_sha256') != sha:
             raise RuntimeError('Frozen plan is not accepted at its source commit: ' + eid)
         if (item['destination_path'] != eid + '/' + sha + '.png'
                 or path_of(item['source_png']) != item['source_png']
