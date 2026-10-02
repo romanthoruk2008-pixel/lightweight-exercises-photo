@@ -1,0 +1,1937 @@
+{
+  "schema_version": 1,
+  "batch_id": "agent-03-others-012",
+  "owner_agent": "agent-03",
+  "branch": "agent-03-inventory-2026-10-01",
+  "status": "ready",
+  "prepared_at": "2026-10-02T01:21:10.062167+03:00",
+  "preparation_stage": "remaining_queue",
+  "generation_authorized_now": false,
+  "catalog_path": "data/exercises/catalog.json",
+  "catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+  "catalog_source_commit": "a6f296cbc6737991dd367e929b3e2df25874d4d8",
+  "style_version": "v1",
+  "style_path": "docs/exercise-image-style.md",
+  "style_sha256": "8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578",
+  "human_reference": {
+    "repository_path": "assets/exercises/biceps-curl-dumbbell.png",
+    "absolute_path": "/workspace/lightweight-exercises-photo/assets/exercises/biceps-curl-dumbbell.png",
+    "sha256": "52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f",
+    "branch": "work",
+    "source_commit": "a6f296cbc6737991dd367e929b3e2df25874d4d8",
+    "role": "Human appearance/proportions/materials/anatomical style ONLY. Exercise pose, grip, equipment and muscles come from the exact-ID catalogue, never the reference.",
+    "pixels_reviewed_during_preparation": false
+  },
+  "queue_path": "data/queues/agent-03-other-queue.json",
+  "constraints": {
+    "generation_performed": false,
+    "shared_progress_changes_allowed": false,
+    "catalog_changes_allowed": false,
+    "only_builtin_imagegen": true,
+    "automatic_retries_allowed": false,
+    "paid_api_allowed": false,
+    "supabase_allowed": false,
+    "no_agent_visual_QA": true,
+    "outputs_outside_git": true,
+    "revalidate_assignments_and_existing_results_before_call": true
+  },
+  "exercise_count": 10,
+  "exercise_ids": [
+    "lying-neck-curls-weighted-plate",
+    "meadows-rows-barbell",
+    "overhead-plate-raise",
+    "plate-curl",
+    "plate-front-raise",
+    "plate-press",
+    "preacher-curl-barbell",
+    "preacher-curl-dumbbell",
+    "rack-pull-barbell",
+    "russian-twist-weighted-plate"
+  ],
+  "exercises": [
+    {
+      "exercise_id": "lying-neck-curls-weighted-plate",
+      "name": "Lying Neck Curls (Weighted)",
+      "source_english": {
+        "description": "Weighted lying neck curls add a light plate to a small supported neck-flexion movement.",
+        "instructions": [
+          "Lie on your back with the head supported and place a light plate securely on the forehead with both hands.",
+          "Tuck the chin slightly and keep the shoulders relaxed.",
+          "Nod the chin toward the chest through a small controlled range.",
+          "Lower the head slowly while keeping the plate stable."
+        ],
+        "form_cues": [
+          "Use a very light plate.",
+          "Keep the plate centered and supported.",
+          "Move slowly from a neutral neck."
+        ],
+        "common_mistakes": [
+          "Pressing the plate into the forehead.",
+          "Lifting the shoulders.",
+          "Using momentum or excessive range."
+        ],
+        "safety_note": "Only use a light, secure plate and stop at any neck discomfort or instability.",
+        "provenance": "authored"
+      },
+      "equipment": "plate",
+      "primary_muscle": "neck",
+      "secondary_muscles": [],
+      "source_catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+      "source_catalog_record_sha256": "f1641ad42c5ff9a9f0f9c6861730da7cd46c666428dba9036a6585951fb662b2",
+      "source_english_sha256": "9b31ddc3c5e9aa767ee1c7c6ea3bf8493511c2fcacbf85bd1a7ce007735deeab",
+      "status": "ready",
+      "preparation_status": "prompt_prepared_not_generated",
+      "style_version": "v1",
+      "style_sha256": "8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578",
+      "human_reference": {
+        "repository_path": "assets/exercises/biceps-curl-dumbbell.png",
+        "absolute_path": "/workspace/lightweight-exercises-photo/assets/exercises/biceps-curl-dumbbell.png",
+        "sha256": "52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f",
+        "branch": "work",
+        "source_commit": "a6f296cbc6737991dd367e929b3e2df25874d4d8",
+        "role": "Human appearance/proportions/materials/anatomical style ONLY. Exercise pose, grip, equipment and muscles come from the exact-ID catalogue, never the reference.",
+        "pixels_reviewed_during_preparation": false
+      },
+      "scene": {
+        "single_phase": "Small controlled neck-flexion nod",
+        "pose": "Supine body supported, shoulders relaxed; chin nods slightly toward chest in a small controlled range, no shoulder lift.",
+        "grip": "BOTH hands securely support a LIGHT plate centered on forehead without pressing it into head.",
+        "supports_and_equipment": "Back and head have a stable lying support; depict small supported range, no invented bench-edge overhang or extra weight.",
+        "camera": "Side three-quarter view showing forehead plate, both hand contacts and relaxed shoulders.",
+        "source_instruction_quotes": [
+          {
+            "index": 0,
+            "text": "Lie on your back with the head supported and place a light plate securely on the forehead with both hands."
+          },
+          {
+            "index": 1,
+            "text": "Tuck the chin slightly and keep the shoulders relaxed."
+          },
+          {
+            "index": 2,
+            "text": "Nod the chin toward the chest through a small controlled range."
+          },
+          {
+            "index": 3,
+            "text": "Lower the head slowly while keeping the plate stable."
+          }
+        ]
+      },
+      "prompt_payload": {
+        "identity_do_not_render_as_text": {
+          "exercise_id": "lying-neck-curls-weighted-plate",
+          "name": "Lying Neck Curls (Weighted)",
+          "source_catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+          "source_catalog_record_sha256": "f1641ad42c5ff9a9f0f9c6861730da7cd46c666428dba9036a6585951fb662b2"
+        },
+        "exact_catalogue_source": {
+          "source_english": {
+            "description": "Weighted lying neck curls add a light plate to a small supported neck-flexion movement.",
+            "instructions": [
+              "Lie on your back with the head supported and place a light plate securely on the forehead with both hands.",
+              "Tuck the chin slightly and keep the shoulders relaxed.",
+              "Nod the chin toward the chest through a small controlled range.",
+              "Lower the head slowly while keeping the plate stable."
+            ],
+            "form_cues": [
+              "Use a very light plate.",
+              "Keep the plate centered and supported.",
+              "Move slowly from a neutral neck."
+            ],
+            "common_mistakes": [
+              "Pressing the plate into the forehead.",
+              "Lifting the shoulders.",
+              "Using momentum or excessive range."
+            ],
+            "safety_note": "Only use a light, secure plate and stop at any neck discomfort or instability.",
+            "provenance": "authored"
+          },
+          "equipment": "plate",
+          "primary_muscle": "neck",
+          "secondary_muscles": []
+        },
+        "human_reference": {
+          "repository_path": "assets/exercises/biceps-curl-dumbbell.png",
+          "absolute_path": "/workspace/lightweight-exercises-photo/assets/exercises/biceps-curl-dumbbell.png",
+          "sha256": "52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f",
+          "branch": "work",
+          "source_commit": "a6f296cbc6737991dd367e929b3e2df25874d4d8",
+          "role": "Human appearance/proportions/materials/anatomical style ONLY. Exercise pose, grip, equipment and muscles come from the exact-ID catalogue, never the reference.",
+          "pixels_reviewed_during_preparation": false
+        },
+        "style": {
+          "version": "v1",
+          "human_model": "One athletic bald male anatomical mannequin, opaque silver-gray muscular surfaces, consistent proportions and detailed 3D materials, plain black shorts, barefoot.",
+          "primary_highlight": {
+            "hex": "#F26445",
+            "rule": "Highlight only the exact primary muscle group provided for this exercise."
+          },
+          "secondary_highlight": {
+            "hex": "#F26445",
+            "intensity_fraction": [
+              0.4,
+              0.5
+            ],
+            "rule": "Only the exact secondary muscles, lighter same-hue highlight; if the list is empty add no secondary target."
+          },
+          "background": "Genuinely transparent PNG background, no white/checkerboard layer, no environment scene.",
+          "output": {
+            "format": "PNG",
+            "width": 1024,
+            "height": 1024,
+            "one_person": true,
+            "one_phase": true
+          },
+          "material_rules": "Highlights never make tissue transparent; no glow, whole-body orange tint, hair, text, labels, arrows, UI, borders, collage or extra person.",
+          "framing": "Full figure and all required equipment/supports visible within a square. Scale and use a three-quarter view to expose the specified contacts without changing anatomy, equipment, grip or technique.",
+          "no_invention": "Technique, equipment and muscles come only from the attached exact catalogue record. No extra attachments, numerical weights, brands or exact angles absent from the source."
+        },
+        "style_document_sha256": "8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578",
+        "scene": {
+          "single_phase": "Small controlled neck-flexion nod",
+          "pose": "Supine body supported, shoulders relaxed; chin nods slightly toward chest in a small controlled range, no shoulder lift.",
+          "grip": "BOTH hands securely support a LIGHT plate centered on forehead without pressing it into head.",
+          "supports_and_equipment": "Back and head have a stable lying support; depict small supported range, no invented bench-edge overhang or extra weight.",
+          "camera": "Side three-quarter view showing forehead plate, both hand contacts and relaxed shoulders.",
+          "source_instruction_quotes": [
+            {
+              "index": 0,
+              "text": "Lie on your back with the head supported and place a light plate securely on the forehead with both hands."
+            },
+            {
+              "index": 1,
+              "text": "Tuck the chin slightly and keep the shoulders relaxed."
+            },
+            {
+              "index": 2,
+              "text": "Nod the chin toward the chest through a small controlled range."
+            },
+            {
+              "index": 3,
+              "text": "Lower the head slowly while keeping the plate stable."
+            }
+          ]
+        },
+        "supplementary_same_ID_sources": []
+      },
+      "generation_prompt": "Create exactly ONE square transparent PNG of the exact exercise below, using the referenced human for APPEARANCE ONLY. Render only the selected phase and camera. Identity/path/hash fields are metadata, never visible text.\n{\n  \"exact_catalogue_source\": {\n    \"equipment\": \"plate\",\n    \"primary_muscle\": \"neck\",\n    \"secondary_muscles\": [],\n    \"source_english\": {\n      \"common_mistakes\": [\n        \"Pressing the plate into the forehead.\",\n        \"Lifting the shoulders.\",\n        \"Using momentum or excessive range.\"\n      ],\n      \"description\": \"Weighted lying neck curls add a light plate to a small supported neck-flexion movement.\",\n      \"form_cues\": [\n        \"Use a very light plate.\",\n        \"Keep the plate centered and supported.\",\n        \"Move slowly from a neutral neck.\"\n      ],\n      \"instructions\": [\n        \"Lie on your back with the head supported and place a light plate securely on the forehead with both hands.\",\n        \"Tuck the chin slightly and keep the shoulders relaxed.\",\n        \"Nod the chin toward the chest through a small controlled range.\",\n        \"Lower the head slowly while keeping the plate stable.\"\n      ],\n      \"provenance\": \"authored\",\n      \"safety_note\": \"Only use a light, secure plate and stop at any neck discomfort or instability.\"\n    }\n  },\n  \"human_reference\": {\n    \"absolute_path\": \"/workspace/lightweight-exercises-photo/assets/exercises/biceps-curl-dumbbell.png\",\n    \"branch\": \"work\",\n    \"pixels_reviewed_during_preparation\": false,\n    \"repository_path\": \"assets/exercises/biceps-curl-dumbbell.png\",\n    \"role\": \"Human appearance/proportions/materials/anatomical style ONLY. Exercise pose, grip, equipment and muscles come from the exact-ID catalogue, never the reference.\",\n    \"sha256\": \"52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f\",\n    \"source_commit\": \"a6f296cbc6737991dd367e929b3e2df25874d4d8\"\n  },\n  \"identity_do_not_render_as_text\": {\n    \"exercise_id\": \"lying-neck-curls-weighted-plate\",\n    \"name\": \"Lying Neck Curls (Weighted)\",\n    \"source_catalog_record_sha256\": \"f1641ad42c5ff9a9f0f9c6861730da7cd46c666428dba9036a6585951fb662b2\",\n    \"source_catalog_sha256\": \"a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989\"\n  },\n  \"scene\": {\n    \"camera\": \"Side three-quarter view showing forehead plate, both hand contacts and relaxed shoulders.\",\n    \"grip\": \"BOTH hands securely support a LIGHT plate centered on forehead without pressing it into head.\",\n    \"pose\": \"Supine body supported, shoulders relaxed; chin nods slightly toward chest in a small controlled range, no shoulder lift.\",\n    \"single_phase\": \"Small controlled neck-flexion nod\",\n    \"source_instruction_quotes\": [\n      {\n        \"index\": 0,\n        \"text\": \"Lie on your back with the head supported and place a light plate securely on the forehead with both hands.\"\n      },\n      {\n        \"index\": 1,\n        \"text\": \"Tuck the chin slightly and keep the shoulders relaxed.\"\n      },\n      {\n        \"index\": 2,\n        \"text\": \"Nod the chin toward the chest through a small controlled range.\"\n      },\n      {\n        \"index\": 3,\n        \"text\": \"Lower the head slowly while keeping the plate stable.\"\n      }\n    ],\n    \"supports_and_equipment\": \"Back and head have a stable lying support; depict small supported range, no invented bench-edge overhang or extra weight.\"\n  },\n  \"style\": {\n    \"background\": \"Genuinely transparent PNG background, no white/checkerboard layer, no environment scene.\",\n    \"framing\": \"Full figure and all required equipment/supports visible within a square. Scale and use a three-quarter view to expose the specified contacts without changing anatomy, equipment, grip or technique.\",\n    \"human_model\": \"One athletic bald male anatomical mannequin, opaque silver-gray muscular surfaces, consistent proportions and detailed 3D materials, plain black shorts, barefoot.\",\n    \"material_rules\": \"Highlights never make tissue transparent; no glow, whole-body orange tint, hair, text, labels, arrows, UI, borders, collage or extra person.\",\n    \"no_invention\": \"Technique, equipment and muscles come only from the attached exact catalogue record. No extra attachments, numerical weights, brands or exact angles absent from the source.\",\n    \"output\": {\n      \"format\": \"PNG\",\n      \"height\": 1024,\n      \"one_person\": true,\n      \"one_phase\": true,\n      \"width\": 1024\n    },\n    \"primary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"rule\": \"Highlight only the exact primary muscle group provided for this exercise.\"\n    },\n    \"secondary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"intensity_fraction\": [\n        0.4,\n        0.5\n      ],\n      \"rule\": \"Only the exact secondary muscles, lighter same-hue highlight; if the list is empty add no secondary target.\"\n    },\n    \"version\": \"v1\"\n  },\n  \"style_document_sha256\": \"8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578\",\n  \"supplementary_same_ID_sources\": []\n}",
+      "generation_prompt_sha256": "980a68d5fb22cf859b170ddae70f06761348b98f76f198c37148f4bb7db78298",
+      "planned_png_path": "/workspace/exercise-image-results/agent-03-others-012/lying-neck-curls-weighted-plate/attempt-1.png",
+      "output_root": "/workspace/exercise-image-results",
+      "planned_output_relative_path": "agent-03-others-012/lying-neck-curls-weighted-plate/attempt-1.png",
+      "result_path": null,
+      "result_sha256": null,
+      "attempts": 0,
+      "user_review": null,
+      "technical_check": null,
+      "agent_visual_review": "not_performed",
+      "generation_authorized_now": false,
+      "clarification_resolution": null
+    },
+    {
+      "exercise_id": "meadows-rows-barbell",
+      "name": "Meadows Rows (Barbell)",
+      "source_english": {
+        "description": "A Meadows row uses the free end of an anchored barbell and a staggered stance to pull one arm toward the ribs.",
+        "instructions": [
+          "Anchor one end of the barbell and stand beside the free end in a staggered stance.",
+          "Hinge at the hips, brace the trunk, and grasp the sleeve with the nearer hand.",
+          "Pull the bar toward the lower ribs while keeping the hips and spine steady.",
+          "Lower the bar under control, complete the side, and switch arms."
+        ],
+        "form_cues": [
+          "Keep the bar close to the body.",
+          "Drive the elbow back.",
+          "Stay braced through the hinge."
+        ],
+        "common_mistakes": [
+          "Rotating the torso to lift.",
+          "Rounding the back.",
+          "Letting the bar swing."
+        ],
+        "safety_note": "Secure the landmine anchor and keep the free end clear of your feet and knees.",
+        "provenance": "authored"
+      },
+      "equipment": "barbell",
+      "primary_muscle": "upper_back",
+      "secondary_muscles": [
+        "lats",
+        "biceps",
+        "forearms"
+      ],
+      "source_catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+      "source_catalog_record_sha256": "5d43ececfbbe0469a480e6d9a238a8dcc7e5a5ea9843b02f79c35faa587f855e",
+      "source_english_sha256": "f9fc3c36f2898ab4240b982548764aeea299aacd23d54aa59c8e7cec50deb291",
+      "status": "ready",
+      "preparation_status": "prompt_prepared_not_generated",
+      "style_version": "v1",
+      "style_sha256": "8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578",
+      "human_reference": {
+        "repository_path": "assets/exercises/biceps-curl-dumbbell.png",
+        "absolute_path": "/workspace/lightweight-exercises-photo/assets/exercises/biceps-curl-dumbbell.png",
+        "sha256": "52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f",
+        "branch": "work",
+        "source_commit": "a6f296cbc6737991dd367e929b3e2df25874d4d8",
+        "role": "Human appearance/proportions/materials/anatomical style ONLY. Exercise pose, grip, equipment and muscles come from the exact-ID catalogue, never the reference.",
+        "pixels_reviewed_during_preparation": false
+      },
+      "scene": {
+        "single_phase": "One-arm sleeve row toward lower ribs",
+        "pose": "Stand BESIDE free end in staggered stance, neutral hip hinge; nearer working arm draws sleeve toward lower ribs without torso rotation.",
+        "grip": "Nearer hand firmly grasps the FREE barbell sleeve; no added handle.",
+        "supports_and_equipment": "Other end securely anchored in landmine base, feet staggered on floor, free end clear of knees/feet.",
+        "camera": "Side-rear three-quarter view exposing the nearer hand, staggered feet and full anchored bar.",
+        "source_instruction_quotes": [
+          {
+            "index": 0,
+            "text": "Anchor one end of the barbell and stand beside the free end in a staggered stance."
+          },
+          {
+            "index": 1,
+            "text": "Hinge at the hips, brace the trunk, and grasp the sleeve with the nearer hand."
+          },
+          {
+            "index": 2,
+            "text": "Pull the bar toward the lower ribs while keeping the hips and spine steady."
+          },
+          {
+            "index": 3,
+            "text": "Lower the bar under control, complete the side, and switch arms."
+          }
+        ]
+      },
+      "prompt_payload": {
+        "identity_do_not_render_as_text": {
+          "exercise_id": "meadows-rows-barbell",
+          "name": "Meadows Rows (Barbell)",
+          "source_catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+          "source_catalog_record_sha256": "5d43ececfbbe0469a480e6d9a238a8dcc7e5a5ea9843b02f79c35faa587f855e"
+        },
+        "exact_catalogue_source": {
+          "source_english": {
+            "description": "A Meadows row uses the free end of an anchored barbell and a staggered stance to pull one arm toward the ribs.",
+            "instructions": [
+              "Anchor one end of the barbell and stand beside the free end in a staggered stance.",
+              "Hinge at the hips, brace the trunk, and grasp the sleeve with the nearer hand.",
+              "Pull the bar toward the lower ribs while keeping the hips and spine steady.",
+              "Lower the bar under control, complete the side, and switch arms."
+            ],
+            "form_cues": [
+              "Keep the bar close to the body.",
+              "Drive the elbow back.",
+              "Stay braced through the hinge."
+            ],
+            "common_mistakes": [
+              "Rotating the torso to lift.",
+              "Rounding the back.",
+              "Letting the bar swing."
+            ],
+            "safety_note": "Secure the landmine anchor and keep the free end clear of your feet and knees.",
+            "provenance": "authored"
+          },
+          "equipment": "barbell",
+          "primary_muscle": "upper_back",
+          "secondary_muscles": [
+            "lats",
+            "biceps",
+            "forearms"
+          ]
+        },
+        "human_reference": {
+          "repository_path": "assets/exercises/biceps-curl-dumbbell.png",
+          "absolute_path": "/workspace/lightweight-exercises-photo/assets/exercises/biceps-curl-dumbbell.png",
+          "sha256": "52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f",
+          "branch": "work",
+          "source_commit": "a6f296cbc6737991dd367e929b3e2df25874d4d8",
+          "role": "Human appearance/proportions/materials/anatomical style ONLY. Exercise pose, grip, equipment and muscles come from the exact-ID catalogue, never the reference.",
+          "pixels_reviewed_during_preparation": false
+        },
+        "style": {
+          "version": "v1",
+          "human_model": "One athletic bald male anatomical mannequin, opaque silver-gray muscular surfaces, consistent proportions and detailed 3D materials, plain black shorts, barefoot.",
+          "primary_highlight": {
+            "hex": "#F26445",
+            "rule": "Highlight only the exact primary muscle group provided for this exercise."
+          },
+          "secondary_highlight": {
+            "hex": "#F26445",
+            "intensity_fraction": [
+              0.4,
+              0.5
+            ],
+            "rule": "Only the exact secondary muscles, lighter same-hue highlight; if the list is empty add no secondary target."
+          },
+          "background": "Genuinely transparent PNG background, no white/checkerboard layer, no environment scene.",
+          "output": {
+            "format": "PNG",
+            "width": 1024,
+            "height": 1024,
+            "one_person": true,
+            "one_phase": true
+          },
+          "material_rules": "Highlights never make tissue transparent; no glow, whole-body orange tint, hair, text, labels, arrows, UI, borders, collage or extra person.",
+          "framing": "Full figure and all required equipment/supports visible within a square. Scale and use a three-quarter view to expose the specified contacts without changing anatomy, equipment, grip or technique.",
+          "no_invention": "Technique, equipment and muscles come only from the attached exact catalogue record. No extra attachments, numerical weights, brands or exact angles absent from the source."
+        },
+        "style_document_sha256": "8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578",
+        "scene": {
+          "single_phase": "One-arm sleeve row toward lower ribs",
+          "pose": "Stand BESIDE free end in staggered stance, neutral hip hinge; nearer working arm draws sleeve toward lower ribs without torso rotation.",
+          "grip": "Nearer hand firmly grasps the FREE barbell sleeve; no added handle.",
+          "supports_and_equipment": "Other end securely anchored in landmine base, feet staggered on floor, free end clear of knees/feet.",
+          "camera": "Side-rear three-quarter view exposing the nearer hand, staggered feet and full anchored bar.",
+          "source_instruction_quotes": [
+            {
+              "index": 0,
+              "text": "Anchor one end of the barbell and stand beside the free end in a staggered stance."
+            },
+            {
+              "index": 1,
+              "text": "Hinge at the hips, brace the trunk, and grasp the sleeve with the nearer hand."
+            },
+            {
+              "index": 2,
+              "text": "Pull the bar toward the lower ribs while keeping the hips and spine steady."
+            },
+            {
+              "index": 3,
+              "text": "Lower the bar under control, complete the side, and switch arms."
+            }
+          ]
+        },
+        "supplementary_same_ID_sources": []
+      },
+      "generation_prompt": "Create exactly ONE square transparent PNG of the exact exercise below, using the referenced human for APPEARANCE ONLY. Render only the selected phase and camera. Identity/path/hash fields are metadata, never visible text.\n{\n  \"exact_catalogue_source\": {\n    \"equipment\": \"barbell\",\n    \"primary_muscle\": \"upper_back\",\n    \"secondary_muscles\": [\n      \"lats\",\n      \"biceps\",\n      \"forearms\"\n    ],\n    \"source_english\": {\n      \"common_mistakes\": [\n        \"Rotating the torso to lift.\",\n        \"Rounding the back.\",\n        \"Letting the bar swing.\"\n      ],\n      \"description\": \"A Meadows row uses the free end of an anchored barbell and a staggered stance to pull one arm toward the ribs.\",\n      \"form_cues\": [\n        \"Keep the bar close to the body.\",\n        \"Drive the elbow back.\",\n        \"Stay braced through the hinge.\"\n      ],\n      \"instructions\": [\n        \"Anchor one end of the barbell and stand beside the free end in a staggered stance.\",\n        \"Hinge at the hips, brace the trunk, and grasp the sleeve with the nearer hand.\",\n        \"Pull the bar toward the lower ribs while keeping the hips and spine steady.\",\n        \"Lower the bar under control, complete the side, and switch arms.\"\n      ],\n      \"provenance\": \"authored\",\n      \"safety_note\": \"Secure the landmine anchor and keep the free end clear of your feet and knees.\"\n    }\n  },\n  \"human_reference\": {\n    \"absolute_path\": \"/workspace/lightweight-exercises-photo/assets/exercises/biceps-curl-dumbbell.png\",\n    \"branch\": \"work\",\n    \"pixels_reviewed_during_preparation\": false,\n    \"repository_path\": \"assets/exercises/biceps-curl-dumbbell.png\",\n    \"role\": \"Human appearance/proportions/materials/anatomical style ONLY. Exercise pose, grip, equipment and muscles come from the exact-ID catalogue, never the reference.\",\n    \"sha256\": \"52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f\",\n    \"source_commit\": \"a6f296cbc6737991dd367e929b3e2df25874d4d8\"\n  },\n  \"identity_do_not_render_as_text\": {\n    \"exercise_id\": \"meadows-rows-barbell\",\n    \"name\": \"Meadows Rows (Barbell)\",\n    \"source_catalog_record_sha256\": \"5d43ececfbbe0469a480e6d9a238a8dcc7e5a5ea9843b02f79c35faa587f855e\",\n    \"source_catalog_sha256\": \"a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989\"\n  },\n  \"scene\": {\n    \"camera\": \"Side-rear three-quarter view exposing the nearer hand, staggered feet and full anchored bar.\",\n    \"grip\": \"Nearer hand firmly grasps the FREE barbell sleeve; no added handle.\",\n    \"pose\": \"Stand BESIDE free end in staggered stance, neutral hip hinge; nearer working arm draws sleeve toward lower ribs without torso rotation.\",\n    \"single_phase\": \"One-arm sleeve row toward lower ribs\",\n    \"source_instruction_quotes\": [\n      {\n        \"index\": 0,\n        \"text\": \"Anchor one end of the barbell and stand beside the free end in a staggered stance.\"\n      },\n      {\n        \"index\": 1,\n        \"text\": \"Hinge at the hips, brace the trunk, and grasp the sleeve with the nearer hand.\"\n      },\n      {\n        \"index\": 2,\n        \"text\": \"Pull the bar toward the lower ribs while keeping the hips and spine steady.\"\n      },\n      {\n        \"index\": 3,\n        \"text\": \"Lower the bar under control, complete the side, and switch arms.\"\n      }\n    ],\n    \"supports_and_equipment\": \"Other end securely anchored in landmine base, feet staggered on floor, free end clear of knees/feet.\"\n  },\n  \"style\": {\n    \"background\": \"Genuinely transparent PNG background, no white/checkerboard layer, no environment scene.\",\n    \"framing\": \"Full figure and all required equipment/supports visible within a square. Scale and use a three-quarter view to expose the specified contacts without changing anatomy, equipment, grip or technique.\",\n    \"human_model\": \"One athletic bald male anatomical mannequin, opaque silver-gray muscular surfaces, consistent proportions and detailed 3D materials, plain black shorts, barefoot.\",\n    \"material_rules\": \"Highlights never make tissue transparent; no glow, whole-body orange tint, hair, text, labels, arrows, UI, borders, collage or extra person.\",\n    \"no_invention\": \"Technique, equipment and muscles come only from the attached exact catalogue record. No extra attachments, numerical weights, brands or exact angles absent from the source.\",\n    \"output\": {\n      \"format\": \"PNG\",\n      \"height\": 1024,\n      \"one_person\": true,\n      \"one_phase\": true,\n      \"width\": 1024\n    },\n    \"primary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"rule\": \"Highlight only the exact primary muscle group provided for this exercise.\"\n    },\n    \"secondary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"intensity_fraction\": [\n        0.4,\n        0.5\n      ],\n      \"rule\": \"Only the exact secondary muscles, lighter same-hue highlight; if the list is empty add no secondary target.\"\n    },\n    \"version\": \"v1\"\n  },\n  \"style_document_sha256\": \"8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578\",\n  \"supplementary_same_ID_sources\": []\n}",
+      "generation_prompt_sha256": "e56ae6b284228e4d9b165d2aa1e0411264d55e05346ec99407054c83bf02b7f8",
+      "planned_png_path": "/workspace/exercise-image-results/agent-03-others-012/meadows-rows-barbell/attempt-1.png",
+      "output_root": "/workspace/exercise-image-results",
+      "planned_output_relative_path": "agent-03-others-012/meadows-rows-barbell/attempt-1.png",
+      "result_path": null,
+      "result_sha256": null,
+      "attempts": 0,
+      "user_review": null,
+      "technical_check": null,
+      "agent_visual_review": "not_performed",
+      "generation_authorized_now": false,
+      "clarification_resolution": null
+    },
+    {
+      "exercise_id": "overhead-plate-raise",
+      "name": "Overhead Plate Raise",
+      "source_english": {
+        "description": "An overhead plate raise lifts a weight plate from chest height to overhead with both hands while the ribs stay stacked.",
+        "instructions": [
+          "Stand with feet stable and hold the plate at chest height with both hands.",
+          "Brace the abdomen and keep the ribs stacked over the pelvis.",
+          "Raise the plate overhead without leaning back.",
+          "Lower it slowly to chest height and repeat."
+        ],
+        "form_cues": [
+          "Keep the elbows soft.",
+          "Move in a straight path.",
+          "Finish with the plate over the shoulders."
+        ],
+        "common_mistakes": [
+          "Using momentum.",
+          "Flaring the ribs.",
+          "Lowering behind the head."
+        ],
+        "safety_note": "Use a light plate and keep a firm two-handed grip throughout the raise.",
+        "provenance": "authored"
+      },
+      "equipment": "plate",
+      "primary_muscle": "shoulders",
+      "secondary_muscles": [
+        "traps"
+      ],
+      "source_catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+      "source_catalog_record_sha256": "354f3c2f572421dbb47a5504f8a1733426e11a1818966e821f6af20bf4d6c89a",
+      "source_english_sha256": "d1742961db22f458c91796d7c17535e3ac6558a6ce717baf494ceebf6040398a",
+      "status": "ready",
+      "preparation_status": "prompt_prepared_not_generated",
+      "style_version": "v1",
+      "style_sha256": "8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578",
+      "human_reference": {
+        "repository_path": "assets/exercises/biceps-curl-dumbbell.png",
+        "absolute_path": "/workspace/lightweight-exercises-photo/assets/exercises/biceps-curl-dumbbell.png",
+        "sha256": "52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f",
+        "branch": "work",
+        "source_commit": "a6f296cbc6737991dd367e929b3e2df25874d4d8",
+        "role": "Human appearance/proportions/materials/anatomical style ONLY. Exercise pose, grip, equipment and muscles come from the exact-ID catalogue, never the reference.",
+        "pixels_reviewed_during_preparation": false
+      },
+      "scene": {
+        "single_phase": "Plate above shoulders",
+        "pose": "Stand stable, ribs over pelvis and abdomen braced; plate raised overhead without backward lean, elbows soft.",
+        "grip": "Both hands securely grip the SAME light plate.",
+        "supports_and_equipment": "Both feet grounded; no bench, machine or lowering behind head.",
+        "camera": "Front-side three-quarter view including both hands, complete plate and full body.",
+        "source_instruction_quotes": [
+          {
+            "index": 0,
+            "text": "Stand with feet stable and hold the plate at chest height with both hands."
+          },
+          {
+            "index": 1,
+            "text": "Brace the abdomen and keep the ribs stacked over the pelvis."
+          },
+          {
+            "index": 2,
+            "text": "Raise the plate overhead without leaning back."
+          },
+          {
+            "index": 3,
+            "text": "Lower it slowly to chest height and repeat."
+          }
+        ]
+      },
+      "prompt_payload": {
+        "identity_do_not_render_as_text": {
+          "exercise_id": "overhead-plate-raise",
+          "name": "Overhead Plate Raise",
+          "source_catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+          "source_catalog_record_sha256": "354f3c2f572421dbb47a5504f8a1733426e11a1818966e821f6af20bf4d6c89a"
+        },
+        "exact_catalogue_source": {
+          "source_english": {
+            "description": "An overhead plate raise lifts a weight plate from chest height to overhead with both hands while the ribs stay stacked.",
+            "instructions": [
+              "Stand with feet stable and hold the plate at chest height with both hands.",
+              "Brace the abdomen and keep the ribs stacked over the pelvis.",
+              "Raise the plate overhead without leaning back.",
+              "Lower it slowly to chest height and repeat."
+            ],
+            "form_cues": [
+              "Keep the elbows soft.",
+              "Move in a straight path.",
+              "Finish with the plate over the shoulders."
+            ],
+            "common_mistakes": [
+              "Using momentum.",
+              "Flaring the ribs.",
+              "Lowering behind the head."
+            ],
+            "safety_note": "Use a light plate and keep a firm two-handed grip throughout the raise.",
+            "provenance": "authored"
+          },
+          "equipment": "plate",
+          "primary_muscle": "shoulders",
+          "secondary_muscles": [
+            "traps"
+          ]
+        },
+        "human_reference": {
+          "repository_path": "assets/exercises/biceps-curl-dumbbell.png",
+          "absolute_path": "/workspace/lightweight-exercises-photo/assets/exercises/biceps-curl-dumbbell.png",
+          "sha256": "52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f",
+          "branch": "work",
+          "source_commit": "a6f296cbc6737991dd367e929b3e2df25874d4d8",
+          "role": "Human appearance/proportions/materials/anatomical style ONLY. Exercise pose, grip, equipment and muscles come from the exact-ID catalogue, never the reference.",
+          "pixels_reviewed_during_preparation": false
+        },
+        "style": {
+          "version": "v1",
+          "human_model": "One athletic bald male anatomical mannequin, opaque silver-gray muscular surfaces, consistent proportions and detailed 3D materials, plain black shorts, barefoot.",
+          "primary_highlight": {
+            "hex": "#F26445",
+            "rule": "Highlight only the exact primary muscle group provided for this exercise."
+          },
+          "secondary_highlight": {
+            "hex": "#F26445",
+            "intensity_fraction": [
+              0.4,
+              0.5
+            ],
+            "rule": "Only the exact secondary muscles, lighter same-hue highlight; if the list is empty add no secondary target."
+          },
+          "background": "Genuinely transparent PNG background, no white/checkerboard layer, no environment scene.",
+          "output": {
+            "format": "PNG",
+            "width": 1024,
+            "height": 1024,
+            "one_person": true,
+            "one_phase": true
+          },
+          "material_rules": "Highlights never make tissue transparent; no glow, whole-body orange tint, hair, text, labels, arrows, UI, borders, collage or extra person.",
+          "framing": "Full figure and all required equipment/supports visible within a square. Scale and use a three-quarter view to expose the specified contacts without changing anatomy, equipment, grip or technique.",
+          "no_invention": "Technique, equipment and muscles come only from the attached exact catalogue record. No extra attachments, numerical weights, brands or exact angles absent from the source."
+        },
+        "style_document_sha256": "8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578",
+        "scene": {
+          "single_phase": "Plate above shoulders",
+          "pose": "Stand stable, ribs over pelvis and abdomen braced; plate raised overhead without backward lean, elbows soft.",
+          "grip": "Both hands securely grip the SAME light plate.",
+          "supports_and_equipment": "Both feet grounded; no bench, machine or lowering behind head.",
+          "camera": "Front-side three-quarter view including both hands, complete plate and full body.",
+          "source_instruction_quotes": [
+            {
+              "index": 0,
+              "text": "Stand with feet stable and hold the plate at chest height with both hands."
+            },
+            {
+              "index": 1,
+              "text": "Brace the abdomen and keep the ribs stacked over the pelvis."
+            },
+            {
+              "index": 2,
+              "text": "Raise the plate overhead without leaning back."
+            },
+            {
+              "index": 3,
+              "text": "Lower it slowly to chest height and repeat."
+            }
+          ]
+        },
+        "supplementary_same_ID_sources": []
+      },
+      "generation_prompt": "Create exactly ONE square transparent PNG of the exact exercise below, using the referenced human for APPEARANCE ONLY. Render only the selected phase and camera. Identity/path/hash fields are metadata, never visible text.\n{\n  \"exact_catalogue_source\": {\n    \"equipment\": \"plate\",\n    \"primary_muscle\": \"shoulders\",\n    \"secondary_muscles\": [\n      \"traps\"\n    ],\n    \"source_english\": {\n      \"common_mistakes\": [\n        \"Using momentum.\",\n        \"Flaring the ribs.\",\n        \"Lowering behind the head.\"\n      ],\n      \"description\": \"An overhead plate raise lifts a weight plate from chest height to overhead with both hands while the ribs stay stacked.\",\n      \"form_cues\": [\n        \"Keep the elbows soft.\",\n        \"Move in a straight path.\",\n        \"Finish with the plate over the shoulders.\"\n      ],\n      \"instructions\": [\n        \"Stand with feet stable and hold the plate at chest height with both hands.\",\n        \"Brace the abdomen and keep the ribs stacked over the pelvis.\",\n        \"Raise the plate overhead without leaning back.\",\n        \"Lower it slowly to chest height and repeat.\"\n      ],\n      \"provenance\": \"authored\",\n      \"safety_note\": \"Use a light plate and keep a firm two-handed grip throughout the raise.\"\n    }\n  },\n  \"human_reference\": {\n    \"absolute_path\": \"/workspace/lightweight-exercises-photo/assets/exercises/biceps-curl-dumbbell.png\",\n    \"branch\": \"work\",\n    \"pixels_reviewed_during_preparation\": false,\n    \"repository_path\": \"assets/exercises/biceps-curl-dumbbell.png\",\n    \"role\": \"Human appearance/proportions/materials/anatomical style ONLY. Exercise pose, grip, equipment and muscles come from the exact-ID catalogue, never the reference.\",\n    \"sha256\": \"52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f\",\n    \"source_commit\": \"a6f296cbc6737991dd367e929b3e2df25874d4d8\"\n  },\n  \"identity_do_not_render_as_text\": {\n    \"exercise_id\": \"overhead-plate-raise\",\n    \"name\": \"Overhead Plate Raise\",\n    \"source_catalog_record_sha256\": \"354f3c2f572421dbb47a5504f8a1733426e11a1818966e821f6af20bf4d6c89a\",\n    \"source_catalog_sha256\": \"a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989\"\n  },\n  \"scene\": {\n    \"camera\": \"Front-side three-quarter view including both hands, complete plate and full body.\",\n    \"grip\": \"Both hands securely grip the SAME light plate.\",\n    \"pose\": \"Stand stable, ribs over pelvis and abdomen braced; plate raised overhead without backward lean, elbows soft.\",\n    \"single_phase\": \"Plate above shoulders\",\n    \"source_instruction_quotes\": [\n      {\n        \"index\": 0,\n        \"text\": \"Stand with feet stable and hold the plate at chest height with both hands.\"\n      },\n      {\n        \"index\": 1,\n        \"text\": \"Brace the abdomen and keep the ribs stacked over the pelvis.\"\n      },\n      {\n        \"index\": 2,\n        \"text\": \"Raise the plate overhead without leaning back.\"\n      },\n      {\n        \"index\": 3,\n        \"text\": \"Lower it slowly to chest height and repeat.\"\n      }\n    ],\n    \"supports_and_equipment\": \"Both feet grounded; no bench, machine or lowering behind head.\"\n  },\n  \"style\": {\n    \"background\": \"Genuinely transparent PNG background, no white/checkerboard layer, no environment scene.\",\n    \"framing\": \"Full figure and all required equipment/supports visible within a square. Scale and use a three-quarter view to expose the specified contacts without changing anatomy, equipment, grip or technique.\",\n    \"human_model\": \"One athletic bald male anatomical mannequin, opaque silver-gray muscular surfaces, consistent proportions and detailed 3D materials, plain black shorts, barefoot.\",\n    \"material_rules\": \"Highlights never make tissue transparent; no glow, whole-body orange tint, hair, text, labels, arrows, UI, borders, collage or extra person.\",\n    \"no_invention\": \"Technique, equipment and muscles come only from the attached exact catalogue record. No extra attachments, numerical weights, brands or exact angles absent from the source.\",\n    \"output\": {\n      \"format\": \"PNG\",\n      \"height\": 1024,\n      \"one_person\": true,\n      \"one_phase\": true,\n      \"width\": 1024\n    },\n    \"primary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"rule\": \"Highlight only the exact primary muscle group provided for this exercise.\"\n    },\n    \"secondary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"intensity_fraction\": [\n        0.4,\n        0.5\n      ],\n      \"rule\": \"Only the exact secondary muscles, lighter same-hue highlight; if the list is empty add no secondary target.\"\n    },\n    \"version\": \"v1\"\n  },\n  \"style_document_sha256\": \"8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578\",\n  \"supplementary_same_ID_sources\": []\n}",
+      "generation_prompt_sha256": "7759f292c86d3a47b4f08cb94d02a2ea01fed75d6a06a172e4d276c8d8605620",
+      "planned_png_path": "/workspace/exercise-image-results/agent-03-others-012/overhead-plate-raise/attempt-1.png",
+      "output_root": "/workspace/exercise-image-results",
+      "planned_output_relative_path": "agent-03-others-012/overhead-plate-raise/attempt-1.png",
+      "result_path": null,
+      "result_sha256": null,
+      "attempts": 0,
+      "user_review": null,
+      "technical_check": null,
+      "agent_visual_review": "not_performed",
+      "generation_authorized_now": false,
+      "clarification_resolution": null
+    },
+    {
+      "exercise_id": "plate-curl",
+      "name": "Plate Curl",
+      "source_english": {
+        "description": "A plate curl flexes the elbows while both hands hold a weight plate by its edges in front of the body.",
+        "instructions": [
+          "Stand tall and hold the plate by its edges with both palms facing up.",
+          "Keep the elbows close to the ribs and brace the trunk.",
+          "Curl the plate toward the chest without leaning back.",
+          "Lower it slowly until the elbows are straight."
+        ],
+        "form_cues": [
+          "Keep the plate centered.",
+          "Move only at the elbows.",
+          "Use a smooth tempo."
+        ],
+        "common_mistakes": [
+          "Leaning backward.",
+          "Letting the elbows drift forward.",
+          "Dropping the plate."
+        ],
+        "safety_note": "Use a plate you can grip securely and keep both hands on it throughout.",
+        "provenance": "authored"
+      },
+      "equipment": "plate",
+      "primary_muscle": "biceps",
+      "secondary_muscles": [
+        "forearms"
+      ],
+      "source_catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+      "source_catalog_record_sha256": "100fea53605fd868a990ea5dbf830f3140f4064080fa04477ea47ed6325b2cf5",
+      "source_english_sha256": "2e2adedd9cd7eca837ebe8a72e7a340c0117138ca60c1b79bbc3d6b80ae09f3f",
+      "status": "ready",
+      "preparation_status": "prompt_prepared_not_generated",
+      "style_version": "v1",
+      "style_sha256": "8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578",
+      "human_reference": {
+        "repository_path": "assets/exercises/biceps-curl-dumbbell.png",
+        "absolute_path": "/workspace/lightweight-exercises-photo/assets/exercises/biceps-curl-dumbbell.png",
+        "sha256": "52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f",
+        "branch": "work",
+        "source_commit": "a6f296cbc6737991dd367e929b3e2df25874d4d8",
+        "role": "Human appearance/proportions/materials/anatomical style ONLY. Exercise pose, grip, equipment and muscles come from the exact-ID catalogue, never the reference.",
+        "pixels_reviewed_during_preparation": false
+      },
+      "scene": {
+        "single_phase": "Centered underhand plate curl",
+        "pose": "Stand tall with elbows close to ribs and upper arms still; plate curls toward chest without leaning back.",
+        "grip": "Both hands hold plate by EDGES with palms facing UP, exactly as source states.",
+        "supports_and_equipment": "Both feet grounded, single plate only; no barbell or palms-down substitution.",
+        "camera": "Front three-quarter view exposing both palms-up edge grips and elbow flexion.",
+        "source_instruction_quotes": [
+          {
+            "index": 0,
+            "text": "Stand tall and hold the plate by its edges with both palms facing up."
+          },
+          {
+            "index": 1,
+            "text": "Keep the elbows close to the ribs and brace the trunk."
+          },
+          {
+            "index": 2,
+            "text": "Curl the plate toward the chest without leaning back."
+          },
+          {
+            "index": 3,
+            "text": "Lower it slowly until the elbows are straight."
+          }
+        ]
+      },
+      "prompt_payload": {
+        "identity_do_not_render_as_text": {
+          "exercise_id": "plate-curl",
+          "name": "Plate Curl",
+          "source_catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+          "source_catalog_record_sha256": "100fea53605fd868a990ea5dbf830f3140f4064080fa04477ea47ed6325b2cf5"
+        },
+        "exact_catalogue_source": {
+          "source_english": {
+            "description": "A plate curl flexes the elbows while both hands hold a weight plate by its edges in front of the body.",
+            "instructions": [
+              "Stand tall and hold the plate by its edges with both palms facing up.",
+              "Keep the elbows close to the ribs and brace the trunk.",
+              "Curl the plate toward the chest without leaning back.",
+              "Lower it slowly until the elbows are straight."
+            ],
+            "form_cues": [
+              "Keep the plate centered.",
+              "Move only at the elbows.",
+              "Use a smooth tempo."
+            ],
+            "common_mistakes": [
+              "Leaning backward.",
+              "Letting the elbows drift forward.",
+              "Dropping the plate."
+            ],
+            "safety_note": "Use a plate you can grip securely and keep both hands on it throughout.",
+            "provenance": "authored"
+          },
+          "equipment": "plate",
+          "primary_muscle": "biceps",
+          "secondary_muscles": [
+            "forearms"
+          ]
+        },
+        "human_reference": {
+          "repository_path": "assets/exercises/biceps-curl-dumbbell.png",
+          "absolute_path": "/workspace/lightweight-exercises-photo/assets/exercises/biceps-curl-dumbbell.png",
+          "sha256": "52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f",
+          "branch": "work",
+          "source_commit": "a6f296cbc6737991dd367e929b3e2df25874d4d8",
+          "role": "Human appearance/proportions/materials/anatomical style ONLY. Exercise pose, grip, equipment and muscles come from the exact-ID catalogue, never the reference.",
+          "pixels_reviewed_during_preparation": false
+        },
+        "style": {
+          "version": "v1",
+          "human_model": "One athletic bald male anatomical mannequin, opaque silver-gray muscular surfaces, consistent proportions and detailed 3D materials, plain black shorts, barefoot.",
+          "primary_highlight": {
+            "hex": "#F26445",
+            "rule": "Highlight only the exact primary muscle group provided for this exercise."
+          },
+          "secondary_highlight": {
+            "hex": "#F26445",
+            "intensity_fraction": [
+              0.4,
+              0.5
+            ],
+            "rule": "Only the exact secondary muscles, lighter same-hue highlight; if the list is empty add no secondary target."
+          },
+          "background": "Genuinely transparent PNG background, no white/checkerboard layer, no environment scene.",
+          "output": {
+            "format": "PNG",
+            "width": 1024,
+            "height": 1024,
+            "one_person": true,
+            "one_phase": true
+          },
+          "material_rules": "Highlights never make tissue transparent; no glow, whole-body orange tint, hair, text, labels, arrows, UI, borders, collage or extra person.",
+          "framing": "Full figure and all required equipment/supports visible within a square. Scale and use a three-quarter view to expose the specified contacts without changing anatomy, equipment, grip or technique.",
+          "no_invention": "Technique, equipment and muscles come only from the attached exact catalogue record. No extra attachments, numerical weights, brands or exact angles absent from the source."
+        },
+        "style_document_sha256": "8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578",
+        "scene": {
+          "single_phase": "Centered underhand plate curl",
+          "pose": "Stand tall with elbows close to ribs and upper arms still; plate curls toward chest without leaning back.",
+          "grip": "Both hands hold plate by EDGES with palms facing UP, exactly as source states.",
+          "supports_and_equipment": "Both feet grounded, single plate only; no barbell or palms-down substitution.",
+          "camera": "Front three-quarter view exposing both palms-up edge grips and elbow flexion.",
+          "source_instruction_quotes": [
+            {
+              "index": 0,
+              "text": "Stand tall and hold the plate by its edges with both palms facing up."
+            },
+            {
+              "index": 1,
+              "text": "Keep the elbows close to the ribs and brace the trunk."
+            },
+            {
+              "index": 2,
+              "text": "Curl the plate toward the chest without leaning back."
+            },
+            {
+              "index": 3,
+              "text": "Lower it slowly until the elbows are straight."
+            }
+          ]
+        },
+        "supplementary_same_ID_sources": []
+      },
+      "generation_prompt": "Create exactly ONE square transparent PNG of the exact exercise below, using the referenced human for APPEARANCE ONLY. Render only the selected phase and camera. Identity/path/hash fields are metadata, never visible text.\n{\n  \"exact_catalogue_source\": {\n    \"equipment\": \"plate\",\n    \"primary_muscle\": \"biceps\",\n    \"secondary_muscles\": [\n      \"forearms\"\n    ],\n    \"source_english\": {\n      \"common_mistakes\": [\n        \"Leaning backward.\",\n        \"Letting the elbows drift forward.\",\n        \"Dropping the plate.\"\n      ],\n      \"description\": \"A plate curl flexes the elbows while both hands hold a weight plate by its edges in front of the body.\",\n      \"form_cues\": [\n        \"Keep the plate centered.\",\n        \"Move only at the elbows.\",\n        \"Use a smooth tempo.\"\n      ],\n      \"instructions\": [\n        \"Stand tall and hold the plate by its edges with both palms facing up.\",\n        \"Keep the elbows close to the ribs and brace the trunk.\",\n        \"Curl the plate toward the chest without leaning back.\",\n        \"Lower it slowly until the elbows are straight.\"\n      ],\n      \"provenance\": \"authored\",\n      \"safety_note\": \"Use a plate you can grip securely and keep both hands on it throughout.\"\n    }\n  },\n  \"human_reference\": {\n    \"absolute_path\": \"/workspace/lightweight-exercises-photo/assets/exercises/biceps-curl-dumbbell.png\",\n    \"branch\": \"work\",\n    \"pixels_reviewed_during_preparation\": false,\n    \"repository_path\": \"assets/exercises/biceps-curl-dumbbell.png\",\n    \"role\": \"Human appearance/proportions/materials/anatomical style ONLY. Exercise pose, grip, equipment and muscles come from the exact-ID catalogue, never the reference.\",\n    \"sha256\": \"52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f\",\n    \"source_commit\": \"a6f296cbc6737991dd367e929b3e2df25874d4d8\"\n  },\n  \"identity_do_not_render_as_text\": {\n    \"exercise_id\": \"plate-curl\",\n    \"name\": \"Plate Curl\",\n    \"source_catalog_record_sha256\": \"100fea53605fd868a990ea5dbf830f3140f4064080fa04477ea47ed6325b2cf5\",\n    \"source_catalog_sha256\": \"a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989\"\n  },\n  \"scene\": {\n    \"camera\": \"Front three-quarter view exposing both palms-up edge grips and elbow flexion.\",\n    \"grip\": \"Both hands hold plate by EDGES with palms facing UP, exactly as source states.\",\n    \"pose\": \"Stand tall with elbows close to ribs and upper arms still; plate curls toward chest without leaning back.\",\n    \"single_phase\": \"Centered underhand plate curl\",\n    \"source_instruction_quotes\": [\n      {\n        \"index\": 0,\n        \"text\": \"Stand tall and hold the plate by its edges with both palms facing up.\"\n      },\n      {\n        \"index\": 1,\n        \"text\": \"Keep the elbows close to the ribs and brace the trunk.\"\n      },\n      {\n        \"index\": 2,\n        \"text\": \"Curl the plate toward the chest without leaning back.\"\n      },\n      {\n        \"index\": 3,\n        \"text\": \"Lower it slowly until the elbows are straight.\"\n      }\n    ],\n    \"supports_and_equipment\": \"Both feet grounded, single plate only; no barbell or palms-down substitution.\"\n  },\n  \"style\": {\n    \"background\": \"Genuinely transparent PNG background, no white/checkerboard layer, no environment scene.\",\n    \"framing\": \"Full figure and all required equipment/supports visible within a square. Scale and use a three-quarter view to expose the specified contacts without changing anatomy, equipment, grip or technique.\",\n    \"human_model\": \"One athletic bald male anatomical mannequin, opaque silver-gray muscular surfaces, consistent proportions and detailed 3D materials, plain black shorts, barefoot.\",\n    \"material_rules\": \"Highlights never make tissue transparent; no glow, whole-body orange tint, hair, text, labels, arrows, UI, borders, collage or extra person.\",\n    \"no_invention\": \"Technique, equipment and muscles come only from the attached exact catalogue record. No extra attachments, numerical weights, brands or exact angles absent from the source.\",\n    \"output\": {\n      \"format\": \"PNG\",\n      \"height\": 1024,\n      \"one_person\": true,\n      \"one_phase\": true,\n      \"width\": 1024\n    },\n    \"primary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"rule\": \"Highlight only the exact primary muscle group provided for this exercise.\"\n    },\n    \"secondary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"intensity_fraction\": [\n        0.4,\n        0.5\n      ],\n      \"rule\": \"Only the exact secondary muscles, lighter same-hue highlight; if the list is empty add no secondary target.\"\n    },\n    \"version\": \"v1\"\n  },\n  \"style_document_sha256\": \"8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578\",\n  \"supplementary_same_ID_sources\": []\n}",
+      "generation_prompt_sha256": "e81b81cd9a8bd50f67b3f5b5b24e092dd3a7d6742985ca92bc55ab7f06636afd",
+      "planned_png_path": "/workspace/exercise-image-results/agent-03-others-012/plate-curl/attempt-1.png",
+      "output_root": "/workspace/exercise-image-results",
+      "planned_output_relative_path": "agent-03-others-012/plate-curl/attempt-1.png",
+      "result_path": null,
+      "result_sha256": null,
+      "attempts": 0,
+      "user_review": null,
+      "technical_check": null,
+      "agent_visual_review": "not_performed",
+      "generation_authorized_now": false,
+      "clarification_resolution": null
+    },
+    {
+      "exercise_id": "plate-front-raise",
+      "name": "Plate Front Raise",
+      "source_english": {
+        "description": "A plate front raise lifts a weight plate in front of the body to shoulder height with both hands.",
+        "instructions": [
+          "Stand with feet stable and hold the plate at thigh or waist height.",
+          "Brace the trunk and keep the elbows softly bent.",
+          "Raise the plate in front of you until it reaches shoulder height.",
+          "Pause briefly, then lower it under control."
+        ],
+        "form_cues": [
+          "Keep the shoulders down.",
+          "Move without swinging.",
+          "Stop at shoulder height."
+        ],
+        "common_mistakes": [
+          "Leaning back.",
+          "Shrugging the shoulders.",
+          "Using momentum to overshoot overhead."
+        ],
+        "safety_note": "Use a light plate and maintain a secure two-handed grip.",
+        "provenance": "authored"
+      },
+      "equipment": "plate",
+      "primary_muscle": "shoulders",
+      "secondary_muscles": [],
+      "source_catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+      "source_catalog_record_sha256": "62d3e6a87987c2f84bd29c49d902fbe7830ea5e8315c498695b81e34cd1b2fde",
+      "source_english_sha256": "bc5e91e96a151c55c7e53883fda00a233e628b26c44b2275a18579a54afadea0",
+      "status": "ready",
+      "preparation_status": "prompt_prepared_not_generated",
+      "style_version": "v1",
+      "style_sha256": "8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578",
+      "human_reference": {
+        "repository_path": "assets/exercises/biceps-curl-dumbbell.png",
+        "absolute_path": "/workspace/lightweight-exercises-photo/assets/exercises/biceps-curl-dumbbell.png",
+        "sha256": "52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f",
+        "branch": "work",
+        "source_commit": "a6f296cbc6737991dd367e929b3e2df25874d4d8",
+        "role": "Human appearance/proportions/materials/anatomical style ONLY. Exercise pose, grip, equipment and muscles come from the exact-ID catalogue, never the reference.",
+        "pixels_reviewed_during_preparation": false
+      },
+      "scene": {
+        "single_phase": "Plate at shoulder height in front",
+        "pose": "Stand stable, trunk braced, elbows softly bent; single plate held forward at shoulder height, shoulders down.",
+        "grip": "Secure two-handed grip on plate, no unsupported numerical hand spacing.",
+        "supports_and_equipment": "Both feet grounded; no overhead endpoint, machine or swing.",
+        "camera": "Front-side three-quarter view showing forward plate height, hands and full body.",
+        "source_instruction_quotes": [
+          {
+            "index": 0,
+            "text": "Stand with feet stable and hold the plate at thigh or waist height."
+          },
+          {
+            "index": 1,
+            "text": "Brace the trunk and keep the elbows softly bent."
+          },
+          {
+            "index": 2,
+            "text": "Raise the plate in front of you until it reaches shoulder height."
+          },
+          {
+            "index": 3,
+            "text": "Pause briefly, then lower it under control."
+          }
+        ]
+      },
+      "prompt_payload": {
+        "identity_do_not_render_as_text": {
+          "exercise_id": "plate-front-raise",
+          "name": "Plate Front Raise",
+          "source_catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+          "source_catalog_record_sha256": "62d3e6a87987c2f84bd29c49d902fbe7830ea5e8315c498695b81e34cd1b2fde"
+        },
+        "exact_catalogue_source": {
+          "source_english": {
+            "description": "A plate front raise lifts a weight plate in front of the body to shoulder height with both hands.",
+            "instructions": [
+              "Stand with feet stable and hold the plate at thigh or waist height.",
+              "Brace the trunk and keep the elbows softly bent.",
+              "Raise the plate in front of you until it reaches shoulder height.",
+              "Pause briefly, then lower it under control."
+            ],
+            "form_cues": [
+              "Keep the shoulders down.",
+              "Move without swinging.",
+              "Stop at shoulder height."
+            ],
+            "common_mistakes": [
+              "Leaning back.",
+              "Shrugging the shoulders.",
+              "Using momentum to overshoot overhead."
+            ],
+            "safety_note": "Use a light plate and maintain a secure two-handed grip.",
+            "provenance": "authored"
+          },
+          "equipment": "plate",
+          "primary_muscle": "shoulders",
+          "secondary_muscles": []
+        },
+        "human_reference": {
+          "repository_path": "assets/exercises/biceps-curl-dumbbell.png",
+          "absolute_path": "/workspace/lightweight-exercises-photo/assets/exercises/biceps-curl-dumbbell.png",
+          "sha256": "52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f",
+          "branch": "work",
+          "source_commit": "a6f296cbc6737991dd367e929b3e2df25874d4d8",
+          "role": "Human appearance/proportions/materials/anatomical style ONLY. Exercise pose, grip, equipment and muscles come from the exact-ID catalogue, never the reference.",
+          "pixels_reviewed_during_preparation": false
+        },
+        "style": {
+          "version": "v1",
+          "human_model": "One athletic bald male anatomical mannequin, opaque silver-gray muscular surfaces, consistent proportions and detailed 3D materials, plain black shorts, barefoot.",
+          "primary_highlight": {
+            "hex": "#F26445",
+            "rule": "Highlight only the exact primary muscle group provided for this exercise."
+          },
+          "secondary_highlight": {
+            "hex": "#F26445",
+            "intensity_fraction": [
+              0.4,
+              0.5
+            ],
+            "rule": "Only the exact secondary muscles, lighter same-hue highlight; if the list is empty add no secondary target."
+          },
+          "background": "Genuinely transparent PNG background, no white/checkerboard layer, no environment scene.",
+          "output": {
+            "format": "PNG",
+            "width": 1024,
+            "height": 1024,
+            "one_person": true,
+            "one_phase": true
+          },
+          "material_rules": "Highlights never make tissue transparent; no glow, whole-body orange tint, hair, text, labels, arrows, UI, borders, collage or extra person.",
+          "framing": "Full figure and all required equipment/supports visible within a square. Scale and use a three-quarter view to expose the specified contacts without changing anatomy, equipment, grip or technique.",
+          "no_invention": "Technique, equipment and muscles come only from the attached exact catalogue record. No extra attachments, numerical weights, brands or exact angles absent from the source."
+        },
+        "style_document_sha256": "8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578",
+        "scene": {
+          "single_phase": "Plate at shoulder height in front",
+          "pose": "Stand stable, trunk braced, elbows softly bent; single plate held forward at shoulder height, shoulders down.",
+          "grip": "Secure two-handed grip on plate, no unsupported numerical hand spacing.",
+          "supports_and_equipment": "Both feet grounded; no overhead endpoint, machine or swing.",
+          "camera": "Front-side three-quarter view showing forward plate height, hands and full body.",
+          "source_instruction_quotes": [
+            {
+              "index": 0,
+              "text": "Stand with feet stable and hold the plate at thigh or waist height."
+            },
+            {
+              "index": 1,
+              "text": "Brace the trunk and keep the elbows softly bent."
+            },
+            {
+              "index": 2,
+              "text": "Raise the plate in front of you until it reaches shoulder height."
+            },
+            {
+              "index": 3,
+              "text": "Pause briefly, then lower it under control."
+            }
+          ]
+        },
+        "supplementary_same_ID_sources": []
+      },
+      "generation_prompt": "Create exactly ONE square transparent PNG of the exact exercise below, using the referenced human for APPEARANCE ONLY. Render only the selected phase and camera. Identity/path/hash fields are metadata, never visible text.\n{\n  \"exact_catalogue_source\": {\n    \"equipment\": \"plate\",\n    \"primary_muscle\": \"shoulders\",\n    \"secondary_muscles\": [],\n    \"source_english\": {\n      \"common_mistakes\": [\n        \"Leaning back.\",\n        \"Shrugging the shoulders.\",\n        \"Using momentum to overshoot overhead.\"\n      ],\n      \"description\": \"A plate front raise lifts a weight plate in front of the body to shoulder height with both hands.\",\n      \"form_cues\": [\n        \"Keep the shoulders down.\",\n        \"Move without swinging.\",\n        \"Stop at shoulder height.\"\n      ],\n      \"instructions\": [\n        \"Stand with feet stable and hold the plate at thigh or waist height.\",\n        \"Brace the trunk and keep the elbows softly bent.\",\n        \"Raise the plate in front of you until it reaches shoulder height.\",\n        \"Pause briefly, then lower it under control.\"\n      ],\n      \"provenance\": \"authored\",\n      \"safety_note\": \"Use a light plate and maintain a secure two-handed grip.\"\n    }\n  },\n  \"human_reference\": {\n    \"absolute_path\": \"/workspace/lightweight-exercises-photo/assets/exercises/biceps-curl-dumbbell.png\",\n    \"branch\": \"work\",\n    \"pixels_reviewed_during_preparation\": false,\n    \"repository_path\": \"assets/exercises/biceps-curl-dumbbell.png\",\n    \"role\": \"Human appearance/proportions/materials/anatomical style ONLY. Exercise pose, grip, equipment and muscles come from the exact-ID catalogue, never the reference.\",\n    \"sha256\": \"52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f\",\n    \"source_commit\": \"a6f296cbc6737991dd367e929b3e2df25874d4d8\"\n  },\n  \"identity_do_not_render_as_text\": {\n    \"exercise_id\": \"plate-front-raise\",\n    \"name\": \"Plate Front Raise\",\n    \"source_catalog_record_sha256\": \"62d3e6a87987c2f84bd29c49d902fbe7830ea5e8315c498695b81e34cd1b2fde\",\n    \"source_catalog_sha256\": \"a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989\"\n  },\n  \"scene\": {\n    \"camera\": \"Front-side three-quarter view showing forward plate height, hands and full body.\",\n    \"grip\": \"Secure two-handed grip on plate, no unsupported numerical hand spacing.\",\n    \"pose\": \"Stand stable, trunk braced, elbows softly bent; single plate held forward at shoulder height, shoulders down.\",\n    \"single_phase\": \"Plate at shoulder height in front\",\n    \"source_instruction_quotes\": [\n      {\n        \"index\": 0,\n        \"text\": \"Stand with feet stable and hold the plate at thigh or waist height.\"\n      },\n      {\n        \"index\": 1,\n        \"text\": \"Brace the trunk and keep the elbows softly bent.\"\n      },\n      {\n        \"index\": 2,\n        \"text\": \"Raise the plate in front of you until it reaches shoulder height.\"\n      },\n      {\n        \"index\": 3,\n        \"text\": \"Pause briefly, then lower it under control.\"\n      }\n    ],\n    \"supports_and_equipment\": \"Both feet grounded; no overhead endpoint, machine or swing.\"\n  },\n  \"style\": {\n    \"background\": \"Genuinely transparent PNG background, no white/checkerboard layer, no environment scene.\",\n    \"framing\": \"Full figure and all required equipment/supports visible within a square. Scale and use a three-quarter view to expose the specified contacts without changing anatomy, equipment, grip or technique.\",\n    \"human_model\": \"One athletic bald male anatomical mannequin, opaque silver-gray muscular surfaces, consistent proportions and detailed 3D materials, plain black shorts, barefoot.\",\n    \"material_rules\": \"Highlights never make tissue transparent; no glow, whole-body orange tint, hair, text, labels, arrows, UI, borders, collage or extra person.\",\n    \"no_invention\": \"Technique, equipment and muscles come only from the attached exact catalogue record. No extra attachments, numerical weights, brands or exact angles absent from the source.\",\n    \"output\": {\n      \"format\": \"PNG\",\n      \"height\": 1024,\n      \"one_person\": true,\n      \"one_phase\": true,\n      \"width\": 1024\n    },\n    \"primary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"rule\": \"Highlight only the exact primary muscle group provided for this exercise.\"\n    },\n    \"secondary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"intensity_fraction\": [\n        0.4,\n        0.5\n      ],\n      \"rule\": \"Only the exact secondary muscles, lighter same-hue highlight; if the list is empty add no secondary target.\"\n    },\n    \"version\": \"v1\"\n  },\n  \"style_document_sha256\": \"8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578\",\n  \"supplementary_same_ID_sources\": []\n}",
+      "generation_prompt_sha256": "9e9e228a24cd0426cda982f4f770f137cb36df39a1878f8f3105922d6a1e067a",
+      "planned_png_path": "/workspace/exercise-image-results/agent-03-others-012/plate-front-raise/attempt-1.png",
+      "output_root": "/workspace/exercise-image-results",
+      "planned_output_relative_path": "agent-03-others-012/plate-front-raise/attempt-1.png",
+      "result_path": null,
+      "result_sha256": null,
+      "attempts": 0,
+      "user_review": null,
+      "technical_check": null,
+      "agent_visual_review": "not_performed",
+      "generation_authorized_now": false,
+      "clarification_resolution": null
+    },
+    {
+      "exercise_id": "plate-press",
+      "name": "Plate Press",
+      "source_english": {
+        "description": "A plate press squeezes a weight plate between the palms and presses it forward from the chest.",
+        "instructions": [
+          "Stand tall holding the plate between your palms at chest height.",
+          "Brace your trunk and squeeze the plate continuously.",
+          "Press it straight forward until the elbows are nearly extended.",
+          "Return the plate to the chest without relaxing the squeeze."
+        ],
+        "form_cues": [
+          "Keep the plate centered.",
+          "Keep ribs stacked over hips.",
+          "Maintain palm pressure."
+        ],
+        "common_mistakes": [
+          "Letting the plate drop.",
+          "Arching the back.",
+          "Turning it into an overhead press."
+        ],
+        "safety_note": "Use a light plate and keep a firm grip so it cannot slip toward the feet.",
+        "provenance": "authored"
+      },
+      "equipment": "plate",
+      "primary_muscle": "chest",
+      "secondary_muscles": [
+        "shoulders",
+        "triceps"
+      ],
+      "source_catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+      "source_catalog_record_sha256": "fc0bbd7f069a5fc82b80a6a17e3f2524253a48fbc5c4417a78b3b7626d7f71cd",
+      "source_english_sha256": "d982d6a2e0c3822bfc1f88d8957485eab7b12dd485a7686b5148bc08b65e5048",
+      "status": "ready",
+      "preparation_status": "prompt_prepared_not_generated",
+      "style_version": "v1",
+      "style_sha256": "8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578",
+      "human_reference": {
+        "repository_path": "assets/exercises/biceps-curl-dumbbell.png",
+        "absolute_path": "/workspace/lightweight-exercises-photo/assets/exercises/biceps-curl-dumbbell.png",
+        "sha256": "52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f",
+        "branch": "work",
+        "source_commit": "a6f296cbc6737991dd367e929b3e2df25874d4d8",
+        "role": "Human appearance/proportions/materials/anatomical style ONLY. Exercise pose, grip, equipment and muscles come from the exact-ID catalogue, never the reference.",
+        "pixels_reviewed_during_preparation": false
+      },
+      "scene": {
+        "single_phase": "Nearly extended horizontal squeeze press",
+        "pose": "Stand tall with ribs over hips; arms press single plate straight FORWARD from chest until elbows nearly extend.",
+        "grip": "Palms squeeze plate BETWEEN them continuously, maintaining palm pressure; no loose rim-only carry.",
+        "supports_and_equipment": "Both feet grounded; no bench, overhead press or second plate.",
+        "camera": "Front-side three-quarter view showing palm-pressure contacts and horizontal press path.",
+        "source_instruction_quotes": [
+          {
+            "index": 0,
+            "text": "Stand tall holding the plate between your palms at chest height."
+          },
+          {
+            "index": 1,
+            "text": "Brace your trunk and squeeze the plate continuously."
+          },
+          {
+            "index": 2,
+            "text": "Press it straight forward until the elbows are nearly extended."
+          },
+          {
+            "index": 3,
+            "text": "Return the plate to the chest without relaxing the squeeze."
+          }
+        ]
+      },
+      "prompt_payload": {
+        "identity_do_not_render_as_text": {
+          "exercise_id": "plate-press",
+          "name": "Plate Press",
+          "source_catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+          "source_catalog_record_sha256": "fc0bbd7f069a5fc82b80a6a17e3f2524253a48fbc5c4417a78b3b7626d7f71cd"
+        },
+        "exact_catalogue_source": {
+          "source_english": {
+            "description": "A plate press squeezes a weight plate between the palms and presses it forward from the chest.",
+            "instructions": [
+              "Stand tall holding the plate between your palms at chest height.",
+              "Brace your trunk and squeeze the plate continuously.",
+              "Press it straight forward until the elbows are nearly extended.",
+              "Return the plate to the chest without relaxing the squeeze."
+            ],
+            "form_cues": [
+              "Keep the plate centered.",
+              "Keep ribs stacked over hips.",
+              "Maintain palm pressure."
+            ],
+            "common_mistakes": [
+              "Letting the plate drop.",
+              "Arching the back.",
+              "Turning it into an overhead press."
+            ],
+            "safety_note": "Use a light plate and keep a firm grip so it cannot slip toward the feet.",
+            "provenance": "authored"
+          },
+          "equipment": "plate",
+          "primary_muscle": "chest",
+          "secondary_muscles": [
+            "shoulders",
+            "triceps"
+          ]
+        },
+        "human_reference": {
+          "repository_path": "assets/exercises/biceps-curl-dumbbell.png",
+          "absolute_path": "/workspace/lightweight-exercises-photo/assets/exercises/biceps-curl-dumbbell.png",
+          "sha256": "52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f",
+          "branch": "work",
+          "source_commit": "a6f296cbc6737991dd367e929b3e2df25874d4d8",
+          "role": "Human appearance/proportions/materials/anatomical style ONLY. Exercise pose, grip, equipment and muscles come from the exact-ID catalogue, never the reference.",
+          "pixels_reviewed_during_preparation": false
+        },
+        "style": {
+          "version": "v1",
+          "human_model": "One athletic bald male anatomical mannequin, opaque silver-gray muscular surfaces, consistent proportions and detailed 3D materials, plain black shorts, barefoot.",
+          "primary_highlight": {
+            "hex": "#F26445",
+            "rule": "Highlight only the exact primary muscle group provided for this exercise."
+          },
+          "secondary_highlight": {
+            "hex": "#F26445",
+            "intensity_fraction": [
+              0.4,
+              0.5
+            ],
+            "rule": "Only the exact secondary muscles, lighter same-hue highlight; if the list is empty add no secondary target."
+          },
+          "background": "Genuinely transparent PNG background, no white/checkerboard layer, no environment scene.",
+          "output": {
+            "format": "PNG",
+            "width": 1024,
+            "height": 1024,
+            "one_person": true,
+            "one_phase": true
+          },
+          "material_rules": "Highlights never make tissue transparent; no glow, whole-body orange tint, hair, text, labels, arrows, UI, borders, collage or extra person.",
+          "framing": "Full figure and all required equipment/supports visible within a square. Scale and use a three-quarter view to expose the specified contacts without changing anatomy, equipment, grip or technique.",
+          "no_invention": "Technique, equipment and muscles come only from the attached exact catalogue record. No extra attachments, numerical weights, brands or exact angles absent from the source."
+        },
+        "style_document_sha256": "8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578",
+        "scene": {
+          "single_phase": "Nearly extended horizontal squeeze press",
+          "pose": "Stand tall with ribs over hips; arms press single plate straight FORWARD from chest until elbows nearly extend.",
+          "grip": "Palms squeeze plate BETWEEN them continuously, maintaining palm pressure; no loose rim-only carry.",
+          "supports_and_equipment": "Both feet grounded; no bench, overhead press or second plate.",
+          "camera": "Front-side three-quarter view showing palm-pressure contacts and horizontal press path.",
+          "source_instruction_quotes": [
+            {
+              "index": 0,
+              "text": "Stand tall holding the plate between your palms at chest height."
+            },
+            {
+              "index": 1,
+              "text": "Brace your trunk and squeeze the plate continuously."
+            },
+            {
+              "index": 2,
+              "text": "Press it straight forward until the elbows are nearly extended."
+            },
+            {
+              "index": 3,
+              "text": "Return the plate to the chest without relaxing the squeeze."
+            }
+          ]
+        },
+        "supplementary_same_ID_sources": []
+      },
+      "generation_prompt": "Create exactly ONE square transparent PNG of the exact exercise below, using the referenced human for APPEARANCE ONLY. Render only the selected phase and camera. Identity/path/hash fields are metadata, never visible text.\n{\n  \"exact_catalogue_source\": {\n    \"equipment\": \"plate\",\n    \"primary_muscle\": \"chest\",\n    \"secondary_muscles\": [\n      \"shoulders\",\n      \"triceps\"\n    ],\n    \"source_english\": {\n      \"common_mistakes\": [\n        \"Letting the plate drop.\",\n        \"Arching the back.\",\n        \"Turning it into an overhead press.\"\n      ],\n      \"description\": \"A plate press squeezes a weight plate between the palms and presses it forward from the chest.\",\n      \"form_cues\": [\n        \"Keep the plate centered.\",\n        \"Keep ribs stacked over hips.\",\n        \"Maintain palm pressure.\"\n      ],\n      \"instructions\": [\n        \"Stand tall holding the plate between your palms at chest height.\",\n        \"Brace your trunk and squeeze the plate continuously.\",\n        \"Press it straight forward until the elbows are nearly extended.\",\n        \"Return the plate to the chest without relaxing the squeeze.\"\n      ],\n      \"provenance\": \"authored\",\n      \"safety_note\": \"Use a light plate and keep a firm grip so it cannot slip toward the feet.\"\n    }\n  },\n  \"human_reference\": {\n    \"absolute_path\": \"/workspace/lightweight-exercises-photo/assets/exercises/biceps-curl-dumbbell.png\",\n    \"branch\": \"work\",\n    \"pixels_reviewed_during_preparation\": false,\n    \"repository_path\": \"assets/exercises/biceps-curl-dumbbell.png\",\n    \"role\": \"Human appearance/proportions/materials/anatomical style ONLY. Exercise pose, grip, equipment and muscles come from the exact-ID catalogue, never the reference.\",\n    \"sha256\": \"52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f\",\n    \"source_commit\": \"a6f296cbc6737991dd367e929b3e2df25874d4d8\"\n  },\n  \"identity_do_not_render_as_text\": {\n    \"exercise_id\": \"plate-press\",\n    \"name\": \"Plate Press\",\n    \"source_catalog_record_sha256\": \"fc0bbd7f069a5fc82b80a6a17e3f2524253a48fbc5c4417a78b3b7626d7f71cd\",\n    \"source_catalog_sha256\": \"a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989\"\n  },\n  \"scene\": {\n    \"camera\": \"Front-side three-quarter view showing palm-pressure contacts and horizontal press path.\",\n    \"grip\": \"Palms squeeze plate BETWEEN them continuously, maintaining palm pressure; no loose rim-only carry.\",\n    \"pose\": \"Stand tall with ribs over hips; arms press single plate straight FORWARD from chest until elbows nearly extend.\",\n    \"single_phase\": \"Nearly extended horizontal squeeze press\",\n    \"source_instruction_quotes\": [\n      {\n        \"index\": 0,\n        \"text\": \"Stand tall holding the plate between your palms at chest height.\"\n      },\n      {\n        \"index\": 1,\n        \"text\": \"Brace your trunk and squeeze the plate continuously.\"\n      },\n      {\n        \"index\": 2,\n        \"text\": \"Press it straight forward until the elbows are nearly extended.\"\n      },\n      {\n        \"index\": 3,\n        \"text\": \"Return the plate to the chest without relaxing the squeeze.\"\n      }\n    ],\n    \"supports_and_equipment\": \"Both feet grounded; no bench, overhead press or second plate.\"\n  },\n  \"style\": {\n    \"background\": \"Genuinely transparent PNG background, no white/checkerboard layer, no environment scene.\",\n    \"framing\": \"Full figure and all required equipment/supports visible within a square. Scale and use a three-quarter view to expose the specified contacts without changing anatomy, equipment, grip or technique.\",\n    \"human_model\": \"One athletic bald male anatomical mannequin, opaque silver-gray muscular surfaces, consistent proportions and detailed 3D materials, plain black shorts, barefoot.\",\n    \"material_rules\": \"Highlights never make tissue transparent; no glow, whole-body orange tint, hair, text, labels, arrows, UI, borders, collage or extra person.\",\n    \"no_invention\": \"Technique, equipment and muscles come only from the attached exact catalogue record. No extra attachments, numerical weights, brands or exact angles absent from the source.\",\n    \"output\": {\n      \"format\": \"PNG\",\n      \"height\": 1024,\n      \"one_person\": true,\n      \"one_phase\": true,\n      \"width\": 1024\n    },\n    \"primary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"rule\": \"Highlight only the exact primary muscle group provided for this exercise.\"\n    },\n    \"secondary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"intensity_fraction\": [\n        0.4,\n        0.5\n      ],\n      \"rule\": \"Only the exact secondary muscles, lighter same-hue highlight; if the list is empty add no secondary target.\"\n    },\n    \"version\": \"v1\"\n  },\n  \"style_document_sha256\": \"8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578\",\n  \"supplementary_same_ID_sources\": []\n}",
+      "generation_prompt_sha256": "bb8b2e63ea873bdeda224c4213772c1a3b086e3cbe0fe8cbdb6bd0bad6e67155",
+      "planned_png_path": "/workspace/exercise-image-results/agent-03-others-012/plate-press/attempt-1.png",
+      "output_root": "/workspace/exercise-image-results",
+      "planned_output_relative_path": "agent-03-others-012/plate-press/attempt-1.png",
+      "result_path": null,
+      "result_sha256": null,
+      "attempts": 0,
+      "user_review": null,
+      "technical_check": null,
+      "agent_visual_review": "not_performed",
+      "generation_authorized_now": false,
+      "clarification_resolution": null
+    },
+    {
+      "exercise_id": "preacher-curl-barbell",
+      "name": "Preacher Curl (Barbell)",
+      "source_english": {
+        "description": "Preacher Curl (Barbell) supports the upper arms on a preacher pad while the weight curls toward the shoulders and lowers fully.",
+        "instructions": [
+          "Sit on a preacher bench with your upper arms resting on the pad and your chest against the support.",
+          "Grasp the barbell with an underhand grip, slightly wider than shoulder-width apart.",
+          "Keeping your upper arms stationary, exhale and curl the barbell up towards your shoulders.",
+          "Pause for a moment at the top, squeezing your biceps.",
+          "Inhale and slowly lower the barbell back down to the starting position.",
+          "Repeat for the desired number of repetitions."
+        ],
+        "form_cues": [
+          "Keep the upper arms still.",
+          "Use a steady squeeze at the top.",
+          "Lower through the full range."
+        ],
+        "common_mistakes": [
+          "Swinging the body.",
+          "Driving the elbows forward.",
+          "Dropping the weight."
+        ],
+        "safety_note": "Choose a load that keeps the wrists and elbows aligned without momentum.",
+        "provenance": "adapted"
+      },
+      "equipment": "barbell",
+      "primary_muscle": "biceps",
+      "secondary_muscles": [],
+      "source_catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+      "source_catalog_record_sha256": "e304489138f9d578481732de905cc88a18754a98b1eb263c7416c8a52d141d99",
+      "source_english_sha256": "d32dd5beb60b0cf14c4f6cba630c5ee2e5bc38b1cff23adb38a50df953b6aac9",
+      "status": "ready",
+      "preparation_status": "prompt_prepared_not_generated",
+      "style_version": "v1",
+      "style_sha256": "8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578",
+      "human_reference": {
+        "repository_path": "assets/exercises/biceps-curl-dumbbell.png",
+        "absolute_path": "/workspace/lightweight-exercises-photo/assets/exercises/biceps-curl-dumbbell.png",
+        "sha256": "52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f",
+        "branch": "work",
+        "source_commit": "a6f296cbc6737991dd367e929b3e2df25874d4d8",
+        "role": "Human appearance/proportions/materials/anatomical style ONLY. Exercise pose, grip, equipment and muscles come from the exact-ID catalogue, never the reference.",
+        "pixels_reviewed_during_preparation": false
+      },
+      "scene": {
+        "single_phase": "Supported bar curl toward shoulders",
+        "pose": "Sit on preacher bench, chest against support and upper arms resting on pad; elbows curl bar while upper arms remain still.",
+        "grip": "Underhand grip on free barbell, slightly wider than shoulder width.",
+        "supports_and_equipment": "Seat, chest support and upper-arm pad of static preacher bench; no cable, stack or curl machine.",
+        "camera": "Front-side three-quarter view showing pad contacts, underhand grip and whole bench.",
+        "source_instruction_quotes": [
+          {
+            "index": 0,
+            "text": "Sit on a preacher bench with your upper arms resting on the pad and your chest against the support."
+          },
+          {
+            "index": 1,
+            "text": "Grasp the barbell with an underhand grip, slightly wider than shoulder-width apart."
+          },
+          {
+            "index": 2,
+            "text": "Keeping your upper arms stationary, exhale and curl the barbell up towards your shoulders."
+          },
+          {
+            "index": 3,
+            "text": "Pause for a moment at the top, squeezing your biceps."
+          },
+          {
+            "index": 4,
+            "text": "Inhale and slowly lower the barbell back down to the starting position."
+          },
+          {
+            "index": 5,
+            "text": "Repeat for the desired number of repetitions."
+          }
+        ]
+      },
+      "prompt_payload": {
+        "identity_do_not_render_as_text": {
+          "exercise_id": "preacher-curl-barbell",
+          "name": "Preacher Curl (Barbell)",
+          "source_catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+          "source_catalog_record_sha256": "e304489138f9d578481732de905cc88a18754a98b1eb263c7416c8a52d141d99"
+        },
+        "exact_catalogue_source": {
+          "source_english": {
+            "description": "Preacher Curl (Barbell) supports the upper arms on a preacher pad while the weight curls toward the shoulders and lowers fully.",
+            "instructions": [
+              "Sit on a preacher bench with your upper arms resting on the pad and your chest against the support.",
+              "Grasp the barbell with an underhand grip, slightly wider than shoulder-width apart.",
+              "Keeping your upper arms stationary, exhale and curl the barbell up towards your shoulders.",
+              "Pause for a moment at the top, squeezing your biceps.",
+              "Inhale and slowly lower the barbell back down to the starting position.",
+              "Repeat for the desired number of repetitions."
+            ],
+            "form_cues": [
+              "Keep the upper arms still.",
+              "Use a steady squeeze at the top.",
+              "Lower through the full range."
+            ],
+            "common_mistakes": [
+              "Swinging the body.",
+              "Driving the elbows forward.",
+              "Dropping the weight."
+            ],
+            "safety_note": "Choose a load that keeps the wrists and elbows aligned without momentum.",
+            "provenance": "adapted"
+          },
+          "equipment": "barbell",
+          "primary_muscle": "biceps",
+          "secondary_muscles": []
+        },
+        "human_reference": {
+          "repository_path": "assets/exercises/biceps-curl-dumbbell.png",
+          "absolute_path": "/workspace/lightweight-exercises-photo/assets/exercises/biceps-curl-dumbbell.png",
+          "sha256": "52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f",
+          "branch": "work",
+          "source_commit": "a6f296cbc6737991dd367e929b3e2df25874d4d8",
+          "role": "Human appearance/proportions/materials/anatomical style ONLY. Exercise pose, grip, equipment and muscles come from the exact-ID catalogue, never the reference.",
+          "pixels_reviewed_during_preparation": false
+        },
+        "style": {
+          "version": "v1",
+          "human_model": "One athletic bald male anatomical mannequin, opaque silver-gray muscular surfaces, consistent proportions and detailed 3D materials, plain black shorts, barefoot.",
+          "primary_highlight": {
+            "hex": "#F26445",
+            "rule": "Highlight only the exact primary muscle group provided for this exercise."
+          },
+          "secondary_highlight": {
+            "hex": "#F26445",
+            "intensity_fraction": [
+              0.4,
+              0.5
+            ],
+            "rule": "Only the exact secondary muscles, lighter same-hue highlight; if the list is empty add no secondary target."
+          },
+          "background": "Genuinely transparent PNG background, no white/checkerboard layer, no environment scene.",
+          "output": {
+            "format": "PNG",
+            "width": 1024,
+            "height": 1024,
+            "one_person": true,
+            "one_phase": true
+          },
+          "material_rules": "Highlights never make tissue transparent; no glow, whole-body orange tint, hair, text, labels, arrows, UI, borders, collage or extra person.",
+          "framing": "Full figure and all required equipment/supports visible within a square. Scale and use a three-quarter view to expose the specified contacts without changing anatomy, equipment, grip or technique.",
+          "no_invention": "Technique, equipment and muscles come only from the attached exact catalogue record. No extra attachments, numerical weights, brands or exact angles absent from the source."
+        },
+        "style_document_sha256": "8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578",
+        "scene": {
+          "single_phase": "Supported bar curl toward shoulders",
+          "pose": "Sit on preacher bench, chest against support and upper arms resting on pad; elbows curl bar while upper arms remain still.",
+          "grip": "Underhand grip on free barbell, slightly wider than shoulder width.",
+          "supports_and_equipment": "Seat, chest support and upper-arm pad of static preacher bench; no cable, stack or curl machine.",
+          "camera": "Front-side three-quarter view showing pad contacts, underhand grip and whole bench.",
+          "source_instruction_quotes": [
+            {
+              "index": 0,
+              "text": "Sit on a preacher bench with your upper arms resting on the pad and your chest against the support."
+            },
+            {
+              "index": 1,
+              "text": "Grasp the barbell with an underhand grip, slightly wider than shoulder-width apart."
+            },
+            {
+              "index": 2,
+              "text": "Keeping your upper arms stationary, exhale and curl the barbell up towards your shoulders."
+            },
+            {
+              "index": 3,
+              "text": "Pause for a moment at the top, squeezing your biceps."
+            },
+            {
+              "index": 4,
+              "text": "Inhale and slowly lower the barbell back down to the starting position."
+            },
+            {
+              "index": 5,
+              "text": "Repeat for the desired number of repetitions."
+            }
+          ]
+        },
+        "supplementary_same_ID_sources": []
+      },
+      "generation_prompt": "Create exactly ONE square transparent PNG of the exact exercise below, using the referenced human for APPEARANCE ONLY. Render only the selected phase and camera. Identity/path/hash fields are metadata, never visible text.\n{\n  \"exact_catalogue_source\": {\n    \"equipment\": \"barbell\",\n    \"primary_muscle\": \"biceps\",\n    \"secondary_muscles\": [],\n    \"source_english\": {\n      \"common_mistakes\": [\n        \"Swinging the body.\",\n        \"Driving the elbows forward.\",\n        \"Dropping the weight.\"\n      ],\n      \"description\": \"Preacher Curl (Barbell) supports the upper arms on a preacher pad while the weight curls toward the shoulders and lowers fully.\",\n      \"form_cues\": [\n        \"Keep the upper arms still.\",\n        \"Use a steady squeeze at the top.\",\n        \"Lower through the full range.\"\n      ],\n      \"instructions\": [\n        \"Sit on a preacher bench with your upper arms resting on the pad and your chest against the support.\",\n        \"Grasp the barbell with an underhand grip, slightly wider than shoulder-width apart.\",\n        \"Keeping your upper arms stationary, exhale and curl the barbell up towards your shoulders.\",\n        \"Pause for a moment at the top, squeezing your biceps.\",\n        \"Inhale and slowly lower the barbell back down to the starting position.\",\n        \"Repeat for the desired number of repetitions.\"\n      ],\n      \"provenance\": \"adapted\",\n      \"safety_note\": \"Choose a load that keeps the wrists and elbows aligned without momentum.\"\n    }\n  },\n  \"human_reference\": {\n    \"absolute_path\": \"/workspace/lightweight-exercises-photo/assets/exercises/biceps-curl-dumbbell.png\",\n    \"branch\": \"work\",\n    \"pixels_reviewed_during_preparation\": false,\n    \"repository_path\": \"assets/exercises/biceps-curl-dumbbell.png\",\n    \"role\": \"Human appearance/proportions/materials/anatomical style ONLY. Exercise pose, grip, equipment and muscles come from the exact-ID catalogue, never the reference.\",\n    \"sha256\": \"52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f\",\n    \"source_commit\": \"a6f296cbc6737991dd367e929b3e2df25874d4d8\"\n  },\n  \"identity_do_not_render_as_text\": {\n    \"exercise_id\": \"preacher-curl-barbell\",\n    \"name\": \"Preacher Curl (Barbell)\",\n    \"source_catalog_record_sha256\": \"e304489138f9d578481732de905cc88a18754a98b1eb263c7416c8a52d141d99\",\n    \"source_catalog_sha256\": \"a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989\"\n  },\n  \"scene\": {\n    \"camera\": \"Front-side three-quarter view showing pad contacts, underhand grip and whole bench.\",\n    \"grip\": \"Underhand grip on free barbell, slightly wider than shoulder width.\",\n    \"pose\": \"Sit on preacher bench, chest against support and upper arms resting on pad; elbows curl bar while upper arms remain still.\",\n    \"single_phase\": \"Supported bar curl toward shoulders\",\n    \"source_instruction_quotes\": [\n      {\n        \"index\": 0,\n        \"text\": \"Sit on a preacher bench with your upper arms resting on the pad and your chest against the support.\"\n      },\n      {\n        \"index\": 1,\n        \"text\": \"Grasp the barbell with an underhand grip, slightly wider than shoulder-width apart.\"\n      },\n      {\n        \"index\": 2,\n        \"text\": \"Keeping your upper arms stationary, exhale and curl the barbell up towards your shoulders.\"\n      },\n      {\n        \"index\": 3,\n        \"text\": \"Pause for a moment at the top, squeezing your biceps.\"\n      },\n      {\n        \"index\": 4,\n        \"text\": \"Inhale and slowly lower the barbell back down to the starting position.\"\n      },\n      {\n        \"index\": 5,\n        \"text\": \"Repeat for the desired number of repetitions.\"\n      }\n    ],\n    \"supports_and_equipment\": \"Seat, chest support and upper-arm pad of static preacher bench; no cable, stack or curl machine.\"\n  },\n  \"style\": {\n    \"background\": \"Genuinely transparent PNG background, no white/checkerboard layer, no environment scene.\",\n    \"framing\": \"Full figure and all required equipment/supports visible within a square. Scale and use a three-quarter view to expose the specified contacts without changing anatomy, equipment, grip or technique.\",\n    \"human_model\": \"One athletic bald male anatomical mannequin, opaque silver-gray muscular surfaces, consistent proportions and detailed 3D materials, plain black shorts, barefoot.\",\n    \"material_rules\": \"Highlights never make tissue transparent; no glow, whole-body orange tint, hair, text, labels, arrows, UI, borders, collage or extra person.\",\n    \"no_invention\": \"Technique, equipment and muscles come only from the attached exact catalogue record. No extra attachments, numerical weights, brands or exact angles absent from the source.\",\n    \"output\": {\n      \"format\": \"PNG\",\n      \"height\": 1024,\n      \"one_person\": true,\n      \"one_phase\": true,\n      \"width\": 1024\n    },\n    \"primary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"rule\": \"Highlight only the exact primary muscle group provided for this exercise.\"\n    },\n    \"secondary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"intensity_fraction\": [\n        0.4,\n        0.5\n      ],\n      \"rule\": \"Only the exact secondary muscles, lighter same-hue highlight; if the list is empty add no secondary target.\"\n    },\n    \"version\": \"v1\"\n  },\n  \"style_document_sha256\": \"8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578\",\n  \"supplementary_same_ID_sources\": []\n}",
+      "generation_prompt_sha256": "ac958fd40f9bb9e2dc455fc1df23772f153fbf5f7d09a6d555a305295c03ba7a",
+      "planned_png_path": "/workspace/exercise-image-results/agent-03-others-012/preacher-curl-barbell/attempt-1.png",
+      "output_root": "/workspace/exercise-image-results",
+      "planned_output_relative_path": "agent-03-others-012/preacher-curl-barbell/attempt-1.png",
+      "result_path": null,
+      "result_sha256": null,
+      "attempts": 0,
+      "user_review": null,
+      "technical_check": null,
+      "agent_visual_review": "not_performed",
+      "generation_authorized_now": false,
+      "clarification_resolution": null
+    },
+    {
+      "exercise_id": "preacher-curl-dumbbell",
+      "name": "Preacher Curl (Dumbbell)",
+      "source_english": {
+        "description": "Preacher Curl (Dumbbell) supports the upper arms on a preacher pad while the weight curls toward the shoulders and lowers fully.",
+        "instructions": [
+          "Sit at the preacher bench with the upper arms supported and hold the dumbbells palms up.",
+          "Curl both dumbbells toward the shoulders without lifting the elbows.",
+          "Pause briefly at the top contraction.",
+          "Lower until the elbows are comfortably extended, then repeat."
+        ],
+        "form_cues": [
+          "Keep the upper arms still.",
+          "Use a steady squeeze at the top.",
+          "Lower through the full range."
+        ],
+        "common_mistakes": [
+          "Swinging the body.",
+          "Driving the elbows forward.",
+          "Dropping the weight."
+        ],
+        "safety_note": "Choose a load that keeps the wrists and elbows aligned without momentum.",
+        "provenance": "adapted"
+      },
+      "equipment": "dumbbell",
+      "primary_muscle": "biceps",
+      "secondary_muscles": [],
+      "source_catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+      "source_catalog_record_sha256": "a0a12d494cd747b16f5ef8071d4f783576b6bd886a24209d3da0078f30d523bd",
+      "source_english_sha256": "e279b76911edd71bed1ffee9a2df6e3a2856da52cf62a470001a7214008872b3",
+      "status": "ready",
+      "preparation_status": "prompt_prepared_not_generated",
+      "style_version": "v1",
+      "style_sha256": "8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578",
+      "human_reference": {
+        "repository_path": "assets/exercises/biceps-curl-dumbbell.png",
+        "absolute_path": "/workspace/lightweight-exercises-photo/assets/exercises/biceps-curl-dumbbell.png",
+        "sha256": "52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f",
+        "branch": "work",
+        "source_commit": "a6f296cbc6737991dd367e929b3e2df25874d4d8",
+        "role": "Human appearance/proportions/materials/anatomical style ONLY. Exercise pose, grip, equipment and muscles come from the exact-ID catalogue, never the reference.",
+        "pixels_reviewed_during_preparation": false
+      },
+      "scene": {
+        "single_phase": "Two supported dumbbell curls at contraction",
+        "pose": "Sit at preacher bench with upper arms supported; both elbows curl weights toward shoulders without lifting elbows.",
+        "grip": "One dumbbell per hand, palms UP.",
+        "supports_and_equipment": "Static preacher bench and upper-arm pad, no guided resistance or machine stack.",
+        "camera": "Front three-quarter view showing both weights and supported upper arms.",
+        "source_instruction_quotes": [
+          {
+            "index": 0,
+            "text": "Sit at the preacher bench with the upper arms supported and hold the dumbbells palms up."
+          },
+          {
+            "index": 1,
+            "text": "Curl both dumbbells toward the shoulders without lifting the elbows."
+          },
+          {
+            "index": 2,
+            "text": "Pause briefly at the top contraction."
+          },
+          {
+            "index": 3,
+            "text": "Lower until the elbows are comfortably extended, then repeat."
+          }
+        ]
+      },
+      "prompt_payload": {
+        "identity_do_not_render_as_text": {
+          "exercise_id": "preacher-curl-dumbbell",
+          "name": "Preacher Curl (Dumbbell)",
+          "source_catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+          "source_catalog_record_sha256": "a0a12d494cd747b16f5ef8071d4f783576b6bd886a24209d3da0078f30d523bd"
+        },
+        "exact_catalogue_source": {
+          "source_english": {
+            "description": "Preacher Curl (Dumbbell) supports the upper arms on a preacher pad while the weight curls toward the shoulders and lowers fully.",
+            "instructions": [
+              "Sit at the preacher bench with the upper arms supported and hold the dumbbells palms up.",
+              "Curl both dumbbells toward the shoulders without lifting the elbows.",
+              "Pause briefly at the top contraction.",
+              "Lower until the elbows are comfortably extended, then repeat."
+            ],
+            "form_cues": [
+              "Keep the upper arms still.",
+              "Use a steady squeeze at the top.",
+              "Lower through the full range."
+            ],
+            "common_mistakes": [
+              "Swinging the body.",
+              "Driving the elbows forward.",
+              "Dropping the weight."
+            ],
+            "safety_note": "Choose a load that keeps the wrists and elbows aligned without momentum.",
+            "provenance": "adapted"
+          },
+          "equipment": "dumbbell",
+          "primary_muscle": "biceps",
+          "secondary_muscles": []
+        },
+        "human_reference": {
+          "repository_path": "assets/exercises/biceps-curl-dumbbell.png",
+          "absolute_path": "/workspace/lightweight-exercises-photo/assets/exercises/biceps-curl-dumbbell.png",
+          "sha256": "52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f",
+          "branch": "work",
+          "source_commit": "a6f296cbc6737991dd367e929b3e2df25874d4d8",
+          "role": "Human appearance/proportions/materials/anatomical style ONLY. Exercise pose, grip, equipment and muscles come from the exact-ID catalogue, never the reference.",
+          "pixels_reviewed_during_preparation": false
+        },
+        "style": {
+          "version": "v1",
+          "human_model": "One athletic bald male anatomical mannequin, opaque silver-gray muscular surfaces, consistent proportions and detailed 3D materials, plain black shorts, barefoot.",
+          "primary_highlight": {
+            "hex": "#F26445",
+            "rule": "Highlight only the exact primary muscle group provided for this exercise."
+          },
+          "secondary_highlight": {
+            "hex": "#F26445",
+            "intensity_fraction": [
+              0.4,
+              0.5
+            ],
+            "rule": "Only the exact secondary muscles, lighter same-hue highlight; if the list is empty add no secondary target."
+          },
+          "background": "Genuinely transparent PNG background, no white/checkerboard layer, no environment scene.",
+          "output": {
+            "format": "PNG",
+            "width": 1024,
+            "height": 1024,
+            "one_person": true,
+            "one_phase": true
+          },
+          "material_rules": "Highlights never make tissue transparent; no glow, whole-body orange tint, hair, text, labels, arrows, UI, borders, collage or extra person.",
+          "framing": "Full figure and all required equipment/supports visible within a square. Scale and use a three-quarter view to expose the specified contacts without changing anatomy, equipment, grip or technique.",
+          "no_invention": "Technique, equipment and muscles come only from the attached exact catalogue record. No extra attachments, numerical weights, brands or exact angles absent from the source."
+        },
+        "style_document_sha256": "8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578",
+        "scene": {
+          "single_phase": "Two supported dumbbell curls at contraction",
+          "pose": "Sit at preacher bench with upper arms supported; both elbows curl weights toward shoulders without lifting elbows.",
+          "grip": "One dumbbell per hand, palms UP.",
+          "supports_and_equipment": "Static preacher bench and upper-arm pad, no guided resistance or machine stack.",
+          "camera": "Front three-quarter view showing both weights and supported upper arms.",
+          "source_instruction_quotes": [
+            {
+              "index": 0,
+              "text": "Sit at the preacher bench with the upper arms supported and hold the dumbbells palms up."
+            },
+            {
+              "index": 1,
+              "text": "Curl both dumbbells toward the shoulders without lifting the elbows."
+            },
+            {
+              "index": 2,
+              "text": "Pause briefly at the top contraction."
+            },
+            {
+              "index": 3,
+              "text": "Lower until the elbows are comfortably extended, then repeat."
+            }
+          ]
+        },
+        "supplementary_same_ID_sources": []
+      },
+      "generation_prompt": "Create exactly ONE square transparent PNG of the exact exercise below, using the referenced human for APPEARANCE ONLY. Render only the selected phase and camera. Identity/path/hash fields are metadata, never visible text.\n{\n  \"exact_catalogue_source\": {\n    \"equipment\": \"dumbbell\",\n    \"primary_muscle\": \"biceps\",\n    \"secondary_muscles\": [],\n    \"source_english\": {\n      \"common_mistakes\": [\n        \"Swinging the body.\",\n        \"Driving the elbows forward.\",\n        \"Dropping the weight.\"\n      ],\n      \"description\": \"Preacher Curl (Dumbbell) supports the upper arms on a preacher pad while the weight curls toward the shoulders and lowers fully.\",\n      \"form_cues\": [\n        \"Keep the upper arms still.\",\n        \"Use a steady squeeze at the top.\",\n        \"Lower through the full range.\"\n      ],\n      \"instructions\": [\n        \"Sit at the preacher bench with the upper arms supported and hold the dumbbells palms up.\",\n        \"Curl both dumbbells toward the shoulders without lifting the elbows.\",\n        \"Pause briefly at the top contraction.\",\n        \"Lower until the elbows are comfortably extended, then repeat.\"\n      ],\n      \"provenance\": \"adapted\",\n      \"safety_note\": \"Choose a load that keeps the wrists and elbows aligned without momentum.\"\n    }\n  },\n  \"human_reference\": {\n    \"absolute_path\": \"/workspace/lightweight-exercises-photo/assets/exercises/biceps-curl-dumbbell.png\",\n    \"branch\": \"work\",\n    \"pixels_reviewed_during_preparation\": false,\n    \"repository_path\": \"assets/exercises/biceps-curl-dumbbell.png\",\n    \"role\": \"Human appearance/proportions/materials/anatomical style ONLY. Exercise pose, grip, equipment and muscles come from the exact-ID catalogue, never the reference.\",\n    \"sha256\": \"52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f\",\n    \"source_commit\": \"a6f296cbc6737991dd367e929b3e2df25874d4d8\"\n  },\n  \"identity_do_not_render_as_text\": {\n    \"exercise_id\": \"preacher-curl-dumbbell\",\n    \"name\": \"Preacher Curl (Dumbbell)\",\n    \"source_catalog_record_sha256\": \"a0a12d494cd747b16f5ef8071d4f783576b6bd886a24209d3da0078f30d523bd\",\n    \"source_catalog_sha256\": \"a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989\"\n  },\n  \"scene\": {\n    \"camera\": \"Front three-quarter view showing both weights and supported upper arms.\",\n    \"grip\": \"One dumbbell per hand, palms UP.\",\n    \"pose\": \"Sit at preacher bench with upper arms supported; both elbows curl weights toward shoulders without lifting elbows.\",\n    \"single_phase\": \"Two supported dumbbell curls at contraction\",\n    \"source_instruction_quotes\": [\n      {\n        \"index\": 0,\n        \"text\": \"Sit at the preacher bench with the upper arms supported and hold the dumbbells palms up.\"\n      },\n      {\n        \"index\": 1,\n        \"text\": \"Curl both dumbbells toward the shoulders without lifting the elbows.\"\n      },\n      {\n        \"index\": 2,\n        \"text\": \"Pause briefly at the top contraction.\"\n      },\n      {\n        \"index\": 3,\n        \"text\": \"Lower until the elbows are comfortably extended, then repeat.\"\n      }\n    ],\n    \"supports_and_equipment\": \"Static preacher bench and upper-arm pad, no guided resistance or machine stack.\"\n  },\n  \"style\": {\n    \"background\": \"Genuinely transparent PNG background, no white/checkerboard layer, no environment scene.\",\n    \"framing\": \"Full figure and all required equipment/supports visible within a square. Scale and use a three-quarter view to expose the specified contacts without changing anatomy, equipment, grip or technique.\",\n    \"human_model\": \"One athletic bald male anatomical mannequin, opaque silver-gray muscular surfaces, consistent proportions and detailed 3D materials, plain black shorts, barefoot.\",\n    \"material_rules\": \"Highlights never make tissue transparent; no glow, whole-body orange tint, hair, text, labels, arrows, UI, borders, collage or extra person.\",\n    \"no_invention\": \"Technique, equipment and muscles come only from the attached exact catalogue record. No extra attachments, numerical weights, brands or exact angles absent from the source.\",\n    \"output\": {\n      \"format\": \"PNG\",\n      \"height\": 1024,\n      \"one_person\": true,\n      \"one_phase\": true,\n      \"width\": 1024\n    },\n    \"primary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"rule\": \"Highlight only the exact primary muscle group provided for this exercise.\"\n    },\n    \"secondary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"intensity_fraction\": [\n        0.4,\n        0.5\n      ],\n      \"rule\": \"Only the exact secondary muscles, lighter same-hue highlight; if the list is empty add no secondary target.\"\n    },\n    \"version\": \"v1\"\n  },\n  \"style_document_sha256\": \"8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578\",\n  \"supplementary_same_ID_sources\": []\n}",
+      "generation_prompt_sha256": "f5b93afed830fea198b60e476fa7ed0db121a1022b12d07d18dffada305ef261",
+      "planned_png_path": "/workspace/exercise-image-results/agent-03-others-012/preacher-curl-dumbbell/attempt-1.png",
+      "output_root": "/workspace/exercise-image-results",
+      "planned_output_relative_path": "agent-03-others-012/preacher-curl-dumbbell/attempt-1.png",
+      "result_path": null,
+      "result_sha256": null,
+      "attempts": 0,
+      "user_review": null,
+      "technical_check": null,
+      "agent_visual_review": "not_performed",
+      "generation_authorized_now": false,
+      "clarification_resolution": null
+    },
+    {
+      "exercise_id": "rack-pull-barbell",
+      "name": "Rack Pull",
+      "source_english": {
+        "description": "Starting with the barbell elevated around knee height, extend the hips and knees to stand tall, then lower to the rack.",
+        "instructions": [
+          "Set up a barbell on a rack at knee height.",
+          "Stand with your feet shoulder-width apart, toes pointing slightly outwards.",
+          "Bend at the hips and knees to lower yourself down and grip the barbell with an overhand grip, hands shoulder-width apart.",
+          "Engage your core and lift the barbell by extending your hips and knees, pulling your shoulders back and squeezing your glutes at the top.",
+          "Lower the barbell back down to the starting position by bending at the hips and knees.",
+          "Repeat for the desired number of repetitions."
+        ],
+        "form_cues": [
+          "Keep the load close.",
+          "Brace before hinging.",
+          "Drive the hips forward to stand."
+        ],
+        "common_mistakes": [
+          "Rounding the back.",
+          "Squatting instead of hinging.",
+          "Leaning back at lockout."
+        ],
+        "safety_note": "Keep the load manageable and stop if you cannot maintain a neutral back.",
+        "provenance": "adapted"
+      },
+      "equipment": "barbell",
+      "primary_muscle": "upper_back",
+      "secondary_muscles": [
+        "glutes",
+        "hamstrings",
+        "lower_back",
+        "lats",
+        "traps"
+      ],
+      "source_catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+      "source_catalog_record_sha256": "401cf95dd1909f4106c9729570af848b4f1dafe55780b389fba5155ff53b4850",
+      "source_english_sha256": "421741538c5bdf742aa27259a58302f9c353684661d59b332923e993d17416a3",
+      "status": "ready",
+      "preparation_status": "prompt_prepared_not_generated",
+      "style_version": "v1",
+      "style_sha256": "8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578",
+      "human_reference": {
+        "repository_path": "assets/exercises/biceps-curl-dumbbell.png",
+        "absolute_path": "/workspace/lightweight-exercises-photo/assets/exercises/biceps-curl-dumbbell.png",
+        "sha256": "52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f",
+        "branch": "work",
+        "source_commit": "a6f296cbc6737991dd367e929b3e2df25874d4d8",
+        "role": "Human appearance/proportions/materials/anatomical style ONLY. Exercise pose, grip, equipment and muscles come from the exact-ID catalogue, never the reference.",
+        "pixels_reviewed_during_preparation": false
+      },
+      "scene": {
+        "single_phase": "Braced setup at knee-height rack",
+        "pose": "Stand shoulder-width with toes slightly outward; hinge and bend knees with neutral back, braced before lift.",
+        "grip": "Overhand grip, hands shoulder-width on free barbell.",
+        "supports_and_equipment": "Bar rests on stationary rack at KNEE HEIGHT, both feet on floor; no floor deadlift or Smith rails.",
+        "camera": "Side three-quarter view showing knee-height rack supports, hands and complete free bar.",
+        "source_instruction_quotes": [
+          {
+            "index": 0,
+            "text": "Set up a barbell on a rack at knee height."
+          },
+          {
+            "index": 1,
+            "text": "Stand with your feet shoulder-width apart, toes pointing slightly outwards."
+          },
+          {
+            "index": 2,
+            "text": "Bend at the hips and knees to lower yourself down and grip the barbell with an overhand grip, hands shoulder-width apart."
+          },
+          {
+            "index": 3,
+            "text": "Engage your core and lift the barbell by extending your hips and knees, pulling your shoulders back and squeezing your glutes at the top."
+          },
+          {
+            "index": 4,
+            "text": "Lower the barbell back down to the starting position by bending at the hips and knees."
+          },
+          {
+            "index": 5,
+            "text": "Repeat for the desired number of repetitions."
+          }
+        ]
+      },
+      "prompt_payload": {
+        "identity_do_not_render_as_text": {
+          "exercise_id": "rack-pull-barbell",
+          "name": "Rack Pull",
+          "source_catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+          "source_catalog_record_sha256": "401cf95dd1909f4106c9729570af848b4f1dafe55780b389fba5155ff53b4850"
+        },
+        "exact_catalogue_source": {
+          "source_english": {
+            "description": "Starting with the barbell elevated around knee height, extend the hips and knees to stand tall, then lower to the rack.",
+            "instructions": [
+              "Set up a barbell on a rack at knee height.",
+              "Stand with your feet shoulder-width apart, toes pointing slightly outwards.",
+              "Bend at the hips and knees to lower yourself down and grip the barbell with an overhand grip, hands shoulder-width apart.",
+              "Engage your core and lift the barbell by extending your hips and knees, pulling your shoulders back and squeezing your glutes at the top.",
+              "Lower the barbell back down to the starting position by bending at the hips and knees.",
+              "Repeat for the desired number of repetitions."
+            ],
+            "form_cues": [
+              "Keep the load close.",
+              "Brace before hinging.",
+              "Drive the hips forward to stand."
+            ],
+            "common_mistakes": [
+              "Rounding the back.",
+              "Squatting instead of hinging.",
+              "Leaning back at lockout."
+            ],
+            "safety_note": "Keep the load manageable and stop if you cannot maintain a neutral back.",
+            "provenance": "adapted"
+          },
+          "equipment": "barbell",
+          "primary_muscle": "upper_back",
+          "secondary_muscles": [
+            "glutes",
+            "hamstrings",
+            "lower_back",
+            "lats",
+            "traps"
+          ]
+        },
+        "human_reference": {
+          "repository_path": "assets/exercises/biceps-curl-dumbbell.png",
+          "absolute_path": "/workspace/lightweight-exercises-photo/assets/exercises/biceps-curl-dumbbell.png",
+          "sha256": "52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f",
+          "branch": "work",
+          "source_commit": "a6f296cbc6737991dd367e929b3e2df25874d4d8",
+          "role": "Human appearance/proportions/materials/anatomical style ONLY. Exercise pose, grip, equipment and muscles come from the exact-ID catalogue, never the reference.",
+          "pixels_reviewed_during_preparation": false
+        },
+        "style": {
+          "version": "v1",
+          "human_model": "One athletic bald male anatomical mannequin, opaque silver-gray muscular surfaces, consistent proportions and detailed 3D materials, plain black shorts, barefoot.",
+          "primary_highlight": {
+            "hex": "#F26445",
+            "rule": "Highlight only the exact primary muscle group provided for this exercise."
+          },
+          "secondary_highlight": {
+            "hex": "#F26445",
+            "intensity_fraction": [
+              0.4,
+              0.5
+            ],
+            "rule": "Only the exact secondary muscles, lighter same-hue highlight; if the list is empty add no secondary target."
+          },
+          "background": "Genuinely transparent PNG background, no white/checkerboard layer, no environment scene.",
+          "output": {
+            "format": "PNG",
+            "width": 1024,
+            "height": 1024,
+            "one_person": true,
+            "one_phase": true
+          },
+          "material_rules": "Highlights never make tissue transparent; no glow, whole-body orange tint, hair, text, labels, arrows, UI, borders, collage or extra person.",
+          "framing": "Full figure and all required equipment/supports visible within a square. Scale and use a three-quarter view to expose the specified contacts without changing anatomy, equipment, grip or technique.",
+          "no_invention": "Technique, equipment and muscles come only from the attached exact catalogue record. No extra attachments, numerical weights, brands or exact angles absent from the source."
+        },
+        "style_document_sha256": "8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578",
+        "scene": {
+          "single_phase": "Braced setup at knee-height rack",
+          "pose": "Stand shoulder-width with toes slightly outward; hinge and bend knees with neutral back, braced before lift.",
+          "grip": "Overhand grip, hands shoulder-width on free barbell.",
+          "supports_and_equipment": "Bar rests on stationary rack at KNEE HEIGHT, both feet on floor; no floor deadlift or Smith rails.",
+          "camera": "Side three-quarter view showing knee-height rack supports, hands and complete free bar.",
+          "source_instruction_quotes": [
+            {
+              "index": 0,
+              "text": "Set up a barbell on a rack at knee height."
+            },
+            {
+              "index": 1,
+              "text": "Stand with your feet shoulder-width apart, toes pointing slightly outwards."
+            },
+            {
+              "index": 2,
+              "text": "Bend at the hips and knees to lower yourself down and grip the barbell with an overhand grip, hands shoulder-width apart."
+            },
+            {
+              "index": 3,
+              "text": "Engage your core and lift the barbell by extending your hips and knees, pulling your shoulders back and squeezing your glutes at the top."
+            },
+            {
+              "index": 4,
+              "text": "Lower the barbell back down to the starting position by bending at the hips and knees."
+            },
+            {
+              "index": 5,
+              "text": "Repeat for the desired number of repetitions."
+            }
+          ]
+        },
+        "supplementary_same_ID_sources": []
+      },
+      "generation_prompt": "Create exactly ONE square transparent PNG of the exact exercise below, using the referenced human for APPEARANCE ONLY. Render only the selected phase and camera. Identity/path/hash fields are metadata, never visible text.\n{\n  \"exact_catalogue_source\": {\n    \"equipment\": \"barbell\",\n    \"primary_muscle\": \"upper_back\",\n    \"secondary_muscles\": [\n      \"glutes\",\n      \"hamstrings\",\n      \"lower_back\",\n      \"lats\",\n      \"traps\"\n    ],\n    \"source_english\": {\n      \"common_mistakes\": [\n        \"Rounding the back.\",\n        \"Squatting instead of hinging.\",\n        \"Leaning back at lockout.\"\n      ],\n      \"description\": \"Starting with the barbell elevated around knee height, extend the hips and knees to stand tall, then lower to the rack.\",\n      \"form_cues\": [\n        \"Keep the load close.\",\n        \"Brace before hinging.\",\n        \"Drive the hips forward to stand.\"\n      ],\n      \"instructions\": [\n        \"Set up a barbell on a rack at knee height.\",\n        \"Stand with your feet shoulder-width apart, toes pointing slightly outwards.\",\n        \"Bend at the hips and knees to lower yourself down and grip the barbell with an overhand grip, hands shoulder-width apart.\",\n        \"Engage your core and lift the barbell by extending your hips and knees, pulling your shoulders back and squeezing your glutes at the top.\",\n        \"Lower the barbell back down to the starting position by bending at the hips and knees.\",\n        \"Repeat for the desired number of repetitions.\"\n      ],\n      \"provenance\": \"adapted\",\n      \"safety_note\": \"Keep the load manageable and stop if you cannot maintain a neutral back.\"\n    }\n  },\n  \"human_reference\": {\n    \"absolute_path\": \"/workspace/lightweight-exercises-photo/assets/exercises/biceps-curl-dumbbell.png\",\n    \"branch\": \"work\",\n    \"pixels_reviewed_during_preparation\": false,\n    \"repository_path\": \"assets/exercises/biceps-curl-dumbbell.png\",\n    \"role\": \"Human appearance/proportions/materials/anatomical style ONLY. Exercise pose, grip, equipment and muscles come from the exact-ID catalogue, never the reference.\",\n    \"sha256\": \"52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f\",\n    \"source_commit\": \"a6f296cbc6737991dd367e929b3e2df25874d4d8\"\n  },\n  \"identity_do_not_render_as_text\": {\n    \"exercise_id\": \"rack-pull-barbell\",\n    \"name\": \"Rack Pull\",\n    \"source_catalog_record_sha256\": \"401cf95dd1909f4106c9729570af848b4f1dafe55780b389fba5155ff53b4850\",\n    \"source_catalog_sha256\": \"a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989\"\n  },\n  \"scene\": {\n    \"camera\": \"Side three-quarter view showing knee-height rack supports, hands and complete free bar.\",\n    \"grip\": \"Overhand grip, hands shoulder-width on free barbell.\",\n    \"pose\": \"Stand shoulder-width with toes slightly outward; hinge and bend knees with neutral back, braced before lift.\",\n    \"single_phase\": \"Braced setup at knee-height rack\",\n    \"source_instruction_quotes\": [\n      {\n        \"index\": 0,\n        \"text\": \"Set up a barbell on a rack at knee height.\"\n      },\n      {\n        \"index\": 1,\n        \"text\": \"Stand with your feet shoulder-width apart, toes pointing slightly outwards.\"\n      },\n      {\n        \"index\": 2,\n        \"text\": \"Bend at the hips and knees to lower yourself down and grip the barbell with an overhand grip, hands shoulder-width apart.\"\n      },\n      {\n        \"index\": 3,\n        \"text\": \"Engage your core and lift the barbell by extending your hips and knees, pulling your shoulders back and squeezing your glutes at the top.\"\n      },\n      {\n        \"index\": 4,\n        \"text\": \"Lower the barbell back down to the starting position by bending at the hips and knees.\"\n      },\n      {\n        \"index\": 5,\n        \"text\": \"Repeat for the desired number of repetitions.\"\n      }\n    ],\n    \"supports_and_equipment\": \"Bar rests on stationary rack at KNEE HEIGHT, both feet on floor; no floor deadlift or Smith rails.\"\n  },\n  \"style\": {\n    \"background\": \"Genuinely transparent PNG background, no white/checkerboard layer, no environment scene.\",\n    \"framing\": \"Full figure and all required equipment/supports visible within a square. Scale and use a three-quarter view to expose the specified contacts without changing anatomy, equipment, grip or technique.\",\n    \"human_model\": \"One athletic bald male anatomical mannequin, opaque silver-gray muscular surfaces, consistent proportions and detailed 3D materials, plain black shorts, barefoot.\",\n    \"material_rules\": \"Highlights never make tissue transparent; no glow, whole-body orange tint, hair, text, labels, arrows, UI, borders, collage or extra person.\",\n    \"no_invention\": \"Technique, equipment and muscles come only from the attached exact catalogue record. No extra attachments, numerical weights, brands or exact angles absent from the source.\",\n    \"output\": {\n      \"format\": \"PNG\",\n      \"height\": 1024,\n      \"one_person\": true,\n      \"one_phase\": true,\n      \"width\": 1024\n    },\n    \"primary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"rule\": \"Highlight only the exact primary muscle group provided for this exercise.\"\n    },\n    \"secondary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"intensity_fraction\": [\n        0.4,\n        0.5\n      ],\n      \"rule\": \"Only the exact secondary muscles, lighter same-hue highlight; if the list is empty add no secondary target.\"\n    },\n    \"version\": \"v1\"\n  },\n  \"style_document_sha256\": \"8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578\",\n  \"supplementary_same_ID_sources\": []\n}",
+      "generation_prompt_sha256": "210371b3c1014bfc73a7130d0ee49b4d88da8d7485129ea1c71f5b20c04f73e8",
+      "planned_png_path": "/workspace/exercise-image-results/agent-03-others-012/rack-pull-barbell/attempt-1.png",
+      "output_root": "/workspace/exercise-image-results",
+      "planned_output_relative_path": "agent-03-others-012/rack-pull-barbell/attempt-1.png",
+      "result_path": null,
+      "result_sha256": null,
+      "attempts": 0,
+      "user_review": null,
+      "technical_check": null,
+      "agent_visual_review": "not_performed",
+      "generation_authorized_now": false,
+      "clarification_resolution": null
+    },
+    {
+      "exercise_id": "russian-twist-weighted-plate",
+      "name": "Russian Twist (Weighted)",
+      "source_english": {
+        "description": "Russian Twist (Weighted) rotates the trunk from side to side while the seated torso stays braced and balanced.",
+        "instructions": [
+          "Sit on the ground with your knees bent and your feet flat on the floor.",
+          "Hold a weight or medicine ball with both hands in front of your chest.",
+          "Lean back slightly, keeping your back straight and your core engaged.",
+          "Slowly twist your torso to the right, bringing the weight or medicine ball towards the floor on your right side.",
+          "Pause for a moment, then twist your torso to the left, bringing the weight or medicine ball towards the floor on your left side.",
+          "Continue alternating sides for the desired number of repetitions."
+        ],
+        "form_cues": [
+          "Keep the trunk braced.",
+          "Rotate the ribcage side to side while the pelvis stays balanced.",
+          "Finish each repetition under control."
+        ],
+        "common_mistakes": [
+          "Using momentum.",
+          "Losing the starting posture.",
+          "Rushing the return."
+        ],
+        "safety_note": "Use a comfortable range and stop if control or alignment deteriorates.",
+        "provenance": "adapted"
+      },
+      "equipment": "plate",
+      "primary_muscle": "abdominals",
+      "secondary_muscles": [],
+      "source_catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+      "source_catalog_record_sha256": "0bf5caced22510fe1abfd5950ab1a64a474c24e22af7734740a543bafd87ba22",
+      "source_english_sha256": "e7cd43e22b54d0704823bde123ef796e5bbe61e5a7cfa0477c7abbcb2dacfed8",
+      "status": "ready",
+      "preparation_status": "prompt_prepared_not_generated",
+      "style_version": "v1",
+      "style_sha256": "8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578",
+      "human_reference": {
+        "repository_path": "assets/exercises/biceps-curl-dumbbell.png",
+        "absolute_path": "/workspace/lightweight-exercises-photo/assets/exercises/biceps-curl-dumbbell.png",
+        "sha256": "52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f",
+        "branch": "work",
+        "source_commit": "a6f296cbc6737991dd367e929b3e2df25874d4d8",
+        "role": "Human appearance/proportions/materials/anatomical style ONLY. Exercise pose, grip, equipment and muscles come from the exact-ID catalogue, never the reference.",
+        "pixels_reviewed_during_preparation": false
+      },
+      "scene": {
+        "single_phase": "Controlled right-side trunk rotation",
+        "pose": "Sit on floor, knees bent and feet FLAT; lean back slightly with straight back and braced core, ribcage rotates right, pelvis balanced.",
+        "grip": "Both hands firmly hold ONE plate, the exact equipment enum, moving toward floor on right side. No medicine-ball substitution.",
+        "supports_and_equipment": "Seated pelvis and both feet contact floor; no elevated feet or momentum.",
+        "camera": "Front three-quarter view showing seated contacts and right-side plate position.",
+        "source_instruction_quotes": [
+          {
+            "index": 0,
+            "text": "Sit on the ground with your knees bent and your feet flat on the floor."
+          },
+          {
+            "index": 1,
+            "text": "Hold a weight or medicine ball with both hands in front of your chest."
+          },
+          {
+            "index": 2,
+            "text": "Lean back slightly, keeping your back straight and your core engaged."
+          },
+          {
+            "index": 3,
+            "text": "Slowly twist your torso to the right, bringing the weight or medicine ball towards the floor on your right side."
+          },
+          {
+            "index": 4,
+            "text": "Pause for a moment, then twist your torso to the left, bringing the weight or medicine ball towards the floor on your left side."
+          },
+          {
+            "index": 5,
+            "text": "Continue alternating sides for the desired number of repetitions."
+          }
+        ]
+      },
+      "prompt_payload": {
+        "identity_do_not_render_as_text": {
+          "exercise_id": "russian-twist-weighted-plate",
+          "name": "Russian Twist (Weighted)",
+          "source_catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+          "source_catalog_record_sha256": "0bf5caced22510fe1abfd5950ab1a64a474c24e22af7734740a543bafd87ba22"
+        },
+        "exact_catalogue_source": {
+          "source_english": {
+            "description": "Russian Twist (Weighted) rotates the trunk from side to side while the seated torso stays braced and balanced.",
+            "instructions": [
+              "Sit on the ground with your knees bent and your feet flat on the floor.",
+              "Hold a weight or medicine ball with both hands in front of your chest.",
+              "Lean back slightly, keeping your back straight and your core engaged.",
+              "Slowly twist your torso to the right, bringing the weight or medicine ball towards the floor on your right side.",
+              "Pause for a moment, then twist your torso to the left, bringing the weight or medicine ball towards the floor on your left side.",
+              "Continue alternating sides for the desired number of repetitions."
+            ],
+            "form_cues": [
+              "Keep the trunk braced.",
+              "Rotate the ribcage side to side while the pelvis stays balanced.",
+              "Finish each repetition under control."
+            ],
+            "common_mistakes": [
+              "Using momentum.",
+              "Losing the starting posture.",
+              "Rushing the return."
+            ],
+            "safety_note": "Use a comfortable range and stop if control or alignment deteriorates.",
+            "provenance": "adapted"
+          },
+          "equipment": "plate",
+          "primary_muscle": "abdominals",
+          "secondary_muscles": []
+        },
+        "human_reference": {
+          "repository_path": "assets/exercises/biceps-curl-dumbbell.png",
+          "absolute_path": "/workspace/lightweight-exercises-photo/assets/exercises/biceps-curl-dumbbell.png",
+          "sha256": "52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f",
+          "branch": "work",
+          "source_commit": "a6f296cbc6737991dd367e929b3e2df25874d4d8",
+          "role": "Human appearance/proportions/materials/anatomical style ONLY. Exercise pose, grip, equipment and muscles come from the exact-ID catalogue, never the reference.",
+          "pixels_reviewed_during_preparation": false
+        },
+        "style": {
+          "version": "v1",
+          "human_model": "One athletic bald male anatomical mannequin, opaque silver-gray muscular surfaces, consistent proportions and detailed 3D materials, plain black shorts, barefoot.",
+          "primary_highlight": {
+            "hex": "#F26445",
+            "rule": "Highlight only the exact primary muscle group provided for this exercise."
+          },
+          "secondary_highlight": {
+            "hex": "#F26445",
+            "intensity_fraction": [
+              0.4,
+              0.5
+            ],
+            "rule": "Only the exact secondary muscles, lighter same-hue highlight; if the list is empty add no secondary target."
+          },
+          "background": "Genuinely transparent PNG background, no white/checkerboard layer, no environment scene.",
+          "output": {
+            "format": "PNG",
+            "width": 1024,
+            "height": 1024,
+            "one_person": true,
+            "one_phase": true
+          },
+          "material_rules": "Highlights never make tissue transparent; no glow, whole-body orange tint, hair, text, labels, arrows, UI, borders, collage or extra person.",
+          "framing": "Full figure and all required equipment/supports visible within a square. Scale and use a three-quarter view to expose the specified contacts without changing anatomy, equipment, grip or technique.",
+          "no_invention": "Technique, equipment and muscles come only from the attached exact catalogue record. No extra attachments, numerical weights, brands or exact angles absent from the source."
+        },
+        "style_document_sha256": "8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578",
+        "scene": {
+          "single_phase": "Controlled right-side trunk rotation",
+          "pose": "Sit on floor, knees bent and feet FLAT; lean back slightly with straight back and braced core, ribcage rotates right, pelvis balanced.",
+          "grip": "Both hands firmly hold ONE plate, the exact equipment enum, moving toward floor on right side. No medicine-ball substitution.",
+          "supports_and_equipment": "Seated pelvis and both feet contact floor; no elevated feet or momentum.",
+          "camera": "Front three-quarter view showing seated contacts and right-side plate position.",
+          "source_instruction_quotes": [
+            {
+              "index": 0,
+              "text": "Sit on the ground with your knees bent and your feet flat on the floor."
+            },
+            {
+              "index": 1,
+              "text": "Hold a weight or medicine ball with both hands in front of your chest."
+            },
+            {
+              "index": 2,
+              "text": "Lean back slightly, keeping your back straight and your core engaged."
+            },
+            {
+              "index": 3,
+              "text": "Slowly twist your torso to the right, bringing the weight or medicine ball towards the floor on your right side."
+            },
+            {
+              "index": 4,
+              "text": "Pause for a moment, then twist your torso to the left, bringing the weight or medicine ball towards the floor on your left side."
+            },
+            {
+              "index": 5,
+              "text": "Continue alternating sides for the desired number of repetitions."
+            }
+          ]
+        },
+        "supplementary_same_ID_sources": []
+      },
+      "generation_prompt": "Create exactly ONE square transparent PNG of the exact exercise below, using the referenced human for APPEARANCE ONLY. Render only the selected phase and camera. Identity/path/hash fields are metadata, never visible text.\n{\n  \"exact_catalogue_source\": {\n    \"equipment\": \"plate\",\n    \"primary_muscle\": \"abdominals\",\n    \"secondary_muscles\": [],\n    \"source_english\": {\n      \"common_mistakes\": [\n        \"Using momentum.\",\n        \"Losing the starting posture.\",\n        \"Rushing the return.\"\n      ],\n      \"description\": \"Russian Twist (Weighted) rotates the trunk from side to side while the seated torso stays braced and balanced.\",\n      \"form_cues\": [\n        \"Keep the trunk braced.\",\n        \"Rotate the ribcage side to side while the pelvis stays balanced.\",\n        \"Finish each repetition under control.\"\n      ],\n      \"instructions\": [\n        \"Sit on the ground with your knees bent and your feet flat on the floor.\",\n        \"Hold a weight or medicine ball with both hands in front of your chest.\",\n        \"Lean back slightly, keeping your back straight and your core engaged.\",\n        \"Slowly twist your torso to the right, bringing the weight or medicine ball towards the floor on your right side.\",\n        \"Pause for a moment, then twist your torso to the left, bringing the weight or medicine ball towards the floor on your left side.\",\n        \"Continue alternating sides for the desired number of repetitions.\"\n      ],\n      \"provenance\": \"adapted\",\n      \"safety_note\": \"Use a comfortable range and stop if control or alignment deteriorates.\"\n    }\n  },\n  \"human_reference\": {\n    \"absolute_path\": \"/workspace/lightweight-exercises-photo/assets/exercises/biceps-curl-dumbbell.png\",\n    \"branch\": \"work\",\n    \"pixels_reviewed_during_preparation\": false,\n    \"repository_path\": \"assets/exercises/biceps-curl-dumbbell.png\",\n    \"role\": \"Human appearance/proportions/materials/anatomical style ONLY. Exercise pose, grip, equipment and muscles come from the exact-ID catalogue, never the reference.\",\n    \"sha256\": \"52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f\",\n    \"source_commit\": \"a6f296cbc6737991dd367e929b3e2df25874d4d8\"\n  },\n  \"identity_do_not_render_as_text\": {\n    \"exercise_id\": \"russian-twist-weighted-plate\",\n    \"name\": \"Russian Twist (Weighted)\",\n    \"source_catalog_record_sha256\": \"0bf5caced22510fe1abfd5950ab1a64a474c24e22af7734740a543bafd87ba22\",\n    \"source_catalog_sha256\": \"a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989\"\n  },\n  \"scene\": {\n    \"camera\": \"Front three-quarter view showing seated contacts and right-side plate position.\",\n    \"grip\": \"Both hands firmly hold ONE plate, the exact equipment enum, moving toward floor on right side. No medicine-ball substitution.\",\n    \"pose\": \"Sit on floor, knees bent and feet FLAT; lean back slightly with straight back and braced core, ribcage rotates right, pelvis balanced.\",\n    \"single_phase\": \"Controlled right-side trunk rotation\",\n    \"source_instruction_quotes\": [\n      {\n        \"index\": 0,\n        \"text\": \"Sit on the ground with your knees bent and your feet flat on the floor.\"\n      },\n      {\n        \"index\": 1,\n        \"text\": \"Hold a weight or medicine ball with both hands in front of your chest.\"\n      },\n      {\n        \"index\": 2,\n        \"text\": \"Lean back slightly, keeping your back straight and your core engaged.\"\n      },\n      {\n        \"index\": 3,\n        \"text\": \"Slowly twist your torso to the right, bringing the weight or medicine ball towards the floor on your right side.\"\n      },\n      {\n        \"index\": 4,\n        \"text\": \"Pause for a moment, then twist your torso to the left, bringing the weight or medicine ball towards the floor on your left side.\"\n      },\n      {\n        \"index\": 5,\n        \"text\": \"Continue alternating sides for the desired number of repetitions.\"\n      }\n    ],\n    \"supports_and_equipment\": \"Seated pelvis and both feet contact floor; no elevated feet or momentum.\"\n  },\n  \"style\": {\n    \"background\": \"Genuinely transparent PNG background, no white/checkerboard layer, no environment scene.\",\n    \"framing\": \"Full figure and all required equipment/supports visible within a square. Scale and use a three-quarter view to expose the specified contacts without changing anatomy, equipment, grip or technique.\",\n    \"human_model\": \"One athletic bald male anatomical mannequin, opaque silver-gray muscular surfaces, consistent proportions and detailed 3D materials, plain black shorts, barefoot.\",\n    \"material_rules\": \"Highlights never make tissue transparent; no glow, whole-body orange tint, hair, text, labels, arrows, UI, borders, collage or extra person.\",\n    \"no_invention\": \"Technique, equipment and muscles come only from the attached exact catalogue record. No extra attachments, numerical weights, brands or exact angles absent from the source.\",\n    \"output\": {\n      \"format\": \"PNG\",\n      \"height\": 1024,\n      \"one_person\": true,\n      \"one_phase\": true,\n      \"width\": 1024\n    },\n    \"primary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"rule\": \"Highlight only the exact primary muscle group provided for this exercise.\"\n    },\n    \"secondary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"intensity_fraction\": [\n        0.4,\n        0.5\n      ],\n      \"rule\": \"Only the exact secondary muscles, lighter same-hue highlight; if the list is empty add no secondary target.\"\n    },\n    \"version\": \"v1\"\n  },\n  \"style_document_sha256\": \"8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578\",\n  \"supplementary_same_ID_sources\": []\n}",
+      "generation_prompt_sha256": "e3b57ccd61f9e5e8eee2985b91b296cde99cd84ea2cf16d0aa1788b485c1a73a",
+      "planned_png_path": "/workspace/exercise-image-results/agent-03-others-012/russian-twist-weighted-plate/attempt-1.png",
+      "output_root": "/workspace/exercise-image-results",
+      "planned_output_relative_path": "agent-03-others-012/russian-twist-weighted-plate/attempt-1.png",
+      "result_path": null,
+      "result_sha256": null,
+      "attempts": 0,
+      "user_review": null,
+      "technical_check": null,
+      "agent_visual_review": "not_performed",
+      "generation_authorized_now": false,
+      "clarification_resolution": null
+    }
+  ]
+}

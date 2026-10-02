@@ -1,0 +1,1337 @@
+{
+  "schema_version": 1,
+  "batch_id": "agent-03-others-013",
+  "owner_agent": "agent-03",
+  "branch": "agent-03-inventory-2026-10-01",
+  "status": "ready",
+  "prepared_at": "2026-10-02T01:21:10.062167+03:00",
+  "preparation_stage": "remaining_queue",
+  "generation_authorized_now": false,
+  "catalog_path": "data/exercises/catalog.json",
+  "catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+  "catalog_source_commit": "a6f296cbc6737991dd367e929b3e2df25874d4d8",
+  "style_version": "v1",
+  "style_path": "docs/exercise-image-style.md",
+  "style_sha256": "8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578",
+  "human_reference": {
+    "repository_path": "assets/exercises/biceps-curl-dumbbell.png",
+    "absolute_path": "/workspace/lightweight-exercises-photo/assets/exercises/biceps-curl-dumbbell.png",
+    "sha256": "52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f",
+    "branch": "work",
+    "source_commit": "a6f296cbc6737991dd367e929b3e2df25874d4d8",
+    "role": "Human appearance/proportions/materials/anatomical style ONLY. Exercise pose, grip, equipment and muscles come from the exact-ID catalogue, never the reference.",
+    "pixels_reviewed_during_preparation": false
+  },
+  "queue_path": "data/queues/agent-03-other-queue.json",
+  "constraints": {
+    "generation_performed": false,
+    "shared_progress_changes_allowed": false,
+    "catalog_changes_allowed": false,
+    "only_builtin_imagegen": true,
+    "automatic_retries_allowed": false,
+    "paid_api_allowed": false,
+    "supabase_allowed": false,
+    "no_agent_visual_QA": true,
+    "outputs_outside_git": true,
+    "revalidate_assignments_and_existing_results_before_call": true
+  },
+  "exercise_count": 7,
+  "exercise_ids": [
+    "single-leg-standing-calf-raise-dumbbell",
+    "sissy-squat-weighted",
+    "situp-weighted",
+    "step-up",
+    "sumo-squat-kettlebell",
+    "walking-lunge-sandbag",
+    "wrist-roller-machine"
+  ],
+  "exercises": [
+    {
+      "exercise_id": "single-leg-standing-calf-raise-dumbbell",
+      "name": "Single Leg Standing Calf Raise (Dumbbell)",
+      "source_english": {
+        "description": "Hold a dumbbell and support, raise one heel from the step, lower it below the step, then change legs.",
+        "instructions": [
+          "Stand on the edge of a step or platform with your heels hanging off and your toes on the step.",
+          "Hold a dumbbell in one hand and place your other hand on a wall or railing for support.",
+          "Raise your heel as high as possible, lifting your body up onto your toes.",
+          "Pause for a moment at the top, then slowly lower your heel back down below the step.",
+          "Repeat for the desired number of repetitions, then switch to the other leg."
+        ],
+        "form_cues": [
+          "Keep the ankle over the second toe.",
+          "Pause at the top.",
+          "Lower without bouncing."
+        ],
+        "common_mistakes": [
+          "Bouncing at the bottom.",
+          "Rolling the ankle outward.",
+          "Pushing off with the other leg."
+        ],
+        "safety_note": "Use a handhold or machine support and keep the ankle moving vertically.",
+        "provenance": "adapted"
+      },
+      "equipment": "dumbbell",
+      "primary_muscle": "calves",
+      "secondary_muscles": [],
+      "source_catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+      "source_catalog_record_sha256": "ae0287848e26efa3cc263403e8ae8389a9f16db91ca33ca5659e215c738a7304",
+      "source_english_sha256": "beec6156cbe1910243464e41e3f0d5f8b334c32c3c2d2e98ccc97a0a75119503",
+      "status": "ready",
+      "preparation_status": "prompt_prepared_not_generated",
+      "style_version": "v1",
+      "style_sha256": "8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578",
+      "human_reference": {
+        "repository_path": "assets/exercises/biceps-curl-dumbbell.png",
+        "absolute_path": "/workspace/lightweight-exercises-photo/assets/exercises/biceps-curl-dumbbell.png",
+        "sha256": "52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f",
+        "branch": "work",
+        "source_commit": "a6f296cbc6737991dd367e929b3e2df25874d4d8",
+        "role": "Human appearance/proportions/materials/anatomical style ONLY. Exercise pose, grip, equipment and muscles come from the exact-ID catalogue, never the reference.",
+        "pixels_reviewed_during_preparation": false
+      },
+      "scene": {
+        "single_phase": "One-leg heel-rise on step with handhold",
+        "pose": "Only working forefoot supports load at step edge, heel raised vertically; other leg clear and not pushing, ankle aligned.",
+        "grip": "One hand holds ONE dumbbell; other hand contacts the source-permitted railing for balance.",
+        "supports_and_equipment": "Stable step supports working forefoot; secure railing supports free hand. Whole step/handhold visible, no machine or invented height.",
+        "camera": "Side three-quarter view showing heel clearance, one supporting foot, dumbbell and railing hand.",
+        "source_instruction_quotes": [
+          {
+            "index": 0,
+            "text": "Stand on the edge of a step or platform with your heels hanging off and your toes on the step."
+          },
+          {
+            "index": 1,
+            "text": "Hold a dumbbell in one hand and place your other hand on a wall or railing for support."
+          },
+          {
+            "index": 2,
+            "text": "Raise your heel as high as possible, lifting your body up onto your toes."
+          },
+          {
+            "index": 3,
+            "text": "Pause for a moment at the top, then slowly lower your heel back down below the step."
+          },
+          {
+            "index": 4,
+            "text": "Repeat for the desired number of repetitions, then switch to the other leg."
+          }
+        ]
+      },
+      "prompt_payload": {
+        "identity_do_not_render_as_text": {
+          "exercise_id": "single-leg-standing-calf-raise-dumbbell",
+          "name": "Single Leg Standing Calf Raise (Dumbbell)",
+          "source_catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+          "source_catalog_record_sha256": "ae0287848e26efa3cc263403e8ae8389a9f16db91ca33ca5659e215c738a7304"
+        },
+        "exact_catalogue_source": {
+          "source_english": {
+            "description": "Hold a dumbbell and support, raise one heel from the step, lower it below the step, then change legs.",
+            "instructions": [
+              "Stand on the edge of a step or platform with your heels hanging off and your toes on the step.",
+              "Hold a dumbbell in one hand and place your other hand on a wall or railing for support.",
+              "Raise your heel as high as possible, lifting your body up onto your toes.",
+              "Pause for a moment at the top, then slowly lower your heel back down below the step.",
+              "Repeat for the desired number of repetitions, then switch to the other leg."
+            ],
+            "form_cues": [
+              "Keep the ankle over the second toe.",
+              "Pause at the top.",
+              "Lower without bouncing."
+            ],
+            "common_mistakes": [
+              "Bouncing at the bottom.",
+              "Rolling the ankle outward.",
+              "Pushing off with the other leg."
+            ],
+            "safety_note": "Use a handhold or machine support and keep the ankle moving vertically.",
+            "provenance": "adapted"
+          },
+          "equipment": "dumbbell",
+          "primary_muscle": "calves",
+          "secondary_muscles": []
+        },
+        "human_reference": {
+          "repository_path": "assets/exercises/biceps-curl-dumbbell.png",
+          "absolute_path": "/workspace/lightweight-exercises-photo/assets/exercises/biceps-curl-dumbbell.png",
+          "sha256": "52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f",
+          "branch": "work",
+          "source_commit": "a6f296cbc6737991dd367e929b3e2df25874d4d8",
+          "role": "Human appearance/proportions/materials/anatomical style ONLY. Exercise pose, grip, equipment and muscles come from the exact-ID catalogue, never the reference.",
+          "pixels_reviewed_during_preparation": false
+        },
+        "style": {
+          "version": "v1",
+          "human_model": "One athletic bald male anatomical mannequin, opaque silver-gray muscular surfaces, consistent proportions and detailed 3D materials, plain black shorts, barefoot.",
+          "primary_highlight": {
+            "hex": "#F26445",
+            "rule": "Highlight only the exact primary muscle group provided for this exercise."
+          },
+          "secondary_highlight": {
+            "hex": "#F26445",
+            "intensity_fraction": [
+              0.4,
+              0.5
+            ],
+            "rule": "Only the exact secondary muscles, lighter same-hue highlight; if the list is empty add no secondary target."
+          },
+          "background": "Genuinely transparent PNG background, no white/checkerboard layer, no environment scene.",
+          "output": {
+            "format": "PNG",
+            "width": 1024,
+            "height": 1024,
+            "one_person": true,
+            "one_phase": true
+          },
+          "material_rules": "Highlights never make tissue transparent; no glow, whole-body orange tint, hair, text, labels, arrows, UI, borders, collage or extra person.",
+          "framing": "Full figure and all required equipment/supports visible within a square. Scale and use a three-quarter view to expose the specified contacts without changing anatomy, equipment, grip or technique.",
+          "no_invention": "Technique, equipment and muscles come only from the attached exact catalogue record. No extra attachments, numerical weights, brands or exact angles absent from the source."
+        },
+        "style_document_sha256": "8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578",
+        "scene": {
+          "single_phase": "One-leg heel-rise on step with handhold",
+          "pose": "Only working forefoot supports load at step edge, heel raised vertically; other leg clear and not pushing, ankle aligned.",
+          "grip": "One hand holds ONE dumbbell; other hand contacts the source-permitted railing for balance.",
+          "supports_and_equipment": "Stable step supports working forefoot; secure railing supports free hand. Whole step/handhold visible, no machine or invented height.",
+          "camera": "Side three-quarter view showing heel clearance, one supporting foot, dumbbell and railing hand.",
+          "source_instruction_quotes": [
+            {
+              "index": 0,
+              "text": "Stand on the edge of a step or platform with your heels hanging off and your toes on the step."
+            },
+            {
+              "index": 1,
+              "text": "Hold a dumbbell in one hand and place your other hand on a wall or railing for support."
+            },
+            {
+              "index": 2,
+              "text": "Raise your heel as high as possible, lifting your body up onto your toes."
+            },
+            {
+              "index": 3,
+              "text": "Pause for a moment at the top, then slowly lower your heel back down below the step."
+            },
+            {
+              "index": 4,
+              "text": "Repeat for the desired number of repetitions, then switch to the other leg."
+            }
+          ]
+        },
+        "supplementary_same_ID_sources": []
+      },
+      "generation_prompt": "Create exactly ONE square transparent PNG of the exact exercise below, using the referenced human for APPEARANCE ONLY. Render only the selected phase and camera. Identity/path/hash fields are metadata, never visible text.\n{\n  \"exact_catalogue_source\": {\n    \"equipment\": \"dumbbell\",\n    \"primary_muscle\": \"calves\",\n    \"secondary_muscles\": [],\n    \"source_english\": {\n      \"common_mistakes\": [\n        \"Bouncing at the bottom.\",\n        \"Rolling the ankle outward.\",\n        \"Pushing off with the other leg.\"\n      ],\n      \"description\": \"Hold a dumbbell and support, raise one heel from the step, lower it below the step, then change legs.\",\n      \"form_cues\": [\n        \"Keep the ankle over the second toe.\",\n        \"Pause at the top.\",\n        \"Lower without bouncing.\"\n      ],\n      \"instructions\": [\n        \"Stand on the edge of a step or platform with your heels hanging off and your toes on the step.\",\n        \"Hold a dumbbell in one hand and place your other hand on a wall or railing for support.\",\n        \"Raise your heel as high as possible, lifting your body up onto your toes.\",\n        \"Pause for a moment at the top, then slowly lower your heel back down below the step.\",\n        \"Repeat for the desired number of repetitions, then switch to the other leg.\"\n      ],\n      \"provenance\": \"adapted\",\n      \"safety_note\": \"Use a handhold or machine support and keep the ankle moving vertically.\"\n    }\n  },\n  \"human_reference\": {\n    \"absolute_path\": \"/workspace/lightweight-exercises-photo/assets/exercises/biceps-curl-dumbbell.png\",\n    \"branch\": \"work\",\n    \"pixels_reviewed_during_preparation\": false,\n    \"repository_path\": \"assets/exercises/biceps-curl-dumbbell.png\",\n    \"role\": \"Human appearance/proportions/materials/anatomical style ONLY. Exercise pose, grip, equipment and muscles come from the exact-ID catalogue, never the reference.\",\n    \"sha256\": \"52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f\",\n    \"source_commit\": \"a6f296cbc6737991dd367e929b3e2df25874d4d8\"\n  },\n  \"identity_do_not_render_as_text\": {\n    \"exercise_id\": \"single-leg-standing-calf-raise-dumbbell\",\n    \"name\": \"Single Leg Standing Calf Raise (Dumbbell)\",\n    \"source_catalog_record_sha256\": \"ae0287848e26efa3cc263403e8ae8389a9f16db91ca33ca5659e215c738a7304\",\n    \"source_catalog_sha256\": \"a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989\"\n  },\n  \"scene\": {\n    \"camera\": \"Side three-quarter view showing heel clearance, one supporting foot, dumbbell and railing hand.\",\n    \"grip\": \"One hand holds ONE dumbbell; other hand contacts the source-permitted railing for balance.\",\n    \"pose\": \"Only working forefoot supports load at step edge, heel raised vertically; other leg clear and not pushing, ankle aligned.\",\n    \"single_phase\": \"One-leg heel-rise on step with handhold\",\n    \"source_instruction_quotes\": [\n      {\n        \"index\": 0,\n        \"text\": \"Stand on the edge of a step or platform with your heels hanging off and your toes on the step.\"\n      },\n      {\n        \"index\": 1,\n        \"text\": \"Hold a dumbbell in one hand and place your other hand on a wall or railing for support.\"\n      },\n      {\n        \"index\": 2,\n        \"text\": \"Raise your heel as high as possible, lifting your body up onto your toes.\"\n      },\n      {\n        \"index\": 3,\n        \"text\": \"Pause for a moment at the top, then slowly lower your heel back down below the step.\"\n      },\n      {\n        \"index\": 4,\n        \"text\": \"Repeat for the desired number of repetitions, then switch to the other leg.\"\n      }\n    ],\n    \"supports_and_equipment\": \"Stable step supports working forefoot; secure railing supports free hand. Whole step/handhold visible, no machine or invented height.\"\n  },\n  \"style\": {\n    \"background\": \"Genuinely transparent PNG background, no white/checkerboard layer, no environment scene.\",\n    \"framing\": \"Full figure and all required equipment/supports visible within a square. Scale and use a three-quarter view to expose the specified contacts without changing anatomy, equipment, grip or technique.\",\n    \"human_model\": \"One athletic bald male anatomical mannequin, opaque silver-gray muscular surfaces, consistent proportions and detailed 3D materials, plain black shorts, barefoot.\",\n    \"material_rules\": \"Highlights never make tissue transparent; no glow, whole-body orange tint, hair, text, labels, arrows, UI, borders, collage or extra person.\",\n    \"no_invention\": \"Technique, equipment and muscles come only from the attached exact catalogue record. No extra attachments, numerical weights, brands or exact angles absent from the source.\",\n    \"output\": {\n      \"format\": \"PNG\",\n      \"height\": 1024,\n      \"one_person\": true,\n      \"one_phase\": true,\n      \"width\": 1024\n    },\n    \"primary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"rule\": \"Highlight only the exact primary muscle group provided for this exercise.\"\n    },\n    \"secondary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"intensity_fraction\": [\n        0.4,\n        0.5\n      ],\n      \"rule\": \"Only the exact secondary muscles, lighter same-hue highlight; if the list is empty add no secondary target.\"\n    },\n    \"version\": \"v1\"\n  },\n  \"style_document_sha256\": \"8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578\",\n  \"supplementary_same_ID_sources\": []\n}",
+      "generation_prompt_sha256": "53009fd0b51f27e78e4454ae0b81b1420c3423de352ced57f6af895fb3137123",
+      "planned_png_path": "/workspace/exercise-image-results/agent-03-others-013/single-leg-standing-calf-raise-dumbbell/attempt-1.png",
+      "output_root": "/workspace/exercise-image-results",
+      "planned_output_relative_path": "agent-03-others-013/single-leg-standing-calf-raise-dumbbell/attempt-1.png",
+      "result_path": null,
+      "result_sha256": null,
+      "attempts": 0,
+      "user_review": null,
+      "technical_check": null,
+      "agent_visual_review": "not_performed",
+      "generation_authorized_now": false,
+      "clarification_resolution": null
+    },
+    {
+      "exercise_id": "sissy-squat-weighted",
+      "name": "Sissy Squat (Weighted)",
+      "source_english": {
+        "description": "A weighted sissy squat keeps the torso leaning back as the knees travel forward and the heels stay lifted.",
+        "instructions": [
+          "Hold one weight plate against the chest and stand with feet hip-width apart.",
+          "Rise onto the balls of the feet, brace the abdomen, and lean the torso back in a straight line.",
+          "Bend the knees forward and lower the body while keeping the hips extended and knees tracking the toes.",
+          "Drive through the balls of the feet to return upright without folding at the hips."
+        ],
+        "form_cues": [
+          "Keep the torso and hips aligned.",
+          "Let the knees follow the toes.",
+          "Use a shallow depth if the heels or knees cannot stay controlled."
+        ],
+        "common_mistakes": [
+          "Sitting the hips back like a regular squat.",
+          "Dropping the heels.",
+          "Folding forward at the waist."
+        ],
+        "safety_note": "Use a light plate and a support nearby because the forward knee travel challenges balance.",
+        "provenance": "adapted"
+      },
+      "equipment": "none",
+      "primary_muscle": "quadriceps",
+      "secondary_muscles": [],
+      "source_catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+      "source_catalog_record_sha256": "d3b8de3e7f12ef8a93ba365638dde9a65d96f41e4908fc9ec445ae255b3121b4",
+      "source_english_sha256": "15f27a23b9f139319251aa82dc76440641d553a568da0767d6c67bcb8eb1f05b",
+      "status": "ready",
+      "preparation_status": "prompt_prepared_not_generated",
+      "style_version": "v1",
+      "style_sha256": "8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578",
+      "human_reference": {
+        "repository_path": "assets/exercises/biceps-curl-dumbbell.png",
+        "absolute_path": "/workspace/lightweight-exercises-photo/assets/exercises/biceps-curl-dumbbell.png",
+        "sha256": "52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f",
+        "branch": "work",
+        "source_commit": "a6f296cbc6737991dd367e929b3e2df25874d4d8",
+        "role": "Human appearance/proportions/materials/anatomical style ONLY. Exercise pose, grip, equipment and muscles come from the exact-ID catalogue, never the reference.",
+        "pixels_reviewed_during_preparation": false
+      },
+      "scene": {
+        "single_phase": "Shallow backward-leaning knee-flexion phase",
+        "pose": "Feet hip-width on balls with heels lifted, torso and hips aligned leaning back; knees travel forward, hips stay extended.",
+        "grip": "Both hands secure one LIGHT plate against chest; do not replace with barbell despite equipment=none.",
+        "supports_and_equipment": "Balls of both feet on floor; stable support nearby for source safety, no invented contact that prevents holding plate.",
+        "camera": "Side three-quarter view exposing lifted heels, forward knees, extended hips and chest-held plate.",
+        "source_instruction_quotes": [
+          {
+            "index": 0,
+            "text": "Hold one weight plate against the chest and stand with feet hip-width apart."
+          },
+          {
+            "index": 1,
+            "text": "Rise onto the balls of the feet, brace the abdomen, and lean the torso back in a straight line."
+          },
+          {
+            "index": 2,
+            "text": "Bend the knees forward and lower the body while keeping the hips extended and knees tracking the toes."
+          },
+          {
+            "index": 3,
+            "text": "Drive through the balls of the feet to return upright without folding at the hips."
+          }
+        ]
+      },
+      "prompt_payload": {
+        "identity_do_not_render_as_text": {
+          "exercise_id": "sissy-squat-weighted",
+          "name": "Sissy Squat (Weighted)",
+          "source_catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+          "source_catalog_record_sha256": "d3b8de3e7f12ef8a93ba365638dde9a65d96f41e4908fc9ec445ae255b3121b4"
+        },
+        "exact_catalogue_source": {
+          "source_english": {
+            "description": "A weighted sissy squat keeps the torso leaning back as the knees travel forward and the heels stay lifted.",
+            "instructions": [
+              "Hold one weight plate against the chest and stand with feet hip-width apart.",
+              "Rise onto the balls of the feet, brace the abdomen, and lean the torso back in a straight line.",
+              "Bend the knees forward and lower the body while keeping the hips extended and knees tracking the toes.",
+              "Drive through the balls of the feet to return upright without folding at the hips."
+            ],
+            "form_cues": [
+              "Keep the torso and hips aligned.",
+              "Let the knees follow the toes.",
+              "Use a shallow depth if the heels or knees cannot stay controlled."
+            ],
+            "common_mistakes": [
+              "Sitting the hips back like a regular squat.",
+              "Dropping the heels.",
+              "Folding forward at the waist."
+            ],
+            "safety_note": "Use a light plate and a support nearby because the forward knee travel challenges balance.",
+            "provenance": "adapted"
+          },
+          "equipment": "none",
+          "primary_muscle": "quadriceps",
+          "secondary_muscles": []
+        },
+        "human_reference": {
+          "repository_path": "assets/exercises/biceps-curl-dumbbell.png",
+          "absolute_path": "/workspace/lightweight-exercises-photo/assets/exercises/biceps-curl-dumbbell.png",
+          "sha256": "52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f",
+          "branch": "work",
+          "source_commit": "a6f296cbc6737991dd367e929b3e2df25874d4d8",
+          "role": "Human appearance/proportions/materials/anatomical style ONLY. Exercise pose, grip, equipment and muscles come from the exact-ID catalogue, never the reference.",
+          "pixels_reviewed_during_preparation": false
+        },
+        "style": {
+          "version": "v1",
+          "human_model": "One athletic bald male anatomical mannequin, opaque silver-gray muscular surfaces, consistent proportions and detailed 3D materials, plain black shorts, barefoot.",
+          "primary_highlight": {
+            "hex": "#F26445",
+            "rule": "Highlight only the exact primary muscle group provided for this exercise."
+          },
+          "secondary_highlight": {
+            "hex": "#F26445",
+            "intensity_fraction": [
+              0.4,
+              0.5
+            ],
+            "rule": "Only the exact secondary muscles, lighter same-hue highlight; if the list is empty add no secondary target."
+          },
+          "background": "Genuinely transparent PNG background, no white/checkerboard layer, no environment scene.",
+          "output": {
+            "format": "PNG",
+            "width": 1024,
+            "height": 1024,
+            "one_person": true,
+            "one_phase": true
+          },
+          "material_rules": "Highlights never make tissue transparent; no glow, whole-body orange tint, hair, text, labels, arrows, UI, borders, collage or extra person.",
+          "framing": "Full figure and all required equipment/supports visible within a square. Scale and use a three-quarter view to expose the specified contacts without changing anatomy, equipment, grip or technique.",
+          "no_invention": "Technique, equipment and muscles come only from the attached exact catalogue record. No extra attachments, numerical weights, brands or exact angles absent from the source."
+        },
+        "style_document_sha256": "8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578",
+        "scene": {
+          "single_phase": "Shallow backward-leaning knee-flexion phase",
+          "pose": "Feet hip-width on balls with heels lifted, torso and hips aligned leaning back; knees travel forward, hips stay extended.",
+          "grip": "Both hands secure one LIGHT plate against chest; do not replace with barbell despite equipment=none.",
+          "supports_and_equipment": "Balls of both feet on floor; stable support nearby for source safety, no invented contact that prevents holding plate.",
+          "camera": "Side three-quarter view exposing lifted heels, forward knees, extended hips and chest-held plate.",
+          "source_instruction_quotes": [
+            {
+              "index": 0,
+              "text": "Hold one weight plate against the chest and stand with feet hip-width apart."
+            },
+            {
+              "index": 1,
+              "text": "Rise onto the balls of the feet, brace the abdomen, and lean the torso back in a straight line."
+            },
+            {
+              "index": 2,
+              "text": "Bend the knees forward and lower the body while keeping the hips extended and knees tracking the toes."
+            },
+            {
+              "index": 3,
+              "text": "Drive through the balls of the feet to return upright without folding at the hips."
+            }
+          ]
+        },
+        "supplementary_same_ID_sources": []
+      },
+      "generation_prompt": "Create exactly ONE square transparent PNG of the exact exercise below, using the referenced human for APPEARANCE ONLY. Render only the selected phase and camera. Identity/path/hash fields are metadata, never visible text.\n{\n  \"exact_catalogue_source\": {\n    \"equipment\": \"none\",\n    \"primary_muscle\": \"quadriceps\",\n    \"secondary_muscles\": [],\n    \"source_english\": {\n      \"common_mistakes\": [\n        \"Sitting the hips back like a regular squat.\",\n        \"Dropping the heels.\",\n        \"Folding forward at the waist.\"\n      ],\n      \"description\": \"A weighted sissy squat keeps the torso leaning back as the knees travel forward and the heels stay lifted.\",\n      \"form_cues\": [\n        \"Keep the torso and hips aligned.\",\n        \"Let the knees follow the toes.\",\n        \"Use a shallow depth if the heels or knees cannot stay controlled.\"\n      ],\n      \"instructions\": [\n        \"Hold one weight plate against the chest and stand with feet hip-width apart.\",\n        \"Rise onto the balls of the feet, brace the abdomen, and lean the torso back in a straight line.\",\n        \"Bend the knees forward and lower the body while keeping the hips extended and knees tracking the toes.\",\n        \"Drive through the balls of the feet to return upright without folding at the hips.\"\n      ],\n      \"provenance\": \"adapted\",\n      \"safety_note\": \"Use a light plate and a support nearby because the forward knee travel challenges balance.\"\n    }\n  },\n  \"human_reference\": {\n    \"absolute_path\": \"/workspace/lightweight-exercises-photo/assets/exercises/biceps-curl-dumbbell.png\",\n    \"branch\": \"work\",\n    \"pixels_reviewed_during_preparation\": false,\n    \"repository_path\": \"assets/exercises/biceps-curl-dumbbell.png\",\n    \"role\": \"Human appearance/proportions/materials/anatomical style ONLY. Exercise pose, grip, equipment and muscles come from the exact-ID catalogue, never the reference.\",\n    \"sha256\": \"52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f\",\n    \"source_commit\": \"a6f296cbc6737991dd367e929b3e2df25874d4d8\"\n  },\n  \"identity_do_not_render_as_text\": {\n    \"exercise_id\": \"sissy-squat-weighted\",\n    \"name\": \"Sissy Squat (Weighted)\",\n    \"source_catalog_record_sha256\": \"d3b8de3e7f12ef8a93ba365638dde9a65d96f41e4908fc9ec445ae255b3121b4\",\n    \"source_catalog_sha256\": \"a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989\"\n  },\n  \"scene\": {\n    \"camera\": \"Side three-quarter view exposing lifted heels, forward knees, extended hips and chest-held plate.\",\n    \"grip\": \"Both hands secure one LIGHT plate against chest; do not replace with barbell despite equipment=none.\",\n    \"pose\": \"Feet hip-width on balls with heels lifted, torso and hips aligned leaning back; knees travel forward, hips stay extended.\",\n    \"single_phase\": \"Shallow backward-leaning knee-flexion phase\",\n    \"source_instruction_quotes\": [\n      {\n        \"index\": 0,\n        \"text\": \"Hold one weight plate against the chest and stand with feet hip-width apart.\"\n      },\n      {\n        \"index\": 1,\n        \"text\": \"Rise onto the balls of the feet, brace the abdomen, and lean the torso back in a straight line.\"\n      },\n      {\n        \"index\": 2,\n        \"text\": \"Bend the knees forward and lower the body while keeping the hips extended and knees tracking the toes.\"\n      },\n      {\n        \"index\": 3,\n        \"text\": \"Drive through the balls of the feet to return upright without folding at the hips.\"\n      }\n    ],\n    \"supports_and_equipment\": \"Balls of both feet on floor; stable support nearby for source safety, no invented contact that prevents holding plate.\"\n  },\n  \"style\": {\n    \"background\": \"Genuinely transparent PNG background, no white/checkerboard layer, no environment scene.\",\n    \"framing\": \"Full figure and all required equipment/supports visible within a square. Scale and use a three-quarter view to expose the specified contacts without changing anatomy, equipment, grip or technique.\",\n    \"human_model\": \"One athletic bald male anatomical mannequin, opaque silver-gray muscular surfaces, consistent proportions and detailed 3D materials, plain black shorts, barefoot.\",\n    \"material_rules\": \"Highlights never make tissue transparent; no glow, whole-body orange tint, hair, text, labels, arrows, UI, borders, collage or extra person.\",\n    \"no_invention\": \"Technique, equipment and muscles come only from the attached exact catalogue record. No extra attachments, numerical weights, brands or exact angles absent from the source.\",\n    \"output\": {\n      \"format\": \"PNG\",\n      \"height\": 1024,\n      \"one_person\": true,\n      \"one_phase\": true,\n      \"width\": 1024\n    },\n    \"primary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"rule\": \"Highlight only the exact primary muscle group provided for this exercise.\"\n    },\n    \"secondary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"intensity_fraction\": [\n        0.4,\n        0.5\n      ],\n      \"rule\": \"Only the exact secondary muscles, lighter same-hue highlight; if the list is empty add no secondary target.\"\n    },\n    \"version\": \"v1\"\n  },\n  \"style_document_sha256\": \"8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578\",\n  \"supplementary_same_ID_sources\": []\n}",
+      "generation_prompt_sha256": "07daf814a40516e043088eca87e28fdad7868dfc29dd620580f11387f97a6fd3",
+      "planned_png_path": "/workspace/exercise-image-results/agent-03-others-013/sissy-squat-weighted/attempt-1.png",
+      "output_root": "/workspace/exercise-image-results",
+      "planned_output_relative_path": "agent-03-others-013/sissy-squat-weighted/attempt-1.png",
+      "result_path": null,
+      "result_sha256": null,
+      "attempts": 0,
+      "user_review": null,
+      "technical_check": null,
+      "agent_visual_review": "not_performed",
+      "generation_authorized_now": false,
+      "clarification_resolution": null
+    },
+    {
+      "exercise_id": "situp-weighted",
+      "name": "Sit Up (Weighted)",
+      "source_english": {
+        "description": "A weighted sit-up adds a light plate held at the chest to the same controlled trunk-flexion path.",
+        "instructions": [
+          "Lie on your back with knees bent, feet flat, and hold a plate against the chest.",
+          "Brace the abdominals and curl the torso toward the knees while keeping the plate close.",
+          "Continue until the trunk reaches a comfortable upright position without rounding the neck.",
+          "Lower the back slowly until the shoulders touch the floor."
+        ],
+        "form_cues": [
+          "Keep the plate against the sternum.",
+          "Use the abdominals to initiate the curl.",
+          "Breathe out as you rise."
+        ],
+        "common_mistakes": [
+          "Holding the plate overhead.",
+          "Pulling on the neck.",
+          "Dropping the back quickly."
+        ],
+        "safety_note": "Choose a light plate that will not shift toward the face or abdomen.",
+        "provenance": "authored"
+      },
+      "equipment": "none",
+      "primary_muscle": "abdominals",
+      "secondary_muscles": [],
+      "source_catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+      "source_catalog_record_sha256": "d7fc3a5b76335c1ab83ee4ecb7a3b2fc92fa28e723d671e9eea97df3fe70f3ca",
+      "source_english_sha256": "4b0db3680b5995fc2c62f1cb1d93523935f9d61b4b2c8e54ae4d95f36e71d6dc",
+      "status": "ready",
+      "preparation_status": "prompt_prepared_not_generated",
+      "style_version": "v1",
+      "style_sha256": "8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578",
+      "human_reference": {
+        "repository_path": "assets/exercises/biceps-curl-dumbbell.png",
+        "absolute_path": "/workspace/lightweight-exercises-photo/assets/exercises/biceps-curl-dumbbell.png",
+        "sha256": "52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f",
+        "branch": "work",
+        "source_commit": "a6f296cbc6737991dd367e929b3e2df25874d4d8",
+        "role": "Human appearance/proportions/materials/anatomical style ONLY. Exercise pose, grip, equipment and muscles come from the exact-ID catalogue, never the reference.",
+        "pixels_reviewed_during_preparation": false
+      },
+      "scene": {
+        "single_phase": "Controlled rise with plate against sternum",
+        "pose": "From supine bent knees, torso curls toward knees into comfortable upright phase, neck controlled.",
+        "grip": "Both hands keep one LIGHT plate against chest/sternum, never overhead.",
+        "supports_and_equipment": "Feet flat and pelvis on floor; no decline bench or foot restraints absent from source.",
+        "camera": "Side-front three-quarter view showing plate contact, bent knees and planted feet.",
+        "source_instruction_quotes": [
+          {
+            "index": 0,
+            "text": "Lie on your back with knees bent, feet flat, and hold a plate against the chest."
+          },
+          {
+            "index": 1,
+            "text": "Brace the abdominals and curl the torso toward the knees while keeping the plate close."
+          },
+          {
+            "index": 2,
+            "text": "Continue until the trunk reaches a comfortable upright position without rounding the neck."
+          },
+          {
+            "index": 3,
+            "text": "Lower the back slowly until the shoulders touch the floor."
+          }
+        ]
+      },
+      "prompt_payload": {
+        "identity_do_not_render_as_text": {
+          "exercise_id": "situp-weighted",
+          "name": "Sit Up (Weighted)",
+          "source_catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+          "source_catalog_record_sha256": "d7fc3a5b76335c1ab83ee4ecb7a3b2fc92fa28e723d671e9eea97df3fe70f3ca"
+        },
+        "exact_catalogue_source": {
+          "source_english": {
+            "description": "A weighted sit-up adds a light plate held at the chest to the same controlled trunk-flexion path.",
+            "instructions": [
+              "Lie on your back with knees bent, feet flat, and hold a plate against the chest.",
+              "Brace the abdominals and curl the torso toward the knees while keeping the plate close.",
+              "Continue until the trunk reaches a comfortable upright position without rounding the neck.",
+              "Lower the back slowly until the shoulders touch the floor."
+            ],
+            "form_cues": [
+              "Keep the plate against the sternum.",
+              "Use the abdominals to initiate the curl.",
+              "Breathe out as you rise."
+            ],
+            "common_mistakes": [
+              "Holding the plate overhead.",
+              "Pulling on the neck.",
+              "Dropping the back quickly."
+            ],
+            "safety_note": "Choose a light plate that will not shift toward the face or abdomen.",
+            "provenance": "authored"
+          },
+          "equipment": "none",
+          "primary_muscle": "abdominals",
+          "secondary_muscles": []
+        },
+        "human_reference": {
+          "repository_path": "assets/exercises/biceps-curl-dumbbell.png",
+          "absolute_path": "/workspace/lightweight-exercises-photo/assets/exercises/biceps-curl-dumbbell.png",
+          "sha256": "52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f",
+          "branch": "work",
+          "source_commit": "a6f296cbc6737991dd367e929b3e2df25874d4d8",
+          "role": "Human appearance/proportions/materials/anatomical style ONLY. Exercise pose, grip, equipment and muscles come from the exact-ID catalogue, never the reference.",
+          "pixels_reviewed_during_preparation": false
+        },
+        "style": {
+          "version": "v1",
+          "human_model": "One athletic bald male anatomical mannequin, opaque silver-gray muscular surfaces, consistent proportions and detailed 3D materials, plain black shorts, barefoot.",
+          "primary_highlight": {
+            "hex": "#F26445",
+            "rule": "Highlight only the exact primary muscle group provided for this exercise."
+          },
+          "secondary_highlight": {
+            "hex": "#F26445",
+            "intensity_fraction": [
+              0.4,
+              0.5
+            ],
+            "rule": "Only the exact secondary muscles, lighter same-hue highlight; if the list is empty add no secondary target."
+          },
+          "background": "Genuinely transparent PNG background, no white/checkerboard layer, no environment scene.",
+          "output": {
+            "format": "PNG",
+            "width": 1024,
+            "height": 1024,
+            "one_person": true,
+            "one_phase": true
+          },
+          "material_rules": "Highlights never make tissue transparent; no glow, whole-body orange tint, hair, text, labels, arrows, UI, borders, collage or extra person.",
+          "framing": "Full figure and all required equipment/supports visible within a square. Scale and use a three-quarter view to expose the specified contacts without changing anatomy, equipment, grip or technique.",
+          "no_invention": "Technique, equipment and muscles come only from the attached exact catalogue record. No extra attachments, numerical weights, brands or exact angles absent from the source."
+        },
+        "style_document_sha256": "8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578",
+        "scene": {
+          "single_phase": "Controlled rise with plate against sternum",
+          "pose": "From supine bent knees, torso curls toward knees into comfortable upright phase, neck controlled.",
+          "grip": "Both hands keep one LIGHT plate against chest/sternum, never overhead.",
+          "supports_and_equipment": "Feet flat and pelvis on floor; no decline bench or foot restraints absent from source.",
+          "camera": "Side-front three-quarter view showing plate contact, bent knees and planted feet.",
+          "source_instruction_quotes": [
+            {
+              "index": 0,
+              "text": "Lie on your back with knees bent, feet flat, and hold a plate against the chest."
+            },
+            {
+              "index": 1,
+              "text": "Brace the abdominals and curl the torso toward the knees while keeping the plate close."
+            },
+            {
+              "index": 2,
+              "text": "Continue until the trunk reaches a comfortable upright position without rounding the neck."
+            },
+            {
+              "index": 3,
+              "text": "Lower the back slowly until the shoulders touch the floor."
+            }
+          ]
+        },
+        "supplementary_same_ID_sources": []
+      },
+      "generation_prompt": "Create exactly ONE square transparent PNG of the exact exercise below, using the referenced human for APPEARANCE ONLY. Render only the selected phase and camera. Identity/path/hash fields are metadata, never visible text.\n{\n  \"exact_catalogue_source\": {\n    \"equipment\": \"none\",\n    \"primary_muscle\": \"abdominals\",\n    \"secondary_muscles\": [],\n    \"source_english\": {\n      \"common_mistakes\": [\n        \"Holding the plate overhead.\",\n        \"Pulling on the neck.\",\n        \"Dropping the back quickly.\"\n      ],\n      \"description\": \"A weighted sit-up adds a light plate held at the chest to the same controlled trunk-flexion path.\",\n      \"form_cues\": [\n        \"Keep the plate against the sternum.\",\n        \"Use the abdominals to initiate the curl.\",\n        \"Breathe out as you rise.\"\n      ],\n      \"instructions\": [\n        \"Lie on your back with knees bent, feet flat, and hold a plate against the chest.\",\n        \"Brace the abdominals and curl the torso toward the knees while keeping the plate close.\",\n        \"Continue until the trunk reaches a comfortable upright position without rounding the neck.\",\n        \"Lower the back slowly until the shoulders touch the floor.\"\n      ],\n      \"provenance\": \"authored\",\n      \"safety_note\": \"Choose a light plate that will not shift toward the face or abdomen.\"\n    }\n  },\n  \"human_reference\": {\n    \"absolute_path\": \"/workspace/lightweight-exercises-photo/assets/exercises/biceps-curl-dumbbell.png\",\n    \"branch\": \"work\",\n    \"pixels_reviewed_during_preparation\": false,\n    \"repository_path\": \"assets/exercises/biceps-curl-dumbbell.png\",\n    \"role\": \"Human appearance/proportions/materials/anatomical style ONLY. Exercise pose, grip, equipment and muscles come from the exact-ID catalogue, never the reference.\",\n    \"sha256\": \"52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f\",\n    \"source_commit\": \"a6f296cbc6737991dd367e929b3e2df25874d4d8\"\n  },\n  \"identity_do_not_render_as_text\": {\n    \"exercise_id\": \"situp-weighted\",\n    \"name\": \"Sit Up (Weighted)\",\n    \"source_catalog_record_sha256\": \"d7fc3a5b76335c1ab83ee4ecb7a3b2fc92fa28e723d671e9eea97df3fe70f3ca\",\n    \"source_catalog_sha256\": \"a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989\"\n  },\n  \"scene\": {\n    \"camera\": \"Side-front three-quarter view showing plate contact, bent knees and planted feet.\",\n    \"grip\": \"Both hands keep one LIGHT plate against chest/sternum, never overhead.\",\n    \"pose\": \"From supine bent knees, torso curls toward knees into comfortable upright phase, neck controlled.\",\n    \"single_phase\": \"Controlled rise with plate against sternum\",\n    \"source_instruction_quotes\": [\n      {\n        \"index\": 0,\n        \"text\": \"Lie on your back with knees bent, feet flat, and hold a plate against the chest.\"\n      },\n      {\n        \"index\": 1,\n        \"text\": \"Brace the abdominals and curl the torso toward the knees while keeping the plate close.\"\n      },\n      {\n        \"index\": 2,\n        \"text\": \"Continue until the trunk reaches a comfortable upright position without rounding the neck.\"\n      },\n      {\n        \"index\": 3,\n        \"text\": \"Lower the back slowly until the shoulders touch the floor.\"\n      }\n    ],\n    \"supports_and_equipment\": \"Feet flat and pelvis on floor; no decline bench or foot restraints absent from source.\"\n  },\n  \"style\": {\n    \"background\": \"Genuinely transparent PNG background, no white/checkerboard layer, no environment scene.\",\n    \"framing\": \"Full figure and all required equipment/supports visible within a square. Scale and use a three-quarter view to expose the specified contacts without changing anatomy, equipment, grip or technique.\",\n    \"human_model\": \"One athletic bald male anatomical mannequin, opaque silver-gray muscular surfaces, consistent proportions and detailed 3D materials, plain black shorts, barefoot.\",\n    \"material_rules\": \"Highlights never make tissue transparent; no glow, whole-body orange tint, hair, text, labels, arrows, UI, borders, collage or extra person.\",\n    \"no_invention\": \"Technique, equipment and muscles come only from the attached exact catalogue record. No extra attachments, numerical weights, brands or exact angles absent from the source.\",\n    \"output\": {\n      \"format\": \"PNG\",\n      \"height\": 1024,\n      \"one_person\": true,\n      \"one_phase\": true,\n      \"width\": 1024\n    },\n    \"primary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"rule\": \"Highlight only the exact primary muscle group provided for this exercise.\"\n    },\n    \"secondary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"intensity_fraction\": [\n        0.4,\n        0.5\n      ],\n      \"rule\": \"Only the exact secondary muscles, lighter same-hue highlight; if the list is empty add no secondary target.\"\n    },\n    \"version\": \"v1\"\n  },\n  \"style_document_sha256\": \"8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578\",\n  \"supplementary_same_ID_sources\": []\n}",
+      "generation_prompt_sha256": "7f804bff30b314c625cd24af83e52b9e292f4bd8f1c7c108421e19555eebe4f6",
+      "planned_png_path": "/workspace/exercise-image-results/agent-03-others-013/situp-weighted/attempt-1.png",
+      "output_root": "/workspace/exercise-image-results",
+      "planned_output_relative_path": "agent-03-others-013/situp-weighted/attempt-1.png",
+      "result_path": null,
+      "result_sha256": null,
+      "attempts": 0,
+      "user_review": null,
+      "technical_check": null,
+      "agent_visual_review": "not_performed",
+      "generation_authorized_now": false,
+      "clarification_resolution": null
+    },
+    {
+      "exercise_id": "step-up",
+      "name": "Step Up",
+      "source_english": {
+        "description": "A step-up places one foot on a box or platform and drives the body upward through that leg.",
+        "instructions": [
+          "Stand facing a stable box with feet hip-width apart.",
+          "Place the whole right foot on the box and lean slightly over that leg.",
+          "Drive through the right foot to stand on the box, then step down under control.",
+          "Repeat on the other leg, keeping the knee aligned with the toes."
+        ],
+        "form_cues": [
+          "Use the whole foot on the box.",
+          "Keep the knee tracking forward.",
+          "Control the step down."
+        ],
+        "common_mistakes": [
+          "Pushing off hard from the floor leg.",
+          "Letting the knee cave inward.",
+          "Using a box that is too high."
+        ],
+        "safety_note": "Choose a box height that permits a stable step and keep the landing area clear.",
+        "provenance": "authored"
+      },
+      "equipment": "other",
+      "primary_muscle": "quadriceps",
+      "secondary_muscles": [
+        "hamstrings",
+        "glutes"
+      ],
+      "source_catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+      "source_catalog_record_sha256": "50e95062f3b85724634eecc322ff964eae9fb2605aa93beb97fb9527eb2e0aeb",
+      "source_english_sha256": "7be5ba98001d5b7835cd74d434cf570154103df62411beb2606b4173f0ce8f89",
+      "status": "ready",
+      "preparation_status": "prompt_prepared_not_generated",
+      "style_version": "v1",
+      "style_sha256": "8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578",
+      "human_reference": {
+        "repository_path": "assets/exercises/biceps-curl-dumbbell.png",
+        "absolute_path": "/workspace/lightweight-exercises-photo/assets/exercises/biceps-curl-dumbbell.png",
+        "sha256": "52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f",
+        "branch": "work",
+        "source_commit": "a6f296cbc6737991dd367e929b3e2df25874d4d8",
+        "role": "Human appearance/proportions/materials/anatomical style ONLY. Exercise pose, grip, equipment and muscles come from the exact-ID catalogue, never the reference.",
+        "pixels_reviewed_during_preparation": false
+      },
+      "scene": {
+        "single_phase": "Right-leg drive onto box",
+        "pose": "Entire RIGHT foot on stable box, torso leaning slightly over that leg; rise through right foot as trailing leg follows without hard push-off.",
+        "grip": "Hands carry no load; source is an unloaded step-up.",
+        "supports_and_equipment": "Whole right sole on box, trailing foot leaves floor during ascent; no invented box height.",
+        "camera": "Front-side three-quarter view showing right sole, box and rising trailing leg.",
+        "source_instruction_quotes": [
+          {
+            "index": 0,
+            "text": "Stand facing a stable box with feet hip-width apart."
+          },
+          {
+            "index": 1,
+            "text": "Place the whole right foot on the box and lean slightly over that leg."
+          },
+          {
+            "index": 2,
+            "text": "Drive through the right foot to stand on the box, then step down under control."
+          },
+          {
+            "index": 3,
+            "text": "Repeat on the other leg, keeping the knee aligned with the toes."
+          }
+        ]
+      },
+      "prompt_payload": {
+        "identity_do_not_render_as_text": {
+          "exercise_id": "step-up",
+          "name": "Step Up",
+          "source_catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+          "source_catalog_record_sha256": "50e95062f3b85724634eecc322ff964eae9fb2605aa93beb97fb9527eb2e0aeb"
+        },
+        "exact_catalogue_source": {
+          "source_english": {
+            "description": "A step-up places one foot on a box or platform and drives the body upward through that leg.",
+            "instructions": [
+              "Stand facing a stable box with feet hip-width apart.",
+              "Place the whole right foot on the box and lean slightly over that leg.",
+              "Drive through the right foot to stand on the box, then step down under control.",
+              "Repeat on the other leg, keeping the knee aligned with the toes."
+            ],
+            "form_cues": [
+              "Use the whole foot on the box.",
+              "Keep the knee tracking forward.",
+              "Control the step down."
+            ],
+            "common_mistakes": [
+              "Pushing off hard from the floor leg.",
+              "Letting the knee cave inward.",
+              "Using a box that is too high."
+            ],
+            "safety_note": "Choose a box height that permits a stable step and keep the landing area clear.",
+            "provenance": "authored"
+          },
+          "equipment": "other",
+          "primary_muscle": "quadriceps",
+          "secondary_muscles": [
+            "hamstrings",
+            "glutes"
+          ]
+        },
+        "human_reference": {
+          "repository_path": "assets/exercises/biceps-curl-dumbbell.png",
+          "absolute_path": "/workspace/lightweight-exercises-photo/assets/exercises/biceps-curl-dumbbell.png",
+          "sha256": "52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f",
+          "branch": "work",
+          "source_commit": "a6f296cbc6737991dd367e929b3e2df25874d4d8",
+          "role": "Human appearance/proportions/materials/anatomical style ONLY. Exercise pose, grip, equipment and muscles come from the exact-ID catalogue, never the reference.",
+          "pixels_reviewed_during_preparation": false
+        },
+        "style": {
+          "version": "v1",
+          "human_model": "One athletic bald male anatomical mannequin, opaque silver-gray muscular surfaces, consistent proportions and detailed 3D materials, plain black shorts, barefoot.",
+          "primary_highlight": {
+            "hex": "#F26445",
+            "rule": "Highlight only the exact primary muscle group provided for this exercise."
+          },
+          "secondary_highlight": {
+            "hex": "#F26445",
+            "intensity_fraction": [
+              0.4,
+              0.5
+            ],
+            "rule": "Only the exact secondary muscles, lighter same-hue highlight; if the list is empty add no secondary target."
+          },
+          "background": "Genuinely transparent PNG background, no white/checkerboard layer, no environment scene.",
+          "output": {
+            "format": "PNG",
+            "width": 1024,
+            "height": 1024,
+            "one_person": true,
+            "one_phase": true
+          },
+          "material_rules": "Highlights never make tissue transparent; no glow, whole-body orange tint, hair, text, labels, arrows, UI, borders, collage or extra person.",
+          "framing": "Full figure and all required equipment/supports visible within a square. Scale and use a three-quarter view to expose the specified contacts without changing anatomy, equipment, grip or technique.",
+          "no_invention": "Technique, equipment and muscles come only from the attached exact catalogue record. No extra attachments, numerical weights, brands or exact angles absent from the source."
+        },
+        "style_document_sha256": "8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578",
+        "scene": {
+          "single_phase": "Right-leg drive onto box",
+          "pose": "Entire RIGHT foot on stable box, torso leaning slightly over that leg; rise through right foot as trailing leg follows without hard push-off.",
+          "grip": "Hands carry no load; source is an unloaded step-up.",
+          "supports_and_equipment": "Whole right sole on box, trailing foot leaves floor during ascent; no invented box height.",
+          "camera": "Front-side three-quarter view showing right sole, box and rising trailing leg.",
+          "source_instruction_quotes": [
+            {
+              "index": 0,
+              "text": "Stand facing a stable box with feet hip-width apart."
+            },
+            {
+              "index": 1,
+              "text": "Place the whole right foot on the box and lean slightly over that leg."
+            },
+            {
+              "index": 2,
+              "text": "Drive through the right foot to stand on the box, then step down under control."
+            },
+            {
+              "index": 3,
+              "text": "Repeat on the other leg, keeping the knee aligned with the toes."
+            }
+          ]
+        },
+        "supplementary_same_ID_sources": []
+      },
+      "generation_prompt": "Create exactly ONE square transparent PNG of the exact exercise below, using the referenced human for APPEARANCE ONLY. Render only the selected phase and camera. Identity/path/hash fields are metadata, never visible text.\n{\n  \"exact_catalogue_source\": {\n    \"equipment\": \"other\",\n    \"primary_muscle\": \"quadriceps\",\n    \"secondary_muscles\": [\n      \"hamstrings\",\n      \"glutes\"\n    ],\n    \"source_english\": {\n      \"common_mistakes\": [\n        \"Pushing off hard from the floor leg.\",\n        \"Letting the knee cave inward.\",\n        \"Using a box that is too high.\"\n      ],\n      \"description\": \"A step-up places one foot on a box or platform and drives the body upward through that leg.\",\n      \"form_cues\": [\n        \"Use the whole foot on the box.\",\n        \"Keep the knee tracking forward.\",\n        \"Control the step down.\"\n      ],\n      \"instructions\": [\n        \"Stand facing a stable box with feet hip-width apart.\",\n        \"Place the whole right foot on the box and lean slightly over that leg.\",\n        \"Drive through the right foot to stand on the box, then step down under control.\",\n        \"Repeat on the other leg, keeping the knee aligned with the toes.\"\n      ],\n      \"provenance\": \"authored\",\n      \"safety_note\": \"Choose a box height that permits a stable step and keep the landing area clear.\"\n    }\n  },\n  \"human_reference\": {\n    \"absolute_path\": \"/workspace/lightweight-exercises-photo/assets/exercises/biceps-curl-dumbbell.png\",\n    \"branch\": \"work\",\n    \"pixels_reviewed_during_preparation\": false,\n    \"repository_path\": \"assets/exercises/biceps-curl-dumbbell.png\",\n    \"role\": \"Human appearance/proportions/materials/anatomical style ONLY. Exercise pose, grip, equipment and muscles come from the exact-ID catalogue, never the reference.\",\n    \"sha256\": \"52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f\",\n    \"source_commit\": \"a6f296cbc6737991dd367e929b3e2df25874d4d8\"\n  },\n  \"identity_do_not_render_as_text\": {\n    \"exercise_id\": \"step-up\",\n    \"name\": \"Step Up\",\n    \"source_catalog_record_sha256\": \"50e95062f3b85724634eecc322ff964eae9fb2605aa93beb97fb9527eb2e0aeb\",\n    \"source_catalog_sha256\": \"a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989\"\n  },\n  \"scene\": {\n    \"camera\": \"Front-side three-quarter view showing right sole, box and rising trailing leg.\",\n    \"grip\": \"Hands carry no load; source is an unloaded step-up.\",\n    \"pose\": \"Entire RIGHT foot on stable box, torso leaning slightly over that leg; rise through right foot as trailing leg follows without hard push-off.\",\n    \"single_phase\": \"Right-leg drive onto box\",\n    \"source_instruction_quotes\": [\n      {\n        \"index\": 0,\n        \"text\": \"Stand facing a stable box with feet hip-width apart.\"\n      },\n      {\n        \"index\": 1,\n        \"text\": \"Place the whole right foot on the box and lean slightly over that leg.\"\n      },\n      {\n        \"index\": 2,\n        \"text\": \"Drive through the right foot to stand on the box, then step down under control.\"\n      },\n      {\n        \"index\": 3,\n        \"text\": \"Repeat on the other leg, keeping the knee aligned with the toes.\"\n      }\n    ],\n    \"supports_and_equipment\": \"Whole right sole on box, trailing foot leaves floor during ascent; no invented box height.\"\n  },\n  \"style\": {\n    \"background\": \"Genuinely transparent PNG background, no white/checkerboard layer, no environment scene.\",\n    \"framing\": \"Full figure and all required equipment/supports visible within a square. Scale and use a three-quarter view to expose the specified contacts without changing anatomy, equipment, grip or technique.\",\n    \"human_model\": \"One athletic bald male anatomical mannequin, opaque silver-gray muscular surfaces, consistent proportions and detailed 3D materials, plain black shorts, barefoot.\",\n    \"material_rules\": \"Highlights never make tissue transparent; no glow, whole-body orange tint, hair, text, labels, arrows, UI, borders, collage or extra person.\",\n    \"no_invention\": \"Technique, equipment and muscles come only from the attached exact catalogue record. No extra attachments, numerical weights, brands or exact angles absent from the source.\",\n    \"output\": {\n      \"format\": \"PNG\",\n      \"height\": 1024,\n      \"one_person\": true,\n      \"one_phase\": true,\n      \"width\": 1024\n    },\n    \"primary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"rule\": \"Highlight only the exact primary muscle group provided for this exercise.\"\n    },\n    \"secondary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"intensity_fraction\": [\n        0.4,\n        0.5\n      ],\n      \"rule\": \"Only the exact secondary muscles, lighter same-hue highlight; if the list is empty add no secondary target.\"\n    },\n    \"version\": \"v1\"\n  },\n  \"style_document_sha256\": \"8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578\",\n  \"supplementary_same_ID_sources\": []\n}",
+      "generation_prompt_sha256": "f954b62a3de7b23b25b2bf38b51aa743b13143c4f74a216b324933681930e99c",
+      "planned_png_path": "/workspace/exercise-image-results/agent-03-others-013/step-up/attempt-1.png",
+      "output_root": "/workspace/exercise-image-results",
+      "planned_output_relative_path": "agent-03-others-013/step-up/attempt-1.png",
+      "result_path": null,
+      "result_sha256": null,
+      "attempts": 0,
+      "user_review": null,
+      "technical_check": null,
+      "agent_visual_review": "not_performed",
+      "generation_authorized_now": false,
+      "clarification_resolution": null
+    },
+    {
+      "exercise_id": "sumo-squat-kettlebell",
+      "name": "Sumo Squat (Kettlebell)",
+      "source_english": {
+        "description": "Sumo Squat (Kettlebell) uses one kettlebell held at the chest while a wide, turned-out stance guides the hips down between the knees.",
+        "instructions": [
+          "Stand with feet wider than shoulder width and toes turned slightly out.",
+          "Hold one kettlebell by the horns at the chest and brace the abdomen.",
+          "Bend the hips and knees, lowering the pelvis between the thighs while heels stay down.",
+          "Drive through both feet to stand tall and reset."
+        ],
+        "form_cues": [
+          "Track knees toward the toes.",
+          "Keep the bell close.",
+          "Keep the chest lifted."
+        ],
+        "common_mistakes": [
+          "Knees collapsing inward.",
+          "Lifting the heels.",
+          "Dropping the bell away from the chest."
+        ],
+        "safety_note": "Use a kettlebell you can keep close while maintaining the wide stance.",
+        "provenance": "authored"
+      },
+      "equipment": "kettlebell",
+      "primary_muscle": "quadriceps",
+      "secondary_muscles": [
+        "glutes",
+        "adductors",
+        "hamstrings"
+      ],
+      "source_catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+      "source_catalog_record_sha256": "c635d2a93f0e9364ca2ace7eb841a3bc02c1064ca82a7ca448fd18f94887e926",
+      "source_english_sha256": "bdee61b77cb5ae7d099c7c059f2e9f459d7cbb413314d5847ae858bc44feb51e",
+      "status": "ready",
+      "preparation_status": "prompt_prepared_not_generated",
+      "style_version": "v1",
+      "style_sha256": "8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578",
+      "human_reference": {
+        "repository_path": "assets/exercises/biceps-curl-dumbbell.png",
+        "absolute_path": "/workspace/lightweight-exercises-photo/assets/exercises/biceps-curl-dumbbell.png",
+        "sha256": "52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f",
+        "branch": "work",
+        "source_commit": "a6f296cbc6737991dd367e929b3e2df25874d4d8",
+        "role": "Human appearance/proportions/materials/anatomical style ONLY. Exercise pose, grip, equipment and muscles come from the exact-ID catalogue, never the reference.",
+        "pixels_reviewed_during_preparation": false
+      },
+      "scene": {
+        "single_phase": "Wide controlled squat with horn-held bell",
+        "pose": "Feet wider than shoulders, toes slightly out, heels down; pelvis lowers between thighs, chest lifted and knees follow toes.",
+        "grip": "Both hands hold ONE kettlebell by HORNS at chest, exactly as source specifies.",
+        "supports_and_equipment": "Both feet grounded; no between-leg deadlift load, machine or second bell.",
+        "camera": "Front three-quarter view showing horns grip, chest-held bell and wide stance.",
+        "source_instruction_quotes": [
+          {
+            "index": 0,
+            "text": "Stand with feet wider than shoulder width and toes turned slightly out."
+          },
+          {
+            "index": 1,
+            "text": "Hold one kettlebell by the horns at the chest and brace the abdomen."
+          },
+          {
+            "index": 2,
+            "text": "Bend the hips and knees, lowering the pelvis between the thighs while heels stay down."
+          },
+          {
+            "index": 3,
+            "text": "Drive through both feet to stand tall and reset."
+          }
+        ]
+      },
+      "prompt_payload": {
+        "identity_do_not_render_as_text": {
+          "exercise_id": "sumo-squat-kettlebell",
+          "name": "Sumo Squat (Kettlebell)",
+          "source_catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+          "source_catalog_record_sha256": "c635d2a93f0e9364ca2ace7eb841a3bc02c1064ca82a7ca448fd18f94887e926"
+        },
+        "exact_catalogue_source": {
+          "source_english": {
+            "description": "Sumo Squat (Kettlebell) uses one kettlebell held at the chest while a wide, turned-out stance guides the hips down between the knees.",
+            "instructions": [
+              "Stand with feet wider than shoulder width and toes turned slightly out.",
+              "Hold one kettlebell by the horns at the chest and brace the abdomen.",
+              "Bend the hips and knees, lowering the pelvis between the thighs while heels stay down.",
+              "Drive through both feet to stand tall and reset."
+            ],
+            "form_cues": [
+              "Track knees toward the toes.",
+              "Keep the bell close.",
+              "Keep the chest lifted."
+            ],
+            "common_mistakes": [
+              "Knees collapsing inward.",
+              "Lifting the heels.",
+              "Dropping the bell away from the chest."
+            ],
+            "safety_note": "Use a kettlebell you can keep close while maintaining the wide stance.",
+            "provenance": "authored"
+          },
+          "equipment": "kettlebell",
+          "primary_muscle": "quadriceps",
+          "secondary_muscles": [
+            "glutes",
+            "adductors",
+            "hamstrings"
+          ]
+        },
+        "human_reference": {
+          "repository_path": "assets/exercises/biceps-curl-dumbbell.png",
+          "absolute_path": "/workspace/lightweight-exercises-photo/assets/exercises/biceps-curl-dumbbell.png",
+          "sha256": "52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f",
+          "branch": "work",
+          "source_commit": "a6f296cbc6737991dd367e929b3e2df25874d4d8",
+          "role": "Human appearance/proportions/materials/anatomical style ONLY. Exercise pose, grip, equipment and muscles come from the exact-ID catalogue, never the reference.",
+          "pixels_reviewed_during_preparation": false
+        },
+        "style": {
+          "version": "v1",
+          "human_model": "One athletic bald male anatomical mannequin, opaque silver-gray muscular surfaces, consistent proportions and detailed 3D materials, plain black shorts, barefoot.",
+          "primary_highlight": {
+            "hex": "#F26445",
+            "rule": "Highlight only the exact primary muscle group provided for this exercise."
+          },
+          "secondary_highlight": {
+            "hex": "#F26445",
+            "intensity_fraction": [
+              0.4,
+              0.5
+            ],
+            "rule": "Only the exact secondary muscles, lighter same-hue highlight; if the list is empty add no secondary target."
+          },
+          "background": "Genuinely transparent PNG background, no white/checkerboard layer, no environment scene.",
+          "output": {
+            "format": "PNG",
+            "width": 1024,
+            "height": 1024,
+            "one_person": true,
+            "one_phase": true
+          },
+          "material_rules": "Highlights never make tissue transparent; no glow, whole-body orange tint, hair, text, labels, arrows, UI, borders, collage or extra person.",
+          "framing": "Full figure and all required equipment/supports visible within a square. Scale and use a three-quarter view to expose the specified contacts without changing anatomy, equipment, grip or technique.",
+          "no_invention": "Technique, equipment and muscles come only from the attached exact catalogue record. No extra attachments, numerical weights, brands or exact angles absent from the source."
+        },
+        "style_document_sha256": "8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578",
+        "scene": {
+          "single_phase": "Wide controlled squat with horn-held bell",
+          "pose": "Feet wider than shoulders, toes slightly out, heels down; pelvis lowers between thighs, chest lifted and knees follow toes.",
+          "grip": "Both hands hold ONE kettlebell by HORNS at chest, exactly as source specifies.",
+          "supports_and_equipment": "Both feet grounded; no between-leg deadlift load, machine or second bell.",
+          "camera": "Front three-quarter view showing horns grip, chest-held bell and wide stance.",
+          "source_instruction_quotes": [
+            {
+              "index": 0,
+              "text": "Stand with feet wider than shoulder width and toes turned slightly out."
+            },
+            {
+              "index": 1,
+              "text": "Hold one kettlebell by the horns at the chest and brace the abdomen."
+            },
+            {
+              "index": 2,
+              "text": "Bend the hips and knees, lowering the pelvis between the thighs while heels stay down."
+            },
+            {
+              "index": 3,
+              "text": "Drive through both feet to stand tall and reset."
+            }
+          ]
+        },
+        "supplementary_same_ID_sources": []
+      },
+      "generation_prompt": "Create exactly ONE square transparent PNG of the exact exercise below, using the referenced human for APPEARANCE ONLY. Render only the selected phase and camera. Identity/path/hash fields are metadata, never visible text.\n{\n  \"exact_catalogue_source\": {\n    \"equipment\": \"kettlebell\",\n    \"primary_muscle\": \"quadriceps\",\n    \"secondary_muscles\": [\n      \"glutes\",\n      \"adductors\",\n      \"hamstrings\"\n    ],\n    \"source_english\": {\n      \"common_mistakes\": [\n        \"Knees collapsing inward.\",\n        \"Lifting the heels.\",\n        \"Dropping the bell away from the chest.\"\n      ],\n      \"description\": \"Sumo Squat (Kettlebell) uses one kettlebell held at the chest while a wide, turned-out stance guides the hips down between the knees.\",\n      \"form_cues\": [\n        \"Track knees toward the toes.\",\n        \"Keep the bell close.\",\n        \"Keep the chest lifted.\"\n      ],\n      \"instructions\": [\n        \"Stand with feet wider than shoulder width and toes turned slightly out.\",\n        \"Hold one kettlebell by the horns at the chest and brace the abdomen.\",\n        \"Bend the hips and knees, lowering the pelvis between the thighs while heels stay down.\",\n        \"Drive through both feet to stand tall and reset.\"\n      ],\n      \"provenance\": \"authored\",\n      \"safety_note\": \"Use a kettlebell you can keep close while maintaining the wide stance.\"\n    }\n  },\n  \"human_reference\": {\n    \"absolute_path\": \"/workspace/lightweight-exercises-photo/assets/exercises/biceps-curl-dumbbell.png\",\n    \"branch\": \"work\",\n    \"pixels_reviewed_during_preparation\": false,\n    \"repository_path\": \"assets/exercises/biceps-curl-dumbbell.png\",\n    \"role\": \"Human appearance/proportions/materials/anatomical style ONLY. Exercise pose, grip, equipment and muscles come from the exact-ID catalogue, never the reference.\",\n    \"sha256\": \"52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f\",\n    \"source_commit\": \"a6f296cbc6737991dd367e929b3e2df25874d4d8\"\n  },\n  \"identity_do_not_render_as_text\": {\n    \"exercise_id\": \"sumo-squat-kettlebell\",\n    \"name\": \"Sumo Squat (Kettlebell)\",\n    \"source_catalog_record_sha256\": \"c635d2a93f0e9364ca2ace7eb841a3bc02c1064ca82a7ca448fd18f94887e926\",\n    \"source_catalog_sha256\": \"a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989\"\n  },\n  \"scene\": {\n    \"camera\": \"Front three-quarter view showing horns grip, chest-held bell and wide stance.\",\n    \"grip\": \"Both hands hold ONE kettlebell by HORNS at chest, exactly as source specifies.\",\n    \"pose\": \"Feet wider than shoulders, toes slightly out, heels down; pelvis lowers between thighs, chest lifted and knees follow toes.\",\n    \"single_phase\": \"Wide controlled squat with horn-held bell\",\n    \"source_instruction_quotes\": [\n      {\n        \"index\": 0,\n        \"text\": \"Stand with feet wider than shoulder width and toes turned slightly out.\"\n      },\n      {\n        \"index\": 1,\n        \"text\": \"Hold one kettlebell by the horns at the chest and brace the abdomen.\"\n      },\n      {\n        \"index\": 2,\n        \"text\": \"Bend the hips and knees, lowering the pelvis between the thighs while heels stay down.\"\n      },\n      {\n        \"index\": 3,\n        \"text\": \"Drive through both feet to stand tall and reset.\"\n      }\n    ],\n    \"supports_and_equipment\": \"Both feet grounded; no between-leg deadlift load, machine or second bell.\"\n  },\n  \"style\": {\n    \"background\": \"Genuinely transparent PNG background, no white/checkerboard layer, no environment scene.\",\n    \"framing\": \"Full figure and all required equipment/supports visible within a square. Scale and use a three-quarter view to expose the specified contacts without changing anatomy, equipment, grip or technique.\",\n    \"human_model\": \"One athletic bald male anatomical mannequin, opaque silver-gray muscular surfaces, consistent proportions and detailed 3D materials, plain black shorts, barefoot.\",\n    \"material_rules\": \"Highlights never make tissue transparent; no glow, whole-body orange tint, hair, text, labels, arrows, UI, borders, collage or extra person.\",\n    \"no_invention\": \"Technique, equipment and muscles come only from the attached exact catalogue record. No extra attachments, numerical weights, brands or exact angles absent from the source.\",\n    \"output\": {\n      \"format\": \"PNG\",\n      \"height\": 1024,\n      \"one_person\": true,\n      \"one_phase\": true,\n      \"width\": 1024\n    },\n    \"primary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"rule\": \"Highlight only the exact primary muscle group provided for this exercise.\"\n    },\n    \"secondary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"intensity_fraction\": [\n        0.4,\n        0.5\n      ],\n      \"rule\": \"Only the exact secondary muscles, lighter same-hue highlight; if the list is empty add no secondary target.\"\n    },\n    \"version\": \"v1\"\n  },\n  \"style_document_sha256\": \"8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578\",\n  \"supplementary_same_ID_sources\": []\n}",
+      "generation_prompt_sha256": "964d717244ae4460e07d0bb8fa5bc58ca81de0e84712919b4242dd46feb57d49",
+      "planned_png_path": "/workspace/exercise-image-results/agent-03-others-013/sumo-squat-kettlebell/attempt-1.png",
+      "output_root": "/workspace/exercise-image-results",
+      "planned_output_relative_path": "agent-03-others-013/sumo-squat-kettlebell/attempt-1.png",
+      "result_path": null,
+      "result_sha256": null,
+      "attempts": 0,
+      "user_review": null,
+      "technical_check": null,
+      "agent_visual_review": "not_performed",
+      "generation_authorized_now": false,
+      "clarification_resolution": null
+    },
+    {
+      "exercise_id": "walking-lunge-sandbag",
+      "name": "Walking Lunge (Sandbag)",
+      "source_english": {
+        "description": "Walking Lunge (Sandbag) alternates forward steps while a sandbag stays secured against the torso.",
+        "instructions": [
+          "Hold the sandbag against the chest with both arms and stand tall.",
+          "Step forward with the right foot and lower until both knees bend and the right heel stays down.",
+          "Drive through the right foot and bring the left foot forward.",
+          "Alternate legs while keeping the sandbag close."
+        ],
+        "form_cues": [
+          "Keep the load centered.",
+          "Keep torso upright.",
+          "Take controlled steps."
+        ],
+        "common_mistakes": [
+          "Letting the bag swing.",
+          "Overstriding.",
+          "Collapsing the front knee."
+        ],
+        "safety_note": "Use a sandbag that stays secure and a clear lane for the walking steps.",
+        "provenance": "authored"
+      },
+      "equipment": "other",
+      "primary_muscle": "quadriceps",
+      "secondary_muscles": [
+        "hamstrings",
+        "glutes"
+      ],
+      "source_catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+      "source_catalog_record_sha256": "bb534d6010b19eedbe760a60f9df2cf973e13fd69d5ed99201f56fc24ab2f7c9",
+      "source_english_sha256": "07892316258650ce0703a4685f279e4fbd0fe4ad62bbe19e42123991a4711132",
+      "status": "ready",
+      "preparation_status": "prompt_prepared_not_generated",
+      "style_version": "v1",
+      "style_sha256": "8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578",
+      "human_reference": {
+        "repository_path": "assets/exercises/biceps-curl-dumbbell.png",
+        "absolute_path": "/workspace/lightweight-exercises-photo/assets/exercises/biceps-curl-dumbbell.png",
+        "sha256": "52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f",
+        "branch": "work",
+        "source_commit": "a6f296cbc6737991dd367e929b3e2df25874d4d8",
+        "role": "Human appearance/proportions/materials/anatomical style ONLY. Exercise pose, grip, equipment and muscles come from the exact-ID catalogue, never the reference.",
+        "pixels_reviewed_during_preparation": false
+      },
+      "scene": {
+        "single_phase": "Right forward-step lower phase",
+        "pose": "Right foot forward with heel down, both knees bend, torso tall; bag remains centered and still.",
+        "grip": "Both arms hold SAME sandbag firmly against chest.",
+        "supports_and_equipment": "Both feet in forward lunge contact during this phase, clear walking lane; no invented load number or barbell.",
+        "camera": "Front-side three-quarter view showing bag-to-chest contact and right forward leg.",
+        "source_instruction_quotes": [
+          {
+            "index": 0,
+            "text": "Hold the sandbag against the chest with both arms and stand tall."
+          },
+          {
+            "index": 1,
+            "text": "Step forward with the right foot and lower until both knees bend and the right heel stays down."
+          },
+          {
+            "index": 2,
+            "text": "Drive through the right foot and bring the left foot forward."
+          },
+          {
+            "index": 3,
+            "text": "Alternate legs while keeping the sandbag close."
+          }
+        ]
+      },
+      "prompt_payload": {
+        "identity_do_not_render_as_text": {
+          "exercise_id": "walking-lunge-sandbag",
+          "name": "Walking Lunge (Sandbag)",
+          "source_catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+          "source_catalog_record_sha256": "bb534d6010b19eedbe760a60f9df2cf973e13fd69d5ed99201f56fc24ab2f7c9"
+        },
+        "exact_catalogue_source": {
+          "source_english": {
+            "description": "Walking Lunge (Sandbag) alternates forward steps while a sandbag stays secured against the torso.",
+            "instructions": [
+              "Hold the sandbag against the chest with both arms and stand tall.",
+              "Step forward with the right foot and lower until both knees bend and the right heel stays down.",
+              "Drive through the right foot and bring the left foot forward.",
+              "Alternate legs while keeping the sandbag close."
+            ],
+            "form_cues": [
+              "Keep the load centered.",
+              "Keep torso upright.",
+              "Take controlled steps."
+            ],
+            "common_mistakes": [
+              "Letting the bag swing.",
+              "Overstriding.",
+              "Collapsing the front knee."
+            ],
+            "safety_note": "Use a sandbag that stays secure and a clear lane for the walking steps.",
+            "provenance": "authored"
+          },
+          "equipment": "other",
+          "primary_muscle": "quadriceps",
+          "secondary_muscles": [
+            "hamstrings",
+            "glutes"
+          ]
+        },
+        "human_reference": {
+          "repository_path": "assets/exercises/biceps-curl-dumbbell.png",
+          "absolute_path": "/workspace/lightweight-exercises-photo/assets/exercises/biceps-curl-dumbbell.png",
+          "sha256": "52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f",
+          "branch": "work",
+          "source_commit": "a6f296cbc6737991dd367e929b3e2df25874d4d8",
+          "role": "Human appearance/proportions/materials/anatomical style ONLY. Exercise pose, grip, equipment and muscles come from the exact-ID catalogue, never the reference.",
+          "pixels_reviewed_during_preparation": false
+        },
+        "style": {
+          "version": "v1",
+          "human_model": "One athletic bald male anatomical mannequin, opaque silver-gray muscular surfaces, consistent proportions and detailed 3D materials, plain black shorts, barefoot.",
+          "primary_highlight": {
+            "hex": "#F26445",
+            "rule": "Highlight only the exact primary muscle group provided for this exercise."
+          },
+          "secondary_highlight": {
+            "hex": "#F26445",
+            "intensity_fraction": [
+              0.4,
+              0.5
+            ],
+            "rule": "Only the exact secondary muscles, lighter same-hue highlight; if the list is empty add no secondary target."
+          },
+          "background": "Genuinely transparent PNG background, no white/checkerboard layer, no environment scene.",
+          "output": {
+            "format": "PNG",
+            "width": 1024,
+            "height": 1024,
+            "one_person": true,
+            "one_phase": true
+          },
+          "material_rules": "Highlights never make tissue transparent; no glow, whole-body orange tint, hair, text, labels, arrows, UI, borders, collage or extra person.",
+          "framing": "Full figure and all required equipment/supports visible within a square. Scale and use a three-quarter view to expose the specified contacts without changing anatomy, equipment, grip or technique.",
+          "no_invention": "Technique, equipment and muscles come only from the attached exact catalogue record. No extra attachments, numerical weights, brands or exact angles absent from the source."
+        },
+        "style_document_sha256": "8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578",
+        "scene": {
+          "single_phase": "Right forward-step lower phase",
+          "pose": "Right foot forward with heel down, both knees bend, torso tall; bag remains centered and still.",
+          "grip": "Both arms hold SAME sandbag firmly against chest.",
+          "supports_and_equipment": "Both feet in forward lunge contact during this phase, clear walking lane; no invented load number or barbell.",
+          "camera": "Front-side three-quarter view showing bag-to-chest contact and right forward leg.",
+          "source_instruction_quotes": [
+            {
+              "index": 0,
+              "text": "Hold the sandbag against the chest with both arms and stand tall."
+            },
+            {
+              "index": 1,
+              "text": "Step forward with the right foot and lower until both knees bend and the right heel stays down."
+            },
+            {
+              "index": 2,
+              "text": "Drive through the right foot and bring the left foot forward."
+            },
+            {
+              "index": 3,
+              "text": "Alternate legs while keeping the sandbag close."
+            }
+          ]
+        },
+        "supplementary_same_ID_sources": []
+      },
+      "generation_prompt": "Create exactly ONE square transparent PNG of the exact exercise below, using the referenced human for APPEARANCE ONLY. Render only the selected phase and camera. Identity/path/hash fields are metadata, never visible text.\n{\n  \"exact_catalogue_source\": {\n    \"equipment\": \"other\",\n    \"primary_muscle\": \"quadriceps\",\n    \"secondary_muscles\": [\n      \"hamstrings\",\n      \"glutes\"\n    ],\n    \"source_english\": {\n      \"common_mistakes\": [\n        \"Letting the bag swing.\",\n        \"Overstriding.\",\n        \"Collapsing the front knee.\"\n      ],\n      \"description\": \"Walking Lunge (Sandbag) alternates forward steps while a sandbag stays secured against the torso.\",\n      \"form_cues\": [\n        \"Keep the load centered.\",\n        \"Keep torso upright.\",\n        \"Take controlled steps.\"\n      ],\n      \"instructions\": [\n        \"Hold the sandbag against the chest with both arms and stand tall.\",\n        \"Step forward with the right foot and lower until both knees bend and the right heel stays down.\",\n        \"Drive through the right foot and bring the left foot forward.\",\n        \"Alternate legs while keeping the sandbag close.\"\n      ],\n      \"provenance\": \"authored\",\n      \"safety_note\": \"Use a sandbag that stays secure and a clear lane for the walking steps.\"\n    }\n  },\n  \"human_reference\": {\n    \"absolute_path\": \"/workspace/lightweight-exercises-photo/assets/exercises/biceps-curl-dumbbell.png\",\n    \"branch\": \"work\",\n    \"pixels_reviewed_during_preparation\": false,\n    \"repository_path\": \"assets/exercises/biceps-curl-dumbbell.png\",\n    \"role\": \"Human appearance/proportions/materials/anatomical style ONLY. Exercise pose, grip, equipment and muscles come from the exact-ID catalogue, never the reference.\",\n    \"sha256\": \"52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f\",\n    \"source_commit\": \"a6f296cbc6737991dd367e929b3e2df25874d4d8\"\n  },\n  \"identity_do_not_render_as_text\": {\n    \"exercise_id\": \"walking-lunge-sandbag\",\n    \"name\": \"Walking Lunge (Sandbag)\",\n    \"source_catalog_record_sha256\": \"bb534d6010b19eedbe760a60f9df2cf973e13fd69d5ed99201f56fc24ab2f7c9\",\n    \"source_catalog_sha256\": \"a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989\"\n  },\n  \"scene\": {\n    \"camera\": \"Front-side three-quarter view showing bag-to-chest contact and right forward leg.\",\n    \"grip\": \"Both arms hold SAME sandbag firmly against chest.\",\n    \"pose\": \"Right foot forward with heel down, both knees bend, torso tall; bag remains centered and still.\",\n    \"single_phase\": \"Right forward-step lower phase\",\n    \"source_instruction_quotes\": [\n      {\n        \"index\": 0,\n        \"text\": \"Hold the sandbag against the chest with both arms and stand tall.\"\n      },\n      {\n        \"index\": 1,\n        \"text\": \"Step forward with the right foot and lower until both knees bend and the right heel stays down.\"\n      },\n      {\n        \"index\": 2,\n        \"text\": \"Drive through the right foot and bring the left foot forward.\"\n      },\n      {\n        \"index\": 3,\n        \"text\": \"Alternate legs while keeping the sandbag close.\"\n      }\n    ],\n    \"supports_and_equipment\": \"Both feet in forward lunge contact during this phase, clear walking lane; no invented load number or barbell.\"\n  },\n  \"style\": {\n    \"background\": \"Genuinely transparent PNG background, no white/checkerboard layer, no environment scene.\",\n    \"framing\": \"Full figure and all required equipment/supports visible within a square. Scale and use a three-quarter view to expose the specified contacts without changing anatomy, equipment, grip or technique.\",\n    \"human_model\": \"One athletic bald male anatomical mannequin, opaque silver-gray muscular surfaces, consistent proportions and detailed 3D materials, plain black shorts, barefoot.\",\n    \"material_rules\": \"Highlights never make tissue transparent; no glow, whole-body orange tint, hair, text, labels, arrows, UI, borders, collage or extra person.\",\n    \"no_invention\": \"Technique, equipment and muscles come only from the attached exact catalogue record. No extra attachments, numerical weights, brands or exact angles absent from the source.\",\n    \"output\": {\n      \"format\": \"PNG\",\n      \"height\": 1024,\n      \"one_person\": true,\n      \"one_phase\": true,\n      \"width\": 1024\n    },\n    \"primary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"rule\": \"Highlight only the exact primary muscle group provided for this exercise.\"\n    },\n    \"secondary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"intensity_fraction\": [\n        0.4,\n        0.5\n      ],\n      \"rule\": \"Only the exact secondary muscles, lighter same-hue highlight; if the list is empty add no secondary target.\"\n    },\n    \"version\": \"v1\"\n  },\n  \"style_document_sha256\": \"8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578\",\n  \"supplementary_same_ID_sources\": []\n}",
+      "generation_prompt_sha256": "c46f959aa32b6ef3abcbafdea562437eb66f782eb7ce8c9fff1b40f980390616",
+      "planned_png_path": "/workspace/exercise-image-results/agent-03-others-013/walking-lunge-sandbag/attempt-1.png",
+      "output_root": "/workspace/exercise-image-results",
+      "planned_output_relative_path": "agent-03-others-013/walking-lunge-sandbag/attempt-1.png",
+      "result_path": null,
+      "result_sha256": null,
+      "attempts": 0,
+      "user_review": null,
+      "technical_check": null,
+      "agent_visual_review": "not_performed",
+      "generation_authorized_now": false,
+      "clarification_resolution": null
+    },
+    {
+      "exercise_id": "wrist-roller-machine",
+      "name": "Wrist Roller",
+      "source_english": {
+        "description": "Wrist Roller winds a suspended weight up and down by alternating wrist flexion and extension.",
+        "instructions": [
+          "Hold the wrist-roller bar with both hands at shoulder height and arms extended.",
+          "Roll the bar forward with alternating wrist turns until the weight reaches the hands.",
+          "Pause briefly at the top without shrugging.",
+          "Reverse the wrist direction to lower the weight slowly to the floor."
+        ],
+        "form_cues": [
+          "Keep elbows softly bent.",
+          "Move at the wrists.",
+          "Keep the bar level."
+        ],
+        "common_mistakes": [
+          "Using the shoulders.",
+          "Dropping the weight.",
+          "Rolling too quickly."
+        ],
+        "safety_note": "Keep the hanging weight clear of feet and use a light load that can be reversed safely.",
+        "provenance": "adapted"
+      },
+      "equipment": "machine",
+      "primary_muscle": "forearms",
+      "secondary_muscles": [
+        "shoulders"
+      ],
+      "source_catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+      "source_catalog_record_sha256": "2d4f1431e92f5080c3de6b240fa5c0d715c8525e30cf35088cdcc220539bedbb",
+      "source_english_sha256": "e1fe48c9b46e50ed928087eff498fe3df4d64f85dba76511ef84901d5a26000e",
+      "status": "ready",
+      "preparation_status": "prompt_prepared_not_generated",
+      "style_version": "v1",
+      "style_sha256": "8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578",
+      "human_reference": {
+        "repository_path": "assets/exercises/biceps-curl-dumbbell.png",
+        "absolute_path": "/workspace/lightweight-exercises-photo/assets/exercises/biceps-curl-dumbbell.png",
+        "sha256": "52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f",
+        "branch": "work",
+        "source_commit": "a6f296cbc6737991dd367e929b3e2df25874d4d8",
+        "role": "Human appearance/proportions/materials/anatomical style ONLY. Exercise pose, grip, equipment and muscles come from the exact-ID catalogue, never the reference.",
+        "pixels_reviewed_during_preparation": false
+      },
+      "scene": {
+        "single_phase": "Controlled mid-wind of hanging load",
+        "pose": "Stand with arms at shoulder height and elbows softly unlocked; shoulders quiet, bar level as wrists alternate turns.",
+        "grip": "Both hands firmly grip wrist-roller BAR; motion at wrists, not a shoulder lift.",
+        "supports_and_equipment": "One light suspended weight is raised by cord winding onto standard compatible wrist-roller bar; weight remains clear of feet. Manual roller, no cable station or stack.",
+        "camera": "Front-side three-quarter view showing both hands, bar, winding cord and full suspended weight.",
+        "source_instruction_quotes": [
+          {
+            "index": 0,
+            "text": "Hold the wrist-roller bar with both hands at shoulder height and arms extended."
+          },
+          {
+            "index": 1,
+            "text": "Roll the bar forward with alternating wrist turns until the weight reaches the hands."
+          },
+          {
+            "index": 2,
+            "text": "Pause briefly at the top without shrugging."
+          },
+          {
+            "index": 3,
+            "text": "Reverse the wrist direction to lower the weight slowly to the floor."
+          }
+        ]
+      },
+      "prompt_payload": {
+        "identity_do_not_render_as_text": {
+          "exercise_id": "wrist-roller-machine",
+          "name": "Wrist Roller",
+          "source_catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+          "source_catalog_record_sha256": "2d4f1431e92f5080c3de6b240fa5c0d715c8525e30cf35088cdcc220539bedbb"
+        },
+        "exact_catalogue_source": {
+          "source_english": {
+            "description": "Wrist Roller winds a suspended weight up and down by alternating wrist flexion and extension.",
+            "instructions": [
+              "Hold the wrist-roller bar with both hands at shoulder height and arms extended.",
+              "Roll the bar forward with alternating wrist turns until the weight reaches the hands.",
+              "Pause briefly at the top without shrugging.",
+              "Reverse the wrist direction to lower the weight slowly to the floor."
+            ],
+            "form_cues": [
+              "Keep elbows softly bent.",
+              "Move at the wrists.",
+              "Keep the bar level."
+            ],
+            "common_mistakes": [
+              "Using the shoulders.",
+              "Dropping the weight.",
+              "Rolling too quickly."
+            ],
+            "safety_note": "Keep the hanging weight clear of feet and use a light load that can be reversed safely.",
+            "provenance": "adapted"
+          },
+          "equipment": "machine",
+          "primary_muscle": "forearms",
+          "secondary_muscles": [
+            "shoulders"
+          ]
+        },
+        "human_reference": {
+          "repository_path": "assets/exercises/biceps-curl-dumbbell.png",
+          "absolute_path": "/workspace/lightweight-exercises-photo/assets/exercises/biceps-curl-dumbbell.png",
+          "sha256": "52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f",
+          "branch": "work",
+          "source_commit": "a6f296cbc6737991dd367e929b3e2df25874d4d8",
+          "role": "Human appearance/proportions/materials/anatomical style ONLY. Exercise pose, grip, equipment and muscles come from the exact-ID catalogue, never the reference.",
+          "pixels_reviewed_during_preparation": false
+        },
+        "style": {
+          "version": "v1",
+          "human_model": "One athletic bald male anatomical mannequin, opaque silver-gray muscular surfaces, consistent proportions and detailed 3D materials, plain black shorts, barefoot.",
+          "primary_highlight": {
+            "hex": "#F26445",
+            "rule": "Highlight only the exact primary muscle group provided for this exercise."
+          },
+          "secondary_highlight": {
+            "hex": "#F26445",
+            "intensity_fraction": [
+              0.4,
+              0.5
+            ],
+            "rule": "Only the exact secondary muscles, lighter same-hue highlight; if the list is empty add no secondary target."
+          },
+          "background": "Genuinely transparent PNG background, no white/checkerboard layer, no environment scene.",
+          "output": {
+            "format": "PNG",
+            "width": 1024,
+            "height": 1024,
+            "one_person": true,
+            "one_phase": true
+          },
+          "material_rules": "Highlights never make tissue transparent; no glow, whole-body orange tint, hair, text, labels, arrows, UI, borders, collage or extra person.",
+          "framing": "Full figure and all required equipment/supports visible within a square. Scale and use a three-quarter view to expose the specified contacts without changing anatomy, equipment, grip or technique.",
+          "no_invention": "Technique, equipment and muscles come only from the attached exact catalogue record. No extra attachments, numerical weights, brands or exact angles absent from the source."
+        },
+        "style_document_sha256": "8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578",
+        "scene": {
+          "single_phase": "Controlled mid-wind of hanging load",
+          "pose": "Stand with arms at shoulder height and elbows softly unlocked; shoulders quiet, bar level as wrists alternate turns.",
+          "grip": "Both hands firmly grip wrist-roller BAR; motion at wrists, not a shoulder lift.",
+          "supports_and_equipment": "One light suspended weight is raised by cord winding onto standard compatible wrist-roller bar; weight remains clear of feet. Manual roller, no cable station or stack.",
+          "camera": "Front-side three-quarter view showing both hands, bar, winding cord and full suspended weight.",
+          "source_instruction_quotes": [
+            {
+              "index": 0,
+              "text": "Hold the wrist-roller bar with both hands at shoulder height and arms extended."
+            },
+            {
+              "index": 1,
+              "text": "Roll the bar forward with alternating wrist turns until the weight reaches the hands."
+            },
+            {
+              "index": 2,
+              "text": "Pause briefly at the top without shrugging."
+            },
+            {
+              "index": 3,
+              "text": "Reverse the wrist direction to lower the weight slowly to the floor."
+            }
+          ]
+        },
+        "supplementary_same_ID_sources": []
+      },
+      "generation_prompt": "Create exactly ONE square transparent PNG of the exact exercise below, using the referenced human for APPEARANCE ONLY. Render only the selected phase and camera. Identity/path/hash fields are metadata, never visible text.\n{\n  \"exact_catalogue_source\": {\n    \"equipment\": \"machine\",\n    \"primary_muscle\": \"forearms\",\n    \"secondary_muscles\": [\n      \"shoulders\"\n    ],\n    \"source_english\": {\n      \"common_mistakes\": [\n        \"Using the shoulders.\",\n        \"Dropping the weight.\",\n        \"Rolling too quickly.\"\n      ],\n      \"description\": \"Wrist Roller winds a suspended weight up and down by alternating wrist flexion and extension.\",\n      \"form_cues\": [\n        \"Keep elbows softly bent.\",\n        \"Move at the wrists.\",\n        \"Keep the bar level.\"\n      ],\n      \"instructions\": [\n        \"Hold the wrist-roller bar with both hands at shoulder height and arms extended.\",\n        \"Roll the bar forward with alternating wrist turns until the weight reaches the hands.\",\n        \"Pause briefly at the top without shrugging.\",\n        \"Reverse the wrist direction to lower the weight slowly to the floor.\"\n      ],\n      \"provenance\": \"adapted\",\n      \"safety_note\": \"Keep the hanging weight clear of feet and use a light load that can be reversed safely.\"\n    }\n  },\n  \"human_reference\": {\n    \"absolute_path\": \"/workspace/lightweight-exercises-photo/assets/exercises/biceps-curl-dumbbell.png\",\n    \"branch\": \"work\",\n    \"pixels_reviewed_during_preparation\": false,\n    \"repository_path\": \"assets/exercises/biceps-curl-dumbbell.png\",\n    \"role\": \"Human appearance/proportions/materials/anatomical style ONLY. Exercise pose, grip, equipment and muscles come from the exact-ID catalogue, never the reference.\",\n    \"sha256\": \"52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f\",\n    \"source_commit\": \"a6f296cbc6737991dd367e929b3e2df25874d4d8\"\n  },\n  \"identity_do_not_render_as_text\": {\n    \"exercise_id\": \"wrist-roller-machine\",\n    \"name\": \"Wrist Roller\",\n    \"source_catalog_record_sha256\": \"2d4f1431e92f5080c3de6b240fa5c0d715c8525e30cf35088cdcc220539bedbb\",\n    \"source_catalog_sha256\": \"a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989\"\n  },\n  \"scene\": {\n    \"camera\": \"Front-side three-quarter view showing both hands, bar, winding cord and full suspended weight.\",\n    \"grip\": \"Both hands firmly grip wrist-roller BAR; motion at wrists, not a shoulder lift.\",\n    \"pose\": \"Stand with arms at shoulder height and elbows softly unlocked; shoulders quiet, bar level as wrists alternate turns.\",\n    \"single_phase\": \"Controlled mid-wind of hanging load\",\n    \"source_instruction_quotes\": [\n      {\n        \"index\": 0,\n        \"text\": \"Hold the wrist-roller bar with both hands at shoulder height and arms extended.\"\n      },\n      {\n        \"index\": 1,\n        \"text\": \"Roll the bar forward with alternating wrist turns until the weight reaches the hands.\"\n      },\n      {\n        \"index\": 2,\n        \"text\": \"Pause briefly at the top without shrugging.\"\n      },\n      {\n        \"index\": 3,\n        \"text\": \"Reverse the wrist direction to lower the weight slowly to the floor.\"\n      }\n    ],\n    \"supports_and_equipment\": \"One light suspended weight is raised by cord winding onto standard compatible wrist-roller bar; weight remains clear of feet. Manual roller, no cable station or stack.\"\n  },\n  \"style\": {\n    \"background\": \"Genuinely transparent PNG background, no white/checkerboard layer, no environment scene.\",\n    \"framing\": \"Full figure and all required equipment/supports visible within a square. Scale and use a three-quarter view to expose the specified contacts without changing anatomy, equipment, grip or technique.\",\n    \"human_model\": \"One athletic bald male anatomical mannequin, opaque silver-gray muscular surfaces, consistent proportions and detailed 3D materials, plain black shorts, barefoot.\",\n    \"material_rules\": \"Highlights never make tissue transparent; no glow, whole-body orange tint, hair, text, labels, arrows, UI, borders, collage or extra person.\",\n    \"no_invention\": \"Technique, equipment and muscles come only from the attached exact catalogue record. No extra attachments, numerical weights, brands or exact angles absent from the source.\",\n    \"output\": {\n      \"format\": \"PNG\",\n      \"height\": 1024,\n      \"one_person\": true,\n      \"one_phase\": true,\n      \"width\": 1024\n    },\n    \"primary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"rule\": \"Highlight only the exact primary muscle group provided for this exercise.\"\n    },\n    \"secondary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"intensity_fraction\": [\n        0.4,\n        0.5\n      ],\n      \"rule\": \"Only the exact secondary muscles, lighter same-hue highlight; if the list is empty add no secondary target.\"\n    },\n    \"version\": \"v1\"\n  },\n  \"style_document_sha256\": \"8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578\",\n  \"supplementary_same_ID_sources\": []\n}",
+      "generation_prompt_sha256": "fa079b2f2286075efc88e14b76b29387ae6da0e8eaf96258b65413e790044cc7",
+      "planned_png_path": "/workspace/exercise-image-results/agent-03-others-013/wrist-roller-machine/attempt-1.png",
+      "output_root": "/workspace/exercise-image-results",
+      "planned_output_relative_path": "agent-03-others-013/wrist-roller-machine/attempt-1.png",
+      "result_path": null,
+      "result_sha256": null,
+      "attempts": 0,
+      "user_review": null,
+      "technical_check": null,
+      "agent_visual_review": "not_performed",
+      "generation_authorized_now": false,
+      "clarification_resolution": null
+    }
+  ]
+}
