@@ -2,7 +2,7 @@
 
 2026-10-02T13:34:29+00:00: The user approved `around-the-world-dumbbell` attempt-3 and `bench-press-close-grip-barbell` attempt-3. Exact accepted paths and SHA256 values are recorded in progress and the batch manifest. Both PNGs were already present in remote `work` and remain unchanged. Together with the 41 previously approved results, all 43 exercises from packages 011–015 are now approved.
 
-Next: push this review metadata only, verify the two remote file hashes and approval records, then wait for the next request. Do not alter PNGs, batch 009, blocked exercises, or Supabase.
+Approval metadata was pushed in `ca19949868f6883480134bfe632589e96fa9ee52`; remote progress/manifest show all 43 approved, and both attempt-3 PNG SHA256 values match the accepted records as of 2026-10-02T13:35:04+00:00. Next: wait for the next request. Do not alter PNGs, batch 009, blocked exercises, or Supabase.
 
 ---
 
