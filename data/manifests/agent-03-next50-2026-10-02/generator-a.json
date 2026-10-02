@@ -2,227 +2,572 @@
   "schema_version": 1,
   "assignment_round": "agent-03-next50-2026-10-02",
   "generator": "generator-a",
-  "status": "planned_not_generated",
-  "assignment_registry_path": "data/assignments/agent-03-next50-2026-10-02.json",
-  "source_branch": "agent-03-inventory-2026-10-01",
-  "generation_calls": 0,
-  "user_review_policy": "pending_until_explicit_user_approval",
-  "exercises": [
+  "branch": "agent-06-generator-a-2026-10-02",
+  "status": "in_progress",
+  "user_review": "pending",
+  "agent_visual_review": "not_performed",
+  "generation_calls": 10,
+  "source": {
+    "branch": "agent-03-inventory-2026-10-01",
+    "data_commit": "4ed2bafbf0cf690458d25a896275647d8fdf2d20",
+    "handoff_commit": "2ee4c3f612aa3e2d62935f5e0dab0100be37935f",
+    "assignment_registry_path": "data/assignments/agent-03-next50-2026-10-02.json",
+    "assignment_registry_sha256": "31bbd067caedc93d488974fabc1952ec085dda800d26c4bdbf08e90e79e58d54",
+    "catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+    "style_path": "docs/exercise-image-style.md",
+    "style_version": "v1",
+    "style_sha256": "8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578",
+    "neutral_primary_style_path": "docs/exercise-image-style-neutral-primary.md",
+    "neutral_primary_style_sha256": "86204ab43f23d119a1eb25cafdbda2518b741a0090b4ffb0ceb9086952314439",
+    "human_reference_path": "assets/exercises/biceps-curl-dumbbell.png",
+    "human_reference_sha256": "52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f",
+    "human_reference_role": "appearance, proportions, materials, anatomical style only",
+    "handoff_path": "docs/agent-03-next50-2026-10-02-generator-a-handoff.md",
+    "handoff_sha256": "ba5c65fa7e14681d0f283a385cb664809477c57b1434ea641d59f3eba92f79b8"
+  },
+  "batches": [
     {
-      "exercise_id": "front-raise-band-resistance-band",
-      "name": "Front Raise (Band)",
       "batch_id": "agent-03-others-024",
-      "status": "assigned_not_generated",
-      "attempts": 0,
-      "planned_cloud_path": "/workspace/exercise-image-results/agent-03-next50-2026-10-02/generator-a/agent-03-others-024/front-raise-band-resistance-band/attempt-1.png",
-      "planned_repository_path": "assets/exercises/pending/agent-03-next50-2026-10-02/generator-a/agent-03-others-024/front-raise-band-resistance-band/attempt-1.png",
-      "result_path": null,
-      "result_sha256": null,
-      "user_review": null,
-      "source_catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
-      "source_catalog_record_sha256": "b0242c936e899ec6deb94fdb26e096f094f4d54657aec3b19f902e583d2ab834",
-      "prompt_sha256": "316ae755dd3c7636809fbf145a34e6f18432ddcee9e6422e594cee84d82f21f4",
-      "style_version": "v1",
-      "style_sha256": "8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578",
-      "reference_sha256": "52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f"
+      "source_batch_path": "data/batches/agent-03-others-024.json",
+      "source_batch_sha256": "8abc416f49b07386933add84af783316bafbb96fd340d513b643f2c3a9680f02",
+      "expected_count": 10,
+      "expected_ids": [
+        "front-raise-band-resistance-band",
+        "front-raise-suspension",
+        "front-squat-barbell",
+        "hack-squat-barbell",
+        "jump-squat",
+        "jumping-lunge",
+        "leg-raise-parallel-bars-machine",
+        "negative-pullup",
+        "pullup-weighted-machine",
+        "ring-dips"
+      ],
+      "status": "completed",
+      "results": [
+        {
+          "exercise_id": "front-raise-band-resistance-band",
+          "name": "Front Raise (Band)",
+          "batch_id": "agent-03-others-024",
+          "attempt": 1,
+          "status": "generated_needs_review",
+          "user_review": "pending",
+          "agent_visual_review": "not_performed",
+          "style_version": "v1",
+          "prompt_sha256": "316ae755dd3c7636809fbf145a34e6f18432ddcee9e6422e594cee84d82f21f4",
+          "source_batch_path": "data/batches/agent-03-others-024.json",
+          "source_batch_sha256": "8abc416f49b07386933add84af783316bafbb96fd340d513b643f2c3a9680f02",
+          "source_preparation_batch_id": "agent-03-others-017",
+          "source_preparation_batch_sha256": "3ebca76196f66392763a997760bb86f2505259fb469047b567f6fb1abe046066",
+          "catalog_source_commit": "bc67b32e93322bac86b7a31264cd0f8b2ab3f6eb",
+          "catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+          "catalog_record_sha256": "b0242c936e899ec6deb94fdb26e096f094f4d54657aec3b19f902e583d2ab834",
+          "style_sha256": "8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578",
+          "human_reference_path": "assets/exercises/biceps-curl-dumbbell.png",
+          "human_reference_sha256": "52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f",
+          "local_path": "/workspace/exercise-image-results/agent-03-next50-2026-10-02/generator-a/agent-03-others-024/front-raise-band-resistance-band/attempt-1.png",
+          "repository_path": "assets/exercises/pending/agent-03-next50-2026-10-02/generator-a/agent-03-others-024/front-raise-band-resistance-band/attempt-1.png",
+          "sha256": "86de3a4ce403b845dcbb16a137c04df9cc64097a591fc0d305d148dfdb12ae0d",
+          "technical_check": {
+            "status": "failed",
+            "decoded": true,
+            "format": "PNG",
+            "mode": "RGBA",
+            "dimensions": [
+              1254,
+              1254
+            ],
+            "expected_dimensions": [
+              1024,
+              1024
+            ],
+            "square": true,
+            "transparent_pixel_count": 1275717,
+            "transparent_corner_alpha": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "transparent_perimeter_pixel_count": 5012,
+            "issues": [
+              "dimensions_do_not_match_1024x1024"
+            ]
+          }
+        },
+        {
+          "exercise_id": "front-raise-suspension",
+          "name": "Front Raise (Suspension)",
+          "batch_id": "agent-03-others-024",
+          "attempt": 1,
+          "status": "generated_needs_review",
+          "user_review": "pending",
+          "agent_visual_review": "not_performed",
+          "style_version": "v1",
+          "prompt_sha256": "696a874c61deee3ed8e38568fa5bf49ed85be45607a4527933356182cedefeec",
+          "source_batch_path": "data/batches/agent-03-others-024.json",
+          "source_batch_sha256": "8abc416f49b07386933add84af783316bafbb96fd340d513b643f2c3a9680f02",
+          "source_preparation_batch_id": "agent-03-others-017",
+          "source_preparation_batch_sha256": "3ebca76196f66392763a997760bb86f2505259fb469047b567f6fb1abe046066",
+          "catalog_source_commit": "bc67b32e93322bac86b7a31264cd0f8b2ab3f6eb",
+          "catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+          "catalog_record_sha256": "a23b7887b4c9eb9e37a55430ea2cce993a0312a2dd491a9f878af967a0f5d25b",
+          "style_sha256": "8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578",
+          "human_reference_path": "assets/exercises/biceps-curl-dumbbell.png",
+          "human_reference_sha256": "52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f",
+          "local_path": "/workspace/exercise-image-results/agent-03-next50-2026-10-02/generator-a/agent-03-others-024/front-raise-suspension/attempt-1.png",
+          "repository_path": "assets/exercises/pending/agent-03-next50-2026-10-02/generator-a/agent-03-others-024/front-raise-suspension/attempt-1.png",
+          "sha256": "6f6bf457468702181cda45f654e8f48f930941b80edfc964b8fdd53216c215a2",
+          "technical_check": {
+            "status": "failed",
+            "decoded": true,
+            "format": "PNG",
+            "mode": "RGBA",
+            "dimensions": [
+              1254,
+              1254
+            ],
+            "expected_dimensions": [
+              1024,
+              1024
+            ],
+            "square": true,
+            "transparent_pixel_count": 1293864,
+            "transparent_corner_alpha": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "transparent_perimeter_pixel_count": 4947,
+            "issues": [
+              "dimensions_do_not_match_1024x1024"
+            ]
+          }
+        },
+        {
+          "exercise_id": "front-squat-barbell",
+          "name": "Front Squat",
+          "batch_id": "agent-03-others-024",
+          "attempt": 1,
+          "status": "generated_needs_review",
+          "user_review": "pending",
+          "agent_visual_review": "not_performed",
+          "style_version": "v1",
+          "prompt_sha256": "21c610e4be70ddfba6b2087ecaad6f4a4ca4d5406708617ef0c63288a95fed3d",
+          "source_batch_path": "data/batches/agent-03-others-024.json",
+          "source_batch_sha256": "8abc416f49b07386933add84af783316bafbb96fd340d513b643f2c3a9680f02",
+          "source_preparation_batch_id": "agent-03-others-017",
+          "source_preparation_batch_sha256": "3ebca76196f66392763a997760bb86f2505259fb469047b567f6fb1abe046066",
+          "catalog_source_commit": "bc67b32e93322bac86b7a31264cd0f8b2ab3f6eb",
+          "catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+          "catalog_record_sha256": "32eeb869cfcd82654dcbbd6e5f58c2e18f27389205a2e81b866e12a072dd2f65",
+          "style_sha256": "8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578",
+          "human_reference_path": "assets/exercises/biceps-curl-dumbbell.png",
+          "human_reference_sha256": "52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f",
+          "local_path": "/workspace/exercise-image-results/agent-03-next50-2026-10-02/generator-a/agent-03-others-024/front-squat-barbell/attempt-1.png",
+          "repository_path": "assets/exercises/pending/agent-03-next50-2026-10-02/generator-a/agent-03-others-024/front-squat-barbell/attempt-1.png",
+          "sha256": "37c2120e711bf3d2827ee15e6cc150becc437b5b76403ee8730c7d7a84ab9647",
+          "technical_check": {
+            "status": "failed",
+            "decoded": true,
+            "format": "PNG",
+            "mode": "RGBA",
+            "dimensions": [
+              1254,
+              1254
+            ],
+            "expected_dimensions": [
+              1024,
+              1024
+            ],
+            "square": true,
+            "transparent_pixel_count": 1101789,
+            "transparent_corner_alpha": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "transparent_perimeter_pixel_count": 5009,
+            "issues": [
+              "dimensions_do_not_match_1024x1024"
+            ]
+          }
+        },
+        {
+          "exercise_id": "hack-squat-barbell",
+          "name": "Hack Squat",
+          "batch_id": "agent-03-others-024",
+          "attempt": 1,
+          "status": "generated_needs_review",
+          "user_review": "pending",
+          "agent_visual_review": "not_performed",
+          "style_version": "v1",
+          "prompt_sha256": "331eaee41093077e67e1c06769eaa987f0dfa06508bb68eb4961990af44f9897",
+          "source_batch_path": "data/batches/agent-03-others-024.json",
+          "source_batch_sha256": "8abc416f49b07386933add84af783316bafbb96fd340d513b643f2c3a9680f02",
+          "source_preparation_batch_id": "agent-03-others-017",
+          "source_preparation_batch_sha256": "3ebca76196f66392763a997760bb86f2505259fb469047b567f6fb1abe046066",
+          "catalog_source_commit": "bc67b32e93322bac86b7a31264cd0f8b2ab3f6eb",
+          "catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+          "catalog_record_sha256": "e1409ee2e92d284482bad8dc4c889b52ac2ccfb2f7acd74376563f6a00154961",
+          "style_sha256": "8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578",
+          "human_reference_path": "assets/exercises/biceps-curl-dumbbell.png",
+          "human_reference_sha256": "52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f",
+          "local_path": "/workspace/exercise-image-results/agent-03-next50-2026-10-02/generator-a/agent-03-others-024/hack-squat-barbell/attempt-1.png",
+          "repository_path": "assets/exercises/pending/agent-03-next50-2026-10-02/generator-a/agent-03-others-024/hack-squat-barbell/attempt-1.png",
+          "sha256": "0441bb82e56a89ae71c30532bee996eacc0ab014a8e96a1ecef386ac3cf01374",
+          "technical_check": {
+            "status": "failed",
+            "decoded": true,
+            "format": "PNG",
+            "mode": "RGBA",
+            "dimensions": [
+              1254,
+              1254
+            ],
+            "expected_dimensions": [
+              1024,
+              1024
+            ],
+            "square": true,
+            "transparent_pixel_count": 1218075,
+            "transparent_corner_alpha": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "transparent_perimeter_pixel_count": 5008,
+            "issues": [
+              "dimensions_do_not_match_1024x1024"
+            ]
+          }
+        },
+        {
+          "exercise_id": "jump-squat",
+          "name": "Jump Squat",
+          "batch_id": "agent-03-others-024",
+          "attempt": 1,
+          "status": "generated_needs_review",
+          "user_review": "pending",
+          "agent_visual_review": "not_performed",
+          "style_version": "v1",
+          "prompt_sha256": "3f4a04174146e0b5abeb91c14dfd9ef8c223f1a9aa0092a1a1208551105bbabb",
+          "source_batch_path": "data/batches/agent-03-others-024.json",
+          "source_batch_sha256": "8abc416f49b07386933add84af783316bafbb96fd340d513b643f2c3a9680f02",
+          "source_preparation_batch_id": "agent-03-others-017",
+          "source_preparation_batch_sha256": "3ebca76196f66392763a997760bb86f2505259fb469047b567f6fb1abe046066",
+          "catalog_source_commit": "bc67b32e93322bac86b7a31264cd0f8b2ab3f6eb",
+          "catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+          "catalog_record_sha256": "2e7a00e40f074c36d605756fc8a6bb2befd4b2a590966567a906094b14487b7c",
+          "style_sha256": "8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578",
+          "human_reference_path": "assets/exercises/biceps-curl-dumbbell.png",
+          "human_reference_sha256": "52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f",
+          "local_path": "/workspace/exercise-image-results/agent-03-next50-2026-10-02/generator-a/agent-03-others-024/jump-squat/attempt-1.png",
+          "repository_path": "assets/exercises/pending/agent-03-next50-2026-10-02/generator-a/agent-03-others-024/jump-squat/attempt-1.png",
+          "sha256": "4d916e390c8a926f27843ad99c289ccb33c5d3352c8eca84b76d387e1669ecea",
+          "technical_check": {
+            "status": "failed",
+            "decoded": true,
+            "format": "PNG",
+            "mode": "RGBA",
+            "dimensions": [
+              1254,
+              1254
+            ],
+            "expected_dimensions": [
+              1024,
+              1024
+            ],
+            "square": true,
+            "transparent_pixel_count": 1329033,
+            "transparent_corner_alpha": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "transparent_perimeter_pixel_count": 5016,
+            "issues": [
+              "dimensions_do_not_match_1024x1024"
+            ]
+          }
+        },
+        {
+          "exercise_id": "jumping-lunge",
+          "name": "Jumping Lunge",
+          "batch_id": "agent-03-others-024",
+          "attempt": 1,
+          "status": "generated_needs_review",
+          "user_review": "pending",
+          "agent_visual_review": "not_performed",
+          "style_version": "v1",
+          "prompt_sha256": "5e4add4cf5ed40439069c96f1879c15839f223c1d59f4d2f113bcf58e9da65ab",
+          "source_batch_path": "data/batches/agent-03-others-024.json",
+          "source_batch_sha256": "8abc416f49b07386933add84af783316bafbb96fd340d513b643f2c3a9680f02",
+          "source_preparation_batch_id": "agent-03-others-017",
+          "source_preparation_batch_sha256": "3ebca76196f66392763a997760bb86f2505259fb469047b567f6fb1abe046066",
+          "catalog_source_commit": "bc67b32e93322bac86b7a31264cd0f8b2ab3f6eb",
+          "catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+          "catalog_record_sha256": "26d3f6567fcc63f89e3ef79563ed766665a2c677bd01c9049378cf1f2c98a88e",
+          "style_sha256": "8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578",
+          "human_reference_path": "assets/exercises/biceps-curl-dumbbell.png",
+          "human_reference_sha256": "52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f",
+          "local_path": "/workspace/exercise-image-results/agent-03-next50-2026-10-02/generator-a/agent-03-others-024/jumping-lunge/attempt-1.png",
+          "repository_path": "assets/exercises/pending/agent-03-next50-2026-10-02/generator-a/agent-03-others-024/jumping-lunge/attempt-1.png",
+          "sha256": "f8edcb3d182a65aa68002ae12200c8ed366477025558651b7067d5f342895034",
+          "technical_check": {
+            "status": "failed",
+            "decoded": true,
+            "format": "PNG",
+            "mode": "RGBA",
+            "dimensions": [
+              1254,
+              1254
+            ],
+            "expected_dimensions": [
+              1024,
+              1024
+            ],
+            "square": true,
+            "transparent_pixel_count": 1205598,
+            "transparent_corner_alpha": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "transparent_perimeter_pixel_count": 5016,
+            "issues": [
+              "dimensions_do_not_match_1024x1024"
+            ]
+          }
+        },
+        {
+          "exercise_id": "leg-raise-parallel-bars-machine",
+          "name": "Leg Raise Parallel Bars",
+          "batch_id": "agent-03-others-024",
+          "attempt": 1,
+          "status": "generated_needs_review",
+          "user_review": "pending",
+          "agent_visual_review": "not_performed",
+          "style_version": "v1",
+          "prompt_sha256": "1178a06a31ed7b325f3c5272c79835434449813a6e5b37dee589380e1dd71eff",
+          "source_batch_path": "data/batches/agent-03-others-024.json",
+          "source_batch_sha256": "8abc416f49b07386933add84af783316bafbb96fd340d513b643f2c3a9680f02",
+          "source_preparation_batch_id": "agent-03-others-017",
+          "source_preparation_batch_sha256": "3ebca76196f66392763a997760bb86f2505259fb469047b567f6fb1abe046066",
+          "catalog_source_commit": "bc67b32e93322bac86b7a31264cd0f8b2ab3f6eb",
+          "catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+          "catalog_record_sha256": "0bca5e784d66e40b27b6b853d623d623d467a27b79be2244b17f9ff2311e8968",
+          "style_sha256": "8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578",
+          "human_reference_path": "assets/exercises/biceps-curl-dumbbell.png",
+          "human_reference_sha256": "52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f",
+          "local_path": "/workspace/exercise-image-results/agent-03-next50-2026-10-02/generator-a/agent-03-others-024/leg-raise-parallel-bars-machine/attempt-1.png",
+          "repository_path": "assets/exercises/pending/agent-03-next50-2026-10-02/generator-a/agent-03-others-024/leg-raise-parallel-bars-machine/attempt-1.png",
+          "sha256": "47a632873a3e6641f01d3092486facdcb40184e325876b94376821f32f64aace",
+          "technical_check": {
+            "status": "failed",
+            "decoded": true,
+            "format": "PNG",
+            "mode": "RGBA",
+            "dimensions": [
+              1254,
+              1254
+            ],
+            "expected_dimensions": [
+              1024,
+              1024
+            ],
+            "square": true,
+            "transparent_pixel_count": 1235195,
+            "transparent_corner_alpha": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "transparent_perimeter_pixel_count": 4935,
+            "issues": [
+              "dimensions_do_not_match_1024x1024"
+            ]
+          }
+        },
+        {
+          "exercise_id": "negative-pullup",
+          "name": "Negative Pull Up",
+          "batch_id": "agent-03-others-024",
+          "attempt": 1,
+          "status": "generated_needs_review",
+          "user_review": "pending",
+          "agent_visual_review": "not_performed",
+          "style_version": "v1",
+          "prompt_sha256": "4b6b77ad00080f6189fa212eeddc57b3bfde7fd69423a0cee3e1d91b58da6d23",
+          "source_batch_path": "data/batches/agent-03-others-024.json",
+          "source_batch_sha256": "8abc416f49b07386933add84af783316bafbb96fd340d513b643f2c3a9680f02",
+          "source_preparation_batch_id": "agent-03-others-017",
+          "source_preparation_batch_sha256": "3ebca76196f66392763a997760bb86f2505259fb469047b567f6fb1abe046066",
+          "catalog_source_commit": "bc67b32e93322bac86b7a31264cd0f8b2ab3f6eb",
+          "catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+          "catalog_record_sha256": "c09b9c58d28ad7e5d3aef56365508ba44bd5f653c9202a45e3349b0d6065cae7",
+          "style_sha256": "8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578",
+          "human_reference_path": "assets/exercises/biceps-curl-dumbbell.png",
+          "human_reference_sha256": "52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f",
+          "local_path": "/workspace/exercise-image-results/agent-03-next50-2026-10-02/generator-a/agent-03-others-024/negative-pullup/attempt-1.png",
+          "repository_path": "assets/exercises/pending/agent-03-next50-2026-10-02/generator-a/agent-03-others-024/negative-pullup/attempt-1.png",
+          "sha256": "315a8fb91d05ca8d42b673cc7ab950492851aa9c26415be5365d9ecb3223ef8e",
+          "technical_check": {
+            "status": "failed",
+            "decoded": true,
+            "format": "PNG",
+            "mode": "RGBA",
+            "dimensions": [
+              1254,
+              1254
+            ],
+            "expected_dimensions": [
+              1024,
+              1024
+            ],
+            "square": true,
+            "transparent_pixel_count": 1183652,
+            "transparent_corner_alpha": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "transparent_perimeter_pixel_count": 4991,
+            "issues": [
+              "dimensions_do_not_match_1024x1024"
+            ]
+          }
+        },
+        {
+          "exercise_id": "pullup-weighted-machine",
+          "name": "Pull Up (Weighted)",
+          "batch_id": "agent-03-others-024",
+          "attempt": 1,
+          "status": "generated_needs_review",
+          "user_review": "pending",
+          "agent_visual_review": "not_performed",
+          "style_version": "v1",
+          "prompt_sha256": "1149e0f223bf7fd4295bf56b1564892a518abdc7c60f327115f97980cf11da02",
+          "source_batch_path": "data/batches/agent-03-others-024.json",
+          "source_batch_sha256": "8abc416f49b07386933add84af783316bafbb96fd340d513b643f2c3a9680f02",
+          "source_preparation_batch_id": "agent-03-others-017",
+          "source_preparation_batch_sha256": "3ebca76196f66392763a997760bb86f2505259fb469047b567f6fb1abe046066",
+          "catalog_source_commit": "bc67b32e93322bac86b7a31264cd0f8b2ab3f6eb",
+          "catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+          "catalog_record_sha256": "59ede08f2afa3a0bf8fbb702afe9a3bee86f83bbdcb71a72004d2a7a1fb95666",
+          "style_sha256": "8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578",
+          "human_reference_path": "assets/exercises/biceps-curl-dumbbell.png",
+          "human_reference_sha256": "52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f",
+          "local_path": "/workspace/exercise-image-results/agent-03-next50-2026-10-02/generator-a/agent-03-others-024/pullup-weighted-machine/attempt-1.png",
+          "repository_path": "assets/exercises/pending/agent-03-next50-2026-10-02/generator-a/agent-03-others-024/pullup-weighted-machine/attempt-1.png",
+          "sha256": "e21430ddfe4f5f2468ff6229e06eec86c9f125f359da2f1a7d86ed2275f38fc6",
+          "technical_check": {
+            "status": "failed",
+            "decoded": true,
+            "format": "PNG",
+            "mode": "RGBA",
+            "dimensions": [
+              1254,
+              1254
+            ],
+            "expected_dimensions": [
+              1024,
+              1024
+            ],
+            "square": true,
+            "transparent_pixel_count": 1124752,
+            "transparent_corner_alpha": [
+              0,
+              0,
+              1,
+              0
+            ],
+            "transparent_perimeter_pixel_count": 4926,
+            "issues": [
+              "dimensions_do_not_match_1024x1024",
+              "nontransparent_corner_pixel"
+            ]
+          }
+        },
+        {
+          "exercise_id": "ring-dips",
+          "name": "Ring Dips",
+          "batch_id": "agent-03-others-024",
+          "attempt": 1,
+          "status": "generated_needs_review",
+          "user_review": "pending",
+          "agent_visual_review": "not_performed",
+          "style_version": "v1",
+          "prompt_sha256": "b70385d6f24881a905571215655580e0ab3e44b72b8ef63974ee8ba890a94f72",
+          "source_batch_path": "data/batches/agent-03-others-024.json",
+          "source_batch_sha256": "8abc416f49b07386933add84af783316bafbb96fd340d513b643f2c3a9680f02",
+          "source_preparation_batch_id": "agent-03-others-017",
+          "source_preparation_batch_sha256": "3ebca76196f66392763a997760bb86f2505259fb469047b567f6fb1abe046066",
+          "catalog_source_commit": "bc67b32e93322bac86b7a31264cd0f8b2ab3f6eb",
+          "catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+          "catalog_record_sha256": "3a3770ae825f5980aa4f5e474636af7307f9f8ce7bc8e66876ff34b504811305",
+          "style_sha256": "8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578",
+          "human_reference_path": "assets/exercises/biceps-curl-dumbbell.png",
+          "human_reference_sha256": "52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f",
+          "local_path": "/workspace/exercise-image-results/agent-03-next50-2026-10-02/generator-a/agent-03-others-024/ring-dips/attempt-1.png",
+          "repository_path": "assets/exercises/pending/agent-03-next50-2026-10-02/generator-a/agent-03-others-024/ring-dips/attempt-1.png",
+          "sha256": "812782dec9bc3871f2b879f2c54a58effcc5f9344a2ba5f57e3f37ff066df634",
+          "technical_check": {
+            "status": "failed",
+            "decoded": true,
+            "format": "PNG",
+            "mode": "RGBA",
+            "dimensions": [
+              1254,
+              1254
+            ],
+            "expected_dimensions": [
+              1024,
+              1024
+            ],
+            "square": true,
+            "transparent_pixel_count": 1270505,
+            "transparent_corner_alpha": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "transparent_perimeter_pixel_count": 4954,
+            "issues": [
+              "dimensions_do_not_match_1024x1024"
+            ]
+          }
+        }
+      ],
+      "remaining_ids": []
     },
     {
-      "exercise_id": "front-raise-suspension",
-      "name": "Front Raise (Suspension)",
-      "batch_id": "agent-03-others-024",
-      "status": "assigned_not_generated",
-      "attempts": 0,
-      "planned_cloud_path": "/workspace/exercise-image-results/agent-03-next50-2026-10-02/generator-a/agent-03-others-024/front-raise-suspension/attempt-1.png",
-      "planned_repository_path": "assets/exercises/pending/agent-03-next50-2026-10-02/generator-a/agent-03-others-024/front-raise-suspension/attempt-1.png",
-      "result_path": null,
-      "result_sha256": null,
-      "user_review": null,
-      "source_catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
-      "source_catalog_record_sha256": "a23b7887b4c9eb9e37a55430ea2cce993a0312a2dd491a9f878af967a0f5d25b",
-      "prompt_sha256": "696a874c61deee3ed8e38568fa5bf49ed85be45607a4527933356182cedefeec",
-      "style_version": "v1",
-      "style_sha256": "8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578",
-      "reference_sha256": "52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f"
-    },
-    {
-      "exercise_id": "front-squat-barbell",
-      "name": "Front Squat",
-      "batch_id": "agent-03-others-024",
-      "status": "assigned_not_generated",
-      "attempts": 0,
-      "planned_cloud_path": "/workspace/exercise-image-results/agent-03-next50-2026-10-02/generator-a/agent-03-others-024/front-squat-barbell/attempt-1.png",
-      "planned_repository_path": "assets/exercises/pending/agent-03-next50-2026-10-02/generator-a/agent-03-others-024/front-squat-barbell/attempt-1.png",
-      "result_path": null,
-      "result_sha256": null,
-      "user_review": null,
-      "source_catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
-      "source_catalog_record_sha256": "32eeb869cfcd82654dcbbd6e5f58c2e18f27389205a2e81b866e12a072dd2f65",
-      "prompt_sha256": "21c610e4be70ddfba6b2087ecaad6f4a4ca4d5406708617ef0c63288a95fed3d",
-      "style_version": "v1",
-      "style_sha256": "8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578",
-      "reference_sha256": "52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f"
-    },
-    {
-      "exercise_id": "hack-squat-barbell",
-      "name": "Hack Squat",
-      "batch_id": "agent-03-others-024",
-      "status": "assigned_not_generated",
-      "attempts": 0,
-      "planned_cloud_path": "/workspace/exercise-image-results/agent-03-next50-2026-10-02/generator-a/agent-03-others-024/hack-squat-barbell/attempt-1.png",
-      "planned_repository_path": "assets/exercises/pending/agent-03-next50-2026-10-02/generator-a/agent-03-others-024/hack-squat-barbell/attempt-1.png",
-      "result_path": null,
-      "result_sha256": null,
-      "user_review": null,
-      "source_catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
-      "source_catalog_record_sha256": "e1409ee2e92d284482bad8dc4c889b52ac2ccfb2f7acd74376563f6a00154961",
-      "prompt_sha256": "331eaee41093077e67e1c06769eaa987f0dfa06508bb68eb4961990af44f9897",
-      "style_version": "v1",
-      "style_sha256": "8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578",
-      "reference_sha256": "52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f"
-    },
-    {
-      "exercise_id": "jump-squat",
-      "name": "Jump Squat",
-      "batch_id": "agent-03-others-024",
-      "status": "assigned_not_generated",
-      "attempts": 0,
-      "planned_cloud_path": "/workspace/exercise-image-results/agent-03-next50-2026-10-02/generator-a/agent-03-others-024/jump-squat/attempt-1.png",
-      "planned_repository_path": "assets/exercises/pending/agent-03-next50-2026-10-02/generator-a/agent-03-others-024/jump-squat/attempt-1.png",
-      "result_path": null,
-      "result_sha256": null,
-      "user_review": null,
-      "source_catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
-      "source_catalog_record_sha256": "2e7a00e40f074c36d605756fc8a6bb2befd4b2a590966567a906094b14487b7c",
-      "prompt_sha256": "3f4a04174146e0b5abeb91c14dfd9ef8c223f1a9aa0092a1a1208551105bbabb",
-      "style_version": "v1",
-      "style_sha256": "8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578",
-      "reference_sha256": "52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f"
-    },
-    {
-      "exercise_id": "jumping-lunge",
-      "name": "Jumping Lunge",
-      "batch_id": "agent-03-others-024",
-      "status": "assigned_not_generated",
-      "attempts": 0,
-      "planned_cloud_path": "/workspace/exercise-image-results/agent-03-next50-2026-10-02/generator-a/agent-03-others-024/jumping-lunge/attempt-1.png",
-      "planned_repository_path": "assets/exercises/pending/agent-03-next50-2026-10-02/generator-a/agent-03-others-024/jumping-lunge/attempt-1.png",
-      "result_path": null,
-      "result_sha256": null,
-      "user_review": null,
-      "source_catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
-      "source_catalog_record_sha256": "26d3f6567fcc63f89e3ef79563ed766665a2c677bd01c9049378cf1f2c98a88e",
-      "prompt_sha256": "5e4add4cf5ed40439069c96f1879c15839f223c1d59f4d2f113bcf58e9da65ab",
-      "style_version": "v1",
-      "style_sha256": "8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578",
-      "reference_sha256": "52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f"
-    },
-    {
-      "exercise_id": "leg-raise-parallel-bars-machine",
-      "name": "Leg Raise Parallel Bars",
-      "batch_id": "agent-03-others-024",
-      "status": "assigned_not_generated",
-      "attempts": 0,
-      "planned_cloud_path": "/workspace/exercise-image-results/agent-03-next50-2026-10-02/generator-a/agent-03-others-024/leg-raise-parallel-bars-machine/attempt-1.png",
-      "planned_repository_path": "assets/exercises/pending/agent-03-next50-2026-10-02/generator-a/agent-03-others-024/leg-raise-parallel-bars-machine/attempt-1.png",
-      "result_path": null,
-      "result_sha256": null,
-      "user_review": null,
-      "source_catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
-      "source_catalog_record_sha256": "0bca5e784d66e40b27b6b853d623d623d467a27b79be2244b17f9ff2311e8968",
-      "prompt_sha256": "1178a06a31ed7b325f3c5272c79835434449813a6e5b37dee589380e1dd71eff",
-      "style_version": "v1",
-      "style_sha256": "8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578",
-      "reference_sha256": "52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f"
-    },
-    {
-      "exercise_id": "negative-pullup",
-      "name": "Negative Pull Up",
-      "batch_id": "agent-03-others-024",
-      "status": "assigned_not_generated",
-      "attempts": 0,
-      "planned_cloud_path": "/workspace/exercise-image-results/agent-03-next50-2026-10-02/generator-a/agent-03-others-024/negative-pullup/attempt-1.png",
-      "planned_repository_path": "assets/exercises/pending/agent-03-next50-2026-10-02/generator-a/agent-03-others-024/negative-pullup/attempt-1.png",
-      "result_path": null,
-      "result_sha256": null,
-      "user_review": null,
-      "source_catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
-      "source_catalog_record_sha256": "c09b9c58d28ad7e5d3aef56365508ba44bd5f653c9202a45e3349b0d6065cae7",
-      "prompt_sha256": "4b6b77ad00080f6189fa212eeddc57b3bfde7fd69423a0cee3e1d91b58da6d23",
-      "style_version": "v1",
-      "style_sha256": "8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578",
-      "reference_sha256": "52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f"
-    },
-    {
-      "exercise_id": "pullup-weighted-machine",
-      "name": "Pull Up (Weighted)",
-      "batch_id": "agent-03-others-024",
-      "status": "assigned_not_generated",
-      "attempts": 0,
-      "planned_cloud_path": "/workspace/exercise-image-results/agent-03-next50-2026-10-02/generator-a/agent-03-others-024/pullup-weighted-machine/attempt-1.png",
-      "planned_repository_path": "assets/exercises/pending/agent-03-next50-2026-10-02/generator-a/agent-03-others-024/pullup-weighted-machine/attempt-1.png",
-      "result_path": null,
-      "result_sha256": null,
-      "user_review": null,
-      "source_catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
-      "source_catalog_record_sha256": "59ede08f2afa3a0bf8fbb702afe9a3bee86f83bbdcb71a72004d2a7a1fb95666",
-      "prompt_sha256": "1149e0f223bf7fd4295bf56b1564892a518abdc7c60f327115f97980cf11da02",
-      "style_version": "v1",
-      "style_sha256": "8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578",
-      "reference_sha256": "52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f"
-    },
-    {
-      "exercise_id": "ring-dips",
-      "name": "Ring Dips",
-      "batch_id": "agent-03-others-024",
-      "status": "assigned_not_generated",
-      "attempts": 0,
-      "planned_cloud_path": "/workspace/exercise-image-results/agent-03-next50-2026-10-02/generator-a/agent-03-others-024/ring-dips/attempt-1.png",
-      "planned_repository_path": "assets/exercises/pending/agent-03-next50-2026-10-02/generator-a/agent-03-others-024/ring-dips/attempt-1.png",
-      "result_path": null,
-      "result_sha256": null,
-      "user_review": null,
-      "source_catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
-      "source_catalog_record_sha256": "3a3770ae825f5980aa4f5e474636af7307f9f8ce7bc8e66876ff34b504811305",
-      "prompt_sha256": "b70385d6f24881a905571215655580e0ab3e44b72b8ef63974ee8ba890a94f72",
-      "style_version": "v1",
-      "style_sha256": "8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578",
-      "reference_sha256": "52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f"
-    },
-    {
-      "exercise_id": "ring-pullup",
-      "name": "Ring Pull Up",
       "batch_id": "agent-03-others-025",
-      "status": "assigned_not_generated",
-      "attempts": 0,
-      "planned_cloud_path": "/workspace/exercise-image-results/agent-03-next50-2026-10-02/generator-a/agent-03-others-025/ring-pullup/attempt-1.png",
-      "planned_repository_path": "assets/exercises/pending/agent-03-next50-2026-10-02/generator-a/agent-03-others-025/ring-pullup/attempt-1.png",
-      "result_path": null,
-      "result_sha256": null,
-      "user_review": null,
-      "source_catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
-      "source_catalog_record_sha256": "b26ec8a2881e0240dbea23e7934416b35604017d65e321c6e96f3168f4018087",
-      "prompt_sha256": "d09f7a4d9a0b184652e8fcda0b271adf678d346a66fd9ffd7951bfc89dac376f",
-      "style_version": "v1",
-      "style_sha256": "8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578",
-      "reference_sha256": "52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f"
-    },
-    {
-      "exercise_id": "squat-band-resistance-band",
-      "name": "Squat (Band)",
-      "batch_id": "agent-03-others-025",
-      "status": "assigned_not_generated",
-      "attempts": 0,
-      "planned_cloud_path": "/workspace/exercise-image-results/agent-03-next50-2026-10-02/generator-a/agent-03-others-025/squat-band-resistance-band/attempt-1.png",
-      "planned_repository_path": "assets/exercises/pending/agent-03-next50-2026-10-02/generator-a/agent-03-others-025/squat-band-resistance-band/attempt-1.png",
-      "result_path": null,
-      "result_sha256": null,
-      "user_review": null,
-      "source_catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
-      "source_catalog_record_sha256": "05ca6f9779cfe9ed4f72576c0bd43bd8805dc57e621f65c21ab48719ddaf79aa",
-      "prompt_sha256": "8c6d44ec17249615786785382d572cb97ef477fb592706fe81159d3e8375c1e8",
-      "style_version": "v1",
-      "style_sha256": "8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578",
-      "reference_sha256": "52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f"
+      "source_batch_path": "data/batches/agent-03-others-025.json",
+      "source_batch_sha256": "f11820271c3d1db5a742ee9775db7b9ee57d9f4cf4eae5e77e2f9545ae0e57fa",
+      "expected_count": 2,
+      "expected_ids": [
+        "ring-pullup",
+        "squat-band-resistance-band"
+      ],
+      "status": "not_started",
+      "results": [],
+      "remaining_ids": [
+        "ring-pullup",
+        "squat-band-resistance-band"
+      ]
     }
-  ]
+  ],
+  "resume_at": {
+    "batch_id": "agent-03-others-025",
+    "exercise_id": "ring-pullup"
+  }
 }
