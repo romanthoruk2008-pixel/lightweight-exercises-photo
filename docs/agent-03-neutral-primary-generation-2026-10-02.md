@@ -8,7 +8,7 @@ Style: `v1-neutral-primary-2026-10-02`. For the selected cardio/full_body/other 
 
 A fresh fetch covered all six remote branch heads. No target PNG or active foreign assignment was found for the 20 IDs. Shared `data/exercise-image-progress.json` remains unchanged. Results go to `assets/exercises/pending/<batch_id>/<exercise_id>/attempt-1.png`; per-package generation logs/manifests are `data/batches/agent-03-others-019-results-manifest.json` and `...020-results-manifest.json`. All generated results remain `user_review=pending`, `agent_visual_review=not_performed`.
 
-Current state: package 019 is generated locally (10/10); all PNGs decoded, are square, and contain fully transparent pixels. All rows remain user_review=pending; agent_visual_review=not_performed. The package is pending its work checkpoint commit, push, and remote SHA256 verification. Then generate package 020 only.
+Current state: package 019 is generated locally (10/10); all PNGs decoded, are square, and contain fully transparent pixels. All rows remain user_review=pending; agent_visual_review=not_performed. Package 019 checkpoint commit 92f306c was pushed to work; all 10 remote PNG SHA256 values match the per-package manifest. Package 019 remains user_review=pending. Generate package 020 next, then checkpoint and push it before stopping.
 
 Exact authorized order:
 - agent-03-others-019: aerobics, ball-slams, battle-ropes-machine, boxing, burpee, burpee-broad-jumps, burpee-over-the-bar, clean-and-jerk-barbell, clean-and-press-barbell, clean-pull-barbell.
