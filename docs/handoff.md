@@ -522,3 +522,7 @@ The user requested four targeted edits after package 010 was pushed. Package 011
 All four new PNGs decoded successfully, are square 1254×1254 RGBA images with fully transparent pixels, and their recorded exercise IDs, paths and SHA256 values match. Technical check passed. `user_review=pending`; `agent_visual_review=not_performed`. No visual QA was performed. Next step: push and verify these four corrections, then wait for user review/instruction; do not start package 011.
 
 GitHub verification for the four Agent-03 package-010 corrections: pushed to `work` and checked from remote commit `9b90a1aaedf462baf40bf8c188a4c9ec144cafc6` on 2026-10-02. Each remote PNG decoded, was 1254×1254 with transparent pixels, and its remote SHA256 matched the local file and progress/manifest. All four are marked `backup_status=github_verified`; `user_review=pending`, `agent_visual_review=not_performed`. Wait for user review; package 011 is paused.
+
+## User approval — package 010 corrections (2026-10-02)
+
+The user explicitly accepted all four correction attempt-2 images. Shared progress records `status=approved`, `user_review=approved`, accepted attempt/path/SHA256 and the user decision history; the manifest records the same accepted files. Their GitHub backup remains `github_verified` at correction content commit `9b90a1aaedf462baf40bf8c188a4c9ec144cafc6`. Next: continue with package 011, then 012–015 in order. New results in those packages remain `user_review=pending` until separately reviewed.

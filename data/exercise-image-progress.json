@@ -150,7 +150,7 @@
     "active_batch_item_id": null,
     "active_batch_scope": "Package 010 has 10 original PNGs plus 4 user-requested corrections, all pushed and remote-verified. Package 011 is paused.",
     "current_batch": "night-2026-10-01-004",
-    "next_action": "Wait for user review of the four attempt-2 corrections; do not start package 011 until a new user command.",
+    "next_action": "Package 010 correction attempts 2 were explicitly accepted by user and recorded; proceed with packages 011–015 sequentially, then stop.",
     "night_generation_remote_audit": {
       "audited_at_utc": "2026-10-01T08:16:06Z",
       "remote_branch": "work",
@@ -758,9 +758,11 @@
           "sha256": "47148b6bb149951a53192d35e62a494fd3750d2fa3d3c1c88233b742c8525f42"
         }
       ],
-      "user_review": "pending",
+      "user_review": "approved",
       "agent_visual_review": "not_performed",
-      "next_action": "Wait for user review/instruction; package 011 remains paused."
+      "next_action": "Package 011, first ID triceps-extension-suspension.",
+      "accepted_at": "2026-10-02T11:53:10.036092+00:00",
+      "accepted_commit": "e814d6deb9aba779536423dc26cafea0e99a8c75"
     }
   },
   "historical_mapping_metadata": {
@@ -29900,7 +29902,7 @@
         "exists_at_preparation": true,
         "sha256": "a4c9142770e5e7bc7eaebb4b054555b3da8b04db6d34bd6ca461588d06a67f03"
       },
-      "status": "generated",
+      "status": "approved",
       "included_in_generation": false,
       "archived_inclusion_authorized": false,
       "blocked_by": [
@@ -30003,7 +30005,7 @@
             "repository_path": "assets/exercises/pending/agent-03-others-010/scapular-pull-ups/attempt-2.png",
             "errors": []
           },
-          "user_review": "pending",
+          "user_review": "approved",
           "agent_visual_review": "not_performed",
           "correction_of_attempt": 1,
           "correction_reason": "User requested straight, level pull-up bar and secure aligned mounts; add a subtle biceps highlight.",
@@ -30018,7 +30020,9 @@
           },
           "backup_status": "github_verified",
           "verified_commit": "9b90a1aaedf462baf40bf8c188a4c9ec144cafc6",
-          "verified_at": "2026-10-02T11:48:42.367722+00:00"
+          "verified_at": "2026-10-02T11:48:42.367722+00:00",
+          "user_review_at": "2026-10-02T11:53:10.036092+00:00",
+          "user_review_by": "user"
         }
       ],
       "result_sha256": "61247ed96a77b0107d7b18265d1341c034a3c6e33f0f9811c8a1328f015a328c",
@@ -30039,8 +30043,25 @@
       },
       "agent_visual_review": "not_performed",
       "agent_visual_review_notes": null,
-      "user_review": "pending",
-      "backup_status": "github_verified"
+      "user_review": "approved",
+      "backup_status": "github_verified",
+      "accepted_path": "/workspace/lightweight-exercises-photo/assets/exercises/pending/agent-03-others-010/scapular-pull-ups/attempt-2.png",
+      "accepted_repository_path": "assets/exercises/pending/agent-03-others-010/scapular-pull-ups/attempt-2.png",
+      "accepted_sha256": "61247ed96a77b0107d7b18265d1341c034a3c6e33f0f9811c8a1328f015a328c",
+      "accepted_attempt": 2,
+      "accepted_at": "2026-10-02T11:53:10.036092+00:00",
+      "user_review_history": [
+        {
+          "recorded_at": "2026-10-02T11:53:10.036092+00:00",
+          "by": "user",
+          "decision": "approved",
+          "accepted_attempt": 2,
+          "accepted_path": "/workspace/lightweight-exercises-photo/assets/exercises/pending/agent-03-others-010/scapular-pull-ups/attempt-2.png",
+          "accepted_repository_path": "assets/exercises/pending/agent-03-others-010/scapular-pull-ups/attempt-2.png",
+          "accepted_sha256": "61247ed96a77b0107d7b18265d1341c034a3c6e33f0f9811c8a1328f015a328c",
+          "reason": "User explicitly accepted the four targeted package-010 corrections in the conversation."
+        }
+      ]
     },
     "seal-row-barbell": {
       "id": "seal-row-barbell",
@@ -38717,7 +38738,7 @@
         "exists_at_preparation": true,
         "sha256": "74890417aab2003a55700f2b0cce04502edcd5f3b9d2ec4e54f48fbf99da866d"
       },
-      "status": "generated",
+      "status": "approved",
       "included_in_generation": false,
       "archived_inclusion_authorized": false,
       "blocked_by": [
@@ -38820,7 +38841,7 @@
             "repository_path": "assets/exercises/pending/agent-03-others-010/sternum-pullup-gironda-machine/attempt-2.png",
             "errors": []
           },
-          "user_review": "pending",
+          "user_review": "approved",
           "agent_visual_review": "not_performed",
           "correction_of_attempt": 1,
           "correction_reason": "User requested straight, level pull-up bar and corrected secure mounts.",
@@ -38835,7 +38856,9 @@
           },
           "backup_status": "github_verified",
           "verified_commit": "9b90a1aaedf462baf40bf8c188a4c9ec144cafc6",
-          "verified_at": "2026-10-02T11:48:42.367722+00:00"
+          "verified_at": "2026-10-02T11:48:42.367722+00:00",
+          "user_review_at": "2026-10-02T11:53:10.036092+00:00",
+          "user_review_by": "user"
         }
       ],
       "result_sha256": "f7899d3fead2f1a745ba711de619cf934d9177a7ba4ff9eaf97d48b94e169828",
@@ -38856,8 +38879,25 @@
       },
       "agent_visual_review": "not_performed",
       "agent_visual_review_notes": null,
-      "user_review": "pending",
-      "backup_status": "github_verified"
+      "user_review": "approved",
+      "backup_status": "github_verified",
+      "accepted_path": "/workspace/lightweight-exercises-photo/assets/exercises/pending/agent-03-others-010/sternum-pullup-gironda-machine/attempt-2.png",
+      "accepted_repository_path": "assets/exercises/pending/agent-03-others-010/sternum-pullup-gironda-machine/attempt-2.png",
+      "accepted_sha256": "f7899d3fead2f1a745ba711de619cf934d9177a7ba4ff9eaf97d48b94e169828",
+      "accepted_attempt": 2,
+      "accepted_at": "2026-10-02T11:53:10.036092+00:00",
+      "user_review_history": [
+        {
+          "recorded_at": "2026-10-02T11:53:10.036092+00:00",
+          "by": "user",
+          "decision": "approved",
+          "accepted_attempt": 2,
+          "accepted_path": "/workspace/lightweight-exercises-photo/assets/exercises/pending/agent-03-others-010/sternum-pullup-gironda-machine/attempt-2.png",
+          "accepted_repository_path": "assets/exercises/pending/agent-03-others-010/sternum-pullup-gironda-machine/attempt-2.png",
+          "accepted_sha256": "f7899d3fead2f1a745ba711de619cf934d9177a7ba4ff9eaf97d48b94e169828",
+          "reason": "User explicitly accepted the four targeted package-010 corrections in the conversation."
+        }
+      ]
     },
     "straight-arm-lat-pulldown-cable-machine": {
       "id": "straight-arm-lat-pulldown-cable-machine",
@@ -40503,7 +40543,7 @@
         "exists_at_preparation": true,
         "sha256": "929a71cb435cc75ee192bba13ed9bf8580acadf62efa427116ae80767b977d42"
       },
-      "status": "generated",
+      "status": "approved",
       "included_in_generation": false,
       "archived_inclusion_authorized": false,
       "blocked_by": [
@@ -40606,7 +40646,7 @@
             "repository_path": "assets/exercises/pending/agent-03-others-010/triceps-dip-machine/attempt-2.png",
             "errors": []
           },
-          "user_review": "pending",
+          "user_review": "approved",
           "agent_visual_review": "not_performed",
           "correction_of_attempt": 1,
           "correction_reason": "User explicitly requested active orange highlight on chest and shoulders for this dip image, overriding the original secondary-muscle intensity.",
@@ -40621,7 +40661,9 @@
           },
           "backup_status": "github_verified",
           "verified_commit": "9b90a1aaedf462baf40bf8c188a4c9ec144cafc6",
-          "verified_at": "2026-10-02T11:48:42.367722+00:00"
+          "verified_at": "2026-10-02T11:48:42.367722+00:00",
+          "user_review_at": "2026-10-02T11:53:10.036092+00:00",
+          "user_review_by": "user"
         }
       ],
       "result_sha256": "6d8afacd9e2cbe5cc0331cbed50b80fad3e431fcc29ae5b4e632fd32e0b00064",
@@ -40642,8 +40684,25 @@
       },
       "agent_visual_review": "not_performed",
       "agent_visual_review_notes": null,
-      "user_review": "pending",
-      "backup_status": "github_verified"
+      "user_review": "approved",
+      "backup_status": "github_verified",
+      "accepted_path": "/workspace/lightweight-exercises-photo/assets/exercises/pending/agent-03-others-010/triceps-dip-machine/attempt-2.png",
+      "accepted_repository_path": "assets/exercises/pending/agent-03-others-010/triceps-dip-machine/attempt-2.png",
+      "accepted_sha256": "6d8afacd9e2cbe5cc0331cbed50b80fad3e431fcc29ae5b4e632fd32e0b00064",
+      "accepted_attempt": 2,
+      "accepted_at": "2026-10-02T11:53:10.036092+00:00",
+      "user_review_history": [
+        {
+          "recorded_at": "2026-10-02T11:53:10.036092+00:00",
+          "by": "user",
+          "decision": "approved",
+          "accepted_attempt": 2,
+          "accepted_path": "/workspace/lightweight-exercises-photo/assets/exercises/pending/agent-03-others-010/triceps-dip-machine/attempt-2.png",
+          "accepted_repository_path": "assets/exercises/pending/agent-03-others-010/triceps-dip-machine/attempt-2.png",
+          "accepted_sha256": "6d8afacd9e2cbe5cc0331cbed50b80fad3e431fcc29ae5b4e632fd32e0b00064",
+          "reason": "User explicitly accepted the four targeted package-010 corrections in the conversation."
+        }
+      ]
     },
     "triceps-dip-assisted-machine": {
       "id": "triceps-dip-assisted-machine",
@@ -40723,7 +40782,7 @@
         "exists_at_preparation": true,
         "sha256": "4e110e0af7dd9605618a88725427bc34a33dcba2469f37581a060332aaea276f"
       },
-      "status": "generated",
+      "status": "approved",
       "included_in_generation": false,
       "archived_inclusion_authorized": false,
       "blocked_by": [
@@ -40826,7 +40885,7 @@
             "repository_path": "assets/exercises/pending/agent-03-others-010/triceps-dip-weighted-machine/attempt-2.png",
             "errors": []
           },
-          "user_review": "pending",
+          "user_review": "approved",
           "agent_visual_review": "not_performed",
           "correction_of_attempt": 1,
           "correction_reason": "User explicitly requested active orange highlight on chest and shoulders for this weighted dip image, overriding the original secondary-muscle intensity.",
@@ -40841,7 +40900,9 @@
           },
           "backup_status": "github_verified",
           "verified_commit": "9b90a1aaedf462baf40bf8c188a4c9ec144cafc6",
-          "verified_at": "2026-10-02T11:48:42.367722+00:00"
+          "verified_at": "2026-10-02T11:48:42.367722+00:00",
+          "user_review_at": "2026-10-02T11:53:10.036092+00:00",
+          "user_review_by": "user"
         }
       ],
       "result_sha256": "47148b6bb149951a53192d35e62a494fd3750d2fa3d3c1c88233b742c8525f42",
@@ -40862,8 +40923,25 @@
       },
       "agent_visual_review": "not_performed",
       "agent_visual_review_notes": null,
-      "user_review": "pending",
-      "backup_status": "github_verified"
+      "user_review": "approved",
+      "backup_status": "github_verified",
+      "accepted_path": "/workspace/lightweight-exercises-photo/assets/exercises/pending/agent-03-others-010/triceps-dip-weighted-machine/attempt-2.png",
+      "accepted_repository_path": "assets/exercises/pending/agent-03-others-010/triceps-dip-weighted-machine/attempt-2.png",
+      "accepted_sha256": "47148b6bb149951a53192d35e62a494fd3750d2fa3d3c1c88233b742c8525f42",
+      "accepted_attempt": 2,
+      "accepted_at": "2026-10-02T11:53:10.036092+00:00",
+      "user_review_history": [
+        {
+          "recorded_at": "2026-10-02T11:53:10.036092+00:00",
+          "by": "user",
+          "decision": "approved",
+          "accepted_attempt": 2,
+          "accepted_path": "/workspace/lightweight-exercises-photo/assets/exercises/pending/agent-03-others-010/triceps-dip-weighted-machine/attempt-2.png",
+          "accepted_repository_path": "assets/exercises/pending/agent-03-others-010/triceps-dip-weighted-machine/attempt-2.png",
+          "accepted_sha256": "47148b6bb149951a53192d35e62a494fd3750d2fa3d3c1c88233b742c8525f42",
+          "reason": "User explicitly accepted the four targeted package-010 corrections in the conversation."
+        }
+      ]
     },
     "triceps-extension-barbell": {
       "id": "triceps-extension-barbell",
