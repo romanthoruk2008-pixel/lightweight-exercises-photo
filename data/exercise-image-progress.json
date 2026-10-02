@@ -17424,7 +17424,7 @@
         "exists_at_preparation": true,
         "sha256": "27aceb469362cc0f7a0136636622c8151ba898da10875d73d5eb8b83cf5b4a16"
       },
-      "status": "generated_needs_review",
+      "status": "approved",
       "included_in_generation": true,
       "archived_inclusion_authorized": false,
       "blocked_by": [],
@@ -17526,10 +17526,11 @@
             "repository_path": "assets/exercises/pending/agent-03-others-020/handstand-hold/attempt-2.png",
             "errors": []
           },
-          "user_review": "pending",
+          "user_review": "accepted",
           "backup_status": "github_verified",
           "verified_commit": "8e416f9f7242efc47b2183dd60c7202f8950ff22",
-          "verified_at": "2026-10-02T16:11:23.460140+00:00"
+          "verified_at": "2026-10-02T16:11:23.460140+00:00",
+          "user_reviewed_at": "2026-10-02T16:24:48.365870+00:00"
         }
       ],
       "result_sha256": "4381a221fb3eaaf82359e027091f81d772f07924e4b7fa38ff857978515df1b0",
@@ -17550,13 +17551,29 @@
       },
       "agent_visual_review": "not_performed",
       "agent_visual_review_notes": [],
-      "user_review": "pending",
+      "user_review": "accepted",
       "muscle_highlight_status": "none",
       "muscle_highlight_reason": "Catalog secondary_muscles is empty; neutral silver-gray body without orange muscle highlighting.",
-      "user_review_notes": null,
+      "user_review_notes": "User explicitly accepted Handstand Hold attempt 2 after the head/torso alignment correction; attempt 1 remains needs_fix.",
       "backup_status": "github_verified",
       "verified_commit": "8e416f9f7242efc47b2183dd60c7202f8950ff22",
-      "verified_at": "2026-10-02T16:11:23.460140+00:00"
+      "verified_at": "2026-10-02T16:11:23.460140+00:00",
+      "accepted_path": "/workspace/lightweight-exercises-photo/assets/exercises/pending/agent-03-others-020/handstand-hold/attempt-2.png",
+      "accepted_repository_path": "assets/exercises/pending/agent-03-others-020/handstand-hold/attempt-2.png",
+      "accepted_sha256": "4381a221fb3eaaf82359e027091f81d772f07924e4b7fa38ff857978515df1b0",
+      "accepted_at": "2026-10-02T16:24:48.365870+00:00",
+      "user_review_history": [
+        {
+          "recorded_at": "2026-10-02T16:24:48.365870+00:00",
+          "by": "user",
+          "decision": "accepted",
+          "accepted_attempt": 2,
+          "accepted_path": "/workspace/lightweight-exercises-photo/assets/exercises/pending/agent-03-others-020/handstand-hold/attempt-2.png",
+          "accepted_repository_path": "assets/exercises/pending/agent-03-others-020/handstand-hold/attempt-2.png",
+          "accepted_sha256": "4381a221fb3eaaf82359e027091f81d772f07924e4b7fa38ff857978515df1b0",
+          "reason": "User explicitly accepted Handstand Hold attempt 2 after the head/torso alignment correction; attempt 1 remains needs_fix."
+        }
+      ]
     },
     "handstand-pushup": {
       "id": "handstand-pushup",
@@ -48748,5 +48765,5 @@
       "verification_method": "git fetch + ls-remote + ls-tree + SHA256 of every fetched PNG blob"
     }
   ],
-  "last_user_review_update": "2026-10-02T16:11:23.460140+00:00"
+  "last_user_review_update": "2026-10-02T16:24:48.365870+00:00"
 }

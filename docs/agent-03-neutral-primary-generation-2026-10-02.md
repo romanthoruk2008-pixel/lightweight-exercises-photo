@@ -18,8 +18,8 @@ Exact authorized order:
 - Packages 021–023 excluded. Shared progress, catalog, blocked IDs, other batches, and Supabase were not modified.
 
 
-User review update 2026-10-02T16:04:25.395334+00:00: 19/20 approved; handstand-hold attempt 1 remains needs_fix and attempt 2 is saved awaiting user review. All 20 rows have muscle_highlight_status=none (empty catalog secondary muscle lists); agent_visual_review remains not_performed.
+User review update 2026-10-02T16:24:48.365870+00:00: 19/20 results remain user_review=approved; Handstand Hold attempt 2 is user_review=accepted and overall status=approved. Handstand attempt 1 remains needs_fix. All 20 rows have muscle_highlight_status=none (empty catalog secondary muscle lists); agent_visual_review remains not_performed.
 
-Handstand Hold attempt 2: assets/exercises/pending/agent-03-others-020/handstand-hold/attempt-2.png; SHA256 4381a221fb3eaaf82359e027091f81d772f07924e4b7fa38ff857978515df1b0; technical_check=passed; user_review=pending; head/neck alignment correction requested by user.
+Handstand Hold attempt 2: assets/exercises/pending/agent-03-others-020/handstand-hold/attempt-2.png; SHA256 4381a221fb3eaaf82359e027091f81d772f07924e4b7fa38ff857978515df1b0; technical_check=passed; user_review=accepted; accepted by the user at 2026-10-02T16:24:48.365870+00:00; head/neck alignment correction. Exact accepted path and SHA256 are recorded in progress and the package-020 results manifest.
 
-Final user review state: 19 approved; handstand-hold attempt 1 needs_fix and attempt 2 is user_review=pending. All 20 use muscle_highlight_status=none. Handstand attempt 2 was GitHub-verified at commit 8e416f9f7242efc47b2183dd60c7202f8950ff22 with the recorded SHA256.
+Final user review state: 19 approved; Handstand Hold attempt 2 accepted (overall status=approved); attempt 1 remains needs_fix. All 20 use muscle_highlight_status=none. Attempt 2 was present on GitHub work at commit 49a420e95cc661bba75db7a1ac5901e37232d24e with matching SHA256 4381a221fb3eaaf82359e027091f81d772f07924e4b7fa38ff857978515df1b0; this update records its accepted review.
