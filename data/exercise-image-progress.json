@@ -148,9 +148,9 @@
     ],
     "active_batch_id": "agent-03-others-014",
     "active_batch_item_id": null,
-    "active_batch_scope": "Package 014 generation finished locally; push and verify its checkpoint, then proceed to package 015.",
+    "active_batch_scope": "Package 014 is generated, pushed, and remote-verified; continue with package 015.",
     "current_batch": "night-2026-10-01-004",
-    "next_action": "Commit/push package 014, verify remote hashes, then start package 015.",
+    "next_action": "Start package 015 in exact queue order.",
     "night_generation_remote_audit": {
       "audited_at_utc": "2026-10-01T08:16:06Z",
       "remote_branch": "work",
@@ -769,7 +769,63 @@
       "completed_at": "2026-10-02T12:46:37.443968+00:00",
       "generated_count": 10,
       "failed_ids": [],
-      "next_batch_id": "agent-03-others-015"
+      "next_batch_id": "agent-03-others-015",
+      "verified_at": "2026-10-02T12:47:14.425643+00:00",
+      "content_commit": "bffc6f41e512e28b4e383e8dfa711aee07c710fc",
+      "verified_commit": "bffc6f41e512e28b4e383e8dfa711aee07c710fc",
+      "backup_status": "github_verified",
+      "files": [
+        {
+          "exercise_id": "around-the-world-dumbbell",
+          "path": "assets/exercises/pending/agent-03-others-014/around-the-world-dumbbell/attempt-1.png",
+          "sha256": "8b84238888980c463822e22e47ea5e57b6c92b071db4a3d25a4d4c76bb2c2543"
+        },
+        {
+          "exercise_id": "bench-press-close-grip-barbell",
+          "path": "assets/exercises/pending/agent-03-others-014/bench-press-close-grip-barbell/attempt-1.png",
+          "sha256": "a2c113ea96e9ee0083840105570f03594220ac7ffe8937b70524ab1e588a815e"
+        },
+        {
+          "exercise_id": "bench-press-wide-grip-barbell",
+          "path": "assets/exercises/pending/agent-03-others-014/bench-press-wide-grip-barbell/attempt-1.png",
+          "sha256": "a003e970ec1617c4109c37c1e65781f86cf6ecfa16a95d66982c002351585eb2"
+        },
+        {
+          "exercise_id": "box-jump",
+          "path": "assets/exercises/pending/agent-03-others-014/box-jump/attempt-1.png",
+          "sha256": "c0a5103f2e4a32e791c0d6f152407d54647e6ac9027d3cd2b1103ac4857c1023"
+        },
+        {
+          "exercise_id": "chest-fly-band-resistance-band",
+          "path": "assets/exercises/pending/agent-03-others-014/chest-fly-band-resistance-band/attempt-1.png",
+          "sha256": "619219119bcc43a26483bf687881b6cb244fe4e86345bbfe910e130ab3750831"
+        },
+        {
+          "exercise_id": "chest-fly-suspension",
+          "path": "assets/exercises/pending/agent-03-others-014/chest-fly-suspension/attempt-1.png",
+          "sha256": "80d2bb41dc4933f2dffd8fd39ff1addee1072c4d632575b0fe7e82a399a548c1"
+        },
+        {
+          "exercise_id": "crunch-weighted",
+          "path": "assets/exercises/pending/agent-03-others-014/crunch-weighted/attempt-1.png",
+          "sha256": "8cca37196e7d0a5fb4b372ae9e56e89397b75ca3a372c938be747560c557e17b"
+        },
+        {
+          "exercise_id": "decline-chest-fly-dumbbell",
+          "path": "assets/exercises/pending/agent-03-others-014/decline-chest-fly-dumbbell/attempt-1.png",
+          "sha256": "51844a41b54b2d1b76d5578169772a379d8af683eaea4fb943fb198383f47971"
+        },
+        {
+          "exercise_id": "decline-crunch-weighted",
+          "path": "assets/exercises/pending/agent-03-others-014/decline-crunch-weighted/attempt-1.png",
+          "sha256": "785e8413779cf37ec2d117e8750fbc90eb9e4f70056f23a0fa04261370cd7fff"
+        },
+        {
+          "exercise_id": "dumbbell-squeeze-press",
+          "path": "assets/exercises/pending/agent-03-others-014/dumbbell-squeeze-press/attempt-1.png",
+          "sha256": "6a8cfd114cfb43e34dab8eeb5857103edace8a47c2097c4dcb5f3d64fcb6bbca"
+        }
+      ]
     }
   },
   "historical_mapping_metadata": {
@@ -1677,7 +1733,10 @@
           "tool_response_metadata": {
             "tool_call_id": "image_gen.imagegen#50",
             "output_hint": "/workspace/generated_images/exec-6276213f-0e92-451e-a6ec-7afa079ff4fb.png"
-          }
+          },
+          "backup_status": "github_verified",
+          "verified_commit": "bffc6f41e512e28b4e383e8dfa711aee07c710fc",
+          "verified_at": "2026-10-02T12:47:14.425643+00:00"
         }
       ],
       "result_sha256": "8b84238888980c463822e22e47ea5e57b6c92b071db4a3d25a4d4c76bb2c2543",
@@ -1698,7 +1757,10 @@
       },
       "agent_visual_review": "not_performed",
       "agent_visual_review_notes": null,
-      "user_review": "pending"
+      "user_review": "pending",
+      "backup_status": "github_verified",
+      "verified_commit": "bffc6f41e512e28b4e383e8dfa711aee07c710fc",
+      "verified_at": "2026-10-02T12:47:14.425643+00:00"
     },
     "assisted-pistol-squats": {
       "id": "assisted-pistol-squats",
@@ -3372,7 +3434,10 @@
           "tool_response_metadata": {
             "tool_call_id": "image_gen.imagegen#51",
             "output_hint": "/workspace/generated_images/exec-e6528e4f-ead2-413a-ba2f-d620ba268406.png"
-          }
+          },
+          "backup_status": "github_verified",
+          "verified_commit": "bffc6f41e512e28b4e383e8dfa711aee07c710fc",
+          "verified_at": "2026-10-02T12:47:14.425643+00:00"
         }
       ],
       "result_sha256": "a2c113ea96e9ee0083840105570f03594220ac7ffe8937b70524ab1e588a815e",
@@ -3393,7 +3458,10 @@
       },
       "agent_visual_review": "not_performed",
       "agent_visual_review_notes": null,
-      "user_review": "pending"
+      "user_review": "pending",
+      "backup_status": "github_verified",
+      "verified_commit": "bffc6f41e512e28b4e383e8dfa711aee07c710fc",
+      "verified_at": "2026-10-02T12:47:14.425643+00:00"
     },
     "bench-press-wide-grip-barbell": {
       "id": "bench-press-wide-grip-barbell",
@@ -3507,7 +3575,10 @@
           "tool_response_metadata": {
             "tool_call_id": "image_gen.imagegen#52",
             "output_hint": "/workspace/generated_images/exec-41919797-b742-45aa-80f2-c2ddf95a0430.png"
-          }
+          },
+          "backup_status": "github_verified",
+          "verified_commit": "bffc6f41e512e28b4e383e8dfa711aee07c710fc",
+          "verified_at": "2026-10-02T12:47:14.425643+00:00"
         }
       ],
       "result_sha256": "a003e970ec1617c4109c37c1e65781f86cf6ecfa16a95d66982c002351585eb2",
@@ -3528,7 +3599,10 @@
       },
       "agent_visual_review": "not_performed",
       "agent_visual_review_notes": null,
-      "user_review": "pending"
+      "user_review": "pending",
+      "backup_status": "github_verified",
+      "verified_commit": "bffc6f41e512e28b4e383e8dfa711aee07c710fc",
+      "verified_at": "2026-10-02T12:47:14.425643+00:00"
     },
     "bent-over-row-band-resistance-band": {
       "id": "bent-over-row-band-resistance-band",
@@ -4961,7 +5035,10 @@
           "tool_response_metadata": {
             "tool_call_id": "image_gen.imagegen#53",
             "output_hint": "/workspace/generated_images/exec-1202cc83-8d56-461e-b2f4-57611056d4aa.png"
-          }
+          },
+          "backup_status": "github_verified",
+          "verified_commit": "bffc6f41e512e28b4e383e8dfa711aee07c710fc",
+          "verified_at": "2026-10-02T12:47:14.425643+00:00"
         }
       ],
       "result_sha256": "c0a5103f2e4a32e791c0d6f152407d54647e6ac9027d3cd2b1103ac4857c1023",
@@ -4982,7 +5059,10 @@
       },
       "agent_visual_review": "not_performed",
       "agent_visual_review_notes": null,
-      "user_review": "pending"
+      "user_review": "pending",
+      "backup_status": "github_verified",
+      "verified_commit": "bffc6f41e512e28b4e383e8dfa711aee07c710fc",
+      "verified_at": "2026-10-02T12:47:14.425643+00:00"
     },
     "box-squat-barbell-hevy-4632464345373244": {
       "id": "box-squat-barbell-hevy-4632464345373244",
@@ -6880,7 +6960,10 @@
           "tool_response_metadata": {
             "tool_call_id": "image_gen.imagegen#54",
             "output_hint": "/workspace/generated_images/exec-68bc32dc-de9a-4625-9a51-5df98536933c.png"
-          }
+          },
+          "backup_status": "github_verified",
+          "verified_commit": "bffc6f41e512e28b4e383e8dfa711aee07c710fc",
+          "verified_at": "2026-10-02T12:47:14.425643+00:00"
         }
       ],
       "result_sha256": "619219119bcc43a26483bf687881b6cb244fe4e86345bbfe910e130ab3750831",
@@ -6901,7 +6984,10 @@
       },
       "agent_visual_review": "not_performed",
       "agent_visual_review_notes": null,
-      "user_review": "pending"
+      "user_review": "pending",
+      "backup_status": "github_verified",
+      "verified_commit": "bffc6f41e512e28b4e383e8dfa711aee07c710fc",
+      "verified_at": "2026-10-02T12:47:14.425643+00:00"
     },
     "chest-fly-dumbbell": {
       "id": "chest-fly-dumbbell",
@@ -7112,7 +7198,10 @@
           "tool_response_metadata": {
             "tool_call_id": "image_gen.imagegen#55",
             "output_hint": "/workspace/generated_images/exec-e15ef2ca-534f-4bc4-a3a0-d372c18e2bea.png"
-          }
+          },
+          "backup_status": "github_verified",
+          "verified_commit": "bffc6f41e512e28b4e383e8dfa711aee07c710fc",
+          "verified_at": "2026-10-02T12:47:14.425643+00:00"
         }
       ],
       "result_sha256": "80d2bb41dc4933f2dffd8fd39ff1addee1072c4d632575b0fe7e82a399a548c1",
@@ -7133,7 +7222,10 @@
       },
       "agent_visual_review": "not_performed",
       "agent_visual_review_notes": null,
-      "user_review": "pending"
+      "user_review": "pending",
+      "backup_status": "github_verified",
+      "verified_commit": "bffc6f41e512e28b4e383e8dfa711aee07c710fc",
+      "verified_at": "2026-10-02T12:47:14.425643+00:00"
     },
     "chest-press-band-resistance-band": {
       "id": "chest-press-band-resistance-band",
@@ -9174,7 +9266,10 @@
           "tool_response_metadata": {
             "tool_call_id": "image_gen.imagegen#56",
             "output_hint": "/workspace/generated_images/exec-d2c30985-d236-4e2d-a841-9e7f63c610cd.png"
-          }
+          },
+          "backup_status": "github_verified",
+          "verified_commit": "bffc6f41e512e28b4e383e8dfa711aee07c710fc",
+          "verified_at": "2026-10-02T12:47:14.425643+00:00"
         }
       ],
       "result_sha256": "8cca37196e7d0a5fb4b372ae9e56e89397b75ca3a372c938be747560c557e17b",
@@ -9195,7 +9290,10 @@
       },
       "agent_visual_review": "not_performed",
       "agent_visual_review_notes": null,
-      "user_review": "pending"
+      "user_review": "pending",
+      "backup_status": "github_verified",
+      "verified_commit": "bffc6f41e512e28b4e383e8dfa711aee07c710fc",
+      "verified_at": "2026-10-02T12:47:14.425643+00:00"
     },
     "curtsy-lunge-dumbbell": {
       "id": "curtsy-lunge-dumbbell",
@@ -10696,7 +10794,10 @@
           "tool_response_metadata": {
             "tool_call_id": "image_gen.imagegen#57",
             "output_hint": "/workspace/generated_images/exec-a122041a-c6d3-4a86-b7c0-7c8dfecfcfe2.png"
-          }
+          },
+          "backup_status": "github_verified",
+          "verified_commit": "bffc6f41e512e28b4e383e8dfa711aee07c710fc",
+          "verified_at": "2026-10-02T12:47:14.425643+00:00"
         }
       ],
       "result_sha256": "51844a41b54b2d1b76d5578169772a379d8af683eaea4fb943fb198383f47971",
@@ -10717,7 +10818,10 @@
       },
       "agent_visual_review": "not_performed",
       "agent_visual_review_notes": null,
-      "user_review": "pending"
+      "user_review": "pending",
+      "backup_status": "github_verified",
+      "verified_commit": "bffc6f41e512e28b4e383e8dfa711aee07c710fc",
+      "verified_at": "2026-10-02T12:47:14.425643+00:00"
     },
     "decline-crunch": {
       "id": "decline-crunch",
@@ -10958,7 +11062,10 @@
           "tool_response_metadata": {
             "tool_call_id": "image_gen.imagegen#58",
             "output_hint": "/workspace/generated_images/exec-0f30c308-d5b3-4b92-b7b3-c7e0327f7235.png"
-          }
+          },
+          "backup_status": "github_verified",
+          "verified_commit": "bffc6f41e512e28b4e383e8dfa711aee07c710fc",
+          "verified_at": "2026-10-02T12:47:14.425643+00:00"
         }
       ],
       "result_sha256": "785e8413779cf37ec2d117e8750fbc90eb9e4f70056f23a0fa04261370cd7fff",
@@ -10979,7 +11086,10 @@
       },
       "agent_visual_review": "not_performed",
       "agent_visual_review_notes": null,
-      "user_review": "pending"
+      "user_review": "pending",
+      "backup_status": "github_verified",
+      "verified_commit": "bffc6f41e512e28b4e383e8dfa711aee07c710fc",
+      "verified_at": "2026-10-02T12:47:14.425643+00:00"
     },
     "decline-pushup": {
       "id": "decline-pushup",
@@ -11692,7 +11802,10 @@
           "tool_response_metadata": {
             "tool_call_id": "image_gen.imagegen#59",
             "output_hint": "/workspace/generated_images/exec-ec0037d3-2f1f-4237-972e-818daf36579a.png"
-          }
+          },
+          "backup_status": "github_verified",
+          "verified_commit": "bffc6f41e512e28b4e383e8dfa711aee07c710fc",
+          "verified_at": "2026-10-02T12:47:14.425643+00:00"
         }
       ],
       "result_sha256": "6a8cfd114cfb43e34dab8eeb5857103edace8a47c2097c4dcb5f3d64fcb6bbca",
@@ -11713,7 +11826,10 @@
       },
       "agent_visual_review": "not_performed",
       "agent_visual_review_notes": null,
-      "user_review": "pending"
+      "user_review": "pending",
+      "backup_status": "github_verified",
+      "verified_commit": "bffc6f41e512e28b4e383e8dfa711aee07c710fc",
+      "verified_at": "2026-10-02T12:47:14.425643+00:00"
     },
     "dumbbell-step-up": {
       "id": "dumbbell-step-up",
