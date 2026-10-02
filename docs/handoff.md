@@ -7,7 +7,7 @@ The user returned `around-the-world-dumbbell` and `bench-press-close-grip-barbel
 - `around-the-world-dumbbell`: `assets/exercises/pending/agent-03-others-014/around-the-world-dumbbell/attempt-3.png`; SHA256 `940cb44e1b897c401fa6dc39f2e01a15610f0c958effeff99cd7c6cc355871ba`; passed; `user_review=pending`. The correction redraws both dumbbells as a matching symmetric pair.
 - `bench-press-close-grip-barbell`: `assets/exercises/pending/agent-03-others-014/bench-press-close-grip-barbell/attempt-3.png`; SHA256 `90171bed2296fad8fdbbe674877e21157228e9c4181d0fa4fbc338a90ca3b3ab`; passed; `user_review=pending`. Both hands use the user's requested reverse grip.
 
-Both calls used built-in `image_gen.imagegen` and the accepted human reference SHA256 `52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f`. No agent visual review was performed. Next: push these PNGs and metadata, verify remote SHA256, then wait for user review. Do not change approved results, batch 009, blocked exercises, or Supabase.
+Both calls used built-in `image_gen.imagegen` and the accepted human reference SHA256 `52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f`. No agent visual review was performed. Both correction PNGs and metadata were pushed in `54d87783fb890f724b963395dacb5840c5214097` at 2026-10-02T13:32:55+00:00; exact remote SHA256 values were matched. They are now `backup_status=github_verified`; wait for user visual review. Do not change approved results, batch 009, blocked exercises, or Supabase.
 
 ---
 
