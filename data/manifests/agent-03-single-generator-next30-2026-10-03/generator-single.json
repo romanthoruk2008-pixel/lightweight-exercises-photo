@@ -7,7 +7,7 @@
   "source_branch": "agent-03-inventory-2026-10-01",
   "status": "in_progress",
   "exercise_count": 30,
-  "generation_calls": 12,
+  "generation_calls": 20,
   "user_review_policy": "pending on result creation until explicit user approval",
   "quota_rule": "On first generator quota/rate-limit error save failure and history, push checkpoint and stop without repeat calls.",
   "batches": [
@@ -1325,7 +1325,7 @@
     {
       "batch_id": "agent-03-others-032",
       "batch_path": "data/batches/agent-03-others-032.json",
-      "status": "in_progress",
+      "status": "completed_with_errors",
       "exercise_count": 10,
       "exercises": [
         {
@@ -1562,134 +1562,1046 @@
         {
           "exercise_id": "low-cable-fly-crossovers-machine",
           "name": "Low Cable Fly Crossovers",
-          "status": "not_started",
-          "attempts": 0,
-          "attempt_history": [],
-          "user_review": null,
-          "technical_check": null,
+          "status": "generated_pending",
+          "attempts": 1,
+          "attempt_history": [
+            {
+              "attempt": 1,
+              "attempt_status": "generated",
+              "started_at": "2026-10-03T11:32:50.555Z",
+              "finished_at": "2026-10-03T11:33:53.860464+00:00",
+              "prompt": "Create exactly ONE square 1024x1024 transparent PNG of this exact exercise and ONE selected phase. Metadata must never appear as image text.\n{\n  \"approved_style_files\": [\n    {\n      \"path\": \"docs/exercise-image-style.md\",\n      \"sha256\": \"8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578\"\n    }\n  ],\n  \"exact_catalogue_source\": {\n    \"equipment\": \"machine\",\n    \"primary_muscle\": \"chest\",\n    \"secondary_muscles\": [],\n    \"source_english\": {\n      \"common_mistakes\": [\n        \"Swinging for momentum.\",\n        \"Shrugging into the movement.\",\n        \"Forcing end range.\"\n      ],\n      \"description\": \"From the low pulleys, sweep both cable handles upward and inward until they cross in front of the chest.\",\n      \"form_cues\": [\n        \"Keep the shoulders down.\",\n        \"Move through a controlled arc.\",\n        \"Stop at a comfortable range.\"\n      ],\n      \"instructions\": [\n        \"Attach handles to the low pulleys and stand centered with a soft knee bend.\",\n        \"Hold the handles with a slight elbow bend and start with the arms open.\",\n        \"Sweep the handles upward and inward until they meet or cross in front of the chest.\",\n        \"Return the arms slowly to the open position.\"\n      ],\n      \"provenance\": \"adapted\",\n      \"safety_note\": \"Use light resistance and stop if the shoulder cannot move smoothly.\"\n    }\n  },\n  \"human_reference\": {\n    \"absolute_path\": \"/workspace/lightweight-exercises-photo/assets/exercises/biceps-curl-dumbbell.png\",\n    \"branch\": \"work\",\n    \"pixels_reviewed_during_preparation\": false,\n    \"repository_path\": \"assets/exercises/biceps-curl-dumbbell.png\",\n    \"role\": \"Human appearance/proportions/materials/anatomical style ONLY. Exercise pose, grip, equipment and muscles come from the exact-ID catalogue, never the reference.\",\n    \"sha256\": \"52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f\",\n    \"source_commit\": \"b0385b7e2f3382d545a6dff5304c81ba3c771096\"\n  },\n  \"identity_do_not_render_as_text\": {\n    \"catalog_record_sha256\": \"babc0559350060a443608931dafb99c83b15bfe3d01aa956640426673e18e7d3\",\n    \"catalog_sha256\": \"a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989\",\n    \"exercise_id\": \"low-cable-fly-crossovers-machine\",\n    \"name\": \"Low Cable Fly Crossovers\"\n  },\n  \"selected_render_scene\": {\n    \"camera\": \"Full-body front-side three-quarter view exposing every prescribed contact, grip and support. Entire person and all equipment visible within square; no crop, text, arrows or second phase.\",\n    \"exercise_id\": \"low-cable-fly-crossovers-machine\",\n    \"grip\": \"One handle per hand, overhand grip as exact dataset prescribes; no elbow-driven press.\",\n    \"movement_trajectory\": \"Sweep both handles upward and inward until they slightly cross in front of chest, then reverse the wide arc; one crossing phase, not a montage.\",\n    \"never_infer_muscles_from_pose_or_reference\": true,\n    \"one_phase_only\": true,\n    \"pose\": \"Stand centered between low pulleys, feet shoulder-width and knees soft, torso braced; elbows keep a small bend as arms converge upward in front of chest.\",\n    \"single_phase\": \"Upward/inward fly with hands crossing slightly in front of chest\",\n    \"supports_and_equipment\": \"Two LOW lateral pulleys, one cable/handle to each hand, both feet on floor. Cables remain attached to corresponding sides and clear of body.\"\n  },\n  \"source_use_rule\": \"Preserve raw source texts verbatim; render only selected scene and documented exact-source/user resolution. Do not silently repair the catalogue.\",\n  \"style\": {\n    \"background\": \"Genuinely transparent PNG background, no white/checkerboard layer, no environment scene.\",\n    \"framing\": \"Full figure and all required equipment/supports visible within a square. Scale and use a three-quarter view to expose the specified contacts without changing anatomy, equipment, grip or technique.\",\n    \"human_model\": \"One athletic bald male anatomical mannequin, opaque silver-gray muscular surfaces, consistent proportions and detailed 3D materials, plain black shorts, barefoot.\",\n    \"material_rules\": \"Highlights never make tissue transparent; no glow, whole-body orange tint, hair, text, labels, arrows, UI, borders, collage or extra person.\",\n    \"no_invention\": \"Exact-ID catalogue controls source text and muscles. Render documented selected scene; recorded source corrections apply to the derived scene only. No reference-pose copying or imported muscle targets.\",\n    \"output\": {\n      \"format\": \"PNG\",\n      \"height\": 1024,\n      \"one_person\": true,\n      \"one_phase\": true,\n      \"width\": 1024\n    },\n    \"primary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"rule\": \"Highlight only the exact primary muscle group provided for this exercise.\"\n    },\n    \"secondary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"intensity_fraction\": [\n        0.4,\n        0.5\n      ],\n      \"rule\": \"Only the exact secondary muscles, lighter same-hue highlight; if the list is empty add no secondary target.\"\n    },\n    \"version\": \"v1\"\n  },\n  \"technique_resolution\": {\n    \"PNG_approval\": false,\n    \"binding_or_name_alone_is_not_confirmation\": true,\n    \"catalog_modified\": false,\n    \"construction_rule\": \"Standard compatible unbranded geometry allowed by AGENTS.md; choose geometry only around specified contacts/motion. Category machine does not establish a load mechanism, brand, angle or weight count.\",\n    \"dataset_instruction_steps_read\": [\n      \"Attach the handles to the low pulleys of a cable machine and select an appropriate weight.\",\n      \"Stand in the middle of the machine with your feet shoulder-width apart and a slight bend in your knees.\",\n      \"Grasp the handles with an overhand grip and extend your arms out to the sides, keeping a slight bend in your elbows.\",\n      \"Maintaining control, slowly bring your arms forward in a sweeping motion, crossing them in front of your body.\",\n      \"Pause for a moment at the peak of the movement, feeling the stretch in your chest muscles.\",\n      \"Reverse the motion and slowly return your arms to the starting position, keeping tension on your chest muscles throughout.\",\n      \"Repeat for the desired number of repetitions.\"\n    ],\n    \"decision_kind\": \"exact_ID_written_technique_confirmation\",\n    \"evidence_path\": \"data/audits/agent-03-single-generator-next30-2026-10-03-technique.json\",\n    \"evidence_selector\": \"records[exercise_id=\\\"low-cable-fly-crossovers-machine\\\"]\",\n    \"illustration_choices\": \"Side/phase and compatible layout are scene choices, not amendments to source technique. Do not infer muscle targets from scene or equipment.\",\n    \"illustration_choices_are_not_user_approvals\": true,\n    \"status\": \"resolved\",\n    \"technique_fields_read\": [\n      \"content.en.description\",\n      \"content.en.instructions\",\n      \"content.en.form_cues\",\n      \"content.en.common_mistakes\",\n      \"content.en.safety_note\",\n      \"content.pl.instructions\",\n      \"source.dataset_id\"\n    ]\n  }\n}",
+              "prompt_sha256": "d9c023eb5f51aa77fef79af548552db4f3799a2d3769bd6fbf44e4c09b576393",
+              "source": {
+                "task_commit": "77cd54d73b1f2546d29e7f17bd816faf9ec14f5e",
+                "batch_path": "data/batches/agent-03-others-032.json",
+                "batch_sha256": "06bfc5851504457a5f103616a15e4ad1be86812e3bc667180e242b7470919111",
+                "assignment_path": "data/assignments/agent-03-single-generator-next30-2026-10-03.json",
+                "assignment_sha256": "8c200e5807890caffda34c41aa44d3f6f055e46f9764d66d53d4219e7f101e37",
+                "catalog_path": "data/exercises/catalog.json",
+                "catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+                "catalog_record_sha256": "babc0559350060a443608931dafb99c83b15bfe3d01aa956640426673e18e7d3",
+                "source_english_sha256": "f5eaaeb8696406e66329a39432bfcc3b37af82a904776c67729a961c058cfd5b",
+                "technique_audit_path": "data/audits/agent-03-single-generator-next30-2026-10-03-technique.json",
+                "technique_audit_sha256": "2b9ccaaffe190dc4b5c2d8b70b2647e29a40dba843b0b7119c5e2fea4b67767b",
+                "source_errors_path": "data/audits/agent-03-single-generator-next30-2026-10-03-source-errors.json",
+                "source_errors_sha256": "ba3e4ffe4ba356ae6772275a23b2abd1fd5d9e9c4fecfe75f4be2cbef740fb96"
+              },
+              "style": {
+                "version": "v1",
+                "files": [
+                  {
+                    "path": "docs/exercise-image-style.md",
+                    "sha256": "8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578"
+                  },
+                  {
+                    "path": "docs/exercise-image-style-neutral-primary.md",
+                    "sha256": "86204ab43f23d119a1eb25cafdbda2518b741a0090b4ffb0ceb9086952314439"
+                  }
+                ]
+              },
+              "human_reference": {
+                "path": "assets/exercises/biceps-curl-dumbbell.png",
+                "absolute_path": "/workspace/lightweight-exercises-photo/assets/exercises/biceps-curl-dumbbell.png",
+                "sha256": "52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f",
+                "assigned_sha256": "52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f"
+              },
+              "requested_output": {
+                "planned_png_path": "/workspace/exercise-image-results/agent-03-single-generator-next30-2026-10-03/generator-single/agent-03-others-032/low-cable-fly-crossovers-machine/attempt-1.png",
+                "planned_git_png_path": "assets/exercises/pending/agent-03-single-generator-next30-2026-10-03/generator-single/agent-03-others-032/low-cable-fly-crossovers-machine/attempt-1.png",
+                "format": "PNG",
+                "dimensions": [
+                  1024,
+                  1024
+                ],
+                "transparent_background": true
+              },
+              "user_review": "pending",
+              "agent_visual_review": "not_performed",
+              "errors": [],
+              "generator_output_path": "/workspace/generated_images/exec-9197c27a-191d-41d7-911c-84566178e84c.png",
+              "generator_output_sha256": "079bc9c27f67e949ca8dea702f0b8cbff3581abf93fee3e100467477d5ba20ff",
+              "generator_output_dimensions": [
+                1254,
+                1254
+              ],
+              "generator_output_mode": "RGBA",
+              "normalization": "aspect-preserving contain to 1024x1024 transparent canvas",
+              "result_path": "/workspace/exercise-image-results/agent-03-single-generator-next30-2026-10-03/generator-single/agent-03-others-032/low-cable-fly-crossovers-machine/attempt-1.png",
+              "git_result_path": "assets/exercises/pending/agent-03-single-generator-next30-2026-10-03/generator-single/agent-03-others-032/low-cable-fly-crossovers-machine/attempt-1.png",
+              "result_sha256": "e3a03f5996550878f7dbdf5deb66531fbac4ed6be7377dbdecbcf74038274043",
+              "technical_check": {
+                "status": "passed",
+                "format": "PNG",
+                "dimensions": [
+                  1024,
+                  1024
+                ],
+                "mode": "RGBA",
+                "alpha_min_max": [
+                  0,
+                  255
+                ],
+                "transparent_pixel_present": true,
+                "opaque_pixel_present": true
+              }
+            }
+          ],
+          "user_review": "pending",
+          "technical_check": {
+            "status": "passed",
+            "format": "PNG",
+            "dimensions": [
+              1024,
+              1024
+            ],
+            "mode": "RGBA",
+            "alpha_min_max": [
+              0,
+              255
+            ],
+            "transparent_pixel_present": true,
+            "opaque_pixel_present": true
+          },
           "agent_visual_review": "not_performed",
-          "result_path": null,
+          "result_path": "assets/exercises/pending/agent-03-single-generator-next30-2026-10-03/generator-single/agent-03-others-032/low-cable-fly-crossovers-machine/attempt-1.png",
           "planned_png_path": "/workspace/exercise-image-results/agent-03-single-generator-next30-2026-10-03/generator-single/agent-03-others-032/low-cable-fly-crossovers-machine/attempt-1.png",
           "planned_git_png_path": "assets/exercises/pending/agent-03-single-generator-next30-2026-10-03/generator-single/agent-03-others-032/low-cable-fly-crossovers-machine/attempt-1.png",
           "source_catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
           "style_version": "v1",
-          "prompt_sha256": "d9c023eb5f51aa77fef79af548552db4f3799a2d3769bd6fbf44e4c09b576393"
+          "prompt_sha256": "d9c023eb5f51aa77fef79af548552db4f3799a2d3769bd6fbf44e4c09b576393",
+          "cloud_result_path": "/workspace/exercise-image-results/agent-03-single-generator-next30-2026-10-03/generator-single/agent-03-others-032/low-cable-fly-crossovers-machine/attempt-1.png",
+          "result_sha256": "e3a03f5996550878f7dbdf5deb66531fbac4ed6be7377dbdecbcf74038274043",
+          "last_error": null,
+          "prompt": "Create exactly ONE square 1024x1024 transparent PNG of this exact exercise and ONE selected phase. Metadata must never appear as image text.\n{\n  \"approved_style_files\": [\n    {\n      \"path\": \"docs/exercise-image-style.md\",\n      \"sha256\": \"8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578\"\n    }\n  ],\n  \"exact_catalogue_source\": {\n    \"equipment\": \"machine\",\n    \"primary_muscle\": \"chest\",\n    \"secondary_muscles\": [],\n    \"source_english\": {\n      \"common_mistakes\": [\n        \"Swinging for momentum.\",\n        \"Shrugging into the movement.\",\n        \"Forcing end range.\"\n      ],\n      \"description\": \"From the low pulleys, sweep both cable handles upward and inward until they cross in front of the chest.\",\n      \"form_cues\": [\n        \"Keep the shoulders down.\",\n        \"Move through a controlled arc.\",\n        \"Stop at a comfortable range.\"\n      ],\n      \"instructions\": [\n        \"Attach handles to the low pulleys and stand centered with a soft knee bend.\",\n        \"Hold the handles with a slight elbow bend and start with the arms open.\",\n        \"Sweep the handles upward and inward until they meet or cross in front of the chest.\",\n        \"Return the arms slowly to the open position.\"\n      ],\n      \"provenance\": \"adapted\",\n      \"safety_note\": \"Use light resistance and stop if the shoulder cannot move smoothly.\"\n    }\n  },\n  \"human_reference\": {\n    \"absolute_path\": \"/workspace/lightweight-exercises-photo/assets/exercises/biceps-curl-dumbbell.png\",\n    \"branch\": \"work\",\n    \"pixels_reviewed_during_preparation\": false,\n    \"repository_path\": \"assets/exercises/biceps-curl-dumbbell.png\",\n    \"role\": \"Human appearance/proportions/materials/anatomical style ONLY. Exercise pose, grip, equipment and muscles come from the exact-ID catalogue, never the reference.\",\n    \"sha256\": \"52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f\",\n    \"source_commit\": \"b0385b7e2f3382d545a6dff5304c81ba3c771096\"\n  },\n  \"identity_do_not_render_as_text\": {\n    \"catalog_record_sha256\": \"babc0559350060a443608931dafb99c83b15bfe3d01aa956640426673e18e7d3\",\n    \"catalog_sha256\": \"a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989\",\n    \"exercise_id\": \"low-cable-fly-crossovers-machine\",\n    \"name\": \"Low Cable Fly Crossovers\"\n  },\n  \"selected_render_scene\": {\n    \"camera\": \"Full-body front-side three-quarter view exposing every prescribed contact, grip and support. Entire person and all equipment visible within square; no crop, text, arrows or second phase.\",\n    \"exercise_id\": \"low-cable-fly-crossovers-machine\",\n    \"grip\": \"One handle per hand, overhand grip as exact dataset prescribes; no elbow-driven press.\",\n    \"movement_trajectory\": \"Sweep both handles upward and inward until they slightly cross in front of chest, then reverse the wide arc; one crossing phase, not a montage.\",\n    \"never_infer_muscles_from_pose_or_reference\": true,\n    \"one_phase_only\": true,\n    \"pose\": \"Stand centered between low pulleys, feet shoulder-width and knees soft, torso braced; elbows keep a small bend as arms converge upward in front of chest.\",\n    \"single_phase\": \"Upward/inward fly with hands crossing slightly in front of chest\",\n    \"supports_and_equipment\": \"Two LOW lateral pulleys, one cable/handle to each hand, both feet on floor. Cables remain attached to corresponding sides and clear of body.\"\n  },\n  \"source_use_rule\": \"Preserve raw source texts verbatim; render only selected scene and documented exact-source/user resolution. Do not silently repair the catalogue.\",\n  \"style\": {\n    \"background\": \"Genuinely transparent PNG background, no white/checkerboard layer, no environment scene.\",\n    \"framing\": \"Full figure and all required equipment/supports visible within a square. Scale and use a three-quarter view to expose the specified contacts without changing anatomy, equipment, grip or technique.\",\n    \"human_model\": \"One athletic bald male anatomical mannequin, opaque silver-gray muscular surfaces, consistent proportions and detailed 3D materials, plain black shorts, barefoot.\",\n    \"material_rules\": \"Highlights never make tissue transparent; no glow, whole-body orange tint, hair, text, labels, arrows, UI, borders, collage or extra person.\",\n    \"no_invention\": \"Exact-ID catalogue controls source text and muscles. Render documented selected scene; recorded source corrections apply to the derived scene only. No reference-pose copying or imported muscle targets.\",\n    \"output\": {\n      \"format\": \"PNG\",\n      \"height\": 1024,\n      \"one_person\": true,\n      \"one_phase\": true,\n      \"width\": 1024\n    },\n    \"primary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"rule\": \"Highlight only the exact primary muscle group provided for this exercise.\"\n    },\n    \"secondary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"intensity_fraction\": [\n        0.4,\n        0.5\n      ],\n      \"rule\": \"Only the exact secondary muscles, lighter same-hue highlight; if the list is empty add no secondary target.\"\n    },\n    \"version\": \"v1\"\n  },\n  \"technique_resolution\": {\n    \"PNG_approval\": false,\n    \"binding_or_name_alone_is_not_confirmation\": true,\n    \"catalog_modified\": false,\n    \"construction_rule\": \"Standard compatible unbranded geometry allowed by AGENTS.md; choose geometry only around specified contacts/motion. Category machine does not establish a load mechanism, brand, angle or weight count.\",\n    \"dataset_instruction_steps_read\": [\n      \"Attach the handles to the low pulleys of a cable machine and select an appropriate weight.\",\n      \"Stand in the middle of the machine with your feet shoulder-width apart and a slight bend in your knees.\",\n      \"Grasp the handles with an overhand grip and extend your arms out to the sides, keeping a slight bend in your elbows.\",\n      \"Maintaining control, slowly bring your arms forward in a sweeping motion, crossing them in front of your body.\",\n      \"Pause for a moment at the peak of the movement, feeling the stretch in your chest muscles.\",\n      \"Reverse the motion and slowly return your arms to the starting position, keeping tension on your chest muscles throughout.\",\n      \"Repeat for the desired number of repetitions.\"\n    ],\n    \"decision_kind\": \"exact_ID_written_technique_confirmation\",\n    \"evidence_path\": \"data/audits/agent-03-single-generator-next30-2026-10-03-technique.json\",\n    \"evidence_selector\": \"records[exercise_id=\\\"low-cable-fly-crossovers-machine\\\"]\",\n    \"illustration_choices\": \"Side/phase and compatible layout are scene choices, not amendments to source technique. Do not infer muscle targets from scene or equipment.\",\n    \"illustration_choices_are_not_user_approvals\": true,\n    \"status\": \"resolved\",\n    \"technique_fields_read\": [\n      \"content.en.description\",\n      \"content.en.instructions\",\n      \"content.en.form_cues\",\n      \"content.en.common_mistakes\",\n      \"content.en.safety_note\",\n      \"content.pl.instructions\",\n      \"source.dataset_id\"\n    ]\n  }\n}",
+          "source_catalog_record_sha256": "babc0559350060a443608931dafb99c83b15bfe3d01aa956640426673e18e7d3",
+          "source_english_sha256": "f5eaaeb8696406e66329a39432bfcc3b37af82a904776c67729a961c058cfd5b",
+          "style_files": [
+            {
+              "path": "docs/exercise-image-style.md",
+              "sha256": "8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578"
+            },
+            {
+              "path": "docs/exercise-image-style-neutral-primary.md",
+              "sha256": "86204ab43f23d119a1eb25cafdbda2518b741a0090b4ffb0ceb9086952314439"
+            }
+          ],
+          "human_reference_sha256": "52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f",
+          "technical_status": "passed"
         },
         {
           "exercise_id": "seated-cable-row-bar-grip-machine",
           "name": "Seated Cable Row - Bar Grip",
-          "status": "not_started",
-          "attempts": 0,
-          "attempt_history": [],
-          "user_review": null,
-          "technical_check": null,
+          "status": "generated_pending",
+          "attempts": 1,
+          "attempt_history": [
+            {
+              "attempt": 1,
+              "attempt_status": "generated",
+              "started_at": "2026-10-03T11:35:24.804Z",
+              "finished_at": "2026-10-03T11:36:21.831258+00:00",
+              "prompt": "Create exactly ONE square 1024x1024 transparent PNG of this exact exercise and ONE selected phase. Metadata must never appear as image text.\n{\n  \"approved_style_files\": [\n    {\n      \"path\": \"docs/exercise-image-style.md\",\n      \"sha256\": \"8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578\"\n    }\n  ],\n  \"exact_catalogue_source\": {\n    \"equipment\": \"machine\",\n    \"primary_muscle\": \"upper_back\",\n    \"secondary_muscles\": [\n      \"lats\",\n      \"biceps\",\n      \"forearms\"\n    ],\n    \"source_english\": {\n      \"common_mistakes\": [\n        \"Lifting the chest from the pad.\",\n        \"Shrugging instead of pulling the elbows.\",\n        \"Letting the weight fall on return.\"\n      ],\n      \"description\": \"Sit at the low cable pulley, grip the straight bar overhand, and pull it toward the lower ribs before extending the arms.\",\n      \"form_cues\": [\n        \"Keep the chest supported or torso upright.\",\n        \"Drive the elbows toward the ribs.\",\n        \"Lower until the arms lengthen.\"\n      ],\n      \"instructions\": [\n        \"Sit on the cable row machine with your feet flat on the footrests and your knees slightly bent.\",\n        \"Grasp the handles with an overhand grip, keeping your back straight and your shoulders relaxed.\",\n        \"Pull the handles towards your body, squeezing your shoulder blades together.\",\n        \"Pause for a moment at the peak of the movement, then slowly release the handles back to the starting position.\",\n        \"Repeat for the desired number of repetitions.\"\n      ],\n      \"provenance\": \"adapted\",\n      \"safety_note\": \"Keep the torso supported or upright so the shoulder is not jerked by the cable or bar.\"\n    }\n  },\n  \"human_reference\": {\n    \"absolute_path\": \"/workspace/lightweight-exercises-photo/assets/exercises/biceps-curl-dumbbell.png\",\n    \"branch\": \"work\",\n    \"pixels_reviewed_during_preparation\": false,\n    \"repository_path\": \"assets/exercises/biceps-curl-dumbbell.png\",\n    \"role\": \"Human appearance/proportions/materials/anatomical style ONLY. Exercise pose, grip, equipment and muscles come from the exact-ID catalogue, never the reference.\",\n    \"sha256\": \"52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f\",\n    \"source_commit\": \"b0385b7e2f3382d545a6dff5304c81ba3c771096\"\n  },\n  \"identity_do_not_render_as_text\": {\n    \"catalog_record_sha256\": \"ebf49dde260f49673ea94e96233a198e896fac307b4f34b33d2bf78cc73d80ac\",\n    \"catalog_sha256\": \"a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989\",\n    \"exercise_id\": \"seated-cable-row-bar-grip-machine\",\n    \"name\": \"Seated Cable Row - Bar Grip\"\n  },\n  \"selected_render_scene\": {\n    \"camera\": \"Full-body front-side three-quarter view exposing every prescribed contact, grip and support. Entire person and all equipment visible within square; no crop, text, arrows or second phase.\",\n    \"exercise_id\": \"seated-cable-row-bar-grip-machine\",\n    \"grip\": \"Overhand grip on ONE straight bar specified by exact-ID description.\",\n    \"movement_trajectory\": \"Pull bar horizontally toward lower ribs and extend arms on return without torso jerk. Generic optional chest-pad cue/mistake does not add a pad to this explicitly upright source variant.\",\n    \"never_infer_muscles_from_pose_or_reference\": true,\n    \"one_phase_only\": true,\n    \"pose\": \"Seated upright without chest-pad support, feet on footrests and knees slightly bent; elbows behind torso and shoulders relaxed.\",\n    \"single_phase\": \"Straight bar drawn toward lower ribs\",\n    \"supports_and_equipment\": \"LOW seated-row pulley ahead, straight bar, seat and footrests; no added chest pad or lever machine.\"\n  },\n  \"source_use_rule\": \"Preserve raw source texts verbatim; render only selected scene and documented exact-source/user resolution. Do not silently repair the catalogue.\",\n  \"style\": {\n    \"background\": \"Genuinely transparent PNG background, no white/checkerboard layer, no environment scene.\",\n    \"framing\": \"Full figure and all required equipment/supports visible within a square. Scale and use a three-quarter view to expose the specified contacts without changing anatomy, equipment, grip or technique.\",\n    \"human_model\": \"One athletic bald male anatomical mannequin, opaque silver-gray muscular surfaces, consistent proportions and detailed 3D materials, plain black shorts, barefoot.\",\n    \"material_rules\": \"Highlights never make tissue transparent; no glow, whole-body orange tint, hair, text, labels, arrows, UI, borders, collage or extra person.\",\n    \"no_invention\": \"Exact-ID catalogue controls source text and muscles. Render documented selected scene; recorded source corrections apply to the derived scene only. No reference-pose copying or imported muscle targets.\",\n    \"output\": {\n      \"format\": \"PNG\",\n      \"height\": 1024,\n      \"one_person\": true,\n      \"one_phase\": true,\n      \"width\": 1024\n    },\n    \"primary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"rule\": \"Highlight only the exact primary muscle group provided for this exercise.\"\n    },\n    \"secondary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"intensity_fraction\": [\n        0.4,\n        0.5\n      ],\n      \"rule\": \"Only the exact secondary muscles, lighter same-hue highlight; if the list is empty add no secondary target.\"\n    },\n    \"version\": \"v1\"\n  },\n  \"technique_resolution\": {\n    \"PNG_approval\": false,\n    \"binding_or_name_alone_is_not_confirmation\": true,\n    \"catalog_modified\": false,\n    \"construction_rule\": \"Standard compatible unbranded geometry allowed by AGENTS.md; choose geometry only around specified contacts/motion. Category machine does not establish a load mechanism, brand, angle or weight count.\",\n    \"dataset_instruction_steps_read\": [\n      \"Sit on the cable row machine with your feet flat on the footrests and your knees slightly bent.\",\n      \"Grasp the handles with an overhand grip, keeping your back straight and your shoulders relaxed.\",\n      \"Pull the handles towards your body, squeezing your shoulder blades together.\",\n      \"Pause for a moment at the peak of the movement, then slowly release the handles back to the starting position.\",\n      \"Repeat for the desired number of repetitions.\"\n    ],\n    \"decision_kind\": \"exact_ID_written_technique_confirmation\",\n    \"evidence_path\": \"data/audits/agent-03-single-generator-next30-2026-10-03-technique.json\",\n    \"evidence_selector\": \"records[exercise_id=\\\"seated-cable-row-bar-grip-machine\\\"]\",\n    \"illustration_choices\": \"Side/phase and compatible layout are scene choices, not amendments to source technique. Do not infer muscle targets from scene or equipment.\",\n    \"illustration_choices_are_not_user_approvals\": true,\n    \"status\": \"resolved\",\n    \"technique_fields_read\": [\n      \"content.en.description\",\n      \"content.en.instructions\",\n      \"content.en.form_cues\",\n      \"content.en.common_mistakes\",\n      \"content.en.safety_note\",\n      \"content.pl.instructions\",\n      \"source.dataset_id\"\n    ]\n  }\n}",
+              "prompt_sha256": "ccb10521c3c5239ada40a743c86cb346d27b0a9958f10077190dd91a95bd422f",
+              "source": {
+                "task_commit": "77cd54d73b1f2546d29e7f17bd816faf9ec14f5e",
+                "batch_path": "data/batches/agent-03-others-032.json",
+                "batch_sha256": "06bfc5851504457a5f103616a15e4ad1be86812e3bc667180e242b7470919111",
+                "assignment_path": "data/assignments/agent-03-single-generator-next30-2026-10-03.json",
+                "assignment_sha256": "8c200e5807890caffda34c41aa44d3f6f055e46f9764d66d53d4219e7f101e37",
+                "catalog_path": "data/exercises/catalog.json",
+                "catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+                "catalog_record_sha256": "ebf49dde260f49673ea94e96233a198e896fac307b4f34b33d2bf78cc73d80ac",
+                "source_english_sha256": "af8406327d1ed9d432c2a3a8e3b13885b04fa9cc6c482ff042107b2dcedc2ade",
+                "technique_audit_path": "data/audits/agent-03-single-generator-next30-2026-10-03-technique.json",
+                "technique_audit_sha256": "2b9ccaaffe190dc4b5c2d8b70b2647e29a40dba843b0b7119c5e2fea4b67767b",
+                "source_errors_path": "data/audits/agent-03-single-generator-next30-2026-10-03-source-errors.json",
+                "source_errors_sha256": "ba3e4ffe4ba356ae6772275a23b2abd1fd5d9e9c4fecfe75f4be2cbef740fb96"
+              },
+              "style": {
+                "version": "v1",
+                "files": [
+                  {
+                    "path": "docs/exercise-image-style.md",
+                    "sha256": "8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578"
+                  },
+                  {
+                    "path": "docs/exercise-image-style-neutral-primary.md",
+                    "sha256": "86204ab43f23d119a1eb25cafdbda2518b741a0090b4ffb0ceb9086952314439"
+                  }
+                ]
+              },
+              "human_reference": {
+                "path": "assets/exercises/biceps-curl-dumbbell.png",
+                "absolute_path": "/workspace/lightweight-exercises-photo/assets/exercises/biceps-curl-dumbbell.png",
+                "sha256": "52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f",
+                "assigned_sha256": "52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f"
+              },
+              "requested_output": {
+                "planned_png_path": "/workspace/exercise-image-results/agent-03-single-generator-next30-2026-10-03/generator-single/agent-03-others-032/seated-cable-row-bar-grip-machine/attempt-1.png",
+                "planned_git_png_path": "assets/exercises/pending/agent-03-single-generator-next30-2026-10-03/generator-single/agent-03-others-032/seated-cable-row-bar-grip-machine/attempt-1.png",
+                "format": "PNG",
+                "dimensions": [
+                  1024,
+                  1024
+                ],
+                "transparent_background": true
+              },
+              "user_review": "pending",
+              "agent_visual_review": "not_performed",
+              "errors": [],
+              "generator_output_path": "/workspace/generated_images/exec-e3a61c3f-e174-42c9-ba7f-8a62c0aa80c2.png",
+              "generator_output_sha256": "6782058d53a3fdcb604bbfe0b0738c5ca81524c65132e58b3b4d8333a58c7963",
+              "generator_output_dimensions": [
+                1254,
+                1254
+              ],
+              "generator_output_mode": "RGBA",
+              "normalization": "aspect-preserving contain to 1024x1024 transparent canvas",
+              "result_path": "/workspace/exercise-image-results/agent-03-single-generator-next30-2026-10-03/generator-single/agent-03-others-032/seated-cable-row-bar-grip-machine/attempt-1.png",
+              "git_result_path": "assets/exercises/pending/agent-03-single-generator-next30-2026-10-03/generator-single/agent-03-others-032/seated-cable-row-bar-grip-machine/attempt-1.png",
+              "result_sha256": "d74c3a9b6ce5d8b38445a3b1b21815526164c3577e834164be8d68d22ba20e1f",
+              "technical_check": {
+                "status": "passed",
+                "format": "PNG",
+                "dimensions": [
+                  1024,
+                  1024
+                ],
+                "mode": "RGBA",
+                "alpha_min_max": [
+                  0,
+                  255
+                ],
+                "transparent_pixel_present": true,
+                "opaque_pixel_present": true
+              }
+            }
+          ],
+          "user_review": "pending",
+          "technical_check": {
+            "status": "passed",
+            "format": "PNG",
+            "dimensions": [
+              1024,
+              1024
+            ],
+            "mode": "RGBA",
+            "alpha_min_max": [
+              0,
+              255
+            ],
+            "transparent_pixel_present": true,
+            "opaque_pixel_present": true
+          },
           "agent_visual_review": "not_performed",
-          "result_path": null,
+          "result_path": "assets/exercises/pending/agent-03-single-generator-next30-2026-10-03/generator-single/agent-03-others-032/seated-cable-row-bar-grip-machine/attempt-1.png",
           "planned_png_path": "/workspace/exercise-image-results/agent-03-single-generator-next30-2026-10-03/generator-single/agent-03-others-032/seated-cable-row-bar-grip-machine/attempt-1.png",
           "planned_git_png_path": "assets/exercises/pending/agent-03-single-generator-next30-2026-10-03/generator-single/agent-03-others-032/seated-cable-row-bar-grip-machine/attempt-1.png",
           "source_catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
           "style_version": "v1",
-          "prompt_sha256": "ccb10521c3c5239ada40a743c86cb346d27b0a9958f10077190dd91a95bd422f"
+          "prompt_sha256": "ccb10521c3c5239ada40a743c86cb346d27b0a9958f10077190dd91a95bd422f",
+          "cloud_result_path": "/workspace/exercise-image-results/agent-03-single-generator-next30-2026-10-03/generator-single/agent-03-others-032/seated-cable-row-bar-grip-machine/attempt-1.png",
+          "result_sha256": "d74c3a9b6ce5d8b38445a3b1b21815526164c3577e834164be8d68d22ba20e1f",
+          "last_error": null,
+          "prompt": "Create exactly ONE square 1024x1024 transparent PNG of this exact exercise and ONE selected phase. Metadata must never appear as image text.\n{\n  \"approved_style_files\": [\n    {\n      \"path\": \"docs/exercise-image-style.md\",\n      \"sha256\": \"8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578\"\n    }\n  ],\n  \"exact_catalogue_source\": {\n    \"equipment\": \"machine\",\n    \"primary_muscle\": \"upper_back\",\n    \"secondary_muscles\": [\n      \"lats\",\n      \"biceps\",\n      \"forearms\"\n    ],\n    \"source_english\": {\n      \"common_mistakes\": [\n        \"Lifting the chest from the pad.\",\n        \"Shrugging instead of pulling the elbows.\",\n        \"Letting the weight fall on return.\"\n      ],\n      \"description\": \"Sit at the low cable pulley, grip the straight bar overhand, and pull it toward the lower ribs before extending the arms.\",\n      \"form_cues\": [\n        \"Keep the chest supported or torso upright.\",\n        \"Drive the elbows toward the ribs.\",\n        \"Lower until the arms lengthen.\"\n      ],\n      \"instructions\": [\n        \"Sit on the cable row machine with your feet flat on the footrests and your knees slightly bent.\",\n        \"Grasp the handles with an overhand grip, keeping your back straight and your shoulders relaxed.\",\n        \"Pull the handles towards your body, squeezing your shoulder blades together.\",\n        \"Pause for a moment at the peak of the movement, then slowly release the handles back to the starting position.\",\n        \"Repeat for the desired number of repetitions.\"\n      ],\n      \"provenance\": \"adapted\",\n      \"safety_note\": \"Keep the torso supported or upright so the shoulder is not jerked by the cable or bar.\"\n    }\n  },\n  \"human_reference\": {\n    \"absolute_path\": \"/workspace/lightweight-exercises-photo/assets/exercises/biceps-curl-dumbbell.png\",\n    \"branch\": \"work\",\n    \"pixels_reviewed_during_preparation\": false,\n    \"repository_path\": \"assets/exercises/biceps-curl-dumbbell.png\",\n    \"role\": \"Human appearance/proportions/materials/anatomical style ONLY. Exercise pose, grip, equipment and muscles come from the exact-ID catalogue, never the reference.\",\n    \"sha256\": \"52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f\",\n    \"source_commit\": \"b0385b7e2f3382d545a6dff5304c81ba3c771096\"\n  },\n  \"identity_do_not_render_as_text\": {\n    \"catalog_record_sha256\": \"ebf49dde260f49673ea94e96233a198e896fac307b4f34b33d2bf78cc73d80ac\",\n    \"catalog_sha256\": \"a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989\",\n    \"exercise_id\": \"seated-cable-row-bar-grip-machine\",\n    \"name\": \"Seated Cable Row - Bar Grip\"\n  },\n  \"selected_render_scene\": {\n    \"camera\": \"Full-body front-side three-quarter view exposing every prescribed contact, grip and support. Entire person and all equipment visible within square; no crop, text, arrows or second phase.\",\n    \"exercise_id\": \"seated-cable-row-bar-grip-machine\",\n    \"grip\": \"Overhand grip on ONE straight bar specified by exact-ID description.\",\n    \"movement_trajectory\": \"Pull bar horizontally toward lower ribs and extend arms on return without torso jerk. Generic optional chest-pad cue/mistake does not add a pad to this explicitly upright source variant.\",\n    \"never_infer_muscles_from_pose_or_reference\": true,\n    \"one_phase_only\": true,\n    \"pose\": \"Seated upright without chest-pad support, feet on footrests and knees slightly bent; elbows behind torso and shoulders relaxed.\",\n    \"single_phase\": \"Straight bar drawn toward lower ribs\",\n    \"supports_and_equipment\": \"LOW seated-row pulley ahead, straight bar, seat and footrests; no added chest pad or lever machine.\"\n  },\n  \"source_use_rule\": \"Preserve raw source texts verbatim; render only selected scene and documented exact-source/user resolution. Do not silently repair the catalogue.\",\n  \"style\": {\n    \"background\": \"Genuinely transparent PNG background, no white/checkerboard layer, no environment scene.\",\n    \"framing\": \"Full figure and all required equipment/supports visible within a square. Scale and use a three-quarter view to expose the specified contacts without changing anatomy, equipment, grip or technique.\",\n    \"human_model\": \"One athletic bald male anatomical mannequin, opaque silver-gray muscular surfaces, consistent proportions and detailed 3D materials, plain black shorts, barefoot.\",\n    \"material_rules\": \"Highlights never make tissue transparent; no glow, whole-body orange tint, hair, text, labels, arrows, UI, borders, collage or extra person.\",\n    \"no_invention\": \"Exact-ID catalogue controls source text and muscles. Render documented selected scene; recorded source corrections apply to the derived scene only. No reference-pose copying or imported muscle targets.\",\n    \"output\": {\n      \"format\": \"PNG\",\n      \"height\": 1024,\n      \"one_person\": true,\n      \"one_phase\": true,\n      \"width\": 1024\n    },\n    \"primary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"rule\": \"Highlight only the exact primary muscle group provided for this exercise.\"\n    },\n    \"secondary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"intensity_fraction\": [\n        0.4,\n        0.5\n      ],\n      \"rule\": \"Only the exact secondary muscles, lighter same-hue highlight; if the list is empty add no secondary target.\"\n    },\n    \"version\": \"v1\"\n  },\n  \"technique_resolution\": {\n    \"PNG_approval\": false,\n    \"binding_or_name_alone_is_not_confirmation\": true,\n    \"catalog_modified\": false,\n    \"construction_rule\": \"Standard compatible unbranded geometry allowed by AGENTS.md; choose geometry only around specified contacts/motion. Category machine does not establish a load mechanism, brand, angle or weight count.\",\n    \"dataset_instruction_steps_read\": [\n      \"Sit on the cable row machine with your feet flat on the footrests and your knees slightly bent.\",\n      \"Grasp the handles with an overhand grip, keeping your back straight and your shoulders relaxed.\",\n      \"Pull the handles towards your body, squeezing your shoulder blades together.\",\n      \"Pause for a moment at the peak of the movement, then slowly release the handles back to the starting position.\",\n      \"Repeat for the desired number of repetitions.\"\n    ],\n    \"decision_kind\": \"exact_ID_written_technique_confirmation\",\n    \"evidence_path\": \"data/audits/agent-03-single-generator-next30-2026-10-03-technique.json\",\n    \"evidence_selector\": \"records[exercise_id=\\\"seated-cable-row-bar-grip-machine\\\"]\",\n    \"illustration_choices\": \"Side/phase and compatible layout are scene choices, not amendments to source technique. Do not infer muscle targets from scene or equipment.\",\n    \"illustration_choices_are_not_user_approvals\": true,\n    \"status\": \"resolved\",\n    \"technique_fields_read\": [\n      \"content.en.description\",\n      \"content.en.instructions\",\n      \"content.en.form_cues\",\n      \"content.en.common_mistakes\",\n      \"content.en.safety_note\",\n      \"content.pl.instructions\",\n      \"source.dataset_id\"\n    ]\n  }\n}",
+          "source_catalog_record_sha256": "ebf49dde260f49673ea94e96233a198e896fac307b4f34b33d2bf78cc73d80ac",
+          "source_english_sha256": "af8406327d1ed9d432c2a3a8e3b13885b04fa9cc6c482ff042107b2dcedc2ade",
+          "style_files": [
+            {
+              "path": "docs/exercise-image-style.md",
+              "sha256": "8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578"
+            },
+            {
+              "path": "docs/exercise-image-style-neutral-primary.md",
+              "sha256": "86204ab43f23d119a1eb25cafdbda2518b741a0090b4ffb0ceb9086952314439"
+            }
+          ],
+          "human_reference_sha256": "52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f",
+          "technical_status": "passed"
         },
         {
           "exercise_id": "seated-cable-row-bar-wide-grip-machine",
           "name": "Seated Cable Row - Bar Wide Grip",
-          "status": "not_started",
-          "attempts": 0,
-          "attempt_history": [],
-          "user_review": null,
-          "technical_check": null,
+          "status": "generated_pending",
+          "attempts": 1,
+          "attempt_history": [
+            {
+              "attempt": 1,
+              "attempt_status": "generated",
+              "started_at": "2026-10-03T11:36:25.092Z",
+              "finished_at": "2026-10-03T11:37:26.502804+00:00",
+              "prompt": "Create exactly ONE square 1024x1024 transparent PNG of this exact exercise and ONE selected phase. Metadata must never appear as image text.\n{\n  \"approved_style_files\": [\n    {\n      \"path\": \"docs/exercise-image-style.md\",\n      \"sha256\": \"8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578\"\n    }\n  ],\n  \"exact_catalogue_source\": {\n    \"equipment\": \"machine\",\n    \"primary_muscle\": \"upper_back\",\n    \"secondary_muscles\": [\n      \"lats\",\n      \"traps\",\n      \"biceps\",\n      \"forearms\"\n    ],\n    \"source_english\": {\n      \"common_mistakes\": [\n        \"Lifting the chest from the pad.\",\n        \"Shrugging instead of pulling the elbows.\",\n        \"Letting the weight fall on return.\"\n      ],\n      \"description\": \"Sit at the low cable pulley, grip the straight bar wide and overhand, and pull it toward the lower chest before extending the arms.\",\n      \"form_cues\": [\n        \"Keep the chest supported or torso upright.\",\n        \"Drive the elbows toward the ribs.\",\n        \"Lower until the arms lengthen.\"\n      ],\n      \"instructions\": [\n        \"Sit on the cable row machine with your feet flat on the footrests and your knees slightly bent.\",\n        \"Grasp the handle with a wide overhand grip, palms facing down.\",\n        \"Keep your back straight and lean slightly forward from the hips.\",\n        \"Pull the handle towards your lower chest, squeezing your shoulder blades together.\",\n        \"Pause for a moment at the peak of the contraction.\",\n        \"Slowly release the handle back to the starting position, fully extending your arms.\"\n      ],\n      \"provenance\": \"adapted\",\n      \"safety_note\": \"Keep the torso supported or upright so the shoulder is not jerked by the cable or bar.\"\n    }\n  },\n  \"human_reference\": {\n    \"absolute_path\": \"/workspace/lightweight-exercises-photo/assets/exercises/biceps-curl-dumbbell.png\",\n    \"branch\": \"work\",\n    \"pixels_reviewed_during_preparation\": false,\n    \"repository_path\": \"assets/exercises/biceps-curl-dumbbell.png\",\n    \"role\": \"Human appearance/proportions/materials/anatomical style ONLY. Exercise pose, grip, equipment and muscles come from the exact-ID catalogue, never the reference.\",\n    \"sha256\": \"52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f\",\n    \"source_commit\": \"b0385b7e2f3382d545a6dff5304c81ba3c771096\"\n  },\n  \"identity_do_not_render_as_text\": {\n    \"catalog_record_sha256\": \"db905d9c72f9ad88fc827393d8372f407f6508dd94371c761c26ee84c4506426\",\n    \"catalog_sha256\": \"a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989\",\n    \"exercise_id\": \"seated-cable-row-bar-wide-grip-machine\",\n    \"name\": \"Seated Cable Row - Bar Wide Grip\"\n  },\n  \"selected_render_scene\": {\n    \"camera\": \"Full-body front-side three-quarter view exposing every prescribed contact, grip and support. Entire person and all equipment visible within square; no crop, text, arrows or second phase.\",\n    \"exercise_id\": \"seated-cable-row-bar-wide-grip-machine\",\n    \"grip\": \"WIDE OVERHAND grip on ONE straight bar, palms down.\",\n    \"movement_trajectory\": \"Pull handle to lower chest, squeeze shoulder blades, then lengthen arms under control; no pad-dependent posture added by generic optional cue.\",\n    \"never_infer_muscles_from_pose_or_reference\": true,\n    \"one_phase_only\": true,\n    \"pose\": \"Seated with feet flat on footrests, knees soft and back straight; slight forward hip lean as stated, elbows drawn back, handle near lower chest.\",\n    \"single_phase\": \"Wide row bar toward lower chest\",\n    \"supports_and_equipment\": \"Low seated-row cable pulley, straight bar, seat and footrests; torso upright/controlled, no invented chest pad.\"\n  },\n  \"source_use_rule\": \"Preserve raw source texts verbatim; render only selected scene and documented exact-source/user resolution. Do not silently repair the catalogue.\",\n  \"style\": {\n    \"background\": \"Genuinely transparent PNG background, no white/checkerboard layer, no environment scene.\",\n    \"framing\": \"Full figure and all required equipment/supports visible within a square. Scale and use a three-quarter view to expose the specified contacts without changing anatomy, equipment, grip or technique.\",\n    \"human_model\": \"One athletic bald male anatomical mannequin, opaque silver-gray muscular surfaces, consistent proportions and detailed 3D materials, plain black shorts, barefoot.\",\n    \"material_rules\": \"Highlights never make tissue transparent; no glow, whole-body orange tint, hair, text, labels, arrows, UI, borders, collage or extra person.\",\n    \"no_invention\": \"Exact-ID catalogue controls source text and muscles. Render documented selected scene; recorded source corrections apply to the derived scene only. No reference-pose copying or imported muscle targets.\",\n    \"output\": {\n      \"format\": \"PNG\",\n      \"height\": 1024,\n      \"one_person\": true,\n      \"one_phase\": true,\n      \"width\": 1024\n    },\n    \"primary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"rule\": \"Highlight only the exact primary muscle group provided for this exercise.\"\n    },\n    \"secondary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"intensity_fraction\": [\n        0.4,\n        0.5\n      ],\n      \"rule\": \"Only the exact secondary muscles, lighter same-hue highlight; if the list is empty add no secondary target.\"\n    },\n    \"version\": \"v1\"\n  },\n  \"technique_resolution\": {\n    \"PNG_approval\": false,\n    \"binding_or_name_alone_is_not_confirmation\": true,\n    \"catalog_modified\": false,\n    \"construction_rule\": \"Standard compatible unbranded geometry allowed by AGENTS.md; choose geometry only around specified contacts/motion. Category machine does not establish a load mechanism, brand, angle or weight count.\",\n    \"dataset_instruction_steps_read\": [\n      \"Sit on the cable row machine with your feet flat on the footrests and your knees slightly bent.\",\n      \"Grasp the handle with a wide overhand grip, palms facing down.\",\n      \"Keep your back straight and lean slightly forward from the hips.\",\n      \"Pull the handle towards your lower chest, squeezing your shoulder blades together.\",\n      \"Pause for a moment at the peak of the contraction.\",\n      \"Slowly release the handle back to the starting position, fully extending your arms.\",\n      \"Repeat for the desired number of repetitions.\"\n    ],\n    \"decision_kind\": \"exact_ID_written_technique_confirmation\",\n    \"evidence_path\": \"data/audits/agent-03-single-generator-next30-2026-10-03-technique.json\",\n    \"evidence_selector\": \"records[exercise_id=\\\"seated-cable-row-bar-wide-grip-machine\\\"]\",\n    \"illustration_choices\": \"Side/phase and compatible layout are scene choices, not amendments to source technique. Do not infer muscle targets from scene or equipment.\",\n    \"illustration_choices_are_not_user_approvals\": true,\n    \"status\": \"resolved\",\n    \"technique_fields_read\": [\n      \"content.en.description\",\n      \"content.en.instructions\",\n      \"content.en.form_cues\",\n      \"content.en.common_mistakes\",\n      \"content.en.safety_note\",\n      \"content.pl.instructions\",\n      \"source.dataset_id\"\n    ]\n  }\n}",
+              "prompt_sha256": "8d8c3f3eed1420ef2c28b61f78f58e3932706c4d102e0fba48d5a3c4e9aabb46",
+              "source": {
+                "task_commit": "77cd54d73b1f2546d29e7f17bd816faf9ec14f5e",
+                "batch_path": "data/batches/agent-03-others-032.json",
+                "batch_sha256": "06bfc5851504457a5f103616a15e4ad1be86812e3bc667180e242b7470919111",
+                "assignment_path": "data/assignments/agent-03-single-generator-next30-2026-10-03.json",
+                "assignment_sha256": "8c200e5807890caffda34c41aa44d3f6f055e46f9764d66d53d4219e7f101e37",
+                "catalog_path": "data/exercises/catalog.json",
+                "catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+                "catalog_record_sha256": "db905d9c72f9ad88fc827393d8372f407f6508dd94371c761c26ee84c4506426",
+                "source_english_sha256": "dbd325c4f45a818b1992a8cd317d8e0a9ffbb1dc357118fb0b7c865d2ca64a78",
+                "technique_audit_path": "data/audits/agent-03-single-generator-next30-2026-10-03-technique.json",
+                "technique_audit_sha256": "2b9ccaaffe190dc4b5c2d8b70b2647e29a40dba843b0b7119c5e2fea4b67767b",
+                "source_errors_path": "data/audits/agent-03-single-generator-next30-2026-10-03-source-errors.json",
+                "source_errors_sha256": "ba3e4ffe4ba356ae6772275a23b2abd1fd5d9e9c4fecfe75f4be2cbef740fb96"
+              },
+              "style": {
+                "version": "v1",
+                "files": [
+                  {
+                    "path": "docs/exercise-image-style.md",
+                    "sha256": "8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578"
+                  },
+                  {
+                    "path": "docs/exercise-image-style-neutral-primary.md",
+                    "sha256": "86204ab43f23d119a1eb25cafdbda2518b741a0090b4ffb0ceb9086952314439"
+                  }
+                ]
+              },
+              "human_reference": {
+                "path": "assets/exercises/biceps-curl-dumbbell.png",
+                "absolute_path": "/workspace/lightweight-exercises-photo/assets/exercises/biceps-curl-dumbbell.png",
+                "sha256": "52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f",
+                "assigned_sha256": "52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f"
+              },
+              "requested_output": {
+                "planned_png_path": "/workspace/exercise-image-results/agent-03-single-generator-next30-2026-10-03/generator-single/agent-03-others-032/seated-cable-row-bar-wide-grip-machine/attempt-1.png",
+                "planned_git_png_path": "assets/exercises/pending/agent-03-single-generator-next30-2026-10-03/generator-single/agent-03-others-032/seated-cable-row-bar-wide-grip-machine/attempt-1.png",
+                "format": "PNG",
+                "dimensions": [
+                  1024,
+                  1024
+                ],
+                "transparent_background": true
+              },
+              "user_review": "pending",
+              "agent_visual_review": "not_performed",
+              "errors": [],
+              "generator_output_path": "/workspace/generated_images/exec-c22efdc6-bc19-4c48-9f96-71889d92eb26.png",
+              "generator_output_sha256": "d5463d96569e9260c20c06843db56304e56178cc77a54752c03a0ad9ed0ebd39",
+              "generator_output_dimensions": [
+                1254,
+                1254
+              ],
+              "generator_output_mode": "RGBA",
+              "normalization": "aspect-preserving contain to 1024x1024 transparent canvas",
+              "result_path": "/workspace/exercise-image-results/agent-03-single-generator-next30-2026-10-03/generator-single/agent-03-others-032/seated-cable-row-bar-wide-grip-machine/attempt-1.png",
+              "git_result_path": "assets/exercises/pending/agent-03-single-generator-next30-2026-10-03/generator-single/agent-03-others-032/seated-cable-row-bar-wide-grip-machine/attempt-1.png",
+              "result_sha256": "403cb208fc024bdc6b80ba755da53493802bfff342ff1e64114d8fd4adb8b0a4",
+              "technical_check": {
+                "status": "passed",
+                "format": "PNG",
+                "dimensions": [
+                  1024,
+                  1024
+                ],
+                "mode": "RGBA",
+                "alpha_min_max": [
+                  0,
+                  255
+                ],
+                "transparent_pixel_present": true,
+                "opaque_pixel_present": true
+              }
+            }
+          ],
+          "user_review": "pending",
+          "technical_check": {
+            "status": "passed",
+            "format": "PNG",
+            "dimensions": [
+              1024,
+              1024
+            ],
+            "mode": "RGBA",
+            "alpha_min_max": [
+              0,
+              255
+            ],
+            "transparent_pixel_present": true,
+            "opaque_pixel_present": true
+          },
           "agent_visual_review": "not_performed",
-          "result_path": null,
+          "result_path": "assets/exercises/pending/agent-03-single-generator-next30-2026-10-03/generator-single/agent-03-others-032/seated-cable-row-bar-wide-grip-machine/attempt-1.png",
           "planned_png_path": "/workspace/exercise-image-results/agent-03-single-generator-next30-2026-10-03/generator-single/agent-03-others-032/seated-cable-row-bar-wide-grip-machine/attempt-1.png",
           "planned_git_png_path": "assets/exercises/pending/agent-03-single-generator-next30-2026-10-03/generator-single/agent-03-others-032/seated-cable-row-bar-wide-grip-machine/attempt-1.png",
           "source_catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
           "style_version": "v1",
-          "prompt_sha256": "8d8c3f3eed1420ef2c28b61f78f58e3932706c4d102e0fba48d5a3c4e9aabb46"
+          "prompt_sha256": "8d8c3f3eed1420ef2c28b61f78f58e3932706c4d102e0fba48d5a3c4e9aabb46",
+          "cloud_result_path": "/workspace/exercise-image-results/agent-03-single-generator-next30-2026-10-03/generator-single/agent-03-others-032/seated-cable-row-bar-wide-grip-machine/attempt-1.png",
+          "result_sha256": "403cb208fc024bdc6b80ba755da53493802bfff342ff1e64114d8fd4adb8b0a4",
+          "last_error": null,
+          "prompt": "Create exactly ONE square 1024x1024 transparent PNG of this exact exercise and ONE selected phase. Metadata must never appear as image text.\n{\n  \"approved_style_files\": [\n    {\n      \"path\": \"docs/exercise-image-style.md\",\n      \"sha256\": \"8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578\"\n    }\n  ],\n  \"exact_catalogue_source\": {\n    \"equipment\": \"machine\",\n    \"primary_muscle\": \"upper_back\",\n    \"secondary_muscles\": [\n      \"lats\",\n      \"traps\",\n      \"biceps\",\n      \"forearms\"\n    ],\n    \"source_english\": {\n      \"common_mistakes\": [\n        \"Lifting the chest from the pad.\",\n        \"Shrugging instead of pulling the elbows.\",\n        \"Letting the weight fall on return.\"\n      ],\n      \"description\": \"Sit at the low cable pulley, grip the straight bar wide and overhand, and pull it toward the lower chest before extending the arms.\",\n      \"form_cues\": [\n        \"Keep the chest supported or torso upright.\",\n        \"Drive the elbows toward the ribs.\",\n        \"Lower until the arms lengthen.\"\n      ],\n      \"instructions\": [\n        \"Sit on the cable row machine with your feet flat on the footrests and your knees slightly bent.\",\n        \"Grasp the handle with a wide overhand grip, palms facing down.\",\n        \"Keep your back straight and lean slightly forward from the hips.\",\n        \"Pull the handle towards your lower chest, squeezing your shoulder blades together.\",\n        \"Pause for a moment at the peak of the contraction.\",\n        \"Slowly release the handle back to the starting position, fully extending your arms.\"\n      ],\n      \"provenance\": \"adapted\",\n      \"safety_note\": \"Keep the torso supported or upright so the shoulder is not jerked by the cable or bar.\"\n    }\n  },\n  \"human_reference\": {\n    \"absolute_path\": \"/workspace/lightweight-exercises-photo/assets/exercises/biceps-curl-dumbbell.png\",\n    \"branch\": \"work\",\n    \"pixels_reviewed_during_preparation\": false,\n    \"repository_path\": \"assets/exercises/biceps-curl-dumbbell.png\",\n    \"role\": \"Human appearance/proportions/materials/anatomical style ONLY. Exercise pose, grip, equipment and muscles come from the exact-ID catalogue, never the reference.\",\n    \"sha256\": \"52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f\",\n    \"source_commit\": \"b0385b7e2f3382d545a6dff5304c81ba3c771096\"\n  },\n  \"identity_do_not_render_as_text\": {\n    \"catalog_record_sha256\": \"db905d9c72f9ad88fc827393d8372f407f6508dd94371c761c26ee84c4506426\",\n    \"catalog_sha256\": \"a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989\",\n    \"exercise_id\": \"seated-cable-row-bar-wide-grip-machine\",\n    \"name\": \"Seated Cable Row - Bar Wide Grip\"\n  },\n  \"selected_render_scene\": {\n    \"camera\": \"Full-body front-side three-quarter view exposing every prescribed contact, grip and support. Entire person and all equipment visible within square; no crop, text, arrows or second phase.\",\n    \"exercise_id\": \"seated-cable-row-bar-wide-grip-machine\",\n    \"grip\": \"WIDE OVERHAND grip on ONE straight bar, palms down.\",\n    \"movement_trajectory\": \"Pull handle to lower chest, squeeze shoulder blades, then lengthen arms under control; no pad-dependent posture added by generic optional cue.\",\n    \"never_infer_muscles_from_pose_or_reference\": true,\n    \"one_phase_only\": true,\n    \"pose\": \"Seated with feet flat on footrests, knees soft and back straight; slight forward hip lean as stated, elbows drawn back, handle near lower chest.\",\n    \"single_phase\": \"Wide row bar toward lower chest\",\n    \"supports_and_equipment\": \"Low seated-row cable pulley, straight bar, seat and footrests; torso upright/controlled, no invented chest pad.\"\n  },\n  \"source_use_rule\": \"Preserve raw source texts verbatim; render only selected scene and documented exact-source/user resolution. Do not silently repair the catalogue.\",\n  \"style\": {\n    \"background\": \"Genuinely transparent PNG background, no white/checkerboard layer, no environment scene.\",\n    \"framing\": \"Full figure and all required equipment/supports visible within a square. Scale and use a three-quarter view to expose the specified contacts without changing anatomy, equipment, grip or technique.\",\n    \"human_model\": \"One athletic bald male anatomical mannequin, opaque silver-gray muscular surfaces, consistent proportions and detailed 3D materials, plain black shorts, barefoot.\",\n    \"material_rules\": \"Highlights never make tissue transparent; no glow, whole-body orange tint, hair, text, labels, arrows, UI, borders, collage or extra person.\",\n    \"no_invention\": \"Exact-ID catalogue controls source text and muscles. Render documented selected scene; recorded source corrections apply to the derived scene only. No reference-pose copying or imported muscle targets.\",\n    \"output\": {\n      \"format\": \"PNG\",\n      \"height\": 1024,\n      \"one_person\": true,\n      \"one_phase\": true,\n      \"width\": 1024\n    },\n    \"primary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"rule\": \"Highlight only the exact primary muscle group provided for this exercise.\"\n    },\n    \"secondary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"intensity_fraction\": [\n        0.4,\n        0.5\n      ],\n      \"rule\": \"Only the exact secondary muscles, lighter same-hue highlight; if the list is empty add no secondary target.\"\n    },\n    \"version\": \"v1\"\n  },\n  \"technique_resolution\": {\n    \"PNG_approval\": false,\n    \"binding_or_name_alone_is_not_confirmation\": true,\n    \"catalog_modified\": false,\n    \"construction_rule\": \"Standard compatible unbranded geometry allowed by AGENTS.md; choose geometry only around specified contacts/motion. Category machine does not establish a load mechanism, brand, angle or weight count.\",\n    \"dataset_instruction_steps_read\": [\n      \"Sit on the cable row machine with your feet flat on the footrests and your knees slightly bent.\",\n      \"Grasp the handle with a wide overhand grip, palms facing down.\",\n      \"Keep your back straight and lean slightly forward from the hips.\",\n      \"Pull the handle towards your lower chest, squeezing your shoulder blades together.\",\n      \"Pause for a moment at the peak of the contraction.\",\n      \"Slowly release the handle back to the starting position, fully extending your arms.\",\n      \"Repeat for the desired number of repetitions.\"\n    ],\n    \"decision_kind\": \"exact_ID_written_technique_confirmation\",\n    \"evidence_path\": \"data/audits/agent-03-single-generator-next30-2026-10-03-technique.json\",\n    \"evidence_selector\": \"records[exercise_id=\\\"seated-cable-row-bar-wide-grip-machine\\\"]\",\n    \"illustration_choices\": \"Side/phase and compatible layout are scene choices, not amendments to source technique. Do not infer muscle targets from scene or equipment.\",\n    \"illustration_choices_are_not_user_approvals\": true,\n    \"status\": \"resolved\",\n    \"technique_fields_read\": [\n      \"content.en.description\",\n      \"content.en.instructions\",\n      \"content.en.form_cues\",\n      \"content.en.common_mistakes\",\n      \"content.en.safety_note\",\n      \"content.pl.instructions\",\n      \"source.dataset_id\"\n    ]\n  }\n}",
+          "source_catalog_record_sha256": "db905d9c72f9ad88fc827393d8372f407f6508dd94371c761c26ee84c4506426",
+          "source_english_sha256": "dbd325c4f45a818b1992a8cd317d8e0a9ffbb1dc357118fb0b7c865d2ca64a78",
+          "style_files": [
+            {
+              "path": "docs/exercise-image-style.md",
+              "sha256": "8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578"
+            },
+            {
+              "path": "docs/exercise-image-style-neutral-primary.md",
+              "sha256": "86204ab43f23d119a1eb25cafdbda2518b741a0090b4ffb0ceb9086952314439"
+            }
+          ],
+          "human_reference_sha256": "52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f",
+          "technical_status": "passed"
         },
         {
           "exercise_id": "face-pull-machine",
           "name": "Face Pull",
-          "status": "not_started",
-          "attempts": 0,
-          "attempt_history": [],
-          "user_review": null,
-          "technical_check": null,
+          "status": "generated_pending",
+          "attempts": 1,
+          "attempt_history": [
+            {
+              "attempt": 1,
+              "attempt_status": "generated",
+              "started_at": "2026-10-03T11:37:29.334Z",
+              "finished_at": "2026-10-03T11:38:11.733199+00:00",
+              "prompt": "Create exactly ONE square 1024x1024 transparent PNG of this exact exercise and ONE selected phase. Metadata must never appear as image text.\n{\n  \"approved_style_files\": [\n    {\n      \"path\": \"docs/exercise-image-style.md\",\n      \"sha256\": \"8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578\"\n    }\n  ],\n  \"exact_catalogue_source\": {\n    \"equipment\": \"machine\",\n    \"primary_muscle\": \"shoulders\",\n    \"secondary_muscles\": [\n      \"biceps\"\n    ],\n    \"source_english\": {\n      \"common_mistakes\": [\n        \"Pulling toward the chest.\",\n        \"Shrugging during the pull.\",\n        \"Leaning back to move the load.\"\n      ],\n      \"description\": \"Face Pull draws a rope toward the face with high elbows, ending in external rotation for the rear shoulders and upper back.\",\n      \"form_cues\": [\n        \"Keep elbows high.\",\n        \"Lead with the hands.\",\n        \"Keep ribs stacked.\"\n      ],\n      \"instructions\": [\n        \"Set the cable at face height and hold the rope with both hands.\",\n        \"Step back, brace, and pull the rope toward the forehead.\",\n        \"Rotate the hands apart as the elbows travel behind the body.\",\n        \"Return slowly with the shoulders controlled.\"\n      ],\n      \"provenance\": \"authored\",\n      \"safety_note\": \"Use light cable resistance and stop before the shoulder rotation becomes forced.\"\n    }\n  },\n  \"human_reference\": {\n    \"absolute_path\": \"/workspace/lightweight-exercises-photo/assets/exercises/biceps-curl-dumbbell.png\",\n    \"branch\": \"work\",\n    \"pixels_reviewed_during_preparation\": false,\n    \"repository_path\": \"assets/exercises/biceps-curl-dumbbell.png\",\n    \"role\": \"Human appearance/proportions/materials/anatomical style ONLY. Exercise pose, grip, equipment and muscles come from the exact-ID catalogue, never the reference.\",\n    \"sha256\": \"52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f\",\n    \"source_commit\": \"b0385b7e2f3382d545a6dff5304c81ba3c771096\"\n  },\n  \"identity_do_not_render_as_text\": {\n    \"catalog_record_sha256\": \"aed6e1991e97f6e11785300e56db72d1f2dda5e7d227b25d2dd087ca90cc464a\",\n    \"catalog_sha256\": \"a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989\",\n    \"exercise_id\": \"face-pull-machine\",\n    \"name\": \"Face Pull\"\n  },\n  \"selected_render_scene\": {\n    \"camera\": \"Full-body front-side three-quarter view exposing every prescribed contact, grip and support. Entire person and all equipment visible within square; no crop, text, arrows or second phase.\",\n    \"exercise_id\": \"face-pull-machine\",\n    \"grip\": \"Both hands wrap the separate ends of ONE rope; keep rope ends apart beside face.\",\n    \"movement_trajectory\": \"Pull rope toward forehead and rotate hands apart; return slowly with ribs stacked, not a chest-level row.\",\n    \"never_infer_muscles_from_pose_or_reference\": true,\n    \"one_phase_only\": true,\n    \"pose\": \"Standing braced after stepping back; elbows high and traveling behind torso, hands separated beside forehead during controlled external rotation, shoulders down.\",\n    \"single_phase\": \"Rope at forehead with hands apart\",\n    \"supports_and_equipment\": \"Cable at FACE height with rope attachment, feet on floor; cable runs forward from rope to pulley, no dumbbells or low-pulley row.\"\n  },\n  \"source_use_rule\": \"Preserve raw source texts verbatim; render only selected scene and documented exact-source/user resolution. Do not silently repair the catalogue.\",\n  \"style\": {\n    \"background\": \"Genuinely transparent PNG background, no white/checkerboard layer, no environment scene.\",\n    \"framing\": \"Full figure and all required equipment/supports visible within a square. Scale and use a three-quarter view to expose the specified contacts without changing anatomy, equipment, grip or technique.\",\n    \"human_model\": \"One athletic bald male anatomical mannequin, opaque silver-gray muscular surfaces, consistent proportions and detailed 3D materials, plain black shorts, barefoot.\",\n    \"material_rules\": \"Highlights never make tissue transparent; no glow, whole-body orange tint, hair, text, labels, arrows, UI, borders, collage or extra person.\",\n    \"no_invention\": \"Exact-ID catalogue controls source text and muscles. Render documented selected scene; recorded source corrections apply to the derived scene only. No reference-pose copying or imported muscle targets.\",\n    \"output\": {\n      \"format\": \"PNG\",\n      \"height\": 1024,\n      \"one_person\": true,\n      \"one_phase\": true,\n      \"width\": 1024\n    },\n    \"primary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"rule\": \"Highlight only the exact primary muscle group provided for this exercise.\"\n    },\n    \"secondary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"intensity_fraction\": [\n        0.4,\n        0.5\n      ],\n      \"rule\": \"Only the exact secondary muscles, lighter same-hue highlight; if the list is empty add no secondary target.\"\n    },\n    \"version\": \"v1\"\n  },\n  \"technique_resolution\": {\n    \"PNG_approval\": false,\n    \"binding_or_name_alone_is_not_confirmation\": true,\n    \"catalog_modified\": false,\n    \"construction_rule\": \"Standard compatible unbranded geometry allowed by AGENTS.md; choose geometry only around specified contacts/motion. Category machine does not establish a load mechanism, brand, angle or weight count.\",\n    \"dataset_instruction_steps_read\": null,\n    \"decision_kind\": \"exact_ID_written_technique_confirmation\",\n    \"evidence_path\": \"data/audits/agent-03-single-generator-next30-2026-10-03-technique.json\",\n    \"evidence_selector\": \"records[exercise_id=\\\"face-pull-machine\\\"]\",\n    \"illustration_choices\": \"Side/phase and compatible layout are scene choices, not amendments to source technique. Do not infer muscle targets from scene or equipment.\",\n    \"illustration_choices_are_not_user_approvals\": true,\n    \"status\": \"resolved\",\n    \"technique_fields_read\": [\n      \"content.en.description\",\n      \"content.en.instructions\",\n      \"content.en.form_cues\",\n      \"content.en.common_mistakes\",\n      \"content.en.safety_note\",\n      \"content.pl.instructions\",\n      \"source.dataset_id\"\n    ]\n  }\n}",
+              "prompt_sha256": "79aba64569452f410c3f1d2c53d290d6e8ec91e1340634f65fd2ea1175577b7d",
+              "source": {
+                "task_commit": "77cd54d73b1f2546d29e7f17bd816faf9ec14f5e",
+                "batch_path": "data/batches/agent-03-others-032.json",
+                "batch_sha256": "06bfc5851504457a5f103616a15e4ad1be86812e3bc667180e242b7470919111",
+                "assignment_path": "data/assignments/agent-03-single-generator-next30-2026-10-03.json",
+                "assignment_sha256": "8c200e5807890caffda34c41aa44d3f6f055e46f9764d66d53d4219e7f101e37",
+                "catalog_path": "data/exercises/catalog.json",
+                "catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+                "catalog_record_sha256": "aed6e1991e97f6e11785300e56db72d1f2dda5e7d227b25d2dd087ca90cc464a",
+                "source_english_sha256": "5c68f19bef3553add5af31fe4d7ac19bae72583ff16af765fb43fd00e17782a7",
+                "technique_audit_path": "data/audits/agent-03-single-generator-next30-2026-10-03-technique.json",
+                "technique_audit_sha256": "2b9ccaaffe190dc4b5c2d8b70b2647e29a40dba843b0b7119c5e2fea4b67767b",
+                "source_errors_path": "data/audits/agent-03-single-generator-next30-2026-10-03-source-errors.json",
+                "source_errors_sha256": "ba3e4ffe4ba356ae6772275a23b2abd1fd5d9e9c4fecfe75f4be2cbef740fb96"
+              },
+              "style": {
+                "version": "v1",
+                "files": [
+                  {
+                    "path": "docs/exercise-image-style.md",
+                    "sha256": "8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578"
+                  },
+                  {
+                    "path": "docs/exercise-image-style-neutral-primary.md",
+                    "sha256": "86204ab43f23d119a1eb25cafdbda2518b741a0090b4ffb0ceb9086952314439"
+                  }
+                ]
+              },
+              "human_reference": {
+                "path": "assets/exercises/biceps-curl-dumbbell.png",
+                "absolute_path": "/workspace/lightweight-exercises-photo/assets/exercises/biceps-curl-dumbbell.png",
+                "sha256": "52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f",
+                "assigned_sha256": "52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f"
+              },
+              "requested_output": {
+                "planned_png_path": "/workspace/exercise-image-results/agent-03-single-generator-next30-2026-10-03/generator-single/agent-03-others-032/face-pull-machine/attempt-1.png",
+                "planned_git_png_path": "assets/exercises/pending/agent-03-single-generator-next30-2026-10-03/generator-single/agent-03-others-032/face-pull-machine/attempt-1.png",
+                "format": "PNG",
+                "dimensions": [
+                  1024,
+                  1024
+                ],
+                "transparent_background": true
+              },
+              "user_review": "pending",
+              "agent_visual_review": "not_performed",
+              "errors": [],
+              "generator_output_path": "/workspace/generated_images/exec-0a42cc1d-d0be-4867-b0e4-a382dfb5e582.png",
+              "generator_output_sha256": "cc930306e8a9389ac3e9a3bf02b431dbc31192fe0a3bc89a0b371a523416eb14",
+              "generator_output_dimensions": [
+                1254,
+                1254
+              ],
+              "generator_output_mode": "RGBA",
+              "normalization": "aspect-preserving contain to 1024x1024 transparent canvas",
+              "result_path": "/workspace/exercise-image-results/agent-03-single-generator-next30-2026-10-03/generator-single/agent-03-others-032/face-pull-machine/attempt-1.png",
+              "git_result_path": "assets/exercises/pending/agent-03-single-generator-next30-2026-10-03/generator-single/agent-03-others-032/face-pull-machine/attempt-1.png",
+              "result_sha256": "c410d1065cfda9b72d6513c8321db9d2081f054033743e993882f149f5345fb6",
+              "technical_check": {
+                "status": "passed",
+                "format": "PNG",
+                "dimensions": [
+                  1024,
+                  1024
+                ],
+                "mode": "RGBA",
+                "alpha_min_max": [
+                  0,
+                  255
+                ],
+                "transparent_pixel_present": true,
+                "opaque_pixel_present": true
+              }
+            }
+          ],
+          "user_review": "pending",
+          "technical_check": {
+            "status": "passed",
+            "format": "PNG",
+            "dimensions": [
+              1024,
+              1024
+            ],
+            "mode": "RGBA",
+            "alpha_min_max": [
+              0,
+              255
+            ],
+            "transparent_pixel_present": true,
+            "opaque_pixel_present": true
+          },
           "agent_visual_review": "not_performed",
-          "result_path": null,
+          "result_path": "assets/exercises/pending/agent-03-single-generator-next30-2026-10-03/generator-single/agent-03-others-032/face-pull-machine/attempt-1.png",
           "planned_png_path": "/workspace/exercise-image-results/agent-03-single-generator-next30-2026-10-03/generator-single/agent-03-others-032/face-pull-machine/attempt-1.png",
           "planned_git_png_path": "assets/exercises/pending/agent-03-single-generator-next30-2026-10-03/generator-single/agent-03-others-032/face-pull-machine/attempt-1.png",
           "source_catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
           "style_version": "v1",
-          "prompt_sha256": "79aba64569452f410c3f1d2c53d290d6e8ec91e1340634f65fd2ea1175577b7d"
+          "prompt_sha256": "79aba64569452f410c3f1d2c53d290d6e8ec91e1340634f65fd2ea1175577b7d",
+          "cloud_result_path": "/workspace/exercise-image-results/agent-03-single-generator-next30-2026-10-03/generator-single/agent-03-others-032/face-pull-machine/attempt-1.png",
+          "result_sha256": "c410d1065cfda9b72d6513c8321db9d2081f054033743e993882f149f5345fb6",
+          "last_error": null,
+          "prompt": "Create exactly ONE square 1024x1024 transparent PNG of this exact exercise and ONE selected phase. Metadata must never appear as image text.\n{\n  \"approved_style_files\": [\n    {\n      \"path\": \"docs/exercise-image-style.md\",\n      \"sha256\": \"8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578\"\n    }\n  ],\n  \"exact_catalogue_source\": {\n    \"equipment\": \"machine\",\n    \"primary_muscle\": \"shoulders\",\n    \"secondary_muscles\": [\n      \"biceps\"\n    ],\n    \"source_english\": {\n      \"common_mistakes\": [\n        \"Pulling toward the chest.\",\n        \"Shrugging during the pull.\",\n        \"Leaning back to move the load.\"\n      ],\n      \"description\": \"Face Pull draws a rope toward the face with high elbows, ending in external rotation for the rear shoulders and upper back.\",\n      \"form_cues\": [\n        \"Keep elbows high.\",\n        \"Lead with the hands.\",\n        \"Keep ribs stacked.\"\n      ],\n      \"instructions\": [\n        \"Set the cable at face height and hold the rope with both hands.\",\n        \"Step back, brace, and pull the rope toward the forehead.\",\n        \"Rotate the hands apart as the elbows travel behind the body.\",\n        \"Return slowly with the shoulders controlled.\"\n      ],\n      \"provenance\": \"authored\",\n      \"safety_note\": \"Use light cable resistance and stop before the shoulder rotation becomes forced.\"\n    }\n  },\n  \"human_reference\": {\n    \"absolute_path\": \"/workspace/lightweight-exercises-photo/assets/exercises/biceps-curl-dumbbell.png\",\n    \"branch\": \"work\",\n    \"pixels_reviewed_during_preparation\": false,\n    \"repository_path\": \"assets/exercises/biceps-curl-dumbbell.png\",\n    \"role\": \"Human appearance/proportions/materials/anatomical style ONLY. Exercise pose, grip, equipment and muscles come from the exact-ID catalogue, never the reference.\",\n    \"sha256\": \"52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f\",\n    \"source_commit\": \"b0385b7e2f3382d545a6dff5304c81ba3c771096\"\n  },\n  \"identity_do_not_render_as_text\": {\n    \"catalog_record_sha256\": \"aed6e1991e97f6e11785300e56db72d1f2dda5e7d227b25d2dd087ca90cc464a\",\n    \"catalog_sha256\": \"a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989\",\n    \"exercise_id\": \"face-pull-machine\",\n    \"name\": \"Face Pull\"\n  },\n  \"selected_render_scene\": {\n    \"camera\": \"Full-body front-side three-quarter view exposing every prescribed contact, grip and support. Entire person and all equipment visible within square; no crop, text, arrows or second phase.\",\n    \"exercise_id\": \"face-pull-machine\",\n    \"grip\": \"Both hands wrap the separate ends of ONE rope; keep rope ends apart beside face.\",\n    \"movement_trajectory\": \"Pull rope toward forehead and rotate hands apart; return slowly with ribs stacked, not a chest-level row.\",\n    \"never_infer_muscles_from_pose_or_reference\": true,\n    \"one_phase_only\": true,\n    \"pose\": \"Standing braced after stepping back; elbows high and traveling behind torso, hands separated beside forehead during controlled external rotation, shoulders down.\",\n    \"single_phase\": \"Rope at forehead with hands apart\",\n    \"supports_and_equipment\": \"Cable at FACE height with rope attachment, feet on floor; cable runs forward from rope to pulley, no dumbbells or low-pulley row.\"\n  },\n  \"source_use_rule\": \"Preserve raw source texts verbatim; render only selected scene and documented exact-source/user resolution. Do not silently repair the catalogue.\",\n  \"style\": {\n    \"background\": \"Genuinely transparent PNG background, no white/checkerboard layer, no environment scene.\",\n    \"framing\": \"Full figure and all required equipment/supports visible within a square. Scale and use a three-quarter view to expose the specified contacts without changing anatomy, equipment, grip or technique.\",\n    \"human_model\": \"One athletic bald male anatomical mannequin, opaque silver-gray muscular surfaces, consistent proportions and detailed 3D materials, plain black shorts, barefoot.\",\n    \"material_rules\": \"Highlights never make tissue transparent; no glow, whole-body orange tint, hair, text, labels, arrows, UI, borders, collage or extra person.\",\n    \"no_invention\": \"Exact-ID catalogue controls source text and muscles. Render documented selected scene; recorded source corrections apply to the derived scene only. No reference-pose copying or imported muscle targets.\",\n    \"output\": {\n      \"format\": \"PNG\",\n      \"height\": 1024,\n      \"one_person\": true,\n      \"one_phase\": true,\n      \"width\": 1024\n    },\n    \"primary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"rule\": \"Highlight only the exact primary muscle group provided for this exercise.\"\n    },\n    \"secondary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"intensity_fraction\": [\n        0.4,\n        0.5\n      ],\n      \"rule\": \"Only the exact secondary muscles, lighter same-hue highlight; if the list is empty add no secondary target.\"\n    },\n    \"version\": \"v1\"\n  },\n  \"technique_resolution\": {\n    \"PNG_approval\": false,\n    \"binding_or_name_alone_is_not_confirmation\": true,\n    \"catalog_modified\": false,\n    \"construction_rule\": \"Standard compatible unbranded geometry allowed by AGENTS.md; choose geometry only around specified contacts/motion. Category machine does not establish a load mechanism, brand, angle or weight count.\",\n    \"dataset_instruction_steps_read\": null,\n    \"decision_kind\": \"exact_ID_written_technique_confirmation\",\n    \"evidence_path\": \"data/audits/agent-03-single-generator-next30-2026-10-03-technique.json\",\n    \"evidence_selector\": \"records[exercise_id=\\\"face-pull-machine\\\"]\",\n    \"illustration_choices\": \"Side/phase and compatible layout are scene choices, not amendments to source technique. Do not infer muscle targets from scene or equipment.\",\n    \"illustration_choices_are_not_user_approvals\": true,\n    \"status\": \"resolved\",\n    \"technique_fields_read\": [\n      \"content.en.description\",\n      \"content.en.instructions\",\n      \"content.en.form_cues\",\n      \"content.en.common_mistakes\",\n      \"content.en.safety_note\",\n      \"content.pl.instructions\",\n      \"source.dataset_id\"\n    ]\n  }\n}",
+          "source_catalog_record_sha256": "aed6e1991e97f6e11785300e56db72d1f2dda5e7d227b25d2dd087ca90cc464a",
+          "source_english_sha256": "5c68f19bef3553add5af31fe4d7ac19bae72583ff16af765fb43fd00e17782a7",
+          "style_files": [
+            {
+              "path": "docs/exercise-image-style.md",
+              "sha256": "8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578"
+            },
+            {
+              "path": "docs/exercise-image-style-neutral-primary.md",
+              "sha256": "86204ab43f23d119a1eb25cafdbda2518b741a0090b4ffb0ceb9086952314439"
+            }
+          ],
+          "human_reference_sha256": "52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f",
+          "technical_status": "passed"
         },
         {
           "exercise_id": "standing-y-raise-cable-machine",
           "name": "Standing Y Raise (Cable)",
-          "status": "not_started",
-          "attempts": 0,
-          "attempt_history": [],
-          "user_review": null,
-          "technical_check": null,
+          "status": "generated_pending",
+          "attempts": 1,
+          "attempt_history": [
+            {
+              "attempt": 1,
+              "attempt_status": "generated",
+              "started_at": "2026-10-03T11:38:14.733Z",
+              "finished_at": "2026-10-03T11:39:16.511215+00:00",
+              "prompt": "Create exactly ONE square 1024x1024 transparent PNG of this exact exercise and ONE selected phase. Metadata must never appear as image text.\n{\n  \"approved_style_files\": [\n    {\n      \"path\": \"docs/exercise-image-style.md\",\n      \"sha256\": \"8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578\"\n    }\n  ],\n  \"exact_catalogue_source\": {\n    \"equipment\": \"machine\",\n    \"primary_muscle\": \"shoulders\",\n    \"secondary_muscles\": [\n      \"upper_back\"\n    ],\n    \"source_english\": {\n      \"common_mistakes\": [\n        \"Shrugging into the raise.\",\n        \"Swinging the cables.\",\n        \"Arching the lower back.\"\n      ],\n      \"description\": \"A standing cable Y raise lifts the handles diagonally overhead to form a Y while the shoulder blades stay controlled.\",\n      \"form_cues\": [\n        \"Keep thumbs pointing upward.\",\n        \"Lead with the hands along the diagonal.\",\n        \"Keep the ribs down.\"\n      ],\n      \"instructions\": [\n        \"Set two low cables and stand centered with one handle in each hand.\",\n        \"Brace the trunk and raise both arms forward and outward on a diagonal.\",\n        \"Stop when the arms form a Y above shoulder height without shrugging.\",\n        \"Lower the handles slowly to the sides.\"\n      ],\n      \"provenance\": \"authored\",\n      \"safety_note\": \"Use light cable resistance and stop before the shoulders lose a smooth path.\"\n    }\n  },\n  \"human_reference\": {\n    \"absolute_path\": \"/workspace/lightweight-exercises-photo/assets/exercises/biceps-curl-dumbbell.png\",\n    \"branch\": \"work\",\n    \"pixels_reviewed_during_preparation\": false,\n    \"repository_path\": \"assets/exercises/biceps-curl-dumbbell.png\",\n    \"role\": \"Human appearance/proportions/materials/anatomical style ONLY. Exercise pose, grip, equipment and muscles come from the exact-ID catalogue, never the reference.\",\n    \"sha256\": \"52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f\",\n    \"source_commit\": \"b0385b7e2f3382d545a6dff5304c81ba3c771096\"\n  },\n  \"identity_do_not_render_as_text\": {\n    \"catalog_record_sha256\": \"52a83cb69e71f7392a2013f9ffef916ad5017bc969db09e19a2487d533003ee8\",\n    \"catalog_sha256\": \"a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989\",\n    \"exercise_id\": \"standing-y-raise-cable-machine\",\n    \"name\": \"Standing Y Raise (Cable)\"\n  },\n  \"selected_render_scene\": {\n    \"camera\": \"Full-body front-side three-quarter view exposing every prescribed contact, grip and support. Entire person and all equipment visible within square; no crop, text, arrows or second phase.\",\n    \"exercise_id\": \"standing-y-raise-cable-machine\",\n    \"grip\": \"One handle per hand, THUMBS POINT UP as exact-ID cue specifies.\",\n    \"movement_trajectory\": \"Raise both arms forward/outward diagonally to Y, then lower to sides without shrugging or lumbar arch.\",\n    \"never_infer_muscles_from_pose_or_reference\": true,\n    \"one_phase_only\": true,\n    \"pose\": \"Stand centered between low cables, trunk braced, arms raised forward/outward above shoulder height into Y; shoulders remain down and ribs stacked.\",\n    \"single_phase\": \"Y-shaped raised-arm endpoint\",\n    \"supports_and_equipment\": \"Two LOW cable pulleys and separate handles, both feet grounded; no bench or unsupported bands.\"\n  },\n  \"source_use_rule\": \"Preserve raw source texts verbatim; render only selected scene and documented exact-source/user resolution. Do not silently repair the catalogue.\",\n  \"style\": {\n    \"background\": \"Genuinely transparent PNG background, no white/checkerboard layer, no environment scene.\",\n    \"framing\": \"Full figure and all required equipment/supports visible within a square. Scale and use a three-quarter view to expose the specified contacts without changing anatomy, equipment, grip or technique.\",\n    \"human_model\": \"One athletic bald male anatomical mannequin, opaque silver-gray muscular surfaces, consistent proportions and detailed 3D materials, plain black shorts, barefoot.\",\n    \"material_rules\": \"Highlights never make tissue transparent; no glow, whole-body orange tint, hair, text, labels, arrows, UI, borders, collage or extra person.\",\n    \"no_invention\": \"Exact-ID catalogue controls source text and muscles. Render documented selected scene; recorded source corrections apply to the derived scene only. No reference-pose copying or imported muscle targets.\",\n    \"output\": {\n      \"format\": \"PNG\",\n      \"height\": 1024,\n      \"one_person\": true,\n      \"one_phase\": true,\n      \"width\": 1024\n    },\n    \"primary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"rule\": \"Highlight only the exact primary muscle group provided for this exercise.\"\n    },\n    \"secondary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"intensity_fraction\": [\n        0.4,\n        0.5\n      ],\n      \"rule\": \"Only the exact secondary muscles, lighter same-hue highlight; if the list is empty add no secondary target.\"\n    },\n    \"version\": \"v1\"\n  },\n  \"technique_resolution\": {\n    \"PNG_approval\": false,\n    \"binding_or_name_alone_is_not_confirmation\": true,\n    \"catalog_modified\": false,\n    \"construction_rule\": \"Standard compatible unbranded geometry allowed by AGENTS.md; choose geometry only around specified contacts/motion. Category machine does not establish a load mechanism, brand, angle or weight count.\",\n    \"dataset_instruction_steps_read\": null,\n    \"decision_kind\": \"exact_ID_written_technique_confirmation\",\n    \"evidence_path\": \"data/audits/agent-03-single-generator-next30-2026-10-03-technique.json\",\n    \"evidence_selector\": \"records[exercise_id=\\\"standing-y-raise-cable-machine\\\"]\",\n    \"illustration_choices\": \"Side/phase and compatible layout are scene choices, not amendments to source technique. Do not infer muscle targets from scene or equipment.\",\n    \"illustration_choices_are_not_user_approvals\": true,\n    \"status\": \"resolved\",\n    \"technique_fields_read\": [\n      \"content.en.description\",\n      \"content.en.instructions\",\n      \"content.en.form_cues\",\n      \"content.en.common_mistakes\",\n      \"content.en.safety_note\",\n      \"content.pl.instructions\",\n      \"source.dataset_id\"\n    ]\n  }\n}",
+              "prompt_sha256": "d5652d8b7199b5c7693bb904b4cf5f48de3ee6966e3629603cf5bd8ed57deef5",
+              "source": {
+                "task_commit": "77cd54d73b1f2546d29e7f17bd816faf9ec14f5e",
+                "batch_path": "data/batches/agent-03-others-032.json",
+                "batch_sha256": "06bfc5851504457a5f103616a15e4ad1be86812e3bc667180e242b7470919111",
+                "assignment_path": "data/assignments/agent-03-single-generator-next30-2026-10-03.json",
+                "assignment_sha256": "8c200e5807890caffda34c41aa44d3f6f055e46f9764d66d53d4219e7f101e37",
+                "catalog_path": "data/exercises/catalog.json",
+                "catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+                "catalog_record_sha256": "52a83cb69e71f7392a2013f9ffef916ad5017bc969db09e19a2487d533003ee8",
+                "source_english_sha256": "67532df0da7c04669b14c28dab6f644239aa10b0dbdaaf9eb9a0aa2ea8938279",
+                "technique_audit_path": "data/audits/agent-03-single-generator-next30-2026-10-03-technique.json",
+                "technique_audit_sha256": "2b9ccaaffe190dc4b5c2d8b70b2647e29a40dba843b0b7119c5e2fea4b67767b",
+                "source_errors_path": "data/audits/agent-03-single-generator-next30-2026-10-03-source-errors.json",
+                "source_errors_sha256": "ba3e4ffe4ba356ae6772275a23b2abd1fd5d9e9c4fecfe75f4be2cbef740fb96"
+              },
+              "style": {
+                "version": "v1",
+                "files": [
+                  {
+                    "path": "docs/exercise-image-style.md",
+                    "sha256": "8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578"
+                  },
+                  {
+                    "path": "docs/exercise-image-style-neutral-primary.md",
+                    "sha256": "86204ab43f23d119a1eb25cafdbda2518b741a0090b4ffb0ceb9086952314439"
+                  }
+                ]
+              },
+              "human_reference": {
+                "path": "assets/exercises/biceps-curl-dumbbell.png",
+                "absolute_path": "/workspace/lightweight-exercises-photo/assets/exercises/biceps-curl-dumbbell.png",
+                "sha256": "52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f",
+                "assigned_sha256": "52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f"
+              },
+              "requested_output": {
+                "planned_png_path": "/workspace/exercise-image-results/agent-03-single-generator-next30-2026-10-03/generator-single/agent-03-others-032/standing-y-raise-cable-machine/attempt-1.png",
+                "planned_git_png_path": "assets/exercises/pending/agent-03-single-generator-next30-2026-10-03/generator-single/agent-03-others-032/standing-y-raise-cable-machine/attempt-1.png",
+                "format": "PNG",
+                "dimensions": [
+                  1024,
+                  1024
+                ],
+                "transparent_background": true
+              },
+              "user_review": "pending",
+              "agent_visual_review": "not_performed",
+              "errors": [],
+              "generator_output_path": "/workspace/generated_images/exec-9056bcf9-41b5-4493-b4ad-b7d56a7ba3fb.png",
+              "generator_output_sha256": "b5a02a023058bfc4b6a0a4d6ed6e84354e792b6dc24e3d7b29113eb3dea5bab1",
+              "generator_output_dimensions": [
+                1254,
+                1254
+              ],
+              "generator_output_mode": "RGBA",
+              "normalization": "aspect-preserving contain to 1024x1024 transparent canvas",
+              "result_path": "/workspace/exercise-image-results/agent-03-single-generator-next30-2026-10-03/generator-single/agent-03-others-032/standing-y-raise-cable-machine/attempt-1.png",
+              "git_result_path": "assets/exercises/pending/agent-03-single-generator-next30-2026-10-03/generator-single/agent-03-others-032/standing-y-raise-cable-machine/attempt-1.png",
+              "result_sha256": "289a59c79511fdac21df157869f9226c9587ce60b47b16d6f095b807a3e3f9b9",
+              "technical_check": {
+                "status": "passed",
+                "format": "PNG",
+                "dimensions": [
+                  1024,
+                  1024
+                ],
+                "mode": "RGBA",
+                "alpha_min_max": [
+                  0,
+                  255
+                ],
+                "transparent_pixel_present": true,
+                "opaque_pixel_present": true
+              }
+            }
+          ],
+          "user_review": "pending",
+          "technical_check": {
+            "status": "passed",
+            "format": "PNG",
+            "dimensions": [
+              1024,
+              1024
+            ],
+            "mode": "RGBA",
+            "alpha_min_max": [
+              0,
+              255
+            ],
+            "transparent_pixel_present": true,
+            "opaque_pixel_present": true
+          },
           "agent_visual_review": "not_performed",
-          "result_path": null,
+          "result_path": "assets/exercises/pending/agent-03-single-generator-next30-2026-10-03/generator-single/agent-03-others-032/standing-y-raise-cable-machine/attempt-1.png",
           "planned_png_path": "/workspace/exercise-image-results/agent-03-single-generator-next30-2026-10-03/generator-single/agent-03-others-032/standing-y-raise-cable-machine/attempt-1.png",
           "planned_git_png_path": "assets/exercises/pending/agent-03-single-generator-next30-2026-10-03/generator-single/agent-03-others-032/standing-y-raise-cable-machine/attempt-1.png",
           "source_catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
           "style_version": "v1",
-          "prompt_sha256": "d5652d8b7199b5c7693bb904b4cf5f48de3ee6966e3629603cf5bd8ed57deef5"
+          "prompt_sha256": "d5652d8b7199b5c7693bb904b4cf5f48de3ee6966e3629603cf5bd8ed57deef5",
+          "cloud_result_path": "/workspace/exercise-image-results/agent-03-single-generator-next30-2026-10-03/generator-single/agent-03-others-032/standing-y-raise-cable-machine/attempt-1.png",
+          "result_sha256": "289a59c79511fdac21df157869f9226c9587ce60b47b16d6f095b807a3e3f9b9",
+          "last_error": null,
+          "prompt": "Create exactly ONE square 1024x1024 transparent PNG of this exact exercise and ONE selected phase. Metadata must never appear as image text.\n{\n  \"approved_style_files\": [\n    {\n      \"path\": \"docs/exercise-image-style.md\",\n      \"sha256\": \"8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578\"\n    }\n  ],\n  \"exact_catalogue_source\": {\n    \"equipment\": \"machine\",\n    \"primary_muscle\": \"shoulders\",\n    \"secondary_muscles\": [\n      \"upper_back\"\n    ],\n    \"source_english\": {\n      \"common_mistakes\": [\n        \"Shrugging into the raise.\",\n        \"Swinging the cables.\",\n        \"Arching the lower back.\"\n      ],\n      \"description\": \"A standing cable Y raise lifts the handles diagonally overhead to form a Y while the shoulder blades stay controlled.\",\n      \"form_cues\": [\n        \"Keep thumbs pointing upward.\",\n        \"Lead with the hands along the diagonal.\",\n        \"Keep the ribs down.\"\n      ],\n      \"instructions\": [\n        \"Set two low cables and stand centered with one handle in each hand.\",\n        \"Brace the trunk and raise both arms forward and outward on a diagonal.\",\n        \"Stop when the arms form a Y above shoulder height without shrugging.\",\n        \"Lower the handles slowly to the sides.\"\n      ],\n      \"provenance\": \"authored\",\n      \"safety_note\": \"Use light cable resistance and stop before the shoulders lose a smooth path.\"\n    }\n  },\n  \"human_reference\": {\n    \"absolute_path\": \"/workspace/lightweight-exercises-photo/assets/exercises/biceps-curl-dumbbell.png\",\n    \"branch\": \"work\",\n    \"pixels_reviewed_during_preparation\": false,\n    \"repository_path\": \"assets/exercises/biceps-curl-dumbbell.png\",\n    \"role\": \"Human appearance/proportions/materials/anatomical style ONLY. Exercise pose, grip, equipment and muscles come from the exact-ID catalogue, never the reference.\",\n    \"sha256\": \"52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f\",\n    \"source_commit\": \"b0385b7e2f3382d545a6dff5304c81ba3c771096\"\n  },\n  \"identity_do_not_render_as_text\": {\n    \"catalog_record_sha256\": \"52a83cb69e71f7392a2013f9ffef916ad5017bc969db09e19a2487d533003ee8\",\n    \"catalog_sha256\": \"a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989\",\n    \"exercise_id\": \"standing-y-raise-cable-machine\",\n    \"name\": \"Standing Y Raise (Cable)\"\n  },\n  \"selected_render_scene\": {\n    \"camera\": \"Full-body front-side three-quarter view exposing every prescribed contact, grip and support. Entire person and all equipment visible within square; no crop, text, arrows or second phase.\",\n    \"exercise_id\": \"standing-y-raise-cable-machine\",\n    \"grip\": \"One handle per hand, THUMBS POINT UP as exact-ID cue specifies.\",\n    \"movement_trajectory\": \"Raise both arms forward/outward diagonally to Y, then lower to sides without shrugging or lumbar arch.\",\n    \"never_infer_muscles_from_pose_or_reference\": true,\n    \"one_phase_only\": true,\n    \"pose\": \"Stand centered between low cables, trunk braced, arms raised forward/outward above shoulder height into Y; shoulders remain down and ribs stacked.\",\n    \"single_phase\": \"Y-shaped raised-arm endpoint\",\n    \"supports_and_equipment\": \"Two LOW cable pulleys and separate handles, both feet grounded; no bench or unsupported bands.\"\n  },\n  \"source_use_rule\": \"Preserve raw source texts verbatim; render only selected scene and documented exact-source/user resolution. Do not silently repair the catalogue.\",\n  \"style\": {\n    \"background\": \"Genuinely transparent PNG background, no white/checkerboard layer, no environment scene.\",\n    \"framing\": \"Full figure and all required equipment/supports visible within a square. Scale and use a three-quarter view to expose the specified contacts without changing anatomy, equipment, grip or technique.\",\n    \"human_model\": \"One athletic bald male anatomical mannequin, opaque silver-gray muscular surfaces, consistent proportions and detailed 3D materials, plain black shorts, barefoot.\",\n    \"material_rules\": \"Highlights never make tissue transparent; no glow, whole-body orange tint, hair, text, labels, arrows, UI, borders, collage or extra person.\",\n    \"no_invention\": \"Exact-ID catalogue controls source text and muscles. Render documented selected scene; recorded source corrections apply to the derived scene only. No reference-pose copying or imported muscle targets.\",\n    \"output\": {\n      \"format\": \"PNG\",\n      \"height\": 1024,\n      \"one_person\": true,\n      \"one_phase\": true,\n      \"width\": 1024\n    },\n    \"primary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"rule\": \"Highlight only the exact primary muscle group provided for this exercise.\"\n    },\n    \"secondary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"intensity_fraction\": [\n        0.4,\n        0.5\n      ],\n      \"rule\": \"Only the exact secondary muscles, lighter same-hue highlight; if the list is empty add no secondary target.\"\n    },\n    \"version\": \"v1\"\n  },\n  \"technique_resolution\": {\n    \"PNG_approval\": false,\n    \"binding_or_name_alone_is_not_confirmation\": true,\n    \"catalog_modified\": false,\n    \"construction_rule\": \"Standard compatible unbranded geometry allowed by AGENTS.md; choose geometry only around specified contacts/motion. Category machine does not establish a load mechanism, brand, angle or weight count.\",\n    \"dataset_instruction_steps_read\": null,\n    \"decision_kind\": \"exact_ID_written_technique_confirmation\",\n    \"evidence_path\": \"data/audits/agent-03-single-generator-next30-2026-10-03-technique.json\",\n    \"evidence_selector\": \"records[exercise_id=\\\"standing-y-raise-cable-machine\\\"]\",\n    \"illustration_choices\": \"Side/phase and compatible layout are scene choices, not amendments to source technique. Do not infer muscle targets from scene or equipment.\",\n    \"illustration_choices_are_not_user_approvals\": true,\n    \"status\": \"resolved\",\n    \"technique_fields_read\": [\n      \"content.en.description\",\n      \"content.en.instructions\",\n      \"content.en.form_cues\",\n      \"content.en.common_mistakes\",\n      \"content.en.safety_note\",\n      \"content.pl.instructions\",\n      \"source.dataset_id\"\n    ]\n  }\n}",
+          "source_catalog_record_sha256": "52a83cb69e71f7392a2013f9ffef916ad5017bc969db09e19a2487d533003ee8",
+          "source_english_sha256": "67532df0da7c04669b14c28dab6f644239aa10b0dbdaaf9eb9a0aa2ea8938279",
+          "style_files": [
+            {
+              "path": "docs/exercise-image-style.md",
+              "sha256": "8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578"
+            },
+            {
+              "path": "docs/exercise-image-style-neutral-primary.md",
+              "sha256": "86204ab43f23d119a1eb25cafdbda2518b741a0090b4ffb0ceb9086952314439"
+            }
+          ],
+          "human_reference_sha256": "52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f",
+          "technical_status": "passed"
         },
         {
           "exercise_id": "cable-core-pallof-press-machine",
           "name": "Cable Core Pallof Press",
-          "status": "not_started",
-          "attempts": 0,
-          "attempt_history": [],
-          "user_review": null,
-          "technical_check": null,
+          "status": "generated_pending",
+          "attempts": 1,
+          "attempt_history": [
+            {
+              "attempt": 1,
+              "attempt_status": "generated",
+              "started_at": "2026-10-03T11:39:19.230Z",
+              "finished_at": "2026-10-03T11:40:18.693006+00:00",
+              "prompt": "Create exactly ONE square 1024x1024 transparent PNG of this exact exercise and ONE selected phase. Metadata must never appear as image text.\n{\n  \"approved_style_files\": [\n    {\n      \"path\": \"docs/exercise-image-style.md\",\n      \"sha256\": \"8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578\"\n    }\n  ],\n  \"exact_catalogue_source\": {\n    \"equipment\": \"machine\",\n    \"primary_muscle\": \"abdominals\",\n    \"secondary_muscles\": [\n      \"chest\",\n      \"shoulders\",\n      \"triceps\"\n    ],\n    \"source_english\": {\n      \"common_mistakes\": [\n        \"Rotating toward the pulley.\",\n        \"Leaning away from the cable.\",\n        \"Letting the hands drift.\"\n      ],\n      \"description\": \"Cable Core Pallof Press stands perpendicular to a chest-height pulley and presses both hands straight forward while resisting rotation.\",\n      \"form_cues\": [\n        \"Keep hips square.\",\n        \"Keep hands on one line.\",\n        \"Brace before pressing.\"\n      ],\n      \"instructions\": [\n        \"Set a cable at chest height and stand sideways with feet shoulder-width apart.\",\n        \"Hold the handle with both hands at the sternum and step away until the cable is taut.\",\n        \"Press both hands straight forward without turning the ribs or hips.\",\n        \"Pause with arms extended, return the handle to the sternum, and switch sides.\"\n      ],\n      \"provenance\": \"authored\",\n      \"safety_note\": \"Use light cable resistance so the pelvis and ribs remain facing forward.\"\n    }\n  },\n  \"human_reference\": {\n    \"absolute_path\": \"/workspace/lightweight-exercises-photo/assets/exercises/biceps-curl-dumbbell.png\",\n    \"branch\": \"work\",\n    \"pixels_reviewed_during_preparation\": false,\n    \"repository_path\": \"assets/exercises/biceps-curl-dumbbell.png\",\n    \"role\": \"Human appearance/proportions/materials/anatomical style ONLY. Exercise pose, grip, equipment and muscles come from the exact-ID catalogue, never the reference.\",\n    \"sha256\": \"52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f\",\n    \"source_commit\": \"b0385b7e2f3382d545a6dff5304c81ba3c771096\"\n  },\n  \"identity_do_not_render_as_text\": {\n    \"catalog_record_sha256\": \"a9626cd5d6e0fe5a30fffa885191e55a13ef0322b4f992dfccc7a2611c96bebe\",\n    \"catalog_sha256\": \"a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989\",\n    \"exercise_id\": \"cable-core-pallof-press-machine\",\n    \"name\": \"Cable Core Pallof Press\"\n  },\n  \"selected_render_scene\": {\n    \"camera\": \"Full-body front-side three-quarter view exposing every prescribed contact, grip and support. Entire person and all equipment visible within square; no crop, text, arrows or second phase.\",\n    \"exercise_id\": \"cable-core-pallof-press-machine\",\n    \"grip\": \"Both hands together around ONE cable handle; no wide two-handle grip.\",\n    \"movement_trajectory\": \"Press handle straight forward from sternum while resisting cable rotation; return to sternum without changing pelvis/rib orientation.\",\n    \"never_infer_muscles_from_pose_or_reference\": true,\n    \"one_phase_only\": true,\n    \"pose\": \"Stand sideways to left chest-height pulley, feet shoulder-width, hips/ribs square facing forward; both arms extended in front of sternum without turning toward station.\",\n    \"single_phase\": \"Hands pressed straight forward, anti-rotation hold\",\n    \"supports_and_equipment\": \"One pulley at CHEST height to left of body, taut cable to shared handle; feet planted and body clear of station. No attachment-specific D/rope claim beyond catalogue handle.\"\n  },\n  \"source_use_rule\": \"Preserve raw source texts verbatim; render only selected scene and documented exact-source/user resolution. Do not silently repair the catalogue.\",\n  \"style\": {\n    \"background\": \"Genuinely transparent PNG background, no white/checkerboard layer, no environment scene.\",\n    \"framing\": \"Full figure and all required equipment/supports visible within a square. Scale and use a three-quarter view to expose the specified contacts without changing anatomy, equipment, grip or technique.\",\n    \"human_model\": \"One athletic bald male anatomical mannequin, opaque silver-gray muscular surfaces, consistent proportions and detailed 3D materials, plain black shorts, barefoot.\",\n    \"material_rules\": \"Highlights never make tissue transparent; no glow, whole-body orange tint, hair, text, labels, arrows, UI, borders, collage or extra person.\",\n    \"no_invention\": \"Exact-ID catalogue controls source text and muscles. Render documented selected scene; recorded source corrections apply to the derived scene only. No reference-pose copying or imported muscle targets.\",\n    \"output\": {\n      \"format\": \"PNG\",\n      \"height\": 1024,\n      \"one_person\": true,\n      \"one_phase\": true,\n      \"width\": 1024\n    },\n    \"primary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"rule\": \"Highlight only the exact primary muscle group provided for this exercise.\"\n    },\n    \"secondary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"intensity_fraction\": [\n        0.4,\n        0.5\n      ],\n      \"rule\": \"Only the exact secondary muscles, lighter same-hue highlight; if the list is empty add no secondary target.\"\n    },\n    \"version\": \"v1\"\n  },\n  \"technique_resolution\": {\n    \"PNG_approval\": false,\n    \"binding_or_name_alone_is_not_confirmation\": true,\n    \"catalog_modified\": false,\n    \"construction_rule\": \"Standard compatible unbranded geometry allowed by AGENTS.md; choose geometry only around specified contacts/motion. Category machine does not establish a load mechanism, brand, angle or weight count.\",\n    \"dataset_instruction_steps_read\": null,\n    \"decision_kind\": \"exact_ID_written_technique_confirmation\",\n    \"evidence_path\": \"data/audits/agent-03-single-generator-next30-2026-10-03-technique.json\",\n    \"evidence_selector\": \"records[exercise_id=\\\"cable-core-pallof-press-machine\\\"]\",\n    \"illustration_choices\": \"Side/phase and compatible layout are scene choices, not amendments to source technique. Do not infer muscle targets from scene or equipment.\",\n    \"illustration_choices_are_not_user_approvals\": true,\n    \"status\": \"resolved\",\n    \"technique_fields_read\": [\n      \"content.en.description\",\n      \"content.en.instructions\",\n      \"content.en.form_cues\",\n      \"content.en.common_mistakes\",\n      \"content.en.safety_note\",\n      \"content.pl.instructions\",\n      \"source.dataset_id\"\n    ]\n  }\n}",
+              "prompt_sha256": "8ce8a9774272f4b1cd78aca39ef649f8c4422d20244c3ae2a8137f76d99e0359",
+              "source": {
+                "task_commit": "77cd54d73b1f2546d29e7f17bd816faf9ec14f5e",
+                "batch_path": "data/batches/agent-03-others-032.json",
+                "batch_sha256": "06bfc5851504457a5f103616a15e4ad1be86812e3bc667180e242b7470919111",
+                "assignment_path": "data/assignments/agent-03-single-generator-next30-2026-10-03.json",
+                "assignment_sha256": "8c200e5807890caffda34c41aa44d3f6f055e46f9764d66d53d4219e7f101e37",
+                "catalog_path": "data/exercises/catalog.json",
+                "catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+                "catalog_record_sha256": "a9626cd5d6e0fe5a30fffa885191e55a13ef0322b4f992dfccc7a2611c96bebe",
+                "source_english_sha256": "54d0d525e77e492003be7ef09e9fd9943ac951257341c6a251c1cbbe69854e0d",
+                "technique_audit_path": "data/audits/agent-03-single-generator-next30-2026-10-03-technique.json",
+                "technique_audit_sha256": "2b9ccaaffe190dc4b5c2d8b70b2647e29a40dba843b0b7119c5e2fea4b67767b",
+                "source_errors_path": "data/audits/agent-03-single-generator-next30-2026-10-03-source-errors.json",
+                "source_errors_sha256": "ba3e4ffe4ba356ae6772275a23b2abd1fd5d9e9c4fecfe75f4be2cbef740fb96"
+              },
+              "style": {
+                "version": "v1",
+                "files": [
+                  {
+                    "path": "docs/exercise-image-style.md",
+                    "sha256": "8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578"
+                  },
+                  {
+                    "path": "docs/exercise-image-style-neutral-primary.md",
+                    "sha256": "86204ab43f23d119a1eb25cafdbda2518b741a0090b4ffb0ceb9086952314439"
+                  }
+                ]
+              },
+              "human_reference": {
+                "path": "assets/exercises/biceps-curl-dumbbell.png",
+                "absolute_path": "/workspace/lightweight-exercises-photo/assets/exercises/biceps-curl-dumbbell.png",
+                "sha256": "52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f",
+                "assigned_sha256": "52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f"
+              },
+              "requested_output": {
+                "planned_png_path": "/workspace/exercise-image-results/agent-03-single-generator-next30-2026-10-03/generator-single/agent-03-others-032/cable-core-pallof-press-machine/attempt-1.png",
+                "planned_git_png_path": "assets/exercises/pending/agent-03-single-generator-next30-2026-10-03/generator-single/agent-03-others-032/cable-core-pallof-press-machine/attempt-1.png",
+                "format": "PNG",
+                "dimensions": [
+                  1024,
+                  1024
+                ],
+                "transparent_background": true
+              },
+              "user_review": "pending",
+              "agent_visual_review": "not_performed",
+              "errors": [],
+              "generator_output_path": "/workspace/generated_images/exec-1fbe46b6-482d-4368-904c-5aa80e821100.png",
+              "generator_output_sha256": "d6212e1be9f2e514fb8cee6cdb97a3e99483046c8fe65bbdadef688cdba0671a",
+              "generator_output_dimensions": [
+                1254,
+                1254
+              ],
+              "generator_output_mode": "RGBA",
+              "normalization": "aspect-preserving contain to 1024x1024 transparent canvas",
+              "result_path": "/workspace/exercise-image-results/agent-03-single-generator-next30-2026-10-03/generator-single/agent-03-others-032/cable-core-pallof-press-machine/attempt-1.png",
+              "git_result_path": "assets/exercises/pending/agent-03-single-generator-next30-2026-10-03/generator-single/agent-03-others-032/cable-core-pallof-press-machine/attempt-1.png",
+              "result_sha256": "e02f909e1caf42fbd65ce1544a13332948a8ae01e79e366e74150350177cc15f",
+              "technical_check": {
+                "status": "passed",
+                "format": "PNG",
+                "dimensions": [
+                  1024,
+                  1024
+                ],
+                "mode": "RGBA",
+                "alpha_min_max": [
+                  0,
+                  255
+                ],
+                "transparent_pixel_present": true,
+                "opaque_pixel_present": true
+              }
+            }
+          ],
+          "user_review": "pending",
+          "technical_check": {
+            "status": "passed",
+            "format": "PNG",
+            "dimensions": [
+              1024,
+              1024
+            ],
+            "mode": "RGBA",
+            "alpha_min_max": [
+              0,
+              255
+            ],
+            "transparent_pixel_present": true,
+            "opaque_pixel_present": true
+          },
           "agent_visual_review": "not_performed",
-          "result_path": null,
+          "result_path": "assets/exercises/pending/agent-03-single-generator-next30-2026-10-03/generator-single/agent-03-others-032/cable-core-pallof-press-machine/attempt-1.png",
           "planned_png_path": "/workspace/exercise-image-results/agent-03-single-generator-next30-2026-10-03/generator-single/agent-03-others-032/cable-core-pallof-press-machine/attempt-1.png",
           "planned_git_png_path": "assets/exercises/pending/agent-03-single-generator-next30-2026-10-03/generator-single/agent-03-others-032/cable-core-pallof-press-machine/attempt-1.png",
           "source_catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
           "style_version": "v1",
-          "prompt_sha256": "8ce8a9774272f4b1cd78aca39ef649f8c4422d20244c3ae2a8137f76d99e0359"
+          "prompt_sha256": "8ce8a9774272f4b1cd78aca39ef649f8c4422d20244c3ae2a8137f76d99e0359",
+          "cloud_result_path": "/workspace/exercise-image-results/agent-03-single-generator-next30-2026-10-03/generator-single/agent-03-others-032/cable-core-pallof-press-machine/attempt-1.png",
+          "result_sha256": "e02f909e1caf42fbd65ce1544a13332948a8ae01e79e366e74150350177cc15f",
+          "last_error": null,
+          "prompt": "Create exactly ONE square 1024x1024 transparent PNG of this exact exercise and ONE selected phase. Metadata must never appear as image text.\n{\n  \"approved_style_files\": [\n    {\n      \"path\": \"docs/exercise-image-style.md\",\n      \"sha256\": \"8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578\"\n    }\n  ],\n  \"exact_catalogue_source\": {\n    \"equipment\": \"machine\",\n    \"primary_muscle\": \"abdominals\",\n    \"secondary_muscles\": [\n      \"chest\",\n      \"shoulders\",\n      \"triceps\"\n    ],\n    \"source_english\": {\n      \"common_mistakes\": [\n        \"Rotating toward the pulley.\",\n        \"Leaning away from the cable.\",\n        \"Letting the hands drift.\"\n      ],\n      \"description\": \"Cable Core Pallof Press stands perpendicular to a chest-height pulley and presses both hands straight forward while resisting rotation.\",\n      \"form_cues\": [\n        \"Keep hips square.\",\n        \"Keep hands on one line.\",\n        \"Brace before pressing.\"\n      ],\n      \"instructions\": [\n        \"Set a cable at chest height and stand sideways with feet shoulder-width apart.\",\n        \"Hold the handle with both hands at the sternum and step away until the cable is taut.\",\n        \"Press both hands straight forward without turning the ribs or hips.\",\n        \"Pause with arms extended, return the handle to the sternum, and switch sides.\"\n      ],\n      \"provenance\": \"authored\",\n      \"safety_note\": \"Use light cable resistance so the pelvis and ribs remain facing forward.\"\n    }\n  },\n  \"human_reference\": {\n    \"absolute_path\": \"/workspace/lightweight-exercises-photo/assets/exercises/biceps-curl-dumbbell.png\",\n    \"branch\": \"work\",\n    \"pixels_reviewed_during_preparation\": false,\n    \"repository_path\": \"assets/exercises/biceps-curl-dumbbell.png\",\n    \"role\": \"Human appearance/proportions/materials/anatomical style ONLY. Exercise pose, grip, equipment and muscles come from the exact-ID catalogue, never the reference.\",\n    \"sha256\": \"52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f\",\n    \"source_commit\": \"b0385b7e2f3382d545a6dff5304c81ba3c771096\"\n  },\n  \"identity_do_not_render_as_text\": {\n    \"catalog_record_sha256\": \"a9626cd5d6e0fe5a30fffa885191e55a13ef0322b4f992dfccc7a2611c96bebe\",\n    \"catalog_sha256\": \"a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989\",\n    \"exercise_id\": \"cable-core-pallof-press-machine\",\n    \"name\": \"Cable Core Pallof Press\"\n  },\n  \"selected_render_scene\": {\n    \"camera\": \"Full-body front-side three-quarter view exposing every prescribed contact, grip and support. Entire person and all equipment visible within square; no crop, text, arrows or second phase.\",\n    \"exercise_id\": \"cable-core-pallof-press-machine\",\n    \"grip\": \"Both hands together around ONE cable handle; no wide two-handle grip.\",\n    \"movement_trajectory\": \"Press handle straight forward from sternum while resisting cable rotation; return to sternum without changing pelvis/rib orientation.\",\n    \"never_infer_muscles_from_pose_or_reference\": true,\n    \"one_phase_only\": true,\n    \"pose\": \"Stand sideways to left chest-height pulley, feet shoulder-width, hips/ribs square facing forward; both arms extended in front of sternum without turning toward station.\",\n    \"single_phase\": \"Hands pressed straight forward, anti-rotation hold\",\n    \"supports_and_equipment\": \"One pulley at CHEST height to left of body, taut cable to shared handle; feet planted and body clear of station. No attachment-specific D/rope claim beyond catalogue handle.\"\n  },\n  \"source_use_rule\": \"Preserve raw source texts verbatim; render only selected scene and documented exact-source/user resolution. Do not silently repair the catalogue.\",\n  \"style\": {\n    \"background\": \"Genuinely transparent PNG background, no white/checkerboard layer, no environment scene.\",\n    \"framing\": \"Full figure and all required equipment/supports visible within a square. Scale and use a three-quarter view to expose the specified contacts without changing anatomy, equipment, grip or technique.\",\n    \"human_model\": \"One athletic bald male anatomical mannequin, opaque silver-gray muscular surfaces, consistent proportions and detailed 3D materials, plain black shorts, barefoot.\",\n    \"material_rules\": \"Highlights never make tissue transparent; no glow, whole-body orange tint, hair, text, labels, arrows, UI, borders, collage or extra person.\",\n    \"no_invention\": \"Exact-ID catalogue controls source text and muscles. Render documented selected scene; recorded source corrections apply to the derived scene only. No reference-pose copying or imported muscle targets.\",\n    \"output\": {\n      \"format\": \"PNG\",\n      \"height\": 1024,\n      \"one_person\": true,\n      \"one_phase\": true,\n      \"width\": 1024\n    },\n    \"primary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"rule\": \"Highlight only the exact primary muscle group provided for this exercise.\"\n    },\n    \"secondary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"intensity_fraction\": [\n        0.4,\n        0.5\n      ],\n      \"rule\": \"Only the exact secondary muscles, lighter same-hue highlight; if the list is empty add no secondary target.\"\n    },\n    \"version\": \"v1\"\n  },\n  \"technique_resolution\": {\n    \"PNG_approval\": false,\n    \"binding_or_name_alone_is_not_confirmation\": true,\n    \"catalog_modified\": false,\n    \"construction_rule\": \"Standard compatible unbranded geometry allowed by AGENTS.md; choose geometry only around specified contacts/motion. Category machine does not establish a load mechanism, brand, angle or weight count.\",\n    \"dataset_instruction_steps_read\": null,\n    \"decision_kind\": \"exact_ID_written_technique_confirmation\",\n    \"evidence_path\": \"data/audits/agent-03-single-generator-next30-2026-10-03-technique.json\",\n    \"evidence_selector\": \"records[exercise_id=\\\"cable-core-pallof-press-machine\\\"]\",\n    \"illustration_choices\": \"Side/phase and compatible layout are scene choices, not amendments to source technique. Do not infer muscle targets from scene or equipment.\",\n    \"illustration_choices_are_not_user_approvals\": true,\n    \"status\": \"resolved\",\n    \"technique_fields_read\": [\n      \"content.en.description\",\n      \"content.en.instructions\",\n      \"content.en.form_cues\",\n      \"content.en.common_mistakes\",\n      \"content.en.safety_note\",\n      \"content.pl.instructions\",\n      \"source.dataset_id\"\n    ]\n  }\n}",
+          "source_catalog_record_sha256": "a9626cd5d6e0fe5a30fffa885191e55a13ef0322b4f992dfccc7a2611c96bebe",
+          "source_english_sha256": "54d0d525e77e492003be7ef09e9fd9943ac951257341c6a251c1cbbe69854e0d",
+          "style_files": [
+            {
+              "path": "docs/exercise-image-style.md",
+              "sha256": "8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578"
+            },
+            {
+              "path": "docs/exercise-image-style-neutral-primary.md",
+              "sha256": "86204ab43f23d119a1eb25cafdbda2518b741a0090b4ffb0ceb9086952314439"
+            }
+          ],
+          "human_reference_sha256": "52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f",
+          "technical_status": "passed"
         },
         {
           "exercise_id": "cable-pull-through-machine",
           "name": "Cable Pull Through",
-          "status": "not_started",
-          "attempts": 0,
-          "attempt_history": [],
-          "user_review": null,
-          "technical_check": null,
+          "status": "generated_pending",
+          "attempts": 1,
+          "attempt_history": [
+            {
+              "attempt": 1,
+              "attempt_status": "generated",
+              "started_at": "2026-10-03T11:40:21.368Z",
+              "finished_at": "2026-10-03T11:41:20.613196+00:00",
+              "prompt": "Create exactly ONE square 1024x1024 transparent PNG of this exact exercise and ONE selected phase. Metadata must never appear as image text.\n{\n  \"approved_style_files\": [\n    {\n      \"path\": \"docs/exercise-image-style.md\",\n      \"sha256\": \"8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578\"\n    }\n  ],\n  \"exact_catalogue_source\": {\n    \"equipment\": \"machine\",\n    \"primary_muscle\": \"glutes\",\n    \"secondary_muscles\": [\n      \"hamstrings\",\n      \"lower_back\"\n    ],\n    \"source_english\": {\n      \"common_mistakes\": [\n        \"Squatting instead of hinging.\",\n        \"Rounding the back.\",\n        \"Pulling with the arms.\"\n      ],\n      \"description\": \"Cable Pull Through is a standing cable hip hinge: the handle travels between the legs, then the hips drive it forward.\",\n      \"form_cues\": [\n        \"Push the hips back.\",\n        \"Keep the handle close.\",\n        \"Finish without leaning back.\"\n      ],\n      \"instructions\": [\n        \"Face away from the cable and hold the low handle between the legs.\",\n        \"Step forward to create tension and hinge the hips back with a neutral spine.\",\n        \"Drive the hips forward to stand tall and squeeze the glutes.\",\n        \"Allow the handle to travel back between the legs before the next repetition.\"\n      ],\n      \"provenance\": \"adapted\",\n      \"safety_note\": \"Keep the cable path clear and stop the hinge before the back rounds.\"\n    }\n  },\n  \"human_reference\": {\n    \"absolute_path\": \"/workspace/lightweight-exercises-photo/assets/exercises/biceps-curl-dumbbell.png\",\n    \"branch\": \"work\",\n    \"pixels_reviewed_during_preparation\": false,\n    \"repository_path\": \"assets/exercises/biceps-curl-dumbbell.png\",\n    \"role\": \"Human appearance/proportions/materials/anatomical style ONLY. Exercise pose, grip, equipment and muscles come from the exact-ID catalogue, never the reference.\",\n    \"sha256\": \"52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f\",\n    \"source_commit\": \"b0385b7e2f3382d545a6dff5304c81ba3c771096\"\n  },\n  \"identity_do_not_render_as_text\": {\n    \"catalog_record_sha256\": \"ef86b8d1b7464541da2094cf4c1b7a95b9b37243af85d1fd705796583537ffb5\",\n    \"catalog_sha256\": \"a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989\",\n    \"exercise_id\": \"cable-pull-through-machine\",\n    \"name\": \"Cable Pull Through\"\n  },\n  \"selected_render_scene\": {\n    \"camera\": \"Full-body front-side three-quarter view exposing every prescribed contact, grip and support. Entire person and all equipment visible within square; no crop, text, arrows or second phase.\",\n    \"exercise_id\": \"cable-pull-through-machine\",\n    \"grip\": \"Both hands hold the two ends of ONE rope attachment, confirmed by exact dataset.\",\n    \"movement_trajectory\": \"Hinge hips back allowing rope between legs; drive hips forward to stand tall without arm curl or backward lean.\",\n    \"never_infer_muscles_from_pose_or_reference\": true,\n    \"one_phase_only\": true,\n    \"pose\": \"Stand facing AWAY from low station, feet shoulder-width, knees softly bent; hips back and torso hinged with neutral spine, hands between legs, no deep squat.\",\n    \"single_phase\": \"Neutral-spine hip-hinge lower phase\",\n    \"supports_and_equipment\": \"LOW pulley BEHIND body, rope/cable travels between legs; feet grounded and cable path clear.\"\n  },\n  \"source_use_rule\": \"Preserve raw source texts verbatim; render only selected scene and documented exact-source/user resolution. Do not silently repair the catalogue.\",\n  \"style\": {\n    \"background\": \"Genuinely transparent PNG background, no white/checkerboard layer, no environment scene.\",\n    \"framing\": \"Full figure and all required equipment/supports visible within a square. Scale and use a three-quarter view to expose the specified contacts without changing anatomy, equipment, grip or technique.\",\n    \"human_model\": \"One athletic bald male anatomical mannequin, opaque silver-gray muscular surfaces, consistent proportions and detailed 3D materials, plain black shorts, barefoot.\",\n    \"material_rules\": \"Highlights never make tissue transparent; no glow, whole-body orange tint, hair, text, labels, arrows, UI, borders, collage or extra person.\",\n    \"no_invention\": \"Exact-ID catalogue controls source text and muscles. Render documented selected scene; recorded source corrections apply to the derived scene only. No reference-pose copying or imported muscle targets.\",\n    \"output\": {\n      \"format\": \"PNG\",\n      \"height\": 1024,\n      \"one_person\": true,\n      \"one_phase\": true,\n      \"width\": 1024\n    },\n    \"primary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"rule\": \"Highlight only the exact primary muscle group provided for this exercise.\"\n    },\n    \"secondary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"intensity_fraction\": [\n        0.4,\n        0.5\n      ],\n      \"rule\": \"Only the exact secondary muscles, lighter same-hue highlight; if the list is empty add no secondary target.\"\n    },\n    \"version\": \"v1\"\n  },\n  \"technique_resolution\": {\n    \"PNG_approval\": false,\n    \"binding_or_name_alone_is_not_confirmation\": true,\n    \"catalog_modified\": false,\n    \"construction_rule\": \"Standard compatible unbranded geometry allowed by AGENTS.md; choose geometry only around specified contacts/motion. Category machine does not establish a load mechanism, brand, angle or weight count.\",\n    \"dataset_instruction_steps_read\": [\n      \"Stand facing away from the cable machine with your feet shoulder-width apart.\",\n      \"Grab the rope attachment with both hands and step forward, creating tension in the cable.\",\n      \"Bend at the hips and lower your upper body until it is parallel to the ground, keeping your back straight.\",\n      \"Engage your glutes and hamstrings to pull your body back up to the starting position.\",\n      \"Repeat for the desired number of repetitions.\"\n    ],\n    \"decision_kind\": \"exact_ID_written_technique_confirmation\",\n    \"evidence_path\": \"data/audits/agent-03-single-generator-next30-2026-10-03-technique.json\",\n    \"evidence_selector\": \"records[exercise_id=\\\"cable-pull-through-machine\\\"]\",\n    \"illustration_choices\": \"Side/phase and compatible layout are scene choices, not amendments to source technique. Do not infer muscle targets from scene or equipment.\",\n    \"illustration_choices_are_not_user_approvals\": true,\n    \"status\": \"resolved\",\n    \"technique_fields_read\": [\n      \"content.en.description\",\n      \"content.en.instructions\",\n      \"content.en.form_cues\",\n      \"content.en.common_mistakes\",\n      \"content.en.safety_note\",\n      \"content.pl.instructions\",\n      \"source.dataset_id\"\n    ]\n  }\n}",
+              "prompt_sha256": "13a24b39ffc1dfa8234272edf9550b03b835d3afe93d38f4c0d4ab0562e8b4a3",
+              "source": {
+                "task_commit": "77cd54d73b1f2546d29e7f17bd816faf9ec14f5e",
+                "batch_path": "data/batches/agent-03-others-032.json",
+                "batch_sha256": "06bfc5851504457a5f103616a15e4ad1be86812e3bc667180e242b7470919111",
+                "assignment_path": "data/assignments/agent-03-single-generator-next30-2026-10-03.json",
+                "assignment_sha256": "8c200e5807890caffda34c41aa44d3f6f055e46f9764d66d53d4219e7f101e37",
+                "catalog_path": "data/exercises/catalog.json",
+                "catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+                "catalog_record_sha256": "ef86b8d1b7464541da2094cf4c1b7a95b9b37243af85d1fd705796583537ffb5",
+                "source_english_sha256": "57749dc7711b147f41703375f2d58b47df8057350171e959ed7cb12f48824159",
+                "technique_audit_path": "data/audits/agent-03-single-generator-next30-2026-10-03-technique.json",
+                "technique_audit_sha256": "2b9ccaaffe190dc4b5c2d8b70b2647e29a40dba843b0b7119c5e2fea4b67767b",
+                "source_errors_path": "data/audits/agent-03-single-generator-next30-2026-10-03-source-errors.json",
+                "source_errors_sha256": "ba3e4ffe4ba356ae6772275a23b2abd1fd5d9e9c4fecfe75f4be2cbef740fb96"
+              },
+              "style": {
+                "version": "v1",
+                "files": [
+                  {
+                    "path": "docs/exercise-image-style.md",
+                    "sha256": "8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578"
+                  },
+                  {
+                    "path": "docs/exercise-image-style-neutral-primary.md",
+                    "sha256": "86204ab43f23d119a1eb25cafdbda2518b741a0090b4ffb0ceb9086952314439"
+                  }
+                ]
+              },
+              "human_reference": {
+                "path": "assets/exercises/biceps-curl-dumbbell.png",
+                "absolute_path": "/workspace/lightweight-exercises-photo/assets/exercises/biceps-curl-dumbbell.png",
+                "sha256": "52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f",
+                "assigned_sha256": "52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f"
+              },
+              "requested_output": {
+                "planned_png_path": "/workspace/exercise-image-results/agent-03-single-generator-next30-2026-10-03/generator-single/agent-03-others-032/cable-pull-through-machine/attempt-1.png",
+                "planned_git_png_path": "assets/exercises/pending/agent-03-single-generator-next30-2026-10-03/generator-single/agent-03-others-032/cable-pull-through-machine/attempt-1.png",
+                "format": "PNG",
+                "dimensions": [
+                  1024,
+                  1024
+                ],
+                "transparent_background": true
+              },
+              "user_review": "pending",
+              "agent_visual_review": "not_performed",
+              "errors": [],
+              "generator_output_path": "/workspace/generated_images/exec-d34472cd-e83a-4f72-9596-1b6eefadb8df.png",
+              "generator_output_sha256": "d1bdb7cbbae15dcbe5b597e1b695af7ea404e30035d119e1ff3a3dbbb7ef5cd9",
+              "generator_output_dimensions": [
+                1254,
+                1254
+              ],
+              "generator_output_mode": "RGBA",
+              "normalization": "aspect-preserving contain to 1024x1024 transparent canvas",
+              "result_path": "/workspace/exercise-image-results/agent-03-single-generator-next30-2026-10-03/generator-single/agent-03-others-032/cable-pull-through-machine/attempt-1.png",
+              "git_result_path": "assets/exercises/pending/agent-03-single-generator-next30-2026-10-03/generator-single/agent-03-others-032/cable-pull-through-machine/attempt-1.png",
+              "result_sha256": "3a9e47fa2071a1be4eee04b4d08eb9415a18ee6f509716b652a989b868b4fe08",
+              "technical_check": {
+                "status": "passed",
+                "format": "PNG",
+                "dimensions": [
+                  1024,
+                  1024
+                ],
+                "mode": "RGBA",
+                "alpha_min_max": [
+                  0,
+                  255
+                ],
+                "transparent_pixel_present": true,
+                "opaque_pixel_present": true
+              }
+            }
+          ],
+          "user_review": "pending",
+          "technical_check": {
+            "status": "passed",
+            "format": "PNG",
+            "dimensions": [
+              1024,
+              1024
+            ],
+            "mode": "RGBA",
+            "alpha_min_max": [
+              0,
+              255
+            ],
+            "transparent_pixel_present": true,
+            "opaque_pixel_present": true
+          },
           "agent_visual_review": "not_performed",
-          "result_path": null,
+          "result_path": "assets/exercises/pending/agent-03-single-generator-next30-2026-10-03/generator-single/agent-03-others-032/cable-pull-through-machine/attempt-1.png",
           "planned_png_path": "/workspace/exercise-image-results/agent-03-single-generator-next30-2026-10-03/generator-single/agent-03-others-032/cable-pull-through-machine/attempt-1.png",
           "planned_git_png_path": "assets/exercises/pending/agent-03-single-generator-next30-2026-10-03/generator-single/agent-03-others-032/cable-pull-through-machine/attempt-1.png",
           "source_catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
           "style_version": "v1",
-          "prompt_sha256": "13a24b39ffc1dfa8234272edf9550b03b835d3afe93d38f4c0d4ab0562e8b4a3"
+          "prompt_sha256": "13a24b39ffc1dfa8234272edf9550b03b835d3afe93d38f4c0d4ab0562e8b4a3",
+          "cloud_result_path": "/workspace/exercise-image-results/agent-03-single-generator-next30-2026-10-03/generator-single/agent-03-others-032/cable-pull-through-machine/attempt-1.png",
+          "result_sha256": "3a9e47fa2071a1be4eee04b4d08eb9415a18ee6f509716b652a989b868b4fe08",
+          "last_error": null,
+          "prompt": "Create exactly ONE square 1024x1024 transparent PNG of this exact exercise and ONE selected phase. Metadata must never appear as image text.\n{\n  \"approved_style_files\": [\n    {\n      \"path\": \"docs/exercise-image-style.md\",\n      \"sha256\": \"8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578\"\n    }\n  ],\n  \"exact_catalogue_source\": {\n    \"equipment\": \"machine\",\n    \"primary_muscle\": \"glutes\",\n    \"secondary_muscles\": [\n      \"hamstrings\",\n      \"lower_back\"\n    ],\n    \"source_english\": {\n      \"common_mistakes\": [\n        \"Squatting instead of hinging.\",\n        \"Rounding the back.\",\n        \"Pulling with the arms.\"\n      ],\n      \"description\": \"Cable Pull Through is a standing cable hip hinge: the handle travels between the legs, then the hips drive it forward.\",\n      \"form_cues\": [\n        \"Push the hips back.\",\n        \"Keep the handle close.\",\n        \"Finish without leaning back.\"\n      ],\n      \"instructions\": [\n        \"Face away from the cable and hold the low handle between the legs.\",\n        \"Step forward to create tension and hinge the hips back with a neutral spine.\",\n        \"Drive the hips forward to stand tall and squeeze the glutes.\",\n        \"Allow the handle to travel back between the legs before the next repetition.\"\n      ],\n      \"provenance\": \"adapted\",\n      \"safety_note\": \"Keep the cable path clear and stop the hinge before the back rounds.\"\n    }\n  },\n  \"human_reference\": {\n    \"absolute_path\": \"/workspace/lightweight-exercises-photo/assets/exercises/biceps-curl-dumbbell.png\",\n    \"branch\": \"work\",\n    \"pixels_reviewed_during_preparation\": false,\n    \"repository_path\": \"assets/exercises/biceps-curl-dumbbell.png\",\n    \"role\": \"Human appearance/proportions/materials/anatomical style ONLY. Exercise pose, grip, equipment and muscles come from the exact-ID catalogue, never the reference.\",\n    \"sha256\": \"52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f\",\n    \"source_commit\": \"b0385b7e2f3382d545a6dff5304c81ba3c771096\"\n  },\n  \"identity_do_not_render_as_text\": {\n    \"catalog_record_sha256\": \"ef86b8d1b7464541da2094cf4c1b7a95b9b37243af85d1fd705796583537ffb5\",\n    \"catalog_sha256\": \"a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989\",\n    \"exercise_id\": \"cable-pull-through-machine\",\n    \"name\": \"Cable Pull Through\"\n  },\n  \"selected_render_scene\": {\n    \"camera\": \"Full-body front-side three-quarter view exposing every prescribed contact, grip and support. Entire person and all equipment visible within square; no crop, text, arrows or second phase.\",\n    \"exercise_id\": \"cable-pull-through-machine\",\n    \"grip\": \"Both hands hold the two ends of ONE rope attachment, confirmed by exact dataset.\",\n    \"movement_trajectory\": \"Hinge hips back allowing rope between legs; drive hips forward to stand tall without arm curl or backward lean.\",\n    \"never_infer_muscles_from_pose_or_reference\": true,\n    \"one_phase_only\": true,\n    \"pose\": \"Stand facing AWAY from low station, feet shoulder-width, knees softly bent; hips back and torso hinged with neutral spine, hands between legs, no deep squat.\",\n    \"single_phase\": \"Neutral-spine hip-hinge lower phase\",\n    \"supports_and_equipment\": \"LOW pulley BEHIND body, rope/cable travels between legs; feet grounded and cable path clear.\"\n  },\n  \"source_use_rule\": \"Preserve raw source texts verbatim; render only selected scene and documented exact-source/user resolution. Do not silently repair the catalogue.\",\n  \"style\": {\n    \"background\": \"Genuinely transparent PNG background, no white/checkerboard layer, no environment scene.\",\n    \"framing\": \"Full figure and all required equipment/supports visible within a square. Scale and use a three-quarter view to expose the specified contacts without changing anatomy, equipment, grip or technique.\",\n    \"human_model\": \"One athletic bald male anatomical mannequin, opaque silver-gray muscular surfaces, consistent proportions and detailed 3D materials, plain black shorts, barefoot.\",\n    \"material_rules\": \"Highlights never make tissue transparent; no glow, whole-body orange tint, hair, text, labels, arrows, UI, borders, collage or extra person.\",\n    \"no_invention\": \"Exact-ID catalogue controls source text and muscles. Render documented selected scene; recorded source corrections apply to the derived scene only. No reference-pose copying or imported muscle targets.\",\n    \"output\": {\n      \"format\": \"PNG\",\n      \"height\": 1024,\n      \"one_person\": true,\n      \"one_phase\": true,\n      \"width\": 1024\n    },\n    \"primary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"rule\": \"Highlight only the exact primary muscle group provided for this exercise.\"\n    },\n    \"secondary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"intensity_fraction\": [\n        0.4,\n        0.5\n      ],\n      \"rule\": \"Only the exact secondary muscles, lighter same-hue highlight; if the list is empty add no secondary target.\"\n    },\n    \"version\": \"v1\"\n  },\n  \"technique_resolution\": {\n    \"PNG_approval\": false,\n    \"binding_or_name_alone_is_not_confirmation\": true,\n    \"catalog_modified\": false,\n    \"construction_rule\": \"Standard compatible unbranded geometry allowed by AGENTS.md; choose geometry only around specified contacts/motion. Category machine does not establish a load mechanism, brand, angle or weight count.\",\n    \"dataset_instruction_steps_read\": [\n      \"Stand facing away from the cable machine with your feet shoulder-width apart.\",\n      \"Grab the rope attachment with both hands and step forward, creating tension in the cable.\",\n      \"Bend at the hips and lower your upper body until it is parallel to the ground, keeping your back straight.\",\n      \"Engage your glutes and hamstrings to pull your body back up to the starting position.\",\n      \"Repeat for the desired number of repetitions.\"\n    ],\n    \"decision_kind\": \"exact_ID_written_technique_confirmation\",\n    \"evidence_path\": \"data/audits/agent-03-single-generator-next30-2026-10-03-technique.json\",\n    \"evidence_selector\": \"records[exercise_id=\\\"cable-pull-through-machine\\\"]\",\n    \"illustration_choices\": \"Side/phase and compatible layout are scene choices, not amendments to source technique. Do not infer muscle targets from scene or equipment.\",\n    \"illustration_choices_are_not_user_approvals\": true,\n    \"status\": \"resolved\",\n    \"technique_fields_read\": [\n      \"content.en.description\",\n      \"content.en.instructions\",\n      \"content.en.form_cues\",\n      \"content.en.common_mistakes\",\n      \"content.en.safety_note\",\n      \"content.pl.instructions\",\n      \"source.dataset_id\"\n    ]\n  }\n}",
+          "source_catalog_record_sha256": "ef86b8d1b7464541da2094cf4c1b7a95b9b37243af85d1fd705796583537ffb5",
+          "source_english_sha256": "57749dc7711b147f41703375f2d58b47df8057350171e959ed7cb12f48824159",
+          "style_files": [
+            {
+              "path": "docs/exercise-image-style.md",
+              "sha256": "8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578"
+            },
+            {
+              "path": "docs/exercise-image-style-neutral-primary.md",
+              "sha256": "86204ab43f23d119a1eb25cafdbda2518b741a0090b4ffb0ceb9086952314439"
+            }
+          ],
+          "human_reference_sha256": "52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f",
+          "technical_status": "passed"
         },
         {
           "exercise_id": "single-arm-cable-crossover-machine",
           "name": "Single Arm Cable Crossover",
-          "status": "not_started",
-          "attempts": 0,
-          "attempt_history": [],
-          "user_review": null,
-          "technical_check": null,
+          "status": "generated_pending",
+          "attempts": 1,
+          "attempt_history": [
+            {
+              "attempt": 1,
+              "attempt_status": "generated",
+              "started_at": "2026-10-03T11:41:23.689Z",
+              "finished_at": "2026-10-03T11:42:20.217804+00:00",
+              "prompt": "Create exactly ONE square 1024x1024 transparent PNG of this exact exercise and ONE selected phase. Metadata must never appear as image text.\n{\n  \"approved_style_files\": [\n    {\n      \"path\": \"docs/exercise-image-style.md\",\n      \"sha256\": \"8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578\"\n    }\n  ],\n  \"exact_catalogue_source\": {\n    \"equipment\": \"machine\",\n    \"primary_muscle\": \"chest\",\n    \"secondary_muscles\": [],\n    \"source_english\": {\n      \"common_mistakes\": [\n        \"Shifting the support point.\",\n        \"Using momentum instead of the target joint path.\",\n        \"Cutting the return short.\"\n      ],\n      \"description\": \"Stand beside a chest-height pulley and sweep one handle across the chest to the opposite midline before returning it.\",\n      \"form_cues\": [\n        \"Keep the support points fixed.\",\n        \"Use a quiet controlled path.\",\n        \"Reset fully between repetitions.\"\n      ],\n      \"instructions\": [\n        \"Stand beside a chest-height cable pulley with one handle in the far hand and feet staggered.\",\n        \"Begin with that arm open beside the body and elbow softly bent.\",\n        \"Sweep the handle across the chest to the opposite midline without rotating the trunk.\",\n        \"Return the arm along the same arc, then change sides.\"\n      ],\n      \"provenance\": \"authored\",\n      \"safety_note\": \"Use a secure setup and stop if alignment or control is lost.\"\n    }\n  },\n  \"human_reference\": {\n    \"absolute_path\": \"/workspace/lightweight-exercises-photo/assets/exercises/biceps-curl-dumbbell.png\",\n    \"branch\": \"work\",\n    \"pixels_reviewed_during_preparation\": false,\n    \"repository_path\": \"assets/exercises/biceps-curl-dumbbell.png\",\n    \"role\": \"Human appearance/proportions/materials/anatomical style ONLY. Exercise pose, grip, equipment and muscles come from the exact-ID catalogue, never the reference.\",\n    \"sha256\": \"52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f\",\n    \"source_commit\": \"b0385b7e2f3382d545a6dff5304c81ba3c771096\"\n  },\n  \"identity_do_not_render_as_text\": {\n    \"catalog_record_sha256\": \"47952e040cd9c050648dcafe3b2fb8fb8b2a779f3a8466646db3fa78c5769491\",\n    \"catalog_sha256\": \"a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989\",\n    \"exercise_id\": \"single-arm-cable-crossover-machine\",\n    \"name\": \"Single Arm Cable Crossover\"\n  },\n  \"selected_render_scene\": {\n    \"camera\": \"Full-body front-side three-quarter view exposing every prescribed contact, grip and support. Entire person and all equipment visible within square; no crop, text, arrows or second phase.\",\n    \"exercise_id\": \"single-arm-cable-crossover-machine\",\n    \"grip\": \"Right hand wraps the prescribed single handle; left hand relaxed, not assisting or holding another attachment.\",\n    \"movement_trajectory\": \"Start right arm open beside body and sweep handle across chest toward left/opposite midline; return along same arc.\",\n    \"never_infer_muscles_from_pose_or_reference\": true,\n    \"one_phase_only\": true,\n    \"pose\": \"Stand beside LEFT chest-height pulley with staggered feet, right far arm sweeping across chest, elbow softly bent and trunk facing forward without rotation.\",\n    \"single_phase\": \"Right hand across chest to opposite midline\",\n    \"supports_and_equipment\": \"ONE pulley at CHEST height on left, one handle in RIGHT/far hand, both staggered feet grounded; no additional cable or bench.\"\n  },\n  \"source_use_rule\": \"Preserve raw source texts verbatim; render only selected scene and documented exact-source/user resolution. Do not silently repair the catalogue.\",\n  \"style\": {\n    \"background\": \"Genuinely transparent PNG background, no white/checkerboard layer, no environment scene.\",\n    \"framing\": \"Full figure and all required equipment/supports visible within a square. Scale and use a three-quarter view to expose the specified contacts without changing anatomy, equipment, grip or technique.\",\n    \"human_model\": \"One athletic bald male anatomical mannequin, opaque silver-gray muscular surfaces, consistent proportions and detailed 3D materials, plain black shorts, barefoot.\",\n    \"material_rules\": \"Highlights never make tissue transparent; no glow, whole-body orange tint, hair, text, labels, arrows, UI, borders, collage or extra person.\",\n    \"no_invention\": \"Exact-ID catalogue controls source text and muscles. Render documented selected scene; recorded source corrections apply to the derived scene only. No reference-pose copying or imported muscle targets.\",\n    \"output\": {\n      \"format\": \"PNG\",\n      \"height\": 1024,\n      \"one_person\": true,\n      \"one_phase\": true,\n      \"width\": 1024\n    },\n    \"primary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"rule\": \"Highlight only the exact primary muscle group provided for this exercise.\"\n    },\n    \"secondary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"intensity_fraction\": [\n        0.4,\n        0.5\n      ],\n      \"rule\": \"Only the exact secondary muscles, lighter same-hue highlight; if the list is empty add no secondary target.\"\n    },\n    \"version\": \"v1\"\n  },\n  \"technique_resolution\": {\n    \"PNG_approval\": false,\n    \"binding_or_name_alone_is_not_confirmation\": true,\n    \"catalog_modified\": false,\n    \"construction_rule\": \"Standard compatible unbranded geometry allowed by AGENTS.md; choose geometry only around specified contacts/motion. Category machine does not establish a load mechanism, brand, angle or weight count.\",\n    \"dataset_instruction_steps_read\": null,\n    \"decision_kind\": \"exact_ID_written_technique_confirmation\",\n    \"evidence_path\": \"data/audits/agent-03-single-generator-next30-2026-10-03-technique.json\",\n    \"evidence_selector\": \"records[exercise_id=\\\"single-arm-cable-crossover-machine\\\"]\",\n    \"illustration_choices\": \"Side/phase and compatible layout are scene choices, not amendments to source technique. Do not infer muscle targets from scene or equipment.\",\n    \"illustration_choices_are_not_user_approvals\": true,\n    \"status\": \"resolved\",\n    \"technique_fields_read\": [\n      \"content.en.description\",\n      \"content.en.instructions\",\n      \"content.en.form_cues\",\n      \"content.en.common_mistakes\",\n      \"content.en.safety_note\",\n      \"content.pl.instructions\",\n      \"source.dataset_id\"\n    ]\n  }\n}",
+              "prompt_sha256": "b958266d3f9df5ff3b9c57329313f3dcbab65b4595ae2c3e62ae2436208707b9",
+              "source": {
+                "task_commit": "77cd54d73b1f2546d29e7f17bd816faf9ec14f5e",
+                "batch_path": "data/batches/agent-03-others-032.json",
+                "batch_sha256": "06bfc5851504457a5f103616a15e4ad1be86812e3bc667180e242b7470919111",
+                "assignment_path": "data/assignments/agent-03-single-generator-next30-2026-10-03.json",
+                "assignment_sha256": "8c200e5807890caffda34c41aa44d3f6f055e46f9764d66d53d4219e7f101e37",
+                "catalog_path": "data/exercises/catalog.json",
+                "catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+                "catalog_record_sha256": "47952e040cd9c050648dcafe3b2fb8fb8b2a779f3a8466646db3fa78c5769491",
+                "source_english_sha256": "a32b74d45682e38137eb18cd13db2a2f0323dc6c45356fa95bb7b1abaf105d62",
+                "technique_audit_path": "data/audits/agent-03-single-generator-next30-2026-10-03-technique.json",
+                "technique_audit_sha256": "2b9ccaaffe190dc4b5c2d8b70b2647e29a40dba843b0b7119c5e2fea4b67767b",
+                "source_errors_path": "data/audits/agent-03-single-generator-next30-2026-10-03-source-errors.json",
+                "source_errors_sha256": "ba3e4ffe4ba356ae6772275a23b2abd1fd5d9e9c4fecfe75f4be2cbef740fb96"
+              },
+              "style": {
+                "version": "v1",
+                "files": [
+                  {
+                    "path": "docs/exercise-image-style.md",
+                    "sha256": "8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578"
+                  },
+                  {
+                    "path": "docs/exercise-image-style-neutral-primary.md",
+                    "sha256": "86204ab43f23d119a1eb25cafdbda2518b741a0090b4ffb0ceb9086952314439"
+                  }
+                ]
+              },
+              "human_reference": {
+                "path": "assets/exercises/biceps-curl-dumbbell.png",
+                "absolute_path": "/workspace/lightweight-exercises-photo/assets/exercises/biceps-curl-dumbbell.png",
+                "sha256": "52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f",
+                "assigned_sha256": "52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f"
+              },
+              "requested_output": {
+                "planned_png_path": "/workspace/exercise-image-results/agent-03-single-generator-next30-2026-10-03/generator-single/agent-03-others-032/single-arm-cable-crossover-machine/attempt-1.png",
+                "planned_git_png_path": "assets/exercises/pending/agent-03-single-generator-next30-2026-10-03/generator-single/agent-03-others-032/single-arm-cable-crossover-machine/attempt-1.png",
+                "format": "PNG",
+                "dimensions": [
+                  1024,
+                  1024
+                ],
+                "transparent_background": true
+              },
+              "user_review": "pending",
+              "agent_visual_review": "not_performed",
+              "errors": [],
+              "generator_output_path": "/workspace/generated_images/exec-528f86bf-6ee5-4f9e-b174-0e90653a8f6d.png",
+              "generator_output_sha256": "60a52b933854fa9aa2e8f702b32225221e75539cbb873f2080e60e77e57b40e7",
+              "generator_output_dimensions": [
+                1254,
+                1254
+              ],
+              "generator_output_mode": "RGBA",
+              "normalization": "aspect-preserving contain to 1024x1024 transparent canvas",
+              "result_path": "/workspace/exercise-image-results/agent-03-single-generator-next30-2026-10-03/generator-single/agent-03-others-032/single-arm-cable-crossover-machine/attempt-1.png",
+              "git_result_path": "assets/exercises/pending/agent-03-single-generator-next30-2026-10-03/generator-single/agent-03-others-032/single-arm-cable-crossover-machine/attempt-1.png",
+              "result_sha256": "5c671255162456875a317338a94ca72c8a66fadced45ecc518b5ad8643420b75",
+              "technical_check": {
+                "status": "passed",
+                "format": "PNG",
+                "dimensions": [
+                  1024,
+                  1024
+                ],
+                "mode": "RGBA",
+                "alpha_min_max": [
+                  0,
+                  255
+                ],
+                "transparent_pixel_present": true,
+                "opaque_pixel_present": true
+              }
+            }
+          ],
+          "user_review": "pending",
+          "technical_check": {
+            "status": "passed",
+            "format": "PNG",
+            "dimensions": [
+              1024,
+              1024
+            ],
+            "mode": "RGBA",
+            "alpha_min_max": [
+              0,
+              255
+            ],
+            "transparent_pixel_present": true,
+            "opaque_pixel_present": true
+          },
           "agent_visual_review": "not_performed",
-          "result_path": null,
+          "result_path": "assets/exercises/pending/agent-03-single-generator-next30-2026-10-03/generator-single/agent-03-others-032/single-arm-cable-crossover-machine/attempt-1.png",
           "planned_png_path": "/workspace/exercise-image-results/agent-03-single-generator-next30-2026-10-03/generator-single/agent-03-others-032/single-arm-cable-crossover-machine/attempt-1.png",
           "planned_git_png_path": "assets/exercises/pending/agent-03-single-generator-next30-2026-10-03/generator-single/agent-03-others-032/single-arm-cable-crossover-machine/attempt-1.png",
           "source_catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
           "style_version": "v1",
-          "prompt_sha256": "b958266d3f9df5ff3b9c57329313f3dcbab65b4595ae2c3e62ae2436208707b9"
+          "prompt_sha256": "b958266d3f9df5ff3b9c57329313f3dcbab65b4595ae2c3e62ae2436208707b9",
+          "cloud_result_path": "/workspace/exercise-image-results/agent-03-single-generator-next30-2026-10-03/generator-single/agent-03-others-032/single-arm-cable-crossover-machine/attempt-1.png",
+          "result_sha256": "5c671255162456875a317338a94ca72c8a66fadced45ecc518b5ad8643420b75",
+          "last_error": null,
+          "prompt": "Create exactly ONE square 1024x1024 transparent PNG of this exact exercise and ONE selected phase. Metadata must never appear as image text.\n{\n  \"approved_style_files\": [\n    {\n      \"path\": \"docs/exercise-image-style.md\",\n      \"sha256\": \"8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578\"\n    }\n  ],\n  \"exact_catalogue_source\": {\n    \"equipment\": \"machine\",\n    \"primary_muscle\": \"chest\",\n    \"secondary_muscles\": [],\n    \"source_english\": {\n      \"common_mistakes\": [\n        \"Shifting the support point.\",\n        \"Using momentum instead of the target joint path.\",\n        \"Cutting the return short.\"\n      ],\n      \"description\": \"Stand beside a chest-height pulley and sweep one handle across the chest to the opposite midline before returning it.\",\n      \"form_cues\": [\n        \"Keep the support points fixed.\",\n        \"Use a quiet controlled path.\",\n        \"Reset fully between repetitions.\"\n      ],\n      \"instructions\": [\n        \"Stand beside a chest-height cable pulley with one handle in the far hand and feet staggered.\",\n        \"Begin with that arm open beside the body and elbow softly bent.\",\n        \"Sweep the handle across the chest to the opposite midline without rotating the trunk.\",\n        \"Return the arm along the same arc, then change sides.\"\n      ],\n      \"provenance\": \"authored\",\n      \"safety_note\": \"Use a secure setup and stop if alignment or control is lost.\"\n    }\n  },\n  \"human_reference\": {\n    \"absolute_path\": \"/workspace/lightweight-exercises-photo/assets/exercises/biceps-curl-dumbbell.png\",\n    \"branch\": \"work\",\n    \"pixels_reviewed_during_preparation\": false,\n    \"repository_path\": \"assets/exercises/biceps-curl-dumbbell.png\",\n    \"role\": \"Human appearance/proportions/materials/anatomical style ONLY. Exercise pose, grip, equipment and muscles come from the exact-ID catalogue, never the reference.\",\n    \"sha256\": \"52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f\",\n    \"source_commit\": \"b0385b7e2f3382d545a6dff5304c81ba3c771096\"\n  },\n  \"identity_do_not_render_as_text\": {\n    \"catalog_record_sha256\": \"47952e040cd9c050648dcafe3b2fb8fb8b2a779f3a8466646db3fa78c5769491\",\n    \"catalog_sha256\": \"a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989\",\n    \"exercise_id\": \"single-arm-cable-crossover-machine\",\n    \"name\": \"Single Arm Cable Crossover\"\n  },\n  \"selected_render_scene\": {\n    \"camera\": \"Full-body front-side three-quarter view exposing every prescribed contact, grip and support. Entire person and all equipment visible within square; no crop, text, arrows or second phase.\",\n    \"exercise_id\": \"single-arm-cable-crossover-machine\",\n    \"grip\": \"Right hand wraps the prescribed single handle; left hand relaxed, not assisting or holding another attachment.\",\n    \"movement_trajectory\": \"Start right arm open beside body and sweep handle across chest toward left/opposite midline; return along same arc.\",\n    \"never_infer_muscles_from_pose_or_reference\": true,\n    \"one_phase_only\": true,\n    \"pose\": \"Stand beside LEFT chest-height pulley with staggered feet, right far arm sweeping across chest, elbow softly bent and trunk facing forward without rotation.\",\n    \"single_phase\": \"Right hand across chest to opposite midline\",\n    \"supports_and_equipment\": \"ONE pulley at CHEST height on left, one handle in RIGHT/far hand, both staggered feet grounded; no additional cable or bench.\"\n  },\n  \"source_use_rule\": \"Preserve raw source texts verbatim; render only selected scene and documented exact-source/user resolution. Do not silently repair the catalogue.\",\n  \"style\": {\n    \"background\": \"Genuinely transparent PNG background, no white/checkerboard layer, no environment scene.\",\n    \"framing\": \"Full figure and all required equipment/supports visible within a square. Scale and use a three-quarter view to expose the specified contacts without changing anatomy, equipment, grip or technique.\",\n    \"human_model\": \"One athletic bald male anatomical mannequin, opaque silver-gray muscular surfaces, consistent proportions and detailed 3D materials, plain black shorts, barefoot.\",\n    \"material_rules\": \"Highlights never make tissue transparent; no glow, whole-body orange tint, hair, text, labels, arrows, UI, borders, collage or extra person.\",\n    \"no_invention\": \"Exact-ID catalogue controls source text and muscles. Render documented selected scene; recorded source corrections apply to the derived scene only. No reference-pose copying or imported muscle targets.\",\n    \"output\": {\n      \"format\": \"PNG\",\n      \"height\": 1024,\n      \"one_person\": true,\n      \"one_phase\": true,\n      \"width\": 1024\n    },\n    \"primary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"rule\": \"Highlight only the exact primary muscle group provided for this exercise.\"\n    },\n    \"secondary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"intensity_fraction\": [\n        0.4,\n        0.5\n      ],\n      \"rule\": \"Only the exact secondary muscles, lighter same-hue highlight; if the list is empty add no secondary target.\"\n    },\n    \"version\": \"v1\"\n  },\n  \"technique_resolution\": {\n    \"PNG_approval\": false,\n    \"binding_or_name_alone_is_not_confirmation\": true,\n    \"catalog_modified\": false,\n    \"construction_rule\": \"Standard compatible unbranded geometry allowed by AGENTS.md; choose geometry only around specified contacts/motion. Category machine does not establish a load mechanism, brand, angle or weight count.\",\n    \"dataset_instruction_steps_read\": null,\n    \"decision_kind\": \"exact_ID_written_technique_confirmation\",\n    \"evidence_path\": \"data/audits/agent-03-single-generator-next30-2026-10-03-technique.json\",\n    \"evidence_selector\": \"records[exercise_id=\\\"single-arm-cable-crossover-machine\\\"]\",\n    \"illustration_choices\": \"Side/phase and compatible layout are scene choices, not amendments to source technique. Do not infer muscle targets from scene or equipment.\",\n    \"illustration_choices_are_not_user_approvals\": true,\n    \"status\": \"resolved\",\n    \"technique_fields_read\": [\n      \"content.en.description\",\n      \"content.en.instructions\",\n      \"content.en.form_cues\",\n      \"content.en.common_mistakes\",\n      \"content.en.safety_note\",\n      \"content.pl.instructions\",\n      \"source.dataset_id\"\n    ]\n  }\n}",
+          "source_catalog_record_sha256": "47952e040cd9c050648dcafe3b2fb8fb8b2a779f3a8466646db3fa78c5769491",
+          "source_english_sha256": "a32b74d45682e38137eb18cd13db2a2f0323dc6c45356fa95bb7b1abaf105d62",
+          "style_files": [
+            {
+              "path": "docs/exercise-image-style.md",
+              "sha256": "8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578"
+            },
+            {
+              "path": "docs/exercise-image-style-neutral-primary.md",
+              "sha256": "86204ab43f23d119a1eb25cafdbda2518b741a0090b4ffb0ceb9086952314439"
+            }
+          ],
+          "human_reference_sha256": "52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f",
+          "technical_status": "passed"
         }
       ],
-      "generation_calls": 2,
-      "checkpoint_at": "2026-10-03T11:29:03.354085+00:00",
+      "generation_calls": 10,
+      "checkpoint_at": "2026-10-03T11:42:21.074148+00:00",
       "resumed_at": "2026-10-03T11:31:09.021820+00:00"
     },
     {
@@ -1861,5 +2773,5 @@
       ]
     }
   ],
-  "last_updated_at": "2026-10-03T11:31:09.021820+00:00"
+  "last_updated_at": "2026-10-03T11:42:21.074148+00:00"
 }

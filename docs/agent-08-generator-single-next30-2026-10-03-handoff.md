@@ -30,10 +30,20 @@
 - `reverse-grip-triceps-pushdown-machine` — `assets/exercises/pending/agent-03-single-generator-next30-2026-10-03/generator-single/agent-03-others-031/reverse-grip-triceps-pushdown-machine/attempt-1.png`; SHA256 `c7a43317a0b25d85aa144fc686e4dfddbc1f827732a1e2301233e9f67cf23904`; `user_review=pending`; technical `passed`.
 
 
+
 ## agent-03-others-032 checkpoint
 
-- Status: `in_progress` (resumed after quota window); generator calls recorded: 2; skips: 0.
-- `straight-arm-lat-pulldown-cable-machine` has a PNG pending review.
-- `reverse-grip-lat-pulldown-cable-machine` has the original HTTP 429 failure recorded and no PNG; it is not being retried.
-- The remaining eight IDs are `not_started`. A local output-file snapshot hiccup occurred before any new imagegen call; it was fixed, and `low-cable-fly-crossovers-machine` remains unattempted.
-- Resumed manifest SHA256 was verified on origin at commit `7afac0f390238160aa473ddb9cb1a444d9bf1964`; this handoff update is pending push.
+- Status: `completed_with_errors` at 2026-10-03T11:42:21.074148+00:00.
+- Calls recorded: 10; skips: 0.
+- Remote verification: pending until push.
+
+- `straight-arm-lat-pulldown-cable-machine` — `assets/exercises/pending/agent-03-single-generator-next30-2026-10-03/generator-single/agent-03-others-032/straight-arm-lat-pulldown-cable-machine/attempt-1.png`; SHA256 `f7e3abf007d344f03c5bd3772fb998b4ade6a4924fcc3482aea32ec6573bebe9`; `user_review=pending`; technical `passed`.
+- `reverse-grip-lat-pulldown-cable-machine` — failed; error `image generation failed: http 429 Too Many Requests: Some("{\"error\":{\"type\":\"usage_limit_reached\",\"message\":\"The usage limit has been reached\",\"plan_type\":\"plus\",\"resets_at\":1791026557,\"eligible_promo\":null,\"limit_window_minutes\":null,\"resets_in_seconds\":10831}}")`.
+- `low-cable-fly-crossovers-machine` — `assets/exercises/pending/agent-03-single-generator-next30-2026-10-03/generator-single/agent-03-others-032/low-cable-fly-crossovers-machine/attempt-1.png`; SHA256 `e3a03f5996550878f7dbdf5deb66531fbac4ed6be7377dbdecbcf74038274043`; `user_review=pending`; technical `passed`.
+- `seated-cable-row-bar-grip-machine` — `assets/exercises/pending/agent-03-single-generator-next30-2026-10-03/generator-single/agent-03-others-032/seated-cable-row-bar-grip-machine/attempt-1.png`; SHA256 `d74c3a9b6ce5d8b38445a3b1b21815526164c3577e834164be8d68d22ba20e1f`; `user_review=pending`; technical `passed`.
+- `seated-cable-row-bar-wide-grip-machine` — `assets/exercises/pending/agent-03-single-generator-next30-2026-10-03/generator-single/agent-03-others-032/seated-cable-row-bar-wide-grip-machine/attempt-1.png`; SHA256 `403cb208fc024bdc6b80ba755da53493802bfff342ff1e64114d8fd4adb8b0a4`; `user_review=pending`; technical `passed`.
+- `face-pull-machine` — `assets/exercises/pending/agent-03-single-generator-next30-2026-10-03/generator-single/agent-03-others-032/face-pull-machine/attempt-1.png`; SHA256 `c410d1065cfda9b72d6513c8321db9d2081f054033743e993882f149f5345fb6`; `user_review=pending`; technical `passed`.
+- `standing-y-raise-cable-machine` — `assets/exercises/pending/agent-03-single-generator-next30-2026-10-03/generator-single/agent-03-others-032/standing-y-raise-cable-machine/attempt-1.png`; SHA256 `289a59c79511fdac21df157869f9226c9587ce60b47b16d6f095b807a3e3f9b9`; `user_review=pending`; technical `passed`.
+- `cable-core-pallof-press-machine` — `assets/exercises/pending/agent-03-single-generator-next30-2026-10-03/generator-single/agent-03-others-032/cable-core-pallof-press-machine/attempt-1.png`; SHA256 `e02f909e1caf42fbd65ce1544a13332948a8ae01e79e366e74150350177cc15f`; `user_review=pending`; technical `passed`.
+- `cable-pull-through-machine` — `assets/exercises/pending/agent-03-single-generator-next30-2026-10-03/generator-single/agent-03-others-032/cable-pull-through-machine/attempt-1.png`; SHA256 `3a9e47fa2071a1be4eee04b4d08eb9415a18ee6f509716b652a989b868b4fe08`; `user_review=pending`; technical `passed`.
+- `single-arm-cable-crossover-machine` — `assets/exercises/pending/agent-03-single-generator-next30-2026-10-03/generator-single/agent-03-others-032/single-arm-cable-crossover-machine/attempt-1.png`; SHA256 `5c671255162456875a317338a94ca72c8a66fadced45ecc518b5ad8643420b75`; `user_review=pending`; technical `passed`.
