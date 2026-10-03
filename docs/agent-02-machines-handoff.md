@@ -117,3 +117,8 @@
 ## User review update — 2026-10-03T16:46:16+00:00
 
 The user explicitly approved `hip-adduction-machine` attempt-1. Its `user_review` and exercise status are now `approved`; the accepted Git path and SHA256 are recorded in the batch manifest and progress. The image bytes are unchanged. Other images remain pending until individually reviewed.
+
+
+## User review update — 2026-10-03T17:44:47+00:00
+
+The user explicitly approved `lat-pulldown-cable-machine` attempt-2, generated to match the supplied exercise reference. The accepted PNG path and SHA256 are recorded in the batch manifest and progress; attempt-1 remains in Git and in the attempt history. Attempt-2 was added without replacing any file. Other generated images remain pending until individually reviewed.
