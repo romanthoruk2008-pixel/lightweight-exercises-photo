@@ -20299,14 +20299,14 @@
         "exists_at_preparation": true,
         "sha256": "653cec4353233e744d6d0e6a9ba4f2408a45eb151aa94de3d42d240c9e720abb"
       },
-      "status": "not_started",
-      "included_in_generation": false,
+      "status": "approved",
+      "included_in_generation": true,
       "archived_inclusion_authorized": false,
       "blocked_by": [
         "pilot_not_approved"
       ],
-      "attempts": 0,
-      "style_version": null,
+      "attempts": 2,
+      "style_version": "v1",
       "visual_review": {
         "status": "not_reviewed",
         "reviewer": null,
@@ -20319,17 +20319,74 @@
         },
         "notes": null
       },
-      "result_path": null,
+      "result_path": "assets/exercises/pending/agent-02-machines-001/pullover-machine/attempt-2.png",
       "supabase_path": null,
       "supabase_upload_status": "not_configured",
       "last_error": null,
-      "attempt_history": [],
-      "result_sha256": null,
-      "technical_check": null,
-      "technical_check_details": null,
+      "attempt_history": [
+        {
+          "attempt": 1,
+          "id": "pullover-machine",
+          "batch_id": "agent-02-machines-001",
+          "style_version": "v1",
+          "tool": "image_gen.imagegen",
+          "prompt": "Create one exercise illustration in the current Lightweight style v1, target 1024 x 1024 square PNG with a genuinely transparent background. Use the provided user-approved new pilot reference only for the same human identity, proportions, opaque materials and anatomical detail: one athletic hairless male anatomical figure, opaque silver-gray muscle surfaces, plain black shorts, barefoot. Preserve the reference appearance and colors; do not copy its pose, dumbbells, muscle highlights or composition. Show exactly one person in exactly one movement phase; no ghost limbs, phase sequence, arrows or collage. Neutral non-accented functional gym equipment with no invented brand, model, logo or guessed model-specific features. Do not recolor the equipment with muscle-highlight colors. Depict Pullover (Machine) (source exercise_id: pullover-machine) using a seated handle-based shoulder-extension pullover machine. Torso: Seated with back against the pad and core engaged; trunk remains braced rather than arching or hinging. Arms: Both arms retain a soft elbow bend as the handles travel from overhead toward the chest by shoulder extension; wrists aligned. Legs: Feet rest on the floor in front of the seat for neutral seated stability, clear of the moving lever. Grip: Overhand grip on both pullover machine handles. Required support contacts: pelvis on seat; back against pad; hands on moving handles; feet on floor. Equipment: seat and back support pad; two overhand handles on a connected pullover lever; shoulder-compatible overhead pivot path; stable resistance frame. Functional mechanics: Use the described handle-based leverage machine, with a continuous shoulder-extension lever from overhead toward the chest. Do not add elbow-drive pads, a cable rope or independent loose handles. Back support and full base stay visible. Show only this phase: Controlled contraction pause as the handles reach toward chest level; elbows keep the same soft bend rather than performing a curl or press. Camera: Side-back three-quarter view showing lat surfaces, supported torso and overhead-to-chest lever arc; both handle connections remain visible. Highlight only catalog primary muscle group lats with the exact base hue #F26445. Highlight catalog secondary groups upper_back, chest, triceps with the same hue at approximately 40-50% intensity. Keep every other muscle silver-gray and opaque, without glow, transparency or an overall orange tint. Keep the full person and all necessary equipment parts, supports, moving levers and relevant cable routing inside the square with clear margins. Reduce scene scale or adjust the camera to fit, never crop or distort body or machine proportions. Keep anatomical joints aligned with the working machine path and all hand, foot and pad contacts physically plausible. No floating handles, disconnected moving arms, cable intersections through the body, text, frame, UI, room decor, white backdrop or checkerboard. The transparent background must contain actual zero-alpha pixels. Use the exact attached English source for technique and safety; do not add a new exercise variant, load, angle or equipment accessory.",
+          "started_at": "2026-10-01T11:46:01.615024+00:00",
+          "finished_at": "2026-10-01T11:47:28.388142+00:00",
+          "status": "superseded",
+          "result_path": "assets/exercises/pending/agent-02-machines-001/pullover-machine/attempt-1.png",
+          "result_sha256": "27c3a2a9c7f2982efb6374f78d5561e953d5bb469705a2345848f5c6420db3d4",
+          "width": 1254,
+          "height": 1254,
+          "mode": "RGBA",
+          "zero_alpha_pixels": 864219,
+          "technical_check": "passed",
+          "technical_check_details": [],
+          "user_review": "pending",
+          "agent_visual_review": "not_performed",
+          "superseded_by_attempt": 2
+        },
+        {
+          "attempt": 2,
+          "id": "pullover-machine",
+          "batch_id": "agent-02-machines-001",
+          "style_version": "v1",
+          "tool": "image_gen.imagegen",
+          "prompt": "Create exactly ONE square 1024x1024 transparent PNG for the exact exercise_id \"pullover-machine\". Show one adult male anatomical model in one phase only. Do not put any words, UI, or metadata in the image.\n\nUse both attached images with separate roles:\n1. The approved silver-gray anatomical man holding dumbbells is the human/style reference ONLY. Preserve that same adult male identity, bald head, proportions, opaque silver-gray anatomical material and detail, black shorts, and barefoot appearance. Do not copy his pose, dumbbells, or muscle highlights.\n2. The phone screenshot titled \"Pullover (Machine)\" is the exercise pose, equipment, and composition reference. Match its reclined seated position and compact leverage-machine setup. Exclude every phone control, icon, text, chart, white screen, border, and watermark.\n\nUse Lightweight style v1. Depict a pullover machine with a stable base, angled seat and backrest supporting the pelvis, trunk, and head, plus one coherent connected overhead leverage assembly that rotates toward the chest. Match the screenshot's reclined posture: torso resting against the back pad, hips on the seat, knees bent, both feet planted on the floor. Both hands hold the paired machine handles in a symmetrical overhand grip. Keep both arms softly bent at the elbows throughout; hands and handles are at upper-chest level at the controlled peak contraction. Show shoulder extension bringing the handles down from overhead toward the chest; do not show a row, curl, or press. Keep the torso braced against the pad and shoulders aligned naturally. Make the seat/back support, lever pivots, paired handles, complete moving assembly, and full stable frame physically connected and clearly visible. No invented elbow pads, cable rope, disconnected handles, or unsupported machine pieces. All hand, back, pelvis, and foot contacts must be clear and plausible.\n\nExact catalog source for \"pullover-machine\":\ndescription: \"Pullover (Machine) moves the resistance from overhead toward the chest using a controlled shoulder-extension path.\"\ninstructions: \"Adjust the seat and handles of the leverage machine to a comfortable position. Sit on the machine with your back against the pad and grasp the handles with an overhand grip. Keep your arms slightly bent and your core engaged. Slowly pull the handles towards your chest, squeezing your lats. Pause for a moment at the peak contraction, then slowly return to the starting position. Repeat for the desired number of repetitions.\"\nform_cues: \"Keep the trunk braced. Keep the elbows softly bent while the resistance travels from overhead toward the chest. Finish each repetition under control.\"\ncommon_mistakes: \"Using momentum. Losing the starting posture. Rushing the return.\"\nequipment: machine. primary_muscle: lats. secondary_muscles: upper_back, chest, triceps.\nsafety_note: \"Use a comfortable range and stop if control or alignment deteriorates.\"\n\nHighlight only the primary lats with exact #F26445. Highlight only listed secondary groups upper_back, chest, and triceps with that same hue at 40-50% intensity. All other muscles stay opaque silver-gray. Do not copy highlights from either reference. No glow, overall orange tint, transparency in the body, or recolored machine. Use a side-front three-quarter camera angle close to the screenshot, with the supported body and overhead-to-chest lever path readable. Fit the complete person and necessary machine inside the square with clear margins; no cropping or stretching. Keep the neck and head aligned naturally with the torso. Genuine transparent background with zero-alpha pixels; no white backdrop or checkerboard.",
+          "status": "completed",
+          "result_path": "assets/exercises/pending/agent-02-machines-001/pullover-machine/attempt-2.png",
+          "result_sha256": "3dfbd461a3bb7c6dffca664103ed845d534ae4379029e2ca97fb9d7f11109498",
+          "width": 1254,
+          "height": 1254,
+          "mode": "RGBA",
+          "zero_alpha_pixels": 928071,
+          "technical_check": "passed",
+          "technical_check_details": [],
+          "user_review": "approved",
+          "agent_visual_review": "not_performed",
+          "reference_sha256": "52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f",
+          "approved_at": "2026-10-03T19:04:27+00:00"
+        }
+      ],
+      "result_sha256": "3dfbd461a3bb7c6dffca664103ed845d534ae4379029e2ca97fb9d7f11109498",
+      "technical_check": "passed",
+      "technical_check_details": [],
       "agent_visual_review": "not_performed",
       "agent_visual_review_notes": [],
-      "user_review": "pending"
+      "user_review": "approved",
+      "accepted_path": "assets/exercises/pending/agent-02-machines-001/pullover-machine/attempt-2.png",
+      "accepted_sha256": "3dfbd461a3bb7c6dffca664103ed845d534ae4379029e2ca97fb9d7f11109498",
+      "accepted_at": "2026-10-03T19:04:27+00:00",
+      "user_reviewed_at": "2026-10-03T19:04:27+00:00",
+      "user_review_record": {
+        "decision": "approved",
+        "reviewed_by": "user",
+        "approved_at": "2026-10-03T19:04:27+00:00",
+        "exercise_id": "pullover-machine",
+        "accepted_path": "assets/exercises/pending/agent-02-machines-001/pullover-machine/attempt-2.png",
+        "accepted_sha256": "3dfbd461a3bb7c6dffca664103ed845d534ae4379029e2ca97fb9d7f11109498",
+        "note": "User explicitly confirmed Pullover (Machine) attempt-2 is suitable and approved it in chat."
+      }
     },
     "push-press-barbell": {
       "id": "push-press-barbell",
@@ -33164,5 +33221,5 @@
       "verification_method": "git fetch + ls-remote + ls-tree + SHA256 of every fetched PNG blob"
     }
   ],
-  "last_user_review_update": "2026-10-03T18:49:40+00:00"
+  "last_user_review_update": "2026-10-03T19:04:27+00:00"
 }
