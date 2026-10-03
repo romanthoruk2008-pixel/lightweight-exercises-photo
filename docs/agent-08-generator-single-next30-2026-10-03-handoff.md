@@ -16,7 +16,7 @@
 
 - Status: `completed` at 2026-10-03T08:19:42.367923+00:00.
 - Calls recorded: 10; skips: 0.
-- Remote verification: pending until push.
+- Remote verification: PNG and manifest SHA256 values matched origin branch at commit 5ada12857c264cab129ef16bfa9ffa277405f7d3.
 
 - `standing-calf-raise-machine` — `assets/exercises/pending/agent-03-single-generator-next30-2026-10-03/generator-single/agent-03-others-031/standing-calf-raise-machine/attempt-1.png`; SHA256 `f660e5d6536f482b0ad35e32730663b79051f447c855529edd1efecd12507c69`; `user_review=pending`; technical `passed`.
 - `lat-pulldown-machine` — `assets/exercises/pending/agent-03-single-generator-next30-2026-10-03/generator-single/agent-03-others-031/lat-pulldown-machine/attempt-1.png`; SHA256 `e587578379e0ad4d31b8a5715a2517a1d065401315b09b1abb253d50dda9d06f`; `user_review=pending`; technical `passed`.
