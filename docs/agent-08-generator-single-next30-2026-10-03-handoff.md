@@ -52,7 +52,7 @@
 
 - Status: `completed` at 2026-10-03T11:54:47.139228+00:00.
 - Calls recorded: 10; skips: 0.
-- Remote verification: pending until push.
+- Remote verification: PNG and manifest SHA256 values matched origin branch at commit bb5c264b2c2a06deb207a2fc15d96f3b63bf6e42.
 
 - `seated-chest-flys-cable-machine` — `assets/exercises/pending/agent-03-single-generator-next30-2026-10-03/generator-single/agent-03-others-033/seated-chest-flys-cable-machine/attempt-1.png`; SHA256 `ad6a00426176fd3d5d325dbb992faf6727fb694268f9b60e46e4e5e6488f272b`; `user_review=pending`; technical `passed`.
 - `bench-press-smith-machine` — `assets/exercises/pending/agent-03-single-generator-next30-2026-10-03/generator-single/agent-03-others-033/bench-press-smith-machine/attempt-1.png`; SHA256 `e695d5786ea1e68779d4d5479dad99b9e04093de992a401c2a50f1aca8927e9f`; `user_review=pending`; technical `passed`.
