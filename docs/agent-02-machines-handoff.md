@@ -146,3 +146,8 @@ The user explicitly approved `pullover-machine` attempt-2. The approved PNG and 
 ## User review update — 2026-10-03T19:09:33+00:00
 
 The user explicitly approved `seated-cable-row-v-grip-cable-machine` attempt-1. Its unchanged PNG path and SHA256 are recorded as accepted in the batch manifest and exercise progress. Other generated images remain pending until reviewed.
+
+
+## User review update — 2026-10-03T19:16:19+00:00
+
+The user explicitly approved `triceps-rope-pushdown-machine` attempt-2. The approved PNG and its SHA256 are recorded in the batch manifest and exercise progress. Attempt-1 remains preserved in Git and in the attempt history; attempt-2 was added as a new file. Other generated images remain pending until reviewed.
