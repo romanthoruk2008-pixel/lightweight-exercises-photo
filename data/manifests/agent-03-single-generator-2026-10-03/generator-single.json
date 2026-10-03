@@ -2127,173 +2127,1035 @@
     {
       "batch_id": "agent-03-others-030",
       "batch_path": "data/batches/agent-03-others-030.json",
-      "status": "ready",
+      "status": "completed_with_errors",
       "exercise_count": 10,
       "exercises": [
         {
           "exercise_id": "standing-leg-curls-machine",
           "name": "Standing Leg Curls",
-          "status": "not_started",
-          "attempts": 0,
-          "attempt_history": [],
-          "user_review": null,
-          "technical_check": null,
+          "status": "generated",
+          "attempts": 1,
+          "attempt_history": [
+            {
+              "attempt_number": 1,
+              "recorded_at": "2026-10-03T00:05:47.244422+00:00",
+              "generation_tool": "image_gen.imagegen",
+              "call_status": "success",
+              "generation_prompt": "Create exactly ONE square 1024x1024 transparent PNG of this exact exercise and ONE selected phase. Metadata must never appear as image text.\n{\n  \"approved_style_files\": [\n    {\n      \"path\": \"docs/exercise-image-style.md\",\n      \"sha256\": \"8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578\"\n    }\n  ],\n  \"exact_catalogue_source\": {\n    \"equipment\": \"machine\",\n    \"primary_muscle\": \"hamstrings\",\n    \"secondary_muscles\": [\n      \"calves\"\n    ],\n    \"source_english\": {\n      \"common_mistakes\": [\n        \"Extending the hip to swing the lever.\",\n        \"Arching the back.\",\n        \"Dropping the weight stack.\"\n      ],\n      \"description\": \"A standing leg curl on a machine bends one knee against a padded lever while the thigh stays vertical.\",\n      \"form_cues\": [\n        \"Keep the thigh still.\",\n        \"Point the knee toward the floor.\",\n        \"Control the return.\"\n      ],\n      \"instructions\": [\n        \"Adjust the machine pad behind one ankle and hold the support handles upright.\",\n        \"Keep the working thigh against the pad and bend the knee to draw the heel toward the glute.\",\n        \"Pause at the top without moving the hip.\",\n        \"Lower the lever slowly, complete the side, and switch legs.\"\n      ],\n      \"provenance\": \"authored\",\n      \"safety_note\": \"Use a load that lets the knee move smoothly without the pelvis rotating.\"\n    }\n  },\n  \"human_reference\": {\n    \"absolute_path\": \"/workspace/lightweight-exercises-photo/assets/exercises/biceps-curl-dumbbell.png\",\n    \"branch\": \"work\",\n    \"pixels_reviewed_during_preparation\": false,\n    \"repository_path\": \"assets/exercises/biceps-curl-dumbbell.png\",\n    \"role\": \"Human appearance/proportions/materials/anatomical style ONLY. Exercise pose, grip, equipment and muscles come from the exact-ID catalogue, never the reference.\",\n    \"sha256\": \"52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f\",\n    \"source_commit\": \"b0385b7e2f3382d545a6dff5304c81ba3c771096\"\n  },\n  \"identity_do_not_render_as_text\": {\n    \"catalog_record_sha256\": \"79b69b0311bec1a7bd6e785baee4898739ae65ae4fb103ea8ed96ed15faa1714\",\n    \"catalog_sha256\": \"a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989\",\n    \"exercise_id\": \"standing-leg-curls-machine\",\n    \"name\": \"Standing Leg Curls\"\n  },\n  \"selected_render_scene\": {\n    \"camera\": \"Full-body front-side three-quarter view exposing every prescribed contact, grip and support. Entire person and all equipment visible within square; no crop, text, arrows or second phase.\",\n    \"exercise_id\": \"standing-leg-curls-machine\",\n    \"grip\": \"Both hands hold fixed upright support handles.\",\n    \"movement_trajectory\": \"Right knee flexion moves posterior ankle pad toward glute; right thigh and pelvis stay still; return without hip extension.\",\n    \"never_infer_muscles_from_pose_or_reference\": true,\n    \"one_phase_only\": true,\n    \"pose\": \"Standing upright with left foot supporting body, right thigh vertical and against stationary thigh pad, right knee bent; hips still and back neutral.\",\n    \"single_phase\": \"Right heel drawn toward glute\",\n    \"supports_and_equipment\": \"Standing leg-curl station with stationary working-thigh pad and moving padded lever behind right ankle; opposite foot on floor, both hands supported. Compatible stack resistance per catalogue common mistake.\"\n  },\n  \"source_use_rule\": \"Preserve raw source texts verbatim; render only selected scene and documented exact-source/user resolution. Do not silently repair the catalogue.\",\n  \"style\": {\n    \"background\": \"Genuinely transparent PNG background, no white/checkerboard layer, no environment scene.\",\n    \"framing\": \"Full figure and all required equipment/supports visible within a square. Scale and use a three-quarter view to expose the specified contacts without changing anatomy, equipment, grip or technique.\",\n    \"human_model\": \"One athletic bald male anatomical mannequin, opaque silver-gray muscular surfaces, consistent proportions and detailed 3D materials, plain black shorts, barefoot.\",\n    \"material_rules\": \"Highlights never make tissue transparent; no glow, whole-body orange tint, hair, text, labels, arrows, UI, borders, collage or extra person.\",\n    \"no_invention\": \"Exact-ID catalogue controls source text and muscles. Render documented selected scene; recorded source corrections apply to the derived scene only. No reference-pose copying or imported muscle targets.\",\n    \"output\": {\n      \"format\": \"PNG\",\n      \"height\": 1024,\n      \"one_person\": true,\n      \"one_phase\": true,\n      \"width\": 1024\n    },\n    \"primary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"rule\": \"Highlight only the exact primary muscle group provided for this exercise.\"\n    },\n    \"secondary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"intensity_fraction\": [\n        0.4,\n        0.5\n      ],\n      \"rule\": \"Only the exact secondary muscles, lighter same-hue highlight; if the list is empty add no secondary target.\"\n    },\n    \"version\": \"v1\"\n  },\n  \"technique_resolution\": {\n    \"PNG_approval\": false,\n    \"binding_or_name_alone_is_not_confirmation\": true,\n    \"catalog_modified\": false,\n    \"construction_rule\": \"Standard compatible unbranded geometry allowed by AGENTS.md; choose geometry only around specified contacts/motion. Category machine does not establish a load mechanism, brand, angle or weight count.\",\n    \"dataset_instruction_steps_read\": null,\n    \"decision_kind\": \"exact_ID_written_technique_confirmation\",\n    \"evidence_path\": \"data/audits/agent-03-single-generator-2026-10-03-technique.json\",\n    \"evidence_selector\": \"records[exercise_id=\\\"standing-leg-curls-machine\\\"]\",\n    \"illustration_choices\": \"Side/phase and compatible layout are scene choices, not amendments to source technique. Do not infer muscle targets from scene or equipment.\",\n    \"status\": \"resolved\",\n    \"technique_fields_read\": [\n      \"content.en.description\",\n      \"content.en.instructions\",\n      \"content.en.form_cues\",\n      \"content.en.common_mistakes\",\n      \"content.en.safety_note\",\n      \"content.pl.instructions\",\n      \"source.dataset_id\"\n    ]\n  }\n}",
+              "prompt_sha256": "ce5e35b37d83600ee0d9fe771581cf4aab828701a65580b5a9fe92f561219935",
+              "style_version": "v1",
+              "style_files": {
+                "docs/exercise-image-style.md": "8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578"
+              },
+              "reference_path": "assets/exercises/biceps-curl-dumbbell.png",
+              "reference_sha256": "52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f",
+              "catalog_path": "data/exercises/catalog.json",
+              "catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+              "catalog_record_sha256": "79b69b0311bec1a7bd6e785baee4898739ae65ae4fb103ea8ed96ed15faa1714",
+              "source_generated_file": "/workspace/generated_images/exec-062f5f74-88ca-40e4-99c8-aa358c8fce9c.png",
+              "source_generated_sha256": "d2105e8f159261e8185c76d4db0c94af1e04d9f9eb7361d03a32b8c1e068e375",
+              "source_generated_dimensions": [
+                1254,
+                1254
+              ],
+              "normalization": {
+                "method": "Pillow LANCZOS resize to 1024x1024 with RGBA alpha preserved",
+                "applied": true
+              },
+              "result_path": "/workspace/exercise-image-results/agent-03-single-generator-2026-10-03/generator-single/agent-03-others-030/standing-leg-curls-machine/attempt-1.png",
+              "git_result_path": "assets/exercises/pending/agent-03-single-generator-2026-10-03/generator-single/agent-03-others-030/standing-leg-curls-machine/attempt-1.png",
+              "result_sha256": "8d09a9c8990dd51254709497be2db63d2e60363dd21a89dee2a05e2bdc60f465",
+              "technical_check": {
+                "status": "passed",
+                "format": "PNG",
+                "width": 1024,
+                "height": 1024,
+                "mode": "RGBA",
+                "has_alpha_channel": true,
+                "alpha_min": 0,
+                "alpha_max": 255,
+                "transparent_pixel_present": true,
+                "square": true,
+                "errors": [],
+                "sha256": "8d09a9c8990dd51254709497be2db63d2e60363dd21a89dee2a05e2bdc60f465",
+                "byte_size": 694620,
+                "source_generated_sha256": "d2105e8f159261e8185c76d4db0c94af1e04d9f9eb7361d03a32b8c1e068e375",
+                "source_generated_dimensions": [
+                  1254,
+                  1254
+                ],
+                "normalization": {
+                  "method": "Pillow LANCZOS resize to 1024x1024 with RGBA alpha preserved",
+                  "applied": true
+                }
+              },
+              "errors": []
+            }
+          ],
+          "user_review": "pending",
+          "technical_check": {
+            "status": "passed",
+            "format": "PNG",
+            "width": 1024,
+            "height": 1024,
+            "mode": "RGBA",
+            "has_alpha_channel": true,
+            "alpha_min": 0,
+            "alpha_max": 255,
+            "transparent_pixel_present": true,
+            "square": true,
+            "errors": [],
+            "sha256": "8d09a9c8990dd51254709497be2db63d2e60363dd21a89dee2a05e2bdc60f465",
+            "byte_size": 694620,
+            "source_generated_sha256": "d2105e8f159261e8185c76d4db0c94af1e04d9f9eb7361d03a32b8c1e068e375",
+            "source_generated_dimensions": [
+              1254,
+              1254
+            ],
+            "normalization": {
+              "method": "Pillow LANCZOS resize to 1024x1024 with RGBA alpha preserved",
+              "applied": true
+            }
+          },
           "agent_visual_review": "not_performed",
-          "result_path": null,
+          "result_path": "/workspace/exercise-image-results/agent-03-single-generator-2026-10-03/generator-single/agent-03-others-030/standing-leg-curls-machine/attempt-1.png",
           "planned_png_path": "/workspace/exercise-image-results/agent-03-single-generator-2026-10-03/generator-single/agent-03-others-030/standing-leg-curls-machine/attempt-1.png",
           "planned_git_png_path": "assets/exercises/pending/agent-03-single-generator-2026-10-03/generator-single/agent-03-others-030/standing-leg-curls-machine/attempt-1.png",
           "source_catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
           "style_version": "v1",
-          "prompt_sha256": "ce5e35b37d83600ee0d9fe771581cf4aab828701a65580b5a9fe92f561219935"
+          "prompt_sha256": "ce5e35b37d83600ee0d9fe771581cf4aab828701a65580b5a9fe92f561219935",
+          "result_sha256": "8d09a9c8990dd51254709497be2db63d2e60363dd21a89dee2a05e2bdc60f465",
+          "generation_prompt": "Create exactly ONE square 1024x1024 transparent PNG of this exact exercise and ONE selected phase. Metadata must never appear as image text.\n{\n  \"approved_style_files\": [\n    {\n      \"path\": \"docs/exercise-image-style.md\",\n      \"sha256\": \"8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578\"\n    }\n  ],\n  \"exact_catalogue_source\": {\n    \"equipment\": \"machine\",\n    \"primary_muscle\": \"hamstrings\",\n    \"secondary_muscles\": [\n      \"calves\"\n    ],\n    \"source_english\": {\n      \"common_mistakes\": [\n        \"Extending the hip to swing the lever.\",\n        \"Arching the back.\",\n        \"Dropping the weight stack.\"\n      ],\n      \"description\": \"A standing leg curl on a machine bends one knee against a padded lever while the thigh stays vertical.\",\n      \"form_cues\": [\n        \"Keep the thigh still.\",\n        \"Point the knee toward the floor.\",\n        \"Control the return.\"\n      ],\n      \"instructions\": [\n        \"Adjust the machine pad behind one ankle and hold the support handles upright.\",\n        \"Keep the working thigh against the pad and bend the knee to draw the heel toward the glute.\",\n        \"Pause at the top without moving the hip.\",\n        \"Lower the lever slowly, complete the side, and switch legs.\"\n      ],\n      \"provenance\": \"authored\",\n      \"safety_note\": \"Use a load that lets the knee move smoothly without the pelvis rotating.\"\n    }\n  },\n  \"human_reference\": {\n    \"absolute_path\": \"/workspace/lightweight-exercises-photo/assets/exercises/biceps-curl-dumbbell.png\",\n    \"branch\": \"work\",\n    \"pixels_reviewed_during_preparation\": false,\n    \"repository_path\": \"assets/exercises/biceps-curl-dumbbell.png\",\n    \"role\": \"Human appearance/proportions/materials/anatomical style ONLY. Exercise pose, grip, equipment and muscles come from the exact-ID catalogue, never the reference.\",\n    \"sha256\": \"52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f\",\n    \"source_commit\": \"b0385b7e2f3382d545a6dff5304c81ba3c771096\"\n  },\n  \"identity_do_not_render_as_text\": {\n    \"catalog_record_sha256\": \"79b69b0311bec1a7bd6e785baee4898739ae65ae4fb103ea8ed96ed15faa1714\",\n    \"catalog_sha256\": \"a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989\",\n    \"exercise_id\": \"standing-leg-curls-machine\",\n    \"name\": \"Standing Leg Curls\"\n  },\n  \"selected_render_scene\": {\n    \"camera\": \"Full-body front-side three-quarter view exposing every prescribed contact, grip and support. Entire person and all equipment visible within square; no crop, text, arrows or second phase.\",\n    \"exercise_id\": \"standing-leg-curls-machine\",\n    \"grip\": \"Both hands hold fixed upright support handles.\",\n    \"movement_trajectory\": \"Right knee flexion moves posterior ankle pad toward glute; right thigh and pelvis stay still; return without hip extension.\",\n    \"never_infer_muscles_from_pose_or_reference\": true,\n    \"one_phase_only\": true,\n    \"pose\": \"Standing upright with left foot supporting body, right thigh vertical and against stationary thigh pad, right knee bent; hips still and back neutral.\",\n    \"single_phase\": \"Right heel drawn toward glute\",\n    \"supports_and_equipment\": \"Standing leg-curl station with stationary working-thigh pad and moving padded lever behind right ankle; opposite foot on floor, both hands supported. Compatible stack resistance per catalogue common mistake.\"\n  },\n  \"source_use_rule\": \"Preserve raw source texts verbatim; render only selected scene and documented exact-source/user resolution. Do not silently repair the catalogue.\",\n  \"style\": {\n    \"background\": \"Genuinely transparent PNG background, no white/checkerboard layer, no environment scene.\",\n    \"framing\": \"Full figure and all required equipment/supports visible within a square. Scale and use a three-quarter view to expose the specified contacts without changing anatomy, equipment, grip or technique.\",\n    \"human_model\": \"One athletic bald male anatomical mannequin, opaque silver-gray muscular surfaces, consistent proportions and detailed 3D materials, plain black shorts, barefoot.\",\n    \"material_rules\": \"Highlights never make tissue transparent; no glow, whole-body orange tint, hair, text, labels, arrows, UI, borders, collage or extra person.\",\n    \"no_invention\": \"Exact-ID catalogue controls source text and muscles. Render documented selected scene; recorded source corrections apply to the derived scene only. No reference-pose copying or imported muscle targets.\",\n    \"output\": {\n      \"format\": \"PNG\",\n      \"height\": 1024,\n      \"one_person\": true,\n      \"one_phase\": true,\n      \"width\": 1024\n    },\n    \"primary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"rule\": \"Highlight only the exact primary muscle group provided for this exercise.\"\n    },\n    \"secondary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"intensity_fraction\": [\n        0.4,\n        0.5\n      ],\n      \"rule\": \"Only the exact secondary muscles, lighter same-hue highlight; if the list is empty add no secondary target.\"\n    },\n    \"version\": \"v1\"\n  },\n  \"technique_resolution\": {\n    \"PNG_approval\": false,\n    \"binding_or_name_alone_is_not_confirmation\": true,\n    \"catalog_modified\": false,\n    \"construction_rule\": \"Standard compatible unbranded geometry allowed by AGENTS.md; choose geometry only around specified contacts/motion. Category machine does not establish a load mechanism, brand, angle or weight count.\",\n    \"dataset_instruction_steps_read\": null,\n    \"decision_kind\": \"exact_ID_written_technique_confirmation\",\n    \"evidence_path\": \"data/audits/agent-03-single-generator-2026-10-03-technique.json\",\n    \"evidence_selector\": \"records[exercise_id=\\\"standing-leg-curls-machine\\\"]\",\n    \"illustration_choices\": \"Side/phase and compatible layout are scene choices, not amendments to source technique. Do not infer muscle targets from scene or equipment.\",\n    \"status\": \"resolved\",\n    \"technique_fields_read\": [\n      \"content.en.description\",\n      \"content.en.instructions\",\n      \"content.en.form_cues\",\n      \"content.en.common_mistakes\",\n      \"content.en.safety_note\",\n      \"content.pl.instructions\",\n      \"source.dataset_id\"\n    ]\n  }\n}",
+          "style_file_hashes": {
+            "docs/exercise-image-style.md": "8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578"
+          },
+          "reference_path": "assets/exercises/biceps-curl-dumbbell.png",
+          "reference_sha256": "52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f",
+          "source_catalog_record_sha256": "79b69b0311bec1a7bd6e785baee4898739ae65ae4fb103ea8ed96ed15faa1714",
+          "technical_status": "passed",
+          "errors": []
         },
         {
           "exercise_id": "chest-press-machine",
           "name": "Chest Press (Machine)",
-          "status": "not_started",
-          "attempts": 0,
-          "attempt_history": [],
-          "user_review": null,
-          "technical_check": null,
+          "status": "generated",
+          "attempts": 1,
+          "attempt_history": [
+            {
+              "attempt_number": 1,
+              "recorded_at": "2026-10-03T00:07:57.849437+00:00",
+              "generation_tool": "image_gen.imagegen",
+              "call_status": "success",
+              "generation_prompt": "Create exactly ONE square 1024x1024 transparent PNG of this exact exercise and ONE selected phase. Metadata must never appear as image text.\n{\n  \"approved_style_files\": [\n    {\n      \"path\": \"docs/exercise-image-style.md\",\n      \"sha256\": \"8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578\"\n    }\n  ],\n  \"exact_catalogue_source\": {\n    \"equipment\": \"machine\",\n    \"primary_muscle\": \"chest\",\n    \"secondary_muscles\": [\n      \"shoulders\",\n      \"triceps\"\n    ],\n    \"source_english\": {\n      \"common_mistakes\": [\n        \"Bouncing at the bottom.\",\n        \"Flaring the elbows.\",\n        \"Arching to shorten the range.\"\n      ],\n      \"description\": \"Chest Press (Machine) is a supported chest press using the barbell.\",\n      \"form_cues\": [\n        \"Keep wrists stacked.\",\n        \"Keep shoulder blades supported.\",\n        \"Press evenly.\"\n      ],\n      \"instructions\": [\n        \"Lie on a flat bench with feet planted. Grip the barbell and hold it over the chest.\",\n        \"Lower the resistance toward the chest with elbows controlled.\",\n        \"Pause without bouncing or losing shoulder position.\",\n        \"Press back to straight arms, then rerack or set the weights down safely.\"\n      ],\n      \"provenance\": \"adapted\",\n      \"safety_note\": \"Use a spotter or safeties for the loaded press and stop before shoulder control is lost.\"\n    }\n  },\n  \"human_reference\": {\n    \"absolute_path\": \"/workspace/lightweight-exercises-photo/assets/exercises/biceps-curl-dumbbell.png\",\n    \"branch\": \"work\",\n    \"pixels_reviewed_during_preparation\": false,\n    \"repository_path\": \"assets/exercises/biceps-curl-dumbbell.png\",\n    \"role\": \"Human appearance/proportions/materials/anatomical style ONLY. Exercise pose, grip, equipment and muscles come from the exact-ID catalogue, never the reference.\",\n    \"sha256\": \"52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f\",\n    \"source_commit\": \"b0385b7e2f3382d545a6dff5304c81ba3c771096\"\n  },\n  \"identity_do_not_render_as_text\": {\n    \"catalog_record_sha256\": \"cc27f00a90ab2b658b5d64b17050df7f3fff4fac474dadebbc36830eed8bd5b6\",\n    \"catalog_sha256\": \"a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989\",\n    \"exercise_id\": \"chest-press-machine\",\n    \"name\": \"Chest Press (Machine)\"\n  },\n  \"selected_render_scene\": {\n    \"camera\": \"Full-body front-side three-quarter view exposing every prescribed contact, grip and support. Entire person and all equipment visible within square; no crop, text, arrows or second phase.\",\n    \"exercise_id\": \"chest-press-machine\",\n    \"grip\": \"Overhand paired handles, elbows initially about 90 degrees; this grip is confirmed by the exact dataset 0576.\",\n    \"movement_trajectory\": \"Press handles forward from beside chest, return under control; no free-bar rerack.\",\n    \"never_infer_muscles_from_pose_or_reference\": true,\n    \"one_phase_only\": true,\n    \"pose\": \"Seated with back against pad and feet planted, wrists stacked; handles travel forward away from chest, elbows almost straight and soft.\",\n    \"single_phase\": \"Seated lever press near extension\",\n    \"supports_and_equipment\": \"User-selected SEATED LEVER machine, seat, back pad and two handles, both feet on floor. No lying barbell bench scene despite erroneous English template.\"\n  },\n  \"source_use_rule\": \"Preserve raw source texts verbatim; render only selected scene and documented exact-source/user resolution. Do not silently repair the catalogue.\",\n  \"style\": {\n    \"background\": \"Genuinely transparent PNG background, no white/checkerboard layer, no environment scene.\",\n    \"framing\": \"Full figure and all required equipment/supports visible within a square. Scale and use a three-quarter view to expose the specified contacts without changing anatomy, equipment, grip or technique.\",\n    \"human_model\": \"One athletic bald male anatomical mannequin, opaque silver-gray muscular surfaces, consistent proportions and detailed 3D materials, plain black shorts, barefoot.\",\n    \"material_rules\": \"Highlights never make tissue transparent; no glow, whole-body orange tint, hair, text, labels, arrows, UI, borders, collage or extra person.\",\n    \"no_invention\": \"Exact-ID catalogue controls source text and muscles. Render documented selected scene; recorded source corrections apply to the derived scene only. No reference-pose copying or imported muscle targets.\",\n    \"output\": {\n      \"format\": \"PNG\",\n      \"height\": 1024,\n      \"one_person\": true,\n      \"one_phase\": true,\n      \"width\": 1024\n    },\n    \"primary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"rule\": \"Highlight only the exact primary muscle group provided for this exercise.\"\n    },\n    \"secondary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"intensity_fraction\": [\n        0.4,\n        0.5\n      ],\n      \"rule\": \"Only the exact secondary muscles, lighter same-hue highlight; if the list is empty add no secondary target.\"\n    },\n    \"version\": \"v1\"\n  },\n  \"technique_resolution\": {\n    \"PNG_approval\": false,\n    \"binding_or_name_alone_is_not_confirmation\": true,\n    \"catalog_modified\": false,\n    \"construction_rule\": \"Standard compatible unbranded geometry allowed by AGENTS.md; choose geometry only around specified contacts/motion. Category machine does not establish a load mechanism, brand, angle or weight count.\",\n    \"dataset_instruction_steps_read\": [\n      \"Adjust the seat height and position yourself on the machine with your back flat against the pad.\",\n      \"Grasp the handles with an overhand grip and position your elbows at a 90-degree angle.\",\n      \"Push the handles forward until your arms are fully extended, exhaling during the movement.\",\n      \"Pause briefly at the end of the movement, then slowly return to the starting position, inhaling as you do so.\",\n      \"Repeat for the desired number of repetitions.\"\n    ],\n    \"decision_kind\": \"user_selected_variant_with_exact_source_confirmation\",\n    \"evidence_path\": \"data/audits/agent-03-single-generator-2026-10-03-technique.json\",\n    \"evidence_selector\": \"records[exercise_id=\\\"chest-press-machine\\\"]\",\n    \"illustration_choices\": \"Side/phase and compatible layout are scene choices, not amendments to source technique. Do not infer muscle targets from scene or equipment.\",\n    \"preserved_source_errors_path\": \"data/audits/agent-03-single-generator-2026-10-03-source-errors.json\",\n    \"status\": \"resolved\",\n    \"technique_fields_read\": [\n      \"content.en.description\",\n      \"content.en.instructions\",\n      \"content.en.form_cues\",\n      \"content.en.common_mistakes\",\n      \"content.en.safety_note\",\n      \"content.pl.instructions\",\n      \"source.dataset_id\"\n    ],\n    \"user_decision_path\": \"data/technique-decisions/agent-03-user-answers-2026-10-03.json\",\n    \"user_selected_configuration\": \"Seated LEVER chest press, back supported, two handles press forward away from torso.\"\n  }\n}",
+              "prompt_sha256": "6bffac50ebfbc0b4765a6dc7115ca7ffa344626fafbae2a434a6439e6e828bd6",
+              "style_version": "v1",
+              "style_files": {
+                "docs/exercise-image-style.md": "8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578"
+              },
+              "reference_path": "assets/exercises/biceps-curl-dumbbell.png",
+              "reference_sha256": "52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f",
+              "catalog_path": "data/exercises/catalog.json",
+              "catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+              "catalog_record_sha256": "cc27f00a90ab2b658b5d64b17050df7f3fff4fac474dadebbc36830eed8bd5b6",
+              "source_generated_file": "/workspace/generated_images/exec-371ef859-11e9-496e-b167-5b01a9f578a0.png",
+              "source_generated_sha256": "f3b9bba5f56e6bcd56342f92804e32e20fae96e14f722cc0ef57266842f2d3d0",
+              "source_generated_dimensions": [
+                1254,
+                1254
+              ],
+              "normalization": {
+                "method": "Pillow LANCZOS resize to 1024x1024 with RGBA alpha preserved",
+                "applied": true
+              },
+              "result_path": "/workspace/exercise-image-results/agent-03-single-generator-2026-10-03/generator-single/agent-03-others-030/chest-press-machine/attempt-1.png",
+              "git_result_path": "assets/exercises/pending/agent-03-single-generator-2026-10-03/generator-single/agent-03-others-030/chest-press-machine/attempt-1.png",
+              "result_sha256": "134e6b29b7d2a6154eba0ccb53f6616888f5a2ad16e1485fed84853ae429b702",
+              "technical_check": {
+                "status": "passed",
+                "format": "PNG",
+                "width": 1024,
+                "height": 1024,
+                "mode": "RGBA",
+                "has_alpha_channel": true,
+                "alpha_min": 0,
+                "alpha_max": 255,
+                "transparent_pixel_present": true,
+                "square": true,
+                "errors": [],
+                "sha256": "134e6b29b7d2a6154eba0ccb53f6616888f5a2ad16e1485fed84853ae429b702",
+                "byte_size": 925306,
+                "source_generated_sha256": "f3b9bba5f56e6bcd56342f92804e32e20fae96e14f722cc0ef57266842f2d3d0",
+                "source_generated_dimensions": [
+                  1254,
+                  1254
+                ],
+                "normalization": {
+                  "method": "Pillow LANCZOS resize to 1024x1024 with RGBA alpha preserved",
+                  "applied": true
+                }
+              },
+              "errors": []
+            }
+          ],
+          "user_review": "pending",
+          "technical_check": {
+            "status": "passed",
+            "format": "PNG",
+            "width": 1024,
+            "height": 1024,
+            "mode": "RGBA",
+            "has_alpha_channel": true,
+            "alpha_min": 0,
+            "alpha_max": 255,
+            "transparent_pixel_present": true,
+            "square": true,
+            "errors": [],
+            "sha256": "134e6b29b7d2a6154eba0ccb53f6616888f5a2ad16e1485fed84853ae429b702",
+            "byte_size": 925306,
+            "source_generated_sha256": "f3b9bba5f56e6bcd56342f92804e32e20fae96e14f722cc0ef57266842f2d3d0",
+            "source_generated_dimensions": [
+              1254,
+              1254
+            ],
+            "normalization": {
+              "method": "Pillow LANCZOS resize to 1024x1024 with RGBA alpha preserved",
+              "applied": true
+            }
+          },
           "agent_visual_review": "not_performed",
-          "result_path": null,
+          "result_path": "/workspace/exercise-image-results/agent-03-single-generator-2026-10-03/generator-single/agent-03-others-030/chest-press-machine/attempt-1.png",
           "planned_png_path": "/workspace/exercise-image-results/agent-03-single-generator-2026-10-03/generator-single/agent-03-others-030/chest-press-machine/attempt-1.png",
           "planned_git_png_path": "assets/exercises/pending/agent-03-single-generator-2026-10-03/generator-single/agent-03-others-030/chest-press-machine/attempt-1.png",
           "source_catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
           "style_version": "v1",
-          "prompt_sha256": "6bffac50ebfbc0b4765a6dc7115ca7ffa344626fafbae2a434a6439e6e828bd6"
+          "prompt_sha256": "6bffac50ebfbc0b4765a6dc7115ca7ffa344626fafbae2a434a6439e6e828bd6",
+          "result_sha256": "134e6b29b7d2a6154eba0ccb53f6616888f5a2ad16e1485fed84853ae429b702",
+          "generation_prompt": "Create exactly ONE square 1024x1024 transparent PNG of this exact exercise and ONE selected phase. Metadata must never appear as image text.\n{\n  \"approved_style_files\": [\n    {\n      \"path\": \"docs/exercise-image-style.md\",\n      \"sha256\": \"8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578\"\n    }\n  ],\n  \"exact_catalogue_source\": {\n    \"equipment\": \"machine\",\n    \"primary_muscle\": \"chest\",\n    \"secondary_muscles\": [\n      \"shoulders\",\n      \"triceps\"\n    ],\n    \"source_english\": {\n      \"common_mistakes\": [\n        \"Bouncing at the bottom.\",\n        \"Flaring the elbows.\",\n        \"Arching to shorten the range.\"\n      ],\n      \"description\": \"Chest Press (Machine) is a supported chest press using the barbell.\",\n      \"form_cues\": [\n        \"Keep wrists stacked.\",\n        \"Keep shoulder blades supported.\",\n        \"Press evenly.\"\n      ],\n      \"instructions\": [\n        \"Lie on a flat bench with feet planted. Grip the barbell and hold it over the chest.\",\n        \"Lower the resistance toward the chest with elbows controlled.\",\n        \"Pause without bouncing or losing shoulder position.\",\n        \"Press back to straight arms, then rerack or set the weights down safely.\"\n      ],\n      \"provenance\": \"adapted\",\n      \"safety_note\": \"Use a spotter or safeties for the loaded press and stop before shoulder control is lost.\"\n    }\n  },\n  \"human_reference\": {\n    \"absolute_path\": \"/workspace/lightweight-exercises-photo/assets/exercises/biceps-curl-dumbbell.png\",\n    \"branch\": \"work\",\n    \"pixels_reviewed_during_preparation\": false,\n    \"repository_path\": \"assets/exercises/biceps-curl-dumbbell.png\",\n    \"role\": \"Human appearance/proportions/materials/anatomical style ONLY. Exercise pose, grip, equipment and muscles come from the exact-ID catalogue, never the reference.\",\n    \"sha256\": \"52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f\",\n    \"source_commit\": \"b0385b7e2f3382d545a6dff5304c81ba3c771096\"\n  },\n  \"identity_do_not_render_as_text\": {\n    \"catalog_record_sha256\": \"cc27f00a90ab2b658b5d64b17050df7f3fff4fac474dadebbc36830eed8bd5b6\",\n    \"catalog_sha256\": \"a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989\",\n    \"exercise_id\": \"chest-press-machine\",\n    \"name\": \"Chest Press (Machine)\"\n  },\n  \"selected_render_scene\": {\n    \"camera\": \"Full-body front-side three-quarter view exposing every prescribed contact, grip and support. Entire person and all equipment visible within square; no crop, text, arrows or second phase.\",\n    \"exercise_id\": \"chest-press-machine\",\n    \"grip\": \"Overhand paired handles, elbows initially about 90 degrees; this grip is confirmed by the exact dataset 0576.\",\n    \"movement_trajectory\": \"Press handles forward from beside chest, return under control; no free-bar rerack.\",\n    \"never_infer_muscles_from_pose_or_reference\": true,\n    \"one_phase_only\": true,\n    \"pose\": \"Seated with back against pad and feet planted, wrists stacked; handles travel forward away from chest, elbows almost straight and soft.\",\n    \"single_phase\": \"Seated lever press near extension\",\n    \"supports_and_equipment\": \"User-selected SEATED LEVER machine, seat, back pad and two handles, both feet on floor. No lying barbell bench scene despite erroneous English template.\"\n  },\n  \"source_use_rule\": \"Preserve raw source texts verbatim; render only selected scene and documented exact-source/user resolution. Do not silently repair the catalogue.\",\n  \"style\": {\n    \"background\": \"Genuinely transparent PNG background, no white/checkerboard layer, no environment scene.\",\n    \"framing\": \"Full figure and all required equipment/supports visible within a square. Scale and use a three-quarter view to expose the specified contacts without changing anatomy, equipment, grip or technique.\",\n    \"human_model\": \"One athletic bald male anatomical mannequin, opaque silver-gray muscular surfaces, consistent proportions and detailed 3D materials, plain black shorts, barefoot.\",\n    \"material_rules\": \"Highlights never make tissue transparent; no glow, whole-body orange tint, hair, text, labels, arrows, UI, borders, collage or extra person.\",\n    \"no_invention\": \"Exact-ID catalogue controls source text and muscles. Render documented selected scene; recorded source corrections apply to the derived scene only. No reference-pose copying or imported muscle targets.\",\n    \"output\": {\n      \"format\": \"PNG\",\n      \"height\": 1024,\n      \"one_person\": true,\n      \"one_phase\": true,\n      \"width\": 1024\n    },\n    \"primary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"rule\": \"Highlight only the exact primary muscle group provided for this exercise.\"\n    },\n    \"secondary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"intensity_fraction\": [\n        0.4,\n        0.5\n      ],\n      \"rule\": \"Only the exact secondary muscles, lighter same-hue highlight; if the list is empty add no secondary target.\"\n    },\n    \"version\": \"v1\"\n  },\n  \"technique_resolution\": {\n    \"PNG_approval\": false,\n    \"binding_or_name_alone_is_not_confirmation\": true,\n    \"catalog_modified\": false,\n    \"construction_rule\": \"Standard compatible unbranded geometry allowed by AGENTS.md; choose geometry only around specified contacts/motion. Category machine does not establish a load mechanism, brand, angle or weight count.\",\n    \"dataset_instruction_steps_read\": [\n      \"Adjust the seat height and position yourself on the machine with your back flat against the pad.\",\n      \"Grasp the handles with an overhand grip and position your elbows at a 90-degree angle.\",\n      \"Push the handles forward until your arms are fully extended, exhaling during the movement.\",\n      \"Pause briefly at the end of the movement, then slowly return to the starting position, inhaling as you do so.\",\n      \"Repeat for the desired number of repetitions.\"\n    ],\n    \"decision_kind\": \"user_selected_variant_with_exact_source_confirmation\",\n    \"evidence_path\": \"data/audits/agent-03-single-generator-2026-10-03-technique.json\",\n    \"evidence_selector\": \"records[exercise_id=\\\"chest-press-machine\\\"]\",\n    \"illustration_choices\": \"Side/phase and compatible layout are scene choices, not amendments to source technique. Do not infer muscle targets from scene or equipment.\",\n    \"preserved_source_errors_path\": \"data/audits/agent-03-single-generator-2026-10-03-source-errors.json\",\n    \"status\": \"resolved\",\n    \"technique_fields_read\": [\n      \"content.en.description\",\n      \"content.en.instructions\",\n      \"content.en.form_cues\",\n      \"content.en.common_mistakes\",\n      \"content.en.safety_note\",\n      \"content.pl.instructions\",\n      \"source.dataset_id\"\n    ],\n    \"user_decision_path\": \"data/technique-decisions/agent-03-user-answers-2026-10-03.json\",\n    \"user_selected_configuration\": \"Seated LEVER chest press, back supported, two handles press forward away from torso.\"\n  }\n}",
+          "style_file_hashes": {
+            "docs/exercise-image-style.md": "8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578"
+          },
+          "reference_path": "assets/exercises/biceps-curl-dumbbell.png",
+          "reference_sha256": "52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f",
+          "source_catalog_record_sha256": "cc27f00a90ab2b658b5d64b17050df7f3fff4fac474dadebbc36830eed8bd5b6",
+          "technical_status": "passed",
+          "errors": []
         },
         {
           "exercise_id": "air-bike-machine",
           "name": "Air Bike",
-          "status": "not_started",
-          "attempts": 0,
-          "attempt_history": [],
-          "user_review": null,
-          "technical_check": null,
+          "status": "generated",
+          "attempts": 1,
+          "attempt_history": [
+            {
+              "attempt_number": 1,
+              "recorded_at": "2026-10-03T00:09:22.865588+00:00",
+              "generation_tool": "image_gen.imagegen",
+              "call_status": "success",
+              "generation_prompt": "Create exactly ONE square 1024x1024 transparent PNG of this exact exercise and ONE selected phase. Metadata must never appear as image text.\n{\n  \"approved_style_files\": [\n    {\n      \"path\": \"docs/exercise-image-style.md\",\n      \"sha256\": \"8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578\"\n    },\n    {\n      \"path\": \"docs/exercise-image-style-neutral-primary.md\",\n      \"sha256\": \"86204ab43f23d119a1eb25cafdbda2518b741a0090b4ffb0ceb9086952314439\"\n    }\n  ],\n  \"exact_catalogue_source\": {\n    \"equipment\": \"machine\",\n    \"primary_muscle\": \"cardio\",\n    \"secondary_muscles\": [],\n    \"source_english\": {\n      \"common_mistakes\": [\n        \"Setting the seat too low.\",\n        \"Relying only on the arms or only on the legs.\",\n        \"Stopping abruptly after a hard interval.\"\n      ],\n      \"description\": \"The Air Bike combines seated pedaling with reciprocal push-pull handle strokes, so the legs and arms share the conditioning effort.\",\n      \"form_cues\": [\n        \"Keep the knees tracking forward.\",\n        \"Brace the trunk lightly.\",\n        \"Use even pushes and pulls.\"\n      ],\n      \"instructions\": [\n        \"Adjust the machine so the seat allows a slight bend in the knee at the bottom of each pedal stroke.\",\n        \"Sit upright, place your feet on the pedals, and grip the moving handles.\",\n        \"Pedal while pushing and pulling the handles in a smooth reciprocal rhythm.\",\n        \"Maintain the planned pace for the duration, then ease off gradually.\"\n      ],\n      \"provenance\": \"adapted\",\n      \"safety_note\": \"Adjust the seat before starting and keep the handles moving smoothly during hard intervals.\"\n    }\n  },\n  \"human_reference\": {\n    \"absolute_path\": \"/workspace/lightweight-exercises-photo/assets/exercises/biceps-curl-dumbbell.png\",\n    \"branch\": \"work\",\n    \"pixels_reviewed_during_preparation\": false,\n    \"repository_path\": \"assets/exercises/biceps-curl-dumbbell.png\",\n    \"role\": \"Human appearance/proportions/materials/anatomical style ONLY. Exercise pose, grip, equipment and muscles come from the exact-ID catalogue, never the reference.\",\n    \"sha256\": \"52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f\",\n    \"source_commit\": \"b0385b7e2f3382d545a6dff5304c81ba3c771096\"\n  },\n  \"identity_do_not_render_as_text\": {\n    \"catalog_record_sha256\": \"bcb568a73bfca40fb50b725a331ce5a28ed849fadf483acc4ad549e7b1fe6a0f\",\n    \"catalog_sha256\": \"a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989\",\n    \"exercise_id\": \"air-bike-machine\",\n    \"name\": \"Air Bike\"\n  },\n  \"selected_render_scene\": {\n    \"camera\": \"Full-body front-side three-quarter view exposing every prescribed contact, grip and support. Entire person and all equipment visible within square; no crop, text, arrows or second phase.\",\n    \"exercise_id\": \"air-bike-machine\",\n    \"grip\": \"Both hands hold moving bike handles, relaxed closed grip.\",\n    \"movement_trajectory\": \"Pedal continuously while arms push and pull reciprocally; freeze one stroke, no second body.\",\n    \"never_infer_muscles_from_pose_or_reference\": true,\n    \"one_phase_only\": true,\n    \"pose\": \"Upright on saddle, feet on pedals; right pedal lower with right knee slightly bent, left knee flexed; left handle pushed forward and right handle pulled back.\",\n    \"single_phase\": \"One reciprocal pedaling stroke\",\n    \"supports_and_equipment\": \"Unbranded fan-resistance AIR BIKE, saddle, crank-linked pedals and reciprocal moving handles. Functional front fan per exact-ID description and pinned-match text, not from category machine. No elliptical standing pedals.\"\n  },\n  \"source_use_rule\": \"Preserve raw source texts verbatim; render only selected scene and documented exact-source/user resolution. Do not silently repair the catalogue.\",\n  \"style\": {\n    \"background\": \"Genuinely transparent PNG background, no white/checkerboard layer, no environment scene.\",\n    \"framing\": \"Full figure and all required equipment/supports visible within a square. Scale and use a three-quarter view to expose the specified contacts without changing anatomy, equipment, grip or technique.\",\n    \"human_model\": \"One athletic bald male anatomical mannequin, opaque silver-gray muscular surfaces, consistent proportions and detailed 3D materials, plain black shorts, barefoot.\",\n    \"material_rules\": \"Highlights never make tissue transparent; no glow, whole-body orange tint, hair, text, labels, arrows, UI, borders, collage or extra person.\",\n    \"no_invention\": \"Exact-ID catalogue controls source text and muscles. Render documented selected scene; recorded source corrections apply to the derived scene only. No reference-pose copying or imported muscle targets.\",\n    \"output\": {\n      \"format\": \"PNG\",\n      \"height\": 1024,\n      \"one_person\": true,\n      \"one_phase\": true,\n      \"width\": 1024\n    },\n    \"primary_highlight\": {\n      \"hex\": null,\n      \"rule\": \"Keep whole body opaque neutral silver-gray. No anatomical primary or whole-body orange tint for full_body/cardio/other.\"\n    },\n    \"secondary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"intensity_fraction\": [\n        0.4,\n        0.5\n      ],\n      \"rule\": \"Only the exact secondary muscles, lighter same-hue highlight; if the list is empty add no secondary target.\"\n    },\n    \"version\": \"v1-neutral-primary-2026-10-02\"\n  },\n  \"technique_resolution\": {\n    \"PNG_approval\": false,\n    \"binding_or_name_alone_is_not_confirmation\": true,\n    \"catalog_modified\": false,\n    \"construction_rule\": \"Standard compatible unbranded geometry allowed by AGENTS.md; choose geometry only around specified contacts/motion. Category machine does not establish a load mechanism, brand, angle or weight count.\",\n    \"dataset_instruction_steps_read\": [\n      \"Adjust the seat height and position yourself on the cycle cross trainer.\",\n      \"Place your feet on the pedals and grip the handlebars.\",\n      \"Start pedaling in a smooth and controlled motion.\",\n      \"Maintain a steady pace and increase the resistance if desired.\",\n      \"Continue pedaling for the desired duration of your cardio workout.\"\n    ],\n    \"decision_kind\": \"exact_ID_written_technique_confirmation\",\n    \"evidence_path\": \"data/audits/agent-03-single-generator-2026-10-03-technique.json\",\n    \"evidence_selector\": \"records[exercise_id=\\\"air-bike-machine\\\"]\",\n    \"illustration_choices\": \"Side/phase and compatible layout are scene choices, not amendments to source technique. Do not infer muscle targets from scene or equipment.\",\n    \"status\": \"resolved\",\n    \"technique_fields_read\": [\n      \"content.en.description\",\n      \"content.en.instructions\",\n      \"content.en.form_cues\",\n      \"content.en.common_mistakes\",\n      \"content.en.safety_note\",\n      \"content.pl.instructions\",\n      \"source.dataset_id\"\n    ]\n  }\n}",
+              "prompt_sha256": "efa6f8d967d6328953e20d4cebc599b17d01f2faff2e95cbf876c8614243113c",
+              "style_version": "v1-neutral-primary-2026-10-02",
+              "style_files": {
+                "docs/exercise-image-style.md": "8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578",
+                "docs/exercise-image-style-neutral-primary.md": "86204ab43f23d119a1eb25cafdbda2518b741a0090b4ffb0ceb9086952314439"
+              },
+              "reference_path": "assets/exercises/biceps-curl-dumbbell.png",
+              "reference_sha256": "52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f",
+              "catalog_path": "data/exercises/catalog.json",
+              "catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+              "catalog_record_sha256": "bcb568a73bfca40fb50b725a331ce5a28ed849fadf483acc4ad549e7b1fe6a0f",
+              "source_generated_file": "/workspace/generated_images/exec-98bf68b7-e73c-458a-a88b-2c3e8ab1f1db.png",
+              "source_generated_sha256": "7db9c0c2da18cbb9bc3757dd0a45d01d22ee04a4a9b0e09d5534bd4dcea9708d",
+              "source_generated_dimensions": [
+                1254,
+                1254
+              ],
+              "normalization": {
+                "method": "Pillow LANCZOS resize to 1024x1024 with RGBA alpha preserved",
+                "applied": true
+              },
+              "result_path": "/workspace/exercise-image-results/agent-03-single-generator-2026-10-03/generator-single/agent-03-others-030/air-bike-machine/attempt-1.png",
+              "git_result_path": "assets/exercises/pending/agent-03-single-generator-2026-10-03/generator-single/agent-03-others-030/air-bike-machine/attempt-1.png",
+              "result_sha256": "e2e964cbc4563f8ff037457ae34b4fc9d152e398a3171c3c14602f6131cdf030",
+              "technical_check": {
+                "status": "passed",
+                "format": "PNG",
+                "width": 1024,
+                "height": 1024,
+                "mode": "RGBA",
+                "has_alpha_channel": true,
+                "alpha_min": 0,
+                "alpha_max": 255,
+                "transparent_pixel_present": true,
+                "square": true,
+                "errors": [],
+                "sha256": "e2e964cbc4563f8ff037457ae34b4fc9d152e398a3171c3c14602f6131cdf030",
+                "byte_size": 735522,
+                "source_generated_sha256": "7db9c0c2da18cbb9bc3757dd0a45d01d22ee04a4a9b0e09d5534bd4dcea9708d",
+                "source_generated_dimensions": [
+                  1254,
+                  1254
+                ],
+                "normalization": {
+                  "method": "Pillow LANCZOS resize to 1024x1024 with RGBA alpha preserved",
+                  "applied": true
+                }
+              },
+              "errors": []
+            }
+          ],
+          "user_review": "pending",
+          "technical_check": {
+            "status": "passed",
+            "format": "PNG",
+            "width": 1024,
+            "height": 1024,
+            "mode": "RGBA",
+            "has_alpha_channel": true,
+            "alpha_min": 0,
+            "alpha_max": 255,
+            "transparent_pixel_present": true,
+            "square": true,
+            "errors": [],
+            "sha256": "e2e964cbc4563f8ff037457ae34b4fc9d152e398a3171c3c14602f6131cdf030",
+            "byte_size": 735522,
+            "source_generated_sha256": "7db9c0c2da18cbb9bc3757dd0a45d01d22ee04a4a9b0e09d5534bd4dcea9708d",
+            "source_generated_dimensions": [
+              1254,
+              1254
+            ],
+            "normalization": {
+              "method": "Pillow LANCZOS resize to 1024x1024 with RGBA alpha preserved",
+              "applied": true
+            }
+          },
           "agent_visual_review": "not_performed",
-          "result_path": null,
+          "result_path": "/workspace/exercise-image-results/agent-03-single-generator-2026-10-03/generator-single/agent-03-others-030/air-bike-machine/attempt-1.png",
           "planned_png_path": "/workspace/exercise-image-results/agent-03-single-generator-2026-10-03/generator-single/agent-03-others-030/air-bike-machine/attempt-1.png",
           "planned_git_png_path": "assets/exercises/pending/agent-03-single-generator-2026-10-03/generator-single/agent-03-others-030/air-bike-machine/attempt-1.png",
           "source_catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
           "style_version": "v1-neutral-primary-2026-10-02",
-          "prompt_sha256": "efa6f8d967d6328953e20d4cebc599b17d01f2faff2e95cbf876c8614243113c"
+          "prompt_sha256": "efa6f8d967d6328953e20d4cebc599b17d01f2faff2e95cbf876c8614243113c",
+          "result_sha256": "e2e964cbc4563f8ff037457ae34b4fc9d152e398a3171c3c14602f6131cdf030",
+          "generation_prompt": "Create exactly ONE square 1024x1024 transparent PNG of this exact exercise and ONE selected phase. Metadata must never appear as image text.\n{\n  \"approved_style_files\": [\n    {\n      \"path\": \"docs/exercise-image-style.md\",\n      \"sha256\": \"8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578\"\n    },\n    {\n      \"path\": \"docs/exercise-image-style-neutral-primary.md\",\n      \"sha256\": \"86204ab43f23d119a1eb25cafdbda2518b741a0090b4ffb0ceb9086952314439\"\n    }\n  ],\n  \"exact_catalogue_source\": {\n    \"equipment\": \"machine\",\n    \"primary_muscle\": \"cardio\",\n    \"secondary_muscles\": [],\n    \"source_english\": {\n      \"common_mistakes\": [\n        \"Setting the seat too low.\",\n        \"Relying only on the arms or only on the legs.\",\n        \"Stopping abruptly after a hard interval.\"\n      ],\n      \"description\": \"The Air Bike combines seated pedaling with reciprocal push-pull handle strokes, so the legs and arms share the conditioning effort.\",\n      \"form_cues\": [\n        \"Keep the knees tracking forward.\",\n        \"Brace the trunk lightly.\",\n        \"Use even pushes and pulls.\"\n      ],\n      \"instructions\": [\n        \"Adjust the machine so the seat allows a slight bend in the knee at the bottom of each pedal stroke.\",\n        \"Sit upright, place your feet on the pedals, and grip the moving handles.\",\n        \"Pedal while pushing and pulling the handles in a smooth reciprocal rhythm.\",\n        \"Maintain the planned pace for the duration, then ease off gradually.\"\n      ],\n      \"provenance\": \"adapted\",\n      \"safety_note\": \"Adjust the seat before starting and keep the handles moving smoothly during hard intervals.\"\n    }\n  },\n  \"human_reference\": {\n    \"absolute_path\": \"/workspace/lightweight-exercises-photo/assets/exercises/biceps-curl-dumbbell.png\",\n    \"branch\": \"work\",\n    \"pixels_reviewed_during_preparation\": false,\n    \"repository_path\": \"assets/exercises/biceps-curl-dumbbell.png\",\n    \"role\": \"Human appearance/proportions/materials/anatomical style ONLY. Exercise pose, grip, equipment and muscles come from the exact-ID catalogue, never the reference.\",\n    \"sha256\": \"52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f\",\n    \"source_commit\": \"b0385b7e2f3382d545a6dff5304c81ba3c771096\"\n  },\n  \"identity_do_not_render_as_text\": {\n    \"catalog_record_sha256\": \"bcb568a73bfca40fb50b725a331ce5a28ed849fadf483acc4ad549e7b1fe6a0f\",\n    \"catalog_sha256\": \"a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989\",\n    \"exercise_id\": \"air-bike-machine\",\n    \"name\": \"Air Bike\"\n  },\n  \"selected_render_scene\": {\n    \"camera\": \"Full-body front-side three-quarter view exposing every prescribed contact, grip and support. Entire person and all equipment visible within square; no crop, text, arrows or second phase.\",\n    \"exercise_id\": \"air-bike-machine\",\n    \"grip\": \"Both hands hold moving bike handles, relaxed closed grip.\",\n    \"movement_trajectory\": \"Pedal continuously while arms push and pull reciprocally; freeze one stroke, no second body.\",\n    \"never_infer_muscles_from_pose_or_reference\": true,\n    \"one_phase_only\": true,\n    \"pose\": \"Upright on saddle, feet on pedals; right pedal lower with right knee slightly bent, left knee flexed; left handle pushed forward and right handle pulled back.\",\n    \"single_phase\": \"One reciprocal pedaling stroke\",\n    \"supports_and_equipment\": \"Unbranded fan-resistance AIR BIKE, saddle, crank-linked pedals and reciprocal moving handles. Functional front fan per exact-ID description and pinned-match text, not from category machine. No elliptical standing pedals.\"\n  },\n  \"source_use_rule\": \"Preserve raw source texts verbatim; render only selected scene and documented exact-source/user resolution. Do not silently repair the catalogue.\",\n  \"style\": {\n    \"background\": \"Genuinely transparent PNG background, no white/checkerboard layer, no environment scene.\",\n    \"framing\": \"Full figure and all required equipment/supports visible within a square. Scale and use a three-quarter view to expose the specified contacts without changing anatomy, equipment, grip or technique.\",\n    \"human_model\": \"One athletic bald male anatomical mannequin, opaque silver-gray muscular surfaces, consistent proportions and detailed 3D materials, plain black shorts, barefoot.\",\n    \"material_rules\": \"Highlights never make tissue transparent; no glow, whole-body orange tint, hair, text, labels, arrows, UI, borders, collage or extra person.\",\n    \"no_invention\": \"Exact-ID catalogue controls source text and muscles. Render documented selected scene; recorded source corrections apply to the derived scene only. No reference-pose copying or imported muscle targets.\",\n    \"output\": {\n      \"format\": \"PNG\",\n      \"height\": 1024,\n      \"one_person\": true,\n      \"one_phase\": true,\n      \"width\": 1024\n    },\n    \"primary_highlight\": {\n      \"hex\": null,\n      \"rule\": \"Keep whole body opaque neutral silver-gray. No anatomical primary or whole-body orange tint for full_body/cardio/other.\"\n    },\n    \"secondary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"intensity_fraction\": [\n        0.4,\n        0.5\n      ],\n      \"rule\": \"Only the exact secondary muscles, lighter same-hue highlight; if the list is empty add no secondary target.\"\n    },\n    \"version\": \"v1-neutral-primary-2026-10-02\"\n  },\n  \"technique_resolution\": {\n    \"PNG_approval\": false,\n    \"binding_or_name_alone_is_not_confirmation\": true,\n    \"catalog_modified\": false,\n    \"construction_rule\": \"Standard compatible unbranded geometry allowed by AGENTS.md; choose geometry only around specified contacts/motion. Category machine does not establish a load mechanism, brand, angle or weight count.\",\n    \"dataset_instruction_steps_read\": [\n      \"Adjust the seat height and position yourself on the cycle cross trainer.\",\n      \"Place your feet on the pedals and grip the handlebars.\",\n      \"Start pedaling in a smooth and controlled motion.\",\n      \"Maintain a steady pace and increase the resistance if desired.\",\n      \"Continue pedaling for the desired duration of your cardio workout.\"\n    ],\n    \"decision_kind\": \"exact_ID_written_technique_confirmation\",\n    \"evidence_path\": \"data/audits/agent-03-single-generator-2026-10-03-technique.json\",\n    \"evidence_selector\": \"records[exercise_id=\\\"air-bike-machine\\\"]\",\n    \"illustration_choices\": \"Side/phase and compatible layout are scene choices, not amendments to source technique. Do not infer muscle targets from scene or equipment.\",\n    \"status\": \"resolved\",\n    \"technique_fields_read\": [\n      \"content.en.description\",\n      \"content.en.instructions\",\n      \"content.en.form_cues\",\n      \"content.en.common_mistakes\",\n      \"content.en.safety_note\",\n      \"content.pl.instructions\",\n      \"source.dataset_id\"\n    ]\n  }\n}",
+          "style_file_hashes": {
+            "docs/exercise-image-style.md": "8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578",
+            "docs/exercise-image-style-neutral-primary.md": "86204ab43f23d119a1eb25cafdbda2518b741a0090b4ffb0ceb9086952314439"
+          },
+          "reference_path": "assets/exercises/biceps-curl-dumbbell.png",
+          "reference_sha256": "52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f",
+          "source_catalog_record_sha256": "bcb568a73bfca40fb50b725a331ce5a28ed849fadf483acc4ad549e7b1fe6a0f",
+          "technical_status": "passed",
+          "errors": []
         },
         {
           "exercise_id": "recumbent-bike-machine",
           "name": "Recumbent Bike",
-          "status": "not_started",
-          "attempts": 0,
-          "attempt_history": [],
-          "user_review": null,
-          "technical_check": null,
+          "status": "generated",
+          "attempts": 1,
+          "attempt_history": [
+            {
+              "attempt_number": 1,
+              "recorded_at": "2026-10-03T00:10:34.862882+00:00",
+              "generation_tool": "image_gen.imagegen",
+              "call_status": "success",
+              "generation_prompt": "Create exactly ONE square 1024x1024 transparent PNG of this exact exercise and ONE selected phase. Metadata must never appear as image text.\n{\n  \"approved_style_files\": [\n    {\n      \"path\": \"docs/exercise-image-style.md\",\n      \"sha256\": \"8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578\"\n    },\n    {\n      \"path\": \"docs/exercise-image-style-neutral-primary.md\",\n      \"sha256\": \"86204ab43f23d119a1eb25cafdbda2518b741a0090b4ffb0ceb9086952314439\"\n    }\n  ],\n  \"exact_catalogue_source\": {\n    \"equipment\": \"machine\",\n    \"primary_muscle\": \"cardio\",\n    \"secondary_muscles\": [],\n    \"source_english\": {\n      \"common_mistakes\": [\n        \"Setting the seat too close.\",\n        \"Pedaling with loose feet.\",\n        \"Stopping abruptly at high speed.\"\n      ],\n      \"description\": \"A recumbent bike provides back-supported cycling with the pedals positioned in front of the seated body.\",\n      \"form_cues\": [\n        \"Keep the back supported.\",\n        \"Use smooth circles.\",\n        \"Maintain a comfortable knee angle.\"\n      ],\n      \"instructions\": [\n        \"Adjust the seat so the knee remains slightly bent when the pedal is farthest away.\",\n        \"Sit with your back against the support and place both feet securely on the pedals.\",\n        \"Pedal smoothly at a steady, comfortable cadence.\",\n        \"Reduce the pace before stopping and remove the feet only when the pedals are still.\"\n      ],\n      \"provenance\": \"authored\",\n      \"safety_note\": \"Secure your feet on the pedals and use a resistance level you can maintain comfortably.\"\n    }\n  },\n  \"human_reference\": {\n    \"absolute_path\": \"/workspace/lightweight-exercises-photo/assets/exercises/biceps-curl-dumbbell.png\",\n    \"branch\": \"work\",\n    \"pixels_reviewed_during_preparation\": false,\n    \"repository_path\": \"assets/exercises/biceps-curl-dumbbell.png\",\n    \"role\": \"Human appearance/proportions/materials/anatomical style ONLY. Exercise pose, grip, equipment and muscles come from the exact-ID catalogue, never the reference.\",\n    \"sha256\": \"52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f\",\n    \"source_commit\": \"b0385b7e2f3382d545a6dff5304c81ba3c771096\"\n  },\n  \"identity_do_not_render_as_text\": {\n    \"catalog_record_sha256\": \"7263880d10a451b9ffaef40d0b57874cac6ca67b30c687f3bb582a30d4b62686\",\n    \"catalog_sha256\": \"a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989\",\n    \"exercise_id\": \"recumbent-bike-machine\",\n    \"name\": \"Recumbent Bike\"\n  },\n  \"selected_render_scene\": {\n    \"camera\": \"Full-body front-side three-quarter view exposing every prescribed contact, grip and support. Entire person and all equipment visible within square; no crop, text, arrows or second phase.\",\n    \"exercise_id\": \"recumbent-bike-machine\",\n    \"grip\": \"No working hand grip is prescribed; hands rest neutrally on thighs as a scene choice, no invented arm mechanism.\",\n    \"movement_trajectory\": \"Smooth seated pedal rotation with back supported; freeze one pedal stroke.\",\n    \"never_infer_muscles_from_pose_or_reference\": true,\n    \"one_phase_only\": true,\n    \"pose\": \"Seated/reclined with back firmly against backrest, pedals in FRONT of body; right leg nearer farthest pedal point with knee still slightly bent, left knee flexed.\",\n    \"single_phase\": \"One supported pedaling stroke\",\n    \"supports_and_equipment\": \"Recumbent stationary bike, low supported seat/backrest, front crank and two pedals, feet on pedals; no upright saddle or moving arm handles.\"\n  },\n  \"source_use_rule\": \"Preserve raw source texts verbatim; render only selected scene and documented exact-source/user resolution. Do not silently repair the catalogue.\",\n  \"style\": {\n    \"background\": \"Genuinely transparent PNG background, no white/checkerboard layer, no environment scene.\",\n    \"framing\": \"Full figure and all required equipment/supports visible within a square. Scale and use a three-quarter view to expose the specified contacts without changing anatomy, equipment, grip or technique.\",\n    \"human_model\": \"One athletic bald male anatomical mannequin, opaque silver-gray muscular surfaces, consistent proportions and detailed 3D materials, plain black shorts, barefoot.\",\n    \"material_rules\": \"Highlights never make tissue transparent; no glow, whole-body orange tint, hair, text, labels, arrows, UI, borders, collage or extra person.\",\n    \"no_invention\": \"Exact-ID catalogue controls source text and muscles. Render documented selected scene; recorded source corrections apply to the derived scene only. No reference-pose copying or imported muscle targets.\",\n    \"output\": {\n      \"format\": \"PNG\",\n      \"height\": 1024,\n      \"one_person\": true,\n      \"one_phase\": true,\n      \"width\": 1024\n    },\n    \"primary_highlight\": {\n      \"hex\": null,\n      \"rule\": \"Keep whole body opaque neutral silver-gray. No anatomical primary or whole-body orange tint for full_body/cardio/other.\"\n    },\n    \"secondary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"intensity_fraction\": [\n        0.4,\n        0.5\n      ],\n      \"rule\": \"Only the exact secondary muscles, lighter same-hue highlight; if the list is empty add no secondary target.\"\n    },\n    \"version\": \"v1-neutral-primary-2026-10-02\"\n  },\n  \"technique_resolution\": {\n    \"PNG_approval\": false,\n    \"binding_or_name_alone_is_not_confirmation\": true,\n    \"catalog_modified\": false,\n    \"construction_rule\": \"Standard compatible unbranded geometry allowed by AGENTS.md; choose geometry only around specified contacts/motion. Category machine does not establish a load mechanism, brand, angle or weight count.\",\n    \"dataset_instruction_steps_read\": null,\n    \"decision_kind\": \"exact_ID_written_technique_confirmation\",\n    \"evidence_path\": \"data/audits/agent-03-single-generator-2026-10-03-technique.json\",\n    \"evidence_selector\": \"records[exercise_id=\\\"recumbent-bike-machine\\\"]\",\n    \"illustration_choices\": \"Side/phase and compatible layout are scene choices, not amendments to source technique. Do not infer muscle targets from scene or equipment.\",\n    \"status\": \"resolved\",\n    \"technique_fields_read\": [\n      \"content.en.description\",\n      \"content.en.instructions\",\n      \"content.en.form_cues\",\n      \"content.en.common_mistakes\",\n      \"content.en.safety_note\",\n      \"content.pl.instructions\",\n      \"source.dataset_id\"\n    ]\n  }\n}",
+              "prompt_sha256": "52422fb96140588c68e0817a80d2d6429112cb50ca00396fb621fad6a142f148",
+              "style_version": "v1-neutral-primary-2026-10-02",
+              "style_files": {
+                "docs/exercise-image-style.md": "8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578",
+                "docs/exercise-image-style-neutral-primary.md": "86204ab43f23d119a1eb25cafdbda2518b741a0090b4ffb0ceb9086952314439"
+              },
+              "reference_path": "assets/exercises/biceps-curl-dumbbell.png",
+              "reference_sha256": "52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f",
+              "catalog_path": "data/exercises/catalog.json",
+              "catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+              "catalog_record_sha256": "7263880d10a451b9ffaef40d0b57874cac6ca67b30c687f3bb582a30d4b62686",
+              "source_generated_file": "/workspace/generated_images/exec-a7e084d5-a645-482c-8c0e-32db7e43da83.png",
+              "source_generated_sha256": "7a7f476f6ceacc346ad5639f25894344860ac1c21a26ab5a763195f95595f1f6",
+              "source_generated_dimensions": [
+                1254,
+                1254
+              ],
+              "normalization": {
+                "method": "Pillow LANCZOS resize to 1024x1024 with RGBA alpha preserved",
+                "applied": true
+              },
+              "result_path": "/workspace/exercise-image-results/agent-03-single-generator-2026-10-03/generator-single/agent-03-others-030/recumbent-bike-machine/attempt-1.png",
+              "git_result_path": "assets/exercises/pending/agent-03-single-generator-2026-10-03/generator-single/agent-03-others-030/recumbent-bike-machine/attempt-1.png",
+              "result_sha256": "06eb1c30516c82e7df95d8965a18098c0c7ac4686051d425de19808be9efa824",
+              "technical_check": {
+                "status": "passed",
+                "format": "PNG",
+                "width": 1024,
+                "height": 1024,
+                "mode": "RGBA",
+                "has_alpha_channel": true,
+                "alpha_min": 0,
+                "alpha_max": 255,
+                "transparent_pixel_present": true,
+                "square": true,
+                "errors": [],
+                "sha256": "06eb1c30516c82e7df95d8965a18098c0c7ac4686051d425de19808be9efa824",
+                "byte_size": 757040,
+                "source_generated_sha256": "7a7f476f6ceacc346ad5639f25894344860ac1c21a26ab5a763195f95595f1f6",
+                "source_generated_dimensions": [
+                  1254,
+                  1254
+                ],
+                "normalization": {
+                  "method": "Pillow LANCZOS resize to 1024x1024 with RGBA alpha preserved",
+                  "applied": true
+                }
+              },
+              "errors": []
+            }
+          ],
+          "user_review": "pending",
+          "technical_check": {
+            "status": "passed",
+            "format": "PNG",
+            "width": 1024,
+            "height": 1024,
+            "mode": "RGBA",
+            "has_alpha_channel": true,
+            "alpha_min": 0,
+            "alpha_max": 255,
+            "transparent_pixel_present": true,
+            "square": true,
+            "errors": [],
+            "sha256": "06eb1c30516c82e7df95d8965a18098c0c7ac4686051d425de19808be9efa824",
+            "byte_size": 757040,
+            "source_generated_sha256": "7a7f476f6ceacc346ad5639f25894344860ac1c21a26ab5a763195f95595f1f6",
+            "source_generated_dimensions": [
+              1254,
+              1254
+            ],
+            "normalization": {
+              "method": "Pillow LANCZOS resize to 1024x1024 with RGBA alpha preserved",
+              "applied": true
+            }
+          },
           "agent_visual_review": "not_performed",
-          "result_path": null,
+          "result_path": "/workspace/exercise-image-results/agent-03-single-generator-2026-10-03/generator-single/agent-03-others-030/recumbent-bike-machine/attempt-1.png",
           "planned_png_path": "/workspace/exercise-image-results/agent-03-single-generator-2026-10-03/generator-single/agent-03-others-030/recumbent-bike-machine/attempt-1.png",
           "planned_git_png_path": "assets/exercises/pending/agent-03-single-generator-2026-10-03/generator-single/agent-03-others-030/recumbent-bike-machine/attempt-1.png",
           "source_catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
           "style_version": "v1-neutral-primary-2026-10-02",
-          "prompt_sha256": "52422fb96140588c68e0817a80d2d6429112cb50ca00396fb621fad6a142f148"
+          "prompt_sha256": "52422fb96140588c68e0817a80d2d6429112cb50ca00396fb621fad6a142f148",
+          "result_sha256": "06eb1c30516c82e7df95d8965a18098c0c7ac4686051d425de19808be9efa824",
+          "generation_prompt": "Create exactly ONE square 1024x1024 transparent PNG of this exact exercise and ONE selected phase. Metadata must never appear as image text.\n{\n  \"approved_style_files\": [\n    {\n      \"path\": \"docs/exercise-image-style.md\",\n      \"sha256\": \"8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578\"\n    },\n    {\n      \"path\": \"docs/exercise-image-style-neutral-primary.md\",\n      \"sha256\": \"86204ab43f23d119a1eb25cafdbda2518b741a0090b4ffb0ceb9086952314439\"\n    }\n  ],\n  \"exact_catalogue_source\": {\n    \"equipment\": \"machine\",\n    \"primary_muscle\": \"cardio\",\n    \"secondary_muscles\": [],\n    \"source_english\": {\n      \"common_mistakes\": [\n        \"Setting the seat too close.\",\n        \"Pedaling with loose feet.\",\n        \"Stopping abruptly at high speed.\"\n      ],\n      \"description\": \"A recumbent bike provides back-supported cycling with the pedals positioned in front of the seated body.\",\n      \"form_cues\": [\n        \"Keep the back supported.\",\n        \"Use smooth circles.\",\n        \"Maintain a comfortable knee angle.\"\n      ],\n      \"instructions\": [\n        \"Adjust the seat so the knee remains slightly bent when the pedal is farthest away.\",\n        \"Sit with your back against the support and place both feet securely on the pedals.\",\n        \"Pedal smoothly at a steady, comfortable cadence.\",\n        \"Reduce the pace before stopping and remove the feet only when the pedals are still.\"\n      ],\n      \"provenance\": \"authored\",\n      \"safety_note\": \"Secure your feet on the pedals and use a resistance level you can maintain comfortably.\"\n    }\n  },\n  \"human_reference\": {\n    \"absolute_path\": \"/workspace/lightweight-exercises-photo/assets/exercises/biceps-curl-dumbbell.png\",\n    \"branch\": \"work\",\n    \"pixels_reviewed_during_preparation\": false,\n    \"repository_path\": \"assets/exercises/biceps-curl-dumbbell.png\",\n    \"role\": \"Human appearance/proportions/materials/anatomical style ONLY. Exercise pose, grip, equipment and muscles come from the exact-ID catalogue, never the reference.\",\n    \"sha256\": \"52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f\",\n    \"source_commit\": \"b0385b7e2f3382d545a6dff5304c81ba3c771096\"\n  },\n  \"identity_do_not_render_as_text\": {\n    \"catalog_record_sha256\": \"7263880d10a451b9ffaef40d0b57874cac6ca67b30c687f3bb582a30d4b62686\",\n    \"catalog_sha256\": \"a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989\",\n    \"exercise_id\": \"recumbent-bike-machine\",\n    \"name\": \"Recumbent Bike\"\n  },\n  \"selected_render_scene\": {\n    \"camera\": \"Full-body front-side three-quarter view exposing every prescribed contact, grip and support. Entire person and all equipment visible within square; no crop, text, arrows or second phase.\",\n    \"exercise_id\": \"recumbent-bike-machine\",\n    \"grip\": \"No working hand grip is prescribed; hands rest neutrally on thighs as a scene choice, no invented arm mechanism.\",\n    \"movement_trajectory\": \"Smooth seated pedal rotation with back supported; freeze one pedal stroke.\",\n    \"never_infer_muscles_from_pose_or_reference\": true,\n    \"one_phase_only\": true,\n    \"pose\": \"Seated/reclined with back firmly against backrest, pedals in FRONT of body; right leg nearer farthest pedal point with knee still slightly bent, left knee flexed.\",\n    \"single_phase\": \"One supported pedaling stroke\",\n    \"supports_and_equipment\": \"Recumbent stationary bike, low supported seat/backrest, front crank and two pedals, feet on pedals; no upright saddle or moving arm handles.\"\n  },\n  \"source_use_rule\": \"Preserve raw source texts verbatim; render only selected scene and documented exact-source/user resolution. Do not silently repair the catalogue.\",\n  \"style\": {\n    \"background\": \"Genuinely transparent PNG background, no white/checkerboard layer, no environment scene.\",\n    \"framing\": \"Full figure and all required equipment/supports visible within a square. Scale and use a three-quarter view to expose the specified contacts without changing anatomy, equipment, grip or technique.\",\n    \"human_model\": \"One athletic bald male anatomical mannequin, opaque silver-gray muscular surfaces, consistent proportions and detailed 3D materials, plain black shorts, barefoot.\",\n    \"material_rules\": \"Highlights never make tissue transparent; no glow, whole-body orange tint, hair, text, labels, arrows, UI, borders, collage or extra person.\",\n    \"no_invention\": \"Exact-ID catalogue controls source text and muscles. Render documented selected scene; recorded source corrections apply to the derived scene only. No reference-pose copying or imported muscle targets.\",\n    \"output\": {\n      \"format\": \"PNG\",\n      \"height\": 1024,\n      \"one_person\": true,\n      \"one_phase\": true,\n      \"width\": 1024\n    },\n    \"primary_highlight\": {\n      \"hex\": null,\n      \"rule\": \"Keep whole body opaque neutral silver-gray. No anatomical primary or whole-body orange tint for full_body/cardio/other.\"\n    },\n    \"secondary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"intensity_fraction\": [\n        0.4,\n        0.5\n      ],\n      \"rule\": \"Only the exact secondary muscles, lighter same-hue highlight; if the list is empty add no secondary target.\"\n    },\n    \"version\": \"v1-neutral-primary-2026-10-02\"\n  },\n  \"technique_resolution\": {\n    \"PNG_approval\": false,\n    \"binding_or_name_alone_is_not_confirmation\": true,\n    \"catalog_modified\": false,\n    \"construction_rule\": \"Standard compatible unbranded geometry allowed by AGENTS.md; choose geometry only around specified contacts/motion. Category machine does not establish a load mechanism, brand, angle or weight count.\",\n    \"dataset_instruction_steps_read\": null,\n    \"decision_kind\": \"exact_ID_written_technique_confirmation\",\n    \"evidence_path\": \"data/audits/agent-03-single-generator-2026-10-03-technique.json\",\n    \"evidence_selector\": \"records[exercise_id=\\\"recumbent-bike-machine\\\"]\",\n    \"illustration_choices\": \"Side/phase and compatible layout are scene choices, not amendments to source technique. Do not infer muscle targets from scene or equipment.\",\n    \"status\": \"resolved\",\n    \"technique_fields_read\": [\n      \"content.en.description\",\n      \"content.en.instructions\",\n      \"content.en.form_cues\",\n      \"content.en.common_mistakes\",\n      \"content.en.safety_note\",\n      \"content.pl.instructions\",\n      \"source.dataset_id\"\n    ]\n  }\n}",
+          "style_file_hashes": {
+            "docs/exercise-image-style.md": "8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578",
+            "docs/exercise-image-style-neutral-primary.md": "86204ab43f23d119a1eb25cafdbda2518b741a0090b4ffb0ceb9086952314439"
+          },
+          "reference_path": "assets/exercises/biceps-curl-dumbbell.png",
+          "reference_sha256": "52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f",
+          "source_catalog_record_sha256": "7263880d10a451b9ffaef40d0b57874cac6ca67b30c687f3bb582a30d4b62686",
+          "technical_status": "passed",
+          "errors": []
         },
         {
           "exercise_id": "rowing-machine",
           "name": "Rowing Machine",
-          "status": "not_started",
-          "attempts": 0,
-          "attempt_history": [],
-          "user_review": null,
-          "technical_check": null,
+          "status": "generated",
+          "attempts": 1,
+          "attempt_history": [
+            {
+              "attempt_number": 1,
+              "recorded_at": "2026-10-03T00:11:42.929023+00:00",
+              "generation_tool": "image_gen.imagegen",
+              "call_status": "success",
+              "generation_prompt": "Create exactly ONE square 1024x1024 transparent PNG of this exact exercise and ONE selected phase. Metadata must never appear as image text.\n{\n  \"approved_style_files\": [\n    {\n      \"path\": \"docs/exercise-image-style.md\",\n      \"sha256\": \"8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578\"\n    },\n    {\n      \"path\": \"docs/exercise-image-style-neutral-primary.md\",\n      \"sha256\": \"86204ab43f23d119a1eb25cafdbda2518b741a0090b4ffb0ceb9086952314439\"\n    }\n  ],\n  \"exact_catalogue_source\": {\n    \"equipment\": \"machine\",\n    \"primary_muscle\": \"cardio\",\n    \"secondary_muscles\": [],\n    \"source_english\": {\n      \"common_mistakes\": [\n        \"Pulling with the arms first.\",\n        \"Rounding the lower back at the catch.\",\n        \"Returning too quickly.\"\n      ],\n      \"description\": \"A rowing machine stroke sequences a seated leg drive, hip swing, and arm pull before a controlled recovery.\",\n      \"form_cues\": [\n        \"Keep the handle level.\",\n        \"Sequence legs, body, then arms.\",\n        \"Recover in reverse order.\"\n      ],\n      \"instructions\": [\n        \"Set the foot straps and sit tall with the handle held in front of you.\",\n        \"Start at the catch with knees bent, then drive through the legs.\",\n        \"Open the hips and pull the handle to the lower ribs with relaxed shoulders.\",\n        \"Return the arms, hinge the torso forward, and bend the knees to the catch.\"\n      ],\n      \"provenance\": \"authored\",\n      \"safety_note\": \"Secure the foot straps and use a stroke rate and resistance that preserve a smooth sequence.\"\n    }\n  },\n  \"human_reference\": {\n    \"absolute_path\": \"/workspace/lightweight-exercises-photo/assets/exercises/biceps-curl-dumbbell.png\",\n    \"branch\": \"work\",\n    \"pixels_reviewed_during_preparation\": false,\n    \"repository_path\": \"assets/exercises/biceps-curl-dumbbell.png\",\n    \"role\": \"Human appearance/proportions/materials/anatomical style ONLY. Exercise pose, grip, equipment and muscles come from the exact-ID catalogue, never the reference.\",\n    \"sha256\": \"52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f\",\n    \"source_commit\": \"b0385b7e2f3382d545a6dff5304c81ba3c771096\"\n  },\n  \"identity_do_not_render_as_text\": {\n    \"catalog_record_sha256\": \"ab0f06488fde8ce642810c6817feeeea93a86bb7a71ae7944187285ce331e06e\",\n    \"catalog_sha256\": \"a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989\",\n    \"exercise_id\": \"rowing-machine\",\n    \"name\": \"Rowing Machine\"\n  },\n  \"selected_render_scene\": {\n    \"camera\": \"Full-body front-side three-quarter view exposing every prescribed contact, grip and support. Entire person and all equipment visible within square; no crop, text, arrows or second phase.\",\n    \"exercise_id\": \"rowing-machine\",\n    \"grip\": \"Both hands hold the SINGLE rowing handle, wrists straight, handle level. No independent cable handles.\",\n    \"movement_trajectory\": \"Leg drive then hip opening then arm pull to lower ribs; depict finish only. Recovery reverses sequence.\",\n    \"never_infer_muscles_from_pose_or_reference\": true,\n    \"one_phase_only\": true,\n    \"pose\": \"Seated on sliding ergometer seat, legs extended without forceful knee lock, hips opened and torso long with slight rearward hinge; elbows back, shoulders relaxed.\",\n    \"single_phase\": \"Drive finish, handle at lower ribs\",\n    \"supports_and_equipment\": \"Rowing ergometer with sliding seat on rail, two strapped footplates and single connected handle; both feet secured. No stationary lever-row seat.\"\n  },\n  \"source_use_rule\": \"Preserve raw source texts verbatim; render only selected scene and documented exact-source/user resolution. Do not silently repair the catalogue.\",\n  \"style\": {\n    \"background\": \"Genuinely transparent PNG background, no white/checkerboard layer, no environment scene.\",\n    \"framing\": \"Full figure and all required equipment/supports visible within a square. Scale and use a three-quarter view to expose the specified contacts without changing anatomy, equipment, grip or technique.\",\n    \"human_model\": \"One athletic bald male anatomical mannequin, opaque silver-gray muscular surfaces, consistent proportions and detailed 3D materials, plain black shorts, barefoot.\",\n    \"material_rules\": \"Highlights never make tissue transparent; no glow, whole-body orange tint, hair, text, labels, arrows, UI, borders, collage or extra person.\",\n    \"no_invention\": \"Exact-ID catalogue controls source text and muscles. Render documented selected scene; recorded source corrections apply to the derived scene only. No reference-pose copying or imported muscle targets.\",\n    \"output\": {\n      \"format\": \"PNG\",\n      \"height\": 1024,\n      \"one_person\": true,\n      \"one_phase\": true,\n      \"width\": 1024\n    },\n    \"primary_highlight\": {\n      \"hex\": null,\n      \"rule\": \"Keep whole body opaque neutral silver-gray. No anatomical primary or whole-body orange tint for full_body/cardio/other.\"\n    },\n    \"secondary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"intensity_fraction\": [\n        0.4,\n        0.5\n      ],\n      \"rule\": \"Only the exact secondary muscles, lighter same-hue highlight; if the list is empty add no secondary target.\"\n    },\n    \"version\": \"v1-neutral-primary-2026-10-02\"\n  },\n  \"technique_resolution\": {\n    \"PNG_approval\": false,\n    \"binding_or_name_alone_is_not_confirmation\": true,\n    \"catalog_modified\": false,\n    \"construction_rule\": \"Standard compatible unbranded geometry allowed by AGENTS.md; choose geometry only around specified contacts/motion. Category machine does not establish a load mechanism, brand, angle or weight count.\",\n    \"dataset_instruction_steps_read\": null,\n    \"decision_kind\": \"exact_ID_written_technique_confirmation\",\n    \"evidence_path\": \"data/audits/agent-03-single-generator-2026-10-03-technique.json\",\n    \"evidence_selector\": \"records[exercise_id=\\\"rowing-machine\\\"]\",\n    \"illustration_choices\": \"Side/phase and compatible layout are scene choices, not amendments to source technique. Do not infer muscle targets from scene or equipment.\",\n    \"status\": \"resolved\",\n    \"technique_fields_read\": [\n      \"content.en.description\",\n      \"content.en.instructions\",\n      \"content.en.form_cues\",\n      \"content.en.common_mistakes\",\n      \"content.en.safety_note\",\n      \"content.pl.instructions\",\n      \"source.dataset_id\"\n    ]\n  }\n}",
+              "prompt_sha256": "5d095a32a9882336c3636a9ba327e99df2d9519e7c9912eb67ce067b929e0324",
+              "style_version": "v1-neutral-primary-2026-10-02",
+              "style_files": {
+                "docs/exercise-image-style.md": "8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578",
+                "docs/exercise-image-style-neutral-primary.md": "86204ab43f23d119a1eb25cafdbda2518b741a0090b4ffb0ceb9086952314439"
+              },
+              "reference_path": "assets/exercises/biceps-curl-dumbbell.png",
+              "reference_sha256": "52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f",
+              "catalog_path": "data/exercises/catalog.json",
+              "catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+              "catalog_record_sha256": "ab0f06488fde8ce642810c6817feeeea93a86bb7a71ae7944187285ce331e06e",
+              "source_generated_file": "/workspace/generated_images/exec-0040c998-d734-49fd-8880-78a332844d5c.png",
+              "source_generated_sha256": "acc7f6f8a910dd1cd71ba14f2986c5ae625a4b6b112505b8cffdaca920acd989",
+              "source_generated_dimensions": [
+                1254,
+                1254
+              ],
+              "normalization": {
+                "method": "Pillow LANCZOS resize to 1024x1024 with RGBA alpha preserved",
+                "applied": true
+              },
+              "result_path": "/workspace/exercise-image-results/agent-03-single-generator-2026-10-03/generator-single/agent-03-others-030/rowing-machine/attempt-1.png",
+              "git_result_path": "assets/exercises/pending/agent-03-single-generator-2026-10-03/generator-single/agent-03-others-030/rowing-machine/attempt-1.png",
+              "result_sha256": "7cda14baac553d95b4e762b3eeeb12572a6c7d6d0d20710d8e2c2c33086540e9",
+              "technical_check": {
+                "status": "passed",
+                "format": "PNG",
+                "width": 1024,
+                "height": 1024,
+                "mode": "RGBA",
+                "has_alpha_channel": true,
+                "alpha_min": 0,
+                "alpha_max": 255,
+                "transparent_pixel_present": true,
+                "square": true,
+                "errors": [],
+                "sha256": "7cda14baac553d95b4e762b3eeeb12572a6c7d6d0d20710d8e2c2c33086540e9",
+                "byte_size": 615058,
+                "source_generated_sha256": "acc7f6f8a910dd1cd71ba14f2986c5ae625a4b6b112505b8cffdaca920acd989",
+                "source_generated_dimensions": [
+                  1254,
+                  1254
+                ],
+                "normalization": {
+                  "method": "Pillow LANCZOS resize to 1024x1024 with RGBA alpha preserved",
+                  "applied": true
+                }
+              },
+              "errors": []
+            }
+          ],
+          "user_review": "pending",
+          "technical_check": {
+            "status": "passed",
+            "format": "PNG",
+            "width": 1024,
+            "height": 1024,
+            "mode": "RGBA",
+            "has_alpha_channel": true,
+            "alpha_min": 0,
+            "alpha_max": 255,
+            "transparent_pixel_present": true,
+            "square": true,
+            "errors": [],
+            "sha256": "7cda14baac553d95b4e762b3eeeb12572a6c7d6d0d20710d8e2c2c33086540e9",
+            "byte_size": 615058,
+            "source_generated_sha256": "acc7f6f8a910dd1cd71ba14f2986c5ae625a4b6b112505b8cffdaca920acd989",
+            "source_generated_dimensions": [
+              1254,
+              1254
+            ],
+            "normalization": {
+              "method": "Pillow LANCZOS resize to 1024x1024 with RGBA alpha preserved",
+              "applied": true
+            }
+          },
           "agent_visual_review": "not_performed",
-          "result_path": null,
+          "result_path": "/workspace/exercise-image-results/agent-03-single-generator-2026-10-03/generator-single/agent-03-others-030/rowing-machine/attempt-1.png",
           "planned_png_path": "/workspace/exercise-image-results/agent-03-single-generator-2026-10-03/generator-single/agent-03-others-030/rowing-machine/attempt-1.png",
           "planned_git_png_path": "assets/exercises/pending/agent-03-single-generator-2026-10-03/generator-single/agent-03-others-030/rowing-machine/attempt-1.png",
           "source_catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
           "style_version": "v1-neutral-primary-2026-10-02",
-          "prompt_sha256": "5d095a32a9882336c3636a9ba327e99df2d9519e7c9912eb67ce067b929e0324"
+          "prompt_sha256": "5d095a32a9882336c3636a9ba327e99df2d9519e7c9912eb67ce067b929e0324",
+          "result_sha256": "7cda14baac553d95b4e762b3eeeb12572a6c7d6d0d20710d8e2c2c33086540e9",
+          "generation_prompt": "Create exactly ONE square 1024x1024 transparent PNG of this exact exercise and ONE selected phase. Metadata must never appear as image text.\n{\n  \"approved_style_files\": [\n    {\n      \"path\": \"docs/exercise-image-style.md\",\n      \"sha256\": \"8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578\"\n    },\n    {\n      \"path\": \"docs/exercise-image-style-neutral-primary.md\",\n      \"sha256\": \"86204ab43f23d119a1eb25cafdbda2518b741a0090b4ffb0ceb9086952314439\"\n    }\n  ],\n  \"exact_catalogue_source\": {\n    \"equipment\": \"machine\",\n    \"primary_muscle\": \"cardio\",\n    \"secondary_muscles\": [],\n    \"source_english\": {\n      \"common_mistakes\": [\n        \"Pulling with the arms first.\",\n        \"Rounding the lower back at the catch.\",\n        \"Returning too quickly.\"\n      ],\n      \"description\": \"A rowing machine stroke sequences a seated leg drive, hip swing, and arm pull before a controlled recovery.\",\n      \"form_cues\": [\n        \"Keep the handle level.\",\n        \"Sequence legs, body, then arms.\",\n        \"Recover in reverse order.\"\n      ],\n      \"instructions\": [\n        \"Set the foot straps and sit tall with the handle held in front of you.\",\n        \"Start at the catch with knees bent, then drive through the legs.\",\n        \"Open the hips and pull the handle to the lower ribs with relaxed shoulders.\",\n        \"Return the arms, hinge the torso forward, and bend the knees to the catch.\"\n      ],\n      \"provenance\": \"authored\",\n      \"safety_note\": \"Secure the foot straps and use a stroke rate and resistance that preserve a smooth sequence.\"\n    }\n  },\n  \"human_reference\": {\n    \"absolute_path\": \"/workspace/lightweight-exercises-photo/assets/exercises/biceps-curl-dumbbell.png\",\n    \"branch\": \"work\",\n    \"pixels_reviewed_during_preparation\": false,\n    \"repository_path\": \"assets/exercises/biceps-curl-dumbbell.png\",\n    \"role\": \"Human appearance/proportions/materials/anatomical style ONLY. Exercise pose, grip, equipment and muscles come from the exact-ID catalogue, never the reference.\",\n    \"sha256\": \"52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f\",\n    \"source_commit\": \"b0385b7e2f3382d545a6dff5304c81ba3c771096\"\n  },\n  \"identity_do_not_render_as_text\": {\n    \"catalog_record_sha256\": \"ab0f06488fde8ce642810c6817feeeea93a86bb7a71ae7944187285ce331e06e\",\n    \"catalog_sha256\": \"a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989\",\n    \"exercise_id\": \"rowing-machine\",\n    \"name\": \"Rowing Machine\"\n  },\n  \"selected_render_scene\": {\n    \"camera\": \"Full-body front-side three-quarter view exposing every prescribed contact, grip and support. Entire person and all equipment visible within square; no crop, text, arrows or second phase.\",\n    \"exercise_id\": \"rowing-machine\",\n    \"grip\": \"Both hands hold the SINGLE rowing handle, wrists straight, handle level. No independent cable handles.\",\n    \"movement_trajectory\": \"Leg drive then hip opening then arm pull to lower ribs; depict finish only. Recovery reverses sequence.\",\n    \"never_infer_muscles_from_pose_or_reference\": true,\n    \"one_phase_only\": true,\n    \"pose\": \"Seated on sliding ergometer seat, legs extended without forceful knee lock, hips opened and torso long with slight rearward hinge; elbows back, shoulders relaxed.\",\n    \"single_phase\": \"Drive finish, handle at lower ribs\",\n    \"supports_and_equipment\": \"Rowing ergometer with sliding seat on rail, two strapped footplates and single connected handle; both feet secured. No stationary lever-row seat.\"\n  },\n  \"source_use_rule\": \"Preserve raw source texts verbatim; render only selected scene and documented exact-source/user resolution. Do not silently repair the catalogue.\",\n  \"style\": {\n    \"background\": \"Genuinely transparent PNG background, no white/checkerboard layer, no environment scene.\",\n    \"framing\": \"Full figure and all required equipment/supports visible within a square. Scale and use a three-quarter view to expose the specified contacts without changing anatomy, equipment, grip or technique.\",\n    \"human_model\": \"One athletic bald male anatomical mannequin, opaque silver-gray muscular surfaces, consistent proportions and detailed 3D materials, plain black shorts, barefoot.\",\n    \"material_rules\": \"Highlights never make tissue transparent; no glow, whole-body orange tint, hair, text, labels, arrows, UI, borders, collage or extra person.\",\n    \"no_invention\": \"Exact-ID catalogue controls source text and muscles. Render documented selected scene; recorded source corrections apply to the derived scene only. No reference-pose copying or imported muscle targets.\",\n    \"output\": {\n      \"format\": \"PNG\",\n      \"height\": 1024,\n      \"one_person\": true,\n      \"one_phase\": true,\n      \"width\": 1024\n    },\n    \"primary_highlight\": {\n      \"hex\": null,\n      \"rule\": \"Keep whole body opaque neutral silver-gray. No anatomical primary or whole-body orange tint for full_body/cardio/other.\"\n    },\n    \"secondary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"intensity_fraction\": [\n        0.4,\n        0.5\n      ],\n      \"rule\": \"Only the exact secondary muscles, lighter same-hue highlight; if the list is empty add no secondary target.\"\n    },\n    \"version\": \"v1-neutral-primary-2026-10-02\"\n  },\n  \"technique_resolution\": {\n    \"PNG_approval\": false,\n    \"binding_or_name_alone_is_not_confirmation\": true,\n    \"catalog_modified\": false,\n    \"construction_rule\": \"Standard compatible unbranded geometry allowed by AGENTS.md; choose geometry only around specified contacts/motion. Category machine does not establish a load mechanism, brand, angle or weight count.\",\n    \"dataset_instruction_steps_read\": null,\n    \"decision_kind\": \"exact_ID_written_technique_confirmation\",\n    \"evidence_path\": \"data/audits/agent-03-single-generator-2026-10-03-technique.json\",\n    \"evidence_selector\": \"records[exercise_id=\\\"rowing-machine\\\"]\",\n    \"illustration_choices\": \"Side/phase and compatible layout are scene choices, not amendments to source technique. Do not infer muscle targets from scene or equipment.\",\n    \"status\": \"resolved\",\n    \"technique_fields_read\": [\n      \"content.en.description\",\n      \"content.en.instructions\",\n      \"content.en.form_cues\",\n      \"content.en.common_mistakes\",\n      \"content.en.safety_note\",\n      \"content.pl.instructions\",\n      \"source.dataset_id\"\n    ]\n  }\n}",
+          "style_file_hashes": {
+            "docs/exercise-image-style.md": "8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578",
+            "docs/exercise-image-style-neutral-primary.md": "86204ab43f23d119a1eb25cafdbda2518b741a0090b4ffb0ceb9086952314439"
+          },
+          "reference_path": "assets/exercises/biceps-curl-dumbbell.png",
+          "reference_sha256": "52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f",
+          "source_catalog_record_sha256": "ab0f06488fde8ce642810c6817feeeea93a86bb7a71ae7944187285ce331e06e",
+          "technical_status": "passed",
+          "errors": []
         },
         {
           "exercise_id": "spinning-machine",
           "name": "Spinning",
-          "status": "not_started",
-          "attempts": 0,
-          "attempt_history": [],
-          "user_review": null,
-          "technical_check": null,
+          "status": "generated",
+          "attempts": 1,
+          "attempt_history": [
+            {
+              "attempt_number": 1,
+              "recorded_at": "2026-10-03T00:12:50.929335+00:00",
+              "generation_tool": "image_gen.imagegen",
+              "call_status": "success",
+              "generation_prompt": "Create exactly ONE square 1024x1024 transparent PNG of this exact exercise and ONE selected phase. Metadata must never appear as image text.\n{\n  \"approved_style_files\": [\n    {\n      \"path\": \"docs/exercise-image-style.md\",\n      \"sha256\": \"8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578\"\n    },\n    {\n      \"path\": \"docs/exercise-image-style-neutral-primary.md\",\n      \"sha256\": \"86204ab43f23d119a1eb25cafdbda2518b741a0090b4ffb0ceb9086952314439\"\n    }\n  ],\n  \"exact_catalogue_source\": {\n    \"equipment\": \"machine\",\n    \"primary_muscle\": \"cardio\",\n    \"secondary_muscles\": [],\n    \"source_english\": {\n      \"common_mistakes\": [\n        \"Pedaling with the saddle too low.\",\n        \"Bouncing on the seat.\",\n        \"Stopping abruptly at speed.\"\n      ],\n      \"description\": \"Spinning is seated cycling on a stationary bike with adjustable resistance and a steady pedal rhythm.\",\n      \"form_cues\": [\n        \"Keep knees tracking forward.\",\n        \"Maintain even pedal circles.\",\n        \"Adjust resistance gradually.\"\n      ],\n      \"instructions\": [\n        \"Adjust the saddle so the knee remains slightly bent at the bottom of the pedal stroke.\",\n        \"Secure both feet in the pedals and sit with the back long.\",\n        \"Pedal smoothly while keeping the hands relaxed on the handlebars.\",\n        \"Gradually reduce cadence and resistance before stopping.\"\n      ],\n      \"provenance\": \"adapted\",\n      \"safety_note\": \"Secure the pedals and choose a resistance that allows smooth control.\"\n    }\n  },\n  \"human_reference\": {\n    \"absolute_path\": \"/workspace/lightweight-exercises-photo/assets/exercises/biceps-curl-dumbbell.png\",\n    \"branch\": \"work\",\n    \"pixels_reviewed_during_preparation\": false,\n    \"repository_path\": \"assets/exercises/biceps-curl-dumbbell.png\",\n    \"role\": \"Human appearance/proportions/materials/anatomical style ONLY. Exercise pose, grip, equipment and muscles come from the exact-ID catalogue, never the reference.\",\n    \"sha256\": \"52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f\",\n    \"source_commit\": \"b0385b7e2f3382d545a6dff5304c81ba3c771096\"\n  },\n  \"identity_do_not_render_as_text\": {\n    \"catalog_record_sha256\": \"b8efd06e3da099885f56c2afd2b36122da60d2ee8b9ae14ecf4d46bcdb24dd33\",\n    \"catalog_sha256\": \"a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989\",\n    \"exercise_id\": \"spinning-machine\",\n    \"name\": \"Spinning\"\n  },\n  \"selected_render_scene\": {\n    \"camera\": \"Full-body front-side three-quarter view exposing every prescribed contact, grip and support. Entire person and all equipment visible within square; no crop, text, arrows or second phase.\",\n    \"exercise_id\": \"spinning-machine\",\n    \"grip\": \"Both hands relaxed on fixed handlebars; no moving air-bike handles.\",\n    \"movement_trajectory\": \"Smooth continuous seated pedal circles with even rhythm; depict one stroke.\",\n    \"never_infer_muscles_from_pose_or_reference\": true,\n    \"one_phase_only\": true,\n    \"pose\": \"Seated on stationary saddle, back long; right pedal down with slight knee bend and opposite knee flexed; trunk steady.\",\n    \"single_phase\": \"One seated cycling stroke\",\n    \"supports_and_equipment\": \"Unbranded stationary resistance bike, saddle, fixed handlebars and two compatible secured pedals; both feet in pedals. No treadmill.\"\n  },\n  \"source_use_rule\": \"Preserve raw source texts verbatim; render only selected scene and documented exact-source/user resolution. Do not silently repair the catalogue.\",\n  \"style\": {\n    \"background\": \"Genuinely transparent PNG background, no white/checkerboard layer, no environment scene.\",\n    \"framing\": \"Full figure and all required equipment/supports visible within a square. Scale and use a three-quarter view to expose the specified contacts without changing anatomy, equipment, grip or technique.\",\n    \"human_model\": \"One athletic bald male anatomical mannequin, opaque silver-gray muscular surfaces, consistent proportions and detailed 3D materials, plain black shorts, barefoot.\",\n    \"material_rules\": \"Highlights never make tissue transparent; no glow, whole-body orange tint, hair, text, labels, arrows, UI, borders, collage or extra person.\",\n    \"no_invention\": \"Exact-ID catalogue controls source text and muscles. Render documented selected scene; recorded source corrections apply to the derived scene only. No reference-pose copying or imported muscle targets.\",\n    \"output\": {\n      \"format\": \"PNG\",\n      \"height\": 1024,\n      \"one_person\": true,\n      \"one_phase\": true,\n      \"width\": 1024\n    },\n    \"primary_highlight\": {\n      \"hex\": null,\n      \"rule\": \"Keep whole body opaque neutral silver-gray. No anatomical primary or whole-body orange tint for full_body/cardio/other.\"\n    },\n    \"secondary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"intensity_fraction\": [\n        0.4,\n        0.5\n      ],\n      \"rule\": \"Only the exact secondary muscles, lighter same-hue highlight; if the list is empty add no secondary target.\"\n    },\n    \"version\": \"v1-neutral-primary-2026-10-02\"\n  },\n  \"technique_resolution\": {\n    \"PNG_approval\": false,\n    \"binding_or_name_alone_is_not_confirmation\": true,\n    \"catalog_modified\": false,\n    \"construction_rule\": \"Standard compatible unbranded geometry allowed by AGENTS.md; choose geometry only around specified contacts/motion. Category machine does not establish a load mechanism, brand, angle or weight count.\",\n    \"dataset_instruction_steps_read\": [\n      \"Adjust the seat height and position on the stationary bike to ensure proper alignment.\",\n      \"Place your feet on the pedals and secure them with the straps if available.\",\n      \"Start pedaling at a comfortable pace, keeping your back straight and core engaged.\",\n      \"Maintain a steady rhythm and increase the resistance level if desired.\",\n      \"Continue pedaling for the desired duration of your cardio workout.\",\n      \"Cool down by gradually reducing your pace and resistance level.\",\n      \"Stretch your leg muscles after the workout to prevent tightness and promote recovery.\"\n    ],\n    \"decision_kind\": \"exact_ID_written_technique_confirmation\",\n    \"evidence_path\": \"data/audits/agent-03-single-generator-2026-10-03-technique.json\",\n    \"evidence_selector\": \"records[exercise_id=\\\"spinning-machine\\\"]\",\n    \"illustration_choices\": \"Side/phase and compatible layout are scene choices, not amendments to source technique. Do not infer muscle targets from scene or equipment.\",\n    \"status\": \"resolved\",\n    \"technique_fields_read\": [\n      \"content.en.description\",\n      \"content.en.instructions\",\n      \"content.en.form_cues\",\n      \"content.en.common_mistakes\",\n      \"content.en.safety_note\",\n      \"content.pl.instructions\",\n      \"source.dataset_id\"\n    ]\n  }\n}",
+              "prompt_sha256": "d6ec92632d20aacb1bc2bd14c24c0253f2be2208f071b72a0a78f9f6eaa774ab",
+              "style_version": "v1-neutral-primary-2026-10-02",
+              "style_files": {
+                "docs/exercise-image-style.md": "8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578",
+                "docs/exercise-image-style-neutral-primary.md": "86204ab43f23d119a1eb25cafdbda2518b741a0090b4ffb0ceb9086952314439"
+              },
+              "reference_path": "assets/exercises/biceps-curl-dumbbell.png",
+              "reference_sha256": "52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f",
+              "catalog_path": "data/exercises/catalog.json",
+              "catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+              "catalog_record_sha256": "b8efd06e3da099885f56c2afd2b36122da60d2ee8b9ae14ecf4d46bcdb24dd33",
+              "source_generated_file": "/workspace/generated_images/exec-bea7f38c-5752-414e-a692-1b54cd9e0931.png",
+              "source_generated_sha256": "85739981d5f8d8bf0f5b920f13302b379d048ecebd7db82f2cc9503fe8075af7",
+              "source_generated_dimensions": [
+                1254,
+                1254
+              ],
+              "normalization": {
+                "method": "Pillow LANCZOS resize to 1024x1024 with RGBA alpha preserved",
+                "applied": true
+              },
+              "result_path": "/workspace/exercise-image-results/agent-03-single-generator-2026-10-03/generator-single/agent-03-others-030/spinning-machine/attempt-1.png",
+              "git_result_path": "assets/exercises/pending/agent-03-single-generator-2026-10-03/generator-single/agent-03-others-030/spinning-machine/attempt-1.png",
+              "result_sha256": "be3cd4b4503582745b0e40f007c3754028cf3941148d901725fe094e54991aad",
+              "technical_check": {
+                "status": "passed",
+                "format": "PNG",
+                "width": 1024,
+                "height": 1024,
+                "mode": "RGBA",
+                "has_alpha_channel": true,
+                "alpha_min": 0,
+                "alpha_max": 255,
+                "transparent_pixel_present": true,
+                "square": true,
+                "errors": [],
+                "sha256": "be3cd4b4503582745b0e40f007c3754028cf3941148d901725fe094e54991aad",
+                "byte_size": 602054,
+                "source_generated_sha256": "85739981d5f8d8bf0f5b920f13302b379d048ecebd7db82f2cc9503fe8075af7",
+                "source_generated_dimensions": [
+                  1254,
+                  1254
+                ],
+                "normalization": {
+                  "method": "Pillow LANCZOS resize to 1024x1024 with RGBA alpha preserved",
+                  "applied": true
+                }
+              },
+              "errors": []
+            }
+          ],
+          "user_review": "pending",
+          "technical_check": {
+            "status": "passed",
+            "format": "PNG",
+            "width": 1024,
+            "height": 1024,
+            "mode": "RGBA",
+            "has_alpha_channel": true,
+            "alpha_min": 0,
+            "alpha_max": 255,
+            "transparent_pixel_present": true,
+            "square": true,
+            "errors": [],
+            "sha256": "be3cd4b4503582745b0e40f007c3754028cf3941148d901725fe094e54991aad",
+            "byte_size": 602054,
+            "source_generated_sha256": "85739981d5f8d8bf0f5b920f13302b379d048ecebd7db82f2cc9503fe8075af7",
+            "source_generated_dimensions": [
+              1254,
+              1254
+            ],
+            "normalization": {
+              "method": "Pillow LANCZOS resize to 1024x1024 with RGBA alpha preserved",
+              "applied": true
+            }
+          },
           "agent_visual_review": "not_performed",
-          "result_path": null,
+          "result_path": "/workspace/exercise-image-results/agent-03-single-generator-2026-10-03/generator-single/agent-03-others-030/spinning-machine/attempt-1.png",
           "planned_png_path": "/workspace/exercise-image-results/agent-03-single-generator-2026-10-03/generator-single/agent-03-others-030/spinning-machine/attempt-1.png",
           "planned_git_png_path": "assets/exercises/pending/agent-03-single-generator-2026-10-03/generator-single/agent-03-others-030/spinning-machine/attempt-1.png",
           "source_catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
           "style_version": "v1-neutral-primary-2026-10-02",
-          "prompt_sha256": "d6ec92632d20aacb1bc2bd14c24c0253f2be2208f071b72a0a78f9f6eaa774ab"
+          "prompt_sha256": "d6ec92632d20aacb1bc2bd14c24c0253f2be2208f071b72a0a78f9f6eaa774ab",
+          "result_sha256": "be3cd4b4503582745b0e40f007c3754028cf3941148d901725fe094e54991aad",
+          "generation_prompt": "Create exactly ONE square 1024x1024 transparent PNG of this exact exercise and ONE selected phase. Metadata must never appear as image text.\n{\n  \"approved_style_files\": [\n    {\n      \"path\": \"docs/exercise-image-style.md\",\n      \"sha256\": \"8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578\"\n    },\n    {\n      \"path\": \"docs/exercise-image-style-neutral-primary.md\",\n      \"sha256\": \"86204ab43f23d119a1eb25cafdbda2518b741a0090b4ffb0ceb9086952314439\"\n    }\n  ],\n  \"exact_catalogue_source\": {\n    \"equipment\": \"machine\",\n    \"primary_muscle\": \"cardio\",\n    \"secondary_muscles\": [],\n    \"source_english\": {\n      \"common_mistakes\": [\n        \"Pedaling with the saddle too low.\",\n        \"Bouncing on the seat.\",\n        \"Stopping abruptly at speed.\"\n      ],\n      \"description\": \"Spinning is seated cycling on a stationary bike with adjustable resistance and a steady pedal rhythm.\",\n      \"form_cues\": [\n        \"Keep knees tracking forward.\",\n        \"Maintain even pedal circles.\",\n        \"Adjust resistance gradually.\"\n      ],\n      \"instructions\": [\n        \"Adjust the saddle so the knee remains slightly bent at the bottom of the pedal stroke.\",\n        \"Secure both feet in the pedals and sit with the back long.\",\n        \"Pedal smoothly while keeping the hands relaxed on the handlebars.\",\n        \"Gradually reduce cadence and resistance before stopping.\"\n      ],\n      \"provenance\": \"adapted\",\n      \"safety_note\": \"Secure the pedals and choose a resistance that allows smooth control.\"\n    }\n  },\n  \"human_reference\": {\n    \"absolute_path\": \"/workspace/lightweight-exercises-photo/assets/exercises/biceps-curl-dumbbell.png\",\n    \"branch\": \"work\",\n    \"pixels_reviewed_during_preparation\": false,\n    \"repository_path\": \"assets/exercises/biceps-curl-dumbbell.png\",\n    \"role\": \"Human appearance/proportions/materials/anatomical style ONLY. Exercise pose, grip, equipment and muscles come from the exact-ID catalogue, never the reference.\",\n    \"sha256\": \"52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f\",\n    \"source_commit\": \"b0385b7e2f3382d545a6dff5304c81ba3c771096\"\n  },\n  \"identity_do_not_render_as_text\": {\n    \"catalog_record_sha256\": \"b8efd06e3da099885f56c2afd2b36122da60d2ee8b9ae14ecf4d46bcdb24dd33\",\n    \"catalog_sha256\": \"a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989\",\n    \"exercise_id\": \"spinning-machine\",\n    \"name\": \"Spinning\"\n  },\n  \"selected_render_scene\": {\n    \"camera\": \"Full-body front-side three-quarter view exposing every prescribed contact, grip and support. Entire person and all equipment visible within square; no crop, text, arrows or second phase.\",\n    \"exercise_id\": \"spinning-machine\",\n    \"grip\": \"Both hands relaxed on fixed handlebars; no moving air-bike handles.\",\n    \"movement_trajectory\": \"Smooth continuous seated pedal circles with even rhythm; depict one stroke.\",\n    \"never_infer_muscles_from_pose_or_reference\": true,\n    \"one_phase_only\": true,\n    \"pose\": \"Seated on stationary saddle, back long; right pedal down with slight knee bend and opposite knee flexed; trunk steady.\",\n    \"single_phase\": \"One seated cycling stroke\",\n    \"supports_and_equipment\": \"Unbranded stationary resistance bike, saddle, fixed handlebars and two compatible secured pedals; both feet in pedals. No treadmill.\"\n  },\n  \"source_use_rule\": \"Preserve raw source texts verbatim; render only selected scene and documented exact-source/user resolution. Do not silently repair the catalogue.\",\n  \"style\": {\n    \"background\": \"Genuinely transparent PNG background, no white/checkerboard layer, no environment scene.\",\n    \"framing\": \"Full figure and all required equipment/supports visible within a square. Scale and use a three-quarter view to expose the specified contacts without changing anatomy, equipment, grip or technique.\",\n    \"human_model\": \"One athletic bald male anatomical mannequin, opaque silver-gray muscular surfaces, consistent proportions and detailed 3D materials, plain black shorts, barefoot.\",\n    \"material_rules\": \"Highlights never make tissue transparent; no glow, whole-body orange tint, hair, text, labels, arrows, UI, borders, collage or extra person.\",\n    \"no_invention\": \"Exact-ID catalogue controls source text and muscles. Render documented selected scene; recorded source corrections apply to the derived scene only. No reference-pose copying or imported muscle targets.\",\n    \"output\": {\n      \"format\": \"PNG\",\n      \"height\": 1024,\n      \"one_person\": true,\n      \"one_phase\": true,\n      \"width\": 1024\n    },\n    \"primary_highlight\": {\n      \"hex\": null,\n      \"rule\": \"Keep whole body opaque neutral silver-gray. No anatomical primary or whole-body orange tint for full_body/cardio/other.\"\n    },\n    \"secondary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"intensity_fraction\": [\n        0.4,\n        0.5\n      ],\n      \"rule\": \"Only the exact secondary muscles, lighter same-hue highlight; if the list is empty add no secondary target.\"\n    },\n    \"version\": \"v1-neutral-primary-2026-10-02\"\n  },\n  \"technique_resolution\": {\n    \"PNG_approval\": false,\n    \"binding_or_name_alone_is_not_confirmation\": true,\n    \"catalog_modified\": false,\n    \"construction_rule\": \"Standard compatible unbranded geometry allowed by AGENTS.md; choose geometry only around specified contacts/motion. Category machine does not establish a load mechanism, brand, angle or weight count.\",\n    \"dataset_instruction_steps_read\": [\n      \"Adjust the seat height and position on the stationary bike to ensure proper alignment.\",\n      \"Place your feet on the pedals and secure them with the straps if available.\",\n      \"Start pedaling at a comfortable pace, keeping your back straight and core engaged.\",\n      \"Maintain a steady rhythm and increase the resistance level if desired.\",\n      \"Continue pedaling for the desired duration of your cardio workout.\",\n      \"Cool down by gradually reducing your pace and resistance level.\",\n      \"Stretch your leg muscles after the workout to prevent tightness and promote recovery.\"\n    ],\n    \"decision_kind\": \"exact_ID_written_technique_confirmation\",\n    \"evidence_path\": \"data/audits/agent-03-single-generator-2026-10-03-technique.json\",\n    \"evidence_selector\": \"records[exercise_id=\\\"spinning-machine\\\"]\",\n    \"illustration_choices\": \"Side/phase and compatible layout are scene choices, not amendments to source technique. Do not infer muscle targets from scene or equipment.\",\n    \"status\": \"resolved\",\n    \"technique_fields_read\": [\n      \"content.en.description\",\n      \"content.en.instructions\",\n      \"content.en.form_cues\",\n      \"content.en.common_mistakes\",\n      \"content.en.safety_note\",\n      \"content.pl.instructions\",\n      \"source.dataset_id\"\n    ]\n  }\n}",
+          "style_file_hashes": {
+            "docs/exercise-image-style.md": "8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578",
+            "docs/exercise-image-style-neutral-primary.md": "86204ab43f23d119a1eb25cafdbda2518b741a0090b4ffb0ceb9086952314439"
+          },
+          "reference_path": "assets/exercises/biceps-curl-dumbbell.png",
+          "reference_sha256": "52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f",
+          "source_catalog_record_sha256": "b8efd06e3da099885f56c2afd2b36122da60d2ee8b9ae14ecf4d46bcdb24dd33",
+          "technical_status": "passed",
+          "errors": []
         },
         {
           "exercise_id": "stair-machine-floors",
           "name": "Stair Machine (Floors)",
-          "status": "not_started",
-          "attempts": 0,
-          "attempt_history": [],
-          "user_review": null,
-          "technical_check": null,
+          "status": "generated",
+          "attempts": 1,
+          "attempt_history": [
+            {
+              "attempt_number": 1,
+              "recorded_at": "2026-10-03T00:14:03.819907+00:00",
+              "generation_tool": "image_gen.imagegen",
+              "call_status": "success",
+              "generation_prompt": "Create exactly ONE square 1024x1024 transparent PNG of this exact exercise and ONE selected phase. Metadata must never appear as image text.\n{\n  \"approved_style_files\": [\n    {\n      \"path\": \"docs/exercise-image-style.md\",\n      \"sha256\": \"8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578\"\n    },\n    {\n      \"path\": \"docs/exercise-image-style-neutral-primary.md\",\n      \"sha256\": \"86204ab43f23d119a1eb25cafdbda2518b741a0090b4ffb0ceb9086952314439\"\n    }\n  ],\n  \"exact_catalogue_source\": {\n    \"equipment\": \"machine\",\n    \"primary_muscle\": \"cardio\",\n    \"secondary_muscles\": [],\n    \"source_english\": {\n      \"common_mistakes\": [\n        \"Pulling the body with the rails.\",\n        \"Missing a step.\",\n        \"Stopping without slowing the pedals.\"\n      ],\n      \"description\": \"Stair Machine (Floors) tracks climbing effort by the floors completed on a motorized stair machine.\",\n      \"form_cues\": [\n        \"Keep feet centered on steps.\",\n        \"Maintain a steady cadence.\",\n        \"Look ahead rather than down constantly.\"\n      ],\n      \"instructions\": [\n        \"Step onto the machine and select a manageable pace or floor target.\",\n        \"Climb by placing each foot fully on the next moving step.\",\n        \"Keep the trunk upright and use the rails only for balance.\",\n        \"Reduce the pace and stop the machine before stepping off.\"\n      ],\n      \"provenance\": \"authored\",\n      \"safety_note\": \"Keep the emergency stop accessible and choose a floor target that preserves safe foot placement.\"\n    }\n  },\n  \"human_reference\": {\n    \"absolute_path\": \"/workspace/lightweight-exercises-photo/assets/exercises/biceps-curl-dumbbell.png\",\n    \"branch\": \"work\",\n    \"pixels_reviewed_during_preparation\": false,\n    \"repository_path\": \"assets/exercises/biceps-curl-dumbbell.png\",\n    \"role\": \"Human appearance/proportions/materials/anatomical style ONLY. Exercise pose, grip, equipment and muscles come from the exact-ID catalogue, never the reference.\",\n    \"sha256\": \"52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f\",\n    \"source_commit\": \"b0385b7e2f3382d545a6dff5304c81ba3c771096\"\n  },\n  \"identity_do_not_render_as_text\": {\n    \"catalog_record_sha256\": \"61c09a0b400c1bd085e1c8c54ede64ad021c9fb1bc8fe0d8243b79d38391de64\",\n    \"catalog_sha256\": \"a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989\",\n    \"exercise_id\": \"stair-machine-floors\",\n    \"name\": \"Stair Machine (Floors)\"\n  },\n  \"selected_render_scene\": {\n    \"camera\": \"Full-body front-side three-quarter view exposing every prescribed contact, grip and support. Entire person and all equipment visible within square; no crop, text, arrows or second phase.\",\n    \"exercise_id\": \"stair-machine-floors\",\n    \"grip\": \"Light bilateral rail contact for balance, no hanging bodyweight from rails.\",\n    \"movement_trajectory\": \"Alternate stepping up while stairs move downward. Floors are counting metadata, not image text or a new movement variant.\",\n    \"never_infer_muscles_from_pose_or_reference\": true,\n    \"one_phase_only\": true,\n    \"pose\": \"Torso tall, right whole foot on higher step, left whole foot on adjacent lower step, knees flexed according to step height; hips centered over supports.\",\n    \"single_phase\": \"One grounded stair-climbing step\",\n    \"supports_and_equipment\": \"Motorized stair machine with moving full steps and balance rails; both whole feet supported on consecutive steps. Not an elliptical or two independent pedal stepper.\"\n  },\n  \"source_use_rule\": \"Preserve raw source texts verbatim; render only selected scene and documented exact-source/user resolution. Do not silently repair the catalogue.\",\n  \"style\": {\n    \"background\": \"Genuinely transparent PNG background, no white/checkerboard layer, no environment scene.\",\n    \"framing\": \"Full figure and all required equipment/supports visible within a square. Scale and use a three-quarter view to expose the specified contacts without changing anatomy, equipment, grip or technique.\",\n    \"human_model\": \"One athletic bald male anatomical mannequin, opaque silver-gray muscular surfaces, consistent proportions and detailed 3D materials, plain black shorts, barefoot.\",\n    \"material_rules\": \"Highlights never make tissue transparent; no glow, whole-body orange tint, hair, text, labels, arrows, UI, borders, collage or extra person.\",\n    \"no_invention\": \"Exact-ID catalogue controls source text and muscles. Render documented selected scene; recorded source corrections apply to the derived scene only. No reference-pose copying or imported muscle targets.\",\n    \"output\": {\n      \"format\": \"PNG\",\n      \"height\": 1024,\n      \"one_person\": true,\n      \"one_phase\": true,\n      \"width\": 1024\n    },\n    \"primary_highlight\": {\n      \"hex\": null,\n      \"rule\": \"Keep whole body opaque neutral silver-gray. No anatomical primary or whole-body orange tint for full_body/cardio/other.\"\n    },\n    \"secondary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"intensity_fraction\": [\n        0.4,\n        0.5\n      ],\n      \"rule\": \"Only the exact secondary muscles, lighter same-hue highlight; if the list is empty add no secondary target.\"\n    },\n    \"version\": \"v1-neutral-primary-2026-10-02\"\n  },\n  \"technique_resolution\": {\n    \"PNG_approval\": false,\n    \"binding_or_name_alone_is_not_confirmation\": true,\n    \"catalog_modified\": false,\n    \"construction_rule\": \"Standard compatible unbranded geometry allowed by AGENTS.md; choose geometry only around specified contacts/motion. Category machine does not establish a load mechanism, brand, angle or weight count.\",\n    \"dataset_instruction_steps_read\": null,\n    \"decision_kind\": \"exact_ID_written_technique_confirmation\",\n    \"evidence_path\": \"data/audits/agent-03-single-generator-2026-10-03-technique.json\",\n    \"evidence_selector\": \"records[exercise_id=\\\"stair-machine-floors\\\"]\",\n    \"illustration_choices\": \"Side/phase and compatible layout are scene choices, not amendments to source technique. Do not infer muscle targets from scene or equipment.\",\n    \"status\": \"resolved\",\n    \"technique_fields_read\": [\n      \"content.en.description\",\n      \"content.en.instructions\",\n      \"content.en.form_cues\",\n      \"content.en.common_mistakes\",\n      \"content.en.safety_note\",\n      \"content.pl.instructions\",\n      \"source.dataset_id\"\n    ]\n  }\n}",
+              "prompt_sha256": "015dda006b5058e286bf1f61aa6d2aa0ef05fc50e313e49cc5a4199d593053f0",
+              "style_version": "v1-neutral-primary-2026-10-02",
+              "style_files": {
+                "docs/exercise-image-style.md": "8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578",
+                "docs/exercise-image-style-neutral-primary.md": "86204ab43f23d119a1eb25cafdbda2518b741a0090b4ffb0ceb9086952314439"
+              },
+              "reference_path": "assets/exercises/biceps-curl-dumbbell.png",
+              "reference_sha256": "52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f",
+              "catalog_path": "data/exercises/catalog.json",
+              "catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+              "catalog_record_sha256": "61c09a0b400c1bd085e1c8c54ede64ad021c9fb1bc8fe0d8243b79d38391de64",
+              "source_generated_file": "/workspace/generated_images/exec-26311de0-ce92-42ab-b650-0775563725b5.png",
+              "source_generated_sha256": "04d19afd032906331ae6b8c0c6a937b14d40859cffafe578d72db00ae2af3018",
+              "source_generated_dimensions": [
+                1254,
+                1254
+              ],
+              "normalization": {
+                "method": "Pillow LANCZOS resize to 1024x1024 with RGBA alpha preserved",
+                "applied": true
+              },
+              "result_path": "/workspace/exercise-image-results/agent-03-single-generator-2026-10-03/generator-single/agent-03-others-030/stair-machine-floors/attempt-1.png",
+              "git_result_path": "assets/exercises/pending/agent-03-single-generator-2026-10-03/generator-single/agent-03-others-030/stair-machine-floors/attempt-1.png",
+              "result_sha256": "ab0599a03a71300b66c354006222bb00b5f3362f732f181775ecdcf957ddf7a5",
+              "technical_check": {
+                "status": "passed",
+                "format": "PNG",
+                "width": 1024,
+                "height": 1024,
+                "mode": "RGBA",
+                "has_alpha_channel": true,
+                "alpha_min": 0,
+                "alpha_max": 255,
+                "transparent_pixel_present": true,
+                "square": true,
+                "errors": [],
+                "sha256": "ab0599a03a71300b66c354006222bb00b5f3362f732f181775ecdcf957ddf7a5",
+                "byte_size": 616908,
+                "source_generated_sha256": "04d19afd032906331ae6b8c0c6a937b14d40859cffafe578d72db00ae2af3018",
+                "source_generated_dimensions": [
+                  1254,
+                  1254
+                ],
+                "normalization": {
+                  "method": "Pillow LANCZOS resize to 1024x1024 with RGBA alpha preserved",
+                  "applied": true
+                }
+              },
+              "errors": []
+            }
+          ],
+          "user_review": "pending",
+          "technical_check": {
+            "status": "passed",
+            "format": "PNG",
+            "width": 1024,
+            "height": 1024,
+            "mode": "RGBA",
+            "has_alpha_channel": true,
+            "alpha_min": 0,
+            "alpha_max": 255,
+            "transparent_pixel_present": true,
+            "square": true,
+            "errors": [],
+            "sha256": "ab0599a03a71300b66c354006222bb00b5f3362f732f181775ecdcf957ddf7a5",
+            "byte_size": 616908,
+            "source_generated_sha256": "04d19afd032906331ae6b8c0c6a937b14d40859cffafe578d72db00ae2af3018",
+            "source_generated_dimensions": [
+              1254,
+              1254
+            ],
+            "normalization": {
+              "method": "Pillow LANCZOS resize to 1024x1024 with RGBA alpha preserved",
+              "applied": true
+            }
+          },
           "agent_visual_review": "not_performed",
-          "result_path": null,
+          "result_path": "/workspace/exercise-image-results/agent-03-single-generator-2026-10-03/generator-single/agent-03-others-030/stair-machine-floors/attempt-1.png",
           "planned_png_path": "/workspace/exercise-image-results/agent-03-single-generator-2026-10-03/generator-single/agent-03-others-030/stair-machine-floors/attempt-1.png",
           "planned_git_png_path": "assets/exercises/pending/agent-03-single-generator-2026-10-03/generator-single/agent-03-others-030/stair-machine-floors/attempt-1.png",
           "source_catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
           "style_version": "v1-neutral-primary-2026-10-02",
-          "prompt_sha256": "015dda006b5058e286bf1f61aa6d2aa0ef05fc50e313e49cc5a4199d593053f0"
+          "prompt_sha256": "015dda006b5058e286bf1f61aa6d2aa0ef05fc50e313e49cc5a4199d593053f0",
+          "result_sha256": "ab0599a03a71300b66c354006222bb00b5f3362f732f181775ecdcf957ddf7a5",
+          "generation_prompt": "Create exactly ONE square 1024x1024 transparent PNG of this exact exercise and ONE selected phase. Metadata must never appear as image text.\n{\n  \"approved_style_files\": [\n    {\n      \"path\": \"docs/exercise-image-style.md\",\n      \"sha256\": \"8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578\"\n    },\n    {\n      \"path\": \"docs/exercise-image-style-neutral-primary.md\",\n      \"sha256\": \"86204ab43f23d119a1eb25cafdbda2518b741a0090b4ffb0ceb9086952314439\"\n    }\n  ],\n  \"exact_catalogue_source\": {\n    \"equipment\": \"machine\",\n    \"primary_muscle\": \"cardio\",\n    \"secondary_muscles\": [],\n    \"source_english\": {\n      \"common_mistakes\": [\n        \"Pulling the body with the rails.\",\n        \"Missing a step.\",\n        \"Stopping without slowing the pedals.\"\n      ],\n      \"description\": \"Stair Machine (Floors) tracks climbing effort by the floors completed on a motorized stair machine.\",\n      \"form_cues\": [\n        \"Keep feet centered on steps.\",\n        \"Maintain a steady cadence.\",\n        \"Look ahead rather than down constantly.\"\n      ],\n      \"instructions\": [\n        \"Step onto the machine and select a manageable pace or floor target.\",\n        \"Climb by placing each foot fully on the next moving step.\",\n        \"Keep the trunk upright and use the rails only for balance.\",\n        \"Reduce the pace and stop the machine before stepping off.\"\n      ],\n      \"provenance\": \"authored\",\n      \"safety_note\": \"Keep the emergency stop accessible and choose a floor target that preserves safe foot placement.\"\n    }\n  },\n  \"human_reference\": {\n    \"absolute_path\": \"/workspace/lightweight-exercises-photo/assets/exercises/biceps-curl-dumbbell.png\",\n    \"branch\": \"work\",\n    \"pixels_reviewed_during_preparation\": false,\n    \"repository_path\": \"assets/exercises/biceps-curl-dumbbell.png\",\n    \"role\": \"Human appearance/proportions/materials/anatomical style ONLY. Exercise pose, grip, equipment and muscles come from the exact-ID catalogue, never the reference.\",\n    \"sha256\": \"52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f\",\n    \"source_commit\": \"b0385b7e2f3382d545a6dff5304c81ba3c771096\"\n  },\n  \"identity_do_not_render_as_text\": {\n    \"catalog_record_sha256\": \"61c09a0b400c1bd085e1c8c54ede64ad021c9fb1bc8fe0d8243b79d38391de64\",\n    \"catalog_sha256\": \"a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989\",\n    \"exercise_id\": \"stair-machine-floors\",\n    \"name\": \"Stair Machine (Floors)\"\n  },\n  \"selected_render_scene\": {\n    \"camera\": \"Full-body front-side three-quarter view exposing every prescribed contact, grip and support. Entire person and all equipment visible within square; no crop, text, arrows or second phase.\",\n    \"exercise_id\": \"stair-machine-floors\",\n    \"grip\": \"Light bilateral rail contact for balance, no hanging bodyweight from rails.\",\n    \"movement_trajectory\": \"Alternate stepping up while stairs move downward. Floors are counting metadata, not image text or a new movement variant.\",\n    \"never_infer_muscles_from_pose_or_reference\": true,\n    \"one_phase_only\": true,\n    \"pose\": \"Torso tall, right whole foot on higher step, left whole foot on adjacent lower step, knees flexed according to step height; hips centered over supports.\",\n    \"single_phase\": \"One grounded stair-climbing step\",\n    \"supports_and_equipment\": \"Motorized stair machine with moving full steps and balance rails; both whole feet supported on consecutive steps. Not an elliptical or two independent pedal stepper.\"\n  },\n  \"source_use_rule\": \"Preserve raw source texts verbatim; render only selected scene and documented exact-source/user resolution. Do not silently repair the catalogue.\",\n  \"style\": {\n    \"background\": \"Genuinely transparent PNG background, no white/checkerboard layer, no environment scene.\",\n    \"framing\": \"Full figure and all required equipment/supports visible within a square. Scale and use a three-quarter view to expose the specified contacts without changing anatomy, equipment, grip or technique.\",\n    \"human_model\": \"One athletic bald male anatomical mannequin, opaque silver-gray muscular surfaces, consistent proportions and detailed 3D materials, plain black shorts, barefoot.\",\n    \"material_rules\": \"Highlights never make tissue transparent; no glow, whole-body orange tint, hair, text, labels, arrows, UI, borders, collage or extra person.\",\n    \"no_invention\": \"Exact-ID catalogue controls source text and muscles. Render documented selected scene; recorded source corrections apply to the derived scene only. No reference-pose copying or imported muscle targets.\",\n    \"output\": {\n      \"format\": \"PNG\",\n      \"height\": 1024,\n      \"one_person\": true,\n      \"one_phase\": true,\n      \"width\": 1024\n    },\n    \"primary_highlight\": {\n      \"hex\": null,\n      \"rule\": \"Keep whole body opaque neutral silver-gray. No anatomical primary or whole-body orange tint for full_body/cardio/other.\"\n    },\n    \"secondary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"intensity_fraction\": [\n        0.4,\n        0.5\n      ],\n      \"rule\": \"Only the exact secondary muscles, lighter same-hue highlight; if the list is empty add no secondary target.\"\n    },\n    \"version\": \"v1-neutral-primary-2026-10-02\"\n  },\n  \"technique_resolution\": {\n    \"PNG_approval\": false,\n    \"binding_or_name_alone_is_not_confirmation\": true,\n    \"catalog_modified\": false,\n    \"construction_rule\": \"Standard compatible unbranded geometry allowed by AGENTS.md; choose geometry only around specified contacts/motion. Category machine does not establish a load mechanism, brand, angle or weight count.\",\n    \"dataset_instruction_steps_read\": null,\n    \"decision_kind\": \"exact_ID_written_technique_confirmation\",\n    \"evidence_path\": \"data/audits/agent-03-single-generator-2026-10-03-technique.json\",\n    \"evidence_selector\": \"records[exercise_id=\\\"stair-machine-floors\\\"]\",\n    \"illustration_choices\": \"Side/phase and compatible layout are scene choices, not amendments to source technique. Do not infer muscle targets from scene or equipment.\",\n    \"status\": \"resolved\",\n    \"technique_fields_read\": [\n      \"content.en.description\",\n      \"content.en.instructions\",\n      \"content.en.form_cues\",\n      \"content.en.common_mistakes\",\n      \"content.en.safety_note\",\n      \"content.pl.instructions\",\n      \"source.dataset_id\"\n    ]\n  }\n}",
+          "style_file_hashes": {
+            "docs/exercise-image-style.md": "8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578",
+            "docs/exercise-image-style-neutral-primary.md": "86204ab43f23d119a1eb25cafdbda2518b741a0090b4ffb0ceb9086952314439"
+          },
+          "reference_path": "assets/exercises/biceps-curl-dumbbell.png",
+          "reference_sha256": "52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f",
+          "source_catalog_record_sha256": "61c09a0b400c1bd085e1c8c54ede64ad021c9fb1bc8fe0d8243b79d38391de64",
+          "technical_status": "passed",
+          "errors": []
         },
         {
           "exercise_id": "stair-machine-steps",
           "name": "Stair Machine (Steps)",
-          "status": "not_started",
-          "attempts": 0,
-          "attempt_history": [],
-          "user_review": null,
-          "technical_check": null,
+          "status": "generated",
+          "attempts": 1,
+          "attempt_history": [
+            {
+              "attempt_number": 1,
+              "recorded_at": "2026-10-03T00:15:11.024647+00:00",
+              "generation_tool": "image_gen.imagegen",
+              "call_status": "success",
+              "generation_prompt": "Create exactly ONE square 1024x1024 transparent PNG of this exact exercise and ONE selected phase. Metadata must never appear as image text.\n{\n  \"approved_style_files\": [\n    {\n      \"path\": \"docs/exercise-image-style.md\",\n      \"sha256\": \"8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578\"\n    },\n    {\n      \"path\": \"docs/exercise-image-style-neutral-primary.md\",\n      \"sha256\": \"86204ab43f23d119a1eb25cafdbda2518b741a0090b4ffb0ceb9086952314439\"\n    }\n  ],\n  \"exact_catalogue_source\": {\n    \"equipment\": \"machine\",\n    \"primary_muscle\": \"cardio\",\n    \"secondary_muscles\": [],\n    \"source_english\": {\n      \"common_mistakes\": [\n        \"Relying on the rails.\",\n        \"Taking two steps at once unintentionally.\",\n        \"Stepping off while the pedals are moving.\"\n      ],\n      \"description\": \"Stair Machine (Steps) counts controlled alternating steps on a motorized stair machine.\",\n      \"form_cues\": [\n        \"Keep the hips over the feet.\",\n        \"Use light rail contact.\",\n        \"Breathe steadily.\"\n      ],\n      \"instructions\": [\n        \"Mount the machine and choose a comfortable step rate.\",\n        \"Alternate the feet onto the next steps with the whole foot supported.\",\n        \"Keep the torso tall and maintain a repeatable rhythm.\",\n        \"Slow the rate fully before stepping down from the machine.\"\n      ],\n      \"provenance\": \"authored\",\n      \"safety_note\": \"Use a pace that allows every step to be placed deliberately.\"\n    }\n  },\n  \"human_reference\": {\n    \"absolute_path\": \"/workspace/lightweight-exercises-photo/assets/exercises/biceps-curl-dumbbell.png\",\n    \"branch\": \"work\",\n    \"pixels_reviewed_during_preparation\": false,\n    \"repository_path\": \"assets/exercises/biceps-curl-dumbbell.png\",\n    \"role\": \"Human appearance/proportions/materials/anatomical style ONLY. Exercise pose, grip, equipment and muscles come from the exact-ID catalogue, never the reference.\",\n    \"sha256\": \"52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f\",\n    \"source_commit\": \"b0385b7e2f3382d545a6dff5304c81ba3c771096\"\n  },\n  \"identity_do_not_render_as_text\": {\n    \"catalog_record_sha256\": \"2ce326a8d0e97ca4c6cf01e48b2144ec6a077e375cf9bbfa64babfba8ac69faa\",\n    \"catalog_sha256\": \"a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989\",\n    \"exercise_id\": \"stair-machine-steps\",\n    \"name\": \"Stair Machine (Steps)\"\n  },\n  \"selected_render_scene\": {\n    \"camera\": \"Full-body front-side three-quarter view exposing every prescribed contact, grip and support. Entire person and all equipment visible within square; no crop, text, arrows or second phase.\",\n    \"exercise_id\": \"stair-machine-steps\",\n    \"grip\": \"Hands lightly touch balance rails as specified by exact form cue.\",\n    \"movement_trajectory\": \"Alternate controlled stair steps; steps are counting metadata only. One phase, not an airborne running stride.\",\n    \"never_infer_muscles_from_pose_or_reference\": true,\n    \"one_phase_only\": true,\n    \"pose\": \"Tall torso, left whole foot on higher step and right whole foot on next lower step; pelvis centered and shoulders relaxed.\",\n    \"single_phase\": \"One alternating grounded stair step\",\n    \"supports_and_equipment\": \"Motorized stair machine, moving full steps and rails, both whole feet supported on consecutive steps.\"\n  },\n  \"source_use_rule\": \"Preserve raw source texts verbatim; render only selected scene and documented exact-source/user resolution. Do not silently repair the catalogue.\",\n  \"style\": {\n    \"background\": \"Genuinely transparent PNG background, no white/checkerboard layer, no environment scene.\",\n    \"framing\": \"Full figure and all required equipment/supports visible within a square. Scale and use a three-quarter view to expose the specified contacts without changing anatomy, equipment, grip or technique.\",\n    \"human_model\": \"One athletic bald male anatomical mannequin, opaque silver-gray muscular surfaces, consistent proportions and detailed 3D materials, plain black shorts, barefoot.\",\n    \"material_rules\": \"Highlights never make tissue transparent; no glow, whole-body orange tint, hair, text, labels, arrows, UI, borders, collage or extra person.\",\n    \"no_invention\": \"Exact-ID catalogue controls source text and muscles. Render documented selected scene; recorded source corrections apply to the derived scene only. No reference-pose copying or imported muscle targets.\",\n    \"output\": {\n      \"format\": \"PNG\",\n      \"height\": 1024,\n      \"one_person\": true,\n      \"one_phase\": true,\n      \"width\": 1024\n    },\n    \"primary_highlight\": {\n      \"hex\": null,\n      \"rule\": \"Keep whole body opaque neutral silver-gray. No anatomical primary or whole-body orange tint for full_body/cardio/other.\"\n    },\n    \"secondary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"intensity_fraction\": [\n        0.4,\n        0.5\n      ],\n      \"rule\": \"Only the exact secondary muscles, lighter same-hue highlight; if the list is empty add no secondary target.\"\n    },\n    \"version\": \"v1-neutral-primary-2026-10-02\"\n  },\n  \"technique_resolution\": {\n    \"PNG_approval\": false,\n    \"binding_or_name_alone_is_not_confirmation\": true,\n    \"catalog_modified\": false,\n    \"construction_rule\": \"Standard compatible unbranded geometry allowed by AGENTS.md; choose geometry only around specified contacts/motion. Category machine does not establish a load mechanism, brand, angle or weight count.\",\n    \"dataset_instruction_steps_read\": null,\n    \"decision_kind\": \"exact_ID_written_technique_confirmation\",\n    \"evidence_path\": \"data/audits/agent-03-single-generator-2026-10-03-technique.json\",\n    \"evidence_selector\": \"records[exercise_id=\\\"stair-machine-steps\\\"]\",\n    \"illustration_choices\": \"Side/phase and compatible layout are scene choices, not amendments to source technique. Do not infer muscle targets from scene or equipment.\",\n    \"status\": \"resolved\",\n    \"technique_fields_read\": [\n      \"content.en.description\",\n      \"content.en.instructions\",\n      \"content.en.form_cues\",\n      \"content.en.common_mistakes\",\n      \"content.en.safety_note\",\n      \"content.pl.instructions\",\n      \"source.dataset_id\"\n    ]\n  }\n}",
+              "prompt_sha256": "f36c966fc1cf3d491d727d429aaf491d6b6a7981966c9cd31888d586f8b83f07",
+              "style_version": "v1-neutral-primary-2026-10-02",
+              "style_files": {
+                "docs/exercise-image-style.md": "8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578",
+                "docs/exercise-image-style-neutral-primary.md": "86204ab43f23d119a1eb25cafdbda2518b741a0090b4ffb0ceb9086952314439"
+              },
+              "reference_path": "assets/exercises/biceps-curl-dumbbell.png",
+              "reference_sha256": "52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f",
+              "catalog_path": "data/exercises/catalog.json",
+              "catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+              "catalog_record_sha256": "2ce326a8d0e97ca4c6cf01e48b2144ec6a077e375cf9bbfa64babfba8ac69faa",
+              "source_generated_file": "/workspace/generated_images/exec-ab203ed5-51ea-4132-8bfa-5343c4a1c794.png",
+              "source_generated_sha256": "71e90f7558e9ae70f5be6027e2f73ed95c9c725cbcfe5f024c125bb051b8d22d",
+              "source_generated_dimensions": [
+                1254,
+                1254
+              ],
+              "normalization": {
+                "method": "Pillow LANCZOS resize to 1024x1024 with RGBA alpha preserved",
+                "applied": true
+              },
+              "result_path": "/workspace/exercise-image-results/agent-03-single-generator-2026-10-03/generator-single/agent-03-others-030/stair-machine-steps/attempt-1.png",
+              "git_result_path": "assets/exercises/pending/agent-03-single-generator-2026-10-03/generator-single/agent-03-others-030/stair-machine-steps/attempt-1.png",
+              "result_sha256": "971e433906c1a047d5033e3a2b38023c0f199d6c3575777741a7b896d3936ea3",
+              "technical_check": {
+                "status": "passed",
+                "format": "PNG",
+                "width": 1024,
+                "height": 1024,
+                "mode": "RGBA",
+                "has_alpha_channel": true,
+                "alpha_min": 0,
+                "alpha_max": 255,
+                "transparent_pixel_present": true,
+                "square": true,
+                "errors": [],
+                "sha256": "971e433906c1a047d5033e3a2b38023c0f199d6c3575777741a7b896d3936ea3",
+                "byte_size": 664304,
+                "source_generated_sha256": "71e90f7558e9ae70f5be6027e2f73ed95c9c725cbcfe5f024c125bb051b8d22d",
+                "source_generated_dimensions": [
+                  1254,
+                  1254
+                ],
+                "normalization": {
+                  "method": "Pillow LANCZOS resize to 1024x1024 with RGBA alpha preserved",
+                  "applied": true
+                }
+              },
+              "errors": []
+            }
+          ],
+          "user_review": "pending",
+          "technical_check": {
+            "status": "passed",
+            "format": "PNG",
+            "width": 1024,
+            "height": 1024,
+            "mode": "RGBA",
+            "has_alpha_channel": true,
+            "alpha_min": 0,
+            "alpha_max": 255,
+            "transparent_pixel_present": true,
+            "square": true,
+            "errors": [],
+            "sha256": "971e433906c1a047d5033e3a2b38023c0f199d6c3575777741a7b896d3936ea3",
+            "byte_size": 664304,
+            "source_generated_sha256": "71e90f7558e9ae70f5be6027e2f73ed95c9c725cbcfe5f024c125bb051b8d22d",
+            "source_generated_dimensions": [
+              1254,
+              1254
+            ],
+            "normalization": {
+              "method": "Pillow LANCZOS resize to 1024x1024 with RGBA alpha preserved",
+              "applied": true
+            }
+          },
           "agent_visual_review": "not_performed",
-          "result_path": null,
+          "result_path": "/workspace/exercise-image-results/agent-03-single-generator-2026-10-03/generator-single/agent-03-others-030/stair-machine-steps/attempt-1.png",
           "planned_png_path": "/workspace/exercise-image-results/agent-03-single-generator-2026-10-03/generator-single/agent-03-others-030/stair-machine-steps/attempt-1.png",
           "planned_git_png_path": "assets/exercises/pending/agent-03-single-generator-2026-10-03/generator-single/agent-03-others-030/stair-machine-steps/attempt-1.png",
           "source_catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
           "style_version": "v1-neutral-primary-2026-10-02",
-          "prompt_sha256": "f36c966fc1cf3d491d727d429aaf491d6b6a7981966c9cd31888d586f8b83f07"
+          "prompt_sha256": "f36c966fc1cf3d491d727d429aaf491d6b6a7981966c9cd31888d586f8b83f07",
+          "result_sha256": "971e433906c1a047d5033e3a2b38023c0f199d6c3575777741a7b896d3936ea3",
+          "generation_prompt": "Create exactly ONE square 1024x1024 transparent PNG of this exact exercise and ONE selected phase. Metadata must never appear as image text.\n{\n  \"approved_style_files\": [\n    {\n      \"path\": \"docs/exercise-image-style.md\",\n      \"sha256\": \"8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578\"\n    },\n    {\n      \"path\": \"docs/exercise-image-style-neutral-primary.md\",\n      \"sha256\": \"86204ab43f23d119a1eb25cafdbda2518b741a0090b4ffb0ceb9086952314439\"\n    }\n  ],\n  \"exact_catalogue_source\": {\n    \"equipment\": \"machine\",\n    \"primary_muscle\": \"cardio\",\n    \"secondary_muscles\": [],\n    \"source_english\": {\n      \"common_mistakes\": [\n        \"Relying on the rails.\",\n        \"Taking two steps at once unintentionally.\",\n        \"Stepping off while the pedals are moving.\"\n      ],\n      \"description\": \"Stair Machine (Steps) counts controlled alternating steps on a motorized stair machine.\",\n      \"form_cues\": [\n        \"Keep the hips over the feet.\",\n        \"Use light rail contact.\",\n        \"Breathe steadily.\"\n      ],\n      \"instructions\": [\n        \"Mount the machine and choose a comfortable step rate.\",\n        \"Alternate the feet onto the next steps with the whole foot supported.\",\n        \"Keep the torso tall and maintain a repeatable rhythm.\",\n        \"Slow the rate fully before stepping down from the machine.\"\n      ],\n      \"provenance\": \"authored\",\n      \"safety_note\": \"Use a pace that allows every step to be placed deliberately.\"\n    }\n  },\n  \"human_reference\": {\n    \"absolute_path\": \"/workspace/lightweight-exercises-photo/assets/exercises/biceps-curl-dumbbell.png\",\n    \"branch\": \"work\",\n    \"pixels_reviewed_during_preparation\": false,\n    \"repository_path\": \"assets/exercises/biceps-curl-dumbbell.png\",\n    \"role\": \"Human appearance/proportions/materials/anatomical style ONLY. Exercise pose, grip, equipment and muscles come from the exact-ID catalogue, never the reference.\",\n    \"sha256\": \"52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f\",\n    \"source_commit\": \"b0385b7e2f3382d545a6dff5304c81ba3c771096\"\n  },\n  \"identity_do_not_render_as_text\": {\n    \"catalog_record_sha256\": \"2ce326a8d0e97ca4c6cf01e48b2144ec6a077e375cf9bbfa64babfba8ac69faa\",\n    \"catalog_sha256\": \"a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989\",\n    \"exercise_id\": \"stair-machine-steps\",\n    \"name\": \"Stair Machine (Steps)\"\n  },\n  \"selected_render_scene\": {\n    \"camera\": \"Full-body front-side three-quarter view exposing every prescribed contact, grip and support. Entire person and all equipment visible within square; no crop, text, arrows or second phase.\",\n    \"exercise_id\": \"stair-machine-steps\",\n    \"grip\": \"Hands lightly touch balance rails as specified by exact form cue.\",\n    \"movement_trajectory\": \"Alternate controlled stair steps; steps are counting metadata only. One phase, not an airborne running stride.\",\n    \"never_infer_muscles_from_pose_or_reference\": true,\n    \"one_phase_only\": true,\n    \"pose\": \"Tall torso, left whole foot on higher step and right whole foot on next lower step; pelvis centered and shoulders relaxed.\",\n    \"single_phase\": \"One alternating grounded stair step\",\n    \"supports_and_equipment\": \"Motorized stair machine, moving full steps and rails, both whole feet supported on consecutive steps.\"\n  },\n  \"source_use_rule\": \"Preserve raw source texts verbatim; render only selected scene and documented exact-source/user resolution. Do not silently repair the catalogue.\",\n  \"style\": {\n    \"background\": \"Genuinely transparent PNG background, no white/checkerboard layer, no environment scene.\",\n    \"framing\": \"Full figure and all required equipment/supports visible within a square. Scale and use a three-quarter view to expose the specified contacts without changing anatomy, equipment, grip or technique.\",\n    \"human_model\": \"One athletic bald male anatomical mannequin, opaque silver-gray muscular surfaces, consistent proportions and detailed 3D materials, plain black shorts, barefoot.\",\n    \"material_rules\": \"Highlights never make tissue transparent; no glow, whole-body orange tint, hair, text, labels, arrows, UI, borders, collage or extra person.\",\n    \"no_invention\": \"Exact-ID catalogue controls source text and muscles. Render documented selected scene; recorded source corrections apply to the derived scene only. No reference-pose copying or imported muscle targets.\",\n    \"output\": {\n      \"format\": \"PNG\",\n      \"height\": 1024,\n      \"one_person\": true,\n      \"one_phase\": true,\n      \"width\": 1024\n    },\n    \"primary_highlight\": {\n      \"hex\": null,\n      \"rule\": \"Keep whole body opaque neutral silver-gray. No anatomical primary or whole-body orange tint for full_body/cardio/other.\"\n    },\n    \"secondary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"intensity_fraction\": [\n        0.4,\n        0.5\n      ],\n      \"rule\": \"Only the exact secondary muscles, lighter same-hue highlight; if the list is empty add no secondary target.\"\n    },\n    \"version\": \"v1-neutral-primary-2026-10-02\"\n  },\n  \"technique_resolution\": {\n    \"PNG_approval\": false,\n    \"binding_or_name_alone_is_not_confirmation\": true,\n    \"catalog_modified\": false,\n    \"construction_rule\": \"Standard compatible unbranded geometry allowed by AGENTS.md; choose geometry only around specified contacts/motion. Category machine does not establish a load mechanism, brand, angle or weight count.\",\n    \"dataset_instruction_steps_read\": null,\n    \"decision_kind\": \"exact_ID_written_technique_confirmation\",\n    \"evidence_path\": \"data/audits/agent-03-single-generator-2026-10-03-technique.json\",\n    \"evidence_selector\": \"records[exercise_id=\\\"stair-machine-steps\\\"]\",\n    \"illustration_choices\": \"Side/phase and compatible layout are scene choices, not amendments to source technique. Do not infer muscle targets from scene or equipment.\",\n    \"status\": \"resolved\",\n    \"technique_fields_read\": [\n      \"content.en.description\",\n      \"content.en.instructions\",\n      \"content.en.form_cues\",\n      \"content.en.common_mistakes\",\n      \"content.en.safety_note\",\n      \"content.pl.instructions\",\n      \"source.dataset_id\"\n    ]\n  }\n}",
+          "style_file_hashes": {
+            "docs/exercise-image-style.md": "8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578",
+            "docs/exercise-image-style-neutral-primary.md": "86204ab43f23d119a1eb25cafdbda2518b741a0090b4ffb0ceb9086952314439"
+          },
+          "reference_path": "assets/exercises/biceps-curl-dumbbell.png",
+          "reference_sha256": "52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f",
+          "source_catalog_record_sha256": "2ce326a8d0e97ca4c6cf01e48b2144ec6a077e375cf9bbfa64babfba8ac69faa",
+          "technical_status": "passed",
+          "errors": []
         },
         {
           "exercise_id": "treadmill-machine",
           "name": "Treadmill",
-          "status": "not_started",
-          "attempts": 0,
-          "attempt_history": [],
+          "status": "failed",
+          "attempts": 1,
+          "attempt_history": [
+            {
+              "attempt_number": 1,
+              "recorded_at": "2026-10-03T00:18:14.450357+00:00",
+              "generation_tool": "image_gen.imagegen",
+              "call_status": "aborted",
+              "generation_prompt": "Create exactly ONE square 1024x1024 transparent PNG of this exact exercise and ONE selected phase. Metadata must never appear as image text.\n{\n  \"approved_style_files\": [\n    {\n      \"path\": \"docs/exercise-image-style.md\",\n      \"sha256\": \"8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578\"\n    },\n    {\n      \"path\": \"docs/exercise-image-style-neutral-primary.md\",\n      \"sha256\": \"86204ab43f23d119a1eb25cafdbda2518b741a0090b4ffb0ceb9086952314439\"\n    }\n  ],\n  \"exact_catalogue_source\": {\n    \"equipment\": \"machine\",\n    \"primary_muscle\": \"cardio\",\n    \"secondary_muscles\": [],\n    \"source_english\": {\n      \"common_mistakes\": [\n        \"Holding the rails continuously.\",\n        \"Starting too fast.\",\n        \"Stepping off a moving belt.\"\n      ],\n      \"description\": \"Treadmill walking keeps the body upright while the belt moves at a controlled pace and incline.\",\n      \"form_cues\": [\n        \"Look forward.\",\n        \"Use an even stride.\",\n        \"Keep shoulders relaxed.\"\n      ],\n      \"instructions\": [\n        \"Step onto the treadmill with the belt stopped and set a comfortable speed and incline.\",\n        \"Begin walking with feet landing under the hips and hands off the rails when balanced.\",\n        \"Keep the torso upright and maintain the chosen pace for the planned duration.\",\n        \"Reduce the speed and incline to a slow walk before stopping and stepping off.\"\n      ],\n      \"provenance\": \"adapted\",\n      \"safety_note\": \"Use the safety clip and hold the rails only while mounting or dismounting.\"\n    }\n  },\n  \"human_reference\": {\n    \"absolute_path\": \"/workspace/lightweight-exercises-photo/assets/exercises/biceps-curl-dumbbell.png\",\n    \"branch\": \"work\",\n    \"pixels_reviewed_during_preparation\": false,\n    \"repository_path\": \"assets/exercises/biceps-curl-dumbbell.png\",\n    \"role\": \"Human appearance/proportions/materials/anatomical style ONLY. Exercise pose, grip, equipment and muscles come from the exact-ID catalogue, never the reference.\",\n    \"sha256\": \"52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f\",\n    \"source_commit\": \"b0385b7e2f3382d545a6dff5304c81ba3c771096\"\n  },\n  \"identity_do_not_render_as_text\": {\n    \"catalog_record_sha256\": \"fdcf62483830be6f80f1bcd24c49f13191a254081c4d5dc2496124c583b0542d\",\n    \"catalog_sha256\": \"a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989\",\n    \"exercise_id\": \"treadmill-machine\",\n    \"name\": \"Treadmill\"\n  },\n  \"selected_render_scene\": {\n    \"camera\": \"Full-body front-side three-quarter view exposing every prescribed contact, grip and support. Entire person and all equipment visible within square; no crop, text, arrows or second phase.\",\n    \"exercise_id\": \"treadmill-machine\",\n    \"grip\": \"Hands free and OFF rails as prescribed once balanced.\",\n    \"movement_trajectory\": \"Even controlled walking while belt moves beneath body; one grounded stride, no forward outdoor travel.\",\n    \"never_infer_muscles_from_pose_or_reference\": true,\n    \"one_phase_only\": true,\n    \"pose\": \"Upright torso, leading heel contacting moving belt, trailing forefoot still in contact, natural opposite arm swing; no airborne running phase.\",\n    \"single_phase\": \"Grounded treadmill walking stride\",\n    \"supports_and_equipment\": \"Compatible motorized treadmill with moving belt, deck and handrails; both foot contacts on belt. Minimal compatible walking incline, no numerical angle. Barefoot per unchanged approved style.\"\n  },\n  \"source_use_rule\": \"Preserve raw source texts verbatim; render only selected scene and documented exact-source/user resolution. Do not silently repair the catalogue.\",\n  \"style\": {\n    \"background\": \"Genuinely transparent PNG background, no white/checkerboard layer, no environment scene.\",\n    \"framing\": \"Full figure and all required equipment/supports visible within a square. Scale and use a three-quarter view to expose the specified contacts without changing anatomy, equipment, grip or technique.\",\n    \"human_model\": \"One athletic bald male anatomical mannequin, opaque silver-gray muscular surfaces, consistent proportions and detailed 3D materials, plain black shorts, barefoot.\",\n    \"material_rules\": \"Highlights never make tissue transparent; no glow, whole-body orange tint, hair, text, labels, arrows, UI, borders, collage or extra person.\",\n    \"no_invention\": \"Exact-ID catalogue controls source text and muscles. Render documented selected scene; recorded source corrections apply to the derived scene only. No reference-pose copying or imported muscle targets.\",\n    \"output\": {\n      \"format\": \"PNG\",\n      \"height\": 1024,\n      \"one_person\": true,\n      \"one_phase\": true,\n      \"width\": 1024\n    },\n    \"primary_highlight\": {\n      \"hex\": null,\n      \"rule\": \"Keep whole body opaque neutral silver-gray. No anatomical primary or whole-body orange tint for full_body/cardio/other.\"\n    },\n    \"secondary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"intensity_fraction\": [\n        0.4,\n        0.5\n      ],\n      \"rule\": \"Only the exact secondary muscles, lighter same-hue highlight; if the list is empty add no secondary target.\"\n    },\n    \"version\": \"v1-neutral-primary-2026-10-02\"\n  },\n  \"technique_resolution\": {\n    \"PNG_approval\": false,\n    \"binding_or_name_alone_is_not_confirmation\": true,\n    \"catalog_modified\": false,\n    \"construction_rule\": \"Standard compatible unbranded geometry allowed by AGENTS.md; choose geometry only around specified contacts/motion. Category machine does not establish a load mechanism, brand, angle or weight count.\",\n    \"dataset_instruction_steps_read\": [\n      \"Adjust the incline level on the treadmill to your desired intensity.\",\n      \"Stand on the treadmill with your feet shoulder-width apart.\",\n      \"Start walking at a comfortable pace, ensuring that you maintain proper form.\",\n      \"Engage your core muscles and keep your back straight throughout the exercise.\",\n      \"Continue walking on the incline treadmill for the desired duration of your cardio workout.\",\n      \"Gradually decrease the incline and speed of the treadmill to cool down before stopping.\"\n    ],\n    \"decision_kind\": \"exact_ID_written_technique_confirmation\",\n    \"evidence_path\": \"data/audits/agent-03-single-generator-2026-10-03-technique.json\",\n    \"evidence_selector\": \"records[exercise_id=\\\"treadmill-machine\\\"]\",\n    \"illustration_choices\": \"Side/phase and compatible layout are scene choices, not amendments to source technique. Do not infer muscle targets from scene or equipment.\",\n    \"status\": \"resolved\",\n    \"technique_fields_read\": [\n      \"content.en.description\",\n      \"content.en.instructions\",\n      \"content.en.form_cues\",\n      \"content.en.common_mistakes\",\n      \"content.en.safety_note\",\n      \"content.pl.instructions\",\n      \"source.dataset_id\"\n    ]\n  }\n}",
+              "prompt_sha256": "3e72f58d6af8251af4544fa7d0d42ff0870c86b8993d62b5949970d30cb747da",
+              "style_version": "v1-neutral-primary-2026-10-02",
+              "style_files": {
+                "docs/exercise-image-style.md": "8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578",
+                "docs/exercise-image-style-neutral-primary.md": "86204ab43f23d119a1eb25cafdbda2518b741a0090b4ffb0ceb9086952314439"
+              },
+              "reference_path": "assets/exercises/biceps-curl-dumbbell.png",
+              "reference_sha256": "52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f",
+              "catalog_path": "data/exercises/catalog.json",
+              "catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+              "catalog_record_sha256": "fdcf62483830be6f80f1bcd24c49f13191a254081c4d5dc2496124c583b0542d",
+              "result_path": null,
+              "git_result_path": null,
+              "result_sha256": null,
+              "technical_check": {
+                "status": "not_available",
+                "errors": [
+                  "no PNG returned"
+                ]
+              },
+              "errors": [
+                "image_gen call aborted before returning a result (tool output: \"aborted by user after 51.7s\"); no PNG found in generated_images, cloud result path, or Git path; no retry"
+              ]
+            }
+          ],
           "user_review": null,
-          "technical_check": null,
+          "technical_check": {
+            "status": "not_available",
+            "errors": [
+              "no PNG returned"
+            ]
+          },
           "agent_visual_review": "not_performed",
           "result_path": null,
           "planned_png_path": "/workspace/exercise-image-results/agent-03-single-generator-2026-10-03/generator-single/agent-03-others-030/treadmill-machine/attempt-1.png",
           "planned_git_png_path": "assets/exercises/pending/agent-03-single-generator-2026-10-03/generator-single/agent-03-others-030/treadmill-machine/attempt-1.png",
           "source_catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
           "style_version": "v1-neutral-primary-2026-10-02",
-          "prompt_sha256": "3e72f58d6af8251af4544fa7d0d42ff0870c86b8993d62b5949970d30cb747da"
+          "prompt_sha256": "3e72f58d6af8251af4544fa7d0d42ff0870c86b8993d62b5949970d30cb747da",
+          "technical_status": "not_available",
+          "errors": [
+            "image_gen call aborted before returning a result (tool output: \"aborted by user after 51.7s\"); no PNG found in generated_images, cloud result path, or Git path; no retry"
+          ],
+          "generation_prompt": "Create exactly ONE square 1024x1024 transparent PNG of this exact exercise and ONE selected phase. Metadata must never appear as image text.\n{\n  \"approved_style_files\": [\n    {\n      \"path\": \"docs/exercise-image-style.md\",\n      \"sha256\": \"8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578\"\n    },\n    {\n      \"path\": \"docs/exercise-image-style-neutral-primary.md\",\n      \"sha256\": \"86204ab43f23d119a1eb25cafdbda2518b741a0090b4ffb0ceb9086952314439\"\n    }\n  ],\n  \"exact_catalogue_source\": {\n    \"equipment\": \"machine\",\n    \"primary_muscle\": \"cardio\",\n    \"secondary_muscles\": [],\n    \"source_english\": {\n      \"common_mistakes\": [\n        \"Holding the rails continuously.\",\n        \"Starting too fast.\",\n        \"Stepping off a moving belt.\"\n      ],\n      \"description\": \"Treadmill walking keeps the body upright while the belt moves at a controlled pace and incline.\",\n      \"form_cues\": [\n        \"Look forward.\",\n        \"Use an even stride.\",\n        \"Keep shoulders relaxed.\"\n      ],\n      \"instructions\": [\n        \"Step onto the treadmill with the belt stopped and set a comfortable speed and incline.\",\n        \"Begin walking with feet landing under the hips and hands off the rails when balanced.\",\n        \"Keep the torso upright and maintain the chosen pace for the planned duration.\",\n        \"Reduce the speed and incline to a slow walk before stopping and stepping off.\"\n      ],\n      \"provenance\": \"adapted\",\n      \"safety_note\": \"Use the safety clip and hold the rails only while mounting or dismounting.\"\n    }\n  },\n  \"human_reference\": {\n    \"absolute_path\": \"/workspace/lightweight-exercises-photo/assets/exercises/biceps-curl-dumbbell.png\",\n    \"branch\": \"work\",\n    \"pixels_reviewed_during_preparation\": false,\n    \"repository_path\": \"assets/exercises/biceps-curl-dumbbell.png\",\n    \"role\": \"Human appearance/proportions/materials/anatomical style ONLY. Exercise pose, grip, equipment and muscles come from the exact-ID catalogue, never the reference.\",\n    \"sha256\": \"52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f\",\n    \"source_commit\": \"b0385b7e2f3382d545a6dff5304c81ba3c771096\"\n  },\n  \"identity_do_not_render_as_text\": {\n    \"catalog_record_sha256\": \"fdcf62483830be6f80f1bcd24c49f13191a254081c4d5dc2496124c583b0542d\",\n    \"catalog_sha256\": \"a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989\",\n    \"exercise_id\": \"treadmill-machine\",\n    \"name\": \"Treadmill\"\n  },\n  \"selected_render_scene\": {\n    \"camera\": \"Full-body front-side three-quarter view exposing every prescribed contact, grip and support. Entire person and all equipment visible within square; no crop, text, arrows or second phase.\",\n    \"exercise_id\": \"treadmill-machine\",\n    \"grip\": \"Hands free and OFF rails as prescribed once balanced.\",\n    \"movement_trajectory\": \"Even controlled walking while belt moves beneath body; one grounded stride, no forward outdoor travel.\",\n    \"never_infer_muscles_from_pose_or_reference\": true,\n    \"one_phase_only\": true,\n    \"pose\": \"Upright torso, leading heel contacting moving belt, trailing forefoot still in contact, natural opposite arm swing; no airborne running phase.\",\n    \"single_phase\": \"Grounded treadmill walking stride\",\n    \"supports_and_equipment\": \"Compatible motorized treadmill with moving belt, deck and handrails; both foot contacts on belt. Minimal compatible walking incline, no numerical angle. Barefoot per unchanged approved style.\"\n  },\n  \"source_use_rule\": \"Preserve raw source texts verbatim; render only selected scene and documented exact-source/user resolution. Do not silently repair the catalogue.\",\n  \"style\": {\n    \"background\": \"Genuinely transparent PNG background, no white/checkerboard layer, no environment scene.\",\n    \"framing\": \"Full figure and all required equipment/supports visible within a square. Scale and use a three-quarter view to expose the specified contacts without changing anatomy, equipment, grip or technique.\",\n    \"human_model\": \"One athletic bald male anatomical mannequin, opaque silver-gray muscular surfaces, consistent proportions and detailed 3D materials, plain black shorts, barefoot.\",\n    \"material_rules\": \"Highlights never make tissue transparent; no glow, whole-body orange tint, hair, text, labels, arrows, UI, borders, collage or extra person.\",\n    \"no_invention\": \"Exact-ID catalogue controls source text and muscles. Render documented selected scene; recorded source corrections apply to the derived scene only. No reference-pose copying or imported muscle targets.\",\n    \"output\": {\n      \"format\": \"PNG\",\n      \"height\": 1024,\n      \"one_person\": true,\n      \"one_phase\": true,\n      \"width\": 1024\n    },\n    \"primary_highlight\": {\n      \"hex\": null,\n      \"rule\": \"Keep whole body opaque neutral silver-gray. No anatomical primary or whole-body orange tint for full_body/cardio/other.\"\n    },\n    \"secondary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"intensity_fraction\": [\n        0.4,\n        0.5\n      ],\n      \"rule\": \"Only the exact secondary muscles, lighter same-hue highlight; if the list is empty add no secondary target.\"\n    },\n    \"version\": \"v1-neutral-primary-2026-10-02\"\n  },\n  \"technique_resolution\": {\n    \"PNG_approval\": false,\n    \"binding_or_name_alone_is_not_confirmation\": true,\n    \"catalog_modified\": false,\n    \"construction_rule\": \"Standard compatible unbranded geometry allowed by AGENTS.md; choose geometry only around specified contacts/motion. Category machine does not establish a load mechanism, brand, angle or weight count.\",\n    \"dataset_instruction_steps_read\": [\n      \"Adjust the incline level on the treadmill to your desired intensity.\",\n      \"Stand on the treadmill with your feet shoulder-width apart.\",\n      \"Start walking at a comfortable pace, ensuring that you maintain proper form.\",\n      \"Engage your core muscles and keep your back straight throughout the exercise.\",\n      \"Continue walking on the incline treadmill for the desired duration of your cardio workout.\",\n      \"Gradually decrease the incline and speed of the treadmill to cool down before stopping.\"\n    ],\n    \"decision_kind\": \"exact_ID_written_technique_confirmation\",\n    \"evidence_path\": \"data/audits/agent-03-single-generator-2026-10-03-technique.json\",\n    \"evidence_selector\": \"records[exercise_id=\\\"treadmill-machine\\\"]\",\n    \"illustration_choices\": \"Side/phase and compatible layout are scene choices, not amendments to source technique. Do not infer muscle targets from scene or equipment.\",\n    \"status\": \"resolved\",\n    \"technique_fields_read\": [\n      \"content.en.description\",\n      \"content.en.instructions\",\n      \"content.en.form_cues\",\n      \"content.en.common_mistakes\",\n      \"content.en.safety_note\",\n      \"content.pl.instructions\",\n      \"source.dataset_id\"\n    ]\n  }\n}",
+          "style_file_hashes": {
+            "docs/exercise-image-style.md": "8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578",
+            "docs/exercise-image-style-neutral-primary.md": "86204ab43f23d119a1eb25cafdbda2518b741a0090b4ffb0ceb9086952314439"
+          },
+          "reference_path": "assets/exercises/biceps-curl-dumbbell.png",
+          "reference_sha256": "52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f",
+          "source_catalog_record_sha256": "fdcf62483830be6f80f1bcd24c49f13191a254081c4d5dc2496124c583b0542d",
+          "result_sha256": null
         },
         {
           "exercise_id": "inverted-row-machine",
           "name": "Inverted Row",
-          "status": "not_started",
-          "attempts": 0,
-          "attempt_history": [],
-          "user_review": null,
-          "technical_check": null,
+          "status": "generated",
+          "attempts": 1,
+          "attempt_history": [
+            {
+              "attempt_number": 1,
+              "recorded_at": "2026-10-03T00:19:56.610621+00:00",
+              "generation_tool": "image_gen.imagegen",
+              "call_status": "success",
+              "generation_prompt": "Create exactly ONE square 1024x1024 transparent PNG of this exact exercise and ONE selected phase. Metadata must never appear as image text.\n{\n  \"approved_style_files\": [\n    {\n      \"path\": \"docs/exercise-image-style.md\",\n      \"sha256\": \"8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578\"\n    }\n  ],\n  \"exact_catalogue_source\": {\n    \"equipment\": \"machine\",\n    \"primary_muscle\": \"upper_back\",\n    \"secondary_muscles\": [\n      \"lats\",\n      \"biceps\",\n      \"forearms\"\n    ],\n    \"source_english\": {\n      \"common_mistakes\": [\n        \"Rounding the spine.\",\n        \"Shrugging instead of rowing.\",\n        \"Jerking with the torso.\"\n      ],\n      \"description\": \"Using the fixed bar or handles at waist height, pull the chest toward the support while keeping the body straight.\",\n      \"form_cues\": [\n        \"Brace the trunk before each pull.\",\n        \"Drive the elbows back.\",\n        \"Control the reach at the front.\"\n      ],\n      \"instructions\": [\n        \"Set the machine bar or handles around waist height and stand facing the support.\",\n        \"Grip the bar or handles, lean back with heels grounded, and keep the body straight.\",\n        \"Pull the chest toward the support by driving the elbows back.\",\n        \"Pause, then lower the body until the arms are extended without losing the straight line.\"\n      ],\n      \"provenance\": \"adapted\",\n      \"safety_note\": \"Keep the body straight from shoulders to heels while pulling the chest toward the fixed bar.\"\n    }\n  },\n  \"human_reference\": {\n    \"absolute_path\": \"/workspace/lightweight-exercises-photo/assets/exercises/biceps-curl-dumbbell.png\",\n    \"branch\": \"work\",\n    \"pixels_reviewed_during_preparation\": false,\n    \"repository_path\": \"assets/exercises/biceps-curl-dumbbell.png\",\n    \"role\": \"Human appearance/proportions/materials/anatomical style ONLY. Exercise pose, grip, equipment and muscles come from the exact-ID catalogue, never the reference.\",\n    \"sha256\": \"52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f\",\n    \"source_commit\": \"b0385b7e2f3382d545a6dff5304c81ba3c771096\"\n  },\n  \"identity_do_not_render_as_text\": {\n    \"catalog_record_sha256\": \"d3d8786b2547d74f79dd16b28838a709b731fb85ae3ef5cedf8a7b5a9b5dddec\",\n    \"catalog_sha256\": \"a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989\",\n    \"exercise_id\": \"inverted-row-machine\",\n    \"name\": \"Inverted Row\"\n  },\n  \"selected_render_scene\": {\n    \"camera\": \"Full-body front-side three-quarter view exposing every prescribed contact, grip and support. Entire person and all equipment visible within square; no crop, text, arrows or second phase.\",\n    \"exercise_id\": \"inverted-row-machine\",\n    \"grip\": \"Overhand FIXED bar slightly wider than shoulder width, exact dataset 0499 confirms grip.\",\n    \"movement_trajectory\": \"Pull BODY toward stationary bar and lower by extending arms; no barbell row, moving Smith press or suspension straps.\",\n    \"never_infer_muscles_from_pose_or_reference\": true,\n    \"one_phase_only\": true,\n    \"pose\": \"Straight braced line shoulders to heels, heels grounded, body inclined beneath bar; elbows drawn back as chest approaches bar, no sagging hips.\",\n    \"single_phase\": \"Chest near stationary Smith bar\",\n    \"supports_and_equipment\": \"User-selected Smith frame with bar securely LOCKED at waist height, both heels grounded. The bar is a STATIC bodyweight support and MUST NOT translate on rails.\"\n  },\n  \"source_use_rule\": \"Preserve raw source texts verbatim; render only selected scene and documented exact-source/user resolution. Do not silently repair the catalogue.\",\n  \"style\": {\n    \"background\": \"Genuinely transparent PNG background, no white/checkerboard layer, no environment scene.\",\n    \"framing\": \"Full figure and all required equipment/supports visible within a square. Scale and use a three-quarter view to expose the specified contacts without changing anatomy, equipment, grip or technique.\",\n    \"human_model\": \"One athletic bald male anatomical mannequin, opaque silver-gray muscular surfaces, consistent proportions and detailed 3D materials, plain black shorts, barefoot.\",\n    \"material_rules\": \"Highlights never make tissue transparent; no glow, whole-body orange tint, hair, text, labels, arrows, UI, borders, collage or extra person.\",\n    \"no_invention\": \"Exact-ID catalogue controls source text and muscles. Render documented selected scene; recorded source corrections apply to the derived scene only. No reference-pose copying or imported muscle targets.\",\n    \"output\": {\n      \"format\": \"PNG\",\n      \"height\": 1024,\n      \"one_person\": true,\n      \"one_phase\": true,\n      \"width\": 1024\n    },\n    \"primary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"rule\": \"Highlight only the exact primary muscle group provided for this exercise.\"\n    },\n    \"secondary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"intensity_fraction\": [\n        0.4,\n        0.5\n      ],\n      \"rule\": \"Only the exact secondary muscles, lighter same-hue highlight; if the list is empty add no secondary target.\"\n    },\n    \"version\": \"v1\"\n  },\n  \"technique_resolution\": {\n    \"PNG_approval\": false,\n    \"binding_or_name_alone_is_not_confirmation\": true,\n    \"catalog_modified\": false,\n    \"construction_rule\": \"Standard compatible unbranded geometry allowed by AGENTS.md; choose geometry only around specified contacts/motion. Category machine does not establish a load mechanism, brand, angle or weight count.\",\n    \"dataset_instruction_steps_read\": [\n      \"Set up a bar at waist height or use a suspension trainer.\",\n      \"Stand facing the bar or suspension trainer, with your feet shoulder-width apart.\",\n      \"Grab the bar or handles with an overhand grip, slightly wider than shoulder-width apart.\",\n      \"Lean back, keeping your body straight and your heels on the ground.\",\n      \"Pull your chest towards the bar or handles, squeezing your shoulder blades together.\",\n      \"Pause for a moment at the top, then slowly lower yourself back to the starting position.\",\n      \"Repeat for the desired number of repetitions.\"\n    ],\n    \"decision_kind\": \"user_selected_variant_with_exact_source_confirmation\",\n    \"evidence_path\": \"data/audits/agent-03-single-generator-2026-10-03-technique.json\",\n    \"evidence_selector\": \"records[exercise_id=\\\"inverted-row-machine\\\"]\",\n    \"illustration_choices\": \"Side/phase and compatible layout are scene choices, not amendments to source technique. Do not infer muscle targets from scene or equipment.\",\n    \"status\": \"resolved\",\n    \"technique_fields_read\": [\n      \"content.en.description\",\n      \"content.en.instructions\",\n      \"content.en.form_cues\",\n      \"content.en.common_mistakes\",\n      \"content.en.safety_note\",\n      \"content.pl.instructions\",\n      \"source.dataset_id\"\n    ],\n    \"user_decision_path\": \"data/technique-decisions/agent-03-user-answers-2026-10-03.json\",\n    \"user_selected_configuration\": \"Australian/inverted bodyweight row beneath a FIXED Smith bar; bar locked at waist height, heels grounded, body straight, chest pulls toward stationary bar.\"\n  }\n}",
+              "prompt_sha256": "5116978bdfac71d7e8a4a199c783df7ad31d722aa1b604e5ec45a86eeb17459c",
+              "style_version": "v1",
+              "style_files": {
+                "docs/exercise-image-style.md": "8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578"
+              },
+              "reference_path": "assets/exercises/biceps-curl-dumbbell.png",
+              "reference_sha256": "52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f",
+              "catalog_path": "data/exercises/catalog.json",
+              "catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+              "catalog_record_sha256": "d3d8786b2547d74f79dd16b28838a709b731fb85ae3ef5cedf8a7b5a9b5dddec",
+              "source_generated_file": "/workspace/generated_images/exec-a1e065ee-5f92-4bc9-becb-825a2fa2eb4d.png",
+              "source_generated_sha256": "0085b83fa8c52f34091f51de58f012c04e8b870fa0b1b1bc624fda7880a048fc",
+              "source_generated_dimensions": [
+                1254,
+                1254
+              ],
+              "normalization": {
+                "method": "Pillow LANCZOS resize to 1024x1024 with RGBA alpha preserved",
+                "applied": true
+              },
+              "result_path": "/workspace/exercise-image-results/agent-03-single-generator-2026-10-03/generator-single/agent-03-others-030/inverted-row-machine/attempt-1.png",
+              "git_result_path": "assets/exercises/pending/agent-03-single-generator-2026-10-03/generator-single/agent-03-others-030/inverted-row-machine/attempt-1.png",
+              "result_sha256": "41a2fe81947f6dccd48cabf0fcd1b5397f2d5543d9ae13eef2d02c3a65f6d2e6",
+              "technical_check": {
+                "status": "passed",
+                "format": "PNG",
+                "width": 1024,
+                "height": 1024,
+                "mode": "RGBA",
+                "has_alpha_channel": true,
+                "alpha_min": 0,
+                "alpha_max": 255,
+                "transparent_pixel_present": true,
+                "square": true,
+                "errors": [],
+                "sha256": "41a2fe81947f6dccd48cabf0fcd1b5397f2d5543d9ae13eef2d02c3a65f6d2e6",
+                "byte_size": 796505,
+                "source_generated_sha256": "0085b83fa8c52f34091f51de58f012c04e8b870fa0b1b1bc624fda7880a048fc",
+                "source_generated_dimensions": [
+                  1254,
+                  1254
+                ],
+                "normalization": {
+                  "method": "Pillow LANCZOS resize to 1024x1024 with RGBA alpha preserved",
+                  "applied": true
+                }
+              },
+              "errors": []
+            }
+          ],
+          "user_review": "pending",
+          "technical_check": {
+            "status": "passed",
+            "format": "PNG",
+            "width": 1024,
+            "height": 1024,
+            "mode": "RGBA",
+            "has_alpha_channel": true,
+            "alpha_min": 0,
+            "alpha_max": 255,
+            "transparent_pixel_present": true,
+            "square": true,
+            "errors": [],
+            "sha256": "41a2fe81947f6dccd48cabf0fcd1b5397f2d5543d9ae13eef2d02c3a65f6d2e6",
+            "byte_size": 796505,
+            "source_generated_sha256": "0085b83fa8c52f34091f51de58f012c04e8b870fa0b1b1bc624fda7880a048fc",
+            "source_generated_dimensions": [
+              1254,
+              1254
+            ],
+            "normalization": {
+              "method": "Pillow LANCZOS resize to 1024x1024 with RGBA alpha preserved",
+              "applied": true
+            }
+          },
           "agent_visual_review": "not_performed",
-          "result_path": null,
+          "result_path": "/workspace/exercise-image-results/agent-03-single-generator-2026-10-03/generator-single/agent-03-others-030/inverted-row-machine/attempt-1.png",
           "planned_png_path": "/workspace/exercise-image-results/agent-03-single-generator-2026-10-03/generator-single/agent-03-others-030/inverted-row-machine/attempt-1.png",
           "planned_git_png_path": "assets/exercises/pending/agent-03-single-generator-2026-10-03/generator-single/agent-03-others-030/inverted-row-machine/attempt-1.png",
           "source_catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
           "style_version": "v1",
-          "prompt_sha256": "5116978bdfac71d7e8a4a199c783df7ad31d722aa1b604e5ec45a86eeb17459c"
+          "prompt_sha256": "5116978bdfac71d7e8a4a199c783df7ad31d722aa1b604e5ec45a86eeb17459c",
+          "result_sha256": "41a2fe81947f6dccd48cabf0fcd1b5397f2d5543d9ae13eef2d02c3a65f6d2e6",
+          "generation_prompt": "Create exactly ONE square 1024x1024 transparent PNG of this exact exercise and ONE selected phase. Metadata must never appear as image text.\n{\n  \"approved_style_files\": [\n    {\n      \"path\": \"docs/exercise-image-style.md\",\n      \"sha256\": \"8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578\"\n    }\n  ],\n  \"exact_catalogue_source\": {\n    \"equipment\": \"machine\",\n    \"primary_muscle\": \"upper_back\",\n    \"secondary_muscles\": [\n      \"lats\",\n      \"biceps\",\n      \"forearms\"\n    ],\n    \"source_english\": {\n      \"common_mistakes\": [\n        \"Rounding the spine.\",\n        \"Shrugging instead of rowing.\",\n        \"Jerking with the torso.\"\n      ],\n      \"description\": \"Using the fixed bar or handles at waist height, pull the chest toward the support while keeping the body straight.\",\n      \"form_cues\": [\n        \"Brace the trunk before each pull.\",\n        \"Drive the elbows back.\",\n        \"Control the reach at the front.\"\n      ],\n      \"instructions\": [\n        \"Set the machine bar or handles around waist height and stand facing the support.\",\n        \"Grip the bar or handles, lean back with heels grounded, and keep the body straight.\",\n        \"Pull the chest toward the support by driving the elbows back.\",\n        \"Pause, then lower the body until the arms are extended without losing the straight line.\"\n      ],\n      \"provenance\": \"adapted\",\n      \"safety_note\": \"Keep the body straight from shoulders to heels while pulling the chest toward the fixed bar.\"\n    }\n  },\n  \"human_reference\": {\n    \"absolute_path\": \"/workspace/lightweight-exercises-photo/assets/exercises/biceps-curl-dumbbell.png\",\n    \"branch\": \"work\",\n    \"pixels_reviewed_during_preparation\": false,\n    \"repository_path\": \"assets/exercises/biceps-curl-dumbbell.png\",\n    \"role\": \"Human appearance/proportions/materials/anatomical style ONLY. Exercise pose, grip, equipment and muscles come from the exact-ID catalogue, never the reference.\",\n    \"sha256\": \"52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f\",\n    \"source_commit\": \"b0385b7e2f3382d545a6dff5304c81ba3c771096\"\n  },\n  \"identity_do_not_render_as_text\": {\n    \"catalog_record_sha256\": \"d3d8786b2547d74f79dd16b28838a709b731fb85ae3ef5cedf8a7b5a9b5dddec\",\n    \"catalog_sha256\": \"a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989\",\n    \"exercise_id\": \"inverted-row-machine\",\n    \"name\": \"Inverted Row\"\n  },\n  \"selected_render_scene\": {\n    \"camera\": \"Full-body front-side three-quarter view exposing every prescribed contact, grip and support. Entire person and all equipment visible within square; no crop, text, arrows or second phase.\",\n    \"exercise_id\": \"inverted-row-machine\",\n    \"grip\": \"Overhand FIXED bar slightly wider than shoulder width, exact dataset 0499 confirms grip.\",\n    \"movement_trajectory\": \"Pull BODY toward stationary bar and lower by extending arms; no barbell row, moving Smith press or suspension straps.\",\n    \"never_infer_muscles_from_pose_or_reference\": true,\n    \"one_phase_only\": true,\n    \"pose\": \"Straight braced line shoulders to heels, heels grounded, body inclined beneath bar; elbows drawn back as chest approaches bar, no sagging hips.\",\n    \"single_phase\": \"Chest near stationary Smith bar\",\n    \"supports_and_equipment\": \"User-selected Smith frame with bar securely LOCKED at waist height, both heels grounded. The bar is a STATIC bodyweight support and MUST NOT translate on rails.\"\n  },\n  \"source_use_rule\": \"Preserve raw source texts verbatim; render only selected scene and documented exact-source/user resolution. Do not silently repair the catalogue.\",\n  \"style\": {\n    \"background\": \"Genuinely transparent PNG background, no white/checkerboard layer, no environment scene.\",\n    \"framing\": \"Full figure and all required equipment/supports visible within a square. Scale and use a three-quarter view to expose the specified contacts without changing anatomy, equipment, grip or technique.\",\n    \"human_model\": \"One athletic bald male anatomical mannequin, opaque silver-gray muscular surfaces, consistent proportions and detailed 3D materials, plain black shorts, barefoot.\",\n    \"material_rules\": \"Highlights never make tissue transparent; no glow, whole-body orange tint, hair, text, labels, arrows, UI, borders, collage or extra person.\",\n    \"no_invention\": \"Exact-ID catalogue controls source text and muscles. Render documented selected scene; recorded source corrections apply to the derived scene only. No reference-pose copying or imported muscle targets.\",\n    \"output\": {\n      \"format\": \"PNG\",\n      \"height\": 1024,\n      \"one_person\": true,\n      \"one_phase\": true,\n      \"width\": 1024\n    },\n    \"primary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"rule\": \"Highlight only the exact primary muscle group provided for this exercise.\"\n    },\n    \"secondary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"intensity_fraction\": [\n        0.4,\n        0.5\n      ],\n      \"rule\": \"Only the exact secondary muscles, lighter same-hue highlight; if the list is empty add no secondary target.\"\n    },\n    \"version\": \"v1\"\n  },\n  \"technique_resolution\": {\n    \"PNG_approval\": false,\n    \"binding_or_name_alone_is_not_confirmation\": true,\n    \"catalog_modified\": false,\n    \"construction_rule\": \"Standard compatible unbranded geometry allowed by AGENTS.md; choose geometry only around specified contacts/motion. Category machine does not establish a load mechanism, brand, angle or weight count.\",\n    \"dataset_instruction_steps_read\": [\n      \"Set up a bar at waist height or use a suspension trainer.\",\n      \"Stand facing the bar or suspension trainer, with your feet shoulder-width apart.\",\n      \"Grab the bar or handles with an overhand grip, slightly wider than shoulder-width apart.\",\n      \"Lean back, keeping your body straight and your heels on the ground.\",\n      \"Pull your chest towards the bar or handles, squeezing your shoulder blades together.\",\n      \"Pause for a moment at the top, then slowly lower yourself back to the starting position.\",\n      \"Repeat for the desired number of repetitions.\"\n    ],\n    \"decision_kind\": \"user_selected_variant_with_exact_source_confirmation\",\n    \"evidence_path\": \"data/audits/agent-03-single-generator-2026-10-03-technique.json\",\n    \"evidence_selector\": \"records[exercise_id=\\\"inverted-row-machine\\\"]\",\n    \"illustration_choices\": \"Side/phase and compatible layout are scene choices, not amendments to source technique. Do not infer muscle targets from scene or equipment.\",\n    \"status\": \"resolved\",\n    \"technique_fields_read\": [\n      \"content.en.description\",\n      \"content.en.instructions\",\n      \"content.en.form_cues\",\n      \"content.en.common_mistakes\",\n      \"content.en.safety_note\",\n      \"content.pl.instructions\",\n      \"source.dataset_id\"\n    ],\n    \"user_decision_path\": \"data/technique-decisions/agent-03-user-answers-2026-10-03.json\",\n    \"user_selected_configuration\": \"Australian/inverted bodyweight row beneath a FIXED Smith bar; bar locked at waist height, heels grounded, body straight, chest pulls toward stationary bar.\"\n  }\n}",
+          "style_file_hashes": {
+            "docs/exercise-image-style.md": "8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578"
+          },
+          "reference_path": "assets/exercises/biceps-curl-dumbbell.png",
+          "reference_sha256": "52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f",
+          "source_catalog_record_sha256": "d3d8786b2547d74f79dd16b28838a709b731fb85ae3ef5cedf8a7b5a9b5dddec",
+          "technical_status": "passed",
+          "errors": []
         }
       ]
     }
   ],
   "user_review_policy": "pending on result creation until explicit user approval",
-  "generation_calls": 20,
+  "generation_calls": 30,
   "quota_rule": "On first quota/rate-limit generation error save failure/history, push checkpoint and stop; no retry calls."
 }
