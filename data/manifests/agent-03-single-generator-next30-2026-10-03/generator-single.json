@@ -5,9 +5,9 @@
   "execution_branch": "agent-08-generator-single-2026-10-03",
   "assignment_path": "data/assignments/agent-03-single-generator-next30-2026-10-03.json",
   "source_branch": "agent-03-inventory-2026-10-01",
-  "status": "in_progress",
+  "status": "quota_stopped",
   "exercise_count": 30,
-  "generation_calls": 10,
+  "generation_calls": 12,
   "user_review_policy": "pending on result creation until explicit user approval",
   "quota_rule": "On first generator quota/rate-limit error save failure and history, push checkpoint and stop without repeat calls.",
   "batches": [
@@ -1325,40 +1325,239 @@
     {
       "batch_id": "agent-03-others-032",
       "batch_path": "data/batches/agent-03-others-032.json",
-      "status": "ready",
+      "status": "interrupted_quota",
       "exercise_count": 10,
       "exercises": [
         {
           "exercise_id": "straight-arm-lat-pulldown-cable-machine",
           "name": "Straight Arm Lat Pulldown (Cable)",
-          "status": "not_started",
-          "attempts": 0,
-          "attempt_history": [],
-          "user_review": null,
-          "technical_check": null,
+          "status": "generated_pending",
+          "attempts": 1,
+          "attempt_history": [
+            {
+              "attempt": 1,
+              "attempt_status": "generated",
+              "started_at": "2026-10-03T08:21:04.939Z",
+              "finished_at": "2026-10-03T08:22:02.428275+00:00",
+              "prompt": "Create exactly ONE square 1024x1024 transparent PNG of this exact exercise and ONE selected phase. Metadata must never appear as image text.\n{\n  \"approved_style_files\": [\n    {\n      \"path\": \"docs/exercise-image-style.md\",\n      \"sha256\": \"8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578\"\n    }\n  ],\n  \"exact_catalogue_source\": {\n    \"equipment\": \"machine\",\n    \"primary_muscle\": \"lats\",\n    \"secondary_muscles\": [\n      \"triceps\"\n    ],\n    \"source_english\": {\n      \"common_mistakes\": [\n        \"Bending into a triceps pushdown.\",\n        \"Leaning far backward.\",\n        \"Letting the bar snap overhead.\"\n      ],\n      \"description\": \"A straight-arm cable pulldown pulls a high cable bar to the thighs with nearly straight elbows.\",\n      \"form_cues\": [\n        \"Keep elbows softly unlocked.\",\n        \"Pull the bar to the thighs with the lats.\",\n        \"Keep the ribs stacked over the pelvis.\"\n      ],\n      \"instructions\": [\n        \"Attach a straight bar to the high pulley and stand facing the machine.\",\n        \"Grip the bar overhand with arms extended and elbows softly unlocked.\",\n        \"Pull the bar down in an arc to the thighs while keeping the elbows nearly fixed.\",\n        \"Pause, then return the bar overhead under control.\"\n      ],\n      \"provenance\": \"adapted\",\n      \"safety_note\": \"Use a cable load that allows a smooth shoulder arc without forcing overhead range.\"\n    }\n  },\n  \"human_reference\": {\n    \"absolute_path\": \"/workspace/lightweight-exercises-photo/assets/exercises/biceps-curl-dumbbell.png\",\n    \"branch\": \"work\",\n    \"pixels_reviewed_during_preparation\": false,\n    \"repository_path\": \"assets/exercises/biceps-curl-dumbbell.png\",\n    \"role\": \"Human appearance/proportions/materials/anatomical style ONLY. Exercise pose, grip, equipment and muscles come from the exact-ID catalogue, never the reference.\",\n    \"sha256\": \"52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f\",\n    \"source_commit\": \"b0385b7e2f3382d545a6dff5304c81ba3c771096\"\n  },\n  \"identity_do_not_render_as_text\": {\n    \"catalog_record_sha256\": \"975188872e9a3edd5aa1f4f7e4997b2040f0ef0d3e81c2d263075368a8b4cab5\",\n    \"catalog_sha256\": \"a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989\",\n    \"exercise_id\": \"straight-arm-lat-pulldown-cable-machine\",\n    \"name\": \"Straight Arm Lat Pulldown (Cable)\"\n  },\n  \"selected_render_scene\": {\n    \"camera\": \"Full-body front-side three-quarter view exposing every prescribed contact, grip and support. Entire person and all equipment visible within square; no crop, text, arrows or second phase.\",\n    \"exercise_id\": \"straight-arm-lat-pulldown-cable-machine\",\n    \"grip\": \"Overhand grip on ONE straight bar, palms down.\",\n    \"movement_trajectory\": \"Shoulder extension sweeps bar down to thighs with nearly fixed elbows; return overhead under control. Do not turn into triceps elbow-extension pushdown.\",\n    \"never_infer_muscles_from_pose_or_reference\": true,\n    \"one_phase_only\": true,\n    \"pose\": \"Stand facing station with feet shoulder-width, braced ribs and shoulders down; arms nearly straight with elbows softly unlocked, bar near thighs.\",\n    \"single_phase\": \"Bar at thighs, shoulder-extension endpoint\",\n    \"supports_and_equipment\": \"High pulley with straight-bar attachment and both feet on floor; no seated thigh pad or lower pulley.\"\n  },\n  \"source_use_rule\": \"Preserve raw source texts verbatim; render only selected scene and documented exact-source/user resolution. Do not silently repair the catalogue.\",\n  \"style\": {\n    \"background\": \"Genuinely transparent PNG background, no white/checkerboard layer, no environment scene.\",\n    \"framing\": \"Full figure and all required equipment/supports visible within a square. Scale and use a three-quarter view to expose the specified contacts without changing anatomy, equipment, grip or technique.\",\n    \"human_model\": \"One athletic bald male anatomical mannequin, opaque silver-gray muscular surfaces, consistent proportions and detailed 3D materials, plain black shorts, barefoot.\",\n    \"material_rules\": \"Highlights never make tissue transparent; no glow, whole-body orange tint, hair, text, labels, arrows, UI, borders, collage or extra person.\",\n    \"no_invention\": \"Exact-ID catalogue controls source text and muscles. Render documented selected scene; recorded source corrections apply to the derived scene only. No reference-pose copying or imported muscle targets.\",\n    \"output\": {\n      \"format\": \"PNG\",\n      \"height\": 1024,\n      \"one_person\": true,\n      \"one_phase\": true,\n      \"width\": 1024\n    },\n    \"primary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"rule\": \"Highlight only the exact primary muscle group provided for this exercise.\"\n    },\n    \"secondary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"intensity_fraction\": [\n        0.4,\n        0.5\n      ],\n      \"rule\": \"Only the exact secondary muscles, lighter same-hue highlight; if the list is empty add no secondary target.\"\n    },\n    \"version\": \"v1\"\n  },\n  \"technique_resolution\": {\n    \"PNG_approval\": false,\n    \"binding_or_name_alone_is_not_confirmation\": true,\n    \"catalog_modified\": false,\n    \"construction_rule\": \"Standard compatible unbranded geometry allowed by AGENTS.md; choose geometry only around specified contacts/motion. Category machine does not establish a load mechanism, brand, angle or weight count.\",\n    \"dataset_instruction_steps_read\": [\n      \"Attach a straight bar to the high pulley of a cable machine.\",\n      \"Stand facing the machine with your feet shoulder-width apart.\",\n      \"Grasp the bar with an overhand grip, keeping your arms straight and your palms facing down.\",\n      \"Engage your lats and pull the bar down towards your thighs, keeping your arms straight throughout the movement.\",\n      \"Pause for a moment at the bottom, then slowly return the bar to the starting position.\",\n      \"Repeat for the desired number of repetitions.\"\n    ],\n    \"decision_kind\": \"exact_ID_written_technique_confirmation\",\n    \"evidence_path\": \"data/audits/agent-03-single-generator-next30-2026-10-03-technique.json\",\n    \"evidence_selector\": \"records[exercise_id=\\\"straight-arm-lat-pulldown-cable-machine\\\"]\",\n    \"illustration_choices\": \"Side/phase and compatible layout are scene choices, not amendments to source technique. Do not infer muscle targets from scene or equipment.\",\n    \"illustration_choices_are_not_user_approvals\": true,\n    \"status\": \"resolved\",\n    \"technique_fields_read\": [\n      \"content.en.description\",\n      \"content.en.instructions\",\n      \"content.en.form_cues\",\n      \"content.en.common_mistakes\",\n      \"content.en.safety_note\",\n      \"content.pl.instructions\",\n      \"source.dataset_id\"\n    ]\n  }\n}",
+              "prompt_sha256": "d200eb5c0789572f6d800e0d162a981d39a7c1e0c1b039ff3cfe22474a1e8fab",
+              "source": {
+                "task_commit": "77cd54d73b1f2546d29e7f17bd816faf9ec14f5e",
+                "batch_path": "data/batches/agent-03-others-032.json",
+                "batch_sha256": "06bfc5851504457a5f103616a15e4ad1be86812e3bc667180e242b7470919111",
+                "assignment_path": "data/assignments/agent-03-single-generator-next30-2026-10-03.json",
+                "assignment_sha256": "8c200e5807890caffda34c41aa44d3f6f055e46f9764d66d53d4219e7f101e37",
+                "catalog_path": "data/exercises/catalog.json",
+                "catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+                "catalog_record_sha256": "975188872e9a3edd5aa1f4f7e4997b2040f0ef0d3e81c2d263075368a8b4cab5",
+                "source_english_sha256": "086b6586a0ed08a0db608cc3b8eb584cedfee8d5cd02c7d41a0eb5beb694d8dc",
+                "technique_audit_path": "data/audits/agent-03-single-generator-next30-2026-10-03-technique.json",
+                "technique_audit_sha256": "2b9ccaaffe190dc4b5c2d8b70b2647e29a40dba843b0b7119c5e2fea4b67767b",
+                "source_errors_path": "data/audits/agent-03-single-generator-next30-2026-10-03-source-errors.json",
+                "source_errors_sha256": "ba3e4ffe4ba356ae6772275a23b2abd1fd5d9e9c4fecfe75f4be2cbef740fb96"
+              },
+              "style": {
+                "version": "v1",
+                "files": [
+                  {
+                    "path": "docs/exercise-image-style.md",
+                    "sha256": "8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578"
+                  },
+                  {
+                    "path": "docs/exercise-image-style-neutral-primary.md",
+                    "sha256": "86204ab43f23d119a1eb25cafdbda2518b741a0090b4ffb0ceb9086952314439"
+                  }
+                ]
+              },
+              "human_reference": {
+                "path": "assets/exercises/biceps-curl-dumbbell.png",
+                "absolute_path": "/workspace/lightweight-exercises-photo/assets/exercises/biceps-curl-dumbbell.png",
+                "sha256": "52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f",
+                "assigned_sha256": "52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f"
+              },
+              "requested_output": {
+                "planned_png_path": "/workspace/exercise-image-results/agent-03-single-generator-next30-2026-10-03/generator-single/agent-03-others-032/straight-arm-lat-pulldown-cable-machine/attempt-1.png",
+                "planned_git_png_path": "assets/exercises/pending/agent-03-single-generator-next30-2026-10-03/generator-single/agent-03-others-032/straight-arm-lat-pulldown-cable-machine/attempt-1.png",
+                "format": "PNG",
+                "dimensions": [
+                  1024,
+                  1024
+                ],
+                "transparent_background": true
+              },
+              "user_review": "pending",
+              "agent_visual_review": "not_performed",
+              "errors": [],
+              "generator_output_path": "/workspace/generated_images/exec-1442e0df-a126-4c9d-810e-3c8bef4b8f6c.png",
+              "generator_output_sha256": "2302da841814f826bc90eb1d11e408f9407b08c2eb665be39e5b9432951a10af",
+              "generator_output_dimensions": [
+                1254,
+                1254
+              ],
+              "generator_output_mode": "RGBA",
+              "normalization": "aspect-preserving contain to 1024x1024 transparent canvas",
+              "result_path": "/workspace/exercise-image-results/agent-03-single-generator-next30-2026-10-03/generator-single/agent-03-others-032/straight-arm-lat-pulldown-cable-machine/attempt-1.png",
+              "git_result_path": "assets/exercises/pending/agent-03-single-generator-next30-2026-10-03/generator-single/agent-03-others-032/straight-arm-lat-pulldown-cable-machine/attempt-1.png",
+              "result_sha256": "f7e3abf007d344f03c5bd3772fb998b4ade6a4924fcc3482aea32ec6573bebe9",
+              "technical_check": {
+                "status": "passed",
+                "format": "PNG",
+                "dimensions": [
+                  1024,
+                  1024
+                ],
+                "mode": "RGBA",
+                "alpha_min_max": [
+                  0,
+                  255
+                ],
+                "transparent_pixel_present": true,
+                "opaque_pixel_present": true
+              }
+            }
+          ],
+          "user_review": "pending",
+          "technical_check": {
+            "status": "passed",
+            "format": "PNG",
+            "dimensions": [
+              1024,
+              1024
+            ],
+            "mode": "RGBA",
+            "alpha_min_max": [
+              0,
+              255
+            ],
+            "transparent_pixel_present": true,
+            "opaque_pixel_present": true
+          },
           "agent_visual_review": "not_performed",
-          "result_path": null,
+          "result_path": "assets/exercises/pending/agent-03-single-generator-next30-2026-10-03/generator-single/agent-03-others-032/straight-arm-lat-pulldown-cable-machine/attempt-1.png",
           "planned_png_path": "/workspace/exercise-image-results/agent-03-single-generator-next30-2026-10-03/generator-single/agent-03-others-032/straight-arm-lat-pulldown-cable-machine/attempt-1.png",
           "planned_git_png_path": "assets/exercises/pending/agent-03-single-generator-next30-2026-10-03/generator-single/agent-03-others-032/straight-arm-lat-pulldown-cable-machine/attempt-1.png",
           "source_catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
           "style_version": "v1",
-          "prompt_sha256": "d200eb5c0789572f6d800e0d162a981d39a7c1e0c1b039ff3cfe22474a1e8fab"
+          "prompt_sha256": "d200eb5c0789572f6d800e0d162a981d39a7c1e0c1b039ff3cfe22474a1e8fab",
+          "cloud_result_path": "/workspace/exercise-image-results/agent-03-single-generator-next30-2026-10-03/generator-single/agent-03-others-032/straight-arm-lat-pulldown-cable-machine/attempt-1.png",
+          "result_sha256": "f7e3abf007d344f03c5bd3772fb998b4ade6a4924fcc3482aea32ec6573bebe9",
+          "last_error": null,
+          "prompt": "Create exactly ONE square 1024x1024 transparent PNG of this exact exercise and ONE selected phase. Metadata must never appear as image text.\n{\n  \"approved_style_files\": [\n    {\n      \"path\": \"docs/exercise-image-style.md\",\n      \"sha256\": \"8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578\"\n    }\n  ],\n  \"exact_catalogue_source\": {\n    \"equipment\": \"machine\",\n    \"primary_muscle\": \"lats\",\n    \"secondary_muscles\": [\n      \"triceps\"\n    ],\n    \"source_english\": {\n      \"common_mistakes\": [\n        \"Bending into a triceps pushdown.\",\n        \"Leaning far backward.\",\n        \"Letting the bar snap overhead.\"\n      ],\n      \"description\": \"A straight-arm cable pulldown pulls a high cable bar to the thighs with nearly straight elbows.\",\n      \"form_cues\": [\n        \"Keep elbows softly unlocked.\",\n        \"Pull the bar to the thighs with the lats.\",\n        \"Keep the ribs stacked over the pelvis.\"\n      ],\n      \"instructions\": [\n        \"Attach a straight bar to the high pulley and stand facing the machine.\",\n        \"Grip the bar overhand with arms extended and elbows softly unlocked.\",\n        \"Pull the bar down in an arc to the thighs while keeping the elbows nearly fixed.\",\n        \"Pause, then return the bar overhead under control.\"\n      ],\n      \"provenance\": \"adapted\",\n      \"safety_note\": \"Use a cable load that allows a smooth shoulder arc without forcing overhead range.\"\n    }\n  },\n  \"human_reference\": {\n    \"absolute_path\": \"/workspace/lightweight-exercises-photo/assets/exercises/biceps-curl-dumbbell.png\",\n    \"branch\": \"work\",\n    \"pixels_reviewed_during_preparation\": false,\n    \"repository_path\": \"assets/exercises/biceps-curl-dumbbell.png\",\n    \"role\": \"Human appearance/proportions/materials/anatomical style ONLY. Exercise pose, grip, equipment and muscles come from the exact-ID catalogue, never the reference.\",\n    \"sha256\": \"52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f\",\n    \"source_commit\": \"b0385b7e2f3382d545a6dff5304c81ba3c771096\"\n  },\n  \"identity_do_not_render_as_text\": {\n    \"catalog_record_sha256\": \"975188872e9a3edd5aa1f4f7e4997b2040f0ef0d3e81c2d263075368a8b4cab5\",\n    \"catalog_sha256\": \"a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989\",\n    \"exercise_id\": \"straight-arm-lat-pulldown-cable-machine\",\n    \"name\": \"Straight Arm Lat Pulldown (Cable)\"\n  },\n  \"selected_render_scene\": {\n    \"camera\": \"Full-body front-side three-quarter view exposing every prescribed contact, grip and support. Entire person and all equipment visible within square; no crop, text, arrows or second phase.\",\n    \"exercise_id\": \"straight-arm-lat-pulldown-cable-machine\",\n    \"grip\": \"Overhand grip on ONE straight bar, palms down.\",\n    \"movement_trajectory\": \"Shoulder extension sweeps bar down to thighs with nearly fixed elbows; return overhead under control. Do not turn into triceps elbow-extension pushdown.\",\n    \"never_infer_muscles_from_pose_or_reference\": true,\n    \"one_phase_only\": true,\n    \"pose\": \"Stand facing station with feet shoulder-width, braced ribs and shoulders down; arms nearly straight with elbows softly unlocked, bar near thighs.\",\n    \"single_phase\": \"Bar at thighs, shoulder-extension endpoint\",\n    \"supports_and_equipment\": \"High pulley with straight-bar attachment and both feet on floor; no seated thigh pad or lower pulley.\"\n  },\n  \"source_use_rule\": \"Preserve raw source texts verbatim; render only selected scene and documented exact-source/user resolution. Do not silently repair the catalogue.\",\n  \"style\": {\n    \"background\": \"Genuinely transparent PNG background, no white/checkerboard layer, no environment scene.\",\n    \"framing\": \"Full figure and all required equipment/supports visible within a square. Scale and use a three-quarter view to expose the specified contacts without changing anatomy, equipment, grip or technique.\",\n    \"human_model\": \"One athletic bald male anatomical mannequin, opaque silver-gray muscular surfaces, consistent proportions and detailed 3D materials, plain black shorts, barefoot.\",\n    \"material_rules\": \"Highlights never make tissue transparent; no glow, whole-body orange tint, hair, text, labels, arrows, UI, borders, collage or extra person.\",\n    \"no_invention\": \"Exact-ID catalogue controls source text and muscles. Render documented selected scene; recorded source corrections apply to the derived scene only. No reference-pose copying or imported muscle targets.\",\n    \"output\": {\n      \"format\": \"PNG\",\n      \"height\": 1024,\n      \"one_person\": true,\n      \"one_phase\": true,\n      \"width\": 1024\n    },\n    \"primary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"rule\": \"Highlight only the exact primary muscle group provided for this exercise.\"\n    },\n    \"secondary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"intensity_fraction\": [\n        0.4,\n        0.5\n      ],\n      \"rule\": \"Only the exact secondary muscles, lighter same-hue highlight; if the list is empty add no secondary target.\"\n    },\n    \"version\": \"v1\"\n  },\n  \"technique_resolution\": {\n    \"PNG_approval\": false,\n    \"binding_or_name_alone_is_not_confirmation\": true,\n    \"catalog_modified\": false,\n    \"construction_rule\": \"Standard compatible unbranded geometry allowed by AGENTS.md; choose geometry only around specified contacts/motion. Category machine does not establish a load mechanism, brand, angle or weight count.\",\n    \"dataset_instruction_steps_read\": [\n      \"Attach a straight bar to the high pulley of a cable machine.\",\n      \"Stand facing the machine with your feet shoulder-width apart.\",\n      \"Grasp the bar with an overhand grip, keeping your arms straight and your palms facing down.\",\n      \"Engage your lats and pull the bar down towards your thighs, keeping your arms straight throughout the movement.\",\n      \"Pause for a moment at the bottom, then slowly return the bar to the starting position.\",\n      \"Repeat for the desired number of repetitions.\"\n    ],\n    \"decision_kind\": \"exact_ID_written_technique_confirmation\",\n    \"evidence_path\": \"data/audits/agent-03-single-generator-next30-2026-10-03-technique.json\",\n    \"evidence_selector\": \"records[exercise_id=\\\"straight-arm-lat-pulldown-cable-machine\\\"]\",\n    \"illustration_choices\": \"Side/phase and compatible layout are scene choices, not amendments to source technique. Do not infer muscle targets from scene or equipment.\",\n    \"illustration_choices_are_not_user_approvals\": true,\n    \"status\": \"resolved\",\n    \"technique_fields_read\": [\n      \"content.en.description\",\n      \"content.en.instructions\",\n      \"content.en.form_cues\",\n      \"content.en.common_mistakes\",\n      \"content.en.safety_note\",\n      \"content.pl.instructions\",\n      \"source.dataset_id\"\n    ]\n  }\n}",
+          "source_catalog_record_sha256": "975188872e9a3edd5aa1f4f7e4997b2040f0ef0d3e81c2d263075368a8b4cab5",
+          "source_english_sha256": "086b6586a0ed08a0db608cc3b8eb584cedfee8d5cd02c7d41a0eb5beb694d8dc",
+          "style_files": [
+            {
+              "path": "docs/exercise-image-style.md",
+              "sha256": "8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578"
+            },
+            {
+              "path": "docs/exercise-image-style-neutral-primary.md",
+              "sha256": "86204ab43f23d119a1eb25cafdbda2518b741a0090b4ffb0ceb9086952314439"
+            }
+          ],
+          "human_reference_sha256": "52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f",
+          "technical_status": "passed"
         },
         {
           "exercise_id": "reverse-grip-lat-pulldown-cable-machine",
           "name": "Reverse Grip Lat Pulldown (Cable)",
-          "status": "not_started",
-          "attempts": 0,
-          "attempt_history": [],
+          "status": "failed",
+          "attempts": 1,
+          "attempt_history": [
+            {
+              "attempt": 1,
+              "attempt_status": "failed",
+              "started_at": "2026-10-03T08:22:05.442Z",
+              "finished_at": "2026-10-03T08:22:06.569570+00:00",
+              "prompt": "Create exactly ONE square 1024x1024 transparent PNG of this exact exercise and ONE selected phase. Metadata must never appear as image text.\n{\n  \"approved_style_files\": [\n    {\n      \"path\": \"docs/exercise-image-style.md\",\n      \"sha256\": \"8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578\"\n    }\n  ],\n  \"exact_catalogue_source\": {\n    \"equipment\": \"machine\",\n    \"primary_muscle\": \"lats\",\n    \"secondary_muscles\": [\n      \"upper_back\",\n      \"biceps\"\n    ],\n    \"source_english\": {\n      \"common_mistakes\": [\n        \"Leaning or swinging to move the load.\",\n        \"Shrugging into the top position.\",\n        \"Releasing the resistance quickly.\"\n      ],\n      \"description\": \"Reverse Grip Lat Pulldown (Cable) pulls the band, cable bar, or machine handles from overhead toward the upper chest while the torso stays braced.\",\n      \"form_cues\": [\n        \"Keep the ribs stacked and shoulders down.\",\n        \"Drive the elbows toward the torso.\",\n        \"Control the return to the start.\"\n      ],\n      \"instructions\": [\n        \"Adjust the cable machine so that the pulldown bar is at a height above your head.\",\n        \"Sit down on the seat and grab the pulldown bar with an underhand grip, hands slightly wider than shoulder-width apart.\",\n        \"Keep your back straight and lean back slightly.\",\n        \"Pull the bar down towards your chest, squeezing your shoulder blades together.\",\n        \"Pause for a moment at the bottom of the movement, then slowly release the bar back up to the starting position.\",\n        \"Repeat for the desired number of repetitions.\"\n      ],\n      \"provenance\": \"adapted\",\n      \"safety_note\": \"Use a secure station and a load or assistance level you can control through the full range.\"\n    }\n  },\n  \"human_reference\": {\n    \"absolute_path\": \"/workspace/lightweight-exercises-photo/assets/exercises/biceps-curl-dumbbell.png\",\n    \"branch\": \"work\",\n    \"pixels_reviewed_during_preparation\": false,\n    \"repository_path\": \"assets/exercises/biceps-curl-dumbbell.png\",\n    \"role\": \"Human appearance/proportions/materials/anatomical style ONLY. Exercise pose, grip, equipment and muscles come from the exact-ID catalogue, never the reference.\",\n    \"sha256\": \"52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f\",\n    \"source_commit\": \"b0385b7e2f3382d545a6dff5304c81ba3c771096\"\n  },\n  \"identity_do_not_render_as_text\": {\n    \"catalog_record_sha256\": \"a1e79d6a507d0e19e03066ab74393fb099a9cd877cf9ff9e1d1eb9769c78ed95\",\n    \"catalog_sha256\": \"a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989\",\n    \"exercise_id\": \"reverse-grip-lat-pulldown-cable-machine\",\n    \"name\": \"Reverse Grip Lat Pulldown (Cable)\"\n  },\n  \"selected_render_scene\": {\n    \"camera\": \"Full-body front-side three-quarter view exposing every prescribed contact, grip and support. Entire person and all equipment visible within square; no crop, text, arrows or second phase.\",\n    \"exercise_id\": \"reverse-grip-lat-pulldown-cable-machine\",\n    \"grip\": \"Underhand/supinated pulldown bar, slightly wider than shoulder width.\",\n    \"movement_trajectory\": \"Pull bar from overhead toward chest and return under control; no behind-neck path.\",\n    \"never_infer_muscles_from_pose_or_reference\": true,\n    \"one_phase_only\": true,\n    \"pose\": \"Seated on prescribed seat, feet grounded, back straight with only slight rearward torso lean; elbows down beside ribs, bar in front of upper chest.\",\n    \"single_phase\": \"Cable bar at upper chest\",\n    \"supports_and_equipment\": \"HIGH cable pulley with one pulldown bar over seated body; seat and compatible stable support. No lever-handles or band substitute; no invented required knee-pad contact absent source.\"\n  },\n  \"source_use_rule\": \"Preserve raw source texts verbatim; render only selected scene and documented exact-source/user resolution. Do not silently repair the catalogue.\",\n  \"style\": {\n    \"background\": \"Genuinely transparent PNG background, no white/checkerboard layer, no environment scene.\",\n    \"framing\": \"Full figure and all required equipment/supports visible within a square. Scale and use a three-quarter view to expose the specified contacts without changing anatomy, equipment, grip or technique.\",\n    \"human_model\": \"One athletic bald male anatomical mannequin, opaque silver-gray muscular surfaces, consistent proportions and detailed 3D materials, plain black shorts, barefoot.\",\n    \"material_rules\": \"Highlights never make tissue transparent; no glow, whole-body orange tint, hair, text, labels, arrows, UI, borders, collage or extra person.\",\n    \"no_invention\": \"Exact-ID catalogue controls source text and muscles. Render documented selected scene; recorded source corrections apply to the derived scene only. No reference-pose copying or imported muscle targets.\",\n    \"output\": {\n      \"format\": \"PNG\",\n      \"height\": 1024,\n      \"one_person\": true,\n      \"one_phase\": true,\n      \"width\": 1024\n    },\n    \"primary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"rule\": \"Highlight only the exact primary muscle group provided for this exercise.\"\n    },\n    \"secondary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"intensity_fraction\": [\n        0.4,\n        0.5\n      ],\n      \"rule\": \"Only the exact secondary muscles, lighter same-hue highlight; if the list is empty add no secondary target.\"\n    },\n    \"version\": \"v1\"\n  },\n  \"technique_resolution\": {\n    \"PNG_approval\": false,\n    \"binding_or_name_alone_is_not_confirmation\": true,\n    \"catalog_modified\": false,\n    \"construction_rule\": \"Standard compatible unbranded geometry allowed by AGENTS.md; choose geometry only around specified contacts/motion. Category machine does not establish a load mechanism, brand, angle or weight count.\",\n    \"dataset_instruction_steps_read\": [\n      \"Adjust the cable machine so that the pulldown bar is at a height above your head.\",\n      \"Sit down on the seat and grab the pulldown bar with an underhand grip, hands slightly wider than shoulder-width apart.\",\n      \"Keep your back straight and lean back slightly.\",\n      \"Pull the bar down towards your chest, squeezing your shoulder blades together.\",\n      \"Pause for a moment at the bottom of the movement, then slowly release the bar back up to the starting position.\",\n      \"Repeat for the desired number of repetitions.\"\n    ],\n    \"decision_kind\": \"exact_ID_written_technique_confirmation\",\n    \"evidence_path\": \"data/audits/agent-03-single-generator-next30-2026-10-03-technique.json\",\n    \"evidence_selector\": \"records[exercise_id=\\\"reverse-grip-lat-pulldown-cable-machine\\\"]\",\n    \"illustration_choices\": \"Side/phase and compatible layout are scene choices, not amendments to source technique. Do not infer muscle targets from scene or equipment.\",\n    \"illustration_choices_are_not_user_approvals\": true,\n    \"status\": \"resolved\",\n    \"technique_fields_read\": [\n      \"content.en.description\",\n      \"content.en.instructions\",\n      \"content.en.form_cues\",\n      \"content.en.common_mistakes\",\n      \"content.en.safety_note\",\n      \"content.pl.instructions\",\n      \"source.dataset_id\"\n    ]\n  }\n}",
+              "prompt_sha256": "5a57a2e379356a1f1dbf537c49f348e3ffe6c781988f108be3b17a8a1f34b48b",
+              "source": {
+                "task_commit": "77cd54d73b1f2546d29e7f17bd816faf9ec14f5e",
+                "batch_path": "data/batches/agent-03-others-032.json",
+                "batch_sha256": "06bfc5851504457a5f103616a15e4ad1be86812e3bc667180e242b7470919111",
+                "assignment_path": "data/assignments/agent-03-single-generator-next30-2026-10-03.json",
+                "assignment_sha256": "8c200e5807890caffda34c41aa44d3f6f055e46f9764d66d53d4219e7f101e37",
+                "catalog_path": "data/exercises/catalog.json",
+                "catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+                "catalog_record_sha256": "a1e79d6a507d0e19e03066ab74393fb099a9cd877cf9ff9e1d1eb9769c78ed95",
+                "source_english_sha256": "dc087b8c2fcae360997210dff3a5433aa05f7ce0aa9e257bc749793f882f58ea",
+                "technique_audit_path": "data/audits/agent-03-single-generator-next30-2026-10-03-technique.json",
+                "technique_audit_sha256": "2b9ccaaffe190dc4b5c2d8b70b2647e29a40dba843b0b7119c5e2fea4b67767b",
+                "source_errors_path": "data/audits/agent-03-single-generator-next30-2026-10-03-source-errors.json",
+                "source_errors_sha256": "ba3e4ffe4ba356ae6772275a23b2abd1fd5d9e9c4fecfe75f4be2cbef740fb96"
+              },
+              "style": {
+                "version": "v1",
+                "files": [
+                  {
+                    "path": "docs/exercise-image-style.md",
+                    "sha256": "8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578"
+                  },
+                  {
+                    "path": "docs/exercise-image-style-neutral-primary.md",
+                    "sha256": "86204ab43f23d119a1eb25cafdbda2518b741a0090b4ffb0ceb9086952314439"
+                  }
+                ]
+              },
+              "human_reference": {
+                "path": "assets/exercises/biceps-curl-dumbbell.png",
+                "absolute_path": "/workspace/lightweight-exercises-photo/assets/exercises/biceps-curl-dumbbell.png",
+                "sha256": "52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f",
+                "assigned_sha256": "52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f"
+              },
+              "requested_output": {
+                "planned_png_path": "/workspace/exercise-image-results/agent-03-single-generator-next30-2026-10-03/generator-single/agent-03-others-032/reverse-grip-lat-pulldown-cable-machine/attempt-1.png",
+                "planned_git_png_path": "assets/exercises/pending/agent-03-single-generator-next30-2026-10-03/generator-single/agent-03-others-032/reverse-grip-lat-pulldown-cable-machine/attempt-1.png",
+                "format": "PNG",
+                "dimensions": [
+                  1024,
+                  1024
+                ],
+                "transparent_background": true
+              },
+              "user_review": "pending",
+              "agent_visual_review": "not_performed",
+              "errors": [
+                "image generation failed: http 429 Too Many Requests: Some(\"{\\\"error\\\":{\\\"type\\\":\\\"usage_limit_reached\\\",\\\"message\\\":\\\"The usage limit has been reached\\\",\\\"plan_type\\\":\\\"plus\\\",\\\"resets_at\\\":1791026557,\\\"eligible_promo\\\":null,\\\"limit_window_minutes\\\":null,\\\"resets_in_seconds\\\":10831}}\")"
+              ],
+              "error": "image generation failed: http 429 Too Many Requests: Some(\"{\\\"error\\\":{\\\"type\\\":\\\"usage_limit_reached\\\",\\\"message\\\":\\\"The usage limit has been reached\\\",\\\"plan_type\\\":\\\"plus\\\",\\\"resets_at\\\":1791026557,\\\"eligible_promo\\\":null,\\\"limit_window_minutes\\\":null,\\\"resets_in_seconds\\\":10831}}\")",
+              "result_path": null,
+              "result_sha256": null,
+              "technical_check": {
+                "status": "failed",
+                "reason": "Image generation did not return a PNG; no result file recorded."
+              }
+            }
+          ],
           "user_review": null,
-          "technical_check": null,
+          "technical_check": {
+            "status": "failed",
+            "reason": "Image generation did not return a PNG; no result file recorded."
+          },
           "agent_visual_review": "not_performed",
           "result_path": null,
           "planned_png_path": "/workspace/exercise-image-results/agent-03-single-generator-next30-2026-10-03/generator-single/agent-03-others-032/reverse-grip-lat-pulldown-cable-machine/attempt-1.png",
           "planned_git_png_path": "assets/exercises/pending/agent-03-single-generator-next30-2026-10-03/generator-single/agent-03-others-032/reverse-grip-lat-pulldown-cable-machine/attempt-1.png",
           "source_catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
           "style_version": "v1",
-          "prompt_sha256": "5a57a2e379356a1f1dbf537c49f348e3ffe6c781988f108be3b17a8a1f34b48b"
+          "prompt_sha256": "5a57a2e379356a1f1dbf537c49f348e3ffe6c781988f108be3b17a8a1f34b48b",
+          "result_sha256": null,
+          "last_error": "image generation failed: http 429 Too Many Requests: Some(\"{\\\"error\\\":{\\\"type\\\":\\\"usage_limit_reached\\\",\\\"message\\\":\\\"The usage limit has been reached\\\",\\\"plan_type\\\":\\\"plus\\\",\\\"resets_at\\\":1791026557,\\\"eligible_promo\\\":null,\\\"limit_window_minutes\\\":null,\\\"resets_in_seconds\\\":10831}}\")",
+          "prompt": "Create exactly ONE square 1024x1024 transparent PNG of this exact exercise and ONE selected phase. Metadata must never appear as image text.\n{\n  \"approved_style_files\": [\n    {\n      \"path\": \"docs/exercise-image-style.md\",\n      \"sha256\": \"8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578\"\n    }\n  ],\n  \"exact_catalogue_source\": {\n    \"equipment\": \"machine\",\n    \"primary_muscle\": \"lats\",\n    \"secondary_muscles\": [\n      \"upper_back\",\n      \"biceps\"\n    ],\n    \"source_english\": {\n      \"common_mistakes\": [\n        \"Leaning or swinging to move the load.\",\n        \"Shrugging into the top position.\",\n        \"Releasing the resistance quickly.\"\n      ],\n      \"description\": \"Reverse Grip Lat Pulldown (Cable) pulls the band, cable bar, or machine handles from overhead toward the upper chest while the torso stays braced.\",\n      \"form_cues\": [\n        \"Keep the ribs stacked and shoulders down.\",\n        \"Drive the elbows toward the torso.\",\n        \"Control the return to the start.\"\n      ],\n      \"instructions\": [\n        \"Adjust the cable machine so that the pulldown bar is at a height above your head.\",\n        \"Sit down on the seat and grab the pulldown bar with an underhand grip, hands slightly wider than shoulder-width apart.\",\n        \"Keep your back straight and lean back slightly.\",\n        \"Pull the bar down towards your chest, squeezing your shoulder blades together.\",\n        \"Pause for a moment at the bottom of the movement, then slowly release the bar back up to the starting position.\",\n        \"Repeat for the desired number of repetitions.\"\n      ],\n      \"provenance\": \"adapted\",\n      \"safety_note\": \"Use a secure station and a load or assistance level you can control through the full range.\"\n    }\n  },\n  \"human_reference\": {\n    \"absolute_path\": \"/workspace/lightweight-exercises-photo/assets/exercises/biceps-curl-dumbbell.png\",\n    \"branch\": \"work\",\n    \"pixels_reviewed_during_preparation\": false,\n    \"repository_path\": \"assets/exercises/biceps-curl-dumbbell.png\",\n    \"role\": \"Human appearance/proportions/materials/anatomical style ONLY. Exercise pose, grip, equipment and muscles come from the exact-ID catalogue, never the reference.\",\n    \"sha256\": \"52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f\",\n    \"source_commit\": \"b0385b7e2f3382d545a6dff5304c81ba3c771096\"\n  },\n  \"identity_do_not_render_as_text\": {\n    \"catalog_record_sha256\": \"a1e79d6a507d0e19e03066ab74393fb099a9cd877cf9ff9e1d1eb9769c78ed95\",\n    \"catalog_sha256\": \"a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989\",\n    \"exercise_id\": \"reverse-grip-lat-pulldown-cable-machine\",\n    \"name\": \"Reverse Grip Lat Pulldown (Cable)\"\n  },\n  \"selected_render_scene\": {\n    \"camera\": \"Full-body front-side three-quarter view exposing every prescribed contact, grip and support. Entire person and all equipment visible within square; no crop, text, arrows or second phase.\",\n    \"exercise_id\": \"reverse-grip-lat-pulldown-cable-machine\",\n    \"grip\": \"Underhand/supinated pulldown bar, slightly wider than shoulder width.\",\n    \"movement_trajectory\": \"Pull bar from overhead toward chest and return under control; no behind-neck path.\",\n    \"never_infer_muscles_from_pose_or_reference\": true,\n    \"one_phase_only\": true,\n    \"pose\": \"Seated on prescribed seat, feet grounded, back straight with only slight rearward torso lean; elbows down beside ribs, bar in front of upper chest.\",\n    \"single_phase\": \"Cable bar at upper chest\",\n    \"supports_and_equipment\": \"HIGH cable pulley with one pulldown bar over seated body; seat and compatible stable support. No lever-handles or band substitute; no invented required knee-pad contact absent source.\"\n  },\n  \"source_use_rule\": \"Preserve raw source texts verbatim; render only selected scene and documented exact-source/user resolution. Do not silently repair the catalogue.\",\n  \"style\": {\n    \"background\": \"Genuinely transparent PNG background, no white/checkerboard layer, no environment scene.\",\n    \"framing\": \"Full figure and all required equipment/supports visible within a square. Scale and use a three-quarter view to expose the specified contacts without changing anatomy, equipment, grip or technique.\",\n    \"human_model\": \"One athletic bald male anatomical mannequin, opaque silver-gray muscular surfaces, consistent proportions and detailed 3D materials, plain black shorts, barefoot.\",\n    \"material_rules\": \"Highlights never make tissue transparent; no glow, whole-body orange tint, hair, text, labels, arrows, UI, borders, collage or extra person.\",\n    \"no_invention\": \"Exact-ID catalogue controls source text and muscles. Render documented selected scene; recorded source corrections apply to the derived scene only. No reference-pose copying or imported muscle targets.\",\n    \"output\": {\n      \"format\": \"PNG\",\n      \"height\": 1024,\n      \"one_person\": true,\n      \"one_phase\": true,\n      \"width\": 1024\n    },\n    \"primary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"rule\": \"Highlight only the exact primary muscle group provided for this exercise.\"\n    },\n    \"secondary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"intensity_fraction\": [\n        0.4,\n        0.5\n      ],\n      \"rule\": \"Only the exact secondary muscles, lighter same-hue highlight; if the list is empty add no secondary target.\"\n    },\n    \"version\": \"v1\"\n  },\n  \"technique_resolution\": {\n    \"PNG_approval\": false,\n    \"binding_or_name_alone_is_not_confirmation\": true,\n    \"catalog_modified\": false,\n    \"construction_rule\": \"Standard compatible unbranded geometry allowed by AGENTS.md; choose geometry only around specified contacts/motion. Category machine does not establish a load mechanism, brand, angle or weight count.\",\n    \"dataset_instruction_steps_read\": [\n      \"Adjust the cable machine so that the pulldown bar is at a height above your head.\",\n      \"Sit down on the seat and grab the pulldown bar with an underhand grip, hands slightly wider than shoulder-width apart.\",\n      \"Keep your back straight and lean back slightly.\",\n      \"Pull the bar down towards your chest, squeezing your shoulder blades together.\",\n      \"Pause for a moment at the bottom of the movement, then slowly release the bar back up to the starting position.\",\n      \"Repeat for the desired number of repetitions.\"\n    ],\n    \"decision_kind\": \"exact_ID_written_technique_confirmation\",\n    \"evidence_path\": \"data/audits/agent-03-single-generator-next30-2026-10-03-technique.json\",\n    \"evidence_selector\": \"records[exercise_id=\\\"reverse-grip-lat-pulldown-cable-machine\\\"]\",\n    \"illustration_choices\": \"Side/phase and compatible layout are scene choices, not amendments to source technique. Do not infer muscle targets from scene or equipment.\",\n    \"illustration_choices_are_not_user_approvals\": true,\n    \"status\": \"resolved\",\n    \"technique_fields_read\": [\n      \"content.en.description\",\n      \"content.en.instructions\",\n      \"content.en.form_cues\",\n      \"content.en.common_mistakes\",\n      \"content.en.safety_note\",\n      \"content.pl.instructions\",\n      \"source.dataset_id\"\n    ]\n  }\n}",
+          "source_catalog_record_sha256": "a1e79d6a507d0e19e03066ab74393fb099a9cd877cf9ff9e1d1eb9769c78ed95",
+          "source_english_sha256": "dc087b8c2fcae360997210dff3a5433aa05f7ce0aa9e257bc749793f882f58ea",
+          "style_files": [
+            {
+              "path": "docs/exercise-image-style.md",
+              "sha256": "8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578"
+            },
+            {
+              "path": "docs/exercise-image-style-neutral-primary.md",
+              "sha256": "86204ab43f23d119a1eb25cafdbda2518b741a0090b4ffb0ceb9086952314439"
+            }
+          ],
+          "human_reference_sha256": "52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f",
+          "technical_status": "failed"
         },
         {
           "exercise_id": "low-cable-fly-crossovers-machine",
@@ -1488,7 +1687,9 @@
           "style_version": "v1",
           "prompt_sha256": "b958266d3f9df5ff3b9c57329313f3dcbab65b4595ae2c3e62ae2436208707b9"
         }
-      ]
+      ],
+      "generation_calls": 2,
+      "checkpoint_at": "2026-10-03T08:22:06.868617+00:00"
     },
     {
       "batch_id": "agent-03-others-033",
@@ -1659,5 +1860,5 @@
       ]
     }
   ],
-  "last_updated_at": "2026-10-03T08:19:42.367923+00:00"
+  "last_updated_at": "2026-10-03T08:22:06.868617+00:00"
 }
