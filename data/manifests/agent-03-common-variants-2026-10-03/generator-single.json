@@ -7,7 +7,7 @@
   "assignment_path": "data/assignments/agent-03-common-variants-2026-10-03.json",
   "status": "in_progress",
   "exercise_count": 34,
-  "generation_calls": 30,
+  "generation_calls": 34,
   "user_review_policy": "pending on result creation until explicit user approval",
   "quota_rule": "Save first quota/rate-limit failure/history, push checkpoint and stop without repeat calls.",
   "batches": [
@@ -10444,72 +10444,1424 @@
     {
       "batch_id": "agent-03-others-040",
       "batch_path": "data/batches/agent-03-others-040.json",
-      "status": "ready",
+      "status": "completed",
       "exercise_count": 4,
       "exercises": [
         {
           "exercise_id": "single-arm-triceps-pushdown-cable-machine",
           "name": "Single Arm Triceps Pushdown (Cable)",
-          "status": "not_started",
-          "attempts": 0,
-          "attempt_history": [],
-          "user_review": null,
-          "technical_check": null,
+          "status": "generated_pending",
+          "attempts": 1,
+          "attempt_history": [
+            {
+              "attempt_number": 1,
+              "attempt_status": "generated",
+              "tool": "image_gen.imagegen",
+              "started_at": "2026-10-03T15:56:38.677Z",
+              "exercise_id": "single-arm-triceps-pushdown-cable-machine",
+              "name": "Single Arm Triceps Pushdown (Cable)",
+              "equipment": "machine",
+              "primary_muscle": "triceps",
+              "secondary_muscles": [],
+              "source_english": {
+                "description": "Stand at the high pulley and press one handle down beside the ribs by extending the elbow, then switch arms.",
+                "instructions": [
+                  "Stand facing a cable machine with a straight bar attachment at chest height.",
+                  "Grasp the bar with an overhand grip and step back to create tension in the cable.",
+                  "Position your feet shoulder-width apart and slightly bend your knees.",
+                  "Keep your back straight and core engaged throughout the exercise.",
+                  "Start with your arm fully extended and perpendicular to the floor.",
+                  "Keeping your upper arm stationary, exhale and push the bar down until your arm is fully extended."
+                ],
+                "form_cues": [
+                  "Keep the support points fixed.",
+                  "Use a quiet controlled path.",
+                  "Reset fully between repetitions."
+                ],
+                "common_mistakes": [
+                  "Shifting the support point.",
+                  "Using momentum instead of the target joint path.",
+                  "Cutting the return short."
+                ],
+                "safety_note": "Use a secure setup and stop if alignment or control is lost.",
+                "provenance": "adapted"
+              },
+              "selected_scene": {
+                "exercise_id": "single-arm-triceps-pushdown-cable-machine",
+                "single_phase": "Right single-handle pressdown endpoint",
+                "pose": "Stand facing high station, knees softly bent, right upper arm fixed beside ribs; right elbow nearly extended and hand down beside thigh, left hand relaxed.",
+                "grip": "RIGHT hand closes around ONE handle described by exact-ID English; no two-hand straight-bar substitution or unsupported palm-angle claim.",
+                "supports_and_equipment": "HIGH pulley in front, one handle and both feet grounded. Catalogue description establishes single-handle variant; published pushdown source corroborates elbow motion/start only, not the attachment variant.",
+                "movement_trajectory": "Extend right elbow from bent start to straight down, then return. Original already-extended start/straight-bar boilerplate is preserved separately, not executed.",
+                "camera": "Full-body front-side three-quarter view exposing every prescribed contact, grip and support. Entire person and all equipment visible within square; no crop, text, arrows or second phase.",
+                "one_phase_only": true,
+                "never_infer_muscles_from_pose_or_reference": true
+              },
+              "technique_resolution": {
+                "status": "resolved",
+                "decision_kind": "source_supported_common_variant_selected_under_user_authorization",
+                "evidence_path": "data/audits/agent-03-common-variants-2026-10-03-technique.json",
+                "evidence_selector": "records[exercise_id=\"single-arm-triceps-pushdown-cable-machine\"]",
+                "technique_fields_read": [
+                  "content.en.description",
+                  "content.en.instructions",
+                  "content.en.form_cues",
+                  "content.en.common_mistakes",
+                  "content.en.safety_note",
+                  "content.pl.instructions",
+                  "source.dataset_id"
+                ],
+                "dataset_instruction_steps_read": [
+                  "Stand facing a cable machine with a straight bar attachment at chest height.",
+                  "Grasp the bar with an overhand grip and step back to create tension in the cable.",
+                  "Position your feet shoulder-width apart and slightly bend your knees.",
+                  "Keep your back straight and core engaged throughout the exercise.",
+                  "Start with your arm fully extended and perpendicular to the floor.",
+                  "Keeping your upper arm stationary, exhale and push the bar down until your arm is fully extended.",
+                  "Pause for a moment, then inhale and slowly return to the starting position.",
+                  "Repeat for the desired number of repetitions, then switch arms."
+                ],
+                "binding_or_name_alone_is_not_confirmation": true,
+                "catalog_modified": false,
+                "PNG_approval": false,
+                "construction_rule": "Standard compatible unbranded geometry allowed by AGENTS.md; choose geometry only around specified contacts/motion. Category machine does not establish a load mechanism, brand, angle or weight count.",
+                "illustration_choices": "Side/phase and compatible layout are scene choices, not amendments to source technique. Do not infer muscle targets from scene or equipment.",
+                "preserved_source_errors_path": "data/audits/agent-03-common-variants-2026-10-03-source-notes.json",
+                "common_variant_decision": {
+                  "exercise_id": "single-arm-triceps-pushdown-cable-machine",
+                  "status": "resolved",
+                  "resolution_kind": "source_supported_common_variant_selected_under_user_authorization",
+                  "source_catalog_record_sha256": "9cca07dc6ea98764ba64e03fab978d862683e6d4b0f8f1005fa81b2caa86dd0a",
+                  "prior_block_reason": "Single-handle high-pulley description versus chest-height straight-bar and already-extended-arm source fails to establish attachment/start phase.",
+                  "source_resource_ids": [
+                    "tricep-pushdown-with-bar"
+                  ],
+                  "evidence_scope": [
+                    "External pushdown guide corroborates bent-elbow start and elbow-extension motion ONLY; exact catalogue description specifies one handle/high pulley. External two-hand bar variant is not called exact single-arm confirmation."
+                  ],
+                  "selected_scene": [
+                    "Right single-handle pressdown endpoint",
+                    "Stand facing high station, knees softly bent, right upper arm fixed beside ribs; right elbow nearly extended and hand down beside thigh, left hand relaxed.",
+                    "RIGHT hand closes around ONE handle described by exact-ID English; no two-hand straight-bar substitution or unsupported palm-angle claim.",
+                    "HIGH pulley in front, one handle and both feet grounded. Catalogue description establishes single-handle variant; published pushdown source corroborates elbow motion/start only, not the attachment variant.",
+                    "Extend right elbow from bent start to straight down, then return. Original already-extended start/straight-bar boilerplate is preserved separately, not executed."
+                  ],
+                  "scene_choices_are_not_individual_user_technique_approval": true,
+                  "catalog_modified": false,
+                  "PNG_approval": false,
+                  "user_authorization": "Research the most commonly performed variant; do not ask user to guess technique. Select a source-supported common variant and preserve contradictory raw catalogue fields."
+                },
+                "claim_limit": "External evidence scopes are explicit; component-only sources are not called exact-variant confirmation. Common scene selection is authorized, not individual user technique approval."
+              },
+              "generation_prompt": "Create exactly ONE square 1024x1024 transparent PNG of this exact exercise and ONE selected phase. Metadata must never appear as image text.\n{\n  \"approved_style_files\": [\n    {\n      \"path\": \"docs/exercise-image-style.md\",\n      \"sha256\": \"8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578\"\n    }\n  ],\n  \"exact_catalogue_source\": {\n    \"equipment\": \"machine\",\n    \"primary_muscle\": \"triceps\",\n    \"secondary_muscles\": [],\n    \"source_english\": {\n      \"common_mistakes\": [\n        \"Shifting the support point.\",\n        \"Using momentum instead of the target joint path.\",\n        \"Cutting the return short.\"\n      ],\n      \"description\": \"Stand at the high pulley and press one handle down beside the ribs by extending the elbow, then switch arms.\",\n      \"form_cues\": [\n        \"Keep the support points fixed.\",\n        \"Use a quiet controlled path.\",\n        \"Reset fully between repetitions.\"\n      ],\n      \"instructions\": [\n        \"Stand facing a cable machine with a straight bar attachment at chest height.\",\n        \"Grasp the bar with an overhand grip and step back to create tension in the cable.\",\n        \"Position your feet shoulder-width apart and slightly bend your knees.\",\n        \"Keep your back straight and core engaged throughout the exercise.\",\n        \"Start with your arm fully extended and perpendicular to the floor.\",\n        \"Keeping your upper arm stationary, exhale and push the bar down until your arm is fully extended.\"\n      ],\n      \"provenance\": \"adapted\",\n      \"safety_note\": \"Use a secure setup and stop if alignment or control is lost.\"\n    }\n  },\n  \"human_reference\": {\n    \"absolute_path\": \"/workspace/lightweight-exercises-photo/assets/exercises/biceps-curl-dumbbell.png\",\n    \"branch\": \"work\",\n    \"pixels_reviewed_during_preparation\": false,\n    \"repository_path\": \"assets/exercises/biceps-curl-dumbbell.png\",\n    \"role\": \"Human appearance/proportions/materials/anatomical style ONLY. Exercise pose, grip, equipment and muscles come from the exact-ID catalogue, never the reference.\",\n    \"sha256\": \"52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f\",\n    \"source_commit\": \"b0385b7e2f3382d545a6dff5304c81ba3c771096\"\n  },\n  \"identity_do_not_render_as_text\": {\n    \"catalog_record_sha256\": \"9cca07dc6ea98764ba64e03fab978d862683e6d4b0f8f1005fa81b2caa86dd0a\",\n    \"catalog_sha256\": \"a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989\",\n    \"exercise_id\": \"single-arm-triceps-pushdown-cable-machine\",\n    \"name\": \"Single Arm Triceps Pushdown (Cable)\"\n  },\n  \"selected_render_scene\": {\n    \"camera\": \"Full-body front-side three-quarter view exposing every prescribed contact, grip and support. Entire person and all equipment visible within square; no crop, text, arrows or second phase.\",\n    \"exercise_id\": \"single-arm-triceps-pushdown-cable-machine\",\n    \"grip\": \"RIGHT hand closes around ONE handle described by exact-ID English; no two-hand straight-bar substitution or unsupported palm-angle claim.\",\n    \"movement_trajectory\": \"Extend right elbow from bent start to straight down, then return. Original already-extended start/straight-bar boilerplate is preserved separately, not executed.\",\n    \"never_infer_muscles_from_pose_or_reference\": true,\n    \"one_phase_only\": true,\n    \"pose\": \"Stand facing high station, knees softly bent, right upper arm fixed beside ribs; right elbow nearly extended and hand down beside thigh, left hand relaxed.\",\n    \"single_phase\": \"Right single-handle pressdown endpoint\",\n    \"supports_and_equipment\": \"HIGH pulley in front, one handle and both feet grounded. Catalogue description establishes single-handle variant; published pushdown source corroborates elbow motion/start only, not the attachment variant.\"\n  },\n  \"source_use_rule\": \"Preserve raw source texts verbatim; render only selected scene and documented exact-source/user resolution. Do not silently repair the catalogue.\",\n  \"style\": {\n    \"background\": \"Genuinely transparent PNG background, no white/checkerboard layer, no environment scene.\",\n    \"framing\": \"Full figure and all required equipment/supports visible within a square. Scale and use a three-quarter view to expose the specified contacts without changing anatomy, equipment, grip or technique.\",\n    \"human_model\": \"One athletic bald male anatomical mannequin, opaque silver-gray muscular surfaces, consistent proportions and detailed 3D materials, plain black shorts, barefoot.\",\n    \"material_rules\": \"Highlights never make tissue transparent; no glow, whole-body orange tint, hair, text, labels, arrows, UI, borders, collage or extra person.\",\n    \"no_invention\": \"Exact-ID catalogue controls source text and muscles. Render documented selected scene; recorded source corrections apply to the derived scene only. No reference-pose copying or imported muscle targets.\",\n    \"output\": {\n      \"format\": \"PNG\",\n      \"height\": 1024,\n      \"one_person\": true,\n      \"one_phase\": true,\n      \"width\": 1024\n    },\n    \"primary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"rule\": \"Highlight only the exact primary muscle group provided for this exercise.\"\n    },\n    \"secondary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"intensity_fraction\": [\n        0.4,\n        0.5\n      ],\n      \"rule\": \"Only the exact secondary muscles, lighter same-hue highlight; if the list is empty add no secondary target.\"\n    },\n    \"version\": \"v1\"\n  },\n  \"technique_resolution\": {\n    \"PNG_approval\": false,\n    \"binding_or_name_alone_is_not_confirmation\": true,\n    \"catalog_modified\": false,\n    \"claim_limit\": \"External evidence scopes are explicit; component-only sources are not called exact-variant confirmation. Common scene selection is authorized, not individual user technique approval.\",\n    \"common_variant_decision\": {\n      \"PNG_approval\": false,\n      \"catalog_modified\": false,\n      \"evidence_scope\": [\n        \"External pushdown guide corroborates bent-elbow start and elbow-extension motion ONLY; exact catalogue description specifies one handle/high pulley. External two-hand bar variant is not called exact single-arm confirmation.\"\n      ],\n      \"exercise_id\": \"single-arm-triceps-pushdown-cable-machine\",\n      \"prior_block_reason\": \"Single-handle high-pulley description versus chest-height straight-bar and already-extended-arm source fails to establish attachment/start phase.\",\n      \"resolution_kind\": \"source_supported_common_variant_selected_under_user_authorization\",\n      \"scene_choices_are_not_individual_user_technique_approval\": true,\n      \"selected_scene\": [\n        \"Right single-handle pressdown endpoint\",\n        \"Stand facing high station, knees softly bent, right upper arm fixed beside ribs; right elbow nearly extended and hand down beside thigh, left hand relaxed.\",\n        \"RIGHT hand closes around ONE handle described by exact-ID English; no two-hand straight-bar substitution or unsupported palm-angle claim.\",\n        \"HIGH pulley in front, one handle and both feet grounded. Catalogue description establishes single-handle variant; published pushdown source corroborates elbow motion/start only, not the attachment variant.\",\n        \"Extend right elbow from bent start to straight down, then return. Original already-extended start/straight-bar boilerplate is preserved separately, not executed.\"\n      ],\n      \"source_catalog_record_sha256\": \"9cca07dc6ea98764ba64e03fab978d862683e6d4b0f8f1005fa81b2caa86dd0a\",\n      \"source_resource_ids\": [\n        \"tricep-pushdown-with-bar\"\n      ],\n      \"status\": \"resolved\",\n      \"user_authorization\": \"Research the most commonly performed variant; do not ask user to guess technique. Select a source-supported common variant and preserve contradictory raw catalogue fields.\"\n    },\n    \"construction_rule\": \"Standard compatible unbranded geometry allowed by AGENTS.md; choose geometry only around specified contacts/motion. Category machine does not establish a load mechanism, brand, angle or weight count.\",\n    \"dataset_instruction_steps_read\": [\n      \"Stand facing a cable machine with a straight bar attachment at chest height.\",\n      \"Grasp the bar with an overhand grip and step back to create tension in the cable.\",\n      \"Position your feet shoulder-width apart and slightly bend your knees.\",\n      \"Keep your back straight and core engaged throughout the exercise.\",\n      \"Start with your arm fully extended and perpendicular to the floor.\",\n      \"Keeping your upper arm stationary, exhale and push the bar down until your arm is fully extended.\",\n      \"Pause for a moment, then inhale and slowly return to the starting position.\",\n      \"Repeat for the desired number of repetitions, then switch arms.\"\n    ],\n    \"decision_kind\": \"source_supported_common_variant_selected_under_user_authorization\",\n    \"evidence_path\": \"data/audits/agent-03-common-variants-2026-10-03-technique.json\",\n    \"evidence_selector\": \"records[exercise_id=\\\"single-arm-triceps-pushdown-cable-machine\\\"]\",\n    \"illustration_choices\": \"Side/phase and compatible layout are scene choices, not amendments to source technique. Do not infer muscle targets from scene or equipment.\",\n    \"preserved_source_errors_path\": \"data/audits/agent-03-common-variants-2026-10-03-source-notes.json\",\n    \"status\": \"resolved\",\n    \"technique_fields_read\": [\n      \"content.en.description\",\n      \"content.en.instructions\",\n      \"content.en.form_cues\",\n      \"content.en.common_mistakes\",\n      \"content.en.safety_note\",\n      \"content.pl.instructions\",\n      \"source.dataset_id\"\n    ]\n  }\n}",
+              "prompt_sha256": "eb2d844274b0324e544ddf302d4f12a30037d721ec9a8d9b595f7638240c92d5",
+              "style_version": "v1",
+              "approved_style_files": [
+                {
+                  "path": "docs/exercise-image-style.md",
+                  "sha256": "8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578"
+                }
+              ],
+              "human_reference": {
+                "repository_path": "assets/exercises/biceps-curl-dumbbell.png",
+                "absolute_path": "/workspace/lightweight-exercises-photo/assets/exercises/biceps-curl-dumbbell.png",
+                "sha256": "52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f",
+                "branch": "work",
+                "source_commit": "b0385b7e2f3382d545a6dff5304c81ba3c771096",
+                "role": "Human appearance/proportions/materials/anatomical style ONLY. Exercise pose, grip, equipment and muscles come from the exact-ID catalogue, never the reference.",
+                "pixels_reviewed_during_preparation": false
+              },
+              "source": {
+                "task_commit": "de7dfb901c4c23072c5b11d3fee6cde7364eeb6a",
+                "source_branch": "agent-03-inventory-2026-10-01",
+                "assignment_path": "data/assignments/agent-03-common-variants-2026-10-03.json",
+                "assignment_sha256": "c9647f92adc6c2623cc6591904aefededbfe0be4152df714e543ec04fc4d0275",
+                "batch_path": "data/batches/agent-03-others-040.json",
+                "batch_sha256": "418687026eb74454a96201bde77353014b0aad58f986d125ec18efad96a9a0ff",
+                "catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+                "catalog_record_sha256": "9cca07dc6ea98764ba64e03fab978d862683e6d4b0f8f1005fa81b2caa86dd0a",
+                "source_english_sha256": "d7423506b0def15c2e22da2224c0a0084b05a9664414367f4d31dc7832b6c9ce",
+                "technique_evidence_path": "data/audits/agent-03-common-variants-2026-10-03-technique.json",
+                "source_notes_path": "data/audits/agent-03-common-variants-2026-10-03-source-notes.json"
+              },
+              "generation_authorization": {
+                "task_record_generation_authorized_now": false,
+                "current_user_instruction_authorizes_generation": true,
+                "basis": "Explicit current user request to execute assignment 34 IDs; task records remain unchanged."
+              },
+              "planned_png_path": "/workspace/exercise-image-results/agent-03-common-variants-2026-10-03/generator-single/agent-03-others-040/single-arm-triceps-pushdown-cable-machine/attempt-1.png",
+              "planned_git_png_path": "assets/exercises/pending/agent-03-common-variants-2026-10-03/generator-single/agent-03-others-040/single-arm-triceps-pushdown-cable-machine/attempt-1.png",
+              "errors": [],
+              "finished_at": "2026-10-03T15:59:34.209Z",
+              "generator_output_path": "/workspace/generated_images/exec-c4e6e771-710e-4c32-9008-002e5dcc8795.png",
+              "generator_output_sha256": "ab3f95a355a4d9ce35b0099ed700d57428b5684438e20fe74fec83457f9b4503",
+              "generator_output_dimensions": [
+                1254,
+                1254
+              ],
+              "generator_output_mode": "RGBA",
+              "generator_output_format": "PNG",
+              "normalization": "Pillow LANCZOS aspect-preserving resize to 1024x1024 RGBA; original generator output retained.",
+              "result_path": "/workspace/exercise-image-results/agent-03-common-variants-2026-10-03/generator-single/agent-03-others-040/single-arm-triceps-pushdown-cable-machine/attempt-1.png",
+              "git_result_path": "assets/exercises/pending/agent-03-common-variants-2026-10-03/generator-single/agent-03-others-040/single-arm-triceps-pushdown-cable-machine/attempt-1.png",
+              "result_sha256": "8040156dc0e5192a94d7d3424d487dbbfb4db4b9ade9960b56e5be171b5685c6",
+              "technical_check": {
+                "status": "passed",
+                "format": "PNG",
+                "dimensions": [
+                  1024,
+                  1024
+                ],
+                "mode": "RGBA",
+                "generator_source_format": "PNG",
+                "generator_source_dimensions": [
+                  1254,
+                  1254
+                ],
+                "generator_source_mode": "RGBA",
+                "generator_source_had_alpha_or_transparency": true,
+                "alpha_min_max": [
+                  0,
+                  255
+                ],
+                "fully_transparent_pixels": 756500,
+                "fully_opaque_pixels": 3716,
+                "transparent_pixel_present": true,
+                "opaque_pixel_present": true,
+                "opens": true,
+                "errors": [],
+                "normalization": "Pillow LANCZOS aspect-preserving resize to 1024x1024 RGBA; original generator output retained.",
+                "scope": "PNG decode, exact square dimensions, alpha-channel/transparency pixels and SHA256 only; no visual QA."
+              }
+            }
+          ],
+          "user_review": "pending",
+          "technical_check": {
+            "status": "passed",
+            "format": "PNG",
+            "dimensions": [
+              1024,
+              1024
+            ],
+            "mode": "RGBA",
+            "generator_source_format": "PNG",
+            "generator_source_dimensions": [
+              1254,
+              1254
+            ],
+            "generator_source_mode": "RGBA",
+            "generator_source_had_alpha_or_transparency": true,
+            "alpha_min_max": [
+              0,
+              255
+            ],
+            "fully_transparent_pixels": 756500,
+            "fully_opaque_pixels": 3716,
+            "transparent_pixel_present": true,
+            "opaque_pixel_present": true,
+            "opens": true,
+            "errors": [],
+            "normalization": "Pillow LANCZOS aspect-preserving resize to 1024x1024 RGBA; original generator output retained.",
+            "scope": "PNG decode, exact square dimensions, alpha-channel/transparency pixels and SHA256 only; no visual QA."
+          },
           "agent_visual_review": "not_performed",
-          "result_path": null,
+          "result_path": "/workspace/exercise-image-results/agent-03-common-variants-2026-10-03/generator-single/agent-03-others-040/single-arm-triceps-pushdown-cable-machine/attempt-1.png",
           "planned_png_path": "/workspace/exercise-image-results/agent-03-common-variants-2026-10-03/generator-single/agent-03-others-040/single-arm-triceps-pushdown-cable-machine/attempt-1.png",
           "planned_git_png_path": "assets/exercises/pending/agent-03-common-variants-2026-10-03/generator-single/agent-03-others-040/single-arm-triceps-pushdown-cable-machine/attempt-1.png",
           "prompt_sha256": "eb2d844274b0324e544ddf302d4f12a30037d721ec9a8d9b595f7638240c92d5",
           "source_catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
-          "style_version": "v1"
+          "style_version": "v1",
+          "generation_prompt": "Create exactly ONE square 1024x1024 transparent PNG of this exact exercise and ONE selected phase. Metadata must never appear as image text.\n{\n  \"approved_style_files\": [\n    {\n      \"path\": \"docs/exercise-image-style.md\",\n      \"sha256\": \"8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578\"\n    }\n  ],\n  \"exact_catalogue_source\": {\n    \"equipment\": \"machine\",\n    \"primary_muscle\": \"triceps\",\n    \"secondary_muscles\": [],\n    \"source_english\": {\n      \"common_mistakes\": [\n        \"Shifting the support point.\",\n        \"Using momentum instead of the target joint path.\",\n        \"Cutting the return short.\"\n      ],\n      \"description\": \"Stand at the high pulley and press one handle down beside the ribs by extending the elbow, then switch arms.\",\n      \"form_cues\": [\n        \"Keep the support points fixed.\",\n        \"Use a quiet controlled path.\",\n        \"Reset fully between repetitions.\"\n      ],\n      \"instructions\": [\n        \"Stand facing a cable machine with a straight bar attachment at chest height.\",\n        \"Grasp the bar with an overhand grip and step back to create tension in the cable.\",\n        \"Position your feet shoulder-width apart and slightly bend your knees.\",\n        \"Keep your back straight and core engaged throughout the exercise.\",\n        \"Start with your arm fully extended and perpendicular to the floor.\",\n        \"Keeping your upper arm stationary, exhale and push the bar down until your arm is fully extended.\"\n      ],\n      \"provenance\": \"adapted\",\n      \"safety_note\": \"Use a secure setup and stop if alignment or control is lost.\"\n    }\n  },\n  \"human_reference\": {\n    \"absolute_path\": \"/workspace/lightweight-exercises-photo/assets/exercises/biceps-curl-dumbbell.png\",\n    \"branch\": \"work\",\n    \"pixels_reviewed_during_preparation\": false,\n    \"repository_path\": \"assets/exercises/biceps-curl-dumbbell.png\",\n    \"role\": \"Human appearance/proportions/materials/anatomical style ONLY. Exercise pose, grip, equipment and muscles come from the exact-ID catalogue, never the reference.\",\n    \"sha256\": \"52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f\",\n    \"source_commit\": \"b0385b7e2f3382d545a6dff5304c81ba3c771096\"\n  },\n  \"identity_do_not_render_as_text\": {\n    \"catalog_record_sha256\": \"9cca07dc6ea98764ba64e03fab978d862683e6d4b0f8f1005fa81b2caa86dd0a\",\n    \"catalog_sha256\": \"a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989\",\n    \"exercise_id\": \"single-arm-triceps-pushdown-cable-machine\",\n    \"name\": \"Single Arm Triceps Pushdown (Cable)\"\n  },\n  \"selected_render_scene\": {\n    \"camera\": \"Full-body front-side three-quarter view exposing every prescribed contact, grip and support. Entire person and all equipment visible within square; no crop, text, arrows or second phase.\",\n    \"exercise_id\": \"single-arm-triceps-pushdown-cable-machine\",\n    \"grip\": \"RIGHT hand closes around ONE handle described by exact-ID English; no two-hand straight-bar substitution or unsupported palm-angle claim.\",\n    \"movement_trajectory\": \"Extend right elbow from bent start to straight down, then return. Original already-extended start/straight-bar boilerplate is preserved separately, not executed.\",\n    \"never_infer_muscles_from_pose_or_reference\": true,\n    \"one_phase_only\": true,\n    \"pose\": \"Stand facing high station, knees softly bent, right upper arm fixed beside ribs; right elbow nearly extended and hand down beside thigh, left hand relaxed.\",\n    \"single_phase\": \"Right single-handle pressdown endpoint\",\n    \"supports_and_equipment\": \"HIGH pulley in front, one handle and both feet grounded. Catalogue description establishes single-handle variant; published pushdown source corroborates elbow motion/start only, not the attachment variant.\"\n  },\n  \"source_use_rule\": \"Preserve raw source texts verbatim; render only selected scene and documented exact-source/user resolution. Do not silently repair the catalogue.\",\n  \"style\": {\n    \"background\": \"Genuinely transparent PNG background, no white/checkerboard layer, no environment scene.\",\n    \"framing\": \"Full figure and all required equipment/supports visible within a square. Scale and use a three-quarter view to expose the specified contacts without changing anatomy, equipment, grip or technique.\",\n    \"human_model\": \"One athletic bald male anatomical mannequin, opaque silver-gray muscular surfaces, consistent proportions and detailed 3D materials, plain black shorts, barefoot.\",\n    \"material_rules\": \"Highlights never make tissue transparent; no glow, whole-body orange tint, hair, text, labels, arrows, UI, borders, collage or extra person.\",\n    \"no_invention\": \"Exact-ID catalogue controls source text and muscles. Render documented selected scene; recorded source corrections apply to the derived scene only. No reference-pose copying or imported muscle targets.\",\n    \"output\": {\n      \"format\": \"PNG\",\n      \"height\": 1024,\n      \"one_person\": true,\n      \"one_phase\": true,\n      \"width\": 1024\n    },\n    \"primary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"rule\": \"Highlight only the exact primary muscle group provided for this exercise.\"\n    },\n    \"secondary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"intensity_fraction\": [\n        0.4,\n        0.5\n      ],\n      \"rule\": \"Only the exact secondary muscles, lighter same-hue highlight; if the list is empty add no secondary target.\"\n    },\n    \"version\": \"v1\"\n  },\n  \"technique_resolution\": {\n    \"PNG_approval\": false,\n    \"binding_or_name_alone_is_not_confirmation\": true,\n    \"catalog_modified\": false,\n    \"claim_limit\": \"External evidence scopes are explicit; component-only sources are not called exact-variant confirmation. Common scene selection is authorized, not individual user technique approval.\",\n    \"common_variant_decision\": {\n      \"PNG_approval\": false,\n      \"catalog_modified\": false,\n      \"evidence_scope\": [\n        \"External pushdown guide corroborates bent-elbow start and elbow-extension motion ONLY; exact catalogue description specifies one handle/high pulley. External two-hand bar variant is not called exact single-arm confirmation.\"\n      ],\n      \"exercise_id\": \"single-arm-triceps-pushdown-cable-machine\",\n      \"prior_block_reason\": \"Single-handle high-pulley description versus chest-height straight-bar and already-extended-arm source fails to establish attachment/start phase.\",\n      \"resolution_kind\": \"source_supported_common_variant_selected_under_user_authorization\",\n      \"scene_choices_are_not_individual_user_technique_approval\": true,\n      \"selected_scene\": [\n        \"Right single-handle pressdown endpoint\",\n        \"Stand facing high station, knees softly bent, right upper arm fixed beside ribs; right elbow nearly extended and hand down beside thigh, left hand relaxed.\",\n        \"RIGHT hand closes around ONE handle described by exact-ID English; no two-hand straight-bar substitution or unsupported palm-angle claim.\",\n        \"HIGH pulley in front, one handle and both feet grounded. Catalogue description establishes single-handle variant; published pushdown source corroborates elbow motion/start only, not the attachment variant.\",\n        \"Extend right elbow from bent start to straight down, then return. Original already-extended start/straight-bar boilerplate is preserved separately, not executed.\"\n      ],\n      \"source_catalog_record_sha256\": \"9cca07dc6ea98764ba64e03fab978d862683e6d4b0f8f1005fa81b2caa86dd0a\",\n      \"source_resource_ids\": [\n        \"tricep-pushdown-with-bar\"\n      ],\n      \"status\": \"resolved\",\n      \"user_authorization\": \"Research the most commonly performed variant; do not ask user to guess technique. Select a source-supported common variant and preserve contradictory raw catalogue fields.\"\n    },\n    \"construction_rule\": \"Standard compatible unbranded geometry allowed by AGENTS.md; choose geometry only around specified contacts/motion. Category machine does not establish a load mechanism, brand, angle or weight count.\",\n    \"dataset_instruction_steps_read\": [\n      \"Stand facing a cable machine with a straight bar attachment at chest height.\",\n      \"Grasp the bar with an overhand grip and step back to create tension in the cable.\",\n      \"Position your feet shoulder-width apart and slightly bend your knees.\",\n      \"Keep your back straight and core engaged throughout the exercise.\",\n      \"Start with your arm fully extended and perpendicular to the floor.\",\n      \"Keeping your upper arm stationary, exhale and push the bar down until your arm is fully extended.\",\n      \"Pause for a moment, then inhale and slowly return to the starting position.\",\n      \"Repeat for the desired number of repetitions, then switch arms.\"\n    ],\n    \"decision_kind\": \"source_supported_common_variant_selected_under_user_authorization\",\n    \"evidence_path\": \"data/audits/agent-03-common-variants-2026-10-03-technique.json\",\n    \"evidence_selector\": \"records[exercise_id=\\\"single-arm-triceps-pushdown-cable-machine\\\"]\",\n    \"illustration_choices\": \"Side/phase and compatible layout are scene choices, not amendments to source technique. Do not infer muscle targets from scene or equipment.\",\n    \"preserved_source_errors_path\": \"data/audits/agent-03-common-variants-2026-10-03-source-notes.json\",\n    \"status\": \"resolved\",\n    \"technique_fields_read\": [\n      \"content.en.description\",\n      \"content.en.instructions\",\n      \"content.en.form_cues\",\n      \"content.en.common_mistakes\",\n      \"content.en.safety_note\",\n      \"content.pl.instructions\",\n      \"source.dataset_id\"\n    ]\n  }\n}",
+          "source": {
+            "task_commit": "de7dfb901c4c23072c5b11d3fee6cde7364eeb6a",
+            "source_branch": "agent-03-inventory-2026-10-01",
+            "assignment_path": "data/assignments/agent-03-common-variants-2026-10-03.json",
+            "assignment_sha256": "c9647f92adc6c2623cc6591904aefededbfe0be4152df714e543ec04fc4d0275",
+            "batch_path": "data/batches/agent-03-others-040.json",
+            "batch_sha256": "418687026eb74454a96201bde77353014b0aad58f986d125ec18efad96a9a0ff",
+            "catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+            "catalog_record_sha256": "9cca07dc6ea98764ba64e03fab978d862683e6d4b0f8f1005fa81b2caa86dd0a",
+            "source_english_sha256": "d7423506b0def15c2e22da2224c0a0084b05a9664414367f4d31dc7832b6c9ce",
+            "technique_evidence_path": "data/audits/agent-03-common-variants-2026-10-03-technique.json",
+            "source_notes_path": "data/audits/agent-03-common-variants-2026-10-03-source-notes.json"
+          },
+          "source_english": {
+            "description": "Stand at the high pulley and press one handle down beside the ribs by extending the elbow, then switch arms.",
+            "instructions": [
+              "Stand facing a cable machine with a straight bar attachment at chest height.",
+              "Grasp the bar with an overhand grip and step back to create tension in the cable.",
+              "Position your feet shoulder-width apart and slightly bend your knees.",
+              "Keep your back straight and core engaged throughout the exercise.",
+              "Start with your arm fully extended and perpendicular to the floor.",
+              "Keeping your upper arm stationary, exhale and push the bar down until your arm is fully extended."
+            ],
+            "form_cues": [
+              "Keep the support points fixed.",
+              "Use a quiet controlled path.",
+              "Reset fully between repetitions."
+            ],
+            "common_mistakes": [
+              "Shifting the support point.",
+              "Using momentum instead of the target joint path.",
+              "Cutting the return short."
+            ],
+            "safety_note": "Use a secure setup and stop if alignment or control is lost.",
+            "provenance": "adapted"
+          },
+          "equipment": "machine",
+          "primary_muscle": "triceps",
+          "secondary_muscles": [],
+          "selected_scene": {
+            "exercise_id": "single-arm-triceps-pushdown-cable-machine",
+            "single_phase": "Right single-handle pressdown endpoint",
+            "pose": "Stand facing high station, knees softly bent, right upper arm fixed beside ribs; right elbow nearly extended and hand down beside thigh, left hand relaxed.",
+            "grip": "RIGHT hand closes around ONE handle described by exact-ID English; no two-hand straight-bar substitution or unsupported palm-angle claim.",
+            "supports_and_equipment": "HIGH pulley in front, one handle and both feet grounded. Catalogue description establishes single-handle variant; published pushdown source corroborates elbow motion/start only, not the attachment variant.",
+            "movement_trajectory": "Extend right elbow from bent start to straight down, then return. Original already-extended start/straight-bar boilerplate is preserved separately, not executed.",
+            "camera": "Full-body front-side three-quarter view exposing every prescribed contact, grip and support. Entire person and all equipment visible within square; no crop, text, arrows or second phase.",
+            "one_phase_only": true,
+            "never_infer_muscles_from_pose_or_reference": true
+          },
+          "technique_resolution": {
+            "status": "resolved",
+            "decision_kind": "source_supported_common_variant_selected_under_user_authorization",
+            "evidence_path": "data/audits/agent-03-common-variants-2026-10-03-technique.json",
+            "evidence_selector": "records[exercise_id=\"single-arm-triceps-pushdown-cable-machine\"]",
+            "technique_fields_read": [
+              "content.en.description",
+              "content.en.instructions",
+              "content.en.form_cues",
+              "content.en.common_mistakes",
+              "content.en.safety_note",
+              "content.pl.instructions",
+              "source.dataset_id"
+            ],
+            "dataset_instruction_steps_read": [
+              "Stand facing a cable machine with a straight bar attachment at chest height.",
+              "Grasp the bar with an overhand grip and step back to create tension in the cable.",
+              "Position your feet shoulder-width apart and slightly bend your knees.",
+              "Keep your back straight and core engaged throughout the exercise.",
+              "Start with your arm fully extended and perpendicular to the floor.",
+              "Keeping your upper arm stationary, exhale and push the bar down until your arm is fully extended.",
+              "Pause for a moment, then inhale and slowly return to the starting position.",
+              "Repeat for the desired number of repetitions, then switch arms."
+            ],
+            "binding_or_name_alone_is_not_confirmation": true,
+            "catalog_modified": false,
+            "PNG_approval": false,
+            "construction_rule": "Standard compatible unbranded geometry allowed by AGENTS.md; choose geometry only around specified contacts/motion. Category machine does not establish a load mechanism, brand, angle or weight count.",
+            "illustration_choices": "Side/phase and compatible layout are scene choices, not amendments to source technique. Do not infer muscle targets from scene or equipment.",
+            "preserved_source_errors_path": "data/audits/agent-03-common-variants-2026-10-03-source-notes.json",
+            "common_variant_decision": {
+              "exercise_id": "single-arm-triceps-pushdown-cable-machine",
+              "status": "resolved",
+              "resolution_kind": "source_supported_common_variant_selected_under_user_authorization",
+              "source_catalog_record_sha256": "9cca07dc6ea98764ba64e03fab978d862683e6d4b0f8f1005fa81b2caa86dd0a",
+              "prior_block_reason": "Single-handle high-pulley description versus chest-height straight-bar and already-extended-arm source fails to establish attachment/start phase.",
+              "source_resource_ids": [
+                "tricep-pushdown-with-bar"
+              ],
+              "evidence_scope": [
+                "External pushdown guide corroborates bent-elbow start and elbow-extension motion ONLY; exact catalogue description specifies one handle/high pulley. External two-hand bar variant is not called exact single-arm confirmation."
+              ],
+              "selected_scene": [
+                "Right single-handle pressdown endpoint",
+                "Stand facing high station, knees softly bent, right upper arm fixed beside ribs; right elbow nearly extended and hand down beside thigh, left hand relaxed.",
+                "RIGHT hand closes around ONE handle described by exact-ID English; no two-hand straight-bar substitution or unsupported palm-angle claim.",
+                "HIGH pulley in front, one handle and both feet grounded. Catalogue description establishes single-handle variant; published pushdown source corroborates elbow motion/start only, not the attachment variant.",
+                "Extend right elbow from bent start to straight down, then return. Original already-extended start/straight-bar boilerplate is preserved separately, not executed."
+              ],
+              "scene_choices_are_not_individual_user_technique_approval": true,
+              "catalog_modified": false,
+              "PNG_approval": false,
+              "user_authorization": "Research the most commonly performed variant; do not ask user to guess technique. Select a source-supported common variant and preserve contradictory raw catalogue fields."
+            },
+            "claim_limit": "External evidence scopes are explicit; component-only sources are not called exact-variant confirmation. Common scene selection is authorized, not individual user technique approval."
+          },
+          "approved_style_files": [
+            {
+              "path": "docs/exercise-image-style.md",
+              "sha256": "8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578"
+            }
+          ],
+          "human_reference": {
+            "repository_path": "assets/exercises/biceps-curl-dumbbell.png",
+            "absolute_path": "/workspace/lightweight-exercises-photo/assets/exercises/biceps-curl-dumbbell.png",
+            "sha256": "52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f",
+            "branch": "work",
+            "source_commit": "b0385b7e2f3382d545a6dff5304c81ba3c771096",
+            "role": "Human appearance/proportions/materials/anatomical style ONLY. Exercise pose, grip, equipment and muscles come from the exact-ID catalogue, never the reference.",
+            "pixels_reviewed_during_preparation": false
+          },
+          "generation_authorization": {
+            "task_record_generation_authorized_now": false,
+            "current_user_instruction_authorizes_generation": true,
+            "basis": "Explicit current user request to execute assignment 34 IDs; task records remain unchanged."
+          },
+          "git_result_path": "assets/exercises/pending/agent-03-common-variants-2026-10-03/generator-single/agent-03-others-040/single-arm-triceps-pushdown-cable-machine/attempt-1.png",
+          "result_sha256": "8040156dc0e5192a94d7d3424d487dbbfb4db4b9ade9960b56e5be171b5685c6",
+          "technical_status": "passed",
+          "normalization": "Pillow LANCZOS aspect-preserving resize to 1024x1024 RGBA; original generator output retained.",
+          "errors": []
         },
         {
           "exercise_id": "decline-bench-press-machine",
           "name": "Decline Bench Press (Machine)",
-          "status": "not_started",
-          "attempts": 0,
-          "attempt_history": [],
-          "user_review": null,
-          "technical_check": null,
+          "status": "generated_pending",
+          "attempts": 1,
+          "attempt_history": [
+            {
+              "attempt_number": 1,
+              "attempt_status": "generated",
+              "tool": "image_gen.imagegen",
+              "started_at": "2026-10-03T16:00:16.244Z",
+              "exercise_id": "decline-bench-press-machine",
+              "name": "Decline Bench Press (Machine)",
+              "equipment": "machine",
+              "primary_muscle": "chest",
+              "secondary_muscles": [
+                "shoulders",
+                "triceps"
+              ],
+              "source_english": {
+                "description": "Decline Bench Press (Machine) is a supported chest press using the barbell.",
+                "instructions": [
+                  "Lie on a declined bench with feet secured. Grip the barbell and hold it over the chest.",
+                  "Lower the resistance toward the chest with elbows controlled.",
+                  "Pause without bouncing or losing shoulder position.",
+                  "Press back to straight arms, then rerack or set the weights down safely."
+                ],
+                "form_cues": [
+                  "Keep wrists stacked.",
+                  "Keep shoulder blades supported.",
+                  "Press evenly."
+                ],
+                "common_mistakes": [
+                  "Bouncing at the bottom.",
+                  "Flaring the elbows.",
+                  "Arching to shorten the range."
+                ],
+                "safety_note": "Use a spotter or safeties for the loaded press and stop before shoulder control is lost.",
+                "provenance": "authored"
+              },
+              "selected_scene": {
+                "exercise_id": "decline-bench-press-machine",
+                "single_phase": "Two independent lever handles just above chest",
+                "pose": "Lie on declined bench between independent arms, head/back/pelvis supported and feet secured; elbows bent under control, wrists stacked beneath handles near chest.",
+                "grip": "One closed hand on each prescribed independent handle, no inferred source-specific palm orientation.",
+                "supports_and_equipment": "User-selected lying DECLINED bench, TWO independent plate-loaded lever arms and secured feet. Compatible padded foot restraints implement catalogue feet-secured requirement; design is illustration choice. No brand, numeric angle/load/plate count or Smith bar.",
+                "movement_trajectory": "Press both lever handles away from chest along compatible lever arcs, then lower controlled; no free-bar rerack or setting weights on floor.",
+                "camera": "Full-body front-side three-quarter view exposing every prescribed contact, grip and support. Entire person and all equipment visible within square; no crop, text, arrows or second phase.",
+                "one_phase_only": true,
+                "never_infer_muscles_from_pose_or_reference": true
+              },
+              "technique_resolution": {
+                "status": "resolved",
+                "decision_kind": "prior_user_equipment_choice_with_compatible_layout",
+                "evidence_path": "data/audits/agent-03-common-variants-2026-10-03-technique.json",
+                "evidence_selector": "records[exercise_id=\"decline-bench-press-machine\"]",
+                "technique_fields_read": [
+                  "content.en.description",
+                  "content.en.instructions",
+                  "content.en.form_cues",
+                  "content.en.common_mistakes",
+                  "content.en.safety_note",
+                  "content.pl.instructions",
+                  "source.dataset_id"
+                ],
+                "dataset_instruction_steps_read": null,
+                "binding_or_name_alone_is_not_confirmation": true,
+                "catalog_modified": false,
+                "PNG_approval": false,
+                "construction_rule": "Standard compatible unbranded geometry allowed by AGENTS.md; choose geometry only around specified contacts/motion. Category machine does not establish a load mechanism, brand, angle or weight count.",
+                "illustration_choices": "Side/phase and compatible layout are scene choices, not amendments to source technique. Do not infer muscle targets from scene or equipment.",
+                "user_decision_path": "data/technique-decisions/agent-03-user-answers-2026-10-03.json",
+                "user_selected_configuration": "Lying on declined bench between TWO independent plate-loaded lever arms; each arm has plate loading and its own hand contact. Not free barbell or Smith.",
+                "preserved_source_errors_path": "data/audits/agent-03-common-variants-2026-10-03-source-notes.json",
+                "common_variant_decision": {
+                  "exercise_id": "decline-bench-press-machine",
+                  "status": "resolved",
+                  "resolution_kind": "prior_user_equipment_choice_with_compatible_layout",
+                  "source_catalog_record_sha256": "b86fc191cd5027e4a045a5bd83d18bd669c35ccbb59152a1e4516d05ee0bcd77",
+                  "prior_block_reason": "User already selected lying declined two-arm plate-loaded lever configuration; compatible support/handle geometry was not yet prepared.",
+                  "source_resource_ids": [],
+                  "evidence_scope": [
+                    "full selected named exercise posture/movement and specified contacts"
+                  ],
+                  "selected_scene": [
+                    "Two independent lever handles just above chest",
+                    "Lie on declined bench between independent arms, head/back/pelvis supported and feet secured; elbows bent under control, wrists stacked beneath handles near chest.",
+                    "One closed hand on each prescribed independent handle, no inferred source-specific palm orientation.",
+                    "User-selected lying DECLINED bench, TWO independent plate-loaded lever arms and secured feet. Compatible padded foot restraints implement catalogue feet-secured requirement; design is illustration choice. No brand, numeric angle/load/plate count or Smith bar.",
+                    "Press both lever handles away from chest along compatible lever arcs, then lower controlled; no free-bar rerack or setting weights on floor."
+                  ],
+                  "scene_choices_are_not_individual_user_technique_approval": false,
+                  "catalog_modified": false,
+                  "PNG_approval": false,
+                  "user_authorization": "Research the most commonly performed variant; do not ask user to guess technique. Select a source-supported common variant and preserve contradictory raw catalogue fields.",
+                  "prior_user_decision_path": "data/technique-decisions/agent-03-user-answers-2026-10-03.json"
+                },
+                "claim_limit": "External evidence scopes are explicit; component-only sources are not called exact-variant confirmation. Common scene selection is authorized, not individual user technique approval."
+              },
+              "generation_prompt": "Create exactly ONE square 1024x1024 transparent PNG of this exact exercise and ONE selected phase. Metadata must never appear as image text.\n{\n  \"approved_style_files\": [\n    {\n      \"path\": \"docs/exercise-image-style.md\",\n      \"sha256\": \"8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578\"\n    }\n  ],\n  \"exact_catalogue_source\": {\n    \"equipment\": \"machine\",\n    \"primary_muscle\": \"chest\",\n    \"secondary_muscles\": [\n      \"shoulders\",\n      \"triceps\"\n    ],\n    \"source_english\": {\n      \"common_mistakes\": [\n        \"Bouncing at the bottom.\",\n        \"Flaring the elbows.\",\n        \"Arching to shorten the range.\"\n      ],\n      \"description\": \"Decline Bench Press (Machine) is a supported chest press using the barbell.\",\n      \"form_cues\": [\n        \"Keep wrists stacked.\",\n        \"Keep shoulder blades supported.\",\n        \"Press evenly.\"\n      ],\n      \"instructions\": [\n        \"Lie on a declined bench with feet secured. Grip the barbell and hold it over the chest.\",\n        \"Lower the resistance toward the chest with elbows controlled.\",\n        \"Pause without bouncing or losing shoulder position.\",\n        \"Press back to straight arms, then rerack or set the weights down safely.\"\n      ],\n      \"provenance\": \"authored\",\n      \"safety_note\": \"Use a spotter or safeties for the loaded press and stop before shoulder control is lost.\"\n    }\n  },\n  \"human_reference\": {\n    \"absolute_path\": \"/workspace/lightweight-exercises-photo/assets/exercises/biceps-curl-dumbbell.png\",\n    \"branch\": \"work\",\n    \"pixels_reviewed_during_preparation\": false,\n    \"repository_path\": \"assets/exercises/biceps-curl-dumbbell.png\",\n    \"role\": \"Human appearance/proportions/materials/anatomical style ONLY. Exercise pose, grip, equipment and muscles come from the exact-ID catalogue, never the reference.\",\n    \"sha256\": \"52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f\",\n    \"source_commit\": \"b0385b7e2f3382d545a6dff5304c81ba3c771096\"\n  },\n  \"identity_do_not_render_as_text\": {\n    \"catalog_record_sha256\": \"b86fc191cd5027e4a045a5bd83d18bd669c35ccbb59152a1e4516d05ee0bcd77\",\n    \"catalog_sha256\": \"a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989\",\n    \"exercise_id\": \"decline-bench-press-machine\",\n    \"name\": \"Decline Bench Press (Machine)\"\n  },\n  \"selected_render_scene\": {\n    \"camera\": \"Full-body front-side three-quarter view exposing every prescribed contact, grip and support. Entire person and all equipment visible within square; no crop, text, arrows or second phase.\",\n    \"exercise_id\": \"decline-bench-press-machine\",\n    \"grip\": \"One closed hand on each prescribed independent handle, no inferred source-specific palm orientation.\",\n    \"movement_trajectory\": \"Press both lever handles away from chest along compatible lever arcs, then lower controlled; no free-bar rerack or setting weights on floor.\",\n    \"never_infer_muscles_from_pose_or_reference\": true,\n    \"one_phase_only\": true,\n    \"pose\": \"Lie on declined bench between independent arms, head/back/pelvis supported and feet secured; elbows bent under control, wrists stacked beneath handles near chest.\",\n    \"single_phase\": \"Two independent lever handles just above chest\",\n    \"supports_and_equipment\": \"User-selected lying DECLINED bench, TWO independent plate-loaded lever arms and secured feet. Compatible padded foot restraints implement catalogue feet-secured requirement; design is illustration choice. No brand, numeric angle/load/plate count or Smith bar.\"\n  },\n  \"source_use_rule\": \"Preserve raw source texts verbatim; render only selected scene and documented exact-source/user resolution. Do not silently repair the catalogue.\",\n  \"style\": {\n    \"background\": \"Genuinely transparent PNG background, no white/checkerboard layer, no environment scene.\",\n    \"framing\": \"Full figure and all required equipment/supports visible within a square. Scale and use a three-quarter view to expose the specified contacts without changing anatomy, equipment, grip or technique.\",\n    \"human_model\": \"One athletic bald male anatomical mannequin, opaque silver-gray muscular surfaces, consistent proportions and detailed 3D materials, plain black shorts, barefoot.\",\n    \"material_rules\": \"Highlights never make tissue transparent; no glow, whole-body orange tint, hair, text, labels, arrows, UI, borders, collage or extra person.\",\n    \"no_invention\": \"Exact-ID catalogue controls source text and muscles. Render documented selected scene; recorded source corrections apply to the derived scene only. No reference-pose copying or imported muscle targets.\",\n    \"output\": {\n      \"format\": \"PNG\",\n      \"height\": 1024,\n      \"one_person\": true,\n      \"one_phase\": true,\n      \"width\": 1024\n    },\n    \"primary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"rule\": \"Highlight only the exact primary muscle group provided for this exercise.\"\n    },\n    \"secondary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"intensity_fraction\": [\n        0.4,\n        0.5\n      ],\n      \"rule\": \"Only the exact secondary muscles, lighter same-hue highlight; if the list is empty add no secondary target.\"\n    },\n    \"version\": \"v1\"\n  },\n  \"technique_resolution\": {\n    \"PNG_approval\": false,\n    \"binding_or_name_alone_is_not_confirmation\": true,\n    \"catalog_modified\": false,\n    \"claim_limit\": \"External evidence scopes are explicit; component-only sources are not called exact-variant confirmation. Common scene selection is authorized, not individual user technique approval.\",\n    \"common_variant_decision\": {\n      \"PNG_approval\": false,\n      \"catalog_modified\": false,\n      \"evidence_scope\": [\n        \"full selected named exercise posture/movement and specified contacts\"\n      ],\n      \"exercise_id\": \"decline-bench-press-machine\",\n      \"prior_block_reason\": \"User already selected lying declined two-arm plate-loaded lever configuration; compatible support/handle geometry was not yet prepared.\",\n      \"prior_user_decision_path\": \"data/technique-decisions/agent-03-user-answers-2026-10-03.json\",\n      \"resolution_kind\": \"prior_user_equipment_choice_with_compatible_layout\",\n      \"scene_choices_are_not_individual_user_technique_approval\": false,\n      \"selected_scene\": [\n        \"Two independent lever handles just above chest\",\n        \"Lie on declined bench between independent arms, head/back/pelvis supported and feet secured; elbows bent under control, wrists stacked beneath handles near chest.\",\n        \"One closed hand on each prescribed independent handle, no inferred source-specific palm orientation.\",\n        \"User-selected lying DECLINED bench, TWO independent plate-loaded lever arms and secured feet. Compatible padded foot restraints implement catalogue feet-secured requirement; design is illustration choice. No brand, numeric angle/load/plate count or Smith bar.\",\n        \"Press both lever handles away from chest along compatible lever arcs, then lower controlled; no free-bar rerack or setting weights on floor.\"\n      ],\n      \"source_catalog_record_sha256\": \"b86fc191cd5027e4a045a5bd83d18bd669c35ccbb59152a1e4516d05ee0bcd77\",\n      \"source_resource_ids\": [],\n      \"status\": \"resolved\",\n      \"user_authorization\": \"Research the most commonly performed variant; do not ask user to guess technique. Select a source-supported common variant and preserve contradictory raw catalogue fields.\"\n    },\n    \"construction_rule\": \"Standard compatible unbranded geometry allowed by AGENTS.md; choose geometry only around specified contacts/motion. Category machine does not establish a load mechanism, brand, angle or weight count.\",\n    \"dataset_instruction_steps_read\": null,\n    \"decision_kind\": \"prior_user_equipment_choice_with_compatible_layout\",\n    \"evidence_path\": \"data/audits/agent-03-common-variants-2026-10-03-technique.json\",\n    \"evidence_selector\": \"records[exercise_id=\\\"decline-bench-press-machine\\\"]\",\n    \"illustration_choices\": \"Side/phase and compatible layout are scene choices, not amendments to source technique. Do not infer muscle targets from scene or equipment.\",\n    \"preserved_source_errors_path\": \"data/audits/agent-03-common-variants-2026-10-03-source-notes.json\",\n    \"status\": \"resolved\",\n    \"technique_fields_read\": [\n      \"content.en.description\",\n      \"content.en.instructions\",\n      \"content.en.form_cues\",\n      \"content.en.common_mistakes\",\n      \"content.en.safety_note\",\n      \"content.pl.instructions\",\n      \"source.dataset_id\"\n    ],\n    \"user_decision_path\": \"data/technique-decisions/agent-03-user-answers-2026-10-03.json\",\n    \"user_selected_configuration\": \"Lying on declined bench between TWO independent plate-loaded lever arms; each arm has plate loading and its own hand contact. Not free barbell or Smith.\"\n  }\n}",
+              "prompt_sha256": "d5b8c3358b7f57c0c8cfc9bb66bd28364fc6a210e50d6aa0f44eb953c500d0e3",
+              "style_version": "v1",
+              "approved_style_files": [
+                {
+                  "path": "docs/exercise-image-style.md",
+                  "sha256": "8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578"
+                }
+              ],
+              "human_reference": {
+                "repository_path": "assets/exercises/biceps-curl-dumbbell.png",
+                "absolute_path": "/workspace/lightweight-exercises-photo/assets/exercises/biceps-curl-dumbbell.png",
+                "sha256": "52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f",
+                "branch": "work",
+                "source_commit": "b0385b7e2f3382d545a6dff5304c81ba3c771096",
+                "role": "Human appearance/proportions/materials/anatomical style ONLY. Exercise pose, grip, equipment and muscles come from the exact-ID catalogue, never the reference.",
+                "pixels_reviewed_during_preparation": false
+              },
+              "source": {
+                "task_commit": "de7dfb901c4c23072c5b11d3fee6cde7364eeb6a",
+                "source_branch": "agent-03-inventory-2026-10-01",
+                "assignment_path": "data/assignments/agent-03-common-variants-2026-10-03.json",
+                "assignment_sha256": "c9647f92adc6c2623cc6591904aefededbfe0be4152df714e543ec04fc4d0275",
+                "batch_path": "data/batches/agent-03-others-040.json",
+                "batch_sha256": "418687026eb74454a96201bde77353014b0aad58f986d125ec18efad96a9a0ff",
+                "catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+                "catalog_record_sha256": "b86fc191cd5027e4a045a5bd83d18bd669c35ccbb59152a1e4516d05ee0bcd77",
+                "source_english_sha256": "a171fc8c76ccac1dc1fc187d90d93716676b977890f4eec165bfe150476b6c5d",
+                "technique_evidence_path": "data/audits/agent-03-common-variants-2026-10-03-technique.json",
+                "source_notes_path": "data/audits/agent-03-common-variants-2026-10-03-source-notes.json"
+              },
+              "generation_authorization": {
+                "task_record_generation_authorized_now": false,
+                "current_user_instruction_authorizes_generation": true,
+                "basis": "Explicit current user request to execute assignment 34 IDs; task records remain unchanged."
+              },
+              "planned_png_path": "/workspace/exercise-image-results/agent-03-common-variants-2026-10-03/generator-single/agent-03-others-040/decline-bench-press-machine/attempt-1.png",
+              "planned_git_png_path": "assets/exercises/pending/agent-03-common-variants-2026-10-03/generator-single/agent-03-others-040/decline-bench-press-machine/attempt-1.png",
+              "errors": [],
+              "finished_at": "2026-10-03T16:01:24.097Z",
+              "generator_output_path": "/workspace/generated_images/exec-84706e77-0621-4f69-9822-164807d60fde.png",
+              "generator_output_sha256": "dbad1f793e968d90bfe2e823c8050435693fbf208ee46d97c44843b836d44988",
+              "generator_output_dimensions": [
+                1254,
+                1254
+              ],
+              "generator_output_mode": "RGBA",
+              "generator_output_format": "PNG",
+              "normalization": "Pillow LANCZOS aspect-preserving resize to 1024x1024 RGBA; original generator output retained.",
+              "result_path": "/workspace/exercise-image-results/agent-03-common-variants-2026-10-03/generator-single/agent-03-others-040/decline-bench-press-machine/attempt-1.png",
+              "git_result_path": "assets/exercises/pending/agent-03-common-variants-2026-10-03/generator-single/agent-03-others-040/decline-bench-press-machine/attempt-1.png",
+              "result_sha256": "f8f73f643a87eb1abeefa52eae3984267a67aadb122636d4fc0e57039cc6b0dc",
+              "technical_check": {
+                "status": "passed",
+                "format": "PNG",
+                "dimensions": [
+                  1024,
+                  1024
+                ],
+                "mode": "RGBA",
+                "generator_source_format": "PNG",
+                "generator_source_dimensions": [
+                  1254,
+                  1254
+                ],
+                "generator_source_mode": "RGBA",
+                "generator_source_had_alpha_or_transparency": true,
+                "alpha_min_max": [
+                  0,
+                  255
+                ],
+                "fully_transparent_pixels": 611860,
+                "fully_opaque_pixels": 3079,
+                "transparent_pixel_present": true,
+                "opaque_pixel_present": true,
+                "opens": true,
+                "errors": [],
+                "normalization": "Pillow LANCZOS aspect-preserving resize to 1024x1024 RGBA; original generator output retained.",
+                "scope": "PNG decode, exact square dimensions, alpha-channel/transparency pixels and SHA256 only; no visual QA."
+              }
+            }
+          ],
+          "user_review": "pending",
+          "technical_check": {
+            "status": "passed",
+            "format": "PNG",
+            "dimensions": [
+              1024,
+              1024
+            ],
+            "mode": "RGBA",
+            "generator_source_format": "PNG",
+            "generator_source_dimensions": [
+              1254,
+              1254
+            ],
+            "generator_source_mode": "RGBA",
+            "generator_source_had_alpha_or_transparency": true,
+            "alpha_min_max": [
+              0,
+              255
+            ],
+            "fully_transparent_pixels": 611860,
+            "fully_opaque_pixels": 3079,
+            "transparent_pixel_present": true,
+            "opaque_pixel_present": true,
+            "opens": true,
+            "errors": [],
+            "normalization": "Pillow LANCZOS aspect-preserving resize to 1024x1024 RGBA; original generator output retained.",
+            "scope": "PNG decode, exact square dimensions, alpha-channel/transparency pixels and SHA256 only; no visual QA."
+          },
           "agent_visual_review": "not_performed",
-          "result_path": null,
+          "result_path": "/workspace/exercise-image-results/agent-03-common-variants-2026-10-03/generator-single/agent-03-others-040/decline-bench-press-machine/attempt-1.png",
           "planned_png_path": "/workspace/exercise-image-results/agent-03-common-variants-2026-10-03/generator-single/agent-03-others-040/decline-bench-press-machine/attempt-1.png",
           "planned_git_png_path": "assets/exercises/pending/agent-03-common-variants-2026-10-03/generator-single/agent-03-others-040/decline-bench-press-machine/attempt-1.png",
           "prompt_sha256": "d5b8c3358b7f57c0c8cfc9bb66bd28364fc6a210e50d6aa0f44eb953c500d0e3",
           "source_catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
-          "style_version": "v1"
+          "style_version": "v1",
+          "generation_prompt": "Create exactly ONE square 1024x1024 transparent PNG of this exact exercise and ONE selected phase. Metadata must never appear as image text.\n{\n  \"approved_style_files\": [\n    {\n      \"path\": \"docs/exercise-image-style.md\",\n      \"sha256\": \"8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578\"\n    }\n  ],\n  \"exact_catalogue_source\": {\n    \"equipment\": \"machine\",\n    \"primary_muscle\": \"chest\",\n    \"secondary_muscles\": [\n      \"shoulders\",\n      \"triceps\"\n    ],\n    \"source_english\": {\n      \"common_mistakes\": [\n        \"Bouncing at the bottom.\",\n        \"Flaring the elbows.\",\n        \"Arching to shorten the range.\"\n      ],\n      \"description\": \"Decline Bench Press (Machine) is a supported chest press using the barbell.\",\n      \"form_cues\": [\n        \"Keep wrists stacked.\",\n        \"Keep shoulder blades supported.\",\n        \"Press evenly.\"\n      ],\n      \"instructions\": [\n        \"Lie on a declined bench with feet secured. Grip the barbell and hold it over the chest.\",\n        \"Lower the resistance toward the chest with elbows controlled.\",\n        \"Pause without bouncing or losing shoulder position.\",\n        \"Press back to straight arms, then rerack or set the weights down safely.\"\n      ],\n      \"provenance\": \"authored\",\n      \"safety_note\": \"Use a spotter or safeties for the loaded press and stop before shoulder control is lost.\"\n    }\n  },\n  \"human_reference\": {\n    \"absolute_path\": \"/workspace/lightweight-exercises-photo/assets/exercises/biceps-curl-dumbbell.png\",\n    \"branch\": \"work\",\n    \"pixels_reviewed_during_preparation\": false,\n    \"repository_path\": \"assets/exercises/biceps-curl-dumbbell.png\",\n    \"role\": \"Human appearance/proportions/materials/anatomical style ONLY. Exercise pose, grip, equipment and muscles come from the exact-ID catalogue, never the reference.\",\n    \"sha256\": \"52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f\",\n    \"source_commit\": \"b0385b7e2f3382d545a6dff5304c81ba3c771096\"\n  },\n  \"identity_do_not_render_as_text\": {\n    \"catalog_record_sha256\": \"b86fc191cd5027e4a045a5bd83d18bd669c35ccbb59152a1e4516d05ee0bcd77\",\n    \"catalog_sha256\": \"a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989\",\n    \"exercise_id\": \"decline-bench-press-machine\",\n    \"name\": \"Decline Bench Press (Machine)\"\n  },\n  \"selected_render_scene\": {\n    \"camera\": \"Full-body front-side three-quarter view exposing every prescribed contact, grip and support. Entire person and all equipment visible within square; no crop, text, arrows or second phase.\",\n    \"exercise_id\": \"decline-bench-press-machine\",\n    \"grip\": \"One closed hand on each prescribed independent handle, no inferred source-specific palm orientation.\",\n    \"movement_trajectory\": \"Press both lever handles away from chest along compatible lever arcs, then lower controlled; no free-bar rerack or setting weights on floor.\",\n    \"never_infer_muscles_from_pose_or_reference\": true,\n    \"one_phase_only\": true,\n    \"pose\": \"Lie on declined bench between independent arms, head/back/pelvis supported and feet secured; elbows bent under control, wrists stacked beneath handles near chest.\",\n    \"single_phase\": \"Two independent lever handles just above chest\",\n    \"supports_and_equipment\": \"User-selected lying DECLINED bench, TWO independent plate-loaded lever arms and secured feet. Compatible padded foot restraints implement catalogue feet-secured requirement; design is illustration choice. No brand, numeric angle/load/plate count or Smith bar.\"\n  },\n  \"source_use_rule\": \"Preserve raw source texts verbatim; render only selected scene and documented exact-source/user resolution. Do not silently repair the catalogue.\",\n  \"style\": {\n    \"background\": \"Genuinely transparent PNG background, no white/checkerboard layer, no environment scene.\",\n    \"framing\": \"Full figure and all required equipment/supports visible within a square. Scale and use a three-quarter view to expose the specified contacts without changing anatomy, equipment, grip or technique.\",\n    \"human_model\": \"One athletic bald male anatomical mannequin, opaque silver-gray muscular surfaces, consistent proportions and detailed 3D materials, plain black shorts, barefoot.\",\n    \"material_rules\": \"Highlights never make tissue transparent; no glow, whole-body orange tint, hair, text, labels, arrows, UI, borders, collage or extra person.\",\n    \"no_invention\": \"Exact-ID catalogue controls source text and muscles. Render documented selected scene; recorded source corrections apply to the derived scene only. No reference-pose copying or imported muscle targets.\",\n    \"output\": {\n      \"format\": \"PNG\",\n      \"height\": 1024,\n      \"one_person\": true,\n      \"one_phase\": true,\n      \"width\": 1024\n    },\n    \"primary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"rule\": \"Highlight only the exact primary muscle group provided for this exercise.\"\n    },\n    \"secondary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"intensity_fraction\": [\n        0.4,\n        0.5\n      ],\n      \"rule\": \"Only the exact secondary muscles, lighter same-hue highlight; if the list is empty add no secondary target.\"\n    },\n    \"version\": \"v1\"\n  },\n  \"technique_resolution\": {\n    \"PNG_approval\": false,\n    \"binding_or_name_alone_is_not_confirmation\": true,\n    \"catalog_modified\": false,\n    \"claim_limit\": \"External evidence scopes are explicit; component-only sources are not called exact-variant confirmation. Common scene selection is authorized, not individual user technique approval.\",\n    \"common_variant_decision\": {\n      \"PNG_approval\": false,\n      \"catalog_modified\": false,\n      \"evidence_scope\": [\n        \"full selected named exercise posture/movement and specified contacts\"\n      ],\n      \"exercise_id\": \"decline-bench-press-machine\",\n      \"prior_block_reason\": \"User already selected lying declined two-arm plate-loaded lever configuration; compatible support/handle geometry was not yet prepared.\",\n      \"prior_user_decision_path\": \"data/technique-decisions/agent-03-user-answers-2026-10-03.json\",\n      \"resolution_kind\": \"prior_user_equipment_choice_with_compatible_layout\",\n      \"scene_choices_are_not_individual_user_technique_approval\": false,\n      \"selected_scene\": [\n        \"Two independent lever handles just above chest\",\n        \"Lie on declined bench between independent arms, head/back/pelvis supported and feet secured; elbows bent under control, wrists stacked beneath handles near chest.\",\n        \"One closed hand on each prescribed independent handle, no inferred source-specific palm orientation.\",\n        \"User-selected lying DECLINED bench, TWO independent plate-loaded lever arms and secured feet. Compatible padded foot restraints implement catalogue feet-secured requirement; design is illustration choice. No brand, numeric angle/load/plate count or Smith bar.\",\n        \"Press both lever handles away from chest along compatible lever arcs, then lower controlled; no free-bar rerack or setting weights on floor.\"\n      ],\n      \"source_catalog_record_sha256\": \"b86fc191cd5027e4a045a5bd83d18bd669c35ccbb59152a1e4516d05ee0bcd77\",\n      \"source_resource_ids\": [],\n      \"status\": \"resolved\",\n      \"user_authorization\": \"Research the most commonly performed variant; do not ask user to guess technique. Select a source-supported common variant and preserve contradictory raw catalogue fields.\"\n    },\n    \"construction_rule\": \"Standard compatible unbranded geometry allowed by AGENTS.md; choose geometry only around specified contacts/motion. Category machine does not establish a load mechanism, brand, angle or weight count.\",\n    \"dataset_instruction_steps_read\": null,\n    \"decision_kind\": \"prior_user_equipment_choice_with_compatible_layout\",\n    \"evidence_path\": \"data/audits/agent-03-common-variants-2026-10-03-technique.json\",\n    \"evidence_selector\": \"records[exercise_id=\\\"decline-bench-press-machine\\\"]\",\n    \"illustration_choices\": \"Side/phase and compatible layout are scene choices, not amendments to source technique. Do not infer muscle targets from scene or equipment.\",\n    \"preserved_source_errors_path\": \"data/audits/agent-03-common-variants-2026-10-03-source-notes.json\",\n    \"status\": \"resolved\",\n    \"technique_fields_read\": [\n      \"content.en.description\",\n      \"content.en.instructions\",\n      \"content.en.form_cues\",\n      \"content.en.common_mistakes\",\n      \"content.en.safety_note\",\n      \"content.pl.instructions\",\n      \"source.dataset_id\"\n    ],\n    \"user_decision_path\": \"data/technique-decisions/agent-03-user-answers-2026-10-03.json\",\n    \"user_selected_configuration\": \"Lying on declined bench between TWO independent plate-loaded lever arms; each arm has plate loading and its own hand contact. Not free barbell or Smith.\"\n  }\n}",
+          "source": {
+            "task_commit": "de7dfb901c4c23072c5b11d3fee6cde7364eeb6a",
+            "source_branch": "agent-03-inventory-2026-10-01",
+            "assignment_path": "data/assignments/agent-03-common-variants-2026-10-03.json",
+            "assignment_sha256": "c9647f92adc6c2623cc6591904aefededbfe0be4152df714e543ec04fc4d0275",
+            "batch_path": "data/batches/agent-03-others-040.json",
+            "batch_sha256": "418687026eb74454a96201bde77353014b0aad58f986d125ec18efad96a9a0ff",
+            "catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+            "catalog_record_sha256": "b86fc191cd5027e4a045a5bd83d18bd669c35ccbb59152a1e4516d05ee0bcd77",
+            "source_english_sha256": "a171fc8c76ccac1dc1fc187d90d93716676b977890f4eec165bfe150476b6c5d",
+            "technique_evidence_path": "data/audits/agent-03-common-variants-2026-10-03-technique.json",
+            "source_notes_path": "data/audits/agent-03-common-variants-2026-10-03-source-notes.json"
+          },
+          "source_english": {
+            "description": "Decline Bench Press (Machine) is a supported chest press using the barbell.",
+            "instructions": [
+              "Lie on a declined bench with feet secured. Grip the barbell and hold it over the chest.",
+              "Lower the resistance toward the chest with elbows controlled.",
+              "Pause without bouncing or losing shoulder position.",
+              "Press back to straight arms, then rerack or set the weights down safely."
+            ],
+            "form_cues": [
+              "Keep wrists stacked.",
+              "Keep shoulder blades supported.",
+              "Press evenly."
+            ],
+            "common_mistakes": [
+              "Bouncing at the bottom.",
+              "Flaring the elbows.",
+              "Arching to shorten the range."
+            ],
+            "safety_note": "Use a spotter or safeties for the loaded press and stop before shoulder control is lost.",
+            "provenance": "authored"
+          },
+          "equipment": "machine",
+          "primary_muscle": "chest",
+          "secondary_muscles": [
+            "shoulders",
+            "triceps"
+          ],
+          "selected_scene": {
+            "exercise_id": "decline-bench-press-machine",
+            "single_phase": "Two independent lever handles just above chest",
+            "pose": "Lie on declined bench between independent arms, head/back/pelvis supported and feet secured; elbows bent under control, wrists stacked beneath handles near chest.",
+            "grip": "One closed hand on each prescribed independent handle, no inferred source-specific palm orientation.",
+            "supports_and_equipment": "User-selected lying DECLINED bench, TWO independent plate-loaded lever arms and secured feet. Compatible padded foot restraints implement catalogue feet-secured requirement; design is illustration choice. No brand, numeric angle/load/plate count or Smith bar.",
+            "movement_trajectory": "Press both lever handles away from chest along compatible lever arcs, then lower controlled; no free-bar rerack or setting weights on floor.",
+            "camera": "Full-body front-side three-quarter view exposing every prescribed contact, grip and support. Entire person and all equipment visible within square; no crop, text, arrows or second phase.",
+            "one_phase_only": true,
+            "never_infer_muscles_from_pose_or_reference": true
+          },
+          "technique_resolution": {
+            "status": "resolved",
+            "decision_kind": "prior_user_equipment_choice_with_compatible_layout",
+            "evidence_path": "data/audits/agent-03-common-variants-2026-10-03-technique.json",
+            "evidence_selector": "records[exercise_id=\"decline-bench-press-machine\"]",
+            "technique_fields_read": [
+              "content.en.description",
+              "content.en.instructions",
+              "content.en.form_cues",
+              "content.en.common_mistakes",
+              "content.en.safety_note",
+              "content.pl.instructions",
+              "source.dataset_id"
+            ],
+            "dataset_instruction_steps_read": null,
+            "binding_or_name_alone_is_not_confirmation": true,
+            "catalog_modified": false,
+            "PNG_approval": false,
+            "construction_rule": "Standard compatible unbranded geometry allowed by AGENTS.md; choose geometry only around specified contacts/motion. Category machine does not establish a load mechanism, brand, angle or weight count.",
+            "illustration_choices": "Side/phase and compatible layout are scene choices, not amendments to source technique. Do not infer muscle targets from scene or equipment.",
+            "user_decision_path": "data/technique-decisions/agent-03-user-answers-2026-10-03.json",
+            "user_selected_configuration": "Lying on declined bench between TWO independent plate-loaded lever arms; each arm has plate loading and its own hand contact. Not free barbell or Smith.",
+            "preserved_source_errors_path": "data/audits/agent-03-common-variants-2026-10-03-source-notes.json",
+            "common_variant_decision": {
+              "exercise_id": "decline-bench-press-machine",
+              "status": "resolved",
+              "resolution_kind": "prior_user_equipment_choice_with_compatible_layout",
+              "source_catalog_record_sha256": "b86fc191cd5027e4a045a5bd83d18bd669c35ccbb59152a1e4516d05ee0bcd77",
+              "prior_block_reason": "User already selected lying declined two-arm plate-loaded lever configuration; compatible support/handle geometry was not yet prepared.",
+              "source_resource_ids": [],
+              "evidence_scope": [
+                "full selected named exercise posture/movement and specified contacts"
+              ],
+              "selected_scene": [
+                "Two independent lever handles just above chest",
+                "Lie on declined bench between independent arms, head/back/pelvis supported and feet secured; elbows bent under control, wrists stacked beneath handles near chest.",
+                "One closed hand on each prescribed independent handle, no inferred source-specific palm orientation.",
+                "User-selected lying DECLINED bench, TWO independent plate-loaded lever arms and secured feet. Compatible padded foot restraints implement catalogue feet-secured requirement; design is illustration choice. No brand, numeric angle/load/plate count or Smith bar.",
+                "Press both lever handles away from chest along compatible lever arcs, then lower controlled; no free-bar rerack or setting weights on floor."
+              ],
+              "scene_choices_are_not_individual_user_technique_approval": false,
+              "catalog_modified": false,
+              "PNG_approval": false,
+              "user_authorization": "Research the most commonly performed variant; do not ask user to guess technique. Select a source-supported common variant and preserve contradictory raw catalogue fields.",
+              "prior_user_decision_path": "data/technique-decisions/agent-03-user-answers-2026-10-03.json"
+            },
+            "claim_limit": "External evidence scopes are explicit; component-only sources are not called exact-variant confirmation. Common scene selection is authorized, not individual user technique approval."
+          },
+          "approved_style_files": [
+            {
+              "path": "docs/exercise-image-style.md",
+              "sha256": "8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578"
+            }
+          ],
+          "human_reference": {
+            "repository_path": "assets/exercises/biceps-curl-dumbbell.png",
+            "absolute_path": "/workspace/lightweight-exercises-photo/assets/exercises/biceps-curl-dumbbell.png",
+            "sha256": "52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f",
+            "branch": "work",
+            "source_commit": "b0385b7e2f3382d545a6dff5304c81ba3c771096",
+            "role": "Human appearance/proportions/materials/anatomical style ONLY. Exercise pose, grip, equipment and muscles come from the exact-ID catalogue, never the reference.",
+            "pixels_reviewed_during_preparation": false
+          },
+          "generation_authorization": {
+            "task_record_generation_authorized_now": false,
+            "current_user_instruction_authorizes_generation": true,
+            "basis": "Explicit current user request to execute assignment 34 IDs; task records remain unchanged."
+          },
+          "git_result_path": "assets/exercises/pending/agent-03-common-variants-2026-10-03/generator-single/agent-03-others-040/decline-bench-press-machine/attempt-1.png",
+          "result_sha256": "f8f73f643a87eb1abeefa52eae3984267a67aadb122636d4fc0e57039cc6b0dc",
+          "technical_status": "passed",
+          "normalization": "Pillow LANCZOS aspect-preserving resize to 1024x1024 RGBA; original generator output retained.",
+          "errors": []
         },
         {
           "exercise_id": "chest-dip-assisted-machine",
           "name": "Chest Dip (Assisted)",
-          "status": "not_started",
-          "attempts": 0,
-          "attempt_history": [],
-          "user_review": null,
-          "technical_check": null,
+          "status": "generated_pending",
+          "attempts": 1,
+          "attempt_history": [
+            {
+              "attempt_number": 1,
+              "attempt_status": "generated",
+              "tool": "image_gen.imagegen",
+              "started_at": "2026-10-03T16:01:58.698Z",
+              "exercise_id": "chest-dip-assisted-machine",
+              "name": "Chest Dip (Assisted)",
+              "equipment": "machine",
+              "primary_muscle": "chest",
+              "secondary_muscles": [
+                "triceps",
+                "shoulders"
+              ],
+              "source_english": {
+                "description": "The Chest Dip (Assisted) lowers the body by bending the elbows between parallel supports, then presses back up while the shoulders remain controlled.",
+                "instructions": [
+                  "Mount the parallel handles with arms straight and the torso slightly inclined.",
+                  "Bend the elbows to lower until the upper arms approach parallel with the floor.",
+                  "Pause before the shoulders lose control.",
+                  "Press through the handles to straighten the elbows and reset."
+                ],
+                "form_cues": [
+                  "Keep shoulders down.",
+                  "Point elbows back.",
+                  "Keep legs still."
+                ],
+                "common_mistakes": [
+                  "Dropping below control.",
+                  "Flaring the elbows.",
+                  "Swinging to start."
+                ],
+                "safety_note": "Use the assistance platform or a lighter load if the full dip depth cannot stay controlled.",
+                "provenance": "adapted"
+              },
+              "selected_scene": {
+                "exercise_id": "chest-dip-assisted-machine",
+                "single_phase": "Assisted chest-dip controlled lower phase",
+                "pose": "Torso slightly inclined as exact catalogue specifies, shoulders down, elbows bent back until upper arms approach horizontal; both knees stay on moving assistance platform and feet clear.",
+                "grip": "One firm closed hand wraps each FIXED parallel handle; wrists/load contacts aligned. Functional grip specified without an ambiguous global palm-plane label.",
+                "supports_and_equipment": "Compatible counterweight-assisted parallel-handle station, BOTH KNEES on moving platform. Published feet-or-knees option narrowed to knee support corroborated by exact dataset.",
+                "movement_trajectory": "Body and knee platform lower together by elbow flexion, then press up through fixed handles. No seated lever dip or invented grip change.",
+                "camera": "Full-body front-side three-quarter view exposing every prescribed contact, grip and support. Entire person and all equipment visible within square; no crop, text, arrows or second phase.",
+                "one_phase_only": true,
+                "never_infer_muscles_from_pose_or_reference": true
+              },
+              "technique_resolution": {
+                "status": "resolved",
+                "decision_kind": "source_supported_common_variant_selected_under_user_authorization",
+                "evidence_path": "data/audits/agent-03-common-variants-2026-10-03-technique.json",
+                "evidence_selector": "records[exercise_id=\"chest-dip-assisted-machine\"]",
+                "technique_fields_read": [
+                  "content.en.description",
+                  "content.en.instructions",
+                  "content.en.form_cues",
+                  "content.en.common_mistakes",
+                  "content.en.safety_note",
+                  "content.pl.instructions",
+                  "source.dataset_id"
+                ],
+                "dataset_instruction_steps_read": [
+                  "Adjust the machine to your desired height and secure your knees on the pad.",
+                  "Grasp the handles with your palms facing down and your arms fully extended.",
+                  "Lower your body by bending your elbows until your upper arms are parallel to the floor.",
+                  "Pause for a moment, then push yourself back up to the starting position.",
+                  "Repeat for the desired number of repetitions."
+                ],
+                "binding_or_name_alone_is_not_confirmation": true,
+                "catalog_modified": false,
+                "PNG_approval": false,
+                "construction_rule": "Standard compatible unbranded geometry allowed by AGENTS.md; choose geometry only around specified contacts/motion. Category machine does not establish a load mechanism, brand, angle or weight count.",
+                "illustration_choices": "Side/phase and compatible layout are scene choices, not amendments to source technique. Do not infer muscle targets from scene or equipment.",
+                "preserved_source_errors_path": "data/audits/agent-03-common-variants-2026-10-03-source-notes.json",
+                "common_variant_decision": {
+                  "exercise_id": "chest-dip-assisted-machine",
+                  "status": "resolved",
+                  "resolution_kind": "source_supported_common_variant_selected_under_user_authorization",
+                  "source_catalog_record_sha256": "d457d7bdad9960be239f89f22939b2e743f1a7e6c07a30bad69ef59290ec1895",
+                  "prior_block_reason": "Kneeling assistance confirmed, but source palm-down grip needs reconciliation with exact parallel-support hand geometry; not assigned on a guessed grip.",
+                  "source_resource_ids": [
+                    "assisted-dips"
+                  ],
+                  "evidence_scope": [
+                    "full selected named exercise posture/movement and specified contacts"
+                  ],
+                  "selected_scene": [
+                    "Assisted chest-dip controlled lower phase",
+                    "Torso slightly inclined as exact catalogue specifies, shoulders down, elbows bent back until upper arms approach horizontal; both knees stay on moving assistance platform and feet clear.",
+                    "One firm closed hand wraps each FIXED parallel handle; wrists/load contacts aligned. Functional grip specified without an ambiguous global palm-plane label.",
+                    "Compatible counterweight-assisted parallel-handle station, BOTH KNEES on moving platform. Published feet-or-knees option narrowed to knee support corroborated by exact dataset.",
+                    "Body and knee platform lower together by elbow flexion, then press up through fixed handles. No seated lever dip or invented grip change."
+                  ],
+                  "scene_choices_are_not_individual_user_technique_approval": true,
+                  "catalog_modified": false,
+                  "PNG_approval": false,
+                  "user_authorization": "Research the most commonly performed variant; do not ask user to guess technique. Select a source-supported common variant and preserve contradictory raw catalogue fields."
+                },
+                "claim_limit": "External evidence scopes are explicit; component-only sources are not called exact-variant confirmation. Common scene selection is authorized, not individual user technique approval."
+              },
+              "generation_prompt": "Create exactly ONE square 1024x1024 transparent PNG of this exact exercise and ONE selected phase. Metadata must never appear as image text.\n{\n  \"approved_style_files\": [\n    {\n      \"path\": \"docs/exercise-image-style.md\",\n      \"sha256\": \"8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578\"\n    }\n  ],\n  \"exact_catalogue_source\": {\n    \"equipment\": \"machine\",\n    \"primary_muscle\": \"chest\",\n    \"secondary_muscles\": [\n      \"triceps\",\n      \"shoulders\"\n    ],\n    \"source_english\": {\n      \"common_mistakes\": [\n        \"Dropping below control.\",\n        \"Flaring the elbows.\",\n        \"Swinging to start.\"\n      ],\n      \"description\": \"The Chest Dip (Assisted) lowers the body by bending the elbows between parallel supports, then presses back up while the shoulders remain controlled.\",\n      \"form_cues\": [\n        \"Keep shoulders down.\",\n        \"Point elbows back.\",\n        \"Keep legs still.\"\n      ],\n      \"instructions\": [\n        \"Mount the parallel handles with arms straight and the torso slightly inclined.\",\n        \"Bend the elbows to lower until the upper arms approach parallel with the floor.\",\n        \"Pause before the shoulders lose control.\",\n        \"Press through the handles to straighten the elbows and reset.\"\n      ],\n      \"provenance\": \"adapted\",\n      \"safety_note\": \"Use the assistance platform or a lighter load if the full dip depth cannot stay controlled.\"\n    }\n  },\n  \"human_reference\": {\n    \"absolute_path\": \"/workspace/lightweight-exercises-photo/assets/exercises/biceps-curl-dumbbell.png\",\n    \"branch\": \"work\",\n    \"pixels_reviewed_during_preparation\": false,\n    \"repository_path\": \"assets/exercises/biceps-curl-dumbbell.png\",\n    \"role\": \"Human appearance/proportions/materials/anatomical style ONLY. Exercise pose, grip, equipment and muscles come from the exact-ID catalogue, never the reference.\",\n    \"sha256\": \"52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f\",\n    \"source_commit\": \"b0385b7e2f3382d545a6dff5304c81ba3c771096\"\n  },\n  \"identity_do_not_render_as_text\": {\n    \"catalog_record_sha256\": \"d457d7bdad9960be239f89f22939b2e743f1a7e6c07a30bad69ef59290ec1895\",\n    \"catalog_sha256\": \"a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989\",\n    \"exercise_id\": \"chest-dip-assisted-machine\",\n    \"name\": \"Chest Dip (Assisted)\"\n  },\n  \"selected_render_scene\": {\n    \"camera\": \"Full-body front-side three-quarter view exposing every prescribed contact, grip and support. Entire person and all equipment visible within square; no crop, text, arrows or second phase.\",\n    \"exercise_id\": \"chest-dip-assisted-machine\",\n    \"grip\": \"One firm closed hand wraps each FIXED parallel handle; wrists/load contacts aligned. Functional grip specified without an ambiguous global palm-plane label.\",\n    \"movement_trajectory\": \"Body and knee platform lower together by elbow flexion, then press up through fixed handles. No seated lever dip or invented grip change.\",\n    \"never_infer_muscles_from_pose_or_reference\": true,\n    \"one_phase_only\": true,\n    \"pose\": \"Torso slightly inclined as exact catalogue specifies, shoulders down, elbows bent back until upper arms approach horizontal; both knees stay on moving assistance platform and feet clear.\",\n    \"single_phase\": \"Assisted chest-dip controlled lower phase\",\n    \"supports_and_equipment\": \"Compatible counterweight-assisted parallel-handle station, BOTH KNEES on moving platform. Published feet-or-knees option narrowed to knee support corroborated by exact dataset.\"\n  },\n  \"source_use_rule\": \"Preserve raw source texts verbatim; render only selected scene and documented exact-source/user resolution. Do not silently repair the catalogue.\",\n  \"style\": {\n    \"background\": \"Genuinely transparent PNG background, no white/checkerboard layer, no environment scene.\",\n    \"framing\": \"Full figure and all required equipment/supports visible within a square. Scale and use a three-quarter view to expose the specified contacts without changing anatomy, equipment, grip or technique.\",\n    \"human_model\": \"One athletic bald male anatomical mannequin, opaque silver-gray muscular surfaces, consistent proportions and detailed 3D materials, plain black shorts, barefoot.\",\n    \"material_rules\": \"Highlights never make tissue transparent; no glow, whole-body orange tint, hair, text, labels, arrows, UI, borders, collage or extra person.\",\n    \"no_invention\": \"Exact-ID catalogue controls source text and muscles. Render documented selected scene; recorded source corrections apply to the derived scene only. No reference-pose copying or imported muscle targets.\",\n    \"output\": {\n      \"format\": \"PNG\",\n      \"height\": 1024,\n      \"one_person\": true,\n      \"one_phase\": true,\n      \"width\": 1024\n    },\n    \"primary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"rule\": \"Highlight only the exact primary muscle group provided for this exercise.\"\n    },\n    \"secondary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"intensity_fraction\": [\n        0.4,\n        0.5\n      ],\n      \"rule\": \"Only the exact secondary muscles, lighter same-hue highlight; if the list is empty add no secondary target.\"\n    },\n    \"version\": \"v1\"\n  },\n  \"technique_resolution\": {\n    \"PNG_approval\": false,\n    \"binding_or_name_alone_is_not_confirmation\": true,\n    \"catalog_modified\": false,\n    \"claim_limit\": \"External evidence scopes are explicit; component-only sources are not called exact-variant confirmation. Common scene selection is authorized, not individual user technique approval.\",\n    \"common_variant_decision\": {\n      \"PNG_approval\": false,\n      \"catalog_modified\": false,\n      \"evidence_scope\": [\n        \"full selected named exercise posture/movement and specified contacts\"\n      ],\n      \"exercise_id\": \"chest-dip-assisted-machine\",\n      \"prior_block_reason\": \"Kneeling assistance confirmed, but source palm-down grip needs reconciliation with exact parallel-support hand geometry; not assigned on a guessed grip.\",\n      \"resolution_kind\": \"source_supported_common_variant_selected_under_user_authorization\",\n      \"scene_choices_are_not_individual_user_technique_approval\": true,\n      \"selected_scene\": [\n        \"Assisted chest-dip controlled lower phase\",\n        \"Torso slightly inclined as exact catalogue specifies, shoulders down, elbows bent back until upper arms approach horizontal; both knees stay on moving assistance platform and feet clear.\",\n        \"One firm closed hand wraps each FIXED parallel handle; wrists/load contacts aligned. Functional grip specified without an ambiguous global palm-plane label.\",\n        \"Compatible counterweight-assisted parallel-handle station, BOTH KNEES on moving platform. Published feet-or-knees option narrowed to knee support corroborated by exact dataset.\",\n        \"Body and knee platform lower together by elbow flexion, then press up through fixed handles. No seated lever dip or invented grip change.\"\n      ],\n      \"source_catalog_record_sha256\": \"d457d7bdad9960be239f89f22939b2e743f1a7e6c07a30bad69ef59290ec1895\",\n      \"source_resource_ids\": [\n        \"assisted-dips\"\n      ],\n      \"status\": \"resolved\",\n      \"user_authorization\": \"Research the most commonly performed variant; do not ask user to guess technique. Select a source-supported common variant and preserve contradictory raw catalogue fields.\"\n    },\n    \"construction_rule\": \"Standard compatible unbranded geometry allowed by AGENTS.md; choose geometry only around specified contacts/motion. Category machine does not establish a load mechanism, brand, angle or weight count.\",\n    \"dataset_instruction_steps_read\": [\n      \"Adjust the machine to your desired height and secure your knees on the pad.\",\n      \"Grasp the handles with your palms facing down and your arms fully extended.\",\n      \"Lower your body by bending your elbows until your upper arms are parallel to the floor.\",\n      \"Pause for a moment, then push yourself back up to the starting position.\",\n      \"Repeat for the desired number of repetitions.\"\n    ],\n    \"decision_kind\": \"source_supported_common_variant_selected_under_user_authorization\",\n    \"evidence_path\": \"data/audits/agent-03-common-variants-2026-10-03-technique.json\",\n    \"evidence_selector\": \"records[exercise_id=\\\"chest-dip-assisted-machine\\\"]\",\n    \"illustration_choices\": \"Side/phase and compatible layout are scene choices, not amendments to source technique. Do not infer muscle targets from scene or equipment.\",\n    \"preserved_source_errors_path\": \"data/audits/agent-03-common-variants-2026-10-03-source-notes.json\",\n    \"status\": \"resolved\",\n    \"technique_fields_read\": [\n      \"content.en.description\",\n      \"content.en.instructions\",\n      \"content.en.form_cues\",\n      \"content.en.common_mistakes\",\n      \"content.en.safety_note\",\n      \"content.pl.instructions\",\n      \"source.dataset_id\"\n    ]\n  }\n}",
+              "prompt_sha256": "b314e657729caaeca39a6f874023117f6b0ecd551e22479e1d558255761ff074",
+              "style_version": "v1",
+              "approved_style_files": [
+                {
+                  "path": "docs/exercise-image-style.md",
+                  "sha256": "8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578"
+                }
+              ],
+              "human_reference": {
+                "repository_path": "assets/exercises/biceps-curl-dumbbell.png",
+                "absolute_path": "/workspace/lightweight-exercises-photo/assets/exercises/biceps-curl-dumbbell.png",
+                "sha256": "52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f",
+                "branch": "work",
+                "source_commit": "b0385b7e2f3382d545a6dff5304c81ba3c771096",
+                "role": "Human appearance/proportions/materials/anatomical style ONLY. Exercise pose, grip, equipment and muscles come from the exact-ID catalogue, never the reference.",
+                "pixels_reviewed_during_preparation": false
+              },
+              "source": {
+                "task_commit": "de7dfb901c4c23072c5b11d3fee6cde7364eeb6a",
+                "source_branch": "agent-03-inventory-2026-10-01",
+                "assignment_path": "data/assignments/agent-03-common-variants-2026-10-03.json",
+                "assignment_sha256": "c9647f92adc6c2623cc6591904aefededbfe0be4152df714e543ec04fc4d0275",
+                "batch_path": "data/batches/agent-03-others-040.json",
+                "batch_sha256": "418687026eb74454a96201bde77353014b0aad58f986d125ec18efad96a9a0ff",
+                "catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+                "catalog_record_sha256": "d457d7bdad9960be239f89f22939b2e743f1a7e6c07a30bad69ef59290ec1895",
+                "source_english_sha256": "4cb06cce72031420afa0733d48bb4ef1a89cf1df69f73673edca4997321498a2",
+                "technique_evidence_path": "data/audits/agent-03-common-variants-2026-10-03-technique.json",
+                "source_notes_path": "data/audits/agent-03-common-variants-2026-10-03-source-notes.json"
+              },
+              "generation_authorization": {
+                "task_record_generation_authorized_now": false,
+                "current_user_instruction_authorizes_generation": true,
+                "basis": "Explicit current user request to execute assignment 34 IDs; task records remain unchanged."
+              },
+              "planned_png_path": "/workspace/exercise-image-results/agent-03-common-variants-2026-10-03/generator-single/agent-03-others-040/chest-dip-assisted-machine/attempt-1.png",
+              "planned_git_png_path": "assets/exercises/pending/agent-03-common-variants-2026-10-03/generator-single/agent-03-others-040/chest-dip-assisted-machine/attempt-1.png",
+              "errors": [],
+              "finished_at": "2026-10-03T16:03:07.395Z",
+              "generator_output_path": "/workspace/generated_images/exec-ce69ac6b-f261-45f1-b4f8-6a39f0fe39f7.png",
+              "generator_output_sha256": "319c6f6adead5cdf1d7624034e48bf66fdc957654b7a06f2c555f86fe65c889b",
+              "generator_output_dimensions": [
+                1254,
+                1254
+              ],
+              "generator_output_mode": "RGBA",
+              "generator_output_format": "PNG",
+              "normalization": "Pillow LANCZOS aspect-preserving resize to 1024x1024 RGBA; original generator output retained.",
+              "result_path": "/workspace/exercise-image-results/agent-03-common-variants-2026-10-03/generator-single/agent-03-others-040/chest-dip-assisted-machine/attempt-1.png",
+              "git_result_path": "assets/exercises/pending/agent-03-common-variants-2026-10-03/generator-single/agent-03-others-040/chest-dip-assisted-machine/attempt-1.png",
+              "result_sha256": "fdaf3b59747ed142dae6069a919aafcb4d6cc0c9d875ce0587759bc2c45f66b9",
+              "technical_check": {
+                "status": "passed",
+                "format": "PNG",
+                "dimensions": [
+                  1024,
+                  1024
+                ],
+                "mode": "RGBA",
+                "generator_source_format": "PNG",
+                "generator_source_dimensions": [
+                  1254,
+                  1254
+                ],
+                "generator_source_mode": "RGBA",
+                "generator_source_had_alpha_or_transparency": true,
+                "alpha_min_max": [
+                  0,
+                  255
+                ],
+                "fully_transparent_pixels": 643871,
+                "fully_opaque_pixels": 4244,
+                "transparent_pixel_present": true,
+                "opaque_pixel_present": true,
+                "opens": true,
+                "errors": [],
+                "normalization": "Pillow LANCZOS aspect-preserving resize to 1024x1024 RGBA; original generator output retained.",
+                "scope": "PNG decode, exact square dimensions, alpha-channel/transparency pixels and SHA256 only; no visual QA."
+              }
+            }
+          ],
+          "user_review": "pending",
+          "technical_check": {
+            "status": "passed",
+            "format": "PNG",
+            "dimensions": [
+              1024,
+              1024
+            ],
+            "mode": "RGBA",
+            "generator_source_format": "PNG",
+            "generator_source_dimensions": [
+              1254,
+              1254
+            ],
+            "generator_source_mode": "RGBA",
+            "generator_source_had_alpha_or_transparency": true,
+            "alpha_min_max": [
+              0,
+              255
+            ],
+            "fully_transparent_pixels": 643871,
+            "fully_opaque_pixels": 4244,
+            "transparent_pixel_present": true,
+            "opaque_pixel_present": true,
+            "opens": true,
+            "errors": [],
+            "normalization": "Pillow LANCZOS aspect-preserving resize to 1024x1024 RGBA; original generator output retained.",
+            "scope": "PNG decode, exact square dimensions, alpha-channel/transparency pixels and SHA256 only; no visual QA."
+          },
           "agent_visual_review": "not_performed",
-          "result_path": null,
+          "result_path": "/workspace/exercise-image-results/agent-03-common-variants-2026-10-03/generator-single/agent-03-others-040/chest-dip-assisted-machine/attempt-1.png",
           "planned_png_path": "/workspace/exercise-image-results/agent-03-common-variants-2026-10-03/generator-single/agent-03-others-040/chest-dip-assisted-machine/attempt-1.png",
           "planned_git_png_path": "assets/exercises/pending/agent-03-common-variants-2026-10-03/generator-single/agent-03-others-040/chest-dip-assisted-machine/attempt-1.png",
           "prompt_sha256": "b314e657729caaeca39a6f874023117f6b0ecd551e22479e1d558255761ff074",
           "source_catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
-          "style_version": "v1"
+          "style_version": "v1",
+          "generation_prompt": "Create exactly ONE square 1024x1024 transparent PNG of this exact exercise and ONE selected phase. Metadata must never appear as image text.\n{\n  \"approved_style_files\": [\n    {\n      \"path\": \"docs/exercise-image-style.md\",\n      \"sha256\": \"8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578\"\n    }\n  ],\n  \"exact_catalogue_source\": {\n    \"equipment\": \"machine\",\n    \"primary_muscle\": \"chest\",\n    \"secondary_muscles\": [\n      \"triceps\",\n      \"shoulders\"\n    ],\n    \"source_english\": {\n      \"common_mistakes\": [\n        \"Dropping below control.\",\n        \"Flaring the elbows.\",\n        \"Swinging to start.\"\n      ],\n      \"description\": \"The Chest Dip (Assisted) lowers the body by bending the elbows between parallel supports, then presses back up while the shoulders remain controlled.\",\n      \"form_cues\": [\n        \"Keep shoulders down.\",\n        \"Point elbows back.\",\n        \"Keep legs still.\"\n      ],\n      \"instructions\": [\n        \"Mount the parallel handles with arms straight and the torso slightly inclined.\",\n        \"Bend the elbows to lower until the upper arms approach parallel with the floor.\",\n        \"Pause before the shoulders lose control.\",\n        \"Press through the handles to straighten the elbows and reset.\"\n      ],\n      \"provenance\": \"adapted\",\n      \"safety_note\": \"Use the assistance platform or a lighter load if the full dip depth cannot stay controlled.\"\n    }\n  },\n  \"human_reference\": {\n    \"absolute_path\": \"/workspace/lightweight-exercises-photo/assets/exercises/biceps-curl-dumbbell.png\",\n    \"branch\": \"work\",\n    \"pixels_reviewed_during_preparation\": false,\n    \"repository_path\": \"assets/exercises/biceps-curl-dumbbell.png\",\n    \"role\": \"Human appearance/proportions/materials/anatomical style ONLY. Exercise pose, grip, equipment and muscles come from the exact-ID catalogue, never the reference.\",\n    \"sha256\": \"52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f\",\n    \"source_commit\": \"b0385b7e2f3382d545a6dff5304c81ba3c771096\"\n  },\n  \"identity_do_not_render_as_text\": {\n    \"catalog_record_sha256\": \"d457d7bdad9960be239f89f22939b2e743f1a7e6c07a30bad69ef59290ec1895\",\n    \"catalog_sha256\": \"a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989\",\n    \"exercise_id\": \"chest-dip-assisted-machine\",\n    \"name\": \"Chest Dip (Assisted)\"\n  },\n  \"selected_render_scene\": {\n    \"camera\": \"Full-body front-side three-quarter view exposing every prescribed contact, grip and support. Entire person and all equipment visible within square; no crop, text, arrows or second phase.\",\n    \"exercise_id\": \"chest-dip-assisted-machine\",\n    \"grip\": \"One firm closed hand wraps each FIXED parallel handle; wrists/load contacts aligned. Functional grip specified without an ambiguous global palm-plane label.\",\n    \"movement_trajectory\": \"Body and knee platform lower together by elbow flexion, then press up through fixed handles. No seated lever dip or invented grip change.\",\n    \"never_infer_muscles_from_pose_or_reference\": true,\n    \"one_phase_only\": true,\n    \"pose\": \"Torso slightly inclined as exact catalogue specifies, shoulders down, elbows bent back until upper arms approach horizontal; both knees stay on moving assistance platform and feet clear.\",\n    \"single_phase\": \"Assisted chest-dip controlled lower phase\",\n    \"supports_and_equipment\": \"Compatible counterweight-assisted parallel-handle station, BOTH KNEES on moving platform. Published feet-or-knees option narrowed to knee support corroborated by exact dataset.\"\n  },\n  \"source_use_rule\": \"Preserve raw source texts verbatim; render only selected scene and documented exact-source/user resolution. Do not silently repair the catalogue.\",\n  \"style\": {\n    \"background\": \"Genuinely transparent PNG background, no white/checkerboard layer, no environment scene.\",\n    \"framing\": \"Full figure and all required equipment/supports visible within a square. Scale and use a three-quarter view to expose the specified contacts without changing anatomy, equipment, grip or technique.\",\n    \"human_model\": \"One athletic bald male anatomical mannequin, opaque silver-gray muscular surfaces, consistent proportions and detailed 3D materials, plain black shorts, barefoot.\",\n    \"material_rules\": \"Highlights never make tissue transparent; no glow, whole-body orange tint, hair, text, labels, arrows, UI, borders, collage or extra person.\",\n    \"no_invention\": \"Exact-ID catalogue controls source text and muscles. Render documented selected scene; recorded source corrections apply to the derived scene only. No reference-pose copying or imported muscle targets.\",\n    \"output\": {\n      \"format\": \"PNG\",\n      \"height\": 1024,\n      \"one_person\": true,\n      \"one_phase\": true,\n      \"width\": 1024\n    },\n    \"primary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"rule\": \"Highlight only the exact primary muscle group provided for this exercise.\"\n    },\n    \"secondary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"intensity_fraction\": [\n        0.4,\n        0.5\n      ],\n      \"rule\": \"Only the exact secondary muscles, lighter same-hue highlight; if the list is empty add no secondary target.\"\n    },\n    \"version\": \"v1\"\n  },\n  \"technique_resolution\": {\n    \"PNG_approval\": false,\n    \"binding_or_name_alone_is_not_confirmation\": true,\n    \"catalog_modified\": false,\n    \"claim_limit\": \"External evidence scopes are explicit; component-only sources are not called exact-variant confirmation. Common scene selection is authorized, not individual user technique approval.\",\n    \"common_variant_decision\": {\n      \"PNG_approval\": false,\n      \"catalog_modified\": false,\n      \"evidence_scope\": [\n        \"full selected named exercise posture/movement and specified contacts\"\n      ],\n      \"exercise_id\": \"chest-dip-assisted-machine\",\n      \"prior_block_reason\": \"Kneeling assistance confirmed, but source palm-down grip needs reconciliation with exact parallel-support hand geometry; not assigned on a guessed grip.\",\n      \"resolution_kind\": \"source_supported_common_variant_selected_under_user_authorization\",\n      \"scene_choices_are_not_individual_user_technique_approval\": true,\n      \"selected_scene\": [\n        \"Assisted chest-dip controlled lower phase\",\n        \"Torso slightly inclined as exact catalogue specifies, shoulders down, elbows bent back until upper arms approach horizontal; both knees stay on moving assistance platform and feet clear.\",\n        \"One firm closed hand wraps each FIXED parallel handle; wrists/load contacts aligned. Functional grip specified without an ambiguous global palm-plane label.\",\n        \"Compatible counterweight-assisted parallel-handle station, BOTH KNEES on moving platform. Published feet-or-knees option narrowed to knee support corroborated by exact dataset.\",\n        \"Body and knee platform lower together by elbow flexion, then press up through fixed handles. No seated lever dip or invented grip change.\"\n      ],\n      \"source_catalog_record_sha256\": \"d457d7bdad9960be239f89f22939b2e743f1a7e6c07a30bad69ef59290ec1895\",\n      \"source_resource_ids\": [\n        \"assisted-dips\"\n      ],\n      \"status\": \"resolved\",\n      \"user_authorization\": \"Research the most commonly performed variant; do not ask user to guess technique. Select a source-supported common variant and preserve contradictory raw catalogue fields.\"\n    },\n    \"construction_rule\": \"Standard compatible unbranded geometry allowed by AGENTS.md; choose geometry only around specified contacts/motion. Category machine does not establish a load mechanism, brand, angle or weight count.\",\n    \"dataset_instruction_steps_read\": [\n      \"Adjust the machine to your desired height and secure your knees on the pad.\",\n      \"Grasp the handles with your palms facing down and your arms fully extended.\",\n      \"Lower your body by bending your elbows until your upper arms are parallel to the floor.\",\n      \"Pause for a moment, then push yourself back up to the starting position.\",\n      \"Repeat for the desired number of repetitions.\"\n    ],\n    \"decision_kind\": \"source_supported_common_variant_selected_under_user_authorization\",\n    \"evidence_path\": \"data/audits/agent-03-common-variants-2026-10-03-technique.json\",\n    \"evidence_selector\": \"records[exercise_id=\\\"chest-dip-assisted-machine\\\"]\",\n    \"illustration_choices\": \"Side/phase and compatible layout are scene choices, not amendments to source technique. Do not infer muscle targets from scene or equipment.\",\n    \"preserved_source_errors_path\": \"data/audits/agent-03-common-variants-2026-10-03-source-notes.json\",\n    \"status\": \"resolved\",\n    \"technique_fields_read\": [\n      \"content.en.description\",\n      \"content.en.instructions\",\n      \"content.en.form_cues\",\n      \"content.en.common_mistakes\",\n      \"content.en.safety_note\",\n      \"content.pl.instructions\",\n      \"source.dataset_id\"\n    ]\n  }\n}",
+          "source": {
+            "task_commit": "de7dfb901c4c23072c5b11d3fee6cde7364eeb6a",
+            "source_branch": "agent-03-inventory-2026-10-01",
+            "assignment_path": "data/assignments/agent-03-common-variants-2026-10-03.json",
+            "assignment_sha256": "c9647f92adc6c2623cc6591904aefededbfe0be4152df714e543ec04fc4d0275",
+            "batch_path": "data/batches/agent-03-others-040.json",
+            "batch_sha256": "418687026eb74454a96201bde77353014b0aad58f986d125ec18efad96a9a0ff",
+            "catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+            "catalog_record_sha256": "d457d7bdad9960be239f89f22939b2e743f1a7e6c07a30bad69ef59290ec1895",
+            "source_english_sha256": "4cb06cce72031420afa0733d48bb4ef1a89cf1df69f73673edca4997321498a2",
+            "technique_evidence_path": "data/audits/agent-03-common-variants-2026-10-03-technique.json",
+            "source_notes_path": "data/audits/agent-03-common-variants-2026-10-03-source-notes.json"
+          },
+          "source_english": {
+            "description": "The Chest Dip (Assisted) lowers the body by bending the elbows between parallel supports, then presses back up while the shoulders remain controlled.",
+            "instructions": [
+              "Mount the parallel handles with arms straight and the torso slightly inclined.",
+              "Bend the elbows to lower until the upper arms approach parallel with the floor.",
+              "Pause before the shoulders lose control.",
+              "Press through the handles to straighten the elbows and reset."
+            ],
+            "form_cues": [
+              "Keep shoulders down.",
+              "Point elbows back.",
+              "Keep legs still."
+            ],
+            "common_mistakes": [
+              "Dropping below control.",
+              "Flaring the elbows.",
+              "Swinging to start."
+            ],
+            "safety_note": "Use the assistance platform or a lighter load if the full dip depth cannot stay controlled.",
+            "provenance": "adapted"
+          },
+          "equipment": "machine",
+          "primary_muscle": "chest",
+          "secondary_muscles": [
+            "triceps",
+            "shoulders"
+          ],
+          "selected_scene": {
+            "exercise_id": "chest-dip-assisted-machine",
+            "single_phase": "Assisted chest-dip controlled lower phase",
+            "pose": "Torso slightly inclined as exact catalogue specifies, shoulders down, elbows bent back until upper arms approach horizontal; both knees stay on moving assistance platform and feet clear.",
+            "grip": "One firm closed hand wraps each FIXED parallel handle; wrists/load contacts aligned. Functional grip specified without an ambiguous global palm-plane label.",
+            "supports_and_equipment": "Compatible counterweight-assisted parallel-handle station, BOTH KNEES on moving platform. Published feet-or-knees option narrowed to knee support corroborated by exact dataset.",
+            "movement_trajectory": "Body and knee platform lower together by elbow flexion, then press up through fixed handles. No seated lever dip or invented grip change.",
+            "camera": "Full-body front-side three-quarter view exposing every prescribed contact, grip and support. Entire person and all equipment visible within square; no crop, text, arrows or second phase.",
+            "one_phase_only": true,
+            "never_infer_muscles_from_pose_or_reference": true
+          },
+          "technique_resolution": {
+            "status": "resolved",
+            "decision_kind": "source_supported_common_variant_selected_under_user_authorization",
+            "evidence_path": "data/audits/agent-03-common-variants-2026-10-03-technique.json",
+            "evidence_selector": "records[exercise_id=\"chest-dip-assisted-machine\"]",
+            "technique_fields_read": [
+              "content.en.description",
+              "content.en.instructions",
+              "content.en.form_cues",
+              "content.en.common_mistakes",
+              "content.en.safety_note",
+              "content.pl.instructions",
+              "source.dataset_id"
+            ],
+            "dataset_instruction_steps_read": [
+              "Adjust the machine to your desired height and secure your knees on the pad.",
+              "Grasp the handles with your palms facing down and your arms fully extended.",
+              "Lower your body by bending your elbows until your upper arms are parallel to the floor.",
+              "Pause for a moment, then push yourself back up to the starting position.",
+              "Repeat for the desired number of repetitions."
+            ],
+            "binding_or_name_alone_is_not_confirmation": true,
+            "catalog_modified": false,
+            "PNG_approval": false,
+            "construction_rule": "Standard compatible unbranded geometry allowed by AGENTS.md; choose geometry only around specified contacts/motion. Category machine does not establish a load mechanism, brand, angle or weight count.",
+            "illustration_choices": "Side/phase and compatible layout are scene choices, not amendments to source technique. Do not infer muscle targets from scene or equipment.",
+            "preserved_source_errors_path": "data/audits/agent-03-common-variants-2026-10-03-source-notes.json",
+            "common_variant_decision": {
+              "exercise_id": "chest-dip-assisted-machine",
+              "status": "resolved",
+              "resolution_kind": "source_supported_common_variant_selected_under_user_authorization",
+              "source_catalog_record_sha256": "d457d7bdad9960be239f89f22939b2e743f1a7e6c07a30bad69ef59290ec1895",
+              "prior_block_reason": "Kneeling assistance confirmed, but source palm-down grip needs reconciliation with exact parallel-support hand geometry; not assigned on a guessed grip.",
+              "source_resource_ids": [
+                "assisted-dips"
+              ],
+              "evidence_scope": [
+                "full selected named exercise posture/movement and specified contacts"
+              ],
+              "selected_scene": [
+                "Assisted chest-dip controlled lower phase",
+                "Torso slightly inclined as exact catalogue specifies, shoulders down, elbows bent back until upper arms approach horizontal; both knees stay on moving assistance platform and feet clear.",
+                "One firm closed hand wraps each FIXED parallel handle; wrists/load contacts aligned. Functional grip specified without an ambiguous global palm-plane label.",
+                "Compatible counterweight-assisted parallel-handle station, BOTH KNEES on moving platform. Published feet-or-knees option narrowed to knee support corroborated by exact dataset.",
+                "Body and knee platform lower together by elbow flexion, then press up through fixed handles. No seated lever dip or invented grip change."
+              ],
+              "scene_choices_are_not_individual_user_technique_approval": true,
+              "catalog_modified": false,
+              "PNG_approval": false,
+              "user_authorization": "Research the most commonly performed variant; do not ask user to guess technique. Select a source-supported common variant and preserve contradictory raw catalogue fields."
+            },
+            "claim_limit": "External evidence scopes are explicit; component-only sources are not called exact-variant confirmation. Common scene selection is authorized, not individual user technique approval."
+          },
+          "approved_style_files": [
+            {
+              "path": "docs/exercise-image-style.md",
+              "sha256": "8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578"
+            }
+          ],
+          "human_reference": {
+            "repository_path": "assets/exercises/biceps-curl-dumbbell.png",
+            "absolute_path": "/workspace/lightweight-exercises-photo/assets/exercises/biceps-curl-dumbbell.png",
+            "sha256": "52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f",
+            "branch": "work",
+            "source_commit": "b0385b7e2f3382d545a6dff5304c81ba3c771096",
+            "role": "Human appearance/proportions/materials/anatomical style ONLY. Exercise pose, grip, equipment and muscles come from the exact-ID catalogue, never the reference.",
+            "pixels_reviewed_during_preparation": false
+          },
+          "generation_authorization": {
+            "task_record_generation_authorized_now": false,
+            "current_user_instruction_authorizes_generation": true,
+            "basis": "Explicit current user request to execute assignment 34 IDs; task records remain unchanged."
+          },
+          "git_result_path": "assets/exercises/pending/agent-03-common-variants-2026-10-03/generator-single/agent-03-others-040/chest-dip-assisted-machine/attempt-1.png",
+          "result_sha256": "fdaf3b59747ed142dae6069a919aafcb4d6cc0c9d875ce0587759bc2c45f66b9",
+          "technical_status": "passed",
+          "normalization": "Pillow LANCZOS aspect-preserving resize to 1024x1024 RGBA; original generator output retained.",
+          "errors": []
         },
         {
           "exercise_id": "ski-erg-machine",
           "name": "Ski Erg",
-          "status": "not_started",
-          "attempts": 0,
-          "attempt_history": [],
-          "user_review": null,
-          "technical_check": null,
+          "status": "generated_pending",
+          "attempts": 1,
+          "attempt_history": [
+            {
+              "attempt_number": 1,
+              "attempt_status": "generated",
+              "tool": "image_gen.imagegen",
+              "started_at": "2026-10-03T16:03:43.941Z",
+              "exercise_id": "ski-erg-machine",
+              "name": "Ski Erg",
+              "equipment": "machine",
+              "primary_muscle": "cardio",
+              "secondary_muscles": [],
+              "source_english": {
+                "description": "A ski erg uses a standing hinge and a simultaneous downward pull on the handles to drive the flywheel.",
+                "instructions": [
+                  "Stand facing the SkiErg with feet hip-width apart and grasp one handle in each hand.",
+                  "Reach the arms overhead while keeping the spine long and knees softly bent.",
+                  "Hinge at the hips and pull both handles down toward the thighs in a strong, smooth stroke.",
+                  "Allow the arms to rise under control as the hips return to the starting hinge."
+                ],
+                "form_cues": [
+                  "Finish the pull at the thighs.",
+                  "Use the hips and lats together.",
+                  "Keep the shoulders away from the ears."
+                ],
+                "common_mistakes": [
+                  "Squatting deeply instead of hinging.",
+                  "Pulling only with the arms.",
+                  "Letting the handles snap upward."
+                ],
+                "safety_note": "Keep the handles clear of your body and use a resistance that allows a smooth return.",
+                "provenance": "adapted"
+              },
+              "selected_scene": {
+                "exercise_id": "ski-erg-machine",
+                "single_phase": "End of the simultaneous double-pole drive, before controlled recovery",
+                "pose": "Stand facing a vertical SkiErg, feet hip-width apart on the stable floor stand. Hips move back into a controlled hinge, knees softly bent, torso inclined forward, spine long. Arms finish alongside hips with small remaining elbow bend; hands near the thighs. No seated rower or deep squat.",
+                "grip": "One ski handle firmly held in each hand; neutral wrists, thumbs toward the thighs at the finish. Both hands drive together, no alternating classic-ski variant.",
+                "supports_and_equipment": "Both bare feet remain planted on the published floor-stand base, no seat, no knee pad or foot straps. Standard compatible unbranded SkiErg frame with paired overhead drive-cord exits, one taut continuous synthetic cord to each handle and an intact flywheel housing; no extra ankle cuffs or bar attachment.",
+                "movement_trajectory": "Simultaneously pull both handles downward toward the thighs by coordinated hip hinge and arm drive. Hinge precedes knee bend; avoid deep squat, arm-only pull, locked elbows or snapping recovery. Return upright and raise handles smoothly for the next stroke; render only the single finish phase.",
+                "camera": "Full-body front-side three-quarter view exposing every prescribed contact, grip and support. Entire person and all equipment visible within square; no crop, text, arrows or second phase.",
+                "one_phase_only": true,
+                "never_infer_muscles_from_pose_or_reference": true
+              },
+              "technique_resolution": {
+                "status": "resolved",
+                "decision_kind": "manufacturer_confirmed_common_variant_selected_under_user_authorization",
+                "evidence_path": "data/audits/agent-03-common-variants-2026-10-03-technique.json",
+                "evidence_selector": "records[exercise_id=\"ski-erg-machine\"]",
+                "technique_fields_read": [
+                  "content.en.description",
+                  "content.en.instructions",
+                  "content.en.form_cues",
+                  "content.en.common_mistakes",
+                  "content.en.safety_note",
+                  "content.pl.instructions",
+                  "source.dataset_id"
+                ],
+                "dataset_instruction_steps_read": [
+                  "Adjust the seat height and footrests to a comfortable position.",
+                  "Grasp the handles with an overhand grip, palms facing down.",
+                  "Sit up straight with your feet flat on the footrests.",
+                  "Extend your arms straight out in front of you, keeping your elbows slightly bent.",
+                  "Engage your triceps and push the handles down towards your thighs.",
+                  "Pause for a moment at the bottom, then slowly return to the starting position.",
+                  "Repeat for the desired number of repetitions."
+                ],
+                "binding_or_name_alone_is_not_confirmation": true,
+                "catalog_modified": false,
+                "PNG_approval": false,
+                "construction_rule": "Standard compatible unbranded geometry allowed by AGENTS.md; choose geometry only around specified contacts/motion. Category machine does not establish a load mechanism, brand, angle or weight count.",
+                "illustration_choices": "Side/phase and compatible layout are scene choices, not amendments to source technique. Do not infer muscle targets from scene or equipment.",
+                "preserved_source_errors_path": "data/audits/agent-03-common-variants-2026-10-03-source-notes.json",
+                "common_variant_decision": {
+                  "exercise_id": "ski-erg-machine",
+                  "status": "resolved",
+                  "resolution_kind": "manufacturer_confirmed_common_variant_selected_under_user_authorization",
+                  "source_catalog_record_sha256": "46208f6fcca6677ce0d1feb2b74f93c42c85066d9a847ae04f757f4445006c99",
+                  "prior_block_reason": "Catalog standing hip-hinge pull versus source seated footrest setup. Name/equipment match does not confirm standing variant.",
+                  "source_resource_ids": [
+                    "concept2-skierg-double-pole",
+                    "concept2-skierg-floor-stand"
+                  ],
+                  "evidence_scope": [
+                    "Manufacturer explicitly distinguishes standing double-pole, alternating classic and seated adaptive variants. Select standing simultaneous double-pole matching this exact ID English, not the seated source-dataset setup. Manufacturer confirms hinge before knee bend, handles by thighs, neutral wrists and incomplete elbow extension at finish.",
+                    "Manufacturer confirms the optional floor stand and synthetic drive cord. Floor-mounted compatible construction is an illustration choice; no specified brand, numerical resistance, copied external muscle list or additional highlighting."
+                  ],
+                  "selected_scene": [
+                    "End of the simultaneous double-pole drive, before controlled recovery",
+                    "Stand facing a vertical SkiErg, feet hip-width apart on the stable floor stand. Hips move back into a controlled hinge, knees softly bent, torso inclined forward, spine long. Arms finish alongside hips with small remaining elbow bend; hands near the thighs. No seated rower or deep squat.",
+                    "One ski handle firmly held in each hand; neutral wrists, thumbs toward the thighs at the finish. Both hands drive together, no alternating classic-ski variant.",
+                    "Both bare feet remain planted on the published floor-stand base, no seat, no knee pad or foot straps. Standard compatible unbranded SkiErg frame with paired overhead drive-cord exits, one taut continuous synthetic cord to each handle and an intact flywheel housing; no extra ankle cuffs or bar attachment.",
+                    "Simultaneously pull both handles downward toward the thighs by coordinated hip hinge and arm drive. Hinge precedes knee bend; avoid deep squat, arm-only pull, locked elbows or snapping recovery. Return upright and raise handles smoothly for the next stroke; render only the single finish phase."
+                  ],
+                  "scene_choices_are_not_individual_user_technique_approval": true,
+                  "catalog_modified": false,
+                  "PNG_approval": false,
+                  "user_authorization": "За ці 36 теж піди в інтернет, пошукай, як там найчастіше виконується ця вправа."
+                },
+                "claim_limit": "Manufacturer confirms this standing double-pole variant and floor-stand option. Scene selection is not individual user technique or PNG approval; exact catalog muscles stay neutral."
+              },
+              "generation_prompt": "Create exactly ONE square 1024x1024 transparent PNG of this exact exercise and ONE selected phase. Metadata must never appear as image text.\n{\n  \"approved_style_files\": [\n    {\n      \"path\": \"docs/exercise-image-style.md\",\n      \"sha256\": \"8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578\"\n    },\n    {\n      \"path\": \"docs/exercise-image-style-neutral-primary.md\",\n      \"sha256\": \"86204ab43f23d119a1eb25cafdbda2518b741a0090b4ffb0ceb9086952314439\"\n    }\n  ],\n  \"exact_catalogue_source\": {\n    \"equipment\": \"machine\",\n    \"primary_muscle\": \"cardio\",\n    \"secondary_muscles\": [],\n    \"source_english\": {\n      \"common_mistakes\": [\n        \"Squatting deeply instead of hinging.\",\n        \"Pulling only with the arms.\",\n        \"Letting the handles snap upward.\"\n      ],\n      \"description\": \"A ski erg uses a standing hinge and a simultaneous downward pull on the handles to drive the flywheel.\",\n      \"form_cues\": [\n        \"Finish the pull at the thighs.\",\n        \"Use the hips and lats together.\",\n        \"Keep the shoulders away from the ears.\"\n      ],\n      \"instructions\": [\n        \"Stand facing the SkiErg with feet hip-width apart and grasp one handle in each hand.\",\n        \"Reach the arms overhead while keeping the spine long and knees softly bent.\",\n        \"Hinge at the hips and pull both handles down toward the thighs in a strong, smooth stroke.\",\n        \"Allow the arms to rise under control as the hips return to the starting hinge.\"\n      ],\n      \"provenance\": \"adapted\",\n      \"safety_note\": \"Keep the handles clear of your body and use a resistance that allows a smooth return.\"\n    }\n  },\n  \"human_reference\": {\n    \"absolute_path\": \"/workspace/lightweight-exercises-photo/assets/exercises/biceps-curl-dumbbell.png\",\n    \"branch\": \"work\",\n    \"pixels_reviewed_during_preparation\": false,\n    \"repository_path\": \"assets/exercises/biceps-curl-dumbbell.png\",\n    \"role\": \"Human appearance/proportions/materials/anatomical style ONLY. Exercise pose, grip, equipment and muscles come from the exact-ID catalogue, never the reference.\",\n    \"sha256\": \"52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f\",\n    \"source_commit\": \"b0385b7e2f3382d545a6dff5304c81ba3c771096\"\n  },\n  \"identity_do_not_render_as_text\": {\n    \"catalog_record_sha256\": \"46208f6fcca6677ce0d1feb2b74f93c42c85066d9a847ae04f757f4445006c99\",\n    \"catalog_sha256\": \"a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989\",\n    \"exercise_id\": \"ski-erg-machine\",\n    \"name\": \"Ski Erg\"\n  },\n  \"selected_render_scene\": {\n    \"camera\": \"Full-body front-side three-quarter view exposing every prescribed contact, grip and support. Entire person and all equipment visible within square; no crop, text, arrows or second phase.\",\n    \"exercise_id\": \"ski-erg-machine\",\n    \"grip\": \"One ski handle firmly held in each hand; neutral wrists, thumbs toward the thighs at the finish. Both hands drive together, no alternating classic-ski variant.\",\n    \"movement_trajectory\": \"Simultaneously pull both handles downward toward the thighs by coordinated hip hinge and arm drive. Hinge precedes knee bend; avoid deep squat, arm-only pull, locked elbows or snapping recovery. Return upright and raise handles smoothly for the next stroke; render only the single finish phase.\",\n    \"never_infer_muscles_from_pose_or_reference\": true,\n    \"one_phase_only\": true,\n    \"pose\": \"Stand facing a vertical SkiErg, feet hip-width apart on the stable floor stand. Hips move back into a controlled hinge, knees softly bent, torso inclined forward, spine long. Arms finish alongside hips with small remaining elbow bend; hands near the thighs. No seated rower or deep squat.\",\n    \"single_phase\": \"End of the simultaneous double-pole drive, before controlled recovery\",\n    \"supports_and_equipment\": \"Both bare feet remain planted on the published floor-stand base, no seat, no knee pad or foot straps. Standard compatible unbranded SkiErg frame with paired overhead drive-cord exits, one taut continuous synthetic cord to each handle and an intact flywheel housing; no extra ankle cuffs or bar attachment.\"\n  },\n  \"source_use_rule\": \"Preserve raw source texts verbatim; render only selected scene and documented exact-source/user resolution. Do not silently repair the catalogue.\",\n  \"style\": {\n    \"background\": \"Genuinely transparent PNG background, no white/checkerboard layer, no environment scene.\",\n    \"framing\": \"Full figure and all required equipment/supports visible within a square. Scale and use a three-quarter view to expose the specified contacts without changing anatomy, equipment, grip or technique.\",\n    \"human_model\": \"One athletic bald male anatomical mannequin, opaque silver-gray muscular surfaces, consistent proportions and detailed 3D materials, plain black shorts, barefoot.\",\n    \"material_rules\": \"Highlights never make tissue transparent; no glow, whole-body orange tint, hair, text, labels, arrows, UI, borders, collage or extra person.\",\n    \"no_invention\": \"Exact-ID catalogue controls source text and muscles. Render documented selected scene; recorded source corrections apply to the derived scene only. No reference-pose copying or imported muscle targets.\",\n    \"output\": {\n      \"format\": \"PNG\",\n      \"height\": 1024,\n      \"one_person\": true,\n      \"one_phase\": true,\n      \"width\": 1024\n    },\n    \"primary_highlight\": {\n      \"hex\": null,\n      \"rule\": \"Keep whole body opaque neutral silver-gray. No anatomical primary or whole-body orange tint for full_body/cardio/other.\"\n    },\n    \"secondary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"intensity_fraction\": [\n        0.4,\n        0.5\n      ],\n      \"rule\": \"Only the exact secondary muscles, lighter same-hue highlight; if the list is empty add no secondary target.\"\n    },\n    \"version\": \"v1-neutral-primary-2026-10-02\"\n  },\n  \"technique_resolution\": {\n    \"PNG_approval\": false,\n    \"binding_or_name_alone_is_not_confirmation\": true,\n    \"catalog_modified\": false,\n    \"claim_limit\": \"Manufacturer confirms this standing double-pole variant and floor-stand option. Scene selection is not individual user technique or PNG approval; exact catalog muscles stay neutral.\",\n    \"common_variant_decision\": {\n      \"PNG_approval\": false,\n      \"catalog_modified\": false,\n      \"evidence_scope\": [\n        \"Manufacturer explicitly distinguishes standing double-pole, alternating classic and seated adaptive variants. Select standing simultaneous double-pole matching this exact ID English, not the seated source-dataset setup. Manufacturer confirms hinge before knee bend, handles by thighs, neutral wrists and incomplete elbow extension at finish.\",\n        \"Manufacturer confirms the optional floor stand and synthetic drive cord. Floor-mounted compatible construction is an illustration choice; no specified brand, numerical resistance, copied external muscle list or additional highlighting.\"\n      ],\n      \"exercise_id\": \"ski-erg-machine\",\n      \"prior_block_reason\": \"Catalog standing hip-hinge pull versus source seated footrest setup. Name/equipment match does not confirm standing variant.\",\n      \"resolution_kind\": \"manufacturer_confirmed_common_variant_selected_under_user_authorization\",\n      \"scene_choices_are_not_individual_user_technique_approval\": true,\n      \"selected_scene\": [\n        \"End of the simultaneous double-pole drive, before controlled recovery\",\n        \"Stand facing a vertical SkiErg, feet hip-width apart on the stable floor stand. Hips move back into a controlled hinge, knees softly bent, torso inclined forward, spine long. Arms finish alongside hips with small remaining elbow bend; hands near the thighs. No seated rower or deep squat.\",\n        \"One ski handle firmly held in each hand; neutral wrists, thumbs toward the thighs at the finish. Both hands drive together, no alternating classic-ski variant.\",\n        \"Both bare feet remain planted on the published floor-stand base, no seat, no knee pad or foot straps. Standard compatible unbranded SkiErg frame with paired overhead drive-cord exits, one taut continuous synthetic cord to each handle and an intact flywheel housing; no extra ankle cuffs or bar attachment.\",\n        \"Simultaneously pull both handles downward toward the thighs by coordinated hip hinge and arm drive. Hinge precedes knee bend; avoid deep squat, arm-only pull, locked elbows or snapping recovery. Return upright and raise handles smoothly for the next stroke; render only the single finish phase.\"\n      ],\n      \"source_catalog_record_sha256\": \"46208f6fcca6677ce0d1feb2b74f93c42c85066d9a847ae04f757f4445006c99\",\n      \"source_resource_ids\": [\n        \"concept2-skierg-double-pole\",\n        \"concept2-skierg-floor-stand\"\n      ],\n      \"status\": \"resolved\",\n      \"user_authorization\": \"За ці 36 теж піди в інтернет, пошукай, як там найчастіше виконується ця вправа.\"\n    },\n    \"construction_rule\": \"Standard compatible unbranded geometry allowed by AGENTS.md; choose geometry only around specified contacts/motion. Category machine does not establish a load mechanism, brand, angle or weight count.\",\n    \"dataset_instruction_steps_read\": [\n      \"Adjust the seat height and footrests to a comfortable position.\",\n      \"Grasp the handles with an overhand grip, palms facing down.\",\n      \"Sit up straight with your feet flat on the footrests.\",\n      \"Extend your arms straight out in front of you, keeping your elbows slightly bent.\",\n      \"Engage your triceps and push the handles down towards your thighs.\",\n      \"Pause for a moment at the bottom, then slowly return to the starting position.\",\n      \"Repeat for the desired number of repetitions.\"\n    ],\n    \"decision_kind\": \"manufacturer_confirmed_common_variant_selected_under_user_authorization\",\n    \"evidence_path\": \"data/audits/agent-03-common-variants-2026-10-03-technique.json\",\n    \"evidence_selector\": \"records[exercise_id=\\\"ski-erg-machine\\\"]\",\n    \"illustration_choices\": \"Side/phase and compatible layout are scene choices, not amendments to source technique. Do not infer muscle targets from scene or equipment.\",\n    \"preserved_source_errors_path\": \"data/audits/agent-03-common-variants-2026-10-03-source-notes.json\",\n    \"status\": \"resolved\",\n    \"technique_fields_read\": [\n      \"content.en.description\",\n      \"content.en.instructions\",\n      \"content.en.form_cues\",\n      \"content.en.common_mistakes\",\n      \"content.en.safety_note\",\n      \"content.pl.instructions\",\n      \"source.dataset_id\"\n    ]\n  }\n}",
+              "prompt_sha256": "c485c75050a9cfc03cc3ee7103bef0b50c9ce666c47d3e2623e3a4039ab172da",
+              "style_version": "v1-neutral-primary-2026-10-02",
+              "approved_style_files": [
+                {
+                  "path": "docs/exercise-image-style.md",
+                  "sha256": "8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578"
+                },
+                {
+                  "path": "docs/exercise-image-style-neutral-primary.md",
+                  "sha256": "86204ab43f23d119a1eb25cafdbda2518b741a0090b4ffb0ceb9086952314439"
+                }
+              ],
+              "human_reference": {
+                "repository_path": "assets/exercises/biceps-curl-dumbbell.png",
+                "absolute_path": "/workspace/lightweight-exercises-photo/assets/exercises/biceps-curl-dumbbell.png",
+                "sha256": "52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f",
+                "branch": "work",
+                "source_commit": "b0385b7e2f3382d545a6dff5304c81ba3c771096",
+                "role": "Human appearance/proportions/materials/anatomical style ONLY. Exercise pose, grip, equipment and muscles come from the exact-ID catalogue, never the reference.",
+                "pixels_reviewed_during_preparation": false
+              },
+              "source": {
+                "task_commit": "de7dfb901c4c23072c5b11d3fee6cde7364eeb6a",
+                "source_branch": "agent-03-inventory-2026-10-01",
+                "assignment_path": "data/assignments/agent-03-common-variants-2026-10-03.json",
+                "assignment_sha256": "c9647f92adc6c2623cc6591904aefededbfe0be4152df714e543ec04fc4d0275",
+                "batch_path": "data/batches/agent-03-others-040.json",
+                "batch_sha256": "418687026eb74454a96201bde77353014b0aad58f986d125ec18efad96a9a0ff",
+                "catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+                "catalog_record_sha256": "46208f6fcca6677ce0d1feb2b74f93c42c85066d9a847ae04f757f4445006c99",
+                "source_english_sha256": "3395c4dca72896e7e732df05b2693877afac3c3f0a8e2564bef61045772be523",
+                "technique_evidence_path": "data/audits/agent-03-common-variants-2026-10-03-technique.json",
+                "source_notes_path": "data/audits/agent-03-common-variants-2026-10-03-source-notes.json"
+              },
+              "generation_authorization": {
+                "task_record_generation_authorized_now": false,
+                "current_user_instruction_authorizes_generation": true,
+                "basis": "Explicit current user request to execute assignment 34 IDs; task records remain unchanged."
+              },
+              "planned_png_path": "/workspace/exercise-image-results/agent-03-common-variants-2026-10-03/generator-single/agent-03-others-040/ski-erg-machine/attempt-1.png",
+              "planned_git_png_path": "assets/exercises/pending/agent-03-common-variants-2026-10-03/generator-single/agent-03-others-040/ski-erg-machine/attempt-1.png",
+              "errors": [],
+              "finished_at": "2026-10-03T16:05:44.921Z",
+              "generator_output_path": "/workspace/generated_images/exec-407add93-695a-4eb5-a56e-ac6aaab7eaff.png",
+              "generator_output_sha256": "26fc4cf790fd3bbfa374e55fe9531272eadb89e660a4536db843e0c65eb3683a",
+              "generator_output_dimensions": [
+                1254,
+                1254
+              ],
+              "generator_output_mode": "RGBA",
+              "generator_output_format": "PNG",
+              "normalization": "Pillow LANCZOS aspect-preserving resize to 1024x1024 RGBA; original generator output retained.",
+              "result_path": "/workspace/exercise-image-results/agent-03-common-variants-2026-10-03/generator-single/agent-03-others-040/ski-erg-machine/attempt-1.png",
+              "git_result_path": "assets/exercises/pending/agent-03-common-variants-2026-10-03/generator-single/agent-03-others-040/ski-erg-machine/attempt-1.png",
+              "result_sha256": "698ba5a4e083928c09fc27d4bec710cfde45e6e79734ec5aab717e4c7549b9ce",
+              "technical_check": {
+                "status": "passed",
+                "format": "PNG",
+                "dimensions": [
+                  1024,
+                  1024
+                ],
+                "mode": "RGBA",
+                "generator_source_format": "PNG",
+                "generator_source_dimensions": [
+                  1254,
+                  1254
+                ],
+                "generator_source_mode": "RGBA",
+                "generator_source_had_alpha_or_transparency": true,
+                "alpha_min_max": [
+                  0,
+                  255
+                ],
+                "fully_transparent_pixels": 776464,
+                "fully_opaque_pixels": 3059,
+                "transparent_pixel_present": true,
+                "opaque_pixel_present": true,
+                "opens": true,
+                "errors": [],
+                "normalization": "Pillow LANCZOS aspect-preserving resize to 1024x1024 RGBA; original generator output retained.",
+                "scope": "PNG decode, exact square dimensions, alpha-channel/transparency pixels and SHA256 only; no visual QA."
+              }
+            }
+          ],
+          "user_review": "pending",
+          "technical_check": {
+            "status": "passed",
+            "format": "PNG",
+            "dimensions": [
+              1024,
+              1024
+            ],
+            "mode": "RGBA",
+            "generator_source_format": "PNG",
+            "generator_source_dimensions": [
+              1254,
+              1254
+            ],
+            "generator_source_mode": "RGBA",
+            "generator_source_had_alpha_or_transparency": true,
+            "alpha_min_max": [
+              0,
+              255
+            ],
+            "fully_transparent_pixels": 776464,
+            "fully_opaque_pixels": 3059,
+            "transparent_pixel_present": true,
+            "opaque_pixel_present": true,
+            "opens": true,
+            "errors": [],
+            "normalization": "Pillow LANCZOS aspect-preserving resize to 1024x1024 RGBA; original generator output retained.",
+            "scope": "PNG decode, exact square dimensions, alpha-channel/transparency pixels and SHA256 only; no visual QA."
+          },
           "agent_visual_review": "not_performed",
-          "result_path": null,
+          "result_path": "/workspace/exercise-image-results/agent-03-common-variants-2026-10-03/generator-single/agent-03-others-040/ski-erg-machine/attempt-1.png",
           "planned_png_path": "/workspace/exercise-image-results/agent-03-common-variants-2026-10-03/generator-single/agent-03-others-040/ski-erg-machine/attempt-1.png",
           "planned_git_png_path": "assets/exercises/pending/agent-03-common-variants-2026-10-03/generator-single/agent-03-others-040/ski-erg-machine/attempt-1.png",
           "prompt_sha256": "c485c75050a9cfc03cc3ee7103bef0b50c9ce666c47d3e2623e3a4039ab172da",
           "source_catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
-          "style_version": "v1-neutral-primary-2026-10-02"
+          "style_version": "v1-neutral-primary-2026-10-02",
+          "generation_prompt": "Create exactly ONE square 1024x1024 transparent PNG of this exact exercise and ONE selected phase. Metadata must never appear as image text.\n{\n  \"approved_style_files\": [\n    {\n      \"path\": \"docs/exercise-image-style.md\",\n      \"sha256\": \"8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578\"\n    },\n    {\n      \"path\": \"docs/exercise-image-style-neutral-primary.md\",\n      \"sha256\": \"86204ab43f23d119a1eb25cafdbda2518b741a0090b4ffb0ceb9086952314439\"\n    }\n  ],\n  \"exact_catalogue_source\": {\n    \"equipment\": \"machine\",\n    \"primary_muscle\": \"cardio\",\n    \"secondary_muscles\": [],\n    \"source_english\": {\n      \"common_mistakes\": [\n        \"Squatting deeply instead of hinging.\",\n        \"Pulling only with the arms.\",\n        \"Letting the handles snap upward.\"\n      ],\n      \"description\": \"A ski erg uses a standing hinge and a simultaneous downward pull on the handles to drive the flywheel.\",\n      \"form_cues\": [\n        \"Finish the pull at the thighs.\",\n        \"Use the hips and lats together.\",\n        \"Keep the shoulders away from the ears.\"\n      ],\n      \"instructions\": [\n        \"Stand facing the SkiErg with feet hip-width apart and grasp one handle in each hand.\",\n        \"Reach the arms overhead while keeping the spine long and knees softly bent.\",\n        \"Hinge at the hips and pull both handles down toward the thighs in a strong, smooth stroke.\",\n        \"Allow the arms to rise under control as the hips return to the starting hinge.\"\n      ],\n      \"provenance\": \"adapted\",\n      \"safety_note\": \"Keep the handles clear of your body and use a resistance that allows a smooth return.\"\n    }\n  },\n  \"human_reference\": {\n    \"absolute_path\": \"/workspace/lightweight-exercises-photo/assets/exercises/biceps-curl-dumbbell.png\",\n    \"branch\": \"work\",\n    \"pixels_reviewed_during_preparation\": false,\n    \"repository_path\": \"assets/exercises/biceps-curl-dumbbell.png\",\n    \"role\": \"Human appearance/proportions/materials/anatomical style ONLY. Exercise pose, grip, equipment and muscles come from the exact-ID catalogue, never the reference.\",\n    \"sha256\": \"52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f\",\n    \"source_commit\": \"b0385b7e2f3382d545a6dff5304c81ba3c771096\"\n  },\n  \"identity_do_not_render_as_text\": {\n    \"catalog_record_sha256\": \"46208f6fcca6677ce0d1feb2b74f93c42c85066d9a847ae04f757f4445006c99\",\n    \"catalog_sha256\": \"a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989\",\n    \"exercise_id\": \"ski-erg-machine\",\n    \"name\": \"Ski Erg\"\n  },\n  \"selected_render_scene\": {\n    \"camera\": \"Full-body front-side three-quarter view exposing every prescribed contact, grip and support. Entire person and all equipment visible within square; no crop, text, arrows or second phase.\",\n    \"exercise_id\": \"ski-erg-machine\",\n    \"grip\": \"One ski handle firmly held in each hand; neutral wrists, thumbs toward the thighs at the finish. Both hands drive together, no alternating classic-ski variant.\",\n    \"movement_trajectory\": \"Simultaneously pull both handles downward toward the thighs by coordinated hip hinge and arm drive. Hinge precedes knee bend; avoid deep squat, arm-only pull, locked elbows or snapping recovery. Return upright and raise handles smoothly for the next stroke; render only the single finish phase.\",\n    \"never_infer_muscles_from_pose_or_reference\": true,\n    \"one_phase_only\": true,\n    \"pose\": \"Stand facing a vertical SkiErg, feet hip-width apart on the stable floor stand. Hips move back into a controlled hinge, knees softly bent, torso inclined forward, spine long. Arms finish alongside hips with small remaining elbow bend; hands near the thighs. No seated rower or deep squat.\",\n    \"single_phase\": \"End of the simultaneous double-pole drive, before controlled recovery\",\n    \"supports_and_equipment\": \"Both bare feet remain planted on the published floor-stand base, no seat, no knee pad or foot straps. Standard compatible unbranded SkiErg frame with paired overhead drive-cord exits, one taut continuous synthetic cord to each handle and an intact flywheel housing; no extra ankle cuffs or bar attachment.\"\n  },\n  \"source_use_rule\": \"Preserve raw source texts verbatim; render only selected scene and documented exact-source/user resolution. Do not silently repair the catalogue.\",\n  \"style\": {\n    \"background\": \"Genuinely transparent PNG background, no white/checkerboard layer, no environment scene.\",\n    \"framing\": \"Full figure and all required equipment/supports visible within a square. Scale and use a three-quarter view to expose the specified contacts without changing anatomy, equipment, grip or technique.\",\n    \"human_model\": \"One athletic bald male anatomical mannequin, opaque silver-gray muscular surfaces, consistent proportions and detailed 3D materials, plain black shorts, barefoot.\",\n    \"material_rules\": \"Highlights never make tissue transparent; no glow, whole-body orange tint, hair, text, labels, arrows, UI, borders, collage or extra person.\",\n    \"no_invention\": \"Exact-ID catalogue controls source text and muscles. Render documented selected scene; recorded source corrections apply to the derived scene only. No reference-pose copying or imported muscle targets.\",\n    \"output\": {\n      \"format\": \"PNG\",\n      \"height\": 1024,\n      \"one_person\": true,\n      \"one_phase\": true,\n      \"width\": 1024\n    },\n    \"primary_highlight\": {\n      \"hex\": null,\n      \"rule\": \"Keep whole body opaque neutral silver-gray. No anatomical primary or whole-body orange tint for full_body/cardio/other.\"\n    },\n    \"secondary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"intensity_fraction\": [\n        0.4,\n        0.5\n      ],\n      \"rule\": \"Only the exact secondary muscles, lighter same-hue highlight; if the list is empty add no secondary target.\"\n    },\n    \"version\": \"v1-neutral-primary-2026-10-02\"\n  },\n  \"technique_resolution\": {\n    \"PNG_approval\": false,\n    \"binding_or_name_alone_is_not_confirmation\": true,\n    \"catalog_modified\": false,\n    \"claim_limit\": \"Manufacturer confirms this standing double-pole variant and floor-stand option. Scene selection is not individual user technique or PNG approval; exact catalog muscles stay neutral.\",\n    \"common_variant_decision\": {\n      \"PNG_approval\": false,\n      \"catalog_modified\": false,\n      \"evidence_scope\": [\n        \"Manufacturer explicitly distinguishes standing double-pole, alternating classic and seated adaptive variants. Select standing simultaneous double-pole matching this exact ID English, not the seated source-dataset setup. Manufacturer confirms hinge before knee bend, handles by thighs, neutral wrists and incomplete elbow extension at finish.\",\n        \"Manufacturer confirms the optional floor stand and synthetic drive cord. Floor-mounted compatible construction is an illustration choice; no specified brand, numerical resistance, copied external muscle list or additional highlighting.\"\n      ],\n      \"exercise_id\": \"ski-erg-machine\",\n      \"prior_block_reason\": \"Catalog standing hip-hinge pull versus source seated footrest setup. Name/equipment match does not confirm standing variant.\",\n      \"resolution_kind\": \"manufacturer_confirmed_common_variant_selected_under_user_authorization\",\n      \"scene_choices_are_not_individual_user_technique_approval\": true,\n      \"selected_scene\": [\n        \"End of the simultaneous double-pole drive, before controlled recovery\",\n        \"Stand facing a vertical SkiErg, feet hip-width apart on the stable floor stand. Hips move back into a controlled hinge, knees softly bent, torso inclined forward, spine long. Arms finish alongside hips with small remaining elbow bend; hands near the thighs. No seated rower or deep squat.\",\n        \"One ski handle firmly held in each hand; neutral wrists, thumbs toward the thighs at the finish. Both hands drive together, no alternating classic-ski variant.\",\n        \"Both bare feet remain planted on the published floor-stand base, no seat, no knee pad or foot straps. Standard compatible unbranded SkiErg frame with paired overhead drive-cord exits, one taut continuous synthetic cord to each handle and an intact flywheel housing; no extra ankle cuffs or bar attachment.\",\n        \"Simultaneously pull both handles downward toward the thighs by coordinated hip hinge and arm drive. Hinge precedes knee bend; avoid deep squat, arm-only pull, locked elbows or snapping recovery. Return upright and raise handles smoothly for the next stroke; render only the single finish phase.\"\n      ],\n      \"source_catalog_record_sha256\": \"46208f6fcca6677ce0d1feb2b74f93c42c85066d9a847ae04f757f4445006c99\",\n      \"source_resource_ids\": [\n        \"concept2-skierg-double-pole\",\n        \"concept2-skierg-floor-stand\"\n      ],\n      \"status\": \"resolved\",\n      \"user_authorization\": \"За ці 36 теж піди в інтернет, пошукай, як там найчастіше виконується ця вправа.\"\n    },\n    \"construction_rule\": \"Standard compatible unbranded geometry allowed by AGENTS.md; choose geometry only around specified contacts/motion. Category machine does not establish a load mechanism, brand, angle or weight count.\",\n    \"dataset_instruction_steps_read\": [\n      \"Adjust the seat height and footrests to a comfortable position.\",\n      \"Grasp the handles with an overhand grip, palms facing down.\",\n      \"Sit up straight with your feet flat on the footrests.\",\n      \"Extend your arms straight out in front of you, keeping your elbows slightly bent.\",\n      \"Engage your triceps and push the handles down towards your thighs.\",\n      \"Pause for a moment at the bottom, then slowly return to the starting position.\",\n      \"Repeat for the desired number of repetitions.\"\n    ],\n    \"decision_kind\": \"manufacturer_confirmed_common_variant_selected_under_user_authorization\",\n    \"evidence_path\": \"data/audits/agent-03-common-variants-2026-10-03-technique.json\",\n    \"evidence_selector\": \"records[exercise_id=\\\"ski-erg-machine\\\"]\",\n    \"illustration_choices\": \"Side/phase and compatible layout are scene choices, not amendments to source technique. Do not infer muscle targets from scene or equipment.\",\n    \"preserved_source_errors_path\": \"data/audits/agent-03-common-variants-2026-10-03-source-notes.json\",\n    \"status\": \"resolved\",\n    \"technique_fields_read\": [\n      \"content.en.description\",\n      \"content.en.instructions\",\n      \"content.en.form_cues\",\n      \"content.en.common_mistakes\",\n      \"content.en.safety_note\",\n      \"content.pl.instructions\",\n      \"source.dataset_id\"\n    ]\n  }\n}",
+          "source": {
+            "task_commit": "de7dfb901c4c23072c5b11d3fee6cde7364eeb6a",
+            "source_branch": "agent-03-inventory-2026-10-01",
+            "assignment_path": "data/assignments/agent-03-common-variants-2026-10-03.json",
+            "assignment_sha256": "c9647f92adc6c2623cc6591904aefededbfe0be4152df714e543ec04fc4d0275",
+            "batch_path": "data/batches/agent-03-others-040.json",
+            "batch_sha256": "418687026eb74454a96201bde77353014b0aad58f986d125ec18efad96a9a0ff",
+            "catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+            "catalog_record_sha256": "46208f6fcca6677ce0d1feb2b74f93c42c85066d9a847ae04f757f4445006c99",
+            "source_english_sha256": "3395c4dca72896e7e732df05b2693877afac3c3f0a8e2564bef61045772be523",
+            "technique_evidence_path": "data/audits/agent-03-common-variants-2026-10-03-technique.json",
+            "source_notes_path": "data/audits/agent-03-common-variants-2026-10-03-source-notes.json"
+          },
+          "source_english": {
+            "description": "A ski erg uses a standing hinge and a simultaneous downward pull on the handles to drive the flywheel.",
+            "instructions": [
+              "Stand facing the SkiErg with feet hip-width apart and grasp one handle in each hand.",
+              "Reach the arms overhead while keeping the spine long and knees softly bent.",
+              "Hinge at the hips and pull both handles down toward the thighs in a strong, smooth stroke.",
+              "Allow the arms to rise under control as the hips return to the starting hinge."
+            ],
+            "form_cues": [
+              "Finish the pull at the thighs.",
+              "Use the hips and lats together.",
+              "Keep the shoulders away from the ears."
+            ],
+            "common_mistakes": [
+              "Squatting deeply instead of hinging.",
+              "Pulling only with the arms.",
+              "Letting the handles snap upward."
+            ],
+            "safety_note": "Keep the handles clear of your body and use a resistance that allows a smooth return.",
+            "provenance": "adapted"
+          },
+          "equipment": "machine",
+          "primary_muscle": "cardio",
+          "secondary_muscles": [],
+          "selected_scene": {
+            "exercise_id": "ski-erg-machine",
+            "single_phase": "End of the simultaneous double-pole drive, before controlled recovery",
+            "pose": "Stand facing a vertical SkiErg, feet hip-width apart on the stable floor stand. Hips move back into a controlled hinge, knees softly bent, torso inclined forward, spine long. Arms finish alongside hips with small remaining elbow bend; hands near the thighs. No seated rower or deep squat.",
+            "grip": "One ski handle firmly held in each hand; neutral wrists, thumbs toward the thighs at the finish. Both hands drive together, no alternating classic-ski variant.",
+            "supports_and_equipment": "Both bare feet remain planted on the published floor-stand base, no seat, no knee pad or foot straps. Standard compatible unbranded SkiErg frame with paired overhead drive-cord exits, one taut continuous synthetic cord to each handle and an intact flywheel housing; no extra ankle cuffs or bar attachment.",
+            "movement_trajectory": "Simultaneously pull both handles downward toward the thighs by coordinated hip hinge and arm drive. Hinge precedes knee bend; avoid deep squat, arm-only pull, locked elbows or snapping recovery. Return upright and raise handles smoothly for the next stroke; render only the single finish phase.",
+            "camera": "Full-body front-side three-quarter view exposing every prescribed contact, grip and support. Entire person and all equipment visible within square; no crop, text, arrows or second phase.",
+            "one_phase_only": true,
+            "never_infer_muscles_from_pose_or_reference": true
+          },
+          "technique_resolution": {
+            "status": "resolved",
+            "decision_kind": "manufacturer_confirmed_common_variant_selected_under_user_authorization",
+            "evidence_path": "data/audits/agent-03-common-variants-2026-10-03-technique.json",
+            "evidence_selector": "records[exercise_id=\"ski-erg-machine\"]",
+            "technique_fields_read": [
+              "content.en.description",
+              "content.en.instructions",
+              "content.en.form_cues",
+              "content.en.common_mistakes",
+              "content.en.safety_note",
+              "content.pl.instructions",
+              "source.dataset_id"
+            ],
+            "dataset_instruction_steps_read": [
+              "Adjust the seat height and footrests to a comfortable position.",
+              "Grasp the handles with an overhand grip, palms facing down.",
+              "Sit up straight with your feet flat on the footrests.",
+              "Extend your arms straight out in front of you, keeping your elbows slightly bent.",
+              "Engage your triceps and push the handles down towards your thighs.",
+              "Pause for a moment at the bottom, then slowly return to the starting position.",
+              "Repeat for the desired number of repetitions."
+            ],
+            "binding_or_name_alone_is_not_confirmation": true,
+            "catalog_modified": false,
+            "PNG_approval": false,
+            "construction_rule": "Standard compatible unbranded geometry allowed by AGENTS.md; choose geometry only around specified contacts/motion. Category machine does not establish a load mechanism, brand, angle or weight count.",
+            "illustration_choices": "Side/phase and compatible layout are scene choices, not amendments to source technique. Do not infer muscle targets from scene or equipment.",
+            "preserved_source_errors_path": "data/audits/agent-03-common-variants-2026-10-03-source-notes.json",
+            "common_variant_decision": {
+              "exercise_id": "ski-erg-machine",
+              "status": "resolved",
+              "resolution_kind": "manufacturer_confirmed_common_variant_selected_under_user_authorization",
+              "source_catalog_record_sha256": "46208f6fcca6677ce0d1feb2b74f93c42c85066d9a847ae04f757f4445006c99",
+              "prior_block_reason": "Catalog standing hip-hinge pull versus source seated footrest setup. Name/equipment match does not confirm standing variant.",
+              "source_resource_ids": [
+                "concept2-skierg-double-pole",
+                "concept2-skierg-floor-stand"
+              ],
+              "evidence_scope": [
+                "Manufacturer explicitly distinguishes standing double-pole, alternating classic and seated adaptive variants. Select standing simultaneous double-pole matching this exact ID English, not the seated source-dataset setup. Manufacturer confirms hinge before knee bend, handles by thighs, neutral wrists and incomplete elbow extension at finish.",
+                "Manufacturer confirms the optional floor stand and synthetic drive cord. Floor-mounted compatible construction is an illustration choice; no specified brand, numerical resistance, copied external muscle list or additional highlighting."
+              ],
+              "selected_scene": [
+                "End of the simultaneous double-pole drive, before controlled recovery",
+                "Stand facing a vertical SkiErg, feet hip-width apart on the stable floor stand. Hips move back into a controlled hinge, knees softly bent, torso inclined forward, spine long. Arms finish alongside hips with small remaining elbow bend; hands near the thighs. No seated rower or deep squat.",
+                "One ski handle firmly held in each hand; neutral wrists, thumbs toward the thighs at the finish. Both hands drive together, no alternating classic-ski variant.",
+                "Both bare feet remain planted on the published floor-stand base, no seat, no knee pad or foot straps. Standard compatible unbranded SkiErg frame with paired overhead drive-cord exits, one taut continuous synthetic cord to each handle and an intact flywheel housing; no extra ankle cuffs or bar attachment.",
+                "Simultaneously pull both handles downward toward the thighs by coordinated hip hinge and arm drive. Hinge precedes knee bend; avoid deep squat, arm-only pull, locked elbows or snapping recovery. Return upright and raise handles smoothly for the next stroke; render only the single finish phase."
+              ],
+              "scene_choices_are_not_individual_user_technique_approval": true,
+              "catalog_modified": false,
+              "PNG_approval": false,
+              "user_authorization": "За ці 36 теж піди в інтернет, пошукай, як там найчастіше виконується ця вправа."
+            },
+            "claim_limit": "Manufacturer confirms this standing double-pole variant and floor-stand option. Scene selection is not individual user technique or PNG approval; exact catalog muscles stay neutral."
+          },
+          "approved_style_files": [
+            {
+              "path": "docs/exercise-image-style.md",
+              "sha256": "8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578"
+            },
+            {
+              "path": "docs/exercise-image-style-neutral-primary.md",
+              "sha256": "86204ab43f23d119a1eb25cafdbda2518b741a0090b4ffb0ceb9086952314439"
+            }
+          ],
+          "human_reference": {
+            "repository_path": "assets/exercises/biceps-curl-dumbbell.png",
+            "absolute_path": "/workspace/lightweight-exercises-photo/assets/exercises/biceps-curl-dumbbell.png",
+            "sha256": "52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f",
+            "branch": "work",
+            "source_commit": "b0385b7e2f3382d545a6dff5304c81ba3c771096",
+            "role": "Human appearance/proportions/materials/anatomical style ONLY. Exercise pose, grip, equipment and muscles come from the exact-ID catalogue, never the reference.",
+            "pixels_reviewed_during_preparation": false
+          },
+          "generation_authorization": {
+            "task_record_generation_authorized_now": false,
+            "current_user_instruction_authorizes_generation": true,
+            "basis": "Explicit current user request to execute assignment 34 IDs; task records remain unchanged."
+          },
+          "git_result_path": "assets/exercises/pending/agent-03-common-variants-2026-10-03/generator-single/agent-03-others-040/ski-erg-machine/attempt-1.png",
+          "result_sha256": "698ba5a4e083928c09fc27d4bec710cfde45e6e79734ec5aab717e4c7549b9ce",
+          "technical_status": "passed",
+          "normalization": "Pillow LANCZOS aspect-preserving resize to 1024x1024 RGBA; original generator output retained.",
+          "errors": []
         }
       ]
     }
