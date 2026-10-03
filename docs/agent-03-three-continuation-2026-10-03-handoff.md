@@ -67,12 +67,23 @@ The user dispatched this continuation to the existing single worker. Generation 
 
 ## Execution results — package 043 completed
 
-Generation used one embedded `image_gen.imagegen` call per exact ID; attempt 2 was consumed for each. User review remains pending for all three. No visual QA, resizing or automatic retries were performed. The initial attempt-2 output for treadmill was recovered from the platform's cloud generated-images directory and copied unchanged; no extra generator call was made.
+Generation used one embedded `image_gen.imagegen` call per exact ID; attempt 2 was consumed for each. User review was initially pending. The user explicitly approved all three images at 2026-10-03T20:06:34Z; their technical size failures remain recorded. No visual QA, resizing or automatic retries were performed. The initial attempt-2 output for treadmill was recovered from the platform's cloud generated-images directory and copied unchanged; no extra generator call was made.
 
 | Exercise ID | Attempt | Technical check | Dimensions / alpha | user_review | SHA256 | Git PNG |
 |---|---:|---|---|---|---|---|
-| `treadmill-machine` | 2 | failed | [1254, 1254] RGBA; zero-alpha 1043907; corners [0, 0, 0, 0] | pending | `25726ee9ee5aa628e91d88ddc68cc56f6a5b08bb7cc06b78b77df436a52855ab` | `assets/exercises/pending/agent-03-three-continuation-2026-10-03/generator-single/agent-03-others-043/treadmill-machine/attempt-2.png` |
-| `reverse-grip-lat-pulldown-cable-machine` | 2 | failed | [1254, 1254] RGBA; zero-alpha 1044965; corners [0, 0, 0, 0] | pending | `99dbd2512372916b3ffb9aa82afaa78a97aece09e7342c171e3a94c840933cab` | `assets/exercises/pending/agent-03-three-continuation-2026-10-03/generator-single/agent-03-others-043/reverse-grip-lat-pulldown-cable-machine/attempt-2.png` |
-| `leg-press-horizontal-machine` | 2 | failed | [1254, 1254] RGBA; zero-alpha 840145; corners [0, 0, 0, 0] | pending | `fad59caf27ae38ba25cbe54ddfc369ab3288794f2e5bee5c4b14771b96bdf9aa` | `assets/exercises/pending/agent-03-three-continuation-2026-10-03/generator-single/agent-03-others-043/leg-press-horizontal-machine/attempt-2.png` |
+| `treadmill-machine` | 2 | failed | [1254, 1254] RGBA; zero-alpha 1043907; corners [0, 0, 0, 0] | approved | `25726ee9ee5aa628e91d88ddc68cc56f6a5b08bb7cc06b78b77df436a52855ab` | `assets/exercises/pending/agent-03-three-continuation-2026-10-03/generator-single/agent-03-others-043/treadmill-machine/attempt-2.png` |
+| `reverse-grip-lat-pulldown-cable-machine` | 2 | failed | [1254, 1254] RGBA; zero-alpha 1044965; corners [0, 0, 0, 0] | approved | `99dbd2512372916b3ffb9aa82afaa78a97aece09e7342c171e3a94c840933cab` | `assets/exercises/pending/agent-03-three-continuation-2026-10-03/generator-single/agent-03-others-043/reverse-grip-lat-pulldown-cable-machine/attempt-2.png` |
+| `leg-press-horizontal-machine` | 2 | failed | [1254, 1254] RGBA; zero-alpha 840145; corners [0, 0, 0, 0] | approved | `fad59caf27ae38ba25cbe54ddfc369ab3288794f2e5bee5c4b14771b96bdf9aa` | `assets/exercises/pending/agent-03-three-continuation-2026-10-03/generator-single/agent-03-others-043/leg-press-horizontal-machine/attempt-2.png` |
 
-All three returned images are valid transparent RGBA PNG files, but imagegen returned 1254x1254 for each instead of 1024x1024. This is recorded as a technical failure; the image bytes were left unchanged. Earlier attempt-1 failures and their full records remain in the resume ledger and preserved records. No old assignments, manifests, shared progress, approved PNGs, catalog, translations, work branch or Supabase were changed.
+All three returned images are valid transparent RGBA PNG files, but imagegen returned 1254x1254 for each instead of 1024x1024. This remains a technical failure; the image bytes were left unchanged. Earlier attempt-1 failures and their full records remain in the resume ledger and preserved records. During generation, old assignments, manifests, shared progress, approved PNGs, catalog, translations, work branch and Supabase were unchanged. After the user explicitly approved the three images, only their records in shared progress were updated to reflect approval and exact accepted paths/hashes.
+
+
+## Explicit user approval — 2026-10-03T20:06:34Z
+
+The user explicitly accepted all three attempt-2 images in package 043 and authorized publishing them with `user_review=approved`. Approval applies to the exact files below; their image bytes and SHA256 values are unchanged. No visual QA was performed (`agent_visual_review=not_performed`). The file-level technical check remains failed because each image is 1254×1254 instead of the requested 1024×1024.
+
+| Exercise ID | Accepted Git path | Accepted SHA256 |
+|---|---|---|
+| `treadmill-machine` | `assets/exercises/pending/agent-03-three-continuation-2026-10-03/generator-single/agent-03-others-043/treadmill-machine/attempt-2.png` | `25726ee9ee5aa628e91d88ddc68cc56f6a5b08bb7cc06b78b77df436a52855ab` |
+| `reverse-grip-lat-pulldown-cable-machine` | `assets/exercises/pending/agent-03-three-continuation-2026-10-03/generator-single/agent-03-others-043/reverse-grip-lat-pulldown-cable-machine/attempt-2.png` | `99dbd2512372916b3ffb9aa82afaa78a97aece09e7342c171e3a94c840933cab` |
+| `leg-press-horizontal-machine` | `assets/exercises/pending/agent-03-three-continuation-2026-10-03/generator-single/agent-03-others-043/leg-press-horizontal-machine/attempt-2.png` | `fad59caf27ae38ba25cbe54ddfc369ab3288794f2e5bee5c4b14771b96bdf9aa` |
