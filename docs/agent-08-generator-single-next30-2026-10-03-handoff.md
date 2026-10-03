@@ -35,7 +35,7 @@
 
 - Status: `completed_with_errors` at 2026-10-03T11:42:21.074148+00:00.
 - Calls recorded: 10; skips: 0.
-- Remote verification: pending until push.
+- Remote verification: PNG and manifest SHA256 values matched origin branch at commit 7aa96eb66933c6d41d05af30699f93599cf26eb5.
 
 - `straight-arm-lat-pulldown-cable-machine` — `assets/exercises/pending/agent-03-single-generator-next30-2026-10-03/generator-single/agent-03-others-032/straight-arm-lat-pulldown-cable-machine/attempt-1.png`; SHA256 `f7e3abf007d344f03c5bd3772fb998b4ade6a4924fcc3482aea32ec6573bebe9`; `user_review=pending`; technical `passed`.
 - `reverse-grip-lat-pulldown-cable-machine` — failed; error `image generation failed: http 429 Too Many Requests: Some("{\"error\":{\"type\":\"usage_limit_reached\",\"message\":\"The usage limit has been reached\",\"plan_type\":\"plus\",\"resets_at\":1791026557,\"eligible_promo\":null,\"limit_window_minutes\":null,\"resets_in_seconds\":10831}}")`.
