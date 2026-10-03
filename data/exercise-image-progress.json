@@ -16261,14 +16261,14 @@
         "exists_at_preparation": true,
         "sha256": "8260e83245c6da09118b738fea5121c4c6f448017680fb77f038c34b7361943a"
       },
-      "status": "not_started",
-      "included_in_generation": false,
+      "status": "approved",
+      "included_in_generation": true,
       "archived_inclusion_authorized": false,
       "blocked_by": [
         "pilot_not_approved"
       ],
-      "attempts": 0,
-      "style_version": null,
+      "attempts": 1,
+      "style_version": "v1",
       "visual_review": {
         "status": "not_reviewed",
         "reviewer": null,
@@ -16281,17 +16281,52 @@
         },
         "notes": null
       },
-      "result_path": null,
+      "result_path": "assets/exercises/pending/agent-02-machines-001/leg-extension-machine/attempt-1.png",
       "supabase_path": null,
       "supabase_upload_status": "not_configured",
       "last_error": null,
-      "attempt_history": [],
-      "result_sha256": null,
-      "technical_check": null,
-      "technical_check_details": null,
+      "attempt_history": [
+        {
+          "attempt": 1,
+          "id": "leg-extension-machine",
+          "batch_id": "agent-02-machines-001",
+          "style_version": "v1",
+          "tool": "image_gen.imagegen",
+          "started_at": "2026-10-01T11:36:13.710702+00:00",
+          "finished_at": "2026-10-01T11:37:53.994704+00:00",
+          "prompt": "Create one exercise illustration in the current Lightweight style v1, target 1024 x 1024 square PNG with a genuinely transparent background. Use the provided user-approved new pilot reference only for the same human identity, proportions, opaque materials and anatomical detail: one athletic hairless male anatomical figure, opaque silver-gray muscle surfaces, plain black shorts, barefoot. Preserve the reference appearance and colors; do not copy its pose, dumbbells, muscle highlights or composition. Show exactly one person in exactly one movement phase; no ghost limbs, phase sequence, arrows or collage. Neutral non-accented functional gym equipment with no invented brand, model, logo or guessed model-specific features. Do not recolor the equipment with muscle-highlight colors. Depict Leg Extension (Machine) (source exercise_id: leg-extension-machine) using a seated knee-extension lever machine. Torso: Seated upright against the backrest with trunk braced and pelvis on the seat. Arms: Both hands grasp side support handles; shoulders relaxed and arms stabilize the body without pulling. Legs: Both thighs remain against the seat while the lower legs straighten forward from the knees; front distal legs contact the padded lever, with feet visible and clear of the frame. Grip: Secure natural wrap around the side support handles; the source does not prescribe pronation or a special grip. Required support contacts: pelvis and thighs on seat; back against backrest; hands on side handles; front distal legs at the padded moving lever. Equipment: seat and adjustable backrest; padded distal-leg contact on a knee-extension lever; side support handles; connected lever pivot and stable machine frame. Functional mechanics: Use a standard compatible knee-extension lever: pivot aligned with the seated knees, a cushioned distal-leg contact driven forward/up as the knees straighten, and a complete linkage to resistance. No leg-curl thigh clamp or detached ankle pads. Show only this phase: Controlled top pause with both knees comfortably straightened and thighs unmoved; no snap or forced hyperextension. Camera: Side-front three-quarter view exposing the seat/thigh contact, knee pivot, distal-leg pad and extended feet. Highlight only catalog primary muscle group quadriceps with the exact base hue #F26445. The catalog lists no secondary groups; do not invent secondary highlights. Keep every other muscle silver-gray and opaque, without glow, transparency or an overall orange tint. Keep the full person and all necessary equipment parts, supports, moving levers and relevant cable routing inside the square with clear margins. Reduce scene scale or adjust the camera to fit, never crop or distort body or machine proportions. Keep anatomical joints aligned with the working machine path and all hand, foot and pad contacts physically plausible. No floating handles, disconnected moving arms, cable intersections through the body, text, frame, UI, room decor, white backdrop or checkerboard. The transparent background must contain actual zero-alpha pixels. Use the exact attached English source for technique and safety; do not add a new exercise variant, load, angle or equipment accessory.",
+          "status": "completed",
+          "result_path": "assets/exercises/pending/agent-02-machines-001/leg-extension-machine/attempt-1.png",
+          "result_sha256": "94b36902a0b60941d43539ecd7881775d012dd6bfea1bac20fb21d3e0fb8a21b",
+          "width": 1254,
+          "height": 1254,
+          "mode": "RGBA",
+          "zero_alpha_pixels": 831435,
+          "technical_check": "passed",
+          "user_review": "approved",
+          "agent_visual_review": "not_performed",
+          "approved_at": "2026-10-03T18:34:11+00:00"
+        }
+      ],
+      "result_sha256": "94b36902a0b60941d43539ecd7881775d012dd6bfea1bac20fb21d3e0fb8a21b",
+      "technical_check": "passed",
+      "technical_check_details": [],
       "agent_visual_review": "not_performed",
       "agent_visual_review_notes": [],
-      "user_review": "pending"
+      "user_review": "approved",
+      "accepted_path": "assets/exercises/pending/agent-02-machines-001/leg-extension-machine/attempt-1.png",
+      "accepted_sha256": "94b36902a0b60941d43539ecd7881775d012dd6bfea1bac20fb21d3e0fb8a21b",
+      "accepted_at": "2026-10-03T18:34:11+00:00",
+      "user_reviewed_at": "2026-10-03T18:34:11+00:00",
+      "user_review_record": {
+        "decision": "approved",
+        "reviewed_by": "user",
+        "approved_at": "2026-10-03T18:34:11+00:00",
+        "exercise_id": "leg-extension-machine",
+        "accepted_path": "assets/exercises/pending/agent-02-machines-001/leg-extension-machine/attempt-1.png",
+        "accepted_sha256": "94b36902a0b60941d43539ecd7881775d012dd6bfea1bac20fb21d3e0fb8a21b",
+        "note": "User explicitly approved the current image in chat."
+      }
     },
     "leg-press-machine": {
       "id": "leg-press-machine",
@@ -33072,5 +33107,5 @@
       "verification_method": "git fetch + ls-remote + ls-tree + SHA256 of every fetched PNG blob"
     }
   ],
-  "last_user_review_update": "2026-10-03T18:29:52+00:00"
+  "last_user_review_update": "2026-10-03T18:34:11+00:00"
 }
