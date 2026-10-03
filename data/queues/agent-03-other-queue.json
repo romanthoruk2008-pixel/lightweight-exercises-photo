@@ -239,8 +239,8 @@
   ],
   "default_pending_note": "Untouched not_started records carry raw user_review=pending by default. They have no submitted result and were unknown in inventory; they are not awaiting review. Existing submitted pending results are excluded by PNG/result/attempt checks.",
   "ordering": "First 30 concrete simple compositions; then simple bodyweight/dumbbell/barbell/bench, then bars/rings/bands/suspension, then other explicitly specified apparatus. No exact angles/loads/attachments invented.",
-  "eligible_count": 350,
-  "prepared_count": 350,
+  "eligible_count": 363,
+  "prepared_count": 363,
   "remaining_unprepared_count": 0,
   "eligible_exercise_ids": [
     "standing-calf-raise",
@@ -592,7 +592,20 @@
     "single-arm-triceps-pushdown-cable-machine",
     "decline-bench-press-machine",
     "chest-dip-assisted-machine",
-    "ski-erg-machine"
+    "ski-erg-machine",
+    "waiter-curl-dumbbell",
+    "single-leg-standing-calf-raise-barbell",
+    "press-under-barbell",
+    "back-extension-machine",
+    "seated-dip-machine",
+    "seated-triceps-press-machine",
+    "shrug-machine",
+    "belt-squat-machine",
+    "rear-kick-machine",
+    "single-leg-standing-calf-raise-machine",
+    "bench-press-cable-machine",
+    "reverse-fly-single-arm-cable-machine",
+    "squat-row-machine"
   ],
   "first_launch_ids": [
     "standing-calf-raise",
@@ -667,7 +680,9 @@
     "data/batches/agent-03-others-037.json",
     "data/batches/agent-03-others-038.json",
     "data/batches/agent-03-others-039.json",
-    "data/batches/agent-03-others-040.json"
+    "data/batches/agent-03-others-040.json",
+    "data/batches/agent-03-others-041.json",
+    "data/batches/agent-03-others-042.json"
   ],
   "exclusion_counts_disjoint": {
     "png_already_saved": 73,
@@ -22013,6 +22028,244 @@
       "style_version": "v1-neutral-primary-2026-10-02",
       "assignment_registry_path": "data/assignments/agent-03-common-variants-2026-10-03.json",
       "current_task_path": "data/batches/agent-03-others-040.json"
+    },
+    {
+      "exercise_id": "waiter-curl-dumbbell",
+      "name": "Waiter Curl (Dumbbell)",
+      "equipment": "dumbbell",
+      "primary_muscle": "biceps",
+      "secondary_muscles": [
+        "forearms"
+      ],
+      "source_catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+      "source_catalog_record_sha256": "2cd1fe8e028ad86e3dda205fdf7ebac6934ec329984856d7622bcedaa5f70103",
+      "source_english_sha256": "9cf0c22d26de70ee8d93bf39305a2e14890f8a34e1e20cb312806e791925c6cb",
+      "status": "ready",
+      "assigned_generator": "generator-single",
+      "batch_id": "agent-03-others-041",
+      "prompt_prepared": true,
+      "style_version": "v1",
+      "assignment_registry_path": "data/assignments/agent-03-final13-user-variants-2026-10-03.json",
+      "current_task_path": "data/batches/agent-03-others-041.json"
+    },
+    {
+      "exercise_id": "single-leg-standing-calf-raise-barbell",
+      "name": "Single Leg Standing Calf Raise (Barbell)",
+      "equipment": "barbell",
+      "primary_muscle": "calves",
+      "secondary_muscles": [],
+      "source_catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+      "source_catalog_record_sha256": "656d280892804bb074dce5a0db05330a8e48536db197a7181873c3b03f8841e5",
+      "source_english_sha256": "a0c7bc8bae748dfde9096ed49ea265fd31ebb09570afcd0e582c830f82b5b8cc",
+      "status": "ready",
+      "assigned_generator": "generator-single",
+      "batch_id": "agent-03-others-041",
+      "prompt_prepared": true,
+      "style_version": "v1",
+      "assignment_registry_path": "data/assignments/agent-03-final13-user-variants-2026-10-03.json",
+      "current_task_path": "data/batches/agent-03-others-041.json"
+    },
+    {
+      "exercise_id": "press-under-barbell",
+      "name": "Press Under",
+      "equipment": "barbell",
+      "primary_muscle": "full_body",
+      "secondary_muscles": [],
+      "source_catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+      "source_catalog_record_sha256": "293ebef8922fc981a365854b48c15327a120272cd9e19e78ddb5754f4711ec36",
+      "source_english_sha256": "58e1a6738cb273e5228a5039eec02eeb0040e45110b0a22f2ad83d1b87b424ff",
+      "status": "ready",
+      "assigned_generator": "generator-single",
+      "batch_id": "agent-03-others-041",
+      "prompt_prepared": true,
+      "style_version": "v1-neutral-primary-2026-10-02",
+      "assignment_registry_path": "data/assignments/agent-03-final13-user-variants-2026-10-03.json",
+      "current_task_path": "data/batches/agent-03-others-041.json"
+    },
+    {
+      "exercise_id": "back-extension-machine",
+      "name": "Back Extension (Machine)",
+      "equipment": "machine",
+      "primary_muscle": "lower_back",
+      "secondary_muscles": [],
+      "source_catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+      "source_catalog_record_sha256": "527827d76629d528f731d22fac04eee199ae7991c1d350bcc670dd71d8a379d9",
+      "source_english_sha256": "ba5702b65e62ad3c307e2a8f01f588dccb859c4a2f55677baec3bd2696ff7006",
+      "status": "ready",
+      "assigned_generator": "generator-single",
+      "batch_id": "agent-03-others-041",
+      "prompt_prepared": true,
+      "style_version": "v1",
+      "assignment_registry_path": "data/assignments/agent-03-final13-user-variants-2026-10-03.json",
+      "current_task_path": "data/batches/agent-03-others-041.json"
+    },
+    {
+      "exercise_id": "seated-dip-machine",
+      "name": "Seated Dip Machine",
+      "equipment": "machine",
+      "primary_muscle": "triceps",
+      "secondary_muscles": [
+        "chest",
+        "shoulders"
+      ],
+      "source_catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+      "source_catalog_record_sha256": "49f994bf1696e32173c93c79a04c2115c74a5fecae9a9bb24e81620869324cb9",
+      "source_english_sha256": "43201839d6423136b550a99260fe460f1ba538586e794baec4a62300ced1b33e",
+      "status": "ready",
+      "assigned_generator": "generator-single",
+      "batch_id": "agent-03-others-041",
+      "prompt_prepared": true,
+      "style_version": "v1",
+      "assignment_registry_path": "data/assignments/agent-03-final13-user-variants-2026-10-03.json",
+      "current_task_path": "data/batches/agent-03-others-041.json"
+    },
+    {
+      "exercise_id": "seated-triceps-press-machine",
+      "name": "Seated Triceps Press",
+      "equipment": "machine",
+      "primary_muscle": "triceps",
+      "secondary_muscles": [],
+      "source_catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+      "source_catalog_record_sha256": "c9894e0857a2fd288f2afd6ef7053f9c97ee3f6983c80d224d949f3ec1e068f7",
+      "source_english_sha256": "cfa5deb9e74254514b472f9c5b0171f8acc6cef4ddd02a7ef0817ab660dc6cc4",
+      "status": "ready",
+      "assigned_generator": "generator-single",
+      "batch_id": "agent-03-others-041",
+      "prompt_prepared": true,
+      "style_version": "v1",
+      "assignment_registry_path": "data/assignments/agent-03-final13-user-variants-2026-10-03.json",
+      "current_task_path": "data/batches/agent-03-others-041.json"
+    },
+    {
+      "exercise_id": "shrug-machine",
+      "name": "Shrug (Machine)",
+      "equipment": "machine",
+      "primary_muscle": "traps",
+      "secondary_muscles": [
+        "neck"
+      ],
+      "source_catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+      "source_catalog_record_sha256": "06e414cc7d9dea92b3775639b80a1ce776ebf024b6c5602b6001de9a136c6f2b",
+      "source_english_sha256": "fdeb602924909301f89f472a3ecd25842914d57523c1e92b1c53924a447e1075",
+      "status": "ready",
+      "assigned_generator": "generator-single",
+      "batch_id": "agent-03-others-041",
+      "prompt_prepared": true,
+      "style_version": "v1",
+      "assignment_registry_path": "data/assignments/agent-03-final13-user-variants-2026-10-03.json",
+      "current_task_path": "data/batches/agent-03-others-041.json"
+    },
+    {
+      "exercise_id": "belt-squat-machine",
+      "name": "Belt Squat (Machine)",
+      "equipment": "machine",
+      "primary_muscle": "quadriceps",
+      "secondary_muscles": [
+        "glutes",
+        "hamstrings"
+      ],
+      "source_catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+      "source_catalog_record_sha256": "401ad8448baa363e50a9b9c4a473a612adfcca1141d1dddbbd439613ca7a0ce3",
+      "source_english_sha256": "afa6b4acd985bbba774102d0ebde674c75171e5c8d923cd117261dc34a3e3e75",
+      "status": "ready",
+      "assigned_generator": "generator-single",
+      "batch_id": "agent-03-others-041",
+      "prompt_prepared": true,
+      "style_version": "v1",
+      "assignment_registry_path": "data/assignments/agent-03-final13-user-variants-2026-10-03.json",
+      "current_task_path": "data/batches/agent-03-others-041.json"
+    },
+    {
+      "exercise_id": "rear-kick-machine",
+      "name": "Rear Kick (Machine)",
+      "equipment": "machine",
+      "primary_muscle": "glutes",
+      "secondary_muscles": [
+        "hamstrings"
+      ],
+      "source_catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+      "source_catalog_record_sha256": "0a4e4bc4c6fa1f6a74a44ef58e280c5c7d7f87337518631fd21b78d99ca6259b",
+      "source_english_sha256": "a506608d7206d1f90287e90416c9edf45a0dc26f442bfa87d43592739cc6394f",
+      "status": "ready",
+      "assigned_generator": "generator-single",
+      "batch_id": "agent-03-others-041",
+      "prompt_prepared": true,
+      "style_version": "v1",
+      "assignment_registry_path": "data/assignments/agent-03-final13-user-variants-2026-10-03.json",
+      "current_task_path": "data/batches/agent-03-others-041.json"
+    },
+    {
+      "exercise_id": "single-leg-standing-calf-raise-machine",
+      "name": "Single Leg Standing Calf Raise (Machine)",
+      "equipment": "machine",
+      "primary_muscle": "calves",
+      "secondary_muscles": [],
+      "source_catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+      "source_catalog_record_sha256": "467f355652b2266f4e16ee5477d283680e3225829a176ee65d2c3e04f8d65a67",
+      "source_english_sha256": "8837d920a549ed06d2486665b122feefa045854a73d6b46fb578977df171d02a",
+      "status": "ready",
+      "assigned_generator": "generator-single",
+      "batch_id": "agent-03-others-041",
+      "prompt_prepared": true,
+      "style_version": "v1",
+      "assignment_registry_path": "data/assignments/agent-03-final13-user-variants-2026-10-03.json",
+      "current_task_path": "data/batches/agent-03-others-041.json"
+    },
+    {
+      "exercise_id": "bench-press-cable-machine",
+      "name": "Bench Press (Cable)",
+      "equipment": "machine",
+      "primary_muscle": "chest",
+      "secondary_muscles": [
+        "shoulders",
+        "triceps"
+      ],
+      "source_catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+      "source_catalog_record_sha256": "6432e0c359f05665391f074dbf53f6734457aba2ab4b75d85626e07a7cc6bc2d",
+      "source_english_sha256": "db2af11c11dd558c635e87f0dbc751c7bf6e24dd70876a15ce5d81b215b9ecfc",
+      "status": "ready",
+      "assigned_generator": "generator-single",
+      "batch_id": "agent-03-others-042",
+      "prompt_prepared": true,
+      "style_version": "v1",
+      "assignment_registry_path": "data/assignments/agent-03-final13-user-variants-2026-10-03.json",
+      "current_task_path": "data/batches/agent-03-others-042.json"
+    },
+    {
+      "exercise_id": "reverse-fly-single-arm-cable-machine",
+      "name": "Reverse Fly Single Arm (Cable)",
+      "equipment": "machine",
+      "primary_muscle": "shoulders",
+      "secondary_muscles": [
+        "upper_back"
+      ],
+      "source_catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+      "source_catalog_record_sha256": "1e9a448ac91481b409ef67dba7d6474f8ee3c8112961d11886bc1d3e38f2d5dd",
+      "source_english_sha256": "deb716d30b49588325ff71227e65a5c124df41e78968a693d9f410950d6979c7",
+      "status": "ready",
+      "assigned_generator": "generator-single",
+      "batch_id": "agent-03-others-042",
+      "prompt_prepared": true,
+      "style_version": "v1",
+      "assignment_registry_path": "data/assignments/agent-03-final13-user-variants-2026-10-03.json",
+      "current_task_path": "data/batches/agent-03-others-042.json"
+    },
+    {
+      "exercise_id": "squat-row-machine",
+      "name": "Squat Row",
+      "equipment": "machine",
+      "primary_muscle": "full_body",
+      "secondary_muscles": [],
+      "source_catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+      "source_catalog_record_sha256": "a32f553993d54612836ca070ccf08a2ddcc8edc8be4e33129d36640bac5203ee",
+      "source_english_sha256": "d559daea27b7f1a01443702c6e32f127b2bde416d13263686f2f4e98be3f9aa3",
+      "status": "ready",
+      "assigned_generator": "generator-single",
+      "batch_id": "agent-03-others-042",
+      "prompt_prepared": true,
+      "style_version": "v1-neutral-primary-2026-10-02",
+      "assignment_registry_path": "data/assignments/agent-03-final13-user-variants-2026-10-03.json",
+      "current_task_path": "data/batches/agent-03-others-042.json"
     }
   ],
   "last_live_check": {
@@ -22031,7 +22284,7 @@
     "prepared_count": 12,
     "shortfall": 38
   },
-  "updated_at": "2026-10-03T13:48:44.550608+00:00",
+  "updated_at": "2026-10-03T14:39:00.317564+00:00",
   "next_launch_ids": [
     "21s-biceps-curl-barbell",
     "arnold-press-dumbbell",
@@ -22636,40 +22889,19 @@
     }
   ],
   "latest_launch_ids": [
-    "bicycle-crunch",
-    "bicycle-crunch-raised-legs",
-    "pushup-weighted",
-    "side-bend-dumbbell",
-    "single-arm-landmine-press-barbell",
-    "nordic-hamstrings-curls",
-    "muscle-up-machine",
-    "back-extension-weighted-hyperextension-machine",
-    "butterfly-pec-deck-machine",
-    "calf-extension-machine",
-    "calf-press-machine",
-    "chest-fly-machine",
-    "crunch-machine",
-    "glute-ham-raise-machine",
-    "glute-kickback-machine",
-    "hack-squat-machine",
-    "hip-abduction-machine",
-    "pullup-assisted-machine",
-    "reverse-hyperextension-machine",
-    "seated-calf-raise-machine",
-    "seated-leg-curl-machine",
-    "reverse-curl-cable-machine",
-    "standing-cable-glute-kickbacks-machine",
-    "cable-twist-down-to-up-machine",
-    "cable-twist-up-to-down-machine",
-    "hip-adduction-cable-machine",
-    "hip-abduction-cable-machine",
-    "single-arm-lateral-raise-cable-machine",
-    "behind-the-back-curl-cable-machine",
-    "overhead-curl-cable-machine",
-    "single-arm-triceps-pushdown-cable-machine",
-    "decline-bench-press-machine",
-    "chest-dip-assisted-machine",
-    "ski-erg-machine"
+    "waiter-curl-dumbbell",
+    "single-leg-standing-calf-raise-barbell",
+    "press-under-barbell",
+    "back-extension-machine",
+    "seated-dip-machine",
+    "seated-triceps-press-machine",
+    "shrug-machine",
+    "belt-squat-machine",
+    "rear-kick-machine",
+    "single-leg-standing-calf-raise-machine",
+    "bench-press-cable-machine",
+    "reverse-fly-single-arm-cable-machine",
+    "squat-row-machine"
   ],
   "previous_batches_live_git_state": {
     "audited_commits": {
@@ -27910,11 +28142,7 @@
   "style_decision_status": "approved",
   "style_decision_path": "data/style-decisions/agent-03-neutral-primary-approved.json",
   "current_preparation_style_version": "v1-neutral-primary-2026-10-02",
-  "current_blocked_ids": [
-    "waiter-curl-dumbbell",
-    "single-leg-standing-calf-raise-barbell",
-    "press-under-barbell"
-  ],
+  "current_blocked_ids": [],
   "neutral_primary_preparation": {
     "status": "ready_preparation_only_technique_recommendations_pending",
     "prepared_at": "2026-10-02T17:33:44.288199+03:00",
@@ -28110,10 +28338,10 @@
     "decision_sheet_path": "data/queues/agent-03-user-decisions-2026-10-02.json",
     "generation_authorized_now": false,
     "existing_assignments_and_batches_unchanged": true,
-    "phase2_execution_gate": "Existing 034–036 first; then same single worker 037–040. Unconfirmed-PNG rework is a separate plan requiring live approval/ownership/prompt validation; never touch approved/accepted IDs.",
+    "phase2_execution_gate": "Existing 037–040 first, then the final13 continuation for the same single worker. Three older no-PNG assignments and unconfirmed revision planning queue are unchanged; protect all approved IDs.",
     "latest_equipment_decisions_path": "data/technique-decisions/agent-03-user-answers-2026-10-03.json",
-    "latest_equipment_allocation_path": "data/assignments/agent-03-common-variants-2026-10-03.json",
-    "equipment_clarifications_path": "data/queues/agent-03-common-variants-2026-10-03-blocked.json"
+    "latest_equipment_allocation_path": "data/assignments/agent-03-final13-user-variants-2026-10-03.json",
+    "equipment_clarifications_path": "data/queues/agent-03-final13-user-variants-2026-10-03-blocked.json"
   },
   "ownership_interpretation_update": {
     "historical_night_scope_count": 15,
@@ -28263,20 +28491,9 @@
     "older_tasks_unchanged": true,
     "generation_calls": 0
   },
-  "current_equipment_blocked_ids": [
-    "single-leg-standing-calf-raise-machine",
-    "bench-press-cable-machine",
-    "squat-row-machine",
-    "back-extension-machine",
-    "belt-squat-machine",
-    "rear-kick-machine",
-    "seated-dip-machine",
-    "seated-triceps-press-machine",
-    "shrug-machine",
-    "reverse-fly-single-arm-cable-machine"
-  ],
-  "current_equipment_blocked_count": 10,
-  "current_equipment_blocked_path": "data/queues/agent-03-common-variants-2026-10-03-blocked.json",
+  "current_equipment_blocked_ids": [],
+  "current_equipment_blocked_count": 0,
+  "current_equipment_blocked_path": "data/queues/agent-03-final13-user-variants-2026-10-03-blocked.json",
   "current_equipment_blocked_selector": "exercises",
   "single_generator_round3": {
     "assignment_path": "data/assignments/agent-03-single-generator-round3-2026-10-03.json",
@@ -28303,7 +28520,7 @@
       "reason": "Remaining 25 newly reviewed candidates require technique/contact clarification; no invented replacement."
     }
   },
-  "current_technique_blocked_path": "data/queues/agent-03-common-variants-2026-10-03-blocked.json",
+  "current_technique_blocked_path": "data/queues/agent-03-final13-user-variants-2026-10-03-blocked.json",
   "common_variant_preparation": {
     "assignment_path": "data/assignments/agent-03-common-variants-2026-10-03.json",
     "batch_paths": [
@@ -28325,5 +28542,19 @@
     "preserve_all_old_PNGs_and_attempts": true,
     "shared_review_statuses_unchanged": true,
     "planning_only_no_new_rework_assignment": true
+  },
+  "final13_user_variant_preparation": {
+    "assignment_path": "data/assignments/agent-03-final13-user-variants-2026-10-03.json",
+    "batch_paths": [
+      "data/batches/agent-03-others-041.json",
+      "data/batches/agent-03-others-042.json"
+    ],
+    "exercise_count": 13,
+    "generator": "generator-single",
+    "execution_branch": "agent-08-generator-single-2026-10-03",
+    "handoff_path": "docs/agent-03-final13-user-variants-2026-10-03-handoff.md",
+    "source_decisions_path": "data/technique-decisions/agent-03-final13-user-variants-2026-10-03.json",
+    "catalogue_conflicts_path": "data/audits/agent-03-final13-user-variants-2026-10-03-catalogue-conflicts.json",
+    "generation_calls": 0
   }
 }
