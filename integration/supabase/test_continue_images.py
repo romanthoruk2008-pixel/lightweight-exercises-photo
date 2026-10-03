@@ -184,6 +184,37 @@ class ContinuationTests(unittest.TestCase):
         row['user_review'] = 'pending'
         self.assertIsNone(runner.manifest_user_evidence(row, doc, 'sample', 'a' * 64))
 
+    def round3_manifest(self):
+        row = {'exercise_id': 'sample', 'user_review': 'approved', 'accepted_attempt': 1,
+               'accepted_path': 'assets/exercises/sample/attempt-1.png',
+               'accepted_sha256': 'a' * 64, 'accepted_at': 'timestamp',
+               'approval_source': 'explicit_user_approval_in_chat'}
+        row['attempt_history'] = [{'attempt': 1, **{k: row[k] for k in (
+            'user_review', 'accepted_path', 'accepted_sha256', 'accepted_at', 'approval_source')}}]
+        return row, {'batches': [{'exercises': [row]}]}
+
+    def test_round3_requires_exact_explicitly_accepted_attempt(self):
+        row, doc = self.round3_manifest()
+        evidence = runner.explicit_evidence({}, [('manifest.json', doc)], 'sample', 'a' * 64)
+        self.assertEqual(evidence['accepted_attempt_approval']['attempt'], 1)
+        self.assertIsNone(runner.manifest_user_evidence(row, doc, 'sample', 'b' * 64))
+        row['accepted_attempt'] = 2
+        self.assertIsNone(runner.manifest_user_evidence(row, doc, 'sample', 'a' * 64))
+
+    def test_round3_conflicting_attempt_approval_is_rejected(self):
+        for field, value in [('user_review', 'pending'), ('approval_source', 'agent_review'),
+                             ('accepted_at', 'different'), ('accepted_path', 'other.png'),
+                             ('accepted_sha256', 'b' * 64)]:
+            with self.subTest(field=field):
+                row, doc = self.round3_manifest()
+                row['attempt_history'][0][field] = value
+                self.assertIsNone(runner.manifest_user_evidence(row, doc, 'sample', 'a' * 64))
+
+    def test_round3_marker_without_attempt_proof_does_not_approve(self):
+        row, doc = self.round3_manifest()
+        row['attempt_history'] = []
+        self.assertIsNone(runner.manifest_user_evidence(row, doc, 'sample', 'a' * 64))
+
 
 if __name__ == '__main__':
     unittest.main()

@@ -143,6 +143,22 @@ def manifest_user_evidence(row, doc, eid, sha):
             and row.get('user_reviewed_at') == approval['reviewed_at']):
         return {'file': {k: row[k] for k in ('exercise_id', 'accepted_path',
                 'accepted_sha256', 'user_reviewed_at')}, 'user_approval': approval}
+    # Round3 has exact per-file approval duplicated on the explicitly accepted
+    # attempt. A marker alone or approval of another attempt is insufficient.
+    if (row.get('approval_source') == 'explicit_user_approval_in_chat'
+            and row.get('accepted_at') and row.get('accepted_attempt') is not None):
+        for attempt in row.get('attempt_history', []):
+            if (isinstance(attempt, dict)
+                    and attempt.get('attempt') == row['accepted_attempt']
+                    and attempt.get('user_review') == 'approved'
+                    and attempt.get('approval_source') == row['approval_source']
+                    and attempt.get('accepted_at') == row['accepted_at']
+                    and attempt.get('accepted_path') == row['accepted_path']
+                    and attempt.get('accepted_sha256') == sha):
+                return {'file': {k: row[k] for k in ('exercise_id', 'accepted_path',
+                    'accepted_sha256', 'accepted_at', 'accepted_attempt', 'approval_source')},
+                    'accepted_attempt_approval': {k: attempt[k] for k in ('attempt',
+                    'user_review', 'accepted_path', 'accepted_sha256', 'accepted_at', 'approval_source')}}
     # Generator-single records scoped approval events; excluded IDs and later
     # decisions must not be treated as approval of an earlier attempt.
     events = doc.get('user_approval_events', [])
