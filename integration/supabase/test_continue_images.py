@@ -114,6 +114,42 @@ class ContinuationTests(unittest.TestCase):
         row['result_sha256'] = row.pop('accepted_sha256')
         self.assertIsNone(runner.explicit_evidence({}, [('manifest.json', doc)], 'sample', 'a' * 64))
 
+    def single_generator_manifest(self):
+        row = {'exercise_id': 'sample', 'user_review': 'approved',
+               'accepted_sha256': 'a' * 64, 'accepted_path': 'assets/exercises/sample.png',
+               'accepted_at': 'timestamp', 'approval_source': 'explicit_user_approval_in_chat'}
+        event = {'approved_at': 'timestamp', 'approval_source': 'explicit_user_approval_in_chat',
+                 'approved_exercise_ids': ['sample'], 'not_approved_exercise_ids': [],
+                 'failed_without_png_ids': []}
+        return row, {'batches': [{'exercises': [row]}], 'user_approval_events': [event]}
+
+    def test_single_generator_event_requires_exact_accepted_hash_and_timestamp(self):
+        row, doc = self.single_generator_manifest()
+        self.assertIsNotNone(runner.explicit_evidence({}, [('manifest.json', doc)], 'sample', 'a' * 64))
+        self.assertIsNone(runner.manifest_user_evidence(row, doc, 'sample', 'b' * 64))
+        row['accepted_at'] = 'different'
+        self.assertIsNone(runner.manifest_user_evidence(row, doc, 'sample', 'a' * 64))
+
+    def test_single_generator_exclusions_and_later_decisions_take_precedence(self):
+        for field in ['not_approved_exercise_ids', 'failed_without_png_ids']:
+            with self.subTest(field=field):
+                row, doc = self.single_generator_manifest()
+                doc['user_approval_events'][0][field] = ['sample']
+                self.assertIsNone(runner.manifest_user_evidence(row, doc, 'sample', 'a' * 64))
+        row, doc = self.single_generator_manifest()
+        doc['user_approval_events'].append({'not_approved_exercise_ids': ['sample']})
+        self.assertIsNone(runner.manifest_user_evidence(row, doc, 'sample', 'a' * 64))
+
+    def test_single_generator_pending_git_path_is_counted_without_approval(self):
+        path = 'assets/exercises/sample/attempt-1.png'
+        row = {'exercise_id': 'sample', 'user_review': 'pending',
+               'result_sha256': 'a' * 64, 'planned_git_png_path': path}
+        doc = {'batches': [{'exercises': [row]}]}
+        records = runner.manifest_pending_records([('manifest.json', doc)], {path})
+        self.assertEqual(len(records), 1)
+        self.assertEqual(records[0]['path'], path)
+        self.assertIsNone(runner.explicit_evidence({}, [('manifest.json', doc)], 'sample', 'a' * 64))
+
 
 if __name__ == '__main__':
     unittest.main()

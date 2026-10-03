@@ -136,6 +136,25 @@ def manifest_user_evidence(row, doc, eid, sha):
         return {'file': {k: row.get(k) for k in ('exercise_id', 'accepted_path',
                 'accepted_sha256', 'user_approved_at', 'user_approval_note',
                 'technical_issue_accepted_by_user')}, 'user_approval': approval}
+    # Generator-single records scoped approval events; excluded IDs and later
+    # decisions must not be treated as approval of an earlier attempt.
+    events = doc.get('user_approval_events', [])
+    if isinstance(events, list):
+        for event in reversed(events):
+            if not isinstance(event, dict):
+                continue
+            excluded = event.get('not_approved_exercise_ids', []) + event.get('failed_without_png_ids', [])
+            approved = event.get('approved_exercise_ids', [])
+            if eid not in approved and eid not in excluded:
+                continue
+            if (eid not in excluded and eid in approved
+                    and event.get('approval_source') == 'explicit_user_approval_in_chat'
+                    and row.get('approval_source') == event['approval_source']
+                    and event.get('approved_at')
+                    and row.get('accepted_at') == event['approved_at']):
+                return {'file': {k: row[k] for k in ('exercise_id', 'accepted_path',
+                    'accepted_sha256', 'accepted_at', 'approval_source')}, 'user_approval_event': event}
+            return None
     return None
 
 
@@ -201,7 +220,8 @@ def manifest_pending_records(manifests, files):
             if not sha:
                 continue
             paths = [path_of(row.get(k)) for k in ('result_path', 'repository_path',
-                'relative_png_path', 'planned_branch_path', 'branch_output_path', 'branch_result_path')]
+                'relative_png_path', 'planned_branch_path', 'branch_output_path', 'branch_result_path',
+                'planned_git_png_path')]
             path = next((p for p in paths if p in files), None)
             if path:
                 result.append({'exercise_id': row['exercise_id'], 'path': path,
