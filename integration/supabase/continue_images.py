@@ -136,6 +136,13 @@ def manifest_user_evidence(row, doc, eid, sha):
         return {'file': {k: row.get(k) for k in ('exercise_id', 'accepted_path',
                 'accepted_sha256', 'user_approved_at', 'user_approval_note',
                 'technical_issue_accepted_by_user')}, 'user_approval': approval}
+    excluded = approval.get('excluded_pending_exercise_ids', []) + approval.get('failed_without_png_exercise_ids', [])
+    if (approval.get('decision') == 'explicit_user_acceptance'
+            and eid in approval.get('accepted_exercise_ids', []) and eid not in excluded
+            and approval.get('reviewed_at')
+            and row.get('user_reviewed_at') == approval['reviewed_at']):
+        return {'file': {k: row[k] for k in ('exercise_id', 'accepted_path',
+                'accepted_sha256', 'user_reviewed_at')}, 'user_approval': approval}
     # Generator-single records scoped approval events; excluded IDs and later
     # decisions must not be treated as approval of an earlier attempt.
     events = doc.get('user_approval_events', [])

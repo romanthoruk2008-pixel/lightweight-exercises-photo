@@ -150,6 +150,40 @@ class ContinuationTests(unittest.TestCase):
         self.assertEqual(records[0]['path'], path)
         self.assertIsNone(runner.explicit_evidence({}, [('manifest.json', doc)], 'sample', 'a' * 64))
 
+    def next30_manifest(self):
+        row = {'exercise_id': 'sample', 'user_review': 'approved',
+               'accepted_sha256': 'a' * 64, 'accepted_path': 'assets/exercises/sample.png',
+               'user_reviewed_at': 'timestamp'}
+        approval = {'decision': 'explicit_user_acceptance', 'reviewed_at': 'timestamp',
+                    'accepted_exercise_ids': ['sample'], 'excluded_pending_exercise_ids': [],
+                    'failed_without_png_exercise_ids': []}
+        return row, {'batches': [{'exercises': [row]}], 'user_approval': approval}
+
+    def test_next30_explicit_acceptance_requires_exact_hash_and_review_time(self):
+        row, doc = self.next30_manifest()
+        self.assertIsNotNone(runner.explicit_evidence({}, [('manifest.json', doc)], 'sample', 'a' * 64))
+        self.assertIsNone(runner.manifest_user_evidence(row, doc, 'sample', 'b' * 64))
+        row['user_reviewed_at'] = 'different'
+        self.assertIsNone(runner.manifest_user_evidence(row, doc, 'sample', 'a' * 64))
+
+    def test_next30_acceptance_exclusions_and_missing_decision_are_rejected(self):
+        for field, value in [('excluded_pending_exercise_ids', ['sample']),
+                             ('failed_without_png_exercise_ids', ['sample']),
+                             ('accepted_exercise_ids', []), ('decision', 'pending'),
+                             ('reviewed_at', None)]:
+            with self.subTest(field=field):
+                row, doc = self.next30_manifest()
+                doc['user_approval'][field] = value
+                self.assertIsNone(runner.manifest_user_evidence(row, doc, 'sample', 'a' * 64))
+
+    def test_next30_approval_does_not_infer_accepted_hash_or_accept_pending(self):
+        row, doc = self.next30_manifest()
+        row['result_sha256'] = row.pop('accepted_sha256')
+        self.assertIsNone(runner.explicit_evidence({}, [('manifest.json', doc)], 'sample', 'a' * 64))
+        row['accepted_sha256'] = 'a' * 64
+        row['user_review'] = 'pending'
+        self.assertIsNone(runner.manifest_user_evidence(row, doc, 'sample', 'a' * 64))
+
 
 if __name__ == '__main__':
     unittest.main()

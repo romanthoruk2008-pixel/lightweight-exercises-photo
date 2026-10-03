@@ -207,3 +207,31 @@ PNG staging поза Git: `/workspace/supabase-image-staging/<source_commit>/<so
 - `agent-07-generator-b-2026-10-02`: `9dfc775a57ff6856995addbaf28f303661a7b5de`.
 - `agent-08-generator-single-2026-10-03`: `436cb279a252762f8b6e3f565bc05079c4e1c18a`.
 - `work`: `b0385b7e2f3382d545a6dff5304c81ba3c771096`.
+
+<!-- continuation:continuation-2026-10-03-03 -->
+
+## Продовження схвалених PNG — continuation-2026-10-03-03
+
+Поточна контрольна точка: `2026-10-03T12:26:52.823806+00:00`.
+Нових Storage uploads: 25; завершених перенесень: 25; заміни прийнятих версій: 0.
+Попередніх перевірено: 326; pending пропущено: 9.
+Артефакти: `uploads/continuation-2026-10-03-03/plan.json`, `batch-*.json`, `summary.json`.
+Каталог не імпортувався повторно. Використано `continue_images.py` і перевірений `import_catalog_images.transfer_one`; лише Storage POST без upsert і п’ять image-полів із concurrency filters. Старі PNG не видаляються; content/451 ID/4448 мовних блоків незмінні.
+PNG staging поза Git: `/workspace/supabase-image-staging/<source_commit>/<source_png>`.
+
+### Фінальний результат шостого продовження
+
+Завершено `2026-10-03T12:29:04.972209+00:00` UTC. Нових PNG завантажено й прив’язано — 25; замін версій — 0; попередніх перенесень звірено — 326; разом — 351 точний ID із зображенням. Pending пропущено — 9; додаткових approved після перенесення — 0; помилок і блокувань імпорту — 0.
+Пакети: 10, 10, 5. Усі нові файли з agent-08-generator-single-2026-10-03, manifest agent-03-single-generator-next30-2026-10-03. Root user_approval містить explicit_user_acceptance, 25 accepted_exercise_ids і 4 excluded_pending_exercise_ids; у прийнятих рядках точні accepted_path/SHA256 та user_reviewed_at, що збігається з reviewed_at. Адаптер читає цей формат, відхиляє виключені ID й не виводить accepted hash з поточного result_sha256. Схвалення й shared progress не змінені.
+Усі прийняті байти PNG — 1024×1024, RGBA, декодуються й містять прозорі пікселі; найбільший 862700 байтів при bucket limit 5242880. Перенесено незмінні accepted bytes/hash без ресайзу, повторного візуального QA чи генерації; історичні технічні записи збережені у frozen plan.
+Pending не завантажувалися: `face-pull-machine`, `lat-pulldown-machine`, `reverse-grip-triceps-pushdown-machine`, `stair-machine-floors`, `stair-machine-steps`, `standing-leg-curls-machine`, `t-bar-row-machine`, `torso-rotation-machine`, `triceps-dip-assisted-machine`. Їхні Git blobs і SHA256 звірені. Source generation failures без PNG: `reverse-grip-lat-pulldown-cable-machine`, `treadmill-machine`. Генерацію або виправлення не запускали.
+Механізм незмінний: Storage POST без upsert → public URL/SHA256 → п’ять image-полів із concurrency filters. Фінальне читання підтвердило точні 451 ID, усі source-поля, 4448 мовних блоків і 3 архівні статуси без змін та всі 351 image links. Публічне читання PNG підтверджено; клієнтське читання каталогу лишається неперевіреним без publishable/anon key. Каталог повторно не імпортувався; користувацькі таблиці, RLS, grants і схема не змінені.
+Фінальні докази: `uploads/continuation-2026-10-03-03/completion.json`, `catalog_final_readback.json`, `final_source_review.json`, `resume_readonly_check.json`; 52 offline tests пройшли. Три завершені перенесення повторно перевірені з API mutations disabled.
+Відновлення цієї scope: `python3 -B integration/supabase/continue_images.py --run-id continuation-2026-10-03-03 --apply`. Для наступних схвалень — новий run-id; frozen plan не змінювати.
+- `agent-02-machines-001`: `2c27f90d8e2be0c1f349b81231897fd204d543b5`.
+- `agent-03-inventory-2026-10-01`: `85cf72c762dd9dc4d8fabbee3e8477648fbcec64`.
+- `agent-05-parallel-generation`: `058e4810f858b5f0cca1d27384c8e36d525b24fa`.
+- `agent-06-generator-a-2026-10-02`: `8b4e4d7de0572909b8e0f3591d60c87192194338`.
+- `agent-07-generator-b-2026-10-02`: `9dfc775a57ff6856995addbaf28f303661a7b5de`.
+- `agent-08-generator-single-2026-10-03`: `d1ac3af3b20b9d1b5ebef6809373ac54884fc9fb`.
+- `work`: `b0385b7e2f3382d545a6dff5304c81ba3c771096`.
