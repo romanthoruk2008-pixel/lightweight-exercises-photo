@@ -291,3 +291,62 @@ Pending не завантажувалися: `face-pull-machine`, `iso-lateral-l
 - `agent-07-generator-b-2026-10-02`: `9dfc775a57ff6856995addbaf28f303661a7b5de`.
 - `agent-08-generator-single-2026-10-03`: `77207f4068527e91f46534df619cb80a168e48a1`.
 - `work`: `b0385b7e2f3382d545a6dff5304c81ba3c771096`.
+
+<!-- continuation:continuation-2026-10-03-06 -->
+
+## Продовження схвалених PNG — continuation-2026-10-03-06
+
+Поточна контрольна точка: `2026-10-03T18:35:39.114761+00:00`.
+Нових Storage uploads: 14; завершених перенесень: 14; заміни прийнятих версій: 0.
+Попередніх перевірено: 408; pending пропущено: 16.
+Артефакти: `uploads/continuation-2026-10-03-06/plan.json`, `batch-*.json`, `summary.json`.
+Каталог не імпортувався повторно. Використано `continue_images.py` і перевірений `import_catalog_images.transfer_one`; лише Storage POST без upsert і п’ять image-полів із concurrency filters. Старі PNG не видаляються; content/451 ID/4448 мовних блоків незмінні.
+PNG staging поза Git: `/workspace/supabase-image-staging/<source_commit>/<source_png>`.
+
+### Фінальне звіряння continuation-2026-10-03-06
+
+Завершено `2026-10-03T18:40:38.283235+00:00` UTC. Нових прийнятих PNG перенесено — 14; замін — 0; попередніх версій звірено — 408; разом image links — 422. Pending — 16; помилок імпорту — 0. Додаткових approved у свіжих джерелах — 2.
+Наступна scope: `lateral-raise-machine`, `leg-extension-machine`. Поточний frozen plan не змінювався.
+Точні accepted файли та рішення користувача збережені в plan.json. Виправлені aliases user_review_record читають path/SHA256 лише з reviewed_by=user, decision=approved, exact ID/timestamp; per-file user_approval вимагає explicit_user_approval_in_chat та matching approval timestamp. Не зіставляти за назвою або result_sha256; старі неприйняті спроби не переносилися. Фактичні розміри, прозорість і технічні винятки збережені; без ресайзу, генерації або повторного візуального QA.
+Storage POST без upsert → public URL/SHA256 → лише п’ять image-полів із concurrency filters. Попередні objects не видалялися. Читання назад підтвердило точні 451 ID, всі source-поля, 4448 мовних блоків і 3 архівні записи без змін. Каталог повторно не імпортувався; користувацькі таблиці, schema, RLS і grants незмінні. Public PNG access підтверджено; звичайний клієнтський доступ до каталогу неперевірений без publishable/anon key.
+59 offline tests пройшли; завершені перенесення повторно звірені з API mutations disabled. Докази: `uploads/continuation-2026-10-03-06/completion.json`, `catalog_final_readback.json`, `final_source_review.json`, `resume_readonly_check.json`.
+Відновлення: `python3 -B integration/supabase/continue_images.py --run-id continuation-2026-10-03-06 --apply`. Нові схвалення потребують нового run-id.
+Pending: `face-pull-machine`, `iso-lateral-low-row-machine`, `lat-pulldown-machine`, `pullup-assisted-machine`, `rear-delt-reverse-fly-cable-machine`, `rear-kick-machine`, `reverse-grip-triceps-pushdown-machine`, `single-arm-triceps-pushdown-cable-machine`, `ski-erg-machine`, `stair-machine-floors`, `stair-machine-steps`, `standing-leg-curls-machine`, `t-bar-row-machine`, `torso-rotation-machine`, `triceps-dip-assisted-machine`, `triceps-extension-machine`.
+- `agent-02-machines-001`: `b77fc87d9100f933d7aea76b04bdda37aeda7e84`.
+- `agent-03-inventory-2026-10-01`: `d6281a422c2ecfa2bdbf433df95b128d3f7c612d`.
+- `agent-05-parallel-generation`: `058e4810f858b5f0cca1d27384c8e36d525b24fa`.
+- `agent-06-generator-a-2026-10-02`: `8b4e4d7de0572909b8e0f3591d60c87192194338`.
+- `agent-07-generator-b-2026-10-02`: `9dfc775a57ff6856995addbaf28f303661a7b5de`.
+- `agent-08-generator-single-2026-10-03`: `ccecd8e23a56b960358aa1249a9778b6d6a904fc`.
+- `work`: `b0385b7e2f3382d545a6dff5304c81ba3c771096`.
+
+<!-- continuation:continuation-2026-10-03-07 -->
+
+## Продовження схвалених PNG — continuation-2026-10-03-07
+
+Поточна контрольна точка: `2026-10-03T18:41:52.885969+00:00`.
+Нових Storage uploads: 2; завершених перенесень: 2; заміни прийнятих версій: 0.
+Попередніх перевірено: 422; pending пропущено: 16.
+Артефакти: `uploads/continuation-2026-10-03-07/plan.json`, `batch-*.json`, `summary.json`.
+Каталог не імпортувався повторно. Використано `continue_images.py` і перевірений `import_catalog_images.transfer_one`; лише Storage POST без upsert і п’ять image-полів із concurrency filters. Старі PNG не видаляються; content/451 ID/4448 мовних блоків незмінні.
+PNG staging поза Git: `/workspace/supabase-image-staging/<source_commit>/<source_png>`.
+
+### Фінальне звіряння continuation-2026-10-03-07
+
+Завершено `2026-10-03T18:43:09.691219+00:00` UTC. Нових прийнятих PNG перенесено — 2; замін — 0; попередніх версій звірено — 422; разом image links — 424. Pending — 16; помилок імпорту — 0. Додаткових approved у свіжих джерелах — 0.
+Точні accepted файли та рішення користувача збережені в plan.json. Виправлені aliases user_review_record читають path/SHA256 лише з reviewed_by=user, decision=approved, exact ID/timestamp; per-file user_approval вимагає explicit_user_approval_in_chat та matching approval timestamp. Не зіставляти за назвою або result_sha256; старі неприйняті спроби не переносилися. Фактичні розміри, прозорість і технічні винятки збережені; без ресайзу, генерації або повторного візуального QA.
+Storage POST без upsert → public URL/SHA256 → лише п’ять image-полів із concurrency filters. Попередні objects не видалялися. Читання назад підтвердило точні 451 ID, всі source-поля, 4448 мовних блоків і 3 архівні записи без змін. Каталог повторно не імпортувався; користувацькі таблиці, schema, RLS і grants незмінні. Public PNG access підтверджено; звичайний клієнтський доступ до каталогу неперевірений без publishable/anon key.
+59 offline tests пройшли; завершені перенесення повторно звірені з API mutations disabled. Докази: `uploads/continuation-2026-10-03-07/completion.json`, `catalog_final_readback.json`, `final_source_review.json`, `resume_readonly_check.json`.
+Відновлення: `python3 -B integration/supabase/continue_images.py --run-id continuation-2026-10-03-07 --apply`. Нові схвалення потребують нового run-id.
+Pending: `face-pull-machine`, `iso-lateral-low-row-machine`, `lat-pulldown-machine`, `pullup-assisted-machine`, `rear-delt-reverse-fly-cable-machine`, `rear-kick-machine`, `reverse-grip-triceps-pushdown-machine`, `single-arm-triceps-pushdown-cable-machine`, `ski-erg-machine`, `stair-machine-floors`, `stair-machine-steps`, `standing-leg-curls-machine`, `t-bar-row-machine`, `torso-rotation-machine`, `triceps-dip-assisted-machine`, `triceps-extension-machine`.
+- `agent-02-machines-001`: `b77fc87d9100f933d7aea76b04bdda37aeda7e84`.
+- `agent-03-inventory-2026-10-01`: `d6281a422c2ecfa2bdbf433df95b128d3f7c612d`.
+- `agent-05-parallel-generation`: `058e4810f858b5f0cca1d27384c8e36d525b24fa`.
+- `agent-06-generator-a-2026-10-02`: `8b4e4d7de0572909b8e0f3591d60c87192194338`.
+- `agent-07-generator-b-2026-10-02`: `9dfc775a57ff6856995addbaf28f303661a7b5de`.
+- `agent-08-generator-single-2026-10-03`: `ccecd8e23a56b960358aa1249a9778b6d6a904fc`.
+- `work`: `b0385b7e2f3382d545a6dff5304c81ba3c771096`.
+
+### Сумарний результат цього продовження
+
+Нових PNG — 16 (14 + 2 додаткові схвалення під час перевірки); попередніх — 408; разом — 424 точні exercise_id із підтвердженими public SHA256 та image-полями. Замін — 0; pending — 16; невирішених помилок — 0; нових неперенесених approved після фінального refresh — 0. Каталог 451/4448/3 незмінний. Сумарний доказ: `uploads/continuation-2026-10-03-06/session_completion.json`.

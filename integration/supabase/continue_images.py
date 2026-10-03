@@ -94,6 +94,11 @@ def accepted_row(row):
     if (approval.get('reviewed_by') == 'user' and approval.get('decision') == 'approved'):
         result.setdefault('accepted_sha256', approval.get('accepted_sha256'))
         result.setdefault('accepted_path', approval.get('accepted_path'))
+    record = object_field(row, 'user_review_record')
+    if (record.get('reviewed_by') == 'user' and record.get('decision') == 'approved'
+            and record.get('exercise_id') == row.get('exercise_id', row.get('id'))):
+        result.setdefault('accepted_sha256', record.get('accepted_sha256', record.get('sha256')))
+        result.setdefault('accepted_path', record.get('accepted_path', record.get('path')))
     return result
 
 
@@ -118,6 +123,18 @@ def manifest_user_evidence(row, doc, eid, sha):
     if (approval.get('reviewed_by') == 'user' and approval.get('decision') == 'approved'
             and approval.get('accepted_sha256') == sha):
         return approval
+    if (approval.get('approval_source') == 'explicit_user_approval_in_chat'
+            and approval.get('decision') == 'approved' and approval.get('recorded_at')
+            and row.get('approved_at') == approval['recorded_at']):
+        return {'file': {k: row[k] for k in ('exercise_id', 'accepted_path', 'accepted_sha256',
+                'approved_at')}, 'user_approval': approval}
+    review = object_field(row, 'user_review_record')
+    if (review.get('reviewed_by') == 'user' and review.get('decision') == 'approved'
+            and review.get('exercise_id') == eid
+            and review.get('accepted_sha256', review.get('sha256')) == sha
+            and path_of(review.get('accepted_path', review.get('path'))) == path_of(row['accepted_path'])
+            and review.get('approved_at') and row.get('user_reviewed_at') == review['approved_at']):
+        return review
     record = object_field(doc, 'approval_record')
     if (row.get('approval_source') == 'explicit_user_approval_in_chat'
             and record.get('source') == 'explicit_user_approval_in_chat'

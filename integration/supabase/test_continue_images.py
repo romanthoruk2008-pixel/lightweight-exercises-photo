@@ -215,6 +215,44 @@ class ContinuationTests(unittest.TestCase):
         row['attempt_history'] = []
         self.assertIsNone(runner.manifest_user_evidence(row, doc, 'sample', 'a' * 64))
 
+    def review_record_row(self):
+        return {'exercise_id': 'sample', 'user_review': 'approved', 'user_reviewed_at': 'timestamp',
+                'user_review_record': {'exercise_id': 'sample', 'reviewed_by': 'user',
+                'decision': 'approved', 'approved_at': 'timestamp', 'sha256': 'a' * 64,
+                'path': 'assets/exercises/sample.png'}}
+
+    def test_review_record_alias_preserves_explicit_user_file_not_result(self):
+        row = self.review_record_row()
+        row['result_sha256'] = 'b' * 64
+        accepted = runner.accepted_row(row)
+        self.assertEqual(accepted['accepted_sha256'], 'a' * 64)
+        self.assertIsNotNone(runner.manifest_user_evidence(accepted, {}, 'sample', 'a' * 64))
+        self.assertNotIn('accepted_sha256', row)
+
+    def test_review_record_wrong_actor_id_hash_or_timestamp_is_rejected(self):
+        for field, value in [('reviewed_by', 'agent'), ('exercise_id', 'other'),
+                             ('decision', 'pending'), ('approved_at', 'other')]:
+            with self.subTest(field=field):
+                row = self.review_record_row(); row['user_review_record'][field] = value
+                self.assertIsNone(runner.manifest_user_evidence(runner.accepted_row(row), {}, 'sample', 'a' * 64))
+
+    def test_final13_per_file_user_approval_requires_exact_hash_and_timestamp(self):
+        row = {'exercise_id': 'sample', 'user_review': 'approved', 'accepted_sha256': 'a' * 64,
+               'accepted_path': 'assets/exercises/sample.png', 'approved_at': 'timestamp',
+               'user_approval': {'decision': 'approved', 'recorded_at': 'timestamp',
+                                'approval_source': 'explicit_user_approval_in_chat'}}
+        self.assertIsNotNone(runner.manifest_user_evidence(row, {}, 'sample', 'a' * 64))
+        self.assertIsNone(runner.manifest_user_evidence(row, {}, 'sample', 'b' * 64))
+        row['approved_at'] = 'different'
+        self.assertIsNone(runner.manifest_user_evidence(row, {}, 'sample', 'a' * 64))
+
+    def test_final13_pending_is_not_approved_by_per_file_note(self):
+        row = {'exercise_id': 'sample', 'user_review': 'pending', 'accepted_sha256': 'a' * 64,
+               'accepted_path': 'assets/exercises/sample.png', 'approved_at': 'timestamp',
+               'user_approval': {'decision': 'approved', 'recorded_at': 'timestamp',
+                                'approval_source': 'explicit_user_approval_in_chat'}}
+        self.assertIsNone(runner.manifest_user_evidence(row, {}, 'sample', 'a' * 64))
+
 
 if __name__ == '__main__':
     unittest.main()
