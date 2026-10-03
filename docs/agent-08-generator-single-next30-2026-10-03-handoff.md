@@ -6,7 +6,7 @@
 - Cloud runtime observed running and connected. Git fetch and read-only remote access succeeded.
 - Exact task inputs, evidence and the new separate manifest were transferred from the task commit; previous 028–030 manifest/results were preserved.
 - Reference and style hashes matched the assignment. The exact-ID scan found no existing PNGs or conflicting foreign assignments for batch 031. Shared progress was read only.
-- Generation/checkpoint status: preparation only; no image-generation calls yet.
+- Generation/checkpoint status: quota stop after 12 imagegen calls. Package 031 completed; package 032 stopped after its second call returned HTTP 429; package 033 was not started. No generator calls were repeated.
 
 ## Package checkpoints
 
@@ -33,7 +33,7 @@
 
 - Status: `interrupted_quota` at 2026-10-03T08:22:06.868617+00:00.
 - Calls recorded: 2; skips: 0.
-- Remote verification: PNG and manifest SHA256 values matched origin branch at commit 32a52fa923a44a2408e6eb2badff04ee2c10ddfa.
+- Remote verification: PNG and manifest SHA256 values matched at package checkpoint commit `32a52fa923a44a2408e6eb2badff04ee2c10ddfa`; all 11 results and the manifest were rechecked at final remote branch head `6eb168ef88baf8dc17411c644e9e479c777dbcd6`.
 
 - `straight-arm-lat-pulldown-cable-machine` — `assets/exercises/pending/agent-03-single-generator-next30-2026-10-03/generator-single/agent-03-others-032/straight-arm-lat-pulldown-cable-machine/attempt-1.png`; SHA256 `f7e3abf007d344f03c5bd3772fb998b4ade6a4924fcc3482aea32ec6573bebe9`; `user_review=pending`; technical `passed`.
 - `reverse-grip-lat-pulldown-cable-machine` — failed; error `image generation failed: http 429 Too Many Requests: Some("{\"error\":{\"type\":\"usage_limit_reached\",\"message\":\"The usage limit has been reached\",\"plan_type\":\"plus\",\"resets_at\":1791026557,\"eligible_promo\":null,\"limit_window_minutes\":null,\"resets_in_seconds\":10831}}")`.
@@ -45,3 +45,8 @@
 - `cable-core-pallof-press-machine` — not_started; error `None`.
 - `cable-pull-through-machine` — not_started; error `None`.
 - `single-arm-cable-crossover-machine` — not_started; error `None`.
+
+
+## Stop condition
+
+The second generator call in `agent-03-others-032` returned HTTP 429 with `usage_limit_reached`. The failed attempt is recorded and no PNG exists for that exercise. Per task instructions, generation stopped immediately; the remaining eight exercises in 032 and all ten in 033 remain `not_started`. No further imagegen calls were made.
