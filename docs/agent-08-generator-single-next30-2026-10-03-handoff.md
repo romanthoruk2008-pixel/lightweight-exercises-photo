@@ -6,7 +6,7 @@
 - Cloud runtime observed running and connected. Git fetch and read-only remote access succeeded.
 - Exact task inputs, evidence and the new separate manifest were transferred from the task commit; previous 028–030 manifest/results were preserved.
 - Reference and style hashes matched the assignment. The exact-ID scan found no existing PNGs or conflicting foreign assignments for batch 031. Shared progress was read only.
-- Generation/checkpoint status: resumed on the user's explicit request after the quota window; package 031 is complete and package 032 is in progress. The earlier HTTP 429 failure remains recorded; its ID is not being retried. Package 033 has not started.
+- Generation/checkpoint status: all three packages processed. 29 PNG results are pending user review; one ID has a recorded HTTP 429 failure and no PNG. No skips; all successful package PNGs and manifests were pushed and SHA256-verified on the execution branch.
 
 ## Package checkpoints
 
@@ -64,3 +64,11 @@
 - `shrug-smith-machine` — `assets/exercises/pending/agent-03-single-generator-next30-2026-10-03/generator-single/agent-03-others-033/shrug-smith-machine/attempt-1.png`; SHA256 `c950acdee38b52fbe2181d7e598b8534902f85bf46631e0474c87017f5aada2b`; `user_review=pending`; technical `passed`.
 - `squat-smith-machine` — `assets/exercises/pending/agent-03-single-generator-next30-2026-10-03/generator-single/agent-03-others-033/squat-smith-machine/attempt-1.png`; SHA256 `8c2dbd09d04a4b94bd0511205f16ae0557c96830394014e1df3b3a3f9fc2e373`; `user_review=pending`; technical `passed`.
 - `standing-calf-raise-smith-machine` — `assets/exercises/pending/agent-03-single-generator-next30-2026-10-03/generator-single/agent-03-others-033/standing-calf-raise-smith-machine/attempt-1.png`; SHA256 `5e9e765d689e4194e57fc446df2bf43bbbb8aaad357a56d70d9d7883ded79482`; `user_review=pending`; technical `passed`.
+
+
+## Final completion checkpoint
+
+- Packages 031 and 033 completed with 10 generated PNGs each. Package 032 completed with 9 PNGs and one failed ID (`reverse-grip-lat-pulldown-cable-machine`, HTTP 429, no PNG).
+- Total generator calls: 30. Total generated PNGs: 29, all `user_review=pending`, `agent_visual_review=not_performed`; technical PNG/dimension/transparency checks passed.
+- Skips: 0. Package 033 stopped after completion as requested.
+- Final verification found all 29 PNG SHA256 values and the new manifest matched the remote execution branch. Shared progress, `work`, source branch, catalog, other manifests and Supabase were unchanged.
