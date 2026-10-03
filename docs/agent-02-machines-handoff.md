@@ -112,3 +112,8 @@
 | `triceps-rope-pushdown-machine` | `assets/exercises/pending/agent-02-machines-001/triceps-rope-pushdown-machine/attempt-1.png` | 1254×1254 | c60b0605e7b9c9731643da057baeb3af628853a346565465247ed310c299c37d |
 
 Єдиний пропуск: `leg-press-horizontal-machine` — HTTP 400 `empty_string` через порожній prompt, PNG відсутній, спроба 1 зафіксована, повтору немає. HTTP 429 не було. Генерація завершена; подальші виклики після пакета не робити. Paid API та Supabase не використовувалися.
+
+
+## User review update — 2026-10-03T16:46:16+00:00
+
+The user explicitly approved `hip-adduction-machine` attempt-1. Its `user_review` and exercise status are now `approved`; the accepted Git path and SHA256 are recorded in the batch manifest and progress. The image bytes are unchanged. Other images remain pending until individually reviewed.
