@@ -11,3 +11,20 @@
 ## Package checkpoints
 
 <!-- Append commit, remote verification, results, skips, and errors after each package. -->
+
+## agent-03-others-031 checkpoint
+
+- Status: `completed` at 2026-10-03T08:19:42.367923+00:00.
+- Calls recorded: 10; skips: 0.
+- Remote verification: pending until push.
+
+- `standing-calf-raise-machine` — `assets/exercises/pending/agent-03-single-generator-next30-2026-10-03/generator-single/agent-03-others-031/standing-calf-raise-machine/attempt-1.png`; SHA256 `f660e5d6536f482b0ad35e32730663b79051f447c855529edd1efecd12507c69`; `user_review=pending`; technical `passed`.
+- `lat-pulldown-machine` — `assets/exercises/pending/agent-03-single-generator-next30-2026-10-03/generator-single/agent-03-others-031/lat-pulldown-machine/attempt-1.png`; SHA256 `e587578379e0ad4d31b8a5715a2517a1d065401315b09b1abb253d50dda9d06f`; `user_review=pending`; technical `passed`.
+- `vertical-traction-machine` — `assets/exercises/pending/agent-03-single-generator-next30-2026-10-03/generator-single/agent-03-others-031/vertical-traction-machine/attempt-1.png`; SHA256 `907f03e0611a48517ec2fcfc805587b0b9354bb36f254e2515ea92b19d8a57db`; `user_review=pending`; technical `passed`.
+- `torso-rotation-machine` — `assets/exercises/pending/agent-03-single-generator-next30-2026-10-03/generator-single/agent-03-others-031/torso-rotation-machine/attempt-1.png`; SHA256 `c74d181061036f8799d6a2a35b7299539f4fcf8e11dfc49b46751899af101383`; `user_review=pending`; technical `passed`.
+- `biceps-curl-cable-machine` — `assets/exercises/pending/agent-03-single-generator-next30-2026-10-03/generator-single/agent-03-others-031/biceps-curl-cable-machine/attempt-1.png`; SHA256 `6ad03f2f49de1dc270edfec88c3c514efa855e2d315f17e805674d6f9fe0ceaa`; `user_review=pending`; technical `passed`.
+- `hammer-curl-cable-machine` — `assets/exercises/pending/agent-03-single-generator-next30-2026-10-03/generator-single/agent-03-others-031/hammer-curl-cable-machine/attempt-1.png`; SHA256 `e0fa87375ff3bbeaa59aede7b89df3c985d349d9bd0f4a9e740946cbdf013832`; `user_review=pending`; technical `passed`.
+- `rope-cable-curl-machine` — `assets/exercises/pending/agent-03-single-generator-next30-2026-10-03/generator-single/agent-03-others-031/rope-cable-curl-machine/attempt-1.png`; SHA256 `d24fb3a0b2a1632e3111180a8093c1309e84fa1781078637018439814c72b9de`; `user_review=pending`; technical `passed`.
+- `triceps-pressdown-machine` — `assets/exercises/pending/agent-03-single-generator-next30-2026-10-03/generator-single/agent-03-others-031/triceps-pressdown-machine/attempt-1.png`; SHA256 `f83349431bcda0e59d1c22bcbaf5e5a02d97cb71c4fd89262de897c4c5df4e77`; `user_review=pending`; technical `passed`.
+- `triceps-pushdown-machine` — `assets/exercises/pending/agent-03-single-generator-next30-2026-10-03/generator-single/agent-03-others-031/triceps-pushdown-machine/attempt-1.png`; SHA256 `48f1f0cd76e14297ef4db2f0af8660f2fc76dd2c7b3b0732835a3a2c382ac3bc`; `user_review=pending`; technical `passed`.
+- `reverse-grip-triceps-pushdown-machine` — `assets/exercises/pending/agent-03-single-generator-next30-2026-10-03/generator-single/agent-03-others-031/reverse-grip-triceps-pushdown-machine/attempt-1.png`; SHA256 `c7a43317a0b25d85aa144fc686e4dfddbc1f827732a1e2301233e9f67cf23904`; `user_review=pending`; technical `passed`.
