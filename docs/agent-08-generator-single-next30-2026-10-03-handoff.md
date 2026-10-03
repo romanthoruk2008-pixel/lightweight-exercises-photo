@@ -47,3 +47,20 @@
 - `cable-core-pallof-press-machine` — `assets/exercises/pending/agent-03-single-generator-next30-2026-10-03/generator-single/agent-03-others-032/cable-core-pallof-press-machine/attempt-1.png`; SHA256 `e02f909e1caf42fbd65ce1544a13332948a8ae01e79e366e74150350177cc15f`; `user_review=pending`; technical `passed`.
 - `cable-pull-through-machine` — `assets/exercises/pending/agent-03-single-generator-next30-2026-10-03/generator-single/agent-03-others-032/cable-pull-through-machine/attempt-1.png`; SHA256 `3a9e47fa2071a1be4eee04b4d08eb9415a18ee6f509716b652a989b868b4fe08`; `user_review=pending`; technical `passed`.
 - `single-arm-cable-crossover-machine` — `assets/exercises/pending/agent-03-single-generator-next30-2026-10-03/generator-single/agent-03-others-032/single-arm-cable-crossover-machine/attempt-1.png`; SHA256 `5c671255162456875a317338a94ca72c8a66fadced45ecc518b5ad8643420b75`; `user_review=pending`; technical `passed`.
+
+## agent-03-others-033 checkpoint
+
+- Status: `completed` at 2026-10-03T11:54:47.139228+00:00.
+- Calls recorded: 10; skips: 0.
+- Remote verification: pending until push.
+
+- `seated-chest-flys-cable-machine` — `assets/exercises/pending/agent-03-single-generator-next30-2026-10-03/generator-single/agent-03-others-033/seated-chest-flys-cable-machine/attempt-1.png`; SHA256 `ad6a00426176fd3d5d325dbb992faf6727fb694268f9b60e46e4e5e6488f272b`; `user_review=pending`; technical `passed`.
+- `bench-press-smith-machine` — `assets/exercises/pending/agent-03-single-generator-next30-2026-10-03/generator-single/agent-03-others-033/bench-press-smith-machine/attempt-1.png`; SHA256 `e695d5786ea1e68779d4d5479dad99b9e04093de992a401c2a50f1aca8927e9f`; `user_review=pending`; technical `passed`.
+- `bent-over-row-smith-machine` — `assets/exercises/pending/agent-03-single-generator-next30-2026-10-03/generator-single/agent-03-others-033/bent-over-row-smith-machine/attempt-1.png`; SHA256 `f995d07cd04596039fd01588cde4d9a503f9e90ffeb496b23692e35c38c3b0f1`; `user_review=pending`; technical `passed`.
+- `deadlift-smith-machine` — `assets/exercises/pending/agent-03-single-generator-next30-2026-10-03/generator-single/agent-03-others-033/deadlift-smith-machine/attempt-1.png`; SHA256 `0399a3ea1d3a85d9ddb10ebbb4003d1f647bd90f9763fa932aacd954bd134a85`; `user_review=pending`; technical `passed`.
+- `incline-bench-press-smith-machine` — `assets/exercises/pending/agent-03-single-generator-next30-2026-10-03/generator-single/agent-03-others-033/incline-bench-press-smith-machine/attempt-1.png`; SHA256 `45c77120ce85ee9955879baa19cb98c37a53fd2b91b856ac4e5dadc4832e6ab3`; `user_review=pending`; technical `passed`.
+- `overhead-press-smith-machine` — `assets/exercises/pending/agent-03-single-generator-next30-2026-10-03/generator-single/agent-03-others-033/overhead-press-smith-machine/attempt-1.png`; SHA256 `0d331bc48ab18c5482dba9e136a61383ffd5bde127fadb38afbf6a26a66708fe`; `user_review=pending`; technical `passed`.
+- `romanian-deadlift-smith-machine` — `assets/exercises/pending/agent-03-single-generator-next30-2026-10-03/generator-single/agent-03-others-033/romanian-deadlift-smith-machine/attempt-1.png`; SHA256 `d76f2064022bbda62bf9a070a548797c3c97a859e33fd4f3fc729e07d13035e6`; `user_review=pending`; technical `passed`.
+- `shrug-smith-machine` — `assets/exercises/pending/agent-03-single-generator-next30-2026-10-03/generator-single/agent-03-others-033/shrug-smith-machine/attempt-1.png`; SHA256 `c950acdee38b52fbe2181d7e598b8534902f85bf46631e0474c87017f5aada2b`; `user_review=pending`; technical `passed`.
+- `squat-smith-machine` — `assets/exercises/pending/agent-03-single-generator-next30-2026-10-03/generator-single/agent-03-others-033/squat-smith-machine/attempt-1.png`; SHA256 `8c2dbd09d04a4b94bd0511205f16ae0557c96830394014e1df3b3a3f9fc2e373`; `user_review=pending`; technical `passed`.
+- `standing-calf-raise-smith-machine` — `assets/exercises/pending/agent-03-single-generator-next30-2026-10-03/generator-single/agent-03-others-033/standing-calf-raise-smith-machine/attempt-1.png`; SHA256 `5e9e765d689e4194e57fc446df2bf43bbbb8aaad357a56d70d9d7883ded79482`; `user_review=pending`; technical `passed`.
