@@ -3,7 +3,7 @@
 - Worker branch: `agent-08-generator-single-2026-10-03`; continue its existing history and retain all earlier outputs, accepted results, and failed attempts.
 - Source branch: `agent-03-inventory-2026-10-01`, observed head `85cf72c762dd9dc4d8fabbee3e8477648fbcec64`.
 - Immutable task commit: `de7dfb901c4c23072c5b11d3fee6cde7364eeb6a`, parent `85cf72c762dd9dc4d8fabbee3e8477648fbcec64`.
-- The requested source handoff file was not present at the source branch head, in the task commit, or in any available remote branch. This worker checkpoint is authored from the user's detailed in-message instructions and the exact task files; it is not a copy of the missing source handoff.
+- The source branch advanced during preparation from `85cf72c762dd9dc4d8fabbee3e8477648fbcec64` to `f96bd26f06a2276e1070d022cfe7553c569c74da`; the requested source handoff was read from that current head. The worker checkpoint follows it together with the user's detailed instructions and the immutable task payload.
 - Assignment: `data/assignments/agent-03-common-variants-2026-10-03.json`, 34 IDs, in order: `agent-03-others-037` (10), `038` (10), `039` (10), `040` (4).
 - New tasks, technique evidence, source notes, technique decisions, weighted-vest style addendum and separate manifest were imported from the immutable task commit. Existing catalog, shared progress, previous manifests and prior outputs were preserved.
 - The separate unconfirmed-rework and blocked queues do not overlap the 34 assigned IDs in the task commit. Do not generate either queue.
@@ -17,4 +17,4 @@
 
 ## Package checkpoints
 
-- Preparation checkpoint: no generation calls yet. Initial live scan of 34 target IDs across 9 remote refs found no exact-ID PNGs, explicit user approvals or competing active assignments.
+- Preparation checkpoint: no generation calls yet. Initial live scan of 34 target IDs across 9 remote refs found no exact-ID PNGs, explicit user approvals or distinct competing assignments. The matching ready assignment/batch files on source and worker refs belong to this same `agent-08-generator-single-2026-10-03` task; they are not foreign conflicts.
