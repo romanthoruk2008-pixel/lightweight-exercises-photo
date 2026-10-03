@@ -4,6 +4,57 @@ import continue_images as runner
 
 
 class ContinuationTests(unittest.TestCase):
+    def reference_rework_manifest(self):
+        path = 'assets/exercises/sample/attempt-2.png'
+        attempt = {'attempt_number': 2, 'user_review': 'approved',
+                   'user_reviewed_at': 'timestamp', 'git_result_path': path,
+                   'result_sha256': 'a' * 64}
+        row = {'exercise_id': 'sample', 'user_review': 'approved',
+               'user_reviewed_at': 'timestamp', 'result_sha256': 'a' * 64,
+               'git_result_path': path, 'attempt_history': [attempt,
+                   {'attempt_number': 3, 'user_review': 'pending',
+                    'result_sha256': 'b' * 64}]}
+        event = {'approved_at': 'timestamp', 'approval_source': 'explicit_user_approval_in_chat',
+                 'approved_exercise_ids': ['sample'], 'not_approved_exercise_ids': []}
+        return row, {'exercises': [row], 'user_approval_events': [event]}
+
+    def test_rework_reads_exact_approved_attempt_and_preserves_source(self):
+        row, doc = self.reference_rework_manifest()
+        normalized = runner.manifest_rows(doc)[0]
+        self.assertEqual(normalized['accepted_sha256'], 'a' * 64)
+        self.assertEqual(normalized['accepted_attempt'], 2)
+        self.assertNotIn('accepted_sha256', row)
+        proof = runner.explicit_evidence({}, [('manifest.json', doc)], 'sample', 'a' * 64)
+        self.assertEqual(proof['accepted_attempt_approval']['attempt_number'], 2)
+        self.assertIsNone(runner.explicit_evidence({}, [('manifest.json', doc)], 'sample', 'b' * 64))
+
+    def test_rework_requires_exact_attempt_and_row_hash_path_time(self):
+        for field, value in [('result_sha256', 'b' * 64), ('git_result_path', 'wrong.png'),
+                             ('user_reviewed_at', 'other'), ('user_review', 'pending')]:
+            with self.subTest(field=field):
+                row, doc = self.reference_rework_manifest()
+                row['attempt_history'][0][field] = value
+                self.assertNotIn('accepted_sha256', runner.manifest_rows(doc)[0])
+        row, doc = self.reference_rework_manifest()
+        row['result_sha256'] = 'b' * 64
+        self.assertNotIn('accepted_sha256', runner.manifest_rows(doc)[0])
+
+    def test_rework_rejects_ambiguous_approved_attempts(self):
+        row, doc = self.reference_rework_manifest()
+        row['attempt_history'].append(dict(row['attempt_history'][0]))
+        self.assertNotIn('accepted_sha256', runner.manifest_rows(doc)[0])
+
+    def test_rework_requires_explicit_event_scope_and_latest_decision(self):
+        for field, value in [('approved_exercise_ids', []), ('not_approved_exercise_ids', ['sample']),
+                             ('approval_source', 'agent'), ('approved_at', None)]:
+            with self.subTest(field=field):
+                row, doc = self.reference_rework_manifest()
+                doc['user_approval_events'][0][field] = value
+                self.assertNotIn('accepted_sha256', runner.manifest_rows(doc)[0])
+        row, doc = self.reference_rework_manifest()
+        doc['user_approval_events'].append({'not_approved_exercise_ids': ['sample']})
+        self.assertNotIn('accepted_sha256', runner.manifest_rows(doc)[0])
+
     def test_catalog_insert_is_prohibited_even_in_apply_mode(self):
         api = object.__new__(runner.ImagesOnlyApi)
         api.apply = True

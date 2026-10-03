@@ -102,10 +102,52 @@ def accepted_row(row):
     return result
 
 
+def manifest_accepted_row(row, doc):
+    """Read approval of one exact attempt, without choosing the latest result."""
+    result = accepted_row(row)
+    if result.get('user_review') != 'approved' or result.get('accepted_sha256'):
+        return result
+    eid = result.get('exercise_id')
+    events = doc.get('user_approval_events', [])
+    if not isinstance(events, list):
+        return result
+    for event in reversed(events):
+        if not isinstance(event, dict):
+            continue
+        excluded = event.get('not_approved_exercise_ids', []) + event.get('failed_without_png_ids', [])
+        if eid not in event.get('approved_exercise_ids', []) and eid not in excluded:
+            continue
+        if (eid in excluded or event.get('approval_source') != 'explicit_user_approval_in_chat'
+                or not event.get('approved_at')
+                or result.get('user_reviewed_at') != event['approved_at']):
+            return result
+        attempts = [a for a in result.get('attempt_history', []) if isinstance(a, dict)
+                    and a.get('user_review') == 'approved'
+                    and a.get('user_reviewed_at') == event['approved_at']]
+        if len(attempts) != 1:
+            return result
+        attempt = attempts[0]
+        sha, path = attempt.get('result_sha256'), path_of(attempt.get('git_result_path'))
+        if (attempt.get('attempt_number') is None or not isinstance(sha, str)
+                or not re.fullmatch('[0-9a-f]{64}', sha) or not path
+                or result.get('result_sha256') != sha
+                or path_of(result.get('git_result_path')) != path
+                or (result.get('accepted_path') and path_of(result['accepted_path']) != path)):
+            return result
+        result.update(accepted_path=path, accepted_sha256=sha,
+                      accepted_attempt=attempt['attempt_number'], accepted_at=event['approved_at'],
+                      approval_source=event['approval_source'],
+                      manifest_accepted_attempt_approval={k: attempt[k] for k in
+                          ('attempt_number', 'user_review', 'user_reviewed_at',
+                           'git_result_path', 'result_sha256')})
+        return result
+    return result
+
+
 def manifest_rows(doc):
     rows = doc.get('images', doc.get('exercises', doc.get('results', [])))
     rows = rows.values() if isinstance(rows, dict) else rows
-    result = [accepted_row(row) for row in rows]
+    result = [manifest_accepted_row(row, doc) for row in rows]
     batches = doc.get('batches', [])
     batches = batches.values() if isinstance(batches, dict) else batches
     for batch in batches:
@@ -192,8 +234,11 @@ def manifest_user_evidence(row, doc, eid, sha):
                     and row.get('approval_source') == event['approval_source']
                     and event.get('approved_at')
                     and row.get('accepted_at') == event['approved_at']):
-                return {'file': {k: row[k] for k in ('exercise_id', 'accepted_path',
+                proof = {'file': {k: row[k] for k in ('exercise_id', 'accepted_path',
                     'accepted_sha256', 'accepted_at', 'approval_source')}, 'user_approval_event': event}
+                if row.get('manifest_accepted_attempt_approval'):
+                    proof['accepted_attempt_approval'] = row['manifest_accepted_attempt_approval']
+                return proof
             return None
     return None
 
