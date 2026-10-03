@@ -1,6 +1,6 @@
 # Generator single handoff — final13 user-selected variants
 
-Updated: 2026-10-03T17:28:08+00:00
+Updated: 2026-10-03T17:30:14+00:00
 
 - Repository worker branch: agent-08-generator-single-2026-10-03
 - Immutable task commit: 5fc5fba256adf609384953004c9b096604ab6002
@@ -14,6 +14,9 @@ Updated: 2026-10-03T17:28:08+00:00
 - Catalog, shared progress, other approvals/manifests, old PNGs, work branch and Supabase were not changed.
 
 Checkpoint state: complete. Recorded image generation calls: 13.
+
+Remote verification commit: f91366e160aa98003a3ebe53032e2f911c58d79e (worker branch only). PNG paths and SHA256 values were checked from the fetched remote tree.
+All remote branch refs were refreshed with an explicit wildcard fetch. The 041 IDs were retrospectively rechecked against all other branches; the 042 IDs passed their per-call fresh checks. No other-branch PNG, approval or foreign active assignment was found for these IDs.
 
 ## agent-03-others-041 — completed_with_technical_issue
 
