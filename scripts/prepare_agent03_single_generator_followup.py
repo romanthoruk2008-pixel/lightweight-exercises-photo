@@ -13,6 +13,20 @@ b=p.b
 base=p.base
 ROOT=p.ROOT
 ROUND='agent-03-single-generator-next30-2026-10-03'
+ORIGINAL_CONFLICT=p.conflict
+
+def conflict(eid,s,assignments,allow_own=False):
+    # The prior validator's queue whitelist is specific to 028–030. Remove
+    # only this round's own published queue routes before applying its other
+    # checks. Foreign routes, older batches, PNGs and attempts still block.
+    if allow_own:
+        current={path.rsplit('/',1)[1][:-5] for path in p.BATCHES}
+        assignments={key:[a for a in rows if not(
+            a['kind']=='batch_queue_route' and a['path']==base.QUEUE_PATH
+            and a['branch'] in [base.BRANCH,p.WORKER]
+            and a.get('batch_id') in current)] for key,rows in assignments.items()}
+    return ORIGINAL_CONFLICT(eid,s,assignments,allow_own)
+
 SCENES={
  'standing-calf-raise-machine':('Bilateral heel-rise endpoint','Stand upright under shoulder pads, knees softly unlocked and torso still; both heels raised with ankles tracking vertically.','Both hands wrap the prescribed stability handles.','Standing calf machine with shoulder pads, fixed support handles and footplate; both forefeet supported on footplate, heels free to rise. No seated knee-pad machine.','Extend both ankles to lift heels/body and machine shoulder load; lower slowly without knee-driven momentum.'),
  'lat-pulldown-machine':('Lever handles drawn to upper chest','Seated upright, knees secured below pads, both feet flat, chest lifted with natural spine curve; elbows draw down toward ribs.','Underhand/supinated paired handles slightly wider than shoulder width.','LEVER pulldown, seat and thigh/knee pads, both feet on floor; selected dataset 0673 equipment explicitly leverage machine. No cable bar or band substitution.','Pull overhead lever handles toward chest in front of face; return to extended arms without torso swing.'),
@@ -57,6 +71,7 @@ def configure():
     p.SCENES=SCENES
     p.EQUIPMENT_IDS=list(SCENES)
     p.SOURCE_ERRORS={'squat-smith-machine':True}
+    p.conflict=conflict
 
 READ_BUT_BLOCKED={
  'reverse-curl-cable-machine':'Catalog describes palms-down overhand reverse curl; selected dataset explicitly says underhand. Exact grip conflict requires source confirmation.',
