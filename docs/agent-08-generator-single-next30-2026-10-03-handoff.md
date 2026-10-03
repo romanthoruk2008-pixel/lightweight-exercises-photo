@@ -86,4 +86,4 @@ The user explicitly accepted the following attempt-2 PNGs and authorized publish
 - `lat-pulldown-machine` — `assets/exercises/pending/agent-03-single-generator-next30-2026-10-03/generator-single/agent-03-others-031/lat-pulldown-machine/attempt-2.png`; SHA256 `bebc99f00715f056b25b19600818319d3a140fec80b6fca990567811bd23cb25`; technical `needs_fix`; `user_review=approved`.
 - `reverse-grip-triceps-pushdown-machine` — `assets/exercises/pending/agent-03-single-generator-next30-2026-10-03/generator-single/agent-03-others-031/reverse-grip-triceps-pushdown-machine/attempt-2.png`; SHA256 `565a6afd520370f197044dd97826933f9ab65bd839b05fce11107b203af8da3d`; technical `needs_fix`; `user_review=approved`.
 
-Remote SHA256 verification will be recorded after push.
+Remote verification completed at 2026-10-03T22:10:40Z against worker branch commit `04a0afade59050f6fe03e53b935f5eeac36d90f0`: all 16 attempt-2 PNGs across this set and the user-reference-rework groups were present, matched their manifest SHA256 values, and had `user_review=approved`.

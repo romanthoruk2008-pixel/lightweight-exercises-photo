@@ -78,4 +78,4 @@ The user explicitly accepted the following attempt-2 PNGs and authorized publish
 - `iso-lateral-low-row-machine` — `assets/exercises/pending/agent-03-single-generator-round3-2026-10-03/generator-single/agent-03-others-034/iso-lateral-low-row-machine/attempt-2.png`; SHA256 `c35b9da4692001ac9fb290d2d94e5e52acf83970b1187678b8638c39a148ff4b`; technical `needs_fix`; `user_review=approved`.
 - `rear-delt-reverse-fly-cable-machine` — `assets/exercises/pending/agent-03-single-generator-round3-2026-10-03/generator-single/agent-03-others-035/rear-delt-reverse-fly-cable-machine/attempt-2.png`; SHA256 `20c8b81e0103dc0c9a97f8fab30345c7da97cc380b6c57c671134461e100bed7`; technical `needs_fix`; `user_review=approved`.
 
-Remote SHA256 verification will be recorded after push.
+Remote verification completed at 2026-10-03T22:10:40Z against worker branch commit `04a0afade59050f6fe03e53b935f5eeac36d90f0`: all 16 attempt-2 PNGs across this set and the user-reference-rework groups were present, matched their manifest SHA256 values, and had `user_review=approved`.

@@ -56,4 +56,4 @@ The user explicitly accepted the following attempt-2 PNGs and authorized publish
 
 - `rear-kick-machine` — `assets/exercises/pending/agent-03-final13-user-variants-2026-10-03/generator-single/agent-03-others-041/rear-kick-machine/attempt-2.png`; SHA256 `e1b677df89a9f4ec8a104e2caf3573e7e5325556eca83af601e1fcd45d7221e2`; technical `needs_fix`; `user_review=approved`.
 
-Remote SHA256 verification will be recorded after push.
+Remote verification completed at 2026-10-03T22:10:40Z against worker branch commit `04a0afade59050f6fe03e53b935f5eeac36d90f0`: all 16 attempt-2 PNGs across this set and the user-reference-rework groups were present, matched their manifest SHA256 values, and had `user_review=approved`.
