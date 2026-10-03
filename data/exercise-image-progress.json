@@ -19862,14 +19862,14 @@
         "exists_at_preparation": true,
         "sha256": "d780ab438a588f1df073b25607a23fa61de346c3bb273b6aa743df752632bdc9"
       },
-      "status": "not_started",
-      "included_in_generation": false,
+      "status": "approved",
+      "included_in_generation": true,
       "archived_inclusion_authorized": false,
       "blocked_by": [
         "pilot_not_approved"
       ],
-      "attempts": 0,
-      "style_version": null,
+      "attempts": 2,
+      "style_version": "v1",
       "visual_review": {
         "status": "not_reviewed",
         "reviewer": null,
@@ -19882,17 +19882,74 @@
         },
         "notes": null
       },
-      "result_path": null,
+      "result_path": "assets/exercises/pending/agent-02-machines-001/preacher-curl-machine/attempt-2.png",
       "supabase_path": null,
       "supabase_upload_status": "not_configured",
       "last_error": null,
-      "attempt_history": [],
-      "result_sha256": null,
-      "technical_check": null,
-      "technical_check_details": null,
+      "attempt_history": [
+        {
+          "attempt": 1,
+          "id": "preacher-curl-machine",
+          "batch_id": "agent-02-machines-001",
+          "style_version": "v1",
+          "tool": "image_gen.imagegen",
+          "prompt": "Create one exercise illustration in the current Lightweight style v1, target 1024 x 1024 square PNG with a genuinely transparent background. Use the provided user-approved new pilot reference only for the same human identity, proportions, opaque materials and anatomical detail: one athletic hairless male anatomical figure, opaque silver-gray muscle surfaces, plain black shorts, barefoot. Preserve the reference appearance and colors; do not copy its pose, dumbbells, muscle highlights or composition. Show exactly one person in exactly one movement phase; no ghost limbs, phase sequence, arrows or collage. Neutral non-accented functional gym equipment with no invented brand, model, logo or guessed model-specific features. Do not recolor the equipment with muscle-highlight colors. Depict Preacher Curl (Machine) (source exercise_id: preacher-curl-machine) using a supported preacher-curl lever machine. Torso: Seated close to the preacher pad with torso stable and shoulders relaxed; no swinging or leaning over the pad. Arms: Both upper arms rest fully on the preacher pad; elbows stay planted as the forearms curl toward the shoulders, wrists straight. Legs: Feet remain planted on the floor in a stable seated position, clear of the moving lever. Grip: Underhand grip on both machine handles, with wrists aligned to the forearms. Required support contacts: seat supports pelvis; preacher pad supports full upper arms; elbows remain at the pad; feet on floor; hands on connected handles. Equipment: seated support; preacher upper-arm pad; paired underhand handles on a connected curl lever; elbow-aligned pivot and stable resistance frame. Functional mechanics: Machine handles belong to a complete resisted curl lever with a pivot aligned to the elbows. Upper arms do not lift from the pad. No free barbell, floating handles or unsupported standing curl. Show only this phase: Controlled top contraction pause with forearms raised toward shoulders and upper arms still supported. Camera: Side-front three-quarter view exposing the upper-arm pad contact, elbow positions, underhand grips and connected curl lever. Highlight only catalog primary muscle group biceps with the exact base hue #F26445. The catalog lists no secondary groups; do not invent secondary highlights. Keep every other muscle silver-gray and opaque, without glow, transparency or an overall orange tint. Keep the full person and all necessary equipment parts, supports, moving levers and relevant cable routing inside the square with clear margins. Reduce scene scale or adjust the camera to fit, never crop or distort body or machine proportions. Keep anatomical joints aligned with the working machine path and all hand, foot and pad contacts physically plausible. No floating handles, disconnected moving arms, cable intersections through the body, text, frame, UI, room decor, white backdrop or checkerboard. The transparent background must contain actual zero-alpha pixels. Use the exact attached English source for technique and safety; do not add a new exercise variant, load, angle or equipment accessory.",
+          "status": "superseded",
+          "result_path": "assets/exercises/pending/agent-02-machines-001/preacher-curl-machine/attempt-1.png",
+          "result_sha256": "e8013dd2ce9f7b9cbbfeb0843a0cd9451bea1401dee9e3d3ce9505efdfe301a2",
+          "width": 1254,
+          "height": 1254,
+          "mode": "RGBA",
+          "zero_alpha_pixels": 828981,
+          "technical_check": "passed",
+          "technical_check_details": [],
+          "user_review": "pending",
+          "agent_visual_review": "not_performed",
+          "started_at": "2026-10-01T11:43:50.183492+00:00",
+          "finished_at": "2026-10-01T11:45:17.597427+00:00",
+          "superseded_by_attempt": 2
+        },
+        {
+          "attempt": 2,
+          "id": "preacher-curl-machine",
+          "batch_id": "agent-02-machines-001",
+          "style_version": "v1",
+          "tool": "image_gen.imagegen",
+          "prompt": "Create exactly ONE square transparent PNG of exercise_id \"preacher-curl-machine\": the same adult male anatomical model as the approved human reference, doing exactly one phase. Do not put metadata or words in the image.\n\nTwo attached visual references have separate roles:\n- The silver anatomical man holding dumbbells is the approved human/style reference only. Preserve his identity, body proportions, opaque silver-gray anatomical materials/detail, black shorts, and barefoot appearance. Do not copy his standing pose, dumbbells, or biceps highlight.\n- The phone screenshot titled \"Preacher Curl (Machine)\" is the exercise pose/equipment/composition reference only. Match its seated position leaning toward the preacher pad, side-front three-quarter view, compact machine framing, and paired handles in front of the user. Exclude all phone UI, text, icons, charts, white screen, borders, and watermark.\n\nUse Lightweight style v1. Show one seated man facing the preacher-curl machine. His torso leans slightly forward but remains braced; both upper arms are fully supported along the sloped preacher pad, elbows planted, shoulders relaxed. Both hands hold the machine's connected paired handles in a symmetrical underhand grip, wrists aligned with forearms. Show the controlled top contraction phase: forearms curl toward the shoulders while upper arms stay on the pad; no swinging or elbows driving forward. Feet are flat and stable on the floor. The machine has a stable base, seat, wide sloped black upper-arm pad, connected curl lever with two handles, elbow-aligned pivots and a complete resistance mechanism. Make all contacts visible and physically plausible. Match the reference's side-front composition so the model, supported arms, handles and machine mechanism are clearly readable.\n\nExact catalog source:\ndescription: \"Preacher Curl (Machine) supports the upper arms on a preacher pad while the weight curls toward the shoulders and lowers fully.\"\ninstructions: \"Adjust the machine so the upper arms rest fully on the preacher pad. Grip the handles underhand and keep the elbows planted. Curl the handles toward the shoulders with the biceps. Pause, then lower slowly to the starting position.\"\nform_cues: \"Keep the upper arms still. Use a steady squeeze at the top. Lower through the full range.\"\ncommon_mistakes: \"Swinging the body. Driving the elbows forward. Dropping the weight.\"\nsafety_note: \"Choose a load that keeps the wrists and elbows aligned without momentum.\"\nequipment: machine. primary_muscle: biceps. secondary_muscles: [].\n\nHighlight only the biceps with exact #F26445. No secondary highlight; all other muscles remain silver-gray and opaque. Maintain consistent anatomical 3D detail and materials from the approved human reference. No glow, overall orange tint, text, UI, logo, decor, white backdrop, checkerboard, extra person, extra limb, duplicate/disconnected handles, floating machine parts, or cropped essential equipment. Keep the full person and complete necessary machine within square margins without stretching. The background must have genuine fully transparent pixels.",
+          "status": "completed",
+          "result_path": "assets/exercises/pending/agent-02-machines-001/preacher-curl-machine/attempt-2.png",
+          "result_sha256": "72ccb51917f46096a9d346f5eea677a92cbc92deee7bebb54238046b9bd8046f",
+          "width": 1254,
+          "height": 1254,
+          "mode": "RGBA",
+          "zero_alpha_pixels": 952575,
+          "technical_check": "passed",
+          "technical_check_details": [],
+          "user_review": "approved",
+          "agent_visual_review": "not_performed",
+          "reference_sha256": "52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f",
+          "approved_at": "2026-10-03T18:49:40+00:00"
+        }
+      ],
+      "result_sha256": "72ccb51917f46096a9d346f5eea677a92cbc92deee7bebb54238046b9bd8046f",
+      "technical_check": "passed",
+      "technical_check_details": [],
       "agent_visual_review": "not_performed",
       "agent_visual_review_notes": [],
-      "user_review": "pending"
+      "user_review": "approved",
+      "accepted_path": "assets/exercises/pending/agent-02-machines-001/preacher-curl-machine/attempt-2.png",
+      "accepted_sha256": "72ccb51917f46096a9d346f5eea677a92cbc92deee7bebb54238046b9bd8046f",
+      "accepted_at": "2026-10-03T18:49:40+00:00",
+      "user_reviewed_at": "2026-10-03T18:49:40+00:00",
+      "user_review_record": {
+        "decision": "approved",
+        "reviewed_by": "user",
+        "approved_at": "2026-10-03T18:49:40+00:00",
+        "exercise_id": "preacher-curl-machine",
+        "accepted_path": "assets/exercises/pending/agent-02-machines-001/preacher-curl-machine/attempt-2.png",
+        "accepted_sha256": "72ccb51917f46096a9d346f5eea677a92cbc92deee7bebb54238046b9bd8046f",
+        "note": "User explicitly approved Preacher Curl (Machine) attempt-2 in chat."
+      }
     },
     "press-under-barbell": {
       "id": "press-under-barbell",
@@ -33107,5 +33164,5 @@
       "verification_method": "git fetch + ls-remote + ls-tree + SHA256 of every fetched PNG blob"
     }
   ],
-  "last_user_review_update": "2026-10-03T18:34:11+00:00"
+  "last_user_review_update": "2026-10-03T18:49:40+00:00"
 }

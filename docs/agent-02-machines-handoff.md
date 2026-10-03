@@ -132,3 +132,7 @@ The user explicitly approved `lateral-raise-machine` attempt-2. The accepted PNG
 ## User review update — 2026-10-03T18:34:11+00:00
 
 The user explicitly approved `leg-extension-machine` attempt-1. The accepted path and SHA256 are recorded in the batch manifest and progress. Its PNG bytes are unchanged; remaining images stay pending until reviewed.
+
+## User review update — 2026-10-03T18:49:40+00:00
+
+The user explicitly approved `preacher-curl-machine` attempt-2. The approved PNG and its SHA256 are recorded in the batch manifest and exercise progress. Attempt-1 remains preserved in Git and in the attempt history; attempt-2 was added as a new file. Other generated images remain pending until reviewed.
