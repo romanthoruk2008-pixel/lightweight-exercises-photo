@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+  "catalog_modified": false,
+  "records": [
+    {
+      "exercise_id": "squat-smith-machine",
+      "source_path": "data/audits/agent-03-single-generator-next30-2026-10-03-technique.json",
+      "source_field": "records[exercise_id=\"squat-smith-machine\"].original_dataset_english[4]",
+      "exact_value": "Engage your core and unrack the barbell, stepping back to clear the rack.",
+      "problem": "Free-bar walk-out boilerplate is mechanically incompatible with the Smith bar remaining on guide rails.",
+      "resolution": "Use exact catalogue Smith-bar instructions: planted stance, guided bar across upper back, hip/knee flexion then extension. No walk-out or horizontal translation. Dataset original kept verbatim.",
+      "resolution_kind": "exact_catalogue_and_compatible_mechanics_confirmation",
+      "user_approval_of_source_edit": false
+    }
+  ],
+  "variant_scope_notes": [
+    {
+      "exercise_id": "seated-cable-row-bar-grip-machine",
+      "field": "/content/en/common_mistakes/0",
+      "exact_value": "Lifting the chest from the pad.",
+      "note": "Conditional chest-pad boilerplate is not applicable to the explicitly selected upright seated-row variant; do not add a pad."
+    },
+    {
+      "exercise_id": "seated-cable-row-bar-wide-grip-machine",
+      "field": "/content/en/common_mistakes/0",
+      "exact_value": "Lifting the chest from the pad.",
+      "note": "Conditional chest-pad boilerplate is not applicable to the explicitly selected upright seated-row variant; do not add a pad."
+    }
+  ],
+  "prior_ledgers_unchanged": [
+    "data/audits/agent-03-source-description-errors-2026-10-02.json",
+    "data/audits/agent-03-single-generator-2026-10-03-source-errors.json"
+  ]
+}
