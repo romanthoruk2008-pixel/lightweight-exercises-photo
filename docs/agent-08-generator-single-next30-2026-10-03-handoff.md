@@ -6,7 +6,7 @@
 - Cloud runtime observed running and connected. Git fetch and read-only remote access succeeded.
 - Exact task inputs, evidence and the new separate manifest were transferred from the task commit; previous 028–030 manifest/results were preserved.
 - Reference and style hashes matched the assignment. The exact-ID scan found no existing PNGs or conflicting foreign assignments for batch 031. Shared progress was read only.
-- Generation/checkpoint status: quota stop after 12 imagegen calls. Package 031 completed; package 032 stopped after its second call returned HTTP 429; package 033 was not started. No generator calls were repeated.
+- Generation/checkpoint status: resumed on the user's explicit request after the quota window; package 031 is complete and package 032 is in progress. The earlier HTTP 429 failure remains recorded; its ID is not being retried. Package 033 has not started.
 
 ## Package checkpoints
 
@@ -32,17 +32,8 @@
 
 ## agent-03-others-032 checkpoint
 
-- Status: `completed_with_errors` at 2026-10-03T11:29:03.354085+00:00.
-- Calls recorded: 2; skips: 0.
-- Remote verification: PNG and manifest SHA256 values matched origin branch at commit a2cf9b0adcb69ce3edf430fd7e3e1937be500b53.
-
-- `straight-arm-lat-pulldown-cable-machine` — `assets/exercises/pending/agent-03-single-generator-next30-2026-10-03/generator-single/agent-03-others-032/straight-arm-lat-pulldown-cable-machine/attempt-1.png`; SHA256 `f7e3abf007d344f03c5bd3772fb998b4ade6a4924fcc3482aea32ec6573bebe9`; `user_review=pending`; technical `passed`.
-- `reverse-grip-lat-pulldown-cable-machine` — failed; error `image generation failed: http 429 Too Many Requests: Some("{\"error\":{\"type\":\"usage_limit_reached\",\"message\":\"The usage limit has been reached\",\"plan_type\":\"plus\",\"resets_at\":1791026557,\"eligible_promo\":null,\"limit_window_minutes\":null,\"resets_in_seconds\":10831}}")`.
-- `low-cable-fly-crossovers-machine` — not_started; error `None`.
-- `seated-cable-row-bar-grip-machine` — not_started; error `None`.
-- `seated-cable-row-bar-wide-grip-machine` — not_started; error `None`.
-- `face-pull-machine` — not_started; error `None`.
-- `standing-y-raise-cable-machine` — not_started; error `None`.
-- `cable-core-pallof-press-machine` — not_started; error `None`.
-- `cable-pull-through-machine` — not_started; error `None`.
-- `single-arm-cable-crossover-machine` — not_started; error `None`.
+- Status: `in_progress` (resumed after quota window); generator calls recorded: 2; skips: 0.
+- `straight-arm-lat-pulldown-cable-machine` has a PNG pending review.
+- `reverse-grip-lat-pulldown-cable-machine` has the original HTTP 429 failure recorded and no PNG; it is not being retried.
+- The remaining eight IDs are `not_started`. A local output-file snapshot hiccup occurred before any new imagegen call; it was fixed, and `low-cable-fly-crossovers-machine` remains unattempted.
+- Resumed manifest SHA256 was verified on origin at commit `7afac0f390238160aa473ddb9cb1a444d9bf1964`; this handoff update is pending push.
