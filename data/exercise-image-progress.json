@@ -23696,14 +23696,14 @@
         "mapping": null
       },
       "source_reference_image": null,
-      "status": "not_started",
-      "included_in_generation": false,
+      "status": "approved",
+      "included_in_generation": true,
       "archived_inclusion_authorized": false,
       "blocked_by": [
         "pilot_not_approved"
       ],
-      "attempts": 0,
-      "style_version": null,
+      "attempts": 1,
+      "style_version": "v1",
       "visual_review": {
         "status": "not_reviewed",
         "reviewer": null,
@@ -23716,17 +23716,54 @@
         },
         "notes": null
       },
-      "result_path": null,
+      "result_path": "assets/exercises/pending/agent-02-machines-001/seated-cable-row-v-grip-cable-machine/attempt-1.png",
       "supabase_path": null,
       "supabase_upload_status": "not_configured",
       "last_error": null,
-      "attempt_history": [],
-      "result_sha256": null,
-      "technical_check": null,
-      "technical_check_details": null,
+      "attempt_history": [
+        {
+          "attempt": 1,
+          "id": "seated-cable-row-v-grip-cable-machine",
+          "batch_id": "agent-02-machines-001",
+          "style_version": "v1",
+          "tool": "image_gen.imagegen",
+          "prompt": "Create one exercise illustration in the current Lightweight style v1, target 1024 x 1024 square PNG with a genuinely transparent background. Use the provided user-approved new pilot reference only for the same human identity, proportions, opaque materials and anatomical detail: one athletic hairless male anatomical figure, opaque silver-gray muscle surfaces, plain black shorts, barefoot. Preserve the reference appearance and colors; do not copy its pose, dumbbells, muscle highlights or composition. Show exactly one person in exactly one movement phase; no ghost limbs, phase sequence, arrows or collage. Neutral non-accented functional gym equipment with no invented brand, model, logo or guessed model-specific features. Do not recolor the equipment with muscle-highlight colors. Depict Seated Cable Row - V Grip (Cable) (source exercise_id: seated-cable-row-v-grip-cable-machine) using a seated low-pulley V-handle cable row station. Torso: Seated upright with neutral back and stable ribs; no torso rocking or rounding. Arms: Both elbows travel behind the ribs as the close handle reaches the navel; shoulders stay down, wrists neutral. Legs: Both feet brace against the footplate and both knees remain softly bent. Grip: Close neutral V-handle grip with palms facing each other. Required support contacts: pelvis on seated bench/platform; both feet on bracing footplate; both hands on V handle. Equipment: seated bench/platform; paired bracing footplate; close V handle; continuous low-pulley cable to resistance; stable cable-station frame. Functional mechanics: V handle connects to a taut cable entering a low pulley at the front of the station and continues to resistance. Include enough bench, footplate and frame to explain all contacts. No fabricated chest support pad or high pulley. Show only this phase: Controlled contraction with V handle at the navel and elbows behind the ribs, upright torso unchanged. Camera: Side-front three-quarter view displaying the neutral grip, navel-level handle, elbow path, knees and both footplate contacts, plus low cable routing. Highlight only catalog primary muscle group upper_back with the exact base hue #F26445. Highlight catalog secondary groups lats, biceps, forearms with the same hue at approximately 40-50% intensity. Keep every other muscle silver-gray and opaque, without glow, transparency or an overall orange tint. Keep the full person and all necessary equipment parts, supports, moving levers and relevant cable routing inside the square with clear margins. Reduce scene scale or adjust the camera to fit, never crop or distort body or machine proportions. Keep anatomical joints aligned with the working machine path and all hand, foot and pad contacts physically plausible. No floating handles, disconnected moving arms, cable intersections through the body, text, frame, UI, room decor, white backdrop or checkerboard. The transparent background must contain actual zero-alpha pixels. Use the exact attached English source for technique and safety; do not add a new exercise variant, load, angle or equipment accessory.",
+          "started_at": "2026-10-01T11:49:14.399836+00:00",
+          "finished_at": "2026-10-01T11:51:01.498646+00:00",
+          "status": "completed",
+          "result_path": "assets/exercises/pending/agent-02-machines-001/seated-cable-row-v-grip-cable-machine/attempt-1.png",
+          "result_sha256": "d72f498c6aa424f6f7b74cda2d8707fa6f004ba9d173ca1b1ae441c55000bc98",
+          "width": 1254,
+          "height": 1254,
+          "mode": "RGBA",
+          "zero_alpha_pixels": 880970,
+          "technical_check": "passed",
+          "technical_check_details": [],
+          "user_review": "approved",
+          "agent_visual_review": "not_performed",
+          "approved_at": "2026-10-03T19:09:33+00:00",
+          "reference_sha256": "52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f"
+        }
+      ],
+      "result_sha256": "d72f498c6aa424f6f7b74cda2d8707fa6f004ba9d173ca1b1ae441c55000bc98",
+      "technical_check": "passed",
+      "technical_check_details": [],
       "agent_visual_review": "not_performed",
       "agent_visual_review_notes": [],
-      "user_review": "pending"
+      "user_review": "approved",
+      "accepted_path": "assets/exercises/pending/agent-02-machines-001/seated-cable-row-v-grip-cable-machine/attempt-1.png",
+      "accepted_sha256": "d72f498c6aa424f6f7b74cda2d8707fa6f004ba9d173ca1b1ae441c55000bc98",
+      "accepted_at": "2026-10-03T19:09:33+00:00",
+      "user_reviewed_at": "2026-10-03T19:09:33+00:00",
+      "user_review_record": {
+        "decision": "approved",
+        "reviewed_by": "user",
+        "approved_at": "2026-10-03T19:09:33+00:00",
+        "exercise_id": "seated-cable-row-v-grip-cable-machine",
+        "accepted_path": "assets/exercises/pending/agent-02-machines-001/seated-cable-row-v-grip-cable-machine/attempt-1.png",
+        "accepted_sha256": "d72f498c6aa424f6f7b74cda2d8707fa6f004ba9d173ca1b1ae441c55000bc98",
+        "note": "User explicitly said the Seated Cable Row - V Grip (Cable) image is fine and should be kept."
+      }
     },
     "seated-calf-raise-machine": {
       "id": "seated-calf-raise-machine",
@@ -33221,5 +33258,5 @@
       "verification_method": "git fetch + ls-remote + ls-tree + SHA256 of every fetched PNG blob"
     }
   ],
-  "last_user_review_update": "2026-10-03T19:04:27+00:00"
+  "last_user_review_update": "2026-10-03T19:09:33+00:00"
 }
