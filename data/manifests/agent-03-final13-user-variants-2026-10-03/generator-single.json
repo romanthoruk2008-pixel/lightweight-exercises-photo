@@ -5,9 +5,9 @@
   "execution_branch": "agent-08-generator-single-2026-10-03",
   "generator": "generator-single",
   "assignment_path": "data/assignments/agent-03-final13-user-variants-2026-10-03.json",
-  "status": "in_progress",
+  "status": "completed_with_technical_issues",
   "exercise_count": 13,
-  "generation_calls": 10,
+  "generation_calls": 13,
   "user_review_policy": "pending after PNG creation until explicit user approval",
   "quota_rule": "Save the first quota/rate-limit failure, push checkpoint and stop without retries.",
   "batches": [
@@ -3451,58 +3451,1065 @@
     {
       "batch_id": "agent-03-others-042",
       "batch_path": "data/batches/agent-03-others-042.json",
-      "status": "ready",
+      "status": "completed",
       "exercise_count": 3,
       "exercises": [
         {
           "exercise_id": "bench-press-cable-machine",
           "name": "Bench Press (Cable)",
-          "status": "not_started",
-          "attempts": 0,
-          "attempt_history": [],
-          "user_review": null,
-          "technical_check": null,
+          "status": "generated_needs_review",
+          "attempts": 1,
+          "attempt_history": [
+            {
+              "attempt_number": 1,
+              "started_at": "2026-10-03T17:23:10Z",
+              "status": "generated",
+              "generation_prompt": "Create exactly ONE square 1024x1024 transparent PNG of this exact exercise and ONE selected phase. Metadata must never appear as image text.\n{\n  \"approved_style_files\": [\n    {\n      \"path\": \"docs/exercise-image-style.md\",\n      \"sha256\": \"8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578\"\n    }\n  ],\n  \"exact_catalogue_source\": {\n    \"equipment\": \"machine\",\n    \"primary_muscle\": \"chest\",\n    \"secondary_muscles\": [\n      \"shoulders\",\n      \"triceps\"\n    ],\n    \"source_english\": {\n      \"common_mistakes\": [\n        \"Pulling one side higher.\",\n        \"Arching to shorten the range.\",\n        \"Letting the cables jerk the shoulders back.\"\n      ],\n      \"description\": \"Bench Press (Cable) is performed supine on a flat bench between low pulleys, pressing one cable handle from each side over the chest.\",\n      \"form_cues\": [\n        \"Keep the back on the bench.\",\n        \"Press evenly.\",\n        \"Keep wrists straight.\"\n      ],\n      \"instructions\": [\n        \"Lie flat on the bench with feet planted and one cable handle in each hand.\",\n        \"Start with elbows bent beside the chest and wrists stacked.\",\n        \"Press both handles upward until the arms are straight without letting the shoulders lift.\",\n        \"Lower the handles slowly to the chest and reset.\"\n      ],\n      \"provenance\": \"adapted\",\n      \"safety_note\": \"Set both pulleys evenly and keep the cable path clear before pressing.\"\n    }\n  },\n  \"human_reference\": {\n    \"absolute_path\": \"/workspace/lightweight-exercises-photo/assets/exercises/biceps-curl-dumbbell.png\",\n    \"branch\": \"work\",\n    \"pixels_reviewed_during_preparation\": false,\n    \"repository_path\": \"assets/exercises/biceps-curl-dumbbell.png\",\n    \"role\": \"Human appearance/proportions/materials/anatomical style ONLY. Exercise pose, grip, equipment and muscles come from the exact-ID catalogue, never the reference.\",\n    \"sha256\": \"52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f\",\n    \"source_commit\": \"b0385b7e2f3382d545a6dff5304c81ba3c771096\"\n  },\n  \"identity_do_not_render_as_text\": {\n    \"catalog_record_sha256\": \"6432e0c359f05665391f074dbf53f6734457aba2ab4b75d85626e07a7cc6bc2d\",\n    \"catalog_sha256\": \"a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989\",\n    \"exercise_id\": \"bench-press-cable-machine\",\n    \"name\": \"Bench Press (Cable)\"\n  },\n  \"selected_render_scene\": {\n    \"camera\": \"Slightly elevated full-body side-front three-quarter view showing supine bench supports, both low pulley exits and both continuous cable-to-handle paths. Entire person, bench and both towers visible; no crop or second phase.\",\n    \"exercise_id\": \"bench-press-cable-machine\",\n    \"grip\": \"One D-HANDLE in each hand, closed grip with wrists aligned to forearms. No shared bar or cross-body fly arc.\",\n    \"movement_trajectory\": \"From bent elbows and hands beside chest, PRESS both handles upward and slightly inward over chest; lower toward chest under control. Elbows flex/extend, not a nearly straight-arm fly. Render the one near-extension phase.\",\n    \"never_infer_muscles_from_pose_or_reference\": true,\n    \"one_phase_only\": true,\n    \"pose\": \"Lie on FLAT bench, head/back/pelvis supported and both feet planted. Hands above chest, elbows almost straight without forced lockout; shoulders remain controlled against bench.\",\n    \"single_phase\": \"Supine bilateral cable bench press approaching extension above chest\",\n    \"supports_and_equipment\": \"Flat bench centered between TWO cable towers. Both pulley exits equally LOW, one continuous taut cable from each low side pulley to its own D-handle, clear of bench/body. No standing chest-height press, machine lever or dumbbell substitution.\"\n  },\n  \"source_use_rule\": \"User-selected scene governs pose/equipment where raw catalogue or dataset conflicts. Raw source texts remain provenance, not conflicting render instructions. Exact catalogue ID/name/equipment category/muscles remain unchanged.\",\n  \"style\": {\n    \"background\": \"Genuinely transparent PNG background, no white/checkerboard layer, no environment scene.\",\n    \"framing\": \"Full figure and all required equipment/supports visible within a square. Scale and use a three-quarter view to expose the specified contacts without changing anatomy, equipment, grip or technique.\",\n    \"human_model\": \"One athletic bald male anatomical mannequin, opaque silver-gray muscular surfaces, consistent proportions and detailed 3D materials, plain black shorts, barefoot.\",\n    \"material_rules\": \"Highlights never make tissue transparent; no glow, whole-body orange tint, hair, text, labels, arrows, UI, borders, collage or extra person.\",\n    \"no_invention\": \"Exact ID catalogue controls source text and muscles; explicit supplied user variant controls the derived render scene. Do not mix contradictory raw pose instructions into the selected scene or add muscles from external sources.\",\n    \"output\": {\n      \"format\": \"PNG\",\n      \"height\": 1024,\n      \"one_person\": true,\n      \"one_phase\": true,\n      \"width\": 1024\n    },\n    \"primary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"rule\": \"Highlight only the exact primary muscle group provided for this exercise.\"\n    },\n    \"secondary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"intensity_fraction\": [\n        0.4,\n        0.5\n      ],\n      \"rule\": \"Only the exact secondary muscles, lighter same-hue highlight; if the list is empty add no secondary target.\"\n    },\n    \"version\": \"v1\"\n  },\n  \"technique_resolution\": {\n    \"PNG_approval\": false,\n    \"binding_or_name_alone_is_not_confirmation\": true,\n    \"catalog_modified\": false,\n    \"dataset_instruction_steps_read\": [\n      \"Adjust the cable machine to chest height and attach the handles.\",\n      \"Stand facing away from the machine with your feet shoulder-width apart.\",\n      \"Grasp the handles with an overhand grip and step forward to create tension in the cables.\",\n      \"Position your feet firmly on the ground and engage your core.\",\n      \"Bend your elbows and bring your hands to shoulder level, keeping your elbows at a 90-degree angle.\",\n      \"Push the handles forward, extending your arms fully in front of you.\",\n      \"Pause for a moment, then slowly reverse the movement, bringing your hands back to shoulder level.\",\n      \"Repeat for the desired number of repetitions.\"\n    ],\n    \"decision_kind\": \"user_selected_illustration_variant\",\n    \"evidence_path\": \"data/audits/agent-03-final13-user-variants-2026-10-03-technique.json\",\n    \"evidence_selector\": \"records[exercise_id=\\\"bench-press-cable-machine\\\"]\",\n    \"independent_external_confirmation\": false,\n    \"preserved_source_errors_path\": \"data/audits/agent-03-final13-user-variants-2026-10-03-catalogue-conflicts.json\",\n    \"status\": \"resolved_for_illustration\",\n    \"technique_fields_read\": [\n      \"content.en.description\",\n      \"content.en.instructions\",\n      \"content.en.form_cues\",\n      \"content.en.common_mistakes\",\n      \"content.en.safety_note\"\n    ],\n    \"user_selected_variant_decision\": {\n      \"PNG_approval\": false,\n      \"catalog_modified\": false,\n      \"citation_placeholders\": [\n        \":chatgpt-content-reference{index=\\\"2\\\"}\"\n      ],\n      \"exercise_id\": \"bench-press-cable-machine\",\n      \"independently_verified_external_sources\": [],\n      \"name\": \"Bench Press (Cable)\",\n      \"provided_user_paragraph\": \"3. **`bench-press-cable-machine` → лежачи на flat bench між двома нижніми блоками.** Не стоячи. Плоска лава ставиться між двома cable stacks; обидва pulleys знаходяться низько, на кожному **D-handle**. Людина лежить на спині, по одній ручці в кожній руці; у нижній точці кисті біля грудей, лікті зігнуті, кабелі йдуть діагонально знизу/збоку. Далі ручки жмуться вгору і трохи всередину над грудьми. :chatgpt-content-reference{index=\\\"2\\\"}\",\n      \"render_precedence\": \"User-selected scene governs pose/equipment where raw catalogue or dataset conflicts. Raw source texts remain provenance, not conflicting render instructions. Exact catalogue ID/name/equipment category/muscles remain unchanged.\",\n      \"resolution_kind\": \"user_selected_illustration_variant\",\n      \"selected_camera\": \"Slightly elevated full-body side-front three-quarter view showing supine bench supports, both low pulley exits and both continuous cable-to-handle paths. Entire person, bench and both towers visible; no crop or second phase.\",\n      \"selected_scene\": [\n        \"Supine bilateral cable bench press approaching extension above chest\",\n        \"Lie on FLAT bench, head/back/pelvis supported and both feet planted. Hands above chest, elbows almost straight without forced lockout; shoulders remain controlled against bench.\",\n        \"One D-HANDLE in each hand, closed grip with wrists aligned to forearms. No shared bar or cross-body fly arc.\",\n        \"Flat bench centered between TWO cable towers. Both pulley exits equally LOW, one continuous taut cable from each low side pulley to its own D-handle, clear of bench/body. No standing chest-height press, machine lever or dumbbell substitution.\",\n        \"From bent elbows and hands beside chest, PRESS both handles upward and slightly inward over chest; lower toward chest under control. Elbows flex/extend, not a nearly straight-arm fly. Render the one near-extension phase.\"\n      ],\n      \"source_catalog_record_sha256\": \"6432e0c359f05665391f074dbf53f6734457aba2ab4b75d85626e07a7cc6bc2d\",\n      \"source_document_path\": \"docs/agent-03-final13-user-variants-2026-10-03-source.txt\",\n      \"source_document_point\": 3,\n      \"source_document_sha256\": \"752aa941dcf4b69794b06a9c608f62a16f6f0c7e00d09eda3ec831b63304368e\",\n      \"status\": \"resolved_for_illustration\"\n    }\n  }\n}",
+              "prompt_sha256": "db1867c4cc412ef96d1a1c7017da3cea686744e92f004cca8a1be2a0fbd637db",
+              "source_catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+              "source_catalog_record_sha256": "6432e0c359f05665391f074dbf53f6734457aba2ab4b75d85626e07a7cc6bc2d",
+              "source_english_sha256": "db2af11c11dd558c635e87f0dbc751c7bf6e24dd70876a15ce5d81b215b9ecfc",
+              "style_version": "v1",
+              "approved_style_files": [
+                {
+                  "path": "docs/exercise-image-style.md",
+                  "sha256": "8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578"
+                }
+              ],
+              "human_reference_sha256": "52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f",
+              "planned_png_path": "/workspace/exercise-image-results/agent-03-final13-user-variants-2026-10-03/generator-single/agent-03-others-042/bench-press-cable-machine/attempt-1.png",
+              "planned_git_png_path": "assets/exercises/pending/agent-03-final13-user-variants-2026-10-03/generator-single/agent-03-others-042/bench-press-cable-machine/attempt-1.png",
+              "raw_output_path": "/workspace/generated_images/exec-a16e92ee-07f5-4bcb-8517-bbefc2ab9fc8.png",
+              "source_size": [
+                1254,
+                1254
+              ],
+              "source_mode": "RGBA",
+              "git_copy_sha256": "9f5756b693e95b434545324ea43457336e55fc8f4523b5ef615db3ac8a581ec9",
+              "tool_response_summary": {
+                "output_path": "/workspace/generated_images/exec-a16e92ee-07f5-4bcb-8517-bbefc2ab9fc8.png"
+              },
+              "technical_check": {
+                "status": "passed",
+                "dimensions": [
+                  1024,
+                  1024
+                ],
+                "mode": "RGBA",
+                "rgba": true,
+                "alpha_min": 0,
+                "alpha_max": 255,
+                "alpha_zero_pixels": 651870,
+                "alpha_partial_pixels": 391858,
+                "alpha_opaque_pixels": 4848,
+                "corner_alpha": [
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "all_corners_transparent": true,
+                "visual_qa": "not_performed"
+              },
+              "completed_at": "2026-10-03T17:24:15.404Z"
+            }
+          ],
+          "user_review": "pending",
+          "technical_check": "passed",
           "agent_visual_review": "not_performed",
-          "result_path": null,
+          "result_path": "/workspace/exercise-image-results/agent-03-final13-user-variants-2026-10-03/generator-single/agent-03-others-042/bench-press-cable-machine/attempt-1.png",
           "planned_png_path": "/workspace/exercise-image-results/agent-03-final13-user-variants-2026-10-03/generator-single/agent-03-others-042/bench-press-cable-machine/attempt-1.png",
           "planned_git_png_path": "assets/exercises/pending/agent-03-final13-user-variants-2026-10-03/generator-single/agent-03-others-042/bench-press-cable-machine/attempt-1.png",
           "prompt_sha256": "db1867c4cc412ef96d1a1c7017da3cea686744e92f004cca8a1be2a0fbd637db",
           "source_catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
-          "style_version": "v1"
+          "style_version": "v1",
+          "batch_id": "agent-03-others-042",
+          "generation_prompt": "Create exactly ONE square 1024x1024 transparent PNG of this exact exercise and ONE selected phase. Metadata must never appear as image text.\n{\n  \"approved_style_files\": [\n    {\n      \"path\": \"docs/exercise-image-style.md\",\n      \"sha256\": \"8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578\"\n    }\n  ],\n  \"exact_catalogue_source\": {\n    \"equipment\": \"machine\",\n    \"primary_muscle\": \"chest\",\n    \"secondary_muscles\": [\n      \"shoulders\",\n      \"triceps\"\n    ],\n    \"source_english\": {\n      \"common_mistakes\": [\n        \"Pulling one side higher.\",\n        \"Arching to shorten the range.\",\n        \"Letting the cables jerk the shoulders back.\"\n      ],\n      \"description\": \"Bench Press (Cable) is performed supine on a flat bench between low pulleys, pressing one cable handle from each side over the chest.\",\n      \"form_cues\": [\n        \"Keep the back on the bench.\",\n        \"Press evenly.\",\n        \"Keep wrists straight.\"\n      ],\n      \"instructions\": [\n        \"Lie flat on the bench with feet planted and one cable handle in each hand.\",\n        \"Start with elbows bent beside the chest and wrists stacked.\",\n        \"Press both handles upward until the arms are straight without letting the shoulders lift.\",\n        \"Lower the handles slowly to the chest and reset.\"\n      ],\n      \"provenance\": \"adapted\",\n      \"safety_note\": \"Set both pulleys evenly and keep the cable path clear before pressing.\"\n    }\n  },\n  \"human_reference\": {\n    \"absolute_path\": \"/workspace/lightweight-exercises-photo/assets/exercises/biceps-curl-dumbbell.png\",\n    \"branch\": \"work\",\n    \"pixels_reviewed_during_preparation\": false,\n    \"repository_path\": \"assets/exercises/biceps-curl-dumbbell.png\",\n    \"role\": \"Human appearance/proportions/materials/anatomical style ONLY. Exercise pose, grip, equipment and muscles come from the exact-ID catalogue, never the reference.\",\n    \"sha256\": \"52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f\",\n    \"source_commit\": \"b0385b7e2f3382d545a6dff5304c81ba3c771096\"\n  },\n  \"identity_do_not_render_as_text\": {\n    \"catalog_record_sha256\": \"6432e0c359f05665391f074dbf53f6734457aba2ab4b75d85626e07a7cc6bc2d\",\n    \"catalog_sha256\": \"a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989\",\n    \"exercise_id\": \"bench-press-cable-machine\",\n    \"name\": \"Bench Press (Cable)\"\n  },\n  \"selected_render_scene\": {\n    \"camera\": \"Slightly elevated full-body side-front three-quarter view showing supine bench supports, both low pulley exits and both continuous cable-to-handle paths. Entire person, bench and both towers visible; no crop or second phase.\",\n    \"exercise_id\": \"bench-press-cable-machine\",\n    \"grip\": \"One D-HANDLE in each hand, closed grip with wrists aligned to forearms. No shared bar or cross-body fly arc.\",\n    \"movement_trajectory\": \"From bent elbows and hands beside chest, PRESS both handles upward and slightly inward over chest; lower toward chest under control. Elbows flex/extend, not a nearly straight-arm fly. Render the one near-extension phase.\",\n    \"never_infer_muscles_from_pose_or_reference\": true,\n    \"one_phase_only\": true,\n    \"pose\": \"Lie on FLAT bench, head/back/pelvis supported and both feet planted. Hands above chest, elbows almost straight without forced lockout; shoulders remain controlled against bench.\",\n    \"single_phase\": \"Supine bilateral cable bench press approaching extension above chest\",\n    \"supports_and_equipment\": \"Flat bench centered between TWO cable towers. Both pulley exits equally LOW, one continuous taut cable from each low side pulley to its own D-handle, clear of bench/body. No standing chest-height press, machine lever or dumbbell substitution.\"\n  },\n  \"source_use_rule\": \"User-selected scene governs pose/equipment where raw catalogue or dataset conflicts. Raw source texts remain provenance, not conflicting render instructions. Exact catalogue ID/name/equipment category/muscles remain unchanged.\",\n  \"style\": {\n    \"background\": \"Genuinely transparent PNG background, no white/checkerboard layer, no environment scene.\",\n    \"framing\": \"Full figure and all required equipment/supports visible within a square. Scale and use a three-quarter view to expose the specified contacts without changing anatomy, equipment, grip or technique.\",\n    \"human_model\": \"One athletic bald male anatomical mannequin, opaque silver-gray muscular surfaces, consistent proportions and detailed 3D materials, plain black shorts, barefoot.\",\n    \"material_rules\": \"Highlights never make tissue transparent; no glow, whole-body orange tint, hair, text, labels, arrows, UI, borders, collage or extra person.\",\n    \"no_invention\": \"Exact ID catalogue controls source text and muscles; explicit supplied user variant controls the derived render scene. Do not mix contradictory raw pose instructions into the selected scene or add muscles from external sources.\",\n    \"output\": {\n      \"format\": \"PNG\",\n      \"height\": 1024,\n      \"one_person\": true,\n      \"one_phase\": true,\n      \"width\": 1024\n    },\n    \"primary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"rule\": \"Highlight only the exact primary muscle group provided for this exercise.\"\n    },\n    \"secondary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"intensity_fraction\": [\n        0.4,\n        0.5\n      ],\n      \"rule\": \"Only the exact secondary muscles, lighter same-hue highlight; if the list is empty add no secondary target.\"\n    },\n    \"version\": \"v1\"\n  },\n  \"technique_resolution\": {\n    \"PNG_approval\": false,\n    \"binding_or_name_alone_is_not_confirmation\": true,\n    \"catalog_modified\": false,\n    \"dataset_instruction_steps_read\": [\n      \"Adjust the cable machine to chest height and attach the handles.\",\n      \"Stand facing away from the machine with your feet shoulder-width apart.\",\n      \"Grasp the handles with an overhand grip and step forward to create tension in the cables.\",\n      \"Position your feet firmly on the ground and engage your core.\",\n      \"Bend your elbows and bring your hands to shoulder level, keeping your elbows at a 90-degree angle.\",\n      \"Push the handles forward, extending your arms fully in front of you.\",\n      \"Pause for a moment, then slowly reverse the movement, bringing your hands back to shoulder level.\",\n      \"Repeat for the desired number of repetitions.\"\n    ],\n    \"decision_kind\": \"user_selected_illustration_variant\",\n    \"evidence_path\": \"data/audits/agent-03-final13-user-variants-2026-10-03-technique.json\",\n    \"evidence_selector\": \"records[exercise_id=\\\"bench-press-cable-machine\\\"]\",\n    \"independent_external_confirmation\": false,\n    \"preserved_source_errors_path\": \"data/audits/agent-03-final13-user-variants-2026-10-03-catalogue-conflicts.json\",\n    \"status\": \"resolved_for_illustration\",\n    \"technique_fields_read\": [\n      \"content.en.description\",\n      \"content.en.instructions\",\n      \"content.en.form_cues\",\n      \"content.en.common_mistakes\",\n      \"content.en.safety_note\"\n    ],\n    \"user_selected_variant_decision\": {\n      \"PNG_approval\": false,\n      \"catalog_modified\": false,\n      \"citation_placeholders\": [\n        \":chatgpt-content-reference{index=\\\"2\\\"}\"\n      ],\n      \"exercise_id\": \"bench-press-cable-machine\",\n      \"independently_verified_external_sources\": [],\n      \"name\": \"Bench Press (Cable)\",\n      \"provided_user_paragraph\": \"3. **`bench-press-cable-machine` → лежачи на flat bench між двома нижніми блоками.** Не стоячи. Плоска лава ставиться між двома cable stacks; обидва pulleys знаходяться низько, на кожному **D-handle**. Людина лежить на спині, по одній ручці в кожній руці; у нижній точці кисті біля грудей, лікті зігнуті, кабелі йдуть діагонально знизу/збоку. Далі ручки жмуться вгору і трохи всередину над грудьми. :chatgpt-content-reference{index=\\\"2\\\"}\",\n      \"render_precedence\": \"User-selected scene governs pose/equipment where raw catalogue or dataset conflicts. Raw source texts remain provenance, not conflicting render instructions. Exact catalogue ID/name/equipment category/muscles remain unchanged.\",\n      \"resolution_kind\": \"user_selected_illustration_variant\",\n      \"selected_camera\": \"Slightly elevated full-body side-front three-quarter view showing supine bench supports, both low pulley exits and both continuous cable-to-handle paths. Entire person, bench and both towers visible; no crop or second phase.\",\n      \"selected_scene\": [\n        \"Supine bilateral cable bench press approaching extension above chest\",\n        \"Lie on FLAT bench, head/back/pelvis supported and both feet planted. Hands above chest, elbows almost straight without forced lockout; shoulders remain controlled against bench.\",\n        \"One D-HANDLE in each hand, closed grip with wrists aligned to forearms. No shared bar or cross-body fly arc.\",\n        \"Flat bench centered between TWO cable towers. Both pulley exits equally LOW, one continuous taut cable from each low side pulley to its own D-handle, clear of bench/body. No standing chest-height press, machine lever or dumbbell substitution.\",\n        \"From bent elbows and hands beside chest, PRESS both handles upward and slightly inward over chest; lower toward chest under control. Elbows flex/extend, not a nearly straight-arm fly. Render the one near-extension phase.\"\n      ],\n      \"source_catalog_record_sha256\": \"6432e0c359f05665391f074dbf53f6734457aba2ab4b75d85626e07a7cc6bc2d\",\n      \"source_document_path\": \"docs/agent-03-final13-user-variants-2026-10-03-source.txt\",\n      \"source_document_point\": 3,\n      \"source_document_sha256\": \"752aa941dcf4b69794b06a9c608f62a16f6f0c7e00d09eda3ec831b63304368e\",\n      \"status\": \"resolved_for_illustration\"\n    }\n  }\n}",
+          "prompt_payload": {
+            "identity_do_not_render_as_text": {
+              "exercise_id": "bench-press-cable-machine",
+              "name": "Bench Press (Cable)",
+              "catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+              "catalog_record_sha256": "6432e0c359f05665391f074dbf53f6734457aba2ab4b75d85626e07a7cc6bc2d"
+            },
+            "exact_catalogue_source": {
+              "source_english": {
+                "description": "Bench Press (Cable) is performed supine on a flat bench between low pulleys, pressing one cable handle from each side over the chest.",
+                "instructions": [
+                  "Lie flat on the bench with feet planted and one cable handle in each hand.",
+                  "Start with elbows bent beside the chest and wrists stacked.",
+                  "Press both handles upward until the arms are straight without letting the shoulders lift.",
+                  "Lower the handles slowly to the chest and reset."
+                ],
+                "form_cues": [
+                  "Keep the back on the bench.",
+                  "Press evenly.",
+                  "Keep wrists straight."
+                ],
+                "common_mistakes": [
+                  "Pulling one side higher.",
+                  "Arching to shorten the range.",
+                  "Letting the cables jerk the shoulders back."
+                ],
+                "safety_note": "Set both pulleys evenly and keep the cable path clear before pressing.",
+                "provenance": "adapted"
+              },
+              "equipment": "machine",
+              "primary_muscle": "chest",
+              "secondary_muscles": [
+                "shoulders",
+                "triceps"
+              ]
+            },
+            "human_reference": {
+              "repository_path": "assets/exercises/biceps-curl-dumbbell.png",
+              "absolute_path": "/workspace/lightweight-exercises-photo/assets/exercises/biceps-curl-dumbbell.png",
+              "sha256": "52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f",
+              "branch": "work",
+              "source_commit": "b0385b7e2f3382d545a6dff5304c81ba3c771096",
+              "role": "Human appearance/proportions/materials/anatomical style ONLY. Exercise pose, grip, equipment and muscles come from the exact-ID catalogue, never the reference.",
+              "pixels_reviewed_during_preparation": false
+            },
+            "style": {
+              "version": "v1",
+              "human_model": "One athletic bald male anatomical mannequin, opaque silver-gray muscular surfaces, consistent proportions and detailed 3D materials, plain black shorts, barefoot.",
+              "primary_highlight": {
+                "hex": "#F26445",
+                "rule": "Highlight only the exact primary muscle group provided for this exercise."
+              },
+              "secondary_highlight": {
+                "hex": "#F26445",
+                "intensity_fraction": [
+                  0.4,
+                  0.5
+                ],
+                "rule": "Only the exact secondary muscles, lighter same-hue highlight; if the list is empty add no secondary target."
+              },
+              "background": "Genuinely transparent PNG background, no white/checkerboard layer, no environment scene.",
+              "output": {
+                "format": "PNG",
+                "width": 1024,
+                "height": 1024,
+                "one_person": true,
+                "one_phase": true
+              },
+              "material_rules": "Highlights never make tissue transparent; no glow, whole-body orange tint, hair, text, labels, arrows, UI, borders, collage or extra person.",
+              "framing": "Full figure and all required equipment/supports visible within a square. Scale and use a three-quarter view to expose the specified contacts without changing anatomy, equipment, grip or technique.",
+              "no_invention": "Exact ID catalogue controls source text and muscles; explicit supplied user variant controls the derived render scene. Do not mix contradictory raw pose instructions into the selected scene or add muscles from external sources."
+            },
+            "approved_style_files": [
+              {
+                "path": "docs/exercise-image-style.md",
+                "sha256": "8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578"
+              }
+            ],
+            "selected_render_scene": {
+              "exercise_id": "bench-press-cable-machine",
+              "single_phase": "Supine bilateral cable bench press approaching extension above chest",
+              "pose": "Lie on FLAT bench, head/back/pelvis supported and both feet planted. Hands above chest, elbows almost straight without forced lockout; shoulders remain controlled against bench.",
+              "grip": "One D-HANDLE in each hand, closed grip with wrists aligned to forearms. No shared bar or cross-body fly arc.",
+              "supports_and_equipment": "Flat bench centered between TWO cable towers. Both pulley exits equally LOW, one continuous taut cable from each low side pulley to its own D-handle, clear of bench/body. No standing chest-height press, machine lever or dumbbell substitution.",
+              "movement_trajectory": "From bent elbows and hands beside chest, PRESS both handles upward and slightly inward over chest; lower toward chest under control. Elbows flex/extend, not a nearly straight-arm fly. Render the one near-extension phase.",
+              "camera": "Slightly elevated full-body side-front three-quarter view showing supine bench supports, both low pulley exits and both continuous cable-to-handle paths. Entire person, bench and both towers visible; no crop or second phase.",
+              "one_phase_only": true,
+              "never_infer_muscles_from_pose_or_reference": true
+            },
+            "technique_resolution": {
+              "status": "resolved_for_illustration",
+              "decision_kind": "user_selected_illustration_variant",
+              "user_selected_variant_decision": {
+                "exercise_id": "bench-press-cable-machine",
+                "name": "Bench Press (Cable)",
+                "status": "resolved_for_illustration",
+                "resolution_kind": "user_selected_illustration_variant",
+                "source_document_path": "docs/agent-03-final13-user-variants-2026-10-03-source.txt",
+                "source_document_sha256": "752aa941dcf4b69794b06a9c608f62a16f6f0c7e00d09eda3ec831b63304368e",
+                "source_document_point": 3,
+                "provided_user_paragraph": "3. **`bench-press-cable-machine` → лежачи на flat bench між двома нижніми блоками.** Не стоячи. Плоска лава ставиться між двома cable stacks; обидва pulleys знаходяться низько, на кожному **D-handle**. Людина лежить на спині, по одній ручці в кожній руці; у нижній точці кисті біля грудей, лікті зігнуті, кабелі йдуть діагонально знизу/збоку. Далі ручки жмуться вгору і трохи всередину над грудьми. :chatgpt-content-reference{index=\"2\"}",
+                "citation_placeholders": [
+                  ":chatgpt-content-reference{index=\"2\"}"
+                ],
+                "independently_verified_external_sources": [],
+                "selected_scene": [
+                  "Supine bilateral cable bench press approaching extension above chest",
+                  "Lie on FLAT bench, head/back/pelvis supported and both feet planted. Hands above chest, elbows almost straight without forced lockout; shoulders remain controlled against bench.",
+                  "One D-HANDLE in each hand, closed grip with wrists aligned to forearms. No shared bar or cross-body fly arc.",
+                  "Flat bench centered between TWO cable towers. Both pulley exits equally LOW, one continuous taut cable from each low side pulley to its own D-handle, clear of bench/body. No standing chest-height press, machine lever or dumbbell substitution.",
+                  "From bent elbows and hands beside chest, PRESS both handles upward and slightly inward over chest; lower toward chest under control. Elbows flex/extend, not a nearly straight-arm fly. Render the one near-extension phase."
+                ],
+                "selected_camera": "Slightly elevated full-body side-front three-quarter view showing supine bench supports, both low pulley exits and both continuous cable-to-handle paths. Entire person, bench and both towers visible; no crop or second phase.",
+                "source_catalog_record_sha256": "6432e0c359f05665391f074dbf53f6734457aba2ab4b75d85626e07a7cc6bc2d",
+                "render_precedence": "User-selected scene governs pose/equipment where raw catalogue or dataset conflicts. Raw source texts remain provenance, not conflicting render instructions. Exact catalogue ID/name/equipment category/muscles remain unchanged.",
+                "catalog_modified": false,
+                "PNG_approval": false
+              },
+              "evidence_path": "data/audits/agent-03-final13-user-variants-2026-10-03-technique.json",
+              "evidence_selector": "records[exercise_id=\"bench-press-cable-machine\"]",
+              "technique_fields_read": [
+                "content.en.description",
+                "content.en.instructions",
+                "content.en.form_cues",
+                "content.en.common_mistakes",
+                "content.en.safety_note"
+              ],
+              "dataset_instruction_steps_read": [
+                "Adjust the cable machine to chest height and attach the handles.",
+                "Stand facing away from the machine with your feet shoulder-width apart.",
+                "Grasp the handles with an overhand grip and step forward to create tension in the cables.",
+                "Position your feet firmly on the ground and engage your core.",
+                "Bend your elbows and bring your hands to shoulder level, keeping your elbows at a 90-degree angle.",
+                "Push the handles forward, extending your arms fully in front of you.",
+                "Pause for a moment, then slowly reverse the movement, bringing your hands back to shoulder level.",
+                "Repeat for the desired number of repetitions."
+              ],
+              "binding_or_name_alone_is_not_confirmation": true,
+              "independent_external_confirmation": false,
+              "preserved_source_errors_path": "data/audits/agent-03-final13-user-variants-2026-10-03-catalogue-conflicts.json",
+              "catalog_modified": false,
+              "PNG_approval": false
+            },
+            "source_use_rule": "User-selected scene governs pose/equipment where raw catalogue or dataset conflicts. Raw source texts remain provenance, not conflicting render instructions. Exact catalogue ID/name/equipment category/muscles remain unchanged."
+          },
+          "source_english": {
+            "description": "Bench Press (Cable) is performed supine on a flat bench between low pulleys, pressing one cable handle from each side over the chest.",
+            "instructions": [
+              "Lie flat on the bench with feet planted and one cable handle in each hand.",
+              "Start with elbows bent beside the chest and wrists stacked.",
+              "Press both handles upward until the arms are straight without letting the shoulders lift.",
+              "Lower the handles slowly to the chest and reset."
+            ],
+            "form_cues": [
+              "Keep the back on the bench.",
+              "Press evenly.",
+              "Keep wrists straight."
+            ],
+            "common_mistakes": [
+              "Pulling one side higher.",
+              "Arching to shorten the range.",
+              "Letting the cables jerk the shoulders back."
+            ],
+            "safety_note": "Set both pulleys evenly and keep the cable path clear before pressing.",
+            "provenance": "adapted"
+          },
+          "source_selector": "exercises[id=\"bench-press-cable-machine\"]",
+          "source_url": "https://github.com/romanthoruk2008-pixel/lightweight-exercises-photo/blob/b0385b7e2f3382d545a6dff5304c81ba3c771096/data/exercises/catalog.json",
+          "source_catalog_commit": "b0385b7e2f3382d545a6dff5304c81ba3c771096",
+          "source_catalog_record_sha256": "6432e0c359f05665391f074dbf53f6734457aba2ab4b75d85626e07a7cc6bc2d",
+          "source_english_sha256": "db2af11c11dd558c635e87f0dbc751c7bf6e24dd70876a15ce5d81b215b9ecfc",
+          "equipment": "machine",
+          "primary_muscle": "chest",
+          "secondary_muscles": [
+            "shoulders",
+            "triceps"
+          ],
+          "scene": {
+            "exercise_id": "bench-press-cable-machine",
+            "single_phase": "Supine bilateral cable bench press approaching extension above chest",
+            "pose": "Lie on FLAT bench, head/back/pelvis supported and both feet planted. Hands above chest, elbows almost straight without forced lockout; shoulders remain controlled against bench.",
+            "grip": "One D-HANDLE in each hand, closed grip with wrists aligned to forearms. No shared bar or cross-body fly arc.",
+            "supports_and_equipment": "Flat bench centered between TWO cable towers. Both pulley exits equally LOW, one continuous taut cable from each low side pulley to its own D-handle, clear of bench/body. No standing chest-height press, machine lever or dumbbell substitution.",
+            "movement_trajectory": "From bent elbows and hands beside chest, PRESS both handles upward and slightly inward over chest; lower toward chest under control. Elbows flex/extend, not a nearly straight-arm fly. Render the one near-extension phase.",
+            "camera": "Slightly elevated full-body side-front three-quarter view showing supine bench supports, both low pulley exits and both continuous cable-to-handle paths. Entire person, bench and both towers visible; no crop or second phase.",
+            "one_phase_only": true,
+            "never_infer_muscles_from_pose_or_reference": true
+          },
+          "technique_resolution": {
+            "status": "resolved_for_illustration",
+            "decision_kind": "user_selected_illustration_variant",
+            "user_selected_variant_decision": {
+              "exercise_id": "bench-press-cable-machine",
+              "name": "Bench Press (Cable)",
+              "status": "resolved_for_illustration",
+              "resolution_kind": "user_selected_illustration_variant",
+              "source_document_path": "docs/agent-03-final13-user-variants-2026-10-03-source.txt",
+              "source_document_sha256": "752aa941dcf4b69794b06a9c608f62a16f6f0c7e00d09eda3ec831b63304368e",
+              "source_document_point": 3,
+              "provided_user_paragraph": "3. **`bench-press-cable-machine` → лежачи на flat bench між двома нижніми блоками.** Не стоячи. Плоска лава ставиться між двома cable stacks; обидва pulleys знаходяться низько, на кожному **D-handle**. Людина лежить на спині, по одній ручці в кожній руці; у нижній точці кисті біля грудей, лікті зігнуті, кабелі йдуть діагонально знизу/збоку. Далі ручки жмуться вгору і трохи всередину над грудьми. :chatgpt-content-reference{index=\"2\"}",
+              "citation_placeholders": [
+                ":chatgpt-content-reference{index=\"2\"}"
+              ],
+              "independently_verified_external_sources": [],
+              "selected_scene": [
+                "Supine bilateral cable bench press approaching extension above chest",
+                "Lie on FLAT bench, head/back/pelvis supported and both feet planted. Hands above chest, elbows almost straight without forced lockout; shoulders remain controlled against bench.",
+                "One D-HANDLE in each hand, closed grip with wrists aligned to forearms. No shared bar or cross-body fly arc.",
+                "Flat bench centered between TWO cable towers. Both pulley exits equally LOW, one continuous taut cable from each low side pulley to its own D-handle, clear of bench/body. No standing chest-height press, machine lever or dumbbell substitution.",
+                "From bent elbows and hands beside chest, PRESS both handles upward and slightly inward over chest; lower toward chest under control. Elbows flex/extend, not a nearly straight-arm fly. Render the one near-extension phase."
+              ],
+              "selected_camera": "Slightly elevated full-body side-front three-quarter view showing supine bench supports, both low pulley exits and both continuous cable-to-handle paths. Entire person, bench and both towers visible; no crop or second phase.",
+              "source_catalog_record_sha256": "6432e0c359f05665391f074dbf53f6734457aba2ab4b75d85626e07a7cc6bc2d",
+              "render_precedence": "User-selected scene governs pose/equipment where raw catalogue or dataset conflicts. Raw source texts remain provenance, not conflicting render instructions. Exact catalogue ID/name/equipment category/muscles remain unchanged.",
+              "catalog_modified": false,
+              "PNG_approval": false
+            },
+            "evidence_path": "data/audits/agent-03-final13-user-variants-2026-10-03-technique.json",
+            "evidence_selector": "records[exercise_id=\"bench-press-cable-machine\"]",
+            "technique_fields_read": [
+              "content.en.description",
+              "content.en.instructions",
+              "content.en.form_cues",
+              "content.en.common_mistakes",
+              "content.en.safety_note"
+            ],
+            "dataset_instruction_steps_read": [
+              "Adjust the cable machine to chest height and attach the handles.",
+              "Stand facing away from the machine with your feet shoulder-width apart.",
+              "Grasp the handles with an overhand grip and step forward to create tension in the cables.",
+              "Position your feet firmly on the ground and engage your core.",
+              "Bend your elbows and bring your hands to shoulder level, keeping your elbows at a 90-degree angle.",
+              "Push the handles forward, extending your arms fully in front of you.",
+              "Pause for a moment, then slowly reverse the movement, bringing your hands back to shoulder level.",
+              "Repeat for the desired number of repetitions."
+            ],
+            "binding_or_name_alone_is_not_confirmation": true,
+            "independent_external_confirmation": false,
+            "preserved_source_errors_path": "data/audits/agent-03-final13-user-variants-2026-10-03-catalogue-conflicts.json",
+            "catalog_modified": false,
+            "PNG_approval": false
+          },
+          "approved_style_files": [
+            {
+              "path": "docs/exercise-image-style.md",
+              "sha256": "8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578"
+            }
+          ],
+          "human_reference": {
+            "repository_path": "assets/exercises/biceps-curl-dumbbell.png",
+            "absolute_path": "/workspace/lightweight-exercises-photo/assets/exercises/biceps-curl-dumbbell.png",
+            "sha256": "52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f",
+            "branch": "work",
+            "source_commit": "b0385b7e2f3382d545a6dff5304c81ba3c771096",
+            "role": "Human appearance/proportions/materials/anatomical style ONLY. Exercise pose, grip, equipment and muscles come from the exact-ID catalogue, never the reference.",
+            "pixels_reviewed_during_preparation": false
+          },
+          "technical_check_details": {
+            "status": "passed",
+            "dimensions": [
+              1024,
+              1024
+            ],
+            "mode": "RGBA",
+            "rgba": true,
+            "alpha_min": 0,
+            "alpha_max": 255,
+            "alpha_zero_pixels": 651870,
+            "alpha_partial_pixels": 391858,
+            "alpha_opaque_pixels": 4848,
+            "corner_alpha": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "all_corners_transparent": true,
+            "visual_qa": "not_performed"
+          },
+          "git_result_path": "assets/exercises/pending/agent-03-final13-user-variants-2026-10-03/generator-single/agent-03-others-042/bench-press-cable-machine/attempt-1.png",
+          "result_sha256": "9f5756b693e95b434545324ea43457336e55fc8f4523b5ef615db3ac8a581ec9",
+          "result_size_bytes": 771417,
+          "completed_at": "2026-10-03T17:24:15.404Z",
+          "error": null
         },
         {
           "exercise_id": "reverse-fly-single-arm-cable-machine",
           "name": "Reverse Fly Single Arm (Cable)",
-          "status": "not_started",
-          "attempts": 0,
-          "attempt_history": [],
-          "user_review": null,
-          "technical_check": null,
+          "status": "generated_needs_review",
+          "attempts": 1,
+          "attempt_history": [
+            {
+              "attempt_number": 1,
+              "started_at": "2026-10-03T17:24:48Z",
+              "status": "generated",
+              "generation_prompt": "Create exactly ONE square 1024x1024 transparent PNG of this exact exercise and ONE selected phase. Metadata must never appear as image text.\n{\n  \"approved_style_files\": [\n    {\n      \"path\": \"docs/exercise-image-style.md\",\n      \"sha256\": \"8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578\"\n    }\n  ],\n  \"exact_catalogue_source\": {\n    \"equipment\": \"machine\",\n    \"primary_muscle\": \"shoulders\",\n    \"secondary_muscles\": [\n      \"upper_back\"\n    ],\n    \"source_english\": {\n      \"common_mistakes\": [\n        \"Turning it into a row.\",\n        \"Shrugging.\",\n        \"Using momentum.\"\n      ],\n      \"description\": \"A single-arm cable reverse fly sweeps one handle outward and back in a controlled rear-shoulder arc.\",\n      \"form_cues\": [\n        \"Keep the shoulder down.\",\n        \"Move in the rear-delt arc.\",\n        \"Keep the torso still.\"\n      ],\n      \"instructions\": [\n        \"Set a cable at about shoulder height and stand side-on with the far hand supporting the stance.\",\n        \"Grip the handle with the working arm and hinge slightly at the hips.\",\n        \"Sweep the arm out and back until it aligns with the shoulder without rotating the torso.\",\n        \"Return the handle slowly and switch sides.\"\n      ],\n      \"provenance\": \"authored\",\n      \"safety_note\": \"Use a light load and keep the cable path clear of the body.\"\n    }\n  },\n  \"human_reference\": {\n    \"absolute_path\": \"/workspace/lightweight-exercises-photo/assets/exercises/biceps-curl-dumbbell.png\",\n    \"branch\": \"work\",\n    \"pixels_reviewed_during_preparation\": false,\n    \"repository_path\": \"assets/exercises/biceps-curl-dumbbell.png\",\n    \"role\": \"Human appearance/proportions/materials/anatomical style ONLY. Exercise pose, grip, equipment and muscles come from the exact-ID catalogue, never the reference.\",\n    \"sha256\": \"52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f\",\n    \"source_commit\": \"b0385b7e2f3382d545a6dff5304c81ba3c771096\"\n  },\n  \"identity_do_not_render_as_text\": {\n    \"catalog_record_sha256\": \"1e9a448ac91481b409ef67dba7d6474f8ee3c8112961d11886bc1d3e38f2d5dd\",\n    \"catalog_sha256\": \"a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989\",\n    \"exercise_id\": \"reverse-fly-single-arm-cable-machine\",\n    \"name\": \"Reverse Fly Single Arm (Cable)\"\n  },\n  \"selected_render_scene\": {\n    \"camera\": \"Full-body front-side three-quarter view exposing every prescribed contact, grip and support. Entire person and all equipment visible within square; no crop, text, arrows or second phase.\",\n    \"exercise_id\": \"reverse-fly-single-arm-cable-machine\",\n    \"grip\": \"RIGHT/FAR hand holds ONE D-handle; LEFT/NEAR nonworking hand grips tower stability point. The source phrase far hand supporting is explicitly overridden by the user-selected layout.\",\n    \"movement_trajectory\": \"Right shoulder horizontal abduction sweeps handle from across torso outward/back along a wide arc while elbow bend stays small; controlled return. No double-arm reverse fly, torso twist or elbow-driven row.\",\n    \"never_infer_muscles_from_pose_or_reference\": true,\n    \"one_phase_only\": true,\n    \"pose\": \"Stand SIDE-ON with cable tower on LEFT, feet stable, torso still with slight permitted hip hinge. RIGHT working arm has small fixed elbow bend and has swept outward/back to shoulder line; no torso rotation or row.\",\n    \"single_phase\": \"Far arm finishes a cross-body reverse-fly arc at shoulder line\",\n    \"supports_and_equipment\": \"Single shoulder/chest-height pulley on LEFT tower and one taut cable to right-hand D-handle. Both feet on floor; left hand supports on fixed frame clear of moving cable. At start the right hand reaches across body; at selected finish it is out/back at shoulder line.\"\n  },\n  \"source_use_rule\": \"User-selected scene governs pose/equipment where raw catalogue or dataset conflicts. Raw source texts remain provenance, not conflicting render instructions. Exact catalogue ID/name/equipment category/muscles remain unchanged.\",\n  \"style\": {\n    \"background\": \"Genuinely transparent PNG background, no white/checkerboard layer, no environment scene.\",\n    \"framing\": \"Full figure and all required equipment/supports visible within a square. Scale and use a three-quarter view to expose the specified contacts without changing anatomy, equipment, grip or technique.\",\n    \"human_model\": \"One athletic bald male anatomical mannequin, opaque silver-gray muscular surfaces, consistent proportions and detailed 3D materials, plain black shorts, barefoot.\",\n    \"material_rules\": \"Highlights never make tissue transparent; no glow, whole-body orange tint, hair, text, labels, arrows, UI, borders, collage or extra person.\",\n    \"no_invention\": \"Exact ID catalogue controls source text and muscles; explicit supplied user variant controls the derived render scene. Do not mix contradictory raw pose instructions into the selected scene or add muscles from external sources.\",\n    \"output\": {\n      \"format\": \"PNG\",\n      \"height\": 1024,\n      \"one_person\": true,\n      \"one_phase\": true,\n      \"width\": 1024\n    },\n    \"primary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"rule\": \"Highlight only the exact primary muscle group provided for this exercise.\"\n    },\n    \"secondary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"intensity_fraction\": [\n        0.4,\n        0.5\n      ],\n      \"rule\": \"Only the exact secondary muscles, lighter same-hue highlight; if the list is empty add no secondary target.\"\n    },\n    \"version\": \"v1\"\n  },\n  \"technique_resolution\": {\n    \"PNG_approval\": false,\n    \"binding_or_name_alone_is_not_confirmation\": true,\n    \"catalog_modified\": false,\n    \"dataset_instruction_steps_read\": null,\n    \"decision_kind\": \"user_selected_illustration_variant\",\n    \"evidence_path\": \"data/audits/agent-03-final13-user-variants-2026-10-03-technique.json\",\n    \"evidence_selector\": \"records[exercise_id=\\\"reverse-fly-single-arm-cable-machine\\\"]\",\n    \"independent_external_confirmation\": false,\n    \"preserved_source_errors_path\": \"data/audits/agent-03-final13-user-variants-2026-10-03-catalogue-conflicts.json\",\n    \"status\": \"resolved_for_illustration\",\n    \"technique_fields_read\": [\n      \"content.en.description\",\n      \"content.en.instructions\",\n      \"content.en.form_cues\",\n      \"content.en.common_mistakes\",\n      \"content.en.safety_note\"\n    ],\n    \"user_selected_variant_decision\": {\n      \"PNG_approval\": false,\n      \"catalog_modified\": false,\n      \"citation_placeholders\": [\n        \":chatgpt-content-reference{index=\\\"5\\\"}\"\n      ],\n      \"exercise_id\": \"reverse-fly-single-arm-cable-machine\",\n      \"independently_verified_external_sources\": [],\n      \"name\": \"Reverse Fly Single Arm (Cable)\",\n      \"provided_user_paragraph\": \"6. **`reverse-fly-single-arm-cable-machine` → standing cross-body single-arm reverse fly.** Pulley на рівні плеча/грудей, один D-handle. Людина стоїть **боком до cable tower**. Працює рука, яка **далі від тренажера**: вона тягнеться поперек тулуба до ручки. Наприклад, tower зліва → працює права рука. Непрацююча ближня рука може триматися за стійку для стабілізації. Робоча рука з невеликим згином ліктя проходить широкою дугою назовні й назад приблизно до лінії плеча; корпус не крутиться. :chatgpt-content-reference{index=\\\"5\\\"}\",\n      \"render_precedence\": \"User-selected scene governs pose/equipment where raw catalogue or dataset conflicts. Raw source texts remain provenance, not conflicting render instructions. Exact catalogue ID/name/equipment category/muscles remain unchanged.\",\n      \"resolution_kind\": \"user_selected_illustration_variant\",\n      \"selected_camera\": \"Full-body front-side three-quarter view exposing every prescribed contact, grip and support. Entire person and all equipment visible within square; no crop, text, arrows or second phase.\",\n      \"selected_scene\": [\n        \"Far arm finishes a cross-body reverse-fly arc at shoulder line\",\n        \"Stand SIDE-ON with cable tower on LEFT, feet stable, torso still with slight permitted hip hinge. RIGHT working arm has small fixed elbow bend and has swept outward/back to shoulder line; no torso rotation or row.\",\n        \"RIGHT/FAR hand holds ONE D-handle; LEFT/NEAR nonworking hand grips tower stability point. The source phrase far hand supporting is explicitly overridden by the user-selected layout.\",\n        \"Single shoulder/chest-height pulley on LEFT tower and one taut cable to right-hand D-handle. Both feet on floor; left hand supports on fixed frame clear of moving cable. At start the right hand reaches across body; at selected finish it is out/back at shoulder line.\",\n        \"Right shoulder horizontal abduction sweeps handle from across torso outward/back along a wide arc while elbow bend stays small; controlled return. No double-arm reverse fly, torso twist or elbow-driven row.\"\n      ],\n      \"source_catalog_record_sha256\": \"1e9a448ac91481b409ef67dba7d6474f8ee3c8112961d11886bc1d3e38f2d5dd\",\n      \"source_document_path\": \"docs/agent-03-final13-user-variants-2026-10-03-source.txt\",\n      \"source_document_point\": 6,\n      \"source_document_sha256\": \"752aa941dcf4b69794b06a9c608f62a16f6f0c7e00d09eda3ec831b63304368e\",\n      \"status\": \"resolved_for_illustration\"\n    }\n  }\n}",
+              "prompt_sha256": "2599b2e186e02f2beeff3964310c4bc899465fb721db3b102c1ec1d1dda03ad2",
+              "source_catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+              "source_catalog_record_sha256": "1e9a448ac91481b409ef67dba7d6474f8ee3c8112961d11886bc1d3e38f2d5dd",
+              "source_english_sha256": "deb716d30b49588325ff71227e65a5c124df41e78968a693d9f410950d6979c7",
+              "style_version": "v1",
+              "approved_style_files": [
+                {
+                  "path": "docs/exercise-image-style.md",
+                  "sha256": "8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578"
+                }
+              ],
+              "human_reference_sha256": "52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f",
+              "planned_png_path": "/workspace/exercise-image-results/agent-03-final13-user-variants-2026-10-03/generator-single/agent-03-others-042/reverse-fly-single-arm-cable-machine/attempt-1.png",
+              "planned_git_png_path": "assets/exercises/pending/agent-03-final13-user-variants-2026-10-03/generator-single/agent-03-others-042/reverse-fly-single-arm-cable-machine/attempt-1.png",
+              "raw_output_path": "/workspace/generated_images/exec-43169d40-88b0-44af-87b9-64e3246f69c0.png",
+              "source_size": [
+                1254,
+                1254
+              ],
+              "source_mode": "RGBA",
+              "git_copy_sha256": "3f46bb5b117aa4a0f1471b704a767f3ddfc361e8f52380d40685efb663f8c10b",
+              "tool_response_summary": {
+                "output_path": "/workspace/generated_images/exec-43169d40-88b0-44af-87b9-64e3246f69c0.png"
+              },
+              "technical_check": {
+                "status": "passed",
+                "dimensions": [
+                  1024,
+                  1024
+                ],
+                "mode": "RGBA",
+                "rgba": true,
+                "alpha_min": 0,
+                "alpha_max": 255,
+                "alpha_zero_pixels": 647268,
+                "alpha_partial_pixels": 398219,
+                "alpha_opaque_pixels": 3089,
+                "corner_alpha": [
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "all_corners_transparent": true,
+                "visual_qa": "not_performed"
+              },
+              "completed_at": "2026-10-03T17:25:49.478Z"
+            }
+          ],
+          "user_review": "pending",
+          "technical_check": "passed",
           "agent_visual_review": "not_performed",
-          "result_path": null,
+          "result_path": "/workspace/exercise-image-results/agent-03-final13-user-variants-2026-10-03/generator-single/agent-03-others-042/reverse-fly-single-arm-cable-machine/attempt-1.png",
           "planned_png_path": "/workspace/exercise-image-results/agent-03-final13-user-variants-2026-10-03/generator-single/agent-03-others-042/reverse-fly-single-arm-cable-machine/attempt-1.png",
           "planned_git_png_path": "assets/exercises/pending/agent-03-final13-user-variants-2026-10-03/generator-single/agent-03-others-042/reverse-fly-single-arm-cable-machine/attempt-1.png",
           "prompt_sha256": "2599b2e186e02f2beeff3964310c4bc899465fb721db3b102c1ec1d1dda03ad2",
           "source_catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
-          "style_version": "v1"
+          "style_version": "v1",
+          "batch_id": "agent-03-others-042",
+          "generation_prompt": "Create exactly ONE square 1024x1024 transparent PNG of this exact exercise and ONE selected phase. Metadata must never appear as image text.\n{\n  \"approved_style_files\": [\n    {\n      \"path\": \"docs/exercise-image-style.md\",\n      \"sha256\": \"8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578\"\n    }\n  ],\n  \"exact_catalogue_source\": {\n    \"equipment\": \"machine\",\n    \"primary_muscle\": \"shoulders\",\n    \"secondary_muscles\": [\n      \"upper_back\"\n    ],\n    \"source_english\": {\n      \"common_mistakes\": [\n        \"Turning it into a row.\",\n        \"Shrugging.\",\n        \"Using momentum.\"\n      ],\n      \"description\": \"A single-arm cable reverse fly sweeps one handle outward and back in a controlled rear-shoulder arc.\",\n      \"form_cues\": [\n        \"Keep the shoulder down.\",\n        \"Move in the rear-delt arc.\",\n        \"Keep the torso still.\"\n      ],\n      \"instructions\": [\n        \"Set a cable at about shoulder height and stand side-on with the far hand supporting the stance.\",\n        \"Grip the handle with the working arm and hinge slightly at the hips.\",\n        \"Sweep the arm out and back until it aligns with the shoulder without rotating the torso.\",\n        \"Return the handle slowly and switch sides.\"\n      ],\n      \"provenance\": \"authored\",\n      \"safety_note\": \"Use a light load and keep the cable path clear of the body.\"\n    }\n  },\n  \"human_reference\": {\n    \"absolute_path\": \"/workspace/lightweight-exercises-photo/assets/exercises/biceps-curl-dumbbell.png\",\n    \"branch\": \"work\",\n    \"pixels_reviewed_during_preparation\": false,\n    \"repository_path\": \"assets/exercises/biceps-curl-dumbbell.png\",\n    \"role\": \"Human appearance/proportions/materials/anatomical style ONLY. Exercise pose, grip, equipment and muscles come from the exact-ID catalogue, never the reference.\",\n    \"sha256\": \"52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f\",\n    \"source_commit\": \"b0385b7e2f3382d545a6dff5304c81ba3c771096\"\n  },\n  \"identity_do_not_render_as_text\": {\n    \"catalog_record_sha256\": \"1e9a448ac91481b409ef67dba7d6474f8ee3c8112961d11886bc1d3e38f2d5dd\",\n    \"catalog_sha256\": \"a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989\",\n    \"exercise_id\": \"reverse-fly-single-arm-cable-machine\",\n    \"name\": \"Reverse Fly Single Arm (Cable)\"\n  },\n  \"selected_render_scene\": {\n    \"camera\": \"Full-body front-side three-quarter view exposing every prescribed contact, grip and support. Entire person and all equipment visible within square; no crop, text, arrows or second phase.\",\n    \"exercise_id\": \"reverse-fly-single-arm-cable-machine\",\n    \"grip\": \"RIGHT/FAR hand holds ONE D-handle; LEFT/NEAR nonworking hand grips tower stability point. The source phrase far hand supporting is explicitly overridden by the user-selected layout.\",\n    \"movement_trajectory\": \"Right shoulder horizontal abduction sweeps handle from across torso outward/back along a wide arc while elbow bend stays small; controlled return. No double-arm reverse fly, torso twist or elbow-driven row.\",\n    \"never_infer_muscles_from_pose_or_reference\": true,\n    \"one_phase_only\": true,\n    \"pose\": \"Stand SIDE-ON with cable tower on LEFT, feet stable, torso still with slight permitted hip hinge. RIGHT working arm has small fixed elbow bend and has swept outward/back to shoulder line; no torso rotation or row.\",\n    \"single_phase\": \"Far arm finishes a cross-body reverse-fly arc at shoulder line\",\n    \"supports_and_equipment\": \"Single shoulder/chest-height pulley on LEFT tower and one taut cable to right-hand D-handle. Both feet on floor; left hand supports on fixed frame clear of moving cable. At start the right hand reaches across body; at selected finish it is out/back at shoulder line.\"\n  },\n  \"source_use_rule\": \"User-selected scene governs pose/equipment where raw catalogue or dataset conflicts. Raw source texts remain provenance, not conflicting render instructions. Exact catalogue ID/name/equipment category/muscles remain unchanged.\",\n  \"style\": {\n    \"background\": \"Genuinely transparent PNG background, no white/checkerboard layer, no environment scene.\",\n    \"framing\": \"Full figure and all required equipment/supports visible within a square. Scale and use a three-quarter view to expose the specified contacts without changing anatomy, equipment, grip or technique.\",\n    \"human_model\": \"One athletic bald male anatomical mannequin, opaque silver-gray muscular surfaces, consistent proportions and detailed 3D materials, plain black shorts, barefoot.\",\n    \"material_rules\": \"Highlights never make tissue transparent; no glow, whole-body orange tint, hair, text, labels, arrows, UI, borders, collage or extra person.\",\n    \"no_invention\": \"Exact ID catalogue controls source text and muscles; explicit supplied user variant controls the derived render scene. Do not mix contradictory raw pose instructions into the selected scene or add muscles from external sources.\",\n    \"output\": {\n      \"format\": \"PNG\",\n      \"height\": 1024,\n      \"one_person\": true,\n      \"one_phase\": true,\n      \"width\": 1024\n    },\n    \"primary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"rule\": \"Highlight only the exact primary muscle group provided for this exercise.\"\n    },\n    \"secondary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"intensity_fraction\": [\n        0.4,\n        0.5\n      ],\n      \"rule\": \"Only the exact secondary muscles, lighter same-hue highlight; if the list is empty add no secondary target.\"\n    },\n    \"version\": \"v1\"\n  },\n  \"technique_resolution\": {\n    \"PNG_approval\": false,\n    \"binding_or_name_alone_is_not_confirmation\": true,\n    \"catalog_modified\": false,\n    \"dataset_instruction_steps_read\": null,\n    \"decision_kind\": \"user_selected_illustration_variant\",\n    \"evidence_path\": \"data/audits/agent-03-final13-user-variants-2026-10-03-technique.json\",\n    \"evidence_selector\": \"records[exercise_id=\\\"reverse-fly-single-arm-cable-machine\\\"]\",\n    \"independent_external_confirmation\": false,\n    \"preserved_source_errors_path\": \"data/audits/agent-03-final13-user-variants-2026-10-03-catalogue-conflicts.json\",\n    \"status\": \"resolved_for_illustration\",\n    \"technique_fields_read\": [\n      \"content.en.description\",\n      \"content.en.instructions\",\n      \"content.en.form_cues\",\n      \"content.en.common_mistakes\",\n      \"content.en.safety_note\"\n    ],\n    \"user_selected_variant_decision\": {\n      \"PNG_approval\": false,\n      \"catalog_modified\": false,\n      \"citation_placeholders\": [\n        \":chatgpt-content-reference{index=\\\"5\\\"}\"\n      ],\n      \"exercise_id\": \"reverse-fly-single-arm-cable-machine\",\n      \"independently_verified_external_sources\": [],\n      \"name\": \"Reverse Fly Single Arm (Cable)\",\n      \"provided_user_paragraph\": \"6. **`reverse-fly-single-arm-cable-machine` → standing cross-body single-arm reverse fly.** Pulley на рівні плеча/грудей, один D-handle. Людина стоїть **боком до cable tower**. Працює рука, яка **далі від тренажера**: вона тягнеться поперек тулуба до ручки. Наприклад, tower зліва → працює права рука. Непрацююча ближня рука може триматися за стійку для стабілізації. Робоча рука з невеликим згином ліктя проходить широкою дугою назовні й назад приблизно до лінії плеча; корпус не крутиться. :chatgpt-content-reference{index=\\\"5\\\"}\",\n      \"render_precedence\": \"User-selected scene governs pose/equipment where raw catalogue or dataset conflicts. Raw source texts remain provenance, not conflicting render instructions. Exact catalogue ID/name/equipment category/muscles remain unchanged.\",\n      \"resolution_kind\": \"user_selected_illustration_variant\",\n      \"selected_camera\": \"Full-body front-side three-quarter view exposing every prescribed contact, grip and support. Entire person and all equipment visible within square; no crop, text, arrows or second phase.\",\n      \"selected_scene\": [\n        \"Far arm finishes a cross-body reverse-fly arc at shoulder line\",\n        \"Stand SIDE-ON with cable tower on LEFT, feet stable, torso still with slight permitted hip hinge. RIGHT working arm has small fixed elbow bend and has swept outward/back to shoulder line; no torso rotation or row.\",\n        \"RIGHT/FAR hand holds ONE D-handle; LEFT/NEAR nonworking hand grips tower stability point. The source phrase far hand supporting is explicitly overridden by the user-selected layout.\",\n        \"Single shoulder/chest-height pulley on LEFT tower and one taut cable to right-hand D-handle. Both feet on floor; left hand supports on fixed frame clear of moving cable. At start the right hand reaches across body; at selected finish it is out/back at shoulder line.\",\n        \"Right shoulder horizontal abduction sweeps handle from across torso outward/back along a wide arc while elbow bend stays small; controlled return. No double-arm reverse fly, torso twist or elbow-driven row.\"\n      ],\n      \"source_catalog_record_sha256\": \"1e9a448ac91481b409ef67dba7d6474f8ee3c8112961d11886bc1d3e38f2d5dd\",\n      \"source_document_path\": \"docs/agent-03-final13-user-variants-2026-10-03-source.txt\",\n      \"source_document_point\": 6,\n      \"source_document_sha256\": \"752aa941dcf4b69794b06a9c608f62a16f6f0c7e00d09eda3ec831b63304368e\",\n      \"status\": \"resolved_for_illustration\"\n    }\n  }\n}",
+          "prompt_payload": {
+            "identity_do_not_render_as_text": {
+              "exercise_id": "reverse-fly-single-arm-cable-machine",
+              "name": "Reverse Fly Single Arm (Cable)",
+              "catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+              "catalog_record_sha256": "1e9a448ac91481b409ef67dba7d6474f8ee3c8112961d11886bc1d3e38f2d5dd"
+            },
+            "exact_catalogue_source": {
+              "source_english": {
+                "description": "A single-arm cable reverse fly sweeps one handle outward and back in a controlled rear-shoulder arc.",
+                "instructions": [
+                  "Set a cable at about shoulder height and stand side-on with the far hand supporting the stance.",
+                  "Grip the handle with the working arm and hinge slightly at the hips.",
+                  "Sweep the arm out and back until it aligns with the shoulder without rotating the torso.",
+                  "Return the handle slowly and switch sides."
+                ],
+                "form_cues": [
+                  "Keep the shoulder down.",
+                  "Move in the rear-delt arc.",
+                  "Keep the torso still."
+                ],
+                "common_mistakes": [
+                  "Turning it into a row.",
+                  "Shrugging.",
+                  "Using momentum."
+                ],
+                "safety_note": "Use a light load and keep the cable path clear of the body.",
+                "provenance": "authored"
+              },
+              "equipment": "machine",
+              "primary_muscle": "shoulders",
+              "secondary_muscles": [
+                "upper_back"
+              ]
+            },
+            "human_reference": {
+              "repository_path": "assets/exercises/biceps-curl-dumbbell.png",
+              "absolute_path": "/workspace/lightweight-exercises-photo/assets/exercises/biceps-curl-dumbbell.png",
+              "sha256": "52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f",
+              "branch": "work",
+              "source_commit": "b0385b7e2f3382d545a6dff5304c81ba3c771096",
+              "role": "Human appearance/proportions/materials/anatomical style ONLY. Exercise pose, grip, equipment and muscles come from the exact-ID catalogue, never the reference.",
+              "pixels_reviewed_during_preparation": false
+            },
+            "style": {
+              "version": "v1",
+              "human_model": "One athletic bald male anatomical mannequin, opaque silver-gray muscular surfaces, consistent proportions and detailed 3D materials, plain black shorts, barefoot.",
+              "primary_highlight": {
+                "hex": "#F26445",
+                "rule": "Highlight only the exact primary muscle group provided for this exercise."
+              },
+              "secondary_highlight": {
+                "hex": "#F26445",
+                "intensity_fraction": [
+                  0.4,
+                  0.5
+                ],
+                "rule": "Only the exact secondary muscles, lighter same-hue highlight; if the list is empty add no secondary target."
+              },
+              "background": "Genuinely transparent PNG background, no white/checkerboard layer, no environment scene.",
+              "output": {
+                "format": "PNG",
+                "width": 1024,
+                "height": 1024,
+                "one_person": true,
+                "one_phase": true
+              },
+              "material_rules": "Highlights never make tissue transparent; no glow, whole-body orange tint, hair, text, labels, arrows, UI, borders, collage or extra person.",
+              "framing": "Full figure and all required equipment/supports visible within a square. Scale and use a three-quarter view to expose the specified contacts without changing anatomy, equipment, grip or technique.",
+              "no_invention": "Exact ID catalogue controls source text and muscles; explicit supplied user variant controls the derived render scene. Do not mix contradictory raw pose instructions into the selected scene or add muscles from external sources."
+            },
+            "approved_style_files": [
+              {
+                "path": "docs/exercise-image-style.md",
+                "sha256": "8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578"
+              }
+            ],
+            "selected_render_scene": {
+              "exercise_id": "reverse-fly-single-arm-cable-machine",
+              "single_phase": "Far arm finishes a cross-body reverse-fly arc at shoulder line",
+              "pose": "Stand SIDE-ON with cable tower on LEFT, feet stable, torso still with slight permitted hip hinge. RIGHT working arm has small fixed elbow bend and has swept outward/back to shoulder line; no torso rotation or row.",
+              "grip": "RIGHT/FAR hand holds ONE D-handle; LEFT/NEAR nonworking hand grips tower stability point. The source phrase far hand supporting is explicitly overridden by the user-selected layout.",
+              "supports_and_equipment": "Single shoulder/chest-height pulley on LEFT tower and one taut cable to right-hand D-handle. Both feet on floor; left hand supports on fixed frame clear of moving cable. At start the right hand reaches across body; at selected finish it is out/back at shoulder line.",
+              "movement_trajectory": "Right shoulder horizontal abduction sweeps handle from across torso outward/back along a wide arc while elbow bend stays small; controlled return. No double-arm reverse fly, torso twist or elbow-driven row.",
+              "camera": "Full-body front-side three-quarter view exposing every prescribed contact, grip and support. Entire person and all equipment visible within square; no crop, text, arrows or second phase.",
+              "one_phase_only": true,
+              "never_infer_muscles_from_pose_or_reference": true
+            },
+            "technique_resolution": {
+              "status": "resolved_for_illustration",
+              "decision_kind": "user_selected_illustration_variant",
+              "user_selected_variant_decision": {
+                "exercise_id": "reverse-fly-single-arm-cable-machine",
+                "name": "Reverse Fly Single Arm (Cable)",
+                "status": "resolved_for_illustration",
+                "resolution_kind": "user_selected_illustration_variant",
+                "source_document_path": "docs/agent-03-final13-user-variants-2026-10-03-source.txt",
+                "source_document_sha256": "752aa941dcf4b69794b06a9c608f62a16f6f0c7e00d09eda3ec831b63304368e",
+                "source_document_point": 6,
+                "provided_user_paragraph": "6. **`reverse-fly-single-arm-cable-machine` → standing cross-body single-arm reverse fly.** Pulley на рівні плеча/грудей, один D-handle. Людина стоїть **боком до cable tower**. Працює рука, яка **далі від тренажера**: вона тягнеться поперек тулуба до ручки. Наприклад, tower зліва → працює права рука. Непрацююча ближня рука може триматися за стійку для стабілізації. Робоча рука з невеликим згином ліктя проходить широкою дугою назовні й назад приблизно до лінії плеча; корпус не крутиться. :chatgpt-content-reference{index=\"5\"}",
+                "citation_placeholders": [
+                  ":chatgpt-content-reference{index=\"5\"}"
+                ],
+                "independently_verified_external_sources": [],
+                "selected_scene": [
+                  "Far arm finishes a cross-body reverse-fly arc at shoulder line",
+                  "Stand SIDE-ON with cable tower on LEFT, feet stable, torso still with slight permitted hip hinge. RIGHT working arm has small fixed elbow bend and has swept outward/back to shoulder line; no torso rotation or row.",
+                  "RIGHT/FAR hand holds ONE D-handle; LEFT/NEAR nonworking hand grips tower stability point. The source phrase far hand supporting is explicitly overridden by the user-selected layout.",
+                  "Single shoulder/chest-height pulley on LEFT tower and one taut cable to right-hand D-handle. Both feet on floor; left hand supports on fixed frame clear of moving cable. At start the right hand reaches across body; at selected finish it is out/back at shoulder line.",
+                  "Right shoulder horizontal abduction sweeps handle from across torso outward/back along a wide arc while elbow bend stays small; controlled return. No double-arm reverse fly, torso twist or elbow-driven row."
+                ],
+                "selected_camera": "Full-body front-side three-quarter view exposing every prescribed contact, grip and support. Entire person and all equipment visible within square; no crop, text, arrows or second phase.",
+                "source_catalog_record_sha256": "1e9a448ac91481b409ef67dba7d6474f8ee3c8112961d11886bc1d3e38f2d5dd",
+                "render_precedence": "User-selected scene governs pose/equipment where raw catalogue or dataset conflicts. Raw source texts remain provenance, not conflicting render instructions. Exact catalogue ID/name/equipment category/muscles remain unchanged.",
+                "catalog_modified": false,
+                "PNG_approval": false
+              },
+              "evidence_path": "data/audits/agent-03-final13-user-variants-2026-10-03-technique.json",
+              "evidence_selector": "records[exercise_id=\"reverse-fly-single-arm-cable-machine\"]",
+              "technique_fields_read": [
+                "content.en.description",
+                "content.en.instructions",
+                "content.en.form_cues",
+                "content.en.common_mistakes",
+                "content.en.safety_note"
+              ],
+              "dataset_instruction_steps_read": null,
+              "binding_or_name_alone_is_not_confirmation": true,
+              "independent_external_confirmation": false,
+              "preserved_source_errors_path": "data/audits/agent-03-final13-user-variants-2026-10-03-catalogue-conflicts.json",
+              "catalog_modified": false,
+              "PNG_approval": false
+            },
+            "source_use_rule": "User-selected scene governs pose/equipment where raw catalogue or dataset conflicts. Raw source texts remain provenance, not conflicting render instructions. Exact catalogue ID/name/equipment category/muscles remain unchanged."
+          },
+          "source_english": {
+            "description": "A single-arm cable reverse fly sweeps one handle outward and back in a controlled rear-shoulder arc.",
+            "instructions": [
+              "Set a cable at about shoulder height and stand side-on with the far hand supporting the stance.",
+              "Grip the handle with the working arm and hinge slightly at the hips.",
+              "Sweep the arm out and back until it aligns with the shoulder without rotating the torso.",
+              "Return the handle slowly and switch sides."
+            ],
+            "form_cues": [
+              "Keep the shoulder down.",
+              "Move in the rear-delt arc.",
+              "Keep the torso still."
+            ],
+            "common_mistakes": [
+              "Turning it into a row.",
+              "Shrugging.",
+              "Using momentum."
+            ],
+            "safety_note": "Use a light load and keep the cable path clear of the body.",
+            "provenance": "authored"
+          },
+          "source_selector": "exercises[id=\"reverse-fly-single-arm-cable-machine\"]",
+          "source_url": "https://github.com/romanthoruk2008-pixel/lightweight-exercises-photo/blob/b0385b7e2f3382d545a6dff5304c81ba3c771096/data/exercises/catalog.json",
+          "source_catalog_commit": "b0385b7e2f3382d545a6dff5304c81ba3c771096",
+          "source_catalog_record_sha256": "1e9a448ac91481b409ef67dba7d6474f8ee3c8112961d11886bc1d3e38f2d5dd",
+          "source_english_sha256": "deb716d30b49588325ff71227e65a5c124df41e78968a693d9f410950d6979c7",
+          "equipment": "machine",
+          "primary_muscle": "shoulders",
+          "secondary_muscles": [
+            "upper_back"
+          ],
+          "scene": {
+            "exercise_id": "reverse-fly-single-arm-cable-machine",
+            "single_phase": "Far arm finishes a cross-body reverse-fly arc at shoulder line",
+            "pose": "Stand SIDE-ON with cable tower on LEFT, feet stable, torso still with slight permitted hip hinge. RIGHT working arm has small fixed elbow bend and has swept outward/back to shoulder line; no torso rotation or row.",
+            "grip": "RIGHT/FAR hand holds ONE D-handle; LEFT/NEAR nonworking hand grips tower stability point. The source phrase far hand supporting is explicitly overridden by the user-selected layout.",
+            "supports_and_equipment": "Single shoulder/chest-height pulley on LEFT tower and one taut cable to right-hand D-handle. Both feet on floor; left hand supports on fixed frame clear of moving cable. At start the right hand reaches across body; at selected finish it is out/back at shoulder line.",
+            "movement_trajectory": "Right shoulder horizontal abduction sweeps handle from across torso outward/back along a wide arc while elbow bend stays small; controlled return. No double-arm reverse fly, torso twist or elbow-driven row.",
+            "camera": "Full-body front-side three-quarter view exposing every prescribed contact, grip and support. Entire person and all equipment visible within square; no crop, text, arrows or second phase.",
+            "one_phase_only": true,
+            "never_infer_muscles_from_pose_or_reference": true
+          },
+          "technique_resolution": {
+            "status": "resolved_for_illustration",
+            "decision_kind": "user_selected_illustration_variant",
+            "user_selected_variant_decision": {
+              "exercise_id": "reverse-fly-single-arm-cable-machine",
+              "name": "Reverse Fly Single Arm (Cable)",
+              "status": "resolved_for_illustration",
+              "resolution_kind": "user_selected_illustration_variant",
+              "source_document_path": "docs/agent-03-final13-user-variants-2026-10-03-source.txt",
+              "source_document_sha256": "752aa941dcf4b69794b06a9c608f62a16f6f0c7e00d09eda3ec831b63304368e",
+              "source_document_point": 6,
+              "provided_user_paragraph": "6. **`reverse-fly-single-arm-cable-machine` → standing cross-body single-arm reverse fly.** Pulley на рівні плеча/грудей, один D-handle. Людина стоїть **боком до cable tower**. Працює рука, яка **далі від тренажера**: вона тягнеться поперек тулуба до ручки. Наприклад, tower зліва → працює права рука. Непрацююча ближня рука може триматися за стійку для стабілізації. Робоча рука з невеликим згином ліктя проходить широкою дугою назовні й назад приблизно до лінії плеча; корпус не крутиться. :chatgpt-content-reference{index=\"5\"}",
+              "citation_placeholders": [
+                ":chatgpt-content-reference{index=\"5\"}"
+              ],
+              "independently_verified_external_sources": [],
+              "selected_scene": [
+                "Far arm finishes a cross-body reverse-fly arc at shoulder line",
+                "Stand SIDE-ON with cable tower on LEFT, feet stable, torso still with slight permitted hip hinge. RIGHT working arm has small fixed elbow bend and has swept outward/back to shoulder line; no torso rotation or row.",
+                "RIGHT/FAR hand holds ONE D-handle; LEFT/NEAR nonworking hand grips tower stability point. The source phrase far hand supporting is explicitly overridden by the user-selected layout.",
+                "Single shoulder/chest-height pulley on LEFT tower and one taut cable to right-hand D-handle. Both feet on floor; left hand supports on fixed frame clear of moving cable. At start the right hand reaches across body; at selected finish it is out/back at shoulder line.",
+                "Right shoulder horizontal abduction sweeps handle from across torso outward/back along a wide arc while elbow bend stays small; controlled return. No double-arm reverse fly, torso twist or elbow-driven row."
+              ],
+              "selected_camera": "Full-body front-side three-quarter view exposing every prescribed contact, grip and support. Entire person and all equipment visible within square; no crop, text, arrows or second phase.",
+              "source_catalog_record_sha256": "1e9a448ac91481b409ef67dba7d6474f8ee3c8112961d11886bc1d3e38f2d5dd",
+              "render_precedence": "User-selected scene governs pose/equipment where raw catalogue or dataset conflicts. Raw source texts remain provenance, not conflicting render instructions. Exact catalogue ID/name/equipment category/muscles remain unchanged.",
+              "catalog_modified": false,
+              "PNG_approval": false
+            },
+            "evidence_path": "data/audits/agent-03-final13-user-variants-2026-10-03-technique.json",
+            "evidence_selector": "records[exercise_id=\"reverse-fly-single-arm-cable-machine\"]",
+            "technique_fields_read": [
+              "content.en.description",
+              "content.en.instructions",
+              "content.en.form_cues",
+              "content.en.common_mistakes",
+              "content.en.safety_note"
+            ],
+            "dataset_instruction_steps_read": null,
+            "binding_or_name_alone_is_not_confirmation": true,
+            "independent_external_confirmation": false,
+            "preserved_source_errors_path": "data/audits/agent-03-final13-user-variants-2026-10-03-catalogue-conflicts.json",
+            "catalog_modified": false,
+            "PNG_approval": false
+          },
+          "approved_style_files": [
+            {
+              "path": "docs/exercise-image-style.md",
+              "sha256": "8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578"
+            }
+          ],
+          "human_reference": {
+            "repository_path": "assets/exercises/biceps-curl-dumbbell.png",
+            "absolute_path": "/workspace/lightweight-exercises-photo/assets/exercises/biceps-curl-dumbbell.png",
+            "sha256": "52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f",
+            "branch": "work",
+            "source_commit": "b0385b7e2f3382d545a6dff5304c81ba3c771096",
+            "role": "Human appearance/proportions/materials/anatomical style ONLY. Exercise pose, grip, equipment and muscles come from the exact-ID catalogue, never the reference.",
+            "pixels_reviewed_during_preparation": false
+          },
+          "technical_check_details": {
+            "status": "passed",
+            "dimensions": [
+              1024,
+              1024
+            ],
+            "mode": "RGBA",
+            "rgba": true,
+            "alpha_min": 0,
+            "alpha_max": 255,
+            "alpha_zero_pixels": 647268,
+            "alpha_partial_pixels": 398219,
+            "alpha_opaque_pixels": 3089,
+            "corner_alpha": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "all_corners_transparent": true,
+            "visual_qa": "not_performed"
+          },
+          "git_result_path": "assets/exercises/pending/agent-03-final13-user-variants-2026-10-03/generator-single/agent-03-others-042/reverse-fly-single-arm-cable-machine/attempt-1.png",
+          "result_sha256": "3f46bb5b117aa4a0f1471b704a767f3ddfc361e8f52380d40685efb663f8c10b",
+          "result_size_bytes": 763803,
+          "completed_at": "2026-10-03T17:25:49.478Z",
+          "error": null
         },
         {
           "exercise_id": "squat-row-machine",
           "name": "Squat Row",
-          "status": "not_started",
-          "attempts": 0,
-          "attempt_history": [],
-          "user_review": null,
-          "technical_check": null,
+          "status": "generated_needs_review",
+          "attempts": 1,
+          "attempt_history": [
+            {
+              "attempt_number": 1,
+              "started_at": "2026-10-03T17:26:25Z",
+              "status": "generated",
+              "generation_prompt": "Create exactly ONE square 1024x1024 transparent PNG of this exact exercise and ONE selected phase. Metadata must never appear as image text.\n{\n  \"approved_style_files\": [\n    {\n      \"path\": \"docs/exercise-image-style.md\",\n      \"sha256\": \"8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578\"\n    },\n    {\n      \"path\": \"docs/exercise-image-style-neutral-primary.md\",\n      \"sha256\": \"86204ab43f23d119a1eb25cafdbda2518b741a0090b4ffb0ceb9086952314439\"\n    }\n  ],\n  \"exact_catalogue_source\": {\n    \"equipment\": \"machine\",\n    \"primary_muscle\": \"full_body\",\n    \"secondary_muscles\": [],\n    \"source_english\": {\n      \"common_mistakes\": [\n        \"Rounding the back.\",\n        \"Rowing before the legs begin to extend.\",\n        \"Letting the cable pull the body forward.\"\n      ],\n      \"description\": \"A squat row combines a cable-supported squat with a rope row toward the lower chest.\",\n      \"form_cues\": [\n        \"Keep the chest lifted in the squat.\",\n        \"Pull the rope to the lower chest with elbows back.\",\n        \"Coordinate the rise and row.\"\n      ],\n      \"instructions\": [\n        \"Attach the rope to the cable at waist height and stand facing the machine.\",\n        \"Lower into a squat while holding the rope with both hands in a neutral grip.\",\n        \"Stand partway and pull the rope toward the lower chest, driving the elbows back.\",\n        \"Extend the arms and lower into the next squat under control.\"\n      ],\n      \"provenance\": \"adapted\",\n      \"safety_note\": \"Use a cable load that lets you keep both feet planted while combining the squat and row.\"\n    }\n  },\n  \"human_reference\": {\n    \"absolute_path\": \"/workspace/lightweight-exercises-photo/assets/exercises/biceps-curl-dumbbell.png\",\n    \"branch\": \"work\",\n    \"pixels_reviewed_during_preparation\": false,\n    \"repository_path\": \"assets/exercises/biceps-curl-dumbbell.png\",\n    \"role\": \"Human appearance/proportions/materials/anatomical style ONLY. Exercise pose, grip, equipment and muscles come from the exact-ID catalogue, never the reference.\",\n    \"sha256\": \"52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f\",\n    \"source_commit\": \"b0385b7e2f3382d545a6dff5304c81ba3c771096\"\n  },\n  \"identity_do_not_render_as_text\": {\n    \"catalog_record_sha256\": \"a32f553993d54612836ca070ccf08a2ddcc8edc8be4e33129d36640bac5203ee\",\n    \"catalog_sha256\": \"a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989\",\n    \"exercise_id\": \"squat-row-machine\",\n    \"name\": \"Squat Row\"\n  },\n  \"selected_render_scene\": {\n    \"camera\": \"Full-body front-side three-quarter view exposing every prescribed contact, grip and support. Entire person and all equipment visible within square; no crop, text, arrows or second phase.\",\n    \"exercise_id\": \"squat-row-machine\",\n    \"grip\": \"One end of ONE rope in each hand, NEUTRAL palms facing each other; closed grips and straight wrists.\",\n    \"movement_trajectory\": \"User-selected sequence: squat with arms extended, HOLD squat and row rope to lower ribs/abdomen, re-extend arms while still squatting, THEN stand. Render only contracted row IN squat. Do not blend in the raw partway-standing squat-to-row sequence.\",\n    \"never_infer_muscles_from_pose_or_reference\": true,\n    \"one_phase_only\": true,\n    \"pose\": \"Face cable stack, hips/knees held in a stable comfortable squat, chest lifted and back neutral. Both feet planted; elbows drawn back close to ribs and hands near lower ribs/abdomen. Body does NOT rise during the selected row.\",\n    \"single_phase\": \"Rope row contracted while REMAINING in the squat\",\n    \"supports_and_equipment\": \"LOW pulley in front connected by ONE taut cable to the rope junction. Stand far enough back to keep cable tension, both feet on floor. No waist-height attachment, barbell or rowing seat.\"\n  },\n  \"source_use_rule\": \"User-selected scene governs pose/equipment where raw catalogue or dataset conflicts. Raw source texts remain provenance, not conflicting render instructions. Exact catalogue ID/name/equipment category/muscles remain unchanged.\",\n  \"style\": {\n    \"background\": \"Genuinely transparent PNG background, no white/checkerboard layer, no environment scene.\",\n    \"framing\": \"Full figure and all required equipment/supports visible within a square. Scale and use a three-quarter view to expose the specified contacts without changing anatomy, equipment, grip or technique.\",\n    \"human_model\": \"One athletic bald male anatomical mannequin, opaque silver-gray muscular surfaces, consistent proportions and detailed 3D materials, plain black shorts, barefoot.\",\n    \"material_rules\": \"Highlights never make tissue transparent; no glow, whole-body orange tint, hair, text, labels, arrows, UI, borders, collage or extra person.\",\n    \"no_invention\": \"Exact ID catalogue controls source text and muscles; explicit supplied user variant controls the derived render scene. Do not mix contradictory raw pose instructions into the selected scene or add muscles from external sources.\",\n    \"output\": {\n      \"format\": \"PNG\",\n      \"height\": 1024,\n      \"one_person\": true,\n      \"one_phase\": true,\n      \"width\": 1024\n    },\n    \"primary_highlight\": {\n      \"hex\": null,\n      \"rule\": \"Keep whole body opaque neutral silver-gray. No anatomical primary or whole-body orange tint for full_body/cardio/other.\"\n    },\n    \"secondary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"intensity_fraction\": [\n        0.4,\n        0.5\n      ],\n      \"rule\": \"Only the exact secondary muscles, lighter same-hue highlight; if the list is empty add no secondary target.\"\n    },\n    \"version\": \"v1-neutral-primary-2026-10-02\"\n  },\n  \"technique_resolution\": {\n    \"PNG_approval\": false,\n    \"binding_or_name_alone_is_not_confirmation\": true,\n    \"catalog_modified\": false,\n    \"dataset_instruction_steps_read\": [\n      \"Attach a rope to a cable machine at waist height.\",\n      \"Stand facing the cable machine with your feet shoulder-width apart.\",\n      \"Bend your knees and lower your body into a squat position, keeping your back straight and chest up.\",\n      \"Grasp the rope with an overhand grip, with your hands shoulder-width apart.\",\n      \"Engage your core and pull the rope towards your body, squeezing your shoulder blades together.\",\n      \"Keep your elbows close to your body and continue pulling until your hands reach your chest.\",\n      \"Pause for a moment at the top of the movement, then slowly release the rope and extend your arms back to the starting position.\",\n      \"Repeat for the desired number of repetitions.\"\n    ],\n    \"decision_kind\": \"user_selected_illustration_variant\",\n    \"evidence_path\": \"data/audits/agent-03-final13-user-variants-2026-10-03-technique.json\",\n    \"evidence_selector\": \"records[exercise_id=\\\"squat-row-machine\\\"]\",\n    \"independent_external_confirmation\": false,\n    \"preserved_source_errors_path\": \"data/audits/agent-03-final13-user-variants-2026-10-03-catalogue-conflicts.json\",\n    \"status\": \"resolved_for_illustration\",\n    \"technique_fields_read\": [\n      \"content.en.description\",\n      \"content.en.instructions\",\n      \"content.en.form_cues\",\n      \"content.en.common_mistakes\",\n      \"content.en.safety_note\"\n    ],\n    \"user_selected_variant_decision\": {\n      \"PNG_approval\": false,\n      \"catalog_modified\": false,\n      \"citation_placeholders\": [\n        \":chatgpt-content-reference{index=\\\"11\\\"}\"\n      ],\n      \"exercise_id\": \"squat-row-machine\",\n      \"independently_verified_external_sources\": [],\n      \"name\": \"Squat Row\",\n      \"provided_user_paragraph\": \"12. **`squat-row-machine` → low-cable squat row з rope attachment.** Найближчий точний exercise-library match: низький pulley, **rope attachment**, обидві руки тримають кінці мотузки neutral grip — долоні одна до одної. Людина стоїть обличчям до stack, відходить назад, щоб кабель був натягнутий → сідає в squat з руками витягнутими → **залишаючись у присіді, тягне rope до нижніх ребер/живота**, лікті назад і близько до тулуба → знову випрямляє руки в присіді → після цього встає. Саме така послідовність наведена для `Cable Squat Row (with rope attachment)` у кількох збігаючихся exercise databases. Є інша варіація `squat-to-row`, де row робиться одночасно з підйомом, але її не треба змішувати з цією. :chatgpt-content-reference{index=\\\"11\\\"}\",\n      \"render_precedence\": \"User-selected scene governs pose/equipment where raw catalogue or dataset conflicts. Raw source texts remain provenance, not conflicting render instructions. Exact catalogue ID/name/equipment category/muscles remain unchanged.\",\n      \"resolution_kind\": \"user_selected_illustration_variant\",\n      \"selected_camera\": \"Full-body front-side three-quarter view exposing every prescribed contact, grip and support. Entire person and all equipment visible within square; no crop, text, arrows or second phase.\",\n      \"selected_scene\": [\n        \"Rope row contracted while REMAINING in the squat\",\n        \"Face cable stack, hips/knees held in a stable comfortable squat, chest lifted and back neutral. Both feet planted; elbows drawn back close to ribs and hands near lower ribs/abdomen. Body does NOT rise during the selected row.\",\n        \"One end of ONE rope in each hand, NEUTRAL palms facing each other; closed grips and straight wrists.\",\n        \"LOW pulley in front connected by ONE taut cable to the rope junction. Stand far enough back to keep cable tension, both feet on floor. No waist-height attachment, barbell or rowing seat.\",\n        \"User-selected sequence: squat with arms extended, HOLD squat and row rope to lower ribs/abdomen, re-extend arms while still squatting, THEN stand. Render only contracted row IN squat. Do not blend in the raw partway-standing squat-to-row sequence.\"\n      ],\n      \"source_catalog_record_sha256\": \"a32f553993d54612836ca070ccf08a2ddcc8edc8be4e33129d36640bac5203ee\",\n      \"source_document_path\": \"docs/agent-03-final13-user-variants-2026-10-03-source.txt\",\n      \"source_document_point\": 12,\n      \"source_document_sha256\": \"752aa941dcf4b69794b06a9c608f62a16f6f0c7e00d09eda3ec831b63304368e\",\n      \"status\": \"resolved_for_illustration\"\n    }\n  }\n}",
+              "prompt_sha256": "8e190c92d91da7db0baadc72f801cfa15249c998f06b31b010ca607cafe4654e",
+              "source_catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+              "source_catalog_record_sha256": "a32f553993d54612836ca070ccf08a2ddcc8edc8be4e33129d36640bac5203ee",
+              "source_english_sha256": "d559daea27b7f1a01443702c6e32f127b2bde416d13263686f2f4e98be3f9aa3",
+              "style_version": "v1-neutral-primary-2026-10-02",
+              "approved_style_files": [
+                {
+                  "path": "docs/exercise-image-style.md",
+                  "sha256": "8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578"
+                },
+                {
+                  "path": "docs/exercise-image-style-neutral-primary.md",
+                  "sha256": "86204ab43f23d119a1eb25cafdbda2518b741a0090b4ffb0ceb9086952314439"
+                }
+              ],
+              "human_reference_sha256": "52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f",
+              "planned_png_path": "/workspace/exercise-image-results/agent-03-final13-user-variants-2026-10-03/generator-single/agent-03-others-042/squat-row-machine/attempt-1.png",
+              "planned_git_png_path": "assets/exercises/pending/agent-03-final13-user-variants-2026-10-03/generator-single/agent-03-others-042/squat-row-machine/attempt-1.png",
+              "raw_output_path": "/workspace/generated_images/exec-65b41098-068a-4c0c-b9e6-f072558e7ffc.png",
+              "source_size": [
+                1254,
+                1254
+              ],
+              "source_mode": "RGBA",
+              "git_copy_sha256": "756699c229be8d7db46431d7e84c70bfd988ad160eecb6a0694f644e77fb94bd",
+              "tool_response_summary": {
+                "output_path": "/workspace/generated_images/exec-65b41098-068a-4c0c-b9e6-f072558e7ffc.png"
+              },
+              "technical_check": {
+                "status": "passed",
+                "dimensions": [
+                  1024,
+                  1024
+                ],
+                "mode": "RGBA",
+                "rgba": true,
+                "alpha_min": 0,
+                "alpha_max": 255,
+                "alpha_zero_pixels": 681744,
+                "alpha_partial_pixels": 363340,
+                "alpha_opaque_pixels": 3492,
+                "corner_alpha": [
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "all_corners_transparent": true,
+                "visual_qa": "not_performed"
+              },
+              "completed_at": "2026-10-03T17:27:24.925Z"
+            }
+          ],
+          "user_review": "pending",
+          "technical_check": "passed",
           "agent_visual_review": "not_performed",
-          "result_path": null,
+          "result_path": "/workspace/exercise-image-results/agent-03-final13-user-variants-2026-10-03/generator-single/agent-03-others-042/squat-row-machine/attempt-1.png",
           "planned_png_path": "/workspace/exercise-image-results/agent-03-final13-user-variants-2026-10-03/generator-single/agent-03-others-042/squat-row-machine/attempt-1.png",
           "planned_git_png_path": "assets/exercises/pending/agent-03-final13-user-variants-2026-10-03/generator-single/agent-03-others-042/squat-row-machine/attempt-1.png",
           "prompt_sha256": "8e190c92d91da7db0baadc72f801cfa15249c998f06b31b010ca607cafe4654e",
           "source_catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
-          "style_version": "v1-neutral-primary-2026-10-02"
+          "style_version": "v1-neutral-primary-2026-10-02",
+          "batch_id": "agent-03-others-042",
+          "generation_prompt": "Create exactly ONE square 1024x1024 transparent PNG of this exact exercise and ONE selected phase. Metadata must never appear as image text.\n{\n  \"approved_style_files\": [\n    {\n      \"path\": \"docs/exercise-image-style.md\",\n      \"sha256\": \"8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578\"\n    },\n    {\n      \"path\": \"docs/exercise-image-style-neutral-primary.md\",\n      \"sha256\": \"86204ab43f23d119a1eb25cafdbda2518b741a0090b4ffb0ceb9086952314439\"\n    }\n  ],\n  \"exact_catalogue_source\": {\n    \"equipment\": \"machine\",\n    \"primary_muscle\": \"full_body\",\n    \"secondary_muscles\": [],\n    \"source_english\": {\n      \"common_mistakes\": [\n        \"Rounding the back.\",\n        \"Rowing before the legs begin to extend.\",\n        \"Letting the cable pull the body forward.\"\n      ],\n      \"description\": \"A squat row combines a cable-supported squat with a rope row toward the lower chest.\",\n      \"form_cues\": [\n        \"Keep the chest lifted in the squat.\",\n        \"Pull the rope to the lower chest with elbows back.\",\n        \"Coordinate the rise and row.\"\n      ],\n      \"instructions\": [\n        \"Attach the rope to the cable at waist height and stand facing the machine.\",\n        \"Lower into a squat while holding the rope with both hands in a neutral grip.\",\n        \"Stand partway and pull the rope toward the lower chest, driving the elbows back.\",\n        \"Extend the arms and lower into the next squat under control.\"\n      ],\n      \"provenance\": \"adapted\",\n      \"safety_note\": \"Use a cable load that lets you keep both feet planted while combining the squat and row.\"\n    }\n  },\n  \"human_reference\": {\n    \"absolute_path\": \"/workspace/lightweight-exercises-photo/assets/exercises/biceps-curl-dumbbell.png\",\n    \"branch\": \"work\",\n    \"pixels_reviewed_during_preparation\": false,\n    \"repository_path\": \"assets/exercises/biceps-curl-dumbbell.png\",\n    \"role\": \"Human appearance/proportions/materials/anatomical style ONLY. Exercise pose, grip, equipment and muscles come from the exact-ID catalogue, never the reference.\",\n    \"sha256\": \"52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f\",\n    \"source_commit\": \"b0385b7e2f3382d545a6dff5304c81ba3c771096\"\n  },\n  \"identity_do_not_render_as_text\": {\n    \"catalog_record_sha256\": \"a32f553993d54612836ca070ccf08a2ddcc8edc8be4e33129d36640bac5203ee\",\n    \"catalog_sha256\": \"a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989\",\n    \"exercise_id\": \"squat-row-machine\",\n    \"name\": \"Squat Row\"\n  },\n  \"selected_render_scene\": {\n    \"camera\": \"Full-body front-side three-quarter view exposing every prescribed contact, grip and support. Entire person and all equipment visible within square; no crop, text, arrows or second phase.\",\n    \"exercise_id\": \"squat-row-machine\",\n    \"grip\": \"One end of ONE rope in each hand, NEUTRAL palms facing each other; closed grips and straight wrists.\",\n    \"movement_trajectory\": \"User-selected sequence: squat with arms extended, HOLD squat and row rope to lower ribs/abdomen, re-extend arms while still squatting, THEN stand. Render only contracted row IN squat. Do not blend in the raw partway-standing squat-to-row sequence.\",\n    \"never_infer_muscles_from_pose_or_reference\": true,\n    \"one_phase_only\": true,\n    \"pose\": \"Face cable stack, hips/knees held in a stable comfortable squat, chest lifted and back neutral. Both feet planted; elbows drawn back close to ribs and hands near lower ribs/abdomen. Body does NOT rise during the selected row.\",\n    \"single_phase\": \"Rope row contracted while REMAINING in the squat\",\n    \"supports_and_equipment\": \"LOW pulley in front connected by ONE taut cable to the rope junction. Stand far enough back to keep cable tension, both feet on floor. No waist-height attachment, barbell or rowing seat.\"\n  },\n  \"source_use_rule\": \"User-selected scene governs pose/equipment where raw catalogue or dataset conflicts. Raw source texts remain provenance, not conflicting render instructions. Exact catalogue ID/name/equipment category/muscles remain unchanged.\",\n  \"style\": {\n    \"background\": \"Genuinely transparent PNG background, no white/checkerboard layer, no environment scene.\",\n    \"framing\": \"Full figure and all required equipment/supports visible within a square. Scale and use a three-quarter view to expose the specified contacts without changing anatomy, equipment, grip or technique.\",\n    \"human_model\": \"One athletic bald male anatomical mannequin, opaque silver-gray muscular surfaces, consistent proportions and detailed 3D materials, plain black shorts, barefoot.\",\n    \"material_rules\": \"Highlights never make tissue transparent; no glow, whole-body orange tint, hair, text, labels, arrows, UI, borders, collage or extra person.\",\n    \"no_invention\": \"Exact ID catalogue controls source text and muscles; explicit supplied user variant controls the derived render scene. Do not mix contradictory raw pose instructions into the selected scene or add muscles from external sources.\",\n    \"output\": {\n      \"format\": \"PNG\",\n      \"height\": 1024,\n      \"one_person\": true,\n      \"one_phase\": true,\n      \"width\": 1024\n    },\n    \"primary_highlight\": {\n      \"hex\": null,\n      \"rule\": \"Keep whole body opaque neutral silver-gray. No anatomical primary or whole-body orange tint for full_body/cardio/other.\"\n    },\n    \"secondary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"intensity_fraction\": [\n        0.4,\n        0.5\n      ],\n      \"rule\": \"Only the exact secondary muscles, lighter same-hue highlight; if the list is empty add no secondary target.\"\n    },\n    \"version\": \"v1-neutral-primary-2026-10-02\"\n  },\n  \"technique_resolution\": {\n    \"PNG_approval\": false,\n    \"binding_or_name_alone_is_not_confirmation\": true,\n    \"catalog_modified\": false,\n    \"dataset_instruction_steps_read\": [\n      \"Attach a rope to a cable machine at waist height.\",\n      \"Stand facing the cable machine with your feet shoulder-width apart.\",\n      \"Bend your knees and lower your body into a squat position, keeping your back straight and chest up.\",\n      \"Grasp the rope with an overhand grip, with your hands shoulder-width apart.\",\n      \"Engage your core and pull the rope towards your body, squeezing your shoulder blades together.\",\n      \"Keep your elbows close to your body and continue pulling until your hands reach your chest.\",\n      \"Pause for a moment at the top of the movement, then slowly release the rope and extend your arms back to the starting position.\",\n      \"Repeat for the desired number of repetitions.\"\n    ],\n    \"decision_kind\": \"user_selected_illustration_variant\",\n    \"evidence_path\": \"data/audits/agent-03-final13-user-variants-2026-10-03-technique.json\",\n    \"evidence_selector\": \"records[exercise_id=\\\"squat-row-machine\\\"]\",\n    \"independent_external_confirmation\": false,\n    \"preserved_source_errors_path\": \"data/audits/agent-03-final13-user-variants-2026-10-03-catalogue-conflicts.json\",\n    \"status\": \"resolved_for_illustration\",\n    \"technique_fields_read\": [\n      \"content.en.description\",\n      \"content.en.instructions\",\n      \"content.en.form_cues\",\n      \"content.en.common_mistakes\",\n      \"content.en.safety_note\"\n    ],\n    \"user_selected_variant_decision\": {\n      \"PNG_approval\": false,\n      \"catalog_modified\": false,\n      \"citation_placeholders\": [\n        \":chatgpt-content-reference{index=\\\"11\\\"}\"\n      ],\n      \"exercise_id\": \"squat-row-machine\",\n      \"independently_verified_external_sources\": [],\n      \"name\": \"Squat Row\",\n      \"provided_user_paragraph\": \"12. **`squat-row-machine` → low-cable squat row з rope attachment.** Найближчий точний exercise-library match: низький pulley, **rope attachment**, обидві руки тримають кінці мотузки neutral grip — долоні одна до одної. Людина стоїть обличчям до stack, відходить назад, щоб кабель був натягнутий → сідає в squat з руками витягнутими → **залишаючись у присіді, тягне rope до нижніх ребер/живота**, лікті назад і близько до тулуба → знову випрямляє руки в присіді → після цього встає. Саме така послідовність наведена для `Cable Squat Row (with rope attachment)` у кількох збігаючихся exercise databases. Є інша варіація `squat-to-row`, де row робиться одночасно з підйомом, але її не треба змішувати з цією. :chatgpt-content-reference{index=\\\"11\\\"}\",\n      \"render_precedence\": \"User-selected scene governs pose/equipment where raw catalogue or dataset conflicts. Raw source texts remain provenance, not conflicting render instructions. Exact catalogue ID/name/equipment category/muscles remain unchanged.\",\n      \"resolution_kind\": \"user_selected_illustration_variant\",\n      \"selected_camera\": \"Full-body front-side three-quarter view exposing every prescribed contact, grip and support. Entire person and all equipment visible within square; no crop, text, arrows or second phase.\",\n      \"selected_scene\": [\n        \"Rope row contracted while REMAINING in the squat\",\n        \"Face cable stack, hips/knees held in a stable comfortable squat, chest lifted and back neutral. Both feet planted; elbows drawn back close to ribs and hands near lower ribs/abdomen. Body does NOT rise during the selected row.\",\n        \"One end of ONE rope in each hand, NEUTRAL palms facing each other; closed grips and straight wrists.\",\n        \"LOW pulley in front connected by ONE taut cable to the rope junction. Stand far enough back to keep cable tension, both feet on floor. No waist-height attachment, barbell or rowing seat.\",\n        \"User-selected sequence: squat with arms extended, HOLD squat and row rope to lower ribs/abdomen, re-extend arms while still squatting, THEN stand. Render only contracted row IN squat. Do not blend in the raw partway-standing squat-to-row sequence.\"\n      ],\n      \"source_catalog_record_sha256\": \"a32f553993d54612836ca070ccf08a2ddcc8edc8be4e33129d36640bac5203ee\",\n      \"source_document_path\": \"docs/agent-03-final13-user-variants-2026-10-03-source.txt\",\n      \"source_document_point\": 12,\n      \"source_document_sha256\": \"752aa941dcf4b69794b06a9c608f62a16f6f0c7e00d09eda3ec831b63304368e\",\n      \"status\": \"resolved_for_illustration\"\n    }\n  }\n}",
+          "prompt_payload": {
+            "identity_do_not_render_as_text": {
+              "exercise_id": "squat-row-machine",
+              "name": "Squat Row",
+              "catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
+              "catalog_record_sha256": "a32f553993d54612836ca070ccf08a2ddcc8edc8be4e33129d36640bac5203ee"
+            },
+            "exact_catalogue_source": {
+              "source_english": {
+                "description": "A squat row combines a cable-supported squat with a rope row toward the lower chest.",
+                "instructions": [
+                  "Attach the rope to the cable at waist height and stand facing the machine.",
+                  "Lower into a squat while holding the rope with both hands in a neutral grip.",
+                  "Stand partway and pull the rope toward the lower chest, driving the elbows back.",
+                  "Extend the arms and lower into the next squat under control."
+                ],
+                "form_cues": [
+                  "Keep the chest lifted in the squat.",
+                  "Pull the rope to the lower chest with elbows back.",
+                  "Coordinate the rise and row."
+                ],
+                "common_mistakes": [
+                  "Rounding the back.",
+                  "Rowing before the legs begin to extend.",
+                  "Letting the cable pull the body forward."
+                ],
+                "safety_note": "Use a cable load that lets you keep both feet planted while combining the squat and row.",
+                "provenance": "adapted"
+              },
+              "equipment": "machine",
+              "primary_muscle": "full_body",
+              "secondary_muscles": []
+            },
+            "human_reference": {
+              "repository_path": "assets/exercises/biceps-curl-dumbbell.png",
+              "absolute_path": "/workspace/lightweight-exercises-photo/assets/exercises/biceps-curl-dumbbell.png",
+              "sha256": "52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f",
+              "branch": "work",
+              "source_commit": "b0385b7e2f3382d545a6dff5304c81ba3c771096",
+              "role": "Human appearance/proportions/materials/anatomical style ONLY. Exercise pose, grip, equipment and muscles come from the exact-ID catalogue, never the reference.",
+              "pixels_reviewed_during_preparation": false
+            },
+            "style": {
+              "version": "v1-neutral-primary-2026-10-02",
+              "human_model": "One athletic bald male anatomical mannequin, opaque silver-gray muscular surfaces, consistent proportions and detailed 3D materials, plain black shorts, barefoot.",
+              "primary_highlight": {
+                "hex": null,
+                "rule": "Keep whole body opaque neutral silver-gray. No anatomical primary or whole-body orange tint for full_body/cardio/other."
+              },
+              "secondary_highlight": {
+                "hex": "#F26445",
+                "intensity_fraction": [
+                  0.4,
+                  0.5
+                ],
+                "rule": "Only the exact secondary muscles, lighter same-hue highlight; if the list is empty add no secondary target."
+              },
+              "background": "Genuinely transparent PNG background, no white/checkerboard layer, no environment scene.",
+              "output": {
+                "format": "PNG",
+                "width": 1024,
+                "height": 1024,
+                "one_person": true,
+                "one_phase": true
+              },
+              "material_rules": "Highlights never make tissue transparent; no glow, whole-body orange tint, hair, text, labels, arrows, UI, borders, collage or extra person.",
+              "framing": "Full figure and all required equipment/supports visible within a square. Scale and use a three-quarter view to expose the specified contacts without changing anatomy, equipment, grip or technique.",
+              "no_invention": "Exact ID catalogue controls source text and muscles; explicit supplied user variant controls the derived render scene. Do not mix contradictory raw pose instructions into the selected scene or add muscles from external sources."
+            },
+            "approved_style_files": [
+              {
+                "path": "docs/exercise-image-style.md",
+                "sha256": "8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578"
+              },
+              {
+                "path": "docs/exercise-image-style-neutral-primary.md",
+                "sha256": "86204ab43f23d119a1eb25cafdbda2518b741a0090b4ffb0ceb9086952314439"
+              }
+            ],
+            "selected_render_scene": {
+              "exercise_id": "squat-row-machine",
+              "single_phase": "Rope row contracted while REMAINING in the squat",
+              "pose": "Face cable stack, hips/knees held in a stable comfortable squat, chest lifted and back neutral. Both feet planted; elbows drawn back close to ribs and hands near lower ribs/abdomen. Body does NOT rise during the selected row.",
+              "grip": "One end of ONE rope in each hand, NEUTRAL palms facing each other; closed grips and straight wrists.",
+              "supports_and_equipment": "LOW pulley in front connected by ONE taut cable to the rope junction. Stand far enough back to keep cable tension, both feet on floor. No waist-height attachment, barbell or rowing seat.",
+              "movement_trajectory": "User-selected sequence: squat with arms extended, HOLD squat and row rope to lower ribs/abdomen, re-extend arms while still squatting, THEN stand. Render only contracted row IN squat. Do not blend in the raw partway-standing squat-to-row sequence.",
+              "camera": "Full-body front-side three-quarter view exposing every prescribed contact, grip and support. Entire person and all equipment visible within square; no crop, text, arrows or second phase.",
+              "one_phase_only": true,
+              "never_infer_muscles_from_pose_or_reference": true
+            },
+            "technique_resolution": {
+              "status": "resolved_for_illustration",
+              "decision_kind": "user_selected_illustration_variant",
+              "user_selected_variant_decision": {
+                "exercise_id": "squat-row-machine",
+                "name": "Squat Row",
+                "status": "resolved_for_illustration",
+                "resolution_kind": "user_selected_illustration_variant",
+                "source_document_path": "docs/agent-03-final13-user-variants-2026-10-03-source.txt",
+                "source_document_sha256": "752aa941dcf4b69794b06a9c608f62a16f6f0c7e00d09eda3ec831b63304368e",
+                "source_document_point": 12,
+                "provided_user_paragraph": "12. **`squat-row-machine` → low-cable squat row з rope attachment.** Найближчий точний exercise-library match: низький pulley, **rope attachment**, обидві руки тримають кінці мотузки neutral grip — долоні одна до одної. Людина стоїть обличчям до stack, відходить назад, щоб кабель був натягнутий → сідає в squat з руками витягнутими → **залишаючись у присіді, тягне rope до нижніх ребер/живота**, лікті назад і близько до тулуба → знову випрямляє руки в присіді → після цього встає. Саме така послідовність наведена для `Cable Squat Row (with rope attachment)` у кількох збігаючихся exercise databases. Є інша варіація `squat-to-row`, де row робиться одночасно з підйомом, але її не треба змішувати з цією. :chatgpt-content-reference{index=\"11\"}",
+                "citation_placeholders": [
+                  ":chatgpt-content-reference{index=\"11\"}"
+                ],
+                "independently_verified_external_sources": [],
+                "selected_scene": [
+                  "Rope row contracted while REMAINING in the squat",
+                  "Face cable stack, hips/knees held in a stable comfortable squat, chest lifted and back neutral. Both feet planted; elbows drawn back close to ribs and hands near lower ribs/abdomen. Body does NOT rise during the selected row.",
+                  "One end of ONE rope in each hand, NEUTRAL palms facing each other; closed grips and straight wrists.",
+                  "LOW pulley in front connected by ONE taut cable to the rope junction. Stand far enough back to keep cable tension, both feet on floor. No waist-height attachment, barbell or rowing seat.",
+                  "User-selected sequence: squat with arms extended, HOLD squat and row rope to lower ribs/abdomen, re-extend arms while still squatting, THEN stand. Render only contracted row IN squat. Do not blend in the raw partway-standing squat-to-row sequence."
+                ],
+                "selected_camera": "Full-body front-side three-quarter view exposing every prescribed contact, grip and support. Entire person and all equipment visible within square; no crop, text, arrows or second phase.",
+                "source_catalog_record_sha256": "a32f553993d54612836ca070ccf08a2ddcc8edc8be4e33129d36640bac5203ee",
+                "render_precedence": "User-selected scene governs pose/equipment where raw catalogue or dataset conflicts. Raw source texts remain provenance, not conflicting render instructions. Exact catalogue ID/name/equipment category/muscles remain unchanged.",
+                "catalog_modified": false,
+                "PNG_approval": false
+              },
+              "evidence_path": "data/audits/agent-03-final13-user-variants-2026-10-03-technique.json",
+              "evidence_selector": "records[exercise_id=\"squat-row-machine\"]",
+              "technique_fields_read": [
+                "content.en.description",
+                "content.en.instructions",
+                "content.en.form_cues",
+                "content.en.common_mistakes",
+                "content.en.safety_note"
+              ],
+              "dataset_instruction_steps_read": [
+                "Attach a rope to a cable machine at waist height.",
+                "Stand facing the cable machine with your feet shoulder-width apart.",
+                "Bend your knees and lower your body into a squat position, keeping your back straight and chest up.",
+                "Grasp the rope with an overhand grip, with your hands shoulder-width apart.",
+                "Engage your core and pull the rope towards your body, squeezing your shoulder blades together.",
+                "Keep your elbows close to your body and continue pulling until your hands reach your chest.",
+                "Pause for a moment at the top of the movement, then slowly release the rope and extend your arms back to the starting position.",
+                "Repeat for the desired number of repetitions."
+              ],
+              "binding_or_name_alone_is_not_confirmation": true,
+              "independent_external_confirmation": false,
+              "preserved_source_errors_path": "data/audits/agent-03-final13-user-variants-2026-10-03-catalogue-conflicts.json",
+              "catalog_modified": false,
+              "PNG_approval": false
+            },
+            "source_use_rule": "User-selected scene governs pose/equipment where raw catalogue or dataset conflicts. Raw source texts remain provenance, not conflicting render instructions. Exact catalogue ID/name/equipment category/muscles remain unchanged."
+          },
+          "source_english": {
+            "description": "A squat row combines a cable-supported squat with a rope row toward the lower chest.",
+            "instructions": [
+              "Attach the rope to the cable at waist height and stand facing the machine.",
+              "Lower into a squat while holding the rope with both hands in a neutral grip.",
+              "Stand partway and pull the rope toward the lower chest, driving the elbows back.",
+              "Extend the arms and lower into the next squat under control."
+            ],
+            "form_cues": [
+              "Keep the chest lifted in the squat.",
+              "Pull the rope to the lower chest with elbows back.",
+              "Coordinate the rise and row."
+            ],
+            "common_mistakes": [
+              "Rounding the back.",
+              "Rowing before the legs begin to extend.",
+              "Letting the cable pull the body forward."
+            ],
+            "safety_note": "Use a cable load that lets you keep both feet planted while combining the squat and row.",
+            "provenance": "adapted"
+          },
+          "source_selector": "exercises[id=\"squat-row-machine\"]",
+          "source_url": "https://github.com/romanthoruk2008-pixel/lightweight-exercises-photo/blob/b0385b7e2f3382d545a6dff5304c81ba3c771096/data/exercises/catalog.json",
+          "source_catalog_commit": "b0385b7e2f3382d545a6dff5304c81ba3c771096",
+          "source_catalog_record_sha256": "a32f553993d54612836ca070ccf08a2ddcc8edc8be4e33129d36640bac5203ee",
+          "source_english_sha256": "d559daea27b7f1a01443702c6e32f127b2bde416d13263686f2f4e98be3f9aa3",
+          "equipment": "machine",
+          "primary_muscle": "full_body",
+          "secondary_muscles": [],
+          "scene": {
+            "exercise_id": "squat-row-machine",
+            "single_phase": "Rope row contracted while REMAINING in the squat",
+            "pose": "Face cable stack, hips/knees held in a stable comfortable squat, chest lifted and back neutral. Both feet planted; elbows drawn back close to ribs and hands near lower ribs/abdomen. Body does NOT rise during the selected row.",
+            "grip": "One end of ONE rope in each hand, NEUTRAL palms facing each other; closed grips and straight wrists.",
+            "supports_and_equipment": "LOW pulley in front connected by ONE taut cable to the rope junction. Stand far enough back to keep cable tension, both feet on floor. No waist-height attachment, barbell or rowing seat.",
+            "movement_trajectory": "User-selected sequence: squat with arms extended, HOLD squat and row rope to lower ribs/abdomen, re-extend arms while still squatting, THEN stand. Render only contracted row IN squat. Do not blend in the raw partway-standing squat-to-row sequence.",
+            "camera": "Full-body front-side three-quarter view exposing every prescribed contact, grip and support. Entire person and all equipment visible within square; no crop, text, arrows or second phase.",
+            "one_phase_only": true,
+            "never_infer_muscles_from_pose_or_reference": true
+          },
+          "technique_resolution": {
+            "status": "resolved_for_illustration",
+            "decision_kind": "user_selected_illustration_variant",
+            "user_selected_variant_decision": {
+              "exercise_id": "squat-row-machine",
+              "name": "Squat Row",
+              "status": "resolved_for_illustration",
+              "resolution_kind": "user_selected_illustration_variant",
+              "source_document_path": "docs/agent-03-final13-user-variants-2026-10-03-source.txt",
+              "source_document_sha256": "752aa941dcf4b69794b06a9c608f62a16f6f0c7e00d09eda3ec831b63304368e",
+              "source_document_point": 12,
+              "provided_user_paragraph": "12. **`squat-row-machine` → low-cable squat row з rope attachment.** Найближчий точний exercise-library match: низький pulley, **rope attachment**, обидві руки тримають кінці мотузки neutral grip — долоні одна до одної. Людина стоїть обличчям до stack, відходить назад, щоб кабель був натягнутий → сідає в squat з руками витягнутими → **залишаючись у присіді, тягне rope до нижніх ребер/живота**, лікті назад і близько до тулуба → знову випрямляє руки в присіді → після цього встає. Саме така послідовність наведена для `Cable Squat Row (with rope attachment)` у кількох збігаючихся exercise databases. Є інша варіація `squat-to-row`, де row робиться одночасно з підйомом, але її не треба змішувати з цією. :chatgpt-content-reference{index=\"11\"}",
+              "citation_placeholders": [
+                ":chatgpt-content-reference{index=\"11\"}"
+              ],
+              "independently_verified_external_sources": [],
+              "selected_scene": [
+                "Rope row contracted while REMAINING in the squat",
+                "Face cable stack, hips/knees held in a stable comfortable squat, chest lifted and back neutral. Both feet planted; elbows drawn back close to ribs and hands near lower ribs/abdomen. Body does NOT rise during the selected row.",
+                "One end of ONE rope in each hand, NEUTRAL palms facing each other; closed grips and straight wrists.",
+                "LOW pulley in front connected by ONE taut cable to the rope junction. Stand far enough back to keep cable tension, both feet on floor. No waist-height attachment, barbell or rowing seat.",
+                "User-selected sequence: squat with arms extended, HOLD squat and row rope to lower ribs/abdomen, re-extend arms while still squatting, THEN stand. Render only contracted row IN squat. Do not blend in the raw partway-standing squat-to-row sequence."
+              ],
+              "selected_camera": "Full-body front-side three-quarter view exposing every prescribed contact, grip and support. Entire person and all equipment visible within square; no crop, text, arrows or second phase.",
+              "source_catalog_record_sha256": "a32f553993d54612836ca070ccf08a2ddcc8edc8be4e33129d36640bac5203ee",
+              "render_precedence": "User-selected scene governs pose/equipment where raw catalogue or dataset conflicts. Raw source texts remain provenance, not conflicting render instructions. Exact catalogue ID/name/equipment category/muscles remain unchanged.",
+              "catalog_modified": false,
+              "PNG_approval": false
+            },
+            "evidence_path": "data/audits/agent-03-final13-user-variants-2026-10-03-technique.json",
+            "evidence_selector": "records[exercise_id=\"squat-row-machine\"]",
+            "technique_fields_read": [
+              "content.en.description",
+              "content.en.instructions",
+              "content.en.form_cues",
+              "content.en.common_mistakes",
+              "content.en.safety_note"
+            ],
+            "dataset_instruction_steps_read": [
+              "Attach a rope to a cable machine at waist height.",
+              "Stand facing the cable machine with your feet shoulder-width apart.",
+              "Bend your knees and lower your body into a squat position, keeping your back straight and chest up.",
+              "Grasp the rope with an overhand grip, with your hands shoulder-width apart.",
+              "Engage your core and pull the rope towards your body, squeezing your shoulder blades together.",
+              "Keep your elbows close to your body and continue pulling until your hands reach your chest.",
+              "Pause for a moment at the top of the movement, then slowly release the rope and extend your arms back to the starting position.",
+              "Repeat for the desired number of repetitions."
+            ],
+            "binding_or_name_alone_is_not_confirmation": true,
+            "independent_external_confirmation": false,
+            "preserved_source_errors_path": "data/audits/agent-03-final13-user-variants-2026-10-03-catalogue-conflicts.json",
+            "catalog_modified": false,
+            "PNG_approval": false
+          },
+          "approved_style_files": [
+            {
+              "path": "docs/exercise-image-style.md",
+              "sha256": "8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578"
+            },
+            {
+              "path": "docs/exercise-image-style-neutral-primary.md",
+              "sha256": "86204ab43f23d119a1eb25cafdbda2518b741a0090b4ffb0ceb9086952314439"
+            }
+          ],
+          "human_reference": {
+            "repository_path": "assets/exercises/biceps-curl-dumbbell.png",
+            "absolute_path": "/workspace/lightweight-exercises-photo/assets/exercises/biceps-curl-dumbbell.png",
+            "sha256": "52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f",
+            "branch": "work",
+            "source_commit": "b0385b7e2f3382d545a6dff5304c81ba3c771096",
+            "role": "Human appearance/proportions/materials/anatomical style ONLY. Exercise pose, grip, equipment and muscles come from the exact-ID catalogue, never the reference.",
+            "pixels_reviewed_during_preparation": false
+          },
+          "technical_check_details": {
+            "status": "passed",
+            "dimensions": [
+              1024,
+              1024
+            ],
+            "mode": "RGBA",
+            "rgba": true,
+            "alpha_min": 0,
+            "alpha_max": 255,
+            "alpha_zero_pixels": 681744,
+            "alpha_partial_pixels": 363340,
+            "alpha_opaque_pixels": 3492,
+            "corner_alpha": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "all_corners_transparent": true,
+            "visual_qa": "not_performed"
+          },
+          "git_result_path": "assets/exercises/pending/agent-03-final13-user-variants-2026-10-03/generator-single/agent-03-others-042/squat-row-machine/attempt-1.png",
+          "result_sha256": "756699c229be8d7db46431d7e84c70bfd988ad160eecb6a0694f644e77fb94bd",
+          "result_size_bytes": 711171,
+          "completed_at": "2026-10-03T17:27:24.925Z",
+          "error": null
         }
-      ]
+      ],
+      "completed_at": "2026-10-03T17:28:08Z"
     }
   ]
 }

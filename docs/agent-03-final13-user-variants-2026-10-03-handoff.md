@@ -1,6 +1,6 @@
 # Generator single handoff — final13 user-selected variants
 
-Updated: 2026-10-03T17:21:52+00:00
+Updated: 2026-10-03T17:28:08+00:00
 
 - Repository worker branch: agent-08-generator-single-2026-10-03
 - Immutable task commit: 5fc5fba256adf609384953004c9b096604ab6002
@@ -13,10 +13,7 @@ Updated: 2026-10-03T17:21:52+00:00
 - Generated PNGs stay user_review=pending until the user explicitly approves them. agent_visual_review=not_performed; only file, dimensions and actual transparency checks are recorded.
 - Catalog, shared progress, other approvals/manifests, old PNGs, work branch and Supabase were not changed.
 
-Checkpoint state: package-041-checkpoint. Recorded image generation calls: 10.
-
-Remote verification commit: 1ec2b6a092444e12f703e6514f72b3b7353e2c6b (worker branch only). PNG paths and SHA256 values were checked from the fetched remote tree.
-The explicit wildcard fetch refreshed all 9 remote branch refs. Retrospective recheck of the 041 IDs found no PNG, approval or foreign active assignment on another branch.
+Checkpoint state: complete. Recorded image generation calls: 13.
 
 ## agent-03-others-041 — completed_with_technical_issue
 
@@ -33,4 +30,12 @@ The explicit wildcard fetch refreshed all 9 remote branch refs. Retrospective re
 | rear-kick-machine | 1 | generated_needs_review | passed | pending | assets/exercises/pending/agent-03-final13-user-variants-2026-10-03/generator-single/agent-03-others-041/rear-kick-machine/attempt-1.png | d74e6f8c28b8f21c42ddd824e303ab58b9dabea8de14fa11979fc7372a693e35 |
 | single-leg-standing-calf-raise-machine | 1 | generated_needs_review | passed | pending | assets/exercises/pending/agent-03-final13-user-variants-2026-10-03/generator-single/agent-03-others-041/single-leg-standing-calf-raise-machine/attempt-1.png | f511269b94395ce18b79413c9705e70c2fd0f974eecfda2dd43e180124eb05f5 |
 
-Next: package 042 remains ready and will be checked fresh before each generation call.
+## agent-03-others-042 — completed
+
+| Exercise ID | Attempts | Status | Technical check | Review | PNG path | SHA256 |
+|---|---:|---|---|---|---|---|
+| bench-press-cable-machine | 1 | generated_needs_review | passed | pending | assets/exercises/pending/agent-03-final13-user-variants-2026-10-03/generator-single/agent-03-others-042/bench-press-cable-machine/attempt-1.png | 9f5756b693e95b434545324ea43457336e55fc8f4523b5ef615db3ac8a581ec9 |
+| reverse-fly-single-arm-cable-machine | 1 | generated_needs_review | passed | pending | assets/exercises/pending/agent-03-final13-user-variants-2026-10-03/generator-single/agent-03-others-042/reverse-fly-single-arm-cable-machine/attempt-1.png | 3f46bb5b117aa4a0f1471b704a767f3ddfc361e8f52380d40685efb663f8c10b |
+| squat-row-machine | 1 | generated_needs_review | passed | pending | assets/exercises/pending/agent-03-final13-user-variants-2026-10-03/generator-single/agent-03-others-042/squat-row-machine/attempt-1.png | 756699c229be8d7db46431d7e84c70bfd988ad160eecb6a0694f644e77fb94bd |
+
+All assigned 041→042 work is checkpointed. Stop; do not take other assignments.
