@@ -263,3 +263,31 @@ Pending не завантажувалися: `face-pull-machine`, `iso-lateral-l
 - `agent-07-generator-b-2026-10-02`: `9dfc775a57ff6856995addbaf28f303661a7b5de`.
 - `agent-08-generator-single-2026-10-03`: `b146f94bf41bd2988b18ac9825452657aeaef9ba`.
 - `work`: `b0385b7e2f3382d545a6dff5304c81ba3c771096`.
+
+<!-- continuation:continuation-2026-10-03-05 -->
+
+## Продовження схвалених PNG — continuation-2026-10-03-05
+
+Поточна контрольна точка: `2026-10-03T16:31:43.817433+00:00`.
+Нових Storage uploads: 31; завершених перенесень: 31; заміни прийнятих версій: 0.
+Попередніх перевірено: 377; pending пропущено: 15.
+Артефакти: `uploads/continuation-2026-10-03-05/plan.json`, `batch-*.json`, `summary.json`.
+Каталог не імпортувався повторно. Використано `continue_images.py` і перевірений `import_catalog_images.transfer_one`; лише Storage POST без upsert і п’ять image-полів із concurrency filters. Старі PNG не видаляються; content/451 ID/4448 мовних блоків незмінні.
+PNG staging поза Git: `/workspace/supabase-image-staging/<source_commit>/<source_png>`.
+
+### Фінальний результат восьмого продовження
+
+Завершено `2026-10-03T16:34:49.225234+00:00` UTC. Нових PNG завантажено й прив’язано — 31; замін версій — 0; попередніх перенесень звірено — 377; разом — 408 точних ID із зображеннями. Pending пропущено — 15; додаткових approved після перенесення — 0; помилок і блокувань імпорту — 0.
+Пакети: 10, 10, 10, 1. Нові файли з agent-08-generator-single-2026-10-03, пакети common variants 037–040. Progress містить явні user_review_history рішення by=user, decision=approved та точні accepted_path/SHA256/accepted_attempt. Manifest збігається; scoped handoff підтверджує 31 accepted ID і три нові pending. Його старі generated_pending рядки є історією генерації; актуальне рішення — останній User approval checkpoint. Доказ збережено в source_approval_handoff.json.
+Скрипт перенесення незмінний. Усі прийняті PNG — 1024×1024, RGBA, декодуються й мають прозорі пікселі; найбільший 960970 байтів при bucket limit 5242880. Перенесено незмінні accepted bytes/hash без ресайзу, повторного візуального QA чи генерації; історичні технічні записи збережені у frozen plan.
+Pending не завантажувалися: `face-pull-machine`, `iso-lateral-low-row-machine`, `lat-pulldown-machine`, `pullup-assisted-machine`, `rear-delt-reverse-fly-cable-machine`, `reverse-grip-triceps-pushdown-machine`, `single-arm-triceps-pushdown-cable-machine`, `ski-erg-machine`, `stair-machine-floors`, `stair-machine-steps`, `standing-leg-curls-machine`, `t-bar-row-machine`, `torso-rotation-machine`, `triceps-dip-assisted-machine`, `triceps-extension-machine`. Їхні Git blobs і SHA256 звірені. Source generation failures без PNG: `reverse-grip-lat-pulldown-cable-machine`, `treadmill-machine`. Генерацію або виправлення не запускали.
+Механізм незмінний: Storage POST без upsert → public URL/SHA256 → п’ять image-полів із concurrency filters. Фінальне читання підтвердило точні 451 ID, усі source-поля, 4448 мовних блоків і 3 архівні статуси без змін та всі 408 image links. Публічне читання PNG підтверджено; клієнтське читання каталогу лишається неперевіреним без publishable/anon key. Каталог повторно не імпортувався; користувацькі таблиці, RLS, grants і схема не змінені.
+Фінальні докази: `uploads/continuation-2026-10-03-05/completion.json`, `catalog_final_readback.json`, `final_source_review.json`, `resume_readonly_check.json`, `source_approval_handoff.json`. Незмінний механізм має 55 раніше пройдених offline tests у commit 742c530; їх не повторювали без зміни коду. Фактичні Storage/DB/public SHA256 перевірки пройшли в цьому запуску; три завершені перенесення повторно звірені з API mutations disabled.
+Відновлення цієї scope: `python3 -B integration/supabase/continue_images.py --run-id continuation-2026-10-03-05 --apply`. Для наступних схвалень — новий run-id; frozen plan не змінювати.
+- `agent-02-machines-001`: `2c27f90d8e2be0c1f349b81231897fd204d543b5`.
+- `agent-03-inventory-2026-10-01`: `d6281a422c2ecfa2bdbf433df95b128d3f7c612d`.
+- `agent-05-parallel-generation`: `058e4810f858b5f0cca1d27384c8e36d525b24fa`.
+- `agent-06-generator-a-2026-10-02`: `8b4e4d7de0572909b8e0f3591d60c87192194338`.
+- `agent-07-generator-b-2026-10-02`: `9dfc775a57ff6856995addbaf28f303661a7b5de`.
+- `agent-08-generator-single-2026-10-03`: `77207f4068527e91f46534df619cb80a168e48a1`.
+- `work`: `b0385b7e2f3382d545a6dff5304c81ba3c771096`.
