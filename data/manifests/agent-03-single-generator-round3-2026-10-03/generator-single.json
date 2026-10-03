@@ -706,8 +706,8 @@
         {
           "exercise_id": "iso-lateral-low-row-machine",
           "name": "Iso-Lateral Low Row",
-          "status": "generated_pending",
-          "attempts": 1,
+          "status": "approved",
+          "attempts": 2,
           "attempt_history": [
             {
               "attempt": 1,
@@ -849,45 +849,64 @@
               "agent_visual_review": "not_performed",
               "user_review": "pending",
               "errors": []
+            },
+            {
+              "exercise_id": "iso-lateral-low-row-machine",
+              "attempt": 2,
+              "prompt": "Create exactly ONE standalone square 1024x1024 transparent PNG for exercise ID iso-lateral-low-row-machine, “Iso-Lateral Low Row.”\n\nUse the supplied images as follows:\n- The bald, silver-gray anatomical man holding dumbbells is the approved human appearance and material reference only. Keep the same adult male anatomy, proportions, bald head, opaque detailed silver-gray 3D body, and plain black shorts. Ignore that image’s pose, dumbbells, and muscle highlighting.\n- The screenshot titled “Iso-Lateral Low Row” is the exercise-specific reference. Match its rear view of the seated person, upright torso orientation, position centered inside the leverage machine, pull phase, and plate-loaded iso-lateral equipment arrangement as closely as possible.\n- The screenshot titled “Lat Pulldown (Machine)” is a different exercise; ignore it completely.\n- Do not reproduce any screenshot UI, text, white card, controls, or display layout.\n\nShow one adult male mannequin seated in the iso-lateral low-row machine, viewed from behind and slightly to one side, matching the exercise screenshot. The torso faces the machine and is braced against its chest support; hips stay on the seat, chest remains in contact with the support, and both feet press against the machine’s foot platforms. In one controlled contraction phase, both elbows are pulled back close to the torso and both hands hold separate independent handles beside the lower ribs. The back stays neutral; do not twist or shrug.\n\nUse a heavy but simple plate-loaded leverage machine, not a cable station: a stable metal frame, one seat, a chest pad in front of the body, two separate independently moving lever arms, and two matching circular weight plates, exactly one plate on each lever arm. Show both hands-to-handles contacts and both independent lever mechanisms clearly. No shared bar, no extra plates, no cable stack, no dangling cable, no duplicate arms, no extra person, and no unsupported equipment.\n\nMatch the camera and overall equipment-to-person composition of the Iso-Lateral Low Row reference while keeping the entire mannequin and complete relevant machine safely inside the square. One person, one phase. Genuine transparent background; no ground scene.\n\nFollow exercise illustration style v1. Body is fully opaque, bald, muscular, silver-gray, anatomically detailed, with plain black shorts and bare feet. Highlight exact catalog muscles only: upper back in #F26445; lats, biceps, and forearms in the same hue at about 40–50% intensity. Do not copy muscle colors from either screenshot. No glow, text, labels, arrows, logo, border, collage, or decoration.\n\nExact technique source: An iso-lateral low row uses independent machine handles pulled from a forward reach toward the lower ribs with the torso supported. Adjust the seat and chest support so the handles start low and shoulders are relaxed. Grip both independent handles and brace against the support. Pull the handles toward the lower ribs while drawing the shoulder blades back. Pause, then extend the arms under control without losing the chest position. Keep the chest supported and pull the elbows back close to the body.",
+              "style_version": "v1",
+              "reference_sha256": "52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f",
+              "technique_reference": "Iso-Lateral Low Row screenshot attached by user in this conversation",
+              "result_path": "/workspace/exercise-image-results/agent-03-single-generator-round3-2026-10-03/generator-single/agent-03-others-034/iso-lateral-low-row-machine/attempt-2.png",
+              "result_sha256": "c35b9da4692001ac9fb290d2d94e5e52acf83970b1187678b8638c39a148ff4b",
+              "width": 1254,
+              "height": 1254,
+              "technical_status": "needs_fix",
+              "technical_check": {
+                "png_decoded": true,
+                "square": true,
+                "target_dimensions": false,
+                "alpha_channel_present": true,
+                "transparent_pixel_count": 1002898,
+                "sha256_matches_metadata": true,
+                "exercise_id_matches_path": true
+              },
+              "user_review": "approved",
+              "agent_visual_review": "not_performed",
+              "attempt_status": "generated",
+              "prompt_sha256": "2786581af0d2dc79ee3b2f4cb00fa5faa8cb825cb894e92b3591f8917d83f262",
+              "git_result_path": "assets/exercises/pending/agent-03-single-generator-round3-2026-10-03/generator-single/agent-03-others-034/iso-lateral-low-row-machine/attempt-2.png",
+              "recorded_user_approval": {
+                "decision": "approved",
+                "recorded_at": "2026-10-03T22:00:33Z",
+                "approval_source": "explicit_user_approval_in_chat",
+                "reason": "User explicitly accepted all eight reference-guided generated images in this chat and authorized publishing them with user review accepted."
+              }
             }
           ],
-          "user_review": "pending",
+          "user_review": "approved",
           "technical_check": {
-            "status": "passed",
+            "status": "failed",
             "format": "PNG",
             "dimensions": [
-              1024,
-              1024
-            ],
-            "mode": "RGBA",
-            "generator_source_format": "PNG",
-            "generator_source_dimensions": [
               1254,
               1254
             ],
-            "generator_source_mode": "RGBA",
-            "generator_source_had_alpha_or_transparency": true,
-            "alpha_min_max": [
-              0,
-              255
-            ],
-            "fully_transparent_pixels": 640557,
-            "fully_opaque_pixels": 3433,
+            "mode": "RGBA",
+            "rgba": true,
             "transparent_pixel_present": true,
-            "opaque_pixel_present": true,
-            "opens": true,
-            "errors": [],
-            "scope": "PNG decode, exact square dimensions, alpha-channel/transparency pixels and SHA256 only; no visual QA."
+            "transparent_pixel_count": 1002898,
+            "target_dimensions": false
           },
           "agent_visual_review": "not_performed",
-          "result_path": "/workspace/exercise-image-results/agent-03-single-generator-round3-2026-10-03/generator-single/agent-03-others-034/iso-lateral-low-row-machine/attempt-1.png",
+          "result_path": "/workspace/exercise-image-results/agent-03-single-generator-round3-2026-10-03/generator-single/agent-03-others-034/iso-lateral-low-row-machine/attempt-2.png",
           "planned_png_path": "/workspace/exercise-image-results/agent-03-single-generator-round3-2026-10-03/generator-single/agent-03-others-034/iso-lateral-low-row-machine/attempt-1.png",
           "planned_git_png_path": "assets/exercises/pending/agent-03-single-generator-round3-2026-10-03/generator-single/agent-03-others-034/iso-lateral-low-row-machine/attempt-1.png",
           "source_catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
           "style_version": "v1",
           "prompt_sha256": "fbf998bbf48bd275447e0d1de531c04164dc5485147650fa4e77c25159a501cb",
-          "git_result_path": "assets/exercises/pending/agent-03-single-generator-round3-2026-10-03/generator-single/agent-03-others-034/iso-lateral-low-row-machine/attempt-1.png",
-          "result_sha256": "3940594dc95788c3ada41ed842d859f6e1498ffb42d448cecbabe29e496c9a6f",
+          "git_result_path": "assets/exercises/pending/agent-03-single-generator-round3-2026-10-03/generator-single/agent-03-others-034/iso-lateral-low-row-machine/attempt-2.png",
+          "result_sha256": "c35b9da4692001ac9fb290d2d94e5e52acf83970b1187678b8638c39a148ff4b",
           "prompt": "Create exactly ONE square 1024x1024 transparent PNG of this exact exercise and ONE selected phase. Metadata must never appear as image text.\n{\n  \"approved_style_files\": [\n    {\n      \"path\": \"docs/exercise-image-style.md\",\n      \"sha256\": \"8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578\"\n    }\n  ],\n  \"exact_catalogue_source\": {\n    \"equipment\": \"machine\",\n    \"primary_muscle\": \"upper_back\",\n    \"secondary_muscles\": [\n      \"lats\",\n      \"biceps\",\n      \"forearms\"\n    ],\n    \"source_english\": {\n      \"common_mistakes\": [\n        \"Shrugging the shoulders.\",\n        \"Jerking the handles with the torso.\",\n        \"Cutting off the reach at the front.\"\n      ],\n      \"description\": \"An iso-lateral low row uses independent machine handles pulled from a forward reach toward the lower ribs with the torso supported.\",\n      \"form_cues\": [\n        \"Keep the chest supported.\",\n        \"Pull the elbows back close to the body.\",\n        \"Let each arm move through its own controlled range.\"\n      ],\n      \"instructions\": [\n        \"Adjust the seat and chest support so the handles start low and your shoulders are relaxed.\",\n        \"Grip both independent handles and brace your trunk against the support.\",\n        \"Pull the handles toward the lower ribs while drawing the shoulder blades back.\",\n        \"Pause briefly, then extend the arms under control without losing the chest position.\"\n      ],\n      \"provenance\": \"authored\",\n      \"safety_note\": \"Use a load that lets both arms move evenly without twisting the torso.\"\n    }\n  },\n  \"human_reference\": {\n    \"absolute_path\": \"/workspace/lightweight-exercises-photo/assets/exercises/biceps-curl-dumbbell.png\",\n    \"branch\": \"work\",\n    \"pixels_reviewed_during_preparation\": false,\n    \"repository_path\": \"assets/exercises/biceps-curl-dumbbell.png\",\n    \"role\": \"Human appearance/proportions/materials/anatomical style ONLY. Exercise pose, grip, equipment and muscles come from the exact-ID catalogue, never the reference.\",\n    \"sha256\": \"52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f\",\n    \"source_commit\": \"b0385b7e2f3382d545a6dff5304c81ba3c771096\"\n  },\n  \"identity_do_not_render_as_text\": {\n    \"catalog_record_sha256\": \"282c54a4c5d618c3ba6989cc1648e105ef06632201be024ca62459057d40dc82\",\n    \"catalog_sha256\": \"a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989\",\n    \"exercise_id\": \"iso-lateral-low-row-machine\",\n    \"name\": \"Iso-Lateral Low Row\"\n  },\n  \"selected_render_scene\": {\n    \"camera\": \"Full-body front-side three-quarter view exposing every prescribed contact, grip and support. Entire person and all equipment visible within square; no crop, text, arrows or second phase.\",\n    \"exercise_id\": \"iso-lateral-low-row-machine\",\n    \"grip\": \"One closed hand on each prescribed independent handle, wrists aligned; no unsupported palm direction claim.\",\n    \"movement_trajectory\": \"Pull each handle from low forward reach toward lower ribs, then extend arms without leaving chest support.\",\n    \"never_infer_muscles_from_pose_or_reference\": true,\n    \"one_phase_only\": true,\n    \"pose\": \"Seated with sternum on chest support, feet grounded, shoulders down; elbows close and back, handles near lower ribs.\",\n    \"single_phase\": \"Independent low-row contraction\",\n    \"supports_and_equipment\": \"Compatible seated low row, seat and chest support, two independently moving low-start handles; no shared bar.\"\n  },\n  \"source_use_rule\": \"Preserve raw source texts verbatim; render only selected scene and documented exact-source/user resolution. Do not silently repair the catalogue.\",\n  \"style\": {\n    \"background\": \"Genuinely transparent PNG background, no white/checkerboard layer, no environment scene.\",\n    \"framing\": \"Full figure and all required equipment/supports visible within a square. Scale and use a three-quarter view to expose the specified contacts without changing anatomy, equipment, grip or technique.\",\n    \"human_model\": \"One athletic bald male anatomical mannequin, opaque silver-gray muscular surfaces, consistent proportions and detailed 3D materials, plain black shorts, barefoot.\",\n    \"material_rules\": \"Highlights never make tissue transparent; no glow, whole-body orange tint, hair, text, labels, arrows, UI, borders, collage or extra person.\",\n    \"no_invention\": \"Exact-ID catalogue controls source text and muscles. Render documented selected scene; recorded source corrections apply to the derived scene only. No reference-pose copying or imported muscle targets.\",\n    \"output\": {\n      \"format\": \"PNG\",\n      \"height\": 1024,\n      \"one_person\": true,\n      \"one_phase\": true,\n      \"width\": 1024\n    },\n    \"primary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"rule\": \"Highlight only the exact primary muscle group provided for this exercise.\"\n    },\n    \"secondary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"intensity_fraction\": [\n        0.4,\n        0.5\n      ],\n      \"rule\": \"Only the exact secondary muscles, lighter same-hue highlight; if the list is empty add no secondary target.\"\n    },\n    \"version\": \"v1\"\n  },\n  \"technique_resolution\": {\n    \"PNG_approval\": false,\n    \"binding_or_name_alone_is_not_confirmation\": true,\n    \"catalog_modified\": false,\n    \"construction_rule\": \"Standard compatible unbranded geometry allowed by AGENTS.md; choose geometry only around specified contacts/motion. Category machine does not establish a load mechanism, brand, angle or weight count.\",\n    \"dataset_instruction_steps_read\": null,\n    \"decision_kind\": \"exact_ID_written_technique_confirmation\",\n    \"evidence_path\": \"data/audits/agent-03-single-generator-round3-2026-10-03-technique.json\",\n    \"evidence_selector\": \"records[exercise_id=\\\"iso-lateral-low-row-machine\\\"]\",\n    \"illustration_choices\": \"Side/phase and compatible layout are scene choices, not amendments to source technique. Do not infer muscle targets from scene or equipment.\",\n    \"illustration_choices_are_not_user_approvals\": true,\n    \"status\": \"resolved\",\n    \"technique_fields_read\": [\n      \"content.en.description\",\n      \"content.en.instructions\",\n      \"content.en.form_cues\",\n      \"content.en.common_mistakes\",\n      \"content.en.safety_note\",\n      \"content.pl.instructions\",\n      \"source.dataset_id\"\n    ]\n  }\n}",
           "source": {
             "task_commit": "fec6f45faa15189808e8dfd765916825d4894007",
@@ -919,7 +938,43 @@
           "started_at": "2026-10-03T12:43:13.149Z",
           "finished_at": "2026-10-03T12:44:17.318Z",
           "last_error": null,
-          "errors": []
+          "errors": [],
+          "technical_status": "needs_fix",
+          "technical_check_details": {
+            "png_decoded": true,
+            "square": true,
+            "target_dimensions": false,
+            "alpha_channel_present": true,
+            "transparent_pixel_count": 1002898,
+            "sha256_matches_metadata": true,
+            "exercise_id_matches_path": true,
+            "status": "failed",
+            "errors": [
+              "Expected 1024x1024; got 1254x1254."
+            ],
+            "scope": "PNG decode, dimensions, square shape, alpha transparency, SHA256 and exercise ID/path consistency only; no visual QA."
+          },
+          "accepted_path": "assets/exercises/pending/agent-03-single-generator-round3-2026-10-03/generator-single/agent-03-others-034/iso-lateral-low-row-machine/attempt-2.png",
+          "accepted_sha256": "c35b9da4692001ac9fb290d2d94e5e52acf83970b1187678b8638c39a148ff4b",
+          "approved_at": "2026-10-03T22:00:33Z",
+          "user_approval": {
+            "decision": "approved",
+            "recorded_at": "2026-10-03T22:00:33Z",
+            "approval_source": "explicit_user_approval_in_chat",
+            "reason": "User explicitly accepted all eight reference-guided generated images in this chat and authorized publishing them with user review accepted."
+          },
+          "user_review_history": [
+            {
+              "recorded_at": "2026-10-03T22:00:33Z",
+              "by": "user",
+              "decision": "approved",
+              "accepted_attempt": 2,
+              "accepted_path": "assets/exercises/pending/agent-03-single-generator-round3-2026-10-03/generator-single/agent-03-others-034/iso-lateral-low-row-machine/attempt-2.png",
+              "accepted_sha256": "c35b9da4692001ac9fb290d2d94e5e52acf83970b1187678b8638c39a148ff4b",
+              "reason": "User explicitly accepted all eight reference-guided generated images in this chat and authorized publishing them with user review accepted.",
+              "approval_source": "explicit_user_approval_in_chat"
+            }
+          ]
         },
         {
           "exercise_id": "iso-lateral-row-machine",
@@ -4171,8 +4226,8 @@
         {
           "exercise_id": "rear-delt-reverse-fly-cable-machine",
           "name": "Rear Delt Reverse Fly (Cable)",
-          "status": "generated_pending",
-          "attempts": 1,
+          "status": "approved",
+          "attempts": 2,
           "attempt_history": [
             {
               "attempt": 1,
@@ -4321,45 +4376,64 @@
               "agent_visual_review": "not_performed",
               "user_review": "pending",
               "errors": []
+            },
+            {
+              "exercise_id": "rear-delt-reverse-fly-cable-machine",
+              "attempt": 2,
+              "prompt": "Create exactly ONE standalone square transparent PNG for the exact exercise ID rear-delt-reverse-fly-cable-machine, “Rear Delt Reverse Fly (Cable)”, in the project’s 3D anatomical exercise style. No text or interface.\n\nUse the supplied images according to their visible roles:\n- The bald silver-gray anatomical mannequin is the approved human appearance/material reference only. Preserve the same adult male anatomy, proportions, bald head, opaque silver-gray 3D muscle detail, and plain black shorts. Ignore its pose, dumbbells, and highlights.\n- Use only the user screenshot titled “Rear Delt Reverse Fly (Machine)” as the technique reference; ignore the other exercise screenshots. Match its seated position at the cable station, rear-facing camera view, open-arm pull phase, machine-to-person placement, and overall proportions. Do not reproduce app UI, text, white card, or controls.\n\nShow one adult male anatomical mannequin seated upright on the machine seat, facing the cable station, viewed from behind and slightly to one side as in the titled screenshot. Both feet stay supported on the floor or machine foot rests; torso remains stable and upright. He holds one handle in each hand with a pronated palms-down grip. Depict the arms moving outward and backward at shoulder height in the reverse-fly contraction, elbows slightly bent and held at a consistent angle, shoulders down, scapulae controlled. Keep both cable lines taut and visibly connected from the machine pulleys to their respective handles; hands visibly grasp the handles. Build a coherent dual-cable station with seat and supports matching the screenshot; do not turn it into a free-standing low-pulley exercise if that changes the seated reference posture. The screenshot’s seated position and camera framing take precedence for this requested illustration; the catalogue text below is retained as source provenance, and the catalogue itself must not be changed.\n\nFull person and complete relevant cable apparatus inside the square, one person and one phase only. No duplicate arms, crossed cables through the torso, floating handles, disconnected pulleys, extra person, or unsupported parts.\n\nFollow project style v1: same bald adult male model, consistent anatomy and proportions, opaque silver-gray 3D materials, plain black shorts, barefoot. Truly transparent background. Highlight only primary shoulders in #F26445; highlight secondary upper back with the same hue at about 40–50% intensity. No other muscle highlights, no glow, text, labels, arrows, logo, border, or decoration.\n\nExact English source fields for this ID: description: “Rear Delt Reverse Fly (Cable) moves the arms outward and back through a controlled rear-delt fly arc while standing at the cable with a slight hip hinge.” Instructions: “Attach a D-handle to each low pulley cable and stand in the middle of the cable crossover machine.” “Grasp the handles with a pronated grip (palms facing down) and take a step forward, positioning your feet shoulder-width apart.” “Bend your knees slightly and lean forward at the waist, keeping your back straight and your abs engaged.” “With your arms extended out to the sides and slightly bent at the elbows, exhale and squeeze your shoulder blades together as you pull the cables back and upward in a reverse fly motion.” “Pause for a moment at the peak contraction, then inhale and slowly return to the starting position.” “Repeat for the desired number of repetitions.” Form cues: “Keep the shoulders down.” “Move through a controlled arc.” “Stop at a comfortable range.” Common mistakes: “Swinging for momentum.” “Shrugging into the movement.” “Forcing end range.” Equipment: machine. Primary muscle: shoulders. Secondary muscle: upper_back. Preserve the exact exercise ID and muscles while following the user-selected screenshot technique for this generated version.",
+              "style_version": "v1",
+              "reference_sha256": "52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f",
+              "technique_reference": "Rear Delt Reverse Fly (Machine) screenshot attached by user in this conversation",
+              "result_path": "/workspace/exercise-image-results/agent-03-single-generator-round3-2026-10-03/generator-single/agent-03-others-035/rear-delt-reverse-fly-cable-machine/attempt-2.png",
+              "result_sha256": "20c8b81e0103dc0c9a97f8fab30345c7da97cc380b6c57c671134461e100bed7",
+              "width": 1254,
+              "height": 1254,
+              "technical_status": "needs_fix",
+              "technical_check": {
+                "png_decoded": true,
+                "square": true,
+                "target_dimensions": false,
+                "alpha_channel_present": true,
+                "transparent_pixel_count": 1571478,
+                "sha256_matches_metadata": true,
+                "exercise_id_matches_path": true
+              },
+              "user_review": "approved",
+              "agent_visual_review": "not_performed",
+              "attempt_status": "generated",
+              "prompt_sha256": "cfc3abef88abdc7e79cf52da7165a7191b39c44e63458bd63c60f8c68dcc35c4",
+              "git_result_path": "assets/exercises/pending/agent-03-single-generator-round3-2026-10-03/generator-single/agent-03-others-035/rear-delt-reverse-fly-cable-machine/attempt-2.png",
+              "recorded_user_approval": {
+                "decision": "approved",
+                "recorded_at": "2026-10-03T22:00:33Z",
+                "approval_source": "explicit_user_approval_in_chat",
+                "reason": "User explicitly accepted all eight reference-guided generated images in this chat and authorized publishing them with user review accepted."
+              }
             }
           ],
-          "user_review": "pending",
+          "user_review": "approved",
           "technical_check": {
-            "status": "passed",
+            "status": "failed",
             "format": "PNG",
             "dimensions": [
-              1024,
-              1024
-            ],
-            "mode": "RGBA",
-            "generator_source_format": "PNG",
-            "generator_source_dimensions": [
               1254,
               1254
             ],
-            "generator_source_mode": "RGBA",
-            "generator_source_had_alpha_or_transparency": true,
-            "alpha_min_max": [
-              0,
-              255
-            ],
-            "fully_transparent_pixels": 630146,
-            "fully_opaque_pixels": 4371,
+            "mode": "RGBA",
+            "rgba": true,
             "transparent_pixel_present": true,
-            "opaque_pixel_present": true,
-            "opens": true,
-            "errors": [],
-            "scope": "PNG decode, exact square dimensions, alpha-channel/transparency pixels and SHA256 only; no visual QA."
+            "transparent_pixel_count": 1571478,
+            "target_dimensions": false
           },
           "agent_visual_review": "not_performed",
-          "result_path": "/workspace/exercise-image-results/agent-03-single-generator-round3-2026-10-03/generator-single/agent-03-others-035/rear-delt-reverse-fly-cable-machine/attempt-1.png",
+          "result_path": "/workspace/exercise-image-results/agent-03-single-generator-round3-2026-10-03/generator-single/agent-03-others-035/rear-delt-reverse-fly-cable-machine/attempt-2.png",
           "planned_png_path": "/workspace/exercise-image-results/agent-03-single-generator-round3-2026-10-03/generator-single/agent-03-others-035/rear-delt-reverse-fly-cable-machine/attempt-1.png",
           "planned_git_png_path": "assets/exercises/pending/agent-03-single-generator-round3-2026-10-03/generator-single/agent-03-others-035/rear-delt-reverse-fly-cable-machine/attempt-1.png",
           "source_catalog_sha256": "a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989",
           "style_version": "v1",
           "prompt_sha256": "9e01c6b28aac51136aef73dfdc66e331c3c58b174df191f6e75c93d3028c34a3",
-          "git_result_path": "assets/exercises/pending/agent-03-single-generator-round3-2026-10-03/generator-single/agent-03-others-035/rear-delt-reverse-fly-cable-machine/attempt-1.png",
-          "result_sha256": "eaa37e3e7fbae05d9190afaee796865fa5f27cdae46a79d398ae053199af5ee1",
+          "git_result_path": "assets/exercises/pending/agent-03-single-generator-round3-2026-10-03/generator-single/agent-03-others-035/rear-delt-reverse-fly-cable-machine/attempt-2.png",
+          "result_sha256": "20c8b81e0103dc0c9a97f8fab30345c7da97cc380b6c57c671134461e100bed7",
           "prompt": "Create exactly ONE square 1024x1024 transparent PNG of this exact exercise and ONE selected phase. Metadata must never appear as image text.\n{\n  \"approved_style_files\": [\n    {\n      \"path\": \"docs/exercise-image-style.md\",\n      \"sha256\": \"8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578\"\n    }\n  ],\n  \"exact_catalogue_source\": {\n    \"equipment\": \"machine\",\n    \"primary_muscle\": \"shoulders\",\n    \"secondary_muscles\": [\n      \"upper_back\"\n    ],\n    \"source_english\": {\n      \"common_mistakes\": [\n        \"Swinging for momentum.\",\n        \"Shrugging into the movement.\",\n        \"Forcing end range.\"\n      ],\n      \"description\": \"Rear Delt Reverse Fly (Cable) moves the arms outward and back through a controlled rear-delt fly arc while standing at the cable with a slight hip hinge.\",\n      \"form_cues\": [\n        \"Keep the shoulders down.\",\n        \"Move through a controlled arc.\",\n        \"Stop at a comfortable range.\"\n      ],\n      \"instructions\": [\n        \"Attach a D-handle to each low pulley cable and stand in the middle of the cable crossover machine.\",\n        \"Grasp the handles with a pronated grip (palms facing down) and take a step forward, positioning your feet shoulder-width apart.\",\n        \"Bend your knees slightly and lean forward at the waist, keeping your back straight and your abs engaged.\",\n        \"With your arms extended out to the sides and slightly bent at the elbows, exhale and squeeze your shoulder blades together as you pull the cables back and upward in a reverse fly motion.\",\n        \"Pause for a moment at the peak contraction, then inhale and slowly return to the starting position.\",\n        \"Repeat for the desired number of repetitions.\"\n      ],\n      \"provenance\": \"adapted\",\n      \"safety_note\": \"Use light resistance and stop if the shoulder cannot move smoothly.\"\n    }\n  },\n  \"human_reference\": {\n    \"absolute_path\": \"/workspace/lightweight-exercises-photo/assets/exercises/biceps-curl-dumbbell.png\",\n    \"branch\": \"work\",\n    \"pixels_reviewed_during_preparation\": false,\n    \"repository_path\": \"assets/exercises/biceps-curl-dumbbell.png\",\n    \"role\": \"Human appearance/proportions/materials/anatomical style ONLY. Exercise pose, grip, equipment and muscles come from the exact-ID catalogue, never the reference.\",\n    \"sha256\": \"52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f\",\n    \"source_commit\": \"b0385b7e2f3382d545a6dff5304c81ba3c771096\"\n  },\n  \"identity_do_not_render_as_text\": {\n    \"catalog_record_sha256\": \"a8a800fd5de9aba11aeb9283a5d43955c7f64e9168dfb745e2950ed77a35c36a\",\n    \"catalog_sha256\": \"a7cd78ba174d7277b4acaf95bd46c8a2774698d60a59cb2df6737fa2c7843989\",\n    \"exercise_id\": \"rear-delt-reverse-fly-cable-machine\",\n    \"name\": \"Rear Delt Reverse Fly (Cable)\"\n  },\n  \"selected_render_scene\": {\n    \"camera\": \"Full-body front-side three-quarter view exposing every prescribed contact, grip and support. Entire person and all equipment visible within square; no crop, text, arrows or second phase.\",\n    \"exercise_id\": \"rear-delt-reverse-fly-cable-machine\",\n    \"grip\": \"Pronated palms-down D-handle in each hand, exact dataset grip.\",\n    \"movement_trajectory\": \"Pull arms back/up in reverse-fly arc with scapular squeeze; elbows keep fixed bend, no row.\",\n    \"never_infer_muscles_from_pose_or_reference\": true,\n    \"one_phase_only\": true,\n    \"pose\": \"Standing centered, one step forward of low pulleys, knees soft, slight neutral hip hinge; arms out/back with small fixed elbow bend and shoulders down.\",\n    \"single_phase\": \"Back-and-up fly contraction\",\n    \"supports_and_equipment\": \"Two LOW pulleys and D-handles, both feet grounded. Frame behind the stepped-forward body gives cables forward/downward resistance; keep each cable outside torso. No unconfirmed crossed-hand reassignment.\"\n  },\n  \"source_use_rule\": \"Preserve raw source texts verbatim; render only selected scene and documented exact-source/user resolution. Do not silently repair the catalogue.\",\n  \"style\": {\n    \"background\": \"Genuinely transparent PNG background, no white/checkerboard layer, no environment scene.\",\n    \"framing\": \"Full figure and all required equipment/supports visible within a square. Scale and use a three-quarter view to expose the specified contacts without changing anatomy, equipment, grip or technique.\",\n    \"human_model\": \"One athletic bald male anatomical mannequin, opaque silver-gray muscular surfaces, consistent proportions and detailed 3D materials, plain black shorts, barefoot.\",\n    \"material_rules\": \"Highlights never make tissue transparent; no glow, whole-body orange tint, hair, text, labels, arrows, UI, borders, collage or extra person.\",\n    \"no_invention\": \"Exact-ID catalogue controls source text and muscles. Render documented selected scene; recorded source corrections apply to the derived scene only. No reference-pose copying or imported muscle targets.\",\n    \"output\": {\n      \"format\": \"PNG\",\n      \"height\": 1024,\n      \"one_person\": true,\n      \"one_phase\": true,\n      \"width\": 1024\n    },\n    \"primary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"rule\": \"Highlight only the exact primary muscle group provided for this exercise.\"\n    },\n    \"secondary_highlight\": {\n      \"hex\": \"#F26445\",\n      \"intensity_fraction\": [\n        0.4,\n        0.5\n      ],\n      \"rule\": \"Only the exact secondary muscles, lighter same-hue highlight; if the list is empty add no secondary target.\"\n    },\n    \"version\": \"v1\"\n  },\n  \"technique_resolution\": {\n    \"PNG_approval\": false,\n    \"binding_or_name_alone_is_not_confirmation\": true,\n    \"catalog_modified\": false,\n    \"construction_rule\": \"Standard compatible unbranded geometry allowed by AGENTS.md; choose geometry only around specified contacts/motion. Category machine does not establish a load mechanism, brand, angle or weight count.\",\n    \"dataset_instruction_steps_read\": [\n      \"Attach a D-handle to each low pulley cable and stand in the middle of the cable crossover machine.\",\n      \"Grasp the handles with a pronated grip (palms facing down) and take a step forward, positioning your feet shoulder-width apart.\",\n      \"Bend your knees slightly and lean forward at the waist, keeping your back straight and your abs engaged.\",\n      \"With your arms extended out to the sides and slightly bent at the elbows, exhale and squeeze your shoulder blades together as you pull the cables back and upward in a reverse fly motion.\",\n      \"Pause for a moment at the peak contraction, then inhale and slowly return to the starting position.\",\n      \"Repeat for the desired number of repetitions.\"\n    ],\n    \"decision_kind\": \"exact_ID_written_technique_confirmation\",\n    \"evidence_path\": \"data/audits/agent-03-single-generator-round3-2026-10-03-technique.json\",\n    \"evidence_selector\": \"records[exercise_id=\\\"rear-delt-reverse-fly-cable-machine\\\"]\",\n    \"illustration_choices\": \"Side/phase and compatible layout are scene choices, not amendments to source technique. Do not infer muscle targets from scene or equipment.\",\n    \"illustration_choices_are_not_user_approvals\": true,\n    \"status\": \"resolved\",\n    \"technique_fields_read\": [\n      \"content.en.description\",\n      \"content.en.instructions\",\n      \"content.en.form_cues\",\n      \"content.en.common_mistakes\",\n      \"content.en.safety_note\",\n      \"content.pl.instructions\",\n      \"source.dataset_id\"\n    ]\n  }\n}",
           "source": {
             "task_commit": "fec6f45faa15189808e8dfd765916825d4894007",
@@ -4391,7 +4465,43 @@
           "started_at": "2026-10-03T13:00:49.425Z",
           "finished_at": "2026-10-03T13:01:52.143Z",
           "last_error": null,
-          "errors": []
+          "errors": [],
+          "technical_status": "needs_fix",
+          "technical_check_details": {
+            "png_decoded": true,
+            "square": true,
+            "target_dimensions": false,
+            "alpha_channel_present": true,
+            "transparent_pixel_count": 1571478,
+            "sha256_matches_metadata": true,
+            "exercise_id_matches_path": true,
+            "status": "failed",
+            "errors": [
+              "Expected 1024x1024; got 1254x1254."
+            ],
+            "scope": "PNG decode, dimensions, square shape, alpha transparency, SHA256 and exercise ID/path consistency only; no visual QA."
+          },
+          "accepted_path": "assets/exercises/pending/agent-03-single-generator-round3-2026-10-03/generator-single/agent-03-others-035/rear-delt-reverse-fly-cable-machine/attempt-2.png",
+          "accepted_sha256": "20c8b81e0103dc0c9a97f8fab30345c7da97cc380b6c57c671134461e100bed7",
+          "approved_at": "2026-10-03T22:00:33Z",
+          "user_approval": {
+            "decision": "approved",
+            "recorded_at": "2026-10-03T22:00:33Z",
+            "approval_source": "explicit_user_approval_in_chat",
+            "reason": "User explicitly accepted all eight reference-guided generated images in this chat and authorized publishing them with user review accepted."
+          },
+          "user_review_history": [
+            {
+              "recorded_at": "2026-10-03T22:00:33Z",
+              "by": "user",
+              "decision": "approved",
+              "accepted_attempt": 2,
+              "accepted_path": "assets/exercises/pending/agent-03-single-generator-round3-2026-10-03/generator-single/agent-03-others-035/rear-delt-reverse-fly-cable-machine/attempt-2.png",
+              "accepted_sha256": "20c8b81e0103dc0c9a97f8fab30345c7da97cc380b6c57c671134461e100bed7",
+              "reason": "User explicitly accepted all eight reference-guided generated images in this chat and authorized publishing them with user review accepted.",
+              "approval_source": "explicit_user_approval_in_chat"
+            }
+          ]
         },
         {
           "exercise_id": "rope-straight-arm-pulldown-machine",

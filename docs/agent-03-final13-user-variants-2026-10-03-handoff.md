@@ -48,3 +48,12 @@ All assigned 041→042 work is checkpointed. Stop; do not take other assignments
 The user approved the generated PNGs for both listed packages, except `rear-kick-machine`, and asked for the approved status to be pushed to GitHub. The 12 approved IDs are recorded in the manifest and shared progress with their exact accepted repository paths and SHA256 hashes. `rear-kick-machine` remains `user_review=pending`.
 
 `press-under-barbell` is user-approved while its technical check remains failed: one corner has alpha 1 (`corner_alpha` = `[0, 0, 1, 0]`). The approval does not change that technical result. Agent visual review remains `not_performed`; no PNG bytes were changed.
+
+
+## User accepted regenerated images — 2026-10-03T22:00:33Z
+
+The user explicitly accepted the following attempt-2 PNGs and authorized publishing them with `user_review=approved`. Attempt 1 and all unrelated results remain preserved. Each output’s technical status remains `needs_fix` because its actual dimensions are 1254×1254 rather than 1024×1024; no image was resized or altered. Agent visual review remains `not_performed`.
+
+- `rear-kick-machine` — `assets/exercises/pending/agent-03-final13-user-variants-2026-10-03/generator-single/agent-03-others-041/rear-kick-machine/attempt-2.png`; SHA256 `e1b677df89a9f4ec8a104e2caf3573e7e5325556eca83af601e1fcd45d7221e2`; technical `needs_fix`; `user_review=approved`.
+
+Remote SHA256 verification will be recorded after push.

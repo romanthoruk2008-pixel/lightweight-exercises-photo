@@ -95,3 +95,13 @@
 - Excluded at the user's instruction and left pending in both manifest and progress: `pullup-assisted-machine`, `single-arm-triceps-pushdown-cable-machine`, `ski-erg-machine`. These were not marked rejected.
 - All 34 remote PNG blobs were SHA256-verified at worker commit `3204049b0b98628e5f6434493d11dcfdb274f8b3` before recording this decision.
 - Accepted exercise IDs: `bicycle-crunch`, `bicycle-crunch-raised-legs`, `pushup-weighted`, `side-bend-dumbbell`, `single-arm-landmine-press-barbell`, `nordic-hamstrings-curls`, `muscle-up-machine`, `back-extension-weighted-hyperextension-machine`, `butterfly-pec-deck-machine`, `calf-extension-machine`, `calf-press-machine`, `chest-fly-machine`, `crunch-machine`, `glute-ham-raise-machine`, `glute-kickback-machine`, `hack-squat-machine`, `hip-abduction-machine`, `reverse-hyperextension-machine`, `seated-calf-raise-machine`, `seated-leg-curl-machine`, `reverse-curl-cable-machine`, `standing-cable-glute-kickbacks-machine`, `cable-twist-down-to-up-machine`, `cable-twist-up-to-down-machine`, `hip-adduction-cable-machine`, `hip-abduction-cable-machine`, `single-arm-lateral-raise-cable-machine`, `behind-the-back-curl-cable-machine`, `overhead-curl-cable-machine`, `decline-bench-press-machine`, `chest-dip-assisted-machine`.
+
+
+## User accepted regenerated images — 2026-10-03T22:00:33Z
+
+The user explicitly accepted the following attempt-2 PNGs and authorized publishing them with `user_review=approved`. Attempt 1 and all unrelated results remain preserved. Each output’s technical status remains `needs_fix` because its actual dimensions are 1254×1254 rather than 1024×1024; no image was resized or altered. Agent visual review remains `not_performed`.
+
+- `pullup-assisted-machine` — `assets/exercises/pending/agent-03-common-variants-2026-10-03/generator-single/agent-03-others-038/pullup-assisted-machine/attempt-2.png`; SHA256 `30378bcdfe0dc736c32222cc01105cdb1f132b35388c4237f36d97ed022e0f5c`; technical `needs_fix`; `user_review=approved`.
+- `single-arm-triceps-pushdown-cable-machine` — `assets/exercises/pending/agent-03-common-variants-2026-10-03/generator-single/agent-03-others-040/single-arm-triceps-pushdown-cable-machine/attempt-2.png`; SHA256 `4ddf92a6c49c50c33e833cd81851f5cc0952b893add49ff3f7b98c1cb63971b1`; technical `needs_fix`; `user_review=approved`.
+
+Remote SHA256 verification will be recorded after push.

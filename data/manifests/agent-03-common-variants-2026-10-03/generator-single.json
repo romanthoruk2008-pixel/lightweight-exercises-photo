@@ -6060,8 +6060,8 @@
         {
           "exercise_id": "pullup-assisted-machine",
           "name": "Pull Up (Assisted)",
-          "status": "generated_pending",
-          "attempts": 1,
+          "status": "approved",
+          "attempts": 2,
           "attempt_history": [
             {
               "attempt_number": 1,
@@ -6244,39 +6244,57 @@
                 "normalization": "Pillow LANCZOS aspect-preserving resize to 1024x1024 RGBA; original generator output retained.",
                 "scope": "PNG decode, exact square dimensions, alpha-channel/transparency pixels and SHA256 only; no visual QA."
               }
+            },
+            {
+              "exercise_id": "pullup-assisted-machine",
+              "attempt": 2,
+              "prompt": "Create exactly ONE standalone exercise illustration for the exact exercise ID pullup-assisted-machine, “Pull Up (Assisted)”, as a square transparent PNG. No text or interface.\n\nUse both supplied images according to their roles:\n- The approved bald adult silver-gray anatomical mannequin is the human appearance and material reference only. Keep its consistent adult male anatomy, proportions, bald head, opaque silver-gray 3D muscle material, fine anatomical detail, and plain black shorts. Ignore its pose and orange biceps.\n- The user screenshot titled “Pull Up (Assisted)” is the exercise technique and equipment reference. Match its assisted-pull-up station, rear view, body orientation, overhand hand placement, kneeling assistance pad, bent lower legs, and pulled-up phase as closely as possible. Do not reproduce any app UI, text, controls, white card, or screen layout.\n\nShow one athletic adult male anatomical mannequin performing one assisted pull-up on a selectorized counterweight-assisted pull-up station. Match the screenshot’s rear view: the person faces the station, with the viewer seeing his back and the machine around him. He grips the fixed overhead pull-up handles with both hands in a pronated overhand grip, slightly wider than shoulder width. Depict the top phase shown in the reference: elbows flexed and drawing down beside the torso, chin at or just above handle height, ribs stacked, torso upright and controlled without swinging. Both knees rest on the moving assistance pad; knees, not hips, contact the pad. Lower legs bend backward with feet clear of the floor, as in the reference. The assistance pad moves vertically with the person. Keep the fixed handles, frame, seatless knee pad, guide rails, and counterweight stack physically connected and coherent. Show a plausible single assisted pull-up machine, not an unassisted bar, dip station, cable-row machine, or multi-gym.\n\nThe composition must reveal both hand-to-handle grips and both knees supported by the pad. Fit the complete person and complete relevant machine comfortably inside the square, with an unobstructed rear three-quarter camera angle close to the screenshot. One person, one phase only.\n\nFollow project exercise illustration style v1. The body is fully opaque, bald, muscular, anatomically detailed, and silver-gray with the same material character and proportions as the human reference, wearing plain black shorts and no shoes. Use a genuinely transparent background. Highlight the exact catalog primary muscle lats in #F26445. Highlight only the exact secondary muscles upper back, biceps, and forearms in the same hue at about 40–50% intensity. Do not import muscle colors from the reference screenshot or human-reference image. No glow, text, labels, arrows, logo, border, collage, second phase, extra limbs, duplicated machine parts, floating supports, or decorative props.\n\nExact English source fields for this ID:\ndescription: “Pull Up (Assisted) pulls from a controlled hang until the chin reaches or clears the bar, then lowers under control.”\ninstructions: “Adjust the assisted pull-up machine and select assistance that allows a controlled full range.” “Grip the handles overhand and start with the arms extended.” “Pull the body upward until the chin reaches or clears the handles.” “Lower slowly until the arms are straight, then repeat.”\nform_cues: “Keep the ribs stacked and shoulders down.” “Drive the elbows toward the torso.” “Control the return to the start.”\ncommon_mistakes: “Leaning or swinging to move the load.” “Shrugging into the top position.” “Releasing the resistance quickly.”\nequipment: machine.\nprimary_muscle: lats.\nsecondary_muscles: upper_back, biceps, forearms.\nUse the exact-ID technique source and the user’s exercise screenshot together to depict the same kneeling assisted-pull-up technique.",
+              "style_version": "v1",
+              "reference_sha256": "52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f",
+              "technique_reference": "Pull Up (Assisted) screenshot attached by user in this conversation",
+              "result_path": "/workspace/exercise-image-results/agent-03-common-variants-2026-10-03/generator-single/agent-03-others-038/pullup-assisted-machine/attempt-2.png",
+              "result_sha256": "30378bcdfe0dc736c32222cc01105cdb1f132b35388c4237f36d97ed022e0f5c",
+              "width": 1254,
+              "height": 1254,
+              "technical_status": "needs_fix",
+              "technical_check": {
+                "png_decoded": true,
+                "square": true,
+                "target_dimensions": false,
+                "alpha_channel_present": true,
+                "transparent_pixel_count": 1570314,
+                "sha256_matches_metadata": true,
+                "exercise_id_matches_path": true
+              },
+              "user_review": "approved",
+              "agent_visual_review": "not_performed",
+              "attempt_status": "generated",
+              "prompt_sha256": "c4f3c89b137bb36c7b27beaf0759255b4976dffb83c291e506a8bb77badecdb1",
+              "git_result_path": "assets/exercises/pending/agent-03-common-variants-2026-10-03/generator-single/agent-03-others-038/pullup-assisted-machine/attempt-2.png",
+              "recorded_user_approval": {
+                "decision": "approved",
+                "recorded_at": "2026-10-03T22:00:33Z",
+                "approval_source": "explicit_user_approval_in_chat",
+                "reason": "User explicitly accepted all eight reference-guided generated images in this chat and authorized publishing them with user review accepted."
+              }
             }
           ],
-          "user_review": "pending",
+          "user_review": "approved",
           "technical_check": {
-            "status": "passed",
+            "status": "failed",
             "format": "PNG",
             "dimensions": [
-              1024,
-              1024
-            ],
-            "mode": "RGBA",
-            "generator_source_format": "PNG",
-            "generator_source_dimensions": [
               1254,
               1254
             ],
-            "generator_source_mode": "RGBA",
-            "generator_source_had_alpha_or_transparency": true,
-            "alpha_min_max": [
-              0,
-              255
-            ],
-            "fully_transparent_pixels": 679874,
-            "fully_opaque_pixels": 3238,
+            "mode": "RGBA",
+            "rgba": true,
             "transparent_pixel_present": true,
-            "opaque_pixel_present": true,
-            "opens": true,
-            "errors": [],
-            "normalization": "Pillow LANCZOS aspect-preserving resize to 1024x1024 RGBA; original generator output retained.",
-            "scope": "PNG decode, exact square dimensions, alpha-channel/transparency pixels and SHA256 only; no visual QA."
+            "transparent_pixel_count": 1570314,
+            "target_dimensions": false
           },
           "agent_visual_review": "not_performed",
-          "result_path": "/workspace/exercise-image-results/agent-03-common-variants-2026-10-03/generator-single/agent-03-others-038/pullup-assisted-machine/attempt-1.png",
+          "result_path": "/workspace/exercise-image-results/agent-03-common-variants-2026-10-03/generator-single/agent-03-others-038/pullup-assisted-machine/attempt-2.png",
           "planned_png_path": "/workspace/exercise-image-results/agent-03-common-variants-2026-10-03/generator-single/agent-03-others-038/pullup-assisted-machine/attempt-1.png",
           "planned_git_png_path": "assets/exercises/pending/agent-03-common-variants-2026-10-03/generator-single/agent-03-others-038/pullup-assisted-machine/attempt-1.png",
           "prompt_sha256": "ffd7106d3f319dfc8e9fecaabb928b2fc735761680a14cdb29556863efd9d1b5",
@@ -6410,11 +6428,46 @@
             "current_user_instruction_authorizes_generation": true,
             "basis": "Explicit current user request to execute assignment 34 IDs; task records remain unchanged."
           },
-          "git_result_path": "assets/exercises/pending/agent-03-common-variants-2026-10-03/generator-single/agent-03-others-038/pullup-assisted-machine/attempt-1.png",
-          "result_sha256": "848001a412292dcfd17973fb3462a3eade38f72efd8f0c1f5f55f32b0a38913d",
-          "technical_status": "passed",
+          "git_result_path": "assets/exercises/pending/agent-03-common-variants-2026-10-03/generator-single/agent-03-others-038/pullup-assisted-machine/attempt-2.png",
+          "result_sha256": "30378bcdfe0dc736c32222cc01105cdb1f132b35388c4237f36d97ed022e0f5c",
+          "technical_status": "needs_fix",
           "normalization": "Pillow LANCZOS aspect-preserving resize to 1024x1024 RGBA; original generator output retained.",
-          "errors": []
+          "errors": [],
+          "technical_check_details": {
+            "png_decoded": true,
+            "square": true,
+            "target_dimensions": false,
+            "alpha_channel_present": true,
+            "transparent_pixel_count": 1570314,
+            "sha256_matches_metadata": true,
+            "exercise_id_matches_path": true,
+            "status": "failed",
+            "errors": [
+              "Expected 1024x1024; got 1254x1254."
+            ],
+            "scope": "PNG decode, dimensions, square shape, alpha transparency, SHA256 and exercise ID/path consistency only; no visual QA."
+          },
+          "accepted_path": "assets/exercises/pending/agent-03-common-variants-2026-10-03/generator-single/agent-03-others-038/pullup-assisted-machine/attempt-2.png",
+          "accepted_sha256": "30378bcdfe0dc736c32222cc01105cdb1f132b35388c4237f36d97ed022e0f5c",
+          "approved_at": "2026-10-03T22:00:33Z",
+          "user_approval": {
+            "decision": "approved",
+            "recorded_at": "2026-10-03T22:00:33Z",
+            "approval_source": "explicit_user_approval_in_chat",
+            "reason": "User explicitly accepted all eight reference-guided generated images in this chat and authorized publishing them with user review accepted."
+          },
+          "user_review_history": [
+            {
+              "recorded_at": "2026-10-03T22:00:33Z",
+              "by": "user",
+              "decision": "approved",
+              "accepted_attempt": 2,
+              "accepted_path": "assets/exercises/pending/agent-03-common-variants-2026-10-03/generator-single/agent-03-others-038/pullup-assisted-machine/attempt-2.png",
+              "accepted_sha256": "30378bcdfe0dc736c32222cc01105cdb1f132b35388c4237f36d97ed022e0f5c",
+              "reason": "User explicitly accepted all eight reference-guided generated images in this chat and authorized publishing them with user review accepted.",
+              "approval_source": "explicit_user_approval_in_chat"
+            }
+          ]
         },
         {
           "exercise_id": "reverse-hyperextension-machine",
@@ -10769,8 +10822,8 @@
         {
           "exercise_id": "single-arm-triceps-pushdown-cable-machine",
           "name": "Single Arm Triceps Pushdown (Cable)",
-          "status": "generated_pending",
-          "attempts": 1,
+          "status": "approved",
+          "attempts": 2,
           "attempt_history": [
             {
               "attempt_number": 1,
@@ -10952,39 +11005,57 @@
                 "normalization": "Pillow LANCZOS aspect-preserving resize to 1024x1024 RGBA; original generator output retained.",
                 "scope": "PNG decode, exact square dimensions, alpha-channel/transparency pixels and SHA256 only; no visual QA."
               }
+            },
+            {
+              "exercise_id": "single-arm-triceps-pushdown-cable-machine",
+              "attempt": 2,
+              "prompt": "Create exactly ONE standalone square transparent PNG for the exact exercise ID single-arm-triceps-pushdown-cable-machine, “Single Arm Triceps Pushdown (Cable)”. No text or interface.\n\nUse the supplied images according to their visible roles:\n- The bald silver-gray anatomical mannequin is the approved human appearance and material reference only. Preserve the same adult male anatomy, proportions, bald head, opaque detailed silver-gray 3D materials, and plain black shorts. Ignore its pose, dumbbells and highlights.\n- Of the exercise screenshots, use only the screenshot titled “Single Arm Triceps Pushdown (Cable)” as the technique/equipment reference. Ignore the other exercise screenshots. Match its standing side-facing stance, single working arm, support hand against the cable station, high cable attachment and composition. Do not reproduce the app UI, text, controls or white card.\n\nShow one adult male anatomical mannequin standing facing a high-pulley cable station, with a slight stable forward lean and feet planted in a staggered stance as in the reference. The working arm is one arm only: upper arm close to the ribs and held still, elbow nearly extended, hand pressing one single D-handle down beside the thigh. A single taut cable must run from the high pulley to that handle, with a visible connector and a clear hand-to-handle grip. The free hand reaches forward and rests on a fixed machine upright for balance, matching the screenshot. Do not make the free hand grip another cable or attachment. Depict the controlled downward press endpoint. Show the whole mannequin and sufficient complete cable station inside the square from a front-side three-quarter view; one person, one phase.\n\nUse project exercise illustration style v1, with consistent bald adult male proportions, opaque silver-gray 3D anatomical material and fine muscle detail, plain black shorts, barefoot, and a genuinely transparent background. Highlight only the primary triceps in #F26445. This exercise has no secondary muscles, so add no secondary highlight. No straight bar, no two-handed grip, no extra cable or handle, no glow, text, labels, arrows, logo, border, duplicate limbs or decorative props.\n\nExact English source fields: description: “Stand at the high pulley and press one handle down beside the ribs by extending the elbow, then switch arms.” Instructions: “Stand facing a cable machine with a straight bar attachment at chest height.” “Grasp the bar with an overhand grip and step back to create tension in the cable.” “Position your feet shoulder-width apart and slightly bend your knees.” “Keep your back straight and core engaged throughout the exercise.” “Start with your arm fully extended and perpendicular to the floor.” “Keeping your upper arm stationary, exhale and push the bar down until your arm is fully extended.” Form cues: “Keep the support points fixed.” “Use a quiet controlled path.” “Reset fully between repetitions.” Common mistakes: “Shifting the support point.” “Using momentum instead of the target joint path.” “Cutting the return short.” Equipment: machine. Primary muscle: triceps. Secondary muscles: none.\nFor this exact ID, follow its documented selected single-handle high-pulley pressdown and the user’s titled screenshot: one working hand on one handle, the other hand bracing on the frame. Do not replace the handle with the contradictory straight-bar boilerplate in the English instructions.",
+              "style_version": "v1",
+              "reference_sha256": "52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f",
+              "technique_reference": "Single Arm Triceps Pushdown (Cable) screenshot attached by user in this conversation",
+              "result_path": "/workspace/exercise-image-results/agent-03-common-variants-2026-10-03/generator-single/agent-03-others-040/single-arm-triceps-pushdown-cable-machine/attempt-2.png",
+              "result_sha256": "4ddf92a6c49c50c33e833cd81851f5cc0952b893add49ff3f7b98c1cb63971b1",
+              "width": 1254,
+              "height": 1254,
+              "technical_status": "needs_fix",
+              "technical_check": {
+                "png_decoded": true,
+                "square": true,
+                "target_dimensions": false,
+                "alpha_channel_present": true,
+                "transparent_pixel_count": 1569251,
+                "sha256_matches_metadata": true,
+                "exercise_id_matches_path": true
+              },
+              "user_review": "approved",
+              "agent_visual_review": "not_performed",
+              "attempt_status": "generated",
+              "prompt_sha256": "f69991bcc30fc2bc39fdf086d121da23f97220a2db2f5ca3c85ec14c20333984",
+              "git_result_path": "assets/exercises/pending/agent-03-common-variants-2026-10-03/generator-single/agent-03-others-040/single-arm-triceps-pushdown-cable-machine/attempt-2.png",
+              "recorded_user_approval": {
+                "decision": "approved",
+                "recorded_at": "2026-10-03T22:00:33Z",
+                "approval_source": "explicit_user_approval_in_chat",
+                "reason": "User explicitly accepted all eight reference-guided generated images in this chat and authorized publishing them with user review accepted."
+              }
             }
           ],
-          "user_review": "pending",
+          "user_review": "approved",
           "technical_check": {
-            "status": "passed",
+            "status": "failed",
             "format": "PNG",
             "dimensions": [
-              1024,
-              1024
-            ],
-            "mode": "RGBA",
-            "generator_source_format": "PNG",
-            "generator_source_dimensions": [
               1254,
               1254
             ],
-            "generator_source_mode": "RGBA",
-            "generator_source_had_alpha_or_transparency": true,
-            "alpha_min_max": [
-              0,
-              255
-            ],
-            "fully_transparent_pixels": 756500,
-            "fully_opaque_pixels": 3716,
+            "mode": "RGBA",
+            "rgba": true,
             "transparent_pixel_present": true,
-            "opaque_pixel_present": true,
-            "opens": true,
-            "errors": [],
-            "normalization": "Pillow LANCZOS aspect-preserving resize to 1024x1024 RGBA; original generator output retained.",
-            "scope": "PNG decode, exact square dimensions, alpha-channel/transparency pixels and SHA256 only; no visual QA."
+            "transparent_pixel_count": 1569251,
+            "target_dimensions": false
           },
           "agent_visual_review": "not_performed",
-          "result_path": "/workspace/exercise-image-results/agent-03-common-variants-2026-10-03/generator-single/agent-03-others-040/single-arm-triceps-pushdown-cable-machine/attempt-1.png",
+          "result_path": "/workspace/exercise-image-results/agent-03-common-variants-2026-10-03/generator-single/agent-03-others-040/single-arm-triceps-pushdown-cable-machine/attempt-2.png",
           "planned_png_path": "/workspace/exercise-image-results/agent-03-common-variants-2026-10-03/generator-single/agent-03-others-040/single-arm-triceps-pushdown-cable-machine/attempt-1.png",
           "planned_git_png_path": "assets/exercises/pending/agent-03-common-variants-2026-10-03/generator-single/agent-03-others-040/single-arm-triceps-pushdown-cable-machine/attempt-1.png",
           "prompt_sha256": "eb2d844274b0324e544ddf302d4f12a30037d721ec9a8d9b595f7638240c92d5",
@@ -11117,11 +11188,46 @@
             "current_user_instruction_authorizes_generation": true,
             "basis": "Explicit current user request to execute assignment 34 IDs; task records remain unchanged."
           },
-          "git_result_path": "assets/exercises/pending/agent-03-common-variants-2026-10-03/generator-single/agent-03-others-040/single-arm-triceps-pushdown-cable-machine/attempt-1.png",
-          "result_sha256": "8040156dc0e5192a94d7d3424d487dbbfb4db4b9ade9960b56e5be171b5685c6",
-          "technical_status": "passed",
+          "git_result_path": "assets/exercises/pending/agent-03-common-variants-2026-10-03/generator-single/agent-03-others-040/single-arm-triceps-pushdown-cable-machine/attempt-2.png",
+          "result_sha256": "4ddf92a6c49c50c33e833cd81851f5cc0952b893add49ff3f7b98c1cb63971b1",
+          "technical_status": "needs_fix",
           "normalization": "Pillow LANCZOS aspect-preserving resize to 1024x1024 RGBA; original generator output retained.",
-          "errors": []
+          "errors": [],
+          "technical_check_details": {
+            "png_decoded": true,
+            "square": true,
+            "target_dimensions": false,
+            "alpha_channel_present": true,
+            "transparent_pixel_count": 1569251,
+            "sha256_matches_metadata": true,
+            "exercise_id_matches_path": true,
+            "status": "failed",
+            "errors": [
+              "Expected 1024x1024; got 1254x1254."
+            ],
+            "scope": "PNG decode, dimensions, square shape, alpha transparency, SHA256 and exercise ID/path consistency only; no visual QA."
+          },
+          "accepted_path": "assets/exercises/pending/agent-03-common-variants-2026-10-03/generator-single/agent-03-others-040/single-arm-triceps-pushdown-cable-machine/attempt-2.png",
+          "accepted_sha256": "4ddf92a6c49c50c33e833cd81851f5cc0952b893add49ff3f7b98c1cb63971b1",
+          "approved_at": "2026-10-03T22:00:33Z",
+          "user_approval": {
+            "decision": "approved",
+            "recorded_at": "2026-10-03T22:00:33Z",
+            "approval_source": "explicit_user_approval_in_chat",
+            "reason": "User explicitly accepted all eight reference-guided generated images in this chat and authorized publishing them with user review accepted."
+          },
+          "user_review_history": [
+            {
+              "recorded_at": "2026-10-03T22:00:33Z",
+              "by": "user",
+              "decision": "approved",
+              "accepted_attempt": 2,
+              "accepted_path": "assets/exercises/pending/agent-03-common-variants-2026-10-03/generator-single/agent-03-others-040/single-arm-triceps-pushdown-cable-machine/attempt-2.png",
+              "accepted_sha256": "4ddf92a6c49c50c33e833cd81851f5cc0952b893add49ff3f7b98c1cb63971b1",
+              "reason": "User explicitly accepted all eight reference-guided generated images in this chat and authorized publishing them with user review accepted.",
+              "approval_source": "explicit_user_approval_in_chat"
+            }
+          ]
         },
         {
           "exercise_id": "decline-bench-press-machine",

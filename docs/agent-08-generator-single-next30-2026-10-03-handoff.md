@@ -76,3 +76,14 @@
 ## User approval checkpoint — 2026-10-03T12:18:26Z
 
 The user explicitly accepted all generated images from batches 031–033 except `lat-pulldown-machine`, `torso-rotation-machine`, `reverse-grip-triceps-pushdown-machine`, and `face-pull-machine`. Those four remain `user_review=pending`. The other 25 generated PNGs are marked `status=approved` and `user_review=approved` in this generator's manifest with their exact accepted repository paths and SHA256 values; image bytes were not modified. `reverse-grip-lat-pulldown-cable-machine` remains failed after HTTP 429 and has no PNG, so it was not approved. The execution branch still records the original package result and the approval checkpoint separately.
+
+
+## User accepted regenerated images — 2026-10-03T22:00:33Z
+
+The user explicitly accepted the following attempt-2 PNGs and authorized publishing them with `user_review=approved`. Attempt 1 and all unrelated results remain preserved. Each output’s technical status remains `needs_fix` because its actual dimensions are 1254×1254 rather than 1024×1024; no image was resized or altered. Agent visual review remains `not_performed`.
+
+- `face-pull-machine` — `assets/exercises/pending/agent-03-single-generator-next30-2026-10-03/generator-single/agent-03-others-032/face-pull-machine/attempt-2.png`; SHA256 `66c37a5b5c7438e57a0a1506ab1eda12b6b5b23a82db2825929142f374a98cd9`; technical `needs_fix`; `user_review=approved`.
+- `lat-pulldown-machine` — `assets/exercises/pending/agent-03-single-generator-next30-2026-10-03/generator-single/agent-03-others-031/lat-pulldown-machine/attempt-2.png`; SHA256 `bebc99f00715f056b25b19600818319d3a140fec80b6fca990567811bd23cb25`; technical `needs_fix`; `user_review=approved`.
+- `reverse-grip-triceps-pushdown-machine` — `assets/exercises/pending/agent-03-single-generator-next30-2026-10-03/generator-single/agent-03-others-031/reverse-grip-triceps-pushdown-machine/attempt-2.png`; SHA256 `565a6afd520370f197044dd97826933f9ab65bd839b05fce11107b203af8da3d`; technical `needs_fix`; `user_review=approved`.
+
+Remote SHA256 verification will be recorded after push.

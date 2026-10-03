@@ -69,3 +69,13 @@ Remote verification for `agent-03-others-036` at 2026-10-03T13:14:38+00:00: 9 PN
 - The user explicitly approved 26 of the 29 round3 images. Their manifest entries now have `status=approved`, `user_review=approved`, and the exact accepted Git path/SHA256.
 - Kept `iso-lateral-low-row-machine`, `triceps-extension-machine`, and `rear-delt-reverse-fly-cable-machine` at `user_review=pending`; no acceptance fields were added for them.
 - PNG bytes are unchanged. Shared progress, catalog, work, other manifests and Supabase were not changed.
+
+
+## User accepted regenerated images — 2026-10-03T22:00:33Z
+
+The user explicitly accepted the following attempt-2 PNGs and authorized publishing them with `user_review=approved`. Attempt 1 and all unrelated results remain preserved. Each output’s technical status remains `needs_fix` because its actual dimensions are 1254×1254 rather than 1024×1024; no image was resized or altered. Agent visual review remains `not_performed`.
+
+- `iso-lateral-low-row-machine` — `assets/exercises/pending/agent-03-single-generator-round3-2026-10-03/generator-single/agent-03-others-034/iso-lateral-low-row-machine/attempt-2.png`; SHA256 `c35b9da4692001ac9fb290d2d94e5e52acf83970b1187678b8638c39a148ff4b`; technical `needs_fix`; `user_review=approved`.
+- `rear-delt-reverse-fly-cable-machine` — `assets/exercises/pending/agent-03-single-generator-round3-2026-10-03/generator-single/agent-03-others-035/rear-delt-reverse-fly-cable-machine/attempt-2.png`; SHA256 `20c8b81e0103dc0c9a97f8fab30345c7da97cc380b6c57c671134461e100bed7`; technical `needs_fix`; `user_review=approved`.
+
+Remote SHA256 verification will be recorded after push.
