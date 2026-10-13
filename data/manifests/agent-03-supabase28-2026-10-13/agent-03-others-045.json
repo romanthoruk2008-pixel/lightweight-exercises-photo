@@ -2211,7 +2211,7 @@
     {
       "exercise_id": "front-lever-hold-straddle",
       "name": "Front Lever Hold (Straddle)",
-      "status": "technical_issue",
+      "status": "approved",
       "attempts": 2,
       "attempt_history": [
         {
@@ -2444,7 +2444,7 @@
             "origin/main": "a74adc6d107206429ffd225104899e240470f170",
             "origin/work": "b0385b7e2f3382d545a6dff5304c81ba3c771096"
           },
-          "user_review": "pending",
+          "user_review": "approved",
           "agent_visual_review": "not_performed",
           "user_requested_rework": true,
           "finished_at": "2026-10-13T12:44:52+00:00",
@@ -2469,7 +2469,8 @@
               "Expected 1024x1024; got [1254, 1254]"
             ],
             "scope": "File checks only; no visual QA, resize or repair"
-          }
+          },
+          "user_reviewed_at": "2026-10-13T12:48:08+00:00"
         }
       ],
       "batch_item_number": 9,
@@ -2486,8 +2487,8 @@
       "planned_git_png_path": "assets/exercises/pending/agent-03-supabase28-2026-10-13/agent-03-others-045/front-lever-hold-straddle/attempt-2.png",
       "result_path": "/workspace/exercise-image-results/agent-03-supabase28-2026-10-13/agent-03-others-045/front-lever-hold-straddle/attempt-2.png",
       "result_sha256": "f0dc54b3d4ae1bb44cd2b64b2b7217fa0601fbdb5a01f6ae45a5400cdc17cc55",
-      "accepted_path": null,
-      "accepted_sha256": null,
+      "accepted_path": "assets/exercises/pending/agent-03-supabase28-2026-10-13/agent-03-others-045/front-lever-hold-straddle/attempt-2.png",
+      "accepted_sha256": "f0dc54b3d4ae1bb44cd2b64b2b7217fa0601fbdb5a01f6ae45a5400cdc17cc55",
       "technical_check": {
         "status": "failed",
         "format": "PNG",
@@ -2506,7 +2507,7 @@
         ],
         "scope": "File checks only; no visual QA, resize or repair"
       },
-      "user_review": "pending",
+      "user_review": "approved",
       "future_user_review_policy": "pending until explicit user approval",
       "agent_visual_review": "not_performed",
       "last_error": null,
@@ -2623,7 +2624,9 @@
         },
         "existing_PNG_override": "User explicitly requests one new version of this unapproved attempt-1. Preserve original file and history."
       },
-      "source_original_prompt_sha256": "fc28b82a125ac9658c5b33968cbe4d3c81309eb4c8012c11c487b1af56b17445"
+      "source_original_prompt_sha256": "fc28b82a125ac9658c5b33968cbe4d3c81309eb4c8012c11c487b1af56b17445",
+      "user_decision": "accepted",
+      "user_reviewed_at": "2026-10-13T12:48:08+00:00"
     },
     {
       "exercise_id": "skin-the-cat",
@@ -2904,7 +2907,7 @@
     "origin/main": "a74adc6d107206429ffd225104899e240470f170",
     "origin/work": "b0385b7e2f3382d545a6dff5304c81ba3c771096"
   },
-  "last_updated_at": "2026-10-13T12:45:34+00:00",
+  "last_updated_at": "2026-10-13T12:48:08+00:00",
   "user_approval_events": [
     {
       "approved_at": "2026-10-13T12:42:07+00:00",
@@ -2924,6 +2927,17 @@
         "front-lever-hold-straddle"
       ],
       "scope": "Package 045 attempt-1: user accepts all except ninth Front Lever Hold (Straddle), and requests one photo-guided regeneration for that exact ID."
+    },
+    {
+      "approved_at": "2026-10-13T12:48:08+00:00",
+      "approval_source": "explicit_user_message",
+      "approved_exercise_ids": [
+        "front-lever-hold-straddle"
+      ],
+      "approved_attempt_number": 2,
+      "accepted_path": "assets/exercises/pending/agent-03-supabase28-2026-10-13/agent-03-others-045/front-lever-hold-straddle/attempt-2.png",
+      "accepted_sha256": "f0dc54b3d4ae1bb44cd2b64b2b7217fa0601fbdb5a01f6ae45a5400cdc17cc55",
+      "scope": "User explicitly accepts photo-guided Straddle attempt-2 and authorizes GitHub push."
     }
   ]
 }
