@@ -452,3 +452,25 @@ Pending вправи відсутні.
 Скрипт `integration/supabase/export_new_exercises.py` за замовчуванням dry-run, `--write` створює тільки нові workspace files, `--check` порівнює кожне поле всіх 28 записів з новим читанням Supabase та перевіряє hashes. Supabase transport GET-only, `exerciseuploader` через налаштований HTTPS proxy й apikey; секрет не виводиться й не зберігається. Live `--write` та `--check` пройшли, а також JSON round-trip, exact ID set/disjointness, all language values й unchanged historical catalog bytes. Manifest: `integration/supabase/exports/2026-10-13/new-exercises-manifest.json`.
 
 Формат і точна інструкція для Creator: `docs/supabase-new-exercises-2026-10-13.md`, посилання додано в README. Код і branch settings самого Exercise Creator недоступні; перевірено всі необхідні source fields, але його запуск не перевірявся. Supplement потрібно читати окремо від historical catalog за точним GitHub path цієї гілки. Supabase, користувацькі таблиці, schema, RLS і grants не змінені.
+
+<!-- continuation:continuation-2026-10-14 -->
+
+## Продовження схвалених PNG — continuation-2026-10-14
+
+Поточна контрольна точка: `2026-10-14T20:07:00.579971+00:00`.
+Нових Storage uploads: 20; завершених перенесень: 20; заміни прийнятих версій: 0.
+Попередніх перевірено: 448; pending пропущено: 0.
+Артефакти: `uploads/continuation-2026-10-14/plan.json`, `batch-*.json`, `summary.json`.
+Каталог не імпортувався повторно. Використано `continue_images.py` і перевірений `import_catalog_images.transfer_one`; лише Storage POST без upsert і п’ять image-полів із concurrency filters. Старі PNG не видаляються; повний каталог і всі мовні блоки незмінні.
+PNG staging поза Git: `/workspace/supabase-image-staging/<source_commit>/<source_png>`.
+
+### Фінальний результат continuation-2026-10-14
+
+Нових PNG — 20; замін — 0; попередніх звірено — 448; разом image links — 468. Пакети: [10, 10]. Pending вправ — 0; нових неперенесених approved у фінальному refresh — 0; помилок — 0.
+Пакети 044 і 045 містять точні explicit user approval records, accepted path/SHA256, matching timestamps і ID scope. Для Front Lever Hold (Straddle) перенесена лише approved attempt-2; відхилена attempt-1 не завантажувалася. Нові source_record та source_english точно збігаються з перевіреним supplement SHA256 907950559a5bf4be84a791deb73fcd03d502a48ec8b936296df8a3e42651bf0f. Shared progress нових ID не містить; використовуються manifest-only approvals із pinned commits. Джерела, схвалення та технічні винятки не змінені.
+Повне читання назад підтвердило 479 точних ID, 4476 мовних блоків і 3 архівні статуси та всі source values. Історичний catalog.json 451/4448 та export supplement 28/28 незмінні. Каталог повторно не імпортувався. Лише Storage POST без upsert → public URL/SHA256 → п'ять image-полів exact ID із concurrency filters; старі objects не видалялися. Користувацькі таблиці, schema, RLS, grants та content не змінені.
+70 offline tests пройшли в цьому запуску. Public PNG read/hash та image links перевірені; 3 завершені перенесення звірені з API mutations disabled. Звичайний клієнтський доступ до каталогу неперевірений без publishable/anon key. Докази: completion.json, batch manifests, catalog_final_readback.json, resume_readonly_check.json, final_source_review.json у uploads/continuation-2026-10-14.
+У доступних pushed source branches немає PNG для 8 решти нових ID: `archer-pullup-machine`, `chest-to-bar-pullup-machine`, `explosive-pullup-machine`, `inverted-row-feet-elevated-machine`, `muscle-up-band-resistance-band`, `muscle-up-negative-machine`, `straight-bar-dip-machine`, `triceps-dip-negative-machine`. Непушені результати інших задач недоступні; їх не вважаємо відсутніми.
+Відновлення frozen scope: `python3 -B integration/supabase/continue_images.py --run-id continuation-2026-10-14 --apply`. Нові схвалення — новий run-id.
+
+Файлові перевірки всіх 20 accepted PNG: SHA256 збігаються, PNG декодуються, є фактично прозорі пікселі; dimensions 1254×1254, найбільший файл 1194805 байтів при bucket limit 5242880. Прийняті технічні винятки збережені, без resize, генерації чи visual QA.

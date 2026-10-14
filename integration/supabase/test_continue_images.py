@@ -1,9 +1,90 @@
 """Guard image-only scope and exact user approval evidence."""
 import unittest
+import copy
 import continue_images as runner
 
 
 class ContinuationTests(unittest.TestCase):
+    def test_trusted_extended_catalog_and_all_language_values_are_verified(self):
+        originals = runner.load_originals()
+        self.assertEqual(len(originals), 479)
+        result = runner.verify_catalog(originals, originals)
+        self.assertEqual(result['language_blocks'], 4476)
+        self.assertEqual(result['archived'], 3)
+        changed = copy.deepcopy(originals)
+        changed['archer-pushup']['content']['en']['description'] = 'conflict'
+        with self.assertRaisesRegex(RuntimeError, 'data/content conflict'):
+            runner.verify_catalog(changed, originals)
+        with self.assertRaisesRegex(RuntimeError, 'ID set differs'):
+            runner.verify_catalog({k: v for k, v in originals.items() if k != 'archer-pushup'}, originals)
+
+    def test_addition_requires_exact_export_record_and_english_binding(self):
+        original = runner.load_originals()['archer-pushup']
+        row = {'source_catalog_sha256': runner.SUPPLEMENT_SHA256,
+               'source_record': copy.deepcopy(original), 'source_english': original['content']['en']}
+        self.assertTrue(runner.source_binding_matches(row, original))
+        for key, value in [('source_catalog_sha256', 'wrong'), ('source_record', {}),
+                           ('source_english', {})]:
+            self.assertFalse(runner.source_binding_matches({**row, key: value}, original))
+
+    def package44_manifest(self):
+        rows = [{'exercise_id': 'sample-' + str(i), 'user_review': 'approved',
+                 'accepted_path': 'assets/exercises/sample-' + str(i) + '.png',
+                 'accepted_sha256': 'a' * 64, 'user_review_at_utc': 'timestamp',
+                 'user_review_decision': 'User explicitly accepted this image and authorized publishing it with user-accepted status.'}
+                for i in range(10)]
+        doc = {'exercise_count': 10, 'exercises': rows, 'user_review_decision': {
+            'decision': 'User explicitly accepted all 10 images and authorized publishing them with user-accepted status.',
+            'recorded_at_utc': 'timestamp', 'reviewed_exercise_ids': [r['exercise_id'] for r in rows]}}
+        return rows[0], doc
+
+    def test_package44_scoped_user_decision_binds_exact_accepted_file(self):
+        row, doc = self.package44_manifest()
+        self.assertIsNotNone(runner.manifest_user_evidence(row, doc, 'sample-0', 'a' * 64))
+        self.assertIsNone(runner.manifest_user_evidence(row, doc, 'sample-0', 'b' * 64))
+        row['user_review_at_utc'] = 'other'
+        self.assertIsNone(runner.manifest_user_evidence(row, doc, 'sample-0', 'a' * 64))
+
+    def test_package44_rejects_agent_decision_partial_scope_and_pending(self):
+        for kind in ['agent', 'scope', 'pending', 'row_decision']:
+            with self.subTest(kind=kind):
+                row, doc = self.package44_manifest()
+                if kind == 'agent': doc['user_review_decision']['decision'] = 'Agent approves all images.'
+                if kind == 'scope': doc['user_review_decision']['reviewed_exercise_ids'].pop()
+                if kind == 'pending': doc['exercises'][-1]['user_review'] = 'pending'
+                if kind == 'row_decision': row['user_review_decision'] = 'Agent approves this image.'
+                self.assertIsNone(runner.manifest_user_evidence(row, doc, 'sample-0', 'a' * 64))
+
+    def package45_manifest(self):
+        row, doc = self.reference_rework_manifest()
+        row.update(accepted_path=row['git_result_path'], accepted_sha256=row['result_sha256'])
+        event = doc['user_approval_events'][0]
+        event.update(approval_source='explicit_user_message', approved_attempt_number=2,
+                     accepted_path=row['accepted_path'], accepted_sha256=row['accepted_sha256'])
+        return row, doc
+
+    def test_package45_approves_exact_second_attempt_without_latest_inference(self):
+        row, doc = self.package45_manifest()
+        proof = runner.explicit_evidence({}, [('manifest.json', doc)], 'sample', 'a' * 64)
+        self.assertEqual(proof['accepted_attempt_approval']['attempt_number'], 2)
+        self.assertIsNone(runner.explicit_evidence({}, [('manifest.json', doc)], 'sample', 'b' * 64))
+
+    def test_package45_rejects_wrong_accepted_attempt_path_hash_and_timestamp(self):
+        for key, value in [('approved_attempt_number', 1), ('accepted_path', 'other.png'),
+                           ('accepted_sha256', 'b' * 64), ('approved_at', 'other')]:
+            with self.subTest(key=key):
+                row, doc = self.package45_manifest()
+                doc['user_approval_events'][0][key] = value
+                self.assertIsNone(runner.manifest_user_evidence(row, doc, 'sample', 'a' * 64))
+
+    def test_package45_rejects_exclusion_and_missing_attempt_approval(self):
+        row, doc = self.package45_manifest()
+        doc['user_approval_events'].append({'not_approved_exercise_ids': ['sample']})
+        self.assertIsNone(runner.manifest_user_evidence(row, doc, 'sample', 'a' * 64))
+        row, doc = self.package45_manifest()
+        row['attempt_history'][0]['user_review'] = 'pending'
+        self.assertIsNone(runner.manifest_user_evidence(row, doc, 'sample', 'a' * 64))
+
     def reference_rework_manifest(self):
         path = 'assets/exercises/sample/attempt-2.png'
         attempt = {'attempt_number': 2, 'user_review': 'approved',

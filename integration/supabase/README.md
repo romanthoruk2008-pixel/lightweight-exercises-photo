@@ -9,6 +9,35 @@
 `a6f296cbc6737991dd367e929b3e2df25874d4d8`. Використовувати існуючий cloud
 checkout; не створювати worktree та не використовувати Mac користувача.
 
+## Поточне продовження після додавання 28 вправ
+
+Для нових схвалених PNG використовувати `continue_images.py`, який дозволяє
+лише Storage POST без upsert і PATCH п'яти image-полів. Історичний
+`import_catalog_images.py --apply` повторно не запускати.
+
+Поточні джерела: незмінний `data/exercises/catalog.json` (451 ID / 4448
+мовних блоків) і перевірений експорт
+`data/exercises/supabase-additions-2026-10-13.json` (28 ID / 28 блоків).
+Обидва SHA256 зафіксовані; повне читання БД має точно відповідати їхній
+множині 479 ID та всім source-полям і 4476 мовним блокам.
+
+```sh
+python3 -B integration/supabase/continue_images.py --run-id continuation-2026-10-14
+python3 -B integration/supabase/continue_images.py --run-id continuation-2026-10-14 --apply
+```
+
+Цей run-id має frozen plan; для наступних схвалень потрібен новий run-id.
+Нові ID можуть бути відсутні у старому shared progress: приймаються лише
+точні manifest approvals із source_record/source_english, що збігаються
+з експортом, accepted path/SHA256, явним рішенням користувача та його
+scope/timestamp. Серед спроб автоматично остання не вибирається.
+
+Повний експорт від 2026-10-13 залишається історичним snapshot, включно з
+тодішніми NULL image-полями й updated_at. Його `export_new_exercises.py --check`
+перевіряє повну рівність стану й після дозволених image updates може виявити
+очікувані відмінності. Для перевірки незмінності ID/content під час перенесення
+використовується повне source-порівняння в `continue_images.py`.
+
 ## Файли
 
 - `import_authorization.md` — точна область дозволеного імпорту.

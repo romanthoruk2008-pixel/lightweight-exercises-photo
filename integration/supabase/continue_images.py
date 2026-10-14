@@ -20,6 +20,43 @@ import import_catalog_images as legacy
 ROOT = legacy.source.ROOT
 STAGING = Path('/workspace/supabase-image-staging')
 FIELDS = legacy.IMAGE_FIELDS
+SUPPLEMENT_SHA256 = '907950559a5bf4be84a791deb73fcd03d502a48ec8b936296df8a3e42651bf0f'
+
+
+def load_originals():
+    baseline = ROOT/'data/exercises/catalog.json'
+    supplement = ROOT/'data/exercises/supabase-additions-2026-10-13.json'
+    if (legacy.source.digest(baseline.read_bytes()) != legacy.source.CATALOG_SHA256
+            or legacy.source.digest(supplement.read_bytes()) != SUPPLEMENT_SHA256):
+        raise RuntimeError('Trusted catalog source bytes changed')
+    old = legacy.source.read_json(baseline)['exercises']
+    new = legacy.source.read_json(supplement)['exercises']
+    result = {row['id']: row for row in old + new}
+    if len(old) != 451 or len(new) != 28 or len(result) != 479:
+        raise RuntimeError('Catalog sources overlap or have unexpected ID counts')
+    return result
+
+
+def verify_catalog(rows, originals):
+    """Compare the entire trusted catalog, including the exported additions."""
+    if set(rows) != set(originals):
+        raise RuntimeError('Catalog ID set differs from trusted source IDs')
+    for eid, row in rows.items():
+        if not legacy.source_matches(row, originals[eid]):
+            raise RuntimeError('Catalog data/content conflict: ' + eid)
+    return {'verified_ids': len(rows),
+            'language_blocks': sum(len(row['content']) for row in rows.values()),
+            'archived': sum(row['archived'] for row in rows.values()),
+            'all_source_values_equal': True, 'verified_at_utc': legacy.now()}
+
+
+def source_binding_matches(row, original):
+    # Exported DB rows have updated_at; historical source rows do not.
+    if 'updated_at' not in original:
+        return True
+    return (row.get('source_catalog_sha256') == SUPPLEMENT_SHA256
+            and row.get('source_record') == original
+            and row.get('source_english') == original['content']['en'])
 
 
 def git(*args):
@@ -161,6 +198,19 @@ def manifest_user_evidence(row, doc, eid, sha):
         return None
     if row.get('accepted_sha256') != sha or not path_of(row.get('accepted_path')):
         return None
+    decision = object_field(doc, 'user_review_decision')
+    if (decision.get('decision') == 'User explicitly accepted all 10 images and authorized publishing them with user-accepted status.'
+            and row.get('user_review_decision') == 'User explicitly accepted this image and authorized publishing it with user-accepted status.'
+            and decision.get('recorded_at_utc')
+            and row.get('user_review_at_utc') == decision['recorded_at_utc']):
+        records = manifest_rows(doc)
+        ids = decision.get('reviewed_exercise_ids', [])
+        if (doc.get('exercise_count') == 10 and len(records) == 10 and len(ids) == 10
+                and len(set(ids)) == 10 and {v.get('exercise_id') for v in records} == set(ids)
+                and eid in ids and all(v.get('user_review') == 'approved' for v in records)):
+            return {'file': {k: row[k] for k in ('exercise_id', 'accepted_path',
+                    'accepted_sha256', 'user_review_at_utc', 'user_review_decision')},
+                    'user_review_decision': decision}
     approval = object_field(row, 'user_approval')
     if (approval.get('reviewed_by') == 'user' and approval.get('decision') == 'approved'
             and approval.get('accepted_sha256') == sha):
@@ -229,6 +279,26 @@ def manifest_user_evidence(row, doc, eid, sha):
             approved = event.get('approved_exercise_ids', [])
             if eid not in approved and eid not in excluded:
                 continue
+            if (eid in approved and eid not in excluded
+                    and event.get('approval_source') == 'explicit_user_message'
+                    and event.get('approved_at')
+                    and row.get('user_reviewed_at') == event['approved_at']):
+                attempts = [a for a in row.get('attempt_history', []) if isinstance(a, dict)
+                    and a.get('user_review') == 'approved'
+                    and a.get('user_reviewed_at') == event['approved_at']
+                    and a.get('result_sha256') == sha
+                    and path_of(a.get('git_result_path')) == path_of(row['accepted_path'])]
+                if len(attempts) != 1 or attempts[0].get('attempt_number') is None:
+                    return None
+                attempt = attempts[0]
+                if (('approved_attempt_number' in event and event['approved_attempt_number'] != attempt['attempt_number'])
+                        or ('accepted_sha256' in event and event['accepted_sha256'] != sha)
+                        or ('accepted_path' in event and path_of(event['accepted_path']) != path_of(row['accepted_path']))):
+                    return None
+                return {'file': {k: row[k] for k in ('exercise_id', 'accepted_path',
+                        'accepted_sha256', 'user_reviewed_at')}, 'user_approval_event': event,
+                        'accepted_attempt_approval': {k: attempt[k] for k in ('attempt_number',
+                        'user_review', 'user_reviewed_at', 'result_sha256', 'git_result_path')}}
             if (eid not in excluded and eid in approved
                     and event.get('approval_source') == 'explicit_user_approval_in_chat'
                     and row.get('approval_source') == event['approval_source']
@@ -346,7 +416,8 @@ def scan(originals, known):
         for _, doc in manifests:
             for row in manifest_rows(doc):
                 eid, sha = row.get('exercise_id'), row.get('accepted_sha256')
-                if eid in originals and sha and manifest_user_evidence(row, doc, eid, sha):
+                if (eid in originals and sha and manifest_user_evidence(row, doc, eid, sha)
+                        and source_binding_matches(row, originals[eid])):
                     inputs.setdefault((eid, sha), {**row, 'acceptance_from_manifest': True})
         for (eid, _), row in inputs.items():
             if row.get('user_review') == 'pending' and row.get('result_sha256'):
@@ -408,7 +479,7 @@ def scan(originals, known):
             continue
         v = tips[0]
         if not v['acceptance_from_manifest'] and any(commit != v['source_commit'] and ancestor(v['source_commit'], commit)
-               and progress[eid].get('user_review') != 'approved'
+               and progress.get(eid, {}).get('user_review') != 'approved'
                for commit, progress in progress_snapshots):
             blocked.append({'exercise_id': eid, 'reason': 'descendant_progress_not_approved'})
             continue
@@ -431,7 +502,7 @@ def image_patch(row):
 def prepare(output, originals, known, api):
     selected, snapshots, pending, blocked = scan(originals, known)
     current = api.catalog()
-    catalog_check = legacy.verify_catalog(current, originals)
+    catalog_check = verify_catalog(current, originals)
     raw, _, _ = api.require('GET', '/storage/v1/bucket')
     bucket = next(b for b in json.loads(raw) if b['id'] == legacy.source.BUCKET)
     if (bucket['public'] is not True or bucket['file_size_limit'] != legacy.source.SIZE_LIMIT
@@ -528,7 +599,7 @@ def checkpoint_handoff(output, plan, batches):
         + f"Артефакти: `uploads/{output.name}/plan.json`, `batch-*.json`, `summary.json`.\n"
         + 'Каталог не імпортувався повторно. Використано `continue_images.py` і перевірений '
         + '`import_catalog_images.transfer_one`; лише Storage POST без upsert і п’ять image-полів '
-        + 'із concurrency filters. Старі PNG не видаляються; content/451 ID/4448 мовних блоків незмінні.\n'
+        + 'із concurrency filters. Старі PNG не видаляються; повний каталог і всі мовні блоки незмінні.\n'
         + 'PNG staging поза Git: `/workspace/supabase-image-staging/<source_commit>/<source_png>`.\n')
     return summary
 
@@ -545,10 +616,11 @@ def validate_plan(plan, originals):
         identities.add(eid)
         if commit not in sources:
             sources[commit] = document(commit, 'data/exercise-image-progress.json')['exercises']
-        approved = accepted_row(sources[commit][eid])
+        approved = accepted_row(sources[commit].get(eid, {}))
         if item.get('acceptance_from_manifest'):
             docs = [(v['manifest'], document(commit, v['manifest'])) for v in item['manifest_witnesses']]
             if not any(manifest_user_evidence(row, doc, eid, sha)
+                       and source_binding_matches(row, originals[eid])
                        for _, doc in docs for row in manifest_rows(doc)):
                 raise RuntimeError('Frozen manifest acceptance differs: ' + eid)
         elif approved.get('user_review') != 'approved' or approved.get('accepted_sha256') != sha:
@@ -588,9 +660,7 @@ def main():
     if not re.fullmatch('[a-z0-9-]+', args.run_id):
         raise RuntimeError('Invalid run ID')
     output = ROOT/'integration/supabase/uploads'/args.run_id
-    originals = {r['id']: r for r in legacy.source.read_json(ROOT/'data/exercises/catalog.json')['exercises']}
-    if legacy.source.digest((ROOT/'data/exercises/catalog.json').read_bytes()) != legacy.source.CATALOG_SHA256:
-        raise RuntimeError('Original catalog changed')
+    originals = load_originals()
     known = known_transfers()
     api = ImagesOnlyApi(False, [])
     plan = legacy.source.read_json(output/'plan.json') if (output/'plan.json').exists() else prepare(output, originals, known, api)
@@ -600,7 +670,7 @@ def main():
     if not args.apply or not plan['images']:
         return 0
     # Even on resume, reconcile catalog before enabling any mutation.
-    legacy.verify_catalog(api.catalog(), originals)
+    verify_catalog(api.catalog(), originals)
     api = ImagesOnlyApi(True, [v['destination_path'] for v in plan['images']])
     batches = []
     for start in range(0, len(plan['images']), 10):
@@ -640,7 +710,7 @@ def main():
         summary = checkpoint_handoff(output, plan, batches)
         print('Batch', batch['batch_number'], 'complete:', len(items), 'images', flush=True)
     current = api.catalog()
-    summary['catalog_verification'] = legacy.verify_catalog(current, originals)
+    summary['catalog_verification'] = verify_catalog(current, originals)
     updated_ids = {item['exercise_id'] for item in plan['images']}
     for previous in plan['prior_transfers_reverified']:
         if previous['current_link_matches'] and previous['exercise_id'] not in updated_ids:
