@@ -497,3 +497,9 @@ PNG staging поза Git: `/workspace/supabase-image-staging/<source_commit>/<so
 Повне покриття: усі 476 активних exercise_id мають перевірені image links; 3 архівні записи залишаються без зображень. Доказ: active_image_coverage.json.
 
 Файлові перевірки 8 accepted PNG пакета 046: точні SHA256, успішне декодування, фактично прозорі пікселі, розміри 1254×1254; найбільший файл 1038065 байтів при bucket limit 5242880. Прийняті байти та технічні винятки збережені без resize, генерації чи visual QA.
+
+## Bed Cardio: singleton import completed — 2026-10-15
+
+Created exact bed-cardio only from pinned d8e01b6 metadata-verified insert payload, all eight en/uk/es/it/tr/fr/ru/pl content blocks and latest meme descriptions. Verified duration/none/cardio/[] and final generated 1536x1536 PNG SHA256 010ec1aab966a3baad341f4e33f4c576f3e6c9c7ffec9ed01d22b1ede92e264b, public URL and image_origin=generated. Other 479 full catalog rows unchanged; final count 480. No generation/transforms/approval/progress/schema/RLS changes. Six focused scoped-import tests passed and read-only resume verified. Dedicated evidence and handoff: uploads/bed-cardio-2026-10-15/. Script: import_bed_cardio.py. Historical bulk continuation still pins 479 source IDs; do not run it against the now-480 catalog without separately accounting for this pinned Bed Cardio addition.
+
+Separate new app requirement sex -> bed-cardio search alias is NOT implemented or verified. App source/branch and runtime URL are missing; requested these from the user. Do not confuse a successful row import with implementing search aliases. See dedicated Bed Cardio handoff for acceptance criteria.
