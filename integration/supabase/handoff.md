@@ -474,3 +474,26 @@ PNG staging поза Git: `/workspace/supabase-image-staging/<source_commit>/<so
 Відновлення frozen scope: `python3 -B integration/supabase/continue_images.py --run-id continuation-2026-10-14 --apply`. Нові схвалення — новий run-id.
 
 Файлові перевірки всіх 20 accepted PNG: SHA256 збігаються, PNG декодуються, є фактично прозорі пікселі; dimensions 1254×1254, найбільший файл 1194805 байтів при bucket limit 5242880. Прийняті технічні винятки збережені, без resize, генерації чи visual QA.
+
+<!-- continuation:continuation-2026-10-15 -->
+
+## Продовження схвалених PNG — continuation-2026-10-15
+
+Поточна контрольна точка: `2026-10-15T07:11:18.970278+00:00`.
+Нових Storage uploads: 8; завершених перенесень: 8; заміни прийнятих версій: 0.
+Попередніх перевірено: 468; pending пропущено: 0.
+Артефакти: `uploads/continuation-2026-10-15/plan.json`, `batch-*.json`, `summary.json`.
+Каталог не імпортувався повторно. Використано `continue_images.py` і перевірений `import_catalog_images.transfer_one`; лише Storage POST без upsert і п’ять image-полів із concurrency filters. Старі PNG не видаляються; повний каталог і всі мовні блоки незмінні.
+PNG staging поза Git: `/workspace/supabase-image-staging/<source_commit>/<source_png>`.
+
+### Фінальний результат continuation-2026-10-15
+
+Нових PNG — 8; замін — 0; попередніх звірено — 468; разом image links — 476. Пакети: [8]. Pending вправ — 0; нових неперенесених approved у фінальному refresh — 0; помилок — 0.
+Пакет 046 містить явне user approval «i accept all of them», exact accepted_files exercise_id/attempt_number/path/SHA256 для всіх восьми PNG. Підтверджено matching timestamps, user-reviewed attempt-1 та весь ID scope. Доказ: source_approval_evidence.json. Нові source_record та source_english точно збігаються з перевіреним supplement SHA256 907950559a5bf4be84a791deb73fcd03d502a48ec8b936296df8a3e42651bf0f. Shared progress нових ID не містить; використовуються manifest-only approvals із pinned commits. Джерела, схвалення та технічні винятки не змінені.
+Повне читання назад підтвердило 479 точних ID, 4476 мовних блоків і 3 архівні статуси та всі source values. Історичний catalog.json 451/4448 та export supplement 28/28 незмінні. Каталог повторно не імпортувався. Лише Storage POST без upsert → public URL/SHA256 → п'ять image-полів exact ID із concurrency filters; старі objects не видалялися. Користувацькі таблиці, schema, RLS, grants та content не змінені.
+Скрипт незмінний; 70 offline tests раніше пройшли у commit 19882a3, цього запуску їх не повторювали. Public PNG read/hash та image links перевірені; 3 завершені перенесення звірені з API mutations disabled. Звичайний клієнтський доступ до каталогу неперевірений без publishable/anon key. Докази: completion.json, batch manifests, catalog_final_readback.json, resume_readonly_check.json, final_source_review.json у uploads/continuation-2026-10-15.
+У доступних pushed source branches немає PNG для 0 решти нових ID: . Непушені результати інших задач недоступні; їх не вважаємо відсутніми.
+Відновлення frozen scope: `python3 -B integration/supabase/continue_images.py --run-id continuation-2026-10-15 --apply`. Нові схвалення — новий run-id.
+Повне покриття: усі 476 активних exercise_id мають перевірені image links; 3 архівні записи залишаються без зображень. Доказ: active_image_coverage.json.
+
+Файлові перевірки 8 accepted PNG пакета 046: точні SHA256, успішне декодування, фактично прозорі пікселі, розміри 1254×1254; найбільший файл 1038065 байтів при bucket limit 5242880. Прийняті байти та технічні винятки збережені без resize, генерації чи visual QA.
