@@ -2,7 +2,7 @@
 
 Restored as a text-only addition at the user's explicit request on 2026-10-15 (Europe/Kiev), on branch `agent-03-inventory-2026-10-01`. The user reiterated that all work belongs in the cloud/GitHub; no downloads or writes to their Mac.
 
-`bed-cardio` is the previously prepared, non-explicit adult Easter egg. Its original names and full text are restored unchanged in all eight languages: en, uk, es, it, tr, fr, ru, pl. English description: “Cardio, good company, and a comfortable pace. Log the duration — no personal best required.”
+`bed-cardio` is the previously prepared, non-explicit adult Easter egg. The card is available in all eight languages: en, uk, es, it, tr, fr, ru, pl. Updated English description: “A partner workout with pillows instead of dumbbells. Start the timer and blame the heavy breathing on cardio. Reps? We’re politely not counting.” Names, instructions, cues, mistakes and safety notes remain unchanged. The user-requested description rewrite is recorded in `data/catalog-changes/bed-cardio-description-v2.json`.
 
 ## Source and card
 

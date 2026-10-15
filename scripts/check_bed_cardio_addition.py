@@ -2,6 +2,7 @@
 """Read-only checks for the restored one-exercise addition; no import or images."""
 import ast
 import collections
+import copy
 import hashlib
 import json
 import pathlib
@@ -13,9 +14,10 @@ BASE = 'e0482c2f50b71a4be17450e81f7d73c46ec15334'
 ORIGINAL = 'ae10de334e4ef0c952e1a954187282b08be91adf'
 IMPORTER = '19882a38fa1b80ee9ff4a9b8e203a6e47488c342'
 SOURCE = 'data/exercises/bed-cardio-addition.json'
+DESCRIPTION_REVISION = 'data/catalog-changes/bed-cardio-description-v2.json'
 LANGUAGES = {'en', 'uk', 'es', 'it', 'tr', 'fr', 'ru', 'pl'}
 NEW_FILES = {
-    SOURCE, 'data/cards/bed-cardio.json', 'data/image-decisions/bed-cardio.json',
+    SOURCE, DESCRIPTION_REVISION, 'data/cards/bed-cardio.json', 'data/image-decisions/bed-cardio.json',
     'data/style-decisions/bed-cardio-original-image.json',
     'data/imports/bed-cardio/catalog-exercise.insert.json',
     'data/catalog-changes/bed-cardio.json', 'docs/bed-cardio-card.html',
@@ -42,7 +44,23 @@ def check():
     row = doc['exercises'][0]
     assert row['id'] == 'bed-cardio'
     old = json.loads(git('show', ORIGINAL + ':data/exercises/catalog.json'))
-    assert [r for r in old['exercises'] if r['id'] == row['id']] == [row]
+    original = [r for r in old['exercises'] if r['id'] == row['id']]
+    assert len(original) == 1
+    revision = read(DESCRIPTION_REVISION)
+    assert revision['exercise_id'] == row['id']
+    assert revision['revision'] == 'description-v2-meme'
+    assert set(revision['descriptions']) == LANGUAGES
+    assert set(revision['changed_fields']) == {f'content.{lang}.description' for lang in LANGUAGES}
+    assert doc['source']['description_revision_path'] == DESCRIPTION_REVISION
+    prior_raw = git('show', revision['previous_commit'] + ':' + SOURCE)
+    assert sha(prior_raw) == revision['previous_source_sha256']
+    assert json.loads(prior_raw)['exercises'] == original
+    description_free_comparison = copy.deepcopy(row)
+    for lang in LANGUAGES:
+        assert row['content'][lang]['description'] == revision['descriptions'][lang]
+        assert row['content'][lang]['description'] != original[0]['content'][lang]['description']
+        description_free_comparison['content'][lang]['description'] = original[0]['content'][lang]['description']
+    assert description_free_comparison == original[0], 'Non-description exercise fields changed'
     assert set(row['content']) == set(doc['languages']) == LANGUAGES
     for language, text in row['content'].items():
         for field in ('name', 'description', 'instructions', 'form_cues',
@@ -125,18 +143,23 @@ def check():
     assert delta['import_payload_sha256'] == sha((ROOT / 'data/imports/bed-cardio/catalog-exercise.insert.json').read_bytes())
     assert delta['combined_records_in_Git_preparation'] == 480
     assert delta['database_import_status'] == 'not_performed'
+    assert delta['description_revision_path'] == DESCRIPTION_REVISION
+    assert delta['only_description_fields_changed_from_restored_record']
     for change in git('diff', '--name-status', BASE, '--').decode().splitlines():
         status, path = change.split('\t')
         assert status == 'A' and path in NEW_FILES, ('Existing file changed', path)
     return {
         'schema_version': 1, 'exercise_id': row['id'], 'status': 'passed',
         'source_path': SOURCE, 'source_sha256': sha((ROOT / SOURCE).read_bytes()),
-        'record_sha256': record_sha, 'original_record_restored_unchanged': True,
+        'record_sha256': record_sha, 'original_record_restored_unchanged': False,
+        'description_only_revision_validated': True,
+        'description_revision_path': DESCRIPTION_REVISION,
+        'names_instructions_cues_mistakes_safety_and_other_fields_unchanged': True,
         'localized_names_and_full_content_languages': sorted(LANGUAGES),
         'duration_only_card_and_import_payload_match': True,
         'importer_SQL_CHECK_rules_passed': 8, 'importer_commit': IMPORTER,
         'importer_validator_path': 'integration/supabase/dry_run.py',
-        'old_479_records_and_all_existing_tracked_files_unchanged': True,
+        'other_479_records_and_preexisting_project_files_unchanged': True,
         'combined_Git_preparation_records': 480, 'combined_active_records': 477,
         'archived': 3, 'combined_language_blocks': 4484,
         'image_status': 'awaiting_original_file', 'original_image_bytes_bound': False,
