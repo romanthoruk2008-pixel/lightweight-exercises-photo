@@ -1,0 +1,943 @@
+{
+  "schema_version": 1,
+  "batch_id": "agent-03-others-046",
+  "status": "in_progress",
+  "execution_owner": "agent-08-generator-single-2026-10-03",
+  "source_batch_path": "data/batches/agent-03-others-046.json",
+  "exercise_count": 8,
+  "generation_calls": 0,
+  "exercises": [
+    {
+      "exercise_id": "archer-pullup-machine",
+      "name": "Archer Pull Up",
+      "status": "not_started",
+      "attempts": 0,
+      "attempt_history": [],
+      "batch_item_number": 1,
+      "prompt_sha256": "d7bd25246e049db9abcf861d6edb2486d542447e17d460b4f76646937e957dc9",
+      "source_catalog_sha256": "907950559a5bf4be84a791deb73fcd03d502a48ec8b936296df8a3e42651bf0f",
+      "source_record_sha256": "4c826f7ab8251ac7fb0508635931a47719708a126d5b9a27eabd489aab3317ac",
+      "style_version": "v1",
+      "human_reference": {
+        "path": "assets/exercises/biceps-curl-dumbbell.png",
+        "sha256": "52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f",
+        "role": "Appearance, proportions and anatomical materials only; never pose, equipment or muscle targets."
+      },
+      "planned_png_path": "/workspace/exercise-image-results/agent-03-supabase28-2026-10-13/agent-03-others-046/archer-pullup-machine/attempt-1.png",
+      "planned_git_png_path": "assets/exercises/pending/agent-03-supabase28-2026-10-13/agent-03-others-046/archer-pullup-machine/attempt-1.png",
+      "result_path": null,
+      "result_sha256": null,
+      "accepted_path": null,
+      "accepted_sha256": null,
+      "technical_check": null,
+      "user_review": null,
+      "future_user_review_policy": "pending until explicit user approval",
+      "agent_visual_review": "not_performed",
+      "last_error": null,
+      "generation_prompt": "Create exactly ONE 1024x1024 PNG with a genuinely transparent background, ONE adult anatomical male figure and ONE movement phase. Match the supplied human reference ONLY for appearance, proportions and materials: bald athletic male anatomical mannequin, opaque silver-gray muscle surfaces with detailed realistic 3D anatomy, plain black shorts and bare feet. Keep the same head, body proportions and material finish across the library. Do not copy its pose, barbell or muscle highlights. Highlight ONLY the source primary region lats with #F26445 at full colour intensity. Highlight the explicitly listed secondary regions with the same #F26445 at 40–50% colour intensity: upper_back, biceps. Colour intensity is not tissue transparency: no see-through anatomy, glow, overall orange tint or unlisted coloured muscle groups. Show the necessary stable equipment and all actual body contacts; fit the full person and relevant equipment in the square without cropping or distorting anatomy. No text, labels, arrows, logos, UI, border, collage, second person, duplicate limbs, motion blur, white backdrop or baked-in checkerboard. Necessary wall/mat surfaces are physical supports only, not a filled image background. Equipment category machine/none is source metadata, not permission to invent a moving machine or omit supports explicitly required by the technique.\n\nEXACT EXERCISE: archer-pullup-machine — Archer Pull Up\n\nSELECTED SINGLE-PHASE SCENE:\nPHASE: Right-side archer pull-up near the high endpoint.\nPOSE: Suspended torso shifted toward the right hand, chin near the working right grip. Right elbow bent and driven down; left arm stretched long laterally with elbow straight while left hand remains on the same bar. No torso twist or leg swing; feet suspended together.\nGRIP: Wide closed overhand grip, both hands on one continuous straight bar with thumbs wrapped.\nSUPPORTS: Both hands on the fixed overhead bar; right arm takes most load, left straight arm remains connected. Feet and knees unsupported.\nEQUIPMENT: Unassisted fixed pull-up bar with stable frame. Equipment enum machine does not justify an assisted-pull-up knee pad, weight stack or cable station.\nTRAJECTORY: From a wide full hang pull toward one hand while the opposite arm remains straight, lower to full hang, then alternate sides.\nCAMERA: Rear-right three-quarter view showing the lateral back, working right elbow and straight left arm attached to the same bar.\n\nEXACT SOURCE DATA (instructions and safety govern this ID; metadata is never rendered as text):\n{\n  \"equipment\": \"machine\",\n  \"exercise_id\": \"archer-pullup-machine\",\n  \"name\": \"Archer Pull Up\",\n  \"primary_muscle\": \"lats\",\n  \"secondary_muscles\": [\n    \"upper_back\",\n    \"biceps\"\n  ],\n  \"source_english\": {\n    \"common_mistakes\": [\n      \"Bending the straight arm.\",\n      \"Twisting the torso to cheat the pull.\",\n      \"Dropping fast on the way down.\"\n    ],\n    \"description\": \"Archer Pull Up pulls toward one hand while the other arm stays straight, shifting most of the load to the working side.\",\n    \"form_cues\": [\n      \"Keep the straight arm long.\",\n      \"Pull the chin level with the working hand.\",\n      \"Keep the body from twisting.\"\n    ],\n    \"instructions\": [\n      \"Hang from a wide overhand grip with your arms fully extended.\",\n      \"Pull toward your right hand while the left arm stays straight out to the side.\",\n      \"Lower to a full hang, then pull toward your left hand with the right arm straight.\",\n      \"Alternate sides for the planned repetitions.\"\n    ],\n    \"provenance\": \"authored\",\n    \"safety_note\": \"Work up from wide-grip pull ups and stop if the shoulders or elbows feel strain on the stretched side.\"\n  },\n  \"tracking_type\": \"reps_only\"\n}\n\nPreserve the source-defined technique. Do not substitute a similarly named exercise, choose a different lever variant, remove specified supports or add unlisted muscle targets. If the attached scene and exact source cannot be reconciled, stop this ID and report the concrete conflict rather than inventing a correction.",
+      "source_record": {
+        "id": "archer-pullup-machine",
+        "name": "Archer Pull Up",
+        "equipment": "machine",
+        "primary_muscle": "lats",
+        "secondary_muscles": [
+          "upper_back",
+          "biceps"
+        ],
+        "tracking_type": "reps_only",
+        "archived": false,
+        "replaces_ids": [],
+        "image_path": null,
+        "image_sha256": null,
+        "image_width": null,
+        "image_height": null,
+        "image_origin": null,
+        "attribution": null,
+        "content": {
+          "en": {
+            "form_cues": [
+              "Keep the straight arm long.",
+              "Pull the chin level with the working hand.",
+              "Keep the body from twisting."
+            ],
+            "provenance": "authored",
+            "description": "Archer Pull Up pulls toward one hand while the other arm stays straight, shifting most of the load to the working side.",
+            "safety_note": "Work up from wide-grip pull ups and stop if the shoulders or elbows feel strain on the stretched side.",
+            "instructions": [
+              "Hang from a wide overhand grip with your arms fully extended.",
+              "Pull toward your right hand while the left arm stays straight out to the side.",
+              "Lower to a full hang, then pull toward your left hand with the right arm straight.",
+              "Alternate sides for the planned repetitions."
+            ],
+            "common_mistakes": [
+              "Bending the straight arm.",
+              "Twisting the torso to cheat the pull.",
+              "Dropping fast on the way down."
+            ]
+          }
+        },
+        "updated_at": "2026-10-12T11:11:58.99357+00:00"
+      },
+      "source_english": {
+        "form_cues": [
+          "Keep the straight arm long.",
+          "Pull the chin level with the working hand.",
+          "Keep the body from twisting."
+        ],
+        "provenance": "authored",
+        "description": "Archer Pull Up pulls toward one hand while the other arm stays straight, shifting most of the load to the working side.",
+        "safety_note": "Work up from wide-grip pull ups and stop if the shoulders or elbows feel strain on the stretched side.",
+        "instructions": [
+          "Hang from a wide overhand grip with your arms fully extended.",
+          "Pull toward your right hand while the left arm stays straight out to the side.",
+          "Lower to a full hang, then pull toward your left hand with the right arm straight.",
+          "Alternate sides for the planned repetitions."
+        ],
+        "common_mistakes": [
+          "Bending the straight arm.",
+          "Twisting the torso to cheat the pull.",
+          "Dropping fast on the way down."
+        ]
+      },
+      "source_english_sha256": "fb6e5ec1b4acce3b7a726211ff45864d5246591d796e02cfe52b19e773bb64e9",
+      "scene": {
+        "phase": "Right-side archer pull-up near the high endpoint.",
+        "pose": "Suspended torso shifted toward the right hand, chin near the working right grip. Right elbow bent and driven down; left arm stretched long laterally with elbow straight while left hand remains on the same bar. No torso twist or leg swing; feet suspended together.",
+        "grip": "Wide closed overhand grip, both hands on one continuous straight bar with thumbs wrapped.",
+        "supports": "Both hands on the fixed overhead bar; right arm takes most load, left straight arm remains connected. Feet and knees unsupported.",
+        "equipment": "Unassisted fixed pull-up bar with stable frame. Equipment enum machine does not justify an assisted-pull-up knee pad, weight stack or cable station.",
+        "trajectory": "From a wide full hang pull toward one hand while the opposite arm remains straight, lower to full hang, then alternate sides.",
+        "camera": "Rear-right three-quarter view showing the lateral back, working right elbow and straight left arm attached to the same bar.",
+        "illustration_choices": [
+          "Right working side selected; opposite side is the next repetition."
+        ]
+      },
+      "approved_style_files": [
+        {
+          "path": "docs/exercise-image-style.md",
+          "sha256": "8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578"
+        }
+      ],
+      "execution_owner": "agent-08-generator-single-2026-10-03"
+    },
+    {
+      "exercise_id": "chest-to-bar-pullup-machine",
+      "name": "Chest to Bar Pull Up",
+      "status": "not_started",
+      "attempts": 0,
+      "attempt_history": [],
+      "batch_item_number": 2,
+      "prompt_sha256": "9e6f391bc8948ac7b0b65d2eeec0be6667094797199a37a9f6881adfdf2d268a",
+      "source_catalog_sha256": "907950559a5bf4be84a791deb73fcd03d502a48ec8b936296df8a3e42651bf0f",
+      "source_record_sha256": "c78ff49678d1025eb66ceebbbd9555dcd28e6859a35de38734313bc730cc4e02",
+      "style_version": "v1",
+      "human_reference": {
+        "path": "assets/exercises/biceps-curl-dumbbell.png",
+        "sha256": "52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f",
+        "role": "Appearance, proportions and anatomical materials only; never pose, equipment or muscle targets."
+      },
+      "planned_png_path": "/workspace/exercise-image-results/agent-03-supabase28-2026-10-13/agent-03-others-046/chest-to-bar-pullup-machine/attempt-1.png",
+      "planned_git_png_path": "assets/exercises/pending/agent-03-supabase28-2026-10-13/agent-03-others-046/chest-to-bar-pullup-machine/attempt-1.png",
+      "result_path": null,
+      "result_sha256": null,
+      "accepted_path": null,
+      "accepted_sha256": null,
+      "technical_check": null,
+      "user_review": null,
+      "future_user_review_policy": "pending until explicit user approval",
+      "agent_visual_review": "not_performed",
+      "last_error": null,
+      "generation_prompt": "Create exactly ONE 1024x1024 PNG with a genuinely transparent background, ONE adult anatomical male figure and ONE movement phase. Match the supplied human reference ONLY for appearance, proportions and materials: bald athletic male anatomical mannequin, opaque silver-gray muscle surfaces with detailed realistic 3D anatomy, plain black shorts and bare feet. Keep the same head, body proportions and material finish across the library. Do not copy its pose, barbell or muscle highlights. Highlight ONLY the source primary region lats with #F26445 at full colour intensity. Highlight the explicitly listed secondary regions with the same #F26445 at 40–50% colour intensity: upper_back, biceps, forearms. Colour intensity is not tissue transparency: no see-through anatomy, glow, overall orange tint or unlisted coloured muscle groups. Show the necessary stable equipment and all actual body contacts; fit the full person and relevant equipment in the square without cropping or distorting anatomy. No text, labels, arrows, logos, UI, border, collage, second person, duplicate limbs, motion blur, white backdrop or baked-in checkerboard. Necessary wall/mat surfaces are physical supports only, not a filled image background. Equipment category machine/none is source metadata, not permission to invent a moving machine or omit supports explicitly required by the technique.\n\nEXACT EXERCISE: chest-to-bar-pullup-machine — Chest to Bar Pull Up\n\nSELECTED SINGLE-PHASE SCENE:\nPHASE: Strict top endpoint with the chest visibly touching the bar.\nPOSE: Chest lifted to the fixed bar with a small backward torso lean, elbows driven down and back, shoulders depressed. Chest-to-bar contact is visible, rather than merely a chin above the bar. Legs together, feet unsupported, no kip or exaggerated arch.\nGRIP: Closed overhand grip at a comfortable slightly wider than shoulder width, both hands on the same straight bar.\nSUPPORTS: Hands on the bar with a light upper-chest-to-bar endpoint contact; feet remain airborne.\nEQUIPMENT: Fixed unassisted pull-up bar and stable frame only; no assisted machine pads or cable handles.\nTRAJECTORY: Strict pull from full hang until the chest touches the bar, then lower under control; one top phase.\nCAMERA: Side-rear three-quarter view showing lats and the side gap/contact between chest and bar, without hiding the chest endpoint.\n\nEXACT SOURCE DATA (instructions and safety govern this ID; metadata is never rendered as text):\n{\n  \"equipment\": \"machine\",\n  \"exercise_id\": \"chest-to-bar-pullup-machine\",\n  \"name\": \"Chest to Bar Pull Up\",\n  \"primary_muscle\": \"lats\",\n  \"secondary_muscles\": [\n    \"upper_back\",\n    \"biceps\",\n    \"forearms\"\n  ],\n  \"source_english\": {\n    \"common_mistakes\": [\n      \"Stopping with the chin at the bar.\",\n      \"Kipping to reach the bar.\",\n      \"Dropping fast from the top.\"\n    ],\n    \"description\": \"Chest to Bar Pull Up pulls from a dead hang until the chest touches the bar, a higher pull than a standard pull up.\",\n    \"form_cues\": [\n      \"Lean back slightly to bring the chest to the bar.\",\n      \"Drive the elbows toward the hips.\",\n      \"Pull the shoulders down at the top.\"\n    ],\n    \"instructions\": [\n      \"Hang from a pull-up bar with an overhand grip and your arms fully extended.\",\n      \"Brace the core and drive the elbows down and back as you pull.\",\n      \"Keep pulling until the chest touches the bar.\",\n      \"Lower to a full hang under control before the next repetition.\"\n    ],\n    \"provenance\": \"authored\",\n    \"safety_note\": \"Build a solid pull up first and stop if the shoulders or elbows pinch at the top.\"\n  },\n  \"tracking_type\": \"reps_only\"\n}\n\nPreserve the source-defined technique. Do not substitute a similarly named exercise, choose a different lever variant, remove specified supports or add unlisted muscle targets. If the attached scene and exact source cannot be reconciled, stop this ID and report the concrete conflict rather than inventing a correction.",
+      "source_record": {
+        "id": "chest-to-bar-pullup-machine",
+        "name": "Chest to Bar Pull Up",
+        "equipment": "machine",
+        "primary_muscle": "lats",
+        "secondary_muscles": [
+          "upper_back",
+          "biceps",
+          "forearms"
+        ],
+        "tracking_type": "reps_only",
+        "archived": false,
+        "replaces_ids": [],
+        "image_path": null,
+        "image_sha256": null,
+        "image_width": null,
+        "image_height": null,
+        "image_origin": null,
+        "attribution": null,
+        "content": {
+          "en": {
+            "form_cues": [
+              "Lean back slightly to bring the chest to the bar.",
+              "Drive the elbows toward the hips.",
+              "Pull the shoulders down at the top."
+            ],
+            "provenance": "authored",
+            "description": "Chest to Bar Pull Up pulls from a dead hang until the chest touches the bar, a higher pull than a standard pull up.",
+            "safety_note": "Build a solid pull up first and stop if the shoulders or elbows pinch at the top.",
+            "instructions": [
+              "Hang from a pull-up bar with an overhand grip and your arms fully extended.",
+              "Brace the core and drive the elbows down and back as you pull.",
+              "Keep pulling until the chest touches the bar.",
+              "Lower to a full hang under control before the next repetition."
+            ],
+            "common_mistakes": [
+              "Stopping with the chin at the bar.",
+              "Kipping to reach the bar.",
+              "Dropping fast from the top."
+            ]
+          }
+        },
+        "updated_at": "2026-10-12T11:11:58.99357+00:00"
+      },
+      "source_english": {
+        "form_cues": [
+          "Lean back slightly to bring the chest to the bar.",
+          "Drive the elbows toward the hips.",
+          "Pull the shoulders down at the top."
+        ],
+        "provenance": "authored",
+        "description": "Chest to Bar Pull Up pulls from a dead hang until the chest touches the bar, a higher pull than a standard pull up.",
+        "safety_note": "Build a solid pull up first and stop if the shoulders or elbows pinch at the top.",
+        "instructions": [
+          "Hang from a pull-up bar with an overhand grip and your arms fully extended.",
+          "Brace the core and drive the elbows down and back as you pull.",
+          "Keep pulling until the chest touches the bar.",
+          "Lower to a full hang under control before the next repetition."
+        ],
+        "common_mistakes": [
+          "Stopping with the chin at the bar.",
+          "Kipping to reach the bar.",
+          "Dropping fast from the top."
+        ]
+      },
+      "source_english_sha256": "822ae8ebfb62e9c0710122967011b126d2c6f43dba9822f50e2197fe24811e93",
+      "scene": {
+        "phase": "Strict top endpoint with the chest visibly touching the bar.",
+        "pose": "Chest lifted to the fixed bar with a small backward torso lean, elbows driven down and back, shoulders depressed. Chest-to-bar contact is visible, rather than merely a chin above the bar. Legs together, feet unsupported, no kip or exaggerated arch.",
+        "grip": "Closed overhand grip at a comfortable slightly wider than shoulder width, both hands on the same straight bar.",
+        "supports": "Hands on the bar with a light upper-chest-to-bar endpoint contact; feet remain airborne.",
+        "equipment": "Fixed unassisted pull-up bar and stable frame only; no assisted machine pads or cable handles.",
+        "trajectory": "Strict pull from full hang until the chest touches the bar, then lower under control; one top phase.",
+        "camera": "Side-rear three-quarter view showing lats and the side gap/contact between chest and bar, without hiding the chest endpoint.",
+        "illustration_choices": [
+          "Comfortable grip width; source defines overhand but no exact spacing."
+        ]
+      },
+      "approved_style_files": [
+        {
+          "path": "docs/exercise-image-style.md",
+          "sha256": "8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578"
+        }
+      ],
+      "execution_owner": "agent-08-generator-single-2026-10-03"
+    },
+    {
+      "exercise_id": "explosive-pullup-machine",
+      "name": "Explosive Pull Up",
+      "status": "not_started",
+      "attempts": 0,
+      "attempt_history": [],
+      "batch_item_number": 3,
+      "prompt_sha256": "8011c579b268f6f0a5fe5970173c8628988d22245291e5fdd2a5aa4db81a3c09",
+      "source_catalog_sha256": "907950559a5bf4be84a791deb73fcd03d502a48ec8b936296df8a3e42651bf0f",
+      "source_record_sha256": "219076c72980601a5f84c009d12d98278198582f0b4ed8e9f33ed534d5f4e6cb",
+      "style_version": "v1",
+      "human_reference": {
+        "path": "assets/exercises/biceps-curl-dumbbell.png",
+        "sha256": "52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f",
+        "role": "Appearance, proportions and anatomical materials only; never pose, equipment or muscle targets."
+      },
+      "planned_png_path": "/workspace/exercise-image-results/agent-03-supabase28-2026-10-13/agent-03-others-046/explosive-pullup-machine/attempt-1.png",
+      "planned_git_png_path": "assets/exercises/pending/agent-03-supabase28-2026-10-13/agent-03-others-046/explosive-pullup-machine/attempt-1.png",
+      "result_path": null,
+      "result_sha256": null,
+      "accepted_path": null,
+      "accepted_sha256": null,
+      "technical_check": null,
+      "user_review": null,
+      "future_user_review_policy": "pending until explicit user approval",
+      "agent_visual_review": "not_performed",
+      "last_error": null,
+      "generation_prompt": "Create exactly ONE 1024x1024 PNG with a genuinely transparent background, ONE adult anatomical male figure and ONE movement phase. Match the supplied human reference ONLY for appearance, proportions and materials: bald athletic male anatomical mannequin, opaque silver-gray muscle surfaces with detailed realistic 3D anatomy, plain black shorts and bare feet. Keep the same head, body proportions and material finish across the library. Do not copy its pose, barbell or muscle highlights. Highlight ONLY the source primary region lats with #F26445 at full colour intensity. Highlight the explicitly listed secondary regions with the same #F26445 at 40–50% colour intensity: upper_back, biceps. Colour intensity is not tissue transparency: no see-through anatomy, glow, overall orange tint or unlisted coloured muscle groups. Show the necessary stable equipment and all actual body contacts; fit the full person and relevant equipment in the square without cropping or distorting anatomy. No text, labels, arrows, logos, UI, border, collage, second person, duplicate limbs, motion blur, white backdrop or baked-in checkerboard. Necessary wall/mat surfaces are physical supports only, not a filled image background. Equipment category machine/none is source metadata, not permission to invent a moving machine or omit supports explicitly required by the technique.\n\nEXACT EXERCISE: explosive-pullup-machine — Explosive Pull Up\n\nSELECTED SINGLE-PHASE SCENE:\nPHASE: End of the fast concentric pull as the chest reaches bar height, before the slow descent.\nPOSE: Braced suspended body with shoulders depressed, elbows pulled down and back and chest high at the bar. Legs stay together and still, no hip kip or kicking. Both hands remain firmly on the bar; no airborne clap or release.\nGRIP: Closed overhand grip at comfortable shoulder width with thumbs wrapped.\nSUPPORTS: Both hands on the same fixed bar, feet unsupported; no assistance pad.\nEQUIPMENT: Stable fixed pull-up bar and frame only, despite machine equipment classification.\nTRAJECTORY: Accelerate hard from a full hang to chest-at-bar height, then lower slowly. Depict one still high phase without motion blur, arrows or multiple bodies; acceleration is described in the task rather than fabricated as a second image.\nCAMERA: Rear-side three-quarter view showing lats, bent elbows and chest height relative to the bar.\n\nEXACT SOURCE DATA (instructions and safety govern this ID; metadata is never rendered as text):\n{\n  \"equipment\": \"machine\",\n  \"exercise_id\": \"explosive-pullup-machine\",\n  \"name\": \"Explosive Pull Up\",\n  \"primary_muscle\": \"lats\",\n  \"secondary_muscles\": [\n    \"upper_back\",\n    \"biceps\"\n  ],\n  \"source_english\": {\n    \"common_mistakes\": [\n      \"Kipping instead of pulling.\",\n      \"Dropping from the top.\",\n      \"Starting the next rep from bent arms.\"\n    ],\n    \"description\": \"Explosive Pull Up accelerates hard from a hang to bring the chest high toward the bar, then lowers under control.\",\n    \"form_cues\": [\n      \"Pull hard from the first inch.\",\n      \"Keep the body tight.\",\n      \"Lower slower than you pulled.\"\n    ],\n    \"instructions\": [\n      \"Hang from a pull-up bar with an overhand grip and your arms fully extended.\",\n      \"Brace the core and set the shoulders down.\",\n      \"Pull as fast as you can, driving the elbows down until the chest reaches the bar.\",\n      \"Lower slowly to a full hang before the next repetition.\"\n    ],\n    \"provenance\": \"authored\",\n    \"safety_note\": \"Build strict pull up strength first and stop when the speed of the pull starts to fade.\"\n  },\n  \"tracking_type\": \"reps_only\"\n}\n\nPreserve the source-defined technique. Do not substitute a similarly named exercise, choose a different lever variant, remove specified supports or add unlisted muscle targets. If the attached scene and exact source cannot be reconciled, stop this ID and report the concrete conflict rather than inventing a correction.",
+      "source_record": {
+        "id": "explosive-pullup-machine",
+        "name": "Explosive Pull Up",
+        "equipment": "machine",
+        "primary_muscle": "lats",
+        "secondary_muscles": [
+          "upper_back",
+          "biceps"
+        ],
+        "tracking_type": "reps_only",
+        "archived": false,
+        "replaces_ids": [],
+        "image_path": null,
+        "image_sha256": null,
+        "image_width": null,
+        "image_height": null,
+        "image_origin": null,
+        "attribution": null,
+        "content": {
+          "en": {
+            "form_cues": [
+              "Pull hard from the first inch.",
+              "Keep the body tight.",
+              "Lower slower than you pulled."
+            ],
+            "provenance": "authored",
+            "description": "Explosive Pull Up accelerates hard from a hang to bring the chest high toward the bar, then lowers under control.",
+            "safety_note": "Build strict pull up strength first and stop when the speed of the pull starts to fade.",
+            "instructions": [
+              "Hang from a pull-up bar with an overhand grip and your arms fully extended.",
+              "Brace the core and set the shoulders down.",
+              "Pull as fast as you can, driving the elbows down until the chest reaches the bar.",
+              "Lower slowly to a full hang before the next repetition."
+            ],
+            "common_mistakes": [
+              "Kipping instead of pulling.",
+              "Dropping from the top.",
+              "Starting the next rep from bent arms."
+            ]
+          }
+        },
+        "updated_at": "2026-10-12T11:11:58.99357+00:00"
+      },
+      "source_english": {
+        "form_cues": [
+          "Pull hard from the first inch.",
+          "Keep the body tight.",
+          "Lower slower than you pulled."
+        ],
+        "provenance": "authored",
+        "description": "Explosive Pull Up accelerates hard from a hang to bring the chest high toward the bar, then lowers under control.",
+        "safety_note": "Build strict pull up strength first and stop when the speed of the pull starts to fade.",
+        "instructions": [
+          "Hang from a pull-up bar with an overhand grip and your arms fully extended.",
+          "Brace the core and set the shoulders down.",
+          "Pull as fast as you can, driving the elbows down until the chest reaches the bar.",
+          "Lower slowly to a full hang before the next repetition."
+        ],
+        "common_mistakes": [
+          "Kipping instead of pulling.",
+          "Dropping from the top.",
+          "Starting the next rep from bent arms."
+        ]
+      },
+      "source_english_sha256": "54bf9b85bc6198dedbc490213353962cad0afee9e0319a508699fa0c4438202c",
+      "scene": {
+        "phase": "End of the fast concentric pull as the chest reaches bar height, before the slow descent.",
+        "pose": "Braced suspended body with shoulders depressed, elbows pulled down and back and chest high at the bar. Legs stay together and still, no hip kip or kicking. Both hands remain firmly on the bar; no airborne clap or release.",
+        "grip": "Closed overhand grip at comfortable shoulder width with thumbs wrapped.",
+        "supports": "Both hands on the same fixed bar, feet unsupported; no assistance pad.",
+        "equipment": "Stable fixed pull-up bar and frame only, despite machine equipment classification.",
+        "trajectory": "Accelerate hard from a full hang to chest-at-bar height, then lower slowly. Depict one still high phase without motion blur, arrows or multiple bodies; acceleration is described in the task rather than fabricated as a second image.",
+        "camera": "Rear-side three-quarter view showing lats, bent elbows and chest height relative to the bar.",
+        "illustration_choices": [
+          "High endpoint selected; the still image cannot alone prove movement speed."
+        ]
+      },
+      "approved_style_files": [
+        {
+          "path": "docs/exercise-image-style.md",
+          "sha256": "8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578"
+        }
+      ],
+      "execution_owner": "agent-08-generator-single-2026-10-03"
+    },
+    {
+      "exercise_id": "inverted-row-feet-elevated-machine",
+      "name": "Inverted Row (Feet Elevated)",
+      "status": "not_started",
+      "attempts": 0,
+      "attempt_history": [],
+      "batch_item_number": 4,
+      "prompt_sha256": "aaea8afd16bf795eb96d3964cd27365cf22a2de2cf59a76e8e6a4b859a8c9af3",
+      "source_catalog_sha256": "907950559a5bf4be84a791deb73fcd03d502a48ec8b936296df8a3e42651bf0f",
+      "source_record_sha256": "c2d7f92857419af4b34041db98916068518c80e6fa949d64100bc125a7cae524",
+      "style_version": "v1",
+      "human_reference": {
+        "path": "assets/exercises/biceps-curl-dumbbell.png",
+        "sha256": "52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f",
+        "role": "Appearance, proportions and anatomical materials only; never pose, equipment or muscle targets."
+      },
+      "planned_png_path": "/workspace/exercise-image-results/agent-03-supabase28-2026-10-13/agent-03-others-046/inverted-row-feet-elevated-machine/attempt-1.png",
+      "planned_git_png_path": "assets/exercises/pending/agent-03-supabase28-2026-10-13/agent-03-others-046/inverted-row-feet-elevated-machine/attempt-1.png",
+      "result_path": null,
+      "result_sha256": null,
+      "accepted_path": null,
+      "accepted_sha256": null,
+      "technical_check": null,
+      "user_review": null,
+      "future_user_review_policy": "pending until explicit user approval",
+      "agent_visual_review": "not_performed",
+      "last_error": null,
+      "generation_prompt": "Create exactly ONE 1024x1024 PNG with a genuinely transparent background, ONE adult anatomical male figure and ONE movement phase. Match the supplied human reference ONLY for appearance, proportions and materials: bald athletic male anatomical mannequin, opaque silver-gray muscle surfaces with detailed realistic 3D anatomy, plain black shorts and bare feet. Keep the same head, body proportions and material finish across the library. Do not copy its pose, barbell or muscle highlights. Highlight ONLY the source primary region upper_back with #F26445 at full colour intensity. Highlight the explicitly listed secondary regions with the same #F26445 at 40–50% colour intensity: lats, biceps. Colour intensity is not tissue transparency: no see-through anatomy, glow, overall orange tint or unlisted coloured muscle groups. Show the necessary stable equipment and all actual body contacts; fit the full person and relevant equipment in the square without cropping or distorting anatomy. No text, labels, arrows, logos, UI, border, collage, second person, duplicate limbs, motion blur, white backdrop or baked-in checkerboard. Necessary wall/mat surfaces are physical supports only, not a filled image background. Equipment category machine/none is source metadata, not permission to invent a moving machine or omit supports explicitly required by the technique.\n\nEXACT EXERCISE: inverted-row-feet-elevated-machine — Inverted Row (Feet Elevated)\n\nSELECTED SINGLE-PHASE SCENE:\nPHASE: Top row endpoint with chest near the fixed bar and heels elevated.\nPOSE: Supine rigid body line from shoulders through hips to heels beneath a waist-height fixed bar. Both heels rest on a stable box, knees straight, hips held up. Elbows bent and driven behind the torso, shoulder blades retracted, chest drawn toward the bar.\nGRIP: Closed overhand shoulder-width grip on the fixed straight bar, thumbs wrapped.\nSUPPORTS: Hands on fixed waist-height bar and both heels on the box; hips/back do not contact floor or box.\nEQUIPMENT: Purpose-built fixed horizontal bodyweight-row bar in a stable frame plus a heel-support box. Do not introduce a Smith machine, moving barbell, cable station or resistance stack.\nTRAJECTORY: Pull the chest toward the fixed bar with the body straight, pause, then lower to straight arms while keeping heels on the box.\nCAMERA: Rear-side three-quarter view from slightly above the torso, showing upper-back surfaces, heel contacts and fixed bar structure.\n\nEXACT SOURCE DATA (instructions and safety govern this ID; metadata is never rendered as text):\n{\n  \"equipment\": \"machine\",\n  \"exercise_id\": \"inverted-row-feet-elevated-machine\",\n  \"name\": \"Inverted Row (Feet Elevated)\",\n  \"primary_muscle\": \"upper_back\",\n  \"secondary_muscles\": [\n    \"lats\",\n    \"biceps\"\n  ],\n  \"source_english\": {\n    \"common_mistakes\": [\n      \"Letting the hips sag.\",\n      \"Shrugging instead of rowing.\",\n      \"Cutting the range short.\"\n    ],\n    \"description\": \"With the feet raised on a bench or box, pull the chest to a fixed bar while the body stays in a straight line.\",\n    \"form_cues\": [\n      \"Keep the body in one straight line.\",\n      \"Drive the elbows back.\",\n      \"Squeeze the shoulder blades at the top.\"\n    ],\n    \"instructions\": [\n      \"Set a bar at about waist height and lie under it with your heels on a bench or box.\",\n      \"Grip the bar with an overhand grip and straighten the body from shoulders to heels.\",\n      \"Pull the chest toward the bar by driving the elbows back.\",\n      \"Pause, then lower until the arms are straight without losing the line.\"\n    ],\n    \"provenance\": \"authored\",\n    \"safety_note\": \"Check that the bar and the bench are stable, and lower the feet if the body cannot hold a straight line.\"\n  },\n  \"tracking_type\": \"reps_only\"\n}\n\nPreserve the source-defined technique. Do not substitute a similarly named exercise, choose a different lever variant, remove specified supports or add unlisted muscle targets. If the attached scene and exact source cannot be reconciled, stop this ID and report the concrete conflict rather than inventing a correction.",
+      "source_record": {
+        "id": "inverted-row-feet-elevated-machine",
+        "name": "Inverted Row (Feet Elevated)",
+        "equipment": "machine",
+        "primary_muscle": "upper_back",
+        "secondary_muscles": [
+          "lats",
+          "biceps"
+        ],
+        "tracking_type": "reps_only",
+        "archived": false,
+        "replaces_ids": [],
+        "image_path": null,
+        "image_sha256": null,
+        "image_width": null,
+        "image_height": null,
+        "image_origin": null,
+        "attribution": null,
+        "content": {
+          "en": {
+            "form_cues": [
+              "Keep the body in one straight line.",
+              "Drive the elbows back.",
+              "Squeeze the shoulder blades at the top."
+            ],
+            "provenance": "authored",
+            "description": "With the feet raised on a bench or box, pull the chest to a fixed bar while the body stays in a straight line.",
+            "safety_note": "Check that the bar and the bench are stable, and lower the feet if the body cannot hold a straight line.",
+            "instructions": [
+              "Set a bar at about waist height and lie under it with your heels on a bench or box.",
+              "Grip the bar with an overhand grip and straighten the body from shoulders to heels.",
+              "Pull the chest toward the bar by driving the elbows back.",
+              "Pause, then lower until the arms are straight without losing the line."
+            ],
+            "common_mistakes": [
+              "Letting the hips sag.",
+              "Shrugging instead of rowing.",
+              "Cutting the range short."
+            ]
+          }
+        },
+        "updated_at": "2026-10-12T11:11:58.99357+00:00"
+      },
+      "source_english": {
+        "form_cues": [
+          "Keep the body in one straight line.",
+          "Drive the elbows back.",
+          "Squeeze the shoulder blades at the top."
+        ],
+        "provenance": "authored",
+        "description": "With the feet raised on a bench or box, pull the chest to a fixed bar while the body stays in a straight line.",
+        "safety_note": "Check that the bar and the bench are stable, and lower the feet if the body cannot hold a straight line.",
+        "instructions": [
+          "Set a bar at about waist height and lie under it with your heels on a bench or box.",
+          "Grip the bar with an overhand grip and straighten the body from shoulders to heels.",
+          "Pull the chest toward the bar by driving the elbows back.",
+          "Pause, then lower until the arms are straight without losing the line."
+        ],
+        "common_mistakes": [
+          "Letting the hips sag.",
+          "Shrugging instead of rowing.",
+          "Cutting the range short."
+        ]
+      },
+      "source_english_sha256": "ff4f7fbe94983204bf159006a43cdd326f23971ae4554973dd1bebbbaa0f870f",
+      "scene": {
+        "phase": "Top row endpoint with chest near the fixed bar and heels elevated.",
+        "pose": "Supine rigid body line from shoulders through hips to heels beneath a waist-height fixed bar. Both heels rest on a stable box, knees straight, hips held up. Elbows bent and driven behind the torso, shoulder blades retracted, chest drawn toward the bar.",
+        "grip": "Closed overhand shoulder-width grip on the fixed straight bar, thumbs wrapped.",
+        "supports": "Hands on fixed waist-height bar and both heels on the box; hips/back do not contact floor or box.",
+        "equipment": "Purpose-built fixed horizontal bodyweight-row bar in a stable frame plus a heel-support box. Do not introduce a Smith machine, moving barbell, cable station or resistance stack.",
+        "trajectory": "Pull the chest toward the fixed bar with the body straight, pause, then lower to straight arms while keeping heels on the box.",
+        "camera": "Rear-side three-quarter view from slightly above the torso, showing upper-back surfaces, heel contacts and fixed bar structure.",
+        "illustration_choices": [
+          "Box selected from the source bench-or-box alternative.",
+          "Fixed calisthenics bar selected; no Smith machine inferred from equipment enum."
+        ]
+      },
+      "approved_style_files": [
+        {
+          "path": "docs/exercise-image-style.md",
+          "sha256": "8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578"
+        }
+      ],
+      "execution_owner": "agent-08-generator-single-2026-10-03"
+    },
+    {
+      "exercise_id": "muscle-up-band-resistance-band",
+      "name": "Muscle Up (Band)",
+      "status": "not_started",
+      "attempts": 0,
+      "attempt_history": [],
+      "batch_item_number": 5,
+      "prompt_sha256": "24e74aff26bbf996706fddf95a2c1eddabe8beffce36d7d2da5e34c645beb889",
+      "source_catalog_sha256": "907950559a5bf4be84a791deb73fcd03d502a48ec8b936296df8a3e42651bf0f",
+      "source_record_sha256": "a2785976dafb23d0afa03b54ebe3fc08d940706477a81b7fff98e608888b0358",
+      "style_version": "v1-neutral-primary-2026-10-02",
+      "human_reference": {
+        "path": "assets/exercises/biceps-curl-dumbbell.png",
+        "sha256": "52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f",
+        "role": "Appearance, proportions and anatomical materials only; never pose, equipment or muscle targets."
+      },
+      "planned_png_path": "/workspace/exercise-image-results/agent-03-supabase28-2026-10-13/agent-03-others-046/muscle-up-band-resistance-band/attempt-1.png",
+      "planned_git_png_path": "assets/exercises/pending/agent-03-supabase28-2026-10-13/agent-03-others-046/muscle-up-band-resistance-band/attempt-1.png",
+      "result_path": null,
+      "result_sha256": null,
+      "accepted_path": null,
+      "accepted_sha256": null,
+      "technical_check": null,
+      "user_review": null,
+      "future_user_review_policy": "pending until explicit user approval",
+      "agent_visual_review": "not_performed",
+      "last_error": null,
+      "generation_prompt": "Create exactly ONE 1024x1024 PNG with a genuinely transparent background, ONE adult anatomical male figure and ONE movement phase. Match the supplied human reference ONLY for appearance, proportions and materials: bald athletic male anatomical mannequin, opaque silver-gray muscle surfaces with detailed realistic 3D anatomy, plain black shorts and bare feet. Keep the same head, body proportions and material finish across the library. Do not copy its pose, barbell or muscle highlights. Primary is the non-anatomical category full_body: keep the body neutral opaque silver-gray; never colour the whole body or infer an anatomical primary. Highlight ONLY these explicitly listed secondary regions with #F26445 at 40–50% colour intensity: lats, chest, triceps. Colour intensity is not tissue transparency: no see-through anatomy, glow, overall orange tint or unlisted coloured muscle groups. Show the necessary stable equipment and all actual body contacts; fit the full person and relevant equipment in the square without cropping or distorting anatomy. No text, labels, arrows, logos, UI, border, collage, second person, duplicate limbs, motion blur, white backdrop or baked-in checkerboard. Necessary wall/mat surfaces are physical supports only, not a filled image background. Equipment category machine/none is source metadata, not permission to invent a moving machine or omit supports explicitly required by the technique.\n\nEXACT EXERCISE: muscle-up-band-resistance-band — Muscle Up (Band)\n\nSELECTED SINGLE-PHASE SCENE:\nPHASE: Controlled press phase above the bar after completing the pull-to-support transition.\nPOSE: Torso above the bar with chest slightly forward of it, bar close to the lower chest, elbows still bent but pressing toward straight-arm support. Both legs below and one left foot visibly in the band loop. Shoulders active, no kip, leg kick or band bounce.\nGRIP: Closed overhand grip on the same straight bar, wrists rotating over it for the support phase; both hands remain attached.\nSUPPORTS: Both hands on the bar; one left foot in the tensioned assistance loop, the other foot free beside it. No ground or platform contact.\nEQUIPMENT: One fixed high pull-up bar in a stable frame and one closed-loop resistance band secured around the bar with a visible cinched loop. Its two tensioned sides descend to the left foot loop without passing through the person's body. Source explicitly allows foot or knee assistance; foot chosen here.\nTRAJECTORY: Assisted overhand pull, chest-over-bar transition, then press to support and lower to full hang under control; single above-bar press phase.\nCAMERA: Front-side three-quarter view showing chest/triceps, both wrists over the bar, band anchorage and foot-loop contact in one composition.\n\nEXACT SOURCE DATA (instructions and safety govern this ID; metadata is never rendered as text):\n{\n  \"equipment\": \"resistance_band\",\n  \"exercise_id\": \"muscle-up-band-resistance-band\",\n  \"name\": \"Muscle Up (Band)\",\n  \"primary_muscle\": \"full_body\",\n  \"secondary_muscles\": [\n    \"lats\",\n    \"chest\",\n    \"triceps\"\n  ],\n  \"source_english\": {\n    \"common_mistakes\": [\n      \"Bouncing out of the band to skip the pull.\",\n      \"Kipping through the transition.\",\n      \"Pressing before the chest is over the bar.\"\n    ],\n    \"description\": \"Muscle Up (Band) uses a resistance band looped over the bar to help pull from a hang over the bar and press to support.\",\n    \"form_cues\": [\n      \"Pull the bar toward the lower chest.\",\n      \"Keep the bar close through the transition.\",\n      \"Use a lighter band as you get stronger.\"\n    ],\n    \"instructions\": [\n      \"Loop a resistance band over the bar and secure it, then step a foot or knee into the loop.\",\n      \"Hang with an overhand grip and pull the chest explosively toward the bar.\",\n      \"Lean the chest over the bar through the transition and press to straight arms.\",\n      \"Lower under control to a full hang, then repeat.\"\n    ],\n    \"provenance\": \"authored\",\n    \"safety_note\": \"Check the band and its anchor before hanging, and pick a band that lets you control the descent.\"\n  },\n  \"tracking_type\": \"bodyweight_assisted_reps\"\n}\n\nPreserve the source-defined technique. Do not substitute a similarly named exercise, choose a different lever variant, remove specified supports or add unlisted muscle targets. If the attached scene and exact source cannot be reconciled, stop this ID and report the concrete conflict rather than inventing a correction.",
+      "source_record": {
+        "id": "muscle-up-band-resistance-band",
+        "name": "Muscle Up (Band)",
+        "equipment": "resistance_band",
+        "primary_muscle": "full_body",
+        "secondary_muscles": [
+          "lats",
+          "chest",
+          "triceps"
+        ],
+        "tracking_type": "bodyweight_assisted_reps",
+        "archived": false,
+        "replaces_ids": [],
+        "image_path": null,
+        "image_sha256": null,
+        "image_width": null,
+        "image_height": null,
+        "image_origin": null,
+        "attribution": null,
+        "content": {
+          "en": {
+            "form_cues": [
+              "Pull the bar toward the lower chest.",
+              "Keep the bar close through the transition.",
+              "Use a lighter band as you get stronger."
+            ],
+            "provenance": "authored",
+            "description": "Muscle Up (Band) uses a resistance band looped over the bar to help pull from a hang over the bar and press to support.",
+            "safety_note": "Check the band and its anchor before hanging, and pick a band that lets you control the descent.",
+            "instructions": [
+              "Loop a resistance band over the bar and secure it, then step a foot or knee into the loop.",
+              "Hang with an overhand grip and pull the chest explosively toward the bar.",
+              "Lean the chest over the bar through the transition and press to straight arms.",
+              "Lower under control to a full hang, then repeat."
+            ],
+            "common_mistakes": [
+              "Bouncing out of the band to skip the pull.",
+              "Kipping through the transition.",
+              "Pressing before the chest is over the bar."
+            ]
+          }
+        },
+        "updated_at": "2026-10-12T11:11:58.99357+00:00"
+      },
+      "source_english": {
+        "form_cues": [
+          "Pull the bar toward the lower chest.",
+          "Keep the bar close through the transition.",
+          "Use a lighter band as you get stronger."
+        ],
+        "provenance": "authored",
+        "description": "Muscle Up (Band) uses a resistance band looped over the bar to help pull from a hang over the bar and press to support.",
+        "safety_note": "Check the band and its anchor before hanging, and pick a band that lets you control the descent.",
+        "instructions": [
+          "Loop a resistance band over the bar and secure it, then step a foot or knee into the loop.",
+          "Hang with an overhand grip and pull the chest explosively toward the bar.",
+          "Lean the chest over the bar through the transition and press to straight arms.",
+          "Lower under control to a full hang, then repeat."
+        ],
+        "common_mistakes": [
+          "Bouncing out of the band to skip the pull.",
+          "Kipping through the transition.",
+          "Pressing before the chest is over the bar."
+        ]
+      },
+      "source_english_sha256": "1e87a25655ca95b14368f8685dea2180181cb660ee7a707d948eeb9532f85e8f",
+      "scene": {
+        "phase": "Controlled press phase above the bar after completing the pull-to-support transition.",
+        "pose": "Torso above the bar with chest slightly forward of it, bar close to the lower chest, elbows still bent but pressing toward straight-arm support. Both legs below and one left foot visibly in the band loop. Shoulders active, no kip, leg kick or band bounce.",
+        "grip": "Closed overhand grip on the same straight bar, wrists rotating over it for the support phase; both hands remain attached.",
+        "supports": "Both hands on the bar; one left foot in the tensioned assistance loop, the other foot free beside it. No ground or platform contact.",
+        "equipment": "One fixed high pull-up bar in a stable frame and one closed-loop resistance band secured around the bar with a visible cinched loop. Its two tensioned sides descend to the left foot loop without passing through the person's body. Source explicitly allows foot or knee assistance; foot chosen here.",
+        "trajectory": "Assisted overhand pull, chest-over-bar transition, then press to support and lower to full hang under control; single above-bar press phase.",
+        "camera": "Front-side three-quarter view showing chest/triceps, both wrists over the bar, band anchorage and foot-loop contact in one composition.",
+        "illustration_choices": [
+          "Foot rather than knee in the band, both explicitly allowed.",
+          "Above-bar press phase selected so band attachment and support are visible."
+        ]
+      },
+      "approved_style_files": [
+        {
+          "path": "docs/exercise-image-style.md",
+          "sha256": "8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578"
+        },
+        {
+          "path": "docs/exercise-image-style-neutral-primary.md",
+          "sha256": "86204ab43f23d119a1eb25cafdbda2518b741a0090b4ffb0ceb9086952314439"
+        }
+      ],
+      "execution_owner": "agent-08-generator-single-2026-10-03"
+    },
+    {
+      "exercise_id": "muscle-up-negative-machine",
+      "name": "Muscle Up (Negative)",
+      "status": "not_started",
+      "attempts": 0,
+      "attempt_history": [],
+      "batch_item_number": 6,
+      "prompt_sha256": "489f37c46517eda36e38672224229fa499e0cd1e55774d764449ac1228236507",
+      "source_catalog_sha256": "907950559a5bf4be84a791deb73fcd03d502a48ec8b936296df8a3e42651bf0f",
+      "source_record_sha256": "be42608109a8cbd0b20134f7894f43fc199bd6c481f430d227e580e8674306c8",
+      "style_version": "v1-neutral-primary-2026-10-02",
+      "human_reference": {
+        "path": "assets/exercises/biceps-curl-dumbbell.png",
+        "sha256": "52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f",
+        "role": "Appearance, proportions and anatomical materials only; never pose, equipment or muscle targets."
+      },
+      "planned_png_path": "/workspace/exercise-image-results/agent-03-supabase28-2026-10-13/agent-03-others-046/muscle-up-negative-machine/attempt-1.png",
+      "planned_git_png_path": "assets/exercises/pending/agent-03-supabase28-2026-10-13/agent-03-others-046/muscle-up-negative-machine/attempt-1.png",
+      "result_path": null,
+      "result_sha256": null,
+      "accepted_path": null,
+      "accepted_sha256": null,
+      "technical_check": null,
+      "user_review": null,
+      "future_user_review_policy": "pending until explicit user approval",
+      "agent_visual_review": "not_performed",
+      "last_error": null,
+      "generation_prompt": "Create exactly ONE 1024x1024 PNG with a genuinely transparent background, ONE adult anatomical male figure and ONE movement phase. Match the supplied human reference ONLY for appearance, proportions and materials: bald athletic male anatomical mannequin, opaque silver-gray muscle surfaces with detailed realistic 3D anatomy, plain black shorts and bare feet. Keep the same head, body proportions and material finish across the library. Do not copy its pose, barbell or muscle highlights. Primary is the non-anatomical category full_body: keep the body neutral opaque silver-gray; never colour the whole body or infer an anatomical primary. Highlight ONLY these explicitly listed secondary regions with #F26445 at 40–50% colour intensity: lats, chest, triceps. Colour intensity is not tissue transparency: no see-through anatomy, glow, overall orange tint or unlisted coloured muscle groups. Show the necessary stable equipment and all actual body contacts; fit the full person and relevant equipment in the square without cropping or distorting anatomy. No text, labels, arrows, logos, UI, border, collage, second person, duplicate limbs, motion blur, white backdrop or baked-in checkerboard. Necessary wall/mat surfaces are physical supports only, not a filled image background. Equipment category machine/none is source metadata, not permission to invent a moving machine or omit supports explicitly required by the technique.\n\nEXACT EXERCISE: muscle-up-negative-machine — Muscle Up (Negative)\n\nSELECTED SINGLE-PHASE SCENE:\nPHASE: Early controlled eccentric from above-bar support, before moving under the bar.\nPOSE: Torso above and leaned slightly forward over the fixed bar, elbows partly bent as support begins to lower. Bar close to the lower chest, shoulders active, legs together and feet suspended. Do not depict an assisted-machine knee pad or a band.\nGRIP: Closed overhand-origin support grip on one straight bar, wrists rotated over the bar at this above-bar phase.\nSUPPORTS: Both hands on the bar; feet unsupported. A stable access box below is not touching the feet in this phase.\nEQUIPMENT: Stable fixed high bar and an access box explicitly permitted to reach top support; no resistance stack or band.\nTRAJECTORY: Start in straight-arm support, lower through bent elbows and the chest-close transition to full hang over at least three seconds; reset using the box. This is a negative, not a new explosive upward pull.\nCAMERA: Front-side three-quarter view showing chest and arms, wrists over the bar and box clearance below both feet.\n\nEXACT SOURCE DATA (instructions and safety govern this ID; metadata is never rendered as text):\n{\n  \"equipment\": \"machine\",\n  \"exercise_id\": \"muscle-up-negative-machine\",\n  \"name\": \"Muscle Up (Negative)\",\n  \"primary_muscle\": \"full_body\",\n  \"secondary_muscles\": [\n    \"lats\",\n    \"chest\",\n    \"triceps\"\n  ],\n  \"source_english\": {\n    \"common_mistakes\": [\n      \"Dropping through the transition.\",\n      \"Letting the bar drift away from the chest.\",\n      \"Starting with loose shoulders.\"\n    ],\n    \"description\": \"Muscle Up (Negative) starts in support above the bar and lowers slowly through the transition to a full hang.\",\n    \"form_cues\": [\n      \"Keep the bar close to the body.\",\n      \"Take at least three seconds to lower.\",\n      \"Keep the shoulders active.\"\n    ],\n    \"instructions\": [\n      \"Use a box or jump to start in support above the bar with your arms straight.\",\n      \"Lean the chest over the bar and begin to bend the elbows.\",\n      \"Lower slowly through the transition, keeping the bar close to the chest.\",\n      \"Continue down to a full hang, then step down and reset.\"\n    ],\n    \"provenance\": \"authored\",\n    \"safety_note\": \"Use a box or stable step to reach the top and stop if the shoulders or elbows lose control of the descent.\"\n  },\n  \"tracking_type\": \"reps_only\"\n}\n\nPreserve the source-defined technique. Do not substitute a similarly named exercise, choose a different lever variant, remove specified supports or add unlisted muscle targets. If the attached scene and exact source cannot be reconciled, stop this ID and report the concrete conflict rather than inventing a correction.",
+      "source_record": {
+        "id": "muscle-up-negative-machine",
+        "name": "Muscle Up (Negative)",
+        "equipment": "machine",
+        "primary_muscle": "full_body",
+        "secondary_muscles": [
+          "lats",
+          "chest",
+          "triceps"
+        ],
+        "tracking_type": "reps_only",
+        "archived": false,
+        "replaces_ids": [],
+        "image_path": null,
+        "image_sha256": null,
+        "image_width": null,
+        "image_height": null,
+        "image_origin": null,
+        "attribution": null,
+        "content": {
+          "en": {
+            "form_cues": [
+              "Keep the bar close to the body.",
+              "Take at least three seconds to lower.",
+              "Keep the shoulders active."
+            ],
+            "provenance": "authored",
+            "description": "Muscle Up (Negative) starts in support above the bar and lowers slowly through the transition to a full hang.",
+            "safety_note": "Use a box or stable step to reach the top and stop if the shoulders or elbows lose control of the descent.",
+            "instructions": [
+              "Use a box or jump to start in support above the bar with your arms straight.",
+              "Lean the chest over the bar and begin to bend the elbows.",
+              "Lower slowly through the transition, keeping the bar close to the chest.",
+              "Continue down to a full hang, then step down and reset."
+            ],
+            "common_mistakes": [
+              "Dropping through the transition.",
+              "Letting the bar drift away from the chest.",
+              "Starting with loose shoulders."
+            ]
+          }
+        },
+        "updated_at": "2026-10-12T11:11:58.99357+00:00"
+      },
+      "source_english": {
+        "form_cues": [
+          "Keep the bar close to the body.",
+          "Take at least three seconds to lower.",
+          "Keep the shoulders active."
+        ],
+        "provenance": "authored",
+        "description": "Muscle Up (Negative) starts in support above the bar and lowers slowly through the transition to a full hang.",
+        "safety_note": "Use a box or stable step to reach the top and stop if the shoulders or elbows lose control of the descent.",
+        "instructions": [
+          "Use a box or jump to start in support above the bar with your arms straight.",
+          "Lean the chest over the bar and begin to bend the elbows.",
+          "Lower slowly through the transition, keeping the bar close to the chest.",
+          "Continue down to a full hang, then step down and reset."
+        ],
+        "common_mistakes": [
+          "Dropping through the transition.",
+          "Letting the bar drift away from the chest.",
+          "Starting with loose shoulders."
+        ]
+      },
+      "source_english_sha256": "1ce5547db2245bd130f0503e642df958cde74f2a7b5c34a344b8cd8785115e47",
+      "scene": {
+        "phase": "Early controlled eccentric from above-bar support, before moving under the bar.",
+        "pose": "Torso above and leaned slightly forward over the fixed bar, elbows partly bent as support begins to lower. Bar close to the lower chest, shoulders active, legs together and feet suspended. Do not depict an assisted-machine knee pad or a band.",
+        "grip": "Closed overhand-origin support grip on one straight bar, wrists rotated over the bar at this above-bar phase.",
+        "supports": "Both hands on the bar; feet unsupported. A stable access box below is not touching the feet in this phase.",
+        "equipment": "Stable fixed high bar and an access box explicitly permitted to reach top support; no resistance stack or band.",
+        "trajectory": "Start in straight-arm support, lower through bent elbows and the chest-close transition to full hang over at least three seconds; reset using the box. This is a negative, not a new explosive upward pull.",
+        "camera": "Front-side three-quarter view showing chest and arms, wrists over the bar and box clearance below both feet.",
+        "illustration_choices": [
+          "Support grip compatible with the specified above-bar start; source does not state exact grip width.",
+          "Box entry rather than jumping, both source alternatives."
+        ]
+      },
+      "approved_style_files": [
+        {
+          "path": "docs/exercise-image-style.md",
+          "sha256": "8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578"
+        },
+        {
+          "path": "docs/exercise-image-style-neutral-primary.md",
+          "sha256": "86204ab43f23d119a1eb25cafdbda2518b741a0090b4ffb0ceb9086952314439"
+        }
+      ],
+      "execution_owner": "agent-08-generator-single-2026-10-03"
+    },
+    {
+      "exercise_id": "straight-bar-dip-machine",
+      "name": "Straight Bar Dip",
+      "status": "not_started",
+      "attempts": 0,
+      "attempt_history": [],
+      "batch_item_number": 7,
+      "prompt_sha256": "4c270909e80fc2abf7ddb44ccc7ba99881ca9d145ff2789880a82ad873fcf953",
+      "source_catalog_sha256": "907950559a5bf4be84a791deb73fcd03d502a48ec8b936296df8a3e42651bf0f",
+      "source_record_sha256": "dfe759cdd41f8a1508a9ccdc69056a675e713e1454abca1dcc4d6bd56e9749c9",
+      "style_version": "v1",
+      "human_reference": {
+        "path": "assets/exercises/biceps-curl-dumbbell.png",
+        "sha256": "52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f",
+        "role": "Appearance, proportions and anatomical materials only; never pose, equipment or muscle targets."
+      },
+      "planned_png_path": "/workspace/exercise-image-results/agent-03-supabase28-2026-10-13/agent-03-others-046/straight-bar-dip-machine/attempt-1.png",
+      "planned_git_png_path": "assets/exercises/pending/agent-03-supabase28-2026-10-13/agent-03-others-046/straight-bar-dip-machine/attempt-1.png",
+      "result_path": null,
+      "result_sha256": null,
+      "accepted_path": null,
+      "accepted_sha256": null,
+      "technical_check": null,
+      "user_review": null,
+      "future_user_review_policy": "pending until explicit user approval",
+      "agent_visual_review": "not_performed",
+      "last_error": null,
+      "generation_prompt": "Create exactly ONE 1024x1024 PNG with a genuinely transparent background, ONE adult anatomical male figure and ONE movement phase. Match the supplied human reference ONLY for appearance, proportions and materials: bald athletic male anatomical mannequin, opaque silver-gray muscle surfaces with detailed realistic 3D anatomy, plain black shorts and bare feet. Keep the same head, body proportions and material finish across the library. Do not copy its pose, barbell or muscle highlights. Highlight ONLY the source primary region chest with #F26445 at full colour intensity. Highlight the explicitly listed secondary regions with the same #F26445 at 40–50% colour intensity: triceps, shoulders. Colour intensity is not tissue transparency: no see-through anatomy, glow, overall orange tint or unlisted coloured muscle groups. Show the necessary stable equipment and all actual body contacts; fit the full person and relevant equipment in the square without cropping or distorting anatomy. No text, labels, arrows, logos, UI, border, collage, second person, duplicate limbs, motion blur, white backdrop or baked-in checkerboard. Necessary wall/mat surfaces are physical supports only, not a filled image background. Equipment category machine/none is source metadata, not permission to invent a moving machine or omit supports explicitly required by the technique.\n\nEXACT EXERCISE: straight-bar-dip-machine — Straight Bar Dip\n\nSELECTED SINGLE-PHASE SCENE:\nPHASE: Controlled lowered straight-bar dip with bar near the lower chest.\nPOSE: Torso above one fixed hip-height straight bar, leaning forward with elbows bent and shoulders controlled. Bar stays close to the lower chest; both feet off the floor and legs still. No separate parallel handles or cable exercise.\nGRIP: Closed overhand support grip on the single horizontal bar with both wrists rotated above it, comfortable shoulder-width spacing.\nSUPPORTS: Both hands on the same straight bar, feet unsupported; no seat or knee platform.\nEQUIPMENT: One fixed hip-height straight dip bar with stable unbranded supports and enough clearance for the suspended feet. No moving levers or assisted-dip machine.\nTRAJECTORY: From top straight-arm support lean forward and bend elbows until the bar nears the lower chest, then press to straight arms; do not sink beyond shoulder control.\nCAMERA: Front-side three-quarter view showing chest, both grips on the same bar and bent elbows.\n\nEXACT SOURCE DATA (instructions and safety govern this ID; metadata is never rendered as text):\n{\n  \"equipment\": \"machine\",\n  \"exercise_id\": \"straight-bar-dip-machine\",\n  \"name\": \"Straight Bar Dip\",\n  \"primary_muscle\": \"chest\",\n  \"secondary_muscles\": [\n    \"triceps\",\n    \"shoulders\"\n  ],\n  \"source_english\": {\n    \"common_mistakes\": [\n      \"Letting the bar drift away from the body.\",\n      \"Dropping below shoulder control.\",\n      \"Swinging the legs to start.\"\n    ],\n    \"description\": \"Straight Bar Dip supports the body over a single straight bar, then lowers the chest and presses back up to straight arms.\",\n    \"form_cues\": [\n      \"Keep the bar close to the body.\",\n      \"Lean the chest forward.\",\n      \"Press the shoulders down at the top.\"\n    ],\n    \"instructions\": [\n      \"Grip a straight bar at about hip height and press up to support with the elbows straight.\",\n      \"Lean the torso forward and bend the elbows to lower the chest toward the bar.\",\n      \"Stop when the bar is near the lower chest and the shoulders stay stable.\",\n      \"Press back up to straight arms.\"\n    ],\n    \"provenance\": \"authored\",\n    \"safety_note\": \"Make sure the bar is fixed and set at hip height, and stop if the shoulders or wrists lose stable support.\"\n  },\n  \"tracking_type\": \"reps_only\"\n}\n\nPreserve the source-defined technique. Do not substitute a similarly named exercise, choose a different lever variant, remove specified supports or add unlisted muscle targets. If the attached scene and exact source cannot be reconciled, stop this ID and report the concrete conflict rather than inventing a correction.",
+      "source_record": {
+        "id": "straight-bar-dip-machine",
+        "name": "Straight Bar Dip",
+        "equipment": "machine",
+        "primary_muscle": "chest",
+        "secondary_muscles": [
+          "triceps",
+          "shoulders"
+        ],
+        "tracking_type": "reps_only",
+        "archived": false,
+        "replaces_ids": [],
+        "image_path": null,
+        "image_sha256": null,
+        "image_width": null,
+        "image_height": null,
+        "image_origin": null,
+        "attribution": null,
+        "content": {
+          "en": {
+            "form_cues": [
+              "Keep the bar close to the body.",
+              "Lean the chest forward.",
+              "Press the shoulders down at the top."
+            ],
+            "provenance": "authored",
+            "description": "Straight Bar Dip supports the body over a single straight bar, then lowers the chest and presses back up to straight arms.",
+            "safety_note": "Make sure the bar is fixed and set at hip height, and stop if the shoulders or wrists lose stable support.",
+            "instructions": [
+              "Grip a straight bar at about hip height and press up to support with the elbows straight.",
+              "Lean the torso forward and bend the elbows to lower the chest toward the bar.",
+              "Stop when the bar is near the lower chest and the shoulders stay stable.",
+              "Press back up to straight arms."
+            ],
+            "common_mistakes": [
+              "Letting the bar drift away from the body.",
+              "Dropping below shoulder control.",
+              "Swinging the legs to start."
+            ]
+          }
+        },
+        "updated_at": "2026-10-12T11:11:58.99357+00:00"
+      },
+      "source_english": {
+        "form_cues": [
+          "Keep the bar close to the body.",
+          "Lean the chest forward.",
+          "Press the shoulders down at the top."
+        ],
+        "provenance": "authored",
+        "description": "Straight Bar Dip supports the body over a single straight bar, then lowers the chest and presses back up to straight arms.",
+        "safety_note": "Make sure the bar is fixed and set at hip height, and stop if the shoulders or wrists lose stable support.",
+        "instructions": [
+          "Grip a straight bar at about hip height and press up to support with the elbows straight.",
+          "Lean the torso forward and bend the elbows to lower the chest toward the bar.",
+          "Stop when the bar is near the lower chest and the shoulders stay stable.",
+          "Press back up to straight arms."
+        ],
+        "common_mistakes": [
+          "Letting the bar drift away from the body.",
+          "Dropping below shoulder control.",
+          "Swinging the legs to start."
+        ]
+      },
+      "source_english_sha256": "e7024c50731ac74749005508e480d26a548fb7a86e8b66c4fe3d2ed2b15a913e",
+      "scene": {
+        "phase": "Controlled lowered straight-bar dip with bar near the lower chest.",
+        "pose": "Torso above one fixed hip-height straight bar, leaning forward with elbows bent and shoulders controlled. Bar stays close to the lower chest; both feet off the floor and legs still. No separate parallel handles or cable exercise.",
+        "grip": "Closed overhand support grip on the single horizontal bar with both wrists rotated above it, comfortable shoulder-width spacing.",
+        "supports": "Both hands on the same straight bar, feet unsupported; no seat or knee platform.",
+        "equipment": "One fixed hip-height straight dip bar with stable unbranded supports and enough clearance for the suspended feet. No moving levers or assisted-dip machine.",
+        "trajectory": "From top straight-arm support lean forward and bend elbows until the bar nears the lower chest, then press to straight arms; do not sink beyond shoulder control.",
+        "camera": "Front-side three-quarter view showing chest, both grips on the same bar and bent elbows.",
+        "illustration_choices": [
+          "Comfortable support grip width; source specifies a straight bar without exact spacing."
+        ]
+      },
+      "approved_style_files": [
+        {
+          "path": "docs/exercise-image-style.md",
+          "sha256": "8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578"
+        }
+      ],
+      "execution_owner": "agent-08-generator-single-2026-10-03"
+    },
+    {
+      "exercise_id": "triceps-dip-negative-machine",
+      "name": "Triceps Dip (Negative)",
+      "status": "not_started",
+      "attempts": 0,
+      "attempt_history": [],
+      "batch_item_number": 8,
+      "prompt_sha256": "2969624cc53374cb0bcd88229f77d01e733d71467b981c25db58c0856446c91d",
+      "source_catalog_sha256": "907950559a5bf4be84a791deb73fcd03d502a48ec8b936296df8a3e42651bf0f",
+      "source_record_sha256": "3e87241d41e406a9ee5ff27b3602ae262687cda8c34b8b5cd6fe346d53da1bd8",
+      "style_version": "v1",
+      "human_reference": {
+        "path": "assets/exercises/biceps-curl-dumbbell.png",
+        "sha256": "52fef743ba2d7689aa81a8b995df3c6715cbb5d04c4bd688af4ca57b2d20057f",
+        "role": "Appearance, proportions and anatomical materials only; never pose, equipment or muscle targets."
+      },
+      "planned_png_path": "/workspace/exercise-image-results/agent-03-supabase28-2026-10-13/agent-03-others-046/triceps-dip-negative-machine/attempt-1.png",
+      "planned_git_png_path": "assets/exercises/pending/agent-03-supabase28-2026-10-13/agent-03-others-046/triceps-dip-negative-machine/attempt-1.png",
+      "result_path": null,
+      "result_sha256": null,
+      "accepted_path": null,
+      "accepted_sha256": null,
+      "technical_check": null,
+      "user_review": null,
+      "future_user_review_policy": "pending until explicit user approval",
+      "agent_visual_review": "not_performed",
+      "last_error": null,
+      "generation_prompt": "Create exactly ONE 1024x1024 PNG with a genuinely transparent background, ONE adult anatomical male figure and ONE movement phase. Match the supplied human reference ONLY for appearance, proportions and materials: bald athletic male anatomical mannequin, opaque silver-gray muscle surfaces with detailed realistic 3D anatomy, plain black shorts and bare feet. Keep the same head, body proportions and material finish across the library. Do not copy its pose, barbell or muscle highlights. Highlight ONLY the source primary region triceps with #F26445 at full colour intensity. Highlight the explicitly listed secondary regions with the same #F26445 at 40–50% colour intensity: chest, shoulders. Colour intensity is not tissue transparency: no see-through anatomy, glow, overall orange tint or unlisted coloured muscle groups. Show the necessary stable equipment and all actual body contacts; fit the full person and relevant equipment in the square without cropping or distorting anatomy. No text, labels, arrows, logos, UI, border, collage, second person, duplicate limbs, motion blur, white backdrop or baked-in checkerboard. Necessary wall/mat surfaces are physical supports only, not a filled image background. Equipment category machine/none is source metadata, not permission to invent a moving machine or omit supports explicitly required by the technique.\n\nEXACT EXERCISE: triceps-dip-negative-machine — Triceps Dip (Negative)\n\nSELECTED SINGLE-PHASE SCENE:\nPHASE: Late controlled eccentric as the upper arms approach parallel to the floor.\nPOSE: Body between parallel bars with slight forward torso lean, elbows bent and pointing backward, wrists aligned. Upper arms near horizontal, shoulders stable without rolling forward, legs together and suspended. No upward press shown.\nGRIP: Closed neutral grip around the two parallel bars, thumbs wrapped and wrists straight.\nSUPPORTS: Both hands on the fixed bars; feet suspended. Stable reset step below stays clear of feet during lowering.\nEQUIPMENT: Fixed parallel dip bars in a stable frame plus a small access step for the source reset; no assistance platform, band or weight stack.\nTRAJECTORY: Step to top support, lower slowly under control until upper arms approach horizontal, step down and reset at the top instead of pressing upward.\nCAMERA: Side-rear three-quarter view showing triceps surfaces, backward elbow orientation and clearance above the reset step.\n\nEXACT SOURCE DATA (instructions and safety govern this ID; metadata is never rendered as text):\n{\n  \"equipment\": \"machine\",\n  \"exercise_id\": \"triceps-dip-negative-machine\",\n  \"name\": \"Triceps Dip (Negative)\",\n  \"primary_muscle\": \"triceps\",\n  \"secondary_muscles\": [\n    \"chest\",\n    \"shoulders\"\n  ],\n  \"source_english\": {\n    \"common_mistakes\": [\n      \"Dropping through the last half.\",\n      \"Letting the shoulders roll forward.\",\n      \"Rushing the descent.\"\n    ],\n    \"description\": \"Triceps Dip (Negative) lowers slowly from the top of a parallel-bar dip, then steps back up to reset.\",\n    \"form_cues\": [\n      \"Keep the wrists straight.\",\n      \"Point the elbows back.\",\n      \"Control the whole descent.\"\n    ],\n    \"instructions\": [\n      \"Jump or step up to support on parallel bars with the elbows straight and the shoulders down.\",\n      \"Keep the torso slightly forward and bend the elbows to lower as slowly as you can control.\",\n      \"Stop when the upper arms approach parallel to the floor.\",\n      \"Step down, return to the top, and repeat.\"\n    ],\n    \"provenance\": \"authored\",\n    \"safety_note\": \"Step or jump to the top instead of pressing up, and stop when the shoulders lose control of the descent.\"\n  },\n  \"tracking_type\": \"reps_only\"\n}\n\nPreserve the source-defined technique. Do not substitute a similarly named exercise, choose a different lever variant, remove specified supports or add unlisted muscle targets. If the attached scene and exact source cannot be reconciled, stop this ID and report the concrete conflict rather than inventing a correction.",
+      "source_record": {
+        "id": "triceps-dip-negative-machine",
+        "name": "Triceps Dip (Negative)",
+        "equipment": "machine",
+        "primary_muscle": "triceps",
+        "secondary_muscles": [
+          "chest",
+          "shoulders"
+        ],
+        "tracking_type": "reps_only",
+        "archived": false,
+        "replaces_ids": [],
+        "image_path": null,
+        "image_sha256": null,
+        "image_width": null,
+        "image_height": null,
+        "image_origin": null,
+        "attribution": null,
+        "content": {
+          "en": {
+            "form_cues": [
+              "Keep the wrists straight.",
+              "Point the elbows back.",
+              "Control the whole descent."
+            ],
+            "provenance": "authored",
+            "description": "Triceps Dip (Negative) lowers slowly from the top of a parallel-bar dip, then steps back up to reset.",
+            "safety_note": "Step or jump to the top instead of pressing up, and stop when the shoulders lose control of the descent.",
+            "instructions": [
+              "Jump or step up to support on parallel bars with the elbows straight and the shoulders down.",
+              "Keep the torso slightly forward and bend the elbows to lower as slowly as you can control.",
+              "Stop when the upper arms approach parallel to the floor.",
+              "Step down, return to the top, and repeat."
+            ],
+            "common_mistakes": [
+              "Dropping through the last half.",
+              "Letting the shoulders roll forward.",
+              "Rushing the descent."
+            ]
+          }
+        },
+        "updated_at": "2026-10-12T11:11:58.99357+00:00"
+      },
+      "source_english": {
+        "form_cues": [
+          "Keep the wrists straight.",
+          "Point the elbows back.",
+          "Control the whole descent."
+        ],
+        "provenance": "authored",
+        "description": "Triceps Dip (Negative) lowers slowly from the top of a parallel-bar dip, then steps back up to reset.",
+        "safety_note": "Step or jump to the top instead of pressing up, and stop when the shoulders lose control of the descent.",
+        "instructions": [
+          "Jump or step up to support on parallel bars with the elbows straight and the shoulders down.",
+          "Keep the torso slightly forward and bend the elbows to lower as slowly as you can control.",
+          "Stop when the upper arms approach parallel to the floor.",
+          "Step down, return to the top, and repeat."
+        ],
+        "common_mistakes": [
+          "Dropping through the last half.",
+          "Letting the shoulders roll forward.",
+          "Rushing the descent."
+        ]
+      },
+      "source_english_sha256": "b8bbc4aff5efcbf1dfda106074acd78000f285c94bfddf26dc0bb0b11e637083",
+      "scene": {
+        "phase": "Late controlled eccentric as the upper arms approach parallel to the floor.",
+        "pose": "Body between parallel bars with slight forward torso lean, elbows bent and pointing backward, wrists aligned. Upper arms near horizontal, shoulders stable without rolling forward, legs together and suspended. No upward press shown.",
+        "grip": "Closed neutral grip around the two parallel bars, thumbs wrapped and wrists straight.",
+        "supports": "Both hands on the fixed bars; feet suspended. Stable reset step below stays clear of feet during lowering.",
+        "equipment": "Fixed parallel dip bars in a stable frame plus a small access step for the source reset; no assistance platform, band or weight stack.",
+        "trajectory": "Step to top support, lower slowly under control until upper arms approach horizontal, step down and reset at the top instead of pressing upward.",
+        "camera": "Side-rear three-quarter view showing triceps surfaces, backward elbow orientation and clearance above the reset step.",
+        "illustration_choices": [
+          "Stable step used for entering/resetting, explicitly offered instead of jumping."
+        ]
+      },
+      "approved_style_files": [
+        {
+          "path": "docs/exercise-image-style.md",
+          "sha256": "8956307274990bdefd11bcc18e6d6deb2aed35580b5c2ea3ac0061dee708e578"
+        }
+      ],
+      "execution_owner": "agent-08-generator-single-2026-10-03"
+    }
+  ],
+  "execution_branch": "agent-08-generator-single-2026-10-03",
+  "source_task_commit": "7f88ab32d296d4d73be9a9e6430bb9c8aa1256a6",
+  "claimed_at": "2026-10-15T06:52:41+00:00",
+  "initial_ref_snapshot": {
+    "origin/agent-02-machines-001": "537bb66463a10f82a48fd7be5faaee204bb5ea02",
+    "origin/agent-03-inventory-2026-10-01": "e0482c2f50b71a4be17450e81f7d73c46ec15334",
+    "origin/agent-04-supabase-integration": "19882a38fa1b80ee9ff4a9b8e203a6e47488c342",
+    "origin/agent-05-parallel-generation": "058e4810f858b5f0cca1d27384c8e36d525b24fa",
+    "origin/agent-06-generator-a-2026-10-02": "8b4e4d7de0572909b8e0f3591d60c87192194338",
+    "origin/agent-07-generator-b-2026-10-02": "9dfc775a57ff6856995addbaf28f303661a7b5de",
+    "origin/agent-08-generator-single-2026-10-03": "a4d3721a9f91f830aaa9cf5ae84be190d7d5c212",
+    "origin/main": "a74adc6d107206429ffd225104899e240470f170",
+    "origin/work": "b0385b7e2f3382d545a6dff5304c81ba3c771096"
+  }
+}
