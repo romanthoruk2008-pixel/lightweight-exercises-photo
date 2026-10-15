@@ -9,6 +9,10 @@ The user subsequently requested a square canvas with transparent space above and
 - PNG: `assets/exercises/pending/bed-cardio-2026-10-15/bed-cardio/attempt-1.png`
 - SHA256: `010ec1aab966a3baad341f4e33f4c576f3e6c9c7ffec9ed01d22b1ede92e264b`
 - File checks: PNG decode, square dimensions, actual transparency, unchanged original pixel region and cloud/Git byte equality passed.
-- `user_review=pending`, `agent_visual_review=not_performed`, `image_origin=generated`.
+- `user_review=approved`, `agent_visual_review=not_performed`, `image_origin=generated`.
 - One new generation; canvas padding is not another generation.
-- No Supabase calls or catalog, translation, shared-progress or approval changes.
+- No Supabase calls or catalog, translation, shared-progress changes. Only this Bed Cardio generation manifest records the explicit user approval.
+
+## User acceptance
+
+At 2026-10-15T08:48:56.021299+00:00, the user explicitly accepted the final square 1536×1536 image and requested pushing its accepted status to GitHub. Status and user_review are now `approved`; accepted path and SHA256 are recorded in the manifest. PNG bytes are unchanged.
